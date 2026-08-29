@@ -20,7 +20,10 @@
       "@data/*": [
         "../data/*"
       ]
-    }
+    },
+    "types": [
+      "vite/client"
+    ]
   },
   "include": [
     "src"

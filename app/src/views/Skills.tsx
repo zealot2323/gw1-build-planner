@@ -1,11 +1,14 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 import {
   skillAvailability,
+  type AcquisitionSource,
   type Profession,
   type SkillAvailabilityEntry,
   type SkillStatus,
 } from "@gw1/engine";
 import { index } from "../data";
+import { SkillIcon } from "../components/SkillIcon";
+import { wikiHref } from "../wiki";
 import type { CharacterSave } from "../save";
 
 const STATUS_ORDER: SkillStatus[] = [
@@ -19,13 +22,11 @@ const STATUS_LABEL: Record<SkillStatus, string> = {
   FUTURE: "Future",
 };
 
-function whereToGet(entry: SkillAvailabilityEntry): string {
-  const src = entry.sources[0];
-  if (!src) return "no known Prophecies source";
-  const verb = { trainer: "buy from", quest: "quest", capture: "capture from" }[src.kind];
-  return `${verb} ${src.via}${src.location ? ` (${src.location})` : ""}${
-    entry.sources.length > 1 ? ` — +${entry.sources.length - 1} more` : ""
-  }`;
+/** Location first — "where do I go" is the question being answered. */
+function sourceLine(src: AcquisitionSource): string {
+  const action = { trainer: "buy from", quest: "quest:", capture: "capture" }[src.kind];
+  const what = `${action} ${src.via}`;
+  return src.location ? `${src.location} · ${what}` : what;
 }
 
 export function SkillsView({
@@ -46,6 +47,7 @@ export function SkillsView({
   const [attrFilter, setAttrFilter] = useState<string>("all");
   const [elitesOnly, setElitesOnly] = useState(false);
   const [search, setSearch] = useState("");
+  const [expanded, setExpanded] = useState<Set<string>>(new Set());
   const focusRef = useRef<HTMLTableRowElement | null>(null);
 
   const entries = useMemo(
@@ -69,6 +71,14 @@ export function SkillsView({
   useEffect(() => {
     focusRef.current?.scrollIntoView({ block: "center" });
   }, [focusSkill]);
+
+  const toggleExpanded = (page: string) =>
+    setExpanded((s) => {
+      const next = new Set(s);
+      if (next.has(page)) next.delete(page);
+      else next.add(page);
+      return next;
+    });
 
   if (!character) return <div className="view muted pad">Select a character first.</div>;
 
@@ -123,28 +133,56 @@ export function SkillsView({
             <table>
               <tbody>
                 {group.map((e) => (
-                  <tr
-                    key={e.skill.wikiPage}
-                    ref={e.skill.wikiPage === focusSkill ? focusRef : undefined}
-                    className={e.skill.wikiPage === focusSkill ? "focused" : undefined}
-                  >
-                    <td className="skill-name">
-                      {e.skill.name}
-                      {e.skill.isElite && <span className="elite"> ★</span>}
-                    </td>
-                    <td className="muted">
-                      {e.skill.profession ?? "Common"}
-                      {e.skill.attribute ? ` · ${e.skill.attribute}` : ""}
-                    </td>
-                    <td className="muted small">{whereToGet(e)}</td>
-                    {onAddToBuild && (
-                      <td>
-                        <button className="small" onClick={() => onAddToBuild(e.skill.wikiPage)}>
-                          + build
-                        </button>
+                  <Fragment key={e.skill.wikiPage}>
+                    <tr
+                      ref={e.skill.wikiPage === focusSkill ? focusRef : undefined}
+                      className={e.skill.wikiPage === focusSkill ? "focused" : undefined}
+                    >
+                      <td className="skill-name">
+                        <SkillIcon page={e.skill.wikiPage} />
+                        <a href={wikiHref(e.skill.wikiPage)} target="_blank" rel="noreferrer">
+                          {e.skill.name}
+                        </a>
+                        {e.skill.isElite && <span className="elite"> ★</span>}
                       </td>
+                      <td className="muted">
+                        {e.skill.profession ?? "Common"}
+                        {e.skill.attribute ? ` · ${e.skill.attribute}` : ""}
+                      </td>
+                      <td className="muted small">
+                        {e.sources.length === 0 ? (
+                          "no known Prophecies source"
+                        ) : (
+                          <button className="linkish inline" onClick={() => toggleExpanded(e.skill.wikiPage)}>
+                            {sourceLine(e.sources[0])}
+                            {e.sources.length > 1 &&
+                              ` — ${expanded.has(e.skill.wikiPage) ? "hide" : `+${e.sources.length - 1} more`}`}
+                          </button>
+                        )}
+                      </td>
+                      {onAddToBuild && (
+                        <td>
+                          <button className="small" onClick={() => onAddToBuild(e.skill.wikiPage)}>
+                            + build
+                          </button>
+                        </td>
+                      )}
+                    </tr>
+                    {expanded.has(e.skill.wikiPage) && e.sources.length > 1 && (
+                      <tr className="sources-row">
+                        <td colSpan={onAddToBuild ? 4 : 3}>
+                          <ul className="sources">
+                            {e.sources.map((s, i) => (
+                              <li key={i} className={s.availableNow ? "ok" : "muted"}>
+                                {s.availableNow ? "● " : "○ "}
+                                {sourceLine(s)}
+                              </li>
+                            ))}
+                          </ul>
+                        </td>
+                      </tr>
                     )}
-                  </tr>
+                  </Fragment>
                 ))}
               </tbody>
             </table>

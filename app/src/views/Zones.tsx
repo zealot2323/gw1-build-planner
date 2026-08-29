@@ -1,6 +1,16 @@
 import { useMemo, useState } from "react";
 import { monstersInLocation } from "@gw1/engine";
 import { dataset, index } from "../data";
+import { SkillIcon } from "../components/SkillIcon";
+import { wikiHref } from "../wiki";
+
+function WikiLink({ page }: { page: string }) {
+  return (
+    <a className="wiki-link" href={wikiHref(page)} target="_blank" rel="noreferrer" title="open on wiki.guildwars.com">
+      ↗
+    </a>
+  );
+}
 
 /** Region -> locations tree; clicking an explorable/mission shows monsters. */
 export function ZonesView({ onSkillClick }: { onSkillClick: (skill: string) => void }) {
@@ -49,7 +59,7 @@ export function ZonesView({ onSkillClick }: { onSkillClick: (skill: string) => v
                 {locs
                   .sort((a, b) => a.name.localeCompare(b.name))
                   .map((l) => (
-                    <li key={l.name}>
+                    <li key={l.name} className="zone-row">
                       <button
                         className={
                           (selected === l.name ? "linkish active" : "linkish") +
@@ -60,6 +70,7 @@ export function ZonesView({ onSkillClick }: { onSkillClick: (skill: string) => v
                       >
                         {l.name} <span className="muted tag">{l.kind}</span>
                       </button>
+                      <WikiLink page={l.name} />
                     </li>
                   ))}
               </ul>
@@ -74,13 +85,16 @@ export function ZonesView({ onSkillClick }: { onSkillClick: (skill: string) => v
         ) : (
           <>
             <h3>
-              {selected} <span className="muted">({monsters.length} monsters)</span>
+              {selected} <WikiLink page={selected} />{" "}
+              <span className="muted">({monsters.length} monsters)</span>
             </h3>
             {monsters.map(({ monster, isBossHere, skills, armor }) => (
               <div key={monster.wikiPage} className="monster">
                 <div className="row space-between">
                   <strong>
-                    {monster.name}
+                    <a href={wikiHref(monster.wikiPage)} target="_blank" rel="noreferrer">
+                      {monster.name}
+                    </a>
                     {isBossHere && <span className="elite"> [boss]</span>}
                   </strong>
                   <span className="muted">
@@ -110,6 +124,7 @@ export function ZonesView({ onSkillClick }: { onSkillClick: (skill: string) => v
                       title={skill === null ? "not a learnable player skill" : "open in skill browser"}
                       onClick={() => onSkillClick(ref)}
                     >
+                      <SkillIcon page={ref} size={18} />
                       {ref}
                       {skill?.isElite && <span className="elite"> ★</span>}
                     </button>

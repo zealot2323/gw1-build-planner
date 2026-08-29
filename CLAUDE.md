@@ -61,6 +61,10 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
   infobox/section templates.
 - Be polite: **max 1 request/second**, descriptive User-Agent, **cache everything**
   (scraper caches raw wikitext on disk so re-runs don't re-fetch).
+- **Skill icons**: `npm run icons` resolves each skill's `File:<name>.jpg` via the
+  API (imageinfo, 50 titles/request) and downloads it to
+  `/app/public/icons/<gwSkillId>.jpg` — committed, and already-present icons are
+  never refetched. `gwSkillId` is the filename key, so icons survive renames.
 
 ## Data decisions
 

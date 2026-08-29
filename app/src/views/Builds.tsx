@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { validateBuild, type Build, type Profession } from "@gw1/engine";
 import { index } from "../data";
+import { SkillIcon } from "../components/SkillIcon";
 import type { CharacterSave } from "../save";
 
 export function BuildsView({
@@ -109,8 +110,11 @@ export function BuildsView({
                 >
                   {skill ? (
                     <>
-                      {skill}
-                      {index.skillByPage.get(skill)?.isElite && <span className="elite"> ★</span>}
+                      <SkillIcon page={skill} size={32} />
+                      <span>
+                        {skill}
+                        {index.skillByPage.get(skill)?.isElite && <span className="elite"> ★</span>}
+                      </span>
                     </>
                   ) : (
                     <span className="muted">empty</span>

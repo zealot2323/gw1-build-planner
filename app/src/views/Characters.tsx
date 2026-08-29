@@ -2,6 +2,7 @@ import { useState } from "react";
 import { PROFESSIONS, Profession } from "@gw1/engine";
 import { dataset } from "../data";
 import { Checklist } from "../components/Checklist";
+import { iconForSkillPage } from "../wiki";
 import type { CharacterSave, SaveFile } from "../save";
 
 const CORE_PROFESSIONS = [
@@ -9,10 +10,19 @@ const CORE_PROFESSIONS = [
   Profession.Necromancer, Profession.Mesmer, Profession.Elementalist,
 ];
 
-const unlockableLocations = dataset.locations
-  .filter((l) => l.kind !== "explorable")
-  .map((l) => l.wikiPage)
-  .sort();
+// towns/outposts grouped by region, mirroring the zone browser's tree
+const locationGroups = (() => {
+  const byRegion = new Map<string, string[]>();
+  for (const l of dataset.locations) {
+    if (l.kind === "explorable") continue;
+    const region = l.region ?? "(unknown region)";
+    if (!byRegion.has(region)) byRegion.set(region, []);
+    byRegion.get(region)!.push(l.wikiPage);
+  }
+  return [...byRegion.entries()]
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([label, options]) => ({ label, options: options.sort() }));
+})();
 const missionNames = (dataset.missions ?? []).map((m) => m.wikiPage);
 
 export function CharactersView({
@@ -149,7 +159,7 @@ export function CharactersView({
             <div className="row wrap align-top">
               <Checklist
                 label="Unlocked towns/outposts"
-                options={unlockableLocations}
+                groups={locationGroups}
                 selected={c.unlockedLocations}
                 onChange={(v) => updateCharacter(c.name, { unlockedLocations: v })}
                 detail={(o) => dataset.locations.find((l) => l.wikiPage === o)?.kind ?? null}
@@ -165,6 +175,7 @@ export function CharactersView({
                 options={knowableSkills}
                 selected={c.knownSkills}
                 onChange={(v) => updateCharacter(c.name, { knownSkills: v })}
+                icon={iconForSkillPage}
               />
             </div>
           </div>
