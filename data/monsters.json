@@ -174,105 +174,6 @@
     "profession": "Necromancer"
   },
   {
-    "name": "Aloe Husk",
-    "wikiPage": "Aloe Husk",
-    "species": "Plant",
-    "level": 0,
-    "levelRaw": "0",
-    "armor": null,
-    "armorTable": [
-      {
-        "damageType": "blunt",
-        "rating": 3
-      },
-      {
-        "damageType": "piercing",
-        "rating": 3
-      },
-      {
-        "damageType": "slashing",
-        "rating": -37
-      },
-      {
-        "damageType": "cold",
-        "rating": 3
-      },
-      {
-        "damageType": "earth",
-        "rating": 3
-      },
-      {
-        "damageType": "fire",
-        "rating": -37
-      },
-      {
-        "damageType": "lightning",
-        "rating": 3
-      }
-    ],
-    "skills": [
-      "Healing Breeze",
-      "Shielding Hands"
-    ],
-    "isBoss": false,
-    "locations": [
-      "Green Hills County",
-      "Regent Valley (pre-Searing)"
-    ],
-    "profession": "Monk"
-  },
-  {
-    "name": "Aloe Seed",
-    "wikiPage": "Aloe Seed",
-    "species": "Plant",
-    "level": 0,
-    "levelRaw": "0",
-    "armor": null,
-    "armorTable": [
-      {
-        "damageType": "blunt",
-        "rating": 3
-      },
-      {
-        "damageType": "piercing",
-        "rating": 3
-      },
-      {
-        "damageType": "slashing",
-        "rating": -37
-      },
-      {
-        "damageType": "cold",
-        "rating": 3
-      },
-      {
-        "damageType": "earth",
-        "rating": 3
-      },
-      {
-        "damageType": "fire",
-        "rating": -37
-      },
-      {
-        "damageType": "lightning",
-        "rating": 3
-      }
-    ],
-    "skills": [
-      "Orison of Healing",
-      "Healing Breeze"
-    ],
-    "isBoss": false,
-    "locations": [
-      "Lakeside County: 1070 AE",
-      "Green Hills County",
-      "Lakeside County",
-      "Regent Valley (pre-Searing)",
-      "Wizard's Folly"
-    ],
-    "profession": "Monk"
-  },
-  {
     "name": "Amir the Overripe",
     "wikiPage": "Amir the Overripe",
     "species": "Zombie",
@@ -982,26 +883,6 @@
     "profession": "Mesmer"
   },
   {
-    "name": "Balt Duskstrider",
-    "wikiPage": "Balt Duskstrider",
-    "species": null,
-    "level": 28,
-    "levelRaw": "28",
-    "armor": null,
-    "armorTable": [],
-    "skills": [
-      "Holy Wrath",
-      "Retribution",
-      "Signet of Judgment"
-    ],
-    "isBoss": true,
-    "bossElite": "Signet of Judgment",
-    "locations": [
-      "Iron Mines of Moladune"
-    ],
-    "profession": "Monk"
-  },
-  {
     "name": "Balthazaar's Cursed",
     "wikiPage": "Balthazaar's Cursed",
     "species": "Abomination",
@@ -1019,53 +900,6 @@
     "bossElite": "\"Charge!\"",
     "locations": [
       "Perdition Rock"
-    ],
-    "profession": "Warrior"
-  },
-  {
-    "name": "Bandit Blood Sworn",
-    "wikiPage": "Bandit Blood Sworn",
-    "species": "Human",
-    "level": 3,
-    "levelRaw": "3",
-    "armor": null,
-    "armorTable": [
-      {
-        "damageType": "blunt",
-        "rating": 15
-      },
-      {
-        "damageType": "piercing",
-        "rating": 15
-      },
-      {
-        "damageType": "slashing",
-        "rating": 15
-      },
-      {
-        "damageType": "cold",
-        "rating": 15
-      },
-      {
-        "damageType": "earth",
-        "rating": 15
-      },
-      {
-        "damageType": "fire",
-        "rating": 15
-      },
-      {
-        "damageType": "lightning",
-        "rating": 15
-      }
-    ],
-    "skills": [],
-    "isBoss": false,
-    "locations": [
-      "Green Hills County",
-      "Lakeside County",
-      "Regent Valley (pre-Searing)",
-      "Wizard's Folly"
     ],
     "profession": "Warrior"
   },
@@ -1138,106 +972,6 @@
       "Tunnels of the Forsaken"
     ],
     "profession": "Elementalist"
-  },
-  {
-    "name": "Bandit Firestarter",
-    "wikiPage": "Bandit Firestarter",
-    "species": "Human",
-    "level": 15,
-    "levelRaw": "1, 15",
-    "armor": null,
-    "armorTable": [
-      {
-        "damageType": "blunt",
-        "rating": 2
-      },
-      {
-        "damageType": "piercing",
-        "rating": 2
-      },
-      {
-        "damageType": "slashing",
-        "rating": 2
-      },
-      {
-        "damageType": "cold",
-        "rating": 2
-      },
-      {
-        "damageType": "earth",
-        "rating": 2
-      },
-      {
-        "damageType": "fire",
-        "rating": 2
-      },
-      {
-        "damageType": "lightning",
-        "rating": 2
-      }
-    ],
-    "skills": [
-      "Flare",
-      "Flare",
-      "Mark of Rodgort",
-      "Phoenix"
-    ],
-    "isBoss": false,
-    "locations": [
-      "Lakeside County: 1070 AE",
-      "Green Hills County",
-      "Lakeside County",
-      "Wizard's Folly"
-    ],
-    "profession": "Elementalist"
-  },
-  {
-    "name": "Bandit Raider",
-    "wikiPage": "Bandit Raider",
-    "species": "Human",
-    "level": 15,
-    "levelRaw": "2, 15",
-    "armor": null,
-    "armorTable": [
-      {
-        "damageType": "blunt",
-        "rating": 11
-      },
-      {
-        "damageType": "piercing",
-        "rating": 11
-      },
-      {
-        "damageType": "slashing",
-        "rating": 11
-      },
-      {
-        "damageType": "cold",
-        "rating": 11
-      },
-      {
-        "damageType": "earth",
-        "rating": 11
-      },
-      {
-        "damageType": "fire",
-        "rating": 11
-      },
-      {
-        "damageType": "lightning",
-        "rating": 11
-      }
-    ],
-    "skills": [],
-    "isBoss": false,
-    "locations": [
-      "Lakeside County: 1070 AE",
-      "Green Hills County",
-      "Lakeside County",
-      "Regent Valley (pre-Searing)",
-      "Wizard's Folly"
-    ],
-    "profession": "Warrior"
   },
   {
     "name": "Bane Darkfist",
@@ -2693,23 +2427,6 @@
     "profession": "Ranger"
   },
   {
-    "name": "Cave Elemental",
-    "wikiPage": "Cave Elemental",
-    "species": "Elemental",
-    "level": 9,
-    "levelRaw": "7, 9",
-    "armor": null,
-    "armorTable": [],
-    "skills": [],
-    "isBoss": false,
-    "locations": [
-      "The Northlands",
-      "Forsaken Tunnels",
-      "Tunnels of the Forsaken"
-    ],
-    "profession": "Elementalist"
-  },
-  {
     "name": "Caza Windedcalf",
     "wikiPage": "Caza Windedcalf",
     "species": "Centaur",
@@ -2859,63 +2576,6 @@
       "Vulture Drifts"
     ],
     "profession": "Mesmer"
-  },
-  {
-    "name": "Charr Ash Walker",
-    "wikiPage": "Charr Ash Walker",
-    "species": "Charr",
-    "level": null,
-    "levelRaw": "See locations",
-    "armor": null,
-    "armorTable": [
-      {
-        "damageType": "blunt",
-        "rating": 20
-      },
-      {
-        "damageType": "piercing",
-        "rating": 20
-      },
-      {
-        "damageType": "slashing",
-        "rating": 20
-      },
-      {
-        "damageType": "cold",
-        "rating": 20
-      },
-      {
-        "damageType": "earth",
-        "rating": 20
-      },
-      {
-        "damageType": "fire",
-        "rating": 20
-      },
-      {
-        "damageType": "lightning",
-        "rating": 20
-      }
-    ],
-    "skills": [
-      "Faintheartedness",
-      "Life Siphon",
-      "Animate Bone Minions",
-      "Blood of the Master",
-      "Jagged Bones"
-    ],
-    "isBoss": false,
-    "locations": [
-      "Eastern Frontier",
-      "Regent Valley",
-      "The Breach",
-      "Diessa Lowlands",
-      "Forsaken Tunnels",
-      "Fort Ranik",
-      "Ruins of Surmia",
-      "The Rise of the White Mantle"
-    ],
-    "profession": "Necromancer"
   },
   {
     "name": "Charr Ashen Claw",
@@ -4191,23 +3851,6 @@
     "profession": "Necromancer"
   },
   {
-    "name": "Crypt Fiend",
-    "wikiPage": "Crypt Fiend",
-    "species": "Nightmare",
-    "level": 3,
-    "levelRaw": "3",
-    "armor": null,
-    "armorTable": [],
-    "skills": [
-      "Chilblains"
-    ],
-    "isBoss": false,
-    "locations": [
-      "The Catacombs"
-    ],
-    "profession": "Necromancer"
-  },
-  {
     "name": "Crystal Guardian",
     "wikiPage": "Crystal Guardian",
     "species": "Elemental",
@@ -4619,27 +4262,6 @@
     "profession": "Monk"
   },
   {
-    "name": "Darda Goldenchief",
-    "wikiPage": "Darda Goldenchief",
-    "species": "Dolyak",
-    "level": 28,
-    "levelRaw": "28",
-    "armor": null,
-    "armorTable": [],
-    "skills": [
-      "Life Attunement",
-      "Mark of Protection",
-      "Mend Ailment",
-      "Orison of Healing"
-    ],
-    "isBoss": true,
-    "bossElite": "Mark of Protection",
-    "locations": [
-      "Ice Caves of Sorrow"
-    ],
-    "profession": "Monk"
-  },
-  {
     "name": "Dark Flame Dryder",
     "wikiPage": "Dark Flame Dryder",
     "species": null,
@@ -4728,21 +4350,6 @@
       "Dunes of Despair"
     ],
     "profession": "Monk"
-  },
-  {
-    "name": "Deadly Crypt Spider",
-    "wikiPage": "Deadly Crypt Spider",
-    "species": "Arachnid",
-    "level": 2,
-    "levelRaw": "2",
-    "armor": null,
-    "armorTable": [],
-    "skills": [],
-    "isBoss": false,
-    "locations": [
-      "The Catacombs"
-    ],
-    "profession": "Ranger"
   },
   {
     "name": "Debrio Gangleweb",
@@ -4873,71 +4480,6 @@
       "Snake Dance"
     ],
     "profession": "Mesmer"
-  },
-  {
-    "name": "Digo Murkstalker",
-    "wikiPage": "Digo Murkstalker",
-    "species": null,
-    "level": 28,
-    "levelRaw": "28",
-    "armor": null,
-    "armorTable": [],
-    "skills": [
-      "Clumsiness",
-      "Illusion of Weakness",
-      "Illusionary Weaponry"
-    ],
-    "isBoss": true,
-    "bossElite": "Illusionary Weaponry",
-    "locations": [
-      "Iron Mines of Moladune"
-    ],
-    "profession": "Mesmer"
-  },
-  {
-    "name": "Diseased Devourer",
-    "wikiPage": "Diseased Devourer",
-    "species": "Devourer",
-    "level": 0,
-    "levelRaw": "0",
-    "armor": null,
-    "armorTable": [
-      {
-        "damageType": "blunt",
-        "rating": 10
-      },
-      {
-        "damageType": "piercing",
-        "rating": 10
-      },
-      {
-        "damageType": "slashing",
-        "rating": 10
-      },
-      {
-        "damageType": "cold",
-        "rating": -10
-      },
-      {
-        "damageType": "earth",
-        "rating": 10
-      },
-      {
-        "damageType": "fire",
-        "rating": 10
-      },
-      {
-        "damageType": "lightning",
-        "rating": 10
-      }
-    ],
-    "skills": [],
-    "isBoss": false,
-    "locations": [
-      "Lakeside County",
-      "The Catacombs"
-    ],
-    "profession": null
   },
   {
     "name": "Divingbeak",
@@ -5153,25 +4695,6 @@
       "Perdition Rock"
     ],
     "profession": "Necromancer"
-  },
-  {
-    "name": "Dracul Cadava",
-    "wikiPage": "Dracul Cadava",
-    "species": "Zombie",
-    "level": 21,
-    "levelRaw": "21",
-    "armor": null,
-    "armorTable": [],
-    "skills": [
-      "Bane Signet",
-      "Draw Conditions",
-      "Reversal of Fortune"
-    ],
-    "isBoss": true,
-    "locations": [
-      "Riverside Province"
-    ],
-    "profession": "Monk"
   },
   {
     "name": "Drago Stoneherder",
@@ -8457,50 +7980,6 @@
     "profession": "Ranger"
   },
   {
-    "name": "Gargoyle (NPC)",
-    "wikiPage": "Gargoyle (NPC)",
-    "species": "Gargoyle",
-    "level": 1,
-    "levelRaw": "1",
-    "armor": null,
-    "armorTable": [
-      {
-        "damageType": "blunt",
-        "rating": 4
-      },
-      {
-        "damageType": "piercing",
-        "rating": 4
-      },
-      {
-        "damageType": "slashing",
-        "rating": 4
-      },
-      {
-        "damageType": "cold",
-        "rating": 44
-      },
-      {
-        "damageType": "earth",
-        "rating": 4
-      },
-      {
-        "damageType": "fire",
-        "rating": 4
-      },
-      {
-        "damageType": "lightning",
-        "rating": 4
-      }
-    ],
-    "skills": [],
-    "isBoss": false,
-    "locations": [
-      "The Catacombs"
-    ],
-    "profession": "Mesmer"
-  },
-  {
     "name": "Garr the Merciful",
     "wikiPage": "Garr the Merciful",
     "species": "Human",
@@ -8700,37 +8179,6 @@
     "locations": [
       "Majesty's Rest",
       "Divinity Coast"
-    ],
-    "profession": "Ranger"
-  },
-  {
-    "name": "Giant Needle Spider",
-    "wikiPage": "Giant Needle Spider",
-    "species": "Arachnid",
-    "level": 2,
-    "levelRaw": "2",
-    "armor": null,
-    "armorTable": [],
-    "skills": [],
-    "isBoss": false,
-    "locations": [
-      "Regent Valley (pre-Searing)",
-      "Wizard's Folly"
-    ],
-    "profession": "Ranger"
-  },
-  {
-    "name": "Giant Tree Spider",
-    "wikiPage": "Giant Tree Spider",
-    "species": "Arachnid",
-    "level": 3,
-    "levelRaw": "3",
-    "armor": null,
-    "armorTable": [],
-    "skills": [],
-    "isBoss": false,
-    "locations": [
-      "Regent Valley (pre-Searing)"
     ],
     "profession": "Ranger"
   },
@@ -9368,43 +8816,6 @@
     "profession": "Necromancer"
   },
   {
-    "name": "Grawl Fighter",
-    "wikiPage": "Grawl Fighter",
-    "species": "Grawl",
-    "level": 6,
-    "levelRaw": "6",
-    "armor": null,
-    "armorTable": [],
-    "skills": [
-      "\"Victory Is Mine!\"",
-      "Hammer Bash"
-    ],
-    "isBoss": false,
-    "locations": [
-      "The Northlands",
-      "Forsaken Tunnels"
-    ],
-    "profession": "Warrior"
-  },
-  {
-    "name": "Grawl Heretic",
-    "wikiPage": "Grawl Heretic",
-    "species": "Grawl",
-    "level": 3,
-    "levelRaw": "3",
-    "armor": null,
-    "armorTable": [],
-    "skills": [
-      "Counter Blow",
-      "Heavy Blow"
-    ],
-    "isBoss": false,
-    "locations": [
-      "Regent Valley"
-    ],
-    "profession": "Warrior"
-  },
-  {
     "name": "Grawl High Priest",
     "wikiPage": "Grawl High Priest",
     "species": "Grawl",
@@ -9421,21 +8832,6 @@
       "Regent Valley"
     ],
     "profession": "Monk"
-  },
-  {
-    "name": "Grawl Invader",
-    "wikiPage": "Grawl Invader",
-    "species": "Grawl",
-    "level": 1,
-    "levelRaw": "1",
-    "armor": null,
-    "armorTable": [],
-    "skills": [],
-    "isBoss": false,
-    "locations": [
-      "Green Hills County"
-    ],
-    "profession": "Ranger"
   },
   {
     "name": "Grawl Longspear",
@@ -9459,42 +8855,6 @@
       "Ascalon Academy"
     ],
     "profession": "Ranger"
-  },
-  {
-    "name": "Grawl Petitioner (monk)",
-    "wikiPage": "Grawl Petitioner (monk)",
-    "species": "Grawl",
-    "level": 3,
-    "levelRaw": "3",
-    "armor": null,
-    "armorTable": [],
-    "skills": [
-      "Heal Area",
-      "Heal Other"
-    ],
-    "isBoss": false,
-    "locations": [
-      "Regent Valley"
-    ],
-    "profession": "Monk"
-  },
-  {
-    "name": "Grawl Petitioner (warrior)",
-    "wikiPage": "Grawl Petitioner (warrior)",
-    "species": "Grawl",
-    "level": 3,
-    "levelRaw": "3",
-    "armor": null,
-    "armorTable": [],
-    "skills": [
-      "Counter Blow",
-      "Heavy Blow"
-    ],
-    "isBoss": false,
-    "locations": [
-      "Regent Valley"
-    ],
-    "profession": "Warrior"
   },
   {
     "name": "Grawl Shaman",
@@ -10027,27 +9387,6 @@
     "profession": "Mesmer"
   },
   {
-    "name": "Hilios the Dutiful",
-    "wikiPage": "Hilios the Dutiful",
-    "species": null,
-    "level": 28,
-    "levelRaw": "28",
-    "armor": null,
-    "armorTable": [],
-    "skills": [
-      "Determined Shot",
-      "Healing Spring",
-      "Oath Shot",
-      "Whirling Defense"
-    ],
-    "isBoss": true,
-    "bossElite": "Oath Shot",
-    "locations": [
-      "Iron Mines of Moladune"
-    ],
-    "profession": "Ranger"
-  },
-  {
     "name": "Hill Giant",
     "wikiPage": "Hill Giant",
     "species": "Giant",
@@ -10489,67 +9828,6 @@
     "profession": "Elementalist"
   },
   {
-    "name": "Ice Elemental (pre-Searing)",
-    "wikiPage": "Ice Elemental (pre-Searing)",
-    "species": "Elemental",
-    "level": 3,
-    "levelRaw": "3",
-    "armor": null,
-    "armorTable": [
-      {
-        "damageType": "blunt",
-        "rating": 10
-      },
-      {
-        "damageType": "piercing",
-        "rating": 10
-      },
-      {
-        "damageType": "slashing",
-        "rating": 10
-      },
-      {
-        "damageType": "cold",
-        "rating": 10
-      },
-      {
-        "damageType": "earth",
-        "rating": 10
-      },
-      {
-        "damageType": "fire",
-        "rating": -30
-      },
-      {
-        "damageType": "lightning",
-        "rating": 10
-      }
-    ],
-    "skills": [
-      "Frozen Burst"
-    ],
-    "isBoss": false,
-    "locations": [
-      "Wizard's Folly"
-    ],
-    "profession": "Elementalist"
-  },
-  {
-    "name": "Ice Elemental Shard",
-    "wikiPage": "Ice Elemental Shard",
-    "species": "Elemental",
-    "level": 1,
-    "levelRaw": "1",
-    "armor": null,
-    "armorTable": [],
-    "skills": [],
-    "isBoss": false,
-    "locations": [
-      "Wizard's Folly"
-    ],
-    "profession": "Elementalist"
-  },
-  {
     "name": "Ice Golem",
     "wikiPage": "Ice Golem",
     "species": "Elemental",
@@ -10949,26 +10227,6 @@
     "bossElite": "Unyielding Aura",
     "locations": [
       "Witman's Folly"
-    ],
-    "profession": "Monk"
-  },
-  {
-    "name": "Ironheart",
-    "wikiPage": "Ironheart",
-    "species": "Plant",
-    "level": 8,
-    "levelRaw": "8",
-    "armor": null,
-    "armorTable": [],
-    "skills": [
-      "Balthazar's Aura",
-      "Healing Breeze",
-      "Retribution"
-    ],
-    "isBoss": false,
-    "locations": [
-      "The Northlands",
-      "Forsaken Tunnels"
     ],
     "profession": "Monk"
   },
@@ -11979,25 +11237,6 @@
     "profession": "Elementalist"
   },
   {
-    "name": "Large Aloe Seed",
-    "wikiPage": "Large Aloe Seed",
-    "species": "Plant",
-    "level": 3,
-    "levelRaw": "0, 3",
-    "armor": null,
-    "armorTable": [],
-    "skills": [
-      "Shielding Hands",
-      "Healing Breeze"
-    ],
-    "isBoss": false,
-    "locations": [
-      "Green Hills County",
-      "Wizard's Folly"
-    ],
-    "profession": "Monk"
-  },
-  {
     "name": "Large Spined Aloe",
     "wikiPage": "Large Spined Aloe",
     "species": "Plant",
@@ -12106,23 +11345,6 @@
       "Aurora Glade"
     ],
     "profession": "Mesmer"
-  },
-  {
-    "name": "Lash Devourer",
-    "wikiPage": "Lash Devourer",
-    "species": "Devourer",
-    "level": 15,
-    "levelRaw": "1, 15",
-    "armor": null,
-    "armorTable": [],
-    "skills": [],
-    "isBoss": false,
-    "locations": [
-      "Lakeside County: 1070 AE",
-      "Lakeside County",
-      "Regent Valley (pre-Searing)"
-    ],
-    "profession": null
   },
   {
     "name": "Lava Imp",
@@ -12388,27 +11610,6 @@
       "Frozen Forest"
     ],
     "profession": "Warrior"
-  },
-  {
-    "name": "Lokar Icemender",
-    "wikiPage": "Lokar Icemender",
-    "species": "Dolyak",
-    "level": 28,
-    "levelRaw": "28",
-    "armor": null,
-    "armorTable": [],
-    "skills": [
-      "Life Attunement",
-      "Mark of Protection",
-      "Mend Ailment",
-      "Orison of Healing"
-    ],
-    "isBoss": true,
-    "bossElite": "Mark of Protection",
-    "locations": [
-      "Iron Mines of Moladune"
-    ],
-    "profession": "Monk"
   },
   {
     "name": "Losaru Bladehand",
@@ -13442,26 +12643,6 @@
     "profession": "Necromancer"
   },
   {
-    "name": "Martigris the Stalwart",
-    "wikiPage": "Martigris the Stalwart",
-    "species": "Jade construct",
-    "level": 28,
-    "levelRaw": "28",
-    "armor": null,
-    "armorTable": [],
-    "skills": [
-      "Crushing Blow",
-      "Devastating Hammer",
-      "Wild Blow"
-    ],
-    "isBoss": true,
-    "bossElite": "Devastating Hammer",
-    "locations": [
-      "Iron Mines of Moladune"
-    ],
-    "profession": "Warrior"
-  },
-  {
     "name": "Martus Plagueweb",
     "wikiPage": "Martus Plagueweb",
     "species": null,
@@ -14179,22 +13360,6 @@
       "The Wilds"
     ],
     "profession": "Necromancer"
-  },
-  {
-    "name": "Moss Spider (pre-Searing)",
-    "wikiPage": "Moss Spider (pre-Searing)",
-    "species": "Arachnid",
-    "level": 2,
-    "levelRaw": "2",
-    "armor": null,
-    "armorTable": [],
-    "skills": [],
-    "isBoss": false,
-    "locations": [
-      "Green Hills County",
-      "Regent Valley (pre-Searing)"
-    ],
-    "profession": "Ranger"
   },
   {
     "name": "Mossk Rottail",
@@ -15055,54 +14220,6 @@
     "profession": "Mesmer"
   },
   {
-    "name": "Oakheart (Ascalon)",
-    "wikiPage": "Oakheart (Ascalon)",
-    "species": "Plant",
-    "level": 5,
-    "levelRaw": "5",
-    "armor": null,
-    "armorTable": [
-      {
-        "damageType": "blunt",
-        "rating": 17
-      },
-      {
-        "damageType": "piercing",
-        "rating": 17
-      },
-      {
-        "damageType": "slashing",
-        "rating": -24
-      },
-      {
-        "damageType": "cold",
-        "rating": 17
-      },
-      {
-        "damageType": "earth",
-        "rating": 17
-      },
-      {
-        "damageType": "fire",
-        "rating": -24
-      },
-      {
-        "damageType": "lightning",
-        "rating": 17
-      }
-    ],
-    "skills": [
-      "Healing Breeze"
-    ],
-    "isBoss": false,
-    "locations": [
-      "Regent Valley (pre-Searing)",
-      "The Northlands",
-      "Forsaken Tunnels"
-    ],
-    "profession": "Monk"
-  },
-  {
     "name": "Oakheart (Kryta)",
     "wikiPage": "Oakheart (Kryta)",
     "species": "Plant",
@@ -15359,26 +14476,6 @@
       "Thunderhead Keep"
     ],
     "profession": "Mesmer"
-  },
-  {
-    "name": "Pell Glitterglatter",
-    "wikiPage": "Pell Glitterglatter",
-    "species": "Elemental",
-    "level": 28,
-    "levelRaw": "24, 28",
-    "armor": null,
-    "armorTable": [],
-    "skills": [
-      "Aftershock",
-      "Aura of Restoration",
-      "Eruption",
-      "Shock"
-    ],
-    "isBoss": true,
-    "locations": [
-      "Vulture Drifts"
-    ],
-    "profession": "Elementalist"
   },
   {
     "name": "Pello Agileclaw",
@@ -15664,22 +14761,6 @@
       "The Great Northern Wall"
     ],
     "profession": "Necromancer"
-  },
-  {
-    "name": "Plague Worm",
-    "wikiPage": "Plague Worm",
-    "species": "Worm",
-    "level": 1,
-    "levelRaw": "0, 1",
-    "armor": null,
-    "armorTable": [],
-    "skills": [],
-    "isBoss": false,
-    "locations": [
-      "Lakeside County",
-      "Regent Valley (pre-Searing)"
-    ],
-    "profession": "Ranger"
   },
   {
     "name": "Pleoh the Ugly",
@@ -16776,139 +15857,6 @@
     "profession": "Elementalist"
   },
   {
-    "name": "River Skale",
-    "wikiPage": "River Skale",
-    "species": "Skale",
-    "level": 1,
-    "levelRaw": "1",
-    "armor": null,
-    "armorTable": [
-      {
-        "damageType": "blunt",
-        "rating": 4
-      },
-      {
-        "damageType": "piercing",
-        "rating": 4
-      },
-      {
-        "damageType": "slashing",
-        "rating": 4
-      },
-      {
-        "damageType": "cold",
-        "rating": 4
-      },
-      {
-        "damageType": "earth",
-        "rating": 4
-      },
-      {
-        "damageType": "fire",
-        "rating": 4
-      },
-      {
-        "damageType": "lightning",
-        "rating": 4
-      }
-    ],
-    "skills": [],
-    "isBoss": false,
-    "locations": [
-      "Lakeside County",
-      "Regent Valley (pre-Searing)",
-      "Wizard's Folly"
-    ],
-    "profession": "Elementalist"
-  },
-  {
-    "name": "River Skale Brood",
-    "wikiPage": "River Skale Brood",
-    "species": "Skale",
-    "level": 15,
-    "levelRaw": "4, 15",
-    "armor": null,
-    "armorTable": [],
-    "skills": [
-      "Aura of Restoration",
-      "Ice Spear",
-      "Ice Spear",
-      "Rust"
-    ],
-    "isBoss": false,
-    "locations": [
-      "Lakeside County: 1070 AE",
-      "Lakeside County",
-      "Wizard's Folly"
-    ],
-    "profession": "Elementalist"
-  },
-  {
-    "name": "River Skale Queen",
-    "wikiPage": "River Skale Queen",
-    "species": "Skale",
-    "level": 18,
-    "levelRaw": "0, 18",
-    "armor": null,
-    "armorTable": [],
-    "skills": [
-      "Chain Lightning",
-      "Ice Spikes",
-      "Lightning Strike"
-    ],
-    "isBoss": false,
-    "locations": [
-      "Lakeside County: 1070 AE",
-      "Lakeside County"
-    ],
-    "profession": "Elementalist"
-  },
-  {
-    "name": "River Skale Tad",
-    "wikiPage": "River Skale Tad",
-    "species": "Skale",
-    "level": 0,
-    "levelRaw": "0",
-    "armor": null,
-    "armorTable": [
-      {
-        "damageType": "blunt",
-        "rating": 1
-      },
-      {
-        "damageType": "piercing",
-        "rating": 1
-      },
-      {
-        "damageType": "slashing",
-        "rating": 1
-      },
-      {
-        "damageType": "cold",
-        "rating": 1
-      },
-      {
-        "damageType": "earth",
-        "rating": 1
-      },
-      {
-        "damageType": "fire",
-        "rating": 1
-      },
-      {
-        "damageType": "lightning",
-        "rating": 1
-      }
-    ],
-    "skills": [],
-    "isBoss": false,
-    "locations": [
-      "Lakeside County: 1070 AE",
-      "Lakeside County"
-    ],
-    "profession": "Elementalist"
-  },
-  {
     "name": "Roarst One Eye",
     "wikiPage": "Roarst One Eye",
     "species": "Charr",
@@ -17096,53 +16044,6 @@
       "Thirsty River"
     ],
     "profession": "Ranger"
-  },
-  {
-    "name": "Rogue Bull",
-    "wikiPage": "Rogue Bull",
-    "species": "Beast",
-    "level": 24,
-    "levelRaw": "5, 24",
-    "armor": null,
-    "armorTable": [
-      {
-        "damageType": "blunt",
-        "rating": 120
-      },
-      {
-        "damageType": "piercing",
-        "rating": 120
-      },
-      {
-        "damageType": "slashing",
-        "rating": 120
-      },
-      {
-        "damageType": "cold",
-        "rating": 120
-      },
-      {
-        "damageType": "earth",
-        "rating": 120
-      },
-      {
-        "damageType": "fire",
-        "rating": 120
-      },
-      {
-        "damageType": "lightning",
-        "rating": 120
-      }
-    ],
-    "skills": [
-      "Bull's Charge"
-    ],
-    "isBoss": false,
-    "locations": [
-      "Lakeside County",
-      "Lakeside County: 1070 AE"
-    ],
-    "profession": "Warrior"
   },
   {
     "name": "Root Behemoth",
@@ -17542,30 +16443,6 @@
       "Kessex Peak"
     ],
     "profession": "Mesmer"
-  },
-  {
-    "name": "Saidra",
-    "wikiPage": "Saidra",
-    "species": "Human",
-    "level": 20,
-    "levelRaw": "10, 15, 20",
-    "armor": null,
-    "armorTable": [],
-    "skills": [
-      "Heal Area",
-      "Troll Unguent"
-    ],
-    "isBoss": false,
-    "locations": [
-      "Sage Lands",
-      "Divinity Coast",
-      "Riverside Province",
-      "Aurora Glade",
-      "Bloodstone Fen",
-      "The Wilds",
-      "Ice Caves of Sorrow"
-    ],
-    "profession": "Ranger"
   },
   {
     "name": "Sakalo Yawpyawl",
@@ -18722,24 +17599,6 @@
     "profession": "Ranger"
   },
   {
-    "name": "Skale Broodcaller",
-    "wikiPage": "Skale Broodcaller",
-    "species": "Skale",
-    "level": 2,
-    "levelRaw": "2",
-    "armor": null,
-    "armorTable": [],
-    "skills": [],
-    "isBoss": false,
-    "locations": [
-      "Lakeside County: 1070 AE",
-      "Lakeside County",
-      "Regent Valley (pre-Searing)",
-      "Wizard's Folly"
-    ],
-    "profession": "Elementalist"
-  },
-  {
     "name": "Skeleton Bowmaster",
     "wikiPage": "Skeleton Bowmaster",
     "species": "Skeleton",
@@ -19104,50 +17963,6 @@
     "profession": "Elementalist"
   },
   {
-    "name": "Skullreaver",
-    "wikiPage": "Skullreaver",
-    "species": "Skeleton",
-    "level": 5,
-    "levelRaw": "5",
-    "armor": null,
-    "armorTable": [
-      {
-        "damageType": "blunt",
-        "rating": 43
-      },
-      {
-        "damageType": "piercing",
-        "rating": 43
-      },
-      {
-        "damageType": "slashing",
-        "rating": 43
-      },
-      {
-        "damageType": "cold",
-        "rating": 43
-      },
-      {
-        "damageType": "earth",
-        "rating": 43
-      },
-      {
-        "damageType": "fire",
-        "rating": 43
-      },
-      {
-        "damageType": "lightning",
-        "rating": 43
-      }
-    ],
-    "skills": [],
-    "isBoss": true,
-    "locations": [
-      "The Catacombs"
-    ],
-    "profession": "Warrior"
-  },
-  {
     "name": "Sky Quickfeather",
     "wikiPage": "Sky Quickfeather",
     "species": "Tengu",
@@ -19225,27 +18040,6 @@
       "Diessa Lowlands"
     ],
     "profession": "Necromancer"
-  },
-  {
-    "name": "Slonak Copperbark",
-    "wikiPage": "Slonak Copperbark",
-    "species": "Dwarf",
-    "level": 28,
-    "levelRaw": "28",
-    "armor": null,
-    "armorTable": [],
-    "skills": [
-      "Counter Blow",
-      "Dwarven Battle Stance",
-      "Healing Signet",
-      "Rush"
-    ],
-    "isBoss": true,
-    "bossElite": "Dwarven Battle Stance",
-    "locations": [
-      "Iron Mines of Moladune"
-    ],
-    "profession": "Warrior"
   },
   {
     "name": "Slur Scarchest",
@@ -19434,50 +18228,6 @@
       "Tangle Root"
     ],
     "profession": "Mesmer"
-  },
-  {
-    "name": "Snapping Devourer",
-    "wikiPage": "Snapping Devourer",
-    "species": "Devourer",
-    "level": 2,
-    "levelRaw": "2",
-    "armor": null,
-    "armorTable": [
-      {
-        "damageType": "blunt",
-        "rating": 10
-      },
-      {
-        "damageType": "piercing",
-        "rating": 10
-      },
-      {
-        "damageType": "slashing",
-        "rating": 10
-      },
-      {
-        "damageType": "cold",
-        "rating": -10
-      },
-      {
-        "damageType": "earth",
-        "rating": 10
-      },
-      {
-        "damageType": "fire",
-        "rating": 10
-      },
-      {
-        "damageType": "lightning",
-        "rating": 10
-      }
-    ],
-    "skills": [],
-    "isBoss": false,
-    "locations": [
-      "The Catacombs"
-    ],
-    "profession": "Warrior"
   },
   {
     "name": "Sniik Hungrymind",
@@ -21708,23 +20458,6 @@
     "profession": "Warrior"
   },
   {
-    "name": "Tomb Nightmare",
-    "wikiPage": "Tomb Nightmare",
-    "species": "Nightmare",
-    "level": 4,
-    "levelRaw": "4",
-    "armor": null,
-    "armorTable": [],
-    "skills": [
-      "Chilblains"
-    ],
-    "isBoss": false,
-    "locations": [
-      "The Catacombs"
-    ],
-    "profession": "Necromancer"
-  },
-  {
     "name": "Tonfor Copperblood",
     "wikiPage": "Tonfor Copperblood",
     "species": "Dwarf",
@@ -21825,21 +20558,6 @@
     "bossElite": "Eviscerate",
     "locations": [
       "Hell's Precipice"
-    ],
-    "profession": "Warrior"
-  },
-  {
-    "name": "Tower Golem",
-    "wikiPage": "Tower Golem",
-    "species": "Enchanted armor",
-    "level": 3,
-    "levelRaw": "3",
-    "armor": null,
-    "armorTable": [],
-    "skills": [],
-    "isBoss": false,
-    "locations": [
-      "Wizard's Folly"
     ],
     "profession": "Warrior"
   },
@@ -22330,27 +21048,6 @@
       "Elona Reach"
     ],
     "profession": "Elementalist"
-  },
-  {
-    "name": "Vatlaaw Doomtooth",
-    "wikiPage": "Vatlaaw Doomtooth",
-    "species": "Charr",
-    "level": 6,
-    "levelRaw": "6",
-    "armor": null,
-    "armorTable": [],
-    "skills": [
-      "Barrage",
-      "Favorable Winds",
-      "Ignite Arrows"
-    ],
-    "isBoss": true,
-    "bossElite": "Barrage",
-    "locations": [
-      "Lakeside County",
-      "Ascalon Academy"
-    ],
-    "profession": "Ranger"
   },
   {
     "name": "Verata the Necromancer",

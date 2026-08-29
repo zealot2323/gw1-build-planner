@@ -22,7 +22,6 @@
     "region": "Kryta",
     "neighbors": [
       "North Kryta Province",
-      "Lion's Gate",
       "Lion's Arch Keep"
     ],
     "foes": [],
@@ -76,7 +75,6 @@
     "campaign": "Prophecies",
     "region": "Ascalon (pre-Searing)",
     "neighbors": [
-      "Ascalon Academy",
       "Lakeside County"
     ],
     "foes": [
@@ -287,7 +285,8 @@
       "Stingray Strand"
     ],
     "foes": [],
-    "bosses": []
+    "bosses": [],
+    "trainer": "Mazzim"
   },
   {
     "kind": "outpost",
@@ -523,7 +522,9 @@
     "wikiPage": "Abaddon's Mouth (outpost)",
     "campaign": "Prophecies",
     "region": "Ring of Fire Islands",
-    "neighbors": [],
+    "neighbors": [
+      "Ring of Fire (outpost)"
+    ],
     "foes": [],
     "bosses": []
   },
@@ -657,7 +658,9 @@
     "wikiPage": "Hell's Precipice (outpost)",
     "campaign": "Prophecies",
     "region": "Ring of Fire Islands",
-    "neighbors": [],
+    "neighbors": [
+      "Abaddon's Mouth (outpost)"
+    ],
     "foes": [],
     "bosses": []
   },
@@ -814,23 +817,6 @@
     ],
     "foes": [],
     "bosses": []
-  },
-  {
-    "kind": "explorable",
-    "name": "Ascalon Academy",
-    "wikiPage": "Ascalon Academy",
-    "campaign": null,
-    "region": null,
-    "neighbors": [],
-    "foes": [
-      "Grawl (Ascalon)",
-      "Grawl (pre-Searing)",
-      "Grawl Longspear",
-      "Grawl Shaman"
-    ],
-    "bosses": [
-      "Vatlaaw Doomtooth"
-    ]
   },
   {
     "kind": "explorable",
@@ -1544,18 +1530,6 @@
       "Murk Darkshriek",
       "Plog Hamfist"
     ]
-  },
-  {
-    "kind": "explorable",
-    "name": "Lion's Gate",
-    "wikiPage": "Lion's Gate",
-    "campaign": "Prophecies",
-    "region": "Kryta",
-    "neighbors": [
-      "Lion's Arch"
-    ],
-    "foes": [],
-    "bosses": []
   },
   {
     "kind": "explorable",

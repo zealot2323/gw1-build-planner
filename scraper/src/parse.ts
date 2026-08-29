@@ -22,6 +22,14 @@ import {
   type ParsedTrainer,
 } from "./parsers.js";
 import { sections } from "./wikitext.js";
+import {
+  EXCLUDED_LOCATIONS,
+  EXTRA_NEIGHBORS,
+  LOCATION_ALIASES,
+  TRAINER_EXTRA_SKILLS,
+  isExcludedSkillPage,
+  isPreSearingMonster,
+} from "./overrides.js";
 
 const DATA_DIR = fileURLToPath(new URL("../../data/", import.meta.url));
 
@@ -60,6 +68,7 @@ async function cachedWikitext(parser: string, title: string): Promise<string | n
 
 const skills: ParsedSkill[] = [];
 for (const title of manifest.skills) {
+  if (isExcludedSkillPage(title)) continue;
   const wt = await cachedWikitext("skills", title);
   if (wt === null) continue;
   const { entity, issues } = parseSkill(title, wt);
@@ -91,7 +100,12 @@ for (const name of manifest.trainers) {
     addIssue("trainers", name, "no /Skills subpage and no inline list found");
     continue;
   }
-  const { entity, issues } = parseTrainer(name, source, trainerLocations.get(name) ?? null);
+  const listLocation = trainerLocations.get(name) ?? null;
+  const { entity, issues } = parseTrainer(
+    name,
+    source,
+    listLocation ? (LOCATION_ALIASES[listLocation] ?? listLocation) : null,
+  );
   for (const i of issues) addIssue("trainers", name, i);
   trainers.push(entity);
 }
@@ -122,7 +136,23 @@ for (const t of trainers) {
 for (const t of trainers) {
   delete t.offersAllPropheciesAndCore;
   delete t.inheritsFrom;
+  for (const extra of TRAINER_EXTRA_SKILLS[t.name] ?? []) {
+    if (!t.skillsOffered.includes(extra)) t.skillsOffered.push(extra);
+  }
+  t.skillsOffered.sort();
 }
+
+// Trainer lists are the SOURCE OF TRUTH for who sells a skill: rebuild each
+// skill's acquisition.trainers from the trainer lists, overriding whatever
+// the skill's own page claimed.
+const offeredBy = new Map<string, string[]>();
+for (const t of trainers) {
+  for (const s of t.skillsOffered) {
+    if (!offeredBy.has(s)) offeredBy.set(s, []);
+    offeredBy.get(s)!.push(t.name);
+  }
+}
+for (const s of skills) s.acquisition.trainers = offeredBy.get(s.wikiPage) ?? [];
 console.log(`trainers: ${trainers.length} parsed`);
 
 // ---------------------------------------------------------------------------
@@ -138,10 +168,19 @@ const locationKinds: Array<[string[], string]> = [
 const locations: ParsedLocation[] = [];
 for (const [titles, kind] of locationKinds) {
   for (const title of titles) {
+    if (EXCLUDED_LOCATIONS.has(title)) continue;
     const wt = await cachedWikitext("locations", title);
     if (wt === null) continue;
     const { entity, issues } = parseLocation(title, wt, kind);
-    for (const i of issues) addIssue("locations", title, i);
+    entity.neighbors = entity.neighbors.filter((n) => !EXCLUDED_LOCATIONS.has(n));
+    for (const extra of EXTRA_NEIGHBORS[title] ?? []) {
+      if (!entity.neighbors.includes(extra)) entity.neighbors.push(extra);
+    }
+    for (const i of issues) {
+      // manual progression edges satisfy the exits expectation
+      if (i === "no exits in infobox" && entity.neighbors.length > 0) continue;
+      addIssue("locations", title, i);
+    }
     locations.push(entity);
   }
 }
@@ -179,15 +218,35 @@ console.log(`missions: ${missions.length} parsed`);
 // Parse monsters
 // ---------------------------------------------------------------------------
 
+// Issues we deliberately do NOT report (domain decisions):
+// - no NPC infobox / no locations / no level: usually a species summary
+//   page or a page layout variant — fine, keep what parsed.
+// - boss with no elite: normal for low-level bosses; only report for
+//   high-level (>= 20) bosses where an elite is expected.
+const SUPPRESSED_MONSTER_ISSUES = /^(no NPC infobox|no locations parsed|no normal-mode level parsed)$/;
+
 const monsters: ParsedMonster[] = [];
+let preSearingSkipped = 0;
 for (const title of manifest.monsters) {
   const wt = await cachedWikitext("monsters", title);
   if (wt === null) continue;
   const { entity, issues } = parseMonster(title, wt);
-  for (const i of issues) addIssue("monsters", title, i);
+  // No hard-mode level listed => pre-Searing creature; out of scope for now.
+  if (isPreSearingMonster(entity.levelRaw)) {
+    preSearingSkipped++;
+    continue;
+  }
+  for (const i of issues) {
+    if (SUPPRESSED_MONSTER_ISSUES.test(i)) continue;
+    if (i === "boss with no elite skill marked" && (entity.level ?? 0) < 20) continue;
+    addIssue("monsters", title, i);
+  }
   monsters.push(entity);
 }
-console.log(`monsters: ${monsters.length} parsed (${monsters.filter((m) => m.isBoss).length} bosses)`);
+console.log(
+  `monsters: ${monsters.length} parsed (${monsters.filter((m) => m.isBoss).length} bosses, ` +
+    `${preSearingSkipped} pre-Searing skipped)`,
+);
 
 // ---------------------------------------------------------------------------
 // Cross-validation (report, don't fail — wiki data is inconsistent)
@@ -204,25 +263,8 @@ for (const t of trainers) {
   }
 }
 
-// skill trainer lists ↔ trainer offered lists (asymmetries only)
-for (const skill of skills) {
-  for (const trainerName of skill.acquisition.trainers) {
-    const t = trainerByName.get(trainerName);
-    if (!t) {
-      addIssue("cross-validation", skill.wikiPage, `lists non-Prophecies/unknown trainer "${trainerName}"`);
-    } else if (!t.skillsOffered.includes(skill.wikiPage)) {
-      addIssue("cross-validation", skill.wikiPage, `says ${trainerName} sells it, but ${trainerName}'s list disagrees`);
-    }
-  }
-}
-for (const t of trainers) {
-  for (const s of t.skillsOffered) {
-    const skill = skillByPage.get(s);
-    if (skill && !skill.acquisition.trainers.includes(t.name)) {
-      addIssue("cross-validation", t.name, `offers "${s}" but that skill's page doesn't list this trainer`);
-    }
-  }
-}
+// (skill↔trainer asymmetries are no longer reported: trainer lists are the
+// source of truth and skills' trainer lists are derived from them above.)
 
 // monster skills → parsed skills (hard-mode-only were dropped at parse time)
 for (const m of monsters) {

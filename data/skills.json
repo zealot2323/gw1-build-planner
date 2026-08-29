@@ -37,8 +37,7 @@
     "acquisition": {
       "trainers": [
         "Bartoch",
-        "Dakk",
-        "Imuk the Pungent"
+        "Dakk"
       ],
       "quests": [
         "Into the Unknown"
@@ -256,7 +255,6 @@
     "acquisition": {
       "trainers": [
         "Mazzim",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -544,7 +542,6 @@
     "acquisition": {
       "trainers": [
         "Avena",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -732,7 +729,10 @@
     "recharge": 45,
     "description": "Enchantment Spell. For 20...44 seconds, you gain +2 Blood Magic and +2 Curses, but whenever you sacrifice Health, you sacrifice 50% more than the normal amount.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Mazzim",
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": []
     }
@@ -1351,7 +1351,9 @@
     "recharge": 0,
     "description": "Elite Enchantment Spell. For 10 seconds, target other ally gains 3...6 Energy regeneration.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": [
         "Cry Darkday"
@@ -1399,7 +1401,6 @@
     "acquisition": {
       "trainers": [
         "Marna",
-        "Firstwatch Sergio",
         "Dakk"
       ],
       "quests": [],
@@ -1446,7 +1447,6 @@
     "acquisition": {
       "trainers": [
         "Mazzim",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -1594,7 +1594,6 @@
     "acquisition": {
       "trainers": [
         "Avena",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -1704,26 +1703,9 @@
     "recharge": 0,
     "description": "Skill. Your animal companion will travel with you whenever you have Charm Animal equipped and have at least 8 points in Beast Mastery.",
     "acquisition": {
-      "trainers": [],
-      "quests": [],
-      "captureBosses": []
-    }
-  },
-  {
-    "name": "Charm Animal",
-    "wikiPage": "Charm Animal (monster skill)",
-    "gwSkillId": 513,
-    "profession": null,
-    "attribute": "Beast Mastery",
-    "isElite": false,
-    "campaign": "Prophecies",
-    "energyCost": null,
-    "adrenalineCost": null,
-    "activation": null,
-    "recharge": 0,
-    "description": "Skill. Charm target animal. Once charmed, your animal companion will travel with you whenever you have Charm Animal equipped.",
-    "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": []
     }
@@ -2123,7 +2105,9 @@
     "recharge": 12,
     "description": "Elite Hex Spell. For 5...20 seconds, target moves and attacks 50% slower and suffers 1...8 Health degeneration.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": [
         "Erzek Runebreaker",
@@ -2224,7 +2208,11 @@
     "recharge": 20,
     "description": "Spell. If target foe is using a skill, that foe and all foes in the area are interrupted and suffer 15...75 damage and foes in the area take 75% of that damage.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Ephaz",
+        "Master Scout Kiera",
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": []
     }
@@ -2245,7 +2233,6 @@
     "acquisition": {
       "trainers": [
         "Avena",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -2320,7 +2307,10 @@
     "recharge": 20,
     "description": "Enchantment Spell. For the next 30...60 seconds, whenever you receive damage, your closest minion suffers 75% of that damage for you.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Tengsao",
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": []
     }
@@ -2387,7 +2377,6 @@
     "acquisition": {
       "trainers": [
         "Mazzim",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -2408,7 +2397,10 @@
     "recharge": 0,
     "description": "Enchantment Spell. For 30 seconds, if target ally dies, all adjacent foes take 26...100 damage and are Poisoned for 15 seconds.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Tengsao",
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": []
     }
@@ -2429,7 +2421,6 @@
     "acquisition": {
       "trainers": [
         "Avena",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -2769,7 +2760,6 @@
     "acquisition": {
       "trainers": [
         "Avena",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -2820,7 +2810,6 @@
     "acquisition": {
       "trainers": [
         "Taltosh",
-        "Captain Osric",
         "Dakk"
       ],
       "quests": [],
@@ -2902,7 +2891,6 @@
     "acquisition": {
       "trainers": [
         "Marna",
-        "Firstwatch Sergio",
         "Dakk"
       ],
       "quests": [],
@@ -3119,7 +3107,6 @@
     "acquisition": {
       "trainers": [
         "Marna",
-        "Firstwatch Sergio",
         "Dakk"
       ],
       "quests": [],
@@ -3142,7 +3129,6 @@
     "acquisition": {
       "trainers": [
         "Marna",
-        "Firstwatch Sergio",
         "Dakk"
       ],
       "quests": [],
@@ -3297,8 +3283,8 @@
     "description": "Spell. Heal target other ally for 20...65 Health and an additional 15...40 Health for each enchantment or hex on that ally.",
     "acquisition": {
       "trainers": [
-        "Master Scout Kiera",
         "Sorim",
+        "Master Scout Kiera",
         "Dakk"
       ],
       "quests": [
@@ -3414,7 +3400,9 @@
     "recharge": 10,
     "description": "Elite Enchantment Spell. For 30 seconds, Echo is replaced with the next skill you use. Echo acts as this skill for 30 seconds.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": [
         "Rwek Khawl Mawl"
@@ -3623,7 +3611,9 @@
     "recharge": 20,
     "description": "Elite Spell. Target foe loses 2...9 Energy. You gain 3 Energy for each point of Energy lost.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": [
         "Gambol Headrainer",
@@ -3646,7 +3636,9 @@
     "recharge": 15,
     "description": "Elite Spell. Target foe loses 1...10 Energy. For each point of Energy lost, that foe takes 7 damage and all nearby foes take 75% of that damage.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": [
         "The Darkness (boss)",
@@ -3702,7 +3694,6 @@
     "acquisition": {
       "trainers": [
         "Taltosh",
-        "Captain Osric",
         "Dakk"
       ],
       "quests": [],
@@ -3761,7 +3752,6 @@
     "acquisition": {
       "trainers": [
         "Taltosh",
-        "Captain Osric",
         "Dakk"
       ],
       "quests": [],
@@ -3784,7 +3774,6 @@
     "acquisition": {
       "trainers": [
         "Taltosh",
-        "Captain Osric",
         "Dakk"
       ],
       "quests": [],
@@ -3838,7 +3827,9 @@
     "recharge": 12,
     "description": "Elite Stance. For 1...8 second[s], you move 33% faster and have a 75% chance to block attacks.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": []
     }
@@ -4170,7 +4161,6 @@
     "acquisition": {
       "trainers": [
         "Mazzim",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -4673,7 +4663,10 @@
     "recharge": 10,
     "description": "Glyph. For 15 seconds, your next 1 spell cannot be interrupted and ignores the effects of being Dazed.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Steig",
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": []
     }
@@ -4874,7 +4867,9 @@
     "recharge": 10,
     "description": "Elite Spell. If target foe has more Health than you, you gain half the difference (up to your maximum Health), and that foe loses an equal amount. If this foe has less Health than you, you lose half the difference, and that foe gains an equal amount.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": [
         "Facet of Darkness",
@@ -5274,7 +5269,6 @@
     "acquisition": {
       "trainers": [
         "Avena",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -5331,7 +5325,6 @@
     "acquisition": {
       "trainers": [
         "Marna",
-        "Firstwatch Sergio",
         "Dakk"
       ],
       "quests": [],
@@ -5679,7 +5672,6 @@
     "acquisition": {
       "trainers": [
         "Taltosh",
-        "Captain Osric",
         "Dakk"
       ],
       "quests": [],
@@ -5927,7 +5919,10 @@
     "recharge": 20,
     "description": "Enchantment Spell. For 8...15 seconds, you have +15 armor. Your Air Magic spells that target a foe activate and recharge 33% faster, but you are Overcast by 2 points.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Tengsao",
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": []
     }
@@ -6042,7 +6037,6 @@
     "acquisition": {
       "trainers": [
         "Taltosh",
-        "Captain Osric",
         "Dakk"
       ],
       "quests": [],
@@ -6065,7 +6059,6 @@
     "acquisition": {
       "trainers": [
         "Mazzim",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -6088,7 +6081,10 @@
     "recharge": 4,
     "description": "Spell. For 5 seconds, foes adjacent to the location where this spell was cast are struck for 5...50 fire damage each second. If you are Overcast, this spell strikes nearby foes instead of adjacent ones.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Captain Osric",
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": []
     }
@@ -6446,7 +6442,9 @@
     "recharge": 10,
     "description": "Elite Hex Spell. For 6...30 seconds, target foe and all nearby foes suffer 1...4 Health degeneration, and gain 25% less benefit from healing.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": [
         "Grenth's Cursed"
@@ -6493,7 +6491,6 @@
     "acquisition": {
       "trainers": [
         "Avena",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -6549,7 +6546,6 @@
     "acquisition": {
       "trainers": [
         "Avena",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -6969,7 +6965,6 @@
     "acquisition": {
       "trainers": [
         "Marna",
-        "Firstwatch Sergio",
         "Dakk"
       ],
       "quests": [],
@@ -7013,7 +7008,9 @@
     "recharge": 10,
     "description": "Elite Spell. Transfer all conditions and their remaining durations from your allies to you.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": [
         "Dwayna's Cursed"
@@ -7062,7 +7059,6 @@
     "acquisition": {
       "trainers": [
         "Marna",
-        "Firstwatch Sergio",
         "Dakk"
       ],
       "quests": [],
@@ -7198,8 +7194,7 @@
     "acquisition": {
       "trainers": [
         "Tengsao",
-        "Dakk",
-        "Pikin"
+        "Dakk"
       ],
       "quests": [
         "Blood And Smoke"
@@ -7461,7 +7456,10 @@
     "recharge": 0,
     "description": "Spell. Exploit a random corpse or sacrifice 30...20 health to teleport to target foe's location. You become Diseased for 6 seconds and all nearby foes become Poisoned for 5...20 second[s].",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Firstwatch Sergio",
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": []
     }
@@ -7821,8 +7819,7 @@
     "acquisition": {
       "trainers": [
         "Captain Osric",
-        "Dakk",
-        "Fendar Stonestance"
+        "Dakk"
       ],
       "quests": [
         "Into the Breach"
@@ -7879,7 +7876,6 @@
     "acquisition": {
       "trainers": [
         "Taltosh",
-        "Captain Osric",
         "Dakk"
       ],
       "quests": [],
@@ -7905,7 +7901,6 @@
     "acquisition": {
       "trainers": [
         "Taltosh",
-        "Captain Osric",
         "Dakk"
       ],
       "quests": [],
@@ -8126,7 +8121,6 @@
     "acquisition": {
       "trainers": [
         "Avena",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -8278,7 +8272,6 @@
     "acquisition": {
       "trainers": [
         "Taltosh",
-        "Captain Osric",
         "Dakk"
       ],
       "quests": [],
@@ -8380,7 +8373,6 @@
     "acquisition": {
       "trainers": [
         "Avena",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -8535,7 +8527,6 @@
     "acquisition": {
       "trainers": [
         "Mazzim",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -8558,7 +8549,10 @@
     "recharge": 5,
     "description": "Spell. The corpse nearest your target explodes, sending out a shockwave that deals 24...120 damage to nearby foes.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Captain Osric",
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": []
     }
@@ -8775,25 +8769,6 @@
     }
   },
   {
-    "name": "Restore Life",
-    "wikiPage": "Restore Life (monster skill)",
-    "gwSkillId": 595,
-    "profession": null,
-    "attribute": "Healing Prayers",
-    "isElite": false,
-    "campaign": "Core",
-    "energyCost": 5,
-    "adrenalineCost": null,
-    "activation": 1,
-    "recharge": 0,
-    "description": "Spell. Touch a body of a fallen party member. Target party member is returned to life with % Health and % Energy.",
-    "acquisition": {
-      "trainers": [],
-      "quests": [],
-      "captureBosses": []
-    }
-  },
-  {
     "name": "Resurrect",
     "wikiPage": "Resurrect",
     "gwSkillId": 305,
@@ -8831,10 +8806,7 @@
     "recharge": 0,
     "description": "Signet. Resurrect target party member. That party member is returned to life with 100% Health and 25% Energy. This signet only recharges when you gain a morale boost.",
     "acquisition": {
-      "trainers": [
-        "Sir Bertran",
-        "Dakk"
-      ],
+      "trainers": [],
       "quests": [
         "Adventure with an Ally"
       ],
@@ -8907,7 +8879,6 @@
     "acquisition": {
       "trainers": [
         "Marna",
-        "Firstwatch Sergio",
         "Dakk"
       ],
       "quests": [],
@@ -8951,7 +8922,10 @@
     "recharge": 0,
     "description": "Skill. For 8 seconds, while you have a sword equipped, you block the next melee attack against you and your attacker is struck for 20...80 damage.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Gammel",
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": []
     }
@@ -9134,7 +9108,6 @@
     "acquisition": {
       "trainers": [
         "Avena",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -9612,7 +9585,9 @@
     "recharge": 8,
     "description": "Elite Enchantment Spell. For 5...13 seconds, target ally gains 3...10 Health regeneration and 20...45 armor.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": [
         "Facet of Light"
@@ -9668,7 +9643,6 @@
     "acquisition": {
       "trainers": [
         "Mazzim",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -9761,7 +9735,6 @@
     "acquisition": {
       "trainers": [
         "Mazzim",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -9782,7 +9755,9 @@
     "recharge": 20,
     "description": "Elite Signet. Target foe is knocked down. That foe and all adjacent foes take 15...75 holy damage.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": [
         "Fawl Driftstalker",
@@ -10084,7 +10059,9 @@
     "recharge": 45,
     "description": "Elite Enchantment Spell. For 5...17 seconds, target ally cannot be the target of enemy spells.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": [
         "Raptorhawk"
@@ -10128,7 +10105,6 @@
     "acquisition": {
       "trainers": [
         "Mazzim",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -10317,7 +10293,6 @@
     "acquisition": {
       "trainers": [
         "Marna",
-        "Firstwatch Sergio",
         "Dakk"
       ],
       "quests": [],
@@ -10416,7 +10391,6 @@
     "acquisition": {
       "trainers": [
         "Marna",
-        "Firstwatch Sergio",
         "Dakk"
       ],
       "quests": [],
@@ -10590,7 +10564,6 @@
     "acquisition": {
       "trainers": [
         "Mazzim",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -10611,7 +10584,9 @@
     "recharge": 0,
     "description": "Elite Enchantment Spell. For 20...44 seconds, allies in the area are immune to disease, and anyone striking those allies in melee becomes Diseased for 3...15 seconds.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": [
         "Dosakaru Fevertouch"
@@ -10657,7 +10632,6 @@
     "acquisition": {
       "trainers": [
         "Mazzim",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -10705,7 +10679,9 @@
     "recharge": 8,
     "description": "Elite Spell. Create a massive shockwave at target foe's location. Deals 10...50 lightning damage to target and all nearby foes. Struck foes are interrupted and suffer from Cracked Armor and Weakness for 5...20 seconds. This spell has 25% armor penetration.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": [
         "Kratos the Foul",
@@ -10832,7 +10808,6 @@
     "acquisition": {
       "trainers": [
         "Avena",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -11286,7 +11261,6 @@
     "acquisition": {
       "trainers": [
         "Taltosh",
-        "Captain Osric",
         "Dakk"
       ],
       "quests": [],
@@ -11340,7 +11314,6 @@
     "acquisition": {
       "trainers": [
         "Avena",
-        "Tengsao",
         "Dakk"
       ],
       "quests": [],
@@ -11731,7 +11704,9 @@
     "recharge": 3,
     "description": "Elite Spell. Heal target ally for 5...100 Health. Heal for an additional 30...115 Health if that ally is below 50% Health.",
     "acquisition": {
-      "trainers": [],
+      "trainers": [
+        "Dakk"
+      ],
       "quests": [],
       "captureBosses": [
         "Dassk Arossyss",

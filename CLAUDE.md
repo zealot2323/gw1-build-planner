@@ -62,6 +62,23 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
 - Be polite: **max 1 request/second**, descriptive User-Agent, **cache everything**
   (scraper caches raw wikitext on disk so re-runs don't re-fetch).
 
+## Data decisions
+
+- **Trainer lists are the source of truth** for who sells a skill. Each
+  skill's `acquisition.trainers` is derived from the trainer lists at parse
+  time; the skill page's own trainer list is ignored when they disagree.
+- **Pre-Searing is out of scope for now**: monsters whose infobox level has no
+  hard-mode value (no parentheses) are pre-Searing creatures and are skipped.
+- Bosses legitimately have no elite when they're low level — only high-level
+  (>= 20) bosses without an elite are reported as suspicious.
+- Monster pages missing an infobox, locations, or skills are usually species
+  summary pages — parse what's there, don't flag.
+- Manual corrections (wiki typos, non-locations like Lion's Gate,
+  progression-gated connections such as Ring of Fire -> Abaddon's Mouth ->
+  Hell's Precipice, trainer list omissions) live in
+  `/scraper/src/overrides.ts`, each with a WHY comment. Add new corrections
+  there, never inline in parsers.
+
 ## Conventions
 
 - **All cross-entity references are by wiki page name** (the stable key), e.g.

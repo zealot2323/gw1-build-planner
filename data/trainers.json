@@ -170,6 +170,7 @@
       "Purge Conditions",
       "Putrid Explosion",
       "Quickening Zephyr",
+      "Restore Life",
       "Resurrect",
       "Shadow Strike",
       "Shadow of Fear",
@@ -401,7 +402,7 @@
   {
     "name": "Mazzim",
     "wikiPage": "Mazzim",
-    "location": "Fisherman's Haven",
+    "location": "Fishermen's Haven",
     "skillsOffered": [
       "Aegis",
       "Awaken the Blood",
