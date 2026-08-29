@@ -172,7 +172,11 @@ for (const [titles, kind] of locationKinds) {
     const wt = await cachedWikitext("locations", title);
     if (wt === null) continue;
     const { entity, issues } = parseLocation(title, wt, kind);
-    entity.neighbors = entity.neighbors.filter((n) => !EXCLUDED_LOCATIONS.has(n));
+    // exits name locations without the "(outpost)" disambiguator, so check
+    // both forms against the exclusion list
+    entity.neighbors = entity.neighbors.filter(
+      (n) => !EXCLUDED_LOCATIONS.has(n) && !EXCLUDED_LOCATIONS.has(`${n} (outpost)`),
+    );
     for (const extra of EXTRA_NEIGHBORS[title] ?? []) {
       if (!entity.neighbors.includes(extra)) entity.neighbors.push(extra);
     }

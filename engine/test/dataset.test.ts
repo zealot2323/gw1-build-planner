@@ -220,3 +220,68 @@ describe("full dataset: build validation", () => {
     expect(validateBuild(b, index)).toEqual([]);
   });
 });
+
+describe("full dataset: zone analysis", () => {
+  it("reduces an armor table to base + deviations", async () => {
+    const { armorProfile } = await import("../src/index.js");
+    const bladeStorm = index.monsterByPage.get("Charr Blade Storm")!;
+    const p = armorProfile(bladeStorm.armorTable);
+    // 73 physical / 53 elemental -> baseline is the 4-way elemental value
+    expect(p.base).toBe(53);
+    expect(p.strongVs.sort()).toEqual(["blunt", "piercing", "slashing"]);
+    expect(p.weakVs).toEqual([]);
+  });
+
+  it("Charr Blade Storm's hard-mode elite is now parsed", async () => {
+    const { skillsForLocation } = await import("../src/index.js");
+    const m = index.monsterByPage.get("Charr Blade Storm")!;
+    const normal = skillsForLocation(m, "Nolani Academy", false).map((s) => s.ref);
+    const hard = skillsForLocation(m, "Nolani Academy", true).map((s) => s.ref);
+    expect(normal).not.toContain("Hundred Blades");
+    expect(hard).toContain("Hundred Blades");
+  });
+
+  it("tags what a zone throws at you", async () => {
+    const { zoneSummary } = await import("../src/index.js");
+    const s = zoneSummary("Nolani Academy", index);
+    expect(s.monsterCount).toBeGreaterThan(10);
+    expect(s.bossCount).toBeGreaterThan(0);
+    expect(s.levelRange!.min).toBeGreaterThan(0);
+    // Charr country: multiple species groups, and healing from the Shamans
+    expect(s.groups.length).toBeGreaterThan(1);
+    expect(s.threats.map((t) => t.tag)).toContain("Healing");
+  });
+
+  it("does not tag damage skills as Healing (the 'heal' in 'Health' trap)", async () => {
+    const { threatTagsForSkill } = await import("../src/index.js");
+    const tagsOf = (page: string) =>
+      threatTagsForSkill(index.skillByPage.get(page)!.description, page);
+    // "steal up to N Health" / "inflict a Deep Wound" must not read as healing
+    expect(tagsOf("Dismember")).not.toContain("Healing");
+    expect(tagsOf("Sever Artery")).not.toContain("Healing");
+    expect(tagsOf("Vampiric Touch")).not.toContain("Healing");
+    // ...while real healing still is
+    expect(tagsOf("Heal Other")).toContain("Healing");
+    expect(tagsOf("Healing Signet")).toContain("Healing");
+    // and a few other categories land where they should
+    expect(tagsOf("Distracting Shot")).toContain("Interrupts");
+    expect(tagsOf("Fire Storm")).toContain("Heavy AoE");
+    expect(tagsOf("Backfire")).toContain("Caster denial");
+  });
+
+  it("uses the median for the armor baseline on a 3/3 split", async () => {
+    const { armorProfile } = await import("../src/index.js");
+    // 3x63 physical, 1x64 cold, 3x43 elemental — the mode ties, median wins
+    const p = armorProfile(index.monsterByPage.get("Shiverpeak Warrior")!.armorTable);
+    expect(p.base).toBe(63);
+    expect(p.weakVs.sort()).toEqual(["earth", "fire", "lightning"]);
+    expect(p.strongVs).toEqual(["cold"]);
+  });
+
+  it("lists explorables reachable from an outpost", async () => {
+    const { explorablesFrom } = await import("../src/index.js");
+    expect(explorablesFrom("Yak's Bend", index)).toContain("Traveler's Vale");
+    // explorables themselves are not tree parents
+    expect(explorablesFrom("Traveler's Vale", index)).toEqual([]);
+  });
+});

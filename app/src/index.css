@@ -210,3 +210,41 @@ tr.open-row td { background: var(--panel2); }
   background: var(--danger);
   color: #fff;
 }
+
+/* skill cost tones: energy blue, sacrifice red, numbers bold */
+.skill-stats .stat b { font-weight: 700; }
+.skill-stats .energy { color: #6aa9e9; }
+.skill-stats .sacrifice { color: var(--danger); }
+.skill-stats .adrenalinE { color: #e2a05a; }
+.skill-stats .adrenaline { color: #e2a05a; }
+
+/* zone tree: outposts as parents, unlocked highlighted */
+.outpost { display: inline-flex; align-items: baseline; gap: 0.15rem; padding: 0.15rem 0.3rem; font-weight: 600; flex: 1; }
+.outpost.unlocked, button.linkish.unlocked { color: var(--ok); }
+.unlocked-dot { color: var(--ok); font-size: 0.7em; margin-right: 0.3rem; }
+.zone-tree .indent .indent { margin-left: 0.9rem; }
+
+/* armor call-outs */
+.weak-vs { color: #e08b7a; }
+.strong-vs { color: #7aa7c7; }
+
+/* zone briefing */
+.briefing {
+  background: var(--panel2);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+  padding: 0.5rem 0.7rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.9em;
+}
+.briefing-row { display: flex; gap: 0.6rem; padding: 0.12rem 0; align-items: baseline; }
+.briefing-label {
+  color: var(--accent); font-size: 0.8em; text-transform: uppercase;
+  letter-spacing: 0.04em; width: 5.5rem; flex-shrink: 0;
+}
+.threats { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.threat {
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: 10px; padding: 0.05rem 0.5rem; font-size: 0.9em;
+}

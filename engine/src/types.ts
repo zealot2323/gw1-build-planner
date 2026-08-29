@@ -74,6 +74,10 @@ export interface Skill {
   energyCost: number | null;
   /** Adrenaline cost in strikes; null for energy skills. */
   adrenalineCost: number | null;
+  /** Health sacrificed to cast, as a percent (Blood Magic and friends). */
+  sacrificePercent?: number | null;
+  /** Energy degeneration while maintained ("upkeep"), in pips. */
+  upkeep?: number | null;
   /** Activation time in seconds (0 = instant, null = weapon-speed attack). */
   activation: number | null;
   /** Recharge time in seconds. */
@@ -247,6 +251,8 @@ export const skillSchema = {
     campaign: { oneOf: [{ $ref: "gw1-campaign" }, { type: "null" }] },
     energyCost: { type: ["number", "null"], minimum: 0 },
     adrenalineCost: { type: ["number", "null"], minimum: 0 },
+    sacrificePercent: { type: ["number", "null"], minimum: 0 },
+    upkeep: { type: ["number", "null"] },
     activation: { type: ["number", "null"], minimum: 0 },
     recharge: { type: "number", minimum: 0 },
     description: { type: "string" },

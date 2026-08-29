@@ -6,7 +6,6 @@
     "campaign": "Prophecies",
     "region": "Ascalon",
     "neighbors": [
-      "Ascalon Arena (outpost)",
       "Old Ascalon",
       "The Great Northern Wall (outpost)"
     ],
@@ -142,18 +141,6 @@
     "region": "Ascalon (pre-Searing)",
     "neighbors": [
       "The Northlands"
-    ],
-    "foes": [],
-    "bosses": []
-  },
-  {
-    "kind": "outpost",
-    "name": "Ascalon Arena (outpost)",
-    "wikiPage": "Ascalon Arena (outpost)",
-    "campaign": "Prophecies",
-    "region": "Ascalon",
-    "neighbors": [
-      "Ascalon City"
     ],
     "foes": [],
     "bosses": []
@@ -440,18 +427,6 @@
   },
   {
     "kind": "outpost",
-    "name": "Shiverpeak Arena (outpost)",
-    "wikiPage": "Shiverpeak Arena (outpost)",
-    "campaign": "Prophecies",
-    "region": "Northern Shiverpeaks",
-    "neighbors": [
-      "Yak's Bend"
-    ],
-    "foes": [],
-    "bosses": []
-  },
-  {
-    "kind": "outpost",
     "name": "Temple of the Ages",
     "wikiPage": "Temple of the Ages",
     "campaign": "Prophecies",
@@ -509,7 +484,6 @@
     "campaign": "Prophecies",
     "region": "Northern Shiverpeaks",
     "neighbors": [
-      "Shiverpeak Arena (outpost)",
       "Traveler's Vale"
     ],
     "foes": [],

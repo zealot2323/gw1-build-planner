@@ -1,16 +1,37 @@
 import { useMemo, useState } from "react";
-import { monstersInLocation, type MonsterDisplay } from "@gw1/engine";
+import {
+  armorProfile,
+  explorablesFrom,
+  monstersInLocation,
+  zoneSummary,
+  type MonsterDisplay,
+} from "@gw1/engine";
 import { dataset, index } from "../data";
 import { SkillIcon } from "../components/SkillIcon";
 import { SkillDetails } from "../components/SkillDetails";
 import { ProfessionIcon } from "../components/ProfessionIcon";
 import { wikiHref } from "../wiki";
+import type { CharacterSave } from "../save";
 
 function WikiLink({ page }: { page: string }) {
   return (
     <a className="wiki-link" href={wikiHref(page)} target="_blank" rel="noreferrer" title="open on wiki.guildwars.com">
       ↗
     </a>
+  );
+}
+
+/** Compact armor line: baseline plus only the deviations worth knowing. */
+function ArmorLine({ table }: { table: MonsterDisplay["armor"]["table"] }) {
+  const p = armorProfile(table);
+  if (p.base === null) return null;
+  return (
+    <>
+      {" · armor "}
+      <b>{p.base}</b>
+      {p.weakVs.length > 0 && <span className="weak-vs"> weak vs {p.weakVs.join("/")}</span>}
+      {p.strongVs.length > 0 && <span className="strong-vs"> tough vs {p.strongVs.join("/")}</span>}
+    </>
   );
 }
 
@@ -42,17 +63,7 @@ function MonsterCard({
         <ProfessionIcon profession={monster.profession} />
         <span className="muted small statline">
           {monster.species ?? "?"} · lvl {level ?? "?"}
-          {armor.table.length > 0 && (
-            <>
-              {" · armor "}
-              {armor.table.map((a, i) => (
-                <span key={a.damageType} title={a.damageType}>
-                  {i > 0 && "/"}
-                  {a.rating}
-                </span>
-              ))}
-            </>
-          )}
+          <ArmorLine table={armor.table} />
         </span>
       </div>
 
@@ -106,24 +117,117 @@ function MonsterCard({
   );
 }
 
-/** Region -> locations tree; clicking an explorable/mission shows monsters. */
-export function ZonesView({ onSkillClick }: { onSkillClick: (skill: string) => void }) {
+/** "What am I walking into?" — enemy groups and the tactics they bring. */
+function ZoneBriefing({ location, hardMode }: { location: string; hardMode: boolean }) {
+  const s = useMemo(() => zoneSummary(location, index, hardMode), [location, hardMode]);
+  if (s.monsterCount === 0) return null;
+  return (
+    <div className="briefing">
+      <div className="briefing-row">
+        <span className="briefing-label">At a glance</span>
+        <span>
+          {s.monsterCount} foes{s.bossCount > 0 && `, ${s.bossCount} bosses`}
+          {s.levelRange && ` · levels ${s.levelRange.min}–${s.levelRange.max}`}
+        </span>
+      </div>
+      {s.groups.length > 0 && (
+        <div className="briefing-row">
+          <span className="briefing-label">Groups</span>
+          <span>
+            {s.groups.slice(0, 6).map((g, i) => (
+              <span key={g.species}>
+                {i > 0 && ", "}
+                {g.species} <span className="muted">×{g.count}</span>
+                {g.professions.map((p) => (
+                  <ProfessionIcon key={p} profession={p} size={13} />
+                ))}
+              </span>
+            ))}
+          </span>
+        </div>
+      )}
+      {s.threats.length > 0 && (
+        <div className="briefing-row">
+          <span className="briefing-label">Expect</span>
+          <span className="threats">
+            {s.threats.map((t) => (
+              <span key={t.tag} className="threat" title={t.examples.join(", ")}>
+                {t.tag} <span className="muted">×{t.skills}</span>
+              </span>
+            ))}
+          </span>
+        </div>
+      )}
+      {(s.exploitDamage.length > 0 || s.resistedDamage.length > 0) && (
+        <div className="briefing-row">
+          <span className="briefing-label">Damage</span>
+          <span>
+            {s.exploitDamage.length > 0 && (
+              <span className="weak-vs">exploit {s.exploitDamage.join("/")}</span>
+            )}
+            {s.exploitDamage.length > 0 && s.resistedDamage.length > 0 && " · "}
+            {s.resistedDamage.length > 0 && (
+              <span className="strong-vs">avoid {s.resistedDamage.join("/")}</span>
+            )}
+          </span>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/**
+ * Zone tree: region -> outposts/towns -> the explorables you can walk to from
+ * each. Unlocked outposts are highlighted; a zone reachable from several
+ * outposts appears under each of them, as it does in game.
+ */
+export function ZonesView({
+  onSkillClick,
+  character,
+}: {
+  onSkillClick: (skill: string) => void;
+  character: CharacterSave | null;
+}) {
   const [selected, setSelected] = useState<string | null>(null);
   const [openRegions, setOpenRegions] = useState<Set<string>>(new Set(["Ascalon"]));
   const [expandedSkill, setExpandedSkill] = useState<string | null>(null);
   const [hardMode, setHardMode] = useState(false);
 
+  const unlocked = useMemo(
+    () => new Set(character?.unlockedLocations ?? []),
+    [character],
+  );
+
+  /** region -> outposts (with their explorables) + missions + orphan zones */
   const regions = useMemo(() => {
-    const byRegion = new Map<string, { name: string; kind: string }[]>();
+    const byRegion = new Map<
+      string,
+      { outposts: Array<{ name: string; kind: string; zones: string[] }>; other: Array<{ name: string; kind: string }> }
+    >();
+    const bucket = (region: string) => {
+      const key = region || "(unknown region)";
+      if (!byRegion.has(key)) byRegion.set(key, { outposts: [], other: [] });
+      return byRegion.get(key)!;
+    };
+
+    const nested = new Set<string>();
     for (const l of dataset.locations) {
-      const region = l.region ?? "(unknown region)";
-      if (!byRegion.has(region)) byRegion.set(region, []);
-      byRegion.get(region)!.push({ name: l.wikiPage, kind: l.kind });
+      if (l.kind === "explorable") continue;
+      const zones = explorablesFrom(l.wikiPage, index).sort();
+      for (const z of zones) nested.add(z);
+      bucket(l.region ?? "").outposts.push({ name: l.wikiPage, kind: l.kind, zones });
+    }
+    // explorables that hang off no outpost still need a home
+    for (const l of dataset.locations) {
+      if (l.kind !== "explorable" || nested.has(l.wikiPage)) continue;
+      bucket(l.region ?? "").other.push({ name: l.wikiPage, kind: "explorable" });
     }
     for (const m of dataset.missions ?? []) {
-      const region = m.region ?? "(unknown region)";
-      if (!byRegion.has(region)) byRegion.set(region, []);
-      byRegion.get(region)!.push({ name: m.wikiPage, kind: "mission" });
+      bucket(m.region ?? "").other.push({ name: m.wikiPage, kind: "mission" });
+    }
+    for (const v of byRegion.values()) {
+      v.outposts.sort((a, b) => a.name.localeCompare(b.name));
+      v.other.sort((a, b) => a.name.localeCompare(b.name));
     }
     return [...byRegion.entries()].sort(([a], [b]) => a.localeCompare(b));
   }, []);
@@ -131,11 +235,36 @@ export function ZonesView({ onSkillClick }: { onSkillClick: (skill: string) => v
   const monsters = selected ? monstersInLocation(selected, index, hardMode) : [];
   const hasBestiary = (kind: string) => kind === "explorable" || kind === "mission";
 
+  const zoneButton = (name: string, kind: string) => (
+    <li key={name} className="zone-row">
+      <button
+        className={
+          (selected === name ? "linkish active" : "linkish") +
+          (hasBestiary(kind) ? "" : " dim") +
+          (unlocked.has(name) ? " unlocked" : "")
+        }
+        disabled={!hasBestiary(kind)}
+        onClick={() => {
+          setSelected(name);
+          setExpandedSkill(null);
+        }}
+        title={unlocked.has(name) ? "unlocked by this character" : undefined}
+      >
+        {unlocked.has(name) && <span className="unlocked-dot">●</span>}
+        {name} <span className="muted tag">{kind}</span>
+      </button>
+      <WikiLink page={name} />
+    </li>
+  );
+
   return (
     <div className="view row align-top">
       <div className="card zone-tree">
-        <h3>Prophecies</h3>
-        {regions.map(([region, locs]) => (
+        <h3>
+          Prophecies{" "}
+          {character && <span className="muted small">— {unlocked.size} unlocked</span>}
+        </h3>
+        {regions.map(([region, { outposts, other }]) => (
           <div key={region}>
             <button
               className="linkish region"
@@ -152,26 +281,23 @@ export function ZonesView({ onSkillClick }: { onSkillClick: (skill: string) => v
             </button>
             {openRegions.has(region) && (
               <ul className="plain-list indent">
-                {locs
-                  .sort((a, b) => a.name.localeCompare(b.name))
-                  .map((l) => (
-                    <li key={l.name} className="zone-row">
-                      <button
-                        className={
-                          (selected === l.name ? "linkish active" : "linkish") +
-                          (hasBestiary(l.kind) ? "" : " dim")
-                        }
-                        disabled={!hasBestiary(l.kind)}
-                        onClick={() => {
-                          setSelected(l.name);
-                          setExpandedSkill(null);
-                        }}
-                      >
-                        {l.name} <span className="muted tag">{l.kind}</span>
-                      </button>
-                      <WikiLink page={l.name} />
-                    </li>
-                  ))}
+                {outposts.map((o) => (
+                  <li key={o.name}>
+                    <div className="zone-row">
+                      <span className={unlocked.has(o.name) ? "outpost unlocked" : "outpost"}>
+                        {unlocked.has(o.name) && <span className="unlocked-dot">●</span>}
+                        {o.name} <span className="muted tag">{o.kind}</span>
+                      </span>
+                      <WikiLink page={o.name} />
+                    </div>
+                    {o.zones.length > 0 && (
+                      <ul className="plain-list indent">
+                        {o.zones.map((z) => zoneButton(z, "explorable"))}
+                      </ul>
+                    )}
+                  </li>
+                ))}
+                {other.map((l) => zoneButton(l.name, l.kind))}
               </ul>
             )}
           </div>
@@ -200,6 +326,7 @@ export function ZonesView({ onSkillClick }: { onSkillClick: (skill: string) => v
                 hard mode
               </label>
             </div>
+            <ZoneBriefing location={selected} hardMode={hardMode} />
             {monsters.map((entry) => (
               <MonsterCard
                 key={entry.monster.wikiPage}

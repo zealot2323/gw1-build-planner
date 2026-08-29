@@ -112,7 +112,15 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
   pages (typos like "Gren Waveslosh") are followed to the canonical page.
 - Monster pages missing an infobox, locations, or skills are usually species
   summary pages — parse what's there, don't flag.
-- Manual corrections (wiki typos, non-locations like Lion's Gate,
+- **Armor is summarized, not dumped**: `armorProfile` reduces the 7-row table
+  to a median baseline plus the damage types that deviate (weak vs / tough
+  vs). The median matters — the mode ties on the common 3-physical /
+  3-elemental split and picks an arbitrary side.
+- **Zone briefings** (`zoneSummary`) tag what a zone throws at you (Heavy AoE,
+  Interrupts, Energy denial, ...) from skill descriptions, since the wiki has
+  no structured field for it. Patterns are word-anchored: a bare "heal"
+  substring also matches "Health", which tagged every damage skill as healing.
+- Manual corrections (wiki typos, non-locations like Lion's Gate, PvP arenas,
   progression-gated connections such as Ring of Fire -> Abaddon's Mouth ->
   Hell's Precipice, trainer list omissions) live in
   `/scraper/src/overrides.ts`, each with a WHY comment. Add new corrections

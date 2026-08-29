@@ -3,22 +3,42 @@ import { SkillIcon } from "./SkillIcon";
 import { ProfessionIcon } from "./ProfessionIcon";
 import { wikiHref } from "../wiki";
 
-const num = (n: number | null | undefined) => (n === null || n === undefined ? null : n);
+const has = (n: number | null | undefined): n is number => n !== null && n !== undefined;
+
+/** One cost/timing stat; `tone` colours the value (energy blue, sac red). */
+function Stat({ label, value, unit, tone }: { label: string; value: number; unit?: string; tone?: string }) {
+  return (
+    <span className="stat">
+      <span className="muted">{label}</span>{" "}
+      <b className={tone}>
+        {value}
+        {unit}
+      </b>
+    </span>
+  );
+}
+
+/** A "Trainers: A, B" style line whose entries link to the wiki. */
+function SourceList({ label, items }: { label: string; items: string[] }) {
+  if (items.length === 0) return null;
+  return (
+    <p className="muted small no-margin">
+      {label}:{" "}
+      {items.map((item, i) => (
+        <span key={item}>
+          {i > 0 && ", "}
+          <a href={wikiHref(item)} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>
+            {item}
+          </a>
+        </span>
+      ))}
+    </p>
+  );
+}
 
 /** Inline skill card: costs, description, and where it comes from. */
 export function SkillDetails({ skill }: { skill: Skill }) {
-  const stats: Array<[string, string]> = [];
-  if (num(skill.energyCost) !== null) stats.push(["energy", String(skill.energyCost)]);
-  if (num(skill.adrenalineCost) !== null) stats.push(["adrenaline", String(skill.adrenalineCost)]);
-  if (num(skill.activation) !== null) stats.push(["activation", `${skill.activation}s`]);
-  if (skill.recharge) stats.push(["recharge", `${skill.recharge}s`]);
-
   const acq = skill.acquisition;
-  const sources: string[] = [];
-  if (acq.trainers.length > 0) sources.push(`Trainers: ${acq.trainers.join(", ")}`);
-  if (acq.quests.length > 0) sources.push(`Quests: ${acq.quests.join(", ")}`);
-  if (acq.captureBosses.length > 0) sources.push(`Capture from: ${acq.captureBosses.join(", ")}`);
-
   return (
     <div className="skill-details">
       <div className="row">
@@ -34,21 +54,25 @@ export function SkillDetails({ skill }: { skill: Skill }) {
               {skill.attribute ? ` · ${skill.attribute}` : ""}
             </span>
           </div>
-          <div className="skill-stats muted small">
-            {stats.map(([k, v]) => (
-              <span key={k}>
-                <span className="muted">{k}</span> {v}
-              </span>
-            ))}
+          <div className="skill-stats small">
+            {has(skill.energyCost) && <Stat label="energy" value={skill.energyCost} tone="energy" />}
+            {has(skill.adrenalineCost) && <Stat label="adrenaline" value={skill.adrenalineCost} tone="adrenaline" />}
+            {has(skill.sacrificePercent) && (
+              <Stat label="sacrifice" value={skill.sacrificePercent} unit="%" tone="sacrifice" />
+            )}
+            {has(skill.upkeep) && <Stat label="upkeep" value={skill.upkeep} tone="energy" />}
+            {has(skill.activation) && skill.activation > 0 && (
+              <Stat label="activation" value={skill.activation} unit="s" />
+            )}
+            {skill.recharge > 0 && <Stat label="recharge" value={skill.recharge} unit="s" />}
           </div>
         </div>
       </div>
       {skill.description && <p className="skill-desc">{skill.description}</p>}
-      {sources.map((s) => (
-        <p key={s} className="muted small no-margin">
-          {s}
-        </p>
-      ))}
+      <SourceList label="Trainers" items={acq.trainers} />
+      <SourceList label="Quests" items={acq.quests} />
+      <SourceList label="Capture from" items={acq.captureBosses} />
+      <SourceList label="Capture (quest/event only)" items={acq.conditionalCaptureBosses ?? []} />
     </div>
   );
 }

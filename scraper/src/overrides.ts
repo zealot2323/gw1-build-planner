@@ -18,6 +18,10 @@ export const LOCATION_ALIASES: Record<string, string> = {
 export const EXCLUDED_LOCATIONS = new Set<string>([
   "Lion's Gate", // not an explorable zone
   "Ascalon Academy", // pre-Searing event area, not a planner location
+  // PvP arenas: outposts you only enter to fight other players, with no
+  // explorables, trainers, or PvE content behind them.
+  "Ascalon Arena (outpost)",
+  "Shiverpeak Arena (outpost)",
 ]);
 
 /**

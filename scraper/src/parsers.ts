@@ -36,6 +36,10 @@ export interface ParsedSkill {
   campaign: string | null;
   energyCost: number | null;
   adrenalineCost: number | null;
+  /** Health sacrificed to cast, as a percent (Blood Magic and friends). */
+  sacrificePercent: number | null;
+  /** Energy degeneration while maintained ("upkeep"), in pips. */
+  upkeep: number | null;
   activation: number | null;
   recharge: number | null;
   description: string;
@@ -155,6 +159,8 @@ export function parseSkill(title: string, wikitext: string): Parsed<ParsedSkill>
       campaign,
       energyCost: parseWikiNumber(box?.["energy"]),
       adrenalineCost: parseWikiNumber(box?.["adrenaline"]),
+      sacrificePercent: parseWikiNumber(box?.["sacrifice"]),
+      upkeep: parseWikiNumber(box?.["upkeep"]),
       activation: parseWikiNumber(box?.["activation"]),
       recharge: parseWikiNumber(box?.["recharge"]) ?? 0,
       description: box?.["description"] ? stripMarkup(box["description"]) : "",
@@ -536,7 +542,12 @@ export function parseMonster(title: string, wikitext: string): Parsed<ParsedMons
       bossElite,
       locations: [...locations],
       profession: normalizeProfession(box?.["profession"]),
-      ...(withSkills.length > 1 ? { variants: withSkills } : {}),
+      // keep variants for single-block pages too when they carry hard-mode
+      // data — that is where hardModeSkills lives (e.g. Charr Blade Storm's
+      // Hundred Blades)
+      ...(withSkills.length > 1 || withSkills.some((v) => v.hardModeSkills || v.hardMode)
+        ? { variants: withSkills }
+        : {}),
       ...(Object.keys(locationLevels).length > 0 ? { locationLevels } : {}),
     },
     issues,

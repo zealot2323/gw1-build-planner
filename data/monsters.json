@@ -92,7 +92,21 @@
     "locations": [
       "Dragon's Gullet"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Animate Bone Horror",
+          "Shadow Strike",
+          "Soul Feast"
+        ],
+        "hardModeSkills": [
+          "Death Nova"
+        ]
+      }
+    ]
   },
   {
     "name": "Afrhul Deeproot",
@@ -277,7 +291,22 @@
       "Cursed Lands (War in Kryta)",
       "D'Alessio Seaboard"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Balthazar's Aura",
+          "Healing Breeze",
+          "Retribution"
+        ],
+        "hardModeSkills": [
+          "Signet of Judgment"
+        ],
+        "hardModeEliteSkill": "Signet of Judgment"
+      }
+    ]
   },
   {
     "name": "Apprentice of Verata",
@@ -297,7 +326,22 @@
     "locations": [
       "Kessex Peak"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Animate Bone Fiend",
+          "Taste of Death",
+          "Verata's Gaze"
+        ],
+        "hardModeSkills": [
+          "Grenth's Balance"
+        ],
+        "hardModeEliteSkill": "Grenth's Balance"
+      }
+    ]
   },
   {
     "name": "Argyris the Scoundrel",
@@ -531,7 +575,22 @@
       "Talus Chute",
       "Thunderhead Keep"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Dwayna's Kiss",
+          "Healing Touch",
+          "Shield of Judgment"
+        ],
+        "eliteSkill": "Shield of Judgment",
+        "hardModeSkills": [
+          "Vengeance"
+        ]
+      }
+    ]
   },
   {
     "name": "Avicara Brave",
@@ -585,7 +644,22 @@
       "Tasca's Demise",
       "Thunderhead Keep"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Flourish",
+          "Pure Strike",
+          "Savage Slash"
+        ],
+        "eliteSkill": "Flourish",
+        "hardModeSkills": [
+          "Healing Signet"
+        ]
+      }
+    ]
   },
   {
     "name": "Avicara Fierce",
@@ -640,7 +714,22 @@
       "Tasca's Demise",
       "Thunderhead Keep"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Dual Shot",
+          "Ignite Arrows",
+          "Practiced Stance"
+        ],
+        "eliteSkill": "Practiced Stance",
+        "hardModeSkills": [
+          "Troll Unguent"
+        ]
+      }
+    ]
   },
   {
     "name": "Avicara Guile",
@@ -694,7 +783,22 @@
       "Tasca's Demise",
       "Thunderhead Keep"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Deathly Swarm",
+          "Strip Enchantment",
+          "Well of Power"
+        ],
+        "hardModeSkills": [
+          "Shadow Strike"
+        ],
+        "eliteSkill": "Well of Power"
+      }
+    ]
   },
   {
     "name": "Avicara Wise",
@@ -746,7 +850,22 @@
       "Tasca's Demise",
       "Thunderhead Keep"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Fragility",
+          "Ineptitude",
+          "Phantom Pain"
+        ],
+        "eliteSkill": "Ineptitude",
+        "hardModeSkills": [
+          "Shatter Delusions"
+        ]
+      }
+    ]
   },
   {
     "name": "Ayassah Hess",
@@ -868,7 +987,23 @@
       "Witman's Folly",
       "Iron Mines of Moladune"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Holy Strike",
+          "Holy Wrath",
+          "Retribution",
+          "Signet of Judgment"
+        ],
+        "hardModeSkills": [
+          "Life Bond"
+        ],
+        "eliteSkill": "Signet of Judgment"
+      }
+    ]
   },
   {
     "name": "Bairn the Sinless",
@@ -1410,7 +1545,23 @@
       "Iron Mines of Moladune",
       "Thunderhead Keep"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Holy Strike",
+          "Smite Hex",
+          "Spell Breaker",
+          "Symbol of Wrath"
+        ],
+        "hardModeSkills": [
+          "Balthazar's Aura"
+        ],
+        "eliteSkill": "Spell Breaker"
+      }
+    ]
   },
   {
     "name": "Bog Skale",
@@ -1467,7 +1618,23 @@
       "D'Alessio Seaboard",
       "Divinity Coast"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Demonic Flesh",
+          "Life Siphon",
+          "Price of Failure",
+          "Soul Barbs"
+        ],
+        "hardModeSkills": [
+          "Spiteful Spirit"
+        ],
+        "hardModeEliteSkill": "Spiteful Spirit"
+      }
+    ]
   },
   {
     "name": "Bog Skale Blighter",
@@ -1520,7 +1687,23 @@
       "Tears of the Fallen",
       "The Black Curtain"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Chilblains",
+          "Price of Failure",
+          "Putrid Explosion",
+          "Soul Barbs"
+        ],
+        "hardModeSkills": [
+          "Spiteful Spirit"
+        ],
+        "hardModeEliteSkill": "Spiteful Spirit"
+      }
+    ]
   },
   {
     "name": "Bog Skale Icetooth",
@@ -1573,7 +1756,22 @@
       "Twin Serpent Lakes",
       "Stingray Strand"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Deathly Swarm",
+          "Demonic Flesh",
+          "Life Siphon"
+        ],
+        "hardModeSkills": [
+          "Tainted Flesh"
+        ],
+        "hardModeEliteSkill": "Tainted Flesh"
+      }
+    ]
   },
   {
     "name": "Bolis Hillshaker",
@@ -1827,6 +2025,19 @@
       "Nolani Academy"
     ],
     "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Crude Swing"
+        ],
+        "hardModeSkills": [
+          "Warrior's Endurance"
+        ],
+        "hardModeEliteSkill": "Warrior's Endurance"
+      }
+    ],
     "locationLevels": {
       "Ascalon Foothills": 7,
       "Diessa Lowlands": 7,
@@ -2468,7 +2679,21 @@
       "Stingray Strand",
       "Twin Serpent Lakes"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Point Blank Shot",
+          "Read the Wind",
+          "Tiger's Fury"
+        ],
+        "hardModeSkills": [
+          "Dual Shot"
+        ]
+      }
+    ]
   },
   {
     "name": "Caromi Tengu Scout",
@@ -2522,7 +2747,21 @@
       "Watchtower Coast",
       "Divinity Coast"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Point Blank Shot",
+          "Read the Wind",
+          "Tiger's Fury"
+        ],
+        "hardModeSkills": [
+          "Dual Shot"
+        ]
+      }
+    ]
   },
   {
     "name": "Caromi Tengu Seer",
@@ -2572,7 +2811,22 @@
       "Stingray Strand",
       "Twin Serpent Lakes"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Conjure Phantasm",
+          "Cry of Frustration",
+          "Shatter Enchantment"
+        ],
+        "hardModeSkills": [
+          "Ineptitude"
+        ],
+        "hardModeEliteSkill": "Ineptitude"
+      }
+    ]
   },
   {
     "name": "Caromi Tengu Wild",
@@ -2625,7 +2879,22 @@
       "Twin Serpent Lakes",
       "Watchtower Coast"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Conjure Phantasm",
+          "Cry of Frustration",
+          "Shatter Enchantment"
+        ],
+        "hardModeSkills": [
+          "Ineptitude"
+        ],
+        "hardModeEliteSkill": "Ineptitude"
+      }
+    ]
   },
   {
     "name": "Carrion Devourer",
@@ -2688,6 +2957,20 @@
       "The Great Northern Wall"
     ],
     "profession": "Warrior",
+    "variants": [
+      {
+        "label": "Level ?:",
+        "levels": [],
+        "skills": [
+          "Endure Pain",
+          "Flurry"
+        ],
+        "hardModeSkills": [
+          "Skull Crack"
+        ],
+        "hardModeEliteSkill": "Skull Crack"
+      }
+    ],
     "locationLevels": {
       "Lakeside County: 1070 AE": 15
     }
@@ -2929,7 +3212,22 @@
       "Ruins of Surmia",
       "The Great Northern Wall"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Faintheartedness",
+          "Life Siphon",
+          "Mark of Pain"
+        ],
+        "hardModeSkills": [
+          "Lingering Curse"
+        ],
+        "hardModeEliteSkill": "Lingering Curse"
+      }
+    ]
   },
   {
     "name": "Charr Axe Fiend",
@@ -3072,7 +3370,20 @@
       "Fort Ranik",
       "The Great Northern Wall"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Cyclone Axe"
+        ],
+        "hardModeSkills": [
+          "Eviscerate"
+        ],
+        "hardModeEliteSkill": "Eviscerate"
+      }
+    ]
   },
   {
     "name": "Charr Blade Storm",
@@ -3129,7 +3440,21 @@
       "The Great Northern Wall",
       "Nolani Academy"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Frenzy",
+          "Wild Blow"
+        ],
+        "hardModeSkills": [
+          "Hundred Blades"
+        ],
+        "hardModeEliteSkill": "Hundred Blades"
+      }
+    ]
   },
   {
     "name": "Charr Blade Warrior",
@@ -3158,6 +3483,20 @@
       "The Great Northern Wall"
     ],
     "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Frenzy",
+          "Wild Blow"
+        ],
+        "hardModeSkills": [
+          "Hundred Blades"
+        ],
+        "hardModeEliteSkill": "Hundred Blades"
+      }
+    ],
     "locationLevels": {
       "Diessa Lowlands": 6,
       "Dragon's Gullet": 6,
@@ -3306,7 +3645,21 @@
       "Fort Ranik",
       "Ruins of Surmia"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Conjure Flame",
+          "Flare",
+          "Lava Font"
+        ],
+        "hardModeSkills": [
+          "Meteor Shower"
+        ]
+      }
+    ]
   },
   {
     "name": "Charr Flame Wielder",
@@ -3625,7 +3978,21 @@
       "Fort Ranik",
       "Ruins of Surmia"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Energy Burn",
+          "Shatter Hex"
+        ],
+        "hardModeSkills": [
+          "Power Block"
+        ],
+        "hardModeEliteSkill": "Power Block"
+      }
+    ]
   },
   {
     "name": "Charr Overseer",
@@ -3677,6 +4044,21 @@
       "Fort Ranik"
     ],
     "profession": "Monk",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Bane Signet",
+          "Heal Area",
+          "Infuse Health"
+        ],
+        "hardModeSkills": [
+          "Shield of Judgment"
+        ],
+        "hardModeEliteSkill": "Shield of Judgment"
+      }
+    ],
     "locationLevels": {
       "The Breach": 6,
       "Fort Ranik": 6
@@ -3884,6 +4266,19 @@
       "Ruins of Surmia"
     ],
     "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Ignite Arrows",
+          "Penetrating Attack"
+        ],
+        "hardModeSkills": [
+          "Dual Shot"
+        ]
+      }
+    ],
     "locationLevels": {
       "Diessa Lowlands": 5,
       "Eastern Frontier": 5,
@@ -4357,7 +4752,21 @@
     "locations": [
       "Pockmark Flats"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Called Shot",
+          "Lightning Reflexes"
+        ],
+        "hardModeSkills": [
+          "Quick Shot"
+        ],
+        "hardModeEliteSkill": "Quick Shot"
+      }
+    ]
   },
   {
     "name": "Cronis Bonebreaker",
@@ -4402,7 +4811,23 @@
       "The Breach",
       "Tunnels of the Forsaken"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Heal Other",
+          "Holy Wrath",
+          "Mend Condition",
+          "Orison of Healing"
+        ],
+        "hardModeSkills": [
+          "Signet of Judgment"
+        ],
+        "hardModeEliteSkill": "Signet of Judgment"
+      }
+    ]
   },
   {
     "name": "Cruc the Reborn",
@@ -4563,7 +4988,22 @@
     "locations": [
       "The Dragon's Lair"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Hex Breaker",
+          "Illusion of Weakness",
+          "Shatter Enchantment",
+          "Shatter Hex"
+        ],
+        "hardModeSkills": [
+          "Energy Burn"
+        ]
+      }
+    ]
   },
   {
     "name": "Custodian Dellus",
@@ -5115,7 +5555,21 @@
       "The Scar",
       "Vulture Drifts"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "\"I Will Survive!\"",
+          "Berserker Stance",
+          "Final Thrust"
+        ],
+        "hardModeSkills": [
+          "Healing Signet"
+        ]
+      }
+    ]
   },
   {
     "name": "Didn Hopestealer",
@@ -5241,7 +5695,25 @@
       "Iron Mines of Moladune",
       "Thunderhead Keep"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": "Prophecies",
+        "levels": [],
+        "skills": [
+          "Heal Other",
+          "Life Attunement",
+          "Mark of Protection",
+          "Mend Ailment",
+          "Orison of Healing"
+        ],
+        "hardModeSkills": [
+          "Banish",
+          "Remove Hex"
+        ],
+        "eliteSkill": "Mark of Protection"
+      }
+    ]
   },
   {
     "name": "Dolyak Rider",
@@ -5296,7 +5768,24 @@
       "Borlis Pass",
       "The Frost Gate"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Banish",
+          "Heal Other",
+          "Remove Hex",
+          "Shielding Hands",
+          "Strength of Honor"
+        ],
+        "hardModeSkills": [
+          "Mark of Protection"
+        ],
+        "hardModeEliteSkill": "Mark of Protection"
+      }
+    ]
   },
   {
     "name": "Doppelganger",
@@ -5917,7 +6406,23 @@
       "The Arid Sea",
       "Elona Reach"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Healing Spring",
+          "Hunter's Shot",
+          "Precision Shot",
+          "Serpent's Quickness"
+        ],
+        "hardModeSkills": [
+          "Incendiary Arrows"
+        ],
+        "hardModeEliteSkill": "Incendiary Arrows"
+      }
+    ]
   },
   {
     "name": "Durnar Skullcracker",
@@ -6214,7 +6719,21 @@
     "locations": [
       "Ruins of Surmia"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Cyclone Axe",
+          "Frenzy"
+        ],
+        "hardModeSkills": [
+          "Eviscerate"
+        ],
+        "hardModeEliteSkill": "Eviscerate"
+      }
+    ]
   },
   {
     "name": "Enchanted Bow (Prophecies)",
@@ -6269,7 +6788,23 @@
       "The Dragon's Lair",
       "Thirsty River"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Concussion Shot",
+          "Marksman's Wager",
+          "Penetrating Attack",
+          "Throw Dirt"
+        ],
+        "hardModeSkills": [
+          "Debilitating Shot"
+        ],
+        "eliteSkill": "Marksman's Wager"
+      }
+    ]
   },
   {
     "name": "Enchanted Hammer (Prophecies)",
@@ -6382,7 +6917,23 @@
       "The Dragon's Lair",
       "Thirsty River"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Endure Pain",
+          "Hamstring",
+          "Thrill of Victory",
+          "Warrior's Endurance"
+        ],
+        "hardModeSkills": [
+          "Riposte"
+        ],
+        "eliteSkill": "Warrior's Endurance"
+      }
+    ]
   },
   {
     "name": "Enemy Ghostly Hero",
@@ -6478,7 +7029,22 @@
     "locations": [
       "Thirsty River"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Aegis",
+          "Vigorous Spirit",
+          "Word of Healing"
+        ],
+        "hardModeSkills": [
+          "Restore Life"
+        ],
+        "eliteSkill": "Word of Healing"
+      }
+    ]
   },
   {
     "name": "Enslaved Ettin",
@@ -6645,7 +7211,20 @@
     "locations": [
       "The Wilds"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Muddy Terrain",
+          "Penetrating Attack"
+        ],
+        "hardModeSkills": [
+          "Barbed Trap"
+        ]
+      }
+    ]
   },
   {
     "name": "Erzek Runebreaker",
@@ -6836,7 +7415,22 @@
       "Riverside Province",
       "Sanctum Cay"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Heavy Blow",
+          "Staggering Blow",
+          "Warrior's Cunning"
+        ],
+        "hardModeSkills": [
+          "Devastating Hammer"
+        ],
+        "hardModeEliteSkill": "Devastating Hammer"
+      }
+    ]
   },
   {
     "name": "Eyes of Verata",
@@ -6856,7 +7450,22 @@
     "locations": [
       "Kessex Peak"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Barbed Trap",
+          "Choking Gas",
+          "Flame Trap"
+        ],
+        "hardModeSkills": [
+          "Punishing Shot"
+        ],
+        "hardModeEliteSkill": "Punishing Shot"
+      }
+    ]
   },
   {
     "name": "Facet of Chaos",
@@ -7370,7 +7979,22 @@
       "Kessex Peak",
       "Majesty's Rest"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Endure Pain",
+          "Pure Strike",
+          "Savage Slash"
+        ],
+        "hardModeSkills": [
+          "Skull Crack"
+        ],
+        "hardModeEliteSkill": "Skull Crack"
+      }
+    ]
   },
   {
     "name": "Fendar Stonestance",
@@ -7512,7 +8136,21 @@
       "Aurora Glade",
       "Bloodstone Fen"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Deathly Chill",
+          "Enfeebling Blood"
+        ],
+        "hardModeSkills": [
+          "Virulence"
+        ],
+        "hardModeEliteSkill": "Virulence"
+      }
+    ]
   },
   {
     "name": "Fire Imp",
@@ -7560,7 +8198,20 @@
     "locations": [
       "North Kryta Province"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Immolate",
+          "Inferno"
+        ],
+        "hardModeSkills": [
+          "Rodgort's Invocation"
+        ]
+      }
+    ]
   },
   {
     "name": "Flame Keeper",
@@ -7612,6 +8263,19 @@
       "Ruins of Surmia"
     ],
     "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Fire Storm",
+          "Lava Font"
+        ],
+        "hardModeSkills": [
+          "Meteor Shower"
+        ]
+      }
+    ],
     "locationLevels": {
       "Diessa Lowlands": 7,
       "Eastern Frontier": 7,
@@ -7715,6 +8379,20 @@
       "The Great Northern Wall"
     ],
     "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Lightning Orb",
+          "Lightning Strike"
+        ],
+        "hardModeSkills": [
+          "Lightning Surge"
+        ],
+        "hardModeEliteSkill": "Lightning Surge"
+      }
+    ],
     "locationLevels": {
       "Tunnels of the Forsaken": 9
     }
@@ -7972,7 +8650,22 @@
       "The Black Curtain",
       "Riverside Province"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Dark Aura",
+          "Mark of Subversion",
+          "Touch of Agony"
+        ],
+        "hardModeSkills": [
+          "Grenth's Balance"
+        ],
+        "hardModeEliteSkill": "Grenth's Balance"
+      }
+    ]
   },
   {
     "name": "Forest Minotaur",
@@ -8023,7 +8716,21 @@
       "Kessex Peak",
       "Talmark Wilderness"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Flurry",
+          "Rush",
+          "Wary Stance"
+        ],
+        "hardModeSkills": [
+          "Bull's Strike"
+        ]
+      }
+    ]
   },
   {
     "name": "Forgotten Arcanist",
@@ -8076,7 +8783,23 @@
       "Thirsty River",
       "The Dragon's Lair"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Earthquake",
+          "Ether Renewal",
+          "Kinetic Armor",
+          "Stoning"
+        ],
+        "eliteSkill": "Ether Renewal",
+        "hardModeSkills": [
+          "Stone Daggers"
+        ]
+      }
+    ]
   },
   {
     "name": "Forgotten Avenger",
@@ -8199,7 +8922,22 @@
       "Thirsty River",
       "The Dragon's Lair"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Consume Corpse",
+          "Deathly Chill",
+          "Order of the Vampire"
+        ],
+        "eliteSkill": "Order of the Vampire",
+        "hardModeSkills": [
+          "Strip Enchantment"
+        ]
+      }
+    ]
   },
   {
     "name": "Forgotten Illusionist",
@@ -8252,7 +8990,23 @@
       "Thirsty River",
       "The Dragon's Lair"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Chaos Storm",
+          "Energy Burn",
+          "Ethereal Burden",
+          "Mantra of Recovery"
+        ],
+        "eliteSkill": "Mantra of Recovery",
+        "hardModeSkills": [
+          "Power Drain"
+        ]
+      }
+    ]
   },
   {
     "name": "Forgotten Sage",
@@ -8303,7 +9057,23 @@
       "Elona Reach",
       "The Dragon's Lair"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Aegis",
+          "Orison of Healing",
+          "Vigorous Spirit",
+          "Word of Healing"
+        ],
+        "hardModeSkills": [
+          "Restore Life"
+        ],
+        "eliteSkill": "Word of Healing"
+      }
+    ]
   },
   {
     "name": "Frak Undertow",
@@ -8476,7 +9246,23 @@
       "The Frost Gate",
       "Borlis Pass"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Defile Flesh",
+          "Faintheartedness",
+          "Shadow Strike",
+          "Suffering"
+        ],
+        "hardModeSkills": [
+          "Soul Leech"
+        ],
+        "hardModeEliteSkill": "Soul Leech"
+      }
+    ]
   },
   {
     "name": "Frostfire Dryder (elementalist boss)",
@@ -9426,7 +10212,22 @@
       "The Floodplain of Mahnkelon",
       "Divinity Coast"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Air Attunement",
+          "Armor of Mist",
+          "Lightning Orb"
+        ],
+        "hardModeSkills": [
+          "Mind Shock"
+        ],
+        "hardModeEliteSkill": "Mind Shock"
+      }
+    ]
   },
   {
     "name": "Grasping Ghoul",
@@ -9483,7 +10284,18 @@
       "Riverside Province",
       "Sanctum Cay"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [],
+        "hardModeSkills": [
+          "\"Victory Is Mine!\""
+        ],
+        "hardModeEliteSkill": "\"Victory Is Mine!\""
+      }
+    ]
   },
   {
     "name": "Grawl",
@@ -9548,7 +10360,21 @@
       "Ascalon Academy",
       "The Great Northern Wall"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Counter Blow",
+          "Mighty Blow"
+        ],
+        "hardModeSkills": [
+          "Backbreaker"
+        ],
+        "hardModeEliteSkill": "Backbreaker"
+      }
+    ]
   },
   {
     "name": "Grawl (Shiverpeaks)",
@@ -9599,7 +10425,22 @@
       "Talus Chute",
       "Witman's Folly"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "\"Victory Is Mine!\"",
+          "Belly Smash",
+          "Hammer Bash"
+        ],
+        "eliteSkill": "\"Victory Is Mine!\"",
+        "hardModeSkills": [
+          "Crushing Blow"
+        ]
+      }
+    ]
   },
   {
     "name": "Grawl Crone",
@@ -9721,7 +10562,21 @@
     "locations": [
       "Regent Valley"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Heal Area",
+          "Heal Other"
+        ],
+        "hardModeSkills": [
+          "Healing Hands"
+        ],
+        "hardModeEliteSkill": "Healing Hands"
+      }
+    ]
   },
   {
     "name": "Grawl Longspear",
@@ -9832,7 +10687,21 @@
       "Regent Valley",
       "The Great Northern Wall"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Heal Area",
+          "Heal Other"
+        ],
+        "hardModeSkills": [
+          "Healing Hands"
+        ],
+        "hardModeEliteSkill": "Healing Hands"
+      }
+    ]
   },
   {
     "name": "Grech Trundle",
@@ -10058,7 +10927,23 @@
       "D'Alessio Seaboard",
       "Divinity Coast"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Balanced Stance",
+          "Endure Pain",
+          "Healing Signet",
+          "Irresistible Blow"
+        ],
+        "hardModeSkills": [
+          "Earth Shaker"
+        ],
+        "hardModeEliteSkill": "Earth Shaker"
+      }
+    ]
   },
   {
     "name": "Gyst Hurricane",
@@ -10384,7 +11269,17 @@
       "Riverside Province",
       "Sanctum Cay"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [],
+        "hardModeSkills": [
+          "Crushing Blow"
+        ]
+      }
+    ]
   },
   {
     "name": "Holt the Iron Boot Heel",
@@ -10563,7 +11458,20 @@
       "Pockmark Flats",
       "Regent Valley"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": "Post-Searing",
+        "levels": [],
+        "skills": [
+          "Crude Swing"
+        ],
+        "hardModeSkills": [
+          "Warrior's Endurance"
+        ],
+        "hardModeEliteSkill": "Warrior's Endurance"
+      }
+    ]
   },
   {
     "name": "Huma Cleansinghoof",
@@ -10675,7 +11583,20 @@
       "Dragon's Gullet",
       "Flame Temple Corridor"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Inferno",
+          "Meteor"
+        ],
+        "hardModeSkills": [
+          "Phoenix"
+        ]
+      }
+    ]
   },
   {
     "name": "Hydra (Crystal Desert)",
@@ -10730,7 +11651,21 @@
       "The Scar",
       "Vulture Drifts"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Meteor",
+          "Fireball",
+          "Inferno"
+        ],
+        "hardModeSkills": [
+          "Phoenix"
+        ]
+      }
+    ]
   },
   {
     "name": "Hyl Thunderwing",
@@ -10852,7 +11787,22 @@
       "Borlis Pass",
       "The Frost Gate"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Frozen Burst",
+          "Ice Spikes",
+          "Water Attunement"
+        ],
+        "hardModeSkills": [
+          "Water Trident"
+        ],
+        "hardModeEliteSkill": "Water Trident"
+      }
+    ]
   },
   {
     "name": "Ice Imp",
@@ -10917,6 +11867,22 @@
       "A Gate Too Far"
     ],
     "profession": "Elementalist",
+    "variants": [
+      {
+        "label": "Prophecies",
+        "levels": [],
+        "skills": [
+          "Ice Spear",
+          "Maelstrom",
+          "Mind Freeze",
+          "Water Attunement"
+        ],
+        "hardModeSkills": [
+          "Aura of Restoration"
+        ],
+        "eliteSkill": "Mind Freeze"
+      }
+    ],
     "locationLevels": {
       "Grenth's Footprint": 24,
       "Ice Cliff Chasms": 22,
@@ -11157,7 +12123,23 @@
       "Divinity Coast",
       "Sanctum Cay"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Aura of Restoration",
+          "Immolate",
+          "Incendiary Bonds"
+        ],
+        "hardModeSkills": [
+          "Elemental Attunement",
+          "Rodgort's Invocation"
+        ],
+        "hardModeEliteSkill": "Elemental Attunement"
+      }
+    ]
   },
   {
     "name": "Inner Council Member Argyle",
@@ -11430,7 +12412,22 @@
       "Abaddon's Mouth",
       "Ring of Fire"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Determined Shot",
+          "Oath Shot",
+          "Whirling Defense"
+        ],
+        "eliteSkill": "Oath Shot",
+        "hardModeSkills": [
+          "Penetrating Attack"
+        ]
+      }
+    ]
   },
   {
     "name": "Jade Bow (boss)",
@@ -11508,7 +12505,23 @@
       "Vulture Drifts",
       "Dunes of Despair"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Chilblains",
+          "Parasitic Bond",
+          "Plague Touch",
+          "Vile Touch"
+        ],
+        "hardModeSkills": [
+          "Feast of Corruption"
+        ],
+        "hardModeEliteSkill": "Feast of Corruption"
+      }
+    ]
   },
   {
     "name": "Jaw Smokeskin",
@@ -11729,7 +12742,20 @@
     "locations": [
       "Bloodstone Fen"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Debilitating Shot",
+          "Primal Echoes"
+        ],
+        "hardModeSkills": [
+          "Barbed Trap"
+        ]
+      }
+    ]
   },
   {
     "name": "Jungle Skale",
@@ -11780,7 +12806,21 @@
       "Tangle Root",
       "The Falls"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Defile Flesh",
+          "Rotting Flesh",
+          "Strip Enchantment"
+        ],
+        "hardModeSkills": [
+          "Deathly Swarm"
+        ]
+      }
+    ]
   },
   {
     "name": "Jungle Troll",
@@ -11835,7 +12875,22 @@
       "Aurora Glade",
       "The Wilds"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Endure Pain",
+          "Power Attack",
+          "Troll Unguent"
+        ],
+        "hardModeSkills": [
+          "Backbreaker"
+        ],
+        "hardModeEliteSkill": "Backbreaker"
+      }
+    ]
   },
   {
     "name": "Juniper Bark",
@@ -11857,7 +12912,23 @@
       "Traveler's Vale",
       "Mineral Springs"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Holy Veil",
+          "Mending",
+          "Pacifism",
+          "Reversal of Fortune"
+        ],
+        "hardModeSkills": [
+          "Signet of Judgment"
+        ],
+        "hardModeEliteSkill": "Signet of Judgment"
+      }
+    ]
   },
   {
     "name": "Justiciar Hablion",
@@ -12366,7 +13437,22 @@
       "Cursed Lands (War in Kryta)",
       "Stingray Strand"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Heal Other",
+          "Holy Wrath",
+          "Orison of Healing"
+        ],
+        "hardModeSkills": [
+          "Signet of Judgment"
+        ],
+        "hardModeEliteSkill": "Signet of Judgment"
+      }
+    ]
   },
   {
     "name": "Laris the Meateater",
@@ -12647,7 +13733,23 @@
       "The Falls",
       "The Wilds"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Heal Other",
+          "Holy Wrath",
+          "Mend Condition",
+          "Orison of Healing"
+        ],
+        "hardModeSkills": [
+          "Signet of Judgment"
+        ],
+        "hardModeEliteSkill": "Signet of Judgment"
+      }
+    ]
   },
   {
     "name": "Lightning Drake",
@@ -12700,7 +13802,20 @@
       "Gates of Kryta",
       "Sanctum Cay"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Lightning Orb"
+        ],
+        "hardModeSkills": [
+          "Mind Shock"
+        ],
+        "hardModeEliteSkill": "Mind Shock"
+      }
+    ]
   },
   {
     "name": "Linka Goldensteel",
@@ -12796,7 +13911,23 @@
       "The Scar",
       "Dunes of Despair"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Riposte",
+          "Seeking Blade",
+          "Shield Stance",
+          "Sprint"
+        ],
+        "hardModeSkills": [
+          "Flourish"
+        ],
+        "hardModeEliteSkill": "Flourish"
+      }
+    ]
   },
   {
     "name": "Losaru Bowmaster",
@@ -12847,7 +13978,21 @@
       "The Scar",
       "Dunes of Despair"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Hunter's Shot",
+          "Read the Wind",
+          "Storm Chaser"
+        ],
+        "hardModeSkills": [
+          "Concussion Shot"
+        ]
+      }
+    ]
   },
   {
     "name": "Losaru Lifeband",
@@ -12898,7 +14043,22 @@
       "The Scar",
       "Dunes of Despair"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Heal Other",
+          "Protective Spirit",
+          "Reversal of Fortune"
+        ],
+        "hardModeSkills": [
+          "Shield of Deflection"
+        ],
+        "hardModeEliteSkill": "Shield of Deflection"
+      }
+    ]
   },
   {
     "name": "Losaru Windcaster",
@@ -12949,7 +14109,23 @@
       "Skyward Reach",
       "The Scar"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Backfire",
+          "Chaos Storm",
+          "Diversion",
+          "Mantra of Lightning"
+        ],
+        "hardModeSkills": [
+          "Panic"
+        ],
+        "hardModeEliteSkill": "Panic"
+      }
+    ]
   },
   {
     "name": "Lucid Jewelstone",
@@ -13085,7 +14261,22 @@
     "locations": [
       "The Wilds"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Ice Prison",
+          "Rust",
+          "Shard Storm"
+        ],
+        "hardModeSkills": [
+          "Glyph of Renewal"
+        ],
+        "hardModeEliteSkill": "Glyph of Renewal"
+      }
+    ]
   },
   {
     "name": "Maguuma Enchanter",
@@ -13188,7 +14379,22 @@
       "The Falls",
       "The Wilds"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Flame Trap",
+          "Hunter's Shot",
+          "Symbiosis"
+        ],
+        "hardModeSkills": [
+          "Melandru's Resilience"
+        ],
+        "hardModeEliteSkill": "Melandru's Resilience"
+      }
+    ]
   },
   {
     "name": "Maguuma Protector",
@@ -13298,7 +14504,23 @@
       "Aurora Glade",
       "The Wilds"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Apply Poison",
+          "Charm Animal",
+          "Pin Down",
+          "Storm Chaser"
+        ],
+        "hardModeSkills": [
+          "Punishing Shot"
+        ],
+        "hardModeEliteSkill": "Punishing Shot"
+      }
+    ]
   },
   {
     "name": "Maguuma Warlock",
@@ -13348,7 +14570,23 @@
     "locations": [
       "The Wilds"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Order of Pain",
+          "Parasitic Bond",
+          "Signet of Agony",
+          "Well of Blood"
+        ],
+        "hardModeSkills": [
+          "Wither"
+        ],
+        "hardModeEliteSkill": "Wither"
+      }
+    ]
   },
   {
     "name": "Maguuma Warrior",
@@ -14118,7 +15356,22 @@
       "Divinity Coast",
       "Gates of Kryta"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Mantra of Lightning",
+          "Mind Wrack",
+          "Spirit Shackles"
+        ],
+        "hardModeSkills": [
+          "Power Block"
+        ],
+        "hardModeEliteSkill": "Power Block"
+      }
+    ]
   },
   {
     "name": "Mergoyle Wavebreaker",
@@ -14172,7 +15425,22 @@
       "Divinity Coast",
       "Gates of Kryta"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Aura of Restoration",
+          "Deep Freeze",
+          "Glyph of Lesser Energy",
+          "Grasping Earth"
+        ],
+        "hardModeSkills": [
+          "Crystal Wave"
+        ]
+      }
+    ]
   },
   {
     "name": "Mesqul Ironhealer",
@@ -14315,7 +15583,21 @@
       "Vulture Drifts",
       "Elona Reach"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Endure Pain",
+          "Mighty Blow",
+          "Wary Stance"
+        ],
+        "hardModeSkills": [
+          "Healing Signet"
+        ]
+      }
+    ]
   },
   {
     "name": "Minotaur (Shiverpeaks)",
@@ -14366,7 +15648,21 @@
       "Iron Horse Mine",
       "The Frost Gate"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Bull's Strike",
+          "Endure Pain",
+          "Rush"
+        ],
+        "hardModeSkills": [
+          "Irresistible Blow"
+        ]
+      }
+    ]
   },
   {
     "name": "Minotaur (boss)",
@@ -14629,7 +15925,21 @@
       "Bloodstone Fen",
       "The Wilds"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": "Level 12:",
+        "levels": [
+          12
+        ],
+        "skills": [
+          "Vampiric Touch"
+        ],
+        "hardModeSkills": [
+          "Verata's Gaze"
+        ]
+      }
+    ]
   },
   {
     "name": "Mossk Rottail",
@@ -14704,7 +16014,22 @@
       "Talus Chute",
       "Iron Mines of Moladune"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Battle Rage",
+          "Disrupting Chop",
+          "Mighty Blow"
+        ],
+        "eliteSkill": "Battle Rage",
+        "hardModeSkills": [
+          "Healing Signet"
+        ]
+      }
+    ]
   },
   {
     "name": "Muga Riptide",
@@ -14803,7 +16128,23 @@
       "Abaddon's Mouth",
       "Ring of Fire"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Chain Lightning",
+          "Enervating Charge",
+          "Glyph of Concentration",
+          "Thunderclap"
+        ],
+        "hardModeSkills": [
+          "Lightning Orb"
+        ],
+        "eliteSkill": "Thunderclap"
+      }
+    ]
   },
   {
     "name": "Mursaat Elementalist (boss)",
@@ -15000,7 +16341,23 @@
       "Abaddon's Mouth",
       "Ring of Fire"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Energy Surge",
+          "Ether Feast",
+          "Physical Resistance",
+          "Power Leak"
+        ],
+        "eliteSkill": "Energy Surge",
+        "hardModeSkills": [
+          "Mantra of Flame"
+        ]
+      }
+    ]
   },
   {
     "name": "Mursaat Mesmer (boss)",
@@ -15077,7 +16434,23 @@
       "Abaddon's Mouth",
       "Ring of Fire"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Aura of Faith",
+          "Contemplation of Purity",
+          "Draw Conditions",
+          "Orison of Healing"
+        ],
+        "eliteSkill": "Aura of Faith",
+        "hardModeSkills": [
+          "Vigorous Spirit"
+        ]
+      }
+    ]
   },
   {
     "name": "Mursaat Monk (boss)",
@@ -15154,7 +16527,23 @@
       "Abaddon's Mouth",
       "Ring of Fire"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Blood Renewal",
+          "Insidious Parasite",
+          "Life Siphon",
+          "Life Transfer"
+        ],
+        "eliteSkill": "Life Transfer",
+        "hardModeSkills": [
+          "Mark of Subversion"
+        ]
+      }
+    ]
   },
   {
     "name": "Mursaat Necromancer (boss)",
@@ -15412,6 +16801,21 @@
       "Sanctum Cay"
     ],
     "profession": "Necromancer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Animate Bone Fiend",
+          "Barbs",
+          "Desecrate Enchantments"
+        ],
+        "hardModeSkills": [
+          "Tainted Flesh"
+        ],
+        "hardModeEliteSkill": "Tainted Flesh"
+      }
+    ],
     "locationLevels": {
       "Scoundrel's Rise": 18,
       "Resplendent Makuun": 20
@@ -15647,7 +17051,21 @@
       "Stingray Strand",
       "Watchtower Coast"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Barbed Trap",
+          "Energizing Wind",
+          "Power Shot"
+        ],
+        "hardModeSkills": [
+          "Dust Trap"
+        ]
+      }
+    ]
   },
   {
     "name": "Obrhit Barkwood",
@@ -16120,7 +17538,22 @@
       "Spearhead Peak",
       "Ice Caves of Sorrow"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Barbed Trap",
+          "Determined Shot",
+          "Muddy Terrain"
+        ],
+        "hardModeSkills": [
+          "Spike Trap"
+        ],
+        "hardModeEliteSkill": "Spike Trap"
+      }
+    ]
   },
   {
     "name": "Plague Devourer",
@@ -16181,6 +17614,23 @@
       "The Great Northern Wall"
     ],
     "profession": "Necromancer",
+    "variants": [
+      {
+        "label": "Level 8:",
+        "levels": [
+          8
+        ],
+        "skills": [
+          "Parasitic Bond",
+          "Putrid Explosion",
+          "Weaken Armor"
+        ],
+        "hardModeSkills": [
+          "Virulence"
+        ],
+        "hardModeEliteSkill": "Virulence"
+      }
+    ],
     "locationLevels": {
       "Tunnels of the Forsaken": 10
     }
@@ -16804,7 +18254,22 @@
     "locations": [
       "Bloodstone Fen"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Dark Aura",
+          "Mark of Subversion",
+          "Touch of Agony"
+        ],
+        "hardModeSkills": [
+          "Grenth's Balance"
+        ],
+        "hardModeEliteSkill": "Grenth's Balance"
+      }
+    ]
   },
   {
     "name": "Rawr Wildeye",
@@ -16897,7 +18362,20 @@
       "The Falls",
       "Reed Bog"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Debilitating Shot",
+          "Primal Echoes"
+        ],
+        "hardModeSkills": [
+          "Barbed Trap"
+        ]
+      }
+    ]
   },
   {
     "name": "Reed Stalker",
@@ -16951,7 +18429,21 @@
       "North Kryta Province",
       "The Black Curtain"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Clumsiness",
+          "Sympathetic Visage",
+          "Wastrel's Worry"
+        ],
+        "hardModeSkills": [
+          "Power Leak"
+        ]
+      }
+    ]
   },
   {
     "name": "Renegade",
@@ -16996,7 +18488,18 @@
     "locations": [
       "Regent Valley"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [],
+        "hardModeSkills": [
+          "Mind Burn"
+        ],
+        "hardModeEliteSkill": "Mind Burn"
+      }
+    ]
   },
   {
     "name": "Renegade Elementalist",
@@ -17045,7 +18548,22 @@
     "locations": [
       "Regent Valley"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Fire Storm",
+          "Inferno",
+          "Lightning Orb"
+        ],
+        "hardModeSkills": [
+          "Mind Burn"
+        ],
+        "hardModeEliteSkill": "Mind Burn"
+      }
+    ]
   },
   {
     "name": "Rept Parn Freg",
@@ -17187,6 +18705,17 @@
       "Tunnels of the Forsaken"
     ],
     "profession": "Monk",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [],
+        "hardModeSkills": [
+          "Shield of Deflection"
+        ],
+        "hardModeEliteSkill": "Shield of Deflection"
+      }
+    ],
     "locationLevels": {
       "Diessa Lowlands": 2,
       "The Breach": 2,
@@ -17564,7 +19093,20 @@
       "Vulture Drifts",
       "The Dragon's Lair"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Frenzy",
+          "Penetrating Blow"
+        ],
+        "hardModeSkills": [
+          "Wild Blow"
+        ]
+      }
+    ]
   },
   {
     "name": "Rockshot Devourer",
@@ -17619,7 +19161,22 @@
       "Dalada Uplands",
       "Thirsty River"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Distracting Shot",
+          "Dust Trap",
+          "Flame Trap"
+        ],
+        "hardModeSkills": [
+          "Barrage"
+        ],
+        "hardModeEliteSkill": "Barrage"
+      }
+    ]
   },
   {
     "name": "Rogue Bull",
@@ -17721,7 +19278,22 @@
       "Aurora Glade",
       "Bloodstone Fen"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "\"I Will Survive!\"",
+          "Deflect Arrows",
+          "Wild Blow"
+        ],
+        "hardModeSkills": [
+          "Earth Shaker"
+        ],
+        "hardModeEliteSkill": "Earth Shaker"
+      }
+    ]
   },
   {
     "name": "Rot Chuchau",
@@ -18081,7 +19653,23 @@
     "locations": [
       "Kessex Peak"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Distortion",
+          "Illusion of Weakness",
+          "Imagined Burden",
+          "Phantom Pain"
+        ],
+        "hardModeSkills": [
+          "Migraine"
+        ],
+        "hardModeEliteSkill": "Migraine"
+      }
+    ]
   },
   {
     "name": "Saidra",
@@ -18301,7 +19889,22 @@
       "Vulture Drifts",
       "The Floodplain of Mahnkelon"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Aftershock",
+          "Earth Attunement",
+          "Earthquake",
+          "Ward Against Melee"
+        ],
+        "hardModeSkills": [
+          "Stoning"
+        ]
+      }
+    ]
   },
   {
     "name": "Sand Elemental",
@@ -18351,7 +19954,21 @@
       "Prophet's Path",
       "Vulture Drifts"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Aftershock",
+          "Eruption",
+          "Shock"
+        ],
+        "hardModeSkills": [
+          "Ward Against Foes"
+        ]
+      }
+    ]
   },
   {
     "name": "Sand Giant",
@@ -18403,7 +20020,21 @@
       "Vulture Drifts",
       "Thirsty River"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Plague Touch",
+          "Signet of Agony",
+          "Vile Touch"
+        ],
+        "hardModeSkills": [
+          "Vampiric Touch"
+        ]
+      }
+    ]
   },
   {
     "name": "Sand Wurm",
@@ -18984,7 +20615,23 @@
     "locations": [
       "Kessex Peak"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Divine Healing",
+          "Essence Bond",
+          "Light of Dwayna",
+          "Purge Signet"
+        ],
+        "hardModeSkills": [
+          "Healing Hands"
+        ],
+        "hardModeEliteSkill": "Healing Hands"
+      }
+    ]
   },
   {
     "name": "Shining Blade Scout",
@@ -19077,7 +20724,21 @@
       "Ice Cliff Chasms",
       "Borlis Pass"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Distracting Shot",
+          "Serpent's Quickness",
+          "Winter"
+        ],
+        "hardModeSkills": [
+          "Power Shot"
+        ]
+      }
+    ]
   },
   {
     "name": "Shiverpeak Protector",
@@ -19129,7 +20790,23 @@
       "Deldrimor Bowl",
       "Borlis Pass"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Healing Breeze",
+          "Mend Ailment",
+          "Purge Conditions",
+          "Vigorous Spirit"
+        ],
+        "hardModeSkills": [
+          "Aura of Faith"
+        ],
+        "hardModeEliteSkill": "Aura of Faith"
+      }
+    ]
   },
   {
     "name": "Shiverpeak Warrior",
@@ -19182,7 +20859,21 @@
       "Ice Cliff Chasms",
       "Borlis Pass"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Dismember",
+          "Sever Artery",
+          "Shield Stance"
+        ],
+        "hardModeSkills": [
+          "Power Attack"
+        ]
+      }
+    ]
   },
   {
     "name": "Siege Ice Golem",
@@ -19363,7 +21054,22 @@
       "Diessa Lowlands",
       "Tunnels of the Forsaken"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Feral Lunge",
+          "Predator's Pounce",
+          "Quickening Zephyr"
+        ],
+        "hardModeSkills": [
+          "Spike Trap"
+        ],
+        "hardModeEliteSkill": "Spike Trap"
+      }
+    ]
   },
   {
     "name": "Skeleton Bowmaster",
@@ -19418,7 +21124,20 @@
       "Gates of Kryta",
       "Riverside Province"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Apply Poison",
+          "Pin Down"
+        ],
+        "hardModeSkills": [
+          "Hunter's Shot"
+        ]
+      }
+    ]
   },
   {
     "name": "Skeleton Mesmer",
@@ -19477,7 +21196,22 @@
       "Gates of Kryta",
       "Riverside Province"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Fragility",
+          "Phantom Pain",
+          "Shatter Hex"
+        ],
+        "hardModeSkills": [
+          "Ineptitude"
+        ],
+        "hardModeEliteSkill": "Ineptitude"
+      }
+    ]
   },
   {
     "name": "Skeleton Monk",
@@ -19536,7 +21270,21 @@
       "Gates of Kryta",
       "Riverside Province"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Healing Breeze",
+          "Smite Hex"
+        ],
+        "hardModeSkills": [
+          "Infuse Health",
+          "Vengeance"
+        ]
+      }
+    ]
   },
   {
     "name": "Skeleton Ranger",
@@ -19594,6 +21342,18 @@
       "Sanctum Cay"
     ],
     "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Apply Poison"
+        ],
+        "hardModeSkills": [
+          "Hunter's Shot"
+        ]
+      }
+    ],
     "locationLevels": {
       "Cursed Lands": 13,
       "Nebo Terrace": 13,
@@ -19664,7 +21424,21 @@
       "Divinity Coast",
       "Gates of Kryta"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Blinding Flash",
+          "Earthquake",
+          "Lightning Touch"
+        ],
+        "hardModeSkills": [
+          "Aftershock"
+        ]
+      }
+    ]
   },
   {
     "name": "Skigg the Tongue",
@@ -19964,7 +21738,22 @@
       "Sanctum Cay",
       "Thunderhead Keep"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Aura of Restoration",
+          "Chain Lightning",
+          "Conjure Lightning",
+          "Enervating Charge"
+        ],
+        "hardModeSkills": [
+          "Blinding Flash"
+        ]
+      }
+    ]
   },
   {
     "name": "Smukk Foombool",
@@ -20125,7 +21914,22 @@
       "Traveler's Vale",
       "The Frost Gate"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Balanced Stance",
+          "Power Attack",
+          "Staggering Blow"
+        ],
+        "hardModeSkills": [
+          "Devastating Hammer"
+        ],
+        "hardModeEliteSkill": "Devastating Hammer"
+      }
+    ]
   },
   {
     "name": "Snow Ettin (monk boss)",
@@ -20344,7 +22148,17 @@
     "locations": [
       "The Wilds"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [],
+        "hardModeSkills": [
+          "Apply Poison"
+        ]
+      }
+    ]
   },
   {
     "name": "Spindle Agonyvein",
@@ -20397,7 +22211,23 @@
       "Watchtower Coast",
       "Divinity Coast"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Heal Other",
+          "Holy Wrath",
+          "Mend Condition",
+          "Orison of Healing"
+        ],
+        "hardModeSkills": [
+          "Signet of Judgment"
+        ],
+        "hardModeEliteSkill": "Signet of Judgment"
+      }
+    ]
   },
   {
     "name": "Spirit of the Fallen",
@@ -20416,7 +22246,21 @@
     "locations": [
       "Nolani Academy"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Hamstring",
+          "Final Thrust"
+        ],
+        "hardModeSkills": [
+          "Skull Crack"
+        ],
+        "hardModeEliteSkill": "Skull Crack"
+      }
+    ]
   },
   {
     "name": "Splinterquake",
@@ -20592,7 +22436,20 @@
       "Pockmark Flats",
       "Tunnels of the Forsaken"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": "Post-Searing",
+        "levels": [],
+        "skills": [
+          "Eruption",
+          "Ward Against Melee"
+        ],
+        "hardModeSkills": [
+          "Earthquake"
+        ]
+      }
+    ]
   },
   {
     "name": "Stone Fury",
@@ -20643,7 +22500,22 @@
       "Tunnels of the Forsaken",
       "Dalada Uplands"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Eruption",
+          "Ward Against Melee"
+        ],
+        "hardModeSkills": [
+          "Earthquake",
+          "Glyph of Energy"
+        ],
+        "hardModeEliteSkill": "Glyph of Energy"
+      }
+    ]
   },
   {
     "name": "Stone Summit Carver",
@@ -20713,7 +22585,22 @@
       "Iron Mines of Moladune",
       "Thunderhead Keep"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": "Prophecies",
+        "levels": [],
+        "skills": [
+          "\"For Great Justice!\"",
+          "Cleave",
+          "Disrupting Chop"
+        ],
+        "hardModeSkills": [
+          "\"I Will Avenge You!\""
+        ],
+        "eliteSkill": "Cleave"
+      }
+    ]
   },
   {
     "name": "Stone Summit Crusher",
@@ -20775,6 +22662,21 @@
       "The Frost Gate"
     ],
     "profession": "Warrior",
+    "variants": [
+      {
+        "label": "Prophecies",
+        "levels": [],
+        "skills": [
+          "\"For Great Justice!\"",
+          "Griffon's Sweep",
+          "Protector's Strike"
+        ],
+        "hardModeSkills": [
+          "Dwarven Battle Stance"
+        ],
+        "hardModeEliteSkill": "Dwarven Battle Stance"
+      }
+    ],
     "locationLevels": {
       "Fronis Irontoe's Lair": 20
     }
@@ -20894,7 +22796,24 @@
       "Iron Mines of Moladune",
       "Thunderhead Keep"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": "Prophecies",
+        "levels": [],
+        "skills": [
+          "Animate Bone Fiend",
+          "Life Siphon",
+          "Offering of Blood",
+          "Plague Touch",
+          "Taste of Death"
+        ],
+        "hardModeSkills": [
+          "Deathly Swarm"
+        ],
+        "eliteSkill": "Offering of Blood"
+      }
+    ]
   },
   {
     "name": "Stone Summit Heretic",
@@ -20957,7 +22876,23 @@
       "Iron Mines of Moladune",
       "Thunderhead Keep"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Conjure Phantasm",
+          "Crippling Anguish",
+          "Illusion of Haste",
+          "Shatter Enchantment"
+        ],
+        "hardModeSkills": [
+          "Arcane Echo"
+        ],
+        "eliteSkill": "Crippling Anguish"
+      }
+    ]
   },
   {
     "name": "Stone Summit Howler",
@@ -21013,7 +22948,24 @@
       "Borlis Pass",
       "The Frost Gate"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Plague Touch",
+          "Soul Feast",
+          "Strip Enchantment",
+          "Vampiric Touch",
+          "Vile Touch"
+        ],
+        "hardModeSkills": [
+          "Offering of Blood"
+        ],
+        "hardModeEliteSkill": "Offering of Blood"
+      }
+    ]
   },
   {
     "name": "Stone Summit Ranger",
@@ -21117,7 +23069,23 @@
       "Borlis Pass",
       "The Frost Gate"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "variants": [
+      {
+        "label": "Prophecies",
+        "levels": [],
+        "skills": [
+          "Channeling",
+          "Empathy",
+          "Illusion of Haste",
+          "Shatter Enchantment"
+        ],
+        "hardModeSkills": [
+          "Crippling Anguish"
+        ],
+        "hardModeEliteSkill": "Crippling Anguish"
+      }
+    ]
   },
   {
     "name": "Stone Summit Scout",
@@ -21170,7 +23138,21 @@
       "Borlis Pass",
       "The Frost Gate"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Called Shot",
+          "Pin Down"
+        ],
+        "hardModeSkills": [
+          "Melandru's Arrows"
+        ],
+        "hardModeEliteSkill": "Melandru's Arrows"
+      }
+    ]
   },
   {
     "name": "Stoofed Chargehoof",
@@ -21243,7 +23225,22 @@
       "Skyward Reach",
       "Dunes of Despair"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Clumsiness",
+          "Conjure Phantasm",
+          "Power Drain",
+          "Soothing Images"
+        ],
+        "hardModeSkills": [
+          "Shame"
+        ]
+      }
+    ]
   },
   {
     "name": "Storm Rider",
@@ -21297,6 +23294,21 @@
       "Tunnels of the Forsaken"
     ],
     "profession": "Mesmer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Backfire",
+          "Energy Tap",
+          "Shatter Hex"
+        ],
+        "hardModeSkills": [
+          "Panic"
+        ],
+        "hardModeEliteSkill": "Panic"
+      }
+    ],
     "locationLevels": {
       "Diessa Lowlands": 7,
       "Dragon's Gullet": 7,
@@ -21379,7 +23391,22 @@
       "Borlis Pass",
       "The Frost Gate"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "\"For Great Justice!\"",
+          "Disrupting Chop",
+          "Penetrating Blow"
+        ],
+        "hardModeSkills": [
+          "Cleave"
+        ],
+        "hardModeEliteSkill": "Cleave"
+      }
+    ]
   },
   {
     "name": "Summit Beastmaster",
@@ -21429,7 +23456,20 @@
       "Borlis Pass",
       "Ice Caves of Sorrow"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Bull's Strike"
+        ],
+        "hardModeSkills": [
+          "Devastating Hammer"
+        ],
+        "hardModeEliteSkill": "Devastating Hammer"
+      }
+    ]
   },
   {
     "name": "Summit Dark Binder",
@@ -21559,7 +23599,22 @@
       "Iron Mines of Moladune",
       "Thunderhead Keep"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Counter Blow",
+          "Devastating Hammer",
+          "Rush"
+        ],
+        "eliteSkill": "Devastating Hammer",
+        "hardModeSkills": [
+          "Mighty Blow"
+        ]
+      }
+    ]
   },
   {
     "name": "Summit Surveyor",
@@ -21959,7 +24014,22 @@
       "Dragon's Gullet",
       "The Breach"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "\"I Will Survive!\"",
+          "Deflect Arrows",
+          "Wild Blow"
+        ],
+        "hardModeSkills": [
+          "Earth Shaker"
+        ],
+        "hardModeEliteSkill": "Earth Shaker"
+      }
+    ]
   },
   {
     "name": "Tarnok Forgerunner",
@@ -22109,7 +24179,21 @@
       "Aurora Glade",
       "Bloodstone Fen"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Power Shot",
+          "Storm Chaser"
+        ],
+        "hardModeSkills": [
+          "Quick Shot"
+        ],
+        "hardModeEliteSkill": "Quick Shot"
+      }
+    ]
   },
   {
     "name": "Thorn Devourer Drone",
@@ -22158,7 +24242,21 @@
       "Ettin's Back",
       "Sage Lands"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Power Shot",
+          "Storm Chaser"
+        ],
+        "hardModeSkills": [
+          "Quick Shot"
+        ],
+        "hardModeEliteSkill": "Quick Shot"
+      }
+    ]
   },
   {
     "name": "Thorn Stalker",
@@ -22184,7 +24282,23 @@
       "Bloodstone Fen",
       "Aurora Glade"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Aftershock",
+          "Earth Attunement",
+          "Stoning",
+          "Whirlwind"
+        ],
+        "hardModeSkills": [
+          "Mist Form"
+        ],
+        "hardModeEliteSkill": "Mist Form"
+      }
+    ]
   },
   {
     "name": "Thorn Stalker Sprout",
@@ -22235,7 +24349,23 @@
       "Ettin's Back",
       "Sage Lands"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Aftershock",
+          "Earth Attunement",
+          "Stoning",
+          "Whirlwind"
+        ],
+        "hardModeSkills": [
+          "Mist Form"
+        ],
+        "hardModeEliteSkill": "Mist Form"
+      }
+    ]
   },
   {
     "name": "Thornwrath",
@@ -22884,7 +25014,20 @@
       "Hell's Precipice",
       "Gate of Madness"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": "Hell's Precipice",
+        "levels": [],
+        "skills": [
+          "Strip Enchantment",
+          "Unholy Feast"
+        ],
+        "hardModeSkills": [
+          "Life Siphon"
+        ]
+      }
+    ]
   },
   {
     "name": "Undead Prince Rurik",
@@ -23336,7 +25479,21 @@
       "Ruins of Surmia",
       "The Great Northern Wall"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": "Level ?:",
+        "levels": [],
+        "skills": [
+          "Called Shot",
+          "Lightning Reflexes"
+        ],
+        "hardModeSkills": [
+          "Quick Shot"
+        ],
+        "hardModeEliteSkill": "Quick Shot"
+      }
+    ]
   },
   {
     "name": "Whiskar Featherstorm",
@@ -23526,7 +25683,23 @@
       "Sanctum Cay",
       "Thunderhead Keep"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "\"I Will Avenge You!\"",
+          "\"Watch Yourself!\"",
+          "Executioner's Strike",
+          "Galrath Slash"
+        ],
+        "hardModeSkills": [
+          "Bull's Charge"
+        ],
+        "hardModeEliteSkill": "Bull's Charge"
+      }
+    ]
   },
   {
     "name": "White Mantle Knight",
@@ -23601,7 +25774,22 @@
       "Ice Caves of Sorrow",
       "The Rise of the White Mantle"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": "Normal version {{W}}",
+        "levels": [],
+        "skills": [
+          "\"I Will Avenge You!\"",
+          "\"Watch Yourself!\"",
+          "Galrath Slash"
+        ],
+        "hardModeSkills": [
+          "Bull's Charge"
+        ],
+        "hardModeEliteSkill": "Bull's Charge"
+      }
+    ]
   },
   {
     "name": "White Mantle Priest",
@@ -23671,7 +25859,23 @@
       "Iron Mines of Moladune",
       "Thunderhead Keep"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": "Normal version {{Mo}}",
+        "levels": [],
+        "skills": [
+          "Convert Hexes",
+          "Divine Intervention",
+          "Judge's Insight",
+          "Shielding Hands"
+        ],
+        "hardModeSkills": [
+          "Shield of Regeneration"
+        ],
+        "hardModeEliteSkill": "Shield of Regeneration"
+      }
+    ]
   },
   {
     "name": "White Mantle Ritualist",
@@ -24210,7 +26414,24 @@
       "Iron Mines of Moladune",
       "Thunderhead Keep"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": "Normal",
+        "levels": [],
+        "skills": [
+          "Axe Rake",
+          "Dismember",
+          "Gash",
+          "Healing Signet",
+          "Sever Artery"
+        ],
+        "hardModeSkills": [
+          "Bull's Charge"
+        ],
+        "hardModeEliteSkill": "Bull's Charge"
+      }
+    ]
   },
   {
     "name": "Whuup Buumbuul",
@@ -24314,6 +26535,20 @@
       "The Wilds"
     ],
     "profession": "Mesmer",
+    "variants": [
+      {
+        "label": "Prophecies",
+        "levels": [],
+        "skills": [
+          "Conjure Phantasm",
+          "Cry of Frustration",
+          "Shatter Enchantment"
+        ],
+        "hardModeSkills": [
+          "Arcane Conundrum"
+        ]
+      }
+    ],
     "locationLevels": {
       "Arbor Bay": 20,
       "Magus Stones": 20,
@@ -24439,7 +26674,21 @@
       "Resplendent Makuun",
       "Riverside Province"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Chaos Storm",
+          "Epidemic",
+          "Signet of Weariness"
+        ],
+        "hardModeSkills": [
+          "Guilt"
+        ]
+      }
+    ]
   },
   {
     "name": "Wroth Yakslapper",

@@ -92,7 +92,7 @@ export function App() {
           goToSkills={() => setTab("skills")}
         />
       )}
-      {tab === "zones" && <ZonesView onSkillClick={goToSkill} />}
+      {tab === "zones" && <ZonesView onSkillClick={goToSkill} character={character} />}
     </>
   );
 }
