@@ -2,6 +2,7 @@ import { useState } from "react";
 import { validateBuild, type Build, type Profession } from "@gw1/engine";
 import { index } from "../data";
 import { SkillIcon } from "../components/SkillIcon";
+import { ProfessionIcon } from "../components/ProfessionIcon";
 import type { CharacterSave } from "../save";
 
 export function BuildsView({
@@ -66,7 +67,11 @@ export function BuildsView({
                   className={b.name === activeBuild ? "linkish active" : "linkish"}
                   onClick={() => setActiveBuild(b.name)}
                 >
-                  {b.name} <span className="muted">({b.primary}/{b.secondary ?? "x"})</span>
+                  {b.name}{" "}
+                  <span className="muted">
+                    (<ProfessionIcon profession={b.primary} />/
+                    {b.secondary ? <ProfessionIcon profession={b.secondary} /> : "x"})
+                  </span>
                 </button>
               </li>
             ))}
@@ -88,7 +93,11 @@ export function BuildsView({
           <div className="card grow">
             <div className="row space-between">
               <h3>
-                {build.name} <span className="muted">— {build.primary}/{build.secondary ?? "x"}</span>
+                {build.name}{" "}
+                <span className="muted">
+                  — <ProfessionIcon profession={build.primary} withLabel /> /{" "}
+                  {build.secondary ? <ProfessionIcon profession={build.secondary} withLabel /> : "none"}
+                </span>
               </h3>
               <button
                 className="danger"

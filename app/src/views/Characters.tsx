@@ -3,6 +3,7 @@ import { PROFESSIONS, Profession } from "@gw1/engine";
 import { dataset } from "../data";
 import { Checklist } from "../components/Checklist";
 import { iconForSkillPage } from "../wiki";
+import { ProfessionIcon } from "../components/ProfessionIcon";
 import type { CharacterSave, SaveFile } from "../save";
 
 const CORE_PROFESSIONS = [
@@ -85,7 +86,7 @@ export function CharactersView({
                   className={c?.name === ch.name ? "linkish active" : "linkish"}
                   onClick={() => onSelect(ch.name)}
                 >
-                  {ch.name} <span className="muted">({ch.primaryProfession})</span>
+                  <ProfessionIcon profession={ch.primaryProfession} /> {ch.name}
                 </button>
               </li>
             ))}
@@ -131,7 +132,10 @@ export function CharactersView({
           <div className="card grow">
             <div className="row space-between">
               <h3>
-                {c.name} <span className="muted">— {c.primaryProfession} (primary, fixed)</span>
+                {c.name}{" "}
+                <span className="muted">
+                  — <ProfessionIcon profession={c.primaryProfession} withLabel /> (primary, fixed)
+                </span>
               </h3>
               <button className="danger" onClick={() => { removeCharacter(c.name); onSelect(null); }}>
                 Delete
@@ -152,7 +156,7 @@ export function CharactersView({
                       })
                     }
                   />
-                  {p}
+                  <ProfessionIcon profession={p} withLabel />
                 </label>
               ))}
             </div>

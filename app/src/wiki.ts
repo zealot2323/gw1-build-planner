@@ -15,3 +15,8 @@ export function iconUrl(skill: Skill | null | undefined): string | null {
 export function iconForSkillPage(page: string): string | null {
   return iconUrl(index.skillByPage.get(page));
 }
+
+/** Attribute group heading for a skill ("Axe Mastery", "No attribute"). */
+export function attributeOf(page: string): string {
+  return index.skillByPage.get(page)?.attribute ?? "No attribute";
+}

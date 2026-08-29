@@ -151,6 +151,49 @@ describe("full dataset: bestiary", () => {
   });
 });
 
+describe("full dataset: hard mode and capture scoping", () => {
+  it("Riine Windrot's elite is NOT capturable from his low-level zones", async () => {
+    const { locationsWithSkill } = await import("../src/index.js");
+    const riine = index.monsterByPage.get("Riine Windrot")!;
+    // Offering of Blood is only on his level-28 block (Thunderhead Keep)
+    expect(locationsWithSkill(riine, "Offering of Blood")).toEqual(["Thunderhead Keep"]);
+    // ...while a skill on both blocks stays available everywhere he spawns
+    expect(locationsWithSkill(riine, "Plague Touch").sort()).toEqual(
+      ["Anvil Rock", "Borlis Pass", "Thunderhead Keep", "Traveler's Vale"],
+    );
+  });
+
+  it("a character limited to the early Shiverpeaks cannot capture Offering of Blood", () => {
+    const c: Character = {
+      ...freshWarrior,
+      primaryProfession: Profession.Necromancer,
+      unlockedLocations: ["Anvil Rock", "Traveler's Vale", "Borlis Pass (outpost)"],
+    };
+    const entry = skillAvailability(c, null, index).find(
+      (e) => e.skill.wikiPage === "Offering of Blood",
+    )!;
+    expect(entry.status).toBe("FUTURE");
+    const riineSource = entry.sources.find((s) => s.via === "Riine Windrot");
+    expect(riineSource?.availableNow).toBe(false);
+    expect(riineSource?.location).toBe("Thunderhead Keep");
+  });
+
+  it("hard mode adds the hard-mode-only bars and level", async () => {
+    const { monstersInLocation } = await import("../src/index.js");
+    const normal = monstersInLocation("Nolani Academy", index, false).find(
+      (m) => m.monster.name === "Charr Shaman",
+    )!;
+    const hard = monstersInLocation("Nolani Academy", index, true).find(
+      (m) => m.monster.name === "Charr Shaman",
+    )!;
+    // Shield of Judgment is annotated "elite, Hard mode only"
+    expect(normal.skills.map((s) => s.ref)).not.toContain("Shield of Judgment");
+    expect(hard.skills.map((s) => s.ref)).toContain("Shield of Judgment");
+    expect(hard.skills.find((s) => s.ref === "Shield of Judgment")!.hardModeOnly).toBe(true);
+    expect(hard.level).toBeGreaterThan(normal.level!);
+  });
+});
+
 describe("full dataset: build validation", () => {
   it("flags a two-elite warrior build", () => {
     const b: Build = {

@@ -321,8 +321,14 @@ export interface ParsedMonsterVariant {
   label: string | null;
   /** Levels named by the label, e.g. "Level 4, 5, 10, 12" -> [4,5,10,12]. */
   levels: number[];
+  /** Normal-mode skill bar. */
   skills: string[];
+  /** Skills this creature only has in hard mode (annotated "hard mode only"). */
+  hardModeSkills?: string[];
   eliteSkill?: string;
+  hardModeEliteSkill?: string;
+  /** The whole block is hard-mode content (e.g. "During Hard mode Titan quests"). */
+  hardMode?: boolean;
 }
 
 export interface ParsedMonster {
@@ -331,6 +337,8 @@ export interface ParsedMonster {
   species: string | null;
   level: number | null;
   levelRaw?: string;
+  /** Hard-mode level — the parenthesized value in the infobox. */
+  levelHard?: number | null;
   armor: number | null;
   armorTable: Array<{ damageType: string; rating: number }>;
   /** Union of every variant's skills (all loadouts this creature can have). */
@@ -351,8 +359,19 @@ export interface ParsedMonster {
 /** "7, 9 (23)" → highest normal-mode level (parenthesized = hard mode). */
 function parseLevel(raw: string | undefined): number | null {
   if (!raw) return null;
-  const normal = stripMarkup(raw).replace(/\([^)]*\)/g, "");
+  // "7 (23) [30]": parens are the hard-mode level, brackets a special
+  // (e.g. Titan quest) version — neither is the normal-mode level.
+  const normal = stripMarkup(raw).replace(/\([^)]*\)|\[[^\]]*\]/g, "");
   const nums = [...normal.matchAll(/\d+/g)].map((m) => Number(m[0]));
+  return nums.length > 0 ? Math.max(...nums) : null;
+}
+
+/** "7, 9 (23)" -> 23: the parenthesized value is the hard-mode level. */
+function parseHardLevel(raw: string | undefined): number | null {
+  if (!raw) return null;
+  const inParens = stripMarkup(raw).match(/\(([^)]*)\)/);
+  if (!inParens) return null;
+  const nums = [...inParens[1].matchAll(/\d+/g)].map((m) => Number(m[0]));
   return nums.length > 0 ? Math.max(...nums) : null;
 }
 
@@ -403,22 +422,25 @@ export function parseMonster(title: string, wikitext: string): Parsed<ParsedMons
   // (";Prophecies", "'''Level 12'''", or a bare "Level 12" line).
   const variants: ParsedMonsterVariant[] = [];
   let current: ParsedMonsterVariant | null = null;
-  const startBlock = (label: string | null) => {
-    current = { label, levels: labelLevels(label), skills: [] };
+  const startBlock = (label: string | null, hardMode = false) => {
+    current = { label, levels: labelLevels(label), skills: [], ...(hardMode ? { hardMode: true } : {}) };
     variants.push(current);
   };
 
   for (const s of sections(wikitext)) {
     const isSkillsHeading = /^skills/i.test(s.title);
     if (!isSkillsHeading && !s.ancestors.some((a) => /^skills/i.test(a))) continue;
-    if ([s.title, ...s.ancestors].some((t) => /hard mode/i.test(t))) continue;
     // the Skills heading itself is neutral; every other heading in the
     // chain (including ancestors of nested subsections) is context
     const contextTitles = [s.title, ...s.ancestors].filter((t) => !/^skills/i.test(t));
     if (contextTitles.some((t) => NON_PROPHECIES_CONTEXT.test(t))) continue;
+    // Hard-mode blocks are kept and flagged rather than dropped — the zone
+    // browser has a hard mode toggle and needs both bars.
+    const headingIsHardMode = contextTitles.some((t) => /hard\s*mode/i.test(t));
 
     current = null;
     let suppressed = false; // inside a marker-delimited non-Prophecies block
+    let markerIsHardMode = false;
     const headingLabel = isSkillsHeading ? null : s.title;
     for (const line of s.body.split("\n")) {
       const marker = line.match(/^;\s*(.+)$|^'''([^']+)'''|^\s*(Level\s+[\d,\s]+)\s*$/i);
@@ -426,28 +448,44 @@ export function parseMonster(title: string, wikitext: string): Parsed<ParsedMons
         const label = stripMarkup((marker[1] ?? marker[2] ?? marker[3]).trim());
         current = null;
         suppressed = NON_PROPHECIES_CONTEXT.test(label);
-        if (!suppressed) startBlock(label);
+        markerIsHardMode = /hard\s*mode/i.test(label);
+        if (!suppressed) startBlock(label, headingIsHardMode || markerIsHardMode);
         continue;
       }
       if (suppressed || !/^\*/.test(line)) continue;
       const m = line.match(/\{\{\s*skill icon\s*\|([^}|]+)/i);
       if (!m) continue;
+      if (current === null) startBlock(headingLabel, headingIsHardMode || markerIsHardMode);
+      const skill = m[1].trim();
+      const isElite = /\(\s*(\[\[)?elite/i.test(line);
       // {{verify|...}} editor notes discuss hard mode without the skill
       // being hard-mode-only — judge the annotation, not the note.
-      if (/hard mode/i.test(line.replace(/\{\{\s*verify[^}]*\}\}/gi, ""))) continue;
-      if (current === null) startBlock(headingLabel);
-      const skill = m[1].trim();
+      const hardModeOnly =
+        !current!.hardMode &&
+        /hard\s*mode/i.test(line.replace(/\{\{\s*verify[^}]*\}\}/gi, ""));
+      if (hardModeOnly) {
+        const hm = (current!.hardModeSkills ??= []);
+        if (!hm.includes(skill)) hm.push(skill);
+        if (isElite) current!.hardModeEliteSkill ??= skill;
+        continue;
+      }
       if (!current!.skills.includes(skill)) current!.skills.push(skill);
-      if (/\(\s*(\[\[)?elite/i.test(line)) current!.eliteSkill ??= skill;
+      if (isElite) current!.eliteSkill ??= skill;
     }
   }
 
-  const withSkills = variants.filter((v) => v.skills.length > 0);
+  const withSkills = variants.filter((v) => v.skills.length > 0 || (v.hardModeSkills?.length ?? 0) > 0);
+  // Page-level skills stay NORMAL MODE only (hard-mode bars live on the
+  // variants, surfaced by the zone browser's hard mode toggle).
   const skills: string[] = [];
-  for (const v of withSkills) {
+  for (const v of withSkills.filter((v) => !v.hardMode)) {
     for (const s of v.skills) if (!skills.includes(s)) skills.push(s);
   }
-  const eliteSkills = [...new Set(withSkills.map((v) => v.eliteSkill).filter((e): e is string => !!e))];
+  const eliteSkills = [
+    ...new Set(
+      withSkills.filter((v) => !v.hardMode).map((v) => v.eliteSkill).filter((e): e is string => !!e),
+    ),
+  ];
 
   const isBoss = /^y(es)?$/i.test(box?.["boss"] ?? "");
   const bossElite = isBoss ? eliteSkills[0] : undefined;
@@ -482,9 +520,15 @@ export function parseMonster(title: string, wikitext: string): Parsed<ParsedMons
     entity: {
       name: title,
       wikiPage: title,
-      species: box?.["type"] ? stripMarkup(box["type"]) : null,
+      // some pages use "affiliation" instead of "type" (e.g. Charr Shaman)
+      species: box?.["type"]
+        ? stripMarkup(box["type"])
+        : box?.["affiliation"]
+          ? stripMarkup(box["affiliation"])
+          : null,
       level,
       levelRaw: box?.["level"] ? stripMarkup(box["level"]) : undefined,
+      levelHard: parseHardLevel(box?.["level"]),
       armor,
       armorTable,
       skills,

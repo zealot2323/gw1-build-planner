@@ -16,7 +16,7 @@ export interface MonsterDisplay {
   /** Listed in this location's Bosses section (vs regular foe). */
   isBossHere: boolean;
   /** Skill bar with dataset skills resolved (null = not a player skill). */
-  skills: Array<{ ref: SkillRef; skill: Skill | null }>;
+  skills: Array<{ ref: SkillRef; skill: Skill | null; hardModeOnly: boolean }>;
   armor: { base: number | null; table: ArmorEntry[] };
   /** Encounter level here, which can differ from the page's headline level. */
   level: number | null;
@@ -38,9 +38,17 @@ export interface MonsterDisplay {
  *     Thunderhead Keep),
  *  3. no match — the blocks are alternative loadouts for the same place, so
  *     all of them apply.
+ *
+ * `hardMode` selects between normal and hard-mode-only blocks.
  */
-export function variantsForLocation(monster: Monster, location: LocationRef): MonsterVariant[] {
-  const variants = monster.variants ?? [];
+export function variantsForLocation(
+  monster: Monster,
+  location: LocationRef,
+  hardMode = false,
+): MonsterVariant[] {
+  const all = monster.variants ?? [];
+  // hard-mode-only blocks are additional loadouts, shown only in hard mode
+  const variants = hardMode ? all : all.filter((v) => !v.hardMode);
   if (variants.length <= 1) return variants;
 
   const named = variants.filter((v) => v.label !== null && v.label.includes(location));
@@ -54,12 +62,57 @@ export function variantsForLocation(monster: Monster, location: LocationRef): Mo
   return variants;
 }
 
+/** Every skill this creature can use in a given place, for a given mode. */
+export function skillsForLocation(
+  monster: Monster,
+  location: LocationRef,
+  hardMode = false,
+): Array<{ ref: SkillRef; hardModeOnly: boolean }> {
+  const applicable = variantsForLocation(monster, location, hardMode);
+  const out: Array<{ ref: SkillRef; hardModeOnly: boolean }> = [];
+  const seen = new Set<SkillRef>();
+  const add = (ref: SkillRef, hardModeOnly: boolean) => {
+    if (seen.has(ref)) return;
+    seen.add(ref);
+    out.push({ ref, hardModeOnly });
+  };
+  if (applicable.length === 0) {
+    for (const ref of monster.skills) add(ref, false);
+    return out;
+  }
+  for (const v of applicable) {
+    for (const ref of v.skills) add(ref, v.hardMode === true);
+    if (hardMode) for (const ref of v.hardModeSkills ?? []) add(ref, true);
+  }
+  return out;
+}
+
+/**
+ * Locations where this creature's stat block includes `skill` — the places
+ * you could actually capture it. A boss whose elite only appears in its
+ * high-level block can't be capped in the zones where the low-level block
+ * applies (Riine Windrot's Offering of Blood is Thunderhead Keep only).
+ */
+export function locationsWithSkill(monster: Monster, skill: SkillRef): LocationRef[] {
+  const variants = (monster.variants ?? []).filter((v) => !v.hardMode);
+  if (variants.length === 0) {
+    return monster.skills.includes(skill) ? monster.locations : [];
+  }
+  return monster.locations.filter((loc) =>
+    variantsForLocation(monster, loc).some((v) => v.skills.includes(skill)),
+  );
+}
+
 /**
  * Monsters spawning in a location (explorable) or a mission — the name is
  * looked up in both — with the skill bar and level for THIS place.
  * Unknown monster refs are skipped.
  */
-export function monstersInLocation(location: LocationRef, index: DataIndex): MonsterDisplay[] {
+export function monstersInLocation(
+  location: LocationRef,
+  index: DataIndex,
+  hardMode = false,
+): MonsterDisplay[] {
   const loc = index.locationByPage.get(location) ?? index.missionByName.get(location);
   if (!loc) return [];
   const bossSet = new Set(loc.bosses ?? []);
@@ -68,17 +121,19 @@ export function monstersInLocation(location: LocationRef, index: DataIndex): Mon
     const monster = index.monsterByPage.get(ref);
     if (!monster) continue;
 
-    const applicable = variantsForLocation(monster, location);
-    const skillRefs =
-      applicable.length > 0 ? [...new Set(applicable.flatMap((v) => v.skills))] : monster.skills;
-    const level =
-      monster.locationLevels?.[location] ??
-      (applicable.length === 1 ? (applicable[0].levels[0] ?? monster.level) : monster.level);
+    const applicable = variantsForLocation(monster, location, hardMode);
+    const level = hardMode
+      ? (monster.levelHard ?? monster.level)
+      : (monster.locationLevels?.[location] ??
+        (applicable.length === 1 ? (applicable[0].levels[0] ?? monster.level) : monster.level));
 
     out.push({
       monster,
       isBossHere: bossSet.has(ref) || monster.isBoss,
-      skills: skillRefs.map((s) => ({ ref: s, skill: index.skillByPage.get(s) ?? null })),
+      skills: skillsForLocation(monster, location, hardMode).map((s) => ({
+        ...s,
+        skill: index.skillByPage.get(s.ref) ?? null,
+      })),
       armor: { base: monster.armor, table: monster.armorTable },
       level: level ?? null,
       variants: applicable.length > 1 ? applicable : [],

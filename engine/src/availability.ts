@@ -2,6 +2,7 @@
  * Availability logic: what can this character get, right now, and from where?
  * Pure functions over the dataset — no I/O.
  */
+import { locationsWithSkill } from "./bestiary.js";
 import type { DataIndex } from "./data.js";
 import type { Character, LocationRef, Profession, Skill, SkillRef } from "./types.js";
 
@@ -113,7 +114,10 @@ export function skillAvailability(
     // as future sources.
     for (const boss of skill.acquisition.captureBosses) {
       const monster = index.monsterByPage.get(boss);
-      const spawns = monster?.locations ?? [];
+      // Only the zones where the boss's stat block actually carries this
+      // skill count — bosses with per-level blocks (Riine Windrot) don't
+      // bring their high-level elite to their low-level spawns.
+      const spawns = monster ? locationsWithSkill(monster, skill.wikiPage) : [];
       const nowIn = spawns.find((l) => reachable.has(l));
       sources.push({
         kind: "capture",

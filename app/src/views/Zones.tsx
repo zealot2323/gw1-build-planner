@@ -3,6 +3,7 @@ import { monstersInLocation, type MonsterDisplay } from "@gw1/engine";
 import { dataset, index } from "../data";
 import { SkillIcon } from "../components/SkillIcon";
 import { SkillDetails } from "../components/SkillDetails";
+import { ProfessionIcon } from "../components/ProfessionIcon";
 import { wikiHref } from "../wiki";
 
 function WikiLink({ page }: { page: string }) {
@@ -38,6 +39,7 @@ function MonsterCard({
           </a>
         </strong>
         {isBossHere && <span className="elite"> [boss]</span>}
+        <ProfessionIcon profession={monster.profession} />
         <span className="muted small statline">
           {monster.species ?? "?"} · lvl {level ?? "?"}
           {armor.table.length > 0 && (
@@ -56,23 +58,25 @@ function MonsterCard({
 
       {variants.length > 1 && (
         <div className="muted small">
-          wiki lists {variants.length} loadouts here: {variants.map((v) => v.label).join(" / ")}
+          wiki lists {variants.length} loadouts here:{" "}
+          {variants.map((v) => v.label ?? "default").join(" / ")}
         </div>
       )}
 
       <div className="skillbar">
         {skills.length === 0 && <span className="muted small">no known skills</span>}
-        {skills.map(({ ref, skill }) => (
+        {skills.map(({ ref, skill, hardModeOnly }) => (
           <button
             key={ref}
             className={key(ref) === expandedSkill ? "skill-card open" : "skill-card"}
-            title={skill === null ? "not a learnable player skill" : "show details"}
+            title={skill === null ? "not in the Prophecies skill set" : "show details"}
             onClick={() => onToggleSkill(key(ref) === expandedSkill ? null : key(ref))}
           >
             <SkillIcon page={ref} size={34} />
             <span className="skill-card-name">
               {ref}
               {skill?.isElite && <span className="elite"> ★</span>}
+              {hardModeOnly && <span className="hm-tag" title="hard mode only">HM</span>}
             </span>
           </button>
         ))}
@@ -92,7 +96,8 @@ function MonsterCard({
               <a href={wikiHref(open.ref)} target="_blank" rel="noreferrer">
                 {open.ref}
               </a>{" "}
-              — a monster-only skill, not learnable by players.
+              — not in the Prophecies skill set: a monster-only skill, or one from
+              another campaign that this creature only uses in hard mode.
             </div>
           )}
         </div>
@@ -106,6 +111,7 @@ export function ZonesView({ onSkillClick }: { onSkillClick: (skill: string) => v
   const [selected, setSelected] = useState<string | null>(null);
   const [openRegions, setOpenRegions] = useState<Set<string>>(new Set(["Ascalon"]));
   const [expandedSkill, setExpandedSkill] = useState<string | null>(null);
+  const [hardMode, setHardMode] = useState(false);
 
   const regions = useMemo(() => {
     const byRegion = new Map<string, { name: string; kind: string }[]>();
@@ -122,7 +128,7 @@ export function ZonesView({ onSkillClick }: { onSkillClick: (skill: string) => v
     return [...byRegion.entries()].sort(([a], [b]) => a.localeCompare(b));
   }, []);
 
-  const monsters = selected ? monstersInLocation(selected, index) : [];
+  const monsters = selected ? monstersInLocation(selected, index, hardMode) : [];
   const hasBestiary = (kind: string) => kind === "explorable" || kind === "mission";
 
   return (
@@ -177,10 +183,23 @@ export function ZonesView({ onSkillClick }: { onSkillClick: (skill: string) => v
           <p className="muted pad">Click an explorable area or mission to see its monsters.</p>
         ) : (
           <>
-            <h3>
-              {selected} <WikiLink page={selected} />{" "}
-              <span className="muted">({monsters.length} monsters)</span>
-            </h3>
+            <div className="row space-between">
+              <h3>
+                {selected} <WikiLink page={selected} />{" "}
+                <span className="muted">({monsters.length} monsters)</span>
+              </h3>
+              <label className="inline-check mode-toggle">
+                <input
+                  type="checkbox"
+                  checked={hardMode}
+                  onChange={(e) => {
+                    setHardMode(e.target.checked);
+                    setExpandedSkill(null);
+                  }}
+                />
+                hard mode
+              </label>
+            </div>
             {monsters.map((entry) => (
               <MonsterCard
                 key={entry.monster.wikiPage}

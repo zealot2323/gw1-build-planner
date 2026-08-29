@@ -49,7 +49,9 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
 
 ### Scope limits
 - **Prophecies campaign only.**
-- **Normal mode only** — ignore hard mode skills and stats everywhere.
+- **Normal mode is the default everywhere.** Availability logic (what a character
+  can get) is normal-mode only. The zone browser additionally offers a hard mode
+  toggle for viewing monster levels and bars — see Data decisions below.
 - **Attributes / attribute point spreads: out of scope**, EXCEPT that build template
   codes encode them — always export template codes with all attributes at 0.
 
@@ -90,6 +92,19 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
   `variantsForLocation` picks by zone name, then by level, then falls back to
   showing every loadout. Anything showing a monster must go through it —
   a creature's level and skill bar are per-zone facts, not page-level ones.
+- **Hard mode is parsed, not discarded**: hard-mode-only skills land in a
+  variant's `hardModeSkills`, whole hard-mode blocks get `hardMode: true`, and
+  the infobox's parenthesized level becomes `levelHard`. The zone browser has
+  a hard mode toggle; `monstersInLocation(loc, index, hardMode)` and
+  `variantsForLocation(..., hardMode)` select between them. Page-level
+  `skills` stays normal-mode.
+- **Capture availability is variant-scoped**: `locationsWithSkill` only counts
+  zones where the boss's applicable block actually carries the skill, so a
+  boss's high-level elite is not capturable at its low-level spawns (Riine
+  Windrot's Offering of Blood is Thunderhead Keep only).
+- Infobox levels read "7 (23) [30]": bare = normal, parens = hard mode,
+  brackets = a special (Titan quest) version — only the bare number is the
+  normal-mode level.
 - Monster Skills sections are filtered to Prophecies normal-mode blocks:
   campaign/Beyond/event/cinematic sub-blocks and headings (Eye of the North,
   War in Kryta, Halloween, The Mausoleum, ...) are excluded; encounter-level

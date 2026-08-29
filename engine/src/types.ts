@@ -131,8 +131,14 @@ export interface MonsterVariant {
   label: string | null;
   /** Levels named by the label, e.g. "Level 4, 5, 10, 12" -> [4,5,10,12]. */
   levels: number[];
+  /** Normal-mode skill bar. */
   skills: SkillRef[];
+  /** Skills this creature only has in hard mode. */
+  hardModeSkills?: SkillRef[];
   eliteSkill?: SkillRef;
+  hardModeEliteSkill?: SkillRef;
+  /** The whole block is hard-mode content (e.g. "During Hard mode Titan quests"). */
+  hardMode?: boolean;
 }
 
 export interface Monster {
@@ -143,6 +149,8 @@ export interface Monster {
   level: number | null;
   /** Raw level string from the infobox, e.g. "7, 9 (23)". */
   levelRaw?: string;
+  /** Hard-mode level — the parenthesized infobox value. */
+  levelHard?: number | null;
   /** Base armor rating (normal mode); most pages only give the per-damage-type table. */
   armor: number | null;
   /** Raw armor table from the wiki, kept structured (may break out by damage type). */
@@ -303,6 +311,7 @@ export const monsterSchema = {
     species: { type: "string" },
     level: { type: ["integer", "null"], minimum: 0 },
     levelRaw: { type: "string" },
+    levelHard: { type: ["integer", "null"], minimum: 0 },
     armor: { type: ["number", "null"], minimum: 0 },
     armorTable: {
       type: "array",
@@ -331,7 +340,10 @@ export const monsterSchema = {
           label: { type: ["string", "null"] },
           levels: { type: "array", items: { type: "integer" } },
           skills: refArray,
+          hardModeSkills: refArray,
           eliteSkill: { type: "string" },
+          hardModeEliteSkill: { type: "string" },
+          hardMode: { type: "boolean" },
         },
       },
     },

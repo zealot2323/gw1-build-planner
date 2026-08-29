@@ -1,5 +1,6 @@
 import type { Skill } from "@gw1/engine";
 import { SkillIcon } from "./SkillIcon";
+import { ProfessionIcon } from "./ProfessionIcon";
 import { wikiHref } from "../wiki";
 
 const num = (n: number | null | undefined) => (n === null || n === undefined ? null : n);
@@ -29,7 +30,7 @@ export function SkillDetails({ skill }: { skill: Skill }) {
             </a>
             {skill.isElite && <span className="elite"> ★ elite</span>}{" "}
             <span className="muted small">
-              {skill.profession ?? "Common"}
+              <ProfessionIcon profession={skill.profession} withLabel />
               {skill.attribute ? ` · ${skill.attribute}` : ""}
             </span>
           </div>
