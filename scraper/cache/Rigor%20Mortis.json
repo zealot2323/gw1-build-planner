@@ -1,0 +1,7 @@
+{
+  "title": "Rigor Mortis",
+  "pageid": 15405,
+  "revid": 2736390,
+  "timestamp": "2026-07-31T09:09:51Z",
+  "wikitext": "{{Skill infobox\n| id = 137\n| name = Rigor Mortis\n| campaign = Core\n| profession = Necromancer\n| attribute = Curses\n| type = Hex Spell\n| energy = 10\n| activation = 1\n| recharge = 20\n| causes1 = Unblockable\n| description = [[Hex Spell]]. For {{gr|8|20}} seconds, [[target]] [[foe]] cannot [[block]].\n| concise description = Hex Spell. ({{gr|8|20}} seconds.) Target foe cannot block.\n}}\n\n{{Skill progression\n|attribute = [[Curses]]\n|var1 name = [[Duration]]\n|var1 at0 = 8\n|var1 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Prophecies]]\n** [[Ephaz]] ([[Beetletun]]) \n** [[Master Scout Kiera]] ([[Henge of Denravi]])\n** [[Dakk]] ([[Ember Light Camp]])\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n* [[Nightfall]]\n** [[Dau]] ([[The Mouth of Torment]])\n'''[[Hero skill trainer]]s'''\n* Nightfall\n** [[Godaj]] ([[Lair of the Forgotten]])\n\n== Related skills ==\n*{{skill icon|Asuran Scan}}\n*{{skill icon|Expose Defenses}}\n\n== Hero Usage ==\nHeroes seem to use this skill indiscriminately (not just against foes that have recently blocked or even have the capacity to block).\n\n== Trivia ==\n{{Skill change}}\n* [[w:Rigor mortis|Rigor mortis]] is a process that stiffens the body after death due to chemical changes in muscles.\n\n[[Category:Skills offered by hero skill trainers]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Restore Life (monster skill)",
+  "pageid": 267689,
+  "revid": 2685403,
+  "timestamp": "2023-03-30T15:41:58Z",
+  "wikitext": "{{Skill infobox\n| id = 595\n| name = Restore Life\n| type = Touch spell\n| profession = Monster\n| special = Monster\n| special2 = Resurrection\n| special3 = Touch\n| activation = 1\n| energy = 5\n| attribute = Healing Prayers\n| image = [[File:Restore Life.jpg|link=]]\n| campaign = Core\n| target = dead party members\n| range = touch\n| aoe =\n| description = [[Spell]]. [[Touch skill|Touch]] a body of a fallen [[party]] member. [[Target]] party member is [[Resurrection|returned to life]] with {{gr2|26|45}}% [[Health]] and {{gr2|42|80}}% [[Energy]].\n| concise description = Touch Spell. Touch a body of a fallen party member. Target party member is returned to life with {{gr2|26|45}}% Health and {{gr2|42|80}}% Energy.\n}}\n\n==Related skills==\n*{{skill icon|Restore Life}}\n\n[[Category:Resurrection skills]]"
+}

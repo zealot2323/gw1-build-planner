@@ -1,0 +1,7 @@
+{
+  "title": "Crippling Shot",
+  "pageid": 1952,
+  "revid": 2739054,
+  "timestamp": "2026-08-28T23:05:18Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 393\n| name = Crippling Shot\n| campaign = Prophecies\n| profession = Ranger\n| attribute = Marksmanship\n| type = Bow Attack\n| elite = y\n| has-pvp = y\n| energy = 5\n| recharge = 2\n| causes1 = Unblockable\n| causes2 = Crippled\n| description = [[Elite]] [[Bow Attack]]. If Crippling Shot hits, your [[target]] becomes [[Crippled]] for {{gr|4|14}} second[s]. This [[attack]] cannot be [[block]]ed.\n| concise description = Elite Bow Attack. Unblockable. Inflicts Crippled condition ({{gr|4|14}} second[s]).\n}}\n\n{{Skill progression\n|attribute = [[Marksmanship]]\n|var1 name = [[Cripple]] [[duration]]\n|var1 at0 = 4\n|var1 at15 = 14\n}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Melandru's Cursed]] ([[Perdition Rock]])\n* [[Eye of the North]]\n** [[Chieftain Windswept]] ([[Ice Cliff Chasms]], only during [[Service: In Defense of the Eye]])\n** [[Koren Wildrunner]] ([[Drakkar Lake]])\n** [[Gallow Nooseknitter]] ([[Riven Earth]])\n** [[Brood Warden]] ([[Arachni's Haunt]])\n\n== Related skills ==\n* {{skill icon|Melandru's Shot}} ([[Elite skill|elite]])\n* {{skill icon|Pin Down}}\n\n== Notes ==\n* Using with [[Apply Poison]], [[Poison Tip Signet]] or [[Barbed Arrows]] will [[cover]] the crippled condition with the other one.\n\n== See also ==\n* [[Cripshot Ranger]]\n\n== Trivia ==\n{{Skill change}}\n\n[[de:Verkrüppelungs-Schuss]]"
+}

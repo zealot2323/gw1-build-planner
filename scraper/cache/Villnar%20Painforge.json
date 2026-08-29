@@ -1,0 +1,7 @@
+{
+  "title": "Villnar Painforge",
+  "pageid": 19147,
+  "revid": 2684433,
+  "timestamp": "2023-02-28T18:59:53Z",
+  "wikitext": "__NOTOC__\n{{NPC infobox\n| type = Dwarf\n| image = [[Image:Stone Summit caster.jpg|150px]]\n| affiliation = Stone Summit\n| profession = n\n| level = 28 (30)\n| boss = y\n| campaign = Prophecies\n| map1 = [[File:Sorrow's Furnace map.jpg|250px]]\n| map1-text = Locations in [[Sorrow's Furnace]]\n}}\n[[Villnar Painforge]] is one of many [[Stone Summit]] [[boss]]es found overseeing the mining operation in [[Sorrow's Furnace]].\n\n== Locations ==\n*[[Southern Shiverpeaks]]\n**{{NPC location|Sorrow's Furnace}}\n\n== Skills ==\n* {{skill icon|Enfeeble}}\n* {{skill icon|Strip Enchantment}}\n* {{skill icon|Vampiric Gaze}}\n* {{skill icon|Well of Suffering}}\n\n== Items dropped ==\n* [[Enslavement Stone]]\n* [[Stone Summit Badge]]\n* [[Villnar's Claw]] ([[unique]])\n* [[Villnar's Glove]] (unique)\n* [[Villnar's Staff]] (unique)\n\n== Notes ==\n* Shares 12 spawn locations with the other bosses in Sorrow's Furnace.\n* Villnar Painforge may not spawn during some [[To Sorrow's Furnace]] quests.{{verify|Which quests affect boss spawns?}}\n** He can be found during the [[Summit Slaves]] [[quest]], but cannot be attacked due to [[Chains of Enslavement]].\n\n[[Category:NPCs that drop multiple uniques]]"
+}

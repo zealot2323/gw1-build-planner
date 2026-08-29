@@ -1,0 +1,7 @@
+{
+  "title": "Executioner",
+  "pageid": 8271,
+  "revid": 2577285,
+  "timestamp": "2014-10-24T19:55:37Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Zombie warrior.jpg|150px]]\n| type = Zombie\n| affiliation = Undead\n| profession = w\n| level = 18 (25), 20 (26)\n| campaign = Prophecies\n| campaign2 = Nightfall\n}}\n[[Executioner]]s are large, [[hammer]]-wielding [[undead]] [[warrior]]s often accompanied by [[hellhound]]s.\n\n==Locations==\n*[[Prophecies]]\n**[[Kryta]]\n***{{NPC location|Cursed Lands}}\n***{{NPC location|Scoundrel's Rise}} (only during [[Reversing the Skales]])\n***{{NPC location|The Mausoleum}}\n*[[Nightfall]]\n**[[Vabbi]]\n***{{NPC location|Resplendent Makuun}} (only during [[Til Death Do Us Part...]])\n\n==Missions==\n*Kryta\n**{{NPC location|Riverside Province}}\n**{{NPC location|Sanctum Cay}}\n\n==Skills==\n*{{skill icon|Devastating Hammer}}  ([[elite]], [[Hard mode]] only)\n*{{skill icon|Heavy Blow}}\n*{{skill icon|Staggering Blow}}\n*{{skill icon|Warrior's Cunning}}\n\n===During Halloween quests===\n*{{Skill icon|Crude Swing}}\n*{{Skill icon|Crushing Blow}}\n*{{Skill icon|Earth Shaker}} (elite)\n*{{Skill icon|Endure Pain}}\n*{{Skill icon|Mighty Blow}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| level = 20\n| blunt = 100\n| piercing = 100\n| slashing = 100\n| cold = 80\n| earth = 80\n| fire = 80\n| lightning = 80\n}}\n\n==Items dropped==\n*[[Decayed Orr Emblem]]\n*[[Executioner's Breastplate]]"
+}

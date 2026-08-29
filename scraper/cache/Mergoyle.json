@@ -1,0 +1,7 @@
+{
+  "title": "Mergoyle",
+  "pageid": 17977,
+  "revid": 2635654,
+  "timestamp": "2019-01-02T10:03:42Z",
+  "wikitext": "{{NPC infobox\n| type = Gargoyle\n| affiliation = Kryta wildlife\n| profession = me\n| level = 14 (24)\n| campaign = Prophecies\n}}__NOTOC__\n[[Mergoyle]]s are the form of Gargoyles found in Kryta. As the name implies, they are most commonly found by beaches of rivers, lakes, or oceans.\n\n==Locations==\n*[[Kryta]]\n**{{NPC location|Nebo Terrace}}\n**{{NPC location|North Kryta Province}}\n**{{NPC location|Scoundrel's Rise}}\n**{{NPC location|Twin Serpent Lakes}}\n**{{NPC location|Watchtower Coast}}\n\n==Missions==\n*Kryta\n**{{NPC location|D'Alessio Seaboard}}\n**{{NPC location|Divinity Coast}}\n**{{NPC location|Gates of Kryta}}\n\n==Skills==\n12 [[Domination Magic]], 9 [[Inspiration Magic]] (20 Domination Magic, 16 Inspiration Magic in [[Hard mode]])\n*{{skill icon|Mantra of Lightning}}\n*{{skill icon|Mind Wrack}}\n*{{skill icon|Power Block}} ([[elite]], Hard Mode only)\n*{{skill icon|Spirit Shackles}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = me\n| blunt = 29\n| piercing = 29\n| slashing = 29\n| cold = 69\n| earth = 29\n| fire = 29\n| lightning = 29\n}}\n*The [[Hard Mode]] versions have a reduced bonus resistance to [[cold damage]] of +15 [[armor rating]].\n\n==Items dropped==   \n*[[Mergoyle Skull]]"
+}

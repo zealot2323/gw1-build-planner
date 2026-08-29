@@ -1,0 +1,7 @@
+{
+  "title": "Foible's Fair",
+  "pageid": 9202,
+  "revid": 2715744,
+  "timestamp": "2025-12-18T23:43:57Z",
+  "wikitext": "{{Location infobox\n| image = [[File:Foible's Fair.jpg|196px]] \n| campaign = Prophecies\n| region = Ascalon (pre-Searing)\n| type = Outpost\n| partysize = 4\n| exits = [[Wizard's Folly]]\n| merchant = y\n}}\n{{Quotation|game|This tiny bazaar lies just north of [[Wizard's Folly]] along the road to [[Ashford Abbey]]. From the shelter of its colorful tents, traders hawk their wares, trainers offer lessons, and travelers swap tales of their adventures.}}\n[[Foible's Fair]] lies in the mountainous portion of Wizard's Folly.\n\n==Getting There==\nHead southwest from [[Ashford Abbey]]. The quest [[The Wayward Wizard]] leads here.\n\n==Quests available==\n* [[Vassar]]\n** [[Domination Magic (quest)|Domination Magic]] {{preq|me}}\n* [[Ralena Stormbringer]]\n** [[The Supremacy of Air]] {{preq|e}}\n\n==NPCs==\n===Allies===\n====Services====\n*{{x}} 2 [[Laren]] ([[merchant]])\n====Other characters==== \n*{{e}} 2 [[Ralena Stormbringer]]\n*{{me}} 2 [[Vassar]]\n\n==Notes==\n*The location of Foible's Fair after [[the Searing]] is currently unexplorable, leaving its fate unknown.\n{{anomaly|For some reason there are two exit symbols.}}\n\n{{Towns and outposts in pre-Searing Ascalon}}"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Protector's Strike",
+  "pageid": 16224,
+  "revid": 2738469,
+  "timestamp": "2026-08-26T21:15:01Z",
+  "wikitext": "{{Skill infobox\n| id = 326\n| name = Protector's Strike\n| campaign = Prophecies\n| profession = Warrior\n| attribute = Strength\n| type = Melee Attack\n| energy = 5\n| activation = {{1/2}}\n| recharge = 3\n| description = [[Melee Attack]].  If this [[attack]] strikes a [[Movement|moving]] [[foe]], you strike for {{gr|10|40}} more [[damage]].\n| concise description = Melee Attack. Deals {{gr|10|40|+}} damage if target is moving.\n| has-pvp = y\n}}\n\n{{Skill progression\n|attribute = [[Strength]]\n|var1 name = + [[Damage]]\n|var1 at0 = 10\n|var1 at15 = 40}}\n\n== Acquisition ==\n'''[[Skill quest]]s'''\n* [[Prophecies]]\n** [[Helping the Dwarves]] ([[Yak's Bend]])\n'''[[Skill trainer]]s'''\n* Prophecies\n** [[Firstwatch Sergio]] ([[Lion's Arch]])\n** [[Dakk]] ([[Ember Light Camp]])\n'''[[Signet of Capture]]'''\n* [[Eye of the North]]\n** [[Bringer of Destruction]] ([[Genius Operated Living Enchanted Manifestation]])\n\n== Related skills ==\n* {{skill icon|Crippling Sweep}}\n* {{skill icon|Harrier's Toss}}\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Warrior skill rewards]]"
+}

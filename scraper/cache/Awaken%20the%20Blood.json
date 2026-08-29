@@ -1,0 +1,7 @@
+{
+  "title": "Awaken the Blood",
+  "pageid": 1731,
+  "revid": 2683663,
+  "timestamp": "2023-02-21T00:23:57Z",
+  "wikitext": "{{Skill infobox\n| id = 111\n| name = Awaken the Blood\n| campaign = Prophecies\n| profession = Necromancer\n| attribute = Blood Magic\n| type = Enchantment Spell\n| energy = 10\n| activation = 1\n| recharge = 45\n| causes1 = Increased Attribute\n| description = [[Enchantment Spell]]. For {{gr|20|44}} seconds, you gain +2 [[Blood Magic]] and +2 [[Curses]], but whenever you [[sacrifice]] [[Health]], you sacrifice 50% more than the normal amount.\n| concise description = Enchantment Spell. ({{gr|20|44}} seconds.) You have +2 Blood Magic and Curses. {{gray|Sacrifice 50% more Health than normal.}}\n}}\n\n{{Skill progression\n|attribute = [[Blood Magic]]\n|var1 name = [[Duration]]\n|var1 at0 = 20\n|var1 at15 = 44}}\n\n== Acquisition ==\n;[[Skill trainer]]s\n* [[Prophecies]]\n** [[Mazzim]] ([[Fishermen's Haven]]) \n** [[Tengsao]] ([[The Amnoon Oasis]])\n** [[Dakk]] ([[Ember Light Camp]])\n;[[Signet of Capture]]\n* [[Factions]]\n** [[Watari the Infinite]] ([[Sunjiang District (Winds of Change)]], during [[Redemption for the Lost]])\n\n== Related skills ==\n* {{skill icon|Aura of the Lich}} ([[elite]])\n* {{skill icon|Masochism}}"
+}

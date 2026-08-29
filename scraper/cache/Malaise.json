@@ -1,0 +1,7 @@
+{
+  "title": "Malaise",
+  "pageid": 15401,
+  "revid": 2608713,
+  "timestamp": "2016-06-24T05:25:39Z",
+  "wikitext": "{{Skill infobox\n| id = 140\n| name = Malaise\n| campaign = Prophecies\n| profession = Necromancer\n| attribute = Curses\n| type = Hex Spell\n| energy = 5\n| activation = 2\n| recharge = 2\n| causes1 = Energy Degeneration\n| causes2 = Health Degeneration\n| description = [[Hex Spell]]. For {{gr|5|35}} seconds, target foe suffers -1 [[Energy degeneration]] and you suffer -1 [[Health degeneration]]. If target foe's [[Energy]] reaches 0, that foe takes {{gr|5|50}} [[damage]] and Malaise ends.\n| concise description = Hex Spell. ({{gr|5|35}} seconds.) Causes -1 Energy degeneration. Deals {{gr|5|50}} damage if target foe's Energy drops to 0. {{gray|You have -1 Health degeneration. Ends if this foe's Energy drops to 0.}}\n}}\n\n{{Skill progression\n|attribute = [[Curses]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 35\n|var2 name = [[Damage]]\n|var2 at0 = 5\n|var2 at15 = 50}}\n\n== Acquisition ==\n'''[[Skill quest]]s'''\n* [[Ghostly Vengeance]] ([[Augury Rock (outpost)|Augury Rock]])  \n'''[[Skill trainer]]s'''\n* [[Bartoch]] ([[Droknar's Forge]])\n* [[Dakk]] ([[Ember Light Camp]])\n\n== Related skills ==\n* {{skill icon|Ether Phantom}}\n* {{skill icon|Famine}} ([[elite]])\n* {{skill icon|Mind Wrack}}\n* {{skill icon|Wither}} (elite)\n\n[[Category:Necromancer skill rewards]]"
+}

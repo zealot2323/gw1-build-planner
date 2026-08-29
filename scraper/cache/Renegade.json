@@ -1,0 +1,7 @@
+{
+  "title": "Renegade",
+  "pageid": 80401,
+  "revid": 2604069,
+  "timestamp": "2016-04-01T21:56:33Z",
+  "wikitext": "__NOTOC__\n{{NPC infobox\n| image = [[Image:Renegade.jpg|x400px]]\n| affiliation = Bandits\n| type = Human\n| profession = e\n| level = 3 (22)\n| campaign = Prophecies}}\n[[Renegade]]s can be found in the [[Regent Valley]] near [[Fort Ranik]].\n\n==Location==\n*[[Ascalon]]\n**{{NPC location|Regent Valley}}\n\n==Skills==\n*{{skill icon|Mind Burn}} ([[elite]]; [[hard mode]] only)\n\n==Armor ratings==\n{{NPC statistics\n| prof = e\n| blunt = 52\n| piercing = 52\n| slashing = 52\n| cold = 32\n| earth = 32\n| fire = 32\n| lightning = 32\n}}\n\n==Items dropped==\n*[[Rawhide Belt]]\n\n[[Category:Bandits]]"
+}

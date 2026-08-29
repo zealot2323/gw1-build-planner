@@ -1,0 +1,7 @@
+{
+  "title": "Tundra Giant",
+  "pageid": 23771,
+  "revid": 2598647,
+  "timestamp": "2015-11-10T21:49:00Z",
+  "wikitext": "{{NPC infobox\n | affiliation = Shiverpeak Mountains wildlife\n | type = Giant\n | profession = W\n | level = 24 (26)\n | campaign = Prophecies\n | image = [[Image:Tundra Giant.jpg|150px]]\n}}__NOTOC__\n[[Tundra Giant]]s are [[giant]]s from the [[Southern Shiverpeaks]]. They can be quite dangerous due to their ability to inflict [[deep wound]] and cause [[knock down]].\n\n==Locations==\n*[[Southern Shiverpeaks]]\n**{{NPC location|Dreadnought's Drift}}\n**{{NPC location|Frozen Forest}}\n**{{NPC location|Mineral Springs}}\n**{{NPC location|Snake Dance}}\n**{{NPC location|Talus Chute}}\n\n==Missions==\n*Southern Shiverpeaks\n**{{NPC location|Iron Mines of Moladune}}\n\n==Skills==    \n*{{skill icon|Berserker Stance}}\n*{{skill icon|Crushing Blow}}\n*{{skill icon|Earth Shaker}} ([[elite]])\n*{{monster skill icon|Giant Stomp}}\n*{{monster skill icon|Stun Immunity}}\n*{{monster skill icon|Stun on Critical Hit}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 112\n| piercing = 80\n| slashing = 80\n| cold = 120\n| earth = 80\n| fire = 64\n| lightning = 80\n}}\n\n==Items dropped==   \n*[[Giant's Boots]]\n*[[Huge Jawbone]]\n*[[Tundra Giant's Bracer]]\n\n==Notes==\n*Despite being Warriors, they use [[ranged attack]]s."
+}

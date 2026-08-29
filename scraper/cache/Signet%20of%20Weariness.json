@@ -1,0 +1,7 @@
+{
+  "title": "Signet of Weariness",
+  "pageid": 1506,
+  "revid": 2695733,
+  "timestamp": "2024-05-16T08:15:57Z",
+  "wikitext": "{{Skill infobox\n| id = 59\n| name = Signet of Weariness\n| campaign = Prophecies\n| profession = Mesmer\n| attribute = Domination Magic\n| type = Signet\n| activation = 2\n| recharge = 30\n| causes1 = Energy Loss\n| causes2 = Weakness\n| description = [[Signet]]. [[Target]] [[foe]] and all [[nearby]] foes lose {{gr|3|8}} [[Energy]] and suffer from [[Weakness]] for {{gr|1|12}} second[s].\n| concise description = Signet. Also affects foes near your target. Causes {{gr|3|8}} Energy loss and inflicts Weakness ({{gr|1|12}} second[s]).\n| aoe = nearby\n| target = foes\n}}\n\n{{Skill progression\n|attribute = [[Domination Magic]]\n|var1 name = [[Energy]] loss\n|var1 at0 = 3\n|var1 at15 = 8\n|var2 name = [[Weakness]] [[duration]]\n|var2 at0 = 1\n|var2 at15 = 12}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Prophecies]]\n** [[Steig]] ([[Camp Rankor]])\n** [[Dakk]] ([[Ember Light Camp]])\n'''[[Signet of Capture]]'''\n* Prophecies\n** [[Gaiza Deadeye]] ([[Riverside Province]])\n** [[Zaim Grimeclaw]] ([[Sanctum Cay]])\n* [[Factions]]\n** [[Gao Han of the Rings]] ([[Sunjiang District (Winds of Change)]], only during [[Redemption for the Lost]])\n\n== Related skills ==\n* {{skill icon|Energy Surge}} ([[elite]])\n* {{skill icon|Enfeebling Blood}}\n\n== Trivia ==\n{{Skill change}}"
+}

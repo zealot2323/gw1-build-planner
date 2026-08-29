@@ -1,0 +1,7 @@
+{
+  "title": "Ice Golem",
+  "pageid": 43096,
+  "revid": 2484230,
+  "timestamp": "2012-05-09T19:51:14Z",
+  "wikitext": "{{NPC infobox\n| image = [[File:Ice Elemental.jpg|150px]]\n| type = Elemental\n| affiliation = Stone Summit\n| profession = e\n| level = 10 (24)\n| campaign = Prophecies\n}}__NOTOC__\n[[Ice Golem]]s are [[elemental]]s made out of ice, constructed by the [[dwarf|Dwarves]] of the [[Stone Summit]] to aid them in combat.\n\n==Locations==\n*[[Northern Shiverpeaks]]\n**{{NPC location|Iron Horse Mine}}\n**{{NPC location|Traveler's Vale}}\n**{{NPC location|Griffon's Mouth}}\n*[[Southern Shiverpeaks]]\n**{{NPC location|Lornar's Pass}}\n**{{NPC location|Snake Dance}}\n**{{NPC location|Talus Chute}}\n\n==Missions==\n*Northern Shiverpeaks\n**{{NPC location|Borlis Pass}}\n**{{NPC location|The Frost Gate}}\n\n==Quests==\n'''Quests involved in:''' \n*Northern Shiverpeaks\n**[[A Heart of Ice]]\n\n==Skills==\n10 [[Energy Storage]], 6 [[Water Magic]] (16 Water Magic in [[Hard mode]])\n*{{skill icon|Frozen Burst}}\n*{{skill icon|Ice Spikes}}\n*{{skill icon|Water Attunement}}\n*{{skill icon|Water Trident}} ([[elite]], Hard mode only)\n\n==Armor ratings==\n{{NPC statistics\n| prof = e\n| blunt = 52\n| piercing = 52\n| slashing = 52\n| cold = 52\n| earth = 52\n| fire = 12\n| lightning = 52\n}}\n\n==Items dropped==\n*[[Icy Lodestone]]\n*[[Summit Axe]]\n*[[Summit Hammer]]\n\n==Trivia==\n*Ice Golems had previously [[drop]]ped [[Stone Summit Badge]]s instead of Icy Lodestones."
+}

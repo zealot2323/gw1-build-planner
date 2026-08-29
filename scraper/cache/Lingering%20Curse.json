@@ -1,0 +1,7 @@
+{
+  "title": "Lingering Curse",
+  "pageid": 4054,
+  "revid": 2732023,
+  "timestamp": "2026-06-29T13:56:52Z",
+  "wikitext": "{{Skill infobox\n| id = 142\n| name = Lingering Curse\n| campaign = Core\n| profession = Necromancer\n| attribute = Curses\n| type = Hex Spell\n| elite = yes\n| energy = 15\n| activation = 1\n| recharge = 10\n| causes1 = Health Degeneration\n| description = [[Elite]] [[Hex Spell]]. For {{gr|6|30}} seconds, [[target]] [[foe]] and all [[nearby]] foes suffer {{gr|1|4|-}} [[Health degeneration]], and gain 25% less benefit from [[heal]]ing.\n| concise description = Elite Hex Spell. ({{gr|6|30}} seconds.) Target and nearby foes have {{gr|1|4|-}} Health degeneration and receive 25% less benefit from healing.\n}}\n\n{{Skill progression\n|attribute = [[Curses]]\n|var1 name = [[Duration]]\n|var1 at0 = 6\n|var1 at15 = 30\n|var2 name = [[Health degeneration]]\n|var2 at0 = 1\n|var2 at15 = 4}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Grenth's Cursed]] ([[Perdition Rock]])\n* [[Factions]]\n** [[Craw Stonereap]] ([[Arborstone (explorable area)]])\n** [[Monstrous Afflicted Necromancer]] ([[Morostav Trail (Winds of Change)]], only during [[Cleansing Morostav Trail]])\n* [[Nightfall]]\n** [[Creo Vulnero]] ([[Domain of Secrets]])\n\n== Related skills ==\n* {{skill icon|Defile Flesh}}\n* {{skill icon|Malign Intervention}}\n* {{skill icon|Mark of Death}}\n* {{skill icon|Suffering}}\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Skills with nearby AoE]]\n\n[[de:Bleibender Fluch]]"
+}

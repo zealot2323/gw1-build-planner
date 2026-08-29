@@ -1,0 +1,7 @@
+{
+  "title": "Lash Devourer",
+  "pageid": 49998,
+  "revid": 2721057,
+  "timestamp": "2026-02-10T21:38:57Z",
+  "wikitext": "{{NPC infobox\n| image = [[Image:Yellow devourer.jpg|200px]]\n| affiliation = Presearing wildlife\n| type = Devourer\n| passive = true\n| level = 1, 15\n| profession = \n| campaign = Prophecies\n}}__NOTOC__\n[[Lash Devourer]]s often accompany [[Carrion Devourer|Carrion Devourers]].  They are ranged attackers and do not appear to possess any [[skill]]s in Prophecies.\n\n==Locations==\n*[[Core]]\n**[[Ascalon (pre-Searing)]]\n***{{NPC location|Lakeside County: 1070 AE}} (level 15)\n*[[Prophecies]]\n**Ascalon (pre-Searing)\n***{{NPC location|Lakeside County}}\n***{{NPC location|Regent Valley (pre-Searing)}}\n\n==Items dropped==\n*[[Dull Carapace]]\n\n==Notes==\n*Unlike other level 1 [[creature]]s, level 1 Lash Devourers have 80 [[health]].\n*The level 1 version has no [[health regeneration]] outside of combat."
+}

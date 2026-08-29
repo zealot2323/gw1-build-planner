@@ -1,0 +1,7 @@
+{
+  "title": "Touch of Agony",
+  "pageid": 1777,
+  "revid": 2683676,
+  "timestamp": "2023-02-21T01:15:18Z",
+  "wikitext": "{{Skill infobox\n| id = 158\n| name = Touch of Agony\n| campaign = Prophecies\n| profession = Necromancer\n| attribute = Blood Magic\n| type = Touch Skill\n| sacrifice = 10%\n| energy = 1\n| activation = {{3/4}}\n| recharge = 3\n| range = touch\n| target = foes\n| special = duplicate\n| causes1 = Shadow Damage\n| description = [[Skill (skill type)|Skill]]. [[Target]] [[Touch skill|touched]] [[foe]] takes {{gr|20|58}} [[shadow damage]].\n| concise description = Touch Skill. Deals {{gr|20|58}} damage.\n}}\n\n{{Skill progression\n| attribute = [[Blood Magic]]\n| var1 name = [[Shadow damage]]\n| var1 at0 = 20\n| var1 at15 = 58}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Ephaz]] ([[Beetletun]]) \n* [[Master Scout Kiera]] ([[Henge of Denravi]])\n* [[Dakk]] ([[Ember Light Camp]])\n\n== Related skills ==\n* {{skill icon|Vile Touch}}\n* {{skill icon|Wallow's Bite}} ([[duplicate skill]])\n\n== Trivia ==\n* This skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details.\n\n[[de:Berührung der Qual]]"
+}

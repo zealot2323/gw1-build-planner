@@ -1,0 +1,7 @@
+{
+  "title": "Summit Warden",
+  "pageid": 43356,
+  "revid": 2298866,
+  "timestamp": "2011-05-14T23:11:00Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Stone Summit caster.jpg|150px]]\n| type = Dwarf\n| affiliation = Stone Summit\n| profession = e\n| level = 24 (26)\n| campaign = Prophecies\n}}\n[[Summit Warden]]s are [[Stone Summit]] [[elementalist]]s.\n\n==Locations==\n*[[Southern Shiverpeaks]]\n**{{NPC location|Grenth's Footprint}}\n**{{NPC location|Sorrow's Furnace}}\n\n==Skills==\n*{{skill icon|Obsidian Flame}}\n*{{skill icon|Rust}}\n*{{skill icon|Stoning}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = e\n| blunt = 91\n| piercing = 91\n| slashing = 91\n| cold = 91\n| earth = 91\n| fire = 51\n| lightning = 91\n}}\n\n==Items dropped==\n*[[Enslavement Stone]]"
+}

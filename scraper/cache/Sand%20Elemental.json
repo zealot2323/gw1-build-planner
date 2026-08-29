@@ -1,0 +1,7 @@
+{
+  "title": "Sand Elemental",
+  "pageid": 22568,
+  "revid": 2409187,
+  "timestamp": "2011-11-15T03:04:23Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Elemental\n| affiliation = Crystal Desert wildlife\n| profession = e\n| level = 20 (26)\n| campaign = Prophecies\n}}\n[[Sand Elemental]]s are a unique kind of [[Elemental]] only found in the [[Crystal Desert]].\n\n==Locations==\n*[[Crystal Desert]]\n** {{NPC location|Prophet's Path}}\n** {{NPC location|Vulture Drifts}}\n\n==Skills==\n15 [[Earth Magic]], 13 [[Energy Storage]] (20 Earth Magic in [[Hard mode]])\n*{{skill icon|Aftershock}}\n*{{skill icon|Eruption}}\n*{{skill icon|Shock}}\n*{{skill icon|Ward Against Foes}} (Hard mode only)\n\n==Armor ratings==\n{{NPC statistics\n| prof = e\n| blunt = 30\n| piercing = 70\n| slashing = 70\n| cold = 70\n| earth = 70\n| fire = 70\n| lightning = 70\n}}\n\n==Items dropped==\n*[[Encrusted Lodestone]]"
+}

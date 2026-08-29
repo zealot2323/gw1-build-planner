@@ -1,0 +1,7 @@
+{
+  "title": "Aloe Husk",
+  "pageid": 22602,
+  "revid": 2722920,
+  "timestamp": "2026-03-13T11:10:33Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| affiliation = Presearing wildlife\n|image = [[File:Aloe.jpg|250px]]\n| type = Plant\n| profession = mo \n| level = 0\n| campaign = Prophecies\n}}\n[[Aloe Husk]] is a monk foe found in pre-Searing Ascalon. They never attack, even in retaliation. They are often seen in Green Hills County with the more fragile [[Aloe Seed]]s.\n\n==Locations==\n*[[Ascalon (pre-Searing)]]\n**{{NPC location|Green Hills County}}\n**{{NPC location|Regent Valley (pre-Searing)}}\n\n==Skills==\n0 [[Healing Prayers]], 0 [[Protection Prayers]]\n*{{skill icon|Healing Breeze}}\n*{{skill icon|Shielding Hands}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = mo\n| blunt = 3\n| piercing = 3\n| slashing = -37\n| cold = 3\n| earth = 3\n| fire = -37\n| lightning = 3\n}}\n\n==Items dropped==\n*[[Unnatural Seed]]\n\n==Notes==\n* Similarly to [[Oakheart (Ascalon)|Oakheart]]s, they only use Healing Breeze when affected by [[health degeneration]]\n* They only cast Shielding Hands between roughly 10 and 40 health.\n* Aloe Husks have 50 [[health]].\n* They have no natural health regeneration."
+}

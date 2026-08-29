@@ -1,0 +1,7 @@
+{
+  "title": "Losaru Windcaster",
+  "pageid": 65971,
+  "revid": 2705852,
+  "timestamp": "2025-05-02T12:56:45Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Desert Centaur caster.jpg|150px]]\n| type = Centaur\n| affiliation = Crystal Desert wildlife\n| profession = Mesmer\n| level = 20 (26)\n| campaign = Prophecies \n}}\n[[Losaru Windcaster]]s are [[shutdown]] [[mesmer]]s.\n\n== Locations ==\n*[[Crystal Desert]]\n** {{NPC location|Skyward Reach}}\n** {{NPC location|The Scar}}\n\n== Skills ==    \n15 [[Domination Magic]]\n* {{skill icon|Backfire}}\n* {{skill icon|Chaos Storm}}\n* {{Skill icon|Diversion}}\n* {{Skill icon|Mantra of Lightning}}\n* {{Skill icon|Panic}} ([[elite]], [[Hard mode]] only)\n\n==Armor ratings==\n{{NPC statistics\n| prof = me\n| blunt = 50\n| piercing = 50\n| slashing = 50\n| cold = 70\n| earth = 50\n| fire = 50\n| lightning = 50\n}}\n\n== Items dropped ==\n* [[Losaru Hide]]\n* [[Losaru Mane]]\n* [[Losaru Windcaster Robes]]"
+}

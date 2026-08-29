@@ -1,0 +1,7 @@
+{
+  "title": "Armor of Frost",
+  "pageid": 14783,
+  "revid": 2607531,
+  "timestamp": "2016-06-19T07:10:45Z",
+  "wikitext": "{{Skill infobox\n| id = 206\n| name = Armor of Frost\n| campaign = Prophecies\n| profession = Elementalist\n| attribute = Water Magic\n| type = Enchantment Spell\n| energy = 5\n| activation = 1\n| recharge = 20\n| causes1 = Increased Armor Rating\n| causes2 = Increased Attribute\n| description = [[Enchantment Spell]].  For {{gr|10|34}} seconds, you gain +40 [[Armor rating|armor]] against [[physical damage]] and have +1 [[Water Magic]].\n| concise description = Enchantment Spell. ({{gr|10|34}} seconds.) You have +40 armor against physical damage and have +1 Water Magic.\n}}\n\n{{Skill progression\n| attribute = [[Water Magic]]\n| var1 name = [[Duration]]\n| var1 at0 = 10\n| var1 at15 = 34}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Ephaz]] ([[Beetletun]]) \n* [[Master Scout Kiera]] ([[Henge of Denravi]])\n* [[Dakk]] ([[Ember Light Camp]])\n\n== Related skills ==\n* {{Skill icon|Frigid Armor}}\n\n==Trivia==\n* The functionality of this skill has changed since its introduction; see its [[Armor of Frost/Skill history|skill history]] for details."
+}

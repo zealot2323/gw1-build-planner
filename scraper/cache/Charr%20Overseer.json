@@ -1,0 +1,7 @@
+{
+  "title": "Charr Overseer",
+  "pageid": 19257,
+  "revid": 2725025,
+  "timestamp": "2026-04-09T04:57:54Z",
+  "wikitext": "{{NPC infobox\n| image = [[File:Charr shaman.jpg|150px]]\n| affiliation = Charr\n| profession = mo\n| level = 6 (23)<br>16\n| campaign = Prophecies\n}}__NOTOC__\n[[Charr Overseer]]s are members of the bestial [[Charr]] race, who occupy the burnt remains of [[Ascalon]].\n\n==Locations==\n*[[Prophecies]]\n**[[Ascalon]]\n***{{NPC location|The Breach}} (level 6)\n**[[Depths of Tyria]]\n***{{NPC location|Forsaken Tunnels}} ({{reforgedmode}} only, level 16)\n\n==Missions==\n*Ascalon\n**{{NPC location|Fort Ranik}} (level 6)\n\n==Skills==\n7 [[Healing Prayers]], 4 [[Smiting Prayers]], 6 [[Divine Favor]] at level 6 (16 Healing Prayers, 17 Smiting Prayers in [[Hard mode]])<br>\n? Healing Prayers, 12 Smiting Prayers at level 16\n*{{Skill icon|Bane Signet}} \n*{{Skill icon|Heal Area}}\n*{{Skill icon|Infuse Health}}\n*{{Skill icon|Shield of Judgment}} ([[elite]], Hard mode only)\n\n==Armor ratings==\n{{NPC statistics\n| prof = mo\n| blunt = 20 (60)\n| piercing = 20 (60)\n| slashing = 20 (60)\n| cold = 20 (60)\n| earth = 20 (60)\n| fire = 20 (60)\n| lightning = 20 (60)\n}}\n\n==Items dropped==\n*[[Charr Carving]]\n*[[Charr Hide]]\n*[[Shaman Garb]]"
+}

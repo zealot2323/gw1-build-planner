@@ -1,0 +1,7 @@
+{
+  "title": "Hill Giant",
+  "pageid": 23769,
+  "revid": 2204224,
+  "timestamp": "2010-12-20T23:32:59Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| affiliation = Kryta wildlife\n | type = Giant\n | profession = w\n | level = 20 (26)\n | campaign = Prophecies \n}}\n[[Hill Giant]]s are [[knock down]]-focused [[giants]] found in Kryta.\n\n==Locations==\n*[[Kryta]]\n**{{NPC location|Kessex Peak}}\n\n==Missions==\n*[[Kryta]]\n**{{NPC location|Riverside Province}}\n**{{NPC location|Sanctum Cay}}\n\n==Skills==   \n*{{Skill icon|Crushing Blow}} ([[Hard mode]] only)\n*{{monster skill icon|Giant Stomp}}\n*{{monster skill icon|Stun Immunity}}\n*{{monster skill icon|Stun on Critical Hit}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 100\n| piercing = 80\n| slashing = 80\n| cold = 80\n| earth = 80\n| fire = 60\n| lightning = 80\n}}\n\n==Items dropped==   \n*[[Gargantuan Jawbone]]\n*[[Giant's Boots]]\n*[[Hill Giant's Bracer]]"
+}

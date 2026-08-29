@@ -1,0 +1,7 @@
+{
+  "title": "Otyugh's Cry",
+  "pageid": 2841,
+  "revid": 2738347,
+  "timestamp": "2026-08-26T20:16:33Z",
+  "wikitext": "{{Skill infobox\n| id = 447\n| name = Otyugh's Cry\n| campaign = Prophecies\n| profession = Ranger\n| attribute = Beast Mastery\n| type = Shout\n| energy = 5\n| recharge = 30\n| causes1 = Increased Armor Rating\n| causes2 = Unblockable\n| description = [[Shout]]. For {{gr|10|25}} seconds, your [[animal companion]] gains +24 [[Armor rating|armor]] and cannot be [[block]]ed.\n| concise description = Shout. ({{gr|10|25}} seconds.) Your pet has +24 armor and is unblockable.\n| aoe = None\n| has-pvp = y\n}}\n\n{{Skill progression\n| attribute = [[Beast Mastery]]\n| var1 name = [[Duration]]\n| var1 at0 = 10\n| var1 at15 = 25}}\n\n== Acquisition ==\n'''[[Skill quest]]s'''\n* [[The Last Hog]] ([[North Kryta Province]])\n'''[[Skill trainer]]s'''\n* [[Sorim]] ([[Quarrel Falls]])\n* [[Master Scout Kiera]] ([[Henge of Denravi]])\n* [[Dakk]] ([[Ember Light Camp]])\n\n== Related skills ==\n* {{skill icon|Warrior's Cunning}}\n* {{skill icon|Seeking Arrows}}\n\n== Trivia ==\n* An [[wikipedia:Otyugh|otyugh]] is a fictional monster originating from [[wikipedia:Dungeons and Dragons|Dungeons and Dragons]] and the name of an [[gw2:Ogre|ogre]] [[gw2:Champion Chief Otyugh|chieftan]] in ''[[Guild Wars 2]]''.\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill history]] for details.\n\n[[Category:Pet skills]]\n[[Category:Ranger skill rewards]]\n[[Category:References to popular culture]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Defy Pain",
+  "pageid": 4072,
+  "revid": 2733091,
+  "timestamp": "2026-07-05T14:58:37Z",
+  "wikitext": "{{Skill infobox\n| id = 318\n| name = Defy Pain\n| campaign = Prophecies\n| profession = Warrior\n| attribute = Strength\n| type = Skill\n| elite = y\n| has-pvp = y\n| adrenaline = 5\n| causes1 = Increased Maximum Health\n| causes2 = Increased Armor Rating\n| causes3 = Damage Reduction\n| description = [[Elite]] [[Skill]]. For 20 seconds you have an additional {{gr|90|300}} [[Health]], an additional 20 [[armor rating|armor]], and you take {{gr|1|10|-}} less [[damage]].\n| concise description = Elite Skill. (20 seconds.) You have {{gr|90|300|+}} maximum Health, +20 armor, and take {{gr|1|10}} less damage.\n}}\n\n{{Skill progression\n|attribute = [[Strength]]\n|var1 name = + Maximum [[health]]\n|var1 at0 = 90\n|var1 at15 = 300\n|var2 name = [[Damage reduction]]\n|var2 at0 = 1\n|var2 at15 = 10}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Obrhit Barkwood]] ([[Frozen Forest]])\n* [[Clobberhusk]] ([[Lornar's Pass]])\n\n== Related skills ==\n{{see|Health#Skills}}\n* {{skill icon|Endure Pain}}\n* {{skill icon|Great Dwarf Armor}}\n* {{skill icon|Intimidating Aura}}\n\n== Notes ==\n* The health and armor rating increase in addition to the stackable damage reduction make this a popular choice for use in tank builds.\n* Defy Pain sometimes causes strange clipping issues with trimmed capes.\n\n== Trivia ==\n{{Skill change|pvp}}\n\n[[de:Schmerz trotzen]]"
+}

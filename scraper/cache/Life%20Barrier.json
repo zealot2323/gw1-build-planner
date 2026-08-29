@@ -1,0 +1,7 @@
+{
+  "title": "Life Barrier",
+  "pageid": 4106,
+  "revid": 2732822,
+  "timestamp": "2026-07-04T19:34:08Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 270\n| name = Life Barrier\n| campaign = Prophecies\n| profession = Monk\n| attribute = Protection Prayers\n| type = Enchantment Spell\n| elite = y\n| energy = 15\n| activation = 2\n| recharge = 5\n| upkeep = -1\n| causes1 = Damage Reduction\n| description = [[Elite]] [[Enchantment Spell]]. While you [[Upkeep|maintain]] this enchantment, [[damage]] dealt to [[target]] other [[ally]] is reduced by {{gr|20|50||%}}. If your [[Health]] is below 50% when that ally takes damage, Life Barrier ends.\n| concise description = Elite Enchantment Spell. Reduces damage by {{gr|20|50||%}}. {{gray|Cannot self-target. If your Health is below 50% when target takes damage, Life Barrier ends.}}\n| target = other allies\n}}\n\n{{Skill progression\n|attribute = [[Protection Prayers]]\n|var1 name = % [[Damage reduction]]\n|var1 at0 = 20\n|var1 at15 = 50}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Esnhal Hardwood]] ([[Frozen Forest]])\n* [[Quickroot]] ([[Lornar's Pass]])\n\n== Related skills ==\n* {{skill icon|Life Bond}}\n\n== Notes ==\n* If using with [[Life Bond]], make sure to cast Life Barrier '''''before''''' Life Bond is on the ally (See: [[Order of damage modifiers]]).\n\n== See also ==\n* [[Bonder]]\n\n[[de:Lebenssperre]]"
+}

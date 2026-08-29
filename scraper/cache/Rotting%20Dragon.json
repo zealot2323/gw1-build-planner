@@ -1,0 +1,7 @@
+{
+  "title": "Rotting Dragon",
+  "pageid": 58055,
+  "revid": 2571103,
+  "timestamp": "2014-07-04T20:58:53Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Zombie\n| affiliation = Undead\n| image = [[Image:Bone Dragon.jpg|150px]]\n| profession = r\n| level = 24 (30)\n| campaign = Prophecies\n}}\n[[Rotting Dragon]]s are the defenders of [[Rotscale]] in [[Majesty's Rest]].\n\n==Locations==\n*[[Kryta]]\n**{{NPC location|Majesty's Rest}}\n\n==Skills==\n15 [[Wilderness Survival]] (20 Wilderness Survival in [[Hard mode]])\n*{{Skill icon|Dual Shot}}\n*{{Skill icon|Frozen Soil}}\n*{{Skill icon|Incendiary Arrows}} ([[elite]])\n*{{Skill icon|Lightning Reflexes}}\n*{{Skill icon|Quickening Zephyr}}\n*{{Skill icon|Troll Unguent}}\n*{{monster skill icon|Deafening Roar}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 100\n| piercing = 140\n| slashing = 100\n| cold = 101\n| earth = 101\n| fire = 101\n| lightning = 101\n}}\n\n==Items dropped==\n*[[Decayed Orr Emblem]]\n*[[Pile of Glittering Dust]]\n*[[Rotwing Recurve Bow]] ([[unique]])\n\n[[Category:Drops dust]]\n[[Category:Non-boss NPCs with Unique Items]]"
+}

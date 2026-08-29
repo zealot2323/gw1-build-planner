@@ -1,0 +1,7 @@
+{
+  "title": "Watchful Spirit",
+  "pageid": 2914,
+  "revid": 2695881,
+  "timestamp": "2024-05-16T21:39:06Z",
+  "wikitext": "{{Skill infobox\n| id = 255\n| name = Watchful Spirit\n| campaign = Prophecies\n| profession = Monk\n| attribute = Divine Favor\n| type = Enchantment Spell\n| upkeep = -1\n| energy = 15\n| activation = 1\n| recharge = 5\n| causes1 = Health Regeneration\n| causes2 = Healing\n| description = [[Enchantment Spell]]. While you [[Upkeep|maintain]] this [[enchantment]], [[target]] [[ally]] gains +2 [[Health regeneration]]. That ally is [[heal]]ed for {{gr|30|180}} [[Health]] when Watchful Spirit ends.\n| concise description = Enchantment Spell. +2 Health regeneration. End effect: heals for {{gr|30|180}}.\n}}\n\n{{Skill progression\n|attribute = [[Divine Favor]]\n|var1 name = [[Heal]]ing\n|var1 at0 = 30\n|var1 at15 = 180}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Avena]] ([[Maguuma Stade]]) \n* [[Tengsao]] ([[The Amnoon Oasis]])\n* [[Dakk]] ([[Ember Light Camp]])\n'''[[Signet of Capture]]'''\n* [[Tama Blessedhoof]] ([[The Wilds]])\n* [[Tree of Life]] ([[Bloodstone Fen]])\n* [[Woho Sacredhide]]  ([[Silverwood]])\n* [[Tree of Regrowth]] ([[Tangle Root]])\n* [[Huma Cleansinghoof]]  ([[Ettin's Back]])\n\n== Related skills ==\n* {{skill icon|Mending}}\n* {{skill icon|Watchful Healing}}\n\n== Notes ==\n{{bug|End effect healing is not affected by [[Unyielding Aura]].}}\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Upkeep skills]]"
+}

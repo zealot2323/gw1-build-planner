@@ -1,0 +1,7 @@
+{
+  "title": "Ice Prison",
+  "pageid": 16258,
+  "revid": 2733034,
+  "timestamp": "2026-07-05T13:07:16Z",
+  "wikitext": "{{Skill infobox\n| id = 210\n| name = Ice Prison\n| campaign = Prophecies\n| profession = Elementalist\n| attribute = Water Magic\n| type = Hex Spell\n| energy = 10\n| activation = 2\n| recharge = 30\n| causes1 = Decreased Movement Speed\n| description = [[Hex Spell]].  For {{gr|8|20}} seconds, [[target]] [[foe]]'s legs are encased in ice, causing the foe to [[snare (tactic)|move 66% slower]].\n| concise description = Hex Spell. ({{gr|8|20}} seconds.) Target foe moves 66% slower.\n| target = foes\n}}\n\n{{Skill progression\n|attribute = [[Water Magic]]\n|var1 name = [[Duration]]\n|var1 at0 = 8\n|var1 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill quest]]s'''\n* [[Prophecies]]\n** [[A Heart of Ice]] ([[Yak's Bend]])\n'''[[Skill trainer]]s'''\n* Prophecies\n** [[Firstwatch Sergio]] ([[Lion's Arch]])\n** [[Dakk]] ([[Ember Light Camp]])\n'''[[Signet of Capture]]'''\n* [[Eye of the North]]\n** [[Whiteout]] ([[Jaga Moraine]])\n\n== Related skills ==\n* {{skill icon|Freezing Gust}}\n* {{skill icon|Icy Shackles}} ([[elite]])\n* {{skill icon|Imagined Burden}}\n* {{skill icon|Teinai's Prison}}\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Elementalist skill rewards]]"
+}

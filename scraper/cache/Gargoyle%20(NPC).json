@@ -1,0 +1,7 @@
+{
+  "title": "Gargoyle (NPC)",
+  "pageid": 45482,
+  "revid": 2722925,
+  "timestamp": "2026-03-13T11:23:18Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| name = Gargoyle\n| image = [[File:Gargoyle.jpg|150px]]\n| type = Gargoyle\n| affiliation = Presearing wildlife\n| level = 1\n| profession = me\n| campaign = Prophecies\n| map1 = [[File:Gargoyle_farm.jpg|196px]]\n| map1-text = Gargoyle farm route in Catacombs\n}}\n[[Gargoyle (NPC)|Gargoyles]] are the simplest of [[Gargoyle]]s, and can be found in [[the Catacombs]] in pre-Searing Ascalon. They are [[passive]] until attacked.\n\n==Locations==\n* [[Ascalon (pre-Searing)]]\n** {{NPC location|The Catacombs}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = me\n| blunt = 4\n| piercing = 4\n| slashing = 4\n| cold = 44\n| earth = 4\n| fire = 4\n| lightning = 4\n}}\n\n==Items dropped==\n* [[Gargoyle Skull]]\n\n==Notes==\n*They have 80 [[health]]."
+}

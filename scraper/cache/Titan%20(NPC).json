@@ -1,0 +1,7 @@
+{
+  "title": "Titan (NPC)",
+  "pageid": 307271,
+  "revid": 2593996,
+  "timestamp": "2015-09-07T12:06:40Z",
+  "wikitext": "{{NPC infobox\n | image = [[File:Burning Titan.jpg|150px]]\n | affiliation = Titans\n | profession = Warrior\n | level = 28 (30)\n | campaign = Prophecies\n}}__NOTOC__\nThe [[Titan (NPC)|Titan]] is identical to a [[Burning Titan]] except in name. It appears once, at the end of the [[Abaddon's Mouth]] mission. Defeating it completes the mission. It is not that big of a threat in direct damage done, but people in adjacent range will be given the [[Burning]] condition{{verify}}. It is susceptible to [[cold damage]]{{verify}}.\n\n==Missions==\n*[[Ring of Fire Islands]]\n**{{NPC location|Abaddon's Mouth}}\n\n==Skills==\n{{verify}}\n*{{Skill icon|Healing Signet}}\n*{{Skill icon|Irresistible Blow}}\n*{{Skill icon|Thrill of Victory}}\n*{{Skill icon|Wild Blow}}\n*{{monster skill icon|Stun Immunity}}\n*{{monster skill icon|Titans get plus Health regen and set enemies on fire each time he is hit.}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 123\n| piercing = 123\n| slashing = 123\n| cold = 83\n| earth = 103\n| fire = 143\n| lightning = 103\n}}\n\n==Items dropped==\n*[[Titan Armor]]{{verify}}"
+}

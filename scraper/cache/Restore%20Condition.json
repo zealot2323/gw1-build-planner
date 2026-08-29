@@ -1,0 +1,7 @@
+{
+  "title": "Restore Condition",
+  "pageid": 4108,
+  "revid": 2695694,
+  "timestamp": "2024-05-16T07:40:34Z",
+  "wikitext": "{{Skill infobox\n| id = 276\n| name = Restore Condition\n| campaign = Prophecies\n| profession = Monk\n| attribute = Protection Prayers\n| type = Spell\n| elite = y\n| energy = 5\n| activation = {{3/4}}\n| recharge = 2\n| causes1 = Healing\n| description = [[Elite]] [[Spell]]. Remove all [[condition]]s ([[Poison]], [[Disease]], [[Blind|Blindness]], [[Dazed]], [[Bleeding]], [[Crippled]], [[Burning]], [[Weakness]], [[Cracked Armor]], and [[Deep Wound]]) from [[target]] other [[ally]]. For each condition removed, that ally is [[heal]]ed for {{gr|10|70}} [[Health]].\n| concise description = Elite Spell. Removes all conditions. Removal effect: heals for {{gr|10|70}} for each condition removed. {{gray|Cannot self-target.}}\n| removes1 = Condition\n| target = other allies\n}}\n\n{{Skill progression\n| attribute = [[Protection Prayers]]\n| var1 name = [[Heal]]ing\n| var1 at0 = 10\n| var1 at15 = 70}}\n\n== Acquisition ==\n;[[Signet of Capture]]\n* [[Spindle Agonyvein]] ([[Abaddon's Mouth]])\n\n== Related skills ==\n* {{skill icon|\"It's Just a Flesh Wound.\"}} ([[elite]])\n* {{skill icon|Divert Hexes}} (elite)\n* {{skill icon|Mend Condition}}\n* {{skill icon|Purge Conditions}}\n\n== Trivia ==\n{{Skill change}}\n\n[[de:Zustand wiederherstellen]]"
+}

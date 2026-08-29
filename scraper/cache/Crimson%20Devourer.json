@@ -1,0 +1,7 @@
+{
+  "title": "Crimson Devourer",
+  "pageid": 19753,
+  "revid": 2737331,
+  "timestamp": "2026-08-09T16:52:11Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n|image = [[Image:Yellow devourer.jpg|200px]]\n| type = Devourer\n| affiliation = Ascalon wildlife\n| profession = Ranger\n| level = 1 (22)\n| campaign = Prophecies\n}}\n[[Crimson Devourer]]s are weak [[ranger]]s that [[popup]] with other [[devourer]]s.\n\n==Locations==\n*[[Ascalon]]\n**{{NPC location|Pockmark Flats}}\n\n==Skills==\n*{{skill icon|Called Shot}}\n*{{skill icon|Lightning Reflexes}}\n*{{skill icon|Quick Shot}} ([[elite]], hard mode only)\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 10\n| piercing = 10\n| slashing = 10\n| cold = -10\n| earth = 10\n| fire = 10\n| lightning = 10\n}}\n\n==Items dropped==\n*[[Chitin Fragment]]\n*[[Fetid Carapace]]\n*[[Half-Eaten Mass]]\n\n[[Category:Drops chitin]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Healing Spring",
+  "pageid": 6575,
+  "revid": 2738061,
+  "timestamp": "2026-08-22T02:10:42Z",
+  "wikitext": "{{otheruses|a Ranger trap|the object in pre-searing|Healing Spring (object)}}\n{{Skill infobox\n| id = 460\n| name = Healing Spring\n| campaign = Prophecies\n| profession = Ranger\n| attribute = Wilderness Survival\n| type = Trap\n| energy = 10\n| activation = 2\n| recharge = 20\n| causes1 = Healing\n| description = [[Trap]]. For 10 seconds, all [[adjacent]] [[Ally|allies]] are [[heal]]ed for {{gr|15|60}} every 2 seconds. While activating this skill, you are [[easily interrupted]].\n| concise description = Trap. (10 seconds.) Affects adjacent allies. Heals for {{gr|15|60}} every 2 seconds. {{gray|Easily interrupted.}}\n| aoe = adjacent\n}}\n\n{{Skill progression\n|attribute = [[Wilderness Survival]]\n|var1 name = [[Heal]]ing\n|var1 at0 = 15\n|var1 at15 = 60}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Captain Greywind]] ([[North Kryta Province]])\n* [[Master Scout Kiera]] ([[Henge of Denravi]])\n* [[Dakk]] ([[Ember Light Camp]])\n\n== Hero Usage ==\nHeroes will only use this skill in combat, and use it indiscriminately when in combat.\n\n== Notes ==\n\n{{bug|Although allied [[spirit]]s will display this skill's animation effect, they will not be healed (since spirits are never affected by healing).}}\n\n[[Category:Easily interrupted skills]]\n[[Category:Skills that affect allies]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Purge Signet",
+  "pageid": 1528,
+  "revid": 2695871,
+  "timestamp": "2024-05-16T21:18:15Z",
+  "wikitext": "{{Skill infobox\n| id = 295\n| name = Purge Signet\n| campaign = Core\n| profession = Monk\n| type = Signet\n| recharge = 20\n| activation = 2\n| target = allies\n| range = casting\n| aoe =\n| removes1 = Condition\n| removes2 = Hex spell\n| causes1 = Energy Loss\n| description = [[Signet]]. Remove all [[hex]]es and [[condition]]s from [[target]] [[ally]]. You lose 10 [[Energy]] for each hex and each condition removed.\n| concise description = Signet. Removes all hexes and conditions. {{gray|Removal cost: 10 Energy each.}}\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Prophecies]]\n** [[Mazzim]] ([[Fishermen's Haven]]) \n** [[Tengsao]] ([[The Amnoon Oasis]])\n** [[Dakk]] ([[Ember Light Camp]])\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n* [[Nightfall]]\n** [[Baram]] ([[The Kodash Bazaar]])\n'''[[Hero skill trainer]]s'''\n* Nightfall\n** [[Hoju]] ([[Gate of Torment]])\n'''[[Signet of Capture]]'''\n* Prophecies\n** [[Liam Shanglui]] ([[Kessex Peak]])\n\n== Related skills ==\n* {{skill icon|Peace and Harmony}} ([[elite]])\n\n== Notes ==\n* To minimize the potential for massive [[energy]] loss, this skill is often used in combination with an [[energy hiding]] [[weapon set]].\n* Consider using [[Ether Signet]] immediately after using this skill.\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

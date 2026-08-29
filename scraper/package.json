@@ -6,7 +6,8 @@
   "scripts": {
     "fetch": "tsx src/fetch.ts",
     "rescrape": "tsx src/rescrape.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "discover": "tsx src/discover.ts"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

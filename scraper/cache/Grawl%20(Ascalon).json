@@ -1,0 +1,7 @@
+{
+  "title": "Grawl (Ascalon)",
+  "pageid": 18129,
+  "revid": 2709851,
+  "timestamp": "2025-07-01T04:57:20Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Grawl\n| affiliation = Ascalon wildlife\n| image = [[file:Grawl martial.jpg|200px]]\n| profession = w\n| level = 4 (22)\n| campaign = Prophecies\n}}\n'''Grawls''' are the grunts of the Grawl army. They are often found in patrols with a [[Grawl Ulodyte]].\n\n==Locations==\n*[[Ascalon]]\n**{{NPC location|Eastern Frontier}}\n**{{NPC location|Old Ascalon}}\n**{{NPC location|Regent Valley}}\n\n==Missions==\n*[[Ascalon (pre-Searing)]]\n**{{NPC location|Ascalon Academy}}\n*Ascalon\n**{{NPC location|The Great Northern Wall}}\n\n==Skills==\n(At least 8 [[Strength]] in [[Hard mode]])\n*{{skill icon|Backbreaker}} ([[elite]], Hard mode only)\n*{{skill icon|Counter Blow}}\n*{{skill icon|Mighty Blow}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 54\n| piercing = 54\n| slashing = 54\n| cold = 34\n| earth = 34\n| fire = 34\n| lightning = 34\n}}\n\n==Items dropped==\n*[[Grawl Gear]]\n*[[Ornate Grawl Necklace]]"
+}

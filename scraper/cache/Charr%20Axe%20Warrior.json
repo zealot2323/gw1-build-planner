@@ -1,0 +1,7 @@
+{
+  "title": "Charr Axe Warrior",
+  "pageid": 19252,
+  "revid": 2393864,
+  "timestamp": "2011-10-12T16:34:33Z",
+  "wikitext": "{{NPC infobox\n| image = [[File:Charr warrior.jpg|150px]]\n| affiliation = Charr\n| profession = Warrior\n| level = 6 (23)\n| campaign = Prophecies\n}}__NOTOC__\n[[Charr Axe Warrior]]s are low-level axe users with limited skills.\n\n==Locations==\n*[[Ascalon]]\n**{{NPC location|Diessa Lowlands}}\n**{{NPC location|Eastern Frontier}}\n**{{NPC location|Old Ascalon}} (only during [[Master Ranger Nente]]'s quests) \n**{{NPC location|Regent Valley}}\n**{{NPC location|The Breach}}\n\n==Missions==\n*[[Ascalon]]\n**{{NPC location|Fort Ranik}}\n**{{NPC location|The Great Northern Wall}}\n\n==Skills==\n(16 [[Axe Mastery]] in [[Hard mode]])\n*{{skill icon|Cyclone Axe}}\n*{{skill icon|Eviscerate}} ([[elite]]; [[hard mode]] only)\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 76 to 78\n| piercing = 76 to 78\n| slashing = 76 to 78\n| cold = 46 to 48\n| earth = 46 to 48\n| fire = 46 to 48\n| lightning = 46 to 48\n}}\n\n==Items dropped==\n*[[Axe Fiend Armor]]\n*[[Charr Carving]]\n*[[Charr Hide]]"
+}

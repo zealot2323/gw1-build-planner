@@ -1,0 +1,7 @@
+{
+  "title": "Thul Boulderrain",
+  "pageid": 26673,
+  "revid": 2581548,
+  "timestamp": "2015-01-20T07:03:45Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Giant\n| profession = r\n| level = 28 (30)\n| boss = y\n| campaign = Prophecies\n| map1 = [[File:Snake Dance giant boss locations.jpg|150px]]\n| map1-text = Possible spawn locations in Snake Dance\n}}\n[[Thul Boulderrain]] is a [[Giant]] [[ranger]] [[boss]] that can [[spawn]] in [[Snake Dance]].\n\n==Locations==\n*[[Southern Shiverpeaks]]\n**{{NPC location|Snake Dance}}\n\n==Skills==\n*{{skill icon|Frozen Soil}}\n*{{skill icon|Punishing Shot}} ([[elite]])\n*{{skill icon|Troll Unguent}}\n*{{monster skill icon|Giant Stomp}} \n\n==Items dropped==\n*[[Giant Slayers Hammer]]\n*[[Giant's Boots]]\n*[[Huge Jawbone]]\n*[[Tundra Giant's Bracer]]\n\n==Notes==\n*Does not always spawn.  To avoid starting from the beginning you can exit to [[Dreadnought's Drift]] then [[zone]] back to respawn bosses.\n*Shares the same spawn locations with [[Kor Stonewrath]].\n\n{{bug|Sometimes his death animation is repeated infinitely.}}"
+}

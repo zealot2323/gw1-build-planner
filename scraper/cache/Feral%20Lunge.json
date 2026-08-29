@@ -1,0 +1,7 @@
+{
+  "title": "Feral Lunge",
+  "pageid": 2570,
+  "revid": 2732690,
+  "timestamp": "2026-07-04T16:20:26Z",
+  "wikitext": "{{Skill infobox\n| id = 439\n| name = Feral Lunge\n| campaign = Prophecies\n| profession = Ranger\n| attribute = Beast Mastery\n| type = Pet Attack\n| energy = 5\n| recharge = 10\n| causes1 = Bleeding\n| description = [[Pet Attack]]. Your [[animal companion]] attempts a Feral Lunge that deals {{gr|5|35|+}} [[damage]]. If the [[attack]] strikes a [[foe]] who is attacking, that foe suffers from [[Bleeding]] for {{gr|5|25}} seconds.\n| concise description = Pet Attack. Deals {{gr|5|35|+}} damage. Inflicts Bleeding condition if target foe is attacking ({{gr|5|25}} seconds).\n}}\n\n{{Skill progression\n|attribute = [[Beast Mastery]]\n|var1 name = +[[Damage]]\n|var1 at0 = 5\n|var1 at15 = 35\n|var2 name = [[Bleeding]]\n|var2 at0 = 5\n|var2 at15 = 25}}\n\n== Acquisition ==\n'''[[Skill quest]]s:'''\n* [[The Charr Patrol]] ([[Old Ascalon]])\n'''[[Skill trainer]]s:'''\n* [[Captain Osric]] ([[Yak's Bend]])\n* [[Dakk]] ([[Ember Light Camp]])\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Ranger skill rewards]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Galrath Slash",
+  "pageid": 16227,
+  "revid": 2738483,
+  "timestamp": "2026-08-26T21:19:38Z",
+  "wikitext": "{{Skill infobox\n| id = 383\n| name = Galrath Slash\n| campaign = Prophecies\n| profession = Warrior\n| attribute = Swordsmanship\n| type = Sword Attack\n| special = Duplicate\n| adrenaline = 7\n| duplicate = yes\n| description = [[Sword Attack]].  This [[attack]] strikes for {{gr|1|40|+}} [[damage]] if it hits.\n| concise description = Sword Attack. Deals {{gr|1|40|+}} damage.\n}}\n\n{{Skill progression\n|attribute = [[Swordsmanship]]\n|var1 name = + [[Damage]]\n|var1 at0 = 1\n|var1 at15 = 40}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Ephaz]] ([[Beetletun]]) \n* [[Master Scout Kiera]] ([[Henge of Denravi]])\n* [[Dakk]] ([[Ember Light Camp]])\n\n== Related skills ==\n* {{skill icon|Body Blow}}\n* {{skill icon|Executioner's Strike}}\n*{{skill icon|Mighty Blow}}\n* {{skill icon|Silverwing Slash}} ([[duplicate skill]])\n\n== Trivia ==\n* This skill is named after [[Galrath]].\n\n[[de:Galrath-Hieb]]\n[[Category:Skills named after eponymous NPCs]]"
+}

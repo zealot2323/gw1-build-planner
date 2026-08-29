@@ -1,0 +1,7 @@
+{
+  "title": "Heal Other",
+  "pageid": 2934,
+  "revid": 2684781,
+  "timestamp": "2023-03-08T21:22:47Z",
+  "wikitext": "{{Skill infobox\n| id = 286\n| name = Heal Other\n| campaign = Prophecies\n| profession = Monk\n| attribute = Healing Prayers\n| type = Spell\n| energy = 10\n| activation = {{3/4}}\n| recharge = 3\n| special = duplicate\n| causes1 = Healing\n| description = [[Spell]]. [[Heal]] [[target]] other [[ally]] for {{gr|35|180}} [[Health]].\n| concise description = Spell. Heals for {{gr|35|180}}. {{gray|Cannot self-target.}}\n| target = other allies\n}}\n\n{{Skill progression\n| attribute = [[Healing Prayers]]\n| var1 name = [[Heal]]ing\n| var1 at0 = 35\n| var1 at15 = 180}}\n\n== Acquisition ==\n'''[[Skill quest]]s'''\n* [[The Ascalon Settlement]] ([[North Kryta Province]]) \n'''[[Skill trainer]]s'''\n* [[Sorim]] ([[Quarrel Falls]])\n* [[Master Scout Kiera]] ([[Henge of Denravi]])\n* [[Dakk]] ([[Ember Light Camp]])\n'''[[Signet of Capture]]'''\n* [[Hussar Ironfeast]] ([[Traveler's Vale]])\n* [[Shalis Ironmantle]] ([[Iron Horse Mine]], [[The Frost Gate]])\n\n== Related skills ==\n* {{skill icon|Jamei's Gaze}} ([[duplicate skill]])\n\n== Trivia ==\n* This skill's icon is very similar to the icon of [[Heal Area]].\n[[Category:Monk skill rewards]]\n\n[[de:Anderen heilen]]"
+}

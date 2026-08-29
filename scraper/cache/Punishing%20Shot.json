@@ -1,0 +1,7 @@
+{
+  "title": "Punishing Shot",
+  "pageid": 2412,
+  "revid": 2733125,
+  "timestamp": "2026-07-05T15:33:51Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 409\n| name = Punishing Shot\n| campaign = Prophecies\n| profession = Ranger\n| attribute = Marksmanship\n| type = Bow Attack\n| elite = y\n| energy = 10\n| activation = {{1/2}}\n| recharge = 5\n| causes1 = Interrupt\n| description = [[Elite]] [[Bow Attack]]. If Punishing Shot hits, you strike for {{gr|10|20|+}} [[damage]] and your [[target]] is [[interrupt]]ed.\n| concise description = Elite Bow Attack. Deals {{gr|10|20|+}} damage. Interrupts an [[action]].\n}}\n\n{{Skill progression\n| attribute = [[Marksmanship]]\n| var1 name = + [[Damage]]\n| var1 at0 = 10\n| var1 at15 = 20}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Thul Boulderrain]] ([[Snake Dance]])\n\n== Related skills ==\n* {{skill icon|Disrupting Dagger}}\n* {{skill icon|Disrupting Shot}}\n* {{Skill icon|Magebane Shot}} ([[elite]])\n* {{skill icon|Savage Shot}}\n\n== Notes ==\n* [[AI]] will use this for the damage and not the interrupt.\n\n== Trivia ==\n{{Skill change}}\n\n[[de:Bestrafungs-Schuss]]"
+}

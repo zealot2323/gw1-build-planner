@@ -1,0 +1,7 @@
+{
+  "title": "Warrior's Endurance",
+  "pageid": 4077,
+  "revid": 2695816,
+  "timestamp": "2024-05-16T20:22:31Z",
+  "wikitext": "{{Skill infobox\n| id = 374\n| name = Warrior's Endurance\n| campaign = Prophecies\n| profession = Warrior\n| attribute = Strength\n| type = Skill\n| energy = 5\n| recharge = 30\n| elite = y\n| has-pvp = y\n| causes1 = Energy Gain\n| description = [[Elite]] [[Skill (skill type)|Skill]]. For {{gr|5|35}} seconds, you gain 3 [[Energy]] each time you hit with a [[melee attack]]. Warrior's Endurance cannot raise your Energy above {{gr|10|25}}.\n| concise description = Elite Skill. ({{gr|5|35}} seconds.) You gain 3 Energy each time you hit with a melee attack. {{gray|No Energy gain if you have more than {{gr|10|25}} Energy.}}\n}}\n\n{{Skill progression\n| attribute = [[Strength]]\n| var1 name = [[Duration]]\n| var1 at0 = 5\n| var1 at15 = 35\n| var2 name = [[Energy]] ceiling\n| var2 at0 = 10\n| var2 at15 = 25}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Custodian Dellus]] ([[Elona Reach]])\n* [[Custodian Fidius]] ([[Dunes of Despair]])\n* [[Custodian Hulgar]] ([[Thirsty River]])\n\n== Related skills ==\n* {{skill icon|Marksman's Wager}} ([[elite]])\n* {{skill icon|Zealous Vow}} (elite)\n\n== Notes ==\n* Works well when combined with [[scythe]]s and melee attack skills that hit multiple targets.\n\n== Trivia ==\n{{Skill change|pvp}}\n\n[[de:Ausdauer des Kriegers]]"
+}

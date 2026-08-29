@@ -1,0 +1,7 @@
+{
+  "title": "Ferocious Strike",
+  "pageid": 1254,
+  "revid": 2733136,
+  "timestamp": "2026-07-05T15:40:55Z",
+  "wikitext": "{{Skill infobox\n| id = 442\n| name = Ferocious Strike\n| campaign = Core\n| profession = Ranger\n| attribute = Beast Mastery\n| type = Pet Attack\n| elite = y\n| energy = 5\n| recharge = 8\n| causes1 = Adrenaline Gain\n| causes2 = Energy Gain\n| description = [[Elite]] [[Pet Attack]]. Your [[animal companion]] attempts a Ferocious Strike that deals  {{gr|13|28|+}} [[damage]]. If that [[attack]] hits, you gain [[adrenaline]] and {{gr|3|10}} [[Energy]].\n| concise description = Elite Pet Attack. Deals {{gr|13|28|+}} damage. You gain adrenaline and {{gr|3|10}} energy.\n}}\n\n{{Skill progression\n|attribute = [[Beast Mastery]]\n|var1 name = + [[Damage]]\n|var1 at0 = 13\n|var1 at15 = 28\n|var2 name = [[Energy]] gain\n|var2 at0 = 3\n|var2 at15 = 10}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Thul The Bull]] ([[Spearhead Peak]])\n* [[Factions]]\n** [[Milodestus the Wrangler]] ([[Boreas Seabed (explorable area)]])\n* [[Nightfall]]\n** [[Bolten Largebelly]] ([[Forum Highlands]])\n** [[Dzabel Land Guardian]] ([[The Floodplain of Mahnkelon]])\n\n== Related skills ==\n* {{skill icon|Scavenger Strike}}\n\n== Notes ==\n* This skill gives 1 strike of adrenaline regardless of Beast Mastery rank.\n\n[[de:Wilder Schlag]]\n[[Category:Core Elite skills]]"
+}

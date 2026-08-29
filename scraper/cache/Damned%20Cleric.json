@@ -1,0 +1,7 @@
+{
+  "title": "Damned Cleric",
+  "pageid": 28929,
+  "revid": 2723462,
+  "timestamp": "2026-03-29T01:11:52Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Zombie\n| affiliation = Undead\n| profession = mo\n| level = 11, 17 (25)\n| campaign = Prophecies\n| image = [[Image:Zombie monk.jpg|150px]]\n}}\n[[Damned Cleric]]s are [[undead]] [[smiter]]s.\n\n== Locations ==\n*[[Kryta]]\n**{{NPC location|Cursed Lands}}\n**{{NPC location|Majesty's Rest}}\n**{{NPC location|Nebo Terrace}}\n**{{NPC location|The Black Curtain}}\n**{{NPC location|Watchtower Coast}} (only during [[The Undead Hordes]])\n\n== Missions ==\n*Kryta\n**{{NPC location|Gates of Kryta}}\n**{{NPC location|D'Alessio Seaboard}}\n**{{NPC location|Divinity Coast}}\n**{{NPC location|Riverside Province}}\n**{{NPC location|Sanctum Cay}}\n\n==Skills==\n9 [[Smiting Prayers]] (16 [[Protection Prayers]], 18 Smiting Prayers in [[hard mode]])\n*{{skill icon|Bane Signet}}\n*{{skill icon|Infuse Health}}\n*{{skill icon|Reversal of Fortune}}\n*{{skill icon|Zealot's Fire}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = mo\n| blunt = 33\n| piercing = 33\n| slashing = 33\n| cold = 33\n| earth = 33\n| fire = 33\n| lightning = 33\n}}\n\n==Items dropped==\n*[[Bolt of Cloth]]\n*[[Dead Staff]]\n*[[Decayed Orr Emblem]]\n\n== Notes ==\n{{Anomaly|If this NPC is called as a target and your [[Options#General|Chat option filter]] is set to filter offensive words, the name will appear as ''\"---- Cleric''\".}}\n\n[[Category:Drops cloth]]"
+}

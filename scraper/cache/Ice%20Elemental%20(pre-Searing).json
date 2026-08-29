@@ -1,0 +1,7 @@
+{
+  "title": "Ice Elemental (pre-Searing)",
+  "pageid": 267272,
+  "revid": 2722913,
+  "timestamp": "2026-03-13T01:57:28Z",
+  "wikitext": "{{otheruses|the Wizard's Folly foe|the Underworld ally|Ice Elemental}}\n{{NPC infobox\n| name = Ice Elemental\n| image = [[file:Ice Elemental.jpg|150px]]\n| type = Elemental\n| affiliation = Presearing wildlife\n| profession = e\n| level = 3\n| campaign = Prophecies\n}}__NOTOC__\n[[Ice Elemental (pre-Searing)|Ice Elemental]]s are creatures made from floating chunks of ice and rock.\n\n==Locations==\n*[[Ascalon (pre-Searing)]]\n**{{NPC location|Wizard's Folly}}\n\n==Skills==\n0 [[Water Magic]]\n*{{skill icon|Frozen Burst}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = e\n| blunt = 10\n| piercing = 10\n| slashing = 10\n| cold = 10\n| earth = 10\n| fire = -30\n| lightning = 10\n}}\n\n==Items dropped==    \n*[[Icy Lodestone]]\n\n==Notes==\n*Similarly to other creatures constructed of ice in the game, they are weak against fire damage. However unlike other creatures constructed of ice, they do not have additional armor against cold damage.\n*Deals [[cold damage]] melee attacks.\n*Their Frozen Burst will also hex nearby [[Stone Elemental]] but not damage them.\n\n<!--[[Category:Drops granite]]this version?-->"
+}

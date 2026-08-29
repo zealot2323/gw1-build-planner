@@ -1,0 +1,7 @@
+{
+  "title": "Lava Imp",
+  "pageid": 148279,
+  "revid": 2661947,
+  "timestamp": "2020-06-07T14:59:47Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Fire Imp.jpg|150px]]\n| type = Imp\n| affiliation = Ring of Fire Islands wildlife\n| profession = e\n| level = 24 (26)\n| campaign = Prophecies\n}}\n[[Lava Imp]]s are fire [[elementalist]]s found in [[Ring of Fire Islands]].\n\n==Missions==\n*[[Ring of Fire Islands]]\n**{{NPC location|Ring of Fire}}\n \n==Skills==\n*{{Skill icon|Glyph of Lesser Energy}}\n*{{Skill icon|Inferno}}\n*{{Skill icon|Meteor Shower}}\n*{{Skill icon|Mind Burn}} ([[elite]])\n\n==Armor ratings==\n{{NPC statistics\n| prof = e\n| blunt = 71\n| piercing = 71\n| slashing = 71\n| cold = 71\n| earth = 71\n| fire = 151\n| lightning = 71\n}}\n\n==Items dropped==\n*[[Molten Heart]]\n\n==Trivia==\n*This creature has one of the highest resistance boosts in the game, with +80 armor rating against fire damage."
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Dredge Shaman",
+  "pageid": 43357,
+  "revid": 2256888,
+  "timestamp": "2011-03-07T06:15:30Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Dredge caster.jpg|196px]]\n| affiliation = Stone Summit\n| type = Dredge\n| profession = Monk\n| level = 24 (26)\n| campaign = Prophecies\n}}\n[[Dredge Shaman]]s are the support [[Smiting Prayers|smiters]] among the [[dredge]] enslaved in [[Sorrow's Furnace]].\n\n==Locations==\n*[[Southern Shiverpeaks]]\n**{{NPC location|Sorrow's Furnace}}\n\n==Skills==\n*{{skill icon|Signet of Devotion}}\n*{{skill icon|Smite Hex}}\n*{{skill icon|Strength of Honor}}\n*{{skill icon|Watchful Spirit}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = mo\n| blunt = 71\n| piercing = 71\n| slashing = 71\n| cold = 71\n| earth = 71\n| fire = 71\n| lightning = 71\n}}\n\n==Items dropped==\n*[[Dredge Manifesto]]"
+}

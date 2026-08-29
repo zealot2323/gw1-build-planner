@@ -1,0 +1,7 @@
+{
+  "title": "Raging Cadaver",
+  "pageid": 54650,
+  "revid": 2722905,
+  "timestamp": "2026-03-13T01:25:39Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Skeleton warrior.jpg|150px]]\n| type = Skeleton\n| affiliation = Undead\n| level = 3 (22), 15\n| profession = n\n| campaign = Prophecies}}\n[[Raging Cadaver]]s often accompany [[Restless Corpse]]s in [[the Catacombs]]. They are ranged attackers with [[necromancer]] [[wand|wands]] and [[focus|foci]], sometimes appearing to deal [[cold damage]], sometimes [[dark damage]], and do not appear to possess any [[skill]]s.\n\n==Locations==\n* [[Core]]\n**[[Ascalon (pre-Searing)]]\n*** {{NPC location|Ashford Catacombs: 1070 AE}}\n*[[Prophecies]]\n**Ascalon (pre-Searing)\n***{{NPC location|The Catacombs}}\n***{{NPC location|Lakeside County}} (during [[the Blessings of Balthazar]])\n**[[Kryta]]\n***{{NPC location|Watchtower Coast}} (during [[The Undead Hordes]])\n\n==Skills==\n*''None''\n\n'''During [[Annihilator 2: Searing Day]]'''\n*{{skill icon|Barbs}}\n*{{skill icon|Deathly Swarm}}\n*{{skill icon|Price of Failure}}\n*{{skill icon|Weaken Armor}}\n\n==Armor ratings==\n{{NPC statistics\n| level = 3\n| prof = n\n| blunt = 32\n| piercing = 32\n| slashing = 32\n| cold = 32\n| earth = 32\n| fire = 32\n| lightning = 32\n}}\n\n==Items dropped==\n*[[Bone]]\n*[[Pile of Glittering Dust]]\n*[[Skeletal Limb]]\n\n[[Category:Drops bone]]\n[[Category:Drops dust]]"
+}

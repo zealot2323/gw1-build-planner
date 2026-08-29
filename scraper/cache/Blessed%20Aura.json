@@ -1,0 +1,7 @@
+{
+  "title": "Blessed Aura",
+  "pageid": 2897,
+  "revid": 2732817,
+  "timestamp": "2026-07-04T19:22:14Z",
+  "wikitext": "{{Skill infobox\n| id = 256\n| name = Blessed Aura\n| campaign = Prophecies\n| profession = Monk\n| attribute = Divine Favor\n| type = Enchantment Spell\n| energy = 10\n| activation = 2\n| recharge = 2\n| upkeep = -1\n| description = [[Enchantment Spell]]. While you [[Upkeep|maintain]] this enchantment, [[Monk]] enchantments you cast last {{gr|10|35||%}} longer.\n| concise description = Enchantment Spell. Monk enchantments you cast last {{gr|10|35||%}} longer.\n| target = self\n}}\n\n{{Skill progression\n|attribute = [[Divine Favor]]\n|var1 name = % longer [[duration]]\n|var1 at0 = 10\n|var1 at15 = 35}}\n\n== Acquisition ==\n'''[[Skill quest]]s''' \n* [[Ghostly Vengeance]] ([[Augury Rock (outpost)|Augury Rock]])  \n'''[[Skill trainer]]s'''\n* [[Bartoch]] ([[Droknar's Forge]])\n* [[Dakk]] ([[Ember Light Camp]])\n\n== Related skills ==\n* {{skill icon|Extend Enchantments}}\n\n== Hero Usage ==\n* Heroes will attempt to maintain this skill, even out of combat.\n\n== Notes ==\n* Blessed Aura rounds [https://en.wikipedia.org/wiki/Rounding#Rounding_half_to_even half to even].\n* The [[Effect stacking|effect stacks]] with an \"[[of Enchanting]]\" weapon modifier, with the order depending on which effect was active on the character first (see [[of Enchanting]] for details). The duration is rounded after each effect, the type of rounding depends on the effect.\n\n[[Category:Monk skill rewards]]\n[[Category:Hero-vetted skills]]"
+}

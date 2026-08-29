@@ -1,0 +1,7 @@
+{
+  "title": "Maguuma Enchanter",
+  "pageid": 42867,
+  "revid": 2533315,
+  "timestamp": "2013-02-07T16:05:06Z",
+  "wikitext": "{{NPC infobox\n| image = [[File:Maguuma Avenger.jpg|150px]]\n| type = Centaur\n| affiliation = Maguuma Jungle wildlife\n| profession = Me\n| level = 16 (25)\n| campaign = Prophecies\n}}__NOTOC__\n[[Maguuma Enchanter]]s are [[Centaur]] [[mesmer]]s of the [[Maguuma Jungle]]. Instead of them casting [[enchantment spell]]s, as their name suggests, they try to [[shutdown]] enemy [[party]] members using [[interrupt]]s and [[energy denial]] skills.\n\n==Missions==\n*[[Maguuma Jungle]]\n**{{NPC location|The Wilds}}\n\n==Skills==\n(18 [[Domination Magic]] in [[Hard mode]])\n*{{skill icon|Blackout}}\n*{{skill icon|Energy Burn}}\n*{{skill icon|Leech Signet}}\n*{{skill icon|Mantra of Earth}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = me\n| blunt = 40\n| piercing = 40\n| slashing = 40\n| cold = 60\n| earth = 40\n| fire = 40\n| lightning = 40\n}}\n\n==Items dropped==\n* [[Centaur Harness]] (Light)\n* [[Centaur Hide]]\n* [[Maguuma Mane]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Kemal the Deadened",
+  "pageid": 60445,
+  "revid": 2479430,
+  "timestamp": "2012-04-24T21:28:17Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| affiliation = Undead\n| type = Skeleton\n| level = 16 (28)\n| image = [[Image:Skeleton monk.jpg|150px]]\n| profession = mo\n| boss = y\n| campaign = Prophecies\n| map1 = [[Image:D'Alessio Seaboard boss locations.jpg|150px]]\n| map1-text = Possible spawn locations\n}}\n[[Kemal the Deadened]] is an [[undead]] [[boss]] found in [[D'Alessio Seaboard]].\n\n==Missions==\n*[[Kryta]]\n**{{NPC location|D'Alessio Seaboard}}\n\n==Skills==\n(15 [[Smiting Prayers]] in [[Hard mode]])\n*{{skill icon|Healing Breeze}}\n*{{skill icon|Smite Hex}}\n*{{skill icon|Symbol of Wrath}}\n*{{skill icon|Vengeance}}\n\n==Items dropped==\n*[[Pile of Glittering Dust]]\n\n==Notes==\n*Its spawn location is shared with [[Abijah the Decayed]], [[Bane Darkfist]], [[Gezna Shadowstalker]], [[Nizza the Sickle]] and [[Ziyad Soulreaper]].\n*Consider [[Signet of Capture|capturing]] the skill [[Vengeance]] from this boss (if you have use for it), since it does not become available until [[Destiny's Gorge]] in the [[Crystal Desert]].\n{{bug|When target calling Kemal, the dialogue may read: 'I'm following' instead of 'I'm attacking' as if he was an ally of the party.}}\n\n[[Category:Drops dust]]"
+}

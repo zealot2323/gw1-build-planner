@@ -1,0 +1,7 @@
+{
+  "title": "Offering of Blood",
+  "pageid": 1758,
+  "revid": 2695843,
+  "timestamp": "2024-05-16T20:49:49Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 146\n| name = Offering of Blood\n| campaign = Prophecies\n| profession = Necromancer\n| attribute = Blood Magic\n| type = Spell\n| elite = y\n| energy = 1\n| activation = {{1/4}}\n| recharge = 15\n| sacrifice = 20%\n| causes1 = Energy Gain\n| description = [[Elite]] [[Spell]]. You gain {{gr|8|20}} [[Energy]].\n| concise description = Elite Spell. You gain {{gr|8|20}} Energy.\n}}\n\n{{Skill progression\n| attribute = [[Blood Magic]]\n| var1 name = [[Energy]] gain\n| var1 at0 = 8\n| var1 at15 = 20}}\n\n==Acquisition==\n'''[[Signet of Capture]]'''\n* [[Tonfor Copperblood]] ([[Lornar's Pass]])\n* [[Jollen Steelblight]] ([[Frozen Forest]])\n* [[Morgriff Shadestone]] ([[Grenth's Footprint]])\n* [[Hormak Ironcurse]] ([[Ice Caves of Sorrow]])\n* [[Riine Windrot]] ([[Thunderhead Keep]])\n\n==Related skills==\n*{{skill icon|Offering of Spirit}} ([[elite]])\n\n== Trivia ==\n*The skill icon depicts the skull of an [https://en.wikipedia.org/wiki/African_buffalo african buffalo].\n*The only bosses this skill can be captured from are members of the [[Stone Summit]].\n{{Skill change}}\n\n[[de:Blutopfer]]"
+}

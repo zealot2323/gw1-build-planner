@@ -1,0 +1,7 @@
+{
+  "title": "Glyph of Sacrifice",
+  "pageid": 8313,
+  "revid": 2695679,
+  "timestamp": "2024-05-16T07:34:46Z",
+  "wikitext": "{{Skill infobox\n| id = 202\n| name = Glyph of Sacrifice\n| campaign = Prophecies\n| profession = Elementalist\n| type = Glyph\n| energy = 5\n| activation = 1\n| recharge = 15\n| causes1 = Increased Recharge Time\n| causes2 = Decreased Activation Time\n| description = [[Glyph]]. For 15 seconds, your next [[spell]] [[Activation time|casts]] instantly, but it takes an additional 30 seconds to [[Recharge time|recharge]]. Ends prematurely if you use a non-spell skill.\n| concise description = Glyph. (15 seconds.) Your next spell casts instantly but takes an additional 30 seconds to recharge. {{gray|Ends if you use a non-spell skill.}}\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Steig]] ([[Camp Rankor]])\n* [[Dakk]] ([[Ember Light Camp]])\n\n== Related skills ==\n* {{Skill icon|Glyph of Essence}}\n\n== Notes ==\n* Can be used to cast [[hard resurrection]] spells such as [[Resurrection Chant]] quickly and with no threat of disruption.\n* Combine with [[Assassin's Promise]] or [[Air of Superiority]] to bypass the extended recharge time.\n{{anomaly| Despite the descriptions saying that the next spell casts ''instantly'', a better description would be ''very quickly'', as the activation time of the spell cast through it is a 1/4 second and there's still a slight chance it might be [[interrupt]]ed.}}\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Activation time skills]]"
+}

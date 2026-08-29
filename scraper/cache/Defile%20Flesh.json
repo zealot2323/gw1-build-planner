@@ -1,0 +1,7 @@
+{
+  "title": "Defile Flesh",
+  "pageid": 14859,
+  "revid": 2683638,
+  "timestamp": "2023-02-20T23:15:05Z",
+  "wikitext": "{{Skill infobox\n| id = 129\n| name = Defile Flesh\n| campaign = Core\n| profession = Necromancer\n| attribute = Curses\n| type = Hex Spell\n| sacrifice = 10%\n| energy = 10\n| activation = 1\n| recharge = 10\n| description = [[Hex Spell]]. For {{gr|5|35}} seconds, [[target]] [[foe]] gains only two-thirds [[Health]] from [[heal]]ing.\n| concise description = Hex Spell. ({{gr|5|35}} seconds.) Reduces healing target foe receives by 33%. {{gray|Only skills with the word \"heal\" in the description are affected.}}\n}}\n\n{{Skill progression\n|attribute = [[Curses]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 35}}\n\n== Acquisition ==\n'''[[Skill quest]]s'''\n* [[Prophecies]]\n** [[Renegade Necromancer]] ([[Yak's Bend]])\n'''[[Skill trainer]]s'''\n* Prophecies\n** [[Firstwatch Sergio]] ([[Lion's Arch]])\n** [[Dakk]] ([[Ember Light Camp]])\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n* [[Nightfall]]\n** [[Baram]] ([[The Kodash Bazaar]])\n;[[Signet of Capture]]\n* Nightfall\n** [[Kahli, the Stiched]] ([[Cliffs of Dohjok]], only during [[Following the Trail]])\n** [[Midshipman Beraidun]] ([[Cliffs of Dohjok]], only during [[A Land of Heroes]])\n** [[Commander Werishakul]] ([[Mehtani Keys]])\n** [[Commander Sehden]] ([[Bahdok Caverns]])\n\n== Related skills ==\n* {{skill icon|Lingering Curse}} ([[elite]])\n* {{skill icon|Malign Intervention}}\n* {{skill icon|Mark of Death}}\n\n[[Category:Necromancer skill rewards]]"
+}

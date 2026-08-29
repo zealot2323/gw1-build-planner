@@ -1,0 +1,7 @@
+{
+  "title": "Storm Kin",
+  "pageid": 22549,
+  "revid": 2680369,
+  "timestamp": "2022-08-20T16:09:24Z",
+  "wikitext": "{{NPC infobox\n| type = Rider\n| affiliation = Crystal Desert wildlife\n| profession = Mesmer\n| icon = [[Image:Mesmer-icon-small.png]]\n| level = 20 (26)\n| campaign = Prophecies\n}}__NOTOC__\n[[Storm Kin]] are found in the [[Crystal Desert]].\n\n==Locations==\n*[[Crystal Desert]]\n**{{NPC location|Prophet's Path}}\n**{{NPC location|Salt Flats}}\n**{{NPC location|Skyward Reach}}\n==Missions==\n*[[Crystal Desert]]\n**{{NPC location|Dunes of Despair}}\n\n==Skills==\n15 [[Illusion Magic]] (20 [[Domination Magic]], 20 Illusion Magic in [[Hard mode]])\n*{{skill icon|Clumsiness}}\n*{{skill icon|Conjure Phantasm}}\n*{{skill icon|Power Drain}}\n*{{skill icon|Shame}} (Hard mode only)\n*{{skill icon|Soothing Images}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = me\n| blunt = 60\n| piercing = 60\n| slashing = 60\n| cold = 60\n| earth = 60\n| fire = 60\n| lightning = 60\n}}\n\n==Items dropped==\n*[[Shriveled Eye]]"
+}

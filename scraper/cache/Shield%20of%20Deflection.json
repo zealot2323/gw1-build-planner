@@ -1,0 +1,7 @@
+{
+  "title": "Shield of Deflection",
+  "pageid": 4110,
+  "revid": 2733085,
+  "timestamp": "2026-07-05T14:54:29Z",
+  "wikitext": "{{Skill infobox\n| id = 259\n| name = Shield of Deflection\n| campaign = Prophecies\n| profession = Monk\n| attribute = Protection Prayers\n| type = Enchantment Spell\n| elite = y\n| energy = 10\n| activation = {{1/4}}\n| recharge = 5\n| causes1 = Block\n| causes2 = Increased Armor Rating\n| description = [[Elite]] [[Enchantment Spell]]. For {{gr|3|10}} seconds, [[target]] [[ally]] has a 75% chance to [[block]] [[attacks]] and gains {{gr|15|30}} [[Armor rating|armor]].\n| concise description = Elite Enchantment Spell. ({{gr|3|10}} seconds.) 75% chance to block. {{gr|15|30|+}} armor.\n}}\n\n{{Skill progression\n| attribute = [[Protection Prayers]]\n| var1 name = [[Duration]]\n| var1 at0 = 3\n| var1 at15 = 10\n| var2 name = + [[Armor rating]]\n| var2 at0 = 15\n| var2 at15 = 30}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Grun Galesurge]] ([[Ring of Fire]])\n\n== Hero Usage ==\n* Heroes use Shield of Deflection under two criteria:\n** They will use it in response to an ally being attacked by melee or ranged attacks.\n** They will use it on an ally whose health has fallen below 50%, even if that ally is not under attack or receiving damage.\n\n== Related skills==\n* {{skill icon|Guardian}}\n* {{skill icon|Weapon of Warding}}\n\n== Trivia ==\n* The [[skill icon]] appears similar to the [[Shield Bash]] icon.\n{{Skill change}}\n\n[[Category:Hero-vetted skills]]\n[[de:Ablenkungsschild]]"
+}

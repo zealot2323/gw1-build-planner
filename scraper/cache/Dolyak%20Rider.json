@@ -1,0 +1,7 @@
+{
+  "title": "Dolyak Rider",
+  "pageid": 46507,
+  "revid": 2710265,
+  "timestamp": "2025-07-07T23:24:12Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Dwarf Summit dolyak rider.jpg|220px]]\n| type = Dolyak\n| affiliation = Stone Summit\n| profession = mo\n| level = 11 (24)\n| campaign = Prophecies\n}}\n[[Dolyak Rider]]s are [[Stone Summit]] [[monk]]s who ride armored [[Dolyak]]s.\n\n==Locations==\n*[[Northern Shiverpeaks]]\n**{{NPC location|Anvil Rock}}\n**{{NPC location|Iron Horse Mine}}\n**{{NPC location|Lornar's Pass}}\n\n==Missions==\n*Northern Shiverpeaks\n**{{NPC location|Borlis Pass}}\n**{{NPC location|The Frost Gate}}\n\n==Skills==\n10 [[Protection Prayers]]\n*{{Skill icon|Banish}}\n*{{Skill icon|Heal Other}}\n*{{Skill icon|Mark of Protection}} ([[elite]], [[Hard mode]] only)\n*{{Skill icon|Remove Hex}}\n*{{Skill icon|Shielding Hands}}\n*{{Skill icon|Strength of Honor}}\n*{{monster skill icon|Stun Immunity}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = mo\n| blunt = 34\n| piercing = 34\n| slashing = 34\n| cold = 34\n| earth = 34\n| fire = 34\n| lightning = 34\n}}\n\n==Items dropped==\n*[[Dolyak Cladding]]\n*[[Dolyak Hide]]\n*[[Stone Summit Badge]]\n*[[Summit Axe]]\n*[[Summit Hammer]]"
+}

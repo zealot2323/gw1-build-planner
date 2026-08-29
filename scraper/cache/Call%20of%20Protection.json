@@ -1,0 +1,7 @@
+{
+  "title": "Call of Protection",
+  "pageid": 2506,
+  "revid": 2718886,
+  "timestamp": "2026-01-24T05:45:21Z",
+  "wikitext": "{{Skill infobox\n| id = 412\n| name = Call of Protection\n| campaign = Prophecies\n| profession = Ranger\n| attribute = Beast Mastery\n| type = Shout\n| energy = 5\n| recharge = 90\n| causes1 = Damage Reduction\n| description = [[Shout]].  For 120 seconds, your [[animal companion]] has a {{gr|5|20}} base [[damage reduction]].\n| concise description = Shout. (120 seconds.) Your pet has {{gr|5|20}} damage reduction.\n| aoe = None\n}}\n\n{{Skill progression\n|attribute = [[Beast Mastery]]\n|var1 name = [[Damage reduction]]\n|var1 at0 = 5\n|var1 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill quest]]s:'''\n* [[Stone Summit Beastmasters]] ([[Traveler's Vale]])\n'''[[Skill trainer]]s:'''\n* [[Firstwatch Sergio]] ([[Lion's Arch]])\n* [[Dakk]] ([[Ember Light Camp]])\n\n== Notes ==\n* Because of the long recharge time, this skill synergizes well with [[Enraged Lunge (PvP)]].\n* This skill cannot be activated unless you are traveling with a pet.\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Pet skills]]\n[[Category:Ranger skill rewards]]"
+}

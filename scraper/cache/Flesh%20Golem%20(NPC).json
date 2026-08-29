@@ -1,0 +1,7 @@
+{
+  "title": "Flesh Golem (NPC)",
+  "pageid": 43124,
+  "revid": 2577811,
+  "timestamp": "2014-10-31T04:23:28Z",
+  "wikitext": "{{NPC infobox\n| name = Flesh Golem\n| image = [[File:Dead Thresher.jpg|150px]]\n| type = Abomination\n| profession = n\n| level = 24 (26)\n| campaign = Prophecies\n}}__NOTOC__\n[[Flesh Golem (NPC)|Flesh Golems]] are disturbing creatures that roam [[Perdition Rock]]. These twisted aberrations of nature are powerful [[necromancer]]s, though not [[undead]] themselves.\n\n==Locations==\n*[[Ring of Fire Islands]]\n**{{NPC location|Perdition Rock}}\n\n==Missions==\n*Ring of Fire Islands\n**{{NPC location|Abaddon's Mouth}}\n\n==Skills==\n14 [[Curses]], 12 [[Death Magic]] (16 Curses, 17 Death Magic in [[hard mode]])\n*{{skill icon|Animate Bone Minions}}\n*{{skill icon|Death Nova}}\n*{{skill icon|Faintheartedness}}\n*{{skill icon|Lingering Curse}} ([[elite]])\n*{{skill icon|Taste of Death}}\n*{{monster skill icon|Stun Immunity}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = n\n| blunt = 71\n| piercing = 71\n| slashing = 71\n| cold = 71\n| earth = 71\n| fire = 71\n| lightning = 71\n}}\n\n==Items dropped==\n*[[Seared Ribcage]]\n\n==Notes==\n*[[It Ends Here]] and preceding quests refer to the Flesh Golems from the Ring of Fire Islands as [[Fire Golem]]s."
+}

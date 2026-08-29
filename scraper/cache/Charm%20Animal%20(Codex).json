@@ -1,0 +1,7 @@
+{
+  "title": "Charm Animal (Codex)",
+  "pageid": 227503,
+  "revid": 2672259,
+  "timestamp": "2021-04-28T23:25:47Z",
+  "wikitext": "{{pveversion|Charm Animal}}\n{{Skill infobox\n| id= 3068\n| name = Charm Animal (Codex)\n| campaign = Core\n| profession = Ranger\n| attribute = Beast Mastery\n| type = Skill\n| energy = 10\n| activation = 10\n| is-pvp = y\n| description = [[Skill (skill type)|Skill]]. Your [[animal companion]] will travel with you whenever you have Charm Animal equipped and have at least 8 points in [[Beast Mastery]].\n| concise description = Skill. Your animal companion will travel with you whenever you have Charm Animal equipped. {{gray|Failure unless Beast Mastery 8 or higher.}}\n}}\n\n==Acquisition==\nThis is one of the few permanent skills available in the [[Codex Arena]].\n\n[[Category:Skills with a failure rate linked to an attribute]]\n\n[[de:Tier zähmen (Kodex)]]"
+}

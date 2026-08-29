@@ -1,0 +1,7 @@
+{
+  "title": "Rock Ice",
+  "pageid": 22569,
+  "revid": 2409182,
+  "timestamp": "2011-11-15T03:00:37Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Ice Elemental.jpg|150px]]\n| affiliation = Shiverpeak Mountains wildlife\n| type = Elemental\n| profession = w\n| level = 22 (26)\n| campaign = Prophecies\n}}\n[[Rock Ice]] are a type of [[Elemental]] found only in [[Spearhead Peak]].\n\n== Locations ==\n* [[Southern Shiverpeaks]]\n** [[Spearhead Peak]]\n\n== Skills ==\n* {{skill icon|Crushing Blow}}\n* {{skill icon|Irresistible Blow}}\n* {{skill icon|Skull Crack}} ([[elite]])\n* {{monster skill icon|Natural Resistance}}\n\n== Armor ratings ==\n{{NPC statistics\n| prof = w\n| blunt = 106\n| piercing = 106\n| slashing = 106\n| cold = 86\n| earth = 86\n| fire = 86\n| lightning = 86\n}}\n\n== Items dropped ==\n* [[Pile of Glittering Dust]]\n\n== Notes ==\n* Despite using the same model as [[Siege Ice Golem]]s, Rock Ices can be knocked down and do not have reduced armor against [[fire damage]].\n{{anomaly|Rock Ices have [[Natural Resistance]], similar to bosses.}}\n\n[[Category:Drops dust]]"
+}

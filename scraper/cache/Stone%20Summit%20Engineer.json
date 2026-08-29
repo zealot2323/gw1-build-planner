@@ -1,0 +1,7 @@
+{
+  "title": "Stone Summit Engineer",
+  "pageid": 43107,
+  "revid": 2406718,
+  "timestamp": "2011-11-10T07:09:36Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Dwarf\n| affiliation = Stone Summit\n| profession = w\n| profession2 = r\n| profession3 = me\n| level = 9, 10, 24 (23, 24, 26)\n| campaign = Prophecies\n}}\n[[Stone Summit Engineer]]s control [[catapult]]s and [[ballista|ballistae]] and will not engage foes. Killing these foes gives your party a [[morale boost]].\n\n==Missions==\n*[[Northern Shiverpeaks]]\n**{{NPC location|Borlis Pass}}\n**{{NPC location|The Frost Gate}}\n*[[Southern Shiverpeaks]]\n**{{NPC location|Ice Caves of Sorrow}}\n\n==Skills==\n*{{monster skill icon|Siege Attack}}\n\n==Armor ratings==\n{{NPC statistics\n| level = 24\n| prof = w\n| blunt = 127\n| piercing = 127\n| slashing = 127\n| cold = 107\n| earth = 107\n| fire = 107\n| lightning = 107\n}}\n\n==Items dropped==\n*[[Dwarven Armor]]\n*[[Stone Summit Badge]]\n*[[Summit Axe]]\n*[[Summit Hammer]]\n\n==Notes==\n{{anomaly|The morale boost granted upon killing an Engineer also affects [[pet]]s.}}\n*Stone Summit Engineers have been observed dropping Warrior, Ranger, and Mesmer [[skill tome]]s.\n\n[[Category:Boss-like foes]]"
+}

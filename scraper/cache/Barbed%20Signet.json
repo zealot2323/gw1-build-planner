@@ -1,0 +1,7 @@
+{
+  "title": "Barbed Signet",
+  "pageid": 1733,
+  "revid": 2695708,
+  "timestamp": "2024-05-16T07:57:57Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 131\n| name = Barbed Signet\n| campaign = Core\n| profession = Necromancer\n| attribute = Blood Magic\n| type = Signet\n| activation = 1\n| recharge = 10\n| sacrifice = 8%\n| target = foes\n| range = \n| aoe = adjacent\n| causes1 = Bleeding\n| causes2 =\n| removes1 = \n| requires1 =\n| description = [[Signet]]. You inflict [[Bleeding]] for {{gr|3|15}} seconds on [[target]] [[foe]] and all [[adjacent]] foes.\n| concise description = Signet. Target and adjacent foes suffer from Bleeding ({{gr|3|15}} seconds).\n}}\n\n{{Skill progression\n|attribute = [[Blood Magic]]\n|var1 name = [[Bleeding]] [[duration]]\n|var1 at0 = 3\n|var1 at15 = 15}}\n\n== Acquisition ==\n'''[[Skill quest]]s'''\n* [[Prophecies]]  \n** [[Blood And Smoke]] ([[Ettin's Back]])\n* [[Factions]]\n** [[Reaping the Naga]] ([[Panjiang Peninsula]])\n'''[[Skill trainer]]s'''\n* Prophecies\n** [[Tengsao]] ([[The Amnoon Oasis]])\n** [[Dakk]] ([[Ember Light Camp]])\n* Factions\n** [[Michiko]] ([[Kaineng Center]])\n* [[Nightfall]]\n** [[Medando]] ([[Yohlon Haven]])\n'''[[Hero skill trainer]]s'''\n* Nightfall\n** [[Pikin]] ([[Kamadan, Jewel of Istan]])\n'''[[Signet of Capture]]'''\n* Prophecies\n** [[Degaz the Cynical]] ([[Riverside Province (explorable area)]])\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Necromancer skill rewards]]\n[[Category:Skills offered by hero skill trainers]]"
+}

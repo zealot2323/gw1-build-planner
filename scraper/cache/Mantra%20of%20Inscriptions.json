@@ -1,0 +1,7 @@
+{
+  "title": "Mantra of Inscriptions",
+  "pageid": 1654,
+  "revid": 2732810,
+  "timestamp": "2026-07-04T19:13:16Z",
+  "wikitext": "{{otheruses|the Core skill|the temporarily available [[Bonus Mission Pack]] skill|Mantra of Inscriptions (Saul D'Alessio)}}\n{{Skill infobox\n| id = 15\n| name = Mantra of Inscriptions\n| campaign = Core\n| profession = Mesmer\n| attribute = Inspiration Magic\n| type = Stance\n| energy = 10\n| recharge = 20\n| causes1 = Decreased Recharge Time\n| description = [[Stance]]. For {{gr|5|25}} seconds, [[signet]]s you successfully activate while in this stance [[recharge]] {{gr|10|40||%}} faster.\n| concise description = Stance. ({{gr|5|25}} seconds.) Signets you successfully activate while in this stance recharge {{gr|10|40||%}} faster.\n}}\n\n{{Skill progression\n|attribute = [[Inspiration Magic]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 25\n|var2 name = Faster recharge %\n|var2 at0 = 10\n|var2 at15 = 40}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Prophecies]]\n** [[Steig]] ([[Camp Rankor]])\n** [[Dakk]] ([[Ember Light Camp]])\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n* [[Nightfall]]\n** [[Dau]] ([[The Mouth of Torment]])\n\n'''[[Signet of Capture]]'''\n* Prophecies\n** [[Gaiza Deadeye]] ([[Riverside Province]])\n** [[Zaim Grimeclaw]] ([[Sanctum Cay]])\n\n== Related skills ==\n* {{skill icon|Symbolic Posture}}\n\n[[Category:Mantras]]"
+}

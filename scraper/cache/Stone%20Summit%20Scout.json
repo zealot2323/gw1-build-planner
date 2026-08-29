@@ -1,0 +1,7 @@
+{
+  "title": "Stone Summit Scout",
+  "pageid": 16467,
+  "revid": 2411150,
+  "timestamp": "2011-11-18T08:15:23Z",
+  "wikitext": "__NOTOC__\n{{NPC infobox\n| image = [[File:Stone Summit Ranger.jpg|150px]]\n| type = Dwarf\n| affiliation = Stone Summit\n| profession = r\n| level = 9 (23)\n| campaign = Prophecies\n}}\n[[Stone Summit Scout]]s are [[Stone Summit]] [[ranger]]s found in the [[Northern Shiverpeaks]] region.\n\n==Locations==\n*[[Northern Shiverpeaks]]\n**{{NPC location|Anvil Rock}}\n**{{NPC location|Iron Horse Mine}}\n**{{NPC location|Lornar's Pass}}\n**{{NPC location|Traveler's Vale}}\n\n==Missions==\n*Northern Shiverpeaks\n**{{NPC location|Borlis Pass}}\n**{{NPC location|The Frost Gate}}\n\n==Skills==\n(24 [[Wilderness Survival]] in [[Hard mode]])\n*{{Skill icon|Called Shot}}\n*{{Skill icon|Melandru's Arrows}} ([[elite]], only in Hard mode)\n*{{Skill icon|Pin Down}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 37\n| piercing = 37\n| slashing = 37\n| cold = 67\n| earth = 67\n| fire = 67\n| lightning = 67\n}}\n\n==Items dropped==\n*[[Dwarven Scout Armor]]\n*[[Stone Summit Badge]]\n*[[Summit Axe]]\n*[[Summit Hammer]]\n\n[[Category:Stone Summit]]"
+}

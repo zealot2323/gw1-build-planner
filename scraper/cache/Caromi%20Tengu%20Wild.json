@@ -1,0 +1,7 @@
+{
+  "title": "Caromi Tengu Wild",
+  "pageid": 42599,
+  "revid": 2217779,
+  "timestamp": "2011-01-10T09:29:24Z",
+  "wikitext": "__NOTOC__\n{{NPC infobox\n| type = Tengu\n| affiliation = Caromi\n| profession = me\n| level = 12 (24)\n| campaign = Prophecies\n| image = [[File:Tengu_caster.jpg|150px]]\n}} \nThese creatures are the basic [[Tengu]] [[Mesmer]]s. They populate all of [[Kryta]] and roam the country in groups with other Tengu-typed creatures like [[Caromi Tengu Scout]]s or [[Caromi Tengu Brave]]s.\n\n== Locations ==\n* [[Kryta]]\n** {{NPC location|Nebo Terrace}}\n** {{NPC location|North Kryta Province}}\n** {{NPC location|Stingray Strand}}\n** {{NPC location|Twin Serpent Lakes}}\n** {{NPC location|Watchtower Coast}}\n\n== Skills ==\n10 [[Illusion Magic]], 4 [[Domination Magic]] (20 Illusion Magic, 16 Domination Magic in [[Hard mode]])\n* {{skill icon|Conjure Phantasm}}\n* {{Skill icon|Cry of Frustration}}\n* {{skill icon|Ineptitude}} ([[elite]]; Hard mode only)\n* {{Skill icon|Shatter Enchantment}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = me\n| blunt = 37\n| piercing = 37\n| slashing = 37\n| cold = 37\n| earth = 37\n| fire = 37\n| lightning = 17\n}}\n\n== Items dropped ==\n* [[Bone]]\n* [[Feather]]\n* [[Feathered Caromi Scalp]]\n* [[Monstrous Claw]]\n* [[Monstrous Eye]]\n* [[Tengu Robes]]\n\n[[Category:Drops bone]]\n[[Category:Drops feather]]\n[[Category:Drops monstrous claw]]\n[[Category:Drops monstrous eye]]"
+}

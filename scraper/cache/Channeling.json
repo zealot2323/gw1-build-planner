@@ -1,0 +1,7 @@
+{
+  "title": "Channeling",
+  "pageid": 1636,
+  "revid": 2738366,
+  "timestamp": "2026-08-26T20:23:50Z",
+  "wikitext": "{{otheruses|the skill Channeling|the attribute|Channeling Magic}}\n{{Skill infobox\n| id = 38\n| name = Channeling\n| campaign = Prophecies\n| profession = Mesmer\n| attribute = Inspiration Magic\n| type = Enchantment Spell\n| energy = 5\n| activation = 1\n| recharge = 10\n| causes1 = Energy Gain\n| description = [[Enchantment Spell]]. For {{gr|8|56}} seconds, whenever you cast a [[spell]], you gain 1 [[Energy]] for each [[foe]] [[in the area]].\n| concise description = Enchantment Spell. ({{gr|8|56}} seconds.) You gain 1 Energy for each foe in the area whenever you cast a spell.\n| target = self\n}}\n\n{{Skill progression\n|attribute = [[Inspiration Magic]]\n|var1 name = [[Duration]]\n|var1 at0 = 8\n|var1 at15 = 56}}\n\n== Acquisition ==\n'''[[Skill quest]]s'''\n* [[The Stone Summit Champion]] ([[Yak's Bend]])\n'''[[Skill trainer]]s'''\n* [[Firstwatch Sergio]] ([[Lion's Arch]])\n* [[Dakk]] ([[Ember Light Camp]])\n\n==Related skills==\n*{{skill icon|Eremite's Zeal}}\n*{{skill icon|Leader's Zeal}}\n\n== Notes ==\n* Channeling is sometimes brought as an [[energy management]] method for [[Monk]]s in [[Heroes' Ascent]] due to the high energy returns in small maps and altar matches. This has lead to a tactic known as [[Channel tank]]ing.\n\n[[Category:Mesmer skill rewards]]"
+}

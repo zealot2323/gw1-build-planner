@@ -1,0 +1,7 @@
+{
+  "title": "Deathly Chill",
+  "pageid": 16178,
+  "revid": 2695849,
+  "timestamp": "2024-05-16T20:54:42Z",
+  "wikitext": "{{Skill infobox\n| id = 89\n| name = Deathly Chill\n| campaign = Prophecies\n| profession = Necromancer\n| attribute = Death Magic\n| type = Spell\n| energy = 10\n| activation = 1\n| recharge = 5\n| causes1 = Cold Damage\n| causes2 = Shadow Damage\n| description = [[Spell]]. [[Target]] [[foe]] is struck for {{gr|5|50}} [[cold damage]]. If that foe's [[Health]] is above 50%, you deal an additional {{gr|5|50}} [[shadow damage]].\n| concise description = Spell. Deals {{gr|5|50}} cold damage. Deals {{gr|5|50}} more damage if target foe was above 50% Health.\n}}\n\n{{Skill progression\n|attribute = [[Death Magic]]\n|var1 name = [[Cold damage]]\n|var1 at0 = 5\n|var1 at15 = 50\n|var2 name = [[Shadow damage]]\n|var2 at0 = 5\n|var2 at15 = 50}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Prophecies]]\n** [[Avena]] ([[Maguuma Stade]]) \n** [[Tengsao]] ([[The Amnoon Oasis]])\n** [[Dakk]] ([[Ember Light Camp]])\n'''[[Signet of Capture]]'''\n* Prophecies\n** [[Rotcap Mochsart]] ([[Sage Lands]])\n** [[Mossk Rottail]] ([[Bloodstone Fen]])\n** [[Flaw Rootplague]] ([[Ettin's Back]])\n* [[Eye of the North]]\n** [[Flesheater]] ([[Rragar's Menagerie]])\n\n== Related skills ==\n* {{duplicate skill icon|Shadow Strike|Lifebane Strike}}\n\n==Notes==\n*The concise description fails to mention that the bonus damage caused by this skill is shadow damage.\n\n== Trivia ==\n{{Skill change}}"
+}

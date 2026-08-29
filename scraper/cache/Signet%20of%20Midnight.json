@@ -1,0 +1,7 @@
+{
+  "title": "Signet of Midnight",
+  "pageid": 1687,
+  "revid": 2674044,
+  "timestamp": "2021-07-23T03:54:24Z",
+  "wikitext": "{{Skill infobox\n| id = 58\n| name = Signet of Midnight\n| campaign = Prophecies\n| profession = Mesmer\n| type = Touch Signet\n| recharge = 10\n| activation = 2\n| elite = y\n| range = touch\n| target = foes\n| causes1 = Blind\n| description = [[Elite]] [[Signet]]. You and [[target]] [[touch]]ed [[foe]] become [[Blind]]ed for 15 seconds.\n| concise description = Elite Touch Signet. (15 seconds.) Inflicts Blindness condition. {{gray|You suffer from Blindness (15 seconds).}}\n}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Malus Phasmatis]] ([[Perdition Rock]])\n\n== Related skills ==\n* {{skill icon|Throw Dirt}}\n\n== Notes ==\n* Consider using this with [[Plague Touch]] or [[Plague Sending]] for a second blind.\n* Consider using with condition spreading skills such as [[Epidemic]] for spreading blind to [[mob]]s.\n* The [[AI]] will only use this skill on a foe wielding a [[martial weapon]], regardless of it being [[Normal mode|Normal]] or [[Hard mode]]. This is similar to [[Eruption]], but unlike [[Blinding Flash]] and [[Throw Dirt]]. \n** The AI uses this skill on [[spirit]]s which are immune to all conditions except [[burning]]. <!-- Tested on Phantom (NPC) -->\n\n\n[[de:Siegel der Mitternacht]]"
+}

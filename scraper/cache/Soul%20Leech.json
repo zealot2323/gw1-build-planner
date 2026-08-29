@@ -1,0 +1,7 @@
+{
+  "title": "Soul Leech",
+  "pageid": 1774,
+  "revid": 2728010,
+  "timestamp": "2026-05-13T03:41:30Z",
+  "wikitext": "{{Skill infobox\n| id = 128\n| name = Soul Leech\n| campaign = Prophecies\n| profession = Necromancer\n| attribute = Blood Magic\n| type = Hex Spell\n| elite = y\n| energy = 15\n| activation = 1\n| recharge = 7\n| causes1 = Life Stealing\n| description = [[Elite]] [[Hex Spell]]. For 10 seconds, whenever [[target]] [[foe]] casts a [[spell]], you [[life stealing|steal]] up to {{gr|16|80}} [[Health]] from that foe.\n| concise description = Elite Hex Spell. (10 seconds.) Steal {{gr|16|80}} Health whenever target foe casts a spell.\n}}\n\n{{Skill progression\n| attribute = [[Blood Magic]]\n| var1 name = [[Life stealing]]\n| var1 at0 = 16\n| var1 at15 = 80}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Goss Darkweb]] ([[Abaddon's Mouth]])\n* [[Eye of the North]]\n** [[Flesh of Destruction]] ([[Glint's Challenge]])\n\n== Related skills ==\n* {{skill icon|Backfire}}\n* {{skill icon|Mark of Subversion}}\n* {{skill icon|Power Leech}} ([[elite]])\n* {{skill icon|Spiteful Spirit}} (elite)\n* {{skill icon|Spoil Victor}} (elite)\n* {{skill icon|Visions of Regret}} (elite)\n\n== Notes ==\n* As a [[punish]]ment hex, this skill is more effective in [[Hard mode]] since enemies have faster casting and are thus able to cast more often. \n* Unlike [[Backfire]], the [[AI]] will cast until death while under the effects of this hex.\n\n== Trivia ==\n{{Skill change}}\n\n[[de:Seelenfresser]]"
+}

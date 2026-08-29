@@ -1,0 +1,7 @@
+{
+  "title": "Maguuma Spider",
+  "pageid": 19485,
+  "revid": 2578625,
+  "timestamp": "2014-11-20T00:44:04Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Brown spider.jpg|150px]]\n| affiliation = Maguuma Jungle wildlife\n| type = Arachnid\n| profession = r\n| level = 16 (25)\n| campaign = Prophecies}}\n[[Maguuma Spider]]s usually dwell in the trees and pounce on their prey, but there are a few that stalk the ground.\n\n==Locations==\n*[[Kryta]]\n** {{NPC location|Majesty's Rest}}\n*[[Maguuma Jungle]]\n** {{NPC location|Reed Bog}}\n** {{NPC location|Sage Lands}}\n** {{NPC location|The Falls}}\n\n==Missions==\n*Maguuma Jungle\n**{{NPC location|Aurora Glade}}\n**{{NPC location|The Wilds}}\n\n==Skills==\n*{{skill icon|Apply Poison}}\n*{{skill icon|Charm Animal}}\n*{{skill icon|Pin Down}}\n*{{skill icon|Storm Chaser}}\n*{{Skill icon|Punishing Shot}} ([[elite]], [[hard mode]] only)\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 64\n| piercing = 64\n| slashing = 64\n| cold = 64\n| earth = 64\n| fire = 64\n| lightning = 64\n}}\n\n==Items dropped==\n*[[Chitin Fragment]]\n*[[Ebon Spider Leg]]\n*[[Maguuma Spider Web]]\n*[[Monstrous Claw]]\n\n[[Category:Drops chitin]]\n[[Category:Drops monstrous claw]]"
+}

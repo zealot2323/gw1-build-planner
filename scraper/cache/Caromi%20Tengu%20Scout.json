@@ -1,0 +1,7 @@
+{
+  "title": "Caromi Tengu Scout",
+  "pageid": 49185,
+  "revid": 2571507,
+  "timestamp": "2014-07-12T22:41:57Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| affiliation = Caromi\n| type = Tengu\n| image=[[Image:Tengu_fighter.jpg|150px]]\n| profession = r\n| level = 13 (24)\n| campaign = Prophecies\n}}\nThese creatures are the basic [[Tengu]] [[ranger]]s. They populate all of [[Kryta]] and roam the country in groups with other Tengu.\n\n==Locations==\n* [[Kryta]]\n** {{NPC location|Divinity Coast (explorable area)}}\n** {{NPC location|Nebo Terrace}}\n** {{NPC location|North Kryta Province}}\n** {{NPC location|Stingray Strand}}\n** {{NPC location|Watchtower Coast}}\n\n==Missions==\n*Kryta\n**{{NPC location|Divinity Coast}}\n\n==Skills==\n* {{Skill icon|Dual Shot}} ([[Hard mode]] only)\n* {{Skill icon|Point Blank Shot}}\n* {{Skill icon|Read the Wind}}\n* {{Skill icon|Tiger's Fury}} ([[Normal mode]] only)\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 50\n| piercing = 50\n| slashing = 50\n| cold = 80\n| earth = 80\n| fire = 80\n| lightning = 40\n}}\n\n==Items dropped==\n*[[Bone]]\n*[[Feather]]\n*[[Feathered Caromi Scalp]]\n*[[Monstrous Claw]]\n*[[Monstrous Eye]]\n*[[Tengu Armor]]\n\n[[Category:Drops bone]]\n[[Category:Drops feather]]\n[[Category:Drops monstrous claw]]\n[[Category:Drops monstrous eye]]"
+}

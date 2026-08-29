@@ -1,0 +1,7 @@
+{
+  "title": "Thorn Devourer Drone",
+  "pageid": 18635,
+  "revid": 2575774,
+  "timestamp": "2014-09-19T07:29:04Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Yellow devourer.jpg|200px]]\n| affiliation = Maguuma Jungle wildlife\n| type = Devourer\n| profession = r\n| level = 14 (24)\n| campaign = Prophecies\n}}\n[[Thorn Devourer Drone]]s are [[ranger]]s found in the [[Maguuma Jungle]]. They tend to [[popup]] like most [[Devourer]]s and are rarely found alone. \n\n==Locations==\n*[[Maguuma Jungle]]\n**{{NPC location|Ettin's Back}}\n**{{NPC location|Sage Lands}}\n\n==Skills==\n11 [[Marksmanship]] (20 Marksmanship in [[hard mode]])\n*{{skill icon|Power Shot}}\n*{{skill icon|Quick Shot}} ([[elite]], hard mode only)\n*{{skill icon|Storm Chaser}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 63\n| piercing = 63\n| slashing = 63\n| cold = 63\n| earth = 63\n| fire = 63\n| lightning = 63\n}}\n\n==Items dropped==\n*[[Chitin Fragment]]\n*[[Monstrous Claw]]\n*[[Thorny Carapace]]\n\n[[Category:Drops chitin]]\n[[Category:Drops monstrous claw]]"
+}

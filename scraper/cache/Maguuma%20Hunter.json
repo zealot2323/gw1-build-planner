@@ -1,0 +1,7 @@
+{
+  "title": "Maguuma Hunter",
+  "pageid": 42864,
+  "revid": 2466753,
+  "timestamp": "2012-03-25T14:11:22Z",
+  "wikitext": "{{NPC infobox\n| type = Centaur\n| affiliation = Maguuma Jungle wildlife\n| profession = R\n| level = 16 (25)\n| campaign = Prophecies\n}}__NOTOC__\n[[Maguuma Hunter]]s are the [[Centaur]] [[ranger]]s of the [[Maguuma Jungle]].\n \n==Locations==\n*[[Maguuma Jungle]]\n**{{NPC location|Dry Top}}\n**{{NPC location|Ettin's Back}}\n**{{NPC location|Silverwood}}\n**{{NPC location|The Falls}}\n\n==Missions==\n*[[Maguuma Jungle]]\n**{{NPC location|The Wilds}}\n\n==Skills==\n12 [[Beast Mastery]] (16 Beast Mastery in [[Hard mode]])\n*{{skill icon|Flame Trap}}\n*{{skill icon|Hunter's Shot}}\n*{{skill icon|Melandru's Resilience}} ([[elite]], Hard mode only)\n*{{skill icon|Symbiosis}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 49\n| piercing = 49\n| slashing = 49\n| cold = 88\n| earth = 49\n| fire = 79\n| lightning = 79\n}}\n\n==Items dropped==\n*[[Centaur Harness]] (Medium)\n*[[Centaur Hide]]\n*[[Maguuma Mane]]"
+}

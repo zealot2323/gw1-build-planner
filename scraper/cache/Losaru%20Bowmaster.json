@@ -1,0 +1,7 @@
+{
+  "title": "Losaru Bowmaster",
+  "pageid": 65990,
+  "revid": 2672817,
+  "timestamp": "2021-05-09T11:08:33Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| affiliation = Crystal Desert wildlife\n| type = Centaur\n| profession = r\n| level = 20 (26)\n| campaign = Prophecies \n}}\n[[Losaru Bowmaster]]s are the [[ranger]]s amongst the [[Losaru]] [[centaur]].\n\n==Locations==\n*[[Crystal Desert]]\n**{{NPC location|Skyward Reach}}\n**{{NPC location|The Scar}}\n\n==Missions==\n*Crystal Desert\n**{{NPC location|Dunes of Despair}}\n\n==Skills==\n(17 [[Wilderness Survival]] in [[hard mode]])\n*{{skill icon|Concussion Shot}} (hard mode only)\n*{{skill icon|Hunter's Shot}}\n*{{skill icon|Read the Wind}}\n*{{skill icon|Storm Chaser}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 60\n| piercing = 60\n| slashing = 60\n| cold = 100\n| earth = 60\n| fire = 90\n| lightning = 90\n}}\n\n==Items dropped==\n*[[Losaru Bowmaster Vest]]\n*[[Losaru Hide]]\n*[[Losaru Mane]]\n\n==Notes==\n*Unlike other level 26 [[creature]]s in hard mode (which usually have 600 health), Bowmasters have 620 health in hard mode."
+}

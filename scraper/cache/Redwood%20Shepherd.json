@@ -1,0 +1,7 @@
+{
+  "title": "Redwood Shepherd",
+  "pageid": 22629,
+  "revid": 2649232,
+  "timestamp": "2020-04-12T08:47:46Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Sentient Tree.jpg|150px]]\n| affiliation = Maguuma Jungle wildlife\n| type = Plant\n| profession = r\n| level = 19 (25)\n| campaign = Prophecies\n}}\n[[Redwood Shepherd]]s are animated trees found in the [[Maguuma Jungle]].\n\n==Locations==\n*[[Maguuma Jungle]]\n**{{NPC location|Sage Lands}}\n**{{NPC location|Tangle Root}}\n**{{NPC location|The Falls}}\n**{{NPC location|Reed Bog}}\n\n==Skills==\n0 [[Beast Mastery]], 9 [[Marksmanship]] (20 Beast Mastery, 17 Marksmanship, 20 [[Wilderness Survival]] in [[Hard mode]])\n*{{skill icon|Barbed Trap}} (Hard mode only)\n*{{skill icon|Debilitating Shot}}\n*{{skill icon|Primal Echoes}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 86\n| piercing = 86\n| slashing = 46\n| cold = 86\n| earth = 86\n| fire = 56\n| lightning = 86\n}}\nThe weakness to fire being only a -30 AR penalty instead of the usual -40 AR may be a reflection of the \"redwood\" property.\n\n==Items dropped== \n*[[Monstrous Eye]]\n*[[Plant Fiber]]  \n*[[Tangled Seed]]\n*[[Wood Plank]]\n\n[[Category:Drops monstrous eye]]\n[[Category:Drops fiber]]\n[[Category:Drops wood]]"
+}

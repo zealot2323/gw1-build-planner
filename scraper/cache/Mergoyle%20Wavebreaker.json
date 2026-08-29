@@ -1,0 +1,7 @@
+{
+  "title": "Mergoyle Wavebreaker",
+  "pageid": 23762,
+  "revid": 2635655,
+  "timestamp": "2019-01-02T10:04:06Z",
+  "wikitext": "{{NPC infobox\n| image = [[Image:Mergoyle.jpg|150px]]\n| type = Gargoyle\n| affiliation = Kryta wildlife\n| profession = e\n| level = 12 (24)\n| campaign = Prophecies \n}}__NOTOC__\n[[Mergoyle Wavebreaker]]s are relatively low-damage elementalists found throughout [[Kryta]], mostly in the northeastern bit of the nation, close to the [[Giant's Basin]].\n\n==Locations==\n*[[Kryta]]\n**{{NPC location|Nebo Terrace}}\n**{{NPC location|Scoundrel's Rise}}\n**{{NPC location|Watchtower Coast}}\n\n==Missions==\n*[[Kryta]]\n**{{NPC location|Divinity Coast}}\n**{{NPC location|Gates of Kryta}}\n\n==Skills==\n8 [[Earth Magic]], 11 [[Water Magic]] (16 Earth Magic, 20 Water Magic in [[Hard mode]])\n*{{skill icon|Aura of Restoration}}\n*{{skill icon|Crystal Wave}} (Hard mode only)\n*{{skill icon|Deep Freeze}}\n*{{skill icon|Glyph of Lesser Energy}}\n*{{skill icon|Grasping Earth}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = e\n| blunt = 25\n| piercing = 25\n| slashing = 25\n| cold = 65\n| earth = 25\n| fire = 25\n| lightning = 25\n}}\n*The [[Hard Mode]] versions have a reduced bonus resistance to [[cold damage]] of +15 [[armor rating]].\n\n==Items dropped==   \n*[[Mergoyle Skull]]"
+}

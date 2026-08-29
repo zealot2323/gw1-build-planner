@@ -1,0 +1,7 @@
+{
+  "title": "Flurry",
+  "pageid": 5276,
+  "revid": 2718839,
+  "timestamp": "2026-01-24T04:48:10Z",
+  "wikitext": "{{Skill infobox\n| id = 344\n| name = Flurry\n| campaign = Prophecies\n| profession = Warrior\n| type = Stance\n| energy = 5\n| recharge = 5\n| causes1 = Increased Attack Speed\n| description = [[Stance]]. For 5 seconds, your [[attack]] rate is [[Attack speed|increased by 33%]], but you deal 25% [[Damage reduction|less damage]].\n| concise description = Stance. (5 seconds). You attack 33% faster. {{gray|You do 25% less damage.}}\n}}\n\n== Acquisition ==\n'''[[Skill quest]]s'''\n* [[Hungry Devourer]] ([[Beacon's Perch]])\n'''[[Skill trainer]]s'''\n* [[Firstwatch Sergio]] ([[Lion's Arch]])\n* [[Dakk]] ([[Ember Light Camp]])\n\n== Related skills ==\n* {{skill icon|Flail}}\n* {{skill icon|Frenzy}}\n* {{skill icon|Tiger Stance}}\n\n== Notes ==\n* Only the base damage from attacks is reduced, the bonus damage of [[attack skill]] and damage caused by skills is not. \n** Very useful for [[Assassin]]s in [[PvP]], as most of their damage comes from [[attack skill]] bonus damage, which isn't reduced by Flurry.\n** Most common stance for [[IW mesmer]]s, since [[Illusionary Weaponry]] ignores Flurry's damage reduction.\n* Heroes don't seem to use this skill.\n{{bug|Contrary to the description, the 25% damage reduction only applies to base damage.}}\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Warrior skill rewards]]"
+}

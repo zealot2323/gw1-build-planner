@@ -1,0 +1,7 @@
+{
+  "title": "Enslaved Ettin",
+  "pageid": 43350,
+  "revid": 2597359,
+  "timestamp": "2015-10-23T19:45:19Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Ettin.jpg|200px]]\n| type = Ogre\n| affiliation = Stone Summit\n| profession = Warrior\n| level = 24 (26)\n| campaign = Prophecies\n| campaign2 = Eye of the North\n}}\n[[Enslaved Ettin]]s are [[Snow Ettin]]s enslaved by the [[Stone Summit]].\n\n==Locations==\n*[[Eye of the North]]\n**[[Depths of Tyria]]\n***{{NPC location|Fronis Irontoe's Lair}}\n*[[Prophecies]]\n**[[Southern Shiverpeaks]]\n***{{NPC location|Sorrow's Furnace}}\n\n==Skills==\n\n===Sorrow's Furnace===\n*{{skill icon|Balanced Stance}}\n*{{skill icon|Power Attack}}\n*{{skill icon|Staggering Blow}}\n===Fronis Irontoe's Lair===\n*{{skill icon|Power Attack}}\n*{{skill icon|Staggering Blow}}\n*{{monster skill icon|Stun Immunity}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 111\n| piercing = 111\n| slashing = 111\n| cold = 91\n| earth = 91\n| fire = 91\n| lightning = 91\n}}\n\n==Items dropped==\n*[[Ettin's Pauldron]]\n\n[[Category:Ettins]]"
+}

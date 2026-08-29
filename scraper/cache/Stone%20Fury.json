@@ -1,0 +1,7 @@
+{
+  "title": "Stone Fury",
+  "pageid": 22567,
+  "revid": 2726823,
+  "timestamp": "2026-04-29T08:25:26Z",
+  "wikitext": "__NOTOC__\n{{NPC infobox\n| image = [[File:Elemental Stone.jpg|200px]]\n| type = Elemental\n| affiliation = Ascalon wildlife\n| profession = e\n| level = 8 (23), 10 (24)\n| campaign = Prophecies\n| campaign2 = Eye of the North\n}}\n[[Stone Fury|Stone Furies]] are usually found in groups with [[Boulder Elemental]]s.\n\n==Locations==\n*[[Prophecies]]\n**[[Ascalon]] (level 8)\n***{{NPC location|Ascalon Foothills}}\n***{{NPC location|Diessa Lowlands}}\n**[[Depths of Tyria]] (level 10)\n***{{NPC location|Tunnels of the Forsaken}}\n*[[Eye of the North]]\n**[[Charr Homelands]] (level 8)\n***{{NPC location|Dalada Uplands}}\n\n==Skills==\n7 [[Earth Magic]] at level 8\n*{{skill icon|Earthquake}} ([[Hard mode]] only)\n*{{skill icon|Eruption}}\n*{{skill icon|Glyph of Energy}} ([[elite]], Hard mode only)\n*{{skill icon|Ward Against Melee}}\n\n==Armor ratings==\n{{NPC statistics\n| level = 8\n| prof = e\n| blunt = 18\n| piercing = 18\n| slashing = 18\n| cold = 18\n| earth = 18\n| fire = 18\n| lightning = 18\n}}\n\n==Items dropped==    \n*[[Granite Slab]]\n*[[Lump of Charcoal]]\n*[[Scorched Lodestone]]\n*[[Ruby]]\n\n[[Category:Drops granite]]\n[[Category:Drops charcoal]]\n[[Category: Drops ruby]]"
+}

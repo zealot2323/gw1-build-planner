@@ -1,0 +1,7 @@
+{
+  "title": "Renegade Elementalist",
+  "pageid": 34297,
+  "revid": 2604070,
+  "timestamp": "2016-04-01T21:56:40Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Renegade.jpg|x400px]]\n| affiliation = Bandits\n| type = Human\n| profession = e\n| level = 3 (22)\n| campaign = Prophecies}}\n[[Renegade Elementalist]]s can be found in the [[Regent Valley]] near [[Fort Ranik]]. They use [[Area of effect]] attacks from a distance, so be sure to spread out.\n\n==Location==\n*[[Ascalon]]\n**{{NPC location|Regent Valley}}\n\n==Skills==\n*{{skill icon|Fire Storm}}\n*{{skill icon|Inferno}}\n*{{skill icon|Lightning Orb}}\n*{{skill icon|Mind Burn}} ([[elite]]; [[hard mode]] only)\n\n==Armor ratings==\n{{NPC statistics\n| prof = e\n| blunt = 14\n| piercing = 14\n| slashing = 14\n| cold = 14\n| earth = 14\n| fire = 14\n| lightning = 14\n}}\n\n==Items dropped==\n*[[Rawhide Belt]]"
+}

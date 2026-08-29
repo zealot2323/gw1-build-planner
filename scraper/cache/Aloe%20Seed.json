@@ -1,0 +1,7 @@
+{
+  "title": "Aloe Seed",
+  "pageid": 22603,
+  "revid": 2722859,
+  "timestamp": "2026-03-12T23:46:32Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| affiliation = Presearing wildlife\n|image = [[File:Aloe.jpg|250px]]\n| type = Plant\n| profession = mo\n| level = 0\n| campaign = Prophecies\n}}\n[[Aloe Seed]]s are plant-like creatures that live beneath the ground in [[Ascalon (pre-Searing)]]. They will not attack, even in retaliation. They are often seen in Green Hills County with the sturdier [[Aloe Husk]]s.\n\n==Locations==\n*[[Core]]\n**[[Ascalon (pre-Searing)]]\n***{{NPC location|Lakeside County: 1070 AE}}\n*[[Prophecies]]\n**Ascalon (pre-Searing)\n***{{NPC location|Green Hills County}}\n***{{NPC location|Lakeside County}}\n***{{NPC location|Regent Valley (pre-Searing)}}\n***{{NPC location|Wizard's Folly}}\n\n==Skills==\n0 [[Healing Prayers]]\n*{{skill icon|Orison of Healing}}\n*{{skill icon|Healing Breeze}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = mo\n| blunt = 3\n| piercing = 3\n| slashing = -37\n| cold = 3\n| earth = 3\n| fire = -37\n| lightning = 3\n}}\n\n==Items dropped==  \n*[[Unnatural Seed]]\n\n==Notes==\n*Aloe Seeds have 5 [[health]]."
+}

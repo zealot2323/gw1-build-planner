@@ -1,0 +1,7 @@
+{
+  "title": "Kinetic Armor",
+  "pageid": 3053,
+  "revid": 2733706,
+  "timestamp": "2026-07-09T05:57:13Z",
+  "wikitext": "{{Skill infobox\n| id = 166\n| name = Kinetic Armor\n| campaign = Prophecies\n| profession = Elementalist\n| attribute = Earth Magic\n| type = Enchantment Spell\n| energy = 15\n| activation = 3\n| recharge = 30\n| causes1 = Increased Armor Rating\n| causes2 = Renewal\n| description = [[Enchantment Spell]]. For 12 seconds, you gain {{gr|20|80|+}} [[Armor rating|armor]]. Whenever you cast a [[spell]], Kinetic Armor is renewed for 12 seconds.\n| concise description = Enchantment Spell. (12 seconds.) You have {{gr|20|80|+}} armor. Renewal bonus: cast a spell.\n| target = self\n}}\n\n{{Skill progression\n|attribute = [[Earth Magic]]\n|var1 name = + [[Armor rating]]\n|var1 at0 = 20\n|var1 at15 = 80}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Mazzim]] ([[Fishermen's Haven]]) \n* [[Tengsao]] ([[The Amnoon Oasis]])\n* [[Dakk]] ([[Ember Light Camp]])\n'''[[Signet of Capture]]'''\n* [[Ulrik the Undefeated]] ([[Traveler's Vale]], during [[The Stone Summit Champion]])\n\n== Related skills ==\n* {{skill icon|Armor of Earth}}\n* {{Skill icon|Lyssa's Aura}} ([[elite]])\n* {{Skill icon|Stone Sheath}} (elite)\n\n== Notes ==\n* This skill's duration is affected by potential enchantment modifiers at the time it is renewed.\n* Any other enchantment spell cast by the user will [[cover]] Kinetic Armor.\n\n== Trivia ==\n{{Skill change}}"
+}

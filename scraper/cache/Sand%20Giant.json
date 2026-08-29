@@ -1,0 +1,7 @@
+{
+  "title": "Sand Giant",
+  "pageid": 23765,
+  "revid": 2598577,
+  "timestamp": "2015-11-09T22:24:25Z",
+  "wikitext": "{{NPC infobox\n| image = [[Image:Sand Giant.jpg|180px]]\n| type = Giant\n| profession = Necromancer\n| level = 22 (26, 31)\n| campaign = Prophecies\n| affiliation = Crystal Desert wildlife\n}}__NOTOC__\n[[Sand Giant]]s are [[giant]]s found in the [[Crystal Desert]]. When encountered in the [[Thirsty River]] they provide a skill recharge and [[Morale Boost]] despite not being [[boss]]es. Like all giants, Sand Giants cannot be [[knocked down]].\n\n== Locations ==\n*[[Crystal Desert]] - level 22 (26)\n** {{NPC location|The Arid Sea}}\n** {{NPC location|The Scar}}\n** {{NPC location|Vulture Drifts}}\n\n==Missions==\n*Crystal Desert - level 22 (31)\n** {{NPC location|Thirsty River}}\n\n== Skills ==    \n11 [[Death Magic]] (20 [[Soul Reaping]] in [[Hard mode]])\n*{{skill icon|Plague Touch}}\n*{{skill icon|Signet of Agony}}\n*{{skill icon|Vampiric Touch}} (Hard mode only)\n*{{skill icon|Vile Touch}}\n*{{monster skill icon|Giant Stomp}}\n*{{monster skill icon|Stun Immunity}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = n\n| blunt = 106\n| piercing = 106\n| slashing = 106\n| cold = 86\n| earth = 86\n| fire = 86\n| lightning = 86\n}}\n\n== Items dropped ==\n* [[Giant Slayers Hammer]] \n* [[Giant's Boots]]\n* [[Massive Jawbone]]\n* [[Sand Giant's Bracer]]"
+}

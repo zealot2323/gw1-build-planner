@@ -1,0 +1,7 @@
+{
+  "title": "Consume Corpse",
+  "pageid": 10964,
+  "revid": 2731040,
+  "timestamp": "2026-06-24T18:49:38Z",
+  "wikitext": "{{Skill infobox\n| id = 98\n| name = Consume Corpse\n| campaign = Prophecies\n| profession = Necromancer\n| attribute = Death Magic\n| type = Spell\n| energy = 5\n| activation = 1\n| target = self\n| causes1 = Exploits Corpse\n| causes2 = Health Gain\n| causes3 = Energy Gain\n| causes4 = Shadow Step\n| description = [[Spell]]. Exploit a random [[corpse]]. You [[shadow step|teleport]] to that corpse's location and [[Health gain|gain]] {{gr|25|100}} [[Health]] and {{gr|5|20}} [[Energy]].\n| concise description = Spell. Teleport to a corpse's location. You gain {{gr|25|100}} Health and {{gr|5|20}} Energy. {{gray|Exploits a fresh corpse.}}\n}}\n\n{{Skill progression\n|attribute = [[Death Magic]]\n|var1 name = [[Health gain]]\n|var1 at0 = 25\n|var1 at15 = 100\n|var2 name = [[Energy]] gain\n|var2 at0 = 5\n|var2 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Steig]] ([[Camp Rankor]])\n* [[Dakk]] ([[Ember Light Camp]])\n'''[[Signet of Capture]]'''\n* [[Byssha Hisst]] ([[Dunes of Despair]])\n* [[Hessper Sasso]] ([[Thirsty River]])\n* [[Uussh Visshta]] ([[Elona Reach]])\n\n== Related skills ==\n{{main|Shadow step}}\n* {{skill icon|Necrotic Traversal}}\n* {{skill icon|Soul Feast}}\n\n== Trivia ==\n* The skull on the [[skill icon]] looks like the one on [[Enfeeble]] and [[Price of Failure]].\n{{Skill change}}"
+}

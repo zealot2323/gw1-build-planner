@@ -1,0 +1,7 @@
+{
+  "title": "Harnil",
+  "pageid": 18833,
+  "revid": 2060349,
+  "timestamp": "2010-06-16T07:09:43Z",
+  "wikitext": "{{NPC infobox\n| type = Dwarf\n| image = [[Image:Deldrimor_warrior.jpg|150px]]\n| affiliation = Deldrimor\n| service = Skill trainer\n| level = 10\n| campaign = Prophecies }}\n[[Harnil]] will teach your character a skill in exchange for a fee and one [[skill point]].\n\n==Location==\n*[[Southern Shiverpeaks]]\n**{{NPC location|Marhan's Grotto}}\n\n== Skills offered ==\n{{Skill trainer list\n| w =\n* {{Skill icon|Crude Swing}}\n* {{Skill icon|Warrior's Cunning}}\n| r =\n* {{Skill icon|Dryder's Defenses}}\n* {{Skill icon|Frozen Soil}}\n* {{Skill icon|Symbiosis}}\n| mo =\n* {{Skill icon|Light of Dwayna}}\n| n =\n* {{Skill icon|Dark Fury}}\n* {{Skill icon|Desecrate Enchantments}}\n| me =\n* {{Skill icon|Mantra of Resolve}}\n* {{Skill icon|Soothing Images}}\n| e =\n* {{Skill icon|Aftershock}}\n* {{Skill icon|Rodgort's Invocation}}\n}}\n\n[[Category:Prophecies skill trainers]]"
+}

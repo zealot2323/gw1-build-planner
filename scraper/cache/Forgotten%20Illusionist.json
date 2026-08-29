@@ -1,0 +1,7 @@
+{
+  "title": "Forgotten Illusionist",
+  "pageid": 21880,
+  "revid": 2672174,
+  "timestamp": "2021-04-25T00:54:16Z",
+  "wikitext": "__NOTOC__{{NPC infobox   \n| image = [[Image:Forgotten dark.jpg|150px]]\n| type = Forgotten\n| profession = me\n| level = 20 (26)\n| campaign = Prophecies\n}}\nThe [[Forgotten Illusionist]] is a [[Forgotten]] spellcaster.\n\n==Missions==\n*[[Crystal Desert]]\n**{{NPC location|Dunes of Despair}}\n**{{NPC location|Elona Reach}}\n**{{NPC location|Thirsty River}}\n**{{NPC location|The Dragon's Lair}}\n\n==Skills==\n15 [[Domination Magic]], 12-13 [[Illusion Magic]], 11 [[Fast Casting]] (20 Domination Magic in [[Hard mode]])\n*{{skill icon|Chaos Storm}}\n*{{skill icon|Energy Burn}}\n*{{skill icon|Ethereal Burden}}\n*{{skill icon|Mantra of Recovery}} ([[elite]])\n*{{skill icon|Power Drain}} (Hard mode only)\n\n==Armor ratings==\n{{NPC statistics\n| prof = me\n| blunt = 60\n| piercing = 60\n| slashing = 60\n| cold = 60\n| earth = 60\n| fire = 60\n| lightning = 60\n}}\n\n==Items dropped==\n*[[Forgotten Seal]]\n*[[Illusionist Wrappings]]\n*[[Monstrous Claw]]\n*[[Scale]]\n\n[[Category:Drops monstrous claw]]\n[[Category:Drops scale]]"
+}

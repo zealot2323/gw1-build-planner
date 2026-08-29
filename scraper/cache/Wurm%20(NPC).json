@@ -1,0 +1,7 @@
+{
+  "title": "Wurm (NPC)",
+  "pageid": 98738,
+  "revid": 2413252,
+  "timestamp": "2011-11-24T06:07:13Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Infernal Siege Wurm.jpg|150px]]\n| affiliation = Ring of Fire Islands wildlife\n| type = Wurm\n| profession = w\n| level = 28 (30)\n| campaign = Prophecies\n}}\n[[Wurm (NPC)|Wurms]] are large, burrowing creatures.\n\n==Locations==\n*[[Ring of Fire Island Chain]]\n**{{NPC location|Perdition Rock}}\n\n==Missions==\n*Ring of Fire Island Chain\n**{{NPC location|Abaddon's Mouth}}\n\n==Skills==\n*None\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 114\n| piercing = 114\n| slashing = 114\n| cold = 144\n| earth = 144\n| fire = 144\n| lightning = 144\n}}\n\n==Items dropped==\n*[[Igneous Shell]]"
+}

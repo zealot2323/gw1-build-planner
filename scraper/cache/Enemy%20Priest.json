@@ -1,0 +1,7 @@
+{
+  "title": "Enemy Priest",
+  "pageid": 29649,
+  "revid": 2234274,
+  "timestamp": "2011-02-05T20:51:53Z",
+  "wikitext": "__NOTOC__{{NPC infobox  \n| image = [[Image:Forgotten light.jpg|150px]]\n| species = Forgotten\n| profession = mo\n| level = 20 (26)\n| campaign = Prophecies\n}}\n[[Enemy Priest]]s are [[Forgotten]] [[monk]]s that can be found near the [[Resurrection Shrine]]s during the [[Thirsty River]] [[mission]]. If one of them is alive, he will resurrect his nearby [[party]] members every 2 minutes.\n\n==Missions==\n*[[Crystal Desert]]\n**{{NPC location|Thirsty River}}\n\n==Skills==\n*{{Skill icon|Aegis}}\n*{{Skill icon|Restore Life}} (Hard mode only)\n*{{Skill icon|Vigorous Spirit}}\n*{{Skill icon|Word of Healing}} ([[elite]])\n\n==Armor ratings==\n{{NPC statistics\n| prof = mo\n| blunt = 60\n| piercing = 60\n| slashing = 60\n| cold = 60\n| earth = 60\n| fire = 60\n| lightning = 60\n}}\n\n==Items dropped==\n*[[Forgotten Seal]]\n*[[Sage Wrappings]]\n*[[Scale]]\n\n== Notes ==\n*You should always try to kill the [[Enemy Priest]]s first, as they heal their parties and resurrect dead members every 2 minutes.\n\n[[Category:Forgotten]]\n[[Category:Drops scale]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Energy Burn",
+  "pageid": 1477,
+  "revid": 2718857,
+  "timestamp": "2026-01-24T05:12:23Z",
+  "wikitext": "{{Skill infobox\n| id = 42\n| name = Energy Burn\n| campaign = Core\n| profession = Mesmer\n| attribute = Domination Magic\n| type = Spell\n| energy = 10\n| activation = 2\n| recharge = 20\n| causes1 = Energy Loss\n| description = [[Spell]]. [[Target]] [[foe]] loses {{gr|1|10}} [[Energy]] and takes 9 [[damage]] for each point of Energy lost.\n| concise description = Spell. Causes {{gr|1|10}} Energy loss. Deals 9 damage for each point of Energy lost.\n}}\n\n{{Skill progression factored\n| attribute = [[Domination Magic]]\n| var1 name = [[Energy]] loss\n| var1 at0 = 1\n| var1 at15 = 10\n| varF name = [[Damage]]\n| varF at0 = 1\n| varF at15 = 10\n| varF factor = 9\n}}\n\n== Acquisition ==\n'''[[Skill quest]]s'''\n* [[Prophecies]]\n** [[A Cure for Ralena]] ([[Sardelac Sanitarium]])\n'''[[Skill trainer]]s'''\n* Prophecies\n** [[Captain Osric]] ([[Yak's Bend]])\n** [[Dakk]] ([[Ember Light Camp]])\n* [[Factions]]\n** [[Zhao Di]] ([[Shing Jea Monastery]])\n** [[Michiko]] ([[Kaineng Center]])\n* [[Nightfall]]\n** [[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n* Nightfall\n** [[Pikin]] (Kamadan, Jewel of Istan)\n\n== Related skills ==\n* {{skill icon|Energy Surge}} ([[elite]])\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Mesmer skill rewards]]\n[[Category:Skills offered by hero skill trainers]]"
+}

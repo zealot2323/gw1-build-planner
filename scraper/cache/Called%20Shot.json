@@ -1,0 +1,7 @@
+{
+  "title": "Called Shot",
+  "pageid": 3640,
+  "revid": 2695824,
+  "timestamp": "2024-05-16T20:33:29Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 403\n| name = Called Shot\n| campaign = Core\n| profession = Ranger\n| type = Bow Attack\n| energy = 5\n| recharge = 3\n| causes1 = Unblockable\n| causes2 = Increased Projectile Speed\n| description = [[Bow Attack]]. Shoot an arrow that moves 3 times faster and cannot be [[block]]ed.\n| concise description = Bow Attack. You shoot an arrow that moves 3 times faster. Unblockable.\n}}\n\n== Acquisition ==\n'''[[Skill quest]]s'''\n* [[Prophecies]]\n** [[Supplies for the Duke]] ([[Old Ascalon]])\n'''[[Skill trainer]]s'''\n* Prophecies\n** [[Captain Osric]] ([[Yak's Bend]])\n** [[Dakk]] ([[Ember Light Camp]])\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n* [[Nightfall]]\n** [[Baram]] ([[The Kodash Bazaar]])\n'''[[Hero skill trainer]]s'''\n* Nightfall\n** [[Godaj]] ([[Lair of the Forgotten]])\n'''[[Signet of Capture]]'''\n* Nightfall\n** [[Emeju Longlegs]] ([[Lahtenda Bog]])\n** [[Zelnehlun Fastfoot]] ([[The Floodplain of Mahnkelon]])\n\n== Related skills ==\n* {{skill icon|Quick Shot}} ([[elite]])\n* {{skill icon|Swift Javelin}}\n\n== Notes ==\n*The speed and arc of Called Shot are not altered by [[Read the Wind]], [[Favorable Winds]], and/or the type of bow.\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Ranger skill rewards]]\n[[Category:Skills offered by hero skill trainers]]"
+}

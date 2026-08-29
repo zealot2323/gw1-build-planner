@@ -1,0 +1,7 @@
+{
+  "title": "Bestial Pounce",
+  "pageid": 2022,
+  "revid": 2732689,
+  "timestamp": "2026-07-04T16:16:41Z",
+  "wikitext": "{{Skill infobox\n| id = 437\n| name = Bestial Pounce\n| campaign = Prophecies\n| profession = Ranger\n| attribute = Beast Mastery\n| type = Pet Attack\n| energy = 5\n| recharge = 10\n| special = duplicate\n| causes1 = Knockdown\n| description = [[Pet Attack]]. Your [[animal companion]] attempts a Bestial Pounce that deals {{gr|5|20|+}} [[damage]]. If the [[attack]] strikes a [[foe]] who is casting a [[spell]], that foe is [[Knock down|knocked down]].\n| concise description = Pet Attack. Deals {{Gr|5|20|+}} damage. Causes knock-down if target foe is casting a spell.\n}}\n\n{{Skill progression\n|attribute = [[Beast Mastery]]\n|var1 name = + [[Damage]]\n|var1 at0 = 5\n|var1 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill quest]]s'''\n* [[The Hot Springs Murders]] ([[Nebo Terrace]])\n'''[[Skill trainer]]s'''\n* [[Sorim]] ([[Quarrel Falls]])\n* [[Master Scout Kiera]] ([[Henge of Denravi]])\n* [[Dakk]] ([[Ember Light Camp]])\n\n== Related skills ==\n* {{skill icon|Savage Pounce}} ([[duplicate skill]])\n\n== Notes ==\n* Synergizes with [[Bestial Mauling]] to inflict [[Daze]].\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Ranger skill rewards]]\n[[de:Bestiensprung]]"
+}

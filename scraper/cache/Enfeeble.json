@@ -1,0 +1,7 @@
+{
+  "title": "Enfeeble",
+  "pageid": 15397,
+  "revid": 2628777,
+  "timestamp": "2018-06-18T17:28:03Z",
+  "wikitext": "{{Skill infobox\n| id = 117\n| name = Enfeeble\n| campaign = Prophecies\n| profession = Necromancer\n| attribute = Curses\n| type = Spell\n| energy = 5\n| recharge = 5\n| activation = {{1/4}}\n| causes1 = Weakness\n| description = [[Spell]]. [[Target]] suffers from [[Weakness]] for {{gr|10|30}} seconds.\n| concise description = Spell. Inflicts Weakness condition ({{gr|10|30}} seconds).\n| has-pvp = y\n| target = foes\n}}\n\n{{Skill progression\n|attribute = [[Curses]]\n|var1 name = [[Duration]]\n|var1 at0 = 10\n|var1 at15 = 30}}\n\n== Acquisition ==\n'''[[Skill quest]]s'''\n* [[The Ascalon Settlement]] ([[North Kryta Province]]) \n'''[[Skill trainer]]s'''\n* [[Sorim]] ([[Quarrel Falls]])\n* [[Master Scout Kiera]] ([[Henge of Denravi]])\n* [[Dakk]] ([[Ember Light Camp]])\n\n== Related skills ==\n* {{skill icon|Enfeebling Blood}}\n* {{skill icon|Enfeebling Touch}}\n\n== Trivia ==\n* The skull on the background of the [[skill icon]] looks like the one on [[Consume Corpse]] and [[Price of Failure]].\n\n[[Category:Necromancer skill rewards]]\n\n[[de:Schwächen]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Grawl (Shiverpeaks)",
+  "pageid": 18122,
+  "revid": 2664919,
+  "timestamp": "2020-08-17T15:55:24Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| name = Grawl\n| type = Grawl\n| affiliation = Shiverpeak Mountains wildlife\n| image = [[file:Grawl martial.jpg|200px]]\n| profession = Warrior\n| level = 22 (26)\n| campaign = Prophecies\n}}\nThese [[Grawl (Shiverpeaks)|Grawl]] are located in the Southern Shiverpeaks and are often found with [[Grawl Crone]]s.\n\n== Locations ==\n*[[Southern Shiverpeaks]]\n**{{NPC location|Lornar's Pass}}\n**{{NPC location|Talus Chute}}\n**{{NPC location|Witman's Folly}}\n\n==Skills==\n* {{skill icon|\"Victory Is Mine!\"}} ([[elite]])\n* {{skill icon|Belly Smash}}\n* {{skill icon|Crushing Blow}} ([[Hard mode]] only)\n* {{skill icon|Hammer Bash}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 106\n| piercing = 106\n| slashing = 106\n| cold = 86\n| earth = 86\n| fire = 86\n| lightning = 66\n}}\n\n== Items dropped ==\n* [[Grawl Gear]]\n* [[Intricate Grawl Necklace]]"
+}

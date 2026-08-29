@@ -1,0 +1,7 @@
+{
+  "title": "Siege Wurm",
+  "pageid": 48255,
+  "revid": 2704064,
+  "timestamp": "2025-04-10T06:29:55Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Desert Wurm (NPC).jpg|150px]]\n| type = Wurm\n| profession = Warrior\n| level = 20 (26), 22\n| campaign = Prophecies\n| affiliation = Crystal Desert wildlife\n}}\n[[Siege Wurm]]s are gigantic stationary wurms that launch siege-like projectiles at you from a distance of [[spirit range]]. They can withstand a lot of damage and deal a lot of damage themselves.\n\n==Locations==\n* [[Core]]\n** [[Ascalon (pre-Searing)]]\n*** {{NPC location|Lakeside County: 1070 AE}}\n*[[Prophecies]]\n**[[Crystal Desert]]\n***[[Dunes of Despair]]\n\n==Skills==\n*{{monster skill icon|Natural Resistance}}\n*{{monster skill icon|Wurm Siege (Dunes of Despair)}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 160\n| piercing = 160\n| slashing = 160\n| cold = 160\n| earth = 160\n| fire = 160\n| lightning = 160\n}}\n\n==Items dropped==\n*[[Bleached Shell]]\n\n== Notes ==\n*Siege Wurms have 960 health.\n*Their [[aggro]] radius is about spirit range.\n*Unlike normal Siege Wurms, those in [[Annihilator 2: Searing Day]] have both siege and melee attacks, have normal aggro range, and follow players.\n[[Category:Siege weapons]]"
+}

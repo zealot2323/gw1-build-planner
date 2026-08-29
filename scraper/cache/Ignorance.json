@@ -1,0 +1,7 @@
+{
+  "title": "Ignorance",
+  "pageid": 1482,
+  "revid": 2720053,
+  "timestamp": "2026-02-05T22:09:58Z",
+  "wikitext": "{{Skill infobox\n| id = 35\n| name = Ignorance\n| campaign = Core\n| profession = Mesmer\n| attribute = Domination Magic\n| type = Hex Spell\n| energy = 10\n| recharge = 10\n| activation = 1\n| description = [[Hex Spell]]. For {{gr|8|20}} seconds [[target]] [[foe]] cannot use [[signet]]s.\n| concise description = Hex Spell. ({{gr|8|20}} seconds.) Target foe cannot use signets.\n}}\n\n{{Skill progression\n|attribute = [[Domination Magic]]\n|var1 name = [[Duration]]\n|var1 at0 = 8\n|var1 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Prophecies]]\n** [[Thengen]] ([[Port Sledge]]) \n** [[Dakk]] ([[Ember Light Camp]])\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n* [[Nightfall]]\n** [[Zendeht]] ([[Gate of Torment]])\n'''[[Hero skill trainer]]s'''\n* Nightfall\n** [[Libeh]] ([[Command Post]])\n'''[[Signet of Capture]]'''\n* Prophecies\n** [[The Darkness (boss)|The Darkness]] ([[The Hall of Heroes]])\n* Nightfall\n** [[Amind the Bitter]] ([[Gate of Desolation]])\n** [[Eshwe the Insane]] ([[Joko's Domain]])\n** [[Shelkeh the Hungry]] ([[The Alkali Pan]])\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

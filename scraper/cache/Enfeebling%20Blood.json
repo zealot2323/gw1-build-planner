@@ -1,0 +1,7 @@
+{
+  "title": "Enfeebling Blood",
+  "pageid": 15395,
+  "revid": 2695846,
+  "timestamp": "2024-05-16T20:52:17Z",
+  "wikitext": "{{Skill infobox\n| id = 118\n| name = Enfeebling Blood\n| campaign = Core\n| profession = Necromancer\n| attribute = Curses\n| has-pvp = y\n| type = Spell\n| energy = 1\n| recharge = 8\n| activation = 1\n| sacrifice = 10%\n| causes1 = Weakness\n| description = [[Spell]]. [[Target]] [[foe]] and all [[nearby]] foes suffer from [[Weakness]] for {{gr|5|20}} seconds.\n| concise description = Spell. Inflicts Weakness condition ({{gr|5|20}} seconds) on this foe and nearby foes.\n| aoe = nearby\n| target = foes\n}}\n\n{{Skill progression\n|attribute = [[Curses]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 20}}\n\n== Acquisition ==\n===[[Unlock]] and learn===\n'''[[Skill quest]]s'''\n* [[Factions]]\n** [[Advanced Defense Techniques]] ([[Shing Jea Monastery]]) \n'''[[Skill trainer]]s'''\n* [[Prophecies]]\n** [[Taltosh]] ([[Grendich Courthouse]])\n** [[Captain Osric]] ([[Yak's Bend]])\n** [[Dakk]] ([[Ember Light Camp]])\n* Factions\n** [[Michiko]] ([[Kaineng Center]])\n* [[Nightfall]]\n** [[Tohn]] ([[Kamadan, Jewel of Istan]])\n\n===Unlock only===\n;[[Hero]]es\n* Nightfall\n** Unlocking the [[Master of Whispers]]\n\n== Related skills ==\n* {{skill icon|\"You Are All Weaklings!\"}}\n* {{skill icon|Enfeeble}}\n* {{skill icon|Enfeebling Touch}}\n* {{skill icon|Signet of Weariness}}\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Necromancer skill rewards]]\n[[de:Schwächendes Blut]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Power Spike",
+  "pageid": 1496,
+  "revid": 2718859,
+  "timestamp": "2026-01-24T05:15:10Z",
+  "wikitext": "{{Skill infobox\n| id = 23\n| name = Power Spike\n| campaign = Core\n| profession = Mesmer\n| attribute = Domination Magic\n| type = Spell\n| energy = 5\n| activation = {{1/4}}\n| recharge = 12\n| causes1 = Interrupt\n| description = [[Spell]]. If [[target]] [[foe]] is casting a spell or a [[chant]], that [[skill]] is [[interrupt]]ed and target foe takes {{gr|30|120}} [[damage]].\n| concise description = Spell. Interrupts a spell or chant. Interruption effect: deals {{gr|30|120}} damage.\n| target = foes\n}}\n\n{{Skill progression\n|attribute = [[Domination Magic]]\n|var1 name = [[Damage]]\n|var1 at0 = 30\n|var1 at15 = 120}}\n\n== Acquisition ==\n'''[[Skill quest]]s'''\n* [[Prophecies]]\n** [[The Stone Summit Champion]] ([[Yak's Bend]])\n* [[Factions]]\n** [[Disruption]] ([[Shing Jea Monastery]])\n'''[[Skill trainer]]s'''\n* Prophecies\n** [[Firstwatch Sergio]] ([[Lion's Arch]])\n** [[Dakk]] ([[Ember Light Camp]])\n* Factions\n** [[Michiko]] ([[Kaineng Center]])\n* [[Nightfall]]\n** [[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n* Nightfall\n** [[Shiloh]] ([[Sunspear Great Hall]])\n\n== Related skills ==\n* {{skill icon|Cry of Frustration}}\n* {{skill icon|Signet of Disruption}}\n\n== Notes ==\n* Damage is done even if interruption is prevented.\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Mesmer skill rewards]]\n[[Category:Skills offered by hero skill trainers]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Abomination (NPC)",
+  "pageid": 22600,
+  "revid": 2220732,
+  "timestamp": "2011-01-15T05:39:57Z",
+  "wikitext": "{{Otheruses|the [[NPC]]|the article about the [[species]]|Abomination}}\n__NOTOC__{{NPC infobox\n| affiliation = Undead\n| name = Abomination\n| type = Abomination\n| image = [[Image:Abomination.jpg|150px]]\n| profession = n\n| level = 11 (24)\n| campaign = Prophecies\n}}\n[[Abomination (NPC)|Abominations]] are [[necromancer]]s found in only one area.\n\n==Locations==\n*[[Ascalon]]\n**{{NPC location|Dragon's Gullet}}\n\n==Skills==\n6 [[Blood Magic]], 11 [[Death Magic]] (16 Blood Magic, 20 Death Magic in [[Hard mode]])\n*{{skill icon|Animate Bone Horror}}\n*{{skill icon|Death Nova}} (Hard mode only)\n*{{skill icon|Shadow Strike}}\n*{{skill icon|Soul Feast}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = n\n| blunt = 34\n| piercing = 34\n| slashing = 34\n| cold = 34\n| earth = 34\n| fire = 34\n| lightning = 34\n}}\n\n==Items dropped==\n*[[Gruesome Ribcage]]\n\n==Notes==\n*This [[creature]] has a [[miniature]] [[Miniature Abomination|version]].\n*Unlike other [[Abomination]]s, this creature takes double damage from [[holy damage]]."
+}

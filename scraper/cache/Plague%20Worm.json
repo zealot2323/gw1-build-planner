@@ -1,0 +1,7 @@
+{
+  "title": "Plague Worm",
+  "pageid": 19048,
+  "revid": 2701513,
+  "timestamp": "2024-12-07T07:50:38Z",
+  "wikitext": "{{NPC infobox\n | type = Worm\n | profession = Ranger\n | level = 0, 1\n | campaign = Prophecies\n | affiliation = Presearing wildlife\n}}\n[[Plague Worm]]s behave very similarly to other [[Worm]]s in the game, except they will by default not attack and are unable to move.\n\n==Locations==\n*[[Ascalon (pre-Searing)]]\n**{{NPC location|Lakeside County}} - level 0, in the field directly north east of [[Ashford Abbey]] (before [[The Worm Problem]])\n**{{NPC location|Regent Valley (pre-Searing)}} - level 1 (during [[A Test of Marksmanship]])\n\n==Items dropped==\n*[[Baked Husk]]\n\n==Notes==\n*Based on their attack range, they most likely wield [[shortbow]]s.\n*Although they spit from their maws to shoot, they actually fire normal arrows.\n*If hit with a physical attack as they descend into the ground, the attack will not appear to hit, but the worm will pop up about a second later and will appear to have taken the damage (including damage dealt by [[Ignite Arrows]]).\n*If you kill them right before they go into the ground they may drop something but they will not leave a [[corpse]].\n*Level 0 Plague Worms have 50 [[health]], level 1 Plague Worms have 80 health and take heavy damage from [[piercing damage]]."
+}

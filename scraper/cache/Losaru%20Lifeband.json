@@ -1,0 +1,7 @@
+{
+  "title": "Losaru Lifeband",
+  "pageid": 66061,
+  "revid": 2478348,
+  "timestamp": "2012-04-22T16:22:40Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Desert Centaur caster.jpg|150px]]\n| affiliation = Crystal Desert wildlife\n| type = Centaur\n| profession = mo\n| level = 20 (26)\n| campaign = Prophecies \n}}\n[[Losaru Lifeband]]s are the healers of the [[Losaru]] [[centaur]]s.\n\n==Locations==\n*[[Crystal Desert]]\n**{{NPC location|Skyward Reach}}\n**{{NPC location|The Scar}}\n\n==Missions==\n*[[Crystal Desert]]\n**{{NPC location|Dunes of Despair}}\n\n==Skills==\n*{{skill icon|Heal Other}}\n*{{skill icon|Protective Spirit}}\n*{{skill icon|Reversal of Fortune}}\n*{{skill icon|Shield of Deflection}} ([[elite]], [[hard mode]] only)\n\n==Armor ratings==\n{{NPC statistics\n| prof = mo\n| blunt = 50\n| piercing = 50\n| slashing = 50\n| cold = 70\n| earth = 50\n| fire = 50\n| lightning = 50\n}}\n\n==Items dropped==\n*[[Losaru Hide]]\n*[[Losaru Lifeband Robes]]\n*[[Losaru Mane]]"
+}

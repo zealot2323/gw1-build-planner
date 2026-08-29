@@ -1,0 +1,7 @@
+{
+  "title": "Fire Imp",
+  "pageid": 24319,
+  "revid": 2573452,
+  "timestamp": "2014-08-08T17:02:44Z",
+  "wikitext": "{{otheruses|the foe|the ally summoned by [[Igneous Summoning Stone]]s|Fire Imp (summon)}}\n{{NPC infobox\n| type = Imp\n| affiliation = Kryta wildlife\n| profession = e\n| level = 11 (24)\n| campaign = Prophecies\n}}__NOTOC__\n[[Fire Imp]]s are fire [[elementalist]]s that often travel in groups of 3.\n\n==Locations==\n*[[Kryta]]\n**{{NPC location|North Kryta Province}}\n\n==Skills==\n*{{Skill icon|Immolate}}\n*{{Skill icon|Inferno}}\n*{{Skill icon|Rodgort's Invocation}} ([[Hard mode]] only)\n\n==Armor ratings==\n{{NPC statistics\n| prof = e\n| blunt = 29\n| piercing = 29\n| slashing = 29\n| cold = 29\n| earth = 29\n| fire = 59\n| lightning = 29\n}}\n\n==Items dropped==\n*[[Glowing Heart]]\n*[[Lump of Charcoal]]\n*[[Ruby]]\n*[[Sapphire]]\n*[[Scale]]\n\n==Notes==\n*This creature has a [[miniature]] [[Miniature Fire Imp|version]].\n*It uses the same model as a [[Spark of the Titans]].\n[[Category:Drops charcoal]]\n[[Category:Drops ruby]]\n[[Category:Drops sapphire]]\n[[Category:Drops scale]]"
+}

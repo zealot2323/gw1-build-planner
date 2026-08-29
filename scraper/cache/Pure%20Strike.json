@@ -1,0 +1,7 @@
+{
+  "title": "Pure Strike",
+  "pageid": 16229,
+  "revid": 2733095,
+  "timestamp": "2026-07-05T15:10:24Z",
+  "wikitext": "{{Skill infobox\n| id = 328\n| name = Pure Strike\n| campaign = Prophecies\n| profession = Warrior\n| attribute = Swordsmanship\n| type = Sword Attack\n| energy = 5\n| special = duplicate\n| recharge = 8\n| causes1 = Unblockable\n| description = [[Sword Attack]].  If Pure Strike hits, you strike for {{gr|1|30|+}} [[damage]]. If you are not using a [[stance]], Pure Strike cannot be [[block]]ed.\n| concise description = Sword Attack. Deals {{gr|1|30|+}} damage. Unblockable unless you are in a stance.\n}}\n\n{{Skill progression\n| attribute = [[Swordsmanship]]\n| var1 name = + [[Damage]]\n| var1 at0 = 1\n| var1 at15 = 30}}\n\n== Acquisition ==\n'''[[Skill quest]]s'''\n* [[Mysterious Message (Prophecies quest)|Mysterious Message]] ([[Druid's Overlook]])  \n'''[[Skill trainer]]s'''\n* [[Tengsao]] ([[The Amnoon Oasis]])\n* [[Dakk]] ([[Ember Light Camp]])\n\n== Related skills ==\n* {{skill icon|Barbarous Slice}}\n* {{skill icon|Jaizhenju Strike}} ([[duplicate skill]])\n\n[[Category:Warrior skill rewards]]\n\n[[de:Reiner Schlag]]"
+}

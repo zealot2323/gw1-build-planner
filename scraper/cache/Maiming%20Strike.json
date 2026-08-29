@@ -1,0 +1,7 @@
+{
+  "title": "Maiming Strike",
+  "pageid": 2837,
+  "revid": 2733132,
+  "timestamp": "2026-07-05T15:39:27Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 438\n| name = Maiming Strike\n| campaign = Core\n| profession = Ranger\n| attribute = Beast Mastery\n| type = Pet Attack\n| energy = 10\n| recharge = 5\n| causes1 = Crippled\n| description = [[Pet Attack]]. Your [[animal companion]] attempts a Maiming Strike that deals {{gr|5|20|+}} [[damage]]. If that [[attack]] hits{{sic}} that foe becomes [[Crippled]] for {{gr|3|15}} seconds.\n| concise description = Pet Attack. Deals {{gr|5|20|+}} damage. Inflicts Crippled condition ({{gr|3|15}} seconds) on hit.\n}}\n\n{{Skill progression\n| attribute = [[Beast Mastery]]\n| var1 name = + [[Damage]]\n| var1 at0 = 5\n| var1 at15 = 20\n| var2 name = [[Crippled]] [[duration]]\n| var2 at0 = 3\n| var2 at15 = 15\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Prophecies]]\n** [[Avena]] ([[Maguuma Stade]])\n** [[Tengsao]] ([[The Amnoon Oasis]])\n** [[Dakk]] ([[Ember Light Camp]])\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n* [[Nightfall]]\n** [[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n* Nightfall\n** [[Pikin]] (Kamadan, Jewel of Istan)\n\n== Related skills ==\n* {{skill icon|Harrier's Grasp}}\n* {{skill icon|Leaping Mantis Sting}}\n* {{skill icon|Melandru's Shot}} ([[elite]])\n* {{Skill icon|Pounce}}\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

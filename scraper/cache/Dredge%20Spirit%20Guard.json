@@ -1,0 +1,7 @@
+{
+  "title": "Dredge Spirit Guard",
+  "pageid": 43349,
+  "revid": 2598437,
+  "timestamp": "2015-11-08T16:35:57Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Dredge melee.jpg|190px]]\n| type = Dredge\n| profession = Warrior\n| level = 24 (26)\n| campaign = Prophecies\n}}\n[[Dredge Spirit Guard]]s are [[warrior]]s found in [[Sorrow's Furnace]] with other [[Dredge]].\n\n==Locations==\n*[[Southern Shiverpeaks]]\n**{{NPC location|Sorrow's Furnace}}\n\n==Skills==\n*{{skill icon|Cleave}} ([[elite]])\n*{{skill icon|Disrupting Chop}}\n*{{skill icon|Resurrection Signet}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 127\n| piercing = 127\n| slashing = 127\n| cold = 107\n| earth = 107\n| fire = 107\n| lightning = 107\n}}\n\n==Items dropped==\n*[[Dredge Manifesto]]"
+}

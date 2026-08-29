@@ -1,0 +1,7 @@
+{
+  "title": "Glyph of Renewal",
+  "pageid": 4237,
+  "revid": 2737743,
+  "timestamp": "2026-08-16T11:08:46Z",
+  "wikitext": "{{Skill infobox\n| id = 203\n| name = Glyph of Renewal\n| campaign = Prophecies\n| profession = Elementalist\n| type = Glyph\n| energy = 5\n| recharge = 10\n| activation = 1\n| elite = y\n| causes1 = Recharge\n| description = [[Elite]] [[Glyph]]. For 15 seconds, your next [[spell]] instantly [[recharge]]s.\n| concise description = Elite Glyph. (15 seconds.) Your next spell recharges instantly.\n}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Nayl Klaw Tuthan]] ([[Perdition Rock]])\n\n== Notes ==\n* The instant recharge provided by Glyph of Renewal overrides the effects of [[Diversion]] and [[Auspicious Incantation]].\n* The instant recharge will occur even if the spell is [[interrupt]]ed.\n* NPCs will use skills indiscriminately after invoking a Glyph of Renewal, not prioritizing spells with long cooldowns, nor delay those to invoke the Glyph first.\n\n== Trivia ==\n{{Skill change}}\n\n[[de:Glyphe der Erneuerung]]"
+}

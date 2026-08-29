@@ -1,0 +1,7 @@
+{
+  "title": "Scarab Nest Builder",
+  "pageid": 43230,
+  "revid": 2231787,
+  "timestamp": "2011-02-02T00:19:40Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Scarab\n| affiliation = Crystal Desert wildlife\n| profession = r\n| level = 22 (26)\n| campaign = Prophecies\n}}\n[[Scarab Nest Builder]]s are [[trapper]]s.\n\n==Locations==\n*[[Crystal Desert]]\n**{{NPC location|Prophet's Path}}\n\n==Skills==\n*{{skill icon|Barbed Trap}}\n*{{skill icon|Distracting Shot}}\n*{{skill icon|Dust Trap}}\n*{{skill icon|Flame Trap}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 66\n| piercing = 66\n| slashing = 66\n| cold = 66\n| earth = 66\n| fire = 66\n| lightning = 66\n}}"
+}

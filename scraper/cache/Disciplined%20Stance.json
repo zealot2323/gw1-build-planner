@@ -1,0 +1,7 @@
+{
+  "title": "Disciplined Stance",
+  "pageid": 6702,
+  "revid": 2695931,
+  "timestamp": "2024-05-17T03:17:45Z",
+  "wikitext": "{{Skill infobox\n| id = 376\n| name = Disciplined Stance\n| campaign = Prophecies\n| profession = Warrior\n| attribute = Tactics\n| type = Stance\n| energy = 5\n| recharge = 15\n| causes1 = Increased Armor Rating\n| causes2 = Block\n| description = [[Stance]]. For {{gr|1|4}} second[s], you gain +10 [[Armor rating|armor]] and have a 75% chance to [[block]] [[attack]]s. Disciplined Stance ends if you use an [[adrenaline|adrenal]] [[skill]].\n| concise description = Stance. ({{gr|1|4}} second[s].) You have 75% chance to block and +10 armor. {{gray|Ends if you use an adrenal skill.}}\n}}\n\n{{Skill progression\n|attribute = [[Tactics]]\n|var1 name = [[Duration]]\n|var1 at0 = 1\n|var1 at15 = 4}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Avena]] ([[Maguuma Stade]]) \n* [[Tengsao]] ([[The Amnoon Oasis]])\n* [[Dakk]] ([[Ember Light Camp]])\n\n== Notes ==\n*The short duration of this skill makes it unsuitable for [[tank]]ing and surviving [[pressure]] during longer periods of time; however, it can be effective for surviving [[spike]]s due to its short recharge time.\n*Heroes use this skill in combat below 80% health.\n\n== Trivia ==\n{{Skill change}}"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Dune Burrower",
+  "pageid": 57507,
+  "revid": 1894076,
+  "timestamp": "2010-02-01T21:34:52Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Behemoth\n| profession = r\n| level = 22 (26)\n| campaign = Prophecies\n| affiliation = Crystal Desert wildlife\n}}\n[[Dune Burrower]]s are [[behemoth]]s found in the [[Crystal Desert]].\n\n==Locations==\n* [[Crystal Desert]]\n** {{NPC location|The Scar}}\n** {{NPC location|The Arid Sea}}\n\n==Missions==\n* [[Crystal Desert]]\n** {{NPC location|Elona Reach}}\n\n==Skills==\n* {{Skill icon|Healing Spring}}\n* {{Skill icon|Hunter's Shot}}\n* {{Skill icon|Incendiary Arrows}} ([[elite]], [[Hard Mode]] only)\n* {{Skill icon|Precision Shot}}\n* {{Skill icon|Serpent's Quickness}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 76\n| piercing = 76\n| slashing = 76\n| cold = 106\n| earth = 106\n| fire = 106\n| lightning = 106\n}}\n\n==Items dropped==\n* [[Dune Burrower Jaw]]"
+}

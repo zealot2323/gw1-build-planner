@@ -1,0 +1,7 @@
+{
+  "title": "Jungle Skale",
+  "pageid": 47726,
+  "revid": 2657504,
+  "timestamp": "2020-05-05T23:06:28Z",
+  "wikitext": "{{NPC infobox\n| image = [[Image:Skale blue.jpg|150px]]\n| level = 19 (25)\n| affiliation = Maguuma Jungle wildlife\n| profession = n\n| campaign = Prophecies\n| type = Skale\n}}__NOTOC__\n[[Jungle Skale]] roam the jungle's ground level in packs of three or more. They can be found with other creatures, such as [[Jungle Troll|Trolls]].\n\n==Locations==\n*[[Maguuma Jungle]]\n** {{NPC location|Mamnoon Lagoon}}\n** {{NPC location|Tangle Root}}\n** {{NPC location|The Falls}}\n\n==Skills==\n14 [[Blood Magic]] in normal mode\n(20 [[Blood Magic]], 16 [[Curses]], 5 [[Death Magic]] in [[Hard mode]])\n*{{skill icon|Deathly Swarm}} (Hard mode only)\n*{{skill icon|Defile Flesh}}\n*{{skill icon|Rotting Flesh}}\n*{{skill icon|Strip Enchantment}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = n\n| blunt = 57\n| piercing = 57\n| slashing = 57\n| cold = 57\n| earth = 57\n| fire = 57\n| lightning = 57\n}}\n\n==Items dropped==\n*[[Jungle Skale Fin]]\n*[[Monstrous Fang]]\n*[[Scale]]\n\n[[Category:Drops monstrous fang]]\n[[Category:Drops scale]]"
+}

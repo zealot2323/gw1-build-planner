@@ -1,0 +1,7 @@
+{
+  "title": "Shame",
+  "pageid": 1498,
+  "revid": 2683784,
+  "timestamp": "2023-02-21T18:08:31Z",
+  "wikitext": "{{Skill infobox\n| id = 51\n| name = Shame\n| campaign = Prophecies\n| profession = Mesmer\n| attribute = Domination Magic\n| type = Hex Spell\n| energy = 10\n| activation = 2\n| recharge = 30\n| causes1 = Energy Stealing\n| description = [[Hex Spell]]. For 6 seconds, the next time [[target]] [[foe]] casts a [[spell]] that targets an [[ally]], the spell [[fail]]s and you steal up to {{gr|5|14}} [[Energy]] from that foe.\n| concise description = Hex Spell. (6 seconds.) Target foe's next spell fails and you steal {{gr|5|14}} Energy. {{gray|No effect unless this foe's spell targeted one of its allies.}}\n}}\n\n{{Skill progression\n|attribute = [[Domination Magic]]\n|var2 name = [[Energy]] stolen\n|var2 at0 = 5\n|var2 at15 = 14}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Prophecies]]\n** [[Captain Greywind]] ([[North Kryta Province]])\n** [[Master Scout Kiera]] ([[Henge of Denravi]])\n** [[Dakk]] ([[Ember Light Camp]])\n'''[[Signet of Capture]]'''\n* [[Factions]]\n** [[Monstrous Afflicted Mesmer]] ([[Morostav Trail]], only during [[Cleansing Morostav Trail]])\n* [[Eye of the North]]\n** [[Veturni Mindsquall]] ([[Magus Stones]])\n\n== Related skills ==\n* {{skill icon|Guilt}}\n* {{skill icon|Mark of Subversion}}\n* {{skill icon|Mistrust}}"
+}

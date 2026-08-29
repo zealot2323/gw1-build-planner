@@ -1,0 +1,7 @@
+{
+  "title": "Tar Behemoth",
+  "pageid": 18120,
+  "revid": 2595431,
+  "timestamp": "2015-09-28T16:54:25Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Tar Behemoth.jpg|150px|Attacking Tar Behemoths in Dragon's Gullet]]\n| type = Behemoth\n| affiliation = Ascalon wildlife\n| profession = w\n| level = 6 (23)\n| campaign = Prophecies\n}}\n[[Tar Behemoth]]s are members of the [[Behemoth]] family.  Camouflaged as rocks, they lie in wait near tar pools of [[Ascalon]] for their prey to become stuck in the mire. \n\n==Locations==\n* [[Ascalon]]\n** {{NPC location|Dragon's Gullet}}\n** {{NPC location|The Breach}}\n\n==Skills==\n* {{skill icon|\"I Will Survive!\"}}\n* {{skill icon|Deflect Arrows}}\n* {{skill icon|Earth Shaker}} ([[elite]], [[Hard mode]] only)\n* {{skill icon|Wild Blow}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 60\n| piercing = 60\n| slashing = 60\n| cold = 40\n| earth = 40\n| fire = 40\n| lightning = 40\n}}\n\n==Items dropped==\n* [[Scar Behemoth Jaw]]\n\n==Notes==\n* A Tar Behemoth's [[ranged attack]] causes [[elemental damage]]."
+}

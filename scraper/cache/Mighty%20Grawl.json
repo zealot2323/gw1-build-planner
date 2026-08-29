@@ -1,0 +1,7 @@
+{
+  "title": "Mighty Grawl",
+  "pageid": 58801,
+  "revid": 2537483,
+  "timestamp": "2013-03-18T05:53:48Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| name = Mighty Grawl\n| type = Grawl\n| affiliation = Shiverpeak Mountains wildlife\n| image = [[file:Grawl martial.jpg|200px]]\n| profession = Warrior\n| level = 24 (26)\n| campaign = Prophecies\n}}\nA [[Mighty Grawl]] is a type of [[Grawl]] that only appears in [[Talus Chute]].\n\n==Locations==\n*[[Southern Shiverpeaks]]\n**{{NPC location|Talus Chute}}\n\n==Skills==\n* {{skill icon|\"Victory Is Mine!\"}} ([[elite]])\n* {{skill icon|Belly Smash}}\n* {{skill icon|Hammer Bash}}\n* {{skill icon|Mighty Blow}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 111\n| piercing = 111\n| slashing = 111\n| cold = 91\n| earth = 91\n| fire = 91\n| lightning = 71\n}}\n\n==Items dropped==\n*[[Intricate Grawl Necklace]]\n*[[The Ice Breaker]] ([[unique]])\n\n==Notes==\n* Mighty Grawls only [[drop]] The Ice Breaker if they are wielding it.\n\n[[Category:Non-boss NPCs with Unique Items]]"
+}

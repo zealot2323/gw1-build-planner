@@ -1,0 +1,7 @@
+{
+  "title": "Amity",
+  "pageid": 4104,
+  "revid": 2720116,
+  "timestamp": "2026-02-05T22:41:58Z",
+  "wikitext": "{{Skill infobox\n| id = 265\n| name = Amity\n| campaign = Prophecies\n| profession = Monk\n| attribute = Protection Prayers\n| type = Hex Spell\n| elite = y\n| energy = 5\n| activation = {{1/4}}\n| recharge = 20\n| description = [[Elite]] [[Hex Spell]]. For {{gr|4|12}} seconds, [[adjacent]] [[foe]]s cannot [[attack]]. For each foe, Amity ends if that foe takes [[damage]].\n| concise description = Elite Hex Spell. ({{gr|4|12}} seconds.) Foes adjacent to you cannot attack. {{gray|Ends on any foes that take damage.}}\n| aoe = adjacent\n| target = untargeted\n| pbaoe = self\n}}\n\n{{Skill progression\n|attribute = [[Protection Prayers]]\n|var1 name = [[Duration]]\n|var1 at0 = 4\n|var1 at15 = 12}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Pravus Obsideo]] ([[Perdition Rock]])\n\n== Related skills ==\n* {{skill icon|Pacifism}}\n\n== Trivia ==\n{{Skill change}}\n\n[[de:Freundschaft]]"
+}

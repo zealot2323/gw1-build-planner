@@ -1,0 +1,7 @@
+{
+  "title": "Mahgo Hydra",
+  "pageid": 23755,
+  "revid": 2001368,
+  "timestamp": "2010-04-28T13:12:01Z",
+  "wikitext": "{{NPC infobox\n| type = Hydra\n| profession = e\n| level = 24 (26)\n| campaign = Core\n| campaign2 = Prophecies\n}}__NOTOC__\n[[Mahgo Hydra]]s are powerful multi-headed [[elementalist]]s. They use a potent combination of [[PBAoE]] and [[AoE]] spells to inflict wide spread damage on adventuring groups.\n\n==Locations==\n*[[Core]]\n**[[Fissure of Woe]]\n***{{NPC location|Burning Forest}}\n*[[Prophecies]]\n**[[Ring of Fire Islands]]\n***{{NPC location|Perdition Rock}}\n\n==Missions==\n*[[Ring of Fire Islands]]\n**{{NPC location|Abaddon's Mouth}}\n\n==Skills==\n12 [[Energy Storage]], 15 [[Fire Magic]]\n*{{skill icon|Fire Attunement}}\n*{{skill icon|Glyph of Renewal}} ([[elite]])\n*{{skill icon|Inferno}}\n*{{skill icon|Meteor Shower}}\n*{{skill icon|Phoenix}}\n*{{monster skill icon|Stun Immunity}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = e\n| blunt = 71\n| piercing = 71\n| slashing = 71\n| cold = 91\n| earth = 91\n| fire = 91\n| lightning = 91\n}}\n\n==Items dropped==   \n*[[Mahgo Claw]]\n\n==Notes==\n*[[Interrupt]]ion, [[daze]], and protective spells work well against Mahgo Hydras. The party is also advised to spread apart to avoid from being caught by [[Meteor Shower]]s."
+}

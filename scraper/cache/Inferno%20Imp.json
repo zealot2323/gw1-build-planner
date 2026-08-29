@@ -1,0 +1,7 @@
+{
+  "title": "Inferno Imp",
+  "pageid": 28792,
+  "revid": 2054845,
+  "timestamp": "2010-06-11T18:03:52Z",
+  "wikitext": "{{NPC infobox\n| type = Imp\n| image = [[Image:Fire Imp.jpg|150px]]\n| affiliation = Kryta wildlife\n| profession = e\n| level = 13 (24)\n| campaign = Prophecies\n}}__NOTOC__\n[[Inferno Imp]]s are fire [[elementalist]]s found in [[Kryta]].\n\n==Locations==\n*[[Kryta]]\n**{{NPC location|Divinity Coast (explorable area)}}\n**{{NPC location|Nebo Terrace}}\n**{{NPC location|North Kryta Province}}\n**{{NPC location|Stingray Strand}}\n**{{NPC location|Talmark Wilderness}}\n**{{NPC location|The Black Curtain}}\n\n==Missions==\n*[[Kryta]]\n**{{NPC location|Divinity Coast}}\n**{{NPC location|Sanctum Cay}}\n\n==Skills==\n12 [[Fire Magic]] (20 Fire Magic in [[Hard Mode]])\n*{{Skill icon|Aura of Restoration}}\n*{{skill icon|Elemental Attunement}} ([[elite]], Hard Mode only)\n*{{Skill icon|Immolate}}\n*{{Skill icon|Incendiary Bonds}}\n*{{skill icon|Rodgort's Invocation}} (Hard Mode only)\n\n==Armor ratings==\n{{NPC statistics\n| prof = e\n| blunt = 34\n| piercing = 34\n| slashing = 34\n| cold = 34\n| earth = 34\n| fire = 64\n| lightning = 34\n}}\n\n==Items dropped==\n*[[Glowing Heart]]\n*[[Lump of Charcoal]]\n*[[Ruby]]\n*[[Sapphire]]\n*[[Scale]]\n\n[[Category:Drops charcoal]]\n[[Category:Drops ruby]]\n[[Category:Drops sapphire]]\n[[Category:Drops scale]]"
+}

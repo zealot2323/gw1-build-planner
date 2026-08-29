@@ -1,0 +1,7 @@
+{
+  "title": "Gladiator's Defense",
+  "pageid": 4079,
+  "revid": 2731229,
+  "timestamp": "2026-06-25T05:12:03Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 372\n| name = Gladiator's Defense\n| campaign = Prophecies\n| profession = Warrior\n| attribute = Tactics\n| type = Stance\n| energy = 5\n| recharge = 20\n| elite = y\n| causes1 = Block\n| description = [[Elite]] [[Stance]]. For {{gr|5|11}} seconds, you have a 75% chance to [[block]] incoming [[attack]]s. Whenever you block a [[melee attack]] this way, the attacker suffers {{gr|5|35}} [[damage]].\n| concise description = Elite Stance. ({{gr|5|11}} seconds.) You have 75% chance to block. Your attacker takes {{gr|5|35}} damage whenever you block a melee attack this way.\n}}\n\n{{Skill progression\n|attribute = [[Tactics]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 11\n|var2 name = [[Armor-ignoring damage]]\n|var2 at0 = 5\n|var2 at15 = 35}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Facet of Strength]] ([[The Dragon's Lair]])\n* [[Eye of the North]]\n** [[Facet of Destruction]] ([[Verdant Cascades]] during [[The Cipher of Balthazar]] and [[Varajar Fells]] during [[The Path to Revelations]])\n\n== Related skills ==\n* {{Skill icon|Flashing Blades}} ([[elite]])\n* {{Skill icon|Sliver Armor}}\n* {{Skill icon|Whirling Defense}}\n\n== Trivia ==\n* The warrior in the [[skill icon]] is wearing [[Warrior Gladiator armor|Gladiator armor]]\n\n[[de:Gladiatoren-Verteidigung]]\n[[Category:Retaliation skills]]"
+}

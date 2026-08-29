@@ -1,0 +1,7 @@
+{
+  "title": "Light of Dwayna",
+  "pageid": 2779,
+  "revid": 2705639,
+  "timestamp": "2025-04-29T20:48:31Z",
+  "wikitext": "{{Skill infobox\n| id = 304\n| name = Light of Dwayna\n| campaign = Prophecies\n| profession = Monk\n| type = Spell\n| energy = 25\n| activation = 4\n| recharge = 20\n| description = [[Spell]]. [[Resurrection|Resurrect]] all dead [[party]] members [[In the area|in the area]]. They are returned to life with 25% [[Health]] and zero [[Energy]].\n| concise description = Spell. Resurrects all dead party members in the area. (25% Health, zero Energy).\n| aoe = in the area\n| target = self\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Prophecies]]\n**[[Harnil]] ([[Marhan's Grotto]])\n**[[Dakk]] ([[Ember Light Camp]])\n'''[[Signet of Capture]]'''\n*[[Prophecies]]\n**[[Liam Shanglui]] ([[Kessex Peak]])\n*[[Factions]]\n**[[Zhu Hanuku]] ([[Boreas Seabed]])\n\n== Related skills ==\n* {{skill icon|\"By Ural's Hammer!\"}}\n* {{skill icon|\"We Shall Return!\"}}\n* {{skill icon|Eternal Aura}}\n* {{skill icon|Lively Was Naomei}}\n* {{skill icon|Restoration}}\n\n== Notes ==\n*This skill cannot bypass [[Frozen Soil]].\n*[[Hero]]es don't use this spell very well. \n== See also ==\n* [[Scroll of Resurrection]]\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Resurrection skills]]\n[[Category:Skills named after eponymous NPCs|Dwayna]]"
+}

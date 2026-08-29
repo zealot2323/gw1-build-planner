@@ -1,0 +1,7 @@
+{
+  "title": "Desert Griffon",
+  "pageid": 40367,
+  "revid": 2581151,
+  "timestamp": "2015-01-14T11:08:27Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| profession = w\n| level = 21 (26)\n| campaign = Prophecies\n| type = Griffon\n| affiliation = Crystal Desert wildlife\n}}\n[[Desert Griffon]]s are melee creatures found in the [[Crystal Desert]]. They make up groups of at least 2 to usually 3 or 4 but have been seen as many as 5, although it is very rare.\n\n==Locations==\n*[[Crystal Desert]]\n** {{NPC location|Prophet's Path}}\n** {{NPC location|Skyward Reach}}\n** {{NPC location|The Scar}}\n** {{NPC location|Vulture Drifts}}\n\n==Skills==\n*{{Skill icon|\"I Will Survive!\"}}\n*{{Skill icon|Berserker Stance}}\n*{{Skill icon|Final Thrust}}\n*{{Skill icon|Healing Signet}} ([[hard mode]] only)\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 103\n| piercing = 103\n| slashing = 103\n| cold = 83\n| earth = 83\n| fire = 83\n| lightning = 83\n}}\n\n==Items dropped==\n*[[Feather]]\n*[[Iridescent Griffon Wing]]\n\n==Notes==\n*This creature has a [[miniature]] [[Miniature Desert Griffon|version]].\n\n==Trivia==\n*These are the only Warrior Griffons, but ironically, they do not use the skill [[Griffon's Sweep]]."
+}

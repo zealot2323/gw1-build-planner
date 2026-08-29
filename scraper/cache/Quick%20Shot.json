@@ -1,0 +1,7 @@
+{
+  "title": "Quick Shot",
+  "pageid": 3643,
+  "revid": 2727143,
+  "timestamp": "2026-04-30T12:43:10Z",
+  "wikitext": "__NOTOC__\n{{Skill infobox\n| id = 397\n| name = Quick Shot\n| campaign = Core\n| profession = Ranger\n| type = Bow Attack\n| elite = y\n| energy = 5\n| activation = {{1/2}}\n| recharge = 1\n| causes1 = Increased Projectile Speed\n| description = [[Elite]] [[Bow Attack]]. Shoot an arrow that moves twice as fast.\n| concise description = Elite Bow Attack. You shoot an arrow that moves twice as fast.\n}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Maxine Coldstone]] ([[Perdition Rock]])\n* [[Factions]]\n** [[Inallay Splintercall]] ([[Morostav Trail]])\n** [[Razorjaw Longspine]] ([[Silent Surf]])\n* [[Nightfall]]\n** [[Zelnehlun Fastfoot]] ([[The Floodplain of Mahnkelon]])\n\n== Related skills ==\n* {{skill icon|Called Shot}}\n* {{skill icon|Needling Shot}}\n\n== Trivia ==\n* During the beta of Prophecies, this skill was not elite. See the [http://web.archive.org/web/20090406144129/http://www.gamespot.com/pc/rpg/guildwars/preview_6111324.html GameSpot Preview of the Ranger].\n* [[Poison Arrow]] and Quick Shot are tied for the lowest recharge of bow attack skills that don't remove a preparation, making them potentially effective to trigger the effects of [[anthem]]s, [[song]]s and damage from [[Expert Focus]].\n{{Skill change}}\n\n[[de:Schnellschuss]]\n[[Category:Core Elite skills]]"
+}

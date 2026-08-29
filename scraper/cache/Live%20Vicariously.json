@@ -1,0 +1,7 @@
+{
+  "title": "Live Vicariously",
+  "pageid": 2949,
+  "revid": 2695800,
+  "timestamp": "2024-05-16T20:11:17Z",
+  "wikitext": "{{Skill infobox\n| id = 291\n| name = Live Vicariously\n| campaign = Prophecies\n| profession = Monk\n| attribute = Healing Prayers\n| type = Enchantment Spell\n| energy = 5\n| activation = 2\n| upkeep = -1\n| causes1 = Health Gain\n| description = [[Enchantment Spell]]. While you [[Upkeep|maintain]] this enchantment, whenever [[target]] [[ally]] hits a [[foe]], you [[Health gain|gain]] {{gr|2|17}} [[Health]].\n| concise description = Enchantment Spell. You gain {{gr|2|17}} Health whenever target ally hits a foe.\n| target = allies\n}}\n\n{{Skill progression\n| attribute = [[Healing Prayers]]\n| var1 name = [[Health]] gain\n| var1 at0 = 2\n| var1 at15 = 17}}\n\n== Acquisition ==\n'''[[Skill quest]]s'''\n* [[In Memory of Paulus]] ([[Old Ascalon]])\n'''[[Skill trainer]]s'''\n* [[Captain Osric]] ([[Yak's Bend]])\n* [[Dakk]] ([[Ember Light Camp]])\n\n== Related skills ==\n* {{Skill Icon|Mystic Vigor}}\n* {{Skill Icon|Vigorous Spirit}}\n* {{Skill Icon|Way of Perfection}}\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Upkeep skills]]\n[[Category:Monk skill rewards]]"
+}

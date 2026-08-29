@@ -1,0 +1,7 @@
+{
+  "title": "Ineptitude",
+  "pageid": 1593,
+  "revid": 2723542,
+  "timestamp": "2026-03-30T02:27:33Z",
+  "wikitext": "{{Skill infobox\n| id = 47\n| name = Ineptitude\n| campaign = Prophecies\n| profession = Mesmer\n| attribute = Illusion Magic\n| type = Hex Spell\n| elite = y\n| energy = 10\n| activation = 1\n| recharge = 15\n| causes1 = Blind\n| description=[[Elite]] [[Hex Spell]]. For 4 seconds, the next time [[target]] [[foe]] or any [[adjacent]] foe [[attack]]s, they take {{gr|30|135}} [[damage]] and are [[Blind]]ed for 10 seconds.\n| concise description = Elite Hex Spell. (4 seconds.)  Also hexes foes adjacent to target. Deals {{gr|30|135}} damage. Inflicts Blindness condition (10 seconds). {{gray|No effect unless hexed foe attacks.}}\n| aoe = adjacent\n}}\n\n{{Skill progression\n|attribute = [[Illusion Magic]]\n|var1 name = [[Damage]]\n|var1 at0 = 30\n|var1 at15 = 135}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Wyt Sharpfeather]] ([[Mineral Springs]])\n* [[Eye of the North]]\n** [[Kemil the Inept]] ([[Alcazia Tangle]])\n\n== Related skills ==\n* {{skill icon|Clumsiness}}\n* {{skill icon|Wandering Eye}}\n* {{skill icon|Blinding Surge}} ([[elite]])\n\n==Hero Usage==\n* Heroes prioritize martial professions when using this spell, but will cast it on any target if none are in range.\n\n== Notes ==\n* Inflicts [[Blindness]] before the attack, usually causing it to miss.\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Hero-vetted skills]]\n[[de:Unbeholfenheit]]"
+}

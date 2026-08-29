@@ -1,0 +1,7 @@
+{
+  "title": "Tiger's Fury",
+  "pageid": 1630,
+  "revid": 2683470,
+  "timestamp": "2023-02-19T04:36:18Z",
+  "wikitext": "{{Skill infobox\n| id = 454\n| name = Tiger's Fury\n| campaign = Prophecies\n| profession = Ranger\n| attribute = Beast Mastery\n| type = Stance\n| energy = 10\n| recharge = 10\n| special = duplicate\n| causes1 = Disable\n| causes2 = Increased Attack Speed\n| description = [[Stance]]. All your non-[[attack skill]]s are [[disable]]d for 5 seconds. For {{gr|5|11}} seconds, you [[Attack speed|attack 25% faster]].\n| concise description = Stance. ({{gr|5|11}} seconds.) You attack 25% faster. {{gray|Disables your non-attack skills (5 seconds).}}\n}}\n\n{{Skill progression\n| attribute = [[Beast Mastery]]\n| var1 name = [[Duration]]\n| var1 at0 = 5\n| var1 at15 = 11}}\n\n== Acquisition ==\n'''[[Skill quest]]s'''\n* [[A Belated Betrothal]] ([[Seeker's Passage]])\n'''[[Skill trainer]]s'''\n* [[Bartoch]] ([[Droknar's Forge]])\n* [[Dakk]] ([[Ember Light Camp]])\n'''[[Signet of Capture]]'''\n* [[Squaw Nimblecrest]] ([[North Kryta Province]])\n* [[Phy Deftcrest]] ([[Stingray Strand]])\n* [[Gargash Thornbeard]] ([[Grenth's Footprint]])\n* [[Thul The Bull]] ([[Spearhead Peak]])\n\n== Related skills ==\n* {{skill icon|Bestial Fury}} ([[duplicate skill]])\n* {{skill icon|Heket's Rampage}}\n\n== Trivia ==\n* This skill has changed since its introduction; see its [[/Skill history|skill history]] for details.\n\n[[Category:Ranger skill rewards]]\n\n[[de:Wut des Tigers]]"
+}

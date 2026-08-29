@@ -1,0 +1,7 @@
+{
+  "title": "Power Attack",
+  "pageid": 12410,
+  "revid": 2733092,
+  "timestamp": "2026-07-05T14:59:07Z",
+  "wikitext": "{{Skill infobox\n| id = 322\n| name = Power Attack\n| campaign = Core\n| profession = Warrior\n| attribute = Strength\n| type = Melee Attack\n| energy = 5\n| recharge = 3\n| description = [[Melee Attack]]. If this [[attack]] hits, you strike for {{gr|10|40|+}} [[damage]].\n| concise description = Melee Attack. Deals {{gr|10|40|+}} damage.\n}}\n\n{{Skill progression\n|attribute = [[Strength]]\n|var1 name = + [[Damage]]\n|var1 at0 = 10\n|var1 at15 = 40}}\n\n== Acquisition ==\n===[[Unlock]] and learn===\n'''[[Skill quest]]s''' \n* [[Prophecies]]\n** [[Military Matters]] ([[Old Ascalon]])\n* [[Factions]]\n** [[Mantid Hatchlings]] ([[Monastery Overlook]])\n** [[Locate Talon Silverwing]] ([[Shing Jea Monastery]])\n* [[Nightfall]]\n** [[Rally the Recruits (Tutorial)|Rally the Recruits]]/[[Take the Shortcut (Skip Tutorial)|Take the Shortcut]] ([[Island of Shehkah]])\n'''[[Skill trainer]]s'''\n* Prophecies\n** [[Captain Osric]] ([[Yak's Bend]])\n** [[Dakk]] ([[Ember Light Camp]])\n* Factions\n** [[Michiko]] ([[Kaineng Center]])\n* Nightfall\n** [[Tohn]] ([[Kamadan, Jewel of Istan]])\n\n===Unlock only===\n;[[Hero]]es\n*Unlocking [[Koss]]\n\n== Related skills ==\n* {{skill icon|Body Blow}}\n* {{skill icon|Cleave}} ([[elite]])\n* {{skill icon|Dragon Slash}} (elite)\n* {{Skill icon|Executioner's Strike}}\n* {{duplicate skill icon|Galrath Slash|Silverwing Slash}}\n* {{Skill icon|Mighty Blow}}\n\n[[Category:Warrior skill rewards]]"
+}

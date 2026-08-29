@@ -1,0 +1,7 @@
+{
+  "title": "Shard Storm",
+  "pageid": 16264,
+  "revid": 2733037,
+  "timestamp": "2026-07-05T13:08:42Z",
+  "wikitext": "{{Skill infobox\n| id = 213\n| name = Shard Storm\n| campaign = Prophecies\n| profession = Elementalist\n| attribute = Water Magic\n| type = Hex Spell\n| energy = 10\n| activation = 1\n| recharge = 10\n| causes1 = Cold Damage\n| causes2 = Decreased Movement Speed\n| description = [[Hex Spell]].  Send out an [[Projectile spell|ice shard]] that strikes [[target]] [[foe]] for {{gr|10|85}} [[cold damage]] if it hits and causing target foe to [[snare (tactic)|move 66% slower]] for {{gr|2|6}} seconds.\n| concise description = Hex Spell. Projectile: deals {{gr|10|85}} cold damage. Target foe moves 66% slower ({{gr|2|6}} seconds).\n| target = foes\n}}\n\n{{Skill progression\n|attribute = [[Water Magic]]\n|var1 name = [[Cold damage]]\n|var1 at0 = 10\n|var1 at15 = 85\n|var2 name = [[Duration]]\n|var2 at0 = 2\n|var2 at15 = 6}}\n\n== Acquisition ==\n'''[[Skill quest]]s'''\n* [[Shalev's Task]] ([[Old Ascalon]])\n'''[[Skill trainer]]s'''\n* [[Captain Osric]] ([[Yak's Bend]])\n* [[Dakk]] ([[Ember Light Camp]])\n'''[[Signet of Capture]]'''\n* [[Samira Dhulnarim]] ([[Kessex Peak]])\n* [[Fawa Torncalf]] ([[The Wilds]])\n* [[Ramtha Brokenhoof]] (The Wilds)\n* [[Lala Firemane]] ([[Silverwood]])\n\n== Related skills ==\n* {{Skill icon|Freezing Gust}}\n\n== Trivia ==\n* This is the only player skill that is both a [[projectile spell]] and a hex spell.\n{{Skill change}}\n\n[[Category:Projectile spells]]\n[[Category:Elementalist skill rewards]]"
+}

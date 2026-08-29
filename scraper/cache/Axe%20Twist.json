@@ -1,0 +1,7 @@
+{
+  "title": "Axe Twist",
+  "pageid": 7824,
+  "revid": 2738472,
+  "timestamp": "2026-08-26T21:16:45Z",
+  "wikitext": "{{Skill infobox\n| id = 342\n| name = Axe Twist\n| campaign = Prophecies\n| profession = Warrior\n| attribute = Axe Mastery\n| type = Axe Attack\n| adrenaline = 5\n| causes1 = Weakness\n| description = [[Axe Attack]]. If this [[attack]] hits a [[foe]] suffering from a [[Deep Wound]], you strike for {{gr|5|25}} more [[damage]] and that foe suffers from [[Weakness]] for 20 seconds.\n| concise description = Axe Attack. Deals {{gr|5|25|+}} damage and inflicts Weakness condition (20 seconds) if target foe has a Deep Wound.\n}}\n\n{{Skill progression\n|attribute = [[Axe Mastery]]\n|var1 name = + [[Damage]]\n|var1 at0 = 5\n|var1 at15 = 25}}\n\n== Acquisition ==\n'''[[Skill quest]]s''' \n* [[Graven Images]] ([[North Kryta Province]])\n'''[[Skill trainer]]s'''\n* [[Sorim]] ([[Quarrel Falls]])\n* [[Master Scout Kiera]] ([[Henge of Denravi]])\n* [[Dakk]] ([[Ember Light Camp]])\n\n== Related skills ==\n* {{skill icon|Axe Rake}} \n\n==Hero Usage==\n* Heroes will never use this skill if the condition is not met when activating.\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Hero-vetted skills]]\n[[Category:Warrior skill rewards]]"
+}

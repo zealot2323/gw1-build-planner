@@ -1,0 +1,7 @@
+{
+  "title": "Maguuma Warrior",
+  "pageid": 42863,
+  "revid": 2632180,
+  "timestamp": "2018-07-11T22:09:19Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Centaur\n| affiliation = Maguuma Jungle wildlife\n| profession = W\n| level = 16 (25)  \n| campaign = Prophecies\n}}__NOTOC__\n[[Maguuma Warrior]]s are the [[warriors]] of the Maguuma [[centaur]]s. They use either a [[sword]] or [[axe]].\n\n==Locations==\n*[[Maguuma Jungle]]\n**{{NPC location|Dry Top}}\n**{{NPC location|Ettin's Back}}\n**{{NPC location|Silverwood}}\n\n==Missions==\n*[[Maguuma Jungle]]\n**{{NPC location|Bloodstone Fen}}\n**{{NPC location|The Wilds}}\n\n==Skills==\n===Sword wielding===\n*{{skill icon|\"I Will Avenge You!\"}}\n*{{skill icon|Final Thrust}} ([[Hard mode]] only)\n*{{skill icon|Seeking Blade}}\n*{{skill icon|Warrior's Cunning}}\n\n===Axe wielding===\n*{{skill icon|\"I Will Avenge You!\"}}\n*{{skill icon|Eviscerate}} ([[elite]], Hard mode only)\n*{{skill icon|Executioner's Strike}}\n*{{skill icon|Swift Chop}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 91\n| piercing = 91\n| slashing = 91\n| cold = 91\n| earth = 71\n| fire = 71\n| lightning = 71\n}}\n\n==Items dropped==\n*[[Centaur Harness]] (heavy)\n*[[Centaur Hide]]\n*[[Maguuma Mane]]"
+}

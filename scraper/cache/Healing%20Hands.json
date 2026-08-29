@@ -1,0 +1,7 @@
+{
+  "title": "Healing Hands",
+  "pageid": 2939,
+  "revid": 2731195,
+  "timestamp": "2026-06-25T05:03:58Z",
+  "wikitext": "{{Skill infobox\n| id = 285\n| name = Healing Hands\n| campaign = Prophecies\n| profession = Monk\n| attribute = Healing Prayers\n| type = Enchantment Spell\n| energy = 5\n| activation = {{1/4}}\n| recharge = 15\n| elite = y\n| causes1 = Health Gain\n| description = [[Elite]] [[Enchantment Spell]]. For 10 seconds, whenever [[target]] [[ally]] takes [[damage]], that ally is healed for {{gr|5|35}} [[Health]].\n| concise description = Elite Enchantment Spell. (10 seconds.) Heals for {{gr|5|35}} whenever target takes damage.\n| target = allies\n}}\n\n{{Skill progression\n| attribute = [[Healing Prayers]]\n| var1 name = [[Health gain]]\n| var1 at0 = 5\n| var1 at15 = 35}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Rull Browbeater]] ([[Perdition Rock]])\n\n== Related skills ==\n* {{skill icon|Healing Seed}}\n* {{skill icon|Mark of Protection}} ([[elite]])\n* {{Skill icon|Seed of Life}}\n* {{Skill icon|Supportive Spirit}}\n* {{skill icon|Vengeful Was Khanhei}} (elite)\n\n== Notes ==\n* Healing Hands will trigger even if the damage taken is zero.\n{{bug|Contrary to the descriptions, this skill causes [[health gain]] and not [[healing]].}}\n\n== Trivia ==\n{{Skill change}}\n\n[[de:Heilende Hände]]"
+}

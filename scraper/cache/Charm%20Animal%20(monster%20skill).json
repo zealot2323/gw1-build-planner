@@ -1,0 +1,7 @@
+{
+  "title": "Charm Animal (monster skill)",
+  "pageid": 235812,
+  "revid": 2725841,
+  "timestamp": "2026-04-20T22:57:46Z",
+  "wikitext": "{{Skill infobox\n| id = 513\n| name = Charm Animal\n| image = [[File:Charm Animal (monster skill).jpg]]\n| activation = {{1/4}}\n| profession = Monster\n| special = Monster <!-- only used by foe; not learnable -->\n| attribute = Beast Mastery\n| campaign = Prophecies\n| type = Skill\n| target = animals\n| description = [[Skill (skill type)|Skill]]. Charm [[target]] [[animal]]. Once charmed, your [[animal companion]] will travel with you whenever you have Charm Animal equipped.\n| concise description = Skill. Charm target animal. Once charmed, your animal companion will travel with you whenever you have Charm Animal equipped.\n}}\n\n== Related skills ==\n* {{skill icon|Charm Animal}}\n* {{monster skill icon|Charm Animal (Ashlyn Spiderfriend)}}\n* {{monster skill icon|Charm Animal (Beast Sworn Heket)}}\n* {{monster skill icon|Charm Animal (Charr Demolisher)}}\n* {{monster skill icon|Charm Animal (White Mantle)}}\n* {{monster skill icon|Charm Drake}}\n\n== Notes ==\n* This skill is used by [[Singed Oak]]s, [[Stone Summit Ranger]]s, [[Thul The Bull]], [[Luxon Ranger]]s, [[Milodestus the Wrangler]], [[Royen Beastkeeper]], [[Salke Fur Friend]] and [[Yeti (ranger)|Yeti]]."
+}

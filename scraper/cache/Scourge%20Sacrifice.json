@@ -1,0 +1,7 @@
+{
+  "title": "Scourge Sacrifice",
+  "pageid": 13726,
+  "revid": 2720142,
+  "timestamp": "2026-02-05T22:52:14Z",
+  "wikitext": "{{Skill infobox\n| id = 253\n| name = Scourge Sacrifice\n| campaign = Prophecies\n| profession = Monk\n| attribute = Smiting Prayers\n| type = Hex Spell\n| energy = 5\n| activation = 1\n| recharge = 5\n| description = [[Hex Spell]]. For {{gr|8|20}} seconds, every time [[target]] [[foe]] and [[adjacent]] foes [[sacrifice]] life, they sacrifice twice the normal amount.\n| concise description = Hex Spell. Also hexes foes adjacent to target ({{gr|8|20}} seconds). Doubles Health sacrifice.\n| aoe = adjacent\n}}\n\n{{Skill progression\n| attribute = [[Smiting Prayers]]\n| var1 name = [[Duration]]\n| var1 at0 = 8\n| var1 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill Trainer]]s'''\n* [[Gammel]] ([[Copperhammer Mines]])\n* [[Dakk]] ([[Ember Light Camp]])\n'''[[Signet of Capture]]'''\n* [[Tree of Life]] ([[Bloodstone Fen]])\n* [[Tree of Regrowth]] ([[Tangle Root]])\n\n== Related skills ==\n* {{Skill icon|Scourge Enchantment}}\n* {{Skill icon|Scourge Healing}}\n\n==Trivia==\n{{Skill change}}"
+}

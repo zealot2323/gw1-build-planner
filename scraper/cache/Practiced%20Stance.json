@@ -1,0 +1,7 @@
+{
+  "title": "Practiced Stance",
+  "pageid": 4086,
+  "revid": 2732830,
+  "timestamp": "2026-07-04T19:42:41Z",
+  "wikitext": "{{Skill infobox\n| id = 449\n| name = Practiced Stance\n| campaign = Prophecies\n| profession = Ranger\n| attribute = Expertise\n| type = Stance\n| elite = y\n| energy = 5\n| recharge = 15\n| causes1 = Decreased Recharge Time\n| description = [[Elite]] [[Stance]]. For {{gr|20|35}} seconds, your [[Preparation]]s [[Recharge time|recharge]] 50% faster and last {{gr|30|300||%}} longer.\n| concise description = Elite Stance. ({{gr|20|35}} seconds.) Your preparations recharge 50% faster and last {{gr|30|300||%}} longer.\n}}\n\n{{Skill progression\n| attribute = [[Expertise]]\n| var1 name = [[Duration]]\n| var1 at0 = 20\n| var1 at15 = 35\n| var2 name = Longer [[Preparation]]s %\n| var2 at0 = 30\n| var2 at15 = 300}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Ryk Arrowwing]] ([[Mineral Springs]])\n\n== Notes ==\n* If a preparation is activated while under the effect of this stance, the preparation will still benefit if this stance ends before you finish activation.\n* The only non-elite preparations with a shorter duration than recharge are [[Rapid Fire]] (if Marksmanship is below 5), [[Choking Gas]], and [[Seeking Arrows]]. \n\n== Trivia ==\n{{Skill change}}\n\n[[de:Geübte Haltung]]"
+}

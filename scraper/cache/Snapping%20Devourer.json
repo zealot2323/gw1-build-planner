@@ -1,0 +1,7 @@
+{
+  "title": "Snapping Devourer",
+  "pageid": 65460,
+  "revid": 2722907,
+  "timestamp": "2026-03-13T01:33:12Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Red devourer.jpg|150px]]\n| type = Devourer\n| affiliation = Presearing wildlife\n| profession = w\n| level = 2\n| campaign = Prophecies\n}}\n[[Snapping Devourer]]s are low-level [[devourer]]s.\n\n==Locations==\n*[[Ascalon (pre-Searing)]]\n**{{NPC location|The Catacombs}}\n\n==Skills==\n''None''\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 10\n| piercing = 10\n| slashing = 10\n| cold = -10\n| earth = 10\n| fire = 10\n| lightning = 10\n}}\n\n==Items dropped==\n*[[Dull Carapace]]"
+}

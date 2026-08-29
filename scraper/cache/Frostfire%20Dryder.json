@@ -1,0 +1,7 @@
+{
+  "title": "Frostfire Dryder",
+  "pageid": 50313,
+  "revid": 2609149,
+  "timestamp": "2016-06-27T04:37:38Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Silver Dryder.jpg|200px]]\n| affiliation = Shiverpeak Mountains wildlife\n| species = Dryder\n| profession = n\n| level = 10 (24)\n| campaign = Prophecies}}\n[[Frostfire Dryder]]s are common throughout the frozen tunnels of the [[Northern Shiverpeaks]]. They can make life difficult for groups not prepared with hex removing skills.\n\n==Locations== \n*[[Northern Shiverpeaks]]\n**{{NPC location|Anvil Rock}}\n**{{NPC location|Iron Horse Mine}}\n\n==Missions==\n*[[Northern Shiverpeaks]]\n**{{NPC location|The Frost Gate}}\n**{{NPC location|Borlis Pass}}\n\n==Skills==\n10 [[Curses]], 6 [[Blood Magic]] (20 Curses, 16 Blood Magic in [[Hard mode]])\n*{{skill icon|Defile Flesh}}\n*{{skill icon|Faintheartedness}}\n*{{skill icon|Shadow Strike}}\n*{{skill icon|Soul Leech}} ([[elite]], Hard mode only)\n*{{skill icon|Suffering}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = n\n| blunt = 30\n| piercing = 30\n| slashing = 30\n| cold = 30\n| earth = 30\n| fire = 30\n| lightning = 30\n}}\n\n==Items dropped==\n*[[Frostfire Fang]]\n\n==Notes==\n*There are a few Frostfire [[:Category:Dryder bosses|Dryder bosses]] that do not possess special names like most bosses. They are still discernible by having a higher level and the boss-like aura. They have been seen with any core class boss auras.\n*The Frostfire Dryder uses the same model/skin as a [[Terrorweb Dryder (silver)]]."
+}

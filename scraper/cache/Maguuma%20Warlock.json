@@ -1,0 +1,7 @@
+{
+  "title": "Maguuma Warlock",
+  "pageid": 42866,
+  "revid": 2733578,
+  "timestamp": "2026-07-07T19:12:07Z",
+  "wikitext": "{{NPC infobox\n| image = [[File:Maguuma Avenger.jpg|150px]]\n| type = Centaur\n| affiliation = Maguuma Jungle wildlife\n| profession = N\n| level = 16 (25)\n| campaign = Prophecies\n}}__NOTOC__\n[[Maguuma Warlock]]s are [[Necromancer]] [[Centaur]]s that serve a supportive role in their groups.\n\n==Missions==\n*[[Maguuma Jungle]]\n**{{NPC location|The Wilds}}\n\n==Skills==\n(18 [[Curses]] in [[Hard Mode]])\n*{{skill icon|Order of Pain}}\n*{{skill icon|Parasitic Bond}}\n*{{skill icon|Signet of Agony}}\n*{{skill icon|Well of Blood}}\n*{{skill icon|Wither}} ([[elite]], Hard mode only)\n\n==Armor ratings==\n{{NPC statistics\n| prof = n\n| blunt = 40\n| piercing = 40\n| slashing = 40\n| cold = 60\n| earth = 40\n| fire = 40\n| lightning = 40\n}}\n\n==Items dropped==\n*[[Centaur Hide]]\n*[[Maguuma Mane]]"
+}

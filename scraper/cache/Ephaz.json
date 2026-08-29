@@ -1,0 +1,7 @@
+{
+  "title": "Ephaz",
+  "pageid": 18817,
+  "revid": 2256498,
+  "timestamp": "2011-03-06T20:29:28Z",
+  "wikitext": "{{NPC infobox\n| name = Ephaz\n| image = [[Image:Lionguard m.jpg|196px]]\n| type = Human\n| affiliation = Lionguard\n| service = Skill trainer\n| campaign = Prophecies\n| level = 15\n}}__NOTOC__\n[[Ephaz]] will teach your character a skill in exchange for a fee and one [[skill point]].\n\n==Locations==\n*[[Kryta]]\n**{{NPC location|Beetletun}}\n\n== Skills offered ==\n{{Skill trainer list\n| w =\n* {{Skill icon|Belly Smash}}\n* {{Skill icon|Galrath Slash}}\n| mo =\n* {{Skill icon|Essence Bond}}\n* {{Skill icon|Life Bond}}\n| n =\n* {{Skill icon|Malign Intervention}}\n* {{Skill icon|Rigor Mortis}}\n* {{Skill icon|Touch of Agony}}\n| me =\n* {{Skill icon|Arcane Echo}}\n* {{Skill icon|Cry of Frustration}}\n| e =\n* {{Skill icon|Armor of Frost}}\n* {{Skill icon|Lightning Touch}}\n}}"
+}

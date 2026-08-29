@@ -1,0 +1,7 @@
+{
+  "title": "Skullreaver",
+  "pageid": 19970,
+  "revid": 2722903,
+  "timestamp": "2026-03-13T01:24:49Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| affiliation = Undead\n| type = Skeleton\n| profession = w\n| image = [[Image:Skeleton warrior.jpg|150px]]\n| boss = y\n| level = 5\n| campaign = Prophecies\n| map1 = [[Image:SkullreaverLocation.jpg|150px]]\n| map1-text = Location in [[The Catacombs]]\n}}\n[[Skullreaver]] is a dangerous skeleton boss in [[The Catacombs]].\n\n==Locations==\n*[[Ascalon (pre-Searing)]]\n**{{NPC location|The Catacombs}} (end of hallway overlooking [[Oberan the Reviled]], past many [[Restless Corpse]]s and [[Raging Cadaver]]s)\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 43\n| piercing = 43\n| slashing = 43\n| cold = 43\n| earth = 43\n| fire = 43\n| lightning = 43\n}}\n\n== Items dropped ==\n* [[Dead Bow]]\n* [[Sephis Axe]]\n* [[Skeletal Limb]]\n\n==Notes==\n*It has a natural +1 [[pip]] of [[health regeneration]].\n*Skullreaver is the only non-Charr [[boss]] foe in pre-Searing, excluding bosses spawned by [[Lieutenant Langmar#Quests|Vanguard quests]]."
+}

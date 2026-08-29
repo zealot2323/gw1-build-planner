@@ -1,0 +1,7 @@
+{
+  "title": "Ward Against Foes",
+  "pageid": 14406,
+  "revid": 2703970,
+  "timestamp": "2025-04-05T16:35:21Z",
+  "wikitext": "{{Skill infobox\n| id = 177\n| name = Ward Against Foes\n| campaign = Core\n| profession = Elementalist\n| attribute = Earth Magic\n| type = Ward Spell\n| energy = 15\n| activation = 1\n| recharge = 20\n| causes1 = Decreased Movement Speed\n| description = [[Ward Spell]]. You create a Ward Against Foes at your current location. For {{gr|8|20}} seconds, non-[[spirit]] [[foe]]s [[In the area|in this area]] [[Snare (tactic)|move 50% slower]].\n| concise description = Ward Spell. ({{gr|8|20}} seconds.) Foes in this ward move 50% slower.\n}}\n\n{{Skill progression\n| attribute = [[Earth Magic]]\n| var1 name = [[Duration]]\n| var1 at0 = 8\n| var1 at15 = 20}}\n\n== Acquisition ==\n===[[Unlock]] and learn===\n'''[[Skill quest]]s'''\n* [[Prophecies]]\n** [[A Heart of Ice]] ([[Yak's Bend]])\n'''[[Skill trainer]]s'''\n* Prophecies\n** [[Firstwatch Sergio]] ([[Lion's Arch]])\n** [[Dakk]] ([[Ember Light Camp]])\n* [[Factions]]\n** [[Michiko]]  ([[Kaineng Center]])\n* [[Nightfall]]\n** [[Medando]] ([[Yohlon Haven]])\n\n===Unlock only===\n;[[Hero]]es\n* Nightfall\n** Unlocking [[Zhed Shadowhoof]]\n\n== Related skills ==\n* {{skill icon|Grasping Earth}}\n\n== Note ==\n* The AI cannot detect a ward's presence.\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Elementalist skill rewards]]"
+}

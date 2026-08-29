@@ -1,0 +1,7 @@
+{
+  "title": "Skeleton Bowmaster",
+  "pageid": 28928,
+  "revid": 2598936,
+  "timestamp": "2015-11-14T07:22:31Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Skeleton\n| affiliation = Undead\n| image = [[Image:Skeleton ranger.jpg|150px]]\n| profession = r\n| level = 17 (25)\n| campaign = Prophecies\n}}\n[[Skeleton Bowmaster]]s are [[skeleton]] [[Ranger]]s found throughout Kryta.\n\n==Locations==\n*[[Kryta]]\n**{{NPC location|Cursed Lands}}\n**{{NPC location|D'Alessio Seaboard|outpost}}\n**{{NPC location|Majesty's Rest}}\n**{{NPC location|Nebo Terrace}}\n**{{NPC location|The Black Curtain}}\n\n==Missions==\n*Kryta\n**{{NPC location|D'Alessio Seaboard}}\n**{{NPC location|Divinity Coast}}\n**{{NPC location|Gates of Kryta}}\n**{{NPC location|Riverside Province}}\n\n==Skills==\n*{{skill icon|Apply Poison}}\n*{{skill icon|Hunter's Shot}} ([[hard mode]] only)\n*{{skill icon|Pin Down}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 46\n| piercing = 86\n| slashing = 66\n| cold = 66\n| earth = 66\n| fire = 66\n| lightning = 66\n}}\n\n==Items dropped==\n*[[Bone]]\n*[[Decayed Orr Armor]]\n*[[Decayed Orr Emblem]]\n\n[[Category:Drops bone]]"
+}

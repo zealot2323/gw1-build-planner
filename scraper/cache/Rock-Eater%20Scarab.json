@@ -1,0 +1,7 @@
+{
+  "title": "Rock-Eater Scarab",
+  "pageid": 43231,
+  "revid": 2709935,
+  "timestamp": "2025-07-01T04:59:01Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Scarab\n| affiliation = Crystal Desert wildlife\n| profession = w\n| level = 20 (26)\n| campaign = Prophecies\n}}\n[[Rock-Eater Scarab]]s are [[scarab]]s that [[popup|lie dormant]] under the sand of the [[Crystal Desert]], emerging unexpectedly. It is said their jaws are strong enough to crush rock, hence their name. \n\n==Locations==\n*[[Crystal Desert]]\n**{{NPC location|Diviner's Ascent}}\n**{{NPC location|Prophet's Path}}\n**{{NPC location|Salt Flats}}\n**{{NPC location|The Arid Sea}}\n**{{NPC location|The Scar}}\n**{{NPC location|Vulture Drifts}}\n\n==Missions==\n*[[Crystal Desert]]\n**{{NPC location|The Dragon's Lair}}\n\n==Skills==\n*{{skill icon|Frenzy}} ([[Normal mode]] only)\n*{{skill icon|Penetrating Blow}}\n*{{skill icon|Wild Blow}} ([[Hard mode]] only)\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 60\n| piercing = 60\n| slashing = 60\n| cold = 60\n| earth = 60\n| fire = 60\n| lightning = 60\n}}\n\n==Items dropped==\n*[[Jade Mandible]]"
+}

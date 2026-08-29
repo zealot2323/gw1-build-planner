@@ -1,0 +1,7 @@
+{
+  "title": "Sand Wurm",
+  "pageid": 71168,
+  "revid": 2623529,
+  "timestamp": "2017-11-10T14:40:57Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Desert Wurm (NPC).jpg|150px]]\n| type = Wurm\n| affiliation = Crystal Desert wildlife\n| profession = w\n| level = 22 (26)\n| campaign = Prophecies\n}}\n[[Sand Wurm]]s are colossal predators that infest some parts of the [[Crystal Desert]].  They lie in wait beneath the surface of the sand, striking at passing travelers with devastating melee attacks.  An attack by a Sand Wurm is always preceded by sudden vibrations in the ground. They are heavy armored foes with a large amount of health and a constant +3 [[health regeneration]].\n\n==Locations ==\n*[[Crystal Desert]]\n**{{NPC location|Diviner's Ascent}}\n**{{NPC location|Prophet's Path}}\n**{{NPC location|The Arid Sea}}\n**{{NPC location|The Scar}}\n**{{NPC location|Vulture Drifts}}\n\n==Skills==\n*{{monster skill icon|Natural Resistance}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 160\n| piercing = 160\n| slashing = 160\n| cold = 160\n| earth = 160\n| fire = 160\n| lightning = 160\n}}\n\n==Items dropped==\n*[[Bleached Shell]]\n\n==Notes==\n*The combination of Natural Resistance, high armor, and a lack of active [[skill]]s makes [[Wastrel's Worry]] very effective against them, as the Sand Wurms have no means of ending the [[hex spell]] early.\n*They are hostile against all other Crystal Desert wildlife."
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Burning Titan",
+  "pageid": 15968,
+  "revid": 2716603,
+  "timestamp": "2025-12-26T00:20:38Z",
+  "wikitext": "{{NPC infobox\n | affiliation = Titans\n | profession = Warrior\n | level = 28 (30)\n | campaign = Prophecies\n}}__NOTOC__\n[[Burning Titan]]s are powerful [[titan]]s found roaming the later parts of the game. They are not that big of a threat in direct damage done, but people in adjacent range will be given the [[Burning]] condition. They are susceptible to [[cold damage]], and when killed, they will each spawn a [[Risen Ashen Hulk]].\n\n==Missions==\n*[[Ring of Fire Islands]]\n**{{NPC location|Hell's Precipice}}\n\n==Skills==\n*{{Skill icon|Irresistible Blow}}\n*{{Skill icon|Thrill of Victory}}\n*{{Skill icon|Wild Blow}}\n*{{monster skill icon|Stun Immunity}}\n*{{monster skill icon|Titans get plus Health regen and set enemies on fire each time he is hit.}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 123\n| piercing = 123\n| slashing = 123\n| cold = 83\n| earth = 103\n| fire = 143\n| lightning = 103\n}}\n\n==Items dropped==\n*[[Titan Armor]]"
+}

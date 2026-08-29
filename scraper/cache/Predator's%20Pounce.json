@@ -1,0 +1,7 @@
+{
+  "title": "Predator's Pounce",
+  "pageid": 1244,
+  "revid": 2733137,
+  "timestamp": "2026-07-05T15:41:38Z",
+  "wikitext": "{{Skill infobox\n| id = 443\n| name = Predator's Pounce\n| campaign = Prophecies\n| profession = Ranger\n| attribute = Beast Mastery\n| type = Pet Attack\n| energy = 5\n| recharge = 5\n| causes1 = Health Gain\n| description = [[Pet Attack]]. Your [[animal companion]] attempts a Predator's Pounce that deals {{gr|5|35|+}} [[damage]]. If that [[attack]] hits, your [[animal companion]] [[Health gain|gains]] {{gr|5|50}} [[Health]].\n| concise description = Pet Attack. Deals {{gr|5|35|+}} damage. Your pet gains {{Gr|5|50}} Health if this attack hits.\n}}\n\n{{Skill progression\n| attribute = [[Beast Mastery]]\n| var1 name = + [[Damage]]\n| var2 name = [[Health gain]]\n| var1 at0 = 5\n| var1 at15 = 35\n| var2 at0 = 5\n| var2 at15 = 50\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Taltosh]] ([[Grendich Courthouse]])\n* [[Captain Osric]] ([[Yak's Bend]])\n* [[Dakk]] ([[Ember Light Camp]])\n\n== Trivia ==\n* During early development, a similar skill called 'Feeding' existed, which healed the pet for dealing damage for the next 5 seconds, as mentioned by an alpha tester in the Photics e-zine Issue #5<ref>https://photics.com/issues/issue05.pdf</ref>.\n* The [[skill icon]] was previously used for the skill [[Call of Elemental Protection]], which gave additional armor against elemental damage. That might explain why the hyena on the skill icon is standing in a flame.\n{{Skill change}}\n\n== References ==\n<references/>"
+}

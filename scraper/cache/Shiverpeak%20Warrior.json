@@ -1,0 +1,7 @@
+{
+  "title": "Shiverpeak Warrior",
+  "pageid": 40214,
+  "revid": 2597744,
+  "timestamp": "2015-10-29T17:20:48Z",
+  "wikitext": "{{NPC infobox\n| image = [[File:Mountain Centaur martial.jpg|200px]]\n| type = Centaur\n| affiliation = Shiverpeak Mountains wildlife\n| profession = w\n| level = 8 (23)\n| campaign = Prophecies\n| campaign2 = Eye of the North\n}}__NOTOC__\n[[Shiverpeak Warrior]]s are the [[warrior]]s of the [[Centaur]]s in the Shiverpeaks. They may wield either [[axe]]s or [[sword]]s.\n\n==Locations==\n*[[Prophecies]]\n**[[Northern Shiverpeaks]]\n***{{NPC location|Anvil Rock}}\n***{{NPC location|Deldrimor Bowl}}\n***{{NPC location|Traveler's Vale}}\n*[[Eye of the North]]\n**[[Far Shiverpeaks]]\n***{{NPC location|Ice Cliff Chasms}} (only during [[Service: In Defense of the Eye]])\n\n==Missions==\n*Prophecies\n**Northern Shiverpeaks\n**{{NPC location|Borlis Pass}}\n\n==Skills==\n3 [[Axe Mastery]], 6 [[Swordsmanship]], 8-10 [[Tactics]] (14-16 Tactics in [[hard mode]])\n*{{Skill icon|Dismember}} (axe wielder)\n*{{Skill icon|Power Attack}} (hard mode only)\n*{{Skill icon|Sever Artery}} (sword wielder)\n*{{Skill icon|Shield Stance}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 63 to 65\n| piercing = 63 to 65\n| slashing = 63 to 65\n| cold = 64 to 67\n| earth = 43 to 45\n| fire = 43 to 45\n| lightning = 43 to 45\n}}\n\n==Items dropped==\n*[[Shiverpeak Bladehand Armor]]\n*[[Shiverpeak Mane]]\n*[[Snowy Centaur Hide]]"
+}

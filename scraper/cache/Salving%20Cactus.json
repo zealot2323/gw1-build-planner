@@ -1,0 +1,7 @@
+{
+  "title": "Salving Cactus",
+  "pageid": 22630,
+  "revid": 2379365,
+  "timestamp": "2011-09-12T16:50:51Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Crown of Thorns.jpg|150px]]\n| type = Plant\n| affiliation = Crystal Desert wildlife\n| profession = mo\n| level = 20 (26)\n| campaign = Prophecies\n}}\nThe [[Salving Cactus]] are [[Plant]] [[Monk]]s found in various parts of the [[Crystal Desert]]. Unlike most others of their species, the Salving Cactus will [[popup]] at random intervals, instead of only when [[aggro]]ed. They will continue this behavior until killed.\n\n==Locations==\n*[[Crystal Desert]]\n**{{NPC location|Prophet's Path}}\n**{{NPC location|The Arid Sea}}\n\n==Skills==\n*{{skill icon|Healing Seed}}\n*{{skill icon|Holy Wrath}}\n*{{skill icon|Orison of Healing}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = mo\n| blunt = 60\n| piercing = 60\n| slashing = 60\n| cold = 60\n| earth = 60\n| fire = 60\n| lightning = 60\n}}\n\n==Items dropped==  \n*[[Spiny Seed]]\n\n== Notes ==\n\n* As with any [[popup]], you must kill them to get credit for [[vanquishing]] the area only ''if'' they appear. However, they can sometimes appear after you pass their location, requiring you to backtrack to locations that you thought you had cleared."
+}

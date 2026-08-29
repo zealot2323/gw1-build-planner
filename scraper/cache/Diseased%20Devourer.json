@@ -1,0 +1,7 @@
+{
+  "title": "Diseased Devourer",
+  "pageid": 49997,
+  "revid": 2722911,
+  "timestamp": "2026-03-13T01:42:30Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Red devourer.jpg|150px]]\n| type = Devourer\n| affiliation = Presearing wildlife\n| level = 0\n| campaign = Prophecies\n}}\n[[Diseased Devourer]]s are a very weak breed that typically relies on the element of surprise by lying in wait below ground, digging to the surface to attack when prey approaches.\n\n==Locations==\n*[[Ascalon (pre-Searing)]]\n**{{NPC location|Lakeside County}} (in the [[Devourer cave]])\n**{{NPC location|The Catacombs}}\n\n==Skills==\n''none''\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 10\n| piercing = 10\n| slashing = 10\n| cold = -10\n| earth = 10\n| fire = 10\n| lightning = 10\n}}\n\n==Items dropped==\n*[[Dull Carapace]]\n\n==Notes==\n*Diseased Devourers have 10 [[health]]."
+}

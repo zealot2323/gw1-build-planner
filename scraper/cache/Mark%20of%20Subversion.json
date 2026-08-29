@@ -1,0 +1,7 @@
+{
+  "title": "Mark of Subversion",
+  "pageid": 1757,
+  "revid": 2723583,
+  "timestamp": "2026-03-30T17:37:46Z",
+  "wikitext": "{{Skill infobox\n| id = 127\n| name = Mark of Subversion\n| campaign = Prophecies\n| profession = Necromancer\n| attribute = Blood Magic\n| type = Hex Spell\n| energy = 10\n| activation = 2\n| recharge = 30\n| causes1 = Life Stealing\n| description = [[Hex Spell]]. For 6 seconds, the next time [[target]] [[foe]] casts a [[spell]] that targets an [[ally]] of that foe, the spell [[fail]]s and you [[life stealing|steal]] up to {{gr|10|92}} [[Health]] from that foe.\n| concise description = Hex Spell. (6 seconds.) Target foe's next spell fails and you steal {{gr|10|92}} Health. {{gray|No effect unless this foe's spell targeted one of its allies.}}\n}}\n\n{{Skill progression\n|attribute = [[Blood Magic]]\n|var2 name = [[Life stealing]]\n|var2 at0 = 10\n|var2 at15 = 92}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Prophecies]]\n** [[Marna]] ([[Ice Tooth Cave]]) \n** [[Firstwatch Sergio]] ([[Lion's Arch]])\n** [[Dakk]] ([[Ember Light Camp]])\n'''[[Signet of Capture]]'''\n* [[Eye of the North]]\n** [[Flesh of Destruction]] ([[Glint's Challenge]])\n\n== Related skills ==\n* {{skill icon|Guilt}}\n* {{skill icon|Mistrust}}\n* {{skill icon|Shame}}\n\n== Notes ==\n* This skill is triggered by any ally-targeted spell, even if the caster targets itself. It is not triggered by [[Untargeted skill|untargeted]] spells that affect the caster or the caster's allies.\n\n== Trivia ==\n{{Skill change}}"
+}

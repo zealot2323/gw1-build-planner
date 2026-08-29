@@ -1,0 +1,7 @@
+{
+  "title": "Priest of Sorrows",
+  "pageid": 43353,
+  "revid": 2433215,
+  "timestamp": "2012-01-10T19:11:49Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Stone Summit dark.jpg|150px]]\n| affiliation = Stone Summit\n| type = Dwarf\n| profession = mo\n| level = 24 (26)\n| campaign = Prophecies\n}}\n[[Priest of Sorrows|Priests of Sorrows]] are powerful healers capable of [[resurrection|resurrecting]] their allies.\n\n==Locations==\n*[[Southern Shiverpeaks]]\n**{{NPC location|Grenth's Footprint}}\n**{{NPC location|Sorrow's Furnace}}\n\n==Skills==\n14 [[Divine Favor]], 12 [[Healing Prayers]]\n*{{skill icon|Life Attunement}}\n*{{skill icon|Mark of Protection}} ([[elite]])\n*{{skill icon|Mend Ailment}}\n*{{skill icon|Orison of Healing}}\n*{{skill icon|Resurrect}}\n*{{skill icon|Smite Hex}}\n*{{skill icon|Resurrect (monster skill)}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = mo\n| blunt = 71\n| piercing = 71\n| slashing = 71\n| cold = 71\n| earth = 71\n| fire = 71\n| lightning = 71\n}}\n\n==Items dropped==\n*[[Enslavement Stone]]\n\n==Notes==\n*These priests carry two versions of Resurrect, and they will prioritize the monster version with the 8 second [[activation time]]."
+}

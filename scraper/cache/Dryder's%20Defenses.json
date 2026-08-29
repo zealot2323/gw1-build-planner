@@ -1,0 +1,7 @@
+{
+  "title": "Dryder's Defenses",
+  "pageid": 6570,
+  "revid": 2733141,
+  "timestamp": "2026-07-05T15:43:19Z",
+  "wikitext": "{{Skill infobox\n| id = 452\n| name = Dryder's Defenses\n| campaign = Prophecies\n| profession = Ranger\n| attribute = Wilderness Survival\n| type = Stance\n| energy = 5\n| recharge = 60\n| causes1 = Block\n| causes2 = Increased Armor Rating\n| description = [[Stance]]. For {{gr|5|11}} seconds, you gain 75% chance to [[block]] [[attack]]s and {{gr|34|60}} [[Armor rating|armor]] against [[elemental damage]].\n| concise description = Stance. ({{gr|5|11}} seconds.) You have 75% chance to block and {{gr|34|60|+}} armor against elemental damage.\n}}\n\n{{Skill progression\n| attribute = [[Wilderness Survival]]\n| var1 name = [[Duration]]\n| var1 at0 = 5\n| var1 at15 = 11\n| var2 name = + [[Armor rating|Armor]]\n| var2 at0 = 34\n| var2 at15 = 60}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Harnil]] ([[Marhan's Grotto]])\n* [[Dakk]] ([[Ember Light Camp]])\n'''[[Signet of Capture]]'''\n* [[Kathryn the Cold]] ([[Twin Serpent Lakes]])\n* [[Torr the Relentless]] ([[Bloodstone Fen]])\n* [[Cuthbert the Chaste]] ([[Aurora Glade]])\n* [[Darwym the Spiteful]] ([[Riverside Province]])\n* [[Edgar the Iron Fist]] ([[Sanctum Cay]])\n* [[Valis the Rampant]] ([[Twin Serpent Lakes (War in Kryta)]])\n\n== Related skills ==\n* {{skill icon|Lightning Reflexes}}\n* {{skill icon|Whirling Defense}}\n\n== Trivia ==\n* [[Dryder]]s do not use Dryder's Defenses."
+}

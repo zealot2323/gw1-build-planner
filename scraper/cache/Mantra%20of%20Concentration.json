@@ -1,0 +1,7 @@
+{
+  "title": "Mantra of Concentration",
+  "pageid": 1650,
+  "revid": 2667371,
+  "timestamp": "2020-10-23T20:52:46Z",
+  "wikitext": "{{Skill infobox\n| id = 16\n| name = Mantra of Concentration\n| campaign = Prophecies\n| profession = Mesmer\n| attribute = Inspiration Magic\n| type = Stance\n| energy = 5\n| recharge = 30\n| description = [[Stance]]. For {{gr|1|38}} seconds, the next time you would be [[interrupt]]ed, you are not interrupted.\n| concise description = Stance. ({{gr|1|38}} seconds.) The next time you would be interrupted, you are not interrupted.\n}}\n\n{{Skill progression\n|attribute = [[Inspiration Magic]]\n|var1 name = [[Duration]]\n|var1 at0 = 1\n|var1 at15 = 38}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Captain Greywind]] ([[North Kryta Province]])\n* [[Master Scout Kiera]] ([[Henge of Denravi]])\n* [[Dakk]] ([[Ember Light Camp]])\n\n== Related skills ==\n* {{skill icon|Glyph of Concentration}}\n* {{skill icon|Mantra of Resolve}}\n* {{skill icon|Pious Concentration}}\n\n[[Category:Mantras]]"
+}

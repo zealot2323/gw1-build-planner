@@ -1,0 +1,7 @@
+{
+  "title": "Resurrect Gargoyle",
+  "pageid": 37644,
+  "revid": 2726807,
+  "timestamp": "2026-04-29T08:13:28Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Gargoyle.jpg|150px]]\n| type = Gargoyle\n| affiliation = Ascalon wildlife\n| profession = mo\n| level = 2 (22)\n| campaign = Prophecies\n}}\n[[Resurrect Gargoyle]]s can be found in groups with [[Shatter Gargoyle]]s and [[Flash Gargoyle]]s.\n\n==Locations==\n*[[Ascalon]] (level 2)\n**{{NPC location|Diessa Lowlands}}\n**{{NPC location|The Breach}}\n**{{NPC location|Pockmark Flats}}\n*[[Depths of Tyria]] (level 8)\n**{{NPC location|Tunnels of the Forsaken}}\n\n==Skills==\n*{{skill icon|Shield of Deflection}} ([[elite]], [[Hard mode]] only)\n*{{monster skill icon|Resurrect (Gargoyle)}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = mo\n| blunt = 3\n| piercing = 3\n| slashing = 3\n| cold = 3\n| earth = 3\n| fire = 3\n| lightning = 43\n}}\n\n==Items dropped==\n*[[Granite Slab]]\n*[[Scale]]\n*[[Singed Gargoyle Skull]]\n\n==Notes==\n* Resurrect Gargoyles will resurrect any dead enemies within range, not just other gargoyles.\n\n[[Category:Drops granite]]\n[[Category:Drops scale]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Charr Mind Spark",
+  "pageid": 19261,
+  "revid": 2724663,
+  "timestamp": "2026-04-04T23:11:16Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| affiliation = Charr\n| image = [[File:Charr mesmer.jpg|200px]]\n| profession = me\n| level = 5, 6 (23)<br>10, 12, 14\n| campaign = Prophecies\n}}\n[[Charr Mind Spark]]s are members of the bestial [[Charr]] race, who occupy the burnt remains of post-Searing [[Ascalon]].\n\n==Locations==\n*[[Prophecies]]\n**[[Ascalon]] (level 5 or 6)\n***{{NPC location|Diessa Lowlands}}\n***{{NPC location|The Breach}}\n**[[Depths of Tyria]] ({{reforgedmode}} only, level 10, 12 or 14)\n***{{NPC location|Forsaken Tunnels}}\n\n==Missions==\n*Ascalon\n**{{NPC location|Fort Ranik}}\n**{{NPC location|Ruins of Surmia}}\n\n==Skills==\n4 [[Domination Magic]] (16 Domination Magic in [[Hard mode]])\n*{{skill icon|Energy Burn}}\n*{{skill icon|Power Block}} ([[elite]], Hard mode only)\n*{{skill icon|Shatter Hex}}\n\n==Armor ratings==\n{{NPC statistics\n| level = 6\n| prof = me\n| blunt = 20\n| piercing = 20\n| slashing = 20\n| cold = 20\n| earth = 20\n| fire = 20\n| lightning = 20\n}}\n\n==Items dropped==\n*[[Charr Carving]]\n*[[Charr Hide]]\n*[[Mind Spark Garb]]\n*[[Shaman Garb]]"
+}
