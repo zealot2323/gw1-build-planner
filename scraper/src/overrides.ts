@@ -47,7 +47,10 @@ export const isExcludedSkillPage = (title: string): boolean => / \(monster skill
 
 /**
  * Monsters whose infobox level has no hard-mode value in parentheses are
- * pre-Searing creatures — pre-Searing is out of scope for now.
+ * usually pre-Searing creatures — pre-Searing is out of scope for now.
+ * The level cap guards against false positives: some high-level boss pages
+ * also omit the hard-mode level (e.g. Pell Glitterglatter "24, 28"), and
+ * nothing in pre-Searing exceeds ~12.
  */
-export const isPreSearingMonster = (levelRaw: string | undefined): boolean =>
-  levelRaw !== undefined && !levelRaw.includes("(");
+export const isPreSearingMonster = (levelRaw: string | undefined, level: number | null): boolean =>
+  levelRaw !== undefined && !levelRaw.includes("(") && (level ?? 0) <= 12;

@@ -16,7 +16,9 @@
       "trainers": [],
       "quests": [],
       "captureBosses": [
-        "Balthazaar's Cursed",
+        "Balthazaar's Cursed"
+      ],
+      "conditionalCaptureBosses": [
         "Dahgar, the Eye of Flame"
       ]
     }
@@ -145,7 +147,8 @@
       "quests": [
         "The Misplaced Sword"
       ],
-      "captureBosses": [
+      "captureBosses": [],
+      "conditionalCaptureBosses": [
         "Thorgrim Beastlasher"
       ]
     }
@@ -289,7 +292,9 @@
         "Ghilaparu Stormstone",
         "Pell Glitterglatter",
         "Tang Stonecut",
-        "Facet of Elements",
+        "Facet of Elements"
+      ],
+      "conditionalCaptureBosses": [
         "Carnak the Hungry"
       ]
     }
@@ -361,12 +366,14 @@
         "The Forgotten Ones"
       ],
       "captureBosses": [
-        "Lord Timot",
         "Verata the Necromancer",
         "Damis the Malignant",
         "Ghazal the Corrupter",
         "Zalo Soulhaunch",
         "Tonfor Copperblood"
+      ],
+      "conditionalCaptureBosses": [
+        "Lord Timot"
       ]
     }
   },
@@ -451,7 +458,9 @@
         "Cuthbert the Chaste",
         "Darwym the Spiteful",
         "Kathryn the Cold",
-        "Edgar the Iron Fist",
+        "Edgar the Iron Fist"
+      ],
+      "conditionalCaptureBosses": [
         "Inquisitor Lashona"
       ]
     }
@@ -662,7 +671,9 @@
         "Demetrios the Enduring",
         "Mursaat Monk (boss)",
         "Coventina the Matron",
-        "Willa the Unpleasant",
+        "Willa the Unpleasant"
+      ],
+      "conditionalCaptureBosses": [
         "Aily the Innocent"
       ]
     }
@@ -710,7 +721,9 @@
       "trainers": [],
       "quests": [],
       "captureBosses": [
-        "Maligo Libens",
+        "Maligo Libens"
+      ],
+      "conditionalCaptureBosses": [
         "Cerris"
       ]
     }
@@ -803,7 +816,9 @@
       "trainers": [],
       "quests": [],
       "captureBosses": [
-        "Ferk Mallet",
+        "Ferk Mallet"
+      ],
+      "conditionalCaptureBosses": [
         "Cairn the Grave",
         "Ingenious Ettin"
       ]
@@ -986,7 +1001,8 @@
       "quests": [
         "Blood And Smoke"
       ],
-      "captureBosses": [
+      "captureBosses": [],
+      "conditionalCaptureBosses": [
         "Degaz the Cynical"
       ]
     }
@@ -1040,10 +1056,12 @@
       ],
       "quests": [],
       "captureBosses": [
-        "Disgruntled Zombie",
-        "Lord Timot",
         "Damis the Malignant",
         "Ghazal the Corrupter"
+      ],
+      "conditionalCaptureBosses": [
+        "Disgruntled Zombie",
+        "Lord Timot"
       ]
     }
   },
@@ -1065,7 +1083,9 @@
       "quests": [],
       "captureBosses": [
         "Markis",
-        "Snyk the Hundred Tongue",
+        "Snyk the Hundred Tongue"
+      ],
+      "conditionalCaptureBosses": [
         "Cairn the Cunning"
       ]
     }
@@ -1498,10 +1518,12 @@
       ],
       "captureBosses": [
         "Toris Stonehammer",
+        "Minotaur (boss)",
+        "Muu Swifthorn"
+      ],
+      "conditionalCaptureBosses": [
         "Ore Darkwhip",
         "Thorgrim Beastlasher",
-        "Minotaur (boss)",
-        "Muu Swifthorn",
         "Greves the Overbearing"
       ]
     }
@@ -1603,7 +1625,9 @@
         "Mursaat Elementalist (boss)",
         "Kratos the Foul",
         "The Inquisitor",
-        "Chrysos the Magnetic",
+        "Chrysos the Magnetic"
+      ],
+      "conditionalCaptureBosses": [
         "Talios the Resplendent"
       ]
     }
@@ -1732,10 +1756,12 @@
         "Into the Unknown"
       ],
       "captureBosses": [
-        "Eater of Souls",
         "Jonk Shuffle",
         "Plunk Trudge",
         "Krunk Waddle"
+      ],
+      "conditionalCaptureBosses": [
+        "Eater of Souls"
       ]
     }
   },
@@ -1818,7 +1844,9 @@
         "Sevv Squallfroth",
         "Seear Windlash",
         "Didn Hopestealer",
-        "Digo Murkstalker",
+        "Digo Murkstalker"
+      ],
+      "conditionalCaptureBosses": [
         "Ven the Conservator",
         "Lucent the Spectral"
       ]
@@ -1949,10 +1977,12 @@
       ],
       "quests": [],
       "captureBosses": [
-        "Enraged Phantom",
         "Zeki Lament",
-        "Lamaan Wickedwail",
+        "Lamaan Wickedwail"
+      ],
+      "conditionalCaptureBosses": [
         "Tempest Drake",
+        "Enraged Phantom",
         "Insatiable Vakar"
       ]
     }
@@ -2053,12 +2083,14 @@
       ],
       "quests": [],
       "captureBosses": [
-        "Abbot Ramoth",
         "Ramm the Benevolent",
         "Garr the Merciful",
         "Gilroy the Stoic",
         "Corbin the Upright",
-        "Selwin the Fervent",
+        "Selwin the Fervent"
+      ],
+      "conditionalCaptureBosses": [
+        "Abbot Ramoth",
         "Barthimus the Provident"
       ]
     }
@@ -2086,7 +2118,9 @@
         "The Hot Springs Murders"
       ],
       "captureBosses": [
-        "Onaona Kubkub",
+        "Onaona Kubkub"
+      ],
+      "conditionalCaptureBosses": [
         "Selenas the Blunt"
       ]
     }
@@ -2116,11 +2150,13 @@
         "Fuury Stonewrath",
         "Gorrel Rockmolder",
         "Garbok Handsmasher",
-        "Korvald Willcrusher",
-        "Vokur Grimshackles",
+        "Vokur Grimshackles"
+      ],
+      "conditionalCaptureBosses": [
         "Hierophant Morlog",
         "Yxthoshth",
-        "Lucent the Spectral"
+        "Lucent the Spectral",
+        "Korvald Willcrusher"
       ]
     }
   },
@@ -2164,7 +2200,8 @@
         "Dakk"
       ],
       "quests": [],
-      "captureBosses": [
+      "captureBosses": [],
+      "conditionalCaptureBosses": [
         "Disgruntled Zombie",
         "Cairn the Berserker"
       ]
@@ -2662,10 +2699,12 @@
       ],
       "quests": [],
       "captureBosses": [
-        "Disgruntled Zombie",
-        "Lord Timot",
         "Damis the Malignant",
         "Ghazal the Corrupter"
+      ],
+      "conditionalCaptureBosses": [
+        "Disgruntled Zombie",
+        "Lord Timot"
       ]
     }
   },
@@ -2738,9 +2777,11 @@
       "captureBosses": [
         "Jade Armor (boss)",
         "Martigris the Stalwart",
-        "Perfected Armor",
         "Cairn the Smug",
         "Cairn the Destroyer"
+      ],
+      "conditionalCaptureBosses": [
+        "Perfected Armor"
       ]
     }
   },
@@ -2788,9 +2829,11 @@
         "Army Life"
       ],
       "captureBosses": [
-        "Galrath",
         "Justiciar Hablion",
         "Yino Burlyhaunch"
+      ],
+      "conditionalCaptureBosses": [
+        "Galrath"
       ]
     }
   },
@@ -3003,7 +3046,9 @@
       "quests": [],
       "captureBosses": [
         "Liam Shanglui",
-        "Raptorhawk",
+        "Raptorhawk"
+      ],
+      "conditionalCaptureBosses": [
         "Aily the Innocent"
       ]
     }
@@ -3028,13 +3073,15 @@
       ],
       "quests": [],
       "captureBosses": [
-        "Abbot Ramoth",
         "Ramm the Benevolent",
         "Garr the Merciful",
         "Gilroy the Stoic",
         "Corbin the Upright",
         "Selwin the Fervent",
-        "Kepkhet Marrowfeast",
+        "Kepkhet Marrowfeast"
+      ],
+      "conditionalCaptureBosses": [
+        "Abbot Ramoth",
         "Barthimus the Provident",
         "Ambrillus the Guardian"
       ]
@@ -3157,7 +3204,9 @@
       "captureBosses": [
         "Rif Telourau",
         "Dracul Cadava",
-        "Fariq Earthturner",
+        "Fariq Earthturner"
+      ],
+      "conditionalCaptureBosses": [
         "Aily the Innocent"
       ]
     }
@@ -3186,7 +3235,9 @@
         "Torr the Relentless",
         "Cuthbert the Chaste",
         "Darwym the Spiteful",
-        "Edgar the Iron Fist",
+        "Edgar the Iron Fist"
+      ],
+      "conditionalCaptureBosses": [
         "Valis the Rampant"
       ]
     }
@@ -3322,7 +3373,9 @@
         "Ghilaparu Stormstone",
         "Doro Icehide",
         "Galigord Stonestrike",
-        "Runar Brimstone",
+        "Runar Brimstone"
+      ],
+      "conditionalCaptureBosses": [
         "Rago Kindlerock"
       ]
     }
@@ -3344,8 +3397,10 @@
       "trainers": [],
       "quests": [],
       "captureBosses": [
+        "Kor Stonewrath"
+      ],
+      "conditionalCaptureBosses": [
         "Candy Corn Tyrant",
-        "Kor Stonewrath",
         "Carnak the Hungry"
       ]
     }
@@ -3455,7 +3510,9 @@
       "trainers": [],
       "quests": [],
       "captureBosses": [
-        "Geckokaru Earthwind",
+        "Geckokaru Earthwind"
+      ],
+      "conditionalCaptureBosses": [
         "Vess the Disputant"
       ]
     }
@@ -3536,13 +3593,15 @@
         "Glutt Wallop",
         "Droog Stoneclub",
         "Marrg Grummbool",
-        "Kree Minotaur",
         "Stoofed Chargehoof",
         "Graf Wask Derg",
         "Monaru Chippedfang",
         "Custodian Dellus",
         "Custodian Fidius",
         "Custodian Hulgar"
+      ],
+      "conditionalCaptureBosses": [
+        "Kree Minotaur"
       ]
     }
   },
@@ -3617,7 +3676,9 @@
       "quests": [],
       "captureBosses": [
         "Gambol Headrainer",
-        "Sniik Hungrymind",
+        "Sniik Hungrymind"
+      ],
+      "conditionalCaptureBosses": [
         "Druul the Untamed"
       ]
     }
@@ -3641,16 +3702,18 @@
       ],
       "quests": [],
       "captureBosses": [
-        "The Darkness (boss)",
         "Balasi the Arcane",
         "Pantheras The Deceiver",
         "Mursaat Mesmer (boss)",
         "Melek the Virtuous",
-        "Mercia the Smug",
+        "Mercia the Smug"
+      ],
+      "conditionalCaptureBosses": [
+        "Willem the Demeaning",
+        "The Darkness (boss)",
         "Maximilian the Meticulous",
         "Minea the Obscene",
-        "Varny the Zealot",
-        "Willem the Demeaning"
+        "Varny the Zealot"
       ]
     }
   },
@@ -3698,15 +3761,17 @@
       ],
       "quests": [],
       "captureBosses": [
-        "Enraged Phantom",
         "Whiskar Featherstorm",
-        "Disgruntled Zombie",
         "Zeki Lament",
         "Lamaan Wickedwail",
         "Mursaat Elementalist (boss)",
         "Kratos the Foul",
         "The Inquisitor",
-        "Chrysos the Magnetic",
+        "Chrysos the Magnetic"
+      ],
+      "conditionalCaptureBosses": [
+        "Disgruntled Zombie",
+        "Enraged Phantom",
         "Talios the Resplendent"
       ]
     }
@@ -3807,9 +3872,11 @@
       "captureBosses": [
         "Clarion Shinypate",
         "Lucid Jewelstone",
-        "Tempest Drake",
         "Pell Glitterglatter",
         "Tang Stonecut"
+      ],
+      "conditionalCaptureBosses": [
+        "Tempest Drake"
       ]
     }
   },
@@ -3906,8 +3973,10 @@
         "A Belated Betrothal"
       ],
       "captureBosses": [
-        "Ignis Phanaura",
         "Spazz Mindrender"
+      ],
+      "conditionalCaptureBosses": [
+        "Ignis Phanaura"
       ]
     }
   },
@@ -3997,7 +4066,9 @@
       "quests": [],
       "captureBosses": [
         "Tortitudo Probo",
-        "Tanzit Razorstone",
+        "Tanzit Razorstone"
+      ],
+      "conditionalCaptureBosses": [
         "Phlog the Indomitable",
         "High Inquisitor Toriimo"
       ]
@@ -4237,7 +4308,8 @@
       "quests": [
         "The Royal Papers"
       ],
-      "captureBosses": [
+      "captureBosses": [],
+      "conditionalCaptureBosses": [
         "Inquisitor Lovisa"
       ]
     }
@@ -4317,7 +4389,9 @@
       "captureBosses": [
         "Chuff Quickbeak",
         "Flyt Stormbeak",
-        "Qik Sharpclaw",
+        "Qik Sharpclaw"
+      ],
+      "conditionalCaptureBosses": [
         "High Inquisitor Toriimo"
       ]
     }
@@ -4346,10 +4420,12 @@
       "captureBosses": [
         "Malla Arrowmane",
         "Keba Silenthoof",
-        "Drogo Greatmane",
         "Ness Orangeclaw",
         "Flange Sullenrage",
         "Brol Migo Hinga"
+      ],
+      "conditionalCaptureBosses": [
+        "Drogo Greatmane"
       ]
     }
   },
@@ -4694,7 +4770,9 @@
         "Pleoh the Ugly",
         "Manton the Indulgent",
         "Julen the Devout",
-        "Braima the Callous",
+        "Braima the Callous"
+      ],
+      "conditionalCaptureBosses": [
         "Vess the Disputant"
       ]
     }
@@ -4749,7 +4827,9 @@
         "Wydd Kindlerun",
         "Fryn Rageflame",
         "Hoss Rainswell",
-        "Falls the Fishfinder",
+        "Falls the Fishfinder"
+      ],
+      "conditionalCaptureBosses": [
         "Inquisitor Lovisa"
       ]
     }
@@ -4820,12 +4900,14 @@
         "The Hot Springs Murders"
       ],
       "captureBosses": [
-        "Stone Golem",
         "Mallet Runecolumn",
         "Skitt the Skizzle",
         "Rago the Scaled",
         "Frak Undertow",
-        "Doro Icehide",
+        "Doro Icehide"
+      ],
+      "conditionalCaptureBosses": [
+        "Stone Golem",
         "Tempest Drake",
         "Justiciar Kasandra"
       ]
@@ -4848,7 +4930,9 @@
       "trainers": [],
       "quests": [],
       "captureBosses": [
-        "Valetudo Rubor",
+        "Valetudo Rubor"
+      ],
+      "conditionalCaptureBosses": [
         "Staggh the Fervid"
       ]
     }
@@ -4872,7 +4956,9 @@
       ],
       "quests": [],
       "captureBosses": [
-        "Facet of Darkness",
+        "Facet of Darkness"
+      ],
+      "conditionalCaptureBosses": [
         "Mragga",
         "Grentchus Magnus"
       ]
@@ -4932,11 +5018,13 @@
         "Tree of Life",
         "Tree of Regrowth",
         "Rept Parn Freg",
-        "Sacred Griffon of Amnoon",
         "Screamingclaw",
         "Kepkhet Marrowfeast",
         "Perchingbyrd",
         "Facet of Light"
+      ],
+      "conditionalCaptureBosses": [
+        "Sacred Griffon of Amnoon"
       ]
     }
   },
@@ -4966,7 +5054,9 @@
         "Lars the Obeisant",
         "Edred the Bruiser",
         "Bairn the Sinless",
-        "Irwyn the Severe",
+        "Irwyn the Severe"
+      ],
+      "conditionalCaptureBosses": [
         "Maximilian the Meticulous"
       ]
     }
@@ -5273,8 +5363,10 @@
       ],
       "quests": [],
       "captureBosses": [
-        "Disgruntled Zombie",
         "Essam Festerskull"
+      ],
+      "conditionalCaptureBosses": [
+        "Disgruntled Zombie"
       ]
     }
   },
@@ -5300,12 +5392,14 @@
         "Eye For Profit"
       ],
       "captureBosses": [
-        "Ignis Phanaura",
-        "Gale Stormsend",
         "Zarr MentalMelt",
         "Chott Stormsinger",
         "Hepp Bilespitter",
         "Vizz Vexflume"
+      ],
+      "conditionalCaptureBosses": [
+        "Ignis Phanaura",
+        "Gale Stormsend"
       ]
     }
   },
@@ -5542,7 +5636,8 @@
         "Dakk"
       ],
       "quests": [],
-      "captureBosses": [
+      "captureBosses": [],
+      "conditionalCaptureBosses": [
         "The Darkness (boss)"
       ]
     }
@@ -5571,7 +5666,9 @@
       "captureBosses": [
         "Vook Foomble",
         "Trech Schmoogle",
-        "Zwack Ramble",
+        "Zwack Ramble"
+      ],
+      "conditionalCaptureBosses": [
         "Hierophant Morlog"
       ]
     }
@@ -5678,7 +5775,9 @@
       "captureBosses": [
         "Chuff Quickbeak",
         "Flyt Stormbeak",
-        "Qik Sharpclaw",
+        "Qik Sharpclaw"
+      ],
+      "conditionalCaptureBosses": [
         "Inquisitor Lovisa"
       ]
     }
@@ -5700,7 +5799,9 @@
       "trainers": [],
       "quests": [],
       "captureBosses": [
-        "Casses Flameweb",
+        "Casses Flameweb"
+      ],
+      "conditionalCaptureBosses": [
         "Confessor Isaiah"
       ]
     }
@@ -5971,13 +6072,15 @@
       ],
       "quests": [],
       "captureBosses": [
-        "Abbot Ramoth",
         "Ramm the Benevolent",
         "Garr the Merciful",
         "Gilroy the Stoic",
         "Corbin the Upright",
         "Selwin the Fervent",
         "Bleck Oogle"
+      ],
+      "conditionalCaptureBosses": [
+        "Abbot Ramoth"
       ]
     }
   },
@@ -6062,7 +6165,8 @@
         "Dakk"
       ],
       "quests": [],
-      "captureBosses": [
+      "captureBosses": [],
+      "conditionalCaptureBosses": [
         "Ulrik the Undefeated"
       ]
     }
@@ -6114,7 +6218,9 @@
       "captureBosses": [
         "Paka Blackhoof",
         "Edmi Visionmane",
-        "Rune Ethercrash",
+        "Rune Ethercrash"
+      ],
+      "conditionalCaptureBosses": [
         "Ven the Conservator"
       ]
     }
@@ -6240,7 +6346,9 @@
         "Feodor the Baneful",
         "Argyris the Scoundrel",
         "Odelyn the Displeased",
-        "Sarlic the Judge",
+        "Sarlic the Judge"
+      ],
+      "conditionalCaptureBosses": [
         "Lugg the Malignant",
         "Koril the Malignant"
       ]
@@ -6395,8 +6503,10 @@
       "trainers": [],
       "quests": [],
       "captureBosses": [
-        "Enraged Phantom",
         "Facet of Elements"
+      ],
+      "conditionalCaptureBosses": [
+        "Enraged Phantom"
       ]
     }
   },
@@ -6750,7 +6860,7 @@
         "Twig Slipfall",
         "Plook Wavebreaker",
         "Hew Gruntruck",
-        "Gren Waveslosh",
+        "Gren Wavelslosh",
         "Vook Foomble",
         "Trech Schmoogle",
         "Gret Waveringmane",
@@ -6918,7 +7028,9 @@
         "Bolis Hillshaker",
         "Wroth Yakslapper",
         "Mesqul Ironhealer",
-        "Brohn Stoneheart",
+        "Brohn Stoneheart"
+      ],
+      "conditionalCaptureBosses": [
         "Gulnar Irontoe",
         "Ivor Helmhewer"
       ]
@@ -6944,7 +7056,9 @@
       ],
       "quests": [],
       "captureBosses": [
-        "Hops Flameinator",
+        "Hops Flameinator"
+      ],
+      "conditionalCaptureBosses": [
         "Destor the Truth Seeker"
       ]
     }
@@ -7038,8 +7152,10 @@
         "Gargash Thornbeard",
         "Ulhar Stonehound",
         "Drago Stoneherder",
-        "Graygore Boulderbeard",
         "Tarnok Forgerunner"
+      ],
+      "conditionalCaptureBosses": [
+        "Graygore Boulderbeard"
       ]
     }
   },
@@ -7119,7 +7235,9 @@
         "Bolis Hillshaker",
         "Wroth Yakslapper",
         "Mesqul Ironhealer",
-        "Brohn Stoneheart",
+        "Brohn Stoneheart"
+      ],
+      "conditionalCaptureBosses": [
         "Gulnar Irontoe",
         "Ivor Helmhewer"
       ]
@@ -7146,7 +7264,8 @@
       "quests": [
         "A Belated Betrothal"
       ],
-      "captureBosses": [
+      "captureBosses": [],
+      "conditionalCaptureBosses": [
         "Ambrillus the Guardian"
       ]
     }
@@ -7268,7 +7387,9 @@
       "trainers": [],
       "quests": [],
       "captureBosses": [
-        "Pytt Spitespew",
+        "Pytt Spitespew"
+      ],
+      "conditionalCaptureBosses": [
         "Lerita the Lewd",
         "Ven the Conservator"
       ]
@@ -7364,7 +7485,7 @@
         "Twig Slipfall",
         "Plook Wavebreaker",
         "Hew Gruntruck",
-        "Gren Waveslosh",
+        "Gren Wavelslosh",
         "Snap the Braineater"
       ]
     }
@@ -7678,7 +7799,8 @@
     "acquisition": {
       "trainers": [],
       "quests": [],
-      "captureBosses": [
+      "captureBosses": [],
+      "conditionalCaptureBosses": [
         "Abaddon's Cursed"
       ]
     }
@@ -7724,7 +7846,9 @@
       "trainers": [],
       "quests": [],
       "captureBosses": [
-        "Moles Quibus",
+        "Moles Quibus"
+      ],
+      "conditionalCaptureBosses": [
         "Mallus Funo"
       ]
     }
@@ -7850,13 +7974,15 @@
       ],
       "captureBosses": [
         "Onan the Spiritless",
-        "Disgruntled Zombie",
         "Azibo Painfeast",
         "Ziyad Soulreaper",
         "Bija Gravewailer",
         "Gack the Mindwrecker",
         "Tachi Forvent",
         "Wyt Sharpfeather"
+      ],
+      "conditionalCaptureBosses": [
+        "Disgruntled Zombie"
       ]
     }
   },
@@ -8100,7 +8226,9 @@
       "trainers": [],
       "quests": [],
       "captureBosses": [
-        "Lyssa's Cursed",
+        "Lyssa's Cursed"
+      ],
+      "conditionalCaptureBosses": [
         "Justiciar Sevaan"
       ]
     }
@@ -8152,10 +8280,12 @@
         "Mesmerizing the Enemy"
       ],
       "captureBosses": [
-        "Varny the Zealot",
         "Mursaat Mesmer (boss)",
         "Balasi the Arcane",
         "Pantheras The Deceiver"
+      ],
+      "conditionalCaptureBosses": [
+        "Varny the Zealot"
       ]
     }
   },
@@ -8628,7 +8758,9 @@
         "Squaw Nimblecrest",
         "Phy Deftcrest",
         "Winglord Caromi",
-        "Caza Windedcalf",
+        "Caza Windedcalf"
+      ],
+      "conditionalCaptureBosses": [
         "Orshad Chieftain"
       ]
     }
@@ -8751,7 +8883,6 @@
       "quests": [],
       "captureBosses": [
         "Leaps Thunderclap",
-        "Abbot Ramoth",
         "Gack Splotchplunk",
         "Fluum Banzo",
         "Bramblehash",
@@ -8765,6 +8896,9 @@
         "Gilroy the Stoic",
         "Corbin the Upright",
         "Selwin the Fervent"
+      ],
+      "conditionalCaptureBosses": [
+        "Abbot Ramoth"
       ]
     }
   },
@@ -8949,7 +9083,8 @@
         "Dakk"
       ],
       "quests": [],
-      "captureBosses": [
+      "captureBosses": [],
+      "conditionalCaptureBosses": [
         "Vess the Disputant"
       ]
     }
@@ -9061,7 +9196,9 @@
         "Cuthbert the Chaste",
         "Darwym the Spiteful",
         "Kathryn the Cold",
-        "Edgar the Iron Fist",
+        "Edgar the Iron Fist"
+      ],
+      "conditionalCaptureBosses": [
         "Inquisitor Lashona",
         "Teral the Punisher",
         "Valis the Rampant"
@@ -9191,7 +9328,9 @@
         "Pleoh the Ugly",
         "Manton the Indulgent",
         "Julen the Devout",
-        "Braima the Callous",
+        "Braima the Callous"
+      ],
+      "conditionalCaptureBosses": [
         "Vess the Disputant"
       ]
     }
@@ -9311,7 +9450,9 @@
         "Casualty Report"
       ],
       "captureBosses": [
-        "Zalo Soulhaunch",
+        "Zalo Soulhaunch"
+      ],
+      "conditionalCaptureBosses": [
         "Erulai the Inimical"
       ]
     }
@@ -9440,7 +9581,8 @@
       "quests": [
         "Hungry Devourer"
       ],
-      "captureBosses": [
+      "captureBosses": [],
+      "conditionalCaptureBosses": [
         "Varny the Zealot"
       ]
     }
@@ -9466,7 +9608,8 @@
       "quests": [
         "Experimental Elixir"
       ],
-      "captureBosses": [
+      "captureBosses": [],
+      "conditionalCaptureBosses": [
         "Varny the Zealot"
       ]
     }
@@ -9521,11 +9664,13 @@
         "Drub Gorefang",
         "Spar the Ravager",
         "Gorgaan Hatemonger",
-        "Charr Captain",
         "Lumps Ruinator",
         "Puugh the Slasher",
         "Brand the Brawler",
         "Yino Burlyhaunch"
+      ],
+      "conditionalCaptureBosses": [
+        "Charr Captain"
       ]
     }
   },
@@ -9618,12 +9763,14 @@
       ],
       "captureBosses": [
         "Shalis Ironmantle",
-        "Abbot Ramoth",
         "Ramm the Benevolent",
         "Garr the Merciful",
         "Gilroy the Stoic",
         "Corbin the Upright",
         "Selwin the Fervent"
+      ],
+      "conditionalCaptureBosses": [
+        "Abbot Ramoth"
       ]
     }
   },
@@ -9887,7 +10034,9 @@
         "Boulad the Perverse",
         "Kemal the Deadened",
         "Raja Crux",
-        "Raptorhawk",
+        "Raptorhawk"
+      ],
+      "conditionalCaptureBosses": [
         "Amalek the Unmerciful"
       ]
     }
@@ -9914,7 +10063,9 @@
       "captureBosses": [
         "Psion Tanglebranch",
         "Sevv Squallfroth",
-        "Chak Hack Schawack",
+        "Chak Hack Schawack"
+      ],
+      "conditionalCaptureBosses": [
         "The Darkness (boss)",
         "Zaln the Jaded"
       ]
@@ -10040,7 +10191,8 @@
     "acquisition": {
       "trainers": [],
       "quests": [],
-      "captureBosses": [
+      "captureBosses": [],
+      "conditionalCaptureBosses": [
         "Abaddon's Cursed"
       ]
     }
@@ -10141,7 +10293,7 @@
         "Twig Slipfall",
         "Plook Wavebreaker",
         "Hew Gruntruck",
-        "Gren Waveslosh"
+        "Gren Wavelslosh"
       ]
     }
   },
@@ -10194,7 +10346,9 @@
       "captureBosses": [
         "Sapph Blacktracker",
         "Nighh SpineChill",
-        "Ceru Gloomrunner",
+        "Ceru Gloomrunner"
+      ],
+      "conditionalCaptureBosses": [
         "Zaln the Jaded"
       ]
     }
@@ -10245,7 +10399,8 @@
       "quests": [
         "The Last Hog"
       ],
-      "captureBosses": [
+      "captureBosses": [],
+      "conditionalCaptureBosses": [
         "Disgruntled Zombie"
       ]
     }
@@ -10272,8 +10427,10 @@
         "Mysterious Message (Prophecies quest)"
       ],
       "captureBosses": [
-        "Ulrik the Undefeated",
         "Samira Dhulnarim"
+      ],
+      "conditionalCaptureBosses": [
+        "Ulrik the Undefeated"
       ]
     }
   },
@@ -10492,7 +10649,9 @@
       ],
       "captureBosses": [
         "Malla Arrowmane",
-        "Keba Silenthoof",
+        "Keba Silenthoof"
+      ],
+      "conditionalCaptureBosses": [
         "Drogo Greatmane"
       ]
     }
@@ -10635,7 +10794,8 @@
         "Dakk"
       ],
       "quests": [],
-      "captureBosses": [
+      "captureBosses": [],
+      "conditionalCaptureBosses": [
         "Candy Corn Tyrant"
       ]
     }
@@ -10689,7 +10849,9 @@
         "Mursaat Elementalist (boss)",
         "Chrysos the Magnetic",
         "Maida the Ill Tempered",
-        "Optimus Caliph",
+        "Optimus Caliph"
+      ],
+      "conditionalCaptureBosses": [
         "Talios the Resplendent"
       ]
     }
@@ -10811,7 +10973,8 @@
         "Dakk"
       ],
       "quests": [],
-      "captureBosses": [
+      "captureBosses": [],
+      "conditionalCaptureBosses": [
         "Koril the Malignant",
         "Erulai the Inimical"
       ]
@@ -10968,7 +11131,9 @@
       ],
       "quests": [],
       "captureBosses": [
-        "Verata the Necromancer",
+        "Verata the Necromancer"
+      ],
+      "conditionalCaptureBosses": [
         "Cerris"
       ]
     }
@@ -11048,7 +11213,9 @@
         "Cootle Sizzlehorn",
         "Jonk Shuffle",
         "Krunk Waddle",
-        "Plunk Trudge",
+        "Plunk Trudge"
+      ],
+      "conditionalCaptureBosses": [
         "Eater of Souls"
       ]
     }
@@ -11123,7 +11290,9 @@
         "Pleoh the Ugly",
         "Manton the Indulgent",
         "Julen the Devout",
-        "Braima the Callous",
+        "Braima the Callous"
+      ],
+      "conditionalCaptureBosses": [
         "Vess the Disputant"
       ]
     }
@@ -11169,7 +11338,9 @@
       "trainers": [],
       "quests": [],
       "captureBosses": [
-        "Arkhel Havenwood",
+        "Arkhel Havenwood"
+      ],
+      "conditionalCaptureBosses": [
         "Perfected Aegis"
       ]
     }
@@ -11267,9 +11438,11 @@
       "captureBosses": [
         "Muu Swifthorn",
         "Stoofed Chargehoof",
-        "Kree Minotaur",
         "Graf Wask Derg",
         "Monaru Chippedfang"
+      ],
+      "conditionalCaptureBosses": [
+        "Kree Minotaur"
       ]
     }
   },
@@ -11505,9 +11678,11 @@
         "Brogan the Punisher",
         "Oswald the Amiable",
         "Kenric the Believer",
-        "Bearn the Implacable",
-        "Justiciar Marron",
-        "Erulai the Inimical"
+        "Bearn the Implacable"
+      ],
+      "conditionalCaptureBosses": [
+        "Erulai the Inimical",
+        "Justiciar Marron"
       ]
     }
   },
@@ -11582,12 +11757,14 @@
       ],
       "captureBosses": [
         "Rage Maulhoof",
-        "Galrath",
         "Justiciar Hablion",
         "Facet of Strength",
         "Jade Armor (boss)",
         "Martigris the Stalwart",
         "Perfected Armor"
+      ],
+      "conditionalCaptureBosses": [
+        "Galrath"
       ]
     }
   },
@@ -11682,7 +11859,9 @@
       "trainers": [],
       "quests": [],
       "captureBosses": [
-        "Ignis Effigia",
+        "Ignis Effigia"
+      ],
+      "conditionalCaptureBosses": [
         "Evirso Sectus",
         "Ludo Ossidi",
         "Mentanl Arobo",

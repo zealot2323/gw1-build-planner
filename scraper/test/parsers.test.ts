@@ -34,8 +34,10 @@ describe("parseSkill", () => {
     expect(entity.recharge).toBe(5);
     expect(entity.description).toContain("adjacent");
     expect(entity.acquisition.trainers).toEqual(["Harnil", "Dakk"]);
-    // Prophecies capture bosses only — Factions/EotN entries excluded
-    expect(entity.acquisition.captureBosses).toEqual(["Disgruntled Zombie", "Cairn the Berserker"]);
+    // Prophecies capture bosses only — Factions/EotN entries excluded;
+    // Disgruntled Zombie only spawns during Evil Residents → conditional
+    expect(entity.acquisition.captureBosses).toEqual(["Cairn the Berserker"]);
+    expect(entity.acquisition.conditionalCaptureBosses).toEqual(["Disgruntled Zombie"]);
   });
 
   it("parses Backbreaker (elite, adrenaline cost, capture-only)", () => {
@@ -44,8 +46,9 @@ describe("parseSkill", () => {
     expect(entity.adrenalineCost).toBe(9);
     expect(entity.energyCost).toBeNull();
     expect(entity.acquisition.trainers).toEqual([]);
-    expect(entity.acquisition.captureBosses).toEqual([
-      "Ferk Mallet",
+    // Ferk Mallet always spawns; the other two only during a quest/event
+    expect(entity.acquisition.captureBosses).toEqual(["Ferk Mallet"]);
+    expect(entity.acquisition.conditionalCaptureBosses).toEqual([
       "Cairn the Grave",
       "Ingenious Ettin",
     ]);
@@ -122,6 +125,13 @@ describe("parseMonster", () => {
     expect(entity.armorTable).toContainEqual({ damageType: "blunt", rating: 18 });
     expect(entity.armorTable).toContainEqual({ damageType: "slashing", rating: 58 });
     expect(entity.locations).toContain("Ascalon Foothills");
+  });
+
+  it("parses Stone Summit Crusher (awkward: campaign sub-blocks in Skills)", () => {
+    const { entity } = parseMonster("Stone Summit Crusher", cached("Stone Summit Crusher"));
+    // Only the ;Prophecies block counts — EotN and Fronis Irontoe's Lair
+    // blocks dropped, and Dwarven Battle Stance is hard-mode-only.
+    expect(entity.skills.sort()).toEqual(['"For Great Justice!"', "Griffon's Sweep", "Protector's Strike"]);
   });
 
   it("parses Drub Gorefang (boss without an elite)", () => {

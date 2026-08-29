@@ -39,7 +39,18 @@ export interface ParsedSkill {
   activation: number | null;
   recharge: number | null;
   description: string;
-  acquisition: { trainers: string[]; quests: string[]; captureBosses: string[] };
+  acquisition: {
+    trainers: string[];
+    quests: string[];
+    captureBosses: string[];
+    conditionalCaptureBosses?: string[];
+  };
+  /**
+   * Where each capture boss spawns per the acquisition line (second link).
+   * Internal: the driver uses it to demote bosses in unknown locations
+   * (War in Kryta variants etc.) to conditional, then strips this field.
+   */
+  captureLocations?: Record<string, string | null>;
 }
 
 /**
@@ -49,20 +60,36 @@ export interface ParsedSkill {
  *   ** [[Name]] ([[Location]], optional conditions)
  * Only Prophecies entries are kept (scope: Prophecies campaign only).
  */
-function parseAcquisition(body: string, isElite: boolean): ParsedSkill["acquisition"] {
+function parseAcquisition(
+  body: string,
+  isElite: boolean,
+): { acquisition: ParsedSkill["acquisition"]; captureLocations: Record<string, string | null> } {
   const out: ParsedSkill["acquisition"] = { trainers: [], quests: [], captureBosses: [] };
   // Elite pages sometimes skip the '''[[Signet of Capture]]''' header and
   // start straight with campaign bullets — capture is the only way to get
   // most elites, so that's the default group for them.
-  let group: keyof ParsedSkill["acquisition"] | null = isElite ? "captureBosses" : null;
+  let group: "trainers" | "quests" | "captureBosses" | null = isElite ? "captureBosses" : null;
   let inProphecies = false;
 
   const isCampaignLine = (line: string): boolean =>
     /^\*\s*(\[\[)?\s*(guild wars )?(prophecies|factions|nightfall|eye of the north|core|beyond)\b/i.test(line);
+  const conditional: string[] = [];
+  const captureLocations: Record<string, string | null> = {};
   const push = (line: string): void => {
     if (!group || /hard mode/i.test(line)) return; // normal mode only
-    const target = firstLinkTarget(line);
-    if (target && !out[group].includes(target)) out[group].push(target);
+    const targets = linkTargets(line);
+    const target = targets[0];
+    if (!target) return;
+    if (group === "captureBosses") {
+      captureLocations[target] = targets[1] ?? null;
+      // Bosses that only spawn during a quest/event don't appear in base
+      // foe lists — track them separately (gating not modeled yet).
+      if (/only (during|after|before|available)|, during |requires/i.test(line)) {
+        if (!conditional.includes(target)) conditional.push(target);
+        return;
+      }
+    }
+    if (!out[group].includes(target)) out[group].push(target);
   };
 
   for (const line of body.split("\n")) {
@@ -88,7 +115,8 @@ function parseAcquisition(body: string, isElite: boolean): ParsedSkill["acquisit
     }
     if (/^\*\*[^*]/.test(line) && inProphecies) push(line);
   }
-  return out;
+  if (conditional.length > 0) out.conditionalCaptureBosses = conditional;
+  return { acquisition: out, captureLocations };
 }
 
 export function parseSkill(title: string, wikitext: string): Parsed<ParsedSkill> {
@@ -109,9 +137,9 @@ export function parseSkill(title: string, wikitext: string): Parsed<ParsedSkill>
     .filter((s) => /^acquisition$/i.test(s.title) || s.ancestors.some((a) => /^acquisition$/i.test(a)))
     .filter((s) => ![s.title, ...s.ancestors].some((t) => /unlock only/i.test(t)))
     .map((s) => s.body);
-  const acquisition = acqBodies.length
+  const { acquisition, captureLocations } = acqBodies.length
     ? parseAcquisition(acqBodies.join("\n"), box?.["elite"] === "y")
-    : { trainers: [], quests: [], captureBosses: [] };
+    : { acquisition: { trainers: [], quests: [], captureBosses: [] }, captureLocations: {} };
   if (acqBodies.length === 0) issues.push("no Acquisition section");
 
   return {
@@ -129,6 +157,7 @@ export function parseSkill(title: string, wikitext: string): Parsed<ParsedSkill>
       recharge: parseWikiNumber(box?.["recharge"]) ?? 0,
       description: box?.["description"] ? stripMarkup(box["description"]) : "",
       acquisition,
+      captureLocations,
     },
     issues,
   };
@@ -322,25 +351,48 @@ export function parseMonster(title: string, wikitext: string): Parsed<ParsedMons
     armorTable.push({ damageType: key, rating });
   }
 
-  // Skills used: {{skill icon|X}} bullets in the Skills section(s), normal
-  // mode only — bullets annotated "hard mode" are dropped.
+  // Skills used: {{skill icon|X}} bullets in the Skills section and its
+  // subsections, normal mode only — bullets annotated "hard mode" are
+  // dropped. Context blocks come in two shapes and both must be filtered
+  // to Prophecies content:
+  // - marker lines (";Prophecies", "'''Eye of the North'''", ";As warrior
+  //   (cinematic only)")
+  // - subsection headings ("===During Iron Mines of Moladune===",
+  //   "===Level 24 (30), Kessex Peak===", "===The Rise of the White
+  //   Mantle===")
+  // A block is excluded only when it names another campaign / Beyond
+  // content / a cinematic; encounter levels, professions, and Prophecies
+  // mission names all stay.
+  const NON_PROPHECIES_CONTEXT =
+    /factions|nightfall|eye of the north|war in kryta|winds of change|hearts of the north|beyond|cinematic|special ops|rise of the white mantle|fronis|halloween|wintersday|festival|mausoleum|annihilator/i;
   const skills: string[] = [];
   const eliteSkills: string[] = [];
   for (const s of sections(wikitext)) {
-    if (!/^skills/i.test(s.title)) continue;
+    const isSkillsHeading = /^skills/i.test(s.title);
+    if (!isSkillsHeading && !s.ancestors.some((a) => /^skills/i.test(a))) continue;
     if ([s.title, ...s.ancestors].some((t) => /hard mode/i.test(t))) continue;
+    // the Skills heading itself is neutral; every other heading in the
+    // chain (including ancestors of nested subsections) is context
+    const contextTitles = [s.title, ...s.ancestors].filter((t) => !/^skills/i.test(t));
+    if (contextTitles.some((t) => NON_PROPHECIES_CONTEXT.test(t))) continue;
+    let inProphecies = true;
     for (const line of s.body.split("\n")) {
-      if (!/^\*/.test(line)) continue;
+      const marker = line.match(/^;\s*(.+)|^'''([^']+)'''/);
+      if (marker) {
+        inProphecies = !NON_PROPHECIES_CONTEXT.test(marker[1] ?? marker[2]);
+        continue;
+      }
+      if (!inProphecies || !/^\*/.test(line)) continue;
       const m = line.match(/\{\{\s*skill icon\s*\|([^}|]+)/i);
       if (!m) continue;
       if (/hard mode/i.test(line)) continue;
       const skill = m[1].trim();
-      skills.push(skill);
-      if (/\(\s*(\[\[)?elite/i.test(line)) eliteSkills.push(skill);
+      if (!skills.includes(skill)) skills.push(skill);
+      if (/\(\s*(\[\[)?elite/i.test(line) && !eliteSkills.includes(skill)) eliteSkills.push(skill);
     }
   }
 
-  const isBoss = box?.["boss"] === "y";
+  const isBoss = /^y(es)?$/i.test(box?.["boss"] ?? "");
   const bossElite = isBoss ? eliteSkills[0] : undefined;
   if (isBoss && eliteSkills.length === 0) issues.push("boss with no elite skill marked");
   if (isBoss && eliteSkills.length > 1) issues.push(`boss with multiple elites: ${eliteSkills.join(", ")}`);

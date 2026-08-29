@@ -49,8 +49,10 @@ export type Campaign = "Prophecies" | "Factions" | "Nightfall" | "Eye of the Nor
 export interface SkillAcquisition {
   trainers: TrainerRef[];
   quests: QuestRef[];
-  /** Bosses the elite can be captured from with Signet of Capture. */
+  /** Bosses the skill can be captured from (Signet of Capture) that always spawn. */
   captureBosses: BossRef[];
+  /** Capture bosses that only spawn during a quest/event (gating not modeled yet). */
+  conditionalCaptureBosses?: BossRef[];
 }
 
 export interface Skill {
@@ -222,6 +224,7 @@ export const skillSchema = {
         trainers: refArray,
         quests: refArray,
         captureBosses: refArray,
+        conditionalCaptureBosses: refArray,
       },
     },
   },

@@ -883,6 +883,26 @@
     "profession": "Mesmer"
   },
   {
+    "name": "Balt Duskstrider",
+    "wikiPage": "Balt Duskstrider",
+    "species": null,
+    "level": 28,
+    "levelRaw": "28",
+    "armor": null,
+    "armorTable": [],
+    "skills": [
+      "Holy Wrath",
+      "Retribution",
+      "Signet of Judgment"
+    ],
+    "isBoss": true,
+    "bossElite": "Signet of Judgment",
+    "locations": [
+      "Iron Mines of Moladune"
+    ],
+    "profession": "Monk"
+  },
+  {
     "name": "Balthazaar's Cursed",
     "wikiPage": "Balthazaar's Cursed",
     "species": "Abomination",
@@ -972,6 +992,103 @@
       "Tunnels of the Forsaken"
     ],
     "profession": "Elementalist"
+  },
+  {
+    "name": "Bandit Firestarter",
+    "wikiPage": "Bandit Firestarter",
+    "species": "Human",
+    "level": 15,
+    "levelRaw": "1, 15",
+    "armor": null,
+    "armorTable": [
+      {
+        "damageType": "blunt",
+        "rating": 2
+      },
+      {
+        "damageType": "piercing",
+        "rating": 2
+      },
+      {
+        "damageType": "slashing",
+        "rating": 2
+      },
+      {
+        "damageType": "cold",
+        "rating": 2
+      },
+      {
+        "damageType": "earth",
+        "rating": 2
+      },
+      {
+        "damageType": "fire",
+        "rating": 2
+      },
+      {
+        "damageType": "lightning",
+        "rating": 2
+      }
+    ],
+    "skills": [
+      "Flare"
+    ],
+    "isBoss": false,
+    "locations": [
+      "Lakeside County: 1070 AE",
+      "Green Hills County",
+      "Lakeside County",
+      "Wizard's Folly"
+    ],
+    "profession": "Elementalist"
+  },
+  {
+    "name": "Bandit Raider",
+    "wikiPage": "Bandit Raider",
+    "species": "Human",
+    "level": 15,
+    "levelRaw": "2, 15",
+    "armor": null,
+    "armorTable": [
+      {
+        "damageType": "blunt",
+        "rating": 11
+      },
+      {
+        "damageType": "piercing",
+        "rating": 11
+      },
+      {
+        "damageType": "slashing",
+        "rating": 11
+      },
+      {
+        "damageType": "cold",
+        "rating": 11
+      },
+      {
+        "damageType": "earth",
+        "rating": 11
+      },
+      {
+        "damageType": "fire",
+        "rating": 11
+      },
+      {
+        "damageType": "lightning",
+        "rating": 11
+      }
+    ],
+    "skills": [],
+    "isBoss": false,
+    "locations": [
+      "Lakeside County: 1070 AE",
+      "Green Hills County",
+      "Lakeside County",
+      "Regent Valley (pre-Searing)",
+      "Wizard's Folly"
+    ],
+    "profession": "Warrior"
   },
   {
     "name": "Bane Darkfist",
@@ -2380,10 +2497,7 @@
     ],
     "skills": [
       "Endure Pain",
-      "Flurry",
-      "Cleave",
-      "Dismember",
-      "Power Attack"
+      "Flurry"
     ],
     "isBoss": false,
     "locations": [
@@ -2673,7 +2787,10 @@
         "rating": 53
       }
     ],
-    "skills": [],
+    "skills": [
+      "Cyclone Axe",
+      "Frenzy"
+    ],
     "isBoss": false,
     "locations": [
       "The Northlands",
@@ -3083,7 +3200,13 @@
         "rating": 17
       }
     ],
-    "skills": [],
+    "skills": [
+      "Infuse Health",
+      "Orison of Healing",
+      "Bane Signet",
+      "Banish",
+      "Heal Area"
+    ],
     "isBoss": false,
     "locations": [
       "Diessa Lowlands",
@@ -3204,7 +3327,11 @@
     "levelRaw": "6 (23), 8 (23), 15",
     "armor": null,
     "armorTable": [],
-    "skills": [],
+    "skills": [
+      "Pin Down",
+      "Snare",
+      "Tripwire"
+    ],
     "isBoss": false,
     "locations": [
       "The Great Northern Wall",
@@ -3560,7 +3687,13 @@
     "levelRaw": "20 (26), 18",
     "armor": null,
     "armorTable": [],
-    "skills": [],
+    "skills": [
+      "Banish",
+      "Heal Area",
+      "Healing Breeze",
+      "Orison of Healing",
+      "Word of Healing"
+    ],
     "isBoss": false,
     "locations": [
       "D'Alessio Seaboard",
@@ -4150,11 +4283,7 @@
       "Aura of Restoration",
       "Frozen Burst",
       "Ice Spikes",
-      "Water Attunement",
-      "Disrupting Chop",
-      "\"For Great Justice!\"",
-      "Healing Signet",
-      "Penetrating Blow"
+      "Water Attunement"
     ],
     "isBoss": true,
     "locations": [
@@ -4258,6 +4387,27 @@
       "Divinity Coast",
       "Riverside Province",
       "Sanctum Cay"
+    ],
+    "profession": "Monk"
+  },
+  {
+    "name": "Darda Goldenchief",
+    "wikiPage": "Darda Goldenchief",
+    "species": "Dolyak",
+    "level": 28,
+    "levelRaw": "28",
+    "armor": null,
+    "armorTable": [],
+    "skills": [
+      "Life Attunement",
+      "Mark of Protection",
+      "Mend Ailment",
+      "Orison of Healing"
+    ],
+    "isBoss": true,
+    "bossElite": "Mark of Protection",
+    "locations": [
+      "Ice Caves of Sorrow"
     ],
     "profession": "Monk"
   },
@@ -4482,6 +4632,26 @@
     "profession": "Mesmer"
   },
   {
+    "name": "Digo Murkstalker",
+    "wikiPage": "Digo Murkstalker",
+    "species": null,
+    "level": 28,
+    "levelRaw": "28",
+    "armor": null,
+    "armorTable": [],
+    "skills": [
+      "Clumsiness",
+      "Illusion of Weakness",
+      "Illusionary Weaponry"
+    ],
+    "isBoss": true,
+    "bossElite": "Illusionary Weaponry",
+    "locations": [
+      "Iron Mines of Moladune"
+    ],
+    "profession": "Mesmer"
+  },
+  {
     "name": "Divingbeak",
     "wikiPage": "Divingbeak",
     "species": "Griffon",
@@ -4537,7 +4707,13 @@
         "rating": 71
       }
     ],
-    "skills": [],
+    "skills": [
+      "Heal Other",
+      "Life Attunement",
+      "Mark of Protection",
+      "Mend Ailment",
+      "Orison of Healing"
+    ],
     "isBoss": false,
     "locations": [
       "Dreadnought's Drift",
@@ -4695,6 +4871,25 @@
       "Perdition Rock"
     ],
     "profession": "Necromancer"
+  },
+  {
+    "name": "Dracul Cadava",
+    "wikiPage": "Dracul Cadava",
+    "species": "Zombie",
+    "level": 21,
+    "levelRaw": "21",
+    "armor": null,
+    "armorTable": [],
+    "skills": [
+      "Bane Signet",
+      "Draw Conditions",
+      "Reversal of Fortune"
+    ],
+    "isBoss": true,
+    "locations": [
+      "Riverside Province"
+    ],
+    "profession": "Monk"
   },
   {
     "name": "Drago Stoneherder",
@@ -5776,7 +5971,11 @@
         "rating": 91
       }
     ],
-    "skills": [],
+    "skills": [
+      "Balanced Stance",
+      "Power Attack",
+      "Staggering Blow"
+    ],
     "isBoss": false,
     "locations": [
       "Fronis Irontoe's Lair",
@@ -7575,7 +7774,10 @@
         "rating": 120
       }
     ],
-    "skills": [],
+    "skills": [
+      "Feast of Corruption",
+      "Suffering"
+    ],
     "isBoss": false,
     "locations": [
       "Lornar's Pass",
@@ -8358,15 +8560,9 @@
       "Frenzy",
       "Healing Signet",
       "Shield Stance",
-      "Wild Blow",
-      "Bull's Strike",
-      "Eviscerate",
-      "Executioner's Strike",
-      "Flail",
-      "Lion's Comfort"
+      "Wild Blow"
     ],
     "isBoss": true,
-    "bossElite": "Eviscerate",
     "locations": [
       "Flame Temple Corridor",
       "The Breach"
@@ -8693,18 +8889,6 @@
     "profession": "Warrior"
   },
   {
-    "name": "Grawl (Pre-Searing)",
-    "wikiPage": "Grawl (Pre-Searing)",
-    "species": null,
-    "level": null,
-    "armor": null,
-    "armorTable": [],
-    "skills": [],
-    "isBoss": false,
-    "locations": [],
-    "profession": null
-  },
-  {
     "name": "Grawl (Shiverpeaks)",
     "wikiPage": "Grawl (Shiverpeaks)",
     "species": "Grawl",
@@ -8755,18 +8939,6 @@
     "profession": "Warrior"
   },
   {
-    "name": "Grawl (pre-Searing)",
-    "wikiPage": "Grawl (pre-Searing)",
-    "species": null,
-    "level": null,
-    "armor": null,
-    "armorTable": [],
-    "skills": [],
-    "isBoss": false,
-    "locations": [],
-    "profession": null
-  },
-  {
     "name": "Grawl Crone",
     "wikiPage": "Grawl Crone",
     "species": "Grawl",
@@ -8803,7 +8975,11 @@
         "rating": 46
       }
     ],
-    "skills": [],
+    "skills": [
+      "Chilblains",
+      "Plague Signet",
+      "Signet of Agony"
+    ],
     "isBoss": false,
     "locations": [
       "The Northlands",
@@ -8841,7 +9017,12 @@
     "levelRaw": "3, 4 (22), 9 (23), 20",
     "armor": null,
     "armorTable": [],
-    "skills": [],
+    "skills": [
+      "Apply Poison",
+      "Precision Shot",
+      "Penetrating Attack",
+      "Serpent's Quickness"
+    ],
     "isBoss": false,
     "locations": [
       "Lakeside County: 1070 AE",
@@ -8951,16 +9132,24 @@
     "profession": "Necromancer"
   },
   {
-    "name": "Gren Waveslosh",
-    "wikiPage": "Gren Waveslosh",
-    "species": null,
-    "level": null,
+    "name": "Gren Wavelslosh",
+    "wikiPage": "Gren Wavelslosh",
+    "species": "Gargoyle",
+    "level": 18,
+    "levelRaw": "18 (28)",
     "armor": null,
     "armorTable": [],
-    "skills": [],
-    "isBoss": false,
-    "locations": [],
-    "profession": null
+    "skills": [
+      "Ether Feast",
+      "Mantra of Lightning",
+      "Mind Wrack",
+      "Spirit Shackles"
+    ],
+    "isBoss": true,
+    "locations": [
+      "Divinity Coast"
+    ],
+    "profession": "Mesmer"
   },
   {
     "name": "Grenth's Cursed",
@@ -9387,6 +9576,27 @@
     "profession": "Mesmer"
   },
   {
+    "name": "Hilios the Dutiful",
+    "wikiPage": "Hilios the Dutiful",
+    "species": null,
+    "level": 28,
+    "levelRaw": "28",
+    "armor": null,
+    "armorTable": [],
+    "skills": [
+      "Determined Shot",
+      "Healing Spring",
+      "Oath Shot",
+      "Whirling Defense"
+    ],
+    "isBoss": true,
+    "bossElite": "Oath Shot",
+    "locations": [
+      "Iron Mines of Moladune"
+    ],
+    "profession": "Ranger"
+  },
+  {
     "name": "Hill Giant",
     "wikiPage": "Hill Giant",
     "species": "Giant",
@@ -9591,7 +9801,9 @@
         "rating": 10
       }
     ],
-    "skills": [],
+    "skills": [
+      "Crude Swing"
+    ],
     "isBoss": false,
     "locations": [
       "Green Hills County",
@@ -9923,12 +10135,6 @@
       "Ice Spear",
       "Maelstrom",
       "Mind Freeze",
-      "Water Attunement",
-      "Aura of Restoration",
-      "Frigid Armor",
-      "Ice Spear",
-      "Maelstrom",
-      "Mind Freeze",
       "Water Attunement"
     ],
     "isBoss": false,
@@ -10066,7 +10272,13 @@
     "levelRaw": "6 (26), 9 (27)",
     "armor": null,
     "armorTable": [],
-    "skills": [],
+    "skills": [
+      "Chaos Storm",
+      "Empathy",
+      "Ether Feast",
+      "Ether Lord",
+      "Hex Breaker"
+    ],
     "isBoss": true,
     "locations": [
       "Old Ascalon",
@@ -10833,7 +11045,13 @@
     "levelRaw": "18 (20)20 (29)18",
     "armor": null,
     "armorTable": [],
-    "skills": [],
+    "skills": [
+      "Axe Rake",
+      "Cyclone Axe",
+      "Dismember",
+      "Healing Signet",
+      "Wild Blow"
+    ],
     "isBoss": true,
     "locations": [
       "Gates of Kryta",
@@ -11347,6 +11565,23 @@
     "profession": "Mesmer"
   },
   {
+    "name": "Lash Devourer",
+    "wikiPage": "Lash Devourer",
+    "species": "Devourer",
+    "level": 15,
+    "levelRaw": "1, 15",
+    "armor": null,
+    "armorTable": [],
+    "skills": [],
+    "isBoss": false,
+    "locations": [
+      "Lakeside County: 1070 AE",
+      "Lakeside County",
+      "Regent Valley (pre-Searing)"
+    ],
+    "profession": null
+  },
+  {
     "name": "Lava Imp",
     "wikiPage": "Lava Imp",
     "species": "Imp",
@@ -11610,6 +11845,27 @@
       "Frozen Forest"
     ],
     "profession": "Warrior"
+  },
+  {
+    "name": "Lokar Icemender",
+    "wikiPage": "Lokar Icemender",
+    "species": "Dolyak",
+    "level": 28,
+    "levelRaw": "28",
+    "armor": null,
+    "armorTable": [],
+    "skills": [
+      "Life Attunement",
+      "Mark of Protection",
+      "Mend Ailment",
+      "Orison of Healing"
+    ],
+    "isBoss": true,
+    "bossElite": "Mark of Protection",
+    "locations": [
+      "Iron Mines of Moladune"
+    ],
+    "profession": "Monk"
   },
   {
     "name": "Losaru Bladehand",
@@ -12238,7 +12494,13 @@
         "rating": 71
       }
     ],
-    "skills": [],
+    "skills": [
+      "\"I Will Avenge You!\"",
+      "Seeking Blade",
+      "Warrior's Cunning",
+      "Executioner's Strike",
+      "Swift Chop"
+    ],
     "isBoss": false,
     "locations": [
       "Dry Top",
@@ -12493,8 +12755,14 @@
     "levelRaw": "22 (29)",
     "armor": null,
     "armorTable": [],
-    "skills": [],
+    "skills": [
+      "Heal Area",
+      "Barrage",
+      "Concussion Shot",
+      "Troll Unguent"
+    ],
     "isBoss": true,
+    "bossElite": "Barrage",
     "locations": [
       "Aurora Glade",
       "Bloodstone Fen",
@@ -12641,6 +12909,26 @@
       "Prophet's Path"
     ],
     "profession": "Necromancer"
+  },
+  {
+    "name": "Martigris the Stalwart",
+    "wikiPage": "Martigris the Stalwart",
+    "species": "Jade construct",
+    "level": 28,
+    "levelRaw": "28",
+    "armor": null,
+    "armorTable": [],
+    "skills": [
+      "Crushing Blow",
+      "Devastating Hammer",
+      "Wild Blow"
+    ],
+    "isBoss": true,
+    "bossElite": "Devastating Hammer",
+    "locations": [
+      "Iron Mines of Moladune"
+    ],
+    "profession": "Warrior"
   },
   {
     "name": "Martus Plagueweb",
@@ -13588,7 +13876,24 @@
         "rating": 71
       }
     ],
-    "skills": [],
+    "skills": [
+      "Aura of Faith",
+      "Contemplation of Purity",
+      "Draw Conditions",
+      "Orison of Healing",
+      "Blood Renewal",
+      "Insidious Parasite",
+      "Life Siphon",
+      "Life Transfer",
+      "Energy Surge",
+      "Ether Feast",
+      "Physical Resistance",
+      "Power Leak",
+      "Chain Lightning",
+      "Enervating Charge",
+      "Glyph of Concentration",
+      "Thunderclap"
+    ],
     "isBoss": false,
     "locations": [
       "Abaddon's Mouth"
@@ -14478,6 +14783,26 @@
     "profession": "Mesmer"
   },
   {
+    "name": "Pell Glitterglatter",
+    "wikiPage": "Pell Glitterglatter",
+    "species": "Elemental",
+    "level": 28,
+    "levelRaw": "24, 28",
+    "armor": null,
+    "armorTable": [],
+    "skills": [
+      "Aftershock",
+      "Aura of Restoration",
+      "Eruption",
+      "Shock"
+    ],
+    "isBoss": true,
+    "locations": [
+      "Vulture Drifts"
+    ],
+    "profession": "Elementalist"
+  },
+  {
     "name": "Pello Agileclaw",
     "wikiPage": "Pello Agileclaw",
     "species": "Tengu",
@@ -14552,7 +14877,8 @@
       "Oath Shot",
       "Whirling Defense"
     ],
-    "isBoss": false,
+    "isBoss": true,
+    "bossElite": "Oath Shot",
     "locations": [
       "The Battle for Lion's Arch (explorable area)",
       "Thunderhead Keep"
@@ -15207,12 +15533,7 @@
         "rating": 32
       }
     ],
-    "skills": [
-      "Barbs",
-      "Deathly Swarm",
-      "Price of Failure",
-      "Weaken Armor"
-    ],
+    "skills": [],
     "isBoss": false,
     "locations": [
       "Ashford Catacombs: 1070 AE",
@@ -15679,12 +16000,7 @@
         "rating": 30
       }
     ],
-    "skills": [
-      "Hamstring",
-      "Hundred Blades",
-      "Pure Strike",
-      "Sprint"
-    ],
+    "skills": [],
     "isBoss": false,
     "locations": [
       "Ashford Catacombs: 1070 AE",
@@ -15748,7 +16064,13 @@
     "levelRaw": "6 (26), 9 (27)",
     "armor": null,
     "armorTable": [],
-    "skills": [],
+    "skills": [
+      "Mending",
+      "Orison of Healing",
+      "Symbol of Wrath",
+      "Blessed Signet",
+      "Draw Conditions"
+    ],
     "isBoss": true,
     "locations": [
       "Old Ascalon",
@@ -15774,7 +16096,6 @@
       "Animate Bone Fiend",
       "Life Siphon",
       "Offering of Blood",
-      "Plague Touch",
       "Taste of Death"
     ],
     "isBoss": true,
@@ -15844,15 +16165,49 @@
       }
     ],
     "skills": [
-      "Blurred Vision",
-      "Lightning Orb",
-      "Shard Storm"
+      "Blurred Vision"
     ],
     "isBoss": false,
     "locations": [
       "Lakeside County: 1070 AE",
       "Lakeside County",
       "The Floodplain of Mahnkelon"
+    ],
+    "profession": "Elementalist"
+  },
+  {
+    "name": "River Skale Brood",
+    "wikiPage": "River Skale Brood",
+    "species": "Skale",
+    "level": 15,
+    "levelRaw": "4, 15",
+    "armor": null,
+    "armorTable": [],
+    "skills": [
+      "Aura of Restoration",
+      "Ice Spear"
+    ],
+    "isBoss": false,
+    "locations": [
+      "Lakeside County: 1070 AE",
+      "Lakeside County",
+      "Wizard's Folly"
+    ],
+    "profession": "Elementalist"
+  },
+  {
+    "name": "River Skale Queen",
+    "wikiPage": "River Skale Queen",
+    "species": "Skale",
+    "level": 18,
+    "levelRaw": "0, 18",
+    "armor": null,
+    "armorTable": [],
+    "skills": [],
+    "isBoss": false,
+    "locations": [
+      "Lakeside County: 1070 AE",
+      "Lakeside County"
     ],
     "profession": "Elementalist"
   },
@@ -16044,6 +16399,53 @@
       "Thirsty River"
     ],
     "profession": "Ranger"
+  },
+  {
+    "name": "Rogue Bull",
+    "wikiPage": "Rogue Bull",
+    "species": "Beast",
+    "level": 24,
+    "levelRaw": "5, 24",
+    "armor": null,
+    "armorTable": [
+      {
+        "damageType": "blunt",
+        "rating": 120
+      },
+      {
+        "damageType": "piercing",
+        "rating": 120
+      },
+      {
+        "damageType": "slashing",
+        "rating": 120
+      },
+      {
+        "damageType": "cold",
+        "rating": 120
+      },
+      {
+        "damageType": "earth",
+        "rating": 120
+      },
+      {
+        "damageType": "fire",
+        "rating": 120
+      },
+      {
+        "damageType": "lightning",
+        "rating": 120
+      }
+    ],
+    "skills": [
+      "Bull's Charge"
+    ],
+    "isBoss": false,
+    "locations": [
+      "Lakeside County",
+      "Lakeside County: 1070 AE"
+    ],
+    "profession": "Warrior"
   },
   {
     "name": "Root Behemoth",
@@ -16443,6 +16845,30 @@
       "Kessex Peak"
     ],
     "profession": "Mesmer"
+  },
+  {
+    "name": "Saidra",
+    "wikiPage": "Saidra",
+    "species": "Human",
+    "level": 20,
+    "levelRaw": "10, 15, 20",
+    "armor": null,
+    "armorTable": [],
+    "skills": [
+      "Heal Area",
+      "Troll Unguent"
+    ],
+    "isBoss": false,
+    "locations": [
+      "Sage Lands",
+      "Divinity Coast",
+      "Riverside Province",
+      "Aurora Glade",
+      "Bloodstone Fen",
+      "The Wilds",
+      "Ice Caves of Sorrow"
+    ],
+    "profession": "Ranger"
   },
   {
     "name": "Sakalo Yawpyawl",
@@ -17193,7 +17619,12 @@
         "rating": 8
       }
     ],
-    "skills": [],
+    "skills": [
+      "Backfire",
+      "Conjure Phantasm",
+      "Energy Tap",
+      "Imagined Burden"
+    ],
     "isBoss": false,
     "locations": [
       "Ashford Catacombs: 1070 AE",
@@ -18042,6 +18473,27 @@
     "profession": "Necromancer"
   },
   {
+    "name": "Slonak Copperbark",
+    "wikiPage": "Slonak Copperbark",
+    "species": "Dwarf",
+    "level": 28,
+    "levelRaw": "28",
+    "armor": null,
+    "armorTable": [],
+    "skills": [
+      "Counter Blow",
+      "Dwarven Battle Stance",
+      "Healing Signet",
+      "Rush"
+    ],
+    "isBoss": true,
+    "bossElite": "Dwarven Battle Stance",
+    "locations": [
+      "Iron Mines of Moladune"
+    ],
+    "profession": "Warrior"
+  },
+  {
     "name": "Slur Scarchest",
     "wikiPage": "Slur Scarchest",
     "species": "Charr",
@@ -18073,12 +18525,7 @@
       "Aura of Restoration",
       "Conjure Flame",
       "Fireball",
-      "Lava Font",
-      "Aegis",
-      "Extinguish",
-      "Fire Storm",
-      "Mark of Rodgort",
-      "Meteor Shower"
+      "Lava Font"
     ],
     "isBoss": true,
     "locations": [
@@ -18338,18 +18785,6 @@
       "Griffon's Mouth"
     ],
     "profession": "Warrior"
-  },
-  {
-    "name": "Snow Wolf",
-    "wikiPage": "Snow Wolf",
-    "species": null,
-    "level": null,
-    "armor": null,
-    "armorTable": [],
-    "skills": [],
-    "isBoss": false,
-    "locations": [],
-    "profession": null
   },
   {
     "name": "Snyk the Hundred Tongue",
@@ -18720,7 +19155,10 @@
         "rating": 4
       }
     ],
-    "skills": [],
+    "skills": [
+      "Eruption",
+      "Ward Against Melee"
+    ],
     "isBoss": false,
     "locations": [
       "Green Hills County",
@@ -18819,7 +19257,11 @@
         "rating": 96
       }
     ],
-    "skills": [],
+    "skills": [
+      "\"For Great Justice!\"",
+      "Cleave",
+      "Disrupting Chop"
+    ],
     "isBoss": false,
     "locations": [
       "Dreadnought's Drift",
@@ -18887,15 +19329,7 @@
     "skills": [
       "\"For Great Justice!\"",
       "Griffon's Sweep",
-      "Protector's Strike",
-      "Dwarven Battle Stance",
-      "Endure Pain",
-      "Enraging Charge",
-      "Healing Signet",
-      "Staggering Blow",
-      "Counterattack",
-      "Forceful Blow",
-      "Power Attack"
+      "Protector's Strike"
     ],
     "isBoss": false,
     "locations": [
@@ -18998,7 +19432,13 @@
         "rating": 71
       }
     ],
-    "skills": [],
+    "skills": [
+      "Animate Bone Fiend",
+      "Life Siphon",
+      "Offering of Blood",
+      "Plague Touch",
+      "Taste of Death"
+    ],
     "isBoss": false,
     "locations": [
       "Dreadnought's Drift",
@@ -19155,18 +19595,7 @@
       "Melandru's Arrows",
       "Penetrating Attack",
       "Precision Shot",
-      "Tiger's Fury",
-      "Antidote Signet",
-      "Hunter's Shot",
-      "Melandru's Arrows",
-      "Melandru's Assault",
-      "Penetrating Attack",
-      "Precision Shot",
-      "Savage Shot",
-      "Tiger's Fury",
-      "Broad Head Arrow",
-      "Marauder's Shot",
-      "Point Blank Shot"
+      "Tiger's Fury"
     ],
     "isBoss": false,
     "locations": [
@@ -19229,7 +19658,12 @@
         "rating": 71
       }
     ],
-    "skills": [],
+    "skills": [
+      "Channeling",
+      "Empathy",
+      "Illusion of Haste",
+      "Shatter Enchantment"
+    ],
     "isBoss": false,
     "locations": [
       "Anvil Rock",
@@ -19914,15 +20348,9 @@
       "Bane Signet",
       "Banish",
       "Heal Area",
-      "Infuse Health",
-      "Chorus of Restoration",
-      "Life Sheath",
-      "Mend Condition",
-      "Protective Spirit",
-      "Reversal of Fortune"
+      "Infuse Health"
     ],
     "isBoss": true,
-    "bossElite": "Life Sheath",
     "locations": [
       "The Breach",
       "Flame Temple Corridor"
@@ -20116,7 +20544,6 @@
       "Frozen Burst",
       "Ice Spikes",
       "Water Attunement",
-      "Aura of Restoration",
       "Deep Freeze",
       "Rust",
       "Water Trident"
@@ -20842,9 +21269,7 @@
       "Precision Shot",
       "Troll Unguent",
       "Melandru's Arrows",
-      "Precision Shot",
-      "Tiger's Fury",
-      "Troll Unguent"
+      "Tiger's Fury"
     ],
     "isBoss": true,
     "bossElite": "Melandru's Arrows",
@@ -20908,7 +21333,10 @@
         "rating": 30
       }
     ],
-    "skills": [],
+    "skills": [
+      "Strip Enchantment",
+      "Unholy Feast"
+    ],
     "isBoss": false,
     "locations": [
       "Hell's Precipice",
@@ -21057,7 +21485,14 @@
     "levelRaw": "2, 14 (24), 24 (30)",
     "armor": null,
     "armorTable": [],
-    "skills": [],
+    "skills": [
+      "Animate Bone Horror",
+      "Animate Bone Fiend",
+      "Verata's Sacrifice",
+      "Taste of Death",
+      "Verata's Aura",
+      "Verata's Gaze"
+    ],
     "isBoss": true,
     "locations": [
       "Lakeside County",
@@ -21370,7 +21805,15 @@
         "rating": 54
       }
     ],
-    "skills": [],
+    "skills": [
+      "Heal Area",
+      "Heal Other",
+      "Infuse Health",
+      "Convert Hexes",
+      "Divine Intervention",
+      "Judge's Insight",
+      "Shielding Hands"
+    ],
     "isBoss": false,
     "locations": [
       "Twin Serpent Lakes",
@@ -21500,7 +21943,11 @@
         "rating": 80
       }
     ],
-    "skills": [],
+    "skills": [
+      "\"I Will Avenge You!\"",
+      "\"Watch Yourself!\"",
+      "Galrath Slash"
+    ],
     "isBoss": false,
     "locations": [
       "Griffon's Mouth",
@@ -21570,7 +22017,12 @@
         "rating": 60
       }
     ],
-    "skills": [],
+    "skills": [
+      "Convert Hexes",
+      "Divine Intervention",
+      "Judge's Insight",
+      "Shielding Hands"
+    ],
     "isBoss": false,
     "locations": [
       "Ice Floe",
@@ -21634,7 +22086,12 @@
         "rating": 49
       }
     ],
-    "skills": [],
+    "skills": [
+      "Mark of Subversion",
+      "Order of Pain",
+      "Vampiric Gaze",
+      "Well of the Profane"
+    ],
     "isBoss": false,
     "locations": [
       "Twin Serpent Lakes",
@@ -21697,7 +22154,13 @@
         "rating": 49
       }
     ],
-    "skills": [],
+    "skills": [
+      "Lightning Orb",
+      "Lightning Strike",
+      "Glyph of Elemental Power",
+      "Searing Heat",
+      "Ward Against Elements"
+    ],
     "isBoss": false,
     "locations": [
       "D'Alessio Seaboard",
@@ -21765,7 +22228,14 @@
         "rating": 100
       }
     ],
-    "skills": [],
+    "skills": [
+      "Called Shot",
+      "Antidote Signet",
+      "Dryder's Defenses",
+      "Pin Down",
+      "Savage Shot",
+      "Troll Unguent"
+    ],
     "isBoss": false,
     "locations": [
       "D'Alessio Seaboard (explorable area)",
@@ -21827,7 +22297,14 @@
         "rating": 69
       }
     ],
-    "skills": [],
+    "skills": [
+      "Called Shot",
+      "Antidote Signet",
+      "Dryder's Defenses",
+      "Pin Down",
+      "Savage Shot",
+      "Troll Unguent"
+    ],
     "isBoss": false,
     "locations": [
       "Griffon's Mouth",
@@ -21963,7 +22440,13 @@
         "rating": 93
       }
     ],
-    "skills": [],
+    "skills": [
+      "Axe Rake",
+      "Dismember",
+      "Gash",
+      "Healing Signet",
+      "Sever Artery"
+    ],
     "isBoss": false,
     "locations": [
       "Bloodstone Fen",
@@ -22071,7 +22554,11 @@
         "rating": 60
       }
     ],
-    "skills": [],
+    "skills": [
+      "Conjure Phantasm",
+      "Cry of Frustration",
+      "Shatter Enchantment"
+    ],
     "isBoss": false,
     "locations": [
       "Mamnoon Lagoon",
@@ -22087,18 +22574,6 @@
       "The Wilds"
     ],
     "profession": "Mesmer"
-  },
-  {
-    "name": "Wind Rider (Maguuma Jungle)",
-    "wikiPage": "Wind Rider (Maguuma Jungle)",
-    "species": null,
-    "level": null,
-    "armor": null,
-    "armorTable": [],
-    "skills": [],
-    "isBoss": false,
-    "locations": [],
-    "profession": null
   },
   {
     "name": "Winglord Caromi",

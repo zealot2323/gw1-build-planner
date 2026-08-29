@@ -1,0 +1,7 @@
+{
+  "title": "Marauder's Shot",
+  "pageid": 2227,
+  "revid": 2733169,
+  "timestamp": "2026-07-05T16:00:11Z",
+  "wikitext": "{{Skill infobox\n| id = 908\n| name = Marauder's Shot\n| campaign = Factions\n| profession = Ranger\n| attribute = Marksmanship\n| type = Bow Attack\n| energy = 5\n| recharge = 6\n| causes1 = Disable\n| description = [[Bow Attack]]. If Marauder's Shot hits, you strike for {{gr|25|55|+}} [[damage]] and all your non-[[attack skill]]s are [[disable]]d for 5 seconds.  \n| concise description = Bow Attack. Deals {{gr|25|55|+}} damage. {{gray|Your non-attack skills are disabled (5 seconds) if this attack hits.}}\n}}\n{{Skill progression\n|attribute = [[Marksmanship]]\n|var1 name = + [[Damage]]\n|var1 at0 = 25\n|var1 at15 = 55\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Trivia ==\n{{Skill change}}"
+}

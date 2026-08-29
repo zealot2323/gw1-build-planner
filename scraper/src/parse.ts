@@ -221,24 +221,38 @@ console.log(`missions: ${missions.length} parsed`);
 // Issues we deliberately do NOT report (domain decisions):
 // - no NPC infobox / no locations / no level: usually a species summary
 //   page or a page layout variant — fine, keep what parsed.
-// - boss with no elite: normal for low-level bosses; only report for
-//   high-level (>= 20) bosses where an elite is expected.
-const SUPPRESSED_MONSTER_ISSUES = /^(no NPC infobox|no locations parsed|no normal-mode level parsed)$/;
+// - boss with no elite: normal — plenty of bosses at every level carry no
+//   elite. Capture coverage is checked from the elite side instead (see
+//   cross-validation below).
+const SUPPRESSED_MONSTER_ISSUES =
+  /^(no NPC infobox|no locations parsed|no normal-mode level parsed|boss with no elite skill marked)$/;
 
 const monsters: ParsedMonster[] = [];
+const monsterAliases = new Map<string, string>(); // redirect name -> canonical name
 let preSearingSkipped = 0;
-for (const title of manifest.monsters) {
-  const wt = await cachedWikitext("monsters", title);
+for (const rawTitle of manifest.monsters) {
+  let title = rawTitle;
+  let wt = await cachedWikitext("monsters", title);
   if (wt === null) continue;
+  // Foe lists sometimes link a redirect (e.g. the typo'd "Gren Waveslosh"
+  // -> "Gren Wavelslosh"); follow it and parse under the canonical name.
+  const redirect = wt.match(/^#REDIRECT\s*\[\[([^\]|#]+)/i);
+  if (redirect) {
+    const target = redirect[1].trim();
+    monsterAliases.set(title, target);
+    if (manifest.monsters.includes(target)) continue; // parsed on its own
+    title = target;
+    wt = await cachedWikitext("monsters", title);
+    if (wt === null) continue;
+  }
   const { entity, issues } = parseMonster(title, wt);
   // No hard-mode level listed => pre-Searing creature; out of scope for now.
-  if (isPreSearingMonster(entity.levelRaw)) {
+  if (isPreSearingMonster(entity.levelRaw, entity.level)) {
     preSearingSkipped++;
     continue;
   }
   for (const i of issues) {
     if (SUPPRESSED_MONSTER_ISSUES.test(i)) continue;
-    if (i === "boss with no elite skill marked" && (entity.level ?? 0) < 20) continue;
     addIssue("monsters", title, i);
   }
   monsters.push(entity);
@@ -251,6 +265,35 @@ console.log(
 // ---------------------------------------------------------------------------
 // Cross-validation (report, don't fail — wiki data is inconsistent)
 // ---------------------------------------------------------------------------
+
+// Re-point monster references (foe lists, capture bosses) that used a
+// redirect page name at the canonical monster.
+const resolveMonsterRef = (name: string): string => monsterAliases.get(name) ?? name;
+for (const l of locations) {
+  l.foes = [...new Set(l.foes.map(resolveMonsterRef))];
+  l.bosses = [...new Set(l.bosses.map(resolveMonsterRef))];
+}
+for (const m of missions) {
+  m.foes = [...new Set(m.foes.map(resolveMonsterRef))];
+  m.bosses = [...new Set(m.bosses.map(resolveMonsterRef))];
+}
+for (const s of skills) {
+  s.acquisition.captureBosses = [...new Set(s.acquisition.captureBosses.map(resolveMonsterRef))];
+  if (s.acquisition.conditionalCaptureBosses) {
+    s.acquisition.conditionalCaptureBosses = [
+      ...new Set(s.acquisition.conditionalCaptureBosses.map(resolveMonsterRef)),
+    ];
+  }
+  if (s.captureLocations) {
+    for (const [k, v] of Object.entries(s.captureLocations)) {
+      const canonical = resolveMonsterRef(k);
+      if (canonical !== k) {
+        s.captureLocations[canonical] = v;
+        delete s.captureLocations[k];
+      }
+    }
+  }
+}
 
 const skillByPage = new Map(skills.map((s) => [s.wikiPage, s]));
 const locationNames = new Set(locations.map((l) => l.wikiPage));
@@ -266,29 +309,77 @@ for (const t of trainers) {
 // (skill↔trainer asymmetries are no longer reported: trainer lists are the
 // source of truth and skills' trainer lists are derived from them above.)
 
-// monster skills → parsed skills (hard-mode-only were dropped at parse time)
+// monster skills → parsed skills (hard-mode-only and non-Prophecies
+// campaign blocks were dropped at parse time). For a leftover unresolved
+// ref, check the cache: a page whose infobox says another campaign is a
+// known cross-campaign listing, not a problem.
+async function classifyUnresolvedSkill(name: string): Promise<string | null> {
+  if (isExcludedSkillPage(name)) return null; // monster-skill variants, by design
+  const page = await getCached(name);
+  const campaign = page?.wikitext.match(/\|\s*campaign\s*=\s*([^\n|]+)/)?.[1]?.trim();
+  if (campaign && campaign !== "Prophecies" && campaign !== "Core") return null; // expected
+  return campaign
+    ? `uses "${name}" (${campaign}) — in scope but missing from the skill set, check discovery`
+    : `uses unresolved skill "${name}" (not in cache — likely non-Prophecies or a monster skill)`;
+}
 for (const m of monsters) {
-  for (const s of m.skills) {
-    if (!skillByPage.has(s)) addIssue("cross-validation", m.wikiPage, `uses unparsed skill "${s}"`);
-  }
-  if (m.bossElite && !skillByPage.has(m.bossElite)) {
-    addIssue("cross-validation", m.wikiPage, `boss elite "${m.bossElite}" is not a parsed skill`);
-  }
-}
-
-// every elite has capture bosses, or is flagged
-for (const s of skills) {
-  if (s.isElite && s.acquisition.captureBosses.length === 0) {
-    addIssue("cross-validation", s.wikiPage, "elite: no capture source parsed");
+  for (const s of [...m.skills, ...(m.bossElite ? [m.bossElite] : [])]) {
+    if (skillByPage.has(s)) continue;
+    const issue = await classifyUnresolvedSkill(s);
+    if (issue) addIssue("cross-validation", m.wikiPage, issue);
   }
 }
 
-// location neighbors resolve (try exact, then "(outpost)" disambiguation)
 const resolveLocation = (name: string): string | null => {
   if (locationNames.has(name)) return name;
   if (locationNames.has(`${name} (outpost)`)) return `${name} (outpost)`;
   return null;
 };
+
+// Capture coverage, checked from the skill side. First demote capture
+// bosses whose stated spawn location isn't a known Prophecies location
+// (War in Kryta area variants etc.) to conditional — they're unreachable
+// in our model. What remains should exist in the bestiary and use the skill.
+const monsterByPage = new Map(monsters.map((m) => [m.wikiPage, m]));
+for (const s of skills) {
+  const demoted: string[] = [];
+  s.acquisition.captureBosses = s.acquisition.captureBosses.filter((bossName) => {
+    if (monsterByPage.has(bossName)) return true;
+    const loc = s.captureLocations?.[bossName] ?? null;
+    if (loc === null || resolveLocation(loc) === null) {
+      demoted.push(bossName);
+      return false;
+    }
+    return true;
+  });
+  if (demoted.length > 0) {
+    s.acquisition.conditionalCaptureBosses = [
+      ...(s.acquisition.conditionalCaptureBosses ?? []),
+      ...demoted,
+    ];
+  }
+  delete s.captureLocations;
+
+  for (const bossName of s.acquisition.captureBosses) {
+    const boss = monsterByPage.get(bossName);
+    if (!boss) addIssue("cross-validation", s.wikiPage, `capture boss "${bossName}" is not in the bestiary`);
+    else if (!boss.skills.includes(s.wikiPage)) {
+      addIssue("cross-validation", s.wikiPage, `capture boss "${bossName}" doesn't list this skill`);
+    }
+  }
+}
+
+// every elite has capture bosses, or is flagged
+for (const s of skills) {
+  if (!s.isElite || s.acquisition.captureBosses.length > 0) continue;
+  if ((s.acquisition.conditionalCaptureBosses?.length ?? 0) > 0) {
+    addIssue("cross-validation", s.wikiPage, "elite: only quest-conditional capture sources");
+  } else {
+    addIssue("cross-validation", s.wikiPage, "elite: no capture source parsed");
+  }
+}
+
+// location neighbors resolve (try exact, then "(outpost)" disambiguation)
 for (const l of locations) {
   l.neighbors = l.neighbors.map((n) => {
     const resolved = resolveLocation(n);

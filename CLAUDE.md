@@ -68,9 +68,21 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
   skill's `acquisition.trainers` is derived from the trainer lists at parse
   time; the skill page's own trainer list is ignored when they disagree.
 - **Pre-Searing is out of scope for now**: monsters whose infobox level has no
-  hard-mode value (no parentheses) are pre-Searing creatures and are skipped.
-- Bosses legitimately have no elite when they're low level — only high-level
-  (>= 20) bosses without an elite are reported as suspicious.
+  hard-mode value (no parentheses) AND is <= 12 are pre-Searing creatures and
+  are skipped (the level cap protects high-level boss pages that also omit
+  the hard-mode level).
+- Bosses legitimately have no elite at any level — never flag that. Capture
+  coverage is validated from the skill side instead: each unconditional
+  capture boss must exist in the bestiary and list the skill.
+- **Capture sources are split**: `captureBosses` (always spawn) vs
+  `conditionalCaptureBosses` (spawn only during a quest/event, or in a
+  location outside our Prophecies set, e.g. War in Kryta variants) — quest
+  gating is not modeled yet, so availability logic uses only the former.
+- Monster Skills sections are filtered to Prophecies normal-mode blocks:
+  campaign/Beyond/event/cinematic sub-blocks and headings (Eye of the North,
+  War in Kryta, Halloween, The Mausoleum, ...) are excluded; encounter-level
+  and mission-name subsections are included. Wiki redirects among monster
+  pages (typos like "Gren Waveslosh") are followed to the canonical page.
 - Monster pages missing an infobox, locations, or skills are usually species
   summary pages — parse what's there, don't flag.
 - Manual corrections (wiki typos, non-locations like Lion's Gate,

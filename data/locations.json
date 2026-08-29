@@ -833,7 +833,7 @@
     "foes": [
       "Stone Elemental",
       "Hulking Stone Elemental",
-      "Grawl (Pre-Searing)",
+      ":Grawl (pre-Searing)",
       "Grawl Invader",
       "Grawl Longspear",
       "Grawl Shaman",
@@ -865,7 +865,7 @@
       "Diseased Devourer",
       "Lash Devourer",
       "River Drake",
-      "Grawl (Pre-Searing)",
+      ":Grawl (pre-Searing)",
       "Grawl Longspear",
       "Bandit Raider",
       "Bandit Firestarter",
@@ -957,7 +957,7 @@
       "Charr Shaman",
       "Charr Ashen Claw",
       "Charr Chaot",
-      "Grawl (pre-Searing)",
+      ":Grawl (pre-Searing)",
       "Grawl Fighter",
       "Grawl Longspear",
       "Grawl Shaman",
@@ -1334,7 +1334,7 @@
       "The Frost Gate (outpost)"
     ],
     "foes": [
-      "Snow Wolf",
+      "Wolf",
       "Shiverpeak Warrior",
       "Shiverpeak Longbow",
       "Shiverpeak Protector",
@@ -1935,7 +1935,7 @@
     "foes": [
       "Root Behemoth",
       "Life Pod",
-      "Wind Rider (Maguuma Jungle)",
+      ":Wind Rider",
       "Jungle Skale"
     ],
     "bosses": []
@@ -2008,7 +2008,7 @@
       "Maguuma Warrior",
       "Maguuma Hunter",
       "Maguuma Protector",
-      "Wind Rider (Maguuma Jungle)",
+      ":Wind Rider",
       "Moss Scarab",
       "Jungle Troll"
     ],
@@ -2038,7 +2038,7 @@
       "Redwood Shepherd",
       "Life Pod",
       "Thorn Stalker",
-      "Wind Rider (Maguuma Jungle)",
+      ":Wind Rider",
       "Moss Scarab",
       "Jungle Skale",
       "Jungle Troll"
@@ -2068,7 +2068,7 @@
       "Maguuma Hunter",
       "Redwood Shepherd",
       "Life Pod",
-      "Wind Rider (Maguuma Jungle)",
+      ":Wind Rider",
       "Jungle Skale",
       "Jungle Troll"
     ],
