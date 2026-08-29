@@ -22,6 +22,9 @@ export const EXCLUDED_LOCATIONS = new Set<string>([
   // explorables, trainers, or PvE content behind them.
   "Ascalon Arena (outpost)",
   "Shiverpeak Arena (outpost)",
+  // April Fools event zone (2010): a joke re-run of pre-Searing Lakeside
+  // County with inflated levels. Not real content.
+  "Lakeside County: 1070 AE",
 ]);
 
 /**
@@ -58,3 +61,24 @@ export const isExcludedSkillPage = (title: string): boolean => / \(monster skill
  */
 export const isPreSearingMonster = (levelRaw: string | undefined, level: number | null): boolean =>
   levelRaw !== undefined && !levelRaw.includes("(") && (level ?? 0) <= 12;
+
+/**
+ * Pre-Searing Ascalon locations. The wiki lists them in separate
+ * ":''pre-Searing''" blocks that the discovery job flattens, and the names
+ * alone don't always say (Lakeside County, The Catacombs). Ascalon is the
+ * only region with both halves, so the app can offer a toggle.
+ */
+export const PRE_SEARING_LOCATIONS = new Set<string>([
+  "Ascalon City (pre-Searing)",
+  "Ashford Abbey",
+  "Foible's Fair",
+  "Fort Ranik (pre-Searing)",
+  "The Barradin Estate",
+  "Piken Square (pre-Searing)",
+  "Green Hills County",
+  "Lakeside County",
+  "Regent Valley (pre-Searing)",
+  "The Catacombs",
+  "The Northlands",
+  "Wizard's Folly",
+]);

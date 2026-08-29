@@ -102,6 +102,18 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
   zones where the boss's applicable block actually carries the skill, so a
   boss's high-level elite is not capturable at its low-level spawns (Riine
   Windrot's Offering of Blood is Thunderhead Keep only).
+- **Infobox level strings are messy.** "<br>" separates individual entries on
+  some pages ("1 (22),<br>4 (22),<br>8 (23),<br>15") and whole campaign groups
+  on others ("5, 6 (23)<br>10, 12, 14") — a group containing a comma marks the
+  latter, and only the first group counts. Entries carrying a hard-mode value
+  are real encounters; when some do and some don't, the bare ones are
+  event-only versions and are dropped (Carrion Devourer's "15" is the April
+  Fools zone).
+- April Fools content (Annihilation Day, "Lakeside County: 1070 AE") is
+  excluded from locations and monster loadouts.
+- Pre-Searing Ascalon locations are flagged (`preSearing`) from the overrides
+  list so the zone browser can offer a pre/post-Searing toggle; the wiki's
+  own pre/post split is lost when discovery flattens the lists.
 - Infobox levels read "7 (23) [30]": bare = normal, parens = hard mode,
   brackets = a special (Titan quest) version — only the bare number is the
   normal-mode level.

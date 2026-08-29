@@ -1,6 +1,6 @@
 # Validation report
 
-Generated 2026-08-29T17:16:54.618Z by `npm run parse` (cache-only).
+Generated 2026-08-29T17:30:47.315Z by `npm run parse` (cache-only).
 
 ## locations (1 issue on 1 page)
 

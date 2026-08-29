@@ -82,6 +82,7 @@
       "Charr Stalker"
     ],
     "bosses": [],
+    "preSearing": true,
     "trainer": "Halbrik"
   },
   {
@@ -95,7 +96,8 @@
       "The Catacombs"
     ],
     "foes": [],
-    "bosses": []
+    "bosses": [],
+    "preSearing": true
   },
   {
     "kind": "outpost",
@@ -107,7 +109,8 @@
       "Wizard's Folly"
     ],
     "foes": [],
-    "bosses": []
+    "bosses": [],
+    "preSearing": true
   },
   {
     "kind": "outpost",
@@ -119,7 +122,8 @@
       "Regent Valley (pre-Searing)"
     ],
     "foes": [],
-    "bosses": []
+    "bosses": [],
+    "preSearing": true
   },
   {
     "kind": "outpost",
@@ -131,7 +135,8 @@
       "Green Hills County"
     ],
     "foes": [],
-    "bosses": []
+    "bosses": [],
+    "preSearing": true
   },
   {
     "kind": "outpost",
@@ -143,7 +148,8 @@
       "The Northlands"
     ],
     "foes": [],
-    "bosses": []
+    "bosses": [],
+    "preSearing": true
   },
   {
     "kind": "outpost",
@@ -817,7 +823,8 @@
       "Aloe Husk",
       "Aloe Seed"
     ],
-    "bosses": []
+    "bosses": [],
+    "preSearing": true
   },
   {
     "kind": "explorable",
@@ -851,7 +858,8 @@
       "River Skale Brood",
       "Plague Worm"
     ],
-    "bosses": []
+    "bosses": [],
+    "preSearing": true
   },
   {
     "kind": "explorable",
@@ -882,7 +890,8 @@
       "River Skale",
       "Skale Broodcaller"
     ],
-    "bosses": []
+    "bosses": [],
+    "preSearing": true
   },
   {
     "kind": "explorable",
@@ -909,7 +918,8 @@
     ],
     "bosses": [
       "Skullreaver"
-    ]
+    ],
+    "preSearing": true
   },
   {
     "kind": "explorable",
@@ -949,7 +959,8 @@
       "Red Eye the Unholy",
       "Ghast Ashpyre",
       "Jaw Smokeskin"
-    ]
+    ],
+    "preSearing": true
   },
   {
     "kind": "explorable",
@@ -981,7 +992,8 @@
       "Skale Broodcaller",
       "River Skale"
     ],
-    "bosses": []
+    "bosses": [],
+    "preSearing": true
   },
   {
     "kind": "explorable",

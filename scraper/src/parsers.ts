@@ -15,6 +15,7 @@ import {
   parseWikiNumber,
   sections,
   stripMarkup,
+  stripMarkupKeepBreaks,
 } from "./wikitext.js";
 
 export interface Parsed<T> {
@@ -281,6 +282,8 @@ export interface ParsedLocation {
   trainer?: string;
   foes: string[];
   bosses: string[];
+  /** Pre-Searing Ascalon (set by the driver from the overrides list). */
+  preSearing?: boolean;
 }
 
 export function parseLocation(title: string, wikitext: string, kind: string): Parsed<ParsedLocation> {
@@ -362,23 +365,55 @@ export interface ParsedMonster {
   locationLevels?: Record<string, number>;
 }
 
-/** "7, 9 (23)" → highest normal-mode level (parenthesized = hard mode). */
-function parseLevel(raw: string | undefined): number | null {
-  if (!raw) return null;
-  // "7 (23) [30]": parens are the hard-mode level, brackets a special
-  // (e.g. Titan quest) version — neither is the normal-mode level.
-  const normal = stripMarkup(raw).replace(/\([^)]*\)|\[[^\]]*\]/g, "");
-  const nums = [...normal.matchAll(/\d+/g)].map((m) => Number(m[0]));
-  return nums.length > 0 ? Math.max(...nums) : null;
+/**
+ * Split an infobox level string into entries. Two shapes exist and they
+ * collide: "<br>" separates individual entries on some pages
+ * ("1 (22),<br>4 (22),<br>8 (23),<br>15") and separates whole
+ * campaign groups on others ("5, 6 (23)<br>10, 12, 14"). If any
+ * <br>-group holds a comma it is a campaign group, and only the first
+ * (the Prophecies one) counts.
+ */
+function levelEntries(raw: string): Array<{ normal: number; hard: number | null }> {
+  const groups = raw.split(/<br\s*\/?>/i).map((g) => g.trim()).filter(Boolean);
+  const source = groups.some((g) => g.includes(",")) ? [groups[0] ?? ""] : groups;
+  const entries: Array<{ normal: number; hard: number | null }> = [];
+  for (const part of source.join(",").split(",")) {
+    // brackets are a special (Titan quest) version, never the normal level
+    const text = part.replace(/\[[^\]]*\]/g, "");
+    const hardMatch = text.match(/\(([^)]*)\)/);
+    const normalMatch = text.replace(/\([^)]*\)/g, "").match(/\d+/);
+    if (!normalMatch) continue;
+    const hardNums = hardMatch ? [...hardMatch[1].matchAll(/\d+/g)].map((m) => Number(m[0])) : [];
+    entries.push({
+      normal: Number(normalMatch[0]),
+      hard: hardNums.length > 0 ? Math.max(...hardNums) : null,
+    });
+  }
+  return entries;
 }
 
-/** "7, 9 (23)" -> 23: the parenthesized value is the hard-mode level. */
+/**
+ * Normal-mode level. Entries that carry a hard-mode value are real
+ * encounters; when some do and some don't, the bare ones are event-only
+ * versions (Carrion Devourer's "15" is the April Fools Lakeside County)
+ * and are dropped.
+ */
+function parseLevel(raw: string | undefined): number | null {
+  if (!raw) return null;
+  const entries = levelEntries(stripMarkupKeepBreaks(raw));
+  if (entries.length === 0) return null;
+  const paired = entries.filter((e) => e.hard !== null);
+  const use = paired.length > 0 ? paired : entries;
+  return Math.max(...use.map((e) => e.normal));
+}
+
+/** "7 (23) [30]" -> 23: the parenthesized value is the hard-mode level. */
 function parseHardLevel(raw: string | undefined): number | null {
   if (!raw) return null;
-  const inParens = stripMarkup(raw).match(/\(([^)]*)\)/);
-  if (!inParens) return null;
-  const nums = [...inParens[1].matchAll(/\d+/g)].map((m) => Number(m[0]));
-  return nums.length > 0 ? Math.max(...nums) : null;
+  const hard = levelEntries(stripMarkupKeepBreaks(raw))
+    .map((e) => e.hard)
+    .filter((h): h is number => h !== null);
+  return hard.length > 0 ? Math.max(...hard) : null;
 }
 
 /** "Level 4, 5, 10, 12" -> [4,5,10,12]; "Level 24 (30), Kessex Peak" -> [24]. */
@@ -422,7 +457,7 @@ export function parseMonster(title: string, wikitext: string): Parsed<ParsedMons
   // content / a cinematic; encounter levels, professions, and Prophecies
   // mission names all stay.
   const NON_PROPHECIES_CONTEXT =
-    /factions|nightfall|eye of the north|war in kryta|winds of change|hearts of the north|beyond|cinematic|special ops|rise of the white mantle|fronis|halloween|wintersday|festival|mausoleum|annihilator/i;
+    /factions|nightfall|eye of the north|war in kryta|winds of change|hearts of the north|beyond|cinematic|special ops|rise of the white mantle|fronis|halloween|wintersday|festival|mausoleum|annihilat|1070 ae/i;
 
   // Blocks are delimited by subsection headings AND by in-body marker lines
   // (";Prophecies", "'''Level 12'''", or a bare "Level 12" line).
@@ -533,7 +568,7 @@ export function parseMonster(title: string, wikitext: string): Parsed<ParsedMons
           ? stripMarkup(box["affiliation"])
           : null,
       level,
-      levelRaw: box?.["level"] ? stripMarkup(box["level"]) : undefined,
+      levelRaw: box?.["level"] ? stripMarkupKeepBreaks(box["level"]).replace(/ ?<br> ?/g, " / ") : undefined,
       levelHard: parseHardLevel(box?.["level"]),
       armor,
       armorTable,

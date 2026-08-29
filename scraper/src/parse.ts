@@ -27,6 +27,7 @@ import {
   EXTRA_NEIGHBORS,
   LOCATION_ALIASES,
   TRAINER_EXTRA_SKILLS,
+  PRE_SEARING_LOCATIONS,
   isExcludedSkillPage,
   isPreSearingMonster,
 } from "./overrides.js";
@@ -180,6 +181,7 @@ for (const [titles, kind] of locationKinds) {
     for (const extra of EXTRA_NEIGHBORS[title] ?? []) {
       if (!entity.neighbors.includes(extra)) entity.neighbors.push(extra);
     }
+    if (PRE_SEARING_LOCATIONS.has(title)) entity.preSearing = true;
     for (const i of issues) {
       // manual progression edges satisfy the exits expectation
       if (i === "no exits in infobox" && entity.neighbors.length > 0) continue;

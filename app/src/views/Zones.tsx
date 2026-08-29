@@ -123,13 +123,16 @@ function ZoneBriefing({ location, hardMode }: { location: string; hardMode: bool
   if (s.monsterCount === 0) return null;
   return (
     <div className="briefing">
-      <div className="briefing-row">
-        <span className="briefing-label">At a glance</span>
-        <span>
-          {s.monsterCount} foes{s.bossCount > 0 && `, ${s.bossCount} bosses`}
-          {s.levelRange && ` · levels ${s.levelRange.min}–${s.levelRange.max}`}
-        </span>
-      </div>
+      {s.levelRange && (
+        <div className="briefing-row">
+          <span className="briefing-label">Levels</span>
+          <span>
+            {s.levelRange.min === s.levelRange.max
+              ? s.levelRange.min
+              : `${s.levelRange.min}–${s.levelRange.max}`}
+          </span>
+        </div>
+      )}
       {s.groups.length > 0 && (
         <div className="briefing-row">
           <span className="briefing-label">Groups</span>
@@ -189,9 +192,12 @@ export function ZonesView({
   character: CharacterSave | null;
 }) {
   const [selected, setSelected] = useState<string | null>(null);
-  const [openRegions, setOpenRegions] = useState<Set<string>>(new Set(["Ascalon"]));
+  const [openRegions, setOpenRegions] = useState<Set<string> | null>(null);
   const [expandedSkill, setExpandedSkill] = useState<string | null>(null);
   const [hardMode, setHardMode] = useState(false);
+  // Ascalon exists twice over; pre-Searing comes first in the story so it
+  // leads here too.
+  const [searing, setSearing] = useState<"pre" | "post">("pre");
 
   const unlocked = useMemo(
     () => new Set(character?.unlockedLocations ?? []),
@@ -210,27 +216,48 @@ export function ZonesView({
       return byRegion.get(key)!;
     };
 
+    const inScope = (l: { preSearing?: boolean }) =>
+      searing === "pre" ? l.preSearing === true : l.preSearing !== true;
+
     const nested = new Set<string>();
     for (const l of dataset.locations) {
-      if (l.kind === "explorable") continue;
-      const zones = explorablesFrom(l.wikiPage, index).sort();
+      if (l.kind === "explorable" || !inScope(l)) continue;
+      const zones = explorablesFrom(l.wikiPage, index)
+        .filter((z) => inScope(index.locationByPage.get(z) ?? {}))
+        .sort();
       for (const z of zones) nested.add(z);
       bucket(l.region ?? "").outposts.push({ name: l.wikiPage, kind: l.kind, zones });
     }
     // explorables that hang off no outpost still need a home
     for (const l of dataset.locations) {
-      if (l.kind !== "explorable" || nested.has(l.wikiPage)) continue;
+      if (l.kind !== "explorable" || nested.has(l.wikiPage) || !inScope(l)) continue;
       bucket(l.region ?? "").other.push({ name: l.wikiPage, kind: "explorable" });
     }
-    for (const m of dataset.missions ?? []) {
-      bucket(m.region ?? "").other.push({ name: m.wikiPage, kind: "mission" });
+    // missions are all post-Searing
+    if (searing === "post") {
+      for (const m of dataset.missions ?? []) {
+        bucket(m.region ?? "").other.push({ name: m.wikiPage, kind: "mission" });
+      }
     }
     for (const v of byRegion.values()) {
       v.outposts.sort((a, b) => a.name.localeCompare(b.name));
       v.other.sort((a, b) => a.name.localeCompare(b.name));
     }
-    return [...byRegion.entries()].sort(([a], [b]) => a.localeCompare(b));
-  }, []);
+    return [...byRegion.entries()]
+      .filter(([, v]) => v.outposts.length + v.other.length > 0)
+      .sort(([a], [b]) => a.localeCompare(b));
+  }, [searing]);
+
+  // null means "not touched yet" — open the first region so the tree is
+  // never a wall of collapsed headers after switching Searing state
+  const openSet = openRegions ?? new Set(regions.length > 0 ? [regions[0][0]] : []);
+  const toggleRegion = (region: string) =>
+    setOpenRegions(() => {
+      const next = new Set(openSet);
+      if (next.has(region)) next.delete(region);
+      else next.add(region);
+      return next;
+    });
 
   const monsters = selected ? monstersInLocation(selected, index, hardMode) : [];
   const hasBestiary = (kind: string) => kind === "explorable" || kind === "mission";
@@ -264,22 +291,29 @@ export function ZonesView({
           Prophecies{" "}
           {character && <span className="muted small">— {unlocked.size} unlocked</span>}
         </h3>
+        <div className="searing-toggle">
+          {(["pre", "post"] as const).map((v) => (
+            <button
+              key={v}
+              className={searing === v ? "seg active" : "seg"}
+              onClick={() => {
+                setSearing(v);
+                setOpenRegions(null); // fall back to "first region open"
+              }}
+            >
+              {v}-Searing
+            </button>
+          ))}
+        </div>
         {regions.map(([region, { outposts, other }]) => (
           <div key={region}>
             <button
               className="linkish region"
-              onClick={() =>
-                setOpenRegions((s) => {
-                  const next = new Set(s);
-                  if (next.has(region)) next.delete(region);
-                  else next.add(region);
-                  return next;
-                })
-              }
+              onClick={() => toggleRegion(region)}
             >
-              {openRegions.has(region) ? "▾" : "▸"} {region}
+              {openSet.has(region) ? "▾" : "▸"} {region}
             </button>
-            {openRegions.has(region) && (
+            {openSet.has(region) && (
               <ul className="plain-list indent">
                 {outposts.map((o) => (
                   <li key={o.name}>

@@ -3,10 +3,9 @@ import type { Build, Profession } from "@gw1/engine";
 import { useSave } from "./save";
 import { CharactersView } from "./views/Characters";
 import { SkillsView } from "./views/Skills";
-import { BuildsView } from "./views/Builds";
 import { ZonesView } from "./views/Zones";
 
-type Tab = "characters" | "skills" | "builds" | "zones";
+type Tab = "characters" | "skills" | "zones";
 
 export function App() {
   const { save, addCharacter, updateCharacter, removeCharacter, importFile, exportFile } = useSave();
@@ -51,7 +50,7 @@ export function App() {
       <header>
         <h1>GW1 Build Planner</h1>
         <nav>
-          {(["characters", "skills", "builds", "zones"] as Tab[]).map((t) => (
+          {(["characters", "skills", "zones"] as Tab[]).map((t) => (
             <button key={t} className={tab === t ? "tab active" : "tab"} onClick={() => setTab(t)}>
               {t}
             </button>
@@ -80,16 +79,9 @@ export function App() {
           setSecondary={setSecondary}
           focusSkill={focusSkill}
           onAddToBuild={addToBuild}
-        />
-      )}
-      {tab === "builds" && (
-        <BuildsView
-          character={character}
-          secondary={secondary}
           activeBuild={activeBuild}
           setActiveBuild={setActiveBuild}
           updateBuilds={updateBuilds}
-          goToSkills={() => setTab("skills")}
         />
       )}
       {tab === "zones" && <ZonesView onSkillClick={goToSkill} character={character} />}

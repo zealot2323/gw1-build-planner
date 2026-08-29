@@ -106,6 +106,8 @@ export interface Location {
   foes: MonsterRef[];
   /** Bosses found here (subset context from the wiki's Bosses sections). */
   bosses?: MonsterRef[];
+  /** Pre-Searing Ascalon — the region has both halves, so views can split them. */
+  preSearing?: boolean;
 }
 
 export interface Trainer {
@@ -287,6 +289,7 @@ export const locationSchema = {
     trainer: { type: "string" },
     foes: refArray,
     bosses: refArray,
+    preSearing: { type: "boolean" },
   },
 } as const;
 

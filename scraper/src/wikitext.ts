@@ -110,6 +110,14 @@ export function stripMarkup(text: string): string {
     .trim();
 }
 
+/**
+ * Like stripMarkup but preserves <br> as a literal separator — infobox
+ * level strings use it to delimit entries or campaign groups.
+ */
+export function stripMarkupKeepBreaks(text: string): string {
+  return stripMarkup(text.replace(/<br\s*\/?>/gi, " <br> "));
+}
+
 /** Parse a wiki numeric value ("5", "¼", "3/4", "0.25", "10%"→null). */
 export function parseWikiNumber(value: string | undefined): number | null {
   if (value === undefined) return null;

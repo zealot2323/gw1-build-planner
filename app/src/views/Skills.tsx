@@ -2,6 +2,7 @@ import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 import {
   skillAvailability,
   type AcquisitionSource,
+  type Build,
   type Profession,
   type SkillAvailabilityEntry,
   type SkillStatus,
@@ -10,6 +11,7 @@ import { index } from "../data";
 import { SkillIcon } from "../components/SkillIcon";
 import { SkillDetails } from "../components/SkillDetails";
 import { ProfessionIcon } from "../components/ProfessionIcon";
+import { BuildBar } from "../components/BuildBar";
 import { wikiHref } from "../wiki";
 import type { CharacterSave } from "../save";
 
@@ -74,6 +76,9 @@ export function SkillsView({
   setSecondary,
   focusSkill,
   onAddToBuild,
+  activeBuild,
+  setActiveBuild,
+  updateBuilds,
 }: {
   character: CharacterSave | null;
   secondary: Profession | null;
@@ -81,6 +86,9 @@ export function SkillsView({
   /** Skill to scroll to (set by the zone browser's skill links). */
   focusSkill: string | null;
   onAddToBuild: ((skill: string) => void) | null;
+  activeBuild: string | null;
+  setActiveBuild: (name: string | null) => void;
+  updateBuilds: (builds: Build[]) => void;
 }) {
   const [profFilter, setProfFilter] = useState<string>("all");
   const [attrFilter, setAttrFilter] = useState<string>("all");
@@ -127,6 +135,13 @@ export function SkillsView({
 
   return (
     <div className="view">
+      <BuildBar
+        character={character}
+        secondary={secondary}
+        activeBuild={activeBuild}
+        setActiveBuild={setActiveBuild}
+        updateBuilds={updateBuilds}
+      />
       <div className="row wrap toolbar">
         <label>
           Secondary:{" "}
