@@ -100,6 +100,16 @@ describe("full dataset: progressed character", () => {
   });
 });
 
+describe("full dataset: bestiary", () => {
+  it("resolves a mission's monsters by mission name", async () => {
+    const { monstersInLocation } = await import("../src/index.js");
+    const monsters = monstersInLocation("The Great Northern Wall", index);
+    expect(monsters.length).toBeGreaterThan(5);
+    const drub = monsters.find((m) => m.monster.name === "Drub Gorefang");
+    expect(drub?.isBossHere).toBe(true);
+  });
+});
+
 describe("full dataset: build validation", () => {
   it("flags a two-elite warrior build", () => {
     const b: Build = {

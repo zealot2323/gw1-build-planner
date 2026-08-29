@@ -18,6 +18,7 @@ export interface DataIndex {
   locationByPage: Map<string, Location>;
   trainerByName: Map<string, Trainer>;
   monsterByPage: Map<string, Monster>;
+  missionByName: Map<string, Mission>;
 }
 
 export function indexDataset(dataset: Dataset): DataIndex {
@@ -27,6 +28,7 @@ export function indexDataset(dataset: Dataset): DataIndex {
     locationByPage: new Map(dataset.locations.map((l) => [l.wikiPage, l])),
     trainerByName: new Map(dataset.trainers.map((t) => [t.name, t])),
     monsterByPage: new Map(dataset.monsters.map((m) => [m.wikiPage, m])),
+    missionByName: new Map((dataset.missions ?? []).map((m) => [m.wikiPage, m])),
   };
 }
 

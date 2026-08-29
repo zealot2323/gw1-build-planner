@@ -14,11 +14,12 @@ export interface MonsterDisplay {
 }
 
 /**
- * Monsters spawning in a location (explorable or mission), with skill bars
- * and armor, ready for display. Unknown monster refs are skipped.
+ * Monsters spawning in a location (explorable) or a mission — the name is
+ * looked up in both — with skill bars and armor, ready for display.
+ * Unknown monster refs are skipped.
  */
 export function monstersInLocation(location: LocationRef, index: DataIndex): MonsterDisplay[] {
-  const loc = index.locationByPage.get(location);
+  const loc = index.locationByPage.get(location) ?? index.missionByName.get(location);
   if (!loc) return [];
   const bossSet = new Set(loc.bosses ?? []);
   const out: MonsterDisplay[] = [];
