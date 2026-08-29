@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Firstwatch Sergio",
+    "wikiPage": "Firstwatch Sergio",
+    "location": "Ascalon City",
+    "skillsOffered": ["Healing Breeze"]
+  },
+  {
+    "name": "Captain Osric",
+    "wikiPage": "Captain Osric",
+    "location": "Yak's Bend",
+    "skillsOffered": ["Healing Breeze", "Flare"]
+  }
+]

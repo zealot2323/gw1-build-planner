@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Stone Summit Gnasher",
+    "wikiPage": "Stone Summit Gnasher",
+    "species": "Dwarf",
+    "level": 10,
+    "armor": 40,
+    "armorTable": [
+      { "damageType": "base", "rating": 40 },
+      { "damageType": "Piercing damage", "rating": 46 }
+    ],
+    "skills": ["Healing Breeze", "Orison of Healing"],
+    "isBoss": false,
+    "locations": ["Traveler's Vale"]
+  },
+  {
+    "name": "Dagnar Stonepate",
+    "wikiPage": "Dagnar Stonepate",
+    "species": "Dwarf",
+    "level": 15,
+    "armor": 60,
+    "armorTable": [
+      { "damageType": "base", "rating": 60 }
+    ],
+    "skills": ["Backbreaker", "Power Attack"],
+    "isBoss": true,
+    "bossElite": "Backbreaker",
+    "locations": ["Traveler's Vale"]
+  }
+]

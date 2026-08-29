@@ -1,0 +1,31 @@
+[
+  {
+    "kind": "town",
+    "name": "Ascalon City",
+    "wikiPage": "Ascalon City",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "neighbors": ["Old Ascalon"],
+    "trainer": "Firstwatch Sergio",
+    "foes": []
+  },
+  {
+    "kind": "outpost",
+    "name": "Yak's Bend",
+    "wikiPage": "Yak's Bend",
+    "campaign": "Prophecies",
+    "region": "Northern Shiverpeaks",
+    "neighbors": ["Traveler's Vale"],
+    "trainer": "Captain Osric",
+    "foes": []
+  },
+  {
+    "kind": "explorable",
+    "name": "Traveler's Vale",
+    "wikiPage": "Traveler's Vale",
+    "campaign": "Prophecies",
+    "region": "Northern Shiverpeaks",
+    "neighbors": ["Yak's Bend"],
+    "foes": ["Stone Summit Gnasher", "Dagnar Stonepate"]
+  }
+]

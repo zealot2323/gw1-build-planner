@@ -1,0 +1,97 @@
+[
+  {
+    "name": "Healing Breeze",
+    "wikiPage": "Healing Breeze",
+    "gwSkillId": 287,
+    "profession": "Monk",
+    "attribute": "Healing Prayers",
+    "isElite": false,
+    "campaign": "Core",
+    "energyCost": 10,
+    "adrenalineCost": null,
+    "activation": 1,
+    "recharge": 2,
+    "description": "For 10 seconds, target ally gains Health regeneration.",
+    "acquisition": {
+      "trainers": ["Firstwatch Sergio", "Captain Osric"],
+      "quests": [],
+      "captureBosses": []
+    }
+  },
+  {
+    "name": "Flare",
+    "wikiPage": "Flare",
+    "gwSkillId": 173,
+    "profession": "Elementalist",
+    "attribute": "Fire Magic",
+    "isElite": false,
+    "campaign": "Core",
+    "energyCost": 5,
+    "adrenalineCost": null,
+    "activation": 1,
+    "recharge": 0,
+    "description": "Target foe is struck for fire damage.",
+    "acquisition": {
+      "trainers": ["Captain Osric"],
+      "quests": [],
+      "captureBosses": []
+    }
+  },
+  {
+    "name": "Orison of Healing",
+    "wikiPage": "Orison of Healing",
+    "gwSkillId": 286,
+    "profession": "Monk",
+    "attribute": "Healing Prayers",
+    "isElite": false,
+    "campaign": "Core",
+    "energyCost": 5,
+    "adrenalineCost": null,
+    "activation": 1,
+    "recharge": 2,
+    "description": "Heal target ally.",
+    "acquisition": {
+      "trainers": [],
+      "quests": ["A Mission of Peace"],
+      "captureBosses": []
+    }
+  },
+  {
+    "name": "Power Attack",
+    "wikiPage": "Power Attack",
+    "gwSkillId": 331,
+    "profession": "Warrior",
+    "attribute": null,
+    "isElite": false,
+    "campaign": "Core",
+    "energyCost": 5,
+    "adrenalineCost": null,
+    "activation": 0,
+    "recharge": 4,
+    "description": "If this attack hits, you strike for additional damage.",
+    "acquisition": {
+      "trainers": [],
+      "quests": ["Grawl Invasion"],
+      "captureBosses": []
+    }
+  },
+  {
+    "name": "Backbreaker",
+    "wikiPage": "Backbreaker",
+    "gwSkillId": 335,
+    "profession": "Warrior",
+    "attribute": "Hammer Mastery",
+    "isElite": true,
+    "campaign": "Prophecies",
+    "energyCost": null,
+    "adrenalineCost": 10,
+    "activation": 0,
+    "recharge": 0,
+    "description": "Elite Hammer Attack. If Backbreaker hits, your target is knocked down.",
+    "acquisition": {
+      "trainers": [],
+      "quests": [],
+      "captureBosses": ["Dagnar Stonepate"]
+    }
+  }
+]
