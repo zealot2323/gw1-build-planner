@@ -22,7 +22,8 @@
     "locations": [
       "Perdition Rock"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": null
   },
   {
     "name": "Abijah the Decayed",
@@ -43,7 +44,8 @@
     "locations": [
       "D'Alessio Seaboard"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Undead"
   },
   {
     "name": "Abomination (NPC)",
@@ -93,6 +95,7 @@
       "Dragon's Gullet"
     ],
     "profession": "Necromancer",
+    "affiliation": "Undead",
     "variants": [
       {
         "label": null,
@@ -127,7 +130,8 @@
     "locations": [
       "Frozen Forest"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Aguo Gruffmane",
@@ -148,7 +152,8 @@
     "locations": [
       "The Scar"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Alana Kepkep",
@@ -169,7 +174,8 @@
     "locations": [
       "Witman's Folly"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Allobo Dimdim",
@@ -192,7 +198,8 @@
       "Spearhead Peak",
       "Talus Chute"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Amir the Overripe",
@@ -213,7 +220,8 @@
     "locations": [
       "Nebo Terrace"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Undead"
   },
   {
     "name": "Anani Mokmok",
@@ -234,7 +242,8 @@
     "locations": [
       "Old Ascalon"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Ancient Oakheart",
@@ -292,6 +301,7 @@
       "D'Alessio Seaboard"
     ],
     "profession": "Monk",
+    "affiliation": "Kryta wildlife",
     "variants": [
       {
         "label": null,
@@ -327,6 +337,7 @@
       "Kessex Peak"
     ],
     "profession": "Necromancer",
+    "affiliation": "Cult of Verata",
     "variants": [
       {
         "label": null,
@@ -363,7 +374,8 @@
     "locations": [
       "Thunderhead Keep"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Arkhel Havenwood",
@@ -385,7 +397,8 @@
     "locations": [
       "Frozen Forest"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Arlak Stoneleaf",
@@ -407,7 +420,8 @@
     "locations": [
       "Ice Caves of Sorrow"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Armageddon Lord",
@@ -460,6 +474,7 @@
       "Gate of Madness"
     ],
     "profession": "Warrior",
+    "affiliation": "Titans",
     "variants": [
       {
         "label": null,
@@ -502,7 +517,8 @@
     "locations": [
       "Nebo Terrace"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Undead"
   },
   {
     "name": "Asynd Blindingclaw",
@@ -523,7 +539,8 @@
     "locations": [
       "Stingray Strand"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Caromi"
   },
   {
     "name": "Avicara Ardent",
@@ -576,6 +593,7 @@
       "Thunderhead Keep"
     ],
     "profession": "Monk",
+    "affiliation": "Avicara",
     "variants": [
       {
         "label": null,
@@ -645,6 +663,7 @@
       "Thunderhead Keep"
     ],
     "profession": "Warrior",
+    "affiliation": "Avicara",
     "variants": [
       {
         "label": null,
@@ -715,6 +734,7 @@
       "Thunderhead Keep"
     ],
     "profession": "Ranger",
+    "affiliation": "Avicara",
     "variants": [
       {
         "label": null,
@@ -784,6 +804,7 @@
       "Thunderhead Keep"
     ],
     "profession": "Necromancer",
+    "affiliation": "Avicara",
     "variants": [
       {
         "label": null,
@@ -851,6 +872,7 @@
       "Thunderhead Keep"
     ],
     "profession": "Mesmer",
+    "affiliation": "Avicara",
     "variants": [
       {
         "label": null,
@@ -888,7 +910,8 @@
     "locations": [
       "Dunes of Despair"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Azibo Painfeast",
@@ -909,7 +932,8 @@
     "locations": [
       "Nebo Terrace"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Undead"
   },
   {
     "name": "Aziz Rottenscalp",
@@ -930,7 +954,8 @@
     "locations": [
       "Nebo Terrace"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Undead"
   },
   {
     "name": "Azure Shadow",
@@ -988,6 +1013,7 @@
       "Iron Mines of Moladune"
     ],
     "profession": "Monk",
+    "affiliation": "Shiverpeak Mountains wildlife",
     "variants": [
       {
         "label": null,
@@ -1024,7 +1050,8 @@
     "locations": [
       "Riverside Province"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Bakkir the Forsaken",
@@ -1045,7 +1072,8 @@
     "locations": [
       "Gates of Kryta"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Undead"
   },
   {
     "name": "Balasi the Arcane",
@@ -1067,7 +1095,8 @@
     "locations": [
       "Iron Mines of Moladune"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Mursaat"
   },
   {
     "name": "Balt Duskstrider",
@@ -1088,7 +1117,8 @@
     "locations": [
       "Iron Mines of Moladune"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": null
   },
   {
     "name": "Balthazaar's Cursed",
@@ -1110,7 +1140,8 @@
     "locations": [
       "Perdition Rock"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Undead"
   },
   {
     "name": "Bandit Bruiser",
@@ -1128,7 +1159,8 @@
       "Forsaken Tunnels",
       "Tunnels of the Forsaken"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": null
   },
   {
     "name": "Bandit Captain",
@@ -1146,7 +1178,8 @@
       "Forsaken Tunnels",
       "Tunnels of the Forsaken"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": null
   },
   {
     "name": "Bandit Enforcer",
@@ -1164,7 +1197,8 @@
       "Forsaken Tunnels",
       "Tunnels of the Forsaken"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": null
   },
   {
     "name": "Bandit Firebug",
@@ -1184,7 +1218,8 @@
       "Forsaken Tunnels",
       "Tunnels of the Forsaken"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Bandits"
   },
   {
     "name": "Bandit Firestarter",
@@ -1235,6 +1270,7 @@
       "Wizard's Folly"
     ],
     "profession": "Elementalist",
+    "affiliation": "Bandits",
     "locationLevels": {
       "Lakeside County: 1070 AE": 15
     }
@@ -1287,6 +1323,7 @@
       "Wizard's Folly"
     ],
     "profession": "Warrior",
+    "affiliation": "Bandits",
     "locationLevels": {
       "Lakeside County: 1070 AE": 15
     }
@@ -1310,7 +1347,8 @@
     "locations": [
       "D'Alessio Seaboard"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Undead"
   },
   {
     "name": "Barbed Grawl",
@@ -1360,7 +1398,8 @@
     "locations": [
       "Talus Chute"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Barl Stormsiege",
@@ -1382,7 +1421,8 @@
     "locations": [
       "Frozen Forest"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Bearn the Implacable",
@@ -1403,7 +1443,8 @@
     "locations": [
       "Riverside Province"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Berg Frozenfist",
@@ -1425,7 +1466,8 @@
     "locations": [
       "Ice Caves of Sorrow"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Bija Gravewailer",
@@ -1446,7 +1488,8 @@
     "locations": [
       "Divinity Coast"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Undead"
   },
   {
     "name": "Blaze Bloodbane",
@@ -1468,7 +1511,8 @@
       "The Northlands",
       "Nolani Academy"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Charr"
   },
   {
     "name": "Bleck Oogle",
@@ -1489,7 +1533,8 @@
     "locations": [
       "Diviner's Ascent"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Blessed Griffon",
@@ -1546,6 +1591,7 @@
       "Thunderhead Keep"
     ],
     "profession": "Monk",
+    "affiliation": "Shiverpeak Mountains wildlife",
     "variants": [
       {
         "label": null,
@@ -1619,6 +1665,7 @@
       "Divinity Coast"
     ],
     "profession": "Necromancer",
+    "affiliation": "Kryta wildlife",
     "variants": [
       {
         "label": null,
@@ -1688,6 +1735,7 @@
       "The Black Curtain"
     ],
     "profession": "Necromancer",
+    "affiliation": "Kryta wildlife",
     "variants": [
       {
         "label": null,
@@ -1757,6 +1805,7 @@
       "Stingray Strand"
     ],
     "profession": "Necromancer",
+    "affiliation": "Kryta wildlife",
     "variants": [
       {
         "label": null,
@@ -1793,7 +1842,8 @@
     "locations": [
       "Thunderhead Keep"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Bolo Falsehoof",
@@ -1814,7 +1864,8 @@
     "locations": [
       "Silverwood"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Bone Dragon",
@@ -1866,7 +1917,8 @@
       "Riverside Province",
       "Sanctum Cay"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Undead"
   },
   {
     "name": "Bone Dragon (boss)",
@@ -1887,7 +1939,8 @@
     "locations": [
       "Sanctum Cay"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Undead"
   },
   {
     "name": "Bonetti",
@@ -1908,7 +1961,8 @@
     "locations": [
       "Old Ascalon"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Bandits"
   },
   {
     "name": "Bonfaaz Burntfur",
@@ -1930,7 +1984,8 @@
       "Nolani Academy",
       "The Great Northern Wall"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Charr"
   },
   {
     "name": "Boreal Kubeclaw",
@@ -1952,7 +2007,8 @@
     "locations": [
       "Frozen Forest"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Boulad the Perverse",
@@ -1973,7 +2029,8 @@
     "locations": [
       "Nebo Terrace"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Undead"
   },
   {
     "name": "Boulder Elemental",
@@ -2025,6 +2082,7 @@
       "Nolani Academy"
     ],
     "profession": "Warrior",
+    "affiliation": "Ascalon wildlife",
     "variants": [
       {
         "label": null,
@@ -2065,7 +2123,8 @@
     "locations": [
       "Riverside Province"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Bramblehash",
@@ -2087,7 +2146,8 @@
     "locations": [
       "Sage Lands"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Brand the Brawler",
@@ -2108,7 +2168,8 @@
     "locations": [
       "Nolani Academy"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Charr"
   },
   {
     "name": "Breeze Keeper",
@@ -2159,7 +2220,8 @@
       "Perdition Rock",
       "Ring of Fire"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Ring of Fire Islands wildlife"
   },
   {
     "name": "Bristlefire",
@@ -2181,7 +2243,8 @@
     "locations": [
       "Ettin's Back"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Brogan the Punisher",
@@ -2203,7 +2266,8 @@
       "Twin Serpent Lakes",
       "Twin Serpent Lakes (War in Kryta)"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Brohn Stoneheart",
@@ -2226,7 +2290,8 @@
     "locations": [
       "Sorrow's Furnace"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Brol Migo Hinga",
@@ -2250,7 +2315,8 @@
       "The Arid Sea",
       "Vulture Drifts"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Brrrr Windburn",
@@ -2272,7 +2338,8 @@
     "locations": [
       "Talus Chute"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": null
   },
   {
     "name": "Bucknar Runeguard",
@@ -2293,7 +2360,8 @@
     "locations": [
       "The Frost Gate"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Burning Titan",
@@ -2342,7 +2410,8 @@
     "locations": [
       "Hell's Precipice"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Titans"
   },
   {
     "name": "Burr Mankiller",
@@ -2362,7 +2431,8 @@
     "locations": [
       "Ruins of Surmia"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Charr"
   },
   {
     "name": "Byssha Hisst",
@@ -2384,7 +2454,8 @@
     "locations": [
       "Dunes of Despair"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Cairn the Destroyer",
@@ -2405,7 +2476,8 @@
     "locations": [
       "Abaddon's Mouth"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Mursaat"
   },
   {
     "name": "Cairn the Relentless",
@@ -2427,7 +2499,8 @@
     "locations": [
       "Abaddon's Mouth"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Mursaat"
   },
   {
     "name": "Cairn the Smug",
@@ -2448,7 +2521,8 @@
     "locations": [
       "Ring of Fire"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Mursaat"
   },
   {
     "name": "Cairn the Troubling",
@@ -2470,7 +2544,8 @@
     "locations": [
       "Ring of Fire"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Mursaat"
   },
   {
     "name": "Caromi Tengu Brave",
@@ -2526,6 +2601,7 @@
       "Divinity Coast"
     ],
     "profession": "Warrior",
+    "affiliation": "Caromi",
     "variants": [
       {
         "label": "Level 12",
@@ -2606,6 +2682,7 @@
       "Twin Serpent Lakes"
     ],
     "profession": "Warrior",
+    "affiliation": "Caromi",
     "variants": [
       {
         "label": "Axe wielding",
@@ -2680,6 +2757,7 @@
       "Twin Serpent Lakes"
     ],
     "profession": "Ranger",
+    "affiliation": "Caromi",
     "variants": [
       {
         "label": null,
@@ -2748,6 +2826,7 @@
       "Divinity Coast"
     ],
     "profession": "Ranger",
+    "affiliation": "Caromi",
     "variants": [
       {
         "label": null,
@@ -2812,6 +2891,7 @@
       "Twin Serpent Lakes"
     ],
     "profession": "Mesmer",
+    "affiliation": "Caromi",
     "variants": [
       {
         "label": null,
@@ -2880,6 +2960,7 @@
       "Watchtower Coast"
     ],
     "profession": "Mesmer",
+    "affiliation": "Caromi",
     "variants": [
       {
         "label": null,
@@ -2957,6 +3038,7 @@
       "The Great Northern Wall"
     ],
     "profession": "Warrior",
+    "affiliation": "Ascalon wildlife",
     "variants": [
       {
         "label": "Level ?:",
@@ -2995,7 +3077,8 @@
     "locations": [
       "Ring of Fire"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": null
   },
   {
     "name": "Caza Windedcalf",
@@ -3015,7 +3098,8 @@
     "locations": [
       "The Scar"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Cella the Hooded",
@@ -3036,7 +3120,8 @@
     "locations": [
       "North Kryta Province"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Centaur Scout",
@@ -3085,7 +3170,8 @@
     "locations": [
       "The Wilds"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Ceru Gloomrunner",
@@ -3107,7 +3193,8 @@
     "locations": [
       "Iron Mines of Moladune"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Cess Corpselighter",
@@ -3127,7 +3214,8 @@
     "locations": [
       "The Breach"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Charr"
   },
   {
     "name": "Chak Hack Schawack",
@@ -3152,7 +3240,8 @@
       "The Scar",
       "Vulture Drifts"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Charr Ashen Claw",
@@ -3213,6 +3302,7 @@
       "The Great Northern Wall"
     ],
     "profession": "Necromancer",
+    "affiliation": "Charr",
     "variants": [
       {
         "label": null,
@@ -3287,6 +3377,7 @@
       "The Rise of the White Mantle"
     ],
     "profession": "Warrior",
+    "affiliation": "Charr",
     "variants": [
       {
         "label": "Ascalon, Forsaken Tunnels",
@@ -3371,6 +3462,7 @@
       "The Great Northern Wall"
     ],
     "profession": "Warrior",
+    "affiliation": "Charr",
     "variants": [
       {
         "label": null,
@@ -3441,6 +3533,7 @@
       "Nolani Academy"
     ],
     "profession": "Warrior",
+    "affiliation": "Charr",
     "variants": [
       {
         "label": null,
@@ -3483,6 +3576,7 @@
       "The Great Northern Wall"
     ],
     "profession": "Warrior",
+    "affiliation": "Charr",
     "variants": [
       {
         "label": null,
@@ -3561,6 +3655,7 @@
       "Nolani Academy"
     ],
     "profession": "Mesmer",
+    "affiliation": "Charr",
     "variants": [
       {
         "label": null,
@@ -3646,6 +3741,7 @@
       "Ruins of Surmia"
     ],
     "profession": "Elementalist",
+    "affiliation": "Charr",
     "variants": [
       {
         "label": null,
@@ -3716,6 +3812,7 @@
       "Ruins of Surmia"
     ],
     "profession": "Elementalist",
+    "affiliation": "Charr",
     "variants": [
       {
         "label": null,
@@ -3804,6 +3901,7 @@
       "Nolani Academy"
     ],
     "profession": "Ranger",
+    "affiliation": "Charr",
     "variants": [
       {
         "label": null,
@@ -3888,6 +3986,7 @@
       "Ruins of Surmia"
     ],
     "profession": "Monk",
+    "affiliation": "Charr",
     "variants": [
       {
         "label": "Level 4, 5, 10, 12",
@@ -3979,6 +4078,7 @@
       "Ruins of Surmia"
     ],
     "profession": "Mesmer",
+    "affiliation": "Charr",
     "variants": [
       {
         "label": null,
@@ -4044,6 +4144,7 @@
       "Fort Ranik"
     ],
     "profession": "Monk",
+    "affiliation": "Charr",
     "variants": [
       {
         "label": null,
@@ -4085,6 +4186,7 @@
       "The Flight North"
     ],
     "profession": "Warrior",
+    "affiliation": "Charr",
     "variants": [
       {
         "label": "Warrior version",
@@ -4165,6 +4267,7 @@
       "Nolani Academy"
     ],
     "profession": "Monk",
+    "affiliation": "Charr",
     "variants": [
       {
         "label": null,
@@ -4266,6 +4369,7 @@
       "Ruins of Surmia"
     ],
     "profession": "Ranger",
+    "affiliation": "Charr",
     "variants": [
       {
         "label": null,
@@ -4331,7 +4435,8 @@
     "locations": [
       "Fort Ranik"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Charr"
   },
   {
     "name": "Chott Stormsinger",
@@ -4354,7 +4459,8 @@
       "Aurora Glade",
       "The Wilds"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Chrysos the Magnetic",
@@ -4377,7 +4483,8 @@
     "locations": [
       "Thunderhead Keep"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": null
   },
   {
     "name": "Chuff Quickbeak",
@@ -4398,7 +4505,8 @@
     "locations": [
       "North Kryta Province"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Caromi"
   },
   {
     "name": "Chunk Clumpfoot",
@@ -4420,7 +4528,8 @@
     "locations": [
       "Lornar's Pass"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Clarion Shinypate",
@@ -4441,7 +4550,8 @@
     "locations": [
       "Prophet's Path"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Claw Fleshfixer",
@@ -4462,7 +4572,8 @@
     "locations": [
       "The Great Northern Wall"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Clob Stonearch",
@@ -4480,7 +4591,8 @@
     "locations": [
       "Diessa Lowlands"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Clobberhusk",
@@ -4502,7 +4614,8 @@
     "locations": [
       "Lornar's Pass"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Cobble Poundstone",
@@ -4522,7 +4635,8 @@
     "locations": [
       "Old Ascalon"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Confessor Dorian",
@@ -4548,6 +4662,7 @@
       "The Rise of the White Mantle"
     ],
     "profession": "Monk",
+    "affiliation": "White Mantle",
     "variants": [
       {
         "label": "Prophecies",
@@ -4589,7 +4704,8 @@
     "locations": [
       "Prophet's Path"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Corbin the Upright",
@@ -4611,7 +4727,8 @@
     "locations": [
       "Riverside Province"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Coventina the Matron",
@@ -4633,7 +4750,8 @@
     "locations": [
       "Ring of Fire"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Mursaat"
   },
   {
     "name": "Crag Behemoth",
@@ -4683,7 +4801,8 @@
     "locations": [
       "Abaddon's Mouth"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": null
   },
   {
     "name": "Craze the Unforgiving",
@@ -4704,7 +4823,8 @@
     "locations": [
       "Fort Ranik"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Charr"
   },
   {
     "name": "Crimson Devourer",
@@ -4753,6 +4873,7 @@
       "Pockmark Flats"
     ],
     "profession": "Ranger",
+    "affiliation": "Ascalon wildlife",
     "variants": [
       {
         "label": null,
@@ -4788,7 +4909,8 @@
     "locations": [
       "The Frost Gate"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Crown of Thorns",
@@ -4812,6 +4934,7 @@
       "Tunnels of the Forsaken"
     ],
     "profession": "Monk",
+    "affiliation": "Ascalon wildlife",
     "variants": [
       {
         "label": null,
@@ -4848,7 +4971,8 @@
     "locations": [
       "Diessa Lowlands"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Charr"
   },
   {
     "name": "Crush Kill",
@@ -4866,7 +4990,8 @@
     "locations": [
       "Nolani Academy"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Cry Darkday",
@@ -4889,7 +5014,8 @@
     "locations": [
       "Snake Dance"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": null
   },
   {
     "name": "Crystal Guardian",
@@ -4938,7 +5064,8 @@
     "locations": [
       "The Dragon's Lair"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": null
   },
   {
     "name": "Crystal Spider",
@@ -4989,6 +5116,7 @@
       "The Dragon's Lair"
     ],
     "profession": "Mesmer",
+    "affiliation": "Crystal Desert wildlife",
     "variants": [
       {
         "label": null,
@@ -5025,7 +5153,8 @@
     "locations": [
       "Elona Reach"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Custodian Fidius",
@@ -5047,7 +5176,8 @@
     "locations": [
       "Dunes of Despair"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Custodian Hulgar",
@@ -5069,7 +5199,8 @@
     "locations": [
       "Thirsty River"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Custodian Jenus",
@@ -5092,7 +5223,8 @@
     "locations": [
       "Elona Reach"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Custodian Kora",
@@ -5115,7 +5247,8 @@
     "locations": [
       "Dunes of Despair"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Custodian Phebus",
@@ -5138,7 +5271,8 @@
     "locations": [
       "Thirsty River"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Cuthbert the Chaste",
@@ -5159,7 +5293,8 @@
     "locations": [
       "Aurora Glade"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Cyrus the Unflattering",
@@ -5180,7 +5315,8 @@
     "locations": [
       "Riverside Province"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Cyss Gresshla",
@@ -5203,7 +5339,8 @@
     "locations": [
       "Dunes of Despair"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Dagnar Stonepate",
@@ -5225,7 +5362,8 @@
       "The Frost Gate",
       "Thunderhead Keep"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Dahr the Diseased",
@@ -5246,7 +5384,8 @@
     "locations": [
       "Nebo Terrace"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Undead"
   },
   {
     "name": "Damis the Malignant",
@@ -5267,7 +5406,8 @@
     "locations": [
       "Riverside Province"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Undead"
   },
   {
     "name": "Damned Cleric",
@@ -5326,7 +5466,8 @@
       "Riverside Province",
       "Sanctum Cay"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Undead"
   },
   {
     "name": "Darda Goldenchief",
@@ -5348,7 +5489,8 @@
     "locations": [
       "Ice Caves of Sorrow"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Dark Flame Dryder",
@@ -5398,7 +5540,8 @@
       "Perdition Rock",
       "Abaddon's Mouth"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Ring of Fire Islands wildlife"
   },
   {
     "name": "Darwym the Spiteful",
@@ -5419,7 +5562,8 @@
     "locations": [
       "Riverside Province"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Dassk Arossyss",
@@ -5441,7 +5585,8 @@
     "locations": [
       "Dunes of Despair"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Debrio Gangleweb",
@@ -5460,7 +5605,8 @@
     ],
     "isBoss": true,
     "locations": [],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Demagogue",
@@ -5481,7 +5627,8 @@
     "locations": [
       "Aurora Glade"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Demetrios the Enduring",
@@ -5503,7 +5650,8 @@
     "locations": [
       "Thunderhead Keep"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": null
   },
   {
     "name": "Desert Griffon",
@@ -5556,6 +5704,7 @@
       "Vulture Drifts"
     ],
     "profession": "Warrior",
+    "affiliation": "Crystal Desert wildlife",
     "variants": [
       {
         "label": null,
@@ -5590,7 +5739,8 @@
     "locations": [
       "Snake Dance"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": null
   },
   {
     "name": "Digo Murkstalker",
@@ -5611,7 +5761,8 @@
     "locations": [
       "Iron Mines of Moladune"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": null
   },
   {
     "name": "Divingbeak",
@@ -5631,7 +5782,8 @@
     "locations": [
       "Vulture Drifts"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Dolyak Master",
@@ -5696,6 +5848,7 @@
       "Thunderhead Keep"
     ],
     "profession": "Monk",
+    "affiliation": "Stone Summit",
     "variants": [
       {
         "label": "Prophecies",
@@ -5769,6 +5922,7 @@
       "The Frost Gate"
     ],
     "profession": "Monk",
+    "affiliation": "Stone Summit",
     "variants": [
       {
         "label": null,
@@ -5828,7 +5982,8 @@
     "skills": [],
     "isBoss": false,
     "locations": [],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": null
   },
   {
     "name": "Doro Icehide",
@@ -5850,7 +6005,8 @@
     "locations": [
       "The Scar"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Dosakaru Fevertouch",
@@ -5873,7 +6029,8 @@
     "locations": [
       "Perdition Rock"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Ring of Fire Islands wildlife"
   },
   {
     "name": "Dracul Cadava",
@@ -5893,7 +6050,8 @@
     "locations": [
       "Riverside Province"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Undead"
   },
   {
     "name": "Drago Stoneherder",
@@ -5915,7 +6073,8 @@
     "locations": [
       "Sorrow's Furnace"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Drake (NPC)",
@@ -5967,7 +6126,8 @@
       "Perdition Rock",
       "Ring of Fire"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Ring of Fire Islands wildlife"
   },
   {
     "name": "Dread Nightstalk",
@@ -5988,7 +6148,8 @@
     "locations": [
       "Talmark Wilderness"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Drech Galumph",
@@ -6007,7 +6168,8 @@
     ],
     "isBoss": true,
     "locations": [],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Dredge Brute",
@@ -6027,7 +6189,8 @@
     "locations": [
       "Sorrow's Furnace"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": null
   },
   {
     "name": "Dredge Scout",
@@ -6076,7 +6239,8 @@
     "locations": [
       "Sorrow's Furnace"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": null
   },
   {
     "name": "Dredge Shaman",
@@ -6126,7 +6290,8 @@
     "locations": [
       "Sorrow's Furnace"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Dredge Spirit Caller",
@@ -6176,7 +6341,8 @@
     "locations": [
       "Sorrow's Furnace"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": null
   },
   {
     "name": "Dredge Spirit Guard",
@@ -6225,7 +6391,8 @@
     "locations": [
       "Sorrow's Furnace"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": null
   },
   {
     "name": "Dredge Spirit Keeper",
@@ -6275,7 +6442,8 @@
     "locations": [
       "Sorrow's Furnace"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Drim Cindershot",
@@ -6296,7 +6464,8 @@
     "locations": [
       "The Breach"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Charr"
   },
   {
     "name": "Droog Stoneclub",
@@ -6317,7 +6486,8 @@
     "locations": [
       "D'Alessio Seaboard"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Drub Gorefang",
@@ -6338,7 +6508,8 @@
     "locations": [
       "The Great Northern Wall"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Charr"
   },
   {
     "name": "Drub Slingstone",
@@ -6354,7 +6525,8 @@
     "locations": [
       "Diessa Lowlands"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Dune Burrower",
@@ -6407,6 +6579,7 @@
       "Elona Reach"
     ],
     "profession": "Ranger",
+    "affiliation": "Crystal Desert wildlife",
     "variants": [
       {
         "label": null,
@@ -6444,7 +6617,8 @@
     "locations": [
       "The Frost Gate"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Dwayna's Cursed",
@@ -6467,7 +6641,8 @@
     "locations": [
       "Perdition Rock"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Undead"
   },
   {
     "name": "Dyv Cloudclaw",
@@ -6488,7 +6663,8 @@
     "locations": [
       "Divinity Coast"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Caromi"
   },
   {
     "name": "Edgar the Iron Fist",
@@ -6510,7 +6686,8 @@
     "locations": [
       "Sanctum Cay"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Edibbo Kepkep",
@@ -6532,7 +6709,8 @@
       "Spearhead Peak",
       "Talus Chute"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Edmi Visionmane",
@@ -6553,7 +6731,8 @@
     "locations": [
       "Ettin's Back"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Edred the Bruiser",
@@ -6575,7 +6754,8 @@
       "Twin Serpent Lakes",
       "Twin Serpent Lakes (War in Kryta)"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Eepeep the Mindrain",
@@ -6596,7 +6776,8 @@
     "locations": [
       "Watchtower Coast"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Eidolon",
@@ -6649,7 +6830,8 @@
       "Abaddon's Mouth",
       "Ring of Fire"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": null
   },
   {
     "name": "Elvina the Pious",
@@ -6671,7 +6853,8 @@
       "Twin Serpent Lakes",
       "Twin Serpent Lakes (War in Kryta)"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Ember Bearer",
@@ -6720,6 +6903,7 @@
       "Ruins of Surmia"
     ],
     "profession": "Warrior",
+    "affiliation": "Charr",
     "variants": [
       {
         "label": null,
@@ -6789,6 +6973,7 @@
       "Thirsty River"
     ],
     "profession": "Ranger",
+    "affiliation": "Forgotten",
     "variants": [
       {
         "label": null,
@@ -6860,7 +7045,8 @@
       "Dunes of Despair",
       "The Dragon's Lair"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Enchanted Sword (Prophecies)",
@@ -6918,6 +7104,7 @@
       "Thirsty River"
     ],
     "profession": "Warrior",
+    "affiliation": "Forgotten",
     "variants": [
       {
         "label": null,
@@ -6980,7 +7167,8 @@
     "locations": [
       "Dunes of Despair"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Undead"
   },
   {
     "name": "Enemy Priest",
@@ -7030,6 +7218,7 @@
       "Thirsty River"
     ],
     "profession": "Monk",
+    "affiliation": null,
     "variants": [
       {
         "label": null,
@@ -7094,7 +7283,8 @@
       "Fronis Irontoe's Lair",
       "Sorrow's Furnace"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Enslaved Frost Giant",
@@ -7114,7 +7304,8 @@
     "locations": [
       "Thunderhead Keep"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Entangling Root",
@@ -7163,7 +7354,8 @@
     "locations": [
       "Majesty's Rest"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Entangling Roots",
@@ -7212,6 +7404,7 @@
       "The Wilds"
     ],
     "profession": "Ranger",
+    "affiliation": "Maguuma Jungle wildlife",
     "variants": [
       {
         "label": null,
@@ -7246,7 +7439,8 @@
     "locations": [
       "Lornar's Pass"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Esnhal Hardwood",
@@ -7267,7 +7461,8 @@
     "locations": [
       "Frozen Forest"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Essam Festerskull",
@@ -7288,7 +7483,8 @@
     "locations": [
       "Riverside Province"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Undead"
   },
   {
     "name": "Ether Seal",
@@ -7340,7 +7536,8 @@
       "Abaddon's Mouth",
       "Ring of Fire"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Mursaat"
   },
   {
     "name": "Euhh Snickersnak",
@@ -7361,7 +7558,8 @@
     "locations": [
       "Sage Lands"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Executioner",
@@ -7416,6 +7614,7 @@
       "Sanctum Cay"
     ],
     "profession": "Warrior",
+    "affiliation": "Undead",
     "variants": [
       {
         "label": null,
@@ -7451,6 +7650,7 @@
       "Kessex Peak"
     ],
     "profession": "Ranger",
+    "affiliation": "Cult of Verata",
     "variants": [
       {
         "label": null,
@@ -7516,7 +7716,8 @@
     "locations": [
       "The Dragon's Lair"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Facet of Darkness",
@@ -7567,7 +7768,8 @@
     "locations": [
       "The Dragon's Lair"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Facet of Elements",
@@ -7619,7 +7821,8 @@
     "locations": [
       "The Dragon's Lair"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Facet of Light",
@@ -7669,7 +7872,8 @@
     "locations": [
       "The Dragon's Lair"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Facet of Nature",
@@ -7720,7 +7924,8 @@
     "locations": [
       "The Dragon's Lair"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Facet of Strength",
@@ -7771,7 +7976,8 @@
     "locations": [
       "The Dragon's Lair"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Falls the Fishfinder",
@@ -7792,7 +7998,8 @@
     "locations": [
       "Tangle Root"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Fareed the Unworthy",
@@ -7812,7 +8019,8 @@
     "locations": [
       "Sanctum Cay"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Undead"
   },
   {
     "name": "Fariq Earthturner",
@@ -7832,7 +8040,8 @@
     "locations": [
       "Sanctum Cay"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Undead"
   },
   {
     "name": "Fauul the Windburner",
@@ -7853,7 +8062,8 @@
     "locations": [
       "Watchtower Coast"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Fawa Torncalf",
@@ -7874,7 +8084,8 @@
     "locations": [
       "The Wilds"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Fawl Driftstalker",
@@ -7895,7 +8106,8 @@
     "locations": [
       "Snake Dance"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": null
   },
   {
     "name": "Featherclaw",
@@ -7917,7 +8129,8 @@
     "locations": [
       "Snake Dance"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": null
   },
   {
     "name": "Featherfist",
@@ -7937,7 +8150,8 @@
     "locations": [
       "Prophet's Path"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Felinam the Whip",
@@ -7958,7 +8172,8 @@
     "locations": [
       "Nolani Academy"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Charr"
   },
   {
     "name": "Fen Troll",
@@ -7980,6 +8195,7 @@
       "Majesty's Rest"
     ],
     "profession": "Warrior",
+    "affiliation": "Kryta wildlife",
     "variants": [
       {
         "label": null,
@@ -8015,7 +8231,8 @@
     "locations": [
       "Iron Horse Mine"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Feodor the Baneful",
@@ -8037,7 +8254,8 @@
     "locations": [
       "Iron Mines of Moladune"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Mursaat"
   },
   {
     "name": "Ferk Mallet",
@@ -8060,7 +8278,8 @@
     "locations": [
       "Ring of Fire"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Ring of Fire Islands wildlife"
   },
   {
     "name": "Fester Fang",
@@ -8083,7 +8302,8 @@
       "Pockmark Flats",
       "Ruins of Surmia"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Fevered Devourer",
@@ -8137,6 +8357,7 @@
       "Bloodstone Fen"
     ],
     "profession": "Necromancer",
+    "affiliation": "Maguuma Jungle wildlife",
     "variants": [
       {
         "label": null,
@@ -8199,6 +8420,7 @@
       "North Kryta Province"
     ],
     "profession": "Elementalist",
+    "affiliation": "Kryta wildlife",
     "variants": [
       {
         "label": null,
@@ -8263,6 +8485,7 @@
       "Ruins of Surmia"
     ],
     "profession": "Elementalist",
+    "affiliation": "Charr",
     "variants": [
       {
         "label": null,
@@ -8302,7 +8525,8 @@
     "locations": [
       "Diviner's Ascent"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Flash Darkspine",
@@ -8323,7 +8547,8 @@
     "locations": [
       "Ettin's Back"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": null
   },
   {
     "name": "Flash Gargoyle",
@@ -8379,6 +8604,7 @@
       "The Great Northern Wall"
     ],
     "profession": "Elementalist",
+    "affiliation": "Ascalon wildlife",
     "variants": [
       {
         "label": null,
@@ -8416,7 +8642,8 @@
     "locations": [
       "Ettin's Back"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Fleck Grokspit",
@@ -8437,7 +8664,8 @@
     "locations": [
       "The Great Northern Wall"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Flesh Golem (NPC)",
@@ -8489,7 +8717,8 @@
       "Perdition Rock",
       "Abaddon's Mouth"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": null
   },
   {
     "name": "Fling Bloodpelt",
@@ -8510,7 +8739,8 @@
     "locations": [
       "Ruins of Surmia"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Charr"
   },
   {
     "name": "Flint Fleshcleaver",
@@ -8532,7 +8762,8 @@
     "locations": [
       "Grenth's Footprint"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Flint Touchstone",
@@ -8553,7 +8784,8 @@
     "locations": [
       "Old Ascalon"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Fluum Banzo",
@@ -8575,7 +8807,8 @@
     "locations": [
       "Divinity Coast"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Flyt Stormbeak",
@@ -8596,7 +8829,8 @@
     "locations": [
       "Nebo Terrace"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Caromi"
   },
   {
     "name": "Fog Nightmare",
@@ -8651,6 +8885,7 @@
       "Riverside Province"
     ],
     "profession": "Necromancer",
+    "affiliation": "Kryta wildlife",
     "variants": [
       {
         "label": null,
@@ -8717,6 +8952,7 @@
       "Talmark Wilderness"
     ],
     "profession": "Warrior",
+    "affiliation": "Kryta wildlife",
     "variants": [
       {
         "label": null,
@@ -8784,6 +9020,7 @@
       "The Dragon's Lair"
     ],
     "profession": "Elementalist",
+    "affiliation": null,
     "variants": [
       {
         "label": null,
@@ -8820,7 +9057,8 @@
     "locations": [
       "Thirsty River"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Forgotten Champion",
@@ -8870,7 +9108,8 @@
     "locations": [
       "Thirsty River"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Forgotten Cursebearer",
@@ -8923,6 +9162,7 @@
       "The Dragon's Lair"
     ],
     "profession": "Necromancer",
+    "affiliation": null,
     "variants": [
       {
         "label": null,
@@ -8991,6 +9231,7 @@
       "The Dragon's Lair"
     ],
     "profession": "Mesmer",
+    "affiliation": null,
     "variants": [
       {
         "label": null,
@@ -9058,6 +9299,7 @@
       "The Dragon's Lair"
     ],
     "profession": "Monk",
+    "affiliation": null,
     "variants": [
       {
         "label": null,
@@ -9094,7 +9336,8 @@
     "locations": [
       "Divinity Coast"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Frash the Cold",
@@ -9115,7 +9358,8 @@
     "locations": [
       "The Black Curtain"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Frost Wurm",
@@ -9171,7 +9415,8 @@
       "Frostmaw's Burrows",
       "Sepulchre of Dragrimmar"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Frostbite",
@@ -9193,7 +9438,8 @@
       "Ice Floe",
       "Talus Chute"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": null
   },
   {
     "name": "Frostfire Dryder",
@@ -9247,6 +9493,7 @@
       "Borlis Pass"
     ],
     "profession": "Necromancer",
+    "affiliation": "Shiverpeak Mountains wildlife",
     "variants": [
       {
         "label": null,
@@ -9279,7 +9526,8 @@
       "Iron Horse Mine",
       "Anvil Rock"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Frostfire Dryder (mesmer boss)",
@@ -9296,7 +9544,8 @@
       "Iron Horse Mine",
       "Anvil Rock"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Frostfire Dryder (necromancer boss)",
@@ -9317,7 +9566,8 @@
     "locations": [
       "Iron Horse Mine"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Fryn Rageflame",
@@ -9338,7 +9588,8 @@
     "locations": [
       "The Falls"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Fume Kindleflail",
@@ -9359,7 +9610,8 @@
     "locations": [
       "The Great Northern Wall"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Charr"
   },
   {
     "name": "Furnace Guardian",
@@ -9375,7 +9627,8 @@
     "locations": [
       "Sorrow's Furnace"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Fuury Stonewrath",
@@ -9397,7 +9650,8 @@
     "locations": [
       "Thunderhead Keep"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Gack Splotchplunk",
@@ -9419,7 +9673,8 @@
     "locations": [
       "Watchtower Coast"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Gack the Mindwrecker",
@@ -9440,7 +9695,8 @@
     "locations": [
       "The Black Curtain"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Gaiza Deadeye",
@@ -9462,7 +9718,8 @@
     "locations": [
       "Riverside Province"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Undead"
   },
   {
     "name": "Galigord Stonestrike",
@@ -9483,7 +9740,8 @@
     "locations": [
       "Sorrow's Furnace"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Gambol Headrainer",
@@ -9506,7 +9764,8 @@
     "locations": [
       "Ice Floe"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Gambol the Headrainer",
@@ -9527,7 +9786,8 @@
     "locations": [
       "Nebo Terrace"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Garbok Handsmasher",
@@ -9549,7 +9809,8 @@
     "locations": [
       "Sorrow's Furnace"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Gardock Stonesoul",
@@ -9572,7 +9833,8 @@
     "locations": [
       "Sorrow's Furnace"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Gargash Thornbeard",
@@ -9594,7 +9856,8 @@
     "locations": [
       "Grenth's Footprint"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Garr the Merciful",
@@ -9616,7 +9879,8 @@
     "locations": [
       "Aurora Glade"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Garris Nightwatch",
@@ -9638,7 +9902,8 @@
       "Iron Horse Mine",
       "The Frost Gate"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Geck the Coldblooded",
@@ -9659,7 +9924,8 @@
     "locations": [
       "North Kryta Province"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Geckokaru Earthwind",
@@ -9682,7 +9948,8 @@
     "locations": [
       "Perdition Rock"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Ring of Fire Islands wildlife"
   },
   {
     "name": "Geno Darkheart",
@@ -9699,7 +9966,8 @@
       "Deldrimor Bowl",
       "Borlis Pass"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Gezna Shadowstalker",
@@ -9720,7 +9988,8 @@
     "locations": [
       "D'Alessio Seaboard"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Undead"
   },
   {
     "name": "Ghast Ashpyre",
@@ -9742,7 +10011,8 @@
       "The Northlands",
       "Nolani Academy"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Charr"
   },
   {
     "name": "Ghazal the Corrupter",
@@ -9763,7 +10033,8 @@
     "locations": [
       "Sanctum Cay"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Undead"
   },
   {
     "name": "Ghilaparu Stormstone",
@@ -9785,7 +10056,8 @@
     "locations": [
       "Diviner's Ascent"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Ghita Bonz",
@@ -9807,7 +10079,8 @@
       "Majesty's Rest",
       "Divinity Coast"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Undead"
   },
   {
     "name": "Gilroy the Stoic",
@@ -9830,7 +10103,8 @@
       "Twin Serpent Lakes",
       "Twin Serpent Lakes (War in Kryta)"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Ginz Hailflare",
@@ -9852,7 +10126,8 @@
     "locations": [
       "Salt Flats"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Glint",
@@ -9897,7 +10172,8 @@
     "locations": [
       "The Dragon's Lair"
     ],
-    "profession": null
+    "profession": null,
+    "affiliation": "Brotherhood of the Dragon"
   },
   {
     "name": "Glutt Wallop",
@@ -9918,7 +10194,8 @@
     "locations": [
       "Nebo Terrace"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Glyd Swiftwing",
@@ -9939,7 +10216,8 @@
     "locations": [
       "Divinity Coast"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Caromi"
   },
   {
     "name": "Gnash Underfoot",
@@ -9957,7 +10235,8 @@
       "Pockmark Flats",
       "Ruins of Surmia"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Gordac Fleshweaver",
@@ -9978,7 +10257,8 @@
     "locations": [
       "Sorrow's Furnace"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Gorgaan Hatemonger",
@@ -10001,6 +10281,7 @@
       "The Breach"
     ],
     "profession": "Warrior",
+    "affiliation": "Charr",
     "locationLevels": {
       "Flame Temple Corridor": 24,
       "The Breach": 7
@@ -10026,7 +10307,8 @@
     "locations": [
       "Thunderhead Keep"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Gorrel Rockmolder",
@@ -10048,7 +10330,8 @@
     "locations": [
       "Grenth's Footprint"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Goss Aleessh",
@@ -10072,7 +10355,8 @@
       "Dunes of Despair",
       "Thirsty River"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Goss Darkweb",
@@ -10094,7 +10378,8 @@
     "locations": [
       "Abaddon's Mouth"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Ring of Fire Islands wildlife"
   },
   {
     "name": "Gougi Gakula",
@@ -10115,7 +10400,8 @@
     "locations": [
       "Old Ascalon"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Graf Wask Derg",
@@ -10139,7 +10425,8 @@
       "The Scar",
       "Vulture Drifts"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Gralf Angonytip",
@@ -10160,7 +10447,8 @@
     "locations": [
       "Salt Flats"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Grand Drake",
@@ -10213,6 +10501,7 @@
       "Divinity Coast"
     ],
     "profession": "Elementalist",
+    "affiliation": "Kryta wildlife",
     "variants": [
       {
         "label": null,
@@ -10285,6 +10574,7 @@
       "Sanctum Cay"
     ],
     "profession": "Warrior",
+    "affiliation": "Undead",
     "variants": [
       {
         "label": null,
@@ -10308,7 +10598,8 @@
     "skills": [],
     "isBoss": false,
     "locations": [],
-    "profession": null
+    "profession": null,
+    "affiliation": null
   },
   {
     "name": "Grawl (Ascalon)",
@@ -10361,6 +10652,7 @@
       "The Great Northern Wall"
     ],
     "profession": "Warrior",
+    "affiliation": "Ascalon wildlife",
     "variants": [
       {
         "label": null,
@@ -10426,6 +10718,7 @@
       "Witman's Folly"
     ],
     "profession": "Warrior",
+    "affiliation": "Shiverpeak Mountains wildlife",
     "variants": [
       {
         "label": null,
@@ -10495,6 +10788,7 @@
       "Witman's Folly"
     ],
     "profession": "Necromancer",
+    "affiliation": "Shiverpeak Mountains wildlife",
     "variants": [
       {
         "label": "Level 6",
@@ -10563,6 +10857,7 @@
       "Regent Valley"
     ],
     "profession": "Monk",
+    "affiliation": "Ascalon wildlife",
     "variants": [
       {
         "label": null,
@@ -10606,6 +10901,7 @@
       "Ascalon Academy"
     ],
     "profession": "Ranger",
+    "affiliation": null,
     "locationLevels": {
       "Lakeside County: 1070 AE": 20,
       "Forsaken Tunnels": 3,
@@ -10636,7 +10932,8 @@
       "Tunnels of the Forsaken",
       "Ascalon Academy"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": null
   },
   {
     "name": "Grawl Ulodyte",
@@ -10688,6 +10985,7 @@
       "The Great Northern Wall"
     ],
     "profession": "Monk",
+    "affiliation": "Ascalon wildlife",
     "variants": [
       {
         "label": null,
@@ -10722,7 +11020,8 @@
     "locations": [
       "The Wilds"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Gren Wavelslosh",
@@ -10743,7 +11042,8 @@
     "locations": [
       "Divinity Coast"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Grenth's Cursed",
@@ -10765,7 +11065,8 @@
     "locations": [
       "Perdition Rock"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Undead"
   },
   {
     "name": "Gret Waveringmane",
@@ -10786,7 +11087,8 @@
     "locations": [
       "The Scar"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Grognard Gravelhead",
@@ -10808,7 +11110,8 @@
     "locations": [
       "Sorrow's Furnace"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Grook Plugalug",
@@ -10830,7 +11133,8 @@
       "Aurora Glade",
       "The Wilds"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Grun Galesurge",
@@ -10853,7 +11157,8 @@
     "locations": [
       "Ring of Fire"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Ring of Fire Islands wildlife"
   },
   {
     "name": "Gryp Wickedwing",
@@ -10874,7 +11179,8 @@
     "locations": [
       "Stingray Strand"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Caromi"
   },
   {
     "name": "Gypsie Ettin",
@@ -10928,6 +11234,7 @@
       "Divinity Coast"
     ],
     "profession": "Warrior",
+    "affiliation": "Kryta wildlife",
     "variants": [
       {
         "label": null,
@@ -10963,7 +11270,8 @@
     "locations": [
       "Dragon's Gullet"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": null
   },
   {
     "name": "Hail Blackice",
@@ -10984,7 +11292,8 @@
     "locations": [
       "Spearhead Peak"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Haja Bloodwail",
@@ -11005,7 +11314,8 @@
     "locations": [
       "Gates of Kryta"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Undead"
   },
   {
     "name": "Harn Coldstone",
@@ -11030,7 +11340,8 @@
     "locations": [
       "Perdition Rock"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": null
   },
   {
     "name": "Harth Mendbranch",
@@ -11051,7 +11362,8 @@
     "locations": [
       "Majesty's Rest"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Hellhound",
@@ -11113,7 +11425,8 @@
       "Riverside Province",
       "Sanctum Cay"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Undead"
   },
   {
     "name": "Henge Guardian",
@@ -11135,7 +11448,8 @@
     "locations": [
       "Aurora Glade"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Hepp Bilespitter",
@@ -11157,7 +11471,8 @@
     "locations": [
       "Bloodstone Fen"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Hessper Sasso",
@@ -11179,7 +11494,8 @@
     "locations": [
       "Thirsty River"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Hew Gruntruck",
@@ -11200,7 +11516,8 @@
     "locations": [
       "Watchtower Coast"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Hilios the Dutiful",
@@ -11222,7 +11539,8 @@
     "locations": [
       "Iron Mines of Moladune"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Mursaat"
   },
   {
     "name": "Hill Giant",
@@ -11270,6 +11588,7 @@
       "Sanctum Cay"
     ],
     "profession": "Warrior",
+    "affiliation": "Kryta wildlife",
     "variants": [
       {
         "label": null,
@@ -11300,7 +11619,8 @@
     "locations": [
       "Aurora Glade"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Hops Flameinator",
@@ -11321,7 +11641,8 @@
     "locations": [
       "Talmark Wilderness"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Horm Frostrider",
@@ -11343,7 +11664,8 @@
     "locations": [
       "The Wilds"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Hormak Ironcurse",
@@ -11366,7 +11688,8 @@
     "locations": [
       "Ice Caves of Sorrow"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Hoss Rainswell",
@@ -11387,7 +11710,8 @@
     "locations": [
       "The Falls"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": null
   },
   {
     "name": "Hovi Bravetail",
@@ -11407,7 +11731,8 @@
     "locations": [
       "Silverwood"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Hulking Stone Elemental",
@@ -11459,6 +11784,7 @@
       "Regent Valley"
     ],
     "profession": "Warrior",
+    "affiliation": "Ascalon wildlife",
     "variants": [
       {
         "label": "Post-Searing",
@@ -11493,7 +11819,8 @@
     "locations": [
       "Ettin's Back"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Hurl Foulspine",
@@ -11511,7 +11838,8 @@
       "Pockmark Flats",
       "Ruins of Surmia"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Hussar Ironfeast",
@@ -11532,7 +11860,8 @@
     "locations": [
       "Traveler's Vale"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Hydra (Ascalon)",
@@ -11584,6 +11913,7 @@
       "Flame Temple Corridor"
     ],
     "profession": "Elementalist",
+    "affiliation": "Ascalon wildlife",
     "variants": [
       {
         "label": null,
@@ -11652,6 +11982,7 @@
       "Vulture Drifts"
     ],
     "profession": "Elementalist",
+    "affiliation": "Crystal Desert wildlife",
     "variants": [
       {
         "label": null,
@@ -11687,7 +12018,8 @@
     "locations": [
       "Mineral Springs"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Avicara"
   },
   {
     "name": "Ice Beast",
@@ -11709,7 +12041,8 @@
     "locations": [
       "Mineral Springs"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": null
   },
   {
     "name": "Ice Drake",
@@ -11731,7 +12064,8 @@
     "locations": [
       "Borlis Pass"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Ice Golem",
@@ -11788,6 +12122,7 @@
       "The Frost Gate"
     ],
     "profession": "Elementalist",
+    "affiliation": "Stone Summit",
     "variants": [
       {
         "label": null,
@@ -11867,6 +12202,7 @@
       "A Gate Too Far"
     ],
     "profession": "Elementalist",
+    "affiliation": "Shiverpeak Mountains wildlife",
     "variants": [
       {
         "label": "Prophecies",
@@ -11910,7 +12246,8 @@
     "locations": [
       "The Great Northern Wall"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Igmon Quivcaver",
@@ -11928,7 +12265,8 @@
     "locations": [
       "Diessa Lowlands"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Igneous Ettin",
@@ -11979,7 +12317,8 @@
       "Perdition Rock",
       "Ring of Fire"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Ring of Fire Islands wildlife"
   },
   {
     "name": "Ignis Effigia",
@@ -12000,7 +12339,8 @@
     "locations": [
       "Perdition Rock"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": null
   },
   {
     "name": "Ignis Phanaura",
@@ -12024,6 +12364,7 @@
       "Diessa Lowlands"
     ],
     "profession": "Mesmer",
+    "affiliation": "Ascalon wildlife",
     "variants": [
       {
         "label": "Old Ascalon",
@@ -12067,7 +12408,8 @@
     "locations": [
       "Gates of Kryta"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Undead"
   },
   {
     "name": "Inferno Imp",
@@ -12124,6 +12466,7 @@
       "Sanctum Cay"
     ],
     "profession": "Elementalist",
+    "affiliation": "Kryta wildlife",
     "variants": [
       {
         "label": null,
@@ -12160,7 +12503,8 @@
     "locations": [
       "Perdition Rock"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Inner Council Member Bolivar",
@@ -12181,7 +12525,8 @@
     "locations": [
       "Perdition Rock"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Inner Council Member Cuthbert",
@@ -12202,7 +12547,8 @@
     "locations": [
       "Perdition Rock"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Ipillo Wupwup",
@@ -12224,7 +12570,8 @@
     "locations": [
       "Witman's Folly"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Irwyn the Severe",
@@ -12245,7 +12592,8 @@
     "locations": [
       "Sanctum Cay"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Issah Sshay",
@@ -12268,7 +12616,8 @@
     "locations": [
       "Thirsty River"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": null
   },
   {
     "name": "Jade Armor",
@@ -12331,7 +12680,8 @@
       "Abaddon's Mouth",
       "Ring of Fire"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Mursaat"
   },
   {
     "name": "Jade Armor (boss)",
@@ -12352,7 +12702,8 @@
     "locations": [
       "Ice Floe"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Mursaat"
   },
   {
     "name": "Jade Bow",
@@ -12413,6 +12764,7 @@
       "Ring of Fire"
     ],
     "profession": "Ranger",
+    "affiliation": "Mursaat",
     "variants": [
       {
         "label": null,
@@ -12449,7 +12801,8 @@
     "locations": [
       "Ice Floe"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Mursaat"
   },
   {
     "name": "Jade Scarab",
@@ -12506,6 +12859,7 @@
       "Dunes of Despair"
     ],
     "profession": "Necromancer",
+    "affiliation": "Crystal Desert wildlife",
     "variants": [
       {
         "label": null,
@@ -12543,7 +12897,8 @@
       "The Northlands",
       "Nolani Academy"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Charr"
   },
   {
     "name": "Jewk Swem Pleg",
@@ -12568,7 +12923,8 @@
       "The Scar",
       "Vulture Drifts"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Jollen Steelblight",
@@ -12591,7 +12947,8 @@
     "locations": [
       "Frozen Forest"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Jolo Lighthaunch",
@@ -12614,7 +12971,8 @@
       "Deldrimor Bowl",
       "Borlis Pass"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Jonar Stonebender",
@@ -12636,7 +12994,8 @@
     "locations": [
       "Ice Caves of Sorrow"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Jonk Shuffle",
@@ -12657,7 +13016,8 @@
     "locations": [
       "Salt Flats"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Jono Yawpyawl",
@@ -12679,7 +13039,8 @@
       "Spearhead Peak",
       "Talus Chute"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Josso Essher",
@@ -12701,7 +13062,8 @@
     "locations": [
       "Thirsty River"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Julen the Devout",
@@ -12723,7 +13085,8 @@
       "Twin Serpent Lakes",
       "Twin Serpent Lakes (War in Kryta)"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Jungle Guardian",
@@ -12743,6 +13106,7 @@
       "Bloodstone Fen"
     ],
     "profession": "Ranger",
+    "affiliation": "Maguuma Jungle wildlife",
     "variants": [
       {
         "label": null,
@@ -12807,6 +13171,7 @@
       "The Falls"
     ],
     "profession": "Necromancer",
+    "affiliation": "Maguuma Jungle wildlife",
     "variants": [
       {
         "label": null,
@@ -12876,6 +13241,7 @@
       "The Wilds"
     ],
     "profession": "Warrior",
+    "affiliation": "Maguuma Jungle wildlife",
     "variants": [
       {
         "label": null,
@@ -12913,6 +13279,7 @@
       "Mineral Springs"
     ],
     "profession": "Monk",
+    "affiliation": "Shiverpeak Mountains wildlife",
     "variants": [
       {
         "label": null,
@@ -12954,6 +13321,7 @@
       "Bloodstone Fen"
     ],
     "profession": "Warrior",
+    "affiliation": "White Mantle",
     "variants": [
       {
         "label": "Gates of Kryta",
@@ -12997,7 +13365,8 @@
     "locations": [
       "Ring of Fire"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": null
   },
   {
     "name": "Kaia Wupwup",
@@ -13020,7 +13389,8 @@
       "Spearhead Peak",
       "Talus Chute"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Kara Bloodtail",
@@ -13040,7 +13410,8 @@
     "locations": [
       "The Wilds"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Karobo Dimdim",
@@ -13062,7 +13433,8 @@
     "locations": [
       "Witman's Folly"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Kathryn the Cold",
@@ -13084,7 +13456,8 @@
       "Twin Serpent Lakes",
       "Twin Serpent Lakes (War in Kryta)"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Keba Silenthoof",
@@ -13105,7 +13478,8 @@
     "locations": [
       "Silverwood"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Kekona Pippip",
@@ -13127,7 +13501,8 @@
       "Spearhead Peak",
       "Talus Chute"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Kemal the Deadened",
@@ -13148,7 +13523,8 @@
     "locations": [
       "D'Alessio Seaboard"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Undead"
   },
   {
     "name": "Kenric the Believer",
@@ -13169,7 +13545,8 @@
     "locations": [
       "Aurora Glade"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Kepkhet Marrowfeast",
@@ -13192,7 +13569,8 @@
     "locations": [
       "Prophet's Path"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Kezra Spindleweb",
@@ -13214,7 +13592,8 @@
       "Aurora Glade",
       "The Wilds"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Klaww FeatherStorm",
@@ -13235,7 +13614,8 @@
     "locations": [
       "Fort Ranik"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Charr"
   },
   {
     "name": "Kor Stonewrath",
@@ -13257,7 +13637,8 @@
     "locations": [
       "Snake Dance"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Kratos the Foul",
@@ -13280,7 +13661,8 @@
     "locations": [
       "Iron Mines of Moladune"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "mursaat"
   },
   {
     "name": "Krogg Shmush (Maguuma Jungle)",
@@ -13301,7 +13683,8 @@
     "locations": [
       "The Falls"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Krogg Shmush (Shiverpeak Mountains)",
@@ -13322,7 +13705,8 @@
     "locations": [
       "Talus Chute"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Krunk Waddle",
@@ -13343,7 +13727,8 @@
     "locations": [
       "Vulture Drifts"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Lala Firemane",
@@ -13364,7 +13749,8 @@
     "locations": [
       "Silverwood"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Lamaan Wickedwail",
@@ -13386,7 +13772,8 @@
     "locations": [
       "Sanctum Cay"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Undead"
   },
   {
     "name": "Large Spined Aloe",
@@ -13438,6 +13825,7 @@
       "Stingray Strand"
     ],
     "profession": "Monk",
+    "affiliation": "Kryta wildlife",
     "variants": [
       {
         "label": null,
@@ -13473,7 +13861,8 @@
     "locations": [
       "North Kryta Province"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Larrk Etherburn",
@@ -13494,7 +13883,8 @@
     "locations": [
       "Pockmark Flats"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Lars the Obeisant",
@@ -13515,7 +13905,8 @@
     "locations": [
       "Aurora Glade"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Lash Devourer",
@@ -13534,6 +13925,7 @@
       "Regent Valley (pre-Searing)"
     ],
     "profession": null,
+    "affiliation": "Presearing wildlife",
     "locationLevels": {
       "Lakeside County: 1070 AE": 15
     }
@@ -13586,7 +13978,8 @@
     "locations": [
       "Ring of Fire"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Ring of Fire Islands wildlife"
   },
   {
     "name": "Lava Spitter",
@@ -13636,7 +14029,8 @@
     "locations": [
       "Ring of Fire"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Ring of Fire Islands wildlife"
   },
   {
     "name": "Leaps Thunderclap",
@@ -13658,7 +14052,8 @@
     "locations": [
       "North Kryta Province"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Liam Shanglui",
@@ -13679,7 +14074,8 @@
     "locations": [
       "Kessex Peak"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Cult of Verata"
   },
   {
     "name": "Life Pod",
@@ -13734,6 +14130,7 @@
       "The Wilds"
     ],
     "profession": "Monk",
+    "affiliation": "Maguuma Jungle wildlife",
     "variants": [
       {
         "label": null,
@@ -13803,6 +14200,7 @@
       "Sanctum Cay"
     ],
     "profession": "Elementalist",
+    "affiliation": "Kryta wildlife",
     "variants": [
       {
         "label": null,
@@ -13837,7 +14235,8 @@
     "locations": [
       "Frozen Forest"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Lokar Icemender",
@@ -13859,7 +14258,8 @@
     "locations": [
       "Iron Mines of Moladune"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Losaru Bladehand",
@@ -13912,6 +14312,7 @@
       "Dunes of Despair"
     ],
     "profession": "Warrior",
+    "affiliation": "Crystal Desert wildlife",
     "variants": [
       {
         "label": null,
@@ -13979,6 +14380,7 @@
       "Dunes of Despair"
     ],
     "profession": "Ranger",
+    "affiliation": "Crystal Desert wildlife",
     "variants": [
       {
         "label": null,
@@ -14044,6 +14446,7 @@
       "Dunes of Despair"
     ],
     "profession": "Monk",
+    "affiliation": "Crystal Desert wildlife",
     "variants": [
       {
         "label": null,
@@ -14110,6 +14513,7 @@
       "The Scar"
     ],
     "profession": "Mesmer",
+    "affiliation": "Crystal Desert wildlife",
     "variants": [
       {
         "label": null,
@@ -14146,7 +14550,8 @@
     "locations": [
       "Prophet's Path"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Lumps Ruinator",
@@ -14167,7 +14572,8 @@
     "locations": [
       "Diessa Lowlands"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Charr"
   },
   {
     "name": "Lyssa's Cursed",
@@ -14189,7 +14595,8 @@
     "locations": [
       "Perdition Rock"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": null
   },
   {
     "name": "Maak Frostfriend",
@@ -14212,7 +14619,8 @@
       "Spearhead Peak",
       "Witman's Folly"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Maguuma Avenger",
@@ -14262,6 +14670,7 @@
       "The Wilds"
     ],
     "profession": "Elementalist",
+    "affiliation": "Maguuma Jungle wildlife",
     "variants": [
       {
         "label": null,
@@ -14326,7 +14735,8 @@
     "locations": [
       "The Wilds"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Maguuma Hunter",
@@ -14380,6 +14790,7 @@
       "The Wilds"
     ],
     "profession": "Ranger",
+    "affiliation": "Maguuma Jungle wildlife",
     "variants": [
       {
         "label": null,
@@ -14449,7 +14860,8 @@
       "Bloodstone Fen",
       "The Wilds"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Maguuma Spider",
@@ -14505,6 +14917,7 @@
       "The Wilds"
     ],
     "profession": "Ranger",
+    "affiliation": "Maguuma Jungle wildlife",
     "variants": [
       {
         "label": null,
@@ -14571,6 +14984,7 @@
       "The Wilds"
     ],
     "profession": "Necromancer",
+    "affiliation": "Maguuma Jungle wildlife",
     "variants": [
       {
         "label": null,
@@ -14642,6 +15056,7 @@
       "The Wilds"
     ],
     "profession": "Warrior",
+    "affiliation": "Maguuma Jungle wildlife",
     "variants": [
       {
         "label": "Sword wielding",
@@ -14721,7 +15136,8 @@
       "Perdition Rock",
       "Abaddon's Mouth"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": null
   },
   {
     "name": "Maida the Ill Tempered",
@@ -14744,7 +15160,8 @@
     "locations": [
       "Ring of Fire"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": null
   },
   {
     "name": "Maim Deathrain",
@@ -14765,7 +15182,8 @@
     "locations": [
       "Diessa Lowlands"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Charr"
   },
   {
     "name": "Makani Ookook",
@@ -14785,7 +15203,8 @@
     "locations": [
       "The Great Northern Wall"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": null
   },
   {
     "name": "Maligo Libens",
@@ -14808,7 +15227,8 @@
     "locations": [
       "Hell's Precipice"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Titans"
   },
   {
     "name": "Malla Arrowmane",
@@ -14829,7 +15249,8 @@
     "locations": [
       "The Wilds"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Mallet Runecolumn",
@@ -14848,7 +15269,8 @@
     "locations": [
       "Diessa Lowlands"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Malus Phasmatis",
@@ -14871,7 +15293,8 @@
     "locations": [
       "Perdition Rock"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": null
   },
   {
     "name": "Manton the Indulgent",
@@ -14892,7 +15315,8 @@
     "locations": [
       "Aurora Glade"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Marika Granitehand",
@@ -14914,7 +15338,8 @@
     "locations": [
       "Iron Mines of Moladune"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Markis",
@@ -14940,6 +15365,7 @@
       "Iron Mines of Moladune"
     ],
     "profession": "Ranger",
+    "affiliation": "White Mantle",
     "variants": [
       {
         "label": "During The Wilds",
@@ -15010,7 +15436,8 @@
     "locations": [
       "Snake Dance"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Marr Burnhorn",
@@ -15031,7 +15458,8 @@
     "locations": [
       "The Great Northern Wall"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Charr"
   },
   {
     "name": "Marrg Grummbool",
@@ -15051,7 +15479,8 @@
     "locations": [
       "Tangle Root"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Marrow Scarab",
@@ -15101,7 +15530,8 @@
     "locations": [
       "Prophet's Path"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Martigris the Stalwart",
@@ -15122,7 +15552,8 @@
     "locations": [
       "Iron Mines of Moladune"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Mursaat"
   },
   {
     "name": "Martus Plagueweb",
@@ -15143,7 +15574,8 @@
     "locations": [
       "Sage Lands"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Maul Riptear",
@@ -15163,7 +15595,8 @@
     "locations": [
       "The Great Northern Wall"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Charr"
   },
   {
     "name": "Maw the Mountain Heart",
@@ -15189,7 +15622,8 @@
       "Spearhead Peak",
       "Talus Chute"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Maxine Coldstone",
@@ -15212,7 +15646,8 @@
     "locations": [
       "Perdition Rock"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Ring of Fire Islands wildlife"
   },
   {
     "name": "Melandru's Cursed",
@@ -15234,7 +15669,8 @@
     "locations": [
       "Perdition Rock"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": null
   },
   {
     "name": "Melek the Virtuous",
@@ -15256,7 +15692,8 @@
     "locations": [
       "Ring of Fire"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": null
   },
   {
     "name": "Melp the Harpooner",
@@ -15277,7 +15714,8 @@
     "locations": [
       "Watchtower Coast"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Mercia the Smug",
@@ -15300,7 +15738,8 @@
       "Abaddon's Mouth",
       "The Rise of the White Mantle"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Mursaat"
   },
   {
     "name": "Mergoyle",
@@ -15357,6 +15796,7 @@
       "Gates of Kryta"
     ],
     "profession": "Mesmer",
+    "affiliation": "Kryta wildlife",
     "variants": [
       {
         "label": null,
@@ -15426,6 +15866,7 @@
       "Gates of Kryta"
     ],
     "profession": "Elementalist",
+    "affiliation": "Kryta wildlife",
     "variants": [
       {
         "label": null,
@@ -15462,7 +15903,8 @@
     "locations": [
       "Frozen Forest"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Mighty Grawl",
@@ -15512,7 +15954,8 @@
     "locations": [
       "Talus Chute"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Mina Brillianthaunch",
@@ -15532,7 +15975,8 @@
     "locations": [
       "The Scar"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Minotaur (Crystal Desert)",
@@ -15584,6 +16028,7 @@
       "Elona Reach"
     ],
     "profession": "Warrior",
+    "affiliation": "Crystal Desert wildlife",
     "variants": [
       {
         "label": null,
@@ -15649,6 +16094,7 @@
       "The Frost Gate"
     ],
     "profession": "Warrior",
+    "affiliation": null,
     "variants": [
       {
         "label": null,
@@ -15684,7 +16130,8 @@
       "Anvil Rock",
       "The Frost Gate"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Mirash Dreambreaker",
@@ -15705,7 +16152,8 @@
     "locations": [
       "The Breach"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Charr"
   },
   {
     "name": "Mok Waagwaag",
@@ -15726,7 +16174,8 @@
     "locations": [
       "Old Ascalon"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Moles Quibus",
@@ -15749,7 +16198,8 @@
     "locations": [
       "Hell's Precipice"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Titans"
   },
   {
     "name": "Monaru Chippedfang",
@@ -15769,7 +16219,8 @@
     "locations": [
       "Diviner's Ascent"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Mono Ookook",
@@ -15789,7 +16240,8 @@
     "locations": [
       "Old Ascalon"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Morg Pebblebound",
@@ -15805,7 +16257,8 @@
     "locations": [
       "Kessex Peak"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Morgriff Shadestone",
@@ -15828,7 +16281,8 @@
     "locations": [
       "Grenth's Footprint"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Morl Grell",
@@ -15848,7 +16302,8 @@
     "locations": [
       "Dragon's Gullet"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": null
   },
   {
     "name": "Moro Stormcalf",
@@ -15871,7 +16326,8 @@
       "Deldrimor Bowl",
       "Borlis Pass"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Moss Scarab",
@@ -15926,6 +16382,7 @@
       "The Wilds"
     ],
     "profession": "Necromancer",
+    "affiliation": "Maguuma Jungle wildlife",
     "variants": [
       {
         "label": "Level 12:",
@@ -15960,7 +16417,8 @@
     "locations": [
       "Bloodstone Fen"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Mountain Troll",
@@ -16015,6 +16473,7 @@
       "Iron Mines of Moladune"
     ],
     "profession": "Warrior",
+    "affiliation": "Shiverpeak Mountains wildlife",
     "variants": [
       {
         "label": null,
@@ -16052,7 +16511,8 @@
       "Talmark Wilderness",
       "D'Alessio Seaboard"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Murk Darkshriek",
@@ -16073,7 +16533,8 @@
     "locations": [
       "Kessex Peak"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": null
   },
   {
     "name": "Mursaat Elementalist",
@@ -16129,6 +16590,7 @@
       "Ring of Fire"
     ],
     "profession": "Elementalist",
+    "affiliation": null,
     "variants": [
       {
         "label": null,
@@ -16166,7 +16628,8 @@
     "locations": [
       "Ice Floe"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": null
   },
   {
     "name": "Mursaat Guardian",
@@ -16229,6 +16692,7 @@
       "Abaddon's Mouth"
     ],
     "profession": "Monk",
+    "affiliation": null,
     "variants": [
       {
         "label": "Monk",
@@ -16342,6 +16806,7 @@
       "Ring of Fire"
     ],
     "profession": "Mesmer",
+    "affiliation": null,
     "variants": [
       {
         "label": null,
@@ -16379,7 +16844,8 @@
     "locations": [
       "Ice Floe"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": null
   },
   {
     "name": "Mursaat Monk",
@@ -16435,6 +16901,7 @@
       "Ring of Fire"
     ],
     "profession": "Monk",
+    "affiliation": null,
     "variants": [
       {
         "label": null,
@@ -16472,7 +16939,8 @@
     "locations": [
       "Ice Floe"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": null
   },
   {
     "name": "Mursaat Necromancer",
@@ -16528,6 +16996,7 @@
       "Ring of Fire"
     ],
     "profession": "Necromancer",
+    "affiliation": null,
     "variants": [
       {
         "label": null,
@@ -16565,7 +17034,8 @@
     "locations": [
       "Ice Floe"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Mursaat"
   },
   {
     "name": "Muu Swifthorn",
@@ -16587,7 +17057,8 @@
     "locations": [
       "Talmark Wilderness"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Myd Springclaw",
@@ -16609,7 +17080,8 @@
     "locations": [
       "Mineral Springs"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Avicara"
   },
   {
     "name": "Myrd Brokenfeather",
@@ -16631,7 +17103,8 @@
     "locations": [
       "Stingray Strand"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Caromi"
   },
   {
     "name": "Najja Doombringer",
@@ -16653,7 +17126,8 @@
       "Majesty's Rest",
       "Divinity Coast"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Undead"
   },
   {
     "name": "Nalle the Webbed",
@@ -16674,7 +17148,8 @@
     "locations": [
       "Tangle Root"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Nav Sharpquill",
@@ -16696,7 +17171,8 @@
     "locations": [
       "North Kryta Province"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Caromi"
   },
   {
     "name": "Nayl Klaw Tuthan",
@@ -16719,7 +17195,8 @@
     "locations": [
       "Perdition Rock"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Ring of Fire Islands wildlife"
   },
   {
     "name": "Nazeem the Damned",
@@ -16740,7 +17217,8 @@
     "locations": [
       "Gates of Kryta"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Undead"
   },
   {
     "name": "Necrid Horseman",
@@ -16801,6 +17279,7 @@
       "Sanctum Cay"
     ],
     "profession": "Necromancer",
+    "affiliation": "Undead",
     "variants": [
       {
         "label": null,
@@ -16840,7 +17319,8 @@
     "locations": [
       "Salt Flats"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Nhy Darkclaw",
@@ -16861,7 +17341,8 @@
     "locations": [
       "Mineral Springs"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Avicara"
   },
   {
     "name": "Nighh SpineChill",
@@ -16883,7 +17364,8 @@
     "locations": [
       "Talus Chute"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": null
   },
   {
     "name": "Nightmare (Ring of Fire Islands)",
@@ -16935,7 +17417,8 @@
     "locations": [
       "Ring of Fire"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": null
   },
   {
     "name": "Nizza the Sickle",
@@ -16956,7 +17439,8 @@
     "locations": [
       "D'Alessio Seaboard"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Undead"
   },
   {
     "name": "Numa Plaguemane",
@@ -16978,7 +17462,8 @@
     "locations": [
       "Silverwood"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Nyle the Compassionate",
@@ -16999,7 +17484,8 @@
     "locations": [
       "Bloodstone Fen"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Oakheart (Kryta)",
@@ -17052,6 +17538,7 @@
       "Watchtower Coast"
     ],
     "profession": "Ranger",
+    "affiliation": "Kryta wildlife",
     "variants": [
       {
         "label": null,
@@ -17087,7 +17574,8 @@
     "locations": [
       "Frozen Forest"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Odelyn the Displeased",
@@ -17109,7 +17597,8 @@
     "locations": [
       "Ring of Fire"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Mursaat"
   },
   {
     "name": "Old Red Claw",
@@ -17131,7 +17620,8 @@
     "locations": [
       "Snake Dance"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": null
   },
   {
     "name": "Onan the Spiritless",
@@ -17152,7 +17642,8 @@
     "locations": [
       "Gates of Kryta"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Undead"
   },
   {
     "name": "Onaona Kubkub",
@@ -17173,7 +17664,8 @@
     "locations": [
       "The Great Northern Wall"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Optimus Caliph",
@@ -17197,7 +17689,8 @@
       "Abaddon's Mouth",
       "The Rise of the White Mantle"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Mursaat"
   },
   {
     "name": "Oswald the Amiable",
@@ -17218,7 +17711,8 @@
     "locations": [
       "Bloodstone Fen"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Paka Blackhoof",
@@ -17239,7 +17733,8 @@
     "locations": [
       "The Wilds"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Palila Uggugg",
@@ -17260,7 +17755,8 @@
     "locations": [
       "Old Ascalon"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Pantheras The Deceiver",
@@ -17282,7 +17778,8 @@
     "locations": [
       "Thunderhead Keep"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": null
   },
   {
     "name": "Pell Glitterglatter",
@@ -17303,7 +17800,8 @@
     "locations": [
       "Vulture Drifts"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Pello Agileclaw",
@@ -17324,7 +17822,8 @@
     "locations": [
       "North Kryta Province"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Caromi"
   },
   {
     "name": "Perchingbyrd",
@@ -17345,7 +17844,8 @@
     "locations": [
       "Vulture Drifts"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": null
   },
   {
     "name": "Perfected Armor",
@@ -17367,7 +17867,8 @@
       "The Battle for Lion's Arch (explorable area)",
       "Thunderhead Keep"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Mursaat"
   },
   {
     "name": "Perfected Cloak",
@@ -17390,7 +17891,8 @@
       "The Battle for Lion's Arch (explorable area)",
       "Thunderhead Keep"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Mursaat"
   },
   {
     "name": "Phang the Deceiver",
@@ -17410,7 +17912,8 @@
     "locations": [
       "Diessa Lowlands"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Charr"
   },
   {
     "name": "Phantom (NPC)",
@@ -17462,7 +17965,8 @@
       "Perdition Rock",
       "Ring of Fire"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Undead"
   },
   {
     "name": "Phy Deftcrest",
@@ -17483,7 +17987,8 @@
     "locations": [
       "Stingray Strand"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Caromi"
   },
   {
     "name": "Pinesoul",
@@ -17539,6 +18044,7 @@
       "Ice Caves of Sorrow"
     ],
     "profession": "Ranger",
+    "affiliation": "Shiverpeak Mountains wildlife",
     "variants": [
       {
         "label": null,
@@ -17614,6 +18120,7 @@
       "The Great Northern Wall"
     ],
     "profession": "Necromancer",
+    "affiliation": "Ascalon wildlife",
     "variants": [
       {
         "label": "Level 8:",
@@ -17654,7 +18161,8 @@
     "locations": [
       "Bloodstone Fen"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Plexus Shadowhook",
@@ -17677,7 +18185,8 @@
     "locations": [
       "Abaddon's Mouth"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": null
   },
   {
     "name": "Plog Hamfist",
@@ -17698,7 +18207,8 @@
     "locations": [
       "Kessex Peak"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Plook Wavebreaker",
@@ -17720,7 +18230,8 @@
       "Talmark Wilderness",
       "D'Alessio Seaboard"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Plunk Trudge",
@@ -17741,7 +18252,8 @@
     "locations": [
       "Diviner's Ascent"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Poisonbough",
@@ -17762,7 +18274,8 @@
     "locations": [
       "Lornar's Pass"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Portal Wraith",
@@ -17815,7 +18328,8 @@
       "Hell's Precipice",
       "Gate of Madness"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Undead"
   },
   {
     "name": "Pravus Obsideo",
@@ -17838,7 +18352,8 @@
     "locations": [
       "Perdition Rock"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": null
   },
   {
     "name": "Priest of Dagnar",
@@ -17860,7 +18375,8 @@
     "locations": [
       "Borlis Pass"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Priest of Sorrows",
@@ -17914,7 +18430,8 @@
       "Grenth's Footprint",
       "Sorrow's Furnace"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Psion Tanglebranch",
@@ -17936,7 +18453,8 @@
     "locations": [
       "Majesty's Rest"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Pulv Rubblegrinder",
@@ -17952,7 +18470,8 @@
     "locations": [
       "Diessa Lowlands"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Puugh the Slasher",
@@ -17973,7 +18492,8 @@
     "locations": [
       "Ruins of Surmia"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Charr"
   },
   {
     "name": "Pytt Spitespew",
@@ -17995,7 +18515,8 @@
     "locations": [
       "Ring of Fire"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": null
   },
   {
     "name": "Qik Sharpclaw",
@@ -18016,7 +18537,8 @@
     "locations": [
       "Stingray Strand"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Caromi"
   },
   {
     "name": "Quickroot",
@@ -18037,7 +18559,8 @@
     "locations": [
       "Lornar's Pass"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Rage Maulhoof",
@@ -18058,7 +18581,8 @@
     "locations": [
       "The Black Curtain"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": null
   },
   {
     "name": "Raging Cadaver",
@@ -18106,7 +18630,8 @@
       "Lakeside County",
       "Watchtower Coast"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Undead"
   },
   {
     "name": "Rago the Scaled",
@@ -18127,7 +18652,8 @@
     "locations": [
       "D'Alessio Seaboard"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Raja Crux",
@@ -18148,7 +18674,8 @@
     "locations": [
       "Divinity Coast"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Undead"
   },
   {
     "name": "Ramm the Benevolent",
@@ -18170,7 +18697,8 @@
     "locations": [
       "Bloodstone Fen"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Ramtha Brokenhoof",
@@ -18191,7 +18719,8 @@
     "locations": [
       "The Wilds"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Rapa Ironhaunch",
@@ -18211,7 +18740,8 @@
     "locations": [
       "The Wilds"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Raptorhawk",
@@ -18234,7 +18764,8 @@
     "locations": [
       "Snake Dance"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Ravager",
@@ -18255,6 +18786,7 @@
       "Bloodstone Fen"
     ],
     "profession": "Necromancer",
+    "affiliation": "Maguuma Jungle wildlife",
     "variants": [
       {
         "label": null,
@@ -18290,7 +18822,8 @@
     "locations": [
       "North Kryta Province"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Caromi"
   },
   {
     "name": "Red Eye the Unholy",
@@ -18311,7 +18844,8 @@
       "The Northlands",
       "Nolani Academy"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Charr"
   },
   {
     "name": "Redwood Shepherd",
@@ -18363,6 +18897,7 @@
       "Reed Bog"
     ],
     "profession": "Ranger",
+    "affiliation": "Maguuma Jungle wildlife",
     "variants": [
       {
         "label": null,
@@ -18430,6 +18965,7 @@
       "The Black Curtain"
     ],
     "profession": "Mesmer",
+    "affiliation": "Kryta wildlife",
     "variants": [
       {
         "label": null,
@@ -18489,6 +19025,7 @@
       "Regent Valley"
     ],
     "profession": "Elementalist",
+    "affiliation": "Bandits",
     "variants": [
       {
         "label": null,
@@ -18549,6 +19086,7 @@
       "Regent Valley"
     ],
     "profession": "Elementalist",
+    "affiliation": "Bandits",
     "variants": [
       {
         "label": null,
@@ -18587,7 +19125,8 @@
       "Salt Flats",
       "The Scar"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Resnar Mountainsight",
@@ -18609,7 +19148,8 @@
     "locations": [
       "Frozen Forest"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Restless Corpse",
@@ -18656,7 +19196,8 @@
       "The Catacombs",
       "Watchtower Coast"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Undead"
   },
   {
     "name": "Resurrect Gargoyle",
@@ -18705,6 +19246,7 @@
       "Tunnels of the Forsaken"
     ],
     "profession": "Monk",
+    "affiliation": "Ascalon wildlife",
     "variants": [
       {
         "label": null,
@@ -18746,6 +19288,7 @@
       "Diessa Lowlands"
     ],
     "profession": "Monk",
+    "affiliation": "Ascalon wildlife",
     "variants": [
       {
         "label": "Level 6",
@@ -18804,6 +19347,7 @@
       "Thunderhead Keep"
     ],
     "profession": "Necromancer",
+    "affiliation": "Stone Summit",
     "variants": [
       {
         "label": "Level 12",
@@ -18858,7 +19402,8 @@
     "locations": [
       "Dragon's Gullet"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": null
   },
   {
     "name": "River Drake",
@@ -18908,6 +19453,7 @@
       "The Floodplain of Mahnkelon"
     ],
     "profession": "Elementalist",
+    "affiliation": "Presearing wildlife",
     "locationLevels": {
       "Lakeside County: 1070 AE": 15
     }
@@ -18932,6 +19478,7 @@
       "Wizard's Folly"
     ],
     "profession": "Elementalist",
+    "affiliation": "Presearing wildlife",
     "locationLevels": {
       "Lakeside County: 1070 AE": 15
     }
@@ -18952,6 +19499,7 @@
       "Lakeside County"
     ],
     "profession": "Elementalist",
+    "affiliation": "Presearing wildlife",
     "locationLevels": {
       "Lakeside County: 1070 AE": 18
     }
@@ -18974,7 +19522,8 @@
     "locations": [
       "Fort Ranik"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Charr"
   },
   {
     "name": "Rock Fist",
@@ -18992,7 +19541,8 @@
     "locations": [
       "Nolani Academy"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Rock Ice",
@@ -19039,7 +19589,8 @@
     ],
     "isBoss": false,
     "locations": [],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Rock-Eater Scarab",
@@ -19094,6 +19645,7 @@
       "The Dragon's Lair"
     ],
     "profession": "Warrior",
+    "affiliation": "Crystal Desert wildlife",
     "variants": [
       {
         "label": null,
@@ -19162,6 +19714,7 @@
       "Thirsty River"
     ],
     "profession": "Ranger",
+    "affiliation": "Crystal Desert wildlife",
     "variants": [
       {
         "label": null,
@@ -19224,7 +19777,8 @@
       "Lakeside County",
       "Lakeside County: 1070 AE"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Presearing wildlife"
   },
   {
     "name": "Root Behemoth",
@@ -19279,6 +19833,7 @@
       "Bloodstone Fen"
     ],
     "profession": "Warrior",
+    "affiliation": "Maguuma Jungle wildlife",
     "variants": [
       {
         "label": null,
@@ -19314,7 +19869,8 @@
     "locations": [
       "Old Ascalon"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Rotcap Mochsart",
@@ -19335,7 +19891,8 @@
     "locations": [
       "Sage Lands"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Rotscale",
@@ -19385,7 +19942,8 @@
     "locations": [
       "Majesty's Rest"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Undead"
   },
   {
     "name": "Rotting Dragon",
@@ -19437,7 +19995,8 @@
     "locations": [
       "Majesty's Rest"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Undead"
   },
   {
     "name": "Rrrack Whitefire",
@@ -19459,7 +20018,8 @@
       "Eastern Frontier",
       "Fort Ranik"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Charr"
   },
   {
     "name": "Rubi Spottedmane",
@@ -19481,7 +20041,8 @@
       "Deldrimor Bowl",
       "Borlis Pass"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Ruinwing",
@@ -19502,7 +20063,8 @@
     "locations": [
       "Riverside Province"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Undead"
   },
   {
     "name": "Rull Browbeater",
@@ -19524,7 +20086,8 @@
     "locations": [
       "Perdition Rock"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Ring of Fire Islands wildlife"
   },
   {
     "name": "Runar Brimstone",
@@ -19545,7 +20108,8 @@
     "locations": [
       "Sorrow's Furnace"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Rune Ethercrash",
@@ -19567,7 +20131,8 @@
     "locations": [
       "Spearhead Peak"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Rwek Khawl Mawl",
@@ -19589,7 +20154,8 @@
     "locations": [
       "Perdition Rock"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Ring of Fire Islands wildlife"
   },
   {
     "name": "Ryk Arrowwing",
@@ -19611,7 +20177,8 @@
     "locations": [
       "Mineral Springs"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Avicara"
   },
   {
     "name": "Ryn Cursewing",
@@ -19632,7 +20199,8 @@
     "locations": [
       "Nebo Terrace"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Caromi"
   },
   {
     "name": "Sage of Verata",
@@ -19654,6 +20222,7 @@
       "Kessex Peak"
     ],
     "profession": "Mesmer",
+    "affiliation": "Cult of Verata",
     "variants": [
       {
         "label": null,
@@ -19695,6 +20264,7 @@
       "Ice Caves of Sorrow"
     ],
     "profession": "Ranger",
+    "affiliation": "Shining Blade",
     "locationLevels": {
       "Riverside Province": 10,
       "Bloodstone Fen": 20,
@@ -19722,7 +20292,8 @@
     "locations": [
       "Witman's Folly"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Sala Chillbringer",
@@ -19744,7 +20315,8 @@
     "locations": [
       "Snake Dance"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": null
   },
   {
     "name": "Salani Pippip",
@@ -19765,7 +20337,8 @@
     "locations": [
       "Witman's Folly"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Salving Cactus",
@@ -19815,7 +20388,8 @@
       "Prophet's Path",
       "The Arid Sea"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Samira Dhulnarim",
@@ -19836,7 +20410,8 @@
     "locations": [
       "Kessex Peak"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Cult of Verata"
   },
   {
     "name": "Sand Drake",
@@ -19890,6 +20465,7 @@
       "The Floodplain of Mahnkelon"
     ],
     "profession": "Elementalist",
+    "affiliation": "Crystal Desert wildlife",
     "variants": [
       {
         "label": null,
@@ -19955,6 +20531,7 @@
       "Vulture Drifts"
     ],
     "profession": "Elementalist",
+    "affiliation": "Crystal Desert wildlife",
     "variants": [
       {
         "label": null,
@@ -20021,6 +20598,7 @@
       "Thirsty River"
     ],
     "profession": "Necromancer",
+    "affiliation": "Crystal Desert wildlife",
     "variants": [
       {
         "label": null,
@@ -20083,7 +20661,8 @@
       "The Scar",
       "Vulture Drifts"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Sapph Blacktracker",
@@ -20105,7 +20684,8 @@
     "locations": [
       "Snake Dance"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": null
   },
   {
     "name": "Saris Headstaver",
@@ -20127,7 +20707,8 @@
       "Traveler's Vale",
       "Borlis Pass"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Sarlic the Judge",
@@ -20149,7 +20730,8 @@
     "locations": [
       "Abaddon's Mouth"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Mursaat"
   },
   {
     "name": "Sayad the Bloodless",
@@ -20170,7 +20752,8 @@
     "locations": [
       "Gates of Kryta"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Undead"
   },
   {
     "name": "Scaar Sternclaw",
@@ -20190,7 +20773,8 @@
     "locations": [
       "Ruins of Surmia"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Charr"
   },
   {
     "name": "Scarab Nest Builder",
@@ -20240,7 +20824,8 @@
     "locations": [
       "Prophet's Path"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Scelus Prosum",
@@ -20263,7 +20848,8 @@
     "locations": [
       "Hell's Precipice"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Titans"
   },
   {
     "name": "Scint the Malign",
@@ -20285,7 +20871,8 @@
       "Eastern Frontier",
       "Ruins of Surmia"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Charr"
   },
   {
     "name": "Screamingclaw",
@@ -20306,7 +20893,8 @@
     "locations": [
       "Prophet's Path"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Seal Guard",
@@ -20351,7 +20939,8 @@
     "locations": [
       "Abaddon's Mouth"
     ],
-    "profession": null
+    "profession": null,
+    "affiliation": null
   },
   {
     "name": "Seear Windlash",
@@ -20372,7 +20961,8 @@
     "locations": [
       "Talus Chute"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": null
   },
   {
     "name": "Selwin the Fervent",
@@ -20395,7 +20985,8 @@
     "locations": [
       "Sanctum Cay"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Sevv Squallfroth",
@@ -20416,7 +21007,8 @@
     "locations": [
       "Salt Flats"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Sewp the Darktooth",
@@ -20437,7 +21029,8 @@
     "locations": [
       "The Falls"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Shadow of Death",
@@ -20458,7 +21051,8 @@
     "locations": [
       "The Black Curtain"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": null
   },
   {
     "name": "Shalis Ironmantle",
@@ -20480,7 +21074,8 @@
       "Iron Horse Mine",
       "The Frost Gate"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Shatter Gargoyle",
@@ -20539,6 +21134,7 @@
       "The Great Northern Wall"
     ],
     "profession": "Mesmer",
+    "affiliation": "Ascalon wildlife",
     "variants": [
       {
         "label": "Pre-Searing",
@@ -20594,7 +21190,8 @@
       "The Arid Sea",
       "The Scar"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Shepherd of Verata",
@@ -20616,6 +21213,7 @@
       "Kessex Peak"
     ],
     "profession": "Monk",
+    "affiliation": "Cult of Verata",
     "variants": [
       {
         "label": null,
@@ -20651,7 +21249,8 @@
       "Talmark Wilderness (War in Kryta)",
       "The Wilds"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Shining Blade"
   },
   {
     "name": "Shist Bogsifter",
@@ -20671,7 +21270,8 @@
     "locations": [
       "Dragon's Gullet"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Shiverpeak Longbow",
@@ -20725,6 +21325,7 @@
       "Borlis Pass"
     ],
     "profession": "Ranger",
+    "affiliation": "Shiverpeak Mountains wildlife",
     "variants": [
       {
         "label": null,
@@ -20791,6 +21392,7 @@
       "Borlis Pass"
     ],
     "profession": "Monk",
+    "affiliation": "Shiverpeak Mountains wildlife",
     "variants": [
       {
         "label": null,
@@ -20860,6 +21462,7 @@
       "Borlis Pass"
     ],
     "profession": "Warrior",
+    "affiliation": "Shiverpeak Mountains wildlife",
     "variants": [
       {
         "label": null,
@@ -20935,6 +21538,7 @@
       "Thunderhead Keep"
     ],
     "profession": "Elementalist",
+    "affiliation": "Stone Summit",
     "variants": [
       {
         "label": null,
@@ -21003,7 +21607,8 @@
     "locations": [
       "Lakeside County: 1070 AE"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Singed Oak",
@@ -21055,6 +21660,7 @@
       "Tunnels of the Forsaken"
     ],
     "profession": "Ranger",
+    "affiliation": "Ascalon wildlife",
     "variants": [
       {
         "label": null,
@@ -21125,6 +21731,7 @@
       "Riverside Province"
     ],
     "profession": "Ranger",
+    "affiliation": "Undead",
     "variants": [
       {
         "label": null,
@@ -21197,6 +21804,7 @@
       "Riverside Province"
     ],
     "profession": "Mesmer",
+    "affiliation": "Undead",
     "variants": [
       {
         "label": null,
@@ -21271,6 +21879,7 @@
       "Riverside Province"
     ],
     "profession": "Monk",
+    "affiliation": "Undead",
     "variants": [
       {
         "label": null,
@@ -21342,6 +21951,7 @@
       "Sanctum Cay"
     ],
     "profession": "Ranger",
+    "affiliation": "Undead",
     "variants": [
       {
         "label": null,
@@ -21425,6 +22035,7 @@
       "Gates of Kryta"
     ],
     "profession": "Elementalist",
+    "affiliation": "Undead",
     "variants": [
       {
         "label": null,
@@ -21459,7 +22070,8 @@
     "locations": [
       "D'Alessio Seaboard"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Skintekaru Manshredder",
@@ -21480,7 +22092,8 @@
     "locations": [
       "Perdition Rock"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Ring of Fire Islands wildlife"
   },
   {
     "name": "Skitt Skizzle",
@@ -21502,7 +22115,8 @@
     "locations": [
       "Ice Floe"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Skitt the Skizzle",
@@ -21523,7 +22137,8 @@
     "locations": [
       "Nebo Terrace"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Sky Quickfeather",
@@ -21545,7 +22160,8 @@
     "locations": [
       "Divinity Coast"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Caromi"
   },
   {
     "name": "Slaug Firehide",
@@ -21567,7 +22183,8 @@
       "Eastern Frontier",
       "Ruins of Surmia"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Charr"
   },
   {
     "name": "Slikk Sandhopper",
@@ -21588,7 +22205,8 @@
     "locations": [
       "North Kryta Province"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Slog Bloodsplatter",
@@ -21606,7 +22224,8 @@
     "locations": [
       "Diessa Lowlands"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Slonak Copperbark",
@@ -21628,7 +22247,8 @@
     "locations": [
       "Iron Mines of Moladune"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Slur Scarchest",
@@ -21649,7 +22269,8 @@
     "locations": [
       "The Great Northern Wall"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Charr"
   },
   {
     "name": "Smoke Kindlefist",
@@ -21672,6 +22293,7 @@
       "Flame Temple Corridor"
     ],
     "profession": "Elementalist",
+    "affiliation": "Charr",
     "locationLevels": {
       "Diessa Lowlands": 9,
       "Flame Temple Corridor": 24
@@ -21739,6 +22361,7 @@
       "Thunderhead Keep"
     ],
     "profession": "Elementalist",
+    "affiliation": "Undead",
     "variants": [
       {
         "label": null,
@@ -21775,7 +22398,8 @@
     "locations": [
       "Snake Dance"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Smuush Fatfist",
@@ -21796,7 +22420,8 @@
     "locations": [
       "North Kryta Province"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Smuuz the Unfeeling",
@@ -21816,7 +22441,8 @@
     "locations": [
       "Diessa Lowlands"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Charr"
   },
   {
     "name": "Snap the Braineater",
@@ -21837,7 +22463,8 @@
     "locations": [
       "Tangle Root"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Sniik Hungrymind",
@@ -21861,7 +22488,8 @@
       "Spearhead Peak",
       "Witman's Folly"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Snow Ettin",
@@ -21915,6 +22543,7 @@
       "The Frost Gate"
     ],
     "profession": "Warrior",
+    "affiliation": "Shiverpeak Mountains wildlife",
     "variants": [
       {
         "label": null,
@@ -21945,7 +22574,8 @@
     "locations": [
       "Griffon's Mouth"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Snow Ettin (warrior boss)",
@@ -21966,7 +22596,8 @@
     "locations": [
       "Griffon's Mouth"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Snyk the Hundred Tongue",
@@ -21988,7 +22619,8 @@
     "locations": [
       "Abaddon's Mouth"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": null
   },
   {
     "name": "Spar the Ravager",
@@ -22009,7 +22641,8 @@
     "locations": [
       "Fort Ranik"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Charr"
   },
   {
     "name": "Spark of the Titans",
@@ -22063,6 +22696,7 @@
       "Hell's Precipice"
     ],
     "profession": "Elementalist",
+    "affiliation": "Titans",
     "variants": [
       {
         "label": null,
@@ -22111,7 +22745,8 @@
       "Diessa Lowlands",
       "Pockmark Flats"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Spazz Mindrender",
@@ -22132,7 +22767,8 @@
     "locations": [
       "The Great Northern Wall"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Spider Queen",
@@ -22149,6 +22785,7 @@
       "The Wilds"
     ],
     "profession": "Ranger",
+    "affiliation": "Maguuma Jungle wildlife",
     "variants": [
       {
         "label": null,
@@ -22181,7 +22818,8 @@
     "locations": [
       "Abaddon's Mouth"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": null
   },
   {
     "name": "Spined Aloe",
@@ -22212,6 +22850,7 @@
       "Divinity Coast"
     ],
     "profession": "Monk",
+    "affiliation": "Kryta wildlife",
     "variants": [
       {
         "label": null,
@@ -22247,6 +22886,7 @@
       "Nolani Academy"
     ],
     "profession": "Warrior",
+    "affiliation": "Undead",
     "variants": [
       {
         "label": null,
@@ -22282,7 +22922,8 @@
     "locations": [
       "Sage Lands"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Splintertrunk",
@@ -22304,7 +22945,8 @@
     "locations": [
       "Ettin's Back"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Squaw Nimblecrest",
@@ -22325,7 +22967,8 @@
     "locations": [
       "North Kryta Province"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Caromi"
   },
   {
     "name": "Stank Reekfoul",
@@ -22341,7 +22984,8 @@
     "locations": [
       "Nolani Academy"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Stig Plopgush",
@@ -22362,7 +23006,8 @@
     "locations": [
       "Old Ascalon"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Stik Barkripper",
@@ -22383,7 +23028,8 @@
     "locations": [
       "Ettin's Back"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": null
   },
   {
     "name": "Stone Elemental",
@@ -22437,6 +23083,7 @@
       "Tunnels of the Forsaken"
     ],
     "profession": "Elementalist",
+    "affiliation": "Ascalon wildlife",
     "variants": [
       {
         "label": "Post-Searing",
@@ -22501,6 +23148,7 @@
       "Dalada Uplands"
     ],
     "profession": "Elementalist",
+    "affiliation": "Ascalon wildlife",
     "variants": [
       {
         "label": null,
@@ -22586,6 +23234,7 @@
       "Thunderhead Keep"
     ],
     "profession": "Warrior",
+    "affiliation": "Stone Summit",
     "variants": [
       {
         "label": "Prophecies",
@@ -22662,6 +23311,7 @@
       "The Frost Gate"
     ],
     "profession": "Warrior",
+    "affiliation": "Stone Summit",
     "variants": [
       {
         "label": "Prophecies",
@@ -22726,7 +23376,8 @@
       "The Frost Gate",
       "Ice Caves of Sorrow"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Stone Summit Gnasher",
@@ -22797,6 +23448,7 @@
       "Thunderhead Keep"
     ],
     "profession": "Necromancer",
+    "affiliation": "Stone Summit",
     "variants": [
       {
         "label": "Prophecies",
@@ -22877,6 +23529,7 @@
       "Thunderhead Keep"
     ],
     "profession": "Mesmer",
+    "affiliation": "Stone Summit",
     "variants": [
       {
         "label": null,
@@ -22949,6 +23602,7 @@
       "The Frost Gate"
     ],
     "profession": "Necromancer",
+    "affiliation": "Stone Summit",
     "variants": [
       {
         "label": null,
@@ -23007,6 +23661,7 @@
       "Thunderhead Keep"
     ],
     "profession": "Ranger",
+    "affiliation": "Stone Summit",
     "locationLevels": {
       "Fronis Irontoe's Lair": 20
     }
@@ -23070,6 +23725,7 @@
       "The Frost Gate"
     ],
     "profession": "Mesmer",
+    "affiliation": "Stone Summit",
     "variants": [
       {
         "label": "Prophecies",
@@ -23139,6 +23795,7 @@
       "The Frost Gate"
     ],
     "profession": "Ranger",
+    "affiliation": "Stone Summit",
     "variants": [
       {
         "label": null,
@@ -23172,7 +23829,8 @@
     "locations": [
       "Prophet's Path"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Storm Kin",
@@ -23226,6 +23884,7 @@
       "Dunes of Despair"
     ],
     "profession": "Mesmer",
+    "affiliation": "Crystal Desert wildlife",
     "variants": [
       {
         "label": null,
@@ -23294,6 +23953,7 @@
       "Tunnels of the Forsaken"
     ],
     "profession": "Mesmer",
+    "affiliation": "Ascalon wildlife",
     "variants": [
       {
         "label": null,
@@ -23337,7 +23997,8 @@
     "locations": [
       "Salt Flats"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Summit Axe Wielder",
@@ -23392,6 +24053,7 @@
       "The Frost Gate"
     ],
     "profession": "Warrior",
+    "affiliation": "Stone Summit",
     "variants": [
       {
         "label": null,
@@ -23457,6 +24119,7 @@
       "Ice Caves of Sorrow"
     ],
     "profession": "Warrior",
+    "affiliation": "Stone Summit",
     "variants": [
       {
         "label": null,
@@ -23520,7 +24183,8 @@
       "Grenth's Footprint",
       "Sorrow's Furnace"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Summit Deep Knight",
@@ -23570,7 +24234,8 @@
       "Grenth's Footprint",
       "Sorrow's Furnace"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Summit Giant Herder",
@@ -23600,6 +24265,7 @@
       "Thunderhead Keep"
     ],
     "profession": "Warrior",
+    "affiliation": "Stone Summit",
     "variants": [
       {
         "label": null,
@@ -23664,7 +24330,8 @@
       "Grenth's Footprint",
       "Sorrow's Furnace"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Summit Taskmaster",
@@ -23715,7 +24382,8 @@
       "Grenth's Footprint",
       "Sorrow's Furnace"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Summit Warden",
@@ -23765,7 +24433,8 @@
       "Grenth's Footprint",
       "Sorrow's Furnace"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Suurg the Hateful",
@@ -23786,7 +24455,8 @@
     "locations": [
       "The Breach"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Charr"
   },
   {
     "name": "Swag the Lasher",
@@ -23807,7 +24477,8 @@
     "locations": [
       "The Great Northern Wall"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Charr"
   },
   {
     "name": "Swoop Needlegrip",
@@ -23830,7 +24501,8 @@
     "locations": [
       "North Kryta Province"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Caromi"
   },
   {
     "name": "Syr Honorcrest",
@@ -23852,7 +24524,8 @@
     "locations": [
       "Mineral Springs"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Avicara"
   },
   {
     "name": "Taag Relicbinder",
@@ -23875,6 +24548,7 @@
       "Flame Temple Corridor"
     ],
     "profession": "Monk",
+    "affiliation": "Charr",
     "locationLevels": {
       "The Breach": 7,
       "Flame Temple Corridor": 24
@@ -23899,7 +24573,8 @@
     "locations": [
       "Kessex Peak"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Cult of Verata"
   },
   {
     "name": "Tama Blessedhoof",
@@ -23921,7 +24596,8 @@
     "locations": [
       "The Wilds"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Tang Stonecut",
@@ -23942,7 +24618,8 @@
     "locations": [
       "Vulture Drifts"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Tanzit Razorstone",
@@ -23964,7 +24641,8 @@
     "locations": [
       "Sorrow's Furnace"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Tar Behemoth",
@@ -24015,6 +24693,7 @@
       "The Breach"
     ],
     "profession": "Warrior",
+    "affiliation": "Ascalon wildlife",
     "variants": [
       {
         "label": null,
@@ -24051,7 +24730,8 @@
     "locations": [
       "Sorrow's Furnace"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "The Inquisitor",
@@ -24074,7 +24754,8 @@
     "locations": [
       "Iron Mines of Moladune"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Mursaat"
   },
   {
     "name": "The Judge",
@@ -24101,6 +24782,7 @@
       "Thunderhead Keep"
     ],
     "profession": "Elementalist",
+    "affiliation": "Stone Summit",
     "locationLevels": {
       "Traveler's Vale": 12,
       "Thunderhead Keep": 28
@@ -24126,7 +24808,8 @@
     "locations": [
       "Grenth's Footprint"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Thorn Devourer",
@@ -24180,6 +24863,7 @@
       "Bloodstone Fen"
     ],
     "profession": "Ranger",
+    "affiliation": "Maguuma Jungle wildlife",
     "variants": [
       {
         "label": null,
@@ -24243,6 +24927,7 @@
       "Sage Lands"
     ],
     "profession": "Ranger",
+    "affiliation": "Maguuma Jungle wildlife",
     "variants": [
       {
         "label": null,
@@ -24283,6 +24968,7 @@
       "Aurora Glade"
     ],
     "profession": "Elementalist",
+    "affiliation": "Maguuma Jungle wildlife",
     "variants": [
       {
         "label": null,
@@ -24350,6 +25036,7 @@
       "Sage Lands"
     ],
     "profession": "Elementalist",
+    "affiliation": "Maguuma Jungle wildlife",
     "variants": [
       {
         "label": null,
@@ -24386,7 +25073,8 @@
     "locations": [
       "Bloodstone Fen"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Thul Boulderrain",
@@ -24407,7 +25095,8 @@
     "locations": [
       "Snake Dance"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": null
   },
   {
     "name": "Thul The Bull",
@@ -24429,7 +25118,8 @@
     "locations": [
       "Spearhead Peak"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Tiss Danssir",
@@ -24452,7 +25142,8 @@
     "locations": [
       "Elona Reach"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": null
   },
   {
     "name": "Titan (NPC)",
@@ -24502,7 +25193,8 @@
     "locations": [
       "Abaddon's Mouth"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Titans"
   },
   {
     "name": "Tonfor Copperblood",
@@ -24525,7 +25217,8 @@
     "locations": [
       "Lornar's Pass"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Torch Spitfur",
@@ -24545,7 +25238,8 @@
     "locations": [
       "Fort Ranik"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Charr"
   },
   {
     "name": "Toris Stonehammer",
@@ -24567,7 +25261,8 @@
       "Traveler's Vale",
       "Borlis Pass"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Torr the Relentless",
@@ -24588,7 +25283,8 @@
     "locations": [
       "Bloodstone Fen"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Tortitudo Probo",
@@ -24611,7 +25307,8 @@
     "locations": [
       "Hell's Precipice"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Titans"
   },
   {
     "name": "Trech Schmoogle",
@@ -24632,7 +25329,8 @@
     "locations": [
       "Diviner's Ascent"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Tree of Autumn",
@@ -24653,7 +25351,8 @@
     "locations": [
       "Talmark Wilderness"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Tree of Judgment",
@@ -24674,7 +25373,8 @@
     "locations": [
       "The Black Curtain"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Tree of Life",
@@ -24696,7 +25396,8 @@
     "locations": [
       "Bloodstone Fen"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Tree of Memories",
@@ -24712,7 +25413,8 @@
     "locations": [
       "Tangle Root"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Tree of Regrowth",
@@ -24734,7 +25436,8 @@
     "locations": [
       "Tangle Root"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Tree of Renewal",
@@ -24755,7 +25458,8 @@
     "locations": [
       "D'Alessio Seaboard"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Tree of Solitude",
@@ -24776,7 +25480,8 @@
     "locations": [
       "Nebo Terrace"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Tree of Vitality",
@@ -24799,7 +25504,8 @@
       "Aurora Glade",
       "The Wilds"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Tree of Winds",
@@ -24815,7 +25521,8 @@
     "locations": [
       "Bloodstone Fen"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Tundra Giant",
@@ -24869,7 +25576,8 @@
       "Talus Chute",
       "Iron Mines of Moladune"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Twig Slipfall",
@@ -24890,7 +25598,8 @@
     "locations": [
       "Nebo Terrace"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Ulhar Stonehound",
@@ -24917,6 +25626,7 @@
       "Thunderhead Keep"
     ],
     "profession": "Ranger",
+    "affiliation": "Stone Summit",
     "variants": [
       {
         "label": "Level 12",
@@ -24965,7 +25675,8 @@
       "Deldrimor Bowl",
       "Borlis Pass"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Undead Lich",
@@ -25015,6 +25726,7 @@
       "Gate of Madness"
     ],
     "profession": "Necromancer",
+    "affiliation": "Undead",
     "variants": [
       {
         "label": "Hell's Precipice",
@@ -25078,7 +25790,8 @@
     "locations": [
       "Hell's Precipice"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Undead"
   },
   {
     "name": "Unthet Rotwood",
@@ -25099,7 +25812,8 @@
     "locations": [
       "Frozen Forest"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Uussh Visshta",
@@ -25121,7 +25835,8 @@
     "locations": [
       "Elona Reach"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Valetudo Rubor",
@@ -25142,7 +25857,8 @@
     "locations": [
       "Hell's Precipice"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Titans"
   },
   {
     "name": "Vassa Ssiss",
@@ -25165,7 +25881,8 @@
     "locations": [
       "Elona Reach"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Verata the Necromancer",
@@ -25191,6 +25908,7 @@
       "Kessex Peak"
     ],
     "profession": "Necromancer",
+    "affiliation": "Cult of Verata",
     "variants": [
       {
         "label": "Level 2, Lakeside County",
@@ -25246,7 +25964,8 @@
     "locations": [
       "Sorrow's Furnace"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Virag Bladestone",
@@ -25268,7 +25987,8 @@
     "locations": [
       "Ice Caves of Sorrow"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Vizz Vexflume",
@@ -25290,7 +26010,8 @@
     "locations": [
       "The Falls"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Vokur Grimshackles",
@@ -25312,7 +26033,8 @@
     "locations": [
       "Sorrow's Furnace"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Vook Foomble",
@@ -25333,7 +26055,8 @@
     "locations": [
       "Salt Flats"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Vrek Qwek Spek",
@@ -25352,7 +26075,8 @@
     "locations": [
       "Dragon's Gullet"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Ascalon wildlife"
   },
   {
     "name": "Vulg Painbrain",
@@ -25373,7 +26097,8 @@
     "locations": [
       "Ring of Fire"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Ring of Fire Islands wildlife"
   },
   {
     "name": "Watchtower Guard",
@@ -25424,7 +26149,8 @@
     "locations": [
       "Riverside Province"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "White Mantle"
   },
   {
     "name": "Whiptail Devourer",
@@ -25480,6 +26206,7 @@
       "The Great Northern Wall"
     ],
     "profession": "Ranger",
+    "affiliation": "Ascalon wildlife",
     "variants": [
       {
         "label": "Level ?:",
@@ -25516,7 +26243,8 @@
       "Griffon's Mouth",
       "Borlis Pass"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "White Mantle Abbot",
@@ -25586,6 +26314,7 @@
       "Ice Caves of Sorrow"
     ],
     "profession": "Monk",
+    "affiliation": "White Mantle",
     "variants": [
       {
         "label": "As an ally",
@@ -25628,7 +26357,8 @@
       "Ice Caves of Sorrow",
       "Iron Mines of Moladune"
     ],
-    "profession": null
+    "profession": null,
+    "affiliation": "White Mantle"
   },
   {
     "name": "White Mantle Justiciar",
@@ -25684,6 +26414,7 @@
       "Thunderhead Keep"
     ],
     "profession": "Warrior",
+    "affiliation": "White Mantle",
     "variants": [
       {
         "label": null,
@@ -25775,6 +26506,7 @@
       "The Rise of the White Mantle"
     ],
     "profession": "Warrior",
+    "affiliation": "White Mantle",
     "variants": [
       {
         "label": "Normal version {{W}}",
@@ -25860,6 +26592,7 @@
       "Thunderhead Keep"
     ],
     "profession": "Monk",
+    "affiliation": "White Mantle",
     "variants": [
       {
         "label": "Normal version {{Mo}}",
@@ -25944,7 +26677,8 @@
       "Iron Mines of Moladune",
       "Thunderhead Keep"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "White Mantle"
   },
   {
     "name": "White Mantle Savant",
@@ -26020,6 +26754,7 @@
       "Thunderhead Keep"
     ],
     "profession": "Elementalist",
+    "affiliation": "White Mantle",
     "variants": [
       {
         "label": "As ally {{E}}",
@@ -26116,6 +26851,7 @@
       "Bloodstone Fen"
     ],
     "profession": "Ranger",
+    "affiliation": "White Mantle",
     "variants": [
       {
         "label": "Level 12",
@@ -26229,6 +26965,7 @@
       "Thunderhead Keep"
     ],
     "profession": "Ranger",
+    "affiliation": "White Mantle",
     "variants": [
       {
         "label": "Level 12",
@@ -26341,7 +27078,8 @@
       "Iron Mines of Moladune",
       "Thunderhead Keep"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "White Mantle"
   },
   {
     "name": "White Mantle Zealot",
@@ -26415,6 +27153,7 @@
       "Thunderhead Keep"
     ],
     "profession": "Warrior",
+    "affiliation": "White Mantle",
     "variants": [
       {
         "label": "Normal",
@@ -26453,7 +27192,8 @@
       "Snake Dance",
       "Talus Chute"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Willa the Unpleasant",
@@ -26475,7 +27215,8 @@
     "locations": [
       "Abaddon's Mouth"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Mursaat"
   },
   {
     "name": "Wind Rider",
@@ -26535,6 +27276,7 @@
       "The Wilds"
     ],
     "profession": "Mesmer",
+    "affiliation": "Maguuma Jungle wildlife",
     "variants": [
       {
         "label": "Prophecies",
@@ -26574,7 +27316,8 @@
     "locations": [
       "The Black Curtain"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "affiliation": "Caromi"
   },
   {
     "name": "Wissper Inssani",
@@ -26596,7 +27339,8 @@
     "locations": [
       "Elona Reach"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Forgotten"
   },
   {
     "name": "Woho Sacredhide",
@@ -26618,7 +27362,8 @@
     "locations": [
       "Silverwood"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Wraith",
@@ -26675,6 +27420,7 @@
       "Riverside Province"
     ],
     "profession": "Mesmer",
+    "affiliation": "Undead",
     "variants": [
       {
         "label": null,
@@ -26710,7 +27456,8 @@
     "locations": [
       "Grenth's Footprint"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Wurm (NPC)",
@@ -26756,7 +27503,8 @@
       "Perdition Rock",
       "Abaddon's Mouth"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Ring of Fire Islands wildlife"
   },
   {
     "name": "Wydd Kindlerun",
@@ -26778,7 +27526,8 @@
       "Aurora Glade",
       "The Wilds"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Wyng Soothingclaw",
@@ -26801,7 +27550,8 @@
     "locations": [
       "Nebo Terrace"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Caromi"
   },
   {
     "name": "Wyt Sharpfeather",
@@ -26823,7 +27573,8 @@
     "locations": [
       "Mineral Springs"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Avicara"
   },
   {
     "name": "Yerk Plopsquirt",
@@ -26845,7 +27596,8 @@
     "locations": [
       "Nebo Terrace"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Kryta wildlife"
   },
   {
     "name": "Yino Burlyhaunch",
@@ -26866,7 +27618,8 @@
       "Deldrimor Bowl",
       "Borlis Pass"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Shiverpeak Mountains wildlife"
   },
   {
     "name": "Zaim Grimeclaw",
@@ -26887,7 +27640,8 @@
     "locations": [
       "Sanctum Cay"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Undead"
   },
   {
     "name": "Zalo Soulhaunch",
@@ -26908,7 +27662,8 @@
     "locations": [
       "The Scar"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Zameel Dirge",
@@ -26930,7 +27685,8 @@
       "Majesty's Rest",
       "Divinity Coast"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "affiliation": "Undead"
   },
   {
     "name": "Zarr MentalMelt",
@@ -26952,7 +27708,8 @@
     "locations": [
       "Sage Lands"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Maguuma Jungle wildlife"
   },
   {
     "name": "Zeki Lament",
@@ -26973,7 +27730,8 @@
     "locations": [
       "Riverside Province"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "affiliation": "Undead"
   },
   {
     "name": "Ziyad Soulreaper",
@@ -26994,7 +27752,8 @@
     "locations": [
       "D'Alessio Seaboard"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Undead"
   },
   {
     "name": "Zombie Warlock",
@@ -27053,7 +27812,8 @@
       "Divinity Coast",
       "Gates of Kryta"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Undead"
   },
   {
     "name": "Zukra Cadava",
@@ -27074,7 +27834,8 @@
     "locations": [
       "Divinity Coast"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "affiliation": "Undead"
   },
   {
     "name": "Zwack Ramble",
@@ -27095,7 +27856,8 @@
     "locations": [
       "Vulture Drifts"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "affiliation": "Crystal Desert wildlife"
   },
   {
     "name": "Zyd Pointedbeak",
@@ -27118,7 +27880,8 @@
     "locations": [
       "Stingray Strand"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "affiliation": "Caromi"
   },
   {
     "name": "spawn",
@@ -27131,6 +27894,7 @@
     "skills": [],
     "isBoss": false,
     "locations": [],
-    "profession": null
+    "profession": null,
+    "affiliation": null
   }
 ]

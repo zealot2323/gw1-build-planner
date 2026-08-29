@@ -2841,5 +2841,21 @@
       "Nayl Klaw Tuthan",
       "spawn"
     ]
+  },
+  {
+    "kind": "explorable",
+    "name": "The Underworld (explorable area)",
+    "wikiPage": "The Underworld (explorable area)",
+    "campaign": "Prophecies",
+    "region": "The Mists",
+    "neighbors": [
+      "Scarred Earth"
+    ],
+    "foes": [
+      "Grasp of Insanity",
+      "Scythe of Chaos (mesmer)",
+      "Chained Soul"
+    ],
+    "bosses": []
   }
 ]

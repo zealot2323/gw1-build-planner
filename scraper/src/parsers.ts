@@ -577,6 +577,7 @@ export function parseMonster(title: string, wikitext: string): Parsed<ParsedMons
       bossElite,
       locations: [...locations],
       profession: normalizeProfession(box?.["profession"]),
+      affiliation: box?.["affiliation"] ? stripMarkup(box["affiliation"]) : null,
       // keep variants for single-block pages too when they carry hard-mode
       // data — that is where hardModeSkills lives (e.g. Charr Blade Storm's
       // Hundred Blades)

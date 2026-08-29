@@ -167,6 +167,8 @@ export interface Monster {
   bossElite?: SkillRef;
   locations: LocationRef[];
   profession?: Profession | null;
+  /** Infobox "affiliation": faction / creature type ("Undead", "Titans"). */
+  affiliation?: string | null;
   /** Present only when the wiki page splits skills into more than one block. */
   variants?: MonsterVariant[];
   /** Encounter level per location, from the wiki's "(level N)" annotations. */
@@ -339,6 +341,7 @@ export const monsterSchema = {
     bossElite: { type: "string" },
     locations: refArray,
     profession: { oneOf: [{ $ref: "gw1-profession" }, { type: "null" }] },
+    affiliation: { type: ["string", "null"] },
     variants: {
       type: "array",
       items: {

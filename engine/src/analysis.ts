@@ -66,54 +66,79 @@ export type ThreatTag =
   | "Hex pressure"
   | "Condition pressure"
   | "Degeneration"
-  | "Healing"
+  | "Enemy healing"
   | "Resurrection"
   | "Enchantment removal"
   | "Knockdown"
   | "Life stealing"
   | "Armor ignoring";
 
-/**
- * Classify a skill by what it does TO A PLAYER PARTY. Driven by the skill's
- * description text and type, because the wiki has no structured field for
- * "this is an interrupt". Deliberately generous: a zone summary is a warning,
- * not a spreadsheet.
- */
+/** Does this skill act on the enemy's own side (heals, buffs, protection)? */
+function isFriendlySkill(text: string): boolean {
+  return /target (other )?all(y|ies)|all allies|your allies|party members|target's? party|yourself|\bself\b/.test(text)
+    && !/target foe|target's? foes|enemy|foes in/.test(text);
+}
+
 const TAG_PATTERNS: Array<[ThreatTag, RegExp]> = [
   // NOTE: patterns are word-anchored on purpose. A bare "heal" substring
   // also matches "Health", which tagged every damage skill as healing.
-  ["Heavy AoE", /all adjacent|all nearby|adjacent foes|nearby foes|in th(e|at) area\b|foes near|foes adjacent|foes in that/],
   ["Interrupts", /\binterrupt/],
   ["Energy denial", /loses? \d[^.]*energy|\bsteal[^.]*energy|energy loss|lose all[^.]*energy/],
   ["Melee denial", /\bblind|cannot attack|\bmiss\b|attack speed[^.]*(reduced|slowed)|\bblocks?\b|\bevade/],
   ["Caster denial", /\bdazed\b|spell failure|cannot cast|casting time[^.]*doubled|\bbackfire\b|takes? damage[^.]*cast/],
   ["Knockdown", /knock(ed|s)? ?down|\bknockdown\b/],
   ["Degeneration", /health degeneration|energy degeneration/],
-  ["Condition pressure", /\bpoison|\bdiseas|\bbleed|\bburning\b|\bcrippl|\bweakness\b|deep wound/],
+  ["Condition pressure", /\bpoison|\bdiseas|\bbleed|\bburning\b|\bcrippl|\bweakness\b|deep wound|\bdazed\b|negative condition|spread[^.]*condition|transfer[^.]*condition/],
   ["Hex pressure", /\bhex(es|ed)?\b/],
   ["Enchantment removal", /remove [^.]*enchantment|strip[^.]*enchantment|enchantment[^.]*removed|lose[^.]*enchantment/],
-  ["Healing", /\bheals?\b|\bhealed\b|\bhealing\b|health regeneration|\bregenerat/],
+  ["Enemy healing", /\bheals?\b|\bhealed\b|\bhealing\b|health regeneration|\bregenerat/],
   ["Resurrection", /\bresurrect|return to life|\brebirth\b/],
   ["Life stealing", /\bsteals?\b[^.]*health|life steal/],
   ["Armor ignoring", /armor.?ignoring|ignores armor|holy damage|shadow damage|chaos damage/],
 ];
 
+/** Area-of-effect wording, regardless of who it lands on. */
+const AOE = /all adjacent|all nearby|adjacent foes|nearby foes|in th(e|at) area\b|foes near|foes adjacent|foes in that|all foes|party members|all allies/;
+
 /**
  * Classify a skill by what it does TO A PLAYER PARTY, from its description
- * text — the wiki has no structured "this is an interrupt" field. A zone
- * summary is a warning, not a spreadsheet, so the matching is deliberately
- * broad; it is anchored on word boundaries to avoid false hits.
+ * text — the wiki has no structured "this is an interrupt" field.
+ *
+ * Two judgement calls worth knowing about:
+ *  - "Heavy AoE" means area PRESSURE, not merely an area-shaped skill. Heal
+ *    Area hits an area but heals the enemy's own side, so it is enemy
+ *    healing, not AoE. Conversely an area hex or an area condition IS AoE
+ *    pressure even though it deals no direct damage.
+ *  - friendly-target skills never earn offensive tags.
  */
 export function threatTagsForSkill(description: string, name: string): ThreatTag[] {
   const text = `${name}. ${description}`.toLowerCase();
-  return TAG_PATTERNS.filter(([, re]) => re.test(text)).map(([tag]) => tag);
+  const friendly = isFriendlySkill(text);
+  const tags = new Set<ThreatTag>();
+
+  for (const [tag, re] of TAG_PATTERNS) {
+    if (!re.test(text)) continue;
+    // an enemy monk's protective//healing kit shouldn't read as pressure
+    const offensive = tag !== "Enemy healing" && tag !== "Resurrection";
+    if (friendly && offensive) continue;
+    tags.add(tag);
+  }
+
+  // Area pressure: an AoE shape that actually threatens the party — damage,
+  // a condition, a hex, or degeneration.
+  const pressures: ThreatTag[] = ["Condition pressure", "Hex pressure", "Degeneration", "Knockdown"];
+  const dealsDamage = /\bdamage\b/.test(text) && !friendly;
+  if (AOE.test(text) && !friendly && (dealsDamage || pressures.some((p) => tags.has(p)))) {
+    tags.add("Heavy AoE");
+  }
+  return [...tags];
 }
 
 export interface ThreatCount {
   tag: ThreatTag;
   /** How many distinct skills across the zone carry this tag. */
   skills: number;
-  /** Example skills, for the tooltip. */
+  /** The skills behind the tag, so the UI can show its working. */
   examples: SkillRef[];
 }
 
@@ -125,6 +150,14 @@ export interface SpeciesCount {
   bosses: string[];
 }
 
+/** A zone-wide tactical note that is not a skill tag. */
+export interface ZoneNote {
+  kind: "weakness" | "strength";
+  text: string;
+  /** Which creatures it applies to. */
+  detail: string;
+}
+
 export interface ZoneSummary {
   location: LocationRef;
   monsterCount: number;
@@ -134,16 +167,26 @@ export interface ZoneSummary {
   groups: SpeciesCount[];
   /** What the zone throws at you, most common first. */
   threats: ThreatCount[];
-  /** Damage types most enemies here are soft against. */
-  exploitDamage: string[];
-  /** Damage types most enemies here resist. */
-  resistedDamage: string[];
+  /** One-off threats that didn't clear the noise floor. */
+  minorThreats: ThreatCount[];
+  /** Zone-wide weaknesses and resistances worth building around. */
+  notes: ZoneNote[];
 }
 
 /**
- * Summarize a zone: who lives there and what tactics they bring. Built from
- * the skill bars that actually apply in this location (so it respects the
- * per-zone variants and the hard mode toggle).
+ * Creature types that take double damage from holy. The infobox
+ * "affiliation" field is the reliable marker — species alone is not, since
+ * "Zombie"/"Skeleton" pages vary.
+ */
+const UNDEAD_AFFILIATIONS = /undead/i;
+
+/** Below this many distinct skills a tag is noise, not a zone trait. */
+const THREAT_FLOOR = 2;
+
+/**
+ * Summarize a zone: who lives there, what tactics they bring, and what to
+ * build around. Built from the skill bars that actually apply in this
+ * location (so it respects per-zone variants and the hard mode toggle).
  */
 export function zoneSummary(
   location: LocationRef,
@@ -159,6 +202,7 @@ export function zoneSummary(
   let min = Infinity;
   let max = -Infinity;
   let bossCount = 0;
+  let undead = 0;
 
   for (const entry of monsters) {
     const { monster, level, isBossHere, skills, armor } = entry;
@@ -167,6 +211,7 @@ export function zoneSummary(
       min = Math.min(min, level);
       max = Math.max(max, level);
     }
+    if (UNDEAD_AFFILIATIONS.test(monster.affiliation ?? "")) undead++;
 
     const species = monster.species ?? "Unknown";
     if (!bySpecies.has(species)) bySpecies.set(species, { monsters: [], professions: new Set(), bosses: [] });
@@ -176,8 +221,7 @@ export function zoneSummary(
     if (isBossHere) group.bosses.push(monster.name);
 
     for (const { ref, skill } of skills) {
-      const tags = threatTagsForSkill(skill?.description ?? "", ref);
-      for (const t of tags) {
+      for (const t of threatTagsForSkill(skill?.description ?? "", ref)) {
         if (!tagSkills.has(t)) tagSkills.set(t, new Set());
         tagSkills.get(t)!.add(ref);
       }
@@ -197,14 +241,31 @@ export function zoneSummary(
     }))
     .sort((a, b) => b.count - a.count || a.species.localeCompare(b.species));
 
-  const threats: ThreatCount[] = [...tagSkills.entries()]
-    .map(([tag, set]) => ({ tag, skills: set.size, examples: [...set].slice(0, 6) }))
+  const allTags: ThreatCount[] = [...tagSkills.entries()]
+    .map(([tag, set]) => ({ tag, skills: set.size, examples: [...set].sort() }))
     .sort((a, b) => b.skills - a.skills || a.tag.localeCompare(b.tag));
 
-  // a damage type is worth calling out when it applies to a third of the zone
+  // a damage type is worth calling out when a third of the zone shares it
   const threshold = Math.max(2, Math.ceil(monsters.length / 3));
   const pick = (m: Map<string, number>) =>
     [...m.entries()].filter(([, n]) => n >= threshold).sort(([, a], [, b]) => b - a).map(([t]) => t);
+
+  const notes: ZoneNote[] = [];
+  if (undead >= Math.max(2, Math.ceil(monsters.length / 4))) {
+    notes.push({
+      kind: "weakness",
+      text: "Holy damage does double damage",
+      detail: `${undead} undead foe${undead === 1 ? "" : "s"}`,
+    });
+  }
+  const exploit = pick(weak);
+  if (exploit.length > 0) {
+    notes.push({ kind: "weakness", text: `Low armor vs ${exploit.join(", ")}`, detail: "most foes here" });
+  }
+  const resisted = pick(strong);
+  if (resisted.length > 0) {
+    notes.push({ kind: "strength", text: `High armor vs ${resisted.join(", ")}`, detail: "most foes here" });
+  }
 
   return {
     location,
@@ -212,8 +273,8 @@ export function zoneSummary(
     bossCount,
     levelRange: min === Infinity ? null : { min, max },
     groups,
-    threats,
-    exploitDamage: pick(weak),
-    resistedDamage: pick(strong),
+    threats: allTags.filter((t) => t.skills >= THREAT_FLOOR),
+    minorThreats: allTags.filter((t) => t.skills < THREAT_FLOOR),
+    notes,
   };
 }

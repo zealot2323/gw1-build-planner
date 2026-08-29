@@ -249,7 +249,7 @@ describe("full dataset: zone analysis", () => {
     expect(s.levelRange!.min).toBeGreaterThan(0);
     // Charr country: multiple species groups, and healing from the Shamans
     expect(s.groups.length).toBeGreaterThan(1);
-    expect(s.threats.map((t) => t.tag)).toContain("Healing");
+    expect(s.threats.map((t) => t.tag)).toContain("Enemy healing");
   });
 
   it("does not tag damage skills as Healing (the 'heal' in 'Health' trap)", async () => {
@@ -257,12 +257,12 @@ describe("full dataset: zone analysis", () => {
     const tagsOf = (page: string) =>
       threatTagsForSkill(index.skillByPage.get(page)!.description, page);
     // "steal up to N Health" / "inflict a Deep Wound" must not read as healing
-    expect(tagsOf("Dismember")).not.toContain("Healing");
-    expect(tagsOf("Sever Artery")).not.toContain("Healing");
-    expect(tagsOf("Vampiric Touch")).not.toContain("Healing");
+    expect(tagsOf("Dismember")).not.toContain("Enemy healing");
+    expect(tagsOf("Sever Artery")).not.toContain("Enemy healing");
+    expect(tagsOf("Vampiric Touch")).not.toContain("Enemy healing");
     // ...while real healing still is
-    expect(tagsOf("Heal Other")).toContain("Healing");
-    expect(tagsOf("Healing Signet")).toContain("Healing");
+    expect(tagsOf("Heal Other")).toContain("Enemy healing");
+    expect(tagsOf("Healing Signet")).toContain("Enemy healing");
     // and a few other categories land where they should
     expect(tagsOf("Distracting Shot")).toContain("Interrupts");
     expect(tagsOf("Fire Storm")).toContain("Heavy AoE");
@@ -276,6 +276,32 @@ describe("full dataset: zone analysis", () => {
     expect(p.base).toBe(63);
     expect(p.weakVs.sort()).toEqual(["earth", "fire", "lightning"]);
     expect(p.strongVs).toEqual(["cold"]);
+  });
+
+  it("separates enemy healing from area pressure", async () => {
+    const { threatTagsForSkill } = await import("../src/index.js");
+    const tagsOf = (page: string) =>
+      threatTagsForSkill(index.skillByPage.get(page)!.description, page);
+    // area-shaped but heals the enemy's own side — not AoE pressure
+    expect(tagsOf("Heal Area")).toEqual(["Enemy healing"]);
+    expect(tagsOf("Heal Party")).toEqual(["Enemy healing"]);
+    // area damage is
+    expect(tagsOf("Fire Storm")).toContain("Heavy AoE");
+    // ...and so is an area hex or an area condition, which deal no damage
+    expect(tagsOf("Suffering")).toContain("Heavy AoE");
+    expect(tagsOf("Epidemic")).toContain("Heavy AoE");
+    // an enemy monk's protective kit is not pressure either
+    expect(tagsOf("Mending")).toEqual(["Enemy healing"]);
+  });
+
+  it("flags holy damage in undead zones and hides one-off traits", async () => {
+    const { zoneSummary } = await import("../src/index.js");
+    const s = zoneSummary("The Catacombs", index);
+    const holy = s.notes.find((n) => n.text.includes("Holy"));
+    expect(holy?.kind).toBe("weakness");
+    // every surfaced trait clears the noise floor; singles are kept aside
+    for (const t of s.threats) expect(t.skills).toBeGreaterThanOrEqual(2);
+    for (const t of s.minorThreats) expect(t.skills).toBe(1);
   });
 
   it("lists explorables reachable from an outpost", async () => {

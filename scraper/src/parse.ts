@@ -27,6 +27,7 @@ import {
   EXTRA_NEIGHBORS,
   LOCATION_ALIASES,
   TRAINER_EXTRA_SKILLS,
+  EXTRA_EXPLORABLES,
   PRE_SEARING_LOCATIONS,
   isExcludedSkillPage,
   isPreSearingMonster,
@@ -164,7 +165,7 @@ const locationKinds: Array<[string[], string]> = [
   [manifest.locations.towns, "town"],
   [manifest.locations.outposts, "outpost"],
   [manifest.locations.missionOutposts, "mission-outpost"],
-  [manifest.locations.explorables, "explorable"],
+  [[...manifest.locations.explorables, ...EXTRA_EXPLORABLES], "explorable"],
 ];
 const locations: ParsedLocation[] = [];
 for (const [titles, kind] of locationKinds) {

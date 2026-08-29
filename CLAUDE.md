@@ -130,8 +130,17 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
   3-elemental split and picks an arbitrary side.
 - **Zone briefings** (`zoneSummary`) tag what a zone throws at you (Heavy AoE,
   Interrupts, Energy denial, ...) from skill descriptions, since the wiki has
-  no structured field for it. Patterns are word-anchored: a bare "heal"
-  substring also matches "Health", which tagged every damage skill as healing.
+  no structured field for it. Judgement calls baked in:
+  - Patterns are word-anchored: a bare "heal" substring also matches
+    "Health", which tagged every damage skill as healing.
+  - "Heavy AoE" means area *pressure*, not an area *shape*. Heal Area hits an
+    area but heals the enemy's own side (that's Enemy healing); an area hex
+    or area condition IS AoE pressure even with no direct damage.
+  - Friendly-target skills never earn offensive tags.
+  - A tag backed by a single skill is noise, so it drops to `minorThreats`.
+- **Damage-type notes** come from `affiliation`, not species: `affiliation =
+  Undead` (64 monsters) is the reliable marker for the holy-damage weakness,
+  since the Zombie/Skeleton species labels are inconsistent.
 - Manual corrections (wiki typos, non-locations like Lion's Gate, PvP arenas,
   progression-gated connections such as Ring of Fire -> Abaddon's Mouth ->
   Hell's Precipice, trainer list omissions) live in

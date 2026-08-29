@@ -3,7 +3,7 @@ import type { Profession } from "@gw1/engine";
 /** Profession icon; `null`/undefined profession renders nothing (common skills). */
 export function ProfessionIcon({
   profession,
-  size = 16,
+  size = 18,
   withLabel = false,
 }: {
   profession: Profession | null | undefined;

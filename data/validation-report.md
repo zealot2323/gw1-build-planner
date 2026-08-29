@@ -1,6 +1,6 @@
 # Validation report
 
-Generated 2026-08-29T17:30:47.315Z by `npm run parse` (cache-only).
+Generated 2026-08-29T17:54:55.070Z by `npm run parse` (cache-only).
 
 ## locations (1 issue on 1 page)
 
@@ -38,6 +38,6 @@ Generated 2026-08-29T17:30:47.315Z by `npm run parse` (cache-only).
 - **The Northlands**: neighbor "A Bastion In the North" is not a known location
 - **The Northlands**: neighbor "Forsaken Tunnels" is not a known location
 - **The Northlands**: neighbor "A Bastion In the North" is not a known location
+- **The Underworld (explorable area)**: neighbor "Scarred Earth" is not a known location
 - **Time Ward**: elite: no capture source parsed
-- **Tomb of the Primeval Kings**: neighbor "The Underworld (explorable area)" is not a known location
 - **Wizard's Folly**: neighbor "Regent Valley (Pre-Searing)" is not a known location

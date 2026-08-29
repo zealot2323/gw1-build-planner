@@ -118,9 +118,20 @@ function MonsterCard({
 }
 
 /** "What am I walking into?" — enemy groups and the tactics they bring. */
-function ZoneBriefing({ location, hardMode }: { location: string; hardMode: boolean }) {
+function ZoneBriefing({
+  location,
+  hardMode,
+  onSkillClick,
+}: {
+  location: string;
+  hardMode: boolean;
+  onSkillClick: (skill: string) => void;
+}) {
   const s = useMemo(() => zoneSummary(location, index, hardMode), [location, hardMode]);
+  const [openTag, setOpenTag] = useState<string | null>(null);
   if (s.monsterCount === 0) return null;
+  const open = [...s.threats, ...s.minorThreats].find((t) => t.tag === openTag);
+
   return (
     <div className="briefing">
       {s.levelRange && (
@@ -142,7 +153,7 @@ function ZoneBriefing({ location, hardMode }: { location: string; hardMode: bool
                 {i > 0 && ", "}
                 {g.species} <span className="muted">×{g.count}</span>
                 {g.professions.map((p) => (
-                  <ProfessionIcon key={p} profession={p} size={13} />
+                  <ProfessionIcon key={p} profession={p} size={15} />
                 ))}
               </span>
             ))}
@@ -154,25 +165,72 @@ function ZoneBriefing({ location, hardMode }: { location: string; hardMode: bool
           <span className="briefing-label">Expect</span>
           <span className="threats">
             {s.threats.map((t) => (
-              <span key={t.tag} className="threat" title={t.examples.join(", ")}>
+              <button
+                key={t.tag}
+                className={openTag === t.tag ? "threat open" : "threat"}
+                onClick={() => setOpenTag(openTag === t.tag ? null : t.tag)}
+              >
                 {t.tag} <span className="muted">×{t.skills}</span>
+              </button>
+            ))}
+            {s.minorThreats.length > 0 && (
+              <button
+                className="threat minor"
+                title={s.minorThreats.map((t) => `${t.tag} (${t.examples.join(", ")})`).join(" · ")}
+                onClick={() => setOpenTag(openTag === "__minor" ? null : "__minor")}
+              >
+                +{s.minorThreats.length} one-off
+              </button>
+            )}
+          </span>
+        </div>
+      )}
+      {s.notes.length > 0 && (
+        <div className="briefing-row">
+          <span className="briefing-label">Tactics</span>
+          <span className="threats">
+            {s.notes.map((n) => (
+              <span key={n.text} className={n.kind === "weakness" ? "note weak-vs" : "note strong-vs"}>
+                {n.kind === "weakness" ? "▼" : "▲"} {n.text} <span className="muted">({n.detail})</span>
               </span>
             ))}
           </span>
         </div>
       )}
-      {(s.exploitDamage.length > 0 || s.resistedDamage.length > 0) && (
-        <div className="briefing-row">
-          <span className="briefing-label">Damage</span>
-          <span>
-            {s.exploitDamage.length > 0 && (
-              <span className="weak-vs">exploit {s.exploitDamage.join("/")}</span>
-            )}
-            {s.exploitDamage.length > 0 && s.resistedDamage.length > 0 && " · "}
-            {s.resistedDamage.length > 0 && (
-              <span className="strong-vs">avoid {s.resistedDamage.join("/")}</span>
-            )}
-          </span>
+      {(open || openTag === "__minor") && (
+        <div className="slide-down threat-detail">
+          {openTag === "__minor" ? (
+            <>
+              <div className="muted small">
+                Single-skill traits — probably not worth building around:
+              </div>
+              {s.minorThreats.map((t) => (
+                <div key={t.tag} className="small">
+                  <span className="muted">{t.tag}:</span>{" "}
+                  {t.examples.map((ref, i) => (
+                    <span key={ref}>
+                      {i > 0 && ", "}
+                      <button className="linkish inline" onClick={() => onSkillClick(ref)}>
+                        {ref}
+                      </button>
+                    </span>
+                  ))}
+                </div>
+              ))}
+            </>
+          ) : (
+            <div className="small">
+              <span className="muted">{open!.tag} — {open!.skills} skills:</span>{" "}
+              {open!.examples.map((ref, i) => (
+                <span key={ref}>
+                  {i > 0 && ", "}
+                  <button className="linkish inline" onClick={() => onSkillClick(ref)}>
+                    {ref}
+                  </button>
+                </span>
+              ))}
+            </div>
+          )}
         </div>
       )}
     </div>
@@ -208,7 +266,10 @@ export function ZonesView({
   const regions = useMemo(() => {
     const byRegion = new Map<
       string,
-      { outposts: Array<{ name: string; kind: string; zones: string[] }>; other: Array<{ name: string; kind: string }> }
+      {
+        outposts: Array<{ name: string; kind: string; zones: Array<{ name: string; kind: string }> }>;
+        other: Array<{ name: string; kind: string }>;
+      }
     >();
     const bucket = (region: string) => {
       const key = region || "(unknown region)";
@@ -219,13 +280,27 @@ export function ZonesView({
     const inScope = (l: { preSearing?: boolean }) =>
       searing === "pre" ? l.preSearing === true : l.preSearing !== true;
 
+    // a mission outpost's mission is one of the things you can enter from
+    // it, so it belongs in the same child list — labelled as a mission
+    const missionByOutpost = new Map<string, string>();
+    for (const m of dataset.missions ?? []) {
+      if (m.outpost) missionByOutpost.set(m.outpost, m.wikiPage);
+    }
+
     const nested = new Set<string>();
+    const nestedMissions = new Set<string>();
     for (const l of dataset.locations) {
       if (l.kind === "explorable" || !inScope(l)) continue;
-      const zones = explorablesFrom(l.wikiPage, index)
+      const zones: Array<{ name: string; kind: string }> = explorablesFrom(l.wikiPage, index)
         .filter((z) => inScope(index.locationByPage.get(z) ?? {}))
-        .sort();
-      for (const z of zones) nested.add(z);
+        .sort()
+        .map((name) => ({ name, kind: "explorable" }));
+      for (const z of zones) nested.add(z.name);
+      const mission = missionByOutpost.get(l.wikiPage);
+      if (mission && searing === "post") {
+        zones.unshift({ name: mission, kind: "mission" });
+        nestedMissions.add(mission);
+      }
       bucket(l.region ?? "").outposts.push({ name: l.wikiPage, kind: l.kind, zones });
     }
     // explorables that hang off no outpost still need a home
@@ -233,9 +308,11 @@ export function ZonesView({
       if (l.kind !== "explorable" || nested.has(l.wikiPage) || !inScope(l)) continue;
       bucket(l.region ?? "").other.push({ name: l.wikiPage, kind: "explorable" });
     }
-    // missions are all post-Searing
+    // missions are all post-Searing; any not nested under an outpost above
+    // still need a home in their region
     if (searing === "post") {
       for (const m of dataset.missions ?? []) {
+        if (nestedMissions.has(m.wikiPage)) continue;
         bucket(m.region ?? "").other.push({ name: m.wikiPage, kind: "mission" });
       }
     }
@@ -326,7 +403,7 @@ export function ZonesView({
                     </div>
                     {o.zones.length > 0 && (
                       <ul className="plain-list indent">
-                        {o.zones.map((z) => zoneButton(z, "explorable"))}
+                        {o.zones.map((z) => zoneButton(z.name, z.kind))}
                       </ul>
                     )}
                   </li>
@@ -360,7 +437,7 @@ export function ZonesView({
                 hard mode
               </label>
             </div>
-            <ZoneBriefing location={selected} hardMode={hardMode} />
+            <ZoneBriefing location={selected} hardMode={hardMode} onSkillClick={onSkillClick} />
             {monsters.map((entry) => (
               <MonsterCard
                 key={entry.monster.wikiPage}

@@ -82,3 +82,11 @@ export const PRE_SEARING_LOCATIONS = new Set<string>([
   "The Northlands",
   "Wizard's Folly",
 ]);
+
+/**
+ * Locations discovery skips but that are still reachable in Prophecies.
+ * The Mists column of the wiki's explorable list is excluded wholesale
+ * (PvP/core areas), but The Underworld is entered from Tomb of the Primeval
+ * Kings and is ordinary PvE, so it earns a place.
+ */
+export const EXTRA_EXPLORABLES = ["The Underworld (explorable area)"];
