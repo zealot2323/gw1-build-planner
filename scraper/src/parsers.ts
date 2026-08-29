@@ -309,6 +309,22 @@ export function parseLocation(title: string, wikitext: string, kind: string): Pa
 // Monster
 // ---------------------------------------------------------------------------
 
+/**
+ * One stat/skill block from a monster page. Many creatures — bosses
+ * especially — are listed with several blocks keyed by encounter level
+ * ("Level 12" / "Level 28", e.g. Riine Windrot), by zone ("Gates of Kryta",
+ * "During Iron Mines of Moladune"), or by loadout ("Ranger version").
+ * Which one applies is a per-location question, answered in the engine.
+ */
+export interface ParsedMonsterVariant {
+  /** Block label as written on the wiki; null for an unlabelled block. */
+  label: string | null;
+  /** Levels named by the label, e.g. "Level 4, 5, 10, 12" -> [4,5,10,12]. */
+  levels: number[];
+  skills: string[];
+  eliteSkill?: string;
+}
+
 export interface ParsedMonster {
   name: string;
   wikiPage: string;
@@ -317,11 +333,19 @@ export interface ParsedMonster {
   levelRaw?: string;
   armor: number | null;
   armorTable: Array<{ damageType: string; rating: number }>;
+  /** Union of every variant's skills (all loadouts this creature can have). */
   skills: string[];
   isBoss: boolean;
   bossElite?: string;
   locations: string[];
   profession: string | null;
+  /** Present only when the page splits skills into more than one block. */
+  variants?: ParsedMonsterVariant[];
+  /**
+   * Encounter level per location, from "(level N)" annotations on the
+   * Locations/Missions groups — the key that ties a location to a variant.
+   */
+  locationLevels?: Record<string, number>;
 }
 
 /** "7, 9 (23)" → highest normal-mode level (parenthesized = hard mode). */
@@ -330,6 +354,14 @@ function parseLevel(raw: string | undefined): number | null {
   const normal = stripMarkup(raw).replace(/\([^)]*\)/g, "");
   const nums = [...normal.matchAll(/\d+/g)].map((m) => Number(m[0]));
   return nums.length > 0 ? Math.max(...nums) : null;
+}
+
+/** "Level 4, 5, 10, 12" -> [4,5,10,12]; "Level 24 (30), Kessex Peak" -> [24]. */
+function labelLevels(label: string | null): number[] {
+  if (!label) return [];
+  const m = label.match(/level\s+([\d,\s]+)/i);
+  if (!m) return [];
+  return [...m[1].matchAll(/\d+/g)].map((n) => Number(n[0]));
 }
 
 export function parseMonster(title: string, wikitext: string): Parsed<ParsedMonster> {
@@ -366,8 +398,16 @@ export function parseMonster(title: string, wikitext: string): Parsed<ParsedMons
   // mission names all stay.
   const NON_PROPHECIES_CONTEXT =
     /factions|nightfall|eye of the north|war in kryta|winds of change|hearts of the north|beyond|cinematic|special ops|rise of the white mantle|fronis|halloween|wintersday|festival|mausoleum|annihilator/i;
-  const skills: string[] = [];
-  const eliteSkills: string[] = [];
+
+  // Blocks are delimited by subsection headings AND by in-body marker lines
+  // (";Prophecies", "'''Level 12'''", or a bare "Level 12" line).
+  const variants: ParsedMonsterVariant[] = [];
+  let current: ParsedMonsterVariant | null = null;
+  const startBlock = (label: string | null) => {
+    current = { label, levels: labelLevels(label), skills: [] };
+    variants.push(current);
+  };
+
   for (const s of sections(wikitext)) {
     const isSkillsHeading = /^skills/i.test(s.title);
     if (!isSkillsHeading && !s.ancestors.some((a) => /^skills/i.test(a))) continue;
@@ -376,33 +416,65 @@ export function parseMonster(title: string, wikitext: string): Parsed<ParsedMons
     // chain (including ancestors of nested subsections) is context
     const contextTitles = [s.title, ...s.ancestors].filter((t) => !/^skills/i.test(t));
     if (contextTitles.some((t) => NON_PROPHECIES_CONTEXT.test(t))) continue;
-    let inProphecies = true;
+
+    current = null;
+    let suppressed = false; // inside a marker-delimited non-Prophecies block
+    const headingLabel = isSkillsHeading ? null : s.title;
     for (const line of s.body.split("\n")) {
-      const marker = line.match(/^;\s*(.+)|^'''([^']+)'''/);
+      const marker = line.match(/^;\s*(.+)$|^'''([^']+)'''|^\s*(Level\s+[\d,\s]+)\s*$/i);
       if (marker) {
-        inProphecies = !NON_PROPHECIES_CONTEXT.test(marker[1] ?? marker[2]);
+        const label = stripMarkup((marker[1] ?? marker[2] ?? marker[3]).trim());
+        current = null;
+        suppressed = NON_PROPHECIES_CONTEXT.test(label);
+        if (!suppressed) startBlock(label);
         continue;
       }
-      if (!inProphecies || !/^\*/.test(line)) continue;
+      if (suppressed || !/^\*/.test(line)) continue;
       const m = line.match(/\{\{\s*skill icon\s*\|([^}|]+)/i);
       if (!m) continue;
-      if (/hard mode/i.test(line)) continue;
+      // {{verify|...}} editor notes discuss hard mode without the skill
+      // being hard-mode-only — judge the annotation, not the note.
+      if (/hard mode/i.test(line.replace(/\{\{\s*verify[^}]*\}\}/gi, ""))) continue;
+      if (current === null) startBlock(headingLabel);
       const skill = m[1].trim();
-      if (!skills.includes(skill)) skills.push(skill);
-      if (/\(\s*(\[\[)?elite/i.test(line) && !eliteSkills.includes(skill)) eliteSkills.push(skill);
+      if (!current!.skills.includes(skill)) current!.skills.push(skill);
+      if (/\(\s*(\[\[)?elite/i.test(line)) current!.eliteSkill ??= skill;
     }
   }
 
+  const withSkills = variants.filter((v) => v.skills.length > 0);
+  const skills: string[] = [];
+  for (const v of withSkills) {
+    for (const s of v.skills) if (!skills.includes(s)) skills.push(s);
+  }
+  const eliteSkills = [...new Set(withSkills.map((v) => v.eliteSkill).filter((e): e is string => !!e))];
+
   const isBoss = /^y(es)?$/i.test(box?.["boss"] ?? "");
   const bossElite = isBoss ? eliteSkills[0] : undefined;
-  if (isBoss && eliteSkills.length === 0) issues.push("boss with no elite skill marked");
   if (isBoss && eliteSkills.length > 1) issues.push(`boss with multiple elites: ${eliteSkills.join(", ")}`);
 
   // Where it spawns: {{NPC location|X}} entries under Locations/Missions.
+  // Group bullets carry "(level N)" annotations that tie each location to
+  // one of the skill blocks above.
   const locations = new Set<string>();
+  const locationLevels: Record<string, number> = {};
   for (const s of sections(wikitext)) {
     if (!/^(locations?|missions?)$/i.test(s.title)) continue;
-    for (const m of s.body.matchAll(/\{\{\s*NPC location\s*\|([^}|]+)/gi)) locations.add(m[1].trim());
+    let groupLevel: number | null = null;
+    for (const line of s.body.split("\n")) {
+      if (/^\*[^*]/.test(line)) {
+        const m = line.match(/\(\s*level\s+(\d+)/i);
+        groupLevel = m ? Number(m[1]) : null;
+      }
+      for (const m of line.matchAll(/\{\{\s*NPC location\s*\|([^}|]+)/gi)) {
+        const name = m[1].trim();
+        locations.add(name);
+        // a line may carry its own level, overriding the group's
+        const own = line.match(/\(\s*level\s+(\d+)/i);
+        const lvl = own ? Number(own[1]) : groupLevel;
+        if (lvl !== null) locationLevels[name] = lvl;
+      }
+    }
   }
   if (locations.size === 0) issues.push("no locations parsed");
 
@@ -420,6 +492,8 @@ export function parseMonster(title: string, wikitext: string): Parsed<ParsedMons
       bossElite,
       locations: [...locations],
       profession: normalizeProfession(box?.["profession"]),
+      ...(withSkills.length > 1 ? { variants: withSkills } : {}),
+      ...(Object.keys(locationLevels).length > 0 ? { locationLevels } : {}),
     },
     issues,
   };

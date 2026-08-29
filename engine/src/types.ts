@@ -121,6 +121,20 @@ export interface ArmorEntry {
   rating: number;
 }
 
+/**
+ * One stat/skill block from a monster page. Creatures listed with several
+ * blocks (by encounter level, by zone, or by loadout) get one variant each;
+ * `variantForLocation` picks the one that applies in a given place.
+ */
+export interface MonsterVariant {
+  /** Block label as written on the wiki; null for an unlabelled block. */
+  label: string | null;
+  /** Levels named by the label, e.g. "Level 4, 5, 10, 12" -> [4,5,10,12]. */
+  levels: number[];
+  skills: SkillRef[];
+  eliteSkill?: SkillRef;
+}
+
 export interface Monster {
   name: string;
   wikiPage: string;
@@ -139,6 +153,10 @@ export interface Monster {
   bossElite?: SkillRef;
   locations: LocationRef[];
   profession?: Profession | null;
+  /** Present only when the wiki page splits skills into more than one block. */
+  variants?: MonsterVariant[];
+  /** Encounter level per location, from the wiki's "(level N)" annotations. */
+  locationLevels?: Record<LocationRef, number>;
 }
 
 export interface Mission {
@@ -303,6 +321,21 @@ export const monsterSchema = {
     bossElite: { type: "string" },
     locations: refArray,
     profession: { oneOf: [{ $ref: "gw1-profession" }, { type: "null" }] },
+    variants: {
+      type: "array",
+      items: {
+        type: "object",
+        additionalProperties: false,
+        required: ["label", "levels", "skills"],
+        properties: {
+          label: { type: ["string", "null"] },
+          levels: { type: "array", items: { type: "integer" } },
+          skills: refArray,
+          eliteSkill: { type: "string" },
+        },
+      },
+    },
+    locationLevels: { type: "object", additionalProperties: { type: "integer" } },
   },
 } as const;
 

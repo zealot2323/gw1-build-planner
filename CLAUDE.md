@@ -82,6 +82,14 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
   `conditionalCaptureBosses` (spawn only during a quest/event, or in a
   location outside our Prophecies set, e.g. War in Kryta variants) — quest
   gating is not modeled yet, so availability logic uses only the former.
+- **Monsters can have several stat blocks** (20 do). The wiki keys them three
+  ways: by encounter level ("Level 12" / "Level 28" — Riine Windrot), by zone
+  ("Gates of Kryta", "During Iron Mines of Moladune"), or by loadout ("Ranger
+  version"). The parser emits `variants[]` plus `locationLevels` (from the
+  "(level N)" annotations on Locations/Missions groups); the engine's
+  `variantsForLocation` picks by zone name, then by level, then falls back to
+  showing every loadout. Anything showing a monster must go through it —
+  a creature's level and skill bar are per-zone facts, not page-level ones.
 - Monster Skills sections are filtered to Prophecies normal-mode blocks:
   campaign/Beyond/event/cinematic sub-blocks and headings (Eye of the North,
   War in Kryta, Halloween, The Mausoleum, ...) are excluded; encounter-level

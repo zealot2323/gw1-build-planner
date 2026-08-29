@@ -134,13 +134,33 @@ describe("parseMonster", () => {
     expect(entity.skills.sort()).toEqual(['"For Great Justice!"', "Griffon's Sweep", "Protector's Strike"]);
   });
 
-  it("parses Drub Gorefang (boss without an elite)", () => {
+  it("parses Drub Gorefang (boss without an elite — legitimate, not an issue)", () => {
     const { entity, issues } = parseMonster("Drub Gorefang", cached("Drub Gorefang"));
     expect(entity.isBoss).toBe(true);
     expect(entity.bossElite).toBeUndefined();
-    expect(issues).toContain("boss with no elite skill marked");
+    expect(issues).toEqual([]);
     expect(entity.skills).toContain("Cyclone Axe");
     expect(entity.locations).toEqual(["The Great Northern Wall"]);
+  });
+
+  it("parses Riine Windrot (per-level stat blocks tied to locations)", () => {
+    const { entity } = parseMonster("Riine Windrot", cached("Riine Windrot"));
+    expect(entity.variants?.map((v) => v.label)).toEqual(["Level 12", "Level 28"]);
+    const [low, high] = entity.variants!;
+    expect(low.levels).toEqual([12]);
+    expect(low.skills).toEqual([
+      "Plague Touch", "Soul Feast", "Strip Enchantment", "Vampiric Touch", "Vile Touch",
+    ]);
+    expect(low.eliteSkill).toBeUndefined();
+    expect(high.levels).toEqual([28]);
+    expect(high.eliteSkill).toBe("Offering of Blood");
+    // the level annotations that tie a zone to a block
+    expect(entity.locationLevels).toEqual({
+      "Anvil Rock": 12,
+      "Traveler's Vale": 12,
+      "Borlis Pass": 12,
+      "Thunderhead Keep": 28,
+    });
   });
 });
 

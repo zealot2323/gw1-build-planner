@@ -1,17 +1,16 @@
 # Validation report
 
-Generated 2026-08-29T11:42:33.848Z by `npm run parse` (cache-only).
+Generated 2026-08-29T12:33:00.265Z by `npm run parse` (cache-only).
 
 ## locations (1 issue on 1 page)
 
 - **Ring of Fire (outpost)**: no exits in infobox
 
-## monsters (5 issues on 4 pages)
+## monsters (4 issues on 3 pages)
 
 - **:Grawl (pre-Searing)**: page missing from cache
 - **:Grawl (pre-Searing)**: page missing from cache
 - **:Wind Rider**: page missing from cache
-- **Abaddon's Cursed**: boss with multiple elites: Soul Taker, Over the Limit
 - **Wolf**: page missing from cache
 
 ## cross-validation (26 issues on 22 pages)

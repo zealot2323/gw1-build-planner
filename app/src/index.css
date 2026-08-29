@@ -135,7 +135,38 @@ button.linkish.inline:hover { color: var(--accent); }
 .sources-row td { padding-left: 2.4rem; }
 .sources { list-style: none; margin: 0.2rem 0 0.5rem; padding: 0; }
 .slot { display: flex; align-items: center; gap: 0.4rem; justify-content: flex-start; text-align: left; }
-.monster { border-top: 1px solid var(--border); padding: 0.6rem 0; }
-.armor td { padding-right: 1rem; }
-.skillbar { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.4rem; }
-.chip { padding: 0.15rem 0.5rem; font-size: 0.85em; border-radius: 12px; }
+.monster { border-top: 1px solid var(--border); padding: 0.7rem 0; }
+.monster-head { display: flex; align-items: baseline; gap: 0.5rem; flex-wrap: wrap; }
+.statline { font-size: 0.78em; }
+
+/* skills are the point of this view — big, iconic, clickable */
+.skillbar { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.45rem; }
+.skill-card {
+  display: flex; align-items: center; gap: 0.45rem;
+  padding: 0.25rem 0.6rem 0.25rem 0.3rem;
+  border-radius: 6px;
+}
+.skill-card-name { font-size: 0.92em; }
+.skill-card.open { border-color: var(--accent); background: var(--panel); }
+
+.slide-down {
+  overflow: hidden;
+  animation: slide-down 160ms ease-out;
+  margin-top: 0.5rem;
+}
+@keyframes slide-down {
+  from { opacity: 0; transform: translateY(-6px); max-height: 0; }
+  to { opacity: 1; transform: none; max-height: 30rem; }
+}
+.skill-details {
+  background: var(--panel2);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 0.4rem;
+}
+.skill-stats { display: flex; gap: 0.9rem; margin-top: 0.15rem; }
+.skill-desc { margin: 0.5rem 0 0.35rem; }
+.no-margin { margin: 0.1rem 0; }
+button.linkish.inline.more { color: var(--muted); }

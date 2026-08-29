@@ -22,11 +22,28 @@ const STATUS_LABEL: Record<SkillStatus, string> = {
   FUTURE: "Future",
 };
 
-/** Location first — "where do I go" is the question being answered. */
-function sourceLine(src: AcquisitionSource): string {
+/**
+ * Location first — "where do I go" is the question being answered. Both the
+ * place and the trainer/quest/boss link out to the wiki.
+ */
+function SourceLine({ src }: { src: AcquisitionSource }) {
   const action = { trainer: "buy from", quest: "quest:", capture: "capture" }[src.kind];
-  const what = `${action} ${src.via}`;
-  return src.location ? `${src.location} · ${what}` : what;
+  return (
+    <>
+      {src.location && (
+        <>
+          <a href={wikiHref(src.location)} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>
+            {src.location}
+          </a>
+          {" · "}
+        </>
+      )}
+      {action}{" "}
+      <a href={wikiHref(src.via)} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>
+        {src.via}
+      </a>
+    </>
+  );
 }
 
 export function SkillsView({
@@ -153,11 +170,20 @@ export function SkillsView({
                         {e.sources.length === 0 ? (
                           "no known Prophecies source"
                         ) : (
-                          <button className="linkish inline" onClick={() => toggleExpanded(e.skill.wikiPage)}>
-                            {sourceLine(e.sources[0])}
-                            {e.sources.length > 1 &&
-                              ` — ${expanded.has(e.skill.wikiPage) ? "hide" : `+${e.sources.length - 1} more`}`}
-                          </button>
+                          <>
+                            <SourceLine src={e.sources[0]} />
+                            {e.sources.length > 1 && (
+                              <>
+                                {" "}
+                                <button
+                                  className="linkish inline more"
+                                  onClick={() => toggleExpanded(e.skill.wikiPage)}
+                                >
+                                  {expanded.has(e.skill.wikiPage) ? "— hide" : `— +${e.sources.length - 1} more`}
+                                </button>
+                              </>
+                            )}
+                          </>
                         )}
                       </td>
                       {onAddToBuild && (
@@ -175,7 +201,7 @@ export function SkillsView({
                             {e.sources.map((s, i) => (
                               <li key={i} className={s.availableNow ? "ok" : "muted"}>
                                 {s.availableNow ? "● " : "○ "}
-                                {sourceLine(s)}
+                                <SourceLine src={s} />
                               </li>
                             ))}
                           </ul>

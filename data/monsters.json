@@ -1040,7 +1040,10 @@
       "Lakeside County",
       "Wizard's Folly"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "locationLevels": {
+      "Lakeside County: 1070 AE": 15
+    }
   },
   {
     "name": "Bandit Raider",
@@ -1088,7 +1091,10 @@
       "Regent Valley (pre-Searing)",
       "Wizard's Folly"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "locationLevels": {
+      "Lakeside County: 1070 AE": 15
+    }
   },
   {
     "name": "Bane Darkfist",
@@ -1739,7 +1745,14 @@
       "Tunnels of the Forsaken",
       "Nolani Academy"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "locationLevels": {
+      "Ascalon Foothills": 7,
+      "Diessa Lowlands": 7,
+      "Pockmark Flats": 7,
+      "Tunnels of the Forsaken": 9,
+      "Nolani Academy": 7
+    }
   },
   {
     "name": "Braima the Callous",
@@ -2202,7 +2215,29 @@
       "Watchtower Coast",
       "Divinity Coast"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": "Level 12",
+        "levels": [
+          12
+        ],
+        "skills": [
+          "Defensive Stance",
+          "Swift Chop"
+        ]
+      },
+      {
+        "label": "Level 13",
+        "levels": [
+          13
+        ],
+        "skills": [
+          "Riposte",
+          "Seeking Blade"
+        ]
+      }
+    ]
   },
   {
     "name": "Caromi Tengu Elite",
@@ -2253,7 +2288,25 @@
       "The Black Curtain",
       "Twin Serpent Lakes"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": "Axe wielding",
+        "levels": [],
+        "skills": [
+          "Defensive Stance",
+          "Swift Chop"
+        ]
+      },
+      {
+        "label": "Sword wielding",
+        "levels": [],
+        "skills": [
+          "Riposte",
+          "Seeking Blade"
+        ]
+      }
+    ]
   },
   {
     "name": "Caromi Tengu Fierce",
@@ -2517,7 +2570,10 @@
       "Ruins of Surmia",
       "The Great Northern Wall"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "locationLevels": {
+      "Lakeside County: 1070 AE": 15
+    }
   },
   {
     "name": "Casses Flameweb",
@@ -2806,7 +2862,10 @@
       "The Great Northern Wall",
       "The Rise of the White Mantle"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "locationLevels": {
+      "Forsaken Tunnels": 8
+    }
   },
   {
     "name": "Charr Axe Warrior",
@@ -2941,7 +3000,15 @@
       "Ruins of Surmia",
       "The Great Northern Wall"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "locationLevels": {
+      "Diessa Lowlands": 6,
+      "Dragon's Gullet": 6,
+      "Eastern Frontier": 6,
+      "Flame Temple Corridor": 6,
+      "Regent Valley": 6,
+      "The Breach": 5
+    }
   },
   {
     "name": "Charr Chaot",
@@ -3216,7 +3283,41 @@
       "Fort Ranik",
       "Ruins of Surmia"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": "Level 4, 5, 10, 12",
+        "levels": [
+          4,
+          5,
+          10,
+          12
+        ],
+        "skills": [
+          "Infuse Health",
+          "Orison of Healing"
+        ]
+      },
+      {
+        "label": "Level 14",
+        "levels": [
+          14
+        ],
+        "skills": [
+          "Bane Signet",
+          "Banish",
+          "Heal Area",
+          "Infuse Health"
+        ]
+      }
+    ],
+    "locationLevels": {
+      "Diessa Lowlands": 5,
+      "Eastern Frontier": 5,
+      "The Breach": 4,
+      "Fort Ranik": 5,
+      "Ruins of Surmia": 5
+    }
   },
   {
     "name": "Charr Mind Spark",
@@ -3317,7 +3418,11 @@
       "Forsaken Tunnels",
       "Fort Ranik"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "locationLevels": {
+      "The Breach": 6,
+      "Fort Ranik": 6
+    }
   },
   {
     "name": "Charr Scout",
@@ -3328,6 +3433,7 @@
     "armor": null,
     "armorTable": [],
     "skills": [
+      "Frenzy",
       "Pin Down",
       "Snare",
       "Tripwire"
@@ -3337,7 +3443,29 @@
       "The Great Northern Wall",
       "The Flight North"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": "Warrior version",
+        "levels": [],
+        "skills": [
+          "Frenzy"
+        ]
+      },
+      {
+        "label": "Ranger version",
+        "levels": [],
+        "skills": [
+          "Pin Down",
+          "Snare",
+          "Tripwire"
+        ]
+      }
+    ],
+    "locationLevels": {
+      "The Great Northern Wall": 6,
+      "The Flight North": 15
+    }
   },
   {
     "name": "Charr Shaman",
@@ -3449,7 +3577,13 @@
       "Nolani Academy",
       "Ruins of Surmia"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "locationLevels": {
+      "Diessa Lowlands": 5,
+      "Eastern Frontier": 5,
+      "Old Ascalon": 5,
+      "The Breach": 5
+    }
   },
   {
     "name": "Charr Warrior",
@@ -3701,7 +3835,28 @@
       "Thunderhead Keep",
       "The Rise of the White Mantle"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": "Prophecies",
+        "levels": [],
+        "skills": [
+          "Banish",
+          "Heal Area"
+        ]
+      },
+      {
+        "label": "Bonus Mission Pack",
+        "levels": [],
+        "skills": [
+          "Heal Area",
+          "Healing Breeze",
+          "Orison of Healing",
+          "Word of Healing"
+        ],
+        "eliteSkill": "Word of Healing"
+      }
+    ]
   },
   {
     "name": "Cootle Sizzlehorn",
@@ -7031,7 +7186,13 @@
       "Sacnoth Valley",
       "Ruins of Surmia"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "locationLevels": {
+      "Diessa Lowlands": 7,
+      "Eastern Frontier": 7,
+      "Sacnoth Valley": 20,
+      "Ruins of Surmia": 7
+    }
   },
   {
     "name": "Flange Sullenrage",
@@ -7125,7 +7286,10 @@
       "Nolani Academy",
       "The Great Northern Wall"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "locationLevels": {
+      "Tunnels of the Forsaken": 9
+    }
   },
   {
     "name": "Flaw Rootplague",
@@ -8567,7 +8731,11 @@
       "Flame Temple Corridor",
       "The Breach"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "locationLevels": {
+      "Flame Temple Corridor": 24,
+      "The Breach": 7
+    }
   },
   {
     "name": "Gornar Bellybreaker",
@@ -8989,7 +9157,53 @@
       "Talus Chute",
       "Witman's Folly"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": "Level 6",
+        "levels": [
+          6
+        ],
+        "skills": [
+          "Chilblains",
+          "Plague Signet",
+          "Signet of Agony"
+        ],
+        "eliteSkill": "Plague Signet"
+      },
+      {
+        "label": "Level 9",
+        "levels": [
+          9
+        ],
+        "skills": [
+          "Chilblains",
+          "Plague Signet",
+          "Signet of Agony"
+        ],
+        "eliteSkill": "Plague Signet"
+      },
+      {
+        "label": "Level 22",
+        "levels": [
+          22
+        ],
+        "skills": [
+          "Chilblains",
+          "Plague Signet",
+          "Signet of Agony"
+        ],
+        "eliteSkill": "Plague Signet"
+      }
+    ],
+    "locationLevels": {
+      "The Northlands": 6,
+      "Forsaken Tunnels": 6,
+      "Tunnels of the Forsaken": 9,
+      "Lornar's Pass": 22,
+      "Talus Chute": 22,
+      "Witman's Folly": 22
+    }
   },
   {
     "name": "Grawl High Priest",
@@ -9035,7 +9249,13 @@
       "Old Ascalon",
       "Ascalon Academy"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "locationLevels": {
+      "Lakeside County: 1070 AE": 20,
+      "Forsaken Tunnels": 3,
+      "Tunnels of the Forsaken": 9,
+      "Ascalon Academy": 3
+    }
   },
   {
     "name": "Grawl Shaman",
@@ -10155,7 +10375,14 @@
       "Ice Caves of Sorrow",
       "A Gate Too Far"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "locationLevels": {
+      "Grenth's Footprint": 24,
+      "Ice Cliff Chasms": 22,
+      "Varajar Fells": 20,
+      "Ice Caves of Sorrow": 24,
+      "A Gate Too Far": 20
+    }
   },
   {
     "name": "Igg Fecpelter",
@@ -10284,7 +10511,30 @@
       "Old Ascalon",
       "Diessa Lowlands"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "variants": [
+      {
+        "label": "Old Ascalon",
+        "levels": [],
+        "skills": [
+          "Chaos Storm",
+          "Empathy",
+          "Ether Feast",
+          "Ether Lord"
+        ]
+      },
+      {
+        "label": "Diessa Lowlands",
+        "levels": [],
+        "skills": [
+          "Hex Breaker"
+        ]
+      }
+    ],
+    "locationLevels": {
+      "Old Ascalon": 6,
+      "Diessa Lowlands": 9
+    }
   },
   {
     "name": "Ijan the Cursed",
@@ -11059,7 +11309,28 @@
       "The Rise of the White Mantle",
       "Bloodstone Fen"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": "Gates of Kryta",
+        "levels": [],
+        "skills": [
+          "Axe Rake",
+          "Cyclone Axe",
+          "Dismember"
+        ]
+      },
+      {
+        "label": "Bloodstone Fen",
+        "levels": [],
+        "skills": [
+          "Cyclone Axe",
+          "Dismember",
+          "Healing Signet",
+          "Wild Blow"
+        ]
+      }
+    ]
   },
   {
     "name": "Jyth Sprayburst",
@@ -11579,7 +11850,10 @@
       "Lakeside County",
       "Regent Valley (pre-Searing)"
     ],
-    "profession": null
+    "profession": null,
+    "locationLevels": {
+      "Lakeside County: 1070 AE": 15
+    }
   },
   {
     "name": "Lava Imp",
@@ -12509,7 +12783,27 @@
       "Bloodstone Fen",
       "The Wilds"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "variants": [
+      {
+        "label": "Sword wielding",
+        "levels": [],
+        "skills": [
+          "\"I Will Avenge You!\"",
+          "Seeking Blade",
+          "Warrior's Cunning"
+        ]
+      },
+      {
+        "label": "Axe wielding",
+        "levels": [],
+        "skills": [
+          "\"I Will Avenge You!\"",
+          "Executioner's Strike",
+          "Swift Chop"
+        ]
+      }
+    ]
   },
   {
     "name": "Mahgo Hydra",
@@ -12769,7 +13063,26 @@
       "The Wilds",
       "Iron Mines of Moladune"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": "During The Wilds",
+        "levels": [],
+        "skills": [
+          "Heal Area"
+        ]
+      },
+      {
+        "label": "During Iron Mines of Moladune",
+        "levels": [],
+        "skills": [
+          "Barrage",
+          "Concussion Shot",
+          "Troll Unguent"
+        ],
+        "eliteSkill": "Barrage"
+      }
+    ]
   },
   {
     "name": "Marnta Doomspeaker",
@@ -13898,7 +14211,53 @@
     "locations": [
       "Abaddon's Mouth"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": "Monk",
+        "levels": [],
+        "skills": [
+          "Aura of Faith",
+          "Contemplation of Purity",
+          "Draw Conditions",
+          "Orison of Healing"
+        ],
+        "eliteSkill": "Aura of Faith"
+      },
+      {
+        "label": "Necromancer",
+        "levels": [],
+        "skills": [
+          "Blood Renewal",
+          "Insidious Parasite",
+          "Life Siphon",
+          "Life Transfer"
+        ],
+        "eliteSkill": "Life Transfer"
+      },
+      {
+        "label": "Mesmer",
+        "levels": [],
+        "skills": [
+          "Energy Surge",
+          "Ether Feast",
+          "Physical Resistance",
+          "Power Leak"
+        ],
+        "eliteSkill": "Energy Surge"
+      },
+      {
+        "label": "Elementalist",
+        "levels": [],
+        "skills": [
+          "Chain Lightning",
+          "Enervating Charge",
+          "Glyph of Concentration",
+          "Thunderclap"
+        ],
+        "eliteSkill": "Thunderclap"
+      }
+    ]
   },
   {
     "name": "Mursaat Mesmer",
@@ -14349,7 +14708,11 @@
       "Riverside Province",
       "Sanctum Cay"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "locationLevels": {
+      "Scoundrel's Rise": 18,
+      "Resplendent Makuun": 20
+    }
   },
   {
     "name": "Ness Orangeclaw",
@@ -15086,7 +15449,10 @@
       "Ruins of Surmia",
       "The Great Northern Wall"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "locationLevels": {
+      "Tunnels of the Forsaken": 10
+    }
   },
   {
     "name": "Pleoh the Ugly",
@@ -16054,7 +16420,13 @@
       "Pockmark Flats",
       "Tunnels of the Forsaken"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "locationLevels": {
+      "Diessa Lowlands": 2,
+      "The Breach": 2,
+      "Pockmark Flats": 2,
+      "Tunnels of the Forsaken": 8
+    }
   },
   {
     "name": "Rif Telourau",
@@ -16077,7 +16449,35 @@
       "Pockmark Flats",
       "Diessa Lowlands"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": "Level 6",
+        "levels": [
+          6
+        ],
+        "skills": [
+          "Mending",
+          "Orison of Healing",
+          "Symbol of Wrath"
+        ]
+      },
+      {
+        "label": "Level 9",
+        "levels": [
+          9
+        ],
+        "skills": [
+          "Blessed Signet",
+          "Draw Conditions"
+        ]
+      }
+    ],
+    "locationLevels": {
+      "Old Ascalon": 6,
+      "Pockmark Flats": 9,
+      "Diessa Lowlands": 9
+    }
   },
   {
     "name": "Riine Windrot",
@@ -16106,7 +16506,42 @@
       "Borlis Pass",
       "Thunderhead Keep"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": "Level 12",
+        "levels": [
+          12
+        ],
+        "skills": [
+          "Plague Touch",
+          "Soul Feast",
+          "Strip Enchantment",
+          "Vampiric Touch",
+          "Vile Touch"
+        ]
+      },
+      {
+        "label": "Level 28",
+        "levels": [
+          28
+        ],
+        "skills": [
+          "Animate Bone Fiend",
+          "Life Siphon",
+          "Offering of Blood",
+          "Plague Touch",
+          "Taste of Death"
+        ],
+        "eliteSkill": "Offering of Blood"
+      }
+    ],
+    "locationLevels": {
+      "Anvil Rock": 12,
+      "Traveler's Vale": 12,
+      "Borlis Pass": 12,
+      "Thunderhead Keep": 28
+    }
   },
   {
     "name": "Ritt Windmelt",
@@ -16173,7 +16608,10 @@
       "Lakeside County",
       "The Floodplain of Mahnkelon"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "locationLevels": {
+      "Lakeside County: 1070 AE": 15
+    }
   },
   {
     "name": "River Skale Brood",
@@ -16193,7 +16631,10 @@
       "Lakeside County",
       "Wizard's Folly"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "locationLevels": {
+      "Lakeside County: 1070 AE": 15
+    }
   },
   {
     "name": "River Skale Queen",
@@ -16209,7 +16650,10 @@
       "Lakeside County: 1070 AE",
       "Lakeside County"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "locationLevels": {
+      "Lakeside County: 1070 AE": 18
+    }
   },
   {
     "name": "Roarst One Eye",
@@ -16868,7 +17312,13 @@
       "The Wilds",
       "Ice Caves of Sorrow"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "locationLevels": {
+      "Riverside Province": 10,
+      "Bloodstone Fen": 20,
+      "The Wilds": 15,
+      "Ice Caves of Sorrow": 20
+    }
   },
   {
     "name": "Sakalo Yawpyawl",
@@ -17637,7 +18087,35 @@
       "Nolani Academy",
       "The Great Northern Wall"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "variants": [
+      {
+        "label": "Pre-Searing",
+        "levels": [],
+        "skills": [
+          "Backfire"
+        ]
+      },
+      {
+        "label": "Post-Searing",
+        "levels": [],
+        "skills": [
+          "Conjure Phantasm",
+          "Energy Tap",
+          "Imagined Burden"
+        ]
+      }
+    ],
+    "locationLevels": {
+      "Ashford Catacombs: 1070 AE": 15,
+      "The Catacombs": 3,
+      "Diessa Lowlands": 8,
+      "Old Ascalon": 4,
+      "Pockmark Flats": 4,
+      "Regent Valley": 4,
+      "Nolani Academy": 8,
+      "The Great Northern Wall": 4
+    }
   },
   {
     "name": "Sheg Zamn Mada",
@@ -17933,7 +18411,28 @@
       "Iron Mines of Moladune",
       "Thunderhead Keep"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": null,
+        "levels": [],
+        "skills": [
+          "Deep Freeze",
+          "Rust",
+          "Water Trident"
+        ],
+        "eliteSkill": "Water Trident"
+      },
+      {
+        "label": "Sorrow's Furnace only",
+        "levels": [],
+        "skills": [
+          "Rust",
+          "Water Trident"
+        ],
+        "eliteSkill": "Water Trident"
+      }
+    ]
   },
   {
     "name": "Siege Wurm",
@@ -18253,7 +18752,20 @@
       "Gates of Kryta",
       "Sanctum Cay"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "locationLevels": {
+      "Cursed Lands": 13,
+      "Nebo Terrace": 13,
+      "Scoundrel's Rise": 13,
+      "The Mausoleum": 20,
+      "Watchtower Coast": 13,
+      "Beneath Lion's Arch": 13,
+      "Resplendent Makuun": 20,
+      "D'Alessio Seaboard": 23,
+      "Divinity Coast": 23,
+      "Gates of Kryta": 23,
+      "Sanctum Cay": 23
+    }
   },
   {
     "name": "Skeleton Sorcerer",
@@ -18532,7 +19044,11 @@
       "Diessa Lowlands",
       "Flame Temple Corridor"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "locationLevels": {
+      "Diessa Lowlands": 9,
+      "Flame Temple Corridor": 24
+    }
   },
   {
     "name": "Smoke Phantom",
@@ -19347,7 +19863,10 @@
       "Borlis Pass",
       "The Frost Gate"
     ],
-    "profession": "Warrior"
+    "profession": "Warrior",
+    "locationLevels": {
+      "Fronis Irontoe's Lair": 20
+    }
   },
   {
     "name": "Stone Summit Engineer",
@@ -19619,7 +20138,10 @@
       "Iron Mines of Moladune",
       "Thunderhead Keep"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "locationLevels": {
+      "Fronis Irontoe's Lair": 20
+    }
   },
   {
     "name": "Stone Summit Sage",
@@ -19853,7 +20375,14 @@
       "Regent Valley",
       "Tunnels of the Forsaken"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "locationLevels": {
+      "Diessa Lowlands": 7,
+      "Dragon's Gullet": 7,
+      "Pockmark Flats": 7,
+      "Regent Valley": 7,
+      "Tunnels of the Forsaken": 9
+    }
   },
   {
     "name": "Sul SandStorm",
@@ -20355,7 +20884,11 @@
       "The Breach",
       "Flame Temple Corridor"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "locationLevels": {
+      "The Breach": 7,
+      "Flame Temple Corridor": 24
+    }
   },
   {
     "name": "Tachi Forvent",
@@ -20554,7 +21087,11 @@
       "Traveler's Vale",
       "Thunderhead Keep"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "locationLevels": {
+      "Traveler's Vale": 12,
+      "Thunderhead Keep": 28
+    }
   },
   {
     "name": "Thorgall Bludgeonhammer",
@@ -21278,7 +21815,39 @@
       "Borlis Pass",
       "Thunderhead Keep"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": "Level 12",
+        "levels": [
+          12
+        ],
+        "skills": [
+          "Fertile Season",
+          "Pin Down",
+          "Precision Shot",
+          "Troll Unguent"
+        ]
+      },
+      {
+        "label": "Level 28",
+        "levels": [
+          28
+        ],
+        "skills": [
+          "Melandru's Arrows",
+          "Precision Shot",
+          "Tiger's Fury",
+          "Troll Unguent"
+        ],
+        "eliteSkill": "Melandru's Arrows"
+      }
+    ],
+    "locationLevels": {
+      "Traveler's Vale": 12,
+      "Borlis Pass": 12,
+      "Thunderhead Keep": 28
+    }
   },
   {
     "name": "Ullo Specterhaunch",
@@ -21499,7 +22068,42 @@
       "Traveler's Vale",
       "Kessex Peak"
     ],
-    "profession": "Necromancer"
+    "profession": "Necromancer",
+    "variants": [
+      {
+        "label": "Level 2, Lakeside County",
+        "levels": [
+          2
+        ],
+        "skills": [
+          "Animate Bone Horror"
+        ]
+      },
+      {
+        "label": "Level 14, Renegade Necromancer",
+        "levels": [
+          14
+        ],
+        "skills": [
+          "Animate Bone Fiend",
+          "Animate Bone Horror",
+          "Verata's Sacrifice"
+        ]
+      },
+      {
+        "label": "Level 24 (30), Kessex Peak",
+        "levels": [
+          24
+        ],
+        "skills": [
+          "Animate Bone Fiend",
+          "Taste of Death",
+          "Verata's Aura",
+          "Verata's Gaze",
+          "Verata's Sacrifice"
+        ]
+      }
+    ]
   },
   {
     "name": "Villnar Painforge",
@@ -21834,7 +22438,29 @@
       "Aurora Glade",
       "Ice Caves of Sorrow"
     ],
-    "profession": "Monk"
+    "profession": "Monk",
+    "variants": [
+      {
+        "label": "As an ally",
+        "levels": [],
+        "skills": [
+          "Heal Area",
+          "Heal Other",
+          "Infuse Health"
+        ]
+      },
+      {
+        "label": "As an enemy",
+        "levels": [],
+        "skills": [
+          "Convert Hexes",
+          "Divine Intervention",
+          "Heal Area",
+          "Judge's Insight",
+          "Shielding Hands"
+        ]
+      }
+    ]
   },
   {
     "name": "White Mantle Engineer",
@@ -22189,7 +22815,30 @@
       "Ice Caves of Sorrow",
       "Thunderhead Keep"
     ],
-    "profession": "Elementalist"
+    "profession": "Elementalist",
+    "variants": [
+      {
+        "label": "As ally {{E}}",
+        "levels": [],
+        "skills": [
+          "Lightning Orb",
+          "Lightning Strike"
+        ]
+      },
+      {
+        "label": "As enemy {{E}}",
+        "levels": [],
+        "skills": [
+          "Glyph of Elemental Power",
+          "Searing Heat",
+          "Ward Against Elements"
+        ]
+      }
+    ],
+    "locationLevels": {
+      "D'Alessio Seaboard": 15,
+      "Tears of the Fallen": 16
+    }
   },
   {
     "name": "White Mantle Scout",
@@ -22258,7 +22907,41 @@
       "Aurora Glade",
       "Bloodstone Fen"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": "Level 12",
+        "levels": [
+          12
+        ],
+        "skills": [
+          "Called Shot"
+        ]
+      },
+      {
+        "label": "Level 16",
+        "levels": [
+          16
+        ],
+        "skills": [
+          "Antidote Signet",
+          "Dryder's Defenses",
+          "Pin Down",
+          "Savage Shot"
+        ]
+      },
+      {
+        "label": "Level 20",
+        "levels": [
+          20
+        ],
+        "skills": [
+          "Dryder's Defenses",
+          "Pin Down",
+          "Troll Unguent"
+        ]
+      }
+    ]
   },
   {
     "name": "White Mantle Seeker",
@@ -22336,7 +23019,54 @@
       "Iron Mines of Moladune",
       "Thunderhead Keep"
     ],
-    "profession": "Ranger"
+    "profession": "Ranger",
+    "variants": [
+      {
+        "label": "Level 12",
+        "levels": [
+          12
+        ],
+        "skills": [
+          "Called Shot"
+        ]
+      },
+      {
+        "label": "Level 16",
+        "levels": [
+          16
+        ],
+        "skills": [
+          "Antidote Signet",
+          "Dryder's Defenses",
+          "Pin Down",
+          "Savage Shot"
+        ]
+      },
+      {
+        "label": "Level 20",
+        "levels": [
+          20
+        ],
+        "skills": [
+          "Antidote Signet",
+          "Dryder's Defenses",
+          "Pin Down",
+          "Troll Unguent"
+        ]
+      },
+      {
+        "label": "Level 25",
+        "levels": [
+          25
+        ],
+        "skills": [
+          "Antidote Signet",
+          "Dryder's Defenses",
+          "Pin Down",
+          "Troll Unguent"
+        ]
+      }
+    ]
   },
   {
     "name": "White Mantle Sycophant",
@@ -22573,7 +23303,12 @@
       "Bloodstone Fen",
       "The Wilds"
     ],
-    "profession": "Mesmer"
+    "profession": "Mesmer",
+    "locationLevels": {
+      "Arbor Bay": 20,
+      "Magus Stones": 20,
+      "Verdant Cascades": 20
+    }
   },
   {
     "name": "Winglord Caromi",
