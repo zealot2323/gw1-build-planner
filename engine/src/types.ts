@@ -53,6 +53,10 @@ export interface SkillAcquisition {
   captureBosses: BossRef[];
   /** Capture bosses that only spawn during a quest/event (gating not modeled yet). */
   conditionalCaptureBosses?: BossRef[];
+  /** Where each quest is given, per the wiki acquisition line. */
+  questLocations?: Record<QuestRef, LocationRef | null>;
+  /** Where each capture boss spawns, per the wiki acquisition line. */
+  captureLocations?: Record<BossRef, LocationRef | null>;
 }
 
 export interface Skill {
@@ -65,7 +69,7 @@ export interface Skill {
   /** null = unlinked (no attribute). */
   attribute: string | null;
   isElite: boolean;
-  campaign: Campaign;
+  campaign: Campaign | null;
   /** Energy cost; null when the skill costs adrenaline instead. */
   energyCost: number | null;
   /** Adrenaline cost in strikes; null for energy skills. */
@@ -88,14 +92,16 @@ export interface Location {
   kind: LocationKind;
   name: string;
   wikiPage: string;
-  campaign: Campaign;
-  region: string;
+  campaign: Campaign | null;
+  region: string | null;
   /** Exits / connected areas. */
   neighbors: LocationRef[];
   /** Skill trainer stationed here, if any (towns/outposts). */
   trainer?: TrainerRef;
   /** Monsters found here (explorables/missions). */
   foes: MonsterRef[];
+  /** Bosses found here (subset context from the wiki's Bosses sections). */
+  bosses?: MonsterRef[];
 }
 
 export interface Trainer {
@@ -132,6 +138,7 @@ export interface Monster {
   /** The elite this boss can be captured for, if any. */
   bossElite?: SkillRef;
   locations: LocationRef[];
+  profession?: Profession | null;
 }
 
 export interface Mission {
@@ -139,6 +146,7 @@ export interface Mission {
   wikiPage: string;
   /** The mission outpost the mission starts from. */
   outpost: LocationRef;
+  region?: string | null;
   foes: MonsterRef[];
   bosses: MonsterRef[];
 }
@@ -210,7 +218,7 @@ export const skillSchema = {
     profession: { oneOf: [{ $ref: "gw1-profession" }, { type: "null" }] },
     attribute: { type: ["string", "null"] },
     isElite: { type: "boolean" },
-    campaign: { $ref: "gw1-campaign" },
+    campaign: { oneOf: [{ $ref: "gw1-campaign" }, { type: "null" }] },
     energyCost: { type: ["number", "null"], minimum: 0 },
     adrenalineCost: { type: ["number", "null"], minimum: 0 },
     activation: { type: ["number", "null"], minimum: 0 },
@@ -225,6 +233,8 @@ export const skillSchema = {
         quests: refArray,
         captureBosses: refArray,
         conditionalCaptureBosses: refArray,
+        questLocations: { type: "object", additionalProperties: { type: ["string", "null"] } },
+        captureLocations: { type: "object", additionalProperties: { type: ["string", "null"] } },
       },
     },
   },
@@ -239,11 +249,12 @@ export const locationSchema = {
     kind: { type: "string", enum: ["town", "outpost", "mission-outpost", "explorable"] },
     name: { type: "string" },
     wikiPage: { type: "string" },
-    campaign: { $ref: "gw1-campaign" },
-    region: { type: "string" },
+    campaign: { oneOf: [{ $ref: "gw1-campaign" }, { type: "null" }] },
+    region: { type: ["string", "null"] },
     neighbors: refArray,
     trainer: { type: "string" },
     foes: refArray,
+    bosses: refArray,
   },
 } as const;
 
@@ -291,6 +302,7 @@ export const monsterSchema = {
     isBoss: { type: "boolean" },
     bossElite: { type: "string" },
     locations: refArray,
+    profession: { oneOf: [{ $ref: "gw1-profession" }, { type: "null" }] },
   },
 } as const;
 
@@ -303,6 +315,7 @@ export const missionSchema = {
     name: { type: "string" },
     wikiPage: { type: "string" },
     outpost: { type: "string" },
+    region: { type: ["string", "null"] },
     foes: refArray,
     bosses: refArray,
   },

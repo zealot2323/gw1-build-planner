@@ -284,12 +284,12 @@ for (const s of skills) {
       ...new Set(s.acquisition.conditionalCaptureBosses.map(resolveMonsterRef)),
     ];
   }
-  if (s.captureLocations) {
-    for (const [k, v] of Object.entries(s.captureLocations)) {
+  if (s.acquisition.captureLocations) {
+    for (const [k, v] of Object.entries(s.acquisition.captureLocations)) {
       const canonical = resolveMonsterRef(k);
       if (canonical !== k) {
-        s.captureLocations[canonical] = v;
-        delete s.captureLocations[k];
+        s.acquisition.captureLocations[canonical] = v;
+        delete s.acquisition.captureLocations[k];
       }
     }
   }
@@ -345,7 +345,7 @@ for (const s of skills) {
   const demoted: string[] = [];
   s.acquisition.captureBosses = s.acquisition.captureBosses.filter((bossName) => {
     if (monsterByPage.has(bossName)) return true;
-    const loc = s.captureLocations?.[bossName] ?? null;
+    const loc = s.acquisition.captureLocations?.[bossName] ?? null;
     if (loc === null || resolveLocation(loc) === null) {
       demoted.push(bossName);
       return false;
@@ -358,7 +358,6 @@ for (const s of skills) {
       ...demoted,
     ];
   }
-  delete s.captureLocations;
 
   for (const bossName of s.acquisition.captureBosses) {
     const boss = monsterByPage.get(bossName);

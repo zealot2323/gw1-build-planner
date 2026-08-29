@@ -44,13 +44,11 @@ export interface ParsedSkill {
     quests: string[];
     captureBosses: string[];
     conditionalCaptureBosses?: string[];
+    /** Where each quest is given (second link on the acquisition line). */
+    questLocations?: Record<string, string | null>;
+    /** Where each capture boss spawns (second link on the acquisition line). */
+    captureLocations?: Record<string, string | null>;
   };
-  /**
-   * Where each capture boss spawns per the acquisition line (second link).
-   * Internal: the driver uses it to demote bosses in unknown locations
-   * (War in Kryta variants etc.) to conditional, then strips this field.
-   */
-  captureLocations?: Record<string, string | null>;
 }
 
 /**
@@ -63,7 +61,7 @@ export interface ParsedSkill {
 function parseAcquisition(
   body: string,
   isElite: boolean,
-): { acquisition: ParsedSkill["acquisition"]; captureLocations: Record<string, string | null> } {
+): { acquisition: ParsedSkill["acquisition"] } {
   const out: ParsedSkill["acquisition"] = { trainers: [], quests: [], captureBosses: [] };
   // Elite pages sometimes skip the '''[[Signet of Capture]]''' header and
   // start straight with campaign bullets — capture is the only way to get
@@ -75,11 +73,13 @@ function parseAcquisition(
     /^\*\s*(\[\[)?\s*(guild wars )?(prophecies|factions|nightfall|eye of the north|core|beyond)\b/i.test(line);
   const conditional: string[] = [];
   const captureLocations: Record<string, string | null> = {};
+  const questLocations: Record<string, string | null> = {};
   const push = (line: string): void => {
     if (!group || /hard mode/i.test(line)) return; // normal mode only
     const targets = linkTargets(line);
     const target = targets[0];
     if (!target) return;
+    if (group === "quests") questLocations[target] = targets[1] ?? null;
     if (group === "captureBosses") {
       captureLocations[target] = targets[1] ?? null;
       // Bosses that only spawn during a quest/event don't appear in base
@@ -116,7 +116,9 @@ function parseAcquisition(
     if (/^\*\*[^*]/.test(line) && inProphecies) push(line);
   }
   if (conditional.length > 0) out.conditionalCaptureBosses = conditional;
-  return { acquisition: out, captureLocations };
+  if (Object.keys(questLocations).length > 0) out.questLocations = questLocations;
+  if (Object.keys(captureLocations).length > 0) out.captureLocations = captureLocations;
+  return { acquisition: out };
 }
 
 export function parseSkill(title: string, wikitext: string): Parsed<ParsedSkill> {
@@ -137,9 +139,9 @@ export function parseSkill(title: string, wikitext: string): Parsed<ParsedSkill>
     .filter((s) => /^acquisition$/i.test(s.title) || s.ancestors.some((a) => /^acquisition$/i.test(a)))
     .filter((s) => ![s.title, ...s.ancestors].some((t) => /unlock only/i.test(t)))
     .map((s) => s.body);
-  const { acquisition, captureLocations } = acqBodies.length
+  const { acquisition } = acqBodies.length
     ? parseAcquisition(acqBodies.join("\n"), box?.["elite"] === "y")
-    : { acquisition: { trainers: [], quests: [], captureBosses: [] }, captureLocations: {} };
+    : { acquisition: { trainers: [], quests: [], captureBosses: [] } };
   if (acqBodies.length === 0) issues.push("no Acquisition section");
 
   return {
@@ -157,7 +159,6 @@ export function parseSkill(title: string, wikitext: string): Parsed<ParsedSkill>
       recharge: parseWikiNumber(box?.["recharge"]) ?? 0,
       description: box?.["description"] ? stripMarkup(box["description"]) : "",
       acquisition,
-      captureLocations,
     },
     issues,
   };

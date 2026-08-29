@@ -13,7 +13,10 @@
     "recharge": 2,
     "description": "For 10 seconds, target ally gains Health regeneration.",
     "acquisition": {
-      "trainers": ["Firstwatch Sergio", "Captain Osric"],
+      "trainers": [
+        "Firstwatch Sergio",
+        "Captain Osric"
+      ],
       "quests": [],
       "captureBosses": []
     }
@@ -32,7 +35,9 @@
     "recharge": 0,
     "description": "Target foe is struck for fire damage.",
     "acquisition": {
-      "trainers": ["Captain Osric"],
+      "trainers": [
+        "Captain Osric"
+      ],
       "quests": [],
       "captureBosses": []
     }
@@ -52,8 +57,13 @@
     "description": "Heal target ally.",
     "acquisition": {
       "trainers": [],
-      "quests": ["A Mission of Peace"],
-      "captureBosses": []
+      "quests": [
+        "A Mission of Peace"
+      ],
+      "captureBosses": [],
+      "questLocations": {
+        "A Mission of Peace": "Ascalon City"
+      }
     }
   },
   {
@@ -71,8 +81,13 @@
     "description": "If this attack hits, you strike for additional damage.",
     "acquisition": {
       "trainers": [],
-      "quests": ["Grawl Invasion"],
-      "captureBosses": []
+      "quests": [
+        "Grawl Invasion"
+      ],
+      "captureBosses": [],
+      "questLocations": {
+        "Grawl Invasion": "Traveler's Vale"
+      }
     }
   },
   {
@@ -91,7 +106,9 @@
     "acquisition": {
       "trainers": [],
       "quests": [],
-      "captureBosses": ["Dagnar Stonepate"]
+      "captureBosses": [
+        "Dagnar Stonepate"
+      ]
     }
   }
 ]

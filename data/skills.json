@@ -20,7 +20,11 @@
       ],
       "conditionalCaptureBosses": [
         "Dahgar, the Eye of Flame"
-      ]
+      ],
+      "captureLocations": {
+        "Balthazaar's Cursed": "Perdition Rock",
+        "Dahgar, the Eye of Flame": "Old Ascalon"
+      }
     }
   },
   {
@@ -44,7 +48,10 @@
       "quests": [
         "Into the Unknown"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Into the Unknown": "Augury Rock (outpost)"
+      }
     }
   },
   {
@@ -68,7 +75,10 @@
       "quests": [
         "Helping the People of Ascalon"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Helping the People of Ascalon": "Old Ascalon"
+      }
     }
   },
   {
@@ -123,7 +133,19 @@
         "Euhh Snickersnak",
         "Flash Darkspine",
         "Stik Barkripper"
-      ]
+      ],
+      "questLocations": {
+        "Blood And Smoke": "Ettin's Back"
+      },
+      "captureLocations": {
+        "Shist Bogsifter": "Dragon's Gullet",
+        "Nizza the Sickle": "D'Alessio Seaboard",
+        "Zameel Dirge": "Divinity Coast",
+        "Asad the Ignoble": "Nebo Terrace",
+        "Euhh Snickersnak": "Sage Lands",
+        "Flash Darkspine": "Ettin's Back",
+        "Stik Barkripper": null
+      }
     }
   },
   {
@@ -150,7 +172,13 @@
       "captureBosses": [],
       "conditionalCaptureBosses": [
         "Thorgrim Beastlasher"
-      ]
+      ],
+      "questLocations": {
+        "The Misplaced Sword": "Heroes' Audience"
+      },
+      "captureLocations": {
+        "Thorgrim Beastlasher": "Iron Horse Mine"
+      }
     }
   },
   {
@@ -174,7 +202,10 @@
       "quests": [
         "The False Gods"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The False Gods": "Temple of the Ages"
+      }
     }
   },
   {
@@ -215,7 +246,11 @@
       "captureBosses": [
         "Jono Yawpyawl",
         "Sakalo Yawpyawl"
-      ]
+      ],
+      "captureLocations": {
+        "Jono Yawpyawl": "Talus Chute",
+        "Sakalo Yawpyawl": "Witman's Folly"
+      }
     }
   },
   {
@@ -239,7 +274,10 @@
       "quests": [
         "Supplies for the Duke"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Supplies for the Duke": "Old Ascalon"
+      }
     }
   },
   {
@@ -294,6 +332,18 @@
         "Tang Stonecut",
         "Facet of Elements"
       ],
+      "captureLocations": {
+        "Splinterquake": "Sage Lands",
+        "Thornwrath": "Bloodstone Fen",
+        "Bristlefire": "Ettin's Back",
+        "Clarion Shinypate": "Prophet's Path",
+        "Lucid Jewelstone": null,
+        "Ghilaparu Stormstone": "Diviner's Ascent",
+        "Pell Glitterglatter": "Vulture Drifts",
+        "Tang Stonecut": null,
+        "Facet of Elements": "The Dragon's Lair",
+        "Carnak the Hungry": "The Black Curtain (War in Kryta)"
+      },
       "conditionalCaptureBosses": [
         "Carnak the Hungry"
       ]
@@ -320,7 +370,10 @@
       "quests": [
         "Eye For Profit"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Eye For Profit": "Druid's Overlook"
+      }
     }
   },
   {
@@ -341,7 +394,10 @@
       "quests": [],
       "captureBosses": [
         "Pravus Obsideo"
-      ]
+      ],
+      "captureLocations": {
+        "Pravus Obsideo": "Perdition Rock"
+      }
     }
   },
   {
@@ -374,7 +430,18 @@
       ],
       "conditionalCaptureBosses": [
         "Lord Timot"
-      ]
+      ],
+      "questLocations": {
+        "The Forgotten Ones": "Destiny's Gorge"
+      },
+      "captureLocations": {
+        "Lord Timot": "Scoundrel's Rise",
+        "Verata the Necromancer": "Kessex Peak",
+        "Damis the Malignant": "Riverside Province",
+        "Ghazal the Corrupter": "Sanctum Cay",
+        "Zalo Soulhaunch": "The Scar",
+        "Tonfor Copperblood": "Lornar's Pass"
+      }
     }
   },
   {
@@ -400,7 +467,11 @@
         "The Necromancer's Novice",
         "The Stolen Artifact"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Necromancer's Novice": "The Catacombs",
+        "The Stolen Artifact": "Sardelac Sanitarium"
+      }
     }
   },
   {
@@ -429,7 +500,16 @@
         "Bane Darkfist",
         "Amir the Overripe",
         "Zukra Cadava"
-      ]
+      ],
+      "questLocations": {
+        "The Royal Papers": "Fishermen's Haven"
+      },
+      "captureLocations": {
+        "Bakkir the Forsaken": "Gates of Kryta",
+        "Bane Darkfist": "D'Alessio Seaboard",
+        "Amir the Overripe": "Nebo Terrace",
+        "Zukra Cadava": "Divinity Coast"
+      }
     }
   },
   {
@@ -460,6 +540,17 @@
         "Kathryn the Cold",
         "Edgar the Iron Fist"
       ],
+      "questLocations": {
+        "Eye For Profit": "Druid's Overlook"
+      },
+      "captureLocations": {
+        "Torr the Relentless": "Bloodstone Fen",
+        "Cuthbert the Chaste": "Aurora Glade",
+        "Darwym the Spiteful": "Riverside Province",
+        "Kathryn the Cold": "Twin Serpent Lakes",
+        "Edgar the Iron Fist": "Sanctum Cay",
+        "Inquisitor Lashona": "North Kryta Province (War in Kryta)"
+      },
       "conditionalCaptureBosses": [
         "Inquisitor Lashona"
       ]
@@ -509,7 +600,10 @@
       "quests": [
         "Into the Unknown"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Into the Unknown": "Augury Rock (outpost)"
+      }
     }
   },
   {
@@ -578,7 +672,10 @@
       "quests": [
         "The Price of Steel"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Price of Steel": "Silverwood"
+      }
     }
   },
   {
@@ -602,7 +699,10 @@
       "quests": [
         "Elemental Knowledge"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Elemental Knowledge": "Old Ascalon"
+      }
     }
   },
   {
@@ -675,7 +775,14 @@
       ],
       "conditionalCaptureBosses": [
         "Aily the Innocent"
-      ]
+      ],
+      "captureLocations": {
+        "Demetrios the Enduring": "Thunderhead Keep",
+        "Mursaat Monk (boss)": "Ice Floe",
+        "Coventina the Matron": "Ring of Fire",
+        "Willa the Unpleasant": "Abaddon's Mouth",
+        "Aily the Innocent": "Divinity Coast (explorable area)"
+      }
     }
   },
   {
@@ -701,7 +808,11 @@
         "Elementalist Test",
         "The Elementalist Experiment"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Elementalist Test": "Lakeside County",
+        "The Elementalist Experiment": "Wizard's Folly"
+      }
     }
   },
   {
@@ -723,6 +834,10 @@
       "captureBosses": [
         "Maligo Libens"
       ],
+      "captureLocations": {
+        "Maligo Libens": "Hell's Precipice",
+        "Cerris": "Nebo Terrace (War in Kryta)"
+      },
       "conditionalCaptureBosses": [
         "Cerris"
       ]
@@ -771,7 +886,10 @@
       "quests": [
         "Eye For Profit"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Eye For Profit": "Druid's Overlook"
+      }
     }
   },
   {
@@ -796,7 +914,10 @@
       "quests": [
         "Graven Images"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Graven Images": "North Kryta Province"
+      }
     }
   },
   {
@@ -821,7 +942,12 @@
       "conditionalCaptureBosses": [
         "Cairn the Grave",
         "Ingenious Ettin"
-      ]
+      ],
+      "captureLocations": {
+        "Ferk Mallet": "Ring of Fire",
+        "Cairn the Grave": "D'Alessio Seaboard (explorable area)",
+        "Ingenious Ettin": "Perdition Rock"
+      }
     }
   },
   {
@@ -846,7 +972,10 @@
       "quests": [
         "Domination Magic (quest)"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Domination Magic (quest)": "Foible's Fair"
+      }
     }
   },
   {
@@ -875,7 +1004,16 @@
         "Smuush Fatfist",
         "Droog Stoneclub",
         "Glutt Wallop"
-      ]
+      ],
+      "questLocations": {
+        "The Lost Princess": "Fishermen's Haven"
+      },
+      "captureLocations": {
+        "Snow Ettin (warrior boss)": "Griffon's Mouth",
+        "Smuush Fatfist": "North Kryta Province",
+        "Droog Stoneclub": "D'Alessio Seaboard",
+        "Glutt Wallop": "Nebo Terrace"
+      }
     }
   },
   {
@@ -902,7 +1040,14 @@
       "captureBosses": [
         "Tree of Judgment",
         "Sul SandStorm"
-      ]
+      ],
+      "questLocations": {
+        "The Lost Princess": "Fishermen's Haven"
+      },
+      "captureLocations": {
+        "Tree of Judgment": "The Black Curtain",
+        "Sul SandStorm": "Salt Flats"
+      }
     }
   },
   {
@@ -926,7 +1071,10 @@
       "quests": [
         "The Deserters"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Deserters": "Beacon's Perch"
+      }
     }
   },
   {
@@ -952,7 +1100,11 @@
         "A Monk's Mission",
         "Sowing Seeds"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "A Monk's Mission": "Ashford Abbey",
+        "Sowing Seeds": "Old Ascalon"
+      }
     }
   },
   {
@@ -977,7 +1129,10 @@
       "quests": [
         "Monk Test"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Monk Test": "Lakeside County"
+      }
     }
   },
   {
@@ -1002,6 +1157,12 @@
         "Blood And Smoke"
       ],
       "captureBosses": [],
+      "questLocations": {
+        "Blood And Smoke": "Ettin's Back"
+      },
+      "captureLocations": {
+        "Degaz the Cynical": "Riverside Province (explorable area)"
+      },
       "conditionalCaptureBosses": [
         "Degaz the Cynical"
       ]
@@ -1033,7 +1194,16 @@
         "Tree of Renewal",
         "Tree of Solitude",
         "Melp the Harpooner"
-      ]
+      ],
+      "questLocations": {
+        "The Price of Steel": "Silverwood"
+      },
+      "captureLocations": {
+        "Cella the Hooded": "North Kryta Province",
+        "Tree of Renewal": "D'Alessio Seaboard",
+        "Tree of Solitude": "Nebo Terrace",
+        "Melp the Harpooner": "Watchtower Coast"
+      }
     }
   },
   {
@@ -1062,7 +1232,13 @@
       "conditionalCaptureBosses": [
         "Disgruntled Zombie",
         "Lord Timot"
-      ]
+      ],
+      "captureLocations": {
+        "Disgruntled Zombie": "North Kryta Province",
+        "Lord Timot": "Scoundrel's Rise",
+        "Damis the Malignant": "Riverside Province",
+        "Ghazal the Corrupter": "Sanctum Cay"
+      }
     }
   },
   {
@@ -1087,7 +1263,12 @@
       ],
       "conditionalCaptureBosses": [
         "Cairn the Cunning"
-      ]
+      ],
+      "captureLocations": {
+        "Markis": "Iron Mines of Moladune",
+        "Snyk the Hundred Tongue": "Abaddon's Mouth",
+        "Cairn the Cunning": "Riverside Province (explorable area)"
+      }
     }
   },
   {
@@ -1109,7 +1290,11 @@
       "captureBosses": [
         "Smukk Foombool",
         "Krogg Shmush (Shiverpeak Mountains)"
-      ]
+      ],
+      "captureLocations": {
+        "Smukk Foombool": "Snake Dance",
+        "Krogg Shmush (Shiverpeak Mountains)": "Talus Chute"
+      }
     }
   },
   {
@@ -1134,7 +1319,10 @@
       "quests": [],
       "captureBosses": [
         "Clobberhusk"
-      ]
+      ],
+      "captureLocations": {
+        "Clobberhusk": "Lornar's Pass"
+      }
     }
   },
   {
@@ -1159,7 +1347,11 @@
       "captureBosses": [
         "Divingbeak",
         "Featherfist"
-      ]
+      ],
+      "captureLocations": {
+        "Divingbeak": "Vulture Drifts",
+        "Featherfist": "Prophet's Path"
+      }
     }
   },
   {
@@ -1184,7 +1376,10 @@
       "quests": [
         "The Hot Springs Murders"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Hot Springs Murders": "Nebo Terrace"
+      }
     }
   },
   {
@@ -1212,7 +1407,15 @@
         "Vook Foomble",
         "Trech Schmoogle",
         "Zwack Ramble"
-      ]
+      ],
+      "questLocations": {
+        "The Lost Princess": "Fishermen's Haven"
+      },
+      "captureLocations": {
+        "Vook Foomble": "Salt Flats",
+        "Trech Schmoogle": "Diviner's Ascent",
+        "Zwack Ramble": "Vulture Drifts"
+      }
     }
   },
   {
@@ -1236,7 +1439,10 @@
       "quests": [
         "Ghostly Vengeance"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Ghostly Vengeance": "Augury Rock (outpost)"
+      }
     }
   },
   {
@@ -1269,7 +1475,20 @@
         "Bramblehash",
         "Splintertrunk",
         "Tree of Vitality"
-      ]
+      ],
+      "questLocations": {
+        "The False Gods": "Temple of the Ages"
+      },
+      "captureLocations": {
+        "Rif Telourau": "Pockmark Flats",
+        "Leaps Thunderclap": "North Kryta Province",
+        "Muga Riptide": "D'Alessio Seaboard",
+        "Yerk Plopsquirt": "Nebo Terrace",
+        "Gack Splotchplunk": "Watchtower Coast",
+        "Bramblehash": "Sage Lands",
+        "Splintertrunk": "Ettin's Back",
+        "Tree of Vitality": "The Wilds"
+      }
     }
   },
   {
@@ -1300,7 +1519,17 @@
         "Aziz Rottenscalp",
         "Gezna Shadowstalker",
         "Najja Doombringer"
-      ]
+      ],
+      "questLocations": {
+        "The Supremacy of Air": "Foible's Fair"
+      },
+      "captureLocations": {
+        "Priest of Dagnar": "Borlis Pass",
+        "Nazeem the Damned": "Gates of Kryta",
+        "Aziz Rottenscalp": "Nebo Terrace",
+        "Gezna Shadowstalker": "D'Alessio Seaboard",
+        "Najja Doombringer": "Divinity Coast"
+      }
     }
   },
   {
@@ -1329,7 +1558,15 @@
         "Facet of Darkness",
         "Mursaat Necromancer (boss)",
         "Feodor the Baneful"
-      ]
+      ],
+      "questLocations": {
+        "The Power of Blood": "Green Hills County"
+      },
+      "captureLocations": {
+        "Facet of Darkness": "The Dragon's Lair",
+        "Mursaat Necromancer (boss)": "Ice Floe",
+        "Feodor the Baneful": "Iron Mines of Moladune"
+      }
     }
   },
   {
@@ -1354,7 +1591,10 @@
       "quests": [
         "The Last Hog"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Last Hog": "North Kryta Province"
+      }
     }
   },
   {
@@ -1377,7 +1617,10 @@
       "quests": [],
       "captureBosses": [
         "Cry Darkday"
-      ]
+      ],
+      "captureLocations": {
+        "Cry Darkday": "Snake Dance"
+      }
     }
   },
   {
@@ -1402,7 +1645,10 @@
       "quests": [
         "The Hot Springs Murders"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Hot Springs Murders": "Nebo Terrace"
+      }
     }
   },
   {
@@ -1448,7 +1694,10 @@
       "quests": [
         "The Deserters"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Deserters": "Beacon's Perch"
+      }
     }
   },
   {
@@ -1492,7 +1741,11 @@
       "captureBosses": [
         "Grognard Gravelhead",
         "Skintekaru Manshredder"
-      ]
+      ],
+      "captureLocations": {
+        "Grognard Gravelhead": "Sorrow's Furnace",
+        "Skintekaru Manshredder": "Perdition Rock"
+      }
     }
   },
   {
@@ -1525,7 +1778,18 @@
         "Ore Darkwhip",
         "Thorgrim Beastlasher",
         "Greves the Overbearing"
-      ]
+      ],
+      "questLocations": {
+        "A Belated Betrothal": "Seeker's Passage"
+      },
+      "captureLocations": {
+        "Toris Stonehammer": "Traveler's Vale",
+        "Ore Darkwhip": "Iron Horse Mine",
+        "Thorgrim Beastlasher": "Stone Summit Beastmasters",
+        "Minotaur (boss)": "Anvil Rock",
+        "Muu Swifthorn": "Talmark Wilderness",
+        "Greves the Overbearing": "Talmark Wilderness (War in Kryta)"
+      }
     }
   },
   {
@@ -1549,7 +1813,10 @@
       "quests": [
         "Charr Reinforcements"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Charr Reinforcements": "Piken Square"
+      }
     }
   },
   {
@@ -1573,7 +1840,10 @@
       "quests": [
         "Stone Summit Beastmasters"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Stone Summit Beastmasters": "Traveler's Vale"
+      }
     }
   },
   {
@@ -1597,7 +1867,10 @@
       "quests": [
         "Supplies for the Duke"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Supplies for the Duke": "Old Ascalon"
+      }
     }
   },
   {
@@ -1627,6 +1900,15 @@
         "The Inquisitor",
         "Chrysos the Magnetic"
       ],
+      "captureLocations": {
+        "Zeki Lament": "Riverside Province",
+        "Lamaan Wickedwail": "Sanctum Cay",
+        "Mursaat Elementalist (boss)": "Ice Floe",
+        "Kratos the Foul": "Iron Mines of Moladune",
+        "The Inquisitor": null,
+        "Chrysos the Magnetic": "Thunderhead Keep",
+        "Talios the Resplendent": "The Battle for Lion's Arch"
+      },
       "conditionalCaptureBosses": [
         "Talios the Resplendent"
       ]
@@ -1653,7 +1935,10 @@
       "quests": [
         "The Stone Summit Champion"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Stone Summit Champion": "Yak's Bend"
+      }
     }
   },
   {
@@ -1684,7 +1969,18 @@
         "Ayassah Hess",
         "Goss Aleessh",
         "Tiss Danssir"
-      ]
+      ],
+      "questLocations": {
+        "Trying Times": "Sardelac Sanitarium"
+      },
+      "captureLocations": {
+        "Gaiza Deadeye": "Riverside Province",
+        "Lamaan Wickedwail": "Sanctum Cay",
+        "Gret Waveringmane": "The Scar",
+        "Ayassah Hess": "Dunes of Despair",
+        "Goss Aleessh": "Thirsty River",
+        "Tiss Danssir": "Elona Reach"
+      }
     }
   },
   {
@@ -1710,7 +2006,11 @@
         "The Ranger's Companion",
         "Endangered Species"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Ranger's Companion": "Regent Valley (pre-Searing)",
+        "Endangered Species": "Old Ascalon"
+      }
     }
   },
   {
@@ -1762,7 +2062,16 @@
       ],
       "conditionalCaptureBosses": [
         "Eater of Souls"
-      ]
+      ],
+      "questLocations": {
+        "Into the Unknown": "Augury Rock (outpost)"
+      },
+      "captureLocations": {
+        "Eater of Souls": "Prophet's Path",
+        "Jonk Shuffle": "Salt Flats",
+        "Plunk Trudge": "Diviner's Ascent",
+        "Krunk Waddle": "Vulture Drifts"
+      }
     }
   },
   {
@@ -1791,7 +2100,16 @@
         "Melp the Harpooner",
         "Bone Dragon",
         "Ruinwing"
-      ]
+      ],
+      "questLocations": {
+        "The False Gods": "Temple of the Ages"
+      },
+      "captureLocations": {
+        "Cella the Hooded": "North Kryta Province",
+        "Melp the Harpooner": "Watchtower Coast",
+        "Bone Dragon": "Sanctum Cay",
+        "Ruinwing": "Riverside Province"
+      }
     }
   },
   {
@@ -1816,7 +2134,14 @@
         "Linka Goldensteel",
         "Marika Granitehand",
         "Gornar Bellybreaker"
-      ]
+      ],
+      "captureLocations": {
+        "Arlak Stoneleaf": "Ice Caves of Sorrow",
+        "Virag Bladestone": null,
+        "Linka Goldensteel": "Frozen Forest",
+        "Marika Granitehand": "Iron Mines of Moladune",
+        "Gornar Bellybreaker": "Thunderhead Keep"
+      }
     }
   },
   {
@@ -1846,6 +2171,16 @@
         "Didn Hopestealer",
         "Digo Murkstalker"
       ],
+      "captureLocations": {
+        "Psion Tanglebranch": "Majesty's Rest",
+        "Chak Hack Schawack": "Diviner's Ascent",
+        "Sevv Squallfroth": "Salt Flats",
+        "Seear Windlash": "Talus Chute",
+        "Didn Hopestealer": "Snake Dance",
+        "Digo Murkstalker": "Iron Mines of Moladune",
+        "Ven the Conservator": "Riverside Province (explorable area)",
+        "Lucent the Spectral": "The Battle for Lion's Arch"
+      },
       "conditionalCaptureBosses": [
         "Ven the Conservator",
         "Lucent the Spectral"
@@ -1875,7 +2210,11 @@
         "The Ranger's Companion",
         "Endangered Species"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Ranger's Companion": "Regent Valley (pre-Searing)",
+        "Endangered Species": "Old Ascalon"
+      }
     }
   },
   {
@@ -1908,7 +2247,20 @@
         "Custodian Kora",
         "Custodian Phebus",
         "Facet of Nature"
-      ]
+      ],
+      "questLocations": {
+        "The Royal Papers": "Fishermen's Haven"
+      },
+      "captureLocations": {
+        "Sayad the Bloodless": "Gates of Kryta",
+        "Abijah the Decayed": "D'Alessio Seaboard",
+        "Dahr the Diseased": "Nebo Terrace",
+        "Ghita Bonz": "Divinity Coast",
+        "Custodian Jenus": "Elona Reach",
+        "Custodian Kora": "Dunes of Despair",
+        "Custodian Phebus": "Thirsty River",
+        "Facet of Nature": "The Dragon's Lair"
+      }
     }
   },
   {
@@ -1954,7 +2306,10 @@
       "quests": [
         "The Price of Steel"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Price of Steel": "Silverwood"
+      }
     }
   },
   {
@@ -1984,7 +2339,14 @@
         "Tempest Drake",
         "Enraged Phantom",
         "Insatiable Vakar"
-      ]
+      ],
+      "captureLocations": {
+        "Enraged Phantom": "Tunnels of the Forsaken",
+        "Zeki Lament": "Riverside Province",
+        "Lamaan Wickedwail": "Sanctum Cay",
+        "Tempest Drake": "Diviner's Ascent",
+        "Insatiable Vakar": "North Kryta Province (War in Kryta)"
+      }
     }
   },
   {
@@ -2010,7 +2372,11 @@
         "A Mesmer's Burden",
         "Mesmerizing the Enemy"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "A Mesmer's Burden": "Lakeside County",
+        "Mesmerizing the Enemy": "Sardelac Sanitarium"
+      }
     }
   },
   {
@@ -2036,7 +2402,12 @@
         "Byssha Hisst",
         "Hessper Sasso",
         "Uussh Visshta"
-      ]
+      ],
+      "captureLocations": {
+        "Byssha Hisst": "Dunes of Despair",
+        "Hessper Sasso": "Thirsty River",
+        "Uussh Visshta": "Elona Reach"
+      }
     }
   },
   {
@@ -2060,7 +2431,10 @@
       "quests": [
         "The Price of Steel"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Price of Steel": "Silverwood"
+      }
     }
   },
   {
@@ -2092,7 +2466,16 @@
       "conditionalCaptureBosses": [
         "Abbot Ramoth",
         "Barthimus the Provident"
-      ]
+      ],
+      "captureLocations": {
+        "Abbot Ramoth": "The Black Curtain",
+        "Ramm the Benevolent": "Bloodstone Fen",
+        "Garr the Merciful": "Aurora Glade",
+        "Gilroy the Stoic": "Twin Serpent Lakes",
+        "Corbin the Upright": "Riverside Province",
+        "Selwin the Fervent": "Sanctum Cay",
+        "Barthimus the Provident": "Cursed Lands (War in Kryta)"
+      }
     }
   },
   {
@@ -2120,6 +2503,13 @@
       "captureBosses": [
         "Onaona Kubkub"
       ],
+      "questLocations": {
+        "The Hot Springs Murders": "Nebo Terrace"
+      },
+      "captureLocations": {
+        "Onaona Kubkub": "The Great Northern Wall",
+        "Selenas the Blunt": "Twin Serpent Lakes (War in Kryta)"
+      },
       "conditionalCaptureBosses": [
         "Selenas the Blunt"
       ]
@@ -2157,7 +2547,20 @@
         "Yxthoshth",
         "Lucent the Spectral",
         "Korvald Willcrusher"
-      ]
+      ],
+      "captureLocations": {
+        "Erzek Runebreaker": "Lornar's Pass",
+        "Barl Stormsiege": "Frozen Forest",
+        "Jonar Stonebender": "Ice Caves of Sorrow",
+        "Fuury Stonewrath": "Thunderhead Keep",
+        "Gorrel Rockmolder": "Grenth's Footprint",
+        "Garbok Handsmasher": "Sorrow's Furnace",
+        "Korvald Willcrusher": null,
+        "Vokur Grimshackles": null,
+        "Hierophant Morlog": "Unspeakable, Unknowable",
+        "Yxthoshth": "Salt Flats",
+        "Lucent the Spectral": "The Battle for Lion's Arch (explorable area)"
+      }
     }
   },
   {
@@ -2178,7 +2581,10 @@
       "quests": [],
       "captureBosses": [
         "Melandru's Cursed"
-      ]
+      ],
+      "captureLocations": {
+        "Melandru's Cursed": "Perdition Rock"
+      }
     }
   },
   {
@@ -2204,7 +2610,11 @@
       "conditionalCaptureBosses": [
         "Disgruntled Zombie",
         "Cairn the Berserker"
-      ]
+      ],
+      "captureLocations": {
+        "Disgruntled Zombie": "North Kryta Province",
+        "Cairn the Berserker": "Divinity Coast (explorable area)"
+      }
     }
   },
   {
@@ -2228,7 +2638,10 @@
       "quests": [
         "The Price of Steel"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Price of Steel": "Silverwood"
+      }
     }
   },
   {
@@ -2298,7 +2711,10 @@
       "quests": [
         "The Vineyard Problem"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Vineyard Problem": "The Barradin Estate"
+      }
     }
   },
   {
@@ -2327,7 +2743,15 @@
         "Slog Bloodsplatter",
         "Shadow of Death",
         "Dread Nightstalk"
-      ]
+      ],
+      "questLocations": {
+        "Graven Images": "North Kryta Province"
+      },
+      "captureLocations": {
+        "Slog Bloodsplatter": "Diessa Lowlands",
+        "Shadow of Death": "The Black Curtain",
+        "Dread Nightstalk": "Talmark Wilderness"
+      }
     }
   },
   {
@@ -2395,7 +2819,10 @@
       "quests": [
         "Death in the Ruins"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Death in the Ruins": "Sardelac Sanitarium"
+      }
     }
   },
   {
@@ -2465,7 +2892,12 @@
         "Rotcap Mochsart",
         "Mossk Rottail",
         "Flaw Rootplague"
-      ]
+      ],
+      "captureLocations": {
+        "Rotcap Mochsart": "Sage Lands",
+        "Mossk Rottail": "Bloodstone Fen",
+        "Flaw Rootplague": "Ettin's Back"
+      }
     }
   },
   {
@@ -2492,7 +2924,12 @@
         "The Necromancer's Novice",
         "The Stolen Artifact"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Necromancer Test": "Lakeside County",
+        "The Necromancer's Novice": "The Catacombs",
+        "The Stolen Artifact": "Sardelac Sanitarium"
+      }
     }
   },
   {
@@ -2516,7 +2953,10 @@
       "quests": [
         "Helping the Dwarves"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Helping the Dwarves": "Yak's Bend"
+      }
     }
   },
   {
@@ -2545,7 +2985,16 @@
         "Skitt the Skizzle",
         "Frak Undertow",
         "Chunk Clumpfoot"
-      ]
+      ],
+      "questLocations": {
+        "The False Gods": "Temple of the Ages"
+      },
+      "captureLocations": {
+        "Rago the Scaled": "D'Alessio Seaboard",
+        "Skitt the Skizzle": "Nebo Terrace",
+        "Frak Undertow": "Divinity Coast",
+        "Chunk Clumpfoot": "Lornar's Pass"
+      }
     }
   },
   {
@@ -2573,7 +3022,15 @@
         "Nav Sharpquill",
         "Myrd Brokenfeather",
         "Sky Quickfeather"
-      ]
+      ],
+      "questLocations": {
+        "The Forgotten Ones": "Destiny's Gorge"
+      },
+      "captureLocations": {
+        "Nav Sharpquill": "North Kryta Province",
+        "Myrd Brokenfeather": "Stingray Strand",
+        "Sky Quickfeather": "Divinity Coast"
+      }
     }
   },
   {
@@ -2597,7 +3054,10 @@
       "quests": [
         "Renegade Necromancer"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Renegade Necromancer": "Yak's Bend"
+      }
     }
   },
   {
@@ -2625,7 +3085,14 @@
         "Haja Bloodwail",
         "Zameel Dirge",
         "Asad the Ignoble"
-      ]
+      ],
+      "captureLocations": {
+        "Shist Bogsifter": "Dragon's Gullet",
+        "Nizza the Sickle": "D'Alessio Seaboard",
+        "Haja Bloodwail": "Gates of Kryta",
+        "Zameel Dirge": "Majesty's Rest",
+        "Asad the Ignoble": "Nebo Terrace"
+      }
     }
   },
   {
@@ -2647,7 +3114,11 @@
       "captureBosses": [
         "Obrhit Barkwood",
         "Clobberhusk"
-      ]
+      ],
+      "captureLocations": {
+        "Obrhit Barkwood": "Frozen Forest",
+        "Clobberhusk": "Lornar's Pass"
+      }
     }
   },
   {
@@ -2676,7 +3147,16 @@
         "Skigg the Tongue",
         "Gambol the Headrainer",
         "Eepeep the Mindrain"
-      ]
+      ],
+      "questLocations": {
+        "The False Gods": "Temple of the Ages"
+      },
+      "captureLocations": {
+        "Geck the Coldblooded": "North Kryta Province",
+        "Skigg the Tongue": "D'Alessio Seaboard",
+        "Gambol the Headrainer": "Nebo Terrace",
+        "Eepeep the Mindrain": "Watchtower Coast"
+      }
     }
   },
   {
@@ -2705,7 +3185,13 @@
       "conditionalCaptureBosses": [
         "Disgruntled Zombie",
         "Lord Timot"
-      ]
+      ],
+      "captureLocations": {
+        "Disgruntled Zombie": "North Kryta Province",
+        "Lord Timot": "Scoundrel's Rise",
+        "Damis the Malignant": "Riverside Province",
+        "Ghazal the Corrupter": "Sanctum Cay"
+      }
     }
   },
   {
@@ -2755,7 +3241,13 @@
       ],
       "captureBosses": [
         "Poisonbough"
-      ]
+      ],
+      "questLocations": {
+        "Graven Images": "North Kryta Province"
+      },
+      "captureLocations": {
+        "Poisonbough": "Lornar's Pass"
+      }
     }
   },
   {
@@ -2782,7 +3274,14 @@
       ],
       "conditionalCaptureBosses": [
         "Perfected Armor"
-      ]
+      ],
+      "captureLocations": {
+        "Jade Armor (boss)": "Ice Floe",
+        "Martigris the Stalwart": "Iron Mines of Moladune",
+        "Perfected Armor": "Thunderhead Keep",
+        "Cairn the Smug": "Ring of Fire",
+        "Cairn the Destroyer": "Abaddon's Mouth"
+      }
     }
   },
   {
@@ -2834,7 +3333,15 @@
       ],
       "conditionalCaptureBosses": [
         "Galrath"
-      ]
+      ],
+      "questLocations": {
+        "Army Life": "Piken Square"
+      },
+      "captureLocations": {
+        "Galrath": "Kessex Peak",
+        "Justiciar Hablion": "Bloodstone Fen",
+        "Yino Burlyhaunch": "Borlis Pass"
+      }
     }
   },
   {
@@ -2866,7 +3373,18 @@
         "Marika Granitehand",
         "Gornar Bellybreaker",
         "Tanzit Razorstone"
-      ]
+      ],
+      "captureLocations": {
+        "Fendar Stonestance": "Iron Horse Mine",
+        "Smukk Foombool": "Snake Dance",
+        "Krogg Shmush (Shiverpeak Mountains)": "Talus Chute",
+        "Linka Goldensteel": "Frozen Forest",
+        "Arlak Stoneleaf": "Ice Caves of Sorrow",
+        "Virag Bladestone": null,
+        "Marika Granitehand": "Iron Mines of Moladune",
+        "Gornar Bellybreaker": "Thunderhead Keep",
+        "Tanzit Razorstone": "Sorrow's Furnace"
+      }
     }
   },
   {
@@ -2915,7 +3433,14 @@
       "captureBosses": [
         "Gack the Mindwrecker",
         "Tachi Forvent"
-      ]
+      ],
+      "questLocations": {
+        "Supplies for the Duke": "Old Ascalon"
+      },
+      "captureLocations": {
+        "Gack the Mindwrecker": "The Black Curtain",
+        "Tachi Forvent": "Kessex Peak"
+      }
     }
   },
   {
@@ -2968,7 +3493,18 @@
         "Brol Migo Hinga",
         "Flange Sullenrage",
         "Ness Orangeclaw"
-      ]
+      ],
+      "questLocations": {
+        "Charr Reinforcements": "Piken Square"
+      },
+      "captureLocations": {
+        "Rubi Spottedmane": "Borlis Pass",
+        "Winglord Caromi": "The Black Curtain",
+        "Henge Guardian": "Aurora Glade",
+        "Brol Migo Hinga": "Diviner's Ascent",
+        "Flange Sullenrage": null,
+        "Ness Orangeclaw": null
+      }
     }
   },
   {
@@ -2998,7 +3534,17 @@
         "Featherclaw",
         "Gambol Headrainer",
         "Sniik Hungrymind"
-      ]
+      ],
+      "questLocations": {
+        "Unnatural Creatures": "Serenity Temple"
+      },
+      "captureLocations": {
+        "Gret Waveringmane": "The Scar",
+        "Facet of Chaos": "The Dragon's Lair",
+        "Featherclaw": "Snake Dance",
+        "Gambol Headrainer": "Ice Floe",
+        "Sniik Hungrymind": "Spearhead Peak"
+      }
     }
   },
   {
@@ -3022,7 +3568,10 @@
       "quests": [
         "The Wayward Monk"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Wayward Monk": "Yak's Bend"
+      }
     }
   },
   {
@@ -3050,7 +3599,12 @@
       ],
       "conditionalCaptureBosses": [
         "Aily the Innocent"
-      ]
+      ],
+      "captureLocations": {
+        "Liam Shanglui": "Kessex Peak",
+        "Raptorhawk": "Snake Dance",
+        "Aily the Innocent": "Divinity Coast (explorable area)"
+      }
     }
   },
   {
@@ -3084,7 +3638,18 @@
         "Abbot Ramoth",
         "Barthimus the Provident",
         "Ambrillus the Guardian"
-      ]
+      ],
+      "captureLocations": {
+        "Abbot Ramoth": "The Black Curtain",
+        "Ramm the Benevolent": "Bloodstone Fen",
+        "Garr the Merciful": "Aurora Glade",
+        "Gilroy the Stoic": "Twin Serpent Lakes",
+        "Corbin the Upright": "Riverside Province",
+        "Selwin the Fervent": "Sanctum Cay",
+        "Kepkhet Marrowfeast": "Prophet's Path",
+        "Barthimus the Provident": "Cursed Lands (War in Kryta)",
+        "Ambrillus the Guardian": "The Battle for Lion's Arch"
+      }
     }
   },
   {
@@ -3108,7 +3673,10 @@
       "quests": [
         "Hungry Devourer"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Hungry Devourer": "Beacon's Perch"
+      }
     }
   },
   {
@@ -3135,7 +3703,14 @@
       "captureBosses": [
         "Ruinwing",
         "Bone Dragon (boss)"
-      ]
+      ],
+      "questLocations": {
+        "The Charr Staging Area": "Old Ascalon"
+      },
+      "captureLocations": {
+        "Ruinwing": "Riverside Province",
+        "Bone Dragon (boss)": "Sanctum Cay"
+      }
     }
   },
   {
@@ -3208,7 +3783,13 @@
       ],
       "conditionalCaptureBosses": [
         "Aily the Innocent"
-      ]
+      ],
+      "captureLocations": {
+        "Rif Telourau": "Pockmark Flats",
+        "Dracul Cadava": "Riverside Province",
+        "Fariq Earthturner": "Sanctum Cay",
+        "Aily the Innocent": "Divinity Coast (explorable area)"
+      }
     }
   },
   {
@@ -3237,6 +3818,14 @@
         "Darwym the Spiteful",
         "Edgar the Iron Fist"
       ],
+      "captureLocations": {
+        "Kathryn the Cold": "Twin Serpent Lakes",
+        "Torr the Relentless": "Bloodstone Fen",
+        "Cuthbert the Chaste": "Aurora Glade",
+        "Darwym the Spiteful": "Riverside Province",
+        "Edgar the Iron Fist": "Sanctum Cay",
+        "Valis the Rampant": "Twin Serpent Lakes (War in Kryta)"
+      },
       "conditionalCaptureBosses": [
         "Valis the Rampant"
       ]
@@ -3264,7 +3853,10 @@
       "quests": [
         "Unnatural Growths"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Unnatural Growths": "Wizard's Folly"
+      }
     }
   },
   {
@@ -3293,7 +3885,16 @@
         "Ness Orangeclaw",
         "Flange Sullenrage",
         "Brol Migo Hinga"
-      ]
+      ],
+      "questLocations": {
+        "Ghostly Vengeance": "Augury Rock (outpost)"
+      },
+      "captureLocations": {
+        "Tree of Autumn": "Talmark Wilderness",
+        "Ness Orangeclaw": "Salt Flats",
+        "Flange Sullenrage": "Diviner's Ascent",
+        "Brol Migo Hinga": "Prophet's Path"
+      }
     }
   },
   {
@@ -3316,7 +3917,12 @@
         "Malinon Threshammer",
         "Slonak Copperbark",
         "Thorgall Bludgeonhammer"
-      ]
+      ],
+      "captureLocations": {
+        "Malinon Threshammer": "Sorrow's Furnace",
+        "Slonak Copperbark": "Iron Mines of Moladune",
+        "Thorgall Bludgeonhammer": "Grenth's Footprint"
+      }
     }
   },
   {
@@ -3341,7 +3947,10 @@
       "quests": [
         "Graven Images"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Graven Images": "North Kryta Province"
+      }
     }
   },
   {
@@ -3375,6 +3984,20 @@
         "Galigord Stonestrike",
         "Runar Brimstone"
       ],
+      "questLocations": {
+        "The Geomancer's Test": "Serenity Temple"
+      },
+      "captureLocations": {
+        "Moro Stormcalf": "Borlis Pass",
+        "Splinterquake": "Sage Lands",
+        "Horm Frostrider": "The Wilds",
+        "Bristlefire": "Ettin's Back",
+        "Ghilaparu Stormstone": "Diviner's Ascent",
+        "Doro Icehide": "The Scar",
+        "Galigord Stonestrike": "Sorrow's Furnace",
+        "Runar Brimstone": null,
+        "Rago Kindlerock": null
+      },
       "conditionalCaptureBosses": [
         "Rago Kindlerock"
       ]
@@ -3402,7 +4025,12 @@
       "conditionalCaptureBosses": [
         "Candy Corn Tyrant",
         "Carnak the Hungry"
-      ]
+      ],
+      "captureLocations": {
+        "Candy Corn Tyrant": "North Kryta Province",
+        "Kor Stonewrath": "Snake Dance",
+        "Carnak the Hungry": "The Black Curtain (War in Kryta)"
+      }
     }
   },
   {
@@ -3438,7 +4066,23 @@
         "Cyss Gresshla",
         "Issah Sshay",
         "Vassa Ssiss"
-      ]
+      ],
+      "questLocations": {
+        "The Lost Princess": "Fishermen's Haven"
+      },
+      "captureLocations": {
+        "Nazeem the Damned": "Gates of Kryta",
+        "Gezna Shadowstalker": "D'Alessio Seaboard",
+        "Najja Doombringer": "Divinity Coast",
+        "Aziz Rottenscalp": "Nebo Terrace",
+        "Splinterquake": "Sage Lands",
+        "Thornwrath": "Bloodstone Fen",
+        "Bristlefire": "Ettin's Back",
+        "Ghilaparu Stormstone": "Diviner's Ascent",
+        "Cyss Gresshla": "Dunes of Despair",
+        "Issah Sshay": "Thirsty River",
+        "Vassa Ssiss": "Elona Reach"
+      }
     }
   },
   {
@@ -3461,7 +4105,10 @@
       "quests": [],
       "captureBosses": [
         "Rwek Khawl Mawl"
-      ]
+      ],
+      "captureLocations": {
+        "Rwek Khawl Mawl": "Perdition Rock"
+      }
     }
   },
   {
@@ -3490,7 +4137,16 @@
         "Abijah the Decayed",
         "Dahr the Diseased",
         "Ghita Bonz"
-      ]
+      ],
+      "questLocations": {
+        "The Lost Princess": "Fishermen's Haven"
+      },
+      "captureLocations": {
+        "Sayad the Bloodless": "Gates of Kryta",
+        "Abijah the Decayed": "D'Alessio Seaboard",
+        "Dahr the Diseased": "Nebo Terrace",
+        "Ghita Bonz": "Divinity Coast"
+      }
     }
   },
   {
@@ -3512,6 +4168,10 @@
       "captureBosses": [
         "Geckokaru Earthwind"
       ],
+      "captureLocations": {
+        "Geckokaru Earthwind": "Perdition Rock",
+        "Vess the Disputant": "Divinity Coast (explorable area)"
+      },
       "conditionalCaptureBosses": [
         "Vess the Disputant"
       ]
@@ -3538,7 +4198,10 @@
       "quests": [
         "The Forgotten Ones"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Forgotten Ones": "Destiny's Gorge"
+      }
     }
   },
   {
@@ -3563,7 +4226,10 @@
       "quests": [
         "Mesmer Test"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Mesmer Test": "Lakeside County"
+      }
     }
   },
   {
@@ -3602,7 +4268,24 @@
       ],
       "conditionalCaptureBosses": [
         "Kree Minotaur"
-      ]
+      ],
+      "questLocations": {
+        "Into the Breach": "Old Ascalon"
+      },
+      "captureLocations": {
+        "Minotaur (boss)": "Anvil Rock",
+        "Smuush Fatfist": "North Kryta Province",
+        "Glutt Wallop": "Nebo Terrace",
+        "Droog Stoneclub": "D'Alessio Seaboard",
+        "Marrg Grummbool": "Tangle Root",
+        "Kree Minotaur": "Prophet's Path",
+        "Stoofed Chargehoof": null,
+        "Graf Wask Derg": "Diviner's Ascent",
+        "Monaru Chippedfang": null,
+        "Custodian Dellus": "Elona Reach",
+        "Custodian Fidius": "Dunes of Despair",
+        "Custodian Hulgar": "Thirsty River"
+      }
     }
   },
   {
@@ -3629,7 +4312,13 @@
         "Melp the Harpooner",
         "Tree of Renewal",
         "Tree of Solitude"
-      ]
+      ],
+      "captureLocations": {
+        "Cella the Hooded": "North Kryta Province",
+        "Melp the Harpooner": "Watchtower Coast",
+        "Tree of Renewal": "D'Alessio Seaboard",
+        "Tree of Solitude": "Nebo Terrace"
+      }
     }
   },
   {
@@ -3653,7 +4342,10 @@
       "quests": [
         "A Cure for Ralena"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "A Cure for Ralena": "Sardelac Sanitarium"
+      }
     }
   },
   {
@@ -3680,7 +4372,12 @@
       ],
       "conditionalCaptureBosses": [
         "Druul the Untamed"
-      ]
+      ],
+      "captureLocations": {
+        "Gambol Headrainer": "Ice Floe",
+        "Sniik Hungrymind": "Spearhead Peak",
+        "Druul the Untamed": "Dragon's Gullet"
+      }
     }
   },
   {
@@ -3714,7 +4411,19 @@
         "Maximilian the Meticulous",
         "Minea the Obscene",
         "Varny the Zealot"
-      ]
+      ],
+      "captureLocations": {
+        "The Darkness (boss)": "The Hall of Heroes (explorable area)",
+        "Balasi the Arcane": "Iron Mines of Moladune",
+        "Pantheras The Deceiver": "Thunderhead Keep",
+        "Mursaat Mesmer (boss)": "Ice Floe",
+        "Melek the Virtuous": "Ring of Fire",
+        "Mercia the Smug": "Abaddon's Mouth",
+        "Maximilian the Meticulous": "Nebo Terrace (War in Kryta)",
+        "Minea the Obscene": "Watchtower Coast (War in Kryta)",
+        "Varny the Zealot": "Tunnels of the Forsaken",
+        "Willem the Demeaning": "Riverside Province (explorable area)"
+      }
     }
   },
   {
@@ -3738,7 +4447,10 @@
       "quests": [
         "Helping the People of Ascalon"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Helping the People of Ascalon": "Old Ascalon"
+      }
     }
   },
   {
@@ -3773,7 +4485,19 @@
         "Disgruntled Zombie",
         "Enraged Phantom",
         "Talios the Resplendent"
-      ]
+      ],
+      "captureLocations": {
+        "Enraged Phantom": "Tunnels of the Forsaken",
+        "Whiskar Featherstorm": "Borlis Pass",
+        "Disgruntled Zombie": "North Kryta Province",
+        "Zeki Lament": "Riverside Province",
+        "Lamaan Wickedwail": "Sanctum Cay",
+        "Mursaat Elementalist (boss)": "Ice Floe",
+        "Kratos the Foul": "Iron Mines of Moladune",
+        "The Inquisitor": null,
+        "Chrysos the Magnetic": "Thunderhead Keep",
+        "Talios the Resplendent": "The Battle for Lion's Arch"
+      }
     }
   },
   {
@@ -3798,7 +4522,10 @@
       "quests": [
         "The Ascalon Settlement"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Ascalon Settlement": "North Kryta Province"
+      }
     }
   },
   {
@@ -3845,7 +4572,11 @@
       "captureBosses": [
         "Gaiza Deadeye",
         "Zaim Grimeclaw"
-      ]
+      ],
+      "captureLocations": {
+        "Gaiza Deadeye": "Riverside Province",
+        "Zaim Grimeclaw": "Sanctum Cay"
+      }
     }
   },
   {
@@ -3877,7 +4608,17 @@
       ],
       "conditionalCaptureBosses": [
         "Tempest Drake"
-      ]
+      ],
+      "questLocations": {
+        "Shalev's Task": "Old Ascalon"
+      },
+      "captureLocations": {
+        "Clarion Shinypate": "Prophet's Path",
+        "Lucid Jewelstone": null,
+        "Tempest Drake": "Diviner's Ascent",
+        "Pell Glitterglatter": "Vulture Drifts",
+        "Tang Stonecut": null
+      }
     }
   },
   {
@@ -3948,7 +4689,12 @@
         "A Mesmer's Burden",
         "Mesmerizing the Enemy"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Mesmer Test": "Lakeside County",
+        "A Mesmer's Burden": null,
+        "Mesmerizing the Enemy": "Sardelac Sanitarium"
+      }
     }
   },
   {
@@ -3977,7 +4723,14 @@
       ],
       "conditionalCaptureBosses": [
         "Ignis Phanaura"
-      ]
+      ],
+      "questLocations": {
+        "A Belated Betrothal": "Seeker's Passage"
+      },
+      "captureLocations": {
+        "Ignis Phanaura": "Old Ascalon",
+        "Spazz Mindrender": "The Great Northern Wall"
+      }
     }
   },
   {
@@ -3998,7 +4751,10 @@
       "quests": [],
       "captureBosses": [
         "Jyth Sprayburst"
-      ]
+      ],
+      "captureLocations": {
+        "Jyth Sprayburst": "Ring of Fire"
+      }
     }
   },
   {
@@ -4021,7 +4777,12 @@
         "Cyss Gresshla",
         "Issah Sshay",
         "Vassa Ssiss"
-      ]
+      ],
+      "captureLocations": {
+        "Cyss Gresshla": "Dunes of Despair",
+        "Issah Sshay": "Thirsty River",
+        "Vassa Ssiss": "Elona Reach"
+      }
     }
   },
   {
@@ -4045,7 +4806,10 @@
       "quests": [
         "Mysterious Message (Prophecies quest)"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Mysterious Message (Prophecies quest)": "Druid's Overlook"
+      }
     }
   },
   {
@@ -4071,7 +4835,13 @@
       "conditionalCaptureBosses": [
         "Phlog the Indomitable",
         "High Inquisitor Toriimo"
-      ]
+      ],
+      "captureLocations": {
+        "Tortitudo Probo": "Hell's Precipice",
+        "Tanzit Razorstone": "Sorrow's Furnace",
+        "Phlog the Indomitable": "Dragon's Gullet",
+        "High Inquisitor Toriimo": "The Battle for Lion's Arch (explorable area)"
+      }
     }
   },
   {
@@ -4096,7 +4866,10 @@
       "quests": [
         "The Vineyard Problem"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Vineyard Problem": "The Barradin Estate"
+      }
     }
   },
   {
@@ -4121,7 +4894,10 @@
       "quests": [
         "The Accursed Path"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Accursed Path": "The Catacombs"
+      }
     }
   },
   {
@@ -4147,7 +4923,13 @@
       ],
       "captureBosses": [
         "Dyv Cloudclaw"
-      ]
+      ],
+      "questLocations": {
+        "The Charr Patrol": "Old Ascalon"
+      },
+      "captureLocations": {
+        "Dyv Cloudclaw": "Divinity Coast"
+      }
     }
   },
   {
@@ -4168,7 +4950,10 @@
       "quests": [],
       "captureBosses": [
         "Maw the Mountain Heart"
-      ]
+      ],
+      "captureLocations": {
+        "Maw the Mountain Heart": "Dreadnought's Drift"
+      }
     }
   },
   {
@@ -4192,7 +4977,10 @@
       "quests": [
         "The Charr Patrol"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Charr Patrol": "Old Ascalon"
+      }
     }
   },
   {
@@ -4213,7 +5001,10 @@
       "quests": [],
       "captureBosses": [
         "Thul The Bull"
-      ]
+      ],
+      "captureLocations": {
+        "Thul The Bull": "Spearhead Peak"
+      }
     }
   },
   {
@@ -4238,7 +5029,11 @@
       "captureBosses": [
         "Ulhar Stonehound",
         "Garris Nightwatch"
-      ]
+      ],
+      "captureLocations": {
+        "Ulhar Stonehound": "Traveler's Vale",
+        "Garris Nightwatch": "The Frost Gate"
+      }
     }
   },
   {
@@ -4259,7 +5054,10 @@
       "quests": [],
       "captureBosses": [
         "Plexus Shadowhook"
-      ]
+      ],
+      "captureLocations": {
+        "Plexus Shadowhook": "Abaddon's Mouth"
+      }
     }
   },
   {
@@ -4284,7 +5082,10 @@
       "quests": [
         "The Ascalon Settlement"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Ascalon Settlement": "North Kryta Province"
+      }
     }
   },
   {
@@ -4311,7 +5112,13 @@
       "captureBosses": [],
       "conditionalCaptureBosses": [
         "Inquisitor Lovisa"
-      ]
+      ],
+      "questLocations": {
+        "The Royal Papers": "Fishermen's Haven"
+      },
+      "captureLocations": {
+        "Inquisitor Lovisa": "Watchtower Coast (War in Kryta)"
+      }
     }
   },
   {
@@ -4336,7 +5143,10 @@
       "quests": [
         "The Elementalist Experiment"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Elementalist Experiment": "Wizard's Folly"
+      }
     }
   },
   {
@@ -4362,7 +5172,13 @@
       ],
       "captureBosses": [
         "Sheg Zamn Mada"
-      ]
+      ],
+      "questLocations": {
+        "Caravan in Trouble": "Eastern Frontier"
+      },
+      "captureLocations": {
+        "Sheg Zamn Mada": "Diviner's Ascent"
+      }
     }
   },
   {
@@ -4391,6 +5207,15 @@
         "Flyt Stormbeak",
         "Qik Sharpclaw"
       ],
+      "questLocations": {
+        "The Misplaced Sword": "Heroes' Audience"
+      },
+      "captureLocations": {
+        "Chuff Quickbeak": "North Kryta Province",
+        "Flyt Stormbeak": "Nebo Terrace",
+        "Qik Sharpclaw": "Stingray Strand",
+        "High Inquisitor Toriimo": "The Battle for Lion's Arch"
+      },
       "conditionalCaptureBosses": [
         "High Inquisitor Toriimo"
       ]
@@ -4426,7 +5251,18 @@
       ],
       "conditionalCaptureBosses": [
         "Drogo Greatmane"
-      ]
+      ],
+      "questLocations": {
+        "The Misplaced Sword": "Heroes' Audience"
+      },
+      "captureLocations": {
+        "Malla Arrowmane": "The Wilds",
+        "Keba Silenthoof": "Silverwood",
+        "Drogo Greatmane": "Reed Bog",
+        "Ness Orangeclaw": "Salt Flats",
+        "Flange Sullenrage": "Diviner's Ascent",
+        "Brol Migo Hinga": "Diviner's Ascent"
+      }
     }
   },
   {
@@ -4451,7 +5287,10 @@
       "quests": [
         "Elementalist Test"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Elementalist Test": "Lakeside County"
+      }
     }
   },
   {
@@ -4472,7 +5311,10 @@
       "quests": [],
       "captureBosses": [
         "Syr Honorcrest"
-      ]
+      ],
+      "captureLocations": {
+        "Syr Honorcrest": "Mineral Springs"
+      }
     }
   },
   {
@@ -4496,7 +5338,10 @@
       "quests": [
         "Hungry Devourer"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Hungry Devourer": "Beacon's Perch"
+      }
     }
   },
   {
@@ -4520,7 +5365,10 @@
       "quests": [
         "The Stone Summit Champion"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Stone Summit Champion": "Yak's Bend"
+      }
     }
   },
   {
@@ -4546,7 +5394,11 @@
         "Warrior Test",
         "Warrior's Challenge"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Warrior Test": "Lakeside County",
+        "Warrior's Challenge": "The Barradin Estate"
+      }
     }
   },
   {
@@ -4579,7 +5431,20 @@
         "Ice Beast",
         "Eidolon",
         "Dagnar Stonepate"
-      ]
+      ],
+      "questLocations": {
+        "Elemental Knowledge": "Old Ascalon"
+      },
+      "captureLocations": {
+        "Bucknar Runeguard": "The Frost Gate",
+        "Frash the Cold": "The Black Curtain",
+        "Ginz Hailflare": "Salt Flats",
+        "Sala Chillbringer": "Snake Dance",
+        "Brrrr Windburn": "Talus Chute",
+        "Ice Beast": "Mineral Springs",
+        "Eidolon": "Iron Mines of Moladune",
+        "Dagnar Stonepate": "Thunderhead Keep"
+      }
     }
   },
   {
@@ -4604,7 +5469,11 @@
       "captureBosses": [
         "Thul Boulderrain",
         "Whuup Buumbuul"
-      ]
+      ],
+      "captureLocations": {
+        "Thul Boulderrain": "Snake Dance",
+        "Whuup Buumbuul": "Talus Chute"
+      }
     }
   },
   {
@@ -4630,7 +5499,11 @@
         "Helping the Dwarves",
         "The Last Hog"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Helping the Dwarves": "Yak's Bend",
+        "The Last Hog": "North Kryta Province"
+      }
     }
   },
   {
@@ -4679,7 +5552,11 @@
         "Grawl Invasion",
         "Gargoyle Trouble"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Grawl Invasion": "Green Hills County",
+        "Gargoyle Trouble": "Old Ascalon"
+      }
     }
   },
   {
@@ -4700,7 +5577,10 @@
       "quests": [],
       "captureBosses": [
         "Facet of Strength"
-      ]
+      ],
+      "captureLocations": {
+        "Facet of Strength": "The Dragon's Lair"
+      }
     }
   },
   {
@@ -4722,7 +5602,11 @@
       "captureBosses": [
         "Edibbo Kepkep",
         "Alana Kepkep"
-      ]
+      ],
+      "captureLocations": {
+        "Edibbo Kepkep": "Talus Chute",
+        "Alana Kepkep": "Witman's Folly"
+      }
     }
   },
   {
@@ -4772,6 +5656,13 @@
         "Julen the Devout",
         "Braima the Callous"
       ],
+      "captureLocations": {
+        "Pleoh the Ugly": "Bloodstone Fen",
+        "Manton the Indulgent": "Aurora Glade",
+        "Julen the Devout": "Twin Serpent Lakes",
+        "Braima the Callous": "Riverside Province",
+        "Vess the Disputant": "Divinity Coast (explorable area)"
+      },
       "conditionalCaptureBosses": [
         "Vess the Disputant"
       ]
@@ -4795,7 +5686,10 @@
       "quests": [],
       "captureBosses": [
         "Hyl Thunderwing"
-      ]
+      ],
+      "captureLocations": {
+        "Hyl Thunderwing": "Mineral Springs"
+      }
     }
   },
   {
@@ -4831,7 +5725,20 @@
       ],
       "conditionalCaptureBosses": [
         "Inquisitor Lovisa"
-      ]
+      ],
+      "questLocations": {
+        "The Elementalist Experiment": "Wizard's Folly"
+      },
+      "captureLocations": {
+        "Skitt the Skizzle": "Nebo Terrace",
+        "Rago the Scaled": "D'Alessio Seaboard",
+        "Frak Undertow": "Divinity Coast",
+        "Wydd Kindlerun": "The Wilds",
+        "Fryn Rageflame": "The Falls",
+        "Hoss Rainswell": null,
+        "Falls the Fishfinder": "Tangle Root",
+        "Inquisitor Lovisa": "Watchtower Coast (War in Kryta)"
+      }
     }
   },
   {
@@ -4852,7 +5759,10 @@
       "quests": [],
       "captureBosses": [
         "Nayl Klaw Tuthan"
-      ]
+      ],
+      "captureLocations": {
+        "Nayl Klaw Tuthan": "Perdition Rock"
+      }
     }
   },
   {
@@ -4910,7 +5820,20 @@
         "Stone Golem",
         "Tempest Drake",
         "Justiciar Kasandra"
-      ]
+      ],
+      "questLocations": {
+        "The Hot Springs Murders": "Nebo Terrace"
+      },
+      "captureLocations": {
+        "Stone Golem": "Pockmark Flats",
+        "Mallet Runecolumn": "Diessa Lowlands",
+        "Skitt the Skizzle": "Nebo Terrace",
+        "Rago the Scaled": "D'Alessio Seaboard",
+        "Frak Undertow": "Divinity Coast",
+        "Doro Icehide": "The Scar",
+        "Tempest Drake": "Diviner's Ascent",
+        "Justiciar Kasandra": "D'Alessio Seaboard (explorable area)"
+      }
     }
   },
   {
@@ -4934,7 +5857,11 @@
       ],
       "conditionalCaptureBosses": [
         "Staggh the Fervid"
-      ]
+      ],
+      "captureLocations": {
+        "Valetudo Rubor": "Hell's Precipice",
+        "Staggh the Fervid": "Dragon's Gullet"
+      }
     }
   },
   {
@@ -4961,7 +5888,12 @@
       "conditionalCaptureBosses": [
         "Mragga",
         "Grentchus Magnus"
-      ]
+      ],
+      "captureLocations": {
+        "Facet of Darkness": "The Dragon's Lair",
+        "Mragga": "Frozen Forest",
+        "Grentchus Magnus": "Nebo Terrace"
+      }
     }
   },
   {
@@ -4986,7 +5918,10 @@
       "quests": [
         "The Undead Hordes"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Undead Hordes": "Beetletun"
+      }
     }
   },
   {
@@ -5025,7 +5960,23 @@
       ],
       "conditionalCaptureBosses": [
         "Sacred Griffon of Amnoon"
-      ]
+      ],
+      "captureLocations": {
+        "Leaps Thunderclap": "North Kryta Province",
+        "Gack Splotchplunk": "Watchtower Coast",
+        "Fluum Banzo": "Divinity Coast",
+        "Bramblehash": "Sage Lands",
+        "Splintertrunk": "Ettin's Back",
+        "Tree of Vitality": "The Wilds",
+        "Tree of Life": "Bloodstone Fen",
+        "Tree of Regrowth": "Tangle Root",
+        "Rept Parn Freg": "Prophet's Path",
+        "Sacred Griffon of Amnoon": "The Necromancer's Path",
+        "Screamingclaw": null,
+        "Kepkhet Marrowfeast": null,
+        "Perchingbyrd": "Vulture Drifts",
+        "Facet of Light": "The Dragon's Lair"
+      }
     }
   },
   {
@@ -5056,6 +6007,17 @@
         "Bairn the Sinless",
         "Irwyn the Severe"
       ],
+      "questLocations": {
+        "The Misplaced Sword": "Heroes' Audience"
+      },
+      "captureLocations": {
+        "Nyle the Compassionate": "Bloodstone Fen",
+        "Lars the Obeisant": "Aurora Glade",
+        "Edred the Bruiser": "Twin Serpent Lakes",
+        "Bairn the Sinless": "Riverside Province",
+        "Irwyn the Severe": "Sanctum Cay",
+        "Maximilian the Meticulous": "Nebo Terrace (War in Kryta)"
+      },
       "conditionalCaptureBosses": [
         "Maximilian the Meticulous"
       ]
@@ -5083,7 +6045,10 @@
       "quests": [
         "Warrior's Challenge"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Warrior's Challenge": "The Barradin Estate"
+      }
     }
   },
   {
@@ -5112,7 +6077,16 @@
         "Custodian Dellus",
         "Custodian Fidius",
         "Custodian Hulgar"
-      ]
+      ],
+      "questLocations": {
+        "Caravan in Trouble": "Eastern Frontier"
+      },
+      "captureLocations": {
+        "Haja Bloodwail": "Gates of Kryta",
+        "Custodian Dellus": "Elona Reach",
+        "Custodian Fidius": "Dunes of Despair",
+        "Custodian Hulgar": "Thirsty River"
+      }
     }
   },
   {
@@ -5138,7 +6112,13 @@
       ],
       "captureBosses": [
         "Selwin the Fervent"
-      ]
+      ],
+      "questLocations": {
+        "Protecting Ascalon": "Old Ascalon"
+      },
+      "captureLocations": {
+        "Selwin the Fervent": "Sanctum Cay"
+      }
     }
   },
   {
@@ -5166,7 +6146,14 @@
       "captureBosses": [
         "Hussar Ironfeast",
         "Shalis Ironmantle"
-      ]
+      ],
+      "questLocations": {
+        "The Ascalon Settlement": "North Kryta Province"
+      },
+      "captureLocations": {
+        "Hussar Ironfeast": "Traveler's Vale",
+        "Shalis Ironmantle": "Iron Horse Mine"
+      }
     }
   },
   {
@@ -5193,7 +6180,14 @@
       "captureBosses": [
         "Yerk Plopsquirt",
         "Muga Riptide"
-      ]
+      ],
+      "questLocations": {
+        "Sowing Seeds": "Old Ascalon"
+      },
+      "captureLocations": {
+        "Yerk Plopsquirt": "Nebo Terrace",
+        "Muga Riptide": "D'Alessio Seaboard"
+      }
     }
   },
   {
@@ -5218,7 +6212,10 @@
       "quests": [
         "Monk Test"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Monk Test": "Lakeside County"
+      }
     }
   },
   {
@@ -5239,7 +6236,10 @@
       "quests": [],
       "captureBosses": [
         "Rull Browbeater"
-      ]
+      ],
+      "captureLocations": {
+        "Rull Browbeater": "Perdition Rock"
+      }
     }
   },
   {
@@ -5266,7 +6266,14 @@
       "captureBosses": [
         "Ipillo Wupwup",
         "Kaia Wupwup"
-      ]
+      ],
+      "questLocations": {
+        "Mysterious Message (Prophecies quest)": "Druid's Overlook"
+      },
+      "captureLocations": {
+        "Ipillo Wupwup": "Witman's Folly",
+        "Kaia Wupwup": "Spearhead Peak"
+      }
     }
   },
   {
@@ -5293,7 +6300,12 @@
         "Grawl Invasion",
         "Gargoyle Trouble"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Warrior Test": "Lakeside County",
+        "Grawl Invasion": "Green Hills County",
+        "Gargoyle Trouble": "Old Ascalon"
+      }
     }
   },
   {
@@ -5340,7 +6352,10 @@
       "quests": [
         "The Misplaced Sword"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Misplaced Sword": "Heroes' Audience"
+      }
     }
   },
   {
@@ -5367,7 +6382,11 @@
       ],
       "conditionalCaptureBosses": [
         "Disgruntled Zombie"
-      ]
+      ],
+      "captureLocations": {
+        "Disgruntled Zombie": "North Kryta Province",
+        "Essam Festerskull": "Riverside Province"
+      }
     }
   },
   {
@@ -5400,7 +6419,18 @@
       "conditionalCaptureBosses": [
         "Ignis Phanaura",
         "Gale Stormsend"
-      ]
+      ],
+      "questLocations": {
+        "Eye For Profit": "Druid's Overlook"
+      },
+      "captureLocations": {
+        "Ignis Phanaura": "Old Ascalon",
+        "Gale Stormsend": "Sage Lands",
+        "Zarr MentalMelt": null,
+        "Chott Stormsinger": "The Wilds",
+        "Hepp Bilespitter": "Bloodstone Fen",
+        "Vizz Vexflume": "The Falls"
+      }
     }
   },
   {
@@ -5447,7 +6477,10 @@
       "quests": [
         "The Undead Hordes"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Undead Hordes": "Beetletun"
+      }
     }
   },
   {
@@ -5491,7 +6524,10 @@
       "quests": [],
       "captureBosses": [
         "Spoiler-related boss"
-      ]
+      ],
+      "captureLocations": {
+        "Spoiler-related boss": "Hell's Precipice"
+      }
     }
   },
   {
@@ -5515,7 +6551,10 @@
       "quests": [
         "Endangered Species"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Endangered Species": "Old Ascalon"
+      }
     }
   },
   {
@@ -5539,7 +6578,10 @@
       "quests": [
         "A Heart of Ice"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "A Heart of Ice": "Yak's Bend"
+      }
     }
   },
   {
@@ -5563,7 +6605,10 @@
       "quests": [
         "The Deserters"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Deserters": "Beacon's Perch"
+      }
     }
   },
   {
@@ -5587,7 +6632,10 @@
       "quests": [
         "Supplies for the Duke"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Supplies for the Duke": "Old Ascalon"
+      }
     }
   },
   {
@@ -5614,7 +6662,13 @@
       ],
       "captureBosses": [
         "Ryk Arrowwing"
-      ]
+      ],
+      "questLocations": {
+        "Unnatural Growths": "Wizard's Folly"
+      },
+      "captureLocations": {
+        "Ryk Arrowwing": "Mineral Springs"
+      }
     }
   },
   {
@@ -5637,6 +6691,9 @@
       ],
       "quests": [],
       "captureBosses": [],
+      "captureLocations": {
+        "The Darkness (boss)": "The Hall of Heroes"
+      },
       "conditionalCaptureBosses": [
         "The Darkness (boss)"
       ]
@@ -5670,7 +6727,16 @@
       ],
       "conditionalCaptureBosses": [
         "Hierophant Morlog"
-      ]
+      ],
+      "questLocations": {
+        "A Cure for Ralena": "Sardelac Sanitarium"
+      },
+      "captureLocations": {
+        "Vook Foomble": "Salt Flats",
+        "Trech Schmoogle": "Diviner's Ascent",
+        "Zwack Ramble": "Vulture Drifts",
+        "Hierophant Morlog": "Sorrow's Furnace"
+      }
     }
   },
   {
@@ -5701,7 +6767,17 @@
         "Didn Hopestealer",
         "Seear Windlash",
         "Digo Murkstalker"
-      ]
+      ],
+      "questLocations": {
+        "The Hot Springs Murders": "Nebo Terrace"
+      },
+      "captureLocations": {
+        "Gack the Mindwrecker": "The Black Curtain",
+        "Tachi Forvent": "Kessex Peak",
+        "Didn Hopestealer": "Snake Dance",
+        "Seear Windlash": "Talus Chute",
+        "Digo Murkstalker": "Iron Mines of Moladune"
+      }
     }
   },
   {
@@ -5724,7 +6800,12 @@
         "Didn Hopestealer",
         "Seear Windlash",
         "Digo Murkstalker"
-      ]
+      ],
+      "captureLocations": {
+        "Didn Hopestealer": "Snake Dance",
+        "Seear Windlash": "Talus Chute",
+        "Digo Murkstalker": "Iron Mines of Moladune"
+      }
     }
   },
   {
@@ -5750,7 +6831,11 @@
         "A Mesmer's Burden",
         "Mesmerizing the Enemy"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "A Mesmer's Burden": "Lakeside County",
+        "Mesmerizing the Enemy": "Sardelac Sanitarium"
+      }
     }
   },
   {
@@ -5779,7 +6864,13 @@
       ],
       "conditionalCaptureBosses": [
         "Inquisitor Lovisa"
-      ]
+      ],
+      "captureLocations": {
+        "Chuff Quickbeak": "North Kryta Province",
+        "Flyt Stormbeak": "Nebo Terrace",
+        "Qik Sharpclaw": "Stingray Strand",
+        "Inquisitor Lovisa": "Watchtower Coast (War in Kryta)"
+      }
     }
   },
   {
@@ -5803,7 +6894,11 @@
       ],
       "conditionalCaptureBosses": [
         "Confessor Isaiah"
-      ]
+      ],
+      "captureLocations": {
+        "Casses Flameweb": "Ring of Fire",
+        "Confessor Isaiah": "The Battle for Lion's Arch (explorable area)"
+      }
     }
   },
   {
@@ -5831,7 +6926,15 @@
         "Chuff Quickbeak",
         "Flyt Stormbeak",
         "Qik Sharpclaw"
-      ]
+      ],
+      "questLocations": {
+        "The Forgotten Ones": "Destiny's Gorge"
+      },
+      "captureLocations": {
+        "Chuff Quickbeak": "North Kryta Province",
+        "Flyt Stormbeak": "Nebo Terrace",
+        "Qik Sharpclaw": "Stingray Strand"
+      }
     }
   },
   {
@@ -5852,7 +6955,10 @@
       "quests": [],
       "captureBosses": [
         "Wyt Sharpfeather"
-      ]
+      ],
+      "captureLocations": {
+        "Wyt Sharpfeather": "Mineral Springs"
+      }
     }
   },
   {
@@ -5880,7 +6986,14 @@
       "captureBosses": [
         "Vrek Qwek Spek",
         "Sheg Zamn Mada"
-      ]
+      ],
+      "questLocations": {
+        "Graven Images": "North Kryta Province"
+      },
+      "captureLocations": {
+        "Vrek Qwek Spek": "Dragon's Gullet",
+        "Sheg Zamn Mada": "Diviner's Ascent"
+      }
     }
   },
   {
@@ -5926,7 +7039,10 @@
       "quests": [
         "Replacement Healers"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Replacement Healers": "Serenity Temple"
+      }
     }
   },
   {
@@ -5954,7 +7070,15 @@
         "Mursaat Necromancer (boss)",
         "Feodor the Baneful",
         "Argyris the Scoundrel"
-      ]
+      ],
+      "questLocations": {
+        "The Stolen Artifact": "Sardelac Sanitarium"
+      },
+      "captureLocations": {
+        "Mursaat Necromancer (boss)": "Ice Floe",
+        "Feodor the Baneful": "Iron Mines of Moladune",
+        "Argyris the Scoundrel": "Thunderhead Keep"
+      }
     }
   },
   {
@@ -5979,7 +7103,10 @@
       "quests": [
         "The Undead Hordes"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Undead Hordes": "Beetletun"
+      }
     }
   },
   {
@@ -6003,7 +7130,10 @@
       "quests": [
         "The Deserters"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Deserters": "Beacon's Perch"
+      }
     }
   },
   {
@@ -6049,7 +7179,10 @@
       "quests": [
         "Securing the Vale"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Securing the Vale": "Yak's Bend"
+      }
     }
   },
   {
@@ -6081,7 +7214,16 @@
       ],
       "conditionalCaptureBosses": [
         "Abbot Ramoth"
-      ]
+      ],
+      "captureLocations": {
+        "Abbot Ramoth": "The Black Curtain",
+        "Ramm the Benevolent": "Bloodstone Fen",
+        "Garr the Merciful": "Aurora Glade",
+        "Gilroy the Stoic": "Twin Serpent Lakes",
+        "Corbin the Upright": "Riverside Province",
+        "Selwin the Fervent": "Sanctum Cay",
+        "Bleck Oogle": "Diviner's Ascent"
+      }
     }
   },
   {
@@ -6121,7 +7263,10 @@
       "quests": [],
       "captureBosses": [
         "Rune Ethercrash"
-      ]
+      ],
+      "captureLocations": {
+        "Rune Ethercrash": "Spearhead Peak"
+      }
     }
   },
   {
@@ -6168,7 +7313,10 @@
       "captureBosses": [],
       "conditionalCaptureBosses": [
         "Ulrik the Undefeated"
-      ]
+      ],
+      "captureLocations": {
+        "Ulrik the Undefeated": "Traveler's Vale"
+      }
     }
   },
   {
@@ -6220,6 +7368,15 @@
         "Edmi Visionmane",
         "Rune Ethercrash"
       ],
+      "questLocations": {
+        "The Last Hog": "North Kryta Province"
+      },
+      "captureLocations": {
+        "Paka Blackhoof": "The Wilds",
+        "Edmi Visionmane": "Ettin's Back",
+        "Rune Ethercrash": "Spearhead Peak",
+        "Ven the Conservator": "Riverside Province (explorable area)"
+      },
       "conditionalCaptureBosses": [
         "Ven the Conservator"
       ]
@@ -6251,7 +7408,15 @@
         "Yerk Plopsquirt",
         "Muga Riptide",
         "Bolis Hillshaker"
-      ]
+      ],
+      "questLocations": {
+        "The Last Hog": "North Kryta Province"
+      },
+      "captureLocations": {
+        "Yerk Plopsquirt": "Nebo Terrace",
+        "Muga Riptide": "D'Alessio Seaboard",
+        "Bolis Hillshaker": "Thunderhead Keep"
+      }
     }
   },
   {
@@ -6273,7 +7438,11 @@
       "captureBosses": [
         "Esnhal Hardwood",
         "Quickroot"
-      ]
+      ],
+      "captureLocations": {
+        "Esnhal Hardwood": "Frozen Forest",
+        "Quickroot": "Lornar's Pass"
+      }
     }
   },
   {
@@ -6322,7 +7491,11 @@
         "The Necromancer's Novice",
         "The Stolen Artifact"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Necromancer's Novice": "The Catacombs",
+        "The Stolen Artifact": "Sardelac Sanitarium"
+      }
     }
   },
   {
@@ -6351,7 +7524,16 @@
       "conditionalCaptureBosses": [
         "Lugg the Malignant",
         "Koril the Malignant"
-      ]
+      ],
+      "captureLocations": {
+        "Mursaat Necromancer (boss)": "Ice Floe",
+        "Feodor the Baneful": "Iron Mines of Moladune",
+        "Argyris the Scoundrel": "Thunderhead Keep",
+        "Odelyn the Displeased": "Ring of Fire",
+        "Sarlic the Judge": "Abaddon's Mouth",
+        "Lugg the Malignant": "Dragon's Gullet",
+        "Koril the Malignant": "D'Alessio Seaboard (explorable area)"
+      }
     }
   },
   {
@@ -6375,7 +7557,10 @@
       "quests": [],
       "captureBosses": [
         "Liam Shanglui"
-      ]
+      ],
+      "captureLocations": {
+        "Liam Shanglui": "Kessex Peak"
+      }
     }
   },
   {
@@ -6404,7 +7589,15 @@
         "Priest of Dagnar",
         "Laris the Meateater",
         "Fauul the Windburner"
-      ]
+      ],
+      "questLocations": {
+        "The Supremacy of Air": "Foible's Fair"
+      },
+      "captureLocations": {
+        "Priest of Dagnar": "Borlis Pass",
+        "Laris the Meateater": "North Kryta Province",
+        "Fauul the Windburner": "Watchtower Coast"
+      }
     }
   },
   {
@@ -6432,7 +7625,14 @@
       "captureBosses": [
         "Claw Fleshfixer",
         "Priest of Dagnar"
-      ]
+      ],
+      "questLocations": {
+        "The Ascalon Settlement": "North Kryta Province"
+      },
+      "captureLocations": {
+        "Claw Fleshfixer": "The Great Northern Wall",
+        "Priest of Dagnar": "Borlis Pass"
+      }
     }
   },
   {
@@ -6459,7 +7659,14 @@
       "captureBosses": [
         "Kekona Pippip",
         "Salani Pippip"
-      ]
+      ],
+      "questLocations": {
+        "Caravan in Trouble": "Eastern Frontier"
+      },
+      "captureLocations": {
+        "Kekona Pippip": "Spearhead Peak",
+        "Salani Pippip": "Witman's Folly"
+      }
     }
   },
   {
@@ -6483,7 +7690,10 @@
       "quests": [
         "Hungry Devourer"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Hungry Devourer": "Beacon's Perch"
+      }
     }
   },
   {
@@ -6505,6 +7715,10 @@
       "captureBosses": [
         "Facet of Elements"
       ],
+      "captureLocations": {
+        "Enraged Phantom": "Tunnels of the Forsaken",
+        "Facet of Elements": "The Dragon's Lair"
+      },
       "conditionalCaptureBosses": [
         "Enraged Phantom"
       ]
@@ -6535,7 +7749,13 @@
         "Gezna Shadowstalker",
         "Najja Doombringer",
         "Aziz Rottenscalp"
-      ]
+      ],
+      "captureLocations": {
+        "Nazeem the Damned": "Gates of Kryta",
+        "Gezna Shadowstalker": "D'Alessio Seaboard",
+        "Najja Doombringer": "Divinity Coast",
+        "Aziz Rottenscalp": "Nebo Terrace"
+      }
     }
   },
   {
@@ -6558,7 +7778,10 @@
       "quests": [],
       "captureBosses": [
         "Grenth's Cursed"
-      ]
+      ],
+      "captureLocations": {
+        "Grenth's Cursed": "Perdition Rock"
+      }
     }
   },
   {
@@ -6582,7 +7805,10 @@
       "quests": [
         "In Memory of Paulus"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "In Memory of Paulus": "Old Ascalon"
+      }
     }
   },
   {
@@ -6610,7 +7836,14 @@
         "Fryn Rageflame",
         "Hoss Rainswell",
         "Skitt Skizzle"
-      ]
+      ],
+      "captureLocations": {
+        "Wydd Kindlerun": "The Wilds",
+        "Falls the Fishfinder": "Tangle Root",
+        "Fryn Rageflame": "The Falls",
+        "Hoss Rainswell": null,
+        "Skitt Skizzle": "Ice Floe"
+      }
     }
   },
   {
@@ -6637,7 +7870,14 @@
       "captureBosses": [
         "Moro Stormcalf",
         "Horm Frostrider"
-      ]
+      ],
+      "questLocations": {
+        "The Geomancer's Test": "Serenity Temple"
+      },
+      "captureLocations": {
+        "Moro Stormcalf": "Borlis Pass",
+        "Horm Frostrider": "The Wilds"
+      }
     }
   },
   {
@@ -6683,7 +7923,10 @@
       "quests": [
         "Ghostly Vengeance"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Ghostly Vengeance": "Augury Rock (outpost)"
+      }
     }
   },
   {
@@ -6758,7 +8001,16 @@
         "Paka Blackhoof",
         "Edmi Visionmane",
         "Bolo Falsehoof"
-      ]
+      ],
+      "questLocations": {
+        "The Royal Papers": "Fishermen's Haven"
+      },
+      "captureLocations": {
+        "Igmon Quivcaver": "Diessa Lowlands",
+        "Paka Blackhoof": "The Wilds",
+        "Edmi Visionmane": "Ettin's Back",
+        "Bolo Falsehoof": "Silverwood"
+      }
     }
   },
   {
@@ -6782,7 +8034,10 @@
       "quests": [
         "Trying Times"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Trying Times": "Sardelac Sanitarium"
+      }
     }
   },
   {
@@ -6806,7 +8061,10 @@
       "quests": [
         "Helping the Dwarves"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Helping the Dwarves": "Yak's Bend"
+      }
     }
   },
   {
@@ -6831,7 +8089,11 @@
       "captureBosses": [
         "Gaiza Deadeye",
         "Zaim Grimeclaw"
-      ]
+      ],
+      "captureLocations": {
+        "Gaiza Deadeye": "Riverside Province",
+        "Zaim Grimeclaw": "Sanctum Cay"
+      }
     }
   },
   {
@@ -6865,7 +8127,21 @@
         "Trech Schmoogle",
         "Gret Waveringmane",
         "Zwack Ramble"
-      ]
+      ],
+      "questLocations": {
+        "Graven Images": "North Kryta Province"
+      },
+      "captureLocations": {
+        "Slikk Sandhopper": "North Kryta Province",
+        "Twig Slipfall": "Nebo Terrace",
+        "Plook Wavebreaker": "D'Alessio Seaboard",
+        "Hew Gruntruck": "Watchtower Coast",
+        "Vook Foomble": "Salt Flats",
+        "Trech Schmoogle": "Diviner's Ascent",
+        "Gret Waveringmane": "The Scar",
+        "Zwack Ramble": "Vulture Drifts",
+        "Gren Wavelslosh": "Divinity Coast"
+      }
     }
   },
   {
@@ -6889,7 +8165,10 @@
       "quests": [
         "Ghostly Vengeance"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Ghostly Vengeance": "Augury Rock (outpost)"
+      }
     }
   },
   {
@@ -6911,7 +8190,11 @@
       "captureBosses": [
         "Facet of Chaos",
         "Featherclaw"
-      ]
+      ],
+      "captureLocations": {
+        "Facet of Chaos": "The Dragon's Lair",
+        "Featherclaw": "Snake Dance"
+      }
     }
   },
   {
@@ -6934,7 +8217,12 @@
         "Ayassah Hess",
         "Tiss Danssir",
         "Goss Aleessh"
-      ]
+      ],
+      "captureLocations": {
+        "Ayassah Hess": "Dunes of Despair",
+        "Tiss Danssir": "Elona Reach",
+        "Goss Aleessh": "Thirsty River"
+      }
     }
   },
   {
@@ -7002,7 +8290,10 @@
       "quests": [
         "Death in the Ruins"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Death in the Ruins": "Sardelac Sanitarium"
+      }
     }
   },
   {
@@ -7033,7 +8324,18 @@
       "conditionalCaptureBosses": [
         "Gulnar Irontoe",
         "Ivor Helmhewer"
-      ]
+      ],
+      "captureLocations": {
+        "Kepkhet Marrowfeast": "Prophet's Path",
+        "Darda Goldenchief": "Ice Caves of Sorrow",
+        "Lokar Icemender": "Iron Mines of Moladune",
+        "Bolis Hillshaker": "Thunderhead Keep",
+        "Wroth Yakslapper": "Grenth's Footprint",
+        "Mesqul Ironhealer": "Frozen Forest",
+        "Brohn Stoneheart": "Sorrow's Furnace",
+        "Gulnar Irontoe": "Kilroy Stonekin (quest)",
+        "Ivor Helmhewer": "The Forge Heart"
+      }
     }
   },
   {
@@ -7058,6 +8360,10 @@
       "captureBosses": [
         "Hops Flameinator"
       ],
+      "captureLocations": {
+        "Hops Flameinator": "Talmark Wilderness",
+        "Destor the Truth Seeker": "Kessex Peak (War in Kryta)"
+      },
       "conditionalCaptureBosses": [
         "Destor the Truth Seeker"
       ]
@@ -7105,7 +8411,12 @@
         "Custodian Jenus",
         "Custodian Kora",
         "Custodian Phebus"
-      ]
+      ],
+      "captureLocations": {
+        "Custodian Jenus": "Elona Reach",
+        "Custodian Kora": "Dunes of Despair",
+        "Custodian Phebus": "Thirsty River"
+      }
     }
   },
   {
@@ -7128,7 +8439,10 @@
       "quests": [],
       "captureBosses": [
         "Dwayna's Cursed"
-      ]
+      ],
+      "captureLocations": {
+        "Dwayna's Cursed": "Perdition Rock"
+      }
     }
   },
   {
@@ -7154,6 +8468,14 @@
         "Drago Stoneherder",
         "Tarnok Forgerunner"
       ],
+      "captureLocations": {
+        "Resnar Mountainsight": "Frozen Forest",
+        "Gargash Thornbeard": "Grenth's Footprint",
+        "Ulhar Stonehound": "Thunderhead Keep",
+        "Drago Stoneherder": "Sorrow's Furnace",
+        "Graygore Boulderbeard": null,
+        "Tarnok Forgerunner": null
+      },
       "conditionalCaptureBosses": [
         "Graygore Boulderbeard"
       ]
@@ -7200,7 +8522,11 @@
       "captureBosses": [
         "Facet of Nature",
         "Gigas Expii"
-      ]
+      ],
+      "captureLocations": {
+        "Facet of Nature": "The Dragon's Lair",
+        "Gigas Expii": "Dragon's Gullet"
+      }
     }
   },
   {
@@ -7240,7 +8566,24 @@
       "conditionalCaptureBosses": [
         "Gulnar Irontoe",
         "Ivor Helmhewer"
-      ]
+      ],
+      "questLocations": {
+        "The Hot Springs Murders": "Nebo Terrace"
+      },
+      "captureLocations": {
+        "Jolo Lighthaunch": "Deldrimor Bowl",
+        "Swoop Needlegrip": "North Kryta Province",
+        "Wyng Soothingclaw": "Nebo Terrace",
+        "Zyd Pointedbeak": "Stingray Strand",
+        "Darda Goldenchief": "Ice Caves of Sorrow",
+        "Lokar Icemender": "Iron Mines of Moladune",
+        "Bolis Hillshaker": "Thunderhead Keep",
+        "Wroth Yakslapper": "Grenth's Footprint",
+        "Mesqul Ironhealer": "Frozen Forest",
+        "Brohn Stoneheart": "Sorrow's Furnace",
+        "Gulnar Irontoe": "Kilroy Stonekin (quest)",
+        "Ivor Helmhewer": "The Forge Heart"
+      }
     }
   },
   {
@@ -7265,6 +8608,12 @@
         "A Belated Betrothal"
       ],
       "captureBosses": [],
+      "questLocations": {
+        "A Belated Betrothal": "Seeker's Passage"
+      },
+      "captureLocations": {
+        "Ambrillus the Guardian": "The Battle for Lion's Arch"
+      },
       "conditionalCaptureBosses": [
         "Ambrillus the Guardian"
       ]
@@ -7294,7 +8643,14 @@
       "captureBosses": [
         "Yerk Plopsquirt",
         "Muga Riptide"
-      ]
+      ],
+      "questLocations": {
+        "Helping the People of Ascalon": "Old Ascalon"
+      },
+      "captureLocations": {
+        "Yerk Plopsquirt": "Nebo Terrace",
+        "Muga Riptide": "D'Alessio Seaboard"
+      }
     }
   },
   {
@@ -7320,7 +8676,13 @@
       ],
       "captureBosses": [
         "Vrek Qwek Spek"
-      ]
+      ],
+      "questLocations": {
+        "Blood And Smoke": "Ettin's Back"
+      },
+      "captureLocations": {
+        "Vrek Qwek Spek": "Dragon's Gullet"
+      }
     }
   },
   {
@@ -7367,7 +8729,10 @@
       "quests": [
         "Army Life"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Army Life": "Piken Square"
+      }
     }
   },
   {
@@ -7389,6 +8754,11 @@
       "captureBosses": [
         "Pytt Spitespew"
       ],
+      "captureLocations": {
+        "Pytt Spitespew": "Ring of Fire",
+        "Lerita the Lewd": "Nebo Terrace (War in Kryta)",
+        "Ven the Conservator": "Riverside Province (explorable area)"
+      },
       "conditionalCaptureBosses": [
         "Lerita the Lewd",
         "Ven the Conservator"
@@ -7413,7 +8783,10 @@
       "quests": [],
       "captureBosses": [
         "Scelus Prosum"
-      ]
+      ],
+      "captureLocations": {
+        "Scelus Prosum": "Hell's Precipice"
+      }
     }
   },
   {
@@ -7435,7 +8808,11 @@
       "captureBosses": [
         "Skitt Skizzle",
         "Maak Frostfriend"
-      ]
+      ],
+      "captureLocations": {
+        "Skitt Skizzle": "Ice Floe",
+        "Maak Frostfriend": "Spearhead Peak"
+      }
     }
   },
   {
@@ -7456,7 +8833,10 @@
       "quests": [],
       "captureBosses": [
         "Old Red Claw"
-      ]
+      ],
+      "captureLocations": {
+        "Old Red Claw": "Snake Dance"
+      }
     }
   },
   {
@@ -7487,7 +8867,18 @@
         "Hew Gruntruck",
         "Gren Wavelslosh",
         "Snap the Braineater"
-      ]
+      ],
+      "questLocations": {
+        "The False Gods": "Temple of the Ages"
+      },
+      "captureLocations": {
+        "Slikk Sandhopper": "North Kryta Province",
+        "Twig Slipfall": "Nebo Terrace",
+        "Plook Wavebreaker": "D'Alessio Seaboard",
+        "Hew Gruntruck": "Watchtower Coast",
+        "Snap the Braineater": "Tangle Root",
+        "Gren Wavelslosh": "Divinity Coast"
+      }
     }
   },
   {
@@ -7511,7 +8902,13 @@
         "Sala Chillbringer",
         "Eidolon",
         "Ice Beast"
-      ]
+      ],
+      "captureLocations": {
+        "Brrrr Windburn": "Talus Chute",
+        "Sala Chillbringer": "Snake Dance",
+        "Eidolon": "Iron Mines of Moladune",
+        "Ice Beast": "Mineral Springs"
+      }
     }
   },
   {
@@ -7536,7 +8933,11 @@
       "captureBosses": [
         "Afrhul Deeproot",
         "Poisonbough"
-      ]
+      ],
+      "captureLocations": {
+        "Afrhul Deeproot": "Frozen Forest",
+        "Poisonbough": "Lornar's Pass"
+      }
     }
   },
   {
@@ -7560,7 +8961,10 @@
       "quests": [],
       "captureBosses": [
         "Tree of Autumn"
-      ]
+      ],
+      "captureLocations": {
+        "Tree of Autumn": "Talmark Wilderness"
+      }
     }
   },
   {
@@ -7607,7 +9011,14 @@
         "Perfected Cloak",
         "Cairn the Relentless",
         "Cairn the Troubling"
-      ]
+      ],
+      "captureLocations": {
+        "Jade Bow (boss)": "Ice Floe",
+        "Hilios the Dutiful": "Iron Mines of Moladune",
+        "Perfected Cloak": "Thunderhead Keep",
+        "Cairn the Relentless": "Abaddon's Mouth",
+        "Cairn the Troubling": "Ring of Fire"
+      }
     }
   },
   {
@@ -7631,7 +9042,10 @@
       "quests": [
         "Ghostly Vengeance"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Ghostly Vengeance": "Augury Rock (outpost)"
+      }
     }
   },
   {
@@ -7652,7 +9066,10 @@
       "quests": [],
       "captureBosses": [
         "Harn Coldstone"
-      ]
+      ],
+      "captureLocations": {
+        "Harn Coldstone": "Perdition Rock"
+      }
     }
   },
   {
@@ -7677,7 +9094,14 @@
         "Morgriff Shadestone",
         "Hormak Ironcurse",
         "Riine Windrot"
-      ]
+      ],
+      "captureLocations": {
+        "Tonfor Copperblood": "Lornar's Pass",
+        "Jollen Steelblight": "Frozen Forest",
+        "Morgriff Shadestone": "Grenth's Footprint",
+        "Hormak Ironcurse": "Ice Caves of Sorrow",
+        "Riine Windrot": "Thunderhead Keep"
+      }
     }
   },
   {
@@ -7706,7 +9130,15 @@
         "Kenric the Believer",
         "Brogan the Punisher",
         "Bearn the Implacable"
-      ]
+      ],
+      "captureLocations": {
+        "Kara Bloodtail": "The Wilds",
+        "Oswald the Amiable": "Bloodstone Fen",
+        "Numa Plaguemane": "Silverwood",
+        "Kenric the Believer": "Aurora Glade",
+        "Brogan the Punisher": "Twin Serpent Lakes",
+        "Bearn the Implacable": "Riverside Province"
+      }
     }
   },
   {
@@ -7729,7 +9161,12 @@
         "Byssha Hisst",
         "Uussh Visshta",
         "Hessper Sasso"
-      ]
+      ],
+      "captureLocations": {
+        "Byssha Hisst": "Dunes of Despair",
+        "Uussh Visshta": "Elona Reach",
+        "Hessper Sasso": "Thirsty River"
+      }
     }
   },
   {
@@ -7755,7 +9192,11 @@
         "A Monk's Mission",
         "Sowing Seeds"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "A Monk's Mission": "Ashford Abbey",
+        "Sowing Seeds": "Old Ascalon"
+      }
     }
   },
   {
@@ -7780,7 +9221,10 @@
       "quests": [
         "The Last Hog"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Last Hog": "North Kryta Province"
+      }
     }
   },
   {
@@ -7802,7 +9246,10 @@
       "captureBosses": [],
       "conditionalCaptureBosses": [
         "Abaddon's Cursed"
-      ]
+      ],
+      "captureLocations": {
+        "Abaddon's Cursed": "Perdition Rock"
+      }
     }
   },
   {
@@ -7826,7 +9273,10 @@
       "quests": [
         "The Wayward Monk"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Wayward Monk": "Yak's Bend"
+      }
     }
   },
   {
@@ -7850,7 +9300,11 @@
       ],
       "conditionalCaptureBosses": [
         "Mallus Funo"
-      ]
+      ],
+      "captureLocations": {
+        "Moles Quibus": "Hell's Precipice",
+        "Mallus Funo": "Dragon's Gullet"
+      }
     }
   },
   {
@@ -7874,7 +9328,10 @@
       "quests": [
         "Oberan's Rage"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Oberan's Rage": "Sardelac Sanitarium"
+      }
     }
   },
   {
@@ -7895,7 +9352,10 @@
       "quests": [],
       "captureBosses": [
         "Marnta Doomspeaker"
-      ]
+      ],
+      "captureLocations": {
+        "Marnta Doomspeaker": "Snake Dance"
+      }
     }
   },
   {
@@ -7924,7 +9384,16 @@
         "Custodian Jenus",
         "Custodian Kora",
         "Custodian Phebus"
-      ]
+      ],
+      "questLocations": {
+        "Helping the People of Ascalon": "Old Ascalon"
+      },
+      "captureLocations": {
+        "Dyv Cloudclaw": "Divinity Coast",
+        "Custodian Jenus": "Elona Reach",
+        "Custodian Kora": "Dunes of Despair",
+        "Custodian Phebus": "Thirsty River"
+      }
     }
   },
   {
@@ -7948,7 +9417,10 @@
       "quests": [
         "Into the Breach"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Into the Breach": "Old Ascalon"
+      }
     }
   },
   {
@@ -7983,7 +9455,20 @@
       ],
       "conditionalCaptureBosses": [
         "Disgruntled Zombie"
-      ]
+      ],
+      "questLocations": {
+        "Caravan in Trouble": "Eastern Frontier"
+      },
+      "captureLocations": {
+        "Onan the Spiritless": "Gates of Kryta",
+        "Disgruntled Zombie": "North Kryta Province",
+        "Azibo Painfeast": "Nebo Terrace",
+        "Ziyad Soulreaper": "D'Alessio Seaboard",
+        "Bija Gravewailer": "Divinity Coast",
+        "Gack the Mindwrecker": "The Black Curtain",
+        "Tachi Forvent": "Kessex Peak",
+        "Wyt Sharpfeather": "Mineral Springs"
+      }
     }
   },
   {
@@ -8008,7 +9493,11 @@
       "captureBosses": [
         "Frash the Cold",
         "Hops Flameinator"
-      ]
+      ],
+      "captureLocations": {
+        "Frash the Cold": "The Black Curtain",
+        "Hops Flameinator": "Talmark Wilderness"
+      }
     }
   },
   {
@@ -8034,7 +9523,12 @@
         "Mursaat Mesmer (boss)",
         "Balasi the Arcane",
         "Pantheras The Deceiver"
-      ]
+      ],
+      "captureLocations": {
+        "Mursaat Mesmer (boss)": "Ice Floe",
+        "Balasi the Arcane": "Iron Mines of Moladune",
+        "Pantheras The Deceiver": "Thunderhead Keep"
+      }
     }
   },
   {
@@ -8058,7 +9552,10 @@
       "quests": [
         "Hungry Devourer"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Hungry Devourer": "Beacon's Perch"
+      }
     }
   },
   {
@@ -8103,7 +9600,11 @@
       "captureBosses": [
         "Allobo Dimdim",
         "Karobo Dimdim"
-      ]
+      ],
+      "captureLocations": {
+        "Allobo Dimdim": "Spearhead Peak",
+        "Karobo Dimdim": "Witman's Folly"
+      }
     }
   },
   {
@@ -8132,7 +9633,15 @@
         "Riine Windrot",
         "Durnar Skullcracker",
         "Tonfor Copperblood"
-      ]
+      ],
+      "questLocations": {
+        "The Undead Hordes": "Beetletun"
+      },
+      "captureLocations": {
+        "Riine Windrot": "Traveler's Vale",
+        "Durnar Skullcracker": "The Frost Gate",
+        "Tonfor Copperblood": "Lornar's Pass"
+      }
     }
   },
   {
@@ -8160,7 +9669,14 @@
       "captureBosses": [
         "Squaw Nimblecrest",
         "Phy Deftcrest"
-      ]
+      ],
+      "questLocations": {
+        "A Test of Marksmanship": "Regent Valley (pre-Searing)"
+      },
+      "captureLocations": {
+        "Squaw Nimblecrest": "North Kryta Province",
+        "Phy Deftcrest": "Stingray Strand"
+      }
     }
   },
   {
@@ -8182,7 +9698,11 @@
       "captureBosses": [
         "Kekona Pippip",
         "Salani Pippip"
-      ]
+      ],
+      "captureLocations": {
+        "Kekona Pippip": "Spearhead Peak",
+        "Salani Pippip": "Witman's Folly"
+      }
     }
   },
   {
@@ -8206,7 +9726,10 @@
       "quests": [
         "Military Matters"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Military Matters": "Old Ascalon"
+      }
     }
   },
   {
@@ -8230,7 +9753,11 @@
       ],
       "conditionalCaptureBosses": [
         "Justiciar Sevaan"
-      ]
+      ],
+      "captureLocations": {
+        "Lyssa's Cursed": "Perdition Rock",
+        "Justiciar Sevaan": "Divinity Coast (explorable area)"
+      }
     }
   },
   {
@@ -8255,7 +9782,11 @@
       "captureBosses": [
         "Pello Agileclaw",
         "Asynd Blindingclaw"
-      ]
+      ],
+      "captureLocations": {
+        "Pello Agileclaw": "North Kryta Province",
+        "Asynd Blindingclaw": "Stingray Strand"
+      }
     }
   },
   {
@@ -8284,6 +9815,15 @@
         "Balasi the Arcane",
         "Pantheras The Deceiver"
       ],
+      "questLocations": {
+        "Mesmerizing the Enemy": "Sardelac Sanitarium"
+      },
+      "captureLocations": {
+        "Varny the Zealot": "Tunnels of the Forsaken",
+        "Mursaat Mesmer (boss)": "Ice Floe",
+        "Balasi the Arcane": "Iron Mines of Moladune",
+        "Pantheras The Deceiver": "Thunderhead Keep"
+      },
       "conditionalCaptureBosses": [
         "Varny the Zealot"
       ]
@@ -8311,7 +9851,10 @@
       "quests": [
         "Ranger Test"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Ranger Test": "Lakeside County"
+      }
     }
   },
   {
@@ -8335,7 +9878,10 @@
       "quests": [
         "The Stone Summit Champion"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Stone Summit Champion": "Yak's Bend"
+      }
     }
   },
   {
@@ -8356,7 +9902,10 @@
       "quests": [],
       "captureBosses": [
         "Ryk Arrowwing"
-      ]
+      ],
+      "captureLocations": {
+        "Ryk Arrowwing": "Mineral Springs"
+      }
     }
   },
   {
@@ -8383,7 +9932,14 @@
       "captureBosses": [
         "Ulhar Stonehound",
         "Garris Nightwatch"
-      ]
+      ],
+      "questLocations": {
+        "The Forgotten Ones": "Destiny's Gorge"
+      },
+      "captureLocations": {
+        "Ulhar Stonehound": "Traveler's Vale",
+        "Garris Nightwatch": "The Frost Gate"
+      }
     }
   },
   {
@@ -8429,7 +9985,10 @@
       "quests": [
         "Dropping Eaves"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Dropping Eaves": "Ettin's Back"
+      }
     }
   },
   {
@@ -8458,7 +10017,16 @@
         "Gambol the Headrainer",
         "Skigg the Tongue",
         "Eepeep the Mindrain"
-      ]
+      ],
+      "questLocations": {
+        "The Lost Princess": "Fishermen's Haven"
+      },
+      "captureLocations": {
+        "Geck the Coldblooded": "North Kryta Province",
+        "Gambol the Headrainer": "Nebo Terrace",
+        "Skigg the Tongue": "D'Alessio Seaboard",
+        "Eepeep the Mindrain": "Watchtower Coast"
+      }
     }
   },
   {
@@ -8484,7 +10052,12 @@
         "Henge Guardian",
         "Ruinwing",
         "Bone Dragon (boss)"
-      ]
+      ],
+      "captureLocations": {
+        "Henge Guardian": "Aurora Glade",
+        "Ruinwing": "Riverside Province",
+        "Bone Dragon (boss)": "Sanctum Cay"
+      }
     }
   },
   {
@@ -8513,7 +10086,15 @@
         "Bramblehash",
         "Tree of Vitality",
         "Splintertrunk"
-      ]
+      ],
+      "captureLocations": {
+        "Leaps Thunderclap": "North Kryta Province",
+        "Gack Splotchplunk": "Watchtower Coast",
+        "Fluum Banzo": "Divinity Coast",
+        "Bramblehash": "Sage Lands",
+        "Tree of Vitality": "The Wilds",
+        "Splintertrunk": "Ettin's Back"
+      }
     }
   },
   {
@@ -8541,7 +10122,15 @@
         "Yerk Plopsquirt",
         "Muga Riptide",
         "Harth Mendbranch"
-      ]
+      ],
+      "questLocations": {
+        "Blood And Smoke": "Ettin's Back"
+      },
+      "captureLocations": {
+        "Yerk Plopsquirt": "Nebo Terrace",
+        "Muga Riptide": "D'Alessio Seaboard",
+        "Harth Mendbranch": "Majesty's Rest"
+      }
     }
   },
   {
@@ -8565,7 +10154,10 @@
       "quests": [
         "Helping the Dwarves"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Helping the Dwarves": "Yak's Bend"
+      }
     }
   },
   {
@@ -8586,7 +10178,10 @@
       "quests": [],
       "captureBosses": [
         "Thul Boulderrain"
-      ]
+      ],
+      "captureLocations": {
+        "Thul Boulderrain": "Snake Dance"
+      }
     }
   },
   {
@@ -8610,7 +10205,10 @@
       "quests": [
         "Mysterious Message (Prophecies quest)"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Mysterious Message (Prophecies quest)": "Druid's Overlook"
+      }
     }
   },
   {
@@ -8638,7 +10236,15 @@
         "Swoop Needlegrip",
         "Wyng Soothingclaw",
         "Zyd Pointedbeak"
-      ]
+      ],
+      "questLocations": {
+        "Supplies for the Duke": "Old Ascalon"
+      },
+      "captureLocations": {
+        "Swoop Needlegrip": "North Kryta Province",
+        "Wyng Soothingclaw": "Nebo Terrace",
+        "Zyd Pointedbeak": "Stingray Strand"
+      }
     }
   },
   {
@@ -8662,7 +10268,10 @@
       "quests": [],
       "captureBosses": [
         "Liam Shanglui"
-      ]
+      ],
+      "captureLocations": {
+        "Liam Shanglui": "Kessex Peak"
+      }
     }
   },
   {
@@ -8705,7 +10314,10 @@
       "quests": [],
       "captureBosses": [
         "Maxine Coldstone"
-      ]
+      ],
+      "captureLocations": {
+        "Maxine Coldstone": "Perdition Rock"
+      }
     }
   },
   {
@@ -8729,7 +10341,10 @@
       "quests": [
         "The Charr Staging Area"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Charr Staging Area": "Old Ascalon"
+      }
     }
   },
   {
@@ -8762,7 +10377,17 @@
       ],
       "conditionalCaptureBosses": [
         "Orshad Chieftain"
-      ]
+      ],
+      "questLocations": {
+        "A Test of Marksmanship": "Regent Valley (pre-Searing)"
+      },
+      "captureLocations": {
+        "Squaw Nimblecrest": "North Kryta Province",
+        "Phy Deftcrest": "Stingray Strand",
+        "Winglord Caromi": "The Black Curtain",
+        "Caza Windedcalf": "The Scar",
+        "Orshad Chieftain": "The Warrior's Path"
+      }
     }
   },
   {
@@ -8789,7 +10414,14 @@
       "captureBosses": [
         "Tree of Life",
         "Tree of Regrowth"
-      ]
+      ],
+      "questLocations": {
+        "Dropping Eaves": "Ettin's Back"
+      },
+      "captureLocations": {
+        "Tree of Life": "Bloodstone Fen",
+        "Tree of Regrowth": "Tangle Root"
+      }
     }
   },
   {
@@ -8813,7 +10445,10 @@
       "quests": [
         "Helping the Dwarves"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Helping the Dwarves": "Yak's Bend"
+      }
     }
   },
   {
@@ -8837,7 +10472,10 @@
       "quests": [
         "The Price of Steel"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Price of Steel": "Silverwood"
+      }
     }
   },
   {
@@ -8858,7 +10496,10 @@
       "quests": [],
       "captureBosses": [
         "Spindle Agonyvein"
-      ]
+      ],
+      "captureLocations": {
+        "Spindle Agonyvein": "Abaddon's Mouth"
+      }
     }
   },
   {
@@ -8899,7 +10540,24 @@
       ],
       "conditionalCaptureBosses": [
         "Abbot Ramoth"
-      ]
+      ],
+      "captureLocations": {
+        "Leaps Thunderclap": "North Kryta Province",
+        "Abbot Ramoth": "The Black Curtain",
+        "Gack Splotchplunk": "Watchtower Coast",
+        "Fluum Banzo": "Divinity Coast",
+        "Bramblehash": "Sage Lands",
+        "Huma Cleansinghoof": "Ettin's Back",
+        "Splintertrunk": null,
+        "Tama Blessedhoof": "The Wilds",
+        "Tree of Vitality": "Aurora Glade",
+        "Ramm the Benevolent": "Bloodstone Fen",
+        "Woho Sacredhide": "Silverwood",
+        "Garr the Merciful": "Aurora Glade",
+        "Gilroy the Stoic": "Twin Serpent Lakes",
+        "Corbin the Upright": "Riverside Province",
+        "Selwin the Fervent": "Sanctum Cay"
+      }
     }
   },
   {
@@ -8923,7 +10581,10 @@
       "quests": [
         "In Memory of Paulus"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "In Memory of Paulus": "Old Ascalon"
+      }
     }
   },
   {
@@ -8944,7 +10605,10 @@
       "quests": [
         "Adventure with an Ally"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Adventure with an Ally": "Lakeside County"
+      }
     }
   },
   {
@@ -8969,7 +10633,10 @@
       "quests": [
         "The Blessings of Balthazar"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Blessings of Balthazar": "Ashford Abbey"
+      }
     }
   },
   {
@@ -8994,7 +10661,10 @@
       "quests": [
         "Protection Prayers (quest)"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Protection Prayers (quest)": "Green Hills County"
+      }
     }
   },
   {
@@ -9084,6 +10754,9 @@
       ],
       "quests": [],
       "captureBosses": [],
+      "captureLocations": {
+        "Vess the Disputant": "Divinity Coast (explorable area)"
+      },
       "conditionalCaptureBosses": [
         "Vess the Disputant"
       ]
@@ -9110,7 +10783,10 @@
       "quests": [
         "Hungry Devourer"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Hungry Devourer": "Beacon's Perch"
+      }
     }
   },
   {
@@ -9138,7 +10814,14 @@
         "Stik Barkripper",
         "Euhh Snickersnak",
         "Smukk Foombool"
-      ]
+      ],
+      "captureLocations": {
+        "Minotaur (boss)": "Anvil Rock",
+        "Muu Swifthorn": "Talmark Wilderness",
+        "Stik Barkripper": "Ettin's Back",
+        "Euhh Snickersnak": "Sage Lands",
+        "Smukk Foombool": "Snake Dance"
+      }
     }
   },
   {
@@ -9167,7 +10850,15 @@
         "Ramtha Brokenhoof",
         "Lala Firemane",
         "Chunk Clumpfoot"
-      ]
+      ],
+      "captureLocations": {
+        "Laris the Meateater": "North Kryta Province",
+        "Fauul the Windburner": "Watchtower Coast",
+        "Fawa Torncalf": "The Wilds",
+        "Ramtha Brokenhoof": null,
+        "Lala Firemane": "Silverwood",
+        "Chunk Clumpfoot": "Lornar's Pass"
+      }
     }
   },
   {
@@ -9202,7 +10893,20 @@
         "Inquisitor Lashona",
         "Teral the Punisher",
         "Valis the Rampant"
-      ]
+      ],
+      "questLocations": {
+        "Blood And Smoke": "Ettin's Back"
+      },
+      "captureLocations": {
+        "Torr the Relentless": "Bloodstone Fen",
+        "Cuthbert the Chaste": "Aurora Glade",
+        "Darwym the Spiteful": "Riverside Province",
+        "Kathryn the Cold": "Twin Serpent Lakes",
+        "Edgar the Iron Fist": "Sanctum Cay",
+        "Inquisitor Lashona": "North Kryta Province (War in Kryta)",
+        "Teral the Punisher": "Kessex Peak (War in Kryta)",
+        "Valis the Rampant": "Twin Serpent Lakes (War in Kryta)"
+      }
     }
   },
   {
@@ -9226,7 +10930,10 @@
       "quests": [
         "The Royal Papers"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Royal Papers": "Fishermen's Haven"
+      }
     }
   },
   {
@@ -9277,7 +10984,16 @@
         "Tree of Judgment",
         "Raja Crux",
         "Sul SandStorm"
-      ]
+      ],
+      "questLocations": {
+        "The Royal Papers": "Fishermen's Haven"
+      },
+      "captureLocations": {
+        "Ijan the Cursed": "Gates of Kryta",
+        "Tree of Judgment": "The Black Curtain",
+        "Raja Crux": "Divinity Coast",
+        "Sul SandStorm": "Salt Flats"
+      }
     }
   },
   {
@@ -9302,7 +11018,11 @@
       "captureBosses": [
         "Tree of Life",
         "Tree of Regrowth"
-      ]
+      ],
+      "captureLocations": {
+        "Tree of Life": "Bloodstone Fen",
+        "Tree of Regrowth": "Tangle Root"
+      }
     }
   },
   {
@@ -9330,6 +11050,13 @@
         "Julen the Devout",
         "Braima the Callous"
       ],
+      "captureLocations": {
+        "Pleoh the Ugly": "Bloodstone Fen",
+        "Manton the Indulgent": "Aurora Glade",
+        "Julen the Devout": "Twin Serpent Lakes",
+        "Braima the Callous": "Riverside Province",
+        "Vess the Disputant": "Divinity Coast (explorable area)"
+      },
       "conditionalCaptureBosses": [
         "Vess the Disputant"
       ]
@@ -9356,7 +11083,10 @@
       "quests": [
         "Securing the Vale"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Securing the Vale": "Yak's Bend"
+      }
     }
   },
   {
@@ -9380,7 +11110,10 @@
       "quests": [
         "The Deserters"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Deserters": "Beacon's Perch"
+      }
     }
   },
   {
@@ -9425,7 +11158,11 @@
         "Grawl Invasion",
         "Gargoyle Trouble"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Grawl Invasion": "Green Hills County",
+        "Gargoyle Trouble": "Old Ascalon"
+      }
     }
   },
   {
@@ -9454,7 +11191,14 @@
       ],
       "conditionalCaptureBosses": [
         "Erulai the Inimical"
-      ]
+      ],
+      "questLocations": {
+        "Casualty Report": "Piken Square"
+      },
+      "captureLocations": {
+        "Zalo Soulhaunch": "The Scar",
+        "Erulai the Inimical": "Bloodstone Fen (explorable area)"
+      }
     }
   },
   {
@@ -9478,7 +11222,10 @@
       "quests": [
         "Caravan in Trouble"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Caravan in Trouble": "Eastern Frontier"
+      }
     }
   },
   {
@@ -9530,7 +11277,16 @@
         "Fawa Torncalf",
         "Ramtha Brokenhoof",
         "Lala Firemane"
-      ]
+      ],
+      "questLocations": {
+        "Shalev's Task": "Old Ascalon"
+      },
+      "captureLocations": {
+        "Samira Dhulnarim": "Kessex Peak",
+        "Fawa Torncalf": "The Wilds",
+        "Ramtha Brokenhoof": null,
+        "Lala Firemane": "Silverwood"
+      }
     }
   },
   {
@@ -9557,7 +11313,13 @@
       ],
       "captureBosses": [
         "Psion Tanglebranch"
-      ]
+      ],
+      "questLocations": {
+        "Domination Magic (quest)": "Foible's Fair"
+      },
+      "captureLocations": {
+        "Psion Tanglebranch": "Majesty's Rest"
+      }
     }
   },
   {
@@ -9582,6 +11344,12 @@
         "Hungry Devourer"
       ],
       "captureBosses": [],
+      "questLocations": {
+        "Hungry Devourer": "Beacon's Perch"
+      },
+      "captureLocations": {
+        "Varny the Zealot": "Tunnels of the Forsaken"
+      },
       "conditionalCaptureBosses": [
         "Varny the Zealot"
       ]
@@ -9609,6 +11377,12 @@
         "Experimental Elixir"
       ],
       "captureBosses": [],
+      "questLocations": {
+        "Experimental Elixir": "Serenity Temple"
+      },
+      "captureLocations": {
+        "Varny the Zealot": "Tunnels of the Forsaken"
+      },
       "conditionalCaptureBosses": [
         "Varny the Zealot"
       ]
@@ -9635,7 +11409,10 @@
       "quests": [
         "Ghostly Vengeance"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Ghostly Vengeance": "Augury Rock (outpost)"
+      }
     }
   },
   {
@@ -9671,7 +11448,21 @@
       ],
       "conditionalCaptureBosses": [
         "Charr Captain"
-      ]
+      ],
+      "questLocations": {
+        "Dropping Eaves": "Ettin's Back"
+      },
+      "captureLocations": {
+        "Cobble Poundstone": "Old Ascalon",
+        "Drub Gorefang": "The Great Northern Wall",
+        "Spar the Ravager": "Fort Ranik",
+        "Gorgaan Hatemonger": "The Breach",
+        "Charr Captain": "The Siege of Piken Square",
+        "Lumps Ruinator": "Diessa Lowlands",
+        "Puugh the Slasher": "Ruins of Surmia",
+        "Brand the Brawler": "Nolani Academy",
+        "Yino Burlyhaunch": "Borlis Pass"
+      }
     }
   },
   {
@@ -9692,7 +11483,10 @@
       "quests": [],
       "captureBosses": [
         "Grun Galesurge"
-      ]
+      ],
+      "captureLocations": {
+        "Grun Galesurge": "Ring of Fire"
+      }
     }
   },
   {
@@ -9713,7 +11507,10 @@
       "quests": [],
       "captureBosses": [
         "Myd Springclaw"
-      ]
+      ],
+      "captureLocations": {
+        "Myd Springclaw": "Mineral Springs"
+      }
     }
   },
   {
@@ -9736,7 +11533,10 @@
       "quests": [],
       "captureBosses": [
         "Facet of Light"
-      ]
+      ],
+      "captureLocations": {
+        "Facet of Light": "The Dragon's Lair"
+      }
     }
   },
   {
@@ -9771,7 +11571,19 @@
       ],
       "conditionalCaptureBosses": [
         "Abbot Ramoth"
-      ]
+      ],
+      "questLocations": {
+        "Protection Prayers (quest)": "Green Hills County"
+      },
+      "captureLocations": {
+        "Shalis Ironmantle": "Iron Horse Mine",
+        "Abbot Ramoth": "The Black Curtain",
+        "Ramm the Benevolent": "Bloodstone Fen",
+        "Garr the Merciful": "Aurora Glade",
+        "Gilroy the Stoic": "Twin Serpent Lakes",
+        "Corbin the Upright": "Riverside Province",
+        "Selwin the Fervent": "Sanctum Cay"
+      }
     }
   },
   {
@@ -9821,7 +11633,15 @@
         "Numa Plaguemane",
         "Cootle Sizzlehorn",
         "Zalo Soulhaunch"
-      ]
+      ],
+      "questLocations": {
+        "A Belated Betrothal": "Seeker's Passage"
+      },
+      "captureLocations": {
+        "Numa Plaguemane": "Silverwood",
+        "Cootle Sizzlehorn": "Prophet's Path",
+        "Zalo Soulhaunch": "The Scar"
+      }
     }
   },
   {
@@ -9910,7 +11730,12 @@
         "Fawl Driftstalker",
         "Frostbite",
         "Balt Duskstrider"
-      ]
+      ],
+      "captureLocations": {
+        "Fawl Driftstalker": "Snake Dance",
+        "Frostbite": "Ice Floe",
+        "Balt Duskstrider": "Iron Mines of Moladune"
+      }
     }
   },
   {
@@ -9931,7 +11756,10 @@
       "quests": [],
       "captureBosses": [
         "Malus Phasmatis"
-      ]
+      ],
+      "captureLocations": {
+        "Malus Phasmatis": "Perdition Rock"
+      }
     }
   },
   {
@@ -9956,7 +11784,11 @@
       "captureBosses": [
         "Gaiza Deadeye",
         "Zaim Grimeclaw"
-      ]
+      ],
+      "captureLocations": {
+        "Gaiza Deadeye": "Riverside Province",
+        "Zaim Grimeclaw": "Sanctum Cay"
+      }
     }
   },
   {
@@ -9977,7 +11809,10 @@
       "quests": [],
       "captureBosses": [
         "Hail Blackice"
-      ]
+      ],
+      "captureLocations": {
+        "Hail Blackice": "Spearhead Peak"
+      }
     }
   },
   {
@@ -10005,7 +11840,15 @@
         "Swoop Needlegrip",
         "Wyng Soothingclaw",
         "Zyd Pointedbeak"
-      ]
+      ],
+      "questLocations": {
+        "Caravan in Trouble": "Eastern Frontier"
+      },
+      "captureLocations": {
+        "Swoop Needlegrip": "North Kryta Province",
+        "Wyng Soothingclaw": "Nebo Terrace",
+        "Zyd Pointedbeak": "Stingray Strand"
+      }
     }
   },
   {
@@ -10036,6 +11879,17 @@
         "Raja Crux",
         "Raptorhawk"
       ],
+      "questLocations": {
+        "Eye For Profit": "Druid's Overlook"
+      },
+      "captureLocations": {
+        "Ijan the Cursed": "Gates of Kryta",
+        "Boulad the Perverse": "Nebo Terrace",
+        "Kemal the Deadened": "D'Alessio Seaboard",
+        "Raja Crux": "Divinity Coast",
+        "Raptorhawk": "Snake Dance",
+        "Amalek the Unmerciful": "Watchtower Coast (War in Kryta)"
+      },
       "conditionalCaptureBosses": [
         "Amalek the Unmerciful"
       ]
@@ -10065,6 +11919,13 @@
         "Sevv Squallfroth",
         "Chak Hack Schawack"
       ],
+      "captureLocations": {
+        "Psion Tanglebranch": "Majesty's Rest",
+        "Sevv Squallfroth": "Salt Flats",
+        "Chak Hack Schawack": "Diviner's Ascent",
+        "The Darkness (boss)": "The Hall of Heroes",
+        "Zaln the Jaded": "D'Alessio Seaboard (explorable area)"
+      },
       "conditionalCaptureBosses": [
         "The Darkness (boss)",
         "Zaln the Jaded"
@@ -10098,7 +11959,16 @@
         "Gambol the Headrainer",
         "Skigg the Tongue",
         "Eepeep the Mindrain"
-      ]
+      ],
+      "questLocations": {
+        "The Accursed Path": "The Catacombs"
+      },
+      "captureLocations": {
+        "Geck the Coldblooded": "North Kryta Province",
+        "Gambol the Headrainer": "Nebo Terrace",
+        "Skigg the Tongue": "D'Alessio Seaboard",
+        "Eepeep the Mindrain": "Watchtower Coast"
+      }
     }
   },
   {
@@ -10130,7 +12000,19 @@
         "Gryp Wickedwing",
         "Drech Galumph",
         "Grech Trundle"
-      ]
+      ],
+      "questLocations": {
+        "Fallen Soldiers": "Piken Square"
+      },
+      "captureLocations": {
+        "Durnar Skullcracker": "The Frost Gate",
+        "Rawr Wildeye": "North Kryta Province",
+        "Ryn Cursewing": "Nebo Terrace",
+        "Glyd Swiftwing": "Divinity Coast",
+        "Gryp Wickedwing": "Stingray Strand",
+        "Drech Galumph": "Sage Lands",
+        "Grech Trundle": "The Wilds"
+      }
     }
   },
   {
@@ -10172,7 +12054,10 @@
       "quests": [],
       "captureBosses": [
         "Goss Darkweb"
-      ]
+      ],
+      "captureLocations": {
+        "Goss Darkweb": "Abaddon's Mouth"
+      }
     }
   },
   {
@@ -10194,7 +12079,10 @@
       "captureBosses": [],
       "conditionalCaptureBosses": [
         "Abaddon's Cursed"
-      ]
+      ],
+      "captureLocations": {
+        "Abaddon's Cursed": "Perdition Rock"
+      }
     }
   },
   {
@@ -10217,7 +12105,10 @@
       "quests": [],
       "captureBosses": [
         "Raptorhawk"
-      ]
+      ],
+      "captureLocations": {
+        "Raptorhawk": "Snake Dance"
+      }
     }
   },
   {
@@ -10238,7 +12129,10 @@
       "quests": [],
       "captureBosses": [
         "Vulg Painbrain"
-      ]
+      ],
+      "captureLocations": {
+        "Vulg Painbrain": "Ring of Fire"
+      }
     }
   },
   {
@@ -10264,7 +12158,12 @@
         "Sapph Blacktracker",
         "Nighh SpineChill",
         "Ceru Gloomrunner"
-      ]
+      ],
+      "captureLocations": {
+        "Sapph Blacktracker": "Snake Dance",
+        "Nighh SpineChill": "Talus Chute",
+        "Ceru Gloomrunner": "Iron Mines of Moladune"
+      }
     }
   },
   {
@@ -10294,7 +12193,17 @@
         "Plook Wavebreaker",
         "Hew Gruntruck",
         "Gren Wavelslosh"
-      ]
+      ],
+      "questLocations": {
+        "Blood And Smoke": "Ettin's Back"
+      },
+      "captureLocations": {
+        "Slikk Sandhopper": "North Kryta Province",
+        "Twig Slipfall": "Nebo Terrace",
+        "Plook Wavebreaker": "D'Alessio Seaboard",
+        "Hew Gruntruck": "Watchtower Coast",
+        "Gren Wavelslosh": "Divinity Coast"
+      }
     }
   },
   {
@@ -10324,7 +12233,17 @@
         "Ziyad Soulreaper",
         "Bija Gravewailer",
         "Sniik Hungrymind"
-      ]
+      ],
+      "questLocations": {
+        "Dropping Eaves": "Ettin's Back"
+      },
+      "captureLocations": {
+        "Onan the Spiritless": "Gates of Kryta",
+        "Azibo Painfeast": "Nebo Terrace",
+        "Ziyad Soulreaper": "D'Alessio Seaboard",
+        "Bija Gravewailer": "Divinity Coast",
+        "Sniik Hungrymind": "Spearhead Peak"
+      }
     }
   },
   {
@@ -10348,6 +12267,12 @@
         "Nighh SpineChill",
         "Ceru Gloomrunner"
       ],
+      "captureLocations": {
+        "Sapph Blacktracker": "Snake Dance",
+        "Nighh SpineChill": "Talus Chute",
+        "Ceru Gloomrunner": "Iron Mines of Moladune",
+        "Zaln the Jaded": "D'Alessio Seaboard (explorable area)"
+      },
       "conditionalCaptureBosses": [
         "Zaln the Jaded"
       ]
@@ -10374,7 +12299,10 @@
       "quests": [
         "Military Matters"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Military Matters": "Old Ascalon"
+      }
     }
   },
   {
@@ -10402,7 +12330,13 @@
       "captureBosses": [],
       "conditionalCaptureBosses": [
         "Disgruntled Zombie"
-      ]
+      ],
+      "questLocations": {
+        "The Last Hog": "North Kryta Province"
+      },
+      "captureLocations": {
+        "Disgruntled Zombie": "North Kryta Province"
+      }
     }
   },
   {
@@ -10431,7 +12365,14 @@
       ],
       "conditionalCaptureBosses": [
         "Ulrik the Undefeated"
-      ]
+      ],
+      "questLocations": {
+        "Mysterious Message (Prophecies quest)": "Druid's Overlook"
+      },
+      "captureLocations": {
+        "Ulrik the Undefeated": "Traveler's Vale",
+        "Samira Dhulnarim": "Kessex Peak"
+      }
     }
   },
   {
@@ -10481,7 +12422,15 @@
         "Martus Plagueweb",
         "Kezra Spindleweb",
         "Debrio Gangleweb"
-      ]
+      ],
+      "questLocations": {
+        "Mysterious Message (Prophecies quest)": "Druid's Overlook"
+      },
+      "captureLocations": {
+        "Martus Plagueweb": "Sage Lands",
+        "Kezra Spindleweb": "The Wilds",
+        "Debrio Gangleweb": "The Falls"
+      }
     }
   },
   {
@@ -10505,7 +12454,10 @@
       "quests": [
         "Replacement Healers"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Replacement Healers": "Serenity Temple"
+      }
     }
   },
   {
@@ -10529,7 +12481,10 @@
       "quests": [
         "The Deserters"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Deserters": "Beacon's Perch"
+      }
     }
   },
   {
@@ -10575,7 +12530,10 @@
       "quests": [
         "Helping the Dwarves"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Helping the Dwarves": "Yak's Bend"
+      }
     }
   },
   {
@@ -10599,7 +12557,10 @@
       "quests": [
         "Securing the Vale"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Securing the Vale": "Yak's Bend"
+      }
     }
   },
   {
@@ -10623,7 +12584,10 @@
       "quests": [
         "Into the Unknown"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Into the Unknown": "Augury Rock (outpost)"
+      }
     }
   },
   {
@@ -10653,7 +12617,15 @@
       ],
       "conditionalCaptureBosses": [
         "Drogo Greatmane"
-      ]
+      ],
+      "questLocations": {
+        "The Undead Hordes": "Beetletun"
+      },
+      "captureLocations": {
+        "Malla Arrowmane": "The Wilds",
+        "Keba Silenthoof": "Silverwood",
+        "Drogo Greatmane": "Reed Bog"
+      }
     }
   },
   {
@@ -10704,7 +12676,15 @@
         "Boulad the Perverse",
         "Kemal the Deadened",
         "Raptorhawk"
-      ]
+      ],
+      "questLocations": {
+        "The Blessings of Balthazar": "Ashford Abbey"
+      },
+      "captureLocations": {
+        "Boulad the Perverse": "Nebo Terrace",
+        "Kemal the Deadened": "D'Alessio Seaboard",
+        "Raptorhawk": "Snake Dance"
+      }
     }
   },
   {
@@ -10749,7 +12729,10 @@
       "quests": [],
       "captureBosses": [
         "Dosakaru Fevertouch"
-      ]
+      ],
+      "captureLocations": {
+        "Dosakaru Fevertouch": "Perdition Rock"
+      }
     }
   },
   {
@@ -10797,7 +12780,10 @@
       "captureBosses": [],
       "conditionalCaptureBosses": [
         "Candy Corn Tyrant"
-      ]
+      ],
+      "captureLocations": {
+        "Candy Corn Tyrant": "North Kryta Province"
+      }
     }
   },
   {
@@ -10822,7 +12808,10 @@
       "quests": [
         "The Ascalon Settlement"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Ascalon Settlement": "North Kryta Province"
+      }
     }
   },
   {
@@ -10853,7 +12842,16 @@
       ],
       "conditionalCaptureBosses": [
         "Talios the Resplendent"
-      ]
+      ],
+      "captureLocations": {
+        "Kratos the Foul": "Iron Mines of Moladune",
+        "The Inquisitor": null,
+        "Mursaat Elementalist (boss)": "Ice Floe",
+        "Chrysos the Magnetic": "Thunderhead Keep",
+        "Maida the Ill Tempered": "Ring of Fire",
+        "Optimus Caliph": "Abaddon's Mouth",
+        "Talios the Resplendent": "The Battle for Lion's Arch (explorable area)"
+      }
     }
   },
   {
@@ -10882,7 +12880,16 @@
         "Phy Deftcrest",
         "Gargash Thornbeard",
         "Thul The Bull"
-      ]
+      ],
+      "questLocations": {
+        "A Belated Betrothal": "Seeker's Passage"
+      },
+      "captureLocations": {
+        "Squaw Nimblecrest": "North Kryta Province",
+        "Phy Deftcrest": "Stingray Strand",
+        "Gargash Thornbeard": "Grenth's Footprint",
+        "Thul The Bull": "Spearhead Peak"
+      }
     }
   },
   {
@@ -10951,7 +12958,12 @@
         "The Ranger's Companion",
         "Endangered Species"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Ranger Test": "Lakeside County",
+        "The Ranger's Companion": "Regent Valley (pre-Searing)",
+        "Endangered Species": "Old Ascalon"
+      }
     }
   },
   {
@@ -10977,7 +12989,11 @@
       "conditionalCaptureBosses": [
         "Koril the Malignant",
         "Erulai the Inimical"
-      ]
+      ],
+      "captureLocations": {
+        "Koril the Malignant": "D'Alessio Seaboard",
+        "Erulai the Inimical": "Bloodstone Fen (explorable area)"
+      }
     }
   },
   {
@@ -10999,7 +13015,11 @@
       "captureBosses": [
         "Ipillo Wupwup",
         "Kaia Wupwup"
-      ]
+      ],
+      "captureLocations": {
+        "Ipillo Wupwup": "Witman's Folly",
+        "Kaia Wupwup": "Spearhead Peak"
+      }
     }
   },
   {
@@ -11024,7 +13044,10 @@
       "quests": [
         "Necromancer Test"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Necromancer Test": "Lakeside County"
+      }
     }
   },
   {
@@ -11054,7 +13077,16 @@
         "Frostfire Dryder (necromancer boss)",
         "Durnar Skullcracker",
         "Cootle Sizzlehorn"
-      ]
+      ],
+      "questLocations": {
+        "The Power of Blood": "Green Hills County"
+      },
+      "captureLocations": {
+        "Riine Windrot": "Traveler's Vale",
+        "Frostfire Dryder (necromancer boss)": "Iron Horse Mine",
+        "Durnar Skullcracker": "The Frost Gate",
+        "Cootle Sizzlehorn": "Prophet's Path"
+      }
     }
   },
   {
@@ -11084,7 +13116,17 @@
         "Boulad the Perverse",
         "Raja Crux",
         "Harth Mendbranch"
-      ]
+      ],
+      "questLocations": {
+        "The Forgotten Ones": "Destiny's Gorge"
+      },
+      "captureLocations": {
+        "Ijan the Cursed": "Gates of Kryta",
+        "Kemal the Deadened": "D'Alessio Seaboard",
+        "Boulad the Perverse": "Nebo Terrace",
+        "Raja Crux": "Divinity Coast",
+        "Harth Mendbranch": "Majesty's Rest"
+      }
     }
   },
   {
@@ -11108,7 +13150,10 @@
       "quests": [],
       "captureBosses": [
         "Verata the Necromancer"
-      ]
+      ],
+      "captureLocations": {
+        "Verata the Necromancer": "Kessex Peak"
+      }
     }
   },
   {
@@ -11133,6 +13178,10 @@
       "captureBosses": [
         "Verata the Necromancer"
       ],
+      "captureLocations": {
+        "Verata the Necromancer": "Kessex Peak",
+        "Cerris": "Nebo Terrace (War in Kryta)"
+      },
       "conditionalCaptureBosses": [
         "Cerris"
       ]
@@ -11159,7 +13208,10 @@
       "quests": [],
       "captureBosses": [
         "Verata the Necromancer"
-      ]
+      ],
+      "captureLocations": {
+        "Verata the Necromancer": "Kessex Peak"
+      }
     }
   },
   {
@@ -11183,7 +13235,10 @@
       "quests": [
         "The Wayward Monk"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Wayward Monk": "Yak's Bend"
+      }
     }
   },
   {
@@ -11217,7 +13272,19 @@
       ],
       "conditionalCaptureBosses": [
         "Eater of Souls"
-      ]
+      ],
+      "questLocations": {
+        "Helping the People of Ascalon": "Old Ascalon"
+      },
+      "captureLocations": {
+        "Riine Windrot": "Traveler's Vale",
+        "Durnar Skullcracker": "The Frost Gate",
+        "Cootle Sizzlehorn": "Prophet's Path",
+        "Jonk Shuffle": "Salt Flats",
+        "Krunk Waddle": "Vulture Drifts",
+        "Plunk Trudge": "Diviner's Ascent",
+        "Eater of Souls": "The Monk's Path"
+      }
     }
   },
   {
@@ -11238,7 +13305,10 @@
       "quests": [],
       "captureBosses": [
         "Unthet Rotwood"
-      ]
+      ],
+      "captureLocations": {
+        "Unthet Rotwood": "Frozen Forest"
+      }
     }
   },
   {
@@ -11262,7 +13332,10 @@
       "quests": [
         "Protecting Ascalon"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Protecting Ascalon": "Old Ascalon"
+      }
     }
   },
   {
@@ -11292,6 +13365,16 @@
         "Julen the Devout",
         "Braima the Callous"
       ],
+      "questLocations": {
+        "Scorched Earth (Prophecies quest)": "Old Ascalon"
+      },
+      "captureLocations": {
+        "Pleoh the Ugly": "Bloodstone Fen",
+        "Manton the Indulgent": "Aurora Glade",
+        "Julen the Devout": "Twin Serpent Lakes",
+        "Braima the Callous": "Riverside Province",
+        "Vess the Disputant": "Divinity Coast (explorable area)"
+      },
       "conditionalCaptureBosses": [
         "Vess the Disputant"
       ]
@@ -11318,7 +13401,10 @@
       "quests": [
         "A Heart of Ice"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "A Heart of Ice": "Yak's Bend"
+      }
     }
   },
   {
@@ -11342,7 +13428,11 @@
       ],
       "conditionalCaptureBosses": [
         "Perfected Aegis"
-      ]
+      ],
+      "captureLocations": {
+        "Arkhel Havenwood": "Frozen Forest",
+        "Perfected Aegis": "The Battle for Lion's Arch (explorable area)"
+      }
     }
   },
   {
@@ -11390,7 +13480,11 @@
       "captureBosses": [
         "Essam Festerskull",
         "Fareed the Unworthy"
-      ]
+      ],
+      "captureLocations": {
+        "Essam Festerskull": "Riverside Province",
+        "Fareed the Unworthy": "Sanctum Cay"
+      }
     }
   },
   {
@@ -11413,7 +13507,12 @@
         "Custodian Dellus",
         "Custodian Fidius",
         "Custodian Hulgar"
-      ]
+      ],
+      "captureLocations": {
+        "Custodian Dellus": "Elona Reach",
+        "Custodian Fidius": "Dunes of Despair",
+        "Custodian Hulgar": "Thirsty River"
+      }
     }
   },
   {
@@ -11443,7 +13542,14 @@
       ],
       "conditionalCaptureBosses": [
         "Kree Minotaur"
-      ]
+      ],
+      "captureLocations": {
+        "Muu Swifthorn": "Talmark Wilderness",
+        "Stoofed Chargehoof": "Prophet's Path",
+        "Kree Minotaur": "The Elementalist's Path",
+        "Graf Wask Derg": "Diviner's Ascent",
+        "Monaru Chippedfang": null
+      }
     }
   },
   {
@@ -11468,7 +13574,10 @@
       "quests": [
         "The Ascalon Settlement"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "The Ascalon Settlement": "North Kryta Province"
+      }
     }
   },
   {
@@ -11496,7 +13605,14 @@
         "Woho Sacredhide",
         "Tree of Regrowth",
         "Huma Cleansinghoof"
-      ]
+      ],
+      "captureLocations": {
+        "Tama Blessedhoof": "The Wilds",
+        "Tree of Life": "Bloodstone Fen",
+        "Woho Sacredhide": "Silverwood",
+        "Tree of Regrowth": "Tangle Root",
+        "Huma Cleansinghoof": "Ettin's Back"
+      }
     }
   },
   {
@@ -11524,7 +13640,14 @@
       "captureBosses": [
         "Bucknar Runeguard",
         "The Judge"
-      ]
+      ],
+      "questLocations": {
+        "The Undead Hordes": "Beetletun"
+      },
+      "captureLocations": {
+        "Bucknar Runeguard": "The Frost Gate",
+        "The Judge": "Traveler's Vale"
+      }
     }
   },
   {
@@ -11549,7 +13672,14 @@
         "Boreal Kubeclaw",
         "Flint Fleshcleaver",
         "The Judge"
-      ]
+      ],
+      "captureLocations": {
+        "Chunk Clumpfoot": "Lornar's Pass",
+        "Berg Frozenfist": "Ice Caves of Sorrow",
+        "Boreal Kubeclaw": "Frozen Forest",
+        "Flint Fleshcleaver": "Grenth's Footprint",
+        "The Judge": "Thunderhead Keep"
+      }
     }
   },
   {
@@ -11577,7 +13707,15 @@
         "Sapph Blacktracker",
         "Nighh SpineChill",
         "Ceru Gloomrunner"
-      ]
+      ],
+      "questLocations": {
+        "Supplies for the Duke": "Old Ascalon"
+      },
+      "captureLocations": {
+        "Sapph Blacktracker": "Snake Dance",
+        "Nighh SpineChill": "Talus Chute",
+        "Ceru Gloomrunner": "Iron Mines of Moladune"
+      }
     }
   },
   {
@@ -11601,7 +13739,10 @@
       "quests": [
         "Renegade Necromancer"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Renegade Necromancer": "Yak's Bend"
+      }
     }
   },
   {
@@ -11622,7 +13763,10 @@
       "quests": [],
       "captureBosses": [
         "Nhy Darkclaw"
-      ]
+      ],
+      "captureLocations": {
+        "Nhy Darkclaw": "Mineral Springs"
+      }
     }
   },
   {
@@ -11650,7 +13794,15 @@
         "Rotcap Mochsart",
         "Flaw Rootplague",
         "Mossk Rottail"
-      ]
+      ],
+      "questLocations": {
+        "Mysterious Message (Prophecies quest)": "Druid's Overlook"
+      },
+      "captureLocations": {
+        "Rotcap Mochsart": "Sage Lands",
+        "Flaw Rootplague": "Ettin's Back",
+        "Mossk Rottail": "Bloodstone Fen"
+      }
     }
   },
   {
@@ -11683,7 +13835,18 @@
       "conditionalCaptureBosses": [
         "Erulai the Inimical",
         "Justiciar Marron"
-      ]
+      ],
+      "questLocations": {
+        "The Misplaced Sword": "Heroes' Audience"
+      },
+      "captureLocations": {
+        "Brogan the Punisher": "Twin Serpent Lakes",
+        "Oswald the Amiable": "Bloodstone Fen",
+        "Kenric the Believer": "Aurora Glade",
+        "Bearn the Implacable": "Riverside Province",
+        "Justiciar Marron": "Kessex Peak (War in Kryta)",
+        "Erulai the Inimical": "Bloodstone Fen (explorable area)"
+      }
     }
   },
   {
@@ -11707,7 +13870,10 @@
       "quests": [
         "Stone Summit Beastmasters"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Stone Summit Beastmasters": "Traveler's Vale"
+      }
     }
   },
   {
@@ -11731,7 +13897,10 @@
       "quests": [
         "A Heart of Ice"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "A Heart of Ice": "Yak's Bend"
+      }
     }
   },
   {
@@ -11765,7 +13934,19 @@
       ],
       "conditionalCaptureBosses": [
         "Galrath"
-      ]
+      ],
+      "questLocations": {
+        "Gargoyle Trouble": "Old Ascalon"
+      },
+      "captureLocations": {
+        "Rage Maulhoof": "The Black Curtain",
+        "Galrath": "Kessex Peak",
+        "Justiciar Hablion": "Bloodstone Fen",
+        "Facet of Strength": "The Dragon's Lair",
+        "Jade Armor (boss)": "Ice Floe",
+        "Martigris the Stalwart": "Iron Mines of Moladune",
+        "Perfected Armor": "Thunderhead Keep"
+      }
     }
   },
   {
@@ -11791,7 +13972,13 @@
       ],
       "captureBosses": [
         "Old Red Claw"
-      ]
+      ],
+      "questLocations": {
+        "A Belated Betrothal": "Seeker's Passage"
+      },
+      "captureLocations": {
+        "Old Red Claw": "Snake Dance"
+      }
     }
   },
   {
@@ -11815,7 +14002,10 @@
       "quests": [
         "Into the Unknown"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Into the Unknown": "Augury Rock (outpost)"
+      }
     }
   },
   {
@@ -11839,7 +14029,10 @@
       "quests": [
         "Stone Summit Beastmasters"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Stone Summit Beastmasters": "Traveler's Vale"
+      }
     }
   },
   {
@@ -11866,7 +14059,14 @@
         "Ludo Ossidi",
         "Mentanl Arobo",
         "Desnas Hubor"
-      ]
+      ],
+      "captureLocations": {
+        "Ignis Effigia": "Perdition Rock",
+        "Evirso Sectus": "Mineral Springs",
+        "Ludo Ossidi": "Dragon's Gullet",
+        "Mentanl Arobo": "North Kryta Province",
+        "Desnas Hubor": "Tangle Root"
+      }
     }
   },
   {
@@ -11891,7 +14091,12 @@
         "Dassk Arossyss",
         "Wissper Inssani",
         "Josso Essher"
-      ]
+      ],
+      "captureLocations": {
+        "Dassk Arossyss": "Dunes of Despair",
+        "Wissper Inssani": "Elona Reach",
+        "Josso Essher": "Thirsty River"
+      }
     }
   },
   {
@@ -11915,7 +14120,10 @@
       "quests": [
         "Into the Unknown"
       ],
-      "captureBosses": []
+      "captureBosses": [],
+      "questLocations": {
+        "Into the Unknown": "Augury Rock (outpost)"
+      }
     }
   }
 ]
