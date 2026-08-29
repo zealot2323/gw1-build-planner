@@ -1,0 +1,492 @@
+# Validation report
+
+Generated 2026-08-29T10:53:06.023Z by `npm run parse` (cache-only).
+
+## skills (2 issues on 2 pages)
+
+- **Charm Animal (monster skill)**: no Acquisition section
+- **Restore Life (monster skill)**: no Acquisition section
+
+## locations (5 issues on 5 pages)
+
+- **Abaddon's Mouth (outpost)**: no exits in infobox
+- **Ascalon Academy**: no Location infobox
+- **Hell's Precipice (outpost)**: no exits in infobox
+- **Lion's Gate**: no foes parsed
+- **Ring of Fire (outpost)**: no exits in infobox
+
+## trainers (1 issue on 1 page)
+
+- **Mazzim**: stands in unknown location "Fisherman's Haven"
+
+## monsters (347 issues on 331 pages)
+
+- **Abaddon's Cursed**: boss with multiple elites: Soul Taker, Over the Limit
+- **Abijah the Decayed**: boss with no elite skill marked
+- **Afrhul Deeproot**: boss with no elite skill marked
+- **Aguo Gruffmane**: boss with no elite skill marked
+- **Amir the Overripe**: boss with no elite skill marked
+- **Anani Mokmok**: boss with no elite skill marked
+- **Asad the Ignoble**: boss with no elite skill marked
+- **Asynd Blindingclaw**: boss with no elite skill marked
+- **Azibo Painfeast**: boss with no elite skill marked
+- **Aziz Rottenscalp**: boss with no elite skill marked
+- **Bairn the Sinless**: boss with no elite skill marked
+- **Bakkir the Forsaken**: boss with no elite skill marked
+- **Bane Darkfist**: boss with no elite skill marked
+- **Bearn the Implacable**: boss with no elite skill marked
+- **Bija Gravewailer**: boss with no elite skill marked
+- **Blaze Bloodbane**: boss with no elite skill marked
+- **Bleck Oogle**: boss with no elite skill marked
+- **Bolo Falsehoof**: boss with no elite skill marked
+- **Bone Dragon (boss)**: boss with no elite skill marked
+- **Bonetti**: boss with no elite skill marked
+- **Bonfaaz Burntfur**: boss with no elite skill marked
+- **Boulad the Perverse**: boss with no elite skill marked
+- **Braima the Callous**: boss with no elite skill marked
+- **Bramblehash**: boss with no elite skill marked
+- **Brand the Brawler**: boss with no elite skill marked
+- **Bristlefire**: boss with no elite skill marked
+- **Brogan the Punisher**: boss with no elite skill marked
+- **Brol Migo Hinga**: boss with no elite skill marked
+- **Bucknar Runeguard**: boss with no elite skill marked
+- **Burr Mankiller**: boss with no elite skill marked
+- **Caza Windedcalf**: boss with no elite skill marked
+- **Cella the Hooded**: boss with no elite skill marked
+- **Cess Corpselighter**: boss with no elite skill marked
+- **Chak Hack Schawack**: boss with no elite skill marked
+- **Charr Ash Walker**: no normal-mode level parsed
+- **Chott Stormsinger**: boss with no elite skill marked
+- **Chuff Quickbeak**: boss with no elite skill marked
+- **Clarion Shinypate**: boss with no elite skill marked
+- **Claw Fleshfixer**: boss with no elite skill marked
+- **Clob Stonearch**: boss with no elite skill marked
+- **Cobble Poundstone**: boss with no elite skill marked
+- **Cootle Sizzlehorn**: boss with no elite skill marked
+- **Corbin the Upright**: boss with no elite skill marked
+- **Craze the Unforgiving**: boss with no elite skill marked
+- **Cronis Bonebreaker**: boss with no elite skill marked
+- **Cruc the Reborn**: boss with no elite skill marked
+- **Crush Kill**: boss with no elite skill marked
+- **Cuthbert the Chaste**: boss with no elite skill marked
+- **Cyrus the Unflattering**: boss with no elite skill marked
+- **Dagnar Stonepate**: boss with no elite skill marked
+- **Dahr the Diseased**: boss with no elite skill marked
+- **Damis the Malignant**: boss with no elite skill marked
+- **Darwym the Spiteful**: boss with no elite skill marked
+- **Debrio Gangleweb**: boss with no elite skill marked
+- **Debrio Gangleweb**: no locations parsed
+- **Divingbeak**: boss with no elite skill marked
+- **Doppelganger**: no locations parsed
+- **Doro Icehide**: boss with no elite skill marked
+- **Dracul Cadava**: boss with no elite skill marked
+- **Dread Nightstalk**: boss with no elite skill marked
+- **Drech Galumph**: boss with no elite skill marked
+- **Drech Galumph**: no locations parsed
+- **Drim Cindershot**: boss with no elite skill marked
+- **Droog Stoneclub**: boss with no elite skill marked
+- **Drub Gorefang**: boss with no elite skill marked
+- **Drub Slingstone**: boss with no elite skill marked
+- **Durnar Skullcracker**: boss with no elite skill marked
+- **Dyv Cloudclaw**: boss with no elite skill marked
+- **Edgar the Iron Fist**: boss with no elite skill marked
+- **Edmi Visionmane**: boss with no elite skill marked
+- **Edred the Bruiser**: boss with no elite skill marked
+- **Eepeep the Mindrain**: boss with no elite skill marked
+- **Elvina the Pious**: boss with no elite skill marked
+- **Essam Festerskull**: boss with no elite skill marked
+- **Euhh Snickersnak**: boss with no elite skill marked
+- **Falls the Fishfinder**: boss with no elite skill marked
+- **Fareed the Unworthy**: boss with no elite skill marked
+- **Fariq Earthturner**: boss with no elite skill marked
+- **Fauul the Windburner**: boss with no elite skill marked
+- **Fawa Torncalf**: boss with no elite skill marked
+- **Featherfist**: boss with no elite skill marked
+- **Felinam the Whip**: boss with no elite skill marked
+- **Fendar Stonestance**: boss with no elite skill marked
+- **Fester Fang**: boss with no elite skill marked
+- **Flange Sullenrage**: boss with no elite skill marked
+- **Flash Darkspine**: boss with no elite skill marked
+- **Flaw Rootplague**: boss with no elite skill marked
+- **Fleck Grokspit**: boss with no elite skill marked
+- **Fling Bloodpelt**: boss with no elite skill marked
+- **Flint Touchstone**: boss with no elite skill marked
+- **Fluum Banzo**: boss with no elite skill marked
+- **Flyt Stormbeak**: boss with no elite skill marked
+- **Frak Undertow**: boss with no elite skill marked
+- **Frash the Cold**: boss with no elite skill marked
+- **Frostfire Dryder (elementalist boss)**: boss with no elite skill marked
+- **Frostfire Dryder (mesmer boss)**: boss with no elite skill marked
+- **Frostfire Dryder (necromancer boss)**: boss with no elite skill marked
+- **Fryn Rageflame**: boss with no elite skill marked
+- **Fume Kindleflail**: boss with no elite skill marked
+- **Gack Splotchplunk**: boss with no elite skill marked
+- **Gack the Mindwrecker**: boss with no elite skill marked
+- **Gaiza Deadeye**: boss with no elite skill marked
+- **Galigord Stonestrike**: boss with no elite skill marked
+- **Gambol the Headrainer**: boss with no elite skill marked
+- **Garr the Merciful**: boss with no elite skill marked
+- **Garris Nightwatch**: boss with no elite skill marked
+- **Geck the Coldblooded**: boss with no elite skill marked
+- **Geno Darkheart**: boss with no elite skill marked
+- **Gezna Shadowstalker**: boss with no elite skill marked
+- **Ghast Ashpyre**: boss with no elite skill marked
+- **Ghazal the Corrupter**: boss with no elite skill marked
+- **Ghilaparu Stormstone**: boss with no elite skill marked
+- **Ghita Bonz**: boss with no elite skill marked
+- **Gilroy the Stoic**: boss with no elite skill marked
+- **Ginz Hailflare**: boss with no elite skill marked
+- **Glutt Wallop**: boss with no elite skill marked
+- **Glyd Swiftwing**: boss with no elite skill marked
+- **Gnash Underfoot**: boss with no elite skill marked
+- **Gordac Fleshweaver**: boss with no elite skill marked
+- **Gougi Gakula**: boss with no elite skill marked
+- **Graf Wask Derg**: boss with no elite skill marked
+- **Gralf Angonytip**: boss with no elite skill marked
+- **Grawl**: no NPC infobox
+- **Grawl**: no normal-mode level parsed
+- **Grawl**: no locations parsed
+- **Grawl (pre-Searing)**: no NPC infobox
+- **Grawl (pre-Searing)**: no normal-mode level parsed
+- **Grawl (pre-Searing)**: no locations parsed
+- **Grawl (Pre-Searing)**: no NPC infobox
+- **Grawl (Pre-Searing)**: no normal-mode level parsed
+- **Grawl (Pre-Searing)**: no locations parsed
+- **Grech Trundle**: boss with no elite skill marked
+- **Gren Waveslosh**: no NPC infobox
+- **Gren Waveslosh**: no normal-mode level parsed
+- **Gren Waveslosh**: no locations parsed
+- **Gret Waveringmane**: boss with no elite skill marked
+- **Grook Plugalug**: boss with no elite skill marked
+- **Gryp Wickedwing**: boss with no elite skill marked
+- **Gyst Hurricane**: boss with no elite skill marked
+- **Haja Bloodwail**: boss with no elite skill marked
+- **Harth Mendbranch**: boss with no elite skill marked
+- **Henge Guardian**: boss with no elite skill marked
+- **Hepp Bilespitter**: boss with no elite skill marked
+- **Hew Gruntruck**: boss with no elite skill marked
+- **Holt the Iron Boot Heel**: boss with no elite skill marked
+- **Hops Flameinator**: boss with no elite skill marked
+- **Horm Frostrider**: boss with no elite skill marked
+- **Hoss Rainswell**: boss with no elite skill marked
+- **Hovi Bravetail**: boss with no elite skill marked
+- **Huma Cleansinghoof**: boss with no elite skill marked
+- **Hurl Foulspine**: boss with no elite skill marked
+- **Hussar Ironfeast**: boss with no elite skill marked
+- **Ice Drake**: boss with no elite skill marked
+- **Igg Fecpelter**: boss with no elite skill marked
+- **Igmon Quivcaver**: boss with no elite skill marked
+- **Ignis Phanaura**: boss with no elite skill marked
+- **Ijan the Cursed**: boss with no elite skill marked
+- **Inner Council Member Argyle**: boss with no elite skill marked
+- **Inner Council Member Bolivar**: boss with no elite skill marked
+- **Inner Council Member Cuthbert**: boss with no elite skill marked
+- **Irwyn the Severe**: boss with no elite skill marked
+- **Jaw Smokeskin**: boss with no elite skill marked
+- **Jewk Swem Pleg**: boss with no elite skill marked
+- **Jolo Lighthaunch**: boss with no elite skill marked
+- **Jonk Shuffle**: boss with no elite skill marked
+- **Julen the Devout**: boss with no elite skill marked
+- **Justiciar Hablion**: boss with no elite skill marked
+- **Kara Bloodtail**: boss with no elite skill marked
+- **Kathryn the Cold**: boss with no elite skill marked
+- **Keba Silenthoof**: boss with no elite skill marked
+- **Kemal the Deadened**: boss with no elite skill marked
+- **Kenric the Believer**: boss with no elite skill marked
+- **Kezra Spindleweb**: boss with no elite skill marked
+- **Klaww FeatherStorm**: boss with no elite skill marked
+- **Krogg Shmush (Maguuma Jungle)**: boss with no elite skill marked
+- **Krunk Waddle**: boss with no elite skill marked
+- **Lala Firemane**: boss with no elite skill marked
+- **Lamaan Wickedwail**: boss with no elite skill marked
+- **Laris the Meateater**: boss with no elite skill marked
+- **Larrk Etherburn**: boss with no elite skill marked
+- **Lars the Obeisant**: boss with no elite skill marked
+- **Leaps Thunderclap**: boss with no elite skill marked
+- **Liam Shanglui**: boss with no elite skill marked
+- **Lucid Jewelstone**: boss with no elite skill marked
+- **Lumps Ruinator**: boss with no elite skill marked
+- **Maim Deathrain**: boss with no elite skill marked
+- **Makani Ookook**: boss with no elite skill marked
+- **Malla Arrowmane**: boss with no elite skill marked
+- **Mallet Runecolumn**: boss with no elite skill marked
+- **Manton the Indulgent**: boss with no elite skill marked
+- **Markis**: boss with no elite skill marked
+- **Marr Burnhorn**: boss with no elite skill marked
+- **Marrg Grummbool**: boss with no elite skill marked
+- **Martus Plagueweb**: boss with no elite skill marked
+- **Maul Riptear**: boss with no elite skill marked
+- **Melp the Harpooner**: boss with no elite skill marked
+- **Mina Brillianthaunch**: boss with no elite skill marked
+- **Minotaur (boss)**: boss with no elite skill marked
+- **Mirash Dreambreaker**: boss with no elite skill marked
+- **Mok Waagwaag**: boss with no elite skill marked
+- **Monaru Chippedfang**: boss with no elite skill marked
+- **Mono Ookook**: boss with no elite skill marked
+- **Morg Pebblebound**: boss with no elite skill marked
+- **Morl Grell**: boss with no elite skill marked
+- **Moro Stormcalf**: boss with no elite skill marked
+- **Mossk Rottail**: boss with no elite skill marked
+- **Muga Riptide**: boss with no elite skill marked
+- **Muu Swifthorn**: boss with no elite skill marked
+- **Myrd Brokenfeather**: boss with no elite skill marked
+- **Najja Doombringer**: boss with no elite skill marked
+- **Nalle the Webbed**: boss with no elite skill marked
+- **Nav Sharpquill**: boss with no elite skill marked
+- **Nazeem the Damned**: boss with no elite skill marked
+- **Ness Orangeclaw**: boss with no elite skill marked
+- **Nizza the Sickle**: boss with no elite skill marked
+- **Numa Plaguemane**: boss with no elite skill marked
+- **Nyle the Compassionate**: boss with no elite skill marked
+- **Onan the Spiritless**: boss with no elite skill marked
+- **Onaona Kubkub**: boss with no elite skill marked
+- **Oswald the Amiable**: boss with no elite skill marked
+- **Paka Blackhoof**: boss with no elite skill marked
+- **Palila Uggugg**: boss with no elite skill marked
+- **Pell Glitterglatter**: boss with no elite skill marked
+- **Pello Agileclaw**: boss with no elite skill marked
+- **Perchingbyrd**: boss with no elite skill marked
+- **Phang the Deceiver**: boss with no elite skill marked
+- **Phy Deftcrest**: boss with no elite skill marked
+- **Pleoh the Ugly**: boss with no elite skill marked
+- **Plog Hamfist**: boss with no elite skill marked
+- **Plook Wavebreaker**: boss with no elite skill marked
+- **Plunk Trudge**: boss with no elite skill marked
+- **Poisonbough**: boss with no elite skill marked
+- **Priest of Dagnar**: boss with no elite skill marked
+- **Psion Tanglebranch**: boss with no elite skill marked
+- **Pulv Rubblegrinder**: boss with no elite skill marked
+- **Puugh the Slasher**: boss with no elite skill marked
+- **Qik Sharpclaw**: boss with no elite skill marked
+- **Rage Maulhoof**: boss with no elite skill marked
+- **Rago the Scaled**: boss with no elite skill marked
+- **Raja Crux**: boss with no elite skill marked
+- **Ramm the Benevolent**: boss with no elite skill marked
+- **Ramtha Brokenhoof**: boss with no elite skill marked
+- **Rapa Ironhaunch**: boss with no elite skill marked
+- **Rawr Wildeye**: boss with no elite skill marked
+- **Red Eye the Unholy**: boss with no elite skill marked
+- **Rept Parn Freg**: boss with no elite skill marked
+- **Rif Telourau**: boss with no elite skill marked
+- **Ritt Windmelt**: boss with no elite skill marked
+- **Roarst One Eye**: boss with no elite skill marked
+- **Rock Fist**: boss with no elite skill marked
+- **Rock Ice**: no locations parsed
+- **Rot Chuchau**: boss with no elite skill marked
+- **Rotcap Mochsart**: boss with no elite skill marked
+- **Rrrack Whitefire**: boss with no elite skill marked
+- **Rubi Spottedmane**: boss with no elite skill marked
+- **Ruinwing**: boss with no elite skill marked
+- **Runar Brimstone**: boss with no elite skill marked
+- **Ryn Cursewing**: boss with no elite skill marked
+- **Samira Dhulnarim**: boss with no elite skill marked
+- **Saris Headstaver**: boss with no elite skill marked
+- **Sayad the Bloodless**: boss with no elite skill marked
+- **Scaar Sternclaw**: boss with no elite skill marked
+- **Scint the Malign**: boss with no elite skill marked
+- **Screamingclaw**: boss with no elite skill marked
+- **Selwin the Fervent**: boss with no elite skill marked
+- **Sevv Squallfroth**: boss with no elite skill marked
+- **Sewp the Darktooth**: boss with no elite skill marked
+- **Shadow of Death**: boss with no elite skill marked
+- **Shalis Ironmantle**: boss with no elite skill marked
+- **Sheg Zamn Mada**: boss with no elite skill marked
+- **Skigg the Tongue**: boss with no elite skill marked
+- **Skitt the Skizzle**: boss with no elite skill marked
+- **Skullreaver**: boss with no elite skill marked
+- **Sky Quickfeather**: boss with no elite skill marked
+- **Slaug Firehide**: boss with no elite skill marked
+- **Slikk Sandhopper**: boss with no elite skill marked
+- **Slog Bloodsplatter**: boss with no elite skill marked
+- **Slur Scarchest**: boss with no elite skill marked
+- **Smoke Kindlefist**: boss with no elite skill marked
+- **Smuush Fatfist**: boss with no elite skill marked
+- **Smuuz the Unfeeling**: boss with no elite skill marked
+- **Snap the Braineater**: boss with no elite skill marked
+- **Snow Ettin (monk boss)**: boss with no elite skill marked
+- **Snow Ettin (warrior boss)**: boss with no elite skill marked
+- **Snow Wolf**: no NPC infobox
+- **Snow Wolf**: no normal-mode level parsed
+- **Snow Wolf**: no locations parsed
+- **Spar the Ravager**: boss with no elite skill marked
+- **Spasmo Thunderbolt**: boss with no elite skill marked
+- **spawn**: no NPC infobox
+- **spawn**: no normal-mode level parsed
+- **spawn**: no locations parsed
+- **Spazz Mindrender**: boss with no elite skill marked
+- **Splinterquake**: boss with no elite skill marked
+- **Splintertrunk**: boss with no elite skill marked
+- **Squaw Nimblecrest**: boss with no elite skill marked
+- **Stank Reekfoul**: boss with no elite skill marked
+- **Stig Plopgush**: boss with no elite skill marked
+- **Stik Barkripper**: boss with no elite skill marked
+- **Stoofed Chargehoof**: boss with no elite skill marked
+- **Sul SandStorm**: boss with no elite skill marked
+- **Suurg the Hateful**: boss with no elite skill marked
+- **Swag the Lasher**: boss with no elite skill marked
+- **Swoop Needlegrip**: boss with no elite skill marked
+- **Tachi Forvent**: boss with no elite skill marked
+- **Tama Blessedhoof**: boss with no elite skill marked
+- **Tang Stonecut**: boss with no elite skill marked
+- **Thornwrath**: boss with no elite skill marked
+- **Torch Spitfur**: boss with no elite skill marked
+- **Toris Stonehammer**: boss with no elite skill marked
+- **Torr the Relentless**: boss with no elite skill marked
+- **Trech Schmoogle**: boss with no elite skill marked
+- **Tree of Autumn**: boss with no elite skill marked
+- **Tree of Judgment**: boss with no elite skill marked
+- **Tree of Life**: boss with no elite skill marked
+- **Tree of Memories**: boss with no elite skill marked
+- **Tree of Regrowth**: boss with no elite skill marked
+- **Tree of Renewal**: boss with no elite skill marked
+- **Tree of Solitude**: boss with no elite skill marked
+- **Tree of Vitality**: boss with no elite skill marked
+- **Tree of Winds**: boss with no elite skill marked
+- **Twig Slipfall**: boss with no elite skill marked
+- **Ullo Specterhaunch**: boss with no elite skill marked
+- **Verata the Necromancer**: boss with no elite skill marked
+- **Villnar Painforge**: boss with no elite skill marked
+- **Vizz Vexflume**: boss with no elite skill marked
+- **Vook Foomble**: boss with no elite skill marked
+- **Vrek Qwek Spek**: boss with no elite skill marked
+- **Whiskar Featherstorm**: boss with no elite skill marked
+- **Wind Rider (Maguuma Jungle)**: no NPC infobox
+- **Wind Rider (Maguuma Jungle)**: no normal-mode level parsed
+- **Wind Rider (Maguuma Jungle)**: no locations parsed
+- **Winglord Caromi**: boss with no elite skill marked
+- **Woho Sacredhide**: boss with no elite skill marked
+- **Wydd Kindlerun**: boss with no elite skill marked
+- **Wyng Soothingclaw**: boss with no elite skill marked
+- **Yerk Plopsquirt**: boss with no elite skill marked
+- **Yino Burlyhaunch**: boss with no elite skill marked
+- **Zaim Grimeclaw**: boss with no elite skill marked
+- **Zalo Soulhaunch**: boss with no elite skill marked
+- **Zameel Dirge**: boss with no elite skill marked
+- **Zarr MentalMelt**: boss with no elite skill marked
+- **Zeki Lament**: boss with no elite skill marked
+- **Ziyad Soulreaper**: boss with no elite skill marked
+- **Zukra Cadava**: boss with no elite skill marked
+- **Zwack Ramble**: boss with no elite skill marked
+- **Zyd Pointedbeak**: boss with no elite skill marked
+
+## cross-validation (119 issues on 81 pages)
+
+- **"Fear Me!"**: lists non-Prophecies/unknown trainer "Imuk the Pungent"
+- **"Together as One!"**: elite: no capture source parsed
+- **Aegis**: says Tengsao sells it, but Tengsao's list disagrees
+- **Arcane Mimicry**: says Tengsao sells it, but Tengsao's list disagrees
+- **Blurred Vision**: says Firstwatch Sergio sells it, but Firstwatch Sergio's list disagrees
+- **Brutal Strike**: says Tengsao sells it, but Tengsao's list disagrees
+- **Captain Osric**: offers "Lava Font" but that skill's page doesn't list this trainer
+- **Captain Osric**: offers "Putrid Explosion" but that skill's page doesn't list this trainer
+- **Chain Lightning**: says Tengsao sells it, but Tengsao's list disagrees
+- **Charr Ash Walker**: uses unparsed skill "Jagged Bones"
+- **Crystal Wave**: says Tengsao sells it, but Tengsao's list disagrees
+- **Dakk**: offers "Awaken the Blood" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Blood is Power" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Charm Animal (Codex)" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Crippling Anguish" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Cry of Frustration" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Dark Bond" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Death Nova" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Echo" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Energy Drain" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Energy Surge" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Escape" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Glyph of Concentration" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Grenth's Balance" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Iron Mist" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Lava Font" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Lingering Curse" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Martyr" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Necrotic Traversal" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Putrid Explosion" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Riposte" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Shield of Regeneration" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Signet of Judgment" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Spell Breaker" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Tainted Flesh" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Thunderclap" but that skill's page doesn't list this trainer
+- **Dakk**: offers "Word of Healing" but that skill's page doesn't list this trainer
+- **Deadly Riposte**: says Tengsao sells it, but Tengsao's list disagrees
+- **Deathly Chill**: says Tengsao sells it, but Tengsao's list disagrees
+- **Disciplined Stance**: says Tengsao sells it, but Tengsao's list disagrees
+- **Disrupting Chop**: says Captain Osric sells it, but Captain Osric's list disagrees
+- **Distracting Blow**: says Firstwatch Sergio sells it, but Firstwatch Sergio's list disagrees
+- **Dolyak Signet**: says Firstwatch Sergio sells it, but Firstwatch Sergio's list disagrees
+- **Drain Enchantment**: says Firstwatch Sergio sells it, but Firstwatch Sergio's list disagrees
+- **Enervating Charge**: says Captain Osric sells it, but Captain Osric's list disagrees
+- **Enfeebling Blood**: says Captain Osric sells it, but Captain Osric's list disagrees
+- **Ephaz**: offers "Cry of Frustration" but that skill's page doesn't list this trainer
+- **Epidemic**: says Captain Osric sells it, but Captain Osric's list disagrees
+- **Fertile Season**: says Tengsao sells it, but Tengsao's list disagrees
+- **Firstwatch Sergio**: offers "Necrotic Traversal" but that skill's page doesn't list this trainer
+- **Gammel**: offers "Riposte" but that skill's page doesn't list this trainer
+- **Gorgaan Hatemonger**: uses unparsed skill "Flail"
+- **Gorgaan Hatemonger**: uses unparsed skill "Lion's Comfort"
+- **Heavy Blow**: says Tengsao sells it, but Tengsao's list disagrees
+- **Holy Strike**: says Firstwatch Sergio sells it, but Firstwatch Sergio's list disagrees
+- **Ice Imp**: uses unparsed skill "Frigid Armor"
+- **Immolate**: says Captain Osric sells it, but Captain Osric's list disagrees
+- **Judgment Strike**: elite: no capture source parsed
+- **Kindle Arrows**: says Captain Osric sells it, but Captain Osric's list disagrees
+- **Kinetic Armor**: says Tengsao sells it, but Tengsao's list disagrees
+- **Lakeside County**: neighbor "Ascalon City (outpost)" is not a known location
+- **Lion's Arch**: neighbor "Lion's Arch Keep" is not a known location
+- **Lornar's Pass**: neighbor "The Underworld" is not a known location
+- **Maelstrom**: says Tengsao sells it, but Tengsao's list disagrees
+- **Maiming Strike**: says Tengsao sells it, but Tengsao's list disagrees
+- **Mark of Subversion**: says Firstwatch Sergio sells it, but Firstwatch Sergio's list disagrees
+- **Master Scout Kiera**: offers "Cry of Frustration" but that skill's page doesn't list this trainer
+- **Mazzim**: offers "Awaken the Blood" but that skill's page doesn't list this trainer
+- **Melandru's Assault**: says Firstwatch Sergio sells it, but Firstwatch Sergio's list disagrees
+- **Meteor**: lists non-Prophecies/unknown trainer "Pikin"
+- **North Kryta Province**: neighbor "Beneath Lion's Arch" is not a known location
+- **Penetrating Blow**: lists non-Prophecies/unknown trainer "Fendar Stonestance"
+- **Phoenix**: says Captain Osric sells it, but Captain Osric's list disagrees
+- **Physical Resistance**: says Captain Osric sells it, but Captain Osric's list disagrees
+- **Power Drain**: says Tengsao sells it, but Tengsao's list disagrees
+- **Predator's Pounce**: says Captain Osric sells it, but Captain Osric's list disagrees
+- **Priest of Sorrows**: uses unparsed skill "Resurrect (monster skill)"
+- **Protective Bond**: says Tengsao sells it, but Tengsao's list disagrees
+- **Purge Signet**: says Tengsao sells it, but Tengsao's list disagrees
+- **Restore Life**: says Captain Osric sells it, but Captain Osric's list disagrees
+- **Resurrection Signet**: says Sir Bertran sells it, but Sir Bertran's list disagrees
+- **Resurrection Signet**: says Dakk sells it, but Dakk's list disagrees
+- **Revive Animal**: says Firstwatch Sergio sells it, but Firstwatch Sergio's list disagrees
+- **Scavenger Strike**: says Tengsao sells it, but Tengsao's list disagrees
+- **Seven Weapons Stance**: elite: no capture source parsed
+- **Shock**: says Tengsao sells it, but Tengsao's list disagrees
+- **Signet of Humility**: says Tengsao sells it, but Tengsao's list disagrees
+- **Smoke Kindlefist**: uses unparsed skill "Extinguish"
+- **Spinal Shivers**: says Tengsao sells it, but Tengsao's list disagrees
+- **Steig**: offers "Glyph of Concentration" but that skill's page doesn't list this trainer
+- **Stone Summit Crusher**: uses unparsed skill "Enraging Charge"
+- **Stone Summit Crusher**: uses unparsed skill "Counterattack"
+- **Stone Summit Crusher**: uses unparsed skill "Forceful Blow"
+- **Stone Summit Ranger**: uses unparsed skill "Broad Head Arrow"
+- **Stone Summit Ranger**: uses unparsed skill "Marauder's Shot"
+- **Stoning**: says Firstwatch Sergio sells it, but Firstwatch Sergio's list disagrees
+- **Succor**: says Firstwatch Sergio sells it, but Firstwatch Sergio's list disagrees
+- **Sympathetic Visage**: says Tengsao sells it, but Tengsao's list disagrees
+- **Taag Relicbinder**: uses unparsed skill "Chorus of Restoration"
+- **Taag Relicbinder**: uses unparsed skill "Life Sheath"
+- **Taag Relicbinder**: boss elite "Life Sheath" is not a parsed skill
+- **Temple of the Ages**: neighbor "The Fissure of Woe" is not a known location
+- **Temple of the Ages**: neighbor "The Underworld" is not a known location
+- **Tengsao**: offers "Dark Bond" but that skill's page doesn't list this trainer
+- **Tengsao**: offers "Death Nova" but that skill's page doesn't list this trainer
+- **Tengsao**: offers "Iron Mist" but that skill's page doesn't list this trainer
+- **The Arid Sea**: neighbor "Crystal Overlook" is not a known location
+- **The Breach**: neighbor "Tunnels of the Forsaken" is not a known location
+- **The Falls**: neighbor "Secret Underground Lair" is not a known location
+- **The Northlands**: neighbor "A Bastion In the North" is not a known location
+- **The Northlands**: neighbor "Forsaken Tunnels" is not a known location
+- **The Northlands**: neighbor "A Bastion In the North" is not a known location
+- **Thrill of Victory**: says Tengsao sells it, but Tengsao's list disagrees
+- **Time Ward**: elite: no capture source parsed
+- **Tomb of the Primeval Kings**: neighbor "The Underworld (explorable area)" is not a known location
+- **Unholy Feast**: says Tengsao sells it, but Tengsao's list disagrees
+- **Wary Stance**: says Captain Osric sells it, but Captain Osric's list disagrees
+- **Watchful Spirit**: says Tengsao sells it, but Tengsao's list disagrees
+- **Wizard's Folly**: neighbor "Regent Valley (Pre-Searing)" is not a known location

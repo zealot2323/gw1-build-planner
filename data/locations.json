@@ -1,0 +1,2885 @@
+[
+  {
+    "kind": "town",
+    "name": "Ascalon City",
+    "wikiPage": "Ascalon City",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "neighbors": [
+      "Ascalon Arena (outpost)",
+      "Old Ascalon",
+      "The Great Northern Wall (outpost)"
+    ],
+    "foes": [],
+    "bosses": [],
+    "trainer": "Sir Bertran"
+  },
+  {
+    "kind": "town",
+    "name": "Lion's Arch",
+    "wikiPage": "Lion's Arch",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "neighbors": [
+      "North Kryta Province",
+      "Lion's Gate",
+      "Lion's Arch Keep"
+    ],
+    "foes": [],
+    "bosses": [],
+    "trainer": "Firstwatch Sergio"
+  },
+  {
+    "kind": "town",
+    "name": "Henge of Denravi",
+    "wikiPage": "Henge of Denravi",
+    "campaign": "Prophecies",
+    "region": "Maguuma Jungle",
+    "neighbors": [
+      "Tangle Root"
+    ],
+    "foes": [],
+    "bosses": [],
+    "trainer": "Master Scout Kiera"
+  },
+  {
+    "kind": "town",
+    "name": "The Amnoon Oasis",
+    "wikiPage": "The Amnoon Oasis",
+    "campaign": "Prophecies",
+    "region": "Crystal Desert",
+    "neighbors": [
+      "Prophet's Path"
+    ],
+    "foes": [],
+    "bosses": [],
+    "trainer": "Tengsao"
+  },
+  {
+    "kind": "town",
+    "name": "Droknar's Forge",
+    "wikiPage": "Droknar's Forge",
+    "campaign": "Prophecies",
+    "region": "Southern Shiverpeaks",
+    "neighbors": [
+      "Talus Chute",
+      "Witman's Folly"
+    ],
+    "foes": [],
+    "bosses": [],
+    "trainer": "Bartoch"
+  },
+  {
+    "kind": "outpost",
+    "name": "Ascalon City (pre-Searing)",
+    "wikiPage": "Ascalon City (pre-Searing)",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "neighbors": [
+      "Ascalon Academy",
+      "Lakeside County"
+    ],
+    "foes": [
+      "Charr Flame Wielder",
+      "Charr Axe Fiend",
+      "Charr Stalker"
+    ],
+    "bosses": [],
+    "trainer": "Halbrik"
+  },
+  {
+    "kind": "outpost",
+    "name": "Ashford Abbey",
+    "wikiPage": "Ashford Abbey",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "neighbors": [
+      "Lakeside County",
+      "The Catacombs"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "outpost",
+    "name": "Foible's Fair",
+    "wikiPage": "Foible's Fair",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "neighbors": [
+      "Wizard's Folly"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "outpost",
+    "name": "Fort Ranik (pre-Searing)",
+    "wikiPage": "Fort Ranik (pre-Searing)",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "neighbors": [
+      "Regent Valley (pre-Searing)"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "outpost",
+    "name": "The Barradin Estate",
+    "wikiPage": "The Barradin Estate",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "neighbors": [
+      "Green Hills County"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "outpost",
+    "name": "Piken Square (pre-Searing)",
+    "wikiPage": "Piken Square (pre-Searing)",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "neighbors": [
+      "The Northlands"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "outpost",
+    "name": "Ascalon Arena (outpost)",
+    "wikiPage": "Ascalon Arena (outpost)",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "neighbors": [
+      "Ascalon City"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "outpost",
+    "name": "Beacon's Perch",
+    "wikiPage": "Beacon's Perch",
+    "campaign": "Prophecies",
+    "region": "Northern Shiverpeaks",
+    "neighbors": [
+      "Deldrimor Bowl",
+      "Lornar's Pass"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "outpost",
+    "name": "Beetletun",
+    "wikiPage": "Beetletun",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "neighbors": [
+      "Nebo Terrace",
+      "Watchtower Coast"
+    ],
+    "foes": [],
+    "bosses": [],
+    "trainer": "Ephaz"
+  },
+  {
+    "kind": "outpost",
+    "name": "Bergen Hot Springs",
+    "wikiPage": "Bergen Hot Springs",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "neighbors": [
+      "Nebo Terrace"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "outpost",
+    "name": "Camp Rankor",
+    "wikiPage": "Camp Rankor",
+    "campaign": "Prophecies",
+    "region": "Southern Shiverpeaks",
+    "neighbors": [
+      "Snake Dance",
+      "Talus Chute"
+    ],
+    "foes": [],
+    "bosses": [],
+    "trainer": "Steig"
+  },
+  {
+    "kind": "outpost",
+    "name": "Copperhammer Mines",
+    "wikiPage": "Copperhammer Mines",
+    "campaign": "Prophecies",
+    "region": "Southern Shiverpeaks",
+    "neighbors": [
+      "Frozen Forest",
+      "Spearhead Peak"
+    ],
+    "foes": [],
+    "bosses": [],
+    "trainer": "Gammel"
+  },
+  {
+    "kind": "outpost",
+    "name": "Deldrimor War Camp",
+    "wikiPage": "Deldrimor War Camp",
+    "campaign": "Prophecies",
+    "region": "Southern Shiverpeaks",
+    "neighbors": [
+      "Grenth's Footprint"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "outpost",
+    "name": "Destiny's Gorge",
+    "wikiPage": "Destiny's Gorge",
+    "campaign": "Prophecies",
+    "region": "Crystal Desert",
+    "neighbors": [
+      "Skyward Reach",
+      "The Scar"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "outpost",
+    "name": "Druid's Overlook",
+    "wikiPage": "Druid's Overlook",
+    "campaign": "Prophecies",
+    "region": "Maguuma Jungle",
+    "neighbors": [
+      "Sage Lands"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "outpost",
+    "name": "Ember Light Camp",
+    "wikiPage": "Ember Light Camp",
+    "campaign": "Prophecies",
+    "region": "Ring of Fire Islands",
+    "neighbors": [
+      "Perdition Rock"
+    ],
+    "foes": [],
+    "bosses": [],
+    "trainer": "Dakk"
+  },
+  {
+    "kind": "outpost",
+    "name": "Fishermen's Haven",
+    "wikiPage": "Fishermen's Haven",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "neighbors": [
+      "Stingray Strand"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "outpost",
+    "name": "Frontier Gate",
+    "wikiPage": "Frontier Gate",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "neighbors": [
+      "Eastern Frontier"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "outpost",
+    "name": "Grendich Courthouse",
+    "wikiPage": "Grendich Courthouse",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "neighbors": [
+      "Diessa Lowlands"
+    ],
+    "foes": [],
+    "bosses": [],
+    "trainer": "Taltosh"
+  },
+  {
+    "kind": "outpost",
+    "name": "Heroes' Audience",
+    "wikiPage": "Heroes' Audience",
+    "campaign": "Prophecies",
+    "region": "Crystal Desert",
+    "neighbors": [
+      "Prophet's Path"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "outpost",
+    "name": "Ice Tooth Cave",
+    "wikiPage": "Ice Tooth Cave",
+    "campaign": "Prophecies",
+    "region": "Northern Shiverpeaks",
+    "neighbors": [
+      "Anvil Rock"
+    ],
+    "foes": [],
+    "bosses": [],
+    "trainer": "Marna"
+  },
+  {
+    "kind": "outpost",
+    "name": "Maguuma Stade",
+    "wikiPage": "Maguuma Stade",
+    "campaign": "Prophecies",
+    "region": "Maguuma Jungle",
+    "neighbors": [
+      "Tangle Root"
+    ],
+    "foes": [],
+    "bosses": [],
+    "trainer": "Avena"
+  },
+  {
+    "kind": "outpost",
+    "name": "Marhan's Grotto",
+    "wikiPage": "Marhan's Grotto",
+    "campaign": "Prophecies",
+    "region": "Southern Shiverpeaks",
+    "neighbors": [
+      "Ice Floe"
+    ],
+    "foes": [],
+    "bosses": [],
+    "trainer": "Harnil"
+  },
+  {
+    "kind": "outpost",
+    "name": "Piken Square",
+    "wikiPage": "Piken Square",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "neighbors": [
+      "The Breach"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "outpost",
+    "name": "Port Sledge",
+    "wikiPage": "Port Sledge",
+    "campaign": "Prophecies",
+    "region": "Southern Shiverpeaks",
+    "neighbors": [
+      "Witman's Folly"
+    ],
+    "foes": [],
+    "bosses": [],
+    "trainer": "Thengen"
+  },
+  {
+    "kind": "outpost",
+    "name": "Quarrel Falls",
+    "wikiPage": "Quarrel Falls",
+    "campaign": "Prophecies",
+    "region": "Maguuma Jungle",
+    "neighbors": [
+      "Silverwood"
+    ],
+    "foes": [],
+    "bosses": [],
+    "trainer": "Sorim"
+  },
+  {
+    "kind": "outpost",
+    "name": "Sardelac Sanitarium",
+    "wikiPage": "Sardelac Sanitarium",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "neighbors": [
+      "Old Ascalon"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "outpost",
+    "name": "Seeker's Passage",
+    "wikiPage": "Seeker's Passage",
+    "campaign": "Prophecies",
+    "region": "Crystal Desert",
+    "neighbors": [
+      "Salt Flats"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "outpost",
+    "name": "Serenity Temple",
+    "wikiPage": "Serenity Temple",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "neighbors": [
+      "Pockmark Flats"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "outpost",
+    "name": "Shiverpeak Arena (outpost)",
+    "wikiPage": "Shiverpeak Arena (outpost)",
+    "campaign": "Prophecies",
+    "region": "Northern Shiverpeaks",
+    "neighbors": [
+      "Yak's Bend"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "outpost",
+    "name": "Temple of the Ages",
+    "wikiPage": "Temple of the Ages",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "neighbors": [
+      "The Black Curtain",
+      "The Fissure of Woe",
+      "The Underworld"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "outpost",
+    "name": "The Granite Citadel",
+    "wikiPage": "The Granite Citadel",
+    "campaign": "Prophecies",
+    "region": "Southern Shiverpeaks",
+    "neighbors": [
+      "Spearhead Peak",
+      "Tasca's Demise"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "outpost",
+    "name": "Tomb of the Primeval Kings",
+    "wikiPage": "Tomb of the Primeval Kings",
+    "campaign": "Prophecies",
+    "region": "Crystal Desert",
+    "neighbors": [
+      "The Dragon's Lair (outpost)",
+      "The Underworld (explorable area)"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "outpost",
+    "name": "Ventari's Refuge",
+    "wikiPage": "Ventari's Refuge",
+    "campaign": "Prophecies",
+    "region": "Maguuma Jungle",
+    "neighbors": [
+      "Ettin's Back"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "outpost",
+    "name": "Yak's Bend",
+    "wikiPage": "Yak's Bend",
+    "campaign": "Prophecies",
+    "region": "Northern Shiverpeaks",
+    "neighbors": [
+      "Shiverpeak Arena (outpost)",
+      "Traveler's Vale"
+    ],
+    "foes": [],
+    "bosses": [],
+    "trainer": "Captain Osric"
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "Abaddon's Mouth (outpost)",
+    "wikiPage": "Abaddon's Mouth (outpost)",
+    "campaign": "Prophecies",
+    "region": "Ring of Fire Islands",
+    "neighbors": [],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "Augury Rock (outpost)",
+    "wikiPage": "Augury Rock (outpost)",
+    "campaign": "Prophecies",
+    "region": "Crystal Desert",
+    "neighbors": [
+      "Augury Rock (outpost)",
+      "Prophet's Path",
+      "Skyward Reach"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "Aurora Glade (outpost)",
+    "wikiPage": "Aurora Glade (outpost)",
+    "campaign": "Prophecies",
+    "region": "Maguuma Jungle",
+    "neighbors": [
+      "Ettin's Back"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "Bloodstone Fen (outpost)",
+    "wikiPage": "Bloodstone Fen (outpost)",
+    "campaign": "Prophecies",
+    "region": "Maguuma Jungle",
+    "neighbors": [
+      "Silverwood"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "Borlis Pass (outpost)",
+    "wikiPage": "Borlis Pass (outpost)",
+    "campaign": "Prophecies",
+    "region": "Northern Shiverpeaks",
+    "neighbors": [
+      "Traveler's Vale"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "D'Alessio Seaboard (outpost)",
+    "wikiPage": "D'Alessio Seaboard (outpost)",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "neighbors": [
+      "North Kryta Province"
+    ],
+    "foes": [
+      "Grasping Ghoul"
+    ],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "Divinity Coast (outpost)",
+    "wikiPage": "Divinity Coast (outpost)",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "neighbors": [
+      "Watchtower Coast"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "Dunes of Despair (outpost)",
+    "wikiPage": "Dunes of Despair (outpost)",
+    "campaign": "Prophecies",
+    "region": "Crystal Desert",
+    "neighbors": [
+      "Vulture Drifts"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "Elona Reach (outpost)",
+    "wikiPage": "Elona Reach (outpost)",
+    "campaign": "Prophecies",
+    "region": "Crystal Desert",
+    "neighbors": [
+      "Diviner's Ascent"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "Fort Ranik (outpost)",
+    "wikiPage": "Fort Ranik (outpost)",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "neighbors": [
+      "Regent Valley"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "Gates of Kryta (outpost)",
+    "wikiPage": "Gates of Kryta (outpost)",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "neighbors": [
+      "Scoundrel's Rise"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "Hell's Precipice (outpost)",
+    "wikiPage": "Hell's Precipice (outpost)",
+    "campaign": "Prophecies",
+    "region": "Ring of Fire Islands",
+    "neighbors": [],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "Ice Caves of Sorrow (outpost)",
+    "wikiPage": "Ice Caves of Sorrow (outpost)",
+    "campaign": "Prophecies",
+    "region": "Southern Shiverpeaks",
+    "neighbors": [
+      "Talus Chute"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "Iron Mines of Moladune (outpost)",
+    "wikiPage": "Iron Mines of Moladune (outpost)",
+    "campaign": "Prophecies",
+    "region": "Southern Shiverpeaks",
+    "neighbors": [
+      "Frozen Forest"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "Nolani Academy (outpost)",
+    "wikiPage": "Nolani Academy (outpost)",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "neighbors": [
+      "Diessa Lowlands"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "Ring of Fire (outpost)",
+    "wikiPage": "Ring of Fire (outpost)",
+    "campaign": "Prophecies",
+    "region": "Ring of Fire Islands",
+    "neighbors": [],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "Riverside Province (outpost)",
+    "wikiPage": "Riverside Province (outpost)",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "neighbors": [
+      "Twin Serpent Lakes"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "Ruins of Surmia (outpost)",
+    "wikiPage": "Ruins of Surmia (outpost)",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "neighbors": [
+      "Eastern Frontier"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "Sanctum Cay (outpost)",
+    "wikiPage": "Sanctum Cay (outpost)",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "neighbors": [
+      "Stingray Strand"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "The Dragon's Lair (outpost)",
+    "wikiPage": "The Dragon's Lair (outpost)",
+    "campaign": "Prophecies",
+    "region": "Crystal Desert",
+    "neighbors": [
+      "Tomb of the Primeval Kings"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "The Frost Gate (outpost)",
+    "wikiPage": "The Frost Gate (outpost)",
+    "campaign": "Prophecies",
+    "region": "Northern Shiverpeaks",
+    "neighbors": [
+      "Anvil Rock"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "The Great Northern Wall (outpost)",
+    "wikiPage": "The Great Northern Wall (outpost)",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "neighbors": [
+      "Ascalon City"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "The Wilds (outpost)",
+    "wikiPage": "The Wilds (outpost)",
+    "campaign": "Prophecies",
+    "region": "Maguuma Jungle",
+    "neighbors": [
+      "Sage Lands"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "Thirsty River (outpost)",
+    "wikiPage": "Thirsty River (outpost)",
+    "campaign": "Prophecies",
+    "region": "Crystal Desert",
+    "neighbors": [
+      "The Scar"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "mission-outpost",
+    "name": "Thunderhead Keep (outpost)",
+    "wikiPage": "Thunderhead Keep (outpost)",
+    "campaign": "Prophecies",
+    "region": "Southern Shiverpeaks",
+    "neighbors": [
+      "Ice Floe"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "explorable",
+    "name": "Ascalon Academy",
+    "wikiPage": "Ascalon Academy",
+    "campaign": null,
+    "region": null,
+    "neighbors": [],
+    "foes": [
+      "Grawl (Ascalon)",
+      "Grawl (pre-Searing)",
+      "Grawl Longspear",
+      "Grawl Shaman"
+    ],
+    "bosses": [
+      "Vatlaaw Doomtooth"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Green Hills County",
+    "wikiPage": "Green Hills County",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "neighbors": [
+      "Lakeside County",
+      "The Barradin Estate",
+      "The Catacombs",
+      "Wizard's Folly"
+    ],
+    "foes": [
+      "Stone Elemental",
+      "Hulking Stone Elemental",
+      "Grawl (Pre-Searing)",
+      "Grawl Invader",
+      "Grawl Longspear",
+      "Grawl Shaman",
+      "Bandit Blood Sworn",
+      "Bandit Firestarter",
+      "Bandit Raider",
+      "Aloe Husk",
+      "Aloe Seed"
+    ],
+    "bosses": []
+  },
+  {
+    "kind": "explorable",
+    "name": "Lakeside County",
+    "wikiPage": "Lakeside County",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "neighbors": [
+      "Ascalon City (outpost)",
+      "Ashford Abbey",
+      "Green Hills County",
+      "Regent Valley (pre-Searing)",
+      "The Northlands",
+      "Wizard's Folly"
+    ],
+    "foes": [
+      "Rogue Bull",
+      "Carrion Devourer",
+      "Diseased Devourer",
+      "Lash Devourer",
+      "River Drake",
+      "Grawl (Pre-Searing)",
+      "Grawl Longspear",
+      "Bandit Raider",
+      "Bandit Firestarter",
+      "Aloe Seed",
+      "River Skale Tad",
+      "River Skale Queen",
+      "River Skale",
+      "Skale Broodcaller",
+      "River Skale Brood",
+      "Plague Worm"
+    ],
+    "bosses": []
+  },
+  {
+    "kind": "explorable",
+    "name": "Regent Valley (pre-Searing)",
+    "wikiPage": "Regent Valley (pre-Searing)",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "neighbors": [
+      "Fort Ranik (pre-Searing)",
+      "Lakeside County",
+      "Wizard's Folly"
+    ],
+    "foes": [
+      "Moss Spider (pre-Searing)",
+      "Giant Tree Spider",
+      "Giant Needle Spider",
+      "Carrion Devourer",
+      "Lash Devourer",
+      "Grawl",
+      "Grawl Longspear",
+      "Grawl Shaman",
+      "Bandit Blood Sworn",
+      "Bandit Raider",
+      "Bandit Firestarter",
+      "Aloe Seed",
+      "Aloe Husk",
+      "Oakheart (Ascalon)",
+      "River Skale",
+      "Skale Broodcaller"
+    ],
+    "bosses": []
+  },
+  {
+    "kind": "explorable",
+    "name": "The Catacombs",
+    "wikiPage": "The Catacombs",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "neighbors": [
+      "Ashford Abbey",
+      "Wizard's Folly",
+      "Green Hills County"
+    ],
+    "foes": [
+      "Deadly Crypt Spider",
+      "Carrion Devourer",
+      "Snapping Devourer",
+      "Diseased Devourer",
+      "Gargoyle (NPC)",
+      "Shatter Gargoyle",
+      "Crypt Fiend",
+      "Tomb Nightmare",
+      "Restless Corpse",
+      "Raging Cadaver"
+    ],
+    "bosses": [
+      "Skullreaver"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "The Northlands",
+    "wikiPage": "The Northlands",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "neighbors": [
+      "Lakeside County",
+      "Piken Square (pre-Searing)",
+      "A Bastion In the North",
+      "Forsaken Tunnels",
+      "A Bastion In the North"
+    ],
+    "foes": [
+      "Charr Axe Fiend",
+      "Charr Blade Storm",
+      "Charr Hunter",
+      "Charr Shaman",
+      "Charr Ashen Claw",
+      "Charr Chaot",
+      "Grawl (pre-Searing)",
+      "Grawl Fighter",
+      "Grawl Longspear",
+      "Grawl Shaman",
+      "Grawl Crone",
+      "Bandit Bruiser",
+      "Bandit Captain",
+      "Bandit Enforcer",
+      "Bandit Firebug",
+      "Oakheart (Ascalon)",
+      "Ironheart",
+      "Cave Elemental"
+    ],
+    "bosses": [
+      "Blaze Bloodbane",
+      "Red Eye the Unholy",
+      "Ghast Ashpyre",
+      "Jaw Smokeskin"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Wizard's Folly",
+    "wikiPage": "Wizard's Folly",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "neighbors": [
+      "Foible's Fair",
+      "Green Hills County",
+      "Lakeside County",
+      "Regent Valley (Pre-Searing)",
+      "The Catacombs"
+    ],
+    "foes": [
+      "Giant Needle Spider",
+      "Hulking Stone Elemental",
+      "Ice Elemental (pre-Searing)",
+      "Stone Elemental",
+      "Ice Elemental Shard",
+      "Tower Golem",
+      "Bandit Blood Sworn",
+      "Bandit Raider",
+      "Bandit Firestarter",
+      "Large Aloe Seed",
+      "Aloe Husk",
+      "Aloe Seed",
+      "River Skale Brood",
+      "Skale Broodcaller",
+      "River Skale"
+    ],
+    "bosses": []
+  },
+  {
+    "kind": "explorable",
+    "name": "Ascalon Foothills",
+    "wikiPage": "Ascalon Foothills",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "neighbors": [
+      "Diessa Lowlands",
+      "Traveler's Vale"
+    ],
+    "foes": [
+      "Boulder Elemental",
+      "Stone Fury",
+      "Hydra (Ascalon)",
+      "Singed Oak"
+    ],
+    "bosses": []
+  },
+  {
+    "kind": "explorable",
+    "name": "Diessa Lowlands",
+    "wikiPage": "Diessa Lowlands",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "neighbors": [
+      "Ascalon Foothills",
+      "Flame Temple Corridor",
+      "Grendich Courthouse",
+      "Nolani Academy (outpost)",
+      "The Breach"
+    ],
+    "foes": [
+      "Charr Axe Fiend",
+      "Charr Axe Warrior",
+      "Charr Blade Storm",
+      "Charr Blade Warrior",
+      "Charr Hunter",
+      "Charr Stalker",
+      "Charr Martyr",
+      "Charr Shaman",
+      "Charr Ash Walker",
+      "Charr Ashen Claw",
+      "Charr Chaot",
+      "Charr Mind Spark",
+      "Charr Fire Caller",
+      "Charr Flame Wielder",
+      "Carrion Devourer",
+      "Whiptail Devourer",
+      "Plague Devourer",
+      "Boulder Elemental",
+      "Stone Elemental",
+      "Stone Fury",
+      "Resurrect Gargoyle",
+      "Shatter Gargoyle",
+      "Flash Gargoyle",
+      "Hydra (Ascalon)",
+      "Singed Oak",
+      "Storm Rider"
+    ],
+    "bosses": [
+      "Lumps Ruinator",
+      "Maim Deathrain",
+      "Cruc the Reborn",
+      "Smuuz the Unfeeling",
+      "Phang the Deceiver",
+      "Smoke Kindlefist",
+      "Pulv Rubblegrinder",
+      "Drub Slingstone",
+      "Clob Stonearch",
+      "Slog Bloodsplatter",
+      "Igmon Quivcaver",
+      "Mallet Runecolumn",
+      "Rif Telourau",
+      "Ignis Phanaura",
+      "Spasmo Thunderbolt"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Dragon's Gullet",
+    "wikiPage": "Dragon's Gullet",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "neighbors": [
+      "Flame Temple Corridor"
+    ],
+    "foes": [
+      "Abomination (NPC)",
+      "Tar Behemoth",
+      "Charr Axe Fiend",
+      "Charr Blade Storm",
+      "Charr Hunter",
+      "Charr Shaman",
+      "Charr Ashen Claw",
+      "Charr Flame Wielder",
+      "Hydra (Ascalon)",
+      "Storm Rider"
+    ],
+    "bosses": [
+      "Morl Grell",
+      "Shist Bogsifter",
+      "Vrek Qwek Spek",
+      "Gyst Hurricane",
+      "Ritt Windmelt"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Eastern Frontier",
+    "wikiPage": "Eastern Frontier",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "neighbors": [
+      "Frontier Gate",
+      "Pockmark Flats",
+      "Ruins of Surmia (outpost)"
+    ],
+    "foes": [
+      "Charr Axe Fiend",
+      "Charr Axe Warrior",
+      "Charr Blade Storm",
+      "Charr Blade Warrior",
+      "Charr Hunter",
+      "Charr Stalker",
+      "Charr Martyr",
+      "Charr Shaman",
+      "Charr Ash Walker",
+      "Charr Ashen Claw",
+      "Charr Chaot",
+      "Charr Fire Caller",
+      "Charr Flame Wielder",
+      "Carrion Devourer",
+      "Whiptail Devourer",
+      "Plague Devourer",
+      "Grawl (Ascalon)",
+      "Grawl Ulodyte"
+    ],
+    "bosses": [
+      "Rrrack Whitefire",
+      "Scint the Malign",
+      "Slaug Firehide",
+      "Gnash Underfoot",
+      "Hurl Foulspine",
+      "Fester Fang"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Flame Temple Corridor",
+    "wikiPage": "Flame Temple Corridor",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "neighbors": [
+      "Diessa Lowlands",
+      "Dragon's Gullet"
+    ],
+    "foes": [
+      "Charr Axe Fiend",
+      "Charr Blade Storm",
+      "Charr Hunter",
+      "Charr Shaman",
+      "Charr Ashen Claw",
+      "Charr Chaot",
+      "Charr Flame Wielder",
+      "Hydra (Ascalon)"
+    ],
+    "bosses": []
+  },
+  {
+    "kind": "explorable",
+    "name": "Old Ascalon",
+    "wikiPage": "Old Ascalon",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "neighbors": [
+      "Ascalon City",
+      "Regent Valley",
+      "Sardelac Sanitarium",
+      "The Breach"
+    ],
+    "foes": [
+      "Charr Axe Warrior",
+      "Charr Stalker",
+      "Carrion Devourer",
+      "Whiptail Devourer",
+      "Plague Devourer",
+      "Hulking Stone Elemental",
+      "Flash Gargoyle",
+      "Shatter Gargoyle",
+      "Grawl (Ascalon)",
+      "Grawl Ulodyte",
+      "Crown of Thorns"
+    ],
+    "bosses": [
+      "Rot Chuchau",
+      "Stig Plopgush",
+      "Cobble Poundstone",
+      "Flint Touchstone",
+      "Rif Telourau",
+      "Ignis Phanaura",
+      "Anani Mokmok",
+      "Mono Ookook",
+      "Palila Uggugg",
+      "Gougi Gakula",
+      "Mok Waagwaag",
+      "Bonetti"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Pockmark Flats",
+    "wikiPage": "Pockmark Flats",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "neighbors": [
+      "Eastern Frontier",
+      "Regent Valley",
+      "Serenity Temple"
+    ],
+    "foes": [
+      "Carrion Devourer",
+      "Crimson Devourer",
+      "Whiptail Devourer",
+      "Plague Devourer",
+      "Hulking Stone Elemental",
+      "Stone Elemental",
+      "Shatter Gargoyle",
+      "Flash Gargoyle",
+      "Resurrect Gargoyle",
+      "Storm Rider"
+    ],
+    "bosses": [
+      "Gnash Underfoot",
+      "Hurl Foulspine",
+      "Fester Fang",
+      "Rif Telourau",
+      "Spasmo Thunderbolt",
+      "Larrk Etherburn"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Regent Valley",
+    "wikiPage": "Regent Valley",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "neighbors": [
+      "Fort Ranik (outpost)",
+      "Old Ascalon",
+      "Pockmark Flats"
+    ],
+    "foes": [
+      "Charr Axe Warrior",
+      "Charr Blade Warrior",
+      "Charr Ash Walker",
+      "Carrion Devourer",
+      "Whiptail Devourer",
+      "Plague Devourer",
+      "Hulking Stone Elemental",
+      "Shatter Gargoyle",
+      "Grawl (Ascalon)",
+      "Grawl Heretic",
+      "Grawl Petitioner (warrior)",
+      "Grawl High Priest",
+      "Grawl Petitioner (monk)",
+      "Grawl Ulodyte",
+      "Renegade",
+      "Renegade Elementalist",
+      "Storm Rider"
+    ],
+    "bosses": []
+  },
+  {
+    "kind": "explorable",
+    "name": "The Breach",
+    "wikiPage": "The Breach",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "neighbors": [
+      "Diessa Lowlands",
+      "Old Ascalon",
+      "Piken Square",
+      "Tunnels of the Forsaken"
+    ],
+    "foes": [
+      "Tar Behemoth",
+      "Charr Axe Warrior",
+      "Charr Blade Warrior",
+      "Charr Hunter",
+      "Charr Stalker",
+      "Charr Martyr",
+      "Charr Overseer",
+      "Charr Ash Walker",
+      "Charr Ashen Claw",
+      "Charr Mind Spark",
+      "Charr Fire Caller",
+      "Charr Flame Wielder",
+      "Carrion Devourer",
+      "Plague Devourer",
+      "Resurrect Gargoyle",
+      "Flash Gargoyle",
+      "Crown of Thorns"
+    ],
+    "bosses": [
+      "Gorgaan Hatemonger",
+      "Drim Cindershot",
+      "Taag Relicbinder",
+      "Cess Corpselighter",
+      "Mirash Dreambreaker",
+      "Suurg the Hateful"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Anvil Rock",
+    "wikiPage": "Anvil Rock",
+    "campaign": "Prophecies",
+    "region": "Northern Shiverpeaks",
+    "neighbors": [
+      "Deldrimor Bowl",
+      "Ice Tooth Cave",
+      "Iron Horse Mine",
+      "The Frost Gate (outpost)"
+    ],
+    "foes": [
+      "Snow Wolf",
+      "Shiverpeak Warrior",
+      "Shiverpeak Longbow",
+      "Shiverpeak Protector",
+      "Frostfire Dryder",
+      "Stone Summit Crusher",
+      "Summit Axe Wielder",
+      "Summit Beastmaster",
+      "Stone Summit Scout",
+      "Dolyak Rider",
+      "Stone Summit Howler",
+      "Stone Summit Sage",
+      "Minotaur (Shiverpeaks)"
+    ],
+    "bosses": [
+      "Rubi Spottedmane",
+      "Jolo Lighthaunch",
+      "Frostfire Dryder (mesmer boss)",
+      "Frostfire Dryder (elementalist boss)",
+      "Riine Windrot",
+      "Minotaur (boss)"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Deldrimor Bowl",
+    "wikiPage": "Deldrimor Bowl",
+    "campaign": "Prophecies",
+    "region": "Northern Shiverpeaks",
+    "neighbors": [
+      "Anvil Rock",
+      "Beacon's Perch",
+      "Griffon's Mouth"
+    ],
+    "foes": [
+      "Shiverpeak Warrior",
+      "Shiverpeak Longbow",
+      "Shiverpeak Protector",
+      "Snow Ettin"
+    ],
+    "bosses": [
+      "Yino Burlyhaunch",
+      "Rubi Spottedmane",
+      "Jolo Lighthaunch",
+      "Geno Darkheart",
+      "Ullo Specterhaunch",
+      "Moro Stormcalf"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Griffon's Mouth",
+    "wikiPage": "Griffon's Mouth",
+    "campaign": "Prophecies",
+    "region": "Northern Shiverpeaks",
+    "neighbors": [
+      "Deldrimor Bowl",
+      "Scoundrel's Rise"
+    ],
+    "foes": [
+      "Ice Golem",
+      "Snow Ettin"
+    ],
+    "bosses": [
+      "Whiskar Featherstorm",
+      "Snow Ettin (warrior boss)",
+      "Snow Ettin (monk boss)"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Iron Horse Mine",
+    "wikiPage": "Iron Horse Mine",
+    "campaign": "Prophecies",
+    "region": "Northern Shiverpeaks",
+    "neighbors": [
+      "Anvil Rock",
+      "Traveler's Vale"
+    ],
+    "foes": [
+      "Frostfire Dryder",
+      "Stone Summit Crusher",
+      "Summit Axe Wielder",
+      "Summit Beastmaster",
+      "Stone Summit Scout",
+      "Dolyak Rider",
+      "Stone Summit Howler",
+      "Stone Summit Sage",
+      "Ice Golem",
+      "Snow Ettin",
+      "Minotaur (Shiverpeaks)"
+    ],
+    "bosses": [
+      "Frostfire Dryder (necromancer boss)",
+      "Frostfire Dryder (mesmer boss)",
+      "Frostfire Dryder (elementalist boss)",
+      "Fendar Stonestance",
+      "Garris Nightwatch",
+      "Shalis Ironmantle"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Traveler's Vale",
+    "wikiPage": "Traveler's Vale",
+    "campaign": "Prophecies",
+    "region": "Northern Shiverpeaks",
+    "neighbors": [
+      "Ascalon Foothills",
+      "Borlis Pass (outpost)",
+      "Iron Horse Mine",
+      "Yak's Bend"
+    ],
+    "foes": [
+      "Shiverpeak Warrior",
+      "Shiverpeak Longbow",
+      "Stone Summit Crusher",
+      "Summit Axe Wielder",
+      "Stone Summit Scout",
+      "Stone Summit Howler",
+      "Stone Summit Sage",
+      "Ice Golem",
+      "Juniper Bark"
+    ],
+    "bosses": [
+      "Toris Stonehammer",
+      "Ulhar Stonehound",
+      "Hussar Ironfeast",
+      "Riine Windrot",
+      "Saris Headstaver",
+      "The Judge"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Cursed Lands",
+    "wikiPage": "Cursed Lands",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "neighbors": [
+      "Nebo Terrace",
+      "The Black Curtain"
+    ],
+    "foes": [
+      "Wraith",
+      "Smoke Phantom",
+      "Oakheart (Kryta)",
+      "Ancient Oakheart",
+      "Large Spined Aloe",
+      "Spined Aloe",
+      "Reed Stalker",
+      "Hellhound",
+      "Skeleton Bowmaster",
+      "Skeleton Ranger",
+      "Skeleton Monk",
+      "Skeleton Mesmer",
+      "Skeleton Sorcerer",
+      "Executioner",
+      "Grasping Ghoul",
+      "Damned Cleric",
+      "Necrid Horseman",
+      "Zombie Warlock"
+    ],
+    "bosses": []
+  },
+  {
+    "kind": "explorable",
+    "name": "Kessex Peak",
+    "wikiPage": "Kessex Peak",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "neighbors": [
+      "The Black Curtain"
+    ],
+    "foes": [
+      "Hill Giant",
+      "Eyes of Verata",
+      "Shepherd of Verata",
+      "Apprentice of Verata",
+      "Sage of Verata",
+      "Forest Minotaur",
+      "Fog Nightmare",
+      "Ancient Oakheart",
+      "Spined Aloe",
+      "Reed Stalker",
+      "Fen Troll"
+    ],
+    "bosses": [
+      "Morg Pebblebound",
+      "Liam Shanglui",
+      "Verata the Necromancer",
+      "Tachi Forvent",
+      "Samira Dhulnarim",
+      "Murk Darkshriek",
+      "Plog Hamfist"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Lion's Gate",
+    "wikiPage": "Lion's Gate",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "neighbors": [
+      "Lion's Arch"
+    ],
+    "foes": [],
+    "bosses": []
+  },
+  {
+    "kind": "explorable",
+    "name": "Nebo Terrace",
+    "wikiPage": "Nebo Terrace",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "neighbors": [
+      "Beetletun",
+      "Bergen Hot Springs",
+      "Cursed Lands",
+      "North Kryta Province"
+    ],
+    "foes": [
+      "Gypsie Ettin",
+      "Mergoyle",
+      "Mergoyle Wavebreaker",
+      "Wraith",
+      "Inferno Imp",
+      "Spined Aloe",
+      "Bog Skale",
+      "Bog Skale Icetooth",
+      "Hellhound",
+      "Skeleton Bowmaster",
+      "Skeleton Ranger",
+      "Skeleton Monk",
+      "Skeleton Mesmer",
+      "Skeleton Sorcerer",
+      "Caromi Tengu Brave",
+      "Caromi Tengu Scout",
+      "Caromi Tengu Wild",
+      "Grasping Ghoul",
+      "Necrid Horseman",
+      "Zombie Warlock"
+    ],
+    "bosses": [
+      "Glutt Wallop",
+      "Yerk Plopsquirt",
+      "Twig Slipfall",
+      "Tree of Solitude",
+      "Gambol the Headrainer",
+      "Skitt the Skizzle",
+      "Dahr the Diseased",
+      "Boulad the Perverse",
+      "Azibo Painfeast",
+      "Aziz Rottenscalp",
+      "Wyng Soothingclaw",
+      "Ryn Cursewing",
+      "Flyt Stormbeak",
+      "Asad the Ignoble",
+      "Amir the Overripe"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "North Kryta Province",
+    "wikiPage": "North Kryta Province",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "neighbors": [
+      "Beneath Lion's Arch",
+      "D'Alessio Seaboard (outpost)",
+      "Lion's Arch",
+      "Nebo Terrace",
+      "Scoundrel's Rise"
+    ],
+    "foes": [
+      "Gypsie Ettin",
+      "Mergoyle",
+      "Fire Imp",
+      "Inferno Imp",
+      "Fog Nightmare",
+      "Spined Aloe",
+      "Ancient Oakheart",
+      "Reed Stalker",
+      "Bog Skale",
+      "Caromi Tengu Brave",
+      "Caromi Tengu Scout",
+      "Caromi Tengu Wild"
+    ],
+    "bosses": [
+      "Smuush Fatfist",
+      "Leaps Thunderclap",
+      "Slikk Sandhopper",
+      "Cella the Hooded",
+      "Geck the Coldblooded",
+      "Laris the Meateater",
+      "Nav Sharpquill",
+      "Squaw Nimblecrest",
+      "Swoop Needlegrip",
+      "Rawr Wildeye",
+      "Pello Agileclaw",
+      "Chuff Quickbeak"
+    ],
+    "trainer": "Captain Greywind"
+  },
+  {
+    "kind": "explorable",
+    "name": "Scoundrel's Rise",
+    "wikiPage": "Scoundrel's Rise",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "neighbors": [
+      "Gates of Kryta (outpost)",
+      "Griffon's Mouth",
+      "North Kryta Province"
+    ],
+    "foes": [
+      "Mergoyle",
+      "Mergoyle Wavebreaker",
+      "Bog Skale",
+      "Bog Skale Blighter"
+    ],
+    "bosses": []
+  },
+  {
+    "kind": "explorable",
+    "name": "Stingray Strand",
+    "wikiPage": "Stingray Strand",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "neighbors": [
+      "Fishermen's Haven",
+      "Sanctum Cay (outpost)",
+      "Tears of the Fallen"
+    ],
+    "foes": [
+      "Lightning Drake",
+      "Inferno Imp",
+      "Oakheart (Kryta)",
+      "Large Spined Aloe",
+      "Bog Skale Blighter",
+      "Bog Skale Icetooth",
+      "Caromi Tengu Brave",
+      "Caromi Tengu Elite",
+      "Caromi Tengu Fierce",
+      "Caromi Tengu Scout",
+      "Caromi Tengu Seer",
+      "Caromi Tengu Wild"
+    ],
+    "bosses": [
+      "Myrd Brokenfeather",
+      "Phy Deftcrest",
+      "Zyd Pointedbeak",
+      "Gryp Wickedwing",
+      "Asynd Blindingclaw",
+      "Qik Sharpclaw"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Talmark Wilderness",
+    "wikiPage": "Talmark Wilderness",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "neighbors": [
+      "Majesty's Rest",
+      "Tears of the Fallen",
+      "The Black Curtain"
+    ],
+    "foes": [
+      "Mergoyle",
+      "Inferno Imp",
+      "Forest Minotaur",
+      "Fog Nightmare",
+      "Ancient Oakheart",
+      "Bog Skale",
+      "Bog Skale Icetooth"
+    ],
+    "bosses": [
+      "Muga Riptide",
+      "Plook Wavebreaker",
+      "Hops Flameinator",
+      "Muu Swifthorn",
+      "Dread Nightstalk",
+      "Tree of Autumn"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Tears of the Fallen",
+    "wikiPage": "Tears of the Fallen",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "neighbors": [
+      "Stingray Strand",
+      "Talmark Wilderness",
+      "Twin Serpent Lakes"
+    ],
+    "foes": [
+      "Grand Drake",
+      "Lightning Drake",
+      "Bog Skale Blighter",
+      "Bog Skale Icetooth"
+    ],
+    "bosses": []
+  },
+  {
+    "kind": "explorable",
+    "name": "The Black Curtain",
+    "wikiPage": "The Black Curtain",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "neighbors": [
+      "Cursed Lands",
+      "Kessex Peak",
+      "Talmark Wilderness",
+      "Temple of the Ages"
+    ],
+    "foes": [
+      "Wraith",
+      "Inferno Imp",
+      "Forest Minotaur",
+      "Fog Nightmare",
+      "Smoke Phantom",
+      "Ancient Oakheart",
+      "Spined Aloe",
+      "Reed Stalker",
+      "Bog Skale Blighter",
+      "Hellhound",
+      "Skeleton Bowmaster",
+      "Caromi Tengu Elite",
+      "Bone Dragon",
+      "Damned Cleric",
+      "Necrid Horseman"
+    ],
+    "bosses": [
+      "Rage Maulhoof",
+      "Shadow of Death",
+      "Tree of Judgment",
+      "Gack the Mindwrecker",
+      "Frash the Cold",
+      "Winglord Caromi"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Twin Serpent Lakes",
+    "wikiPage": "Twin Serpent Lakes",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "neighbors": [
+      "Riverside Province (outpost)",
+      "Tears of the Fallen"
+    ],
+    "foes": [
+      "Lightning Drake",
+      "Mergoyle",
+      "White Mantle Knight",
+      "White Mantle Seeker",
+      "White Mantle Abbot",
+      "White Mantle Ritualist",
+      "White Mantle Sycophant",
+      "White Mantle Savant",
+      "Ancient Oakheart",
+      "Spined Aloe",
+      "Bog Skale Icetooth",
+      "Caromi Tengu Elite",
+      "Caromi Tengu Fierce",
+      "Caromi Tengu Seer",
+      "Caromi Tengu Wild"
+    ],
+    "bosses": [
+      "Elvina the Pious",
+      "Kathryn the Cold",
+      "Gilroy the Stoic",
+      "Brogan the Punisher",
+      "Edred the Bruiser",
+      "Julen the Devout"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Watchtower Coast",
+    "wikiPage": "Watchtower Coast",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "neighbors": [
+      "Beetletun",
+      "Divinity Coast (outpost)"
+    ],
+    "foes": [
+      "Mergoyle",
+      "Mergoyle Wavebreaker",
+      "Oakheart (Kryta)",
+      "Spined Aloe",
+      "Bog Skale",
+      "Caromi Tengu Brave",
+      "Caromi Tengu Scout",
+      "Caromi Tengu Wild"
+    ],
+    "bosses": [
+      "Gack Splotchplunk",
+      "Hew Gruntruck",
+      "Melp the Harpooner",
+      "Eepeep the Mindrain",
+      "Fauul the Windburner"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Dry Top",
+    "wikiPage": "Dry Top",
+    "campaign": "Prophecies",
+    "region": "Maguuma Jungle",
+    "neighbors": [
+      "Ettin's Back",
+      "Tangle Root"
+    ],
+    "foes": [
+      "Root Behemoth",
+      "Maguuma Warrior",
+      "Maguuma Protector",
+      "Maguuma Hunter",
+      "Fevered Devourer",
+      "Thorn Devourer",
+      "Thorn Stalker"
+    ],
+    "bosses": []
+  },
+  {
+    "kind": "explorable",
+    "name": "Ettin's Back",
+    "wikiPage": "Ettin's Back",
+    "campaign": "Prophecies",
+    "region": "Maguuma Jungle",
+    "neighbors": [
+      "Aurora Glade (outpost)",
+      "Dry Top",
+      "Reed Bog",
+      "Silverwood",
+      "Ventari's Refuge"
+    ],
+    "foes": [
+      "Maguuma Spider",
+      "Maguuma Warrior",
+      "Maguuma Hunter",
+      "Maguuma Protector",
+      "Thorn Devourer Drone",
+      "Thorn Devourer",
+      "Fevered Devourer",
+      "Thorn Stalker Sprout",
+      "Thorn Stalker",
+      "Moss Scarab"
+    ],
+    "bosses": [
+      "Huma Cleansinghoof",
+      "Edmi Visionmane",
+      "Stik Barkripper",
+      "Flash Darkspine",
+      "Flaw Rootplague",
+      "Splintertrunk",
+      "Bristlefire"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Majesty's Rest",
+    "wikiPage": "Majesty's Rest",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "neighbors": [
+      "Sage Lands",
+      "Talmark Wilderness"
+    ],
+    "foes": [
+      "Maguuma Spider",
+      "Thorn Devourer",
+      "Fevered Devourer",
+      "Wraith",
+      "Fog Nightmare",
+      "Smoke Phantom",
+      "Entangling Root",
+      "Ancient Oakheart",
+      "Reed Stalker",
+      "Skeleton Bowmaster",
+      "Fen Troll",
+      "Grasping Ghoul",
+      "Rotting Dragon",
+      "Damned Cleric",
+      "Zombie Warlock",
+      "Necrid Horseman"
+    ],
+    "bosses": [
+      "Harth Mendbranch",
+      "Psion Tanglebranch",
+      "Ghita Bonz",
+      "Najja Doombringer",
+      "Zameel Dirge",
+      "Rotscale"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Mamnoon Lagoon",
+    "wikiPage": "Mamnoon Lagoon",
+    "campaign": "Prophecies",
+    "region": "Maguuma Jungle",
+    "neighbors": [
+      "Sage Lands",
+      "Silverwood"
+    ],
+    "foes": [
+      "Root Behemoth",
+      "Life Pod",
+      "Wind Rider (Maguuma Jungle)",
+      "Jungle Skale"
+    ],
+    "bosses": []
+  },
+  {
+    "kind": "explorable",
+    "name": "Reed Bog",
+    "wikiPage": "Reed Bog",
+    "campaign": "Prophecies",
+    "region": "Maguuma Jungle",
+    "neighbors": [
+      "Ettin's Back",
+      "The Falls"
+    ],
+    "foes": [
+      "Maguuma Spider",
+      "Redwood Shepherd",
+      "Life Pod",
+      "Moss Scarab",
+      "Jungle Troll"
+    ],
+    "bosses": []
+  },
+  {
+    "kind": "explorable",
+    "name": "Sage Lands",
+    "wikiPage": "Sage Lands",
+    "campaign": "Prophecies",
+    "region": "Maguuma Jungle",
+    "neighbors": [
+      "Druid's Overlook",
+      "Majesty's Rest",
+      "Mamnoon Lagoon",
+      "The Wilds (outpost)"
+    ],
+    "foes": [
+      "Maguuma Spider",
+      "Thorn Devourer",
+      "Thorn Devourer Drone",
+      "Fevered Devourer",
+      "Redwood Shepherd",
+      "Thorn Stalker",
+      "Thorn Stalker Sprout",
+      "Wind Rider",
+      "Moss Scarab"
+    ],
+    "bosses": [
+      "Martus Plagueweb",
+      "Euhh Snickersnak",
+      "Rotcap Mochsart",
+      "Bramblehash",
+      "Splinterquake",
+      "Zarr MentalMelt",
+      "Drech Galumph"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Silverwood",
+    "wikiPage": "Silverwood",
+    "campaign": "Prophecies",
+    "region": "Maguuma Jungle",
+    "neighbors": [
+      "Bloodstone Fen (outpost)",
+      "Ettin's Back",
+      "Mamnoon Lagoon",
+      "Quarrel Falls"
+    ],
+    "foes": [
+      "Maguuma Warrior",
+      "Maguuma Hunter",
+      "Maguuma Protector",
+      "Wind Rider (Maguuma Jungle)",
+      "Moss Scarab",
+      "Jungle Troll"
+    ],
+    "bosses": [
+      "Hovi Bravetail",
+      "Keba Silenthoof",
+      "Woho Sacredhide",
+      "Numa Plaguemane",
+      "Bolo Falsehoof",
+      "Lala Firemane"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Tangle Root",
+    "wikiPage": "Tangle Root",
+    "campaign": "Prophecies",
+    "region": "Maguuma Jungle",
+    "neighbors": [
+      "Dry Top",
+      "Henge of Denravi",
+      "Maguuma Stade",
+      "Riverside Province (outpost)"
+    ],
+    "foes": [
+      "Root Behemoth",
+      "Redwood Shepherd",
+      "Life Pod",
+      "Thorn Stalker",
+      "Wind Rider (Maguuma Jungle)",
+      "Moss Scarab",
+      "Jungle Skale",
+      "Jungle Troll"
+    ],
+    "bosses": [
+      "Tree of Memories",
+      "Tree of Regrowth",
+      "Nalle the Webbed",
+      "Snap the Braineater",
+      "Falls the Fishfinder",
+      "Marrg Grummbool"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "The Falls",
+    "wikiPage": "The Falls",
+    "campaign": "Prophecies",
+    "region": "Maguuma Jungle",
+    "neighbors": [
+      "Reed Bog",
+      "Secret Underground Lair"
+    ],
+    "foes": [
+      "Maguuma Spider",
+      "Root Behemoth",
+      "Maguuma Hunter",
+      "Redwood Shepherd",
+      "Life Pod",
+      "Wind Rider (Maguuma Jungle)",
+      "Jungle Skale",
+      "Jungle Troll"
+    ],
+    "bosses": [
+      "Debrio Gangleweb",
+      "Vizz Vexflume",
+      "Fryn Rageflame",
+      "Hoss Rainswell",
+      "Sewp the Darktooth",
+      "Krogg Shmush (Maguuma Jungle)"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Diviner's Ascent",
+    "wikiPage": "Diviner's Ascent",
+    "campaign": "Prophecies",
+    "region": "Crystal Desert",
+    "neighbors": [
+      "Elona Reach (outpost)",
+      "Salt Flats",
+      "Skyward Reach"
+    ],
+    "foes": [
+      "Rockshot Devourer",
+      "Sand Drake",
+      "Hydra (Crystal Desert)",
+      "Rock-Eater Scarab",
+      "Jade Scarab",
+      "Sand Wurm"
+    ],
+    "bosses": [
+      "Flange Sullenrage",
+      "Monaru Chippedfang",
+      "Ghilaparu Stormstone",
+      "Graf Wask Derg",
+      "Brol Migo Hinga",
+      "Jewk Swem Pleg",
+      "Chak Hack Schawack",
+      "Sheg Zamn Mada",
+      "Bleck Oogle",
+      "Plunk Trudge",
+      "Trech Schmoogle"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Prophet's Path",
+    "wikiPage": "Prophet's Path",
+    "campaign": "Prophecies",
+    "region": "Crystal Desert",
+    "neighbors": [
+      "Augury Rock (outpost)",
+      "Heroes' Audience",
+      "Salt Flats",
+      "The Amnoon Oasis",
+      "Vulture Drifts"
+    ],
+    "foes": [
+      "Rockshot Devourer",
+      "Sand Elemental",
+      "Desert Griffon",
+      "Hydra (Crystal Desert)",
+      "Minotaur (Crystal Desert)",
+      "Salving Cactus",
+      "Storm Kin",
+      "Rock-Eater Scarab",
+      "Scarab Nest Builder",
+      "Jade Scarab",
+      "Marrow Scarab",
+      "Sand Wurm"
+    ],
+    "bosses": [
+      "Clarion Shinypate",
+      "Lucid Jewelstone",
+      "Featherfist",
+      "Screamingclaw",
+      "Brol Migo Hinga",
+      "Rept Parn Freg",
+      "Jewk Swem Pleg",
+      "Chak Hack Schawack",
+      "Sheg Zamn Mada",
+      "Stoofed Chargehoof",
+      "Cootle Sizzlehorn",
+      "Kepkhet Marrowfeast"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Salt Flats",
+    "wikiPage": "Salt Flats",
+    "campaign": "Prophecies",
+    "region": "Crystal Desert",
+    "neighbors": [
+      "Diviner's Ascent",
+      "Seeker's Passage",
+      "Prophet's Path",
+      "Skyward Reach"
+    ],
+    "foes": [
+      "Rockshot Devourer",
+      "Hydra (Crystal Desert)",
+      "Storm Kin",
+      "Jade Scarab",
+      "Rock-Eater Scarab"
+    ],
+    "bosses": [
+      "Gralf Angonytip",
+      "Ness Orangeclaw",
+      "Graf Wask Derg",
+      "Brol Migo Hinga",
+      "Rept Parn Freg",
+      "Jewk Swem Pleg",
+      "Sheg Zamn Mada",
+      "Sul SandStorm",
+      "Sevv Squallfroth",
+      "Ginz Hailflare",
+      "Jonk Shuffle",
+      "Vook Foomble"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Skyward Reach",
+    "wikiPage": "Skyward Reach",
+    "campaign": "Prophecies",
+    "region": "Crystal Desert",
+    "neighbors": [
+      "Augury Rock (outpost)",
+      "Destiny's Gorge",
+      "Diviner's Ascent",
+      "Salt Flats",
+      "The Arid Sea",
+      "The Scar",
+      "Vulture Drifts"
+    ],
+    "foes": [
+      "Losaru Bladehand",
+      "Losaru Bowmaster",
+      "Losaru Lifeband",
+      "Losaru Windcaster",
+      "Enchanted Hammer (Prophecies)",
+      "Enchanted Sword (Prophecies)",
+      "Enchanted Bow (Prophecies)",
+      "Rockshot Devourer",
+      "Sand Drake",
+      "Desert Griffon",
+      "Hydra (Crystal Desert)",
+      "Storm Kin"
+    ],
+    "bosses": []
+  },
+  {
+    "kind": "explorable",
+    "name": "The Arid Sea",
+    "wikiPage": "The Arid Sea",
+    "campaign": "Prophecies",
+    "region": "Crystal Desert",
+    "neighbors": [
+      "Crystal Overlook",
+      "Skyward Reach",
+      "Vulture Drifts"
+    ],
+    "foes": [
+      "Dune Burrower",
+      "Enchanted Hammer (Prophecies)",
+      "Enchanted Sword (Prophecies)",
+      "Enchanted Bow (Prophecies)",
+      "Sand Giant",
+      "Hydra (Crystal Desert)",
+      "Salving Cactus",
+      "Rock-Eater Scarab",
+      "Jade Scarab",
+      "Sand Wurm"
+    ],
+    "bosses": [
+      "Graf Wask Derg",
+      "Brol Migo Hinga",
+      "Rept Parn Freg",
+      "Chak Hack Schawack",
+      "Sheg Zamn Mada"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "The Scar",
+    "wikiPage": "The Scar",
+    "campaign": "Prophecies",
+    "region": "Crystal Desert",
+    "neighbors": [
+      "Destiny's Gorge",
+      "Skyward Reach",
+      "Thirsty River (outpost)"
+    ],
+    "foes": [
+      "Dune Burrower",
+      "Losaru Bladehand",
+      "Losaru Bowmaster",
+      "Losaru Lifeband",
+      "Losaru Windcaster",
+      "Rockshot Devourer",
+      "Enchanted Hammer (Prophecies)",
+      "Enchanted Sword (Prophecies)",
+      "Enchanted Bow (Prophecies)",
+      "Sand Giant",
+      "Desert Griffon",
+      "Hydra (Crystal Desert)",
+      "Rock-Eater Scarab",
+      "Jade Scarab",
+      "Sand Wurm"
+    ],
+    "bosses": [
+      "Aguo Gruffmane",
+      "Caza Windedcalf",
+      "Mina Brillianthaunch",
+      "Zalo Soulhaunch",
+      "Gret Waveringmane",
+      "Doro Icehide",
+      "Graf Wask Derg",
+      "Rept Parn Freg",
+      "Jewk Swem Pleg",
+      "Chak Hack Schawack",
+      "Sheg Zamn Mada"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Vulture Drifts",
+    "wikiPage": "Vulture Drifts",
+    "campaign": "Prophecies",
+    "region": "Crystal Desert",
+    "neighbors": [
+      "Dunes of Despair (outpost)",
+      "Prophet's Path",
+      "Skyward Reach",
+      "The Arid Sea"
+    ],
+    "foes": [
+      "Sand Drake",
+      "Sand Elemental",
+      "Enchanted Hammer (Prophecies)",
+      "Enchanted Sword (Prophecies)",
+      "Enchanted Bow (Prophecies)",
+      "Sand Giant",
+      "Desert Griffon",
+      "Hydra (Crystal Desert)",
+      "Minotaur (Crystal Desert)",
+      "Rock-Eater Scarab",
+      "Jade Scarab",
+      "Sand Wurm"
+    ],
+    "bosses": [
+      "Pell Glitterglatter",
+      "Tang Stonecut",
+      "Divingbeak",
+      "Perchingbyrd",
+      "Brol Migo Hinga",
+      "Graf Wask Derg",
+      "Rept Parn Freg",
+      "Jewk Swem Pleg",
+      "Chak Hack Schawack",
+      "Krunk Waddle",
+      "Zwack Ramble"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Dreadnought's Drift",
+    "wikiPage": "Dreadnought's Drift",
+    "campaign": "Prophecies",
+    "region": "Southern Shiverpeaks",
+    "neighbors": [
+      "Lornar's Pass",
+      "Snake Dance"
+    ],
+    "foes": [
+      "Stone Summit Carver",
+      "Summit Giant Herder",
+      "Stone Summit Ranger",
+      "Dolyak Master",
+      "Stone Summit Heretic",
+      "Stone Summit Gnasher",
+      "Siege Ice Golem",
+      "Tundra Giant",
+      "Blessed Griffon",
+      "Azure Shadow"
+    ],
+    "bosses": [
+      "Maw the Mountain Heart"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Frozen Forest",
+    "wikiPage": "Frozen Forest",
+    "campaign": "Prophecies",
+    "region": "Southern Shiverpeaks",
+    "neighbors": [
+      "Copperhammer Mines",
+      "Ice Floe",
+      "Icedome",
+      "Iron Mines of Moladune (outpost)"
+    ],
+    "foes": [
+      "Stone Summit Carver",
+      "Summit Giant Herder",
+      "Stone Summit Ranger",
+      "Dolyak Master",
+      "Stone Summit Gnasher",
+      "Stone Summit Heretic",
+      "Siege Ice Golem",
+      "Tundra Giant",
+      "Blessed Griffon",
+      "Ice Imp",
+      "Jade Armor",
+      "Jade Bow",
+      "Azure Shadow",
+      "Pinesoul",
+      "Avicara Brave",
+      "Avicara Fierce",
+      "Avicara Guile"
+    ],
+    "bosses": [
+      "Linka Goldensteel",
+      "Resnar Mountainsight",
+      "Mesqul Ironhealer",
+      "Jollen Steelblight",
+      "Barl Stormsiege",
+      "Boreal Kubeclaw",
+      "Obrhit Barkwood",
+      "Afrhul Deeproot",
+      "Esnhal Hardwood",
+      "Unthet Rotwood",
+      "Arkhel Havenwood"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Grenth's Footprint",
+    "wikiPage": "Grenth's Footprint",
+    "campaign": "Prophecies",
+    "region": "Southern Shiverpeaks",
+    "neighbors": [
+      "Deldrimor War Camp",
+      "Snake Dance",
+      "Sorrow's Furnace",
+      "Spearhead Peak"
+    ],
+    "foes": [
+      "Stone Summit Carver",
+      "Summit Deep Knight",
+      "Summit Giant Herder",
+      "Stone Summit Ranger",
+      "Summit Surveyor",
+      "Dolyak Master",
+      "Priest of Sorrows",
+      "Stone Summit Gnasher",
+      "Summit Dark Binder",
+      "Stone Summit Heretic",
+      "Summit Taskmaster",
+      "Summit Warden",
+      "Siege Ice Golem",
+      "Tundra Giant",
+      "Ice Imp",
+      "Pinesoul",
+      "Mountain Troll"
+    ],
+    "bosses": [
+      "Thorgall Bludgeonhammer",
+      "Gargash Thornbeard",
+      "Wroth Yakslapper",
+      "Morgriff Shadestone",
+      "Gorrel Rockmolder",
+      "Flint Fleshcleaver",
+      "Maw the Mountain Heart"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Ice Floe",
+    "wikiPage": "Ice Floe",
+    "campaign": "Prophecies",
+    "region": "Southern Shiverpeaks",
+    "neighbors": [
+      "Frozen Forest",
+      "Marhan's Grotto",
+      "Thunderhead Keep (outpost)"
+    ],
+    "foes": [
+      "White Mantle Zealot",
+      "White Mantle Seeker",
+      "White Mantle Priest",
+      "Ice Imp",
+      "Jade Armor",
+      "Jade Bow",
+      "Mursaat Monk",
+      "Mursaat Necromancer",
+      "Mursaat Mesmer",
+      "Mursaat Elementalist",
+      "Azure Shadow",
+      "Pinesoul"
+    ],
+    "bosses": [
+      "Gambol Headrainer",
+      "Skitt Skizzle",
+      "Jade Armor (boss)",
+      "Jade Bow (boss)",
+      "Mursaat Monk (boss)",
+      "Mursaat Necromancer (boss)",
+      "Mursaat Mesmer (boss)",
+      "Mursaat Elementalist (boss)",
+      "Frostbite"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Icedome",
+    "wikiPage": "Icedome",
+    "campaign": "Prophecies",
+    "region": "Southern Shiverpeaks",
+    "neighbors": [
+      "Frozen Forest",
+      "Talus Chute"
+    ],
+    "foes": [
+      "Stone Summit Carver",
+      "Summit Giant Herder",
+      "Stone Summit Ranger",
+      "Dolyak Master",
+      "Stone Summit Gnasher",
+      "Stone Summit Heretic",
+      "Siege Ice Golem"
+    ],
+    "bosses": []
+  },
+  {
+    "kind": "explorable",
+    "name": "Lornar's Pass",
+    "wikiPage": "Lornar's Pass",
+    "campaign": "Prophecies",
+    "region": "Southern Shiverpeaks",
+    "neighbors": [
+      "Beacon's Perch",
+      "Dreadnought's Drift",
+      "The Underworld"
+    ],
+    "foes": [
+      "Summit Axe Wielder",
+      "Stone Summit Crusher",
+      "Stone Summit Ranger",
+      "Stone Summit Scout",
+      "Dolyak Master",
+      "Dolyak Rider",
+      "Stone Summit Gnasher",
+      "Stone Summit Howler",
+      "Stone Summit Heretic",
+      "Stone Summit Sage",
+      "Ice Golem",
+      "Siege Ice Golem",
+      "Grawl (Shiverpeaks)",
+      "Grawl Crone",
+      "Ice Imp",
+      "Pinesoul",
+      "Avicara Brave",
+      "Avicara Fierce",
+      "Avicara Ardent",
+      "Avicara Guile",
+      "Mountain Troll",
+      "Frost Wurm"
+    ],
+    "bosses": [
+      "Tonfor Copperblood",
+      "Erzek Runebreaker",
+      "Chunk Clumpfoot",
+      "Clobberhusk",
+      "Poisonbough",
+      "Quickroot",
+      "Maw the Mountain Heart"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Mineral Springs",
+    "wikiPage": "Mineral Springs",
+    "campaign": "Prophecies",
+    "region": "Southern Shiverpeaks",
+    "neighbors": [
+      "Tasca's Demise"
+    ],
+    "foes": [
+      "Stone Summit Carver",
+      "Stone Summit Ranger",
+      "Stone Summit Gnasher",
+      "Siege Ice Golem",
+      "Tundra Giant",
+      "Ice Imp",
+      "Azure Shadow",
+      "Pinesoul",
+      "Juniper Bark",
+      "Avicara Brave",
+      "Avicara Fierce",
+      "Avicara Ardent",
+      "Avicara Guile",
+      "Avicara Wise",
+      "Mountain Troll",
+      "Frost Wurm"
+    ],
+    "bosses": [
+      "Ice Beast",
+      "Syr Honorcrest",
+      "Ryk Arrowwing",
+      "Myd Springclaw",
+      "Nhy Darkclaw",
+      "Wyt Sharpfeather",
+      "Hyl Thunderwing",
+      "Maw the Mountain Heart"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Snake Dance",
+    "wikiPage": "Snake Dance",
+    "campaign": "Prophecies",
+    "region": "Southern Shiverpeaks",
+    "neighbors": [
+      "Camp Rankor",
+      "Dreadnought's Drift",
+      "Grenth's Footprint"
+    ],
+    "foes": [
+      "Summit Giant Herder",
+      "Dolyak Master",
+      "Stone Summit Heretic",
+      "Ice Golem",
+      "Tundra Giant",
+      "Blessed Griffon",
+      "Azure Shadow",
+      "Avicara Fierce",
+      "Mountain Troll"
+    ],
+    "bosses": [
+      "Kor Stonewrath",
+      "Thul Boulderrain",
+      "Raptorhawk",
+      "Featherclaw",
+      "Old Red Claw",
+      "Marnta Doomspeaker",
+      "Fawl Driftstalker",
+      "Cry Darkday",
+      "Sapph Blacktracker",
+      "Didn Hopestealer",
+      "Sala Chillbringer",
+      "Smukk Foombool",
+      "Whuup Buumbuul",
+      "Maw the Mountain Heart"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Sorrow's Furnace",
+    "wikiPage": "Sorrow's Furnace",
+    "campaign": "Prophecies",
+    "region": "Southern Shiverpeaks",
+    "neighbors": [
+      "Grenth's Footprint"
+    ],
+    "foes": [
+      "Dredge Brute",
+      "Dredge Spirit Guard",
+      "Dredge Scout",
+      "Dredge Spirit Caller",
+      "Dredge Shaman",
+      "Dredge Spirit Keeper",
+      "Summit Deep Knight",
+      "Summit Surveyor",
+      "Priest of Sorrows",
+      "Summit Dark Binder",
+      "Summit Taskmaster",
+      "Summit Warden",
+      "Siege Ice Golem",
+      "Enslaved Ettin",
+      "Furnace Guardian"
+    ],
+    "bosses": [
+      "Grognard Gravelhead",
+      "Tanzit Razorstone",
+      "Drago Stoneherder",
+      "Tarnok Forgerunner",
+      "Brohn Stoneheart",
+      "Gardock Stonesoul",
+      "Gordac Fleshweaver",
+      "Villnar Painforge",
+      "Garbok Handsmasher",
+      "Vokur Grimshackles",
+      "Galigord Stonestrike",
+      "Runar Brimstone"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Spearhead Peak",
+    "wikiPage": "Spearhead Peak",
+    "campaign": "Prophecies",
+    "region": "Southern Shiverpeaks",
+    "neighbors": [
+      "Copperhammer Mines",
+      "Grenth's Footprint",
+      "The Granite Citadel"
+    ],
+    "foes": [
+      "Stone Summit Carver",
+      "Stone Summit Ranger",
+      "Dolyak Master",
+      "Stone Summit Gnasher",
+      "Stone Summit Heretic",
+      "Rock Ice",
+      "Siege Ice Golem",
+      "Ice Imp",
+      "Pinesoul"
+    ],
+    "bosses": [
+      "Thul The Bull",
+      "Hail Blackice",
+      "Rune Ethercrash",
+      "Jono Yawpyawl",
+      "Kekona Pippip",
+      "Kaia Wupwup",
+      "Allobo Dimdim",
+      "Edibbo Kepkep",
+      "Sniik Hungrymind",
+      "Maak Frostfriend",
+      "Maw the Mountain Heart"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Talus Chute",
+    "wikiPage": "Talus Chute",
+    "campaign": "Prophecies",
+    "region": "Southern Shiverpeaks",
+    "neighbors": [
+      "Camp Rankor",
+      "Droknar's Forge",
+      "Ice Caves of Sorrow (outpost)",
+      "Icedome"
+    ],
+    "foes": [
+      "Stone Summit Carver",
+      "Stone Summit Crusher",
+      "Stone Summit Gnasher",
+      "Stone Summit Heretic",
+      "Ice Golem",
+      "Siege Ice Golem",
+      "Tundra Giant",
+      "Grawl (Shiverpeaks)",
+      "Mighty Grawl",
+      "Barbed Grawl",
+      "Grawl Crone",
+      "Blessed Griffon",
+      "Ice Imp",
+      "Azure Shadow",
+      "Avicara Brave",
+      "Avicara Fierce",
+      "Avicara Ardent",
+      "Avicara Guile",
+      "Avicara Wise",
+      "Mountain Troll"
+    ],
+    "bosses": [
+      "Jono Yawpyawl",
+      "Kekona Pippip",
+      "Kaia Wupwup",
+      "Allobo Dimdim",
+      "Edibbo Kepkep",
+      "Frostbite",
+      "Nighh SpineChill",
+      "Seear Windlash",
+      "Brrrr Windburn",
+      "Krogg Shmush (Shiverpeak Mountains)",
+      "Whuup Buumbuul",
+      "Maw the Mountain Heart"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Tasca's Demise",
+    "wikiPage": "Tasca's Demise",
+    "campaign": "Prophecies",
+    "region": "Southern Shiverpeaks",
+    "neighbors": [
+      "Mineral Springs",
+      "The Granite Citadel"
+    ],
+    "foes": [
+      "Stone Summit Carver",
+      "Summit Giant Herder",
+      "Stone Summit Ranger",
+      "Dolyak Master",
+      "Stone Summit Gnasher",
+      "Stone Summit Heretic",
+      "Siege Ice Golem",
+      "Avicara Brave",
+      "Avicara Fierce",
+      "Avicara Guile",
+      "Avicara Wise"
+    ],
+    "bosses": []
+  },
+  {
+    "kind": "explorable",
+    "name": "Witman's Folly",
+    "wikiPage": "Witman's Folly",
+    "campaign": "Prophecies",
+    "region": "Southern Shiverpeaks",
+    "neighbors": [
+      "Droknar's Forge",
+      "Port Sledge"
+    ],
+    "foes": [
+      "Grawl (Shiverpeaks)",
+      "Grawl Crone",
+      "Ice Imp",
+      "Azure Shadow"
+    ],
+    "bosses": [
+      "Sakalo Yawpyawl",
+      "Salani Pippip",
+      "Ipillo Wupwup",
+      "Karobo Dimdim",
+      "Alana Kepkep",
+      "Sniik Hungrymind",
+      "Maak Frostfriend"
+    ]
+  },
+  {
+    "kind": "explorable",
+    "name": "Perdition Rock",
+    "wikiPage": "Perdition Rock",
+    "campaign": "Prophecies",
+    "region": "Ring of Fire Islands",
+    "neighbors": [
+      "Ember Light Camp",
+      "Ring of Fire (outpost)"
+    ],
+    "foes": [
+      "Flesh Golem (NPC)",
+      "Drake (NPC)",
+      "Dark Flame Dryder",
+      "Igneous Ettin",
+      "Phantom (NPC)",
+      "White Mantle Justiciar",
+      "White Mantle Knight",
+      "White Mantle Seeker",
+      "White Mantle Priest",
+      "White Mantle Sycophant",
+      "White Mantle Savant",
+      "Mahgo Hydra",
+      "Jade Armor",
+      "Jade Bow",
+      "Ether Seal",
+      "Breeze Keeper",
+      "Wurm (NPC)"
+    ],
+    "bosses": [
+      "Balthazaar's Cursed",
+      "Melandru's Cursed",
+      "Dwayna's Cursed",
+      "Grenth's Cursed",
+      "Lyssa's Cursed",
+      "Abaddon's Cursed",
+      "Skintekaru Manshredder",
+      "Dosakaru Fevertouch",
+      "Geckokaru Earthwind",
+      "Harn Coldstone",
+      "Rull Browbeater",
+      "Pravus Obsideo",
+      "Ignis Effigia",
+      "Malus Phasmatis",
+      "Inner Council Member Bolivar",
+      "Maxine Coldstone",
+      "Inner Council Member Argyle",
+      "Inner Council Member Cuthbert",
+      "Rwek Khawl Mawl",
+      "Nayl Klaw Tuthan",
+      "spawn"
+    ]
+  }
+]

@@ -68,8 +68,8 @@ export interface Skill {
   energyCost: number | null;
   /** Adrenaline cost in strikes; null for energy skills. */
   adrenalineCost: number | null;
-  /** Activation time in seconds (0 for instant). */
-  activation: number;
+  /** Activation time in seconds (0 = instant, null = weapon-speed attack). */
+  activation: number | null;
   /** Recharge time in seconds. */
   recharge: number;
   description: string;
@@ -117,9 +117,12 @@ export interface Monster {
   name: string;
   wikiPage: string;
   species: string;
-  level: number;
-  /** Base armor rating (normal mode). */
-  armor: number;
+  /** Highest normal-mode level; null when unparseable. */
+  level: number | null;
+  /** Raw level string from the infobox, e.g. "7, 9 (23)". */
+  levelRaw?: string;
+  /** Base armor rating (normal mode); most pages only give the per-damage-type table. */
+  armor: number | null;
   /** Raw armor table from the wiki, kept structured (may break out by damage type). */
   armorTable: ArmorEntry[];
   skills: SkillRef[];
@@ -208,7 +211,7 @@ export const skillSchema = {
     campaign: { $ref: "gw1-campaign" },
     energyCost: { type: ["number", "null"], minimum: 0 },
     adrenalineCost: { type: ["number", "null"], minimum: 0 },
-    activation: { type: "number", minimum: 0 },
+    activation: { type: ["number", "null"], minimum: 0 },
     recharge: { type: "number", minimum: 0 },
     description: { type: "string" },
     acquisition: {
@@ -266,8 +269,9 @@ export const monsterSchema = {
     name: { type: "string" },
     wikiPage: { type: "string" },
     species: { type: "string" },
-    level: { type: "integer", minimum: 0 },
-    armor: { type: "number", minimum: 0 },
+    level: { type: ["integer", "null"], minimum: 0 },
+    levelRaw: { type: "string" },
+    armor: { type: ["number", "null"], minimum: 0 },
     armorTable: {
       type: "array",
       items: {

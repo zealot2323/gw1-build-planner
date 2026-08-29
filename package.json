@@ -9,9 +9,10 @@
     "export"
   ],
   "scripts": {
-    "test": "npm test -w engine",
+    "test": "npm test -w engine -w scraper",
     "fetch": "npm run fetch -w scraper --",
     "rescrape": "npm run rescrape -w scraper",
-    "discover": "npm run discover -w scraper"
+    "discover": "npm run discover -w scraper",
+    "parse": "npm run parse -w scraper"
   }
 }
