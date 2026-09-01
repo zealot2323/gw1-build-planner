@@ -299,3 +299,27 @@ button.threat.minor { opacity: 0.7; font-style: italic; }
   margin-top: 0.4rem; padding: 0.4rem 0.6rem;
   background: var(--panel); border-radius: 6px;
 }
+
+/* proximity dots: how soon can I get this? */
+.prox { margin-right: 0.4rem; font-size: 0.8em; vertical-align: middle; }
+.prox-now, .prox-near { color: #5fa96a; }
+.prox-mid { color: #d9a94b; }
+.prox-far { color: #c0564b; }
+.prox-unknown { color: var(--muted); }
+
+/* friendly problem list */
+.problems { list-style: none; margin: 0.5rem 0 0; padding: 0; }
+.problems li { display: flex; gap: 0.5rem; align-items: baseline; padding: 0.1rem 0; }
+.problem-mark {
+  color: var(--danger); font-weight: 700; flex-shrink: 0;
+  border: 1px solid var(--danger); border-radius: 50%;
+  width: 1.2em; height: 1.2em; line-height: 1.1em; text-align: center; font-size: 0.85em;
+}
+
+/* build todo list */
+.todo { margin-top: 0.6rem; border-top: 1px solid var(--border); padding-top: 0.4rem; }
+.todo-head { width: auto; color: var(--accent); font-weight: 600; }
+.todo-list { margin: 0.3rem 0 0; padding-left: 1.3rem; }
+.todo-list li { padding: 0.12rem 0; }
+.todo-list strong { font-weight: 600; }
+.build-bar select { max-width: 12rem; }

@@ -1,65 +1,81 @@
-import { useState } from "react";
-import { validateBuild, type Build, type Profession } from "@gw1/engine";
+import { useMemo, useState } from "react";
+import {
+  buildTodo,
+  travelDistances,
+  validateBuild,
+  PROFESSIONS,
+  type Build,
+  type Profession,
+  type SkillAvailabilityEntry,
+} from "@gw1/engine";
 import { index } from "../data";
 import { SkillIcon } from "./SkillIcon";
 import { SkillDetails } from "./SkillDetails";
 import { ProfessionIcon } from "./ProfessionIcon";
+import { ProximityDot } from "./ProximityDot";
 import type { CharacterSave } from "../save";
 
+export const DRAFT = "__draft__";
+
 /**
- * The 8-slot build bar, pinned above the skill browser. Clicking a slot
- * opens that skill's details; the × removes it.
+ * The 8-slot build bar, pinned above the skill browser. Starts as an unsaved
+ * draft so you can throw skills at it immediately and name it later.
+ * Clicking a slot opens that skill's details; the × removes it.
  */
 export function BuildBar({
   character,
-  secondary,
+  draft,
+  setDraft,
   activeBuild,
   setActiveBuild,
   updateBuilds,
+  availability,
 }: {
   character: CharacterSave;
-  secondary: Profession | null;
+  draft: Build;
+  setDraft: (b: Build) => void;
   activeBuild: string | null;
   setActiveBuild: (name: string | null) => void;
   updateBuilds: (builds: Build[]) => void;
+  availability: SkillAvailabilityEntry[];
 }) {
-  const [newName, setNewName] = useState("");
+  const [saveName, setSaveName] = useState("");
   const [openSlot, setOpenSlot] = useState<number | null>(null);
+  const [showTodo, setShowTodo] = useState(true);
 
   const builds = character.builds;
-  const build = builds.find((b) => b.name === activeBuild) ?? null;
-  const errors = build ? validateBuild(build, index) : [];
+  const isDraft = activeBuild === null;
+  const build = isDraft ? draft : (builds.find((b) => b.name === activeBuild) ?? draft);
+  const errors = validateBuild(build, index);
 
-  const create = () => {
-    const name = newName.trim();
-    if (!name || builds.some((b) => b.name === name)) return;
-    updateBuilds([
-      ...builds,
-      {
-        name,
-        character: character.name,
-        primary: character.primaryProfession,
-        secondary,
-        skills: [null, null, null, null, null, null, null, null],
-      },
-    ]);
-    setNewName("");
-    setActiveBuild(name);
+  const todo = useMemo(() => {
+    const graph = travelDistances(character, index);
+    return buildTodo(build.skills, availability, graph);
+  }, [character, build.skills, availability]);
+
+  const patch = (p: Partial<Build>) => {
+    const next = { ...build, ...p };
+    if (isDraft) setDraft(next);
+    else updateBuilds(builds.map((b) => (b.name === build.name ? next : b)));
   };
 
-  const setSkills = (skills: Build["skills"]) =>
-    build && updateBuilds(builds.map((b) => (b.name === build.name ? { ...b, skills } : b)));
+  const save = () => {
+    const name = saveName.trim();
+    if (!name || builds.some((b) => b.name === name)) return;
+    updateBuilds([...builds, { ...build, name }]);
+    setActiveBuild(name);
+    setSaveName("");
+  };
 
   const clearSlot = (i: number) => {
-    if (!build) return;
     const skills = [...build.skills] as Build["skills"];
     skills[i] = null;
-    setSkills(skills);
+    patch({ skills });
     if (openSlot === i) setOpenSlot(null);
   };
 
   const openSkill =
-    build && openSlot !== null && build.skills[openSlot]
+    openSlot !== null && build.skills[openSlot]
       ? index.skillByPage.get(build.skills[openSlot]!)
       : null;
 
@@ -69,39 +85,56 @@ export function BuildBar({
         <div className="row wrap">
           <span className="field-label no-margin">Build</span>
           <select
-            value={activeBuild ?? ""}
+            value={activeBuild ?? DRAFT}
             onChange={(e) => {
-              setActiveBuild(e.target.value || null);
+              setActiveBuild(e.target.value === DRAFT ? null : e.target.value);
               setOpenSlot(null);
             }}
           >
-            <option value="">— none —</option>
+            <option value={DRAFT}>Unsaved draft</option>
             {builds.map((b) => (
               <option key={b.name}>{b.name}</option>
             ))}
           </select>
-          {build && (
-            <span className="muted small">
-              <ProfessionIcon profession={build.primary} />/
-              {build.secondary ? <ProfessionIcon profession={build.secondary} /> : "x"}
+
+          <span className="field-label no-margin">Secondary</span>
+          <select
+            value={build.secondary ?? ""}
+            onChange={(e) => patch({ secondary: (e.target.value || null) as Profession | null })}
+            title="skills from this profession become legal in the build"
+          >
+            <option value="">none</option>
+            {PROFESSIONS.filter((p) => p !== build.primary).map((p) => (
+              <option key={p}>{p}</option>
+            ))}
+          </select>
+          <ProfessionIcon profession={build.primary} />
+          <span className="muted">/</span>
+          {build.secondary ? <ProfessionIcon profession={build.secondary} /> : <span className="muted">—</span>}
+        </div>
+
+        <div className="row">
+          {errors.length === 0 ? (
+            <span className="ok small">✓ valid</span>
+          ) : (
+            <span className="error small">
+              {errors.length} thing{errors.length > 1 ? "s" : ""} to fix
             </span>
           )}
-          <input
-            className="narrow"
-            placeholder="new build…"
-            value={newName}
-            onChange={(e) => setNewName(e.target.value)}
-            onKeyDown={(e) => e.key === "Enter" && create()}
-          />
-          <button onClick={create}>Create</button>
-        </div>
-        {build && (
-          <div className="row">
-            {errors.length === 0 ? (
-              <span className="ok small">✓ valid</span>
-            ) : (
-              <span className="error small">{errors.length} problem{errors.length > 1 ? "s" : ""}</span>
-            )}
+          {isDraft ? (
+            <>
+              <input
+                className="narrow"
+                placeholder="name to save…"
+                value={saveName}
+                onChange={(e) => setSaveName(e.target.value)}
+                onKeyDown={(e) => e.key === "Enter" && save()}
+              />
+              <button onClick={save} disabled={saveName.trim() === ""}>
+                Save
+              </button>
+            </>
+          ) : (
             <button
               className="danger small"
               onClick={() => {
@@ -111,57 +144,95 @@ export function BuildBar({
             >
               delete
             </button>
-          </div>
-        )}
+          )}
+        </div>
       </div>
 
-      {build ? (
-        <>
-          <div className="slots">
-            {build.skills.map((skill, i) => (
-              <div key={i} className={skill ? "slot filled" : "slot"}>
-                {skill ? (
-                  <>
-                    <button
-                      className="slot-open"
-                      title="show skill details"
-                      onClick={() => setOpenSlot(openSlot === i ? null : i)}
-                    >
-                      <SkillIcon page={skill} size={32} />
-                      <span className="slot-name">
-                        {skill}
-                        {index.skillByPage.get(skill)?.isElite && <span className="elite"> ★</span>}
-                      </span>
-                    </button>
-                    <button className="slot-remove" title="remove from build" onClick={() => clearSlot(i)}>
-                      ×
-                    </button>
-                  </>
-                ) : (
-                  <span className="muted slot-empty">empty</span>
-                )}
-              </div>
-            ))}
+      <div className="slots">
+        {build.skills.map((skill, i) => (
+          <div key={i} className={skill ? "slot filled" : "slot"}>
+            {skill ? (
+              <>
+                <button
+                  className="slot-open"
+                  title="show skill details"
+                  onClick={() => setOpenSlot(openSlot === i ? null : i)}
+                >
+                  <SkillIcon page={skill} size={32} />
+                  <span className="slot-name">
+                    {skill}
+                    {index.skillByPage.get(skill)?.isElite && <span className="elite"> ★</span>}
+                  </span>
+                </button>
+                <button className="slot-remove" title="remove from build" onClick={() => clearSlot(i)}>
+                  ×
+                </button>
+              </>
+            ) : (
+              <span className="muted slot-empty">empty</span>
+            )}
           </div>
-          {openSkill && (
-            <div className="slide-down">
-              <SkillDetails skill={openSkill} />
-            </div>
-          )}
-          {errors.length > 0 && (
-            <ul className="errors small">
-              {errors.map((e, i) => (
-                <li key={i}>
-                  <strong>{e.code}</strong>: {e.message}
+        ))}
+      </div>
+
+      {openSkill && (
+        <div className="slide-down">
+          <SkillDetails skill={openSkill} />
+        </div>
+      )}
+
+      {errors.length > 0 && (
+        <ul className="problems">
+          {errors.map((e, i) => (
+            <li key={i}>
+              <span className="problem-mark">!</span>
+              <span>
+                {e.message}
+                {e.fix && <span className="muted"> {e.fix}</span>}
+              </span>
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {todo.length > 0 && (
+        <div className="todo">
+          <button className="linkish todo-head" onClick={() => setShowTodo(!showTodo)}>
+            {showTodo ? "▾" : "▸"} To field this build you still need {todo.length} skill
+            {todo.length > 1 ? "s" : ""}
+          </button>
+          {showTodo && (
+            <ol className="todo-list">
+              {todo.map(({ skill, plan }) => (
+                <li key={skill}>
+                  <ProximityDot proximity={plan.proximity} distance={plan.distance} />
+                  <SkillIcon page={skill} size={20} />
+                  <strong>{skill}</strong>
+                  {plan.best ? (
+                    <span className="muted">
+                      {" — "}
+                      {plan.best.kind === "trainer" && `buy from ${plan.best.via}`}
+                      {plan.best.kind === "quest" && `quest ${plan.best.via}`}
+                      {plan.best.kind === "capture" && `capture from ${plan.best.via}`}
+                      {plan.best.location && ` in ${plan.best.location}`}
+                      {plan.route.length > 0 && (
+                        <span title={plan.route.join(" → ")}>
+                          {" · "}
+                          {plan.distance} zone{plan.distance === 1 ? "" : "s"} away, next:{" "}
+                          {plan.route.slice(0, 3).join(" → ")}
+                          {plan.route.length > 3 && ` → … (+${plan.route.length - 3})`}
+                        </span>
+                      )}
+                      {plan.distance === 0 && " · you can go now"}
+                    </span>
+                  ) : (
+                    <span className="muted"> — no reachable source</span>
+                  )}
                 </li>
               ))}
-            </ul>
+            </ol>
           )}
-        </>
-      ) : (
-        <p className="muted small no-margin">
-          Pick or create a build, then use “+ build” on any skill below to fill a slot.
-        </p>
+        </div>
       )}
     </div>
   );

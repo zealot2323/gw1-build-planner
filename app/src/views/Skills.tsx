@@ -1,6 +1,8 @@
 import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 import {
+  planForSkill,
   skillAvailability,
+  travelDistances,
   type AcquisitionSource,
   type Build,
   type Profession,
@@ -12,6 +14,7 @@ import { SkillIcon } from "../components/SkillIcon";
 import { SkillDetails } from "../components/SkillDetails";
 import { ProfessionIcon } from "../components/ProfessionIcon";
 import { BuildBar } from "../components/BuildBar";
+import { ProximityDot } from "../components/ProximityDot";
 import { wikiHref } from "../wiki";
 import type { CharacterSave } from "../save";
 
@@ -51,17 +54,29 @@ function SourceLine({ src }: { src: AcquisitionSource }) {
   );
 }
 
-/** Group entries by attribute, alphabetical within each group. */
-function byAttribute(entries: SkillAvailabilityEntry[]): Array<[string, SkillAvailabilityEntry[]]> {
+/**
+ * Group entries by attribute. Within a group, either alphabetical or by how
+ * soon the skill can be had (nearest source first, ties alphabetical).
+ */
+function byAttribute(
+  entries: SkillAvailabilityEntry[],
+  order: "name" | "soonest",
+  distanceOf: (page: string) => number | null,
+): Array<[string, SkillAvailabilityEntry[]]> {
   const groups = new Map<string, SkillAvailabilityEntry[]>();
   for (const e of entries) {
     const attr = e.skill.attribute ?? "No attribute";
     if (!groups.has(attr)) groups.set(attr, []);
     groups.get(attr)!.push(e);
   }
+  const rank = (e: SkillAvailabilityEntry) => distanceOf(e.skill.wikiPage) ?? 999;
   return [...groups.entries()]
     .map(([attr, list]) => {
-      list.sort((a, b) => a.skill.name.localeCompare(b.skill.name));
+      list.sort((a, b) =>
+        order === "soonest"
+          ? rank(a) - rank(b) || a.skill.name.localeCompare(b.skill.name)
+          : a.skill.name.localeCompare(b.skill.name),
+      );
       return [attr, list] as [string, SkillAvailabilityEntry[]];
     })
     // real attributes alphabetically, "No attribute" last
@@ -72,23 +87,23 @@ function byAttribute(entries: SkillAvailabilityEntry[]): Array<[string, SkillAva
 
 export function SkillsView({
   character,
-  secondary,
-  setSecondary,
   focusSkill,
   onAddToBuild,
   activeBuild,
   setActiveBuild,
   updateBuilds,
+  draft,
+  setDraft,
 }: {
   character: CharacterSave | null;
-  secondary: Profession | null;
-  setSecondary: (p: Profession | null) => void;
   /** Skill to scroll to (set by the zone browser's skill links). */
   focusSkill: string | null;
   onAddToBuild: ((skill: string) => void) | null;
   activeBuild: string | null;
   setActiveBuild: (name: string | null) => void;
   updateBuilds: (builds: Build[]) => void;
+  draft: Build;
+  setDraft: (b: Build) => void;
 }) {
   const [profFilter, setProfFilter] = useState<string>("all");
   const [attrFilter, setAttrFilter] = useState<string>("all");
@@ -96,12 +111,27 @@ export function SkillsView({
   const [search, setSearch] = useState("");
   const [expandedSources, setExpandedSources] = useState<Set<string>>(new Set());
   const [openSkill, setOpenSkill] = useState<string | null>(null);
+  const [sortBy, setSortBy] = useState<"name" | "soonest">("soonest");
   const focusRef = useRef<HTMLTableRowElement | null>(null);
+
+  // The build's secondary decides which skills are in play — there is one
+  // secondary, and it lives on the build.
+  const currentBuild = activeBuild
+    ? (character?.builds.find((b) => b.name === activeBuild) ?? draft)
+    : draft;
+  const secondary = currentBuild.secondary;
 
   const entries = useMemo(
     () => (character ? skillAvailability(character, secondary, index) : []),
     [character, secondary],
   );
+
+  const graph = useMemo(() => (character ? travelDistances(character, index) : null), [character]);
+  const plans = useMemo(() => {
+    const m = new Map<string, ReturnType<typeof planForSkill>>();
+    if (graph) for (const e of entries) m.set(e.skill.wikiPage, planForSkill(e, graph));
+    return m;
+  }, [entries, graph]);
 
   const attributes = useMemo(
     () => [...new Set(entries.map((e) => e.skill.attribute).filter((a): a is string => a !== null))].sort(),
@@ -137,24 +167,14 @@ export function SkillsView({
     <div className="view">
       <BuildBar
         character={character}
-        secondary={secondary}
+        draft={draft}
+        setDraft={setDraft}
         activeBuild={activeBuild}
         setActiveBuild={setActiveBuild}
         updateBuilds={updateBuilds}
+        availability={entries}
       />
       <div className="row wrap toolbar">
-        <label>
-          Secondary:{" "}
-          <select
-            value={secondary ?? ""}
-            onChange={(e) => setSecondary((e.target.value || null) as Profession | null)}
-          >
-            <option value="">none</option>
-            {character.unlockedSecondaries.map((p) => (
-              <option key={p}>{p}</option>
-            ))}
-          </select>
-        </label>
         <label>
           Profession:{" "}
           <select value={profFilter} onChange={(e) => setProfFilter(e.target.value)}>
@@ -177,6 +197,13 @@ export function SkillsView({
           <input type="checkbox" checked={elitesOnly} onChange={(e) => setElitesOnly(e.target.checked)} />
           elites only
         </label>
+        <label>
+          Sort:{" "}
+          <select value={sortBy} onChange={(e) => setSortBy(e.target.value as "name" | "soonest")}>
+            <option value="soonest">soonest reachable</option>
+            <option value="name">alphabetical</option>
+          </select>
+        </label>
         <input type="search" placeholder="search skills…" value={search} onChange={(e) => setSearch(e.target.value)} />
       </div>
 
@@ -196,7 +223,7 @@ export function SkillsView({
                 {onAddToBuild && <col className="col-add" />}
               </colgroup>
               <tbody>
-                {byAttribute(group).map(([attr, list]) => (
+                {byAttribute(group, sortBy, (p) => plans.get(p)?.distance ?? null).map(([attr, list]) => (
                   <Fragment key={attr}>
                     <tr>
                       <td colSpan={colSpan} className="attr-cell">
@@ -222,6 +249,10 @@ export function SkillsView({
                               }
                               title="show skill details"
                             >
+                              <ProximityDot
+                                proximity={plans.get(e.skill.wikiPage)?.proximity ?? "unknown"}
+                                distance={plans.get(e.skill.wikiPage)?.distance ?? null}
+                              />
                               <SkillIcon page={e.skill.wikiPage} />
                               {e.skill.name}
                               {e.skill.isElite && <span className="elite"> ★</span>}

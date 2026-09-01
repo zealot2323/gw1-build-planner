@@ -147,6 +147,16 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
   `/scraper/src/overrides.ts`, each with a WHY comment. Add new corrections
   there, never inline in parsers.
 
+- **Travel distance** (`travelDistances`) is BFS over an undirected location
+  graph from everywhere the character has unlocked; explorables adjacent to an
+  unlocked outpost are distance 0. Consecutive story missions are linked
+  because parts of Prophecies are only reachable by finishing the campaign to
+  that point (you sail to the Crystal Desert after Sanctum Cay — no walkable
+  exit exists for the infobox to record). Without those edges 43 locations are
+  unreachable; with them only the 12 pre-Searing ones are, which is correct —
+  that transition is one-way.
+- Proximity buckets: 0-2 hops green, 3-5 yellow, 6+ red.
+
 ## Conventions
 
 - **All cross-entity references are by wiki page name** (the stable key), e.g.

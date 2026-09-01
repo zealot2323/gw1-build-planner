@@ -311,3 +311,59 @@ describe("full dataset: zone analysis", () => {
     expect(explorablesFrom("Traveler's Vale", index)).toEqual([]);
   });
 });
+
+describe("full dataset: travel distance", () => {
+  const atGrendich: Character = {
+    ...freshWarrior,
+    unlockedLocations: ["Grendich Courthouse"],
+  };
+
+  it("counts hops from the unlocked set, with adjacent explorables free", async () => {
+    const { travelDistances } = await import("../src/index.js");
+    const g = travelDistances(atGrendich, index);
+    expect(g.distance.get("Grendich Courthouse")).toBe(0);
+    // explorables you can already walk into are 0, not 1
+    expect(g.distance.get("Diessa Lowlands")).toBe(0);
+    // and somewhere across the map is far
+    expect(g.distance.get("Ring of Fire (outpost)")!).toBeGreaterThan(5);
+  });
+
+  it("ranks a nearby skill ahead of a late-game one", async () => {
+    const { travelDistances, planForSkill, proximityOf } = await import("../src/index.js");
+    const g = travelDistances(atGrendich, index);
+    const availability = skillAvailability(atGrendich, null, index);
+    const planOf = (page: string) =>
+      planForSkill(availability.find((e) => e.skill.wikiPage === page)!, g);
+
+    const near = planOf("Healing Signet"); // sold in Ascalon City, next door
+    const far = planOf("Hundred Blades"); // capture in Hell's Precipice
+    expect(near.distance!).toBeLessThan(far.distance!);
+    expect(proximityOf(near.distance)).not.toBe("far");
+  });
+
+  it("builds a todo route for skills you can't reach yet", async () => {
+    const { travelDistances, buildTodo } = await import("../src/index.js");
+    const g = travelDistances(atGrendich, index);
+    const availability = skillAvailability(atGrendich, null, index);
+    const todo = buildTodo(["Healing Signet", "Hundred Blades", null], availability, g);
+    expect(todo.map((t) => t.skill)).toEqual(["Healing Signet", "Hundred Blades"]);
+    // nearest first, and the far one comes with a route to walk
+    expect(todo[0].plan.distance!).toBeLessThanOrEqual(todo[1].plan.distance!);
+    expect(todo[1].plan.route.length).toBeGreaterThan(0);
+  });
+
+  it("gives friendly, actionable validation errors", async () => {
+    const b: Build = {
+      name: "oops",
+      character: "Fresh of Ascalon",
+      primary: Profession.Warrior,
+      secondary: null,
+      skills: ["Flare", null, null, null, null, null, null, null],
+    };
+    const [err] = validateBuild(b, index);
+    expect(err.code).toBe("ILLEGAL_PROFESSION");
+    expect(err.message).toContain("Elementalist");
+    expect(err.message).not.toContain('"'); // no code-ish quoting
+    expect(err.fix).toContain("secondary");
+  });
+});

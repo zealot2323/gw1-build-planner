@@ -4,3 +4,4 @@ export * from "./availability.js";
 export * from "./build.js";
 export * from "./bestiary.js";
 export * from "./analysis.js";
+export * from "./travel.js";

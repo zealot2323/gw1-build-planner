@@ -14,7 +14,10 @@ export type BuildErrorCode =
 
 export interface BuildError {
   code: BuildErrorCode;
+  /** Plain-language explanation, written for a player not a developer. */
   message: string;
+  /** What to do about it, when there's an obvious fix. */
+  fix?: string;
   /** 0-based slot index, where the error is tied to one slot. */
   slot?: number;
   skill?: SkillRef;
@@ -31,14 +34,17 @@ export function validateBuild(build: Build, index: DataIndex): BuildError[] {
   if (build.secondary !== null && build.secondary === build.primary) {
     errors.push({
       code: "PRIMARY_EQUALS_SECONDARY",
-      message: `secondary profession cannot equal primary (${build.primary})`,
+      message: `Your secondary can't also be ${build.primary} — that's your primary profession.`,
+      fix: "Pick a different secondary, or set it to none.",
     });
   }
 
   if (!Array.isArray(build.skills) || build.skills.length !== 8) {
     errors.push({
       code: "WRONG_SLOT_COUNT",
-      message: `a build has exactly 8 slots, got ${Array.isArray(build.skills) ? build.skills.length : "none"}`,
+      message: `A build needs exactly 8 slots, but this one has ${
+        Array.isArray(build.skills) ? build.skills.length : "none"
+      }.`,
     });
     return errors; // slot-indexed checks below assume 8 slots
   }
@@ -52,7 +58,8 @@ export function validateBuild(build: Build, index: DataIndex): BuildError[] {
     if (firstSlot !== undefined) {
       errors.push({
         code: "DUPLICATE_SKILL",
-        message: `"${ref}" appears in slots ${firstSlot + 1} and ${slot + 1}`,
+        message: `${ref} is in slot ${firstSlot + 1} already.`,
+        fix: `Remove one of them — a skill can only be equipped once.`,
         slot,
         skill: ref,
       });
@@ -62,13 +69,25 @@ export function validateBuild(build: Build, index: DataIndex): BuildError[] {
 
     const skill = index.skillByPage.get(ref);
     if (!skill) {
-      errors.push({ code: "UNKNOWN_SKILL", message: `"${ref}" is not in the dataset`, slot, skill: ref });
+      errors.push({
+        code: "UNKNOWN_SKILL",
+        message: `${ref} isn't in the Prophecies skill list.`,
+        fix: "It may be a Factions/Nightfall skill or a monster-only skill.",
+        slot,
+        skill: ref,
+      });
       return;
     }
     if (skill.isElite && firstSlot === undefined) {
       elites++;
       if (elites === 2) {
-        errors.push({ code: "TOO_MANY_ELITES", message: "a build may contain at most 1 elite skill", slot, skill: ref });
+        errors.push({
+          code: "TOO_MANY_ELITES",
+          message: `You can only equip one elite skill, and ${ref} is a second one.`,
+          fix: "Drop one of the elites (marked ★).",
+          slot,
+          skill: ref,
+        });
       }
     }
     if (
@@ -79,7 +98,14 @@ export function validateBuild(build: Build, index: DataIndex): BuildError[] {
     ) {
       errors.push({
         code: "ILLEGAL_PROFESSION",
-        message: `"${ref}" is a ${skill.profession} skill; build is ${build.primary}/${build.secondary ?? "none"}`,
+        message:
+          build.secondary === null
+            ? `${ref} is a ${skill.profession} skill, but this build is ${build.primary} with no secondary.`
+            : `${ref} is a ${skill.profession} skill, which a ${build.primary}/${build.secondary} can't use.`,
+        fix:
+          build.secondary === null
+            ? `Set your secondary to ${skill.profession} to use it.`
+            : `Either switch your secondary to ${skill.profession}, or remove the skill.`,
         slot,
         skill: ref,
       });

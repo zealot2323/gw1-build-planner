@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { Build, Profession } from "@gw1/engine";
+import { Profession, type Build } from "@gw1/engine";
 import { useSave } from "./save";
 import { CharactersView } from "./views/Characters";
 import { SkillsView } from "./views/Skills";
@@ -11,7 +11,15 @@ export function App() {
   const { save, addCharacter, updateCharacter, removeCharacter, importFile, exportFile } = useSave();
   const [tab, setTab] = useState<Tab>("characters");
   const [characterName, setCharacterName] = useState<string | null>(null);
-  const [secondary, setSecondary] = useState<Profession | null>(null);
+  // The working build is a draft until it's given a name and saved.
+  const emptyDraft = (primary: Profession): Build => ({
+    name: "Unsaved draft",
+    character: characterName ?? "",
+    primary,
+    secondary: null,
+    skills: [null, null, null, null, null, null, null, null],
+  });
+  const [draft, setDraft] = useState<Build>(() => emptyDraft(Profession.Warrior));
   const [activeBuild, setActiveBuild] = useState<string | null>(null);
   const [focusSkill, setFocusSkill] = useState<string | null>(null);
 
@@ -19,26 +27,32 @@ export function App() {
 
   const selectCharacter = (name: string | null) => {
     setCharacterName(name);
-    setSecondary(null);
     setActiveBuild(null);
+    const c = save.characters.find((x) => x.name === name);
+    if (c) setDraft(emptyDraft(c.primaryProfession));
   };
 
   const updateBuilds = (builds: Build[]) =>
     character && updateCharacter(character.name, { builds });
 
   /** "+ build" in the skill browser: fill the active build's first empty slot. */
-  const addToBuild =
-    character && activeBuild
-      ? (skill: string) => {
-          const build = character.builds.find((b) => b.name === activeBuild);
-          if (!build || build.skills.includes(skill)) return;
-          const i = build.skills.indexOf(null);
-          if (i === -1) return;
-          const skills = [...build.skills] as Build["skills"];
-          skills[i] = skill;
-          updateBuilds(character.builds.map((b) => (b.name === build.name ? { ...b, skills } : b)));
+  const addToBuild = character
+    ? (skill: string) => {
+        const target = activeBuild
+          ? (character.builds.find((b) => b.name === activeBuild) ?? draft)
+          : draft;
+        if (target.skills.includes(skill)) return;
+        const i = target.skills.indexOf(null);
+        if (i === -1) return;
+        const skills = [...target.skills] as Build["skills"];
+        skills[i] = skill;
+        if (activeBuild) {
+          updateBuilds(character.builds.map((b) => (b.name === target.name ? { ...b, skills } : b)));
+        } else {
+          setDraft({ ...draft, skills });
         }
-      : null;
+      }
+    : null;
 
   const goToSkill = (skill: string) => {
     setFocusSkill(skill);
@@ -57,7 +71,16 @@ export function App() {
           ))}
         </nav>
         <span className="muted">
-          {character ? `${character.name} (${character.primaryProfession}/${secondary ?? "x"})` : "no character selected"}
+          {character
+            ? `${character.name} (${character.primaryProfession}${
+                (activeBuild ? character.builds.find((b) => b.name === activeBuild)?.secondary : draft.secondary)
+                  ? "/" +
+                    (activeBuild
+                      ? character.builds.find((b) => b.name === activeBuild)!.secondary
+                      : draft.secondary)
+                  : ""
+              })`
+            : "no character selected"}
         </span>
       </header>
       {tab === "characters" && (
@@ -75,13 +98,13 @@ export function App() {
       {tab === "skills" && (
         <SkillsView
           character={character}
-          secondary={secondary}
-          setSecondary={setSecondary}
           focusSkill={focusSkill}
           onAddToBuild={addToBuild}
           activeBuild={activeBuild}
           setActiveBuild={setActiveBuild}
           updateBuilds={updateBuilds}
+          draft={draft}
+          setDraft={setDraft}
         />
       )}
       {tab === "zones" && <ZonesView onSkillClick={goToSkill} character={character} />}
