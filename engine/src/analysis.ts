@@ -4,7 +4,16 @@
  */
 import { monstersInLocation } from "./bestiary.js";
 import type { DataIndex } from "./data.js";
-import type { ArmorEntry, LocationRef, Monster, Profession, SkillRef } from "./types.js";
+import type {
+  ArmorEntry,
+  LocationRef,
+  Monster,
+  Profession,
+  QuestRef,
+  Skill,
+  SkillRef,
+  TrainerRef,
+} from "./types.js";
 
 // ---------------------------------------------------------------------------
 // Armor
@@ -51,6 +60,49 @@ export function explorablesFrom(outpost: LocationRef, index: DataIndex): Locatio
   const loc = index.locationByPage.get(outpost);
   if (!loc || loc.kind === "explorable") return [];
   return loc.neighbors.filter((n) => index.locationByPage.get(n)?.kind === "explorable");
+}
+
+export interface LocationSkills {
+  /** Skills the trainer stationed here sells. */
+  trainer: { name: TrainerRef; skills: Skill[] } | null;
+  /** Skills granted by quests given out here. */
+  quests: Array<{ quest: QuestRef; skills: Skill[] }>;
+}
+
+/**
+ * What can you pick up at this outpost/town? Trainer stock plus any skill
+ * whose quest is given here. Explorables return nothing — you buy skills in
+ * outposts, not in the field.
+ */
+export function skillsAtLocation(location: LocationRef, index: DataIndex): LocationSkills {
+  const loc = index.locationByPage.get(location);
+  const out: LocationSkills = { trainer: null, quests: [] };
+  if (!loc || loc.kind === "explorable") return out;
+
+  if (loc.trainer) {
+    const trainer = index.trainerByName.get(loc.trainer);
+    if (trainer) {
+      out.trainer = {
+        name: trainer.name,
+        skills: trainer.skillsOffered
+          .map((s) => index.skillByPage.get(s))
+          .filter((s): s is Skill => s !== undefined),
+      };
+    }
+  }
+
+  const byQuest = new Map<QuestRef, Skill[]>();
+  for (const skill of index.dataset.skills) {
+    for (const quest of skill.acquisition.quests) {
+      if (skill.acquisition.questLocations?.[quest] !== location) continue;
+      if (!byQuest.has(quest)) byQuest.set(quest, []);
+      byQuest.get(quest)!.push(skill);
+    }
+  }
+  out.quests = [...byQuest.entries()]
+    .map(([quest, skills]) => ({ quest, skills: skills.sort((a, b) => a.name.localeCompare(b.name)) }))
+    .sort((a, b) => a.quest.localeCompare(b.quest));
+  return out;
 }
 
 // ---------------------------------------------------------------------------

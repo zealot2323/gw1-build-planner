@@ -1,6 +1,7 @@
-import type { Skill } from "@gw1/engine";
+import type { Skill, SkillPlan } from "@gw1/engine";
 import { SkillIcon } from "./SkillIcon";
 import { ProfessionIcon } from "./ProfessionIcon";
+import { ProximityDot } from "./ProximityDot";
 import { wikiHref } from "../wiki";
 
 const has = (n: number | null | undefined): n is number => n !== null && n !== undefined;
@@ -36,8 +37,12 @@ function SourceList({ label, items }: { label: string; items: string[] }) {
   );
 }
 
-/** Inline skill card: costs, description, and where it comes from. */
-export function SkillDetails({ skill }: { skill: Skill }) {
+/**
+ * Inline skill card: costs, description, and where it comes from.
+ * `plan` adds the "how far away is this" line; omit it for known skills,
+ * which have nothing left to travel for.
+ */
+export function SkillDetails({ skill, plan }: { skill: Skill; plan?: SkillPlan }) {
   const acq = skill.acquisition;
   return (
     <div className="skill-details">
@@ -69,6 +74,19 @@ export function SkillDetails({ skill }: { skill: Skill }) {
         </div>
       </div>
       {skill.description && <p className="skill-desc">{skill.description}</p>}
+      {plan && (
+        <p className="small no-margin">
+          <ProximityDot proximity={plan.proximity} distance={plan.distance} />
+          {plan.distance === null
+            ? "No route to any known source."
+            : plan.distance === 0
+              ? "Reachable now — you can go get it."
+              : `${plan.distance} zone${plan.distance === 1 ? "" : "s"} away`}
+          {plan.route.length > 0 && (
+            <span className="muted"> · via {plan.route.join(" → ")}</span>
+          )}
+        </p>
+      )}
       <SourceList label="Trainers" items={acq.trainers} />
       <SourceList label="Quests" items={acq.quests} />
       <SourceList label="Capture from" items={acq.captureBosses} />

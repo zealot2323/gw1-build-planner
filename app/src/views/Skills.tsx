@@ -69,7 +69,9 @@ function byAttribute(
     if (!groups.has(attr)) groups.set(attr, []);
     groups.get(attr)!.push(e);
   }
-  const rank = (e: SkillAvailabilityEntry) => distanceOf(e.skill.wikiPage) ?? 999;
+  // known skills have nothing left to travel for; keep them out of the race
+  const rank = (e: SkillAvailabilityEntry) =>
+    e.status === "KNOWN" ? -1 : (distanceOf(e.skill.wikiPage) ?? 999);
   return [...groups.entries()]
     .map(([attr, list]) => {
       list.sort((a, b) =>
@@ -249,10 +251,12 @@ export function SkillsView({
                               }
                               title="show skill details"
                             >
-                              <ProximityDot
-                                proximity={plans.get(e.skill.wikiPage)?.proximity ?? "unknown"}
-                                distance={plans.get(e.skill.wikiPage)?.distance ?? null}
-                              />
+                              {e.status !== "KNOWN" && (
+                                <ProximityDot
+                                  proximity={plans.get(e.skill.wikiPage)?.proximity ?? "unknown"}
+                                  distance={plans.get(e.skill.wikiPage)?.distance ?? null}
+                                />
+                              )}
                               <SkillIcon page={e.skill.wikiPage} />
                               {e.skill.name}
                               {e.skill.isElite && <span className="elite"> ★</span>}
@@ -295,7 +299,10 @@ export function SkillsView({
                           <tr>
                             <td colSpan={colSpan}>
                               <div className="slide-down">
-                                <SkillDetails skill={e.skill} />
+                                <SkillDetails
+                                  skill={e.skill}
+                                  plan={e.status === "KNOWN" ? undefined : plans.get(e.skill.wikiPage)}
+                                />
                               </div>
                             </td>
                           </tr>

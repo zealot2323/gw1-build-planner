@@ -42,6 +42,7 @@ export function BuildBar({
   const [saveName, setSaveName] = useState("");
   const [openSlot, setOpenSlot] = useState<number | null>(null);
   const [showTodo, setShowTodo] = useState(true);
+  const [openRoute, setOpenRoute] = useState<string | null>(null);
 
   const builds = character.builds;
   const isDraft = activeBuild === null;
@@ -73,6 +74,9 @@ export function BuildBar({
     patch({ skills });
     if (openSlot === i) setOpenSlot(null);
   };
+
+  // slots called out by validation get a red border
+  const badSlots = new Set(errors.map((e) => e.slot).filter((i): i is number => i !== undefined));
 
   const openSkill =
     openSlot !== null && build.skills[openSlot]
@@ -114,9 +118,7 @@ export function BuildBar({
         </div>
 
         <div className="row">
-          {errors.length === 0 ? (
-            <span className="ok small">✓ valid</span>
-          ) : (
+          {errors.length > 0 && (
             <span className="error small">
               {errors.length} thing{errors.length > 1 ? "s" : ""} to fix
             </span>
@@ -150,7 +152,11 @@ export function BuildBar({
 
       <div className="slots">
         {build.skills.map((skill, i) => (
-          <div key={i} className={skill ? "slot filled" : "slot"}>
+          <div
+            key={i}
+            className={`slot${skill ? " filled" : ""}${badSlots.has(i) ? " invalid" : ""}`}
+            title={badSlots.has(i) ? errors.find((e) => e.slot === i)?.message : undefined}
+          >
             {skill ? (
               <>
                 <button
@@ -216,17 +222,28 @@ export function BuildBar({
                       {plan.best.kind === "capture" && `capture from ${plan.best.via}`}
                       {plan.best.location && ` in ${plan.best.location}`}
                       {plan.route.length > 0 && (
-                        <span title={plan.route.join(" → ")}>
+                        <>
                           {" · "}
-                          {plan.distance} zone{plan.distance === 1 ? "" : "s"} away, next:{" "}
-                          {plan.route.slice(0, 3).join(" → ")}
-                          {plan.route.length > 3 && ` → … (+${plan.route.length - 3})`}
-                        </span>
+                          <button
+                            className="linkish inline"
+                            onClick={() => setOpenRoute(openRoute === skill ? null : skill)}
+                          >
+                            {plan.distance} zone{plan.distance === 1 ? "" : "s"} away
+                            {openRoute === skill ? " ▾" : " ▸"}
+                          </button>
+                        </>
                       )}
                       {plan.distance === 0 && " · you can go now"}
                     </span>
                   ) : (
                     <span className="muted"> — no reachable source</span>
+                  )}
+                  {openRoute === skill && plan.route.length > 0 && (
+                    <ol className="route">
+                      {plan.route.map((step) => (
+                        <li key={step}>{step}</li>
+                      ))}
+                    </ol>
                   )}
                 </li>
               ))}

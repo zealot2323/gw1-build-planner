@@ -367,3 +367,20 @@ describe("full dataset: travel distance", () => {
     expect(err.fix).toContain("secondary");
   });
 });
+
+describe("full dataset: what an outpost offers", () => {
+  it("lists trainer stock and quest skills for a town", async () => {
+    const { skillsAtLocation } = await import("../src/index.js");
+    const at = skillsAtLocation("Ascalon City", index);
+    expect(at.trainer?.name).toBe("Sir Bertran");
+    expect(at.trainer!.skills.length).toBeGreaterThan(10);
+    expect(at.trainer!.skills.every((s) => typeof s.name === "string")).toBe(true);
+  });
+
+  it("returns nothing for an explorable", async () => {
+    const { skillsAtLocation } = await import("../src/index.js");
+    const at = skillsAtLocation("Old Ascalon", index);
+    expect(at.trainer).toBeNull();
+    expect(at.quests).toEqual([]);
+  });
+});

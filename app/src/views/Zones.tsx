@@ -3,6 +3,7 @@ import {
   armorProfile,
   explorablesFrom,
   monstersInLocation,
+  skillsAtLocation,
   zoneSummary,
   type MonsterDisplay,
 } from "@gw1/engine";
@@ -117,6 +118,61 @@ function MonsterCard({
   );
 }
 
+/** A row of skill icons with names, each opening the skill browser. */
+function SkillChips({ refs, onSkillClick }: { refs: string[]; onSkillClick: (s: string) => void }) {
+  return (
+    <div className="skillbar">
+      {refs.map((ref) => {
+        const skill = index.skillByPage.get(ref);
+        return (
+          <button key={ref} className="skill-card" onClick={() => onSkillClick(ref)}>
+            <SkillIcon page={ref} size={28} />
+            <span className="skill-card-name">
+              {ref}
+              {skill?.isElite && <span className="elite"> ★</span>}
+            </span>
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+/** What you can pick up at an outpost: trainer stock and quest rewards. */
+function OutpostSkills({ location, onSkillClick }: { location: string; onSkillClick: (s: string) => void }) {
+  const at = useMemo(() => skillsAtLocation(location, index), [location]);
+  if (!at.trainer && at.quests.length === 0) {
+    return <p className="muted pad">No skills are offered here.</p>;
+  }
+  return (
+    <>
+      {at.trainer && (
+        <div className="outpost-section">
+          <h4>
+            Trainer:{" "}
+            <a href={wikiHref(at.trainer.name)} target="_blank" rel="noreferrer">
+              {at.trainer.name}
+            </a>{" "}
+            <span className="muted">({at.trainer.skills.length} skills)</span>
+          </h4>
+          <SkillChips refs={at.trainer.skills.map((s) => s.wikiPage)} onSkillClick={onSkillClick} />
+        </div>
+      )}
+      {at.quests.map(({ quest, skills }) => (
+        <div key={quest} className="outpost-section">
+          <h4>
+            Quest:{" "}
+            <a href={wikiHref(quest)} target="_blank" rel="noreferrer">
+              {quest}
+            </a>
+          </h4>
+          <SkillChips refs={skills.map((s) => s.wikiPage)} onSkillClick={onSkillClick} />
+        </div>
+      ))}
+    </>
+  );
+}
+
 /** "What am I walking into?" — enemy groups and the tactics they bring. */
 function ZoneBriefing({
   location,
@@ -205,30 +261,18 @@ function ZoneBriefing({
                 Single-skill traits — probably not worth building around:
               </div>
               {s.minorThreats.map((t) => (
-                <div key={t.tag} className="small">
-                  <span className="muted">{t.tag}:</span>{" "}
-                  {t.examples.map((ref, i) => (
-                    <span key={ref}>
-                      {i > 0 && ", "}
-                      <button className="linkish inline" onClick={() => onSkillClick(ref)}>
-                        {ref}
-                      </button>
-                    </span>
-                  ))}
+                <div key={t.tag}>
+                  <div className="muted small">{t.tag}</div>
+                  <SkillChips refs={t.examples} onSkillClick={onSkillClick} />
                 </div>
               ))}
             </>
           ) : (
-            <div className="small">
-              <span className="muted">{open!.tag} — {open!.skills} skills:</span>{" "}
-              {open!.examples.map((ref, i) => (
-                <span key={ref}>
-                  {i > 0 && ", "}
-                  <button className="linkish inline" onClick={() => onSkillClick(ref)}>
-                    {ref}
-                  </button>
-                </span>
-              ))}
+            <div>
+              <div className="muted small">
+                {open!.tag} — {open!.skills} skills
+              </div>
+              <SkillChips refs={open!.examples} onSkillClick={onSkillClick} />
             </div>
           )}
         </div>
@@ -336,7 +380,11 @@ export function ZonesView({
       return next;
     });
 
-  const monsters = selected ? monstersInLocation(selected, index, hardMode) : [];
+  const selectedKind = selected
+    ? (index.locationByPage.get(selected)?.kind ?? "mission")
+    : null;
+  const isOutpost = selectedKind !== null && selectedKind !== "explorable" && selectedKind !== "mission";
+  const monsters = selected && !isOutpost ? monstersInLocation(selected, index, hardMode) : [];
   const hasBestiary = (kind: string) => kind === "explorable" || kind === "mission";
 
   const zoneButton = (name: string, kind: string) => (
@@ -395,10 +443,20 @@ export function ZonesView({
                 {outposts.map((o) => (
                   <li key={o.name}>
                     <div className="zone-row">
-                      <span className={unlocked.has(o.name) ? "outpost unlocked" : "outpost"}>
+                      <button
+                        className={
+                          "linkish outpost" +
+                          (selected === o.name ? " active" : "") +
+                          (unlocked.has(o.name) ? " unlocked" : "")
+                        }
+                        onClick={() => {
+                          setSelected(o.name);
+                          setExpandedSkill(null);
+                        }}
+                      >
                         {unlocked.has(o.name) && <span className="unlocked-dot">●</span>}
                         {o.name} <span className="muted tag">{o.kind}</span>
-                      </span>
+                      </button>
                       <WikiLink page={o.name} />
                     </div>
                     {o.zones.length > 0 && (
@@ -423,21 +481,29 @@ export function ZonesView({
             <div className="row space-between">
               <h3>
                 {selected} <WikiLink page={selected} />{" "}
-                <span className="muted">({monsters.length} monsters)</span>
+                <span className="muted">
+                  {isOutpost ? selectedKind : `${monsters.length} monsters`}
+                </span>
               </h3>
-              <label className="inline-check mode-toggle">
-                <input
-                  type="checkbox"
-                  checked={hardMode}
-                  onChange={(e) => {
-                    setHardMode(e.target.checked);
-                    setExpandedSkill(null);
-                  }}
-                />
-                hard mode
-              </label>
+              {!isOutpost && (
+                <label className="inline-check mode-toggle">
+                  <input
+                    type="checkbox"
+                    checked={hardMode}
+                    onChange={(e) => {
+                      setHardMode(e.target.checked);
+                      setExpandedSkill(null);
+                    }}
+                  />
+                  hard mode
+                </label>
+              )}
             </div>
-            <ZoneBriefing location={selected} hardMode={hardMode} onSkillClick={onSkillClick} />
+            {isOutpost ? (
+              <OutpostSkills location={selected} onSkillClick={onSkillClick} />
+            ) : (
+              <ZoneBriefing location={selected} hardMode={hardMode} onSkillClick={onSkillClick} />
+            )}
             {monsters.map((entry) => (
               <MonsterCard
                 key={entry.monster.wikiPage}
