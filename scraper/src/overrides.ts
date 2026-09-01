@@ -58,8 +58,13 @@ export const TRAINER_EXTRA_SKILLS: Record<string, string[]> = {
   "Captain Osric": ["Restore Life"],
 };
 
-/** "(monster skill)" variant pages are not learnable player skills. */
-export const isExcludedSkillPage = (title: string): boolean => / \(monster skill\)$/.test(title);
+/**
+ * Pages that sit in the skill categories but are not learnable skills:
+ * "(monster skill)" variants, and subpages such as "<Skill>/Skill history"
+ * (which carry the parent's id and would collide with it).
+ */
+export const isExcludedSkillPage = (title: string): boolean =>
+  / \(monster skill\)$/.test(title) || title.includes("/");
 
 /**
  * Monsters whose infobox level has no hard-mode value in parentheses are

@@ -1,8 +1,8 @@
 # Validation report
 
-Generated 2026-09-01T13:36:44.958Z by `npm run parse` (cache-only).
+Generated 2026-09-01T13:59:43.287Z by `npm run parse` (cache-only).
 
-## skills (10 issues on 10 pages)
+## skills (9 issues on 9 pages)
 
 - **Anguish (attack)**: no Acquisition section
 - **Bloodsong (attack)**: no Acquisition section
@@ -12,7 +12,6 @@ Generated 2026-09-01T13:36:44.958Z by `npm run parse` (cache-only).
 - **Pain (attack)**: no Acquisition section
 - **Pain (attack) (Signet of Spirits)**: no Acquisition section
 - **Shadowsong (attack)**: no Acquisition section
-- **Signet of Twilight/Skill history**: no Acquisition section
 - **Wanderlust (attack)**: no Acquisition section
 
 ## trainers (21 issues on 18 pages)

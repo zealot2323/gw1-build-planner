@@ -44326,27 +44326,6 @@
     }
   },
   {
-    "name": "Signet of Twilight",
-    "wikiPage": "Signet of Twilight/Skill history",
-    "gwSkillId": 1648,
-    "profession": "Assassin",
-    "attribute": null,
-    "isElite": false,
-    "campaign": "Nightfall",
-    "energyCost": null,
-    "adrenalineCost": null,
-    "sacrificePercent": null,
-    "upkeep": null,
-    "activation": 1,
-    "recharge": 20,
-    "description": "Signet. For each hex on target foe, that foe loses one enchantment.",
-    "acquisition": {
-      "trainers": [],
-      "quests": [],
-      "captureBosses": []
-    }
-  },
-  {
     "name": "Simple Thievery",
     "wikiPage": "Simple Thievery",
     "gwSkillId": 1350,
