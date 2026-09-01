@@ -1,0 +1,7 @@
+{
+  "title": "Healing Whisper",
+  "pageid": 2942,
+  "revid": 2683569,
+  "timestamp": "2023-02-19T17:08:25Z",
+  "wikitext": "{{Skill infobox\n| id = 958\n| name = Healing Whisper\n| campaign = Factions\n| profession = Monk\n| attribute = Healing Prayers\n| type = Spell\n| energy = 5\n| activation = 1\n| recharge = 1\n| range = half\n| causes1 = Healing\n| description = [[Spell]]. [[Target]] other [[ally]] is [[heal]]ed for {{gr|40|100}}. This spell has [[Half ranged|half the normal range]].\n| concise description = Half Range Spell. Heals for {{gr|40|100}}. {{gray|Cannot self-target.}}\n| target = other allies\n}}\n\n{{Skill progression\n| attribute = [[Healing Prayers]]\n| var1 name = [[Heal]]ing\n| var1 at0 = 40\n| var1 at15 = 100}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Xu Fengxia]] ([[Ran Musu Gardens]])\n* [[Michiko]] ([[Kaineng Center]])"
+}

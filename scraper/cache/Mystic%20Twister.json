@@ -1,0 +1,7 @@
+{
+  "title": "Mystic Twister",
+  "pageid": 14386,
+  "revid": 2731124,
+  "timestamp": "2026-06-24T23:02:36Z",
+  "wikitext": "{{Skill infobox\n| id = 1491\n| name = Mystic Twister\n| campaign = Nightfall\n| profession = Dervish\n| attribute = Wind Prayers\n| type = Spell\n| adrenaline = 5\n| recharge = 4\n| activation = {{1/2}}\n| causes1 = Cold Damage\n| description = [[Spell]]. Deals {{gr|10|60}} [[cold damage]] to all [[nearby]] [[foe]]s. If you are [[Enchantment spell|enchanted]], this spell deals an additional {{gr|10|60}} cold damage.\n| concise description = Spell. Deals {{gr|10|60}} cold damage to all nearby foes. Deals {{gr|10|60}} more cold damage if you are enchanted.\n| aoe = nearby\n| target = untargeted\n| pbaoe = self\n}}\n\n{{Skill progression\n|attribute = [[Wind Prayers]]\n|var1 name = [[Cold damage]]\n|var1 at0 = 10\n|var1 at15 = 60\n|var2 name = Additional cold damage\n|var2 at0 = 10\n|var2 at15 = 60\n}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n* [[Nightfall]]\n** [[Medando]] ([[Yohlon Haven]])\n'''[[Hero skill trainer]]s'''\n* Nightfall\n** [[Warden of Whispers (Chantry of Secrets)|Warden of Whispers]] ([[Chantry of Secrets]])\n'''[[Signet of Capture]]'''\n* [[Eye of the North]]\n** [[Facet of Spirit]] ([[Arbor Bay]], during [[Spoiler-related Cipher]]; [[Varajar Fells]], during [[The Path to Revelations]])\n\n==Trivia==\n*Along with this skill, [[Mystic Sandstorm]] and [[Test of Faith]] are the only spells that require adrenaline instead of energy.\n\n[[Category:Skills offered by hero skill trainers]]"
+}

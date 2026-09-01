@@ -1,0 +1,7 @@
+{
+  "title": "Siphon Strength",
+  "pageid": 4417,
+  "revid": 2720686,
+  "timestamp": "2026-02-08T00:01:39Z",
+  "wikitext": "{{Skill infobox\n| id = 827\n| name = Siphon Strength\n| campaign = Factions\n| profession = Assassin\n| attribute = Deadly Arts\n| type = Hex Spell\n| elite = y\n| energy = 10\n| activation = 1\n| recharge = 10\n| target = foes\n| range = Casting\n| aoe = \n| causes1 = Damage Reduction\n| causes2 = Critical Hit\n| description = [[Elite]] [[Hex Spell]]. For {{gr|5|20}} seconds, [[target]] [[foe]] deals {{gr|5|50}} less [[damage]] with [[attack]]s and all of your attacks against that foe have an additional 50% chance of being a [[critical hit]].\n| concise description = Elite Hex Spell. ({{gr|5|20}} seconds.) Target foe deals {{gr|5|50|-}} attack damage. You have +50% chance to land a critical hit on this foe.\n}}\n\n{{Skill progression\n| attribute = [[Deadly Arts]]\n| var1 name = [[Duration]]\n| var1 at0 = 5\n| var1 at15 = 20\n| var2 name = [[Damage reduction]]\n| var2 at0 = 5\n| var2 at15 = 50}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Ssaresh Rattler]] ([[Maishang Hills]])\n\n== Related skills ==\n* {{skill icon|Dulled Weapon}}\n* {{skill icon|Empathy}}\n\n== Notes ==\n* This hex will end on the target if the caster [[Death|dies]].\n\n== Trivia ==\n{{Skill change}}\n\n[[de:Kraft abzapfen]]"
+}

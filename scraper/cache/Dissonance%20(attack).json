@@ -1,0 +1,7 @@
+{
+  "title": "Dissonance (attack)",
+  "pageid": 76071,
+  "revid": 2609222,
+  "timestamp": "2016-06-27T23:34:41Z",
+  "wikitext": "{{skill infobox\n| id = 922\n| name = Dissonance\n| image = [[Image:Dissonance (attack).jpg]]\n| campaign = Factions\n| attribute = Communing\n| type = Ranged Attack\n| profession = Monster\n| special = Spirit monster\n| activation = 2\n| description = [[Ranged Attack]]. This attack deals {{gr|5|20}} damage and anyone struck by its attacks is interrupted.\n| concise description = Ranged Attack. Deals {{gr|5|20}} damage. Interrupts actions.}}\n\n{{skill progression\n| attribute = [[Communing]]\n| var1 name = [[Damage]]\n| var1 at0 = 5\n| var1 at15 = 20}}\n\n== Notes ==\n* This is the skill used by the [[Spirit of Dissonance]] that is summoned by the [[ritualist]] skill [[Dissonance]], and not the ritualist skill itself.\n\n<!--== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details.-->"
+}

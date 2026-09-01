@@ -1,0 +1,7 @@
+{
+  "title": "Meditation",
+  "pageid": 12855,
+  "revid": 2726552,
+  "timestamp": "2026-04-28T19:25:57Z",
+  "wikitext": "{{Skill infobox\n| id = 1523\n| name = Meditation\n| campaign = Nightfall\n| profession = Dervish\n| attribute = Mysticism\n| type = Enchantment Spell\n| energy = 10\n| activation = {{1/4}}\n| recharge = 15\n| causes1 = Adrenaline Loss\n| causes2 = Energy Gain\n| description = [[Enchantment Spell]]. Lose all [[adrenaline]]. For 20 seconds, you gain {{gr|1|4}} [[Energy]] every time an enchantment on you ends.\n| concise description = Enchantment Spell. (20 seconds.) {{gray|Lose all adrenaline.}} Gain {{gr|1|4}} Energy whenever an enchantment on you ends.\n| target = self\n}}\n\n{{Skill progression\n|attribute = [[Mysticism]]\n|var1 name = [[Energy]] gain\n|var1 at0 = 1\n|var1 at15 = 4\n}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Medando]] ([[Yohlon Haven]])\n\n'''[[Hero skill trainer]]s'''\n*[[Libeh]] ([[Command Post]])\n\n== Notes ==\n* Meditation will not trigger itself when it ends.\n* Consider combining with [[Pious Renewal]] and fast recharging [[teardown]]s (like [[Eremite's Attack]] and [[Pious Assault]]) for great [[energy management]].\n\n[[Category:Skills offered by hero skill trainers]]"
+}

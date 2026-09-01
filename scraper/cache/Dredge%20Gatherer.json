@@ -1,0 +1,7 @@
+{
+  "title": "Dredge Gatherer",
+  "pageid": 41862,
+  "revid": 2598445,
+  "timestamp": "2015-11-08T16:57:18Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Dredge ranger.jpg|150px]]\n| affiliation = Echovald Forest wildlife\n| type = Dredge\n| profession = Ranger\n| level = 24 (26)\n| campaign = Factions\n}}\n[[Dredge Gatherer]]s inflict long-lasting [[condition]]s.\n\n==Locations==\n*[[Echovald Forest]]\n**{{NPC location|Arborstone|explorable area}}\n**{{NPC location|Ferndale}}\n**{{NPC location|Melandru's Hope}}\n**{{NPC location|Morostav Trail}}\n**{{NPC location|Mourning Veil Falls}}\n\n==Missions==\n*[[Echovald Forest]]\n**{{NPC location|Altrumm Ruins}}\n**{{NPC location|Arborstone}}\n\n==Skills==\n*{{skill icon|Apply Poison}}\n*{{skill icon|Archer's Signet}} ([[elite]])\n*{{skill icon|Savage Shot}}\n*{{skill icon|Snare}}\n*{{skill icon|Troll Unguent}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 82\n| piercing = 82\n| slashing = 82\n| cold = 112\n| earth = 112\n| fire = 112\n| lightning = 112\n}}\n\n==Items dropped==\n*[[Dredge Incisor]]\n*[[Dredge Spaulder]]"
+}

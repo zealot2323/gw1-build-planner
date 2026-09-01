@@ -1,0 +1,7 @@
+{
+  "title": "Deadly Haste",
+  "pageid": 14599,
+  "revid": 2732885,
+  "timestamp": "2026-07-04T21:08:24Z",
+  "wikitext": "{{Skill infobox\n| name = Deadly Haste\n| id = 1638\n| campaign = Nightfall\n| profession = Assassin\n| attribute = Critical Strikes\n| type = Enchantment Spell\n| energy = 5\n| activation = 1\n| recharge = 20\n| causes1 = Decreased Activation Time\n| causes2 = Decreased Recharge Time\n| description = [[Enchantment Spell]]. For {{gr|10|35}} seconds, [[Half ranged|half-ranged]] [[spell]]s [[Activation time|cast]] {{gr|5|50||%}} faster and [[Recharge|recharge]] {{gr|5|60||%}} faster.\n| concise description = Enchantment Spell. ({{gr|10|35}} seconds.) Your half-ranged spells cast {{gr|5|50||%}} faster and recharge {{gr|5|60||%}} faster.\n}}\n\n{{Skill progression\n|attribute = [[Critical Strikes]]\n|var1 name = [[Duration]]\n|var1 at0 = 10\n|var1 at15 = 35\n|var2 name = [[Activation time|Casting]] %\n|var2 at0 = 5\n|var2 at15 = 50\n|var3 name = [[Recharge time|Recharge]] %\n|var3 at0 = 5\n|var3 at15 = 60}}\n\n== Acquisition ==\n'''[[Skill trainer]]'''\n* [[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]'''\n* [[Pikin]] (Kamadan, Jewel of Istan)\n\n== Related skills ==\n* {{skill icon|Deadly Paradox}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

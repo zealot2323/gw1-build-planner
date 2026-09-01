@@ -1,0 +1,7 @@
+{
+  "title": "Forked Arrow",
+  "pageid": 1241,
+  "revid": 2683498,
+  "timestamp": "2023-02-19T05:05:55Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| name = Forked Arrow\n| id = 1722\n| campaign = Nightfall\n| profession = Ranger\n| type = Bow Attack\n| energy = 10\n| recharge = 5\n| description = [[Bow Attack]]. Shoot two arrows simultaneously at [[target]] [[foe]]. If you are under the effects of an [[enchantment]] or [[hex]], you shoot only one arrow.\n| concise description = Bow Attack. You shoot two arrows simultaneously. {{gray|Shoot only one arrow if you are enchanted or hexed.}}\n}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n* [[Nightfall]]\n** [[Medando]] ([[Yohlon Haven]])\n'''[[Hero skill trainer]]s'''\n* Nightfall\n**[[Warden of Whispers (Chantry of Secrets)|Warden of Whispers]] ([[Chantry of Secrets]])\n'''[[Signet of Capture]]'''\n* [[Eye of the North]]\n** [[Petraj the Evasive]] ([[Verdant Cascades]])\n** [[Facet of Creation]] ([[Alcazia Tangle]] during [[The Cipher of Melandru]], and [[Varajar Fells]] during [[The Path to Revelations]])\n\n==Related skills==\n*{{skill icon|Dual Shot}}\n*{{skill icon|Triple Shot}}\n\n==Notes==\n*Works well with preparations like [[Ignite Arrows]], [[Kindle Arrows]], and [[Glass Arrows]].\n*Consider using with [[Brutal Weapon]] for increased damage, since it also requires that you are not enchanted.\n\n==Trivia==\nThis skill has changed since its introduction; see its [[Forked Arrow/Skill history|skill history]] for details.\n\n[[Category:Skills offered by hero skill trainers]]"
+}

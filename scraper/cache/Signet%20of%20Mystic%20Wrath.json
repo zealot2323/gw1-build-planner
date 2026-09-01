@@ -1,0 +1,7 @@
+{
+  "title": "Signet of Mystic Wrath",
+  "pageid": 12993,
+  "revid": 2721874,
+  "timestamp": "2026-02-25T23:38:13Z",
+  "wikitext": "{{Skill infobox\n| name = Signet of Mystic Wrath\n| id = 1689\n| campaign = Nightfall\n| profession = Monk\n| attribute = Smiting Prayers\n| type = Signet\n| activation = 2\n| recharge = 20\n| causes1 = Holy Damage\n| description = [[Signet]]. [[Target]] [[foe]] takes 25 [[holy damage]] for each [[enchantment]] on you (maximum {{gr|30|120}} holy damage).\n| concise description = Signet. Deals 25 holy damage for each enchantment on you (maximum {{gr|30|120}} holy damage).\n| target = foes\n}}\n\n{{Skill progression\n| attribute = [[Smiting Prayers]]\n| var1 name = maximum [[Holy damage]]\n| var1 at0 = 30\n| var1 at15 = 120}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Baram]] ([[The Kodash Bazaar]])\n'''[[Hero skill trainer]]s'''\n* [[Godaj]] ([[Lair of the Forgotten]])\n'''[[Signet of Capture]]'''\n* [[Keshel the Voracious]] ([[Cliffs of Dohjok]])\n\n== Related skills ==\n* {{Skill icon|Signet of Deadly Corruption}}\n\n== Hero Usage ==\n* Heroes will not use this skill unless they are under the effects of at least one enchantment.\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Hero-vetted skills]]\n[[Category:Skills offered by hero skill trainers]]"
+}

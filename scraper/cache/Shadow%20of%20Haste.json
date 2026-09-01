@@ -1,0 +1,7 @@
+{
+  "title": "Shadow of Haste",
+  "pageid": 16277,
+  "revid": 2733052,
+  "timestamp": "2026-07-05T13:17:21Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 929\n| name = Shadow of Haste\n| campaign = Factions\n| profession = Assassin\n| attribute = Shadow Arts\n| type = Stance\n| energy = 5\n| recharge = 45\n| causes1 = Increased Movement Speed\n| causes2 = Shadow Step\n| description = [[Stance]]. For {{gr|10|40}} seconds you [[Speed boost|move 15% faster]] than normal. When Shadow of Haste ends, you [[shadow step]] to your original location.\n| concise description = Stance. ({{gr|10|40}} seconds.) You move 15% faster. End effect: return to your original location.\n}}\n\n{{Skill progression\n|attribute = [[Shadow Arts]]\n|var1 name = [[Duration]]\n|var1 at0 = 10\n|var1 at15 = 40}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Masaharu]] ([[Seitung Harbor]])\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n*{{skill icon|Shadow Walk}}\n\n== Notes ==\n* Use a [[cancel stance]] to control when this ends.\n* Re-using this skill before it ends resets the original location.\n\n== Trivia ==\n* This skill was named Shadow Step during the [[Factions Preview Event]]."
+}

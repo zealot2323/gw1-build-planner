@@ -1,0 +1,7 @@
+{
+  "title": "Signet of Rage",
+  "pageid": 13084,
+  "revid": 2733207,
+  "timestamp": "2026-07-05T16:31:30Z",
+  "wikitext": "{{Skill infobox\n| id = 1269\n| name = Signet of Rage\n| campaign = Factions\n| profession = Monk\n| attribute = Smiting Prayers\n| type = Signet\n| activation = 1\n| recharge = 20\n| target = foes\n| range = casting\n| aoe =\n| causes1 = Holy Damage\n| description = [[Signet]]. [[Target]] [[foe]] takes {{gr|5|50}} [[holy damage]] and {{gr|5|10|+}} holy damage for each [[List of adrenal skills|adrenaline skill]] that foe has.\n| concise description = Signet. Deals {{gr|5|50}} holy damage. Deals {{gr|5|10}} more holy damage for each of target foe's adrenaline skills.\n}}\n\n{{Skill progression\n| attribute = [[Smiting Prayers]]\n| var1 name = [[Holy damage]]\n| var1 at0 = 5\n| var1 at15 = 50\n| var2 name = + Holy damage\n| var2 at0 = 5\n| var2 at15 = 10}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Hero Usage ==\n* Heroes use this signet as a basic damage skill, ignoring its conditional bonus.\n\n[[Category:Hero-vetted skills]]"
+}

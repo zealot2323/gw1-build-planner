@@ -1,0 +1,7 @@
+{
+  "title": "Vapor Blade",
+  "pageid": 16270,
+  "revid": 2733050,
+  "timestamp": "2026-07-05T13:16:30Z",
+  "wikitext": "{{Skill infobox\n| id = 866\n| name = Vapor Blade\n| campaign = Factions\n| profession = Elementalist\n| attribute = Water Magic\n| type = Spell\n| energy = 5\n| activation = {{3/2}}\n| recharge = 7\n| overcast = 5\n| causes1 = Cold Damage\n| description = [[Spell]].  [[Target]] [[foe]] is struck for {{gr|15|135}} [[cold damage]]. Vapor Blade deals half [[damage]] if that foe has any [[enchantment]]s on them. \n| concise description = Spell. Deals {{gr|15|135}} cold damage. Half damage if target foe is enchanted.\n| target = foes\n}}\n\n{{Skill progression\n|attribute = [[Water Magic]]\n|var1 name = [[Cold damage]]\n|var1 at0 = 15\n|var1 at15 = 135}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Eye of the North]]\n** [[Drikard the Foggy]] ([[Dalada Uplands]])\n** [[Gloop]] ([[Ooze Pit]])\n\n== Hero Usage ==\n* Heroes use Vapor Blade as a source of generic damage without contingencies.\n* However, heroes seem to prefer using Vapor Blade over their other elemental damage spells when entering combat for the first time.\n\n== Trivia ==\n* The [[functionality]] of this skill has changed since its introduction; see its [[Vapor Blade/Skill history|skill history]] for details.\n\n[[Category:Hero-vetted skills]]"
+}

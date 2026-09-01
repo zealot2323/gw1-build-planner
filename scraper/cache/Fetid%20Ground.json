@@ -1,0 +1,7 @@
+{
+  "title": "Fetid Ground",
+  "pageid": 16022,
+  "revid": 2683687,
+  "timestamp": "2023-02-21T02:14:10Z",
+  "wikitext": "{{Skill infobox\n| id = 841\n| name = Fetid Ground\n| campaign = Factions\n| profession = Necromancer\n| attribute = Death Magic\n| type = Spell\n| energy = 5\n| activation = {{3/4}}\n| recharge = 10\n| causes1 = Cold Damage\n| causes2 = Poison\n| description = [[Spell]]. [[Target]] [[foe]] is struck for {{gr|15|65}} [[cold damage]]. If that foe is [[Knock down|knocked down]], that foe becomes [[Poison]]ed for {{gr|5|20}} seconds.\n| concise description = Spell. Deals {{gr|15|65}} cold damage. Inflicts Poisoned condition ({{gr|5|20}} seconds) if target foe is knocked-down.\n| target = foes\n}}\n\n{{Skill progression\n| attribute = [[Death Magic]]\n| var1 name = [[Cold damage]]\n| var1 at0 = 15\n| var1 at15 = 65\n| var2 name = [[Poison]] [[duration]]\n| var2 at0 = 5\n| var2 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details."
+}

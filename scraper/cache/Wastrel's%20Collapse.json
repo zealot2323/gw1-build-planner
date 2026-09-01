@@ -1,0 +1,7 @@
+{
+  "title": "Wastrel's Collapse",
+  "pageid": 4445,
+  "revid": 2704634,
+  "timestamp": "2025-04-17T18:50:29Z",
+  "wikitext": "{{Skill infobox\n| name = Wastrel's Collapse\n| id = 1644\n| campaign = Nightfall\n| profession = Assassin\n| type = Skill\n| energy = 5\n| elite = y\n| activation = {{1/4}}\n| recharge = 20\n| target = foes\n| causes1 = Shadow Step\n| causes2 = Knockdown\n| causes3 = Disable\n| description = [[Elite]] [[Skill (skill type)|Skill]]. [[Shadow Step]] to [[target]] [[foe]]. If target foe is not using a [[skill]], that foe is [[knocked down]]. All of your non-[[dagger]] [[attack skill]]s are [[disable]]d for 10 seconds.\n| concise description = Elite Skill. Shadow Step to target foe. Causes knock-down if target foe is not using a skill. {{gray|Disables your non-dagger attack skills (10 seconds).}}\n}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Jarimiya the Unmerciful]] ([[Vehtendi Valley]])\n\n== Notes ==\n* This skill has a {{3/4}} second [[aftercast delay]] despite not being a spell, in line with any shadow step skill that has an activation time.\n* Wastrel's Collapse disables all attack skills that are not [[dagger attack]] skills, rather than disabling ''all'' skills that are not dagger attack skills. [[Wild Throw]] shares a similar drawback by disabling non-spear attack skills.\n* Heroes will use this skill indiscriminately on the foes which cannot be knocked down because of [[Stun Immunity]].\n\n[[de:Verfall des Verschwenders]]"
+}

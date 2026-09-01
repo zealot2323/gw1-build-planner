@@ -1,0 +1,7 @@
+{
+  "title": "Sadistic Giant",
+  "pageid": 18783,
+  "revid": 2454697,
+  "timestamp": "2012-02-20T23:33:08Z",
+  "wikitext": "{{NPC infobox\n| type = Giant\n| profession = Necromancer\n| level = 24 (26)\n| campaign = Nightfall\n| affiliation = The Desolation wildlife\n}}__NOTOC__\n[[Sadistic Giant]]s are [[necromancer]]s that roam [[the Desolation]] in groups of two or more, sometimes with [[Nomad Giant]]s.\n\n==Locations==\n*[[The Desolation]]\n**{{NPC location|Crystal Overlook}}\n**{{NPC location|The Ruptured Heart}}\n**{{NPC location|The Shattered Ravines}}\n\n==Skills==\n15 [[Blood Magic]], 0 [[Curses]] (20 Blood Magic, 16 Curses in [[Hard mode]])\n*{{skill icon|Chilblains}}\n*{{skill icon|Plague Signet}} ([[elite]])\n*{{skill icon|Signet of Agony}}\n*{{skill icon|Ulcerous Lungs}}\n*{{skill icon|Vampiric Gaze}}\n*{{monster skill icon|Giant Stomp}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = n\n| blunt = 71\n| piercing = 71\n| slashing = 71\n| cold = 71\n| earth = 71\n| fire = 71\n| lightning = 71\n}}\n\n==Items dropped==\n*[[Giant's Boots]]\n*[[Giant Tusk]]\n\n==Notes==\n{{anomaly|Unlike most other giants, Sadistic Giants can be [[knocked down]], but they do not have the corresponding animation.}}"
+}

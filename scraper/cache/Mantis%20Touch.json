@@ -1,0 +1,7 @@
+{
+  "title": "Mantis Touch",
+  "pageid": 16313,
+  "revid": 2738342,
+  "timestamp": "2026-08-26T20:14:24Z",
+  "wikitext": "{{Skill infobox\n| id = 974\n| name = Mantis Touch\n| campaign = Factions\n| profession = Assassin\n| attribute = Deadly Arts\n| type = Skill\n| target = foes\n| energy = 5\n| activation = {{3/4}}\n| recharge = 10\n| causes1 = Crippled\n| description = [[Skill]]. [[Target]] [[foe]] becomes [[Crippled]] for {{gr|5|20}} seconds. This [[skill]] counts as an [[off-hand attack]].\n| concise description = Skill. Inflicts Crippled condition ({{gr|5|20}} seconds). This skill counts as an off-hand attack.\n}}\n\n{{Skill progression\n|attribute = [[Deadly Arts]]\n|var1 name = [[Crippled]] [[duration]]\n|var1 at0 = 5\n|var1 at15 = 20\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Palm Strike}} ([[elite]])\n\n== Notes ==\n* Good synergy with [[Trampling Ox]].\n{{Anomaly|Although the skill name implies that the target has to be [[touch]]ed to be affected, this is not the case. It is a normal skill, which can be activated at [[Range#Casting range|casting range]].}}\n\n[[Category:Skills which count as off-hand attacks]]"
+}

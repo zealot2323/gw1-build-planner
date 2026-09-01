@@ -1,0 +1,7 @@
+{
+  "title": "Song of Restoration",
+  "pageid": 4529,
+  "revid": 2731054,
+  "timestamp": "2026-06-24T19:39:36Z",
+  "wikitext": "{{Skill infobox\n| id = 1771\n| name = Song of Restoration\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Motivation\n| type = Chant\n| elite = y\n| energy =10\n| activation = 1\n| recharge = 10\n| causes1 = Health Gain\n| description = [[Elite]] [[Chant]]. For 10 seconds, the next time each [[party]] member within [[earshot]] uses a [[skill]], that party member [[Health gain|gains]] {{gr|45|110}} [[Health]].\n| concise description = Elite Chant. (10 seconds.) Party members in earshot gain {{gr|45|110}} Health with their next skill.\n| has-pvp = y\n}}\n\n{{Skill progression\n| attribute = [[Motivation]]\n| var1 name = [[Health gain]]\n| var1 at0 = 45\n| var1 at15 = 110}}\n\n== Acquisition ==\n'''[[Signet of Capture]]\n*[[Nightfall]]\n**[[Toshau Sharpspear]] ([[Garden of Seborhin]])\n*[[Eye of the North]]\n**[[Erasklion the Prolific]] ([[Heart of the Shiverpeaks]])\n\n==Related skills==\n{{see|Party healing}}\n*{{skill icon|Aria of Restoration}}\n*{{skill icon|Ballad of Restoration}}\n*{{skill icon|Chorus of Restoration}}\n\n[[de:Gesang der Wiederherstellung]]"
+}

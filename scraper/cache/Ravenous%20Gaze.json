@@ -1,0 +1,7 @@
+{
+  "title": "Ravenous Gaze",
+  "pageid": 1768,
+  "revid": 2732025,
+  "timestamp": "2026-06-29T13:57:41Z",
+  "wikitext": "{{Skill infobox\n| id = 862\n| name = Ravenous Gaze\n| campaign = Nightfall\n| profession = Necromancer\n| attribute = Blood Magic\n| type = Spell\n| elite = y\n| energy = 1\n| activation = 1\n| recharge = 10\n| sacrifice = 8%\n| description = [[Elite]] [[Spell]]. Deal {{gr|20|40}} [[damage]] and [[Life stealing|steal]] {{gr|20|40}} [[Health]] from [[target]] [[foe]] and all [[nearby]] foes.\n| concise description = Elite Spell. Deals {{gr|20|40}} damage and steals {{gr|20|40}} Health from target and nearby foes.\n| aoe = nearby\n| target = foes\n| causes1 = Life Stealing\n}}\n\n{{Skill progression\n| attribute = [[Blood Magic]]\n| var1 name = [[Damage]]\n| var1 at0 = 20\n| var1 at15 = 40\n| var2 name = [[Life stealing]]\n| var2 at0 = 20\n| var2 at15 = 40}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Degaz the Cynical]] ([[Riverside Province (explorable area)]], during War in Kryta)\n* [[Nightfall]]\n** [[Shelboh the Ravenous]] ([[Jahai Bluffs]])\n** [[Moa'vu'Kaal]] ([[Issnur Isles]], only during the quest [[Moa'vu'Kaal, Awakened]])\n\n== Related skills ==\n* {{skill icon|Feast of Corruption}} ([[elite]])\n* {{skill icon|Unholy Feast}}\n* {{skill icon|Vampiric Gaze}}\n* {{skill icon|Vampiric Swarm}}\n\n== Trivia ==\n{{Skill change}}\n\n[[de:Heißhungriger Blick]]"
+}

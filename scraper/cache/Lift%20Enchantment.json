@@ -1,0 +1,7 @@
+{
+  "title": "Lift Enchantment",
+  "pageid": 16312,
+  "revid": 2697389,
+  "timestamp": "2024-05-27T17:04:00Z",
+  "wikitext": "{{Skill infobox\n| name = Lift Enchantment\n| id = 1645\n| campaign = Nightfall\n| profession = Assassin\n| type = Touch Skill\n| energy = 5\n| activation = {{1/4}}\n| recharge = 10\n| range = touch\n| target = foes\n| removes1 = Enchantment\n| description = Touch Skill.  If [[target]] [[Touch skill|touched]] [[foe]] is [[knock down|knocked down]], that foe loses one [[enchantment]].\n| concise description = Touch Skill. Removes one enchantment.{{gray|No {{sic|No space between the period and \"No\"}} effect unless target foe is knocked-down.}}\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n* [[Shiloh]] ([[Sunspear Great Hall]])\n\n[[Category:Skills offered by hero skill trainers]]\n\n[[de:Verzauberung lösen]]"
+}

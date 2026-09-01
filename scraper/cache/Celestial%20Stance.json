@@ -1,0 +1,7 @@
+{
+  "title": "Celestial Stance",
+  "pageid": 26422,
+  "revid": 2628615,
+  "timestamp": "2018-06-18T17:22:26Z",
+  "wikitext": "__NOTOC__\n{{skill infobox\n| id = 1207\n| name = Celestial Stance\n| campaign = Factions\n| profession = Ranger\n| type = Skill\n| special = Celestial\n| activation = 1\n| pve-only = y\n| recharge = morale boost\n| causes1 = Block\n| causes2 = Health Regeneration\n| description = [[Skill (skill type)|Skill]]. For 15 seconds, your entire [[party]] has a 75% chance to [[block]] attacks and +3 [[Health regeneration]].\n| concise description = Skill. (15 seconds.) Affects all party members. 75% chance to block. +3 Health regeneration.\n| aoe = party\n}}\n\n== Acquisition ==\nThis skill can be temporarily acquired by [[Primary profession|primary]] [[Ranger]]s by talking to [[Kuunavang]] in [[Raisu Palace]], [[Imperial Sanctum]] or [[Raisu Palace (explorable area)]].\n\n== Related skills ==\n* {{skill icon|Aegis}}\n* {{skill icon|Shield Guardian}}\n\n== Notes ==\n* The skill descriptions omit that this skill can only be recharged when gaining a [[Morale Boost]].\n* Despite the name, this is not a [[stance]].\n{{anomaly|Though it is not listed in the skill description, this skill—like all other celestial skills—has an activation time of 1.}}\n{{bug|Using this skill while it is still active does not reset the [[duration]].}}\n\n== Trivia ==\n* The [[skill icon]] shows a [[Tyria]]n warrior wearing [[Warrior Elite Dragon armor|Elite Dragon armor]].\n\n[[de:Himmlische Haltung]]"
+}

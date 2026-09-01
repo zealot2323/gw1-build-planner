@@ -1,0 +1,7 @@
+{
+  "title": "Defile Enchantments",
+  "pageid": 15399,
+  "revid": 2733388,
+  "timestamp": "2026-07-05T21:54:03Z",
+  "wikitext": "{{Skill infobox\n| id = 1070\n| name = Defile Enchantments\n| campaign = Factions\n| profession = Necromancer\n| attribute = Curses\n| type = Spell\n| energy = 10\n| activation = 2\n| recharge = 15\n| special = duplicate\n| causes1 = Shadow Damage\n| description = [[Spell]]. [[Target]] [[foe]] and all [[nearby]] foes take {{gr|6|60}} [[shadow damage]] and {{gr|4|20}} shadow damage for each [[enchantment]] on them.\n| concise description = Spell. Deals {{gr|6|60}} damage to target and nearby foes. Deals {{gr|4|20}} more damage for each enchantment on them.\n| aoe = nearby\n| target = foes\n}}\n\n{{Skill progression\n|attribute = [[Curses]]\n|var1 name = [[Shadow damage]]\n|var1 at0 = 6\n|var1 at15 = 60\n|var2 name = Damage per [[enchantment]]\n|var2 at0 = 4\n|var2 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Eye of the North]]\n** [[Bredyss Longstride]] ([[Magus Stones]])\n** [[Inscribed Guardian]] ([[Finding the Bloodstone]])\n\n== Related skills ==\n* {{skill icon|Desecrate Enchantments}} ([[duplicate skill]])\n* {{skill icon|Pain of Disenchantment}}\n* {{skill icon|Melandru's Assault (PvP)}}\n\n== Notes ==\n* [[Hero]]es will only use this on foes with an enchantment.\n\n[[Category:Armor-ignoring damage]]\n[[de:Verzauberungen schänden]]"
+}

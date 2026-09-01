@@ -1,0 +1,7 @@
+{
+  "title": "Soldier's Strike",
+  "pageid": 15208,
+  "revid": 2733264,
+  "timestamp": "2026-07-05T17:11:28Z",
+  "wikitext": "{{Skill infobox\n| name = Soldier's Strike\n| id = 1695\n| campaign = Nightfall\n| profession = Warrior\n| attribute = Tactics\n| type = Melee Attack\n| energy = 5\n| recharge = 4\n| causes1 = Unblockable\n| description = [[Melee Attack]]. If this [[attack]] hits, you deal {{gr|10|40|+}} more [[damage]]. If you are under the effects of a [[chant]] or [[shout]], this attack cannot be [[block]]ed.\n| concise description = Melee Attack. Deals {{gr|10|40|+}} damage. Unblockable if you are under the effects of a chant or shout.\n}}\n\n{{Skill progression\n|attribute = [[Tactics]]\n|var1 name = + [[Damage]]\n|var1 at0 = 10\n|var1 at15 = 40}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n*[[Shiloh]] ([[Sunspear Great Hall]])\n\n==Related skills==\n*{{skill icon|Power Attack}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

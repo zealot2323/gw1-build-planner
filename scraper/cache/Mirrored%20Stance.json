@@ -1,0 +1,7 @@
+{
+  "title": "Mirrored Stance",
+  "pageid": 14762,
+  "revid": 2684000,
+  "timestamp": "2023-02-23T15:14:39Z",
+  "wikitext": "{{Skill infobox\n| id = 816\n| name = Mirrored Stance\n| campaign = Factions\n| profession = Assassin\n| attribute = Shadow Arts\n| type = Hex Spell\n| energy = 5\n| activation = {{1/4}}\n| recharge = 15\n| description = [[Hex Spell]]. For {{gr|10|35}} seconds, whenever [[target]] [[foe]] enters a [[stance]], you enter the same stance.\n| concise description = Hex Spell. ({{gr|10|35}} seconds.) You enter any stance used by target foe.\n}}\n\n{{Skill progression\n| attribute = [[Shadow Arts]]\n| var1 name = [[Duration]]\n| var1 at0 = 10\n| var1 at15 = 35}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Notes ==\n* The copied stance uses the foe's [[attribute]] rank, so you get the same benefit.\n* Stances are copied when the foe enters them while hexed; if multiple foes are hexed, you gain the most recently used one.\n** However, it cannot copy [[monster skill]]s, such as [[Turtle Shell]] or [[Battle Scars]].\n** Some stances can backfire on you, e.g. [[Frenzy]] or [[Primal Rage]].\n{{anomaly|If the copied stance has an [[initial effect]], the initial effect will not affect you. I.e. [[Bestial Fury]]/[[Tiger's Fury]], [[Deadly Paradox]], and [[Shadow Walk]] will not [[disable]] your skills; Shadow Walk will also not cause you to [[shadow step]] to a foe.}}"
+}

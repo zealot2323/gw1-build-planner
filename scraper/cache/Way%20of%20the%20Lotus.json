@@ -1,0 +1,7 @@
+{
+  "title": "Way of the Lotus",
+  "pageid": 16286,
+  "revid": 2733058,
+  "timestamp": "2026-07-05T13:22:51Z",
+  "wikitext": "{{Skill infobox\n| id = 977\n| name = Way of the Lotus\n| campaign = Factions\n| profession = Assassin\n| attribute = Shadow Arts\n| type = Enchantment Spell\n| energy = 5\n| activation = {{1/4}}\n| recharge = 20\n| causes1 = Energy Gain\n| description = [[Enchantment Spell]].  For 20 seconds, the next time you hit with a [[dual attack]] [[skill]], you gain {{gr|5|20}} [[Energy]].\n| concise description = Enchantment Spell. (20 seconds.) You gain {{gr|5|20}} Energy the next time you hit with a dual attack.\n}}\n\n{{Skill progression\n|attribute = [[Shadow Arts]]\n|var1 name = [[Energy]] gain\n|var1 at0 = 5\n|var1 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n[[Category:Skills that interact with dual attacks]]"
+}

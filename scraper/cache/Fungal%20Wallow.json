@@ -1,0 +1,7 @@
+{
+  "title": "Fungal Wallow",
+  "pageid": 36273,
+  "revid": 2501347,
+  "timestamp": "2012-07-02T20:04:57Z",
+  "wikitext": "{{NPC infobox\n| image = [[File:Wallow.jpg|200px]]\n| type = Wallow\n| affiliation = Echovald Forest wildlife\n| profession = n\n| level = 24 (26)\n| campaign = Factions\n| map1 = [[File:\"Bevor\" concept art.jpg|200px]]\n| map1-text = Concept art by [[Katy Hargrove]]\n}}__NOTOC__\nThe [[Fungal Wallow]] is a creature found on the [[Cantha|Canthan continent]], in the vicinity of the [[Echovald Forest]]. \n\n==Locations==\n*[[Echovald Forest]]\n**{{NPC location|Arborstone|explorable area|}}\n**{{NPC location|Ferndale}}\n**{{NPC location|Mourning Veil Falls}}\n**{{NPC location|Melandru's Hope}}\n**{{NPC location|Morostav Trail}}\n\n==Skills==\n11 [[Curses]], 15 [[Blood Magic]] (20 Blood Magic, 17 Curses, 16 [[Soul Reaping]] in [[Hard mode]])\n*{{Skill icon|Fetid Ground}}\n*{{Skill icon|Vampiric Bite}}\n*{{Skill icon|Vampiric Gaze}}\n*{{Skill icon|Weaken Knees}} ([[elite]])\n*{{Monster skill icon|Stun on Critical Hit}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = n\n| blunt = 72 (78)\n| piercing = 72 (78)\n| slashing = 72 (78)\n| cold = 72 (78)\n| earth = 72 (78)\n| fire = 72 (78)\n| lightning = 72 (78)\n}}\n\n==Items dropped==\n*[[Truffle]]\n\n==Notes==\n*This creature has a [[Miniature Fungal Wallow|miniature version]].\n\n==See also==\n*[[Rot Wallow]]"
+}

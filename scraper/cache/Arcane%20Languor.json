@@ -1,0 +1,7 @@
+{
+  "title": "Arcane Languor",
+  "pageid": 1516,
+  "revid": 2661871,
+  "timestamp": "2020-06-06T06:14:58Z",
+  "wikitext": "{{Skill infobox\n| id = 804\n| name = Arcane Languor\n| campaign = Factions\n| profession = Mesmer\n| attribute = Fast Casting\n| type = Hex Spell\n| elite = y\n| energy = 10\n| activation = 2\n| recharge = 15\n| target = foes\n| range = Casting\n| aoe = none\n| causes1 = Overcast\n| description = [[Elite]] [[Hex Spell]]. For {{gr|1|10}} second[s], all [[spell]]s cast by the [[target]] [[foe]] cause 10 [[Overcast]].\n| concise description = Elite Hex Spell. ({{gr|1|10}} second[s].) Target foe's spells cause 10 Overcast.\n}}\n\n{{Skill progression\n|attribute = [[Fast Casting]]\n|var1 name = [[Duration]]\n|var1 at0 = 1\n|var1 at15 = 10\n}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Bound Kitah]] ([[Tahnnakai Temple]])\n* [[Arcane Ancient Phi]] ([[Raisu Palace|Raisu Palace mission]] and [[Raisu Palace (explorable area)|explorable area]])\n\n== Notes ==\n* Targets hexed by Arcane Languor will suffer a total 20 additional  overcast after successfully casting a spell that normally has overcast in the presence of [[Equinox]].\n* Overcast occurs after the spell completes casting.\n\n[[de:Arkane Schwäche]]"
+}

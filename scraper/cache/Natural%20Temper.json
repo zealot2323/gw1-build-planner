@@ -1,0 +1,7 @@
+{
+  "title": "Natural Temper",
+  "pageid": 15232,
+  "revid": 2738656,
+  "timestamp": "2026-08-27T02:32:15Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 1770\n| name = Natural Temper\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Leadership\n| type = Skill\n| adrenaline = 3\n| causes1 = Increased Adrenaline Build Rate\n| description = [[Skill (skill type)|Skill]]. For {{gr|4|15}} seconds, you gain 33% more [[adrenaline]] while not under the effects of an [[Enchantment]].\n| concise description = Skill. ({{gr|4|15}} seconds.) You gain 33% more adrenaline. {{gray|No effect if you are enchanted.}}\n}}\n\n{{Skill progression\n| attribute = [[Leadership]]\n| var1 name = Duration\n| var1 at0 = 4\n| var1 at15 = 15}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Nightfall]]\n**[[Baram]] ([[The Kodash Bazaar]])\n'''[[Signet of Capture]]'''\n*[[Prophecies]]\n**[[Joh the Hostile]] ([[Scoundrel's Rise (War in Kryta)]])\n*[[Eye of the North]]\n**[[Timberland Guardian]] ([[Magus Stones]], only during [[Lab Space]])\n\n==Related skills==\n* {{skill icon|Soldier's Fury}} ([[elite]])\n\n==Notes==\n*This skill has no activation animation or sound.\n\n==Trivia==\n*The paragon shown in the [[skill icon]] is wearing [[Paragon Elonian armor|Elonian armor]].\n\n[[de:Natürliche Laune]]"
+}

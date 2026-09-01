@@ -1,0 +1,7 @@
+{
+  "title": "Jagged Strike",
+  "pageid": 14043,
+  "revid": 2731014,
+  "timestamp": "2026-06-24T17:47:44Z",
+  "wikitext": "{{Skill infobox\n| id = 782\n| name = Jagged Strike\n| campaign = Factions\n| profession = Assassin\n| attribute = Dagger Mastery\n| type = Lead Attack\n| energy = 5\n| activation = {{1/2}}\n| recharge = 2 \n| causes1 = Bleeding\n| description = [[Lead Attack]]. If Jagged Strike hits, your [[target]] suffers from [[Bleeding]] for {{gr|5|20}} seconds.\n| concise description = Lead Attack. Inflicts Bleeding condition ({{gr|5|20}} seconds).\n}}\n\n{{Skill progression\n|attribute = [[Dagger Mastery]]\n|var1 name = [[Bleeding]] [[duration]]\n|var1 at0 = 5\n|var1 at15 = 20}}\n\n== Acquisition ==\n===[[Unlock]] and learn===\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Zhao Di]] ([[Shing Jea Monastery]])\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Nightfall]]\n** [[Admiral Kaya]] ([[The Floodplain of Mahnkelon]])\n** [[The Hunter]] ([[Domain of Secrets]], only during [[Open Season]])\n\n===Unlock only===\n;[[Hero]]es\n* Factions\n** Unlocking [[Miku]]\n* [[Eye of the North]]\n** Unlocking [[Anton]]\n\n== Notes ==\n* Since this is an [[attack skill]] with an [[activation time]], its activation time is actually {{1/4}} second.\n* This skill is one of the three skills that form the basis of [[dagger spammer]] builds."
+}

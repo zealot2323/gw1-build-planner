@@ -1,0 +1,7 @@
+{
+  "title": "Wanderlust (attack)",
+  "pageid": 75103,
+  "revid": 2609215,
+  "timestamp": "2016-06-27T23:26:56Z",
+  "wikitext": "{{skill infobox\n| id = 1256\n| name = Wanderlust\n| image = [[Image:Wanderlust (attack).jpg]]\n| campaign = Factions\n| attribute = Communing\n| type = Ranged Attack\n| profession = Monster\n| special = Spirit monster\n| activation = 2\n| description = [[Ranged Attack]]. If this attack hits a stationary foe, that foe is knocked down and this spirit loses {{gr|70|50}} Health.\n| concise description = Ranged Attack. Causes knock-down to stationary foes. Knock-down cost: this spirit loses {{gr|70|50}} Health.}}\n\n{{skill progression\n| attribute = [[Communing]]\n| var1 name = [[Health]] lost\n| var1 at0 = 70\n| var1 at15 = 50}}\n\n== Notes ==\n* This is the skill used by the Spirit of Wanderlust that is summoned by the [[ritualist]] skill [[Wanderlust]], and not the ritualist skill itself.\n\n<!--== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details.-->"
+}

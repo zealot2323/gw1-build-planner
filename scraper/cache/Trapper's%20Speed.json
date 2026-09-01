@@ -1,0 +1,7 @@
+{
+  "title": "Trapper's Speed",
+  "pageid": 6523,
+  "revid": 2683504,
+  "timestamp": "2023-02-19T05:17:31Z",
+  "wikitext": "{{Skill infobox\n| name = Trapper's Speed\n| id = 1475\n| campaign = Nightfall\n| profession = Ranger\n| attribute = Expertise\n| type = Stance\n| energy = 5\n| recharge = 20\n| causes1 = Decreased Recharge Time\n| causes2 = Decreased Activation Time\n| description=\n[[Stance]]. For {{gr|5|30}} seconds, your [[Trap]]s [[recharge]] 25% faster and activate 25% faster. This Stance ends if you successfully hit with an [[attack]].\n| concise description = Stance. ({{gr|5|30}} seconds.) Your traps recharge 25% faster and activate 25% faster. {{gray|Ends if you hit with an attack.}}\n}}\n\n{{Skill progression\n|attribute = [[Expertise]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 30}}\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Medando]] ([[Yohlon Haven]])\n\n'''[[Hero skill trainer]]s'''\n*[[Libeh]] ([[Command Post]])\n\n==Related skills==\n*{{Skill icon|Serpent's Quickness}}\n*{{Skill icon|Trapper's Focus}} ([[elite]])\n\n[[Category:Skills offered by hero skill trainers]]"
+}

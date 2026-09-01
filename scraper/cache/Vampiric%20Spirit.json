@@ -1,0 +1,7 @@
+{
+  "title": "Vampiric Spirit",
+  "pageid": 1781,
+  "revid": 2733157,
+  "timestamp": "2026-07-05T15:54:30Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 819\n| name = Vampiric Spirit\n| campaign = Factions\n| profession = Necromancer\n| attribute = Blood Magic\n| type = Enchantment Spell\n| elite = y\n| target = foes\n| energy = 5\n| activation = 1\n| recharge = 8\n| causes1 = Life Stealing\n| causes2 = Health Regeneration\n| description = [[Elite]] [[Enchantment Spell]]. [[Life stealing|Steal]] up to {{gr|15|60}} [[Health]] from [[target]] [[foe]]. For 10 seconds, you have {{gr|5|10|+}} [[Health regeneration]].\n| concise description = Elite Enchantment Spell. Steal {{gr|15|60}} Health from target foe. You have {{gr|5|10|+}} Health regeneration (10 seconds).\n}}\n\n{{Skill progression\n| attribute = [[Blood Magic]]\n| var1 name = [[Life stealing]]\n| var1 at0 = 15\n| var1 at15 = 60\n| var2 name = [[Health regeneration]]\n| var2 at0 = 5\n| var2 at15 = 10}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Dark Fang]] ([[Arborstone]])\n* [[Kaswa Webstrider]] ([[Arborstone (explorable area)]])\n\n== Related skills ==\n* {{skill icon|Ice Spear}}\n\n== Notes ==\n{{anomaly|Similar to other [[Enchantment spell#Characteristics|enchantments that target a foe]], foes affected by [[Well of the Profane]] or [[spirit]]s cannot be targeted by this enchantment.}}\n\n== Trivia ==\n{{Skill change}}\n\n[[de:Vampirgeist]]"
+}

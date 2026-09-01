@@ -1,0 +1,7 @@
+{
+  "title": "Lyssa's Balance",
+  "pageid": 1684,
+  "revid": 2683801,
+  "timestamp": "2023-02-21T18:40:32Z",
+  "wikitext": "{{Skill infobox\n| id = 877\n| name = Lyssa's Balance\n| campaign = Factions\n| profession = Mesmer\n| type = Spell\n| target = foes\n| energy = 5\n| activation = 1\n| recharge = 15\n| removes1 = Enchantment\n| description = [[Spell]]. [[Target]] [[foe]] loses one [[Enchantment]]. If you have more Enchantments than target foe, this skill has no effect.\n| concise description = Spell. Removes one enchantment from target foe. {{gray|No effect if you have more enchantments than this foe.}}\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Justiciar Amilyn]] ([[Kessex Peak (War in Kryta)]])\n\n== Notes ==\n* In PvE, [[Mirror of Disenchantment]] has the same energy cost, cast time, recharge time and attribute requirements as this skill, yet it is unconditional and also affects foe's party members.\n[[Category:Skills named after eponymous NPCs]]"
+}

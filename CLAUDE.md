@@ -48,7 +48,15 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
   explorable adjacent to one. ⚠ Same adjacency simplification — flag in code comments.
 
 ### Scope limits
-- **Prophecies campaign only.**
+- **Prophecies, Factions and Nightfall.** Eye of the North is not pulled in
+  yet: it is an expansion rather than a campaign (no numbered missions —
+  dungeons instead, PvE-only skills, no characters of its own), so it needs
+  its own handling.
+- **Campaigns are separate continents.** A character has a home campaign and
+  a set of owned campaigns; `scopedDataset` narrows the whole dataset before
+  indexing, so availability, travel distance, proximity and zone browsing are
+  all campaign-correct without each having to filter. Characters saved
+  without a campaign see everything (back-compat).
 - **Normal mode is the default everywhere.** Availability logic (what a character
   can get) is normal-mode only. The zone browser additionally offers a hard mode
   toggle for viewing monster levels and bars — see Data decisions below.
@@ -57,6 +65,18 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
 
 ## Data source
 
+- Campaign entry points live in `/scraper/src/campaigns.ts`. The wiki's page
+  layouts differ per campaign in ways that bite:
+  - **Trainer lists**: Prophecies uses "=== [[Name]] in [[Place]] ===" headings;
+    every other campaign generates its list with a DPL query, so the trainers
+    are not in the wikitext at all. Discovery uses the
+    "<Campaign> skill trainers" **category** instead, for all campaigns.
+  - **Trainer stock**: Prophecies keeps it on a "<Name>/Skills" subpage;
+    others put {{Skill trainer list}} on the trainer's own page.
+  - **Skill enumeration walks all ten professions for every campaign** — a
+    campaign ships skills for professions it did not introduce (Nightfall
+    adds Assassin and Ritualist skills).
+  - Factions numbers its Kurzick/Luxon mission branches "9a."/"9b.".
 - Everything comes from https://wiki.guildwars.com via its **MediaWiki API**
   (`https://wiki.guildwars.com/api.php`).
 - **Never scrape rendered HTML.** Always fetch raw wikitext and parse the

@@ -1,0 +1,7 @@
+{
+  "title": "Storm Djinn's Haste",
+  "pageid": 2398,
+  "revid": 2683950,
+  "timestamp": "2023-02-23T12:21:02Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| name = Storm Djinn's Haste\n| id = 1370\n| campaign = Nightfall\n| profession = Elementalist\n| attribute = Air Magic\n| type = Enchantment Spell\n| energy = 5\n| recharge = 10\n| activation = {{1/4}}\n| causes1 = Increased Movement Speed\n| causes2 = Energy Loss\n| description = [[Enchantment Spell]]. For {{gr|10|25}} seconds, you [[Speed boost|move 25% faster]]. Each second that you are [[Movement|moving]], you lose 1 [[Energy]].\n| concise description=\nEnchantment Spell. ({{gr|10|25}} seconds.) You move 25% faster. {{gray|Lose 1 Energy each second while moving.}}\n}}\n\n{{Skill progression\n| attribute = [[Air Magic]]\n| var1 name = [[Duration]]\n| var1 at0 = 10\n| var1 at15 = 25}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Medando]] ([[Yohlon Haven]])\n\n'''[[Hero skill trainer]]s'''\n* [[Libeh]] ([[Command Post]])\n\n== Related skills ==\n* {{Skill icon|Armor of Mist}}\n* {{Skill icon|Flame Djinn's Haste}}\n\n== Notes ==\n* While moving when under the effects of this enchantment, you suffer the equivalent of -3 [[energy degeneration]].\n\n== Trivia ==\n* There are no storm [[djinn]] in the game.\n*The functionality of this skill has changed since its introduction; see its [[Storm Djinn's Haste/Skill history|skill history]] for details.\n\n== See also ==\n* [[Flag running]]\n\n[[Category:Skills offered by hero skill trainers]]"
+}

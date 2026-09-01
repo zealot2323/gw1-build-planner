@@ -1,0 +1,7 @@
+{
+  "title": "Storm's Embrace",
+  "pageid": 3644,
+  "revid": 2608809,
+  "timestamp": "2016-06-24T06:07:01Z",
+  "wikitext": "{{Skill infobox\n| name = Storm's Embrace\n| id = 1474\n| campaign = Nightfall\n| profession = Ranger\n| type = Stance\n| energy = 5\n| recharge = 30\n| causes1 = Increased Movement Speed\n| causes2 = Renewal\n| description = [[Stance]]. For 10 seconds, you [[Speed boost|move 25% faster]].  This stance is [[Renewal|refreshed]] whenever you take [[Elemental damage]].\n| concise description = Stance. (10 seconds.) You move 25% faster. Renewal: whenever you take elemental damage.\n}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n*[[Shiloh]] ([[Sunspear Great Hall]])\n\n==Notes==\n*This skill increases average speed by 8.33% if used every time it recharges, assuming it does not get renewed.\n*Decent synergy with [[Greater Conflagration]] or [[Stone Striker]].\n\n[[Category:Skills offered by hero skill trainers]]"
+}

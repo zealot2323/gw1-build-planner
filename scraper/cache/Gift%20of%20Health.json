@@ -1,0 +1,7 @@
+{
+  "title": "Gift of Health",
+  "pageid": 2930,
+  "revid": 2683568,
+  "timestamp": "2023-02-19T17:08:01Z",
+  "wikitext": "{{Skill infobox\n| id = 1121\n| name = Gift of Health\n| campaign = Factions\n| profession = Monk\n| attribute = Healing Prayers\n| type = Spell\n| energy = 5\n| activation = {{3/4}}\n| recharge = 5\n| causes1 = Healing\n| causes2 = Disable\n| description = [[Spell]]. All of your other [[Healing Prayers]] [[skill]]s are [[disabled]] for {{gr|10|5}} seconds. Target other [[ally]] is [[heal]]ed for {{gr|15|150}} [[Health]].\n| concise description = Spell. Heals for {{gr|15|150}}. {{gray|Disables your other Healing Prayers skills ({{gr|10|5}} seconds). Cannot self-target.}}\n| target = other allies\n}}\n\n{{Skill progression\n| attribute = [[Healing Prayers]]\n| var1 name = [[Disabled]]\n| var1 at0 = 10\n| var1 at15 = 5\n| var2 name = [[Heal]]ing\n| var2 at0 = 15\n| var2 at15 = 150}}\n\n== Acquisition ==\n'''[[Skill trainer]]s''':\n* [[Michiko]] ([[Kaineng Center]])\n\n== Notes ==\n* An effective heal with low attribute points in Healing Prayers, making it a good choice for a healing spell on [[Protection Prayers|Protection]] or [[Smiting Prayers|Smiting]] monks."
+}

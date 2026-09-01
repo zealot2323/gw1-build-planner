@@ -1,0 +1,7 @@
+{
+  "title": "Falling Spider",
+  "pageid": 14499,
+  "revid": 2733148,
+  "timestamp": "2026-07-05T15:47:49Z",
+  "wikitext": "{{Skill infobox\n| id = 778\n| name = Falling Spider\n| campaign = Factions\n| profession = Assassin\n| attribute = Dagger Mastery\n| type = Off-Hand Attack\n| energy = 5\n| recharge = 8\n| causes1 = Poison\n| description = [[Off-Hand Attack]].  Must strike a [[Knock down|knocked-down]] [[foe]]. If it hits, Falling Spider strikes for {{gr|15|35|+}} [[damage]] and [[target]] foe is [[Poison]]ed for {{gr|5|20}} seconds.\n| concise description = Off-Hand Attack. Deals {{gr|15|35|+}} damage. Inflicts Poisoned condition ({{gr|5|20}} seconds). {{gray|No effect unless target foe is knocked-down.}}\n| requires = knockdown\n}}\n\n{{Skill progression\n|attribute = [[Dagger Mastery]]\n|var1 name = [[Damage|+ Damage]]\n|var1 at0 = 15\n|var1 at15 = 35\n|var2 name = [[Poison]]ed [[duration]]\n|var2 at0 = 5\n|var2 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Black Spider Strike}}\n* {{skill icon|Falling Lotus Strike}}"
+}

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Profession, type Build } from "@gw1/engine";
 import { useSave } from "./save";
+import { DataProvider } from "./DataContext";
 import { CharactersView } from "./views/Characters";
 import { SkillsView, initialSkillViewState, type SkillViewState } from "./views/Skills";
 import { ZonesView, initialZoneState, type ZoneViewState } from "./views/Zones";
@@ -69,7 +70,7 @@ export function App() {
   };
 
   return (
-    <>
+    <DataProvider character={character}>
       <header>
         <h1>GW1 Build Planner</h1>
         <nav>
@@ -126,6 +127,6 @@ export function App() {
           setState={patchZoneState}
         />
       )}
-    </>
+    </DataProvider>
   );
 }

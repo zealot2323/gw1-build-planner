@@ -1,0 +1,7 @@
+{
+  "title": "Remedy Signet",
+  "pageid": 15263,
+  "revid": 2645488,
+  "timestamp": "2019-11-09T13:19:51Z",
+  "wikitext": "{{Skill infobox\n| id = 1777\n| name = Remedy Signet\n| campaign = Nightfall\n| profession = Paragon\n| type = Signet\n| activation = 1\n| recharge = 4\n| description = [[Signet]]. You lose 1 [[condition]].\n| concise description = Signet. You lose one condition.\n| removes1 = Condition\n}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n*[[Libeh]] ([[Command Post]])\n\n==Related skills==\n*{{skill icon|Antidote Signet}}\n* {{skill icon|Signet of Malice}}\n\n==Notes==\n*If profession is not a factor, [[Antidote Signet]] is a better skill.\n*Synergies with [[Cautery Signet]].\n\n[[Category:Skills offered by hero skill trainers]]"
+}

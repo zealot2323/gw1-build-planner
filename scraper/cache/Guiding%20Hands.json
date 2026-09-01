@@ -1,0 +1,7 @@
+{
+  "title": "Guiding Hands",
+  "pageid": 14380,
+  "revid": 2739196,
+  "timestamp": "2026-08-31T01:04:07Z",
+  "wikitext": "{{Skill infobox\n| id = 1513\n| name = Guiding Hands\n| campaign = Nightfall\n| profession = Dervish\n| attribute = Wind Prayers\n| type = Enchantment Spell\n| energy = 10\n| activation = {{1/4}}\n| recharge = 10\n| has-pvp = y\n| causes1 = Unblockable\n| description = [[Enchantment Spell]]. For 20 seconds, your next {{gr|0|3}} [[attack]][s] cannot be [[block]]ed. When activated, this [[skill]] removes the [[Blind]]ness [[condition]].\n| concise description = Enchantment Spell. (20 seconds.) Your next {{gr|0|3}} attack[s] cannot be blocked. Initial effect: removes Blindness.\n| removes1 = Condition\n}}\n\n{{Skill progression\n|attribute = [[Wind Prayers]]\n|var1 name = [[Attack]]s\n|var1 at0 = 0\n|var1 at15 = 3}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n*[[Pikin]] (Kamadan, Jewel of Istan)\n\n== Related skills ==\n* {{skill icon|Way of the Fox}}\n\n== Notes ==\nFor the purposes of this skill, a single scythe auto-attack or a single-targeted skill (such as [[Pious Assault]], [[Twin Moon Sweep]], or [[Triple Shot]]) counts as one attack in total (even if it [[hit]]s multiple enemies or multiple times), but attack skills that explicitly strike multiple foes (such as [[Eremite's Attack]] or [[Volley]]) count as one attack per foe.\n\n[[Category:Skills offered by hero skill trainers]]\n\n[[de:Lenkende Hände]]"
+}

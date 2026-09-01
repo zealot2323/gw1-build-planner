@@ -1,0 +1,7 @@
+{
+  "title": "Golden Phoenix Strike",
+  "pageid": 14509,
+  "revid": 2733178,
+  "timestamp": "2026-07-05T16:06:30Z",
+  "wikitext": "{{Skill infobox\n| id = 989\n| name = Golden Phoenix Strike\n| campaign = Factions\n| profession = Assassin\n| attribute = Dagger Mastery\n| type = Off-Hand Attack\n| energy = 5\n| recharge = 8\n| description = [[Off-Hand Attack]]. If you are not under the effects of an [[enchantment]], this [[skill]] [[fail|misses]]. If it hits, Golden Phoenix Strike deals {{gr|10|30|+}} [[damage]] and all [[adjacent]] [[foe]]s take {{gr|10|30}} damage.\n| concise description = Off-Hand Attack. Deals {{gr|10|30|+}} damage to target and deals {{gr|10|30}} damage to adjacent foes. {{gray|Fails if you are not enchanted.}}\n| requires = enchantment\n| aoe = adjacent\n}}\n\n{{Skill progression\n|attribute = [[Dagger Mastery]]\n|var1 name = + [[Damage]]\n|var1 at0 = 10\n|var1 at15 = 30}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Death Blossom}}\n* {{skill icon|Jungle Strike}}\n* {{skill icon|Pious Assault}}"
+}

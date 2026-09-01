@@ -1,0 +1,7 @@
+{
+  "title": "Shadow Prison",
+  "pageid": 4439,
+  "revid": 2738363,
+  "timestamp": "2026-08-26T20:21:19Z",
+  "wikitext": "{{Skill infobox\n| name = Shadow Prison\n| id = 1652\n| campaign = Nightfall\n| profession = Assassin\n| attribute = Deadly Arts\n| type = Hex Spell\n| elite = y\n| energy = 5\n| activation = {{1/4}}\n| recharge = 15\n| causes1 = Shadow Step\n| causes2 = Decreased Movement Speed\n| description=[[Elite]] [[Hex Spell]]. [[Shadow Step]] to [[target]] [[foe]]. For {{gr|1|7}} seconds, that foe moves 66% slower.\n| concise description = Elite Hex Spell.  Shadow Step to target foe.  This foe moves 66% slower ({{gr|1|7}} seconds).\n}}\n\n{{Skill progression\n| attribute = [[Deadly Arts]]\n| var1 name = [[Duration]]\n| var1 at0 = 1\n| var1 at15 = 7}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Nightfall]]\n** [[Ardeh the Quick]] ([[Joko's Domain]])\n* [[Eye of the North]]\n** [[Xien]] ([[Oola's Lab]])\n\n== Related skills ==\n* {{skill icon|Dark Prison}}\n\n== Notes ==\n* The shadow step and the hex are considered separate effects:\n**If the shadow step fails (i.e. if the target is in an inaccessible location), the target will still be affected by the movement speed hex.\n**If the hex fails (i.e. the target is under the effects of [[Hex Breaker]]), you will still shadow step to the target.\n[[de:Schattengefängnis]]"
+}

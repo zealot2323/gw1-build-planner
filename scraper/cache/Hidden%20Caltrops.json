@@ -1,0 +1,7 @@
+{
+  "title": "Hidden Caltrops",
+  "pageid": 4440,
+  "revid": 2720688,
+  "timestamp": "2026-02-08T00:03:46Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| name = Hidden Caltrops\n| id = 1642\n| campaign = Nightfall\n| profession = Assassin\n| attribute = Shadow Arts\n| type = Hex Spell\n| elite = y\n| energy = 5\n| activation = 1\n| recharge = 12\n| causes1 = Decreased Movement Speed\n| causes2 = Crippled\n| causes3 = Disable\n| description = [[Elite]] [[Hex Spell]]. Your non-[[List of assassin skills|Assassin skills]] are [[disable]]d for 3 seconds. For {{gr|1|10}} seconds, [[target]] [[foe]] [[Snare (tactic)|moves 50% slower]]. When this hex ends that foe is [[Crippled]] for {{gr|1|15}} seconds.\n| concise description = Elite Hex Spell.  ({{gr|1|10}} seconds.)  Causes 50% slower movement.  End effect: inflicts Crippled condition ({{gr|1|15}} seconds). Your non-Assassin skills are disabled (3 seconds.)\n| animation = [[File:Hidden Caltrops animation.gif|Click to view]]\n}}\n\n{{Skill progression\n|attribute = [[Shadow Arts]]\n|var1 name = [[Duration]]\n|var1 at0 = 1\n|var1 at15 = 10\n|var2 name = [[Crippled]] duration\n|var2 at0 = 1\n|var2 at15 = 15}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Admiral Kaya]] ([[The Floodplain of Mahnkelon]])\n\n== Related skills ==\n* {{skill icon|Caltrops}}\n\n== Notes ==\n{{Bug|[[Crippling]] modifiers on weapons do not extend the duration of cripple caused by the end effect.}}\n\n== Trivia ==\n{{Skill change}}\n\n[[de:Versteckte Trittnägel]]"
+}

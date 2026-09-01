@@ -1,0 +1,7 @@
+{
+  "title": "Bound Ritualist",
+  "pageid": 117507,
+  "revid": 2603977,
+  "timestamp": "2016-03-31T22:12:30Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Shiro'ken martial.jpg|x350px]]\n| type = Shiro'ken\n| affiliation = Shiro's army\n| profession = rt\n| level = 20 (26)\n| campaign = Factions\n}}\n[[Bound Ritualist]]s are constructs that serve [[Shiro Tagachi]]. They replace [[Ritualist]] party members during the [[Imperial Sanctum]] mission whenever Shiro uses the skill [[Echoing Banishment]] on them.\n\n==Missions==\n*[[Kaineng City]]\n**{{NPC location|Imperial Sanctum}}\n\n==Skills==\n*{{skill icon|Defiant Was Xinrae}} ([[elite]])\n*{{skill icon|Life}}\n*{{skill icon|Recuperation}}\n*{{skill icon|Restoration}}\n*{{skill icon|Vengeful Weapon}}\n\n==Notes==\n*Killing this creature will bring back the player that was banished.\n*Even though they are not marked with a special aura, the death of these creatures will give a [[Morale Boost]] and recharge all skills (including [[Resurrection Signet]]s and [[Celestial skill]]s) like the death of a [[boss]]. In addition, they do double damage.\n*[[Signet of Capture]] cannot be used on them.\n\n[[Category:Boss-like foes]]"
+}

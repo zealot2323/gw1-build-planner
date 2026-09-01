@@ -1,0 +1,7 @@
+{
+  "title": "The Hunger",
+  "pageid": 64145,
+  "revid": 2706657,
+  "timestamp": "2025-05-16T02:22:06Z",
+  "wikitext": "{{spoiler|''[[Guild Wars Nightfall]]''}}\n{{NPC infobox\n| type = Demon\n| level = 28 (30) \n| campaign = Nightfall\n| affiliation = Torment creatures\n| map1 = [[File:\"Hunger\" concept art.jpg|150px]]\n| map1-text = Concept art by [[Shawn Sharp]].\n}}__NOTOC__\n[[The Hunger]] is a servant of [[Abaddon]] and refuses to take orders from anyone but [[Abaddon]] and [[Varesh Ossa]]. At the end of the [[Consulate Docks]] mission, it attacks [[Kormir]] after Varesh exclaims \"Abaddon will feast on your eyes!\", implying that it is likely responsible for Kormir's blindness. Later, it appears to show some aggression towards those it refuses to take orders from, as seen in the cutscenes after [[Pogahn Passage]] and [[Rilohn Refuge]]. It was charged to hunt down the fleeing [[Order of the Sunspears|Sunspears]] and it finally confronts the players in [[Moddok Crevice]].\n\n==Missions==\n*[[Kourna]]\n**{{NPC location|Moddok Crevice}}\n\n==Skills==\n*{{Monster skill icon|Hunger's Bite}}\n*{{Monster skill icon|Natural Resistance}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = n\n| blunt = 84\n| piercing = 84\n| slashing = 84\n| cold = 94\n| earth = 94\n| fire = 94\n| lightning = 94\n}}\n\n==Notes==\n*The Hunger gives a [[morale boost]], despite it not being a [[boss]].\n*The Hunger's skills can not be disabled for a longer recharge with [[Distracting Shot]]."
+}

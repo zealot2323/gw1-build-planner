@@ -1,0 +1,7 @@
+{
+  "title": "Yeti (ranger)",
+  "pageid": 135866,
+  "revid": 2725768,
+  "timestamp": "2026-04-20T19:11:08Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Yeti White.jpg|150px]]\n| name = Yeti\n| type = Ogre\n| affiliation = The Jade Sea wildlife\n| profession = r\n| level = 24 (26)\n| campaign = Factions\n}}\n[[Yeti (ranger)|Yeti]] are creatures that lives on the borders of the [[Jade Sea]]. They have no distinguishing name that separates them from other [[Yeti]], but can be identified by their white fur.\n\n==Locations==\n*[[Kaineng City]]\n**{{NPC location|Pongmei Valley}}\n*[[The Jade Sea]]\n**{{NPC location|Gyala Hatchery|explorable area}}\n**{{NPC location|Mount Qinkai}}\n\n==Skills==\n*{{skill icon|Predatory Bond}}\n*{{skill icon|Savage Pounce}}\n*{{skill icon|Snare}}\n*{{skill icon|Trapper's Focus}} ([[elite]])\n*{{skill icon|Viper's Nest}}\n*{{monster skill icon|Charm Animal (monster skill)}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 101\n| piercing = 111 \n| slashing = 101 \n| cold = 91 \n| earth = 91 \n| fire = 91 \n| lightning = 91\n}}\n\n==Items dropped==\n*[[Stolen Provisions]]\n*[[Tanned Hide Square]]\n*[[Yeti Armguard]]\n\n==Notes==\n*This Ranger Yeti throws rocks instead of shooting arrows.\n**These rocks count as [[Blunt]] [[Damage_type|damage]].\n*Only the ones in Pongmei Valley and Mount Qinkai have a pet.\n\n==See also==\n*[[Yeti (ritualist)]]\n*[[Yeti (warrior)]]\n\n[[Category:Drops hide]]\n[[Category:Yetis]]"
+}

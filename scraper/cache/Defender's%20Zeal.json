@@ -1,0 +1,7 @@
+{
+  "title": "Defender's Zeal",
+  "pageid": 4350,
+  "revid": 2738556,
+  "timestamp": "2026-08-26T21:56:45Z",
+  "wikitext": "{{Skill infobox\n| name = Defender's Zeal\n| id = 1688\n| campaign = Nightfall\n| profession = Monk\n| attribute = Smiting Prayers\n| type = Hex Spell\n| elite = y\n| energy = 5\n| activation = 1\n| recharge = 5\n| causes1 = Energy Gain\n| description = [[Elite]] [[Hex Spell]]. For {{gr|10|30}} seconds, whenever [[target]] [[foe]] hits with an [[attack]], you gain 2 [[Energy]].\n| concise description = Elite Hex Spell. ({{gr|10|30}} seconds.) You gain 2 Energy whenever target foe hits with an attack.\n}}\n\n{{Skill progression\n|attribute = [[Smiting Prayers]]\n|var1 name = [[Duration]]\n|var1 at0 = 10\n|var1 at15 = 30}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Nightfall]]\n** [[Flame of Fervor]] ([[Domain of Fear]])\n* [[Factions]]\n** [[Diseased Zunraa]] ([[Zen Daijun (Winds of Change)]], only during [[Cleansing Zen Daijun]])\n\n== Notes ==\n* [[General Bayel]] in [[Moddok Crevice]] uses this skill, but it cannot be captured from him because Bayel is not classified as a boss.\n* Often more effective in [[Hard Mode]], since foes attack 50% faster.\n\n[[de:Eifer des Verteidigers]]"
+}

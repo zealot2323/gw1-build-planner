@@ -1,0 +1,7 @@
+{
+  "title": "Ether Prism",
+  "pageid": 4339,
+  "revid": 2726539,
+  "timestamp": "2026-04-28T19:22:59Z",
+  "wikitext": "{{Skill infobox\n| name = Ether Prism\n| id = 1377\n| campaign = Nightfall\n| profession = Elementalist\n| attribute = Energy Storage\n| type = Skill\n| energy = 5\n| recharge = 20\n| elite = y\n| causes1 = Damage Reduction\n| causes2 = Energy Gain\n| description = [[Elite]] [[Skill (skill type)|Skill]]. For 3 seconds, all [[damage]] you take is [[Damage reduction|reduced]] by 75%. When Ether Prism ends, you gain {{gr|5|20}} [[Energy]].\n| concise description = Elite Skill. (3 seconds.) All damage you take is reduced by 75%. End effect: gain {{gr|5|20}} Energy.\n}}\n\n{{Skill progression\n|attribute = [[Energy Storage]]\n|var1 name = [[Energy]] gain\n|var1 at0 = 5\n|var1 at15 = 20}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Mekir the Prismatic]] ([[Poisoned Outcrops]])\n* [[Tortureweb Dryder (boss)]] ([[Gate of Pain]])\n\n== Related skills ==\n* {{skill icon|Energy Boon}} ([[elite]])\n* {{skill icon|Mantra of Recall}} (elite)\n\n==Trivia==\n*The [[functionality]] of this skill has changed since its introduction; see its [[Ether Prism/Skill history|skill history]] for details. \n\n[[de:Ätherprisma]]"
+}

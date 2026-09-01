@@ -1,0 +1,7 @@
+{
+  "title": "Power Return",
+  "pageid": 1524,
+  "revid": 2683803,
+  "timestamp": "2023-02-21T18:42:17Z",
+  "wikitext": "{{Skill infobox\n| id = 931\n| name = Power Return\n| campaign = Factions\n| profession = Mesmer\n| attribute = Fast Casting\n| type = Spell\n| target = foes\n| energy = 5\n| activation = {{1/4}}\n| recharge = 7\n| causes1 = Interrupt\n| causes2 = Energy Gain\n| description = [[Spell]]. If [[target]] [[foe]] is casting a spell or [[chant]], that [[skill]] is [[interrupt]]ed and target foe gains {{gr|10|5}} [[Energy]].\n| concise description = Spell. Interrupts a spell or chant. Interruption effect: target foe gains {{gr|10|5}} Energy. \n}}\n\n{{Skill progression\n|attribute = [[Fast Casting]]\n|var1 name = [[Energy]] gain\n|var1 at0 = 10\n|var1 at15 = 5}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Power Drain}}\n* {{skill icon|Power Flux}} ([[elite]])\n* {{skill icon|Power Leak}}\n* {{skill icon|Power Leech}} (elite)\n\n== Notes ==\n* Gives energy to a target even if the interruption effect is prevented."
+}

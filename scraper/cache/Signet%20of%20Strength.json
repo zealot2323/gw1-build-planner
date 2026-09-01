@@ -1,0 +1,7 @@
+{
+  "title": "Signet of Strength",
+  "pageid": 12702,
+  "revid": 2683406,
+  "timestamp": "2023-02-17T18:58:55Z",
+  "wikitext": "{{Skill infobox\n| id = 944\n| name = Signet of Strength\n| campaign = Factions\n| profession = Warrior\n| attribute = Strength\n| type = Signet\n| recharge = 45\n| activation = 1\n| description = [[Signet]]. Your next {{gr|1|16}} [[attack]][s] deal +5 [[damage]].\n| concise description = Signet. Your attacks deal +5 damage. {{gray|Ends after {{gr|1|16}} attack[s].}}\n}}\n\n{{Skill progression\n| attribute = Strength\n| var1 name = Attacks\n| var1 at0 = 1\n| var1 at15 = 16\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Eye of the North]]\n** [[Malfunctioning Shield Golem]] ([[Oola's Lab]])\n\n== Related skills ==\n* {{skill icon|\"I Am the Strongest!\"}}\n\n== Notes ==\n* This skill loses charges depending on the number of foes struck, not the number of swings.  For example, if Signet of Strength had 5 charges (Strength attribute of 4) and a Warrior using it used [[Cyclone Axe]] against five foes, all five charges of Signet of Strength would be expended in a single swing.\n* Has no [[duration]] (this is one of the few [[Upkeep#Skills that last indefinitely without an upkeep|skills that last indefinitely without an upkeep]]).\n\n[[de:Siegel der Stärke]]"
+}

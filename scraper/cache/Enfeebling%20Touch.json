@@ -1,0 +1,7 @@
+{
+  "title": "Enfeebling Touch",
+  "pageid": 14860,
+  "revid": 2726492,
+  "timestamp": "2026-04-28T19:01:45Z",
+  "wikitext": "{{Skill infobox\n| id = 1079\n| name = Enfeebling Touch\n| campaign = Factions\n| profession = Necromancer\n| attribute = Curses\n| type = Touch skill\n| energy = 5\n| activation = {{3/4}}\n| recharge = 3\n| range = touch\n| causes1 = Health Loss\n| causes2 = Weakness\n| description = [[Skill]]. [[Target]] [[Touch skill|touched]] [[foe]] [[Health loss|loses]] {{gr|5|65}} [[Health]] and suffers from [[Weakness]] for {{gr|5|20}} seconds.\n| concise description = Touch Skill. Causes {{gr|5|65}} Health loss. Inflicts Weakness condition ({{gr|5|20}} seconds).\n| target = foes\n}}\n\n{{Skill progression\n| attribute = [[Curses]]\n| var1 name = [[Health loss]] \n| var1 at0 = 5\n| var1 at15 = 65\n| var2 name = [[Duration]]\n| var2 at0 = 5\n| var2 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Enfeeble}}\n* {{skill icon|Enfeebling Blood}}\n\n[[Category:Touch skills]]\n\n[[de:Schwächende Berührung]]"
+}

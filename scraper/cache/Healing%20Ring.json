@@ -1,0 +1,7 @@
+{
+  "title": "Healing Ring",
+  "pageid": 2940,
+  "revid": 2683584,
+  "timestamp": "2023-02-19T17:29:34Z",
+  "wikitext": "{{Skill infobox\n| id = 1262\n| name = Healing Ring\n| campaign = Nightfall\n| profession = Monk\n| attribute = Healing Prayers\n| type = Spell\n| energy = 5\n| activation = 1\n| recharge = 10\n| causes1 = Healing\n| description = [[Spell]]. [[Heal]] [[adjacent]] [[creature]]s for {{gr|30|180}} [[Health]]. The caster is not healed.\n| concise description = Spell. Heals adjacent allies and foes for {{gr|30|180}}. {{gray|The caster is not healed.}}\n| aoe = adjacent\n| target = untargeted\n| pbaoe = self\n}}\n\n{{Skill progression\n| attribute = [[Healing Prayers]]\n| var1 name = [[Heal]]ing\n| var1 at0 = 30\n| var1 at15 = 180}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Dau]] ([[The Mouth of Torment]])\n\n'''[[Hero skill trainer]]s'''\n* [[Hoju]] ([[Gate of Torment]])\n\n== Related skills ==\n* {{duplicate skill icon|Heal Area|Karei's Healing Circle}}\n\n== Notes ==\n* While Healing Ring does not heal the user, the user still gains the [[Divine Favor]] healing.\n* This will not heal [[spirit]]s because spirits are immune to [[heal]]ing.\n\n[[Category:Skills offered by hero skill trainers]]"
+}

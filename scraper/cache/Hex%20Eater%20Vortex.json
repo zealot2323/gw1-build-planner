@@ -1,0 +1,7 @@
+{
+  "title": "Hex Eater Vortex",
+  "pageid": 1484,
+  "revid": 2724087,
+  "timestamp": "2026-04-02T13:14:44Z",
+  "wikitext": "{{Skill infobox\n| name = Hex Eater Vortex\n| id = 1348\n| campaign = Nightfall\n| profession = Mesmer\n| attribute = Domination Magic\n| type = Spell\n| elite = y\n| energy = 5\n| activation = {{1/4}}\n| recharge = 15\n| description = [[Elite]] [[Spell]]. Remove a [[hex]] from [[target]] [[ally]]. If a hex is removed in this way, [[foe]]s [[in the area]] of that ally take {{gr|30|90}} [[damage]] and lose one [[enchantment]].\n| concise description = Elite Spell. Removes one hex from target ally. Removal effect: deals {{gr|30|90}} damage and removes one enchantment from foes in the area of this ally.\n| removes1 = Hex spell\n| removes2 = Enchantment\n| aoe = in the area \n| target = allies\n}}\n\n{{Skill progression\n|attribute = [[Domination Magic]]\n|var1 name = [[Damage]]\n|var1 at0 = 30\n|var1 at15 = 90}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Nightfall]]\n** [[Amind the Bitter]] ([[Gate of Desolation]])\n** [[Shelkeh the Hungry]] ([[The Alkali Pan]])\n* [[Eye of the North]]\n** [[Mind of Destruction]] ([[Glint's Challenge]])\n\n== Related skills ==\n* {{skill icon|Shatter Hex}}\n* {{skill icon|Smite Hex}}\n\n== Notes ==\n* Enchantments are removed from affected foes before the damage is inflicted.\n\n== Trivia ==\n{{Skill change}}\n\n[[de:Verhexungsfresser-Strudel]]"
+}

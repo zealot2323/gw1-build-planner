@@ -1,0 +1,7 @@
+{
+  "title": "Arcing Shot",
+  "pageid": 1232,
+  "revid": 2733222,
+  "timestamp": "2026-07-05T16:49:54Z",
+  "wikitext": "{{Skill infobox\n| name = Arcing Shot\n| id = 1467\n| campaign = Nightfall\n| profession = Ranger\n| attribute = Marksmanship\n| type = Bow Attack\n| energy = 5\n| recharge = 3\n| causes1 = Unblockable\n| description = [[Bow Attack]]. If this arrow hits, it strikes for {{gr|10|35|+}} [[damage]].  This arrow cannot be [[block]]ed, but it moves 50% slower.\n| concise description = Bow Attack. Deals {{gr|10|35|+}} damage. Unblockable. {{gray|This arrow moves 50% slower.}}\n}}\n\n{{Skill progression\n|attribute = [[Marksmanship]]\n|var1 name = + [[Damage]]\n|var1 at0 = 10\n|var1 at15 = 35}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Nightfall]]\n** [[Zendeht]] ([[Gate of Torment]])\n'''[[Hero skill trainer]]s'''\n* Nightfall\n** [[Hoju]] (Gate of Torment)\n\n[[Category:Skills offered by hero skill trainers]]\n\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Teral the Punisher]] ([[Kessex Peak (War in Kryta)]])\n* Nightfall\n** [[Tenezel the Quick]] ([[Holdings of Chokhin]])\n** [[Tenshek Roundbody]] ([[The Hidden City of Ahdashim]])\n\n== Notes ==\n\n*Synergises well with [[Read the Wind]] or [[Favourable Winds]], as both increase arrow speed.\n\n== Trivia ==\n{{Skill change}}"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Scribe's Insight",
+  "pageid": 2908,
+  "revid": 2629955,
+  "timestamp": "2018-06-18T17:46:32Z",
+  "wikitext": "{{Skill infobox\n| name = Scribe's Insight\n| id = 1684\n| campaign = Nightfall\n| profession = Monk\n| attribute = Divine Favor\n| type = Enchantment Spell\n| elite = y\n| energy = 5\n| causes1 = Energy Gain\n| activation = {{1/4}}\n| recharge = 20\n| description = [[Elite]] [[Enchantment Spell]]. For {{gr|10|35}} seconds, you gain 3 [[Energy]] whenever you use a [[Signet]].\n| concise description = Elite Enchantment Spell. ({{gr|10|35}} seconds.) You gain 3 Energy whenever you use a signet.\n}}\n\n{{Skill progression\n| attribute = [[Divine Favor]]\n| var1 name = [[Duration]]\n| var1 at0 = 10\n| var1 at15 = 35}}\n\n==Acquisition==\n'''[[Signet of Capture]]'''\n* [[Ajamahn, Servant of the Sands]] ([[Crystal Overlook]])\n\n==Related skills==\n*{{skill icon|Lyric of Zeal}}\n\n[[de:Einblick des Schreibers]]"
+}

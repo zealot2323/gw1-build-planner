@@ -1,0 +1,7 @@
+{
+  "title": "Rending Touch",
+  "pageid": 14399,
+  "revid": 2735877,
+  "timestamp": "2026-07-26T18:53:53Z",
+  "wikitext": "{{Skill infobox\n| id = 1534\n| name = Rending Touch\n| campaign = Nightfall\n| profession = Dervish\n| attribute = Mysticism\n| type = Touch spell\n| energy = 5\n| recharge = 12\n| activation = {{3/4}}\n| target = foes\n| range = touch\n| removes1 = Enchantment\n| causes1 = Cold Damage\n| causes2 = Adrenaline Gain\n| description = [[Spell]]. Deals {{gr|15|65}} [[cold damage]] to [[target]] [[foe]]. You lose one [[Dervish]] [[enchantment]]. If an enchantment was removed, target foe loses 1 enchantment and you gain 2 strikes of [[adrenaline]].\n| concise description = [[Touch]] Spell. Deals {{gr|15|65}} cold damage. Lose 1 Dervish enchantment. Removal effect: target foe loses 1 enchantment and you gain 2 strikes of adrenaline.\n}}\n\n{{Skill progression\n| attribute = [[Mysticism]]\n| var1 name = [[Cold damage]]\n| var1 at0 = 15\n| var1 at15 = 65\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n* [[Libeh]] ([[Command Post]])\n\n== Hero Usage ==\n* Heroes only use this skill against enchanted foes.\n\n== Notes ==\n{{anomaly|The cold damage dealt by this skill is [[armor-ignoring damage|armor-ignoring]].}}\n\n{{bug|The full description fails to mention that this spell has a touch range (the concise description is correct).}}\n\n\n[[Category:Skills offered by hero skill trainers]]"
+}

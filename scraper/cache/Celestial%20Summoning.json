@@ -1,0 +1,7 @@
+{
+  "title": "Celestial Summoning",
+  "pageid": 42426,
+  "revid": 2628617,
+  "timestamp": "2018-06-18T17:22:30Z",
+  "wikitext": "{{skill infobox\n| id = 1241\n| name = Celestial Summoning\n| campaign = Factions\n| profession = Ritualist\n| type = Skill\n| special = Celestial\n| pve-only = y\n| recharge = morale boost\n| activation = 1\n| description = [[Skill (skill type)|Skill]]. [[Archemorus|Archemorous]] and [[Saint Viktor]] are summoned from the spirit realm.\n| concise description = Skill. Archemorous and Saint Viktor are summoned from the spirit realm.\n}}\n\n== Acquisition ==\nThis skill can be temporarily acquired by [[Primary profession|primary]] [[Ritualist]]s, [[Paragon]]s and [[Dervish]]es by talking to [[Kuunavang]] in [[Raisu Palace]], [[Imperial Sanctum]] or [[Raisu Palace (explorable area)]].\n\n== Notes ==\n* The skill descriptions omit that this skill can only be recharged when gaining a [[Morale Boost]].\n* This skill will inflict at least 5 [[packet]]s of 200 [[damage]] to [[foe]]s within [[range]] and will give all [[party member]]s within range a level 5 [[Shield of Saint Viktor]] effect.\n* The same foe cannot be struck by more than one damage packet.\n* Its range is less than the [[aggro]] bubble.\n{{bug|This skill will not [[Skill queue|queue]] properly.}}\n\n[[Category:Paragon PvE-only skills]]\n[[Category:Dervish PvE-only skills]]\n[[Category:Ritualist PvE-only skills]]\n[[Category:Celestial skills]]\n[[Category:Factions skills]]\n\n[[de:Himmlisches Herbeirufen]]"
+}

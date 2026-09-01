@@ -1,0 +1,7 @@
+{
+  "title": "Palm Strike",
+  "pageid": 3625,
+  "revid": 2629776,
+  "timestamp": "2018-06-18T17:40:26Z",
+  "wikitext": "{{Skill infobox\n| id = 1045\n| name = Palm Strike\n| campaign = Factions\n| profession = Assassin\n| attribute = Critical Strikes\n| type = Touch skill\n| elite = y\n| energy = 5\n| activation = {{3/4}}\n| recharge = 7\n| range = touch\n| causes1 = Crippled\n| description = [[Elite]] [[Skill]]. [[Target]] [[Touch skill|touched]] [[foe]] takes {{gr|10|65}} [[damage]] and is [[Crippled]] for {{gr|1|5}} second[s]. This skill counts as an [[off-hand attack]].\n| concise description = Elite Touch Skill. Deals {{gr|10|65}} damage and inflicts Crippled condition ({{gr|1|5}} second[s]). This skill counts as an off-hand attack.\n| target = foes\n}}\n\n{{Skill progression\n| attribute = [[Critical Strikes]]\n| var1 name = [[Damage]]\n| var1 at0 = 10\n| var1 at15 = 65\n| var2 name = [[Crippled]] [[duration]]\n| var2 at0 = 1\n| var2 at15 = 5\n}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Kenshi Steelhand]] ([[Bukdek Byway]])\n\n== Related skills ==\n* {{skill icon|Mantis Touch}}\n\n== Notes ==\n* Commonly used with [[Trampling Ox]] as [[bar compression]] to skip the lead attack and apply the required condition to knock down the target.\n\n[[Category:Skills which count as off-hand attacks]]\n\n[[de:Handflächenschlag]]"
+}

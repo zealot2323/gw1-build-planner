@@ -1,0 +1,7 @@
+{
+  "title": "Tranquil Was Tanasen",
+  "pageid": 4217,
+  "revid": 2733172,
+  "timestamp": "2026-07-05T16:03:54Z",
+  "wikitext": "{{Skill infobox\n| id = 913\n| name = Tranquil Was Tanasen\n| campaign = Factions\n| profession = Ritualist\n| attribute = Restoration Magic\n| type = Item Spell\n| elite = y\n| energy = 5\n| activation = 1\n| recharge = 15\n| causes1 = Increased Armor Rating\n| description = [[Elite]] [[Item Spell]]. [[Hold]] Tanasen's ashes for up to {{gr|5|20}} seconds. While you hold his ashes, you have {{gr|10|25|+}} [[Armor rating|armor]] and cannot be [[interrupt]]ed.\n| concise description = Elite Item Spell. ({{gr|5|20}} seconds.) You have {{gr|10|25|+}} armor. You cannot be interrupted.}}\n\n{{Skill progression\n|attribute = [[Restoration Magic]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 20\n|var2 name = + [[Armor rating]]\n|var2 at0 = 10\n|var2 at15 = 25}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n*[[Factions]]\n**[[Orosen, Tranquil Acolyte]] ([[Xaquang Skyway]])\n*[[Eye of the North]]\n**[[Dark Watcher]] ([[Slavers' Exile]], Forgewight's level)\n\n== Related skills ==\n* {{skill icon|Glyph of Concentration}}\n* {{skill icon|Mantra of Concentration}}\n* {{skill icon|Mantra of Resolve}}\n* {{skill icon|Pious Concentration}}\n* {{skill icon|Protective Was Kaolai}}\n* {{skill icon|Song of Concentration}}\n\n== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details.\n\n[[de:Ruhig war Tanasen]]"
+}

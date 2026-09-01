@@ -1,0 +1,7 @@
+{
+  "title": "Aria of Restoration",
+  "pageid": 15233,
+  "revid": 2731212,
+  "timestamp": "2026-06-25T05:08:00Z",
+  "wikitext": "{{Skill infobox\n| id = 1566\n| name = Aria of Restoration\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Motivation\n| type = Chant\n| energy = 10\n| recharge = 10\n| activation = 1\n| causes1 = Health Gain\n| description= [[Chant]]. For 10 seconds, the next time each [[party]] member within [[earshot]] uses a [[spell]], that party member [[Health gain|gains]] {{gr|30|90}} [[Health]].\n| concise description = Chant. (10 seconds.) Party members in earshot gain {{gr|30|90}} Health with their next spell.\n}}\n\n{{Skill progression\n| attribute = [[Motivation]]\n| var1 name = [[Health gain]]\n| var1 at0 = 30\n| var1 at15 = 90}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n* [[Tohn]] ([[Kamadan, Jewel of Istan]])\n\n'''[[Hero skill trainer]]s'''\n* [[Libeh]] ([[Command Post]])\n\n== Related skills ==\n*{{skill icon|Ballad of Restoration}}\n*{{skill icon|Chorus of Restoration}}\n*{{skill icon|Song of Restoration}} ([[elite]])\n\n==Trivia==\n*The [[necromancer]] depicted on the [[skill icon]] is wearing [[Necromancer Vabbian armor|Vabbian armor]].\n\n[[Category:Skills offered by hero skill trainers]]"
+}

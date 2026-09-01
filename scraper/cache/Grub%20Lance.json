@@ -1,0 +1,7 @@
+{
+  "title": "Grub Lance",
+  "pageid": 16149,
+  "revid": 2664290,
+  "timestamp": "2020-07-30T20:22:34Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| species = Insect\n| affiliation = Istan wildlife\n| profession = mo\n| level = 8 (23),<br>12 (24),<br>14 (24)\n| campaign = Nightfall\n}}\n[[Grub Lance]]s are effective healers.\n\n==Locations==\n*[[Istan]]\n**{{NPC location|Cliffs of Dohjok}} (level 8)\n**{{NPC location|Fahranur, The First City}} (level 8)\n**{{NPC location|Issnur Isles}} (levels 8 and 14)\n**{{NPC location|Lahtenda Bog}} (level 12)\n**{{NPC location|Zehlon Reach}} (level 8)\n\n==Missions==\n*[[Istan]]\n**{{NPC location|Jokanur Diggings}}\n\n==Skills==\n\n===Level 8 (23)===\n*{{skill icon|Orison of Healing}}\n*{{skill icon|Light of Deliverance}} ([[elite]], [[Hard mode]] only)\n\n===Levels 12 and 14 (24)===\n*{{skill icon|Orison of Healing}}\n*{{skill icon|Signet of Devotion}}\n*{{skill icon|Light of Deliverance}} (elite, Hard mode only)\n\n==Armor ratings==\n{{NPC statistics\n| level = 8\n| prof = mo\n| blunt = 26\n| piercing = 26\n| slashing = 26\n| cold = 26\n| earth = 26\n| fire = 26\n| lightning = 26\n}}\n\n==Items dropped==\n*[[Insect Appendage]]"
+}

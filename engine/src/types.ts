@@ -187,6 +187,8 @@ export interface Mission {
   wikiPage: string;
   /** The mission outpost the mission starts from. */
   outpost: LocationRef;
+  /** Campaign this mission belongs to. */
+  campaign?: Campaign | null;
   region?: string | null;
   foes: MonsterRef[];
   bosses: MonsterRef[];
@@ -201,6 +203,14 @@ export interface Mission {
 /** Manual-entry save format for a character's progression state. */
 export interface Character {
   name: string;
+  /**
+   * The campaign this character was created in. Content from other
+   * campaigns is out of reach unless that campaign is also owned — a Tyrian
+   * cannot walk to Cantha.
+   */
+  campaign?: Campaign;
+  /** Campaigns the account owns; defaults to just the character's own. */
+  ownedCampaigns?: Campaign[];
   primaryProfession: Profession;
   /** Must never include primaryProfession (enforced in logic, not schema). */
   unlockedSecondaries: Profession[];
@@ -383,6 +393,7 @@ export const missionSchema = {
     name: { type: "string" },
     wikiPage: { type: "string" },
     outpost: { type: "string" },
+    campaign: { oneOf: [{ $ref: "gw1-campaign" }, { type: "null" }] },
     region: { type: ["string", "null"] },
     foes: refArray,
     bosses: refArray,
@@ -401,6 +412,8 @@ export const characterSchema = {
   ],
   properties: {
     name: { type: "string" },
+    campaign: { $ref: "gw1-campaign" },
+    ownedCampaigns: { type: "array", items: { $ref: "gw1-campaign" } },
     primaryProfession: { $ref: "gw1-profession" },
     unlockedSecondaries: { type: "array", items: { $ref: "gw1-profession" } },
     knownSkills: refArray,

@@ -1,0 +1,7 @@
+{
+  "title": "Kappa (level 10)",
+  "pageid": 43817,
+  "revid": 2433800,
+  "timestamp": "2012-01-12T17:23:09Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Green_kappa.jpg|150px]]\n| name = Kappa\n| type = Kappa\n| affiliation = Shing Jea Island wildlife\n| profession = e\n| level = 10 (24)\n| campaign = Factions\n}}\n[[Kappa (level 10)|Kappa]] are similiar to their [[Kappa (level 6)|level 6 counterparts]], but have an extra [[Area of effect|AoE]] damage skill.\n\n==Locations==\n*[[Shing Jea Island]]\n**{{NPC location|Haiju Lagoon}}\n\n==Skills==\n10 [[Water Magic]]\n*{{skill icon|Ice Spear}}\n*{{skill icon|Ice Spikes}}\n*{{skill icon|Vapor Blade}} ([[Hard mode]] only)\n*{{skill icon|Water Attunement}}\n*{{monster skill icon|Turtle Shell}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = e\n| blunt = 30\n| piercing = 30\n| slashing = 30\n| cold = 30\n| earth = 30\n| fire = 30\n| lightning = 30\n}}\n\n==Items dropped==\n*[[Elder Kappa Shell]]"
+}

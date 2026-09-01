@@ -1,0 +1,7 @@
+{
+  "title": "Roaring Winds",
+  "pageid": 6589,
+  "revid": 2731273,
+  "timestamp": "2026-06-25T05:38:08Z",
+  "wikitext": "{{Skill infobox\n| name = Roaring Winds\n| id = 1725\n| campaign = Nightfall\n| profession = Ranger\n| attribute = Wilderness Survival\n| type = Nature Ritual\n| energy = 10\n| recharge = 60\n| activation = 2\n| causes1 = Spirit\n| causes2 = Increased Energy Cost\n| description = [[Nature Ritual]]. Create a level {{gr|1|10}} [[spirit]]. [[Chant]]s and [[shout]]s cost {{gr|1|5}} more [[Energy]]. This spirit dies after {{gr|30|180}} seconds.\n| concise description = Nature Ritual. Creates a level {{gr|1|10}} spirit ({{gr|30|180}} second lifespan). Chants and shouts cost {{gr|1|5}} more Energy for creatures in range.\n| aoe = spirit\n}}\n\n{{Skill progression\n|attribute = [[Wilderness Survival]]\n|var1 name = Level\n|var1 at0 = 1\n|var1 at15 = 10\n|var2 name = Increased [[energy]] cost\n|var2 at0 = 1 \n|var2 at15 = 5\n|var3 name = [[Duration]]\n|var3 at0 = 30\n|var3 at15 = 180}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Medando]] ([[Yohlon Haven]])\n\n'''[[Hero skill trainer]]s'''\n*[[Warden of Whispers (The Kodash Bazaar)|Warden of Whispers]] ([[The Kodash Bazaar]])\n\n==Notes==\n* This skill creates a [[Spirit of Roaring Winds]].\n* This skill also affects chants and shouts that cost [[adrenaline]].\n\n[[Category:Skills offered by hero skill trainers]]"
+}

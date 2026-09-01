@@ -1,0 +1,7 @@
+{
+  "title": "Attacker's Insight",
+  "pageid": 14075,
+  "revid": 2664506,
+  "timestamp": "2020-08-08T20:44:06Z",
+  "wikitext": "{{Skill infobox\n| id = 1764\n| name = Attacker's Insight\n| campaign = Nightfall\n| profession = Dervish\n| attribute = Wind Prayers\n| type = Flash Enchantment Spell\n| energy = 10\n| recharge = 10\n| causes1 = Block\n| causes2 = Weakness\n| description = [[Flash Enchantment Spell]]. For {{gr|3|10}} seconds you have a 50% chance to [[block]] while [[attacking]]. When this [[Enchantment spell|enchantment]] ends, you inflict [[Weakness]] on all [[adjacent]] [[foe]]s for {{gr|3|15}} seconds.\n| concise description = Flash Enchantment Spell. ({{gr|3|10}} seconds.) Gives 50% block chance while attacking. End Effect: Causes Weakness {{gr|3|15}} seconds to adjacent foes.\n| aoe = adjacent\n| target = untargeted\n| pbaoe = self\n}}\n\n{{Skill progression\n|attribute = [[Wind Prayers]]\n|var1 name = [[Duration]]\n|var1 at0 = 3\n|var1 at15 = 10\n|var2 name = [[Weakness]] duration\n|var2 at0 = 3\n|var2 at15 = 15}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n* [[Libeh]] ([[Command Post]])\n\n== Related skills ==\n* {{skill icon|Flashing Blades}} ([[elite]])\n* {{skill icon|Mirage Cloak}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

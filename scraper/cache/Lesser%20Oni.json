@@ -1,0 +1,7 @@
+{
+  "title": "Lesser Oni",
+  "pageid": 45816,
+  "revid": 2687093,
+  "timestamp": "2023-05-21T18:58:48Z",
+  "wikitext": "{{NPC infobox\n| name = Lesser Oni\n| image = [[File:Oni.jpg|200px]]\n| affiliation = Shing Jea Island wildlife\n| type = Demon\n| profession = a\n| level = 9 (23)\n| campaign = Factions\n}}__NOTOC__\nA [[Lesser Oni]] is a weaker version of the more powerful [[Oni]]. They are always hidden and will spawn only if your party approaches the area they are in.\n\n==Locations==\n*[[Shing Jea Island]]\n**{{NPC location|Kinya Province}}\n**{{NPC location|Minister Cho's Estate|explorable area}}\n**{{NPC location|Panjiang Peninsula}} (on the sandy beach near the southwestern edge)  (On the northern edge along cliffs, near bridge)\n**{{NPC location|Sunqua Vale}} (a little northwest from the exit into [[Tsumei Village]])\n\n==Skills==\n*{{skill icon|Fox Fangs}}\n*{{skill icon|Jagged Strike}}\n*{{skill icon|Scorpion Wire}}\n*{{monster skill icon|Demonic Agility}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = a\n| blunt = 37 (70)\n| piercing = 37 (70)\n| slashing = 37 (70)\n| cold = 37 (70)\n| earth = 37 (70)\n| fire = 37 (70)\n| lightning = 37 (70)\n}}\n\n==Items dropped==\n*[[Oni Blade]]\n*[[Oni Daggers]]\n*[[Oni Shroud]]\n*[[Oni Talon]]\n\n== Notes ==\n*Sometimes, the Lesser Oni in Sunqua Vale will be visible like any other foe."
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Quivering Blade",
+  "pageid": 3611,
+  "revid": 2738486,
+  "timestamp": "2026-08-26T21:20:05Z",
+  "wikitext": "{{Otheruses|the [[skill]]|weapon with the same name|Quivering Blade (weapon)}}\n{{Skill infobox\n| id = 892\n| name = Quivering Blade\n| campaign = Factions\n| profession = Warrior\n| attribute = Swordsmanship\n| type = Sword Attack\n| elite = y\n| adrenaline = 4\n| causes1 = Dazed\n| description = [[Elite]] [[Sword Attack]]. If Quivering Blade hits, you strike for {{gr|10|40|+}} [[damage]]. If this attack hits a [[Movement|moving]] [[foe]], that foe is [[Dazed]] for 10 seconds.\n| concise description = Elite Sword Attack. Deals {{gr|10|40|+}} damage. Inflicts Dazed condition (10 seconds) if target foe was moving.\n}}\n\n{{Skill progression\n| attribute = [[Swordsmanship]]\n| var1 name = + [[Damage]]\n| var1 at0 = 10\n| var1 at15 = 40\n}}\n\n==Acquisition==\n;[[Signet of Capture]]\n*[[Sun, the Quivering]] ([[Wajjun Bazaar]])\n\n==Related skills==\n*{{skill icon|Skull Crack}} ([[elite]])\n*{{skill icon|Spear Swipe}}\n*{{skill icon|Stunning Strike}} (elite)\n\n==Notes==\n*In PvE, consider using [[area of effect]] [[skill]]s that cause [[scatter]] to force foes to move.\n\n[[de:Zitternde Klinge]]"
+}

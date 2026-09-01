@@ -1,0 +1,7 @@
+{
+  "title": "Gaze from Beyond",
+  "pageid": 3137,
+  "revid": 2686547,
+  "timestamp": "2023-05-02T16:35:58Z",
+  "wikitext": "{{Skill infobox\n| id = 1245\n| name = Gaze from Beyond\n| campaign = Factions\n| profession = Ritualist\n| attribute = Channeling Magic\n| type = Spell\n| energy = 5\n| activation = 1\n| recharge = 10\n| target = foes\n| causes1 = Lightning Damage\n| causes2 = Blind\n| description = [[Spell]]. [[Target]] [[foe]] is struck for {{gr|20|65}} [[lightning damage]]. If you are within [[earshot]] of a [[spirit]], that foe is [[Blinded]] for {{gr|2|6}} seconds.\n| concise description = Spell. Deals {{gr|20|65}} lightning damage. Inflicts Blindness condition for {{gr|2|6}} seconds if you are within earshot of a spirit.\n}}\n\n{{Skill progression\n| attribute = [[Channeling Magic]]\n| maximum = 19\n| var1 name = [[Damage]]\n| var1 at0 = 20\n| var1 at15 = 65\n| var2 name = [[Blind]] [[duration]]\n| var2 at0 = 2\n| var2 at15 = 6}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Calamitous]] ([[Watchtower Coast (War in Kryta)]])\n\n== Related skills ==\n* {{skill icon|Essence Strike}}\n* {{skill icon|Spirit Burn}}\n\n==Hero Usage==\n* Heroes use this spell as a basic damage skill, ignoring its conditional bonus.\n\n== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details.\n\n[[Category:Hero-vetted skills]]"
+}

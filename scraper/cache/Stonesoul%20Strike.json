@@ -1,0 +1,7 @@
+{
+  "title": "Stonesoul Strike",
+  "pageid": 13058,
+  "revid": 2683582,
+  "timestamp": "2023-02-19T17:26:59Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 1131\n| name = Stonesoul Strike\n| campaign = Factions\n| profession = Monk\n| attribute = Smiting Prayers\n| type = Touch skill\n| energy = 5\n| activation = {{3/4}}\n| recharge = 8\n| range = touch\n| target = foes\n| special = duplicate\n| causes1 = Holy Damage\n| description = [[Skill]]. [[Touch skill|Touched]] [[target]] [[foe]] takes {{gr|10|55}} [[holy damage]]. If [[Knock down|knocked down]], your target takes an additional {{gr|10|55}} holy damage.\n| concise description = Touch Skill. Deals {{gr|10|55}} holy damage. Deals {{gr|10|55}} more holy damage if target is knocked down.\n}}\n\n{{Skill progression\n| attribute = [[Smiting Prayers]]\n| var1 name = [[Holy damage]]\n| var1 at0 = 10\n| var1 at15 = 55\n| var2 name = + Holy damage\n| var2 at0 = 10\n| var2 at15 = 55}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Greves the Overbearing]] ([[The Black Curtain (War in Kryta)]])\n\n== Related skills ==\n* {{skill icon|Holy Strike}} ([[duplicate skill]])\n\n== Trivia ==\n* This skill is named for (and used by) the [[Stone Soul]]s of [[Echovald Forest]], who are also depicted in the [[skill icon]].\n\n[[de:Steinseelenschlag]]"
+}

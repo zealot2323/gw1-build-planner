@@ -1,0 +1,7 @@
+{
+  "title": "Disrupting Throw",
+  "pageid": 15252,
+  "revid": 2684135,
+  "timestamp": "2023-02-24T14:39:50Z",
+  "wikitext": "{{Skill infobox\n| id = 1604\n| name = Disrupting Throw\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Spear Mastery\n| type = Spear Attack\n| energy = 5\n| activation = {{1/2}}\n| recharge = 10\n| causes1 = Interrupt\n| description = [[Spear Attack]]. If this [[attack]] hits a [[foe]] suffering from a [[condition]], that foe is [[interrupt]]ed.\n| concise description = Spear Attack. Interrupts [[action]]s. {{gray|No effect unless target has a condition.}}\n}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Nightfall]]\n**[[Medando]] ([[Yohlon Haven]])\n;[[Signet of Capture]]\n*Nightfall\n** [[Cursed Salihm]] ([[Cliffs of Dohjok]], only during [[Following the Trail]])\n** [[Lieutenant Mahrik]] ([[Cliffs of Dohjok]], only during [[A Land of Heroes]])\n*[[Eye of the North]]\n**[[Sotanaht the Tomb Guardian]] ([[Vloxen Excavations]])\n\n==Notes==\n*This attack will also interrupt if you are under the effect of a skill that will cause a condition on the next attack, such as [[Anthem of Flame]], but not [[Apply Poison]].\n\n[[Category:Essentially unlinked skills]]"
+}

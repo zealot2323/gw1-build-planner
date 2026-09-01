@@ -1,0 +1,7 @@
+{
+  "title": "Gaze of Contempt",
+  "pageid": 7052,
+  "revid": 2726491,
+  "timestamp": "2026-04-28T19:01:22Z",
+  "wikitext": "{{Skill infobox\n| id = 766\n| name = Gaze of Contempt\n| campaign = Factions\n| profession = Necromancer\n| type = Spell\n| energy = 10\n| activation = 2\n| recharge = 10\n| removes1 = Enchantment\n| description = [[Spell]]. If [[target]] [[foe]] has more than 50% [[Health]], that foe loses all [[enchantment]]s.\n| concise description = Spell. Removes target foe's enchantments. {{gray|No effect unless this foe has more than 50% Health.}}\n| target = foes\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Degaz the Cynical]] ([[Riverside Province (explorable area)]])\n** [[Willem the Demeaning]] (Riverside Province (explorable area), during [[Riverside Assassination]])\n\n== Related skills ==\n* {{skill icon|Rend Enchantments}}\n* {{skill icon|Shatter Storm}} ([[elite]])\n\n== Trivia ==\n* The face in the [[skill icon]] is that of [[Brant Fitzgerald]] ([[User talk:Emily Diehl/Trivia archive 4#Trivia Gaze of Contempt|source]]).\n* This skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details.\n\n[[Category:Trivia]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Ether Phantom",
+  "pageid": 1644,
+  "revid": 2683810,
+  "timestamp": "2023-02-21T18:52:27Z",
+  "wikitext": "{{Skill infobox\n| id = 1343\n| name = Ether Phantom\n| campaign = Nightfall\n| profession = Mesmer\n| attribute = Inspiration Magic\n| type = Hex Spell\n| energy = 5\n| activation = 1\n| recharge = 10\n| causes1 = Energy Degeneration\n| causes2 = Energy Loss\n| description = [[Hex Spell]]. For 10 seconds, [[target]] [[foe]] has -1 [[Energy degeneration]]. If this hex is removed prematurely, that foe loses {{gr|1|5}} [[Energy]].\n| concise description = Hex Spell. (10 seconds.) Causes -1 Energy degeneration. Causes {{gr|1|5}} Energy loss if this hex ends early.\n}}\n\n{{Skill progression\n|attribute = [[Inspiration Magic]]\n|var1 name = [[Energy]] loss\n|var1 at0 = 1\n|var1 at15 = 5}}\n\n== Acquisition ==\n'''[[Skill trainer]]'''\n* [[Zendeht]] ([[Gate of Torment]])\n'''[[Hero skill trainer]]'''\n* [[Hoju]] ([[Gate of Torment]])\n'''[[Signet of Capture]]'''\n* [[Rual, Stealer of Hope]] ([[The Ruptured Heart]])\n\n== Related skills ==\n* {{skill icon|Ether Lord}}\n* {{Skill icon|Malaise}}\n* {{Skill icon|Wither}} ([[elite]])\n\n== Notes ==\n{{bug|Ether Phantom stacks with itself causing multiple energy loss when removed prematurely}}\n* Energy loss can be applied earlier using [[Shatter Delusions]] or [[Drain Delusions]].\n\n[[Category:Skills offered by hero skill trainers]]"
+}

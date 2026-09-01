@@ -1,0 +1,7 @@
+{
+  "title": "Sundering Attack",
+  "pageid": 2230,
+  "revid": 2733198,
+  "timestamp": "2026-07-05T16:25:35Z",
+  "wikitext": "__NOTOC__\n{{Skill infobox\n| id = 1191\n| name = Sundering Attack\n| campaign = Factions\n| profession = Ranger\n| attribute = Marksmanship\n| type = Bow Attack\n| energy = 10\n| recharge = 4\n| activation = {{3/4}}\n| special = Duplicate\n| causes1 = Armor Penetration\n| description = [[Bow Attack]]. If Sundering Attack hits, you strike for {{gr|5|25|+}} [[damage]] and this attack has 10% [[armor penetration]].\n| concise description = Bow Attack. Deals {{gr|5|25|+}} damage. 10% armor penetration.\n| has-pvp = y\n}}\n\n{{Skill progression\n| attribute = [[Marksmanship]]\n| var1 name = + [[Damage]]\n| var1 at0 = 5\n| var1 at15 = 25}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Masaharu]] ([[Seitung Harbor]])\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Penetrating Attack}} ([[duplicate skill]])\n\n== Notes ==\n* The arrow leaves the bow {{3/8}} seconds into this skill's activation, as [[attack skill]]s hit halfway through their stated [[activation time]].\n\n== Trivia ==\n* The female in the [[skill icon]] is wearing [[Ranger Luxon armor]].\n\n[[de:Trennender Angriff]]"
+}

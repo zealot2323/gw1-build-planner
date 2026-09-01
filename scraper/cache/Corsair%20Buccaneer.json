@@ -1,0 +1,7 @@
+{
+  "title": "Corsair Buccaneer",
+  "pageid": 101845,
+  "revid": 2449482,
+  "timestamp": "2012-02-12T12:38:10Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| affiliation = Corsairs\n| type = Human\n| profession = w\n| level = 0, 1 (22)\n| campaign = Nightfall\n| image = [[File:Corsair warrior.jpg|150px]]\n}}\n[[Corsair Buccaneer]]s are the weaker versions of [[Corsair Thug|Corsair Thugs]], [[Corsair Cutthroat|Corsair Cutthroats]], and [[Corsair Weapons Master|Corsair Weapons Masters]].\n\n==Locations==\n*[[Istan]]\n**{{NPC location|Island of Shehkah}}\n**{{NPC location|Chahbek Village|outpost}}\n\n==Missions==\n*Istan\n**{{NPC location|Chahbek Village}}\n\n==Skills==\n*{{skill icon|\"You're All Alone!\"}} ([[elite]], [[Hard mode]] only)\n\n==Armor ratings==\n{{NPC statistics\n| level = 1\n| prof = w\n| blunt = 10\n| piercing = 10\n| slashing = 10\n| cold = 12\n| earth = 12\n| fire = 12\n| lightning = 12\n}}\n\n==Items dropped==\n*[[Bolt of Cloth]]\n*[[Corsair Raiment]]\n*[[Copper Shilling]]\n*[[Tanned Hide Square]]\n\n[[Category:Drops cloth]]\n[[Category:Drops hide]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Siphon Speed",
+  "pageid": 16320,
+  "revid": 2733056,
+  "timestamp": "2026-07-05T13:22:00Z",
+  "wikitext": "{{Skill infobox\n| id = 951\n| name = Siphon Speed\n| campaign = Factions\n| profession = Assassin\n| attribute = Deadly Arts\n| type = Hex Spell\n| energy = 5\n| activation = 1\n| recharge = 30\n| causes1 = Decreased Movement Speed\n| causes2 = Increased Movement Speed\n| causes3 = Decreased Recharge Time\n| description = [[Hex Spell]]. For {{gr|5|15}} seconds, [[target]] [[foe]] [[Snare (tactic)|moves 33% slower]] and you [[Speed boost|move 33% faster]]. This spell [[recharge]]s 50% faster if cast on a [[Movement|moving]] foe.\n| concise description = Hex Spell. ({{gr|5|15}} seconds.) Target foe moves 33% slower and you move 33% faster. Recharges 50% faster if cast on a moving foe.\n}}\n\n{{Skill progression\n|attribute = [[Deadly Arts]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 15}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Nightfall]]\n** [[Achor the Bladed]] ([[Crystal Overlook]])\n\n== Notes ==\n* This hex will end on the target if the caster [[Death|dies]]."
+}

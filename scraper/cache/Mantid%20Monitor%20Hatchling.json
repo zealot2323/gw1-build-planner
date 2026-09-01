@@ -1,0 +1,7 @@
+{
+  "title": "Mantid Monitor Hatchling",
+  "pageid": 45811,
+  "revid": 2389454,
+  "timestamp": "2011-10-03T04:06:04Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Mantid Gazer.jpg|150px]]\n| type = Mantid\n| passive = t\n| affiliation = Shing Jea Island wildlife\n| profession = mo\n| level = 0 (22)\n| campaign = Factions\n}}\n[[Mantid Monitor Hatchling]]s are weak [[mantid]]s.\n\n==Locations==\n*[[Shing Jea Island]]\n**{{NPC location|Saoshang Trail}}\n**{{NPC location|Sunqua Vale}}\n\n==Skills==\n*{{skill icon|Shield of Regeneration}} ([[elite]], [[Hard mode]] only)\n\n==Armor ratings==\n{{NPC statistics\n| prof = mo\n| blunt = 1\n| piercing = 1\n| slashing = 1\n| cold = 1\n| earth = 1\n| fire = 1\n| lightning = 1\n}}\n\n==Items dropped==\n*[[Mantid Pincer]]"
+}

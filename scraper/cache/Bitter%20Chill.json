@@ -1,0 +1,7 @@
+{
+  "title": "Bitter Chill",
+  "pageid": 14342,
+  "revid": 2667487,
+  "timestamp": "2020-10-23T21:18:19Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 1068\n| name = Bitter Chill\n| campaign = Factions\n| profession = Necromancer\n| attribute = Death Magic\n| type = Spell\n| energy = 5\n| activation = 1\n| recharge = 10\n| causes1 = Cold Damage\n| causes2 = Recharge\n| description = [[Spell]]. [[Target]] [[foe]] is struck for {{gr|15|60}} [[cold damage]].  If that foe had more [[Health]] than you, Bitter Chill [[recharge]]s instantly.\n| concise description = Spell. Deals {{gr|15|60}} cold damage. Recharges instantly if target foe had more Health than you.\n| target = foes\n}}\n\n{{Skill progression\n| attribute = [[Death Magic]]\n| var1 name = [[Cold damage]] \n| var1 at0 = 15\n| var1 at15 = 60}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Masaharu]] ([[Seitung Harbor]])\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Signet of Sorrow}}\n\n== Notes ==\n* The instant recharge of this skill ignores the effect of [[Diversion]].\n* Useful against [[boss]]es for sustained [[damage per second]].\n\n== Trivia ==\n* The face displayed in the [[skill icon]] is that of a [[w:Hannya|Hannya]] mask.\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details."
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Fox's Promise",
+  "pageid": 4430,
+  "revid": 2629035,
+  "timestamp": "2018-06-18T17:30:26Z",
+  "wikitext": "{{Skill infobox\n| name = Fox's Promise\n| id = 1640\n| campaign = Nightfall\n| profession = Assassin\n| attribute = Dagger Mastery\n| type = Enchantment Spell\n| target = self\n| elite = y\n| energy = 10\n| activation = 1\n| recharge = 20\n| causes1 = Unblockable\n| description = [[Elite]] [[Enchantment Spell]]. For {{gr|5|20}} seconds, your [[dagger attack]]s cannot be [[block]]ed. This enchantment ends the next time you [[Fail#Skills that trigger an effect on failed attacks|fail to hit]].\n| concise description = Elite Enchantment Spell.  ({{gr|5|20}} seconds.)  Your dagger attacks are unblockable.  {{gray|Ends the next time you fail to hit.}}\n}}\n\n{{Skill progression\n| attribute = [[Dagger Mastery]]\n| var1 name = [[Duration]]\n| var1 at0 = 5\n| var1 at15 = 20\n}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Hanchor Trueblade]] ([[Holdings of Chokhin]])\n\n== Related skills ==\n* {{skill icon|Seeking Arrows}}\n* {{skill icon|Warrior's Cunning}}\n* {{skill icon|Way of the Fox}}\n\n== Notes ==\n* This enchantment will end if an attack [[miss]]es or if a dagger attack [[fail]]s due to being used out of order.\n\n[[de:Versprechen des Fuchses]]"
+}

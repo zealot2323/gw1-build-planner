@@ -1,0 +1,7 @@
+{
+  "title": "Undergrowth",
+  "pageid": 22635,
+  "revid": 2610586,
+  "timestamp": "2016-07-25T08:04:16Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Undergrowth.jpg|250px]]\n| affiliation = Echovald Forest wildlife\n| type = Plant\n| profession = w\n| level = 23 (26)\n| campaign = Factions\n}}\n'''Undergrowths''' are vicious [[plant]]s found in and near [[Echovald Forest]]. They have no defensive capabilities past their thick [[armor rating|bark]] and simply attempt to bury anything considered an intruder under a wave of leaves and roots.\n\n==Locations==\n*[[Kaineng City]]\n**{{NPC location|Pongmei Valley}}\n*[[Echovald Forest]]\n**{{NPC location|Arborstone|explorable area}}\n**{{NPC location|Drazach Thicket}}\n**{{NPC location|Melandru's Hope}}\n**{{NPC location|Morostav Trail}}\n**{{NPC location|Mourning Veil Falls}}\n**{{NPC location|The Eternal Grove|explorable area}}\n\n==Missions==\n*[[Echovald Forest]]\n**{{NPC location|Arborstone}}\n\n==Skills==\n15 [[Strength]], 15 [[Axe Mastery]]    \n*{{skill icon|Bull's Strike}}\n*{{skill icon|Lacerating Chop}} ([[hard mode]] only)\n*{{skill icon|Primal Rage}} ([[elite]])\n*{{skill icon|Swift Chop}}\n*{{skill icon|Wild Blow}} (hard mode only)\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 109 \n| piercing = 109\n| slashing = 89\n| cold = 89\n| earth = 89\n| fire = 69\n| lightning = 89\n}}\n\n==Items dropped==   \n*[[Dragon Root]]\n*[[Plant Fiber]]\n*[[Spiritwood Plank]]\n*[[Wood Plank]]\n\n[[Category:Drops fiber]]\n[[Category:Drops wood]]\n[[Category:Drops spiritwood]]"
+}

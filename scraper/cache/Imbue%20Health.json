@@ -1,0 +1,7 @@
+{
+  "title": "Imbue Health",
+  "pageid": 6710,
+  "revid": 2732890,
+  "timestamp": "2026-07-04T21:13:34Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 1526\n| name = Imbue Health\n| campaign = Nightfall\n| profession = Dervish\n| attribute = Mysticism\n| type = Spell\n| energy = 10\n| activation = {{1/4}}\n| recharge = 10\n| causes1 = Healing\n| description = [[Spell]]. [[Target]] other [[ally]] is [[heal]]ed for {{gr|5|50||%}} of your current [[Health]] (maximum 300 Health).\n| concise description = Spell. Heals for {{gr|5|50||%}} of your current Health (maximum 300). {{gray|Cannot self-target.}}\n| target = other allies\n}}\n\n{{Skill progression\n|attribute = [[Mysticism]]\n|var1 name = % [[Heal]]ing\n|var1 at0 = 5\n|var1 at15 = 50}}\n\n== Acquisition ==\n===[[Unlock]] and learn===\n'''[[Skill quest]]s'''\n*[[Primary Training]] ([[Churrhir Fields]])\n*[[Choose Your Secondary Profession (Nightfall quest)|Choose Your Secondary Profession]] (Churrhir Fields)\n'''[[Skill trainer]]s'''\n*[[Nightfall]]\n**[[Tohn]] ([[Kamadan, Jewel of Istan]])\n\n===Unlock only===\n;Skill quests\n*[[Secondary Training]] ([[Kamadan, Jewel of Istan]])\n;[[Hero]]es\n*Unlocking [[Melonni]]\n\n== Related skills ==\n*{{skill icon|Infuse Health}}\n*{{skill icon|Spirit Transfer}}\n\n== Notes ==\n* An effective spell against [[spike]]s; however, its energy cost and recharge time can be considered too high to serve as your main heal.\n\n[[Category:Dervish skill rewards]]"
+}

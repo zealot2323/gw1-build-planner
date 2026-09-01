@@ -1,0 +1,7 @@
+{
+  "title": "Sickened Bear",
+  "pageid": 45822,
+  "revid": 2575873,
+  "timestamp": "2014-09-21T12:52:30Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Black Bear.jpg|150px]]\n| type = Beast\n| affiliation = Sickened\n| profession = w\n| level = 5, 22 (23, 26)\n| campaign = Factions\n}}\n[[Sickened Bear]]s are [[Minister Cho]]'s [[Black Bear|bears]] that live in his [[Minister Cho's Menagerie|menagerie]] and have become infected by the plague. They look like normal bears except they emit green fumes.\n\n==Locations==\n*[[Factions]]\n**[[Shing Jea Island]]\n***{{NPC location|Minister Cho's Estate|explorable area}}\n*[[Beyond]]\n**[[Winds of Change]]\n***Shing Jea Island\n****{{NPC location|Minister Cho's Estate (Winds of Change)}}\n\n==Missions==\n*Shing Jea Island\n**{{NPC location|Minister Cho's Estate}}\n\n==Skills==\n*{{skill icon|Frenzy}}\n*{{skill icon|Primal Rage}} ([[elite]], [[Hard mode]] only)\n\n===During Winds of Change===\n*{{skill icon|\"I Will Avenge You!\"}}\n*{{skill icon|Bull's Strike}}\n*{{skill icon|Endure Pain}}\n*{{skill icon|Power Attack}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 16\n| piercing = 16\n| slashing = 16\n| cold = 16\n| earth = 16\n| fire = 16\n| lightning = 16\n}}\n\n==Items dropped==\n*[[Animal Hide]]\n\n==Notes==\n*Cannot be [[Charm Animal|charmed]]."
+}

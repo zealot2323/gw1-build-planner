@@ -1,0 +1,7 @@
+{
+  "title": "Blazing Spear",
+  "pageid": 15250,
+  "revid": 2733241,
+  "timestamp": "2026-07-05T16:59:33Z",
+  "wikitext": "{{Skill infobox\n| id = 1546\n| name = Blazing Spear\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Spear Mastery\n| type = Spear Attack\n| adrenaline = 6\n| causes2 = Burning\n| description = [[Spear Attack]]. If this [[attack]] hits, it deals {{gr|5|25|+}} [[damage]] and sets [[target]] [[foe]] [[Burning|on Fire]] {{sic|\"Fire\" is capitalized, unlike other descriptions which state \"set on fire\"}}  for {{gr|1|3}} second[s].\n| concise description = Spear Attack. Deals {{gr|5|25|+}} damage. Inflicts Burning condition ({{gr|1|3}} second[s]).\n}}\n\n{{Skill progression\n| attribute = [[Spear Mastery]]\n| var1 name = + [[Damage]]\n| var1 at0 = 5\n| var1 at15 = 25\n| var2 name = [[Burning]] [[duration]]\n| var2 at0 = 1\n| var2 at15 = 3}}\n\n== Acquisition ==\n===[[Unlock]] and learn===\n'''[[Skill trainer]]s'''\n*[[Medando]] ([[Yohlon Haven]])\n\n===Unlock only===\n;[[Hero]]es\n*Unlocking [[General Morgahn]]\n\n==Related skills==\n*{{skill icon|Burning Arrow}} ([[elite]])\n*{{skill icon|Incendiary Arrows}} (elite)\n\n== Trivia ==\n*The spear on the [[skill icon]] appears to be a [[Suntouched Spear]]."
+}

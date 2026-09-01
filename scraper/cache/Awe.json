@@ -1,0 +1,7 @@
+{
+  "title": "Awe",
+  "pageid": 15227,
+  "revid": 2726482,
+  "timestamp": "2026-04-28T18:55:23Z",
+  "wikitext": "{{Skill infobox\n| id = 1573\n| name = Awe\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Leadership\n| type = Skill\n| energy = 10\n| activation = {{3/4}}\n| recharge = 10\n| target = foes\n| causes1 = Dazed\n| description= [[Skill (skill type)|Skill]].  If this skill hits a [[Knock down|knocked-down]] [[foe]], that foe becomes [[Dazed]] for {{gr|5|15}} seconds.\n| concise description = Skill. Inflicts Dazed condition ({{gr|5|15}} seconds). {{gray|No effect unless target is knocked-down.}}\n}}\n\n{{Skill progression\n| attribute = [[Leadership]]\n| var1 name = [[Dazed]] [[duration]]\n| var1 at0 = 5\n| var1 at15 = 15}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n*[[Pikin]] (Kamadan, Jewel of Istan)\n\n== Related skills ==\n*{{skill icon|Bestial Mauling}}\n*{{skill icon|Overbearing Smash}}\n*{{skill icon|Stunning Strike}} ([[elite]])\n\n==Trivia==\n*The synergy between this skill and [[Shock]] combines to create a name reference to [[w:Shock and awe|Shock and Awe]].\n\n[[Category:Skills offered by hero skill trainers]]\n\n[[de:Ehrfurcht]]"
+}

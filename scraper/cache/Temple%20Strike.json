@@ -1,0 +1,7 @@
+{
+  "title": "Temple Strike",
+  "pageid": 4406,
+  "revid": 2692444,
+  "timestamp": "2024-01-24T11:24:30Z",
+  "wikitext": "{{Skill infobox\n| id = 988\n| name = Temple Strike\n| campaign = Factions\n| profession = Assassin\n| attribute = Dagger Mastery\n| type = Off-Hand Attack\n| elite = y\n| energy = 15\n| recharge = 20\n| causes1 = Interrupt\n| causes2 = Dazed\n| causes3 = Blind\n| description = [[Elite]] [[Off-Hand Attack]]. Must follow a [[lead attack]]. If this [[attack]] hits, [[target]] [[foe]] is [[Dazed]] and [[Blind]]ed for {{gr|1|10}} seconds, and if target foe is casting a [[spell]], that foe is [[interrupt]]ed.\n| concise description = Elite Off-Hand Attack. Interrupts a spell. Inflicts Dazed and Blindness conditions ({{gr|1|10}} seconds). {{gray|Must follow a lead attack.}}\n| requires = lead\n}}\n\n{{Skill progression\n| attribute = [[Dagger Mastery]]\n| var1 name = [[Dazed]] and [[Blind]] [[duration]]\n| var1 at0 = 1\n| var1 at15 = 10}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Sarnia the Red-Handed]] ([[North Kryta Province (War in Kryta)]])\n* [[Factions]]\n** [[Assassin's Construct]] ([[Silent Surf]] and [[Sunjiang District]])\n** [[Lai, Graceful Blade]] (Dragon's Throat, only during [[What Waits in Shadow]])\n\n== Related skills ==\n* {{skill icon|Golden Skull Strike}} ([[elite]])\n\n== Notes ==\n* Blind [[cover]]s dazed.\n* It is easier to capture this skill from the Assassin's Construct in Silent Surf than in Sunjiang District.\n\n[[de:Schläfenstoß]]"
+}

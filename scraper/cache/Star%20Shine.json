@@ -1,0 +1,7 @@
+{
+  "title": "Star Shine",
+  "pageid": 42422,
+  "revid": 2630095,
+  "timestamp": "2018-06-18T17:51:44Z",
+  "wikitext": "{{skill infobox\n| id = 1124\n| name = Star Shine\n| campaign = Factions\n| profession = Monk\n| type = Skill\n| special = Celestial\n| pve-only = y\n| recharge = morale boost\n| activation = 1\n| causes1 = Healing\n| description = Skill. Your entire [[party]] is [[heal]]ed to their maximum [[Health]]. All [[condition]]s and [[hex]]es are removed from your [[party]].\n| concise description = Skill. Heals your entire party to their maximum Health and removes all conditions and hexes.\n| aoe = party\n| removes1 = Condition\n| removes2 = Hex spell\n}}\n\n== Acquisition ==\nThis skill can be temporarily acquired by [[Primary profession|primary]] [[Monk]]s by talking to [[Kuunavang]] in [[Raisu Palace]], [[Imperial Sanctum]] or [[Raisu Palace (explorable area)]].\n\n== Related skills ==\n{{see|Party healing}}\n* {{skill icon|Peace and Harmony}} ([[Elite skill|elite]])\n* {{skill icon|Purge Signet}}\n\n== Notes ==\n* The skill descriptions omit that this skill can only be recharged when gaining a [[Morale Boost]].\n\n[[de:Sternenschein]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Eremite's Zeal",
+  "pageid": 12845,
+  "revid": 2720650,
+  "timestamp": "2026-02-07T13:38:09Z",
+  "wikitext": "{{Skill infobox\n| id = 1524\n| name = Eremite's Zeal\n| campaign = Nightfall\n| profession = Dervish\n| attribute = Mysticism\n| type = Enchantment spell\n| energy = 5\n| activation = {{1/4}}\n| recharge = 15\n| target = self\n| causes1 = Energy Gain\n| description = [[Enchantment Spell]]. You gain {{gr|1|3}} [[Energy]] for each [[foe]] within [[earshot]], maximum 8 Energy. For 10 seconds afterward, this enchantment does nothing. When this enchantment ends, you gain {{gr|1|3}} Energy for each foe within earshot, maximum 8 Energy.\n| concise description = Enchantment Spell. (10 seconds.) Initial effect: you gain {{gr|1|3}} Energy (maximum 8) for each foe in earshot. End effect: you gain {{gr|1|3}} Energy (maximum 8) for each foe in earshot.\n}}\n\n{{Skill progression\n|attribute = [[Mysticism]]\n|var1 name = [[Energy]] gain\n|var1 at0 = 1\n|var1 at15 = 3}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Medando]] ([[Yohlon Haven]])\n'''[[Hero skill trainer]]s'''\n*[[Warden of Whispers (The Kodash Bazaar)|Warden of Whispers]] ([[The Kodash Bazaar]])\n\n==Related skills==\n*{{skill icon|Channeling}}\n*{{skill icon|Leader's Zeal}}\n\n== Notes ==\n* Heroes use this skill when below 50% energy, with at least one foe in earshot.\n{{bug|Heroes don't use this skill unless enchanted.}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

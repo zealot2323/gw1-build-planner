@@ -1,0 +1,7 @@
+{
+  "title": "Extend Enchantments",
+  "pageid": 12826,
+  "revid": 2732812,
+  "timestamp": "2026-07-04T19:15:05Z",
+  "wikitext": "{{Skill infobox\n| id = 1508\n| name = Extend Enchantments\n| campaign = Nightfall\n| profession = Dervish\n| attribute = Mysticism\n| type = Skill\n| energy = 5\n| recharge = 10\n| description = Skill. For 10 seconds, your next Dervish [[enchantment]] lasts {{gr|10|150||%}} longer.\n| concise description = Skill. (10 seconds.) Your next Dervish enchantment lasts {{gr|10|150||%}} longer.\n}}\n \n{{Skill progression\n|attribute = [[Mysticism]]\n|var1 name = + [[Enchantment]] % [[duration]]\n|var1 at0 = 10\n|var1 at15 = 150}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Dau]] ([[The Mouth of Torment]])\n*[[Zendeht]] ([[Gate of Torment]])\n==Related skills==\n*{{skill icon|Blessed Aura}}\n\n== Notes ==\n* This skill actually extends the next Dervish enchantment that is applied to you, no matter who cast it or how it was applied.\n** It will extend [[Vow of Piety]] and [[Vow of Revolution]] when these enchantments [[Renewal effect|reapply]] themselves.\n** It will extend another ally's [[Watchful Intervention]] that targets you.\n** It won't extend your [[Watchful Intervention]] that targets another ally.\n{{bug|The visual indicator of the maximum duration on the skill icon of Vow of Piety and Vow of Revolution in the skill monitor is not full after renewal if they were extended before.}} \n\n[[de:Verzauberungen ausweiten]]"
+}

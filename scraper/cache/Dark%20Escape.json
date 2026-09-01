@@ -1,0 +1,7 @@
+{
+  "title": "Dark Escape",
+  "pageid": 6705,
+  "revid": 2683966,
+  "timestamp": "2023-02-23T13:19:34Z",
+  "wikitext": "{{Skill infobox\n| id = 1037\n| name = Dark Escape\n| campaign = Factions\n| profession = Assassin\n| attribute = Shadow Arts\n| type = Stance\n| energy = 5\n| recharge = 30\n| causes1 = Increased Movement Speed\n| causes2 = Damage Reduction\n| description = [[Stance]]. For {{gr|5|15}} seconds, you [[Speed boost|move 25% faster]] and take [[Damage reduction|half damage]]. Dark Escape ends if you successfully hit with an [[attack]].\n| concise description = Stance. ({{gr|5|15}} seconds.) You move 25% faster and take half damage. {{gray|Ends if you hit with an attack.}}\n}}\n\n{{Skill progression\n|attribute = [[Shadow Arts]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 15}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n==Related skills==\n*{{skill icon|Armor of Mist}}\n*{{skill icon|Smoke Powder Defense}}\n\n== Notes ==\n{{speed|5|15|25|30}}"
+}

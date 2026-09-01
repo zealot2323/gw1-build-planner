@@ -1,0 +1,7 @@
+{
+  "title": "Wearying Spear",
+  "pageid": 15260,
+  "revid": 2733248,
+  "timestamp": "2026-07-05T17:03:10Z",
+  "wikitext": "{{Skill infobox\n| id = 1552\n| name = Wearying Spear\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Spear Mastery\n| type = Spear Attack\n| adrenaline = 3\n| causes1 = Weakness\n| description = [[Spear Attack]]. If this [[attack]] hits, you deal {{gr|10|40|+}} [[damage]]. You are [[Weakness|Weakened]] for 5 seconds.\n| concise description = Spear Attack. Deals {{gr|10|40|+}} damage. {{gray|You are Weakened (5 seconds).}}\n}}\n\n{{Skill progression\n| attribute = [[Spear Mastery]]\n| var1 name = + [[Damage]]\n| var1 at0 = 10\n| var1 at15 = 40}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Baram]] ([[The Kodash Bazaar]])\n'''[[Hero skill trainer]]s'''\n*[[Warden of Whispers (The Kodash Bazaar)|Warden of Whispers]] ([[The Kodash Bazaar]])\n\n==Related skills==\n*{{skill icon|Wearying Strike}}\n\n==Notes==\n*[[Weakness]] is applied when this attack hits the target.\n\n[[Category:Skills offered by hero skill trainers]]"
+}

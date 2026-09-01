@@ -1,0 +1,7 @@
+{
+  "title": "Soothing Memories",
+  "pageid": 5109,
+  "revid": 2684076,
+  "timestamp": "2023-02-23T18:36:23Z",
+  "wikitext": "{{Skill infobox\n| id = 1233\n| name = Soothing Memories\n| campaign = Factions\n| profession = Ritualist\n| attribute = Restoration Magic\n| type = Spell\n| energy = 5\n| activation = {{3/4}}\n| recharge = 4\n| causes1 = Healing\n| causes2 = Energy Gain\n| description = [[Spell]]. [[Target]] [[ally]] is [[heal]]ed for {{gr|10|100}} [[Health]]. If you are holding an [[bundle|item]], you gain 3 [[Energy]].\n| concise description = Spell. Heals for {{gr|10|100}}. You gain 3 Energy if you are holding an item.\n| target = allies\n}}\n\n{{Skill progression\n| attribute = [[Restoration Magic]]\n| var1 name = [[Heal]]ing\n| var1 at0 = 10\n| var1 at15 = 100}}\n\n== Acquisition ==\n===[[Unlock]] and learn===\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Xu Fengxia]] ([[Ran Musu Gardens]])\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Eye of the North]]\n** [[Dark Watcher]] ([[Slavers' Exile]])\n\n===Unlock only===\n;[[Hero]]es\n* [[Eye of the North]]\n** Unlocking [[Xandra]]\n\n== Related skills ==\n* {{skill icon|Healing Light}} ([[elite]])\n\n== Notes ==\n* Combine with [[Attuned Was Songkai]] for a free heal.\n\n== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details."
+}

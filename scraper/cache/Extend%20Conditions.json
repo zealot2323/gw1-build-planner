@@ -1,0 +1,7 @@
+{
+  "title": "Extend Conditions",
+  "pageid": 1642,
+  "revid": 2732798,
+  "timestamp": "2026-07-04T19:03:27Z",
+  "wikitext": "{{Skill infobox\n| id = 1333\n| name = Extend Conditions\n| campaign = Nightfall\n| profession = Mesmer\n| attribute = Inspiration Magic\n| type = Spell\n| elite = y\n| energy = 5\n| activation = {{1/4}}\n| recharge = 5\n| causes1 = Condition\n| description = [[Elite]] [[Spell]]. Spread all [[conditions]] from [[target]] [[foe]] to foes [[nearby|near]] your target. The [[duration]]s of those conditions are increased by {{gr|5|100||%}} (maximum 30 seconds).\n| concise description = Elite Spell. Spread all conditions from target foe to foes near your target. Those {{sic}} durations of those conditions are increased by {{gr|5|100||%}} (maximum 30 seconds).\n| target = foes\n| aoe = nearby\n}}\n\n{{Skill progression\n|attribute = [[Inspiration Magic]]\n|var1 name = Longer [[duration]] of [[condition]]s (%)\n|var1 at0 = 5\n|var1 at15 = 100}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Neoli the Contagious]] ([[Marga Coast]])\n\n== Related skills ==\n* {{skill icon|Epidemic}}\n* {{skill icon|Fevered Dreams}} ([[elite]])\n\n== Notes ==\n* This does not increase the duration of conditions on your target.\n* If two foes are close to each other you can permanently maintain conditions on all nearby foes.\n* The duration cap is applied before other extending effects. [[Upgrade component]]s (e.g. [[Silencing]] prefixes) can be used to increase durations beyond 30 seconds.\n\n[[de:Zustände ausweiten]]"
+}

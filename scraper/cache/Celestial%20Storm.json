@@ -1,0 +1,7 @@
+{
+  "title": "Celestial Storm",
+  "pageid": 19125,
+  "revid": 2628616,
+  "timestamp": "2018-06-18T17:22:28Z",
+  "wikitext": "{{Skill infobox\n| id = 1100\n| name = Celestial Storm\n| campaign = Factions\n| profession = Elementalist\n| special = Celestial\n| pve-only = y\n| activation = 1\n| type = Skill\n| recharge = morale boost\n| causes1 = Fire Damage\n| causes2 = Cold Damage\n| causes3 = Lightning Damage\n| causes4 = Earth Damage\n| description = [[Skill (skill type)|Skill]]. Create a celestial storm at [[target]] [[foe]]'s location that lasts for 15 seconds. Each second, all foes [[in the area]] take 40 [[fire damage]], 40 [[cold damage]], 40 [[lightning damage]], and 40 [[earth damage]].\n| concise description = Skill. Deals 40 damage of each elemental type each second (15 seconds). Hits all foes in the area of target's initial location.\n| target = foes\n| aoe = in the area\n}}\n\n== Acquisition ==\nThis skill can be temporarily acquired by [[Primary profession|primary]] [[Elementalist]]s by talking to [[Kuunavang]] in [[Raisu Palace]], [[Imperial Sanctum]] or [[Raisu Palace (explorable area)]].\n\n== Notes ==\n* The skill descriptions omit that this skill can only be recharged when gaining a [[Morale Boost]].\n* Consider [[Echo chain]]ing this skill.\n\n[[de:Himmelssturm]]"
+}

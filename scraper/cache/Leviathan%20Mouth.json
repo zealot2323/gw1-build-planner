@@ -1,0 +1,7 @@
+{
+  "title": "Leviathan Mouth",
+  "pageid": 40018,
+  "revid": 2445610,
+  "timestamp": "2012-02-07T19:43:04Z",
+  "wikitext": "__NOTOC__\n{{NPC infobox \n| affiliation = The Jade Sea wildlife\n| type = Leviathan\n| profession = r\n| image = [[Image:Leviathan ranger.jpg|150px]]\n| level = 24 (26)\n| campaign = Factions\n}}\nThis large crustacean normally roams the wilds of the Jade Sea.\n\n==Locations==\n*[[The Jade Sea]]\n**{{NPC location|Gyala Hatchery|explorable area}}\n**{{NPC location|Rhea's Crater}}\n**{{NPC location|Silent Surf}}\n\n==Missions==\n*The Jade Sea\n**{{NPC location|Zos Shivros Channel}}\n\n==Skills==\n(18 [[Wilderness Survival]] in [[Hard mode]])\n*{{skill icon|Hunter's Shot}}\n*{{skill icon|Precision Shot}}\n*{{skill icon|Quick Shot}} ([[elite]])\n*{{skill icon|Storm Chaser}}\n*{{skill icon|Troll Unguent}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 32 \n| piercing = 112 \n| slashing = 72\n| cold = 72\n| earth = 72\n| fire = 72\n| lightning = 72\n}}\n\n==Items dropped==\n*[[Moon Shell]]\n*[[Pungent Mass]]\n\n==Notes==\n*These [[creature]]s appear to deal [[chaos damage]], despite using [[bow attack]]s."
+}

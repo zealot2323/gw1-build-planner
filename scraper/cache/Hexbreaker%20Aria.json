@@ -1,0 +1,7 @@
+{
+  "title": "Hexbreaker Aria",
+  "pageid": 1667,
+  "revid": 2737737,
+  "timestamp": "2026-08-16T06:57:02Z",
+  "wikitext": "{{Skill infobox\n| id = 1571\n| name = Hexbreaker Aria\n| campaign = Nightfall\n| profession = Paragon\n| type = Chant\n| adrenaline = 8\n| activation = 2\n| description = [[Chant]]. For 10 seconds, the next time each [[ally]] within [[earshot]] casts a [[spell]], that ally loses 1 [[hex]].\n| concise description = Chant. (10 seconds.) Allies in earshot lose one hex with their next spell.\n| removes1 = Hex spell\n}}\n\n==Acquisition==\n===[[Unlock]] and learn===\n'''[[Skill trainer]]s'''\n* [[Nightfall]]\n** [[Tohn]] ([[Kamadan, Jewel of Istan]])\n\n'''[[Hero skill trainer]]'''\n* Nightfall\n** [[Shiloh]] ([[Sunspear Great Hall]])\n\n===Unlock only===\n;[[Hero]]es\n* [[Eye of the North]]\n** Unlocking [[Hayda]]\n\n==Hero Usage==\nHeroes will use this in combat when available, even if no hexes have been cast on party members.\n\n==Notes==\n*As with other hex removals, hexes that trigger on spell use will trigger before being removed.\n\n[[Category:Skills offered by hero skill trainers]]\n[[Category:Skills that affect allies]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Binding Chains",
+  "pageid": 6361,
+  "revid": 2731157,
+  "timestamp": "2026-06-25T03:08:48Z",
+  "wikitext": "{{Skill infobox\n| id = 1236\n| name = Binding Chains\n| campaign = Factions\n| profession = Ritualist\n| attribute = Communing\n| type = Hex Spell\n| energy = 10\n| recharge = 15\n| activation = 1\n| causes1 = Decreased Movement Speed\n| description = [[Hex Spell]]. For 3 seconds, [[target]] [[foe]] and all [[nearby]] foes [[Snare (tactic)|move 90% slower]] and take {{gr|1|30}} [[damage]] each second while [[Movement|moving]].\n| concise description = Hex Spell. Also hexes foes near your target. (3 seconds.) These foes move 90% slower and takes {{gr|1|30}} damage each second while moving.\n| aoe = nearby\n}}\n\n{{Skill progression\n|attribute = [[Communing]]\n|var1 name = [[Damage]] while moving\n|var1 at0 = 1\n|var1 at15 = 30}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Earthen Shackles}}\n* {{skill icon|Shameful Fear}}\n* {{skill icon|Weaken Knees}} ([[elite]])\n* {{skill icon|Winter's Embrace}}\n\n== Hero Usage ==\n\nHeroes do not seem to use this skill on their own.\n\n== Notes ==\n* This is the only Ritualist skill capable of snaring an opponent.\n* This hex will last for a total of 5 seconds when used with [[Anguished Was Lingwah]]."
+}

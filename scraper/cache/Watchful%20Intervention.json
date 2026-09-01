@@ -1,0 +1,7 @@
+{
+  "title": "Watchful Intervention",
+  "pageid": 12409,
+  "revid": 2686651,
+  "timestamp": "2023-05-02T18:59:46Z",
+  "wikitext": "{{Skill infobox\n| id = 1504\n| name = Watchful Intervention\n| campaign = Nightfall\n| profession = Dervish\n| attribute = Mysticism\n| type = Enchantment Spell\n| energy = 10\n| recharge = 15\n| activation = 1\n| causes1 = Healing\n| description = [[Enchantment Spell]]. For 60 seconds, the next time [[damage]] drops [[target]] [[ally]]'s [[Health]] below 25%, that ally is [[heal]]ed for {{gr|50|200}} Health.\n| concise description = Enchantment Spell. (60 seconds.) Heals for {{gr|50|200}} the next time damage drops target ally's Health below 25%.\n| target = allies\n}}\n\n{{Skill progression\n|attribute = [[Mysticism]]\n|var1 name = [[Heal]]ing\n|var1 at0 = 50\n|var1 at15 = 200}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Medando]] ([[Yohlon Haven]])\n\n==Related skills==\n*{{skill icon|Faithful Intervention}}\n*{{skill icon|Illusion of Weakness}}\n\n== Hero Usage ==\n* Heroes will attempt to use this spell on allies below 50% health.\n\n== Notes ==\n*This is the only Dervish enchantment spell that can target another ally.\n\n[[Category:Hero-vetted skills]]"
+}

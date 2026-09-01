@@ -1,0 +1,7 @@
+{
+  "title": "Gaze of Fury (attack)",
+  "pageid": 75114,
+  "revid": 2609221,
+  "timestamp": "2016-06-27T23:34:19Z",
+  "wikitext": "{{skill infobox\n| name = Gaze of Fury\n| id = 1735\n| image = [[Image:Gaze of Fury (attack).jpg]]\n| campaign = Nightfall\n| attribute = Channeling Magic\n| profession = Monster\n| special = Spirit monster\n| type = Ranged Attack\n| activation = 2\n| description = [[Ranged Attack]]. Target foe takes {{gr|5|20}} damage.\n| concise description = Ranged Attack. Deals {{gr|5|20}} damage.\n}}\n\n{{skill progression\n| attribute = [[Channeling Magic]]\n| var1 name = [[Damage]]\n| var1 at0 = 5\n| var1 at15 = 20}}\n\n== Notes ==\n* This is the skill used by the [[Spirit of Fury]] that is summoned by using the [[Ritualist]] skill [[Gaze of Fury]] on another spirit, and not the Ritualist skill itself."
+}

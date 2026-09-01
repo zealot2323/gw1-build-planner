@@ -1,0 +1,7 @@
+{
+  "title": "Steam",
+  "pageid": 16267,
+  "revid": 2738742,
+  "timestamp": "2026-08-27T07:06:25Z",
+  "wikitext": "{{Skill infobox\n| id = 846\n| name = Steam\n| campaign = Nightfall\n| profession = Elementalist\n| attribute = Water Magic\n| type = Spell\n| energy = 5\n| activation = 1\n| recharge = 8\n| causes1 = Cold Damage\n| causes2 = Blind\n| description = [[Spell]].  [[Target]] [[foe]] is struck for {{gr|20|60}} [[cold damage]]. If target foe is [[burning|on fire]], Steam [[Blind]]s that foe for {{gr|5|10}} seconds and they take an additional {{gr|20|60}} [[fire damage]].\n| concise description = Spell. Deals {{gr|20|60}} cold damage. Inflicts Blindness condition ({{gr|5|10}} seconds) and does {{gr|20|60}} fire damage if target foe is Burning.\n| target = foes\n}}\n\n{{Skill progression\n|attribute = [[Water Magic]]\n|var1 name = [[Cold damage]]\n|var1 at0 = 20\n|var1 at15 = 60\n|var2 name = [[Blind]] [[duration]]\n|var2 at0 = 5\n|var2 at15 = 10\n|var3 name = [[Fire damage]]\n|var3 at0 = 20\n|var3 at15 = 60\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n* [[Shiloh]] ([[Sunspear Great Hall]])\n\n== Notes ==\n* Even with a small investment in Water Magic, an elementalist primarily using [[Fire Magic]] can use this skill to great effect to blind foes.\n* Synergy with [[Double Dragon]] and [[Glyph of Immolation]], since the burning condition applies first.\n\n== Trivia ==\n{{skill change}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

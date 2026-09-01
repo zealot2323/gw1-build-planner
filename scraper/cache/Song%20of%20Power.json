@@ -1,0 +1,7 @@
+{
+  "title": "Song of Power",
+  "pageid": 15247,
+  "revid": 2721045,
+  "timestamp": "2026-02-10T21:03:55Z",
+  "wikitext": "{{Skill infobox\n| id = 1560\n| name = Song of Power\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Motivation\n| type = Chant\n| energy = 15\n| activation = 1\n| recharge = 30\n| causes1 = Energy Regeneration\n| description = [[Chant]]. For {{gr|5|20}} seconds, each [[ally]] within [[earshot]] gains 4 [[Energy regeneration]] until that ally uses a [[Skill]].\n| concise description = Chant. ({{gr|5|20}} seconds.) Allies in earshot gain +4 Energy regeneration. {{gray|Ends when using a skill.}}\n}}\n\n{{Skill progression\n| attribute = [[Motivation]]\n| var1 name = [[Duration]]\n| var1 at0 = 5\n| var1 at15 = 20}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Baram]] ([[The Kodash Bazaar]])\n'''[[Signet of Capture]]'''\n*[[Wandalz the Angry]] ([[Bahdok Caverns]])\n\n==Notes==\n*Inform your allies whenever you are about to use this skill. This way, your allies will know when to refrain from using skills.\n*This skill can be used after combat to let allies quickly regain energy.\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Skills that affect allies]]"
+}

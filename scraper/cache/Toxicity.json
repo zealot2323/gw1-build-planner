@@ -1,0 +1,7 @@
+{
+  "title": "Toxicity",
+  "pageid": 6512,
+  "revid": 2731275,
+  "timestamp": "2026-06-25T05:38:20Z",
+  "wikitext": "{{Skill infobox\n| name = Toxicity\n| id = 1472\n| campaign = Nightfall\n| profession = Ranger\n| attribute = Beast Mastery\n| type = Nature Ritual\n| energy = 15\n| recharge = 60\n| activation = 2\n| causes1 = Spirit\n| causes2 = Health Degeneration\n| description = [[Nature Ritual]]. Create a level {{gr|1|10}} [[spirit]]. [[Poison]]ed or [[Disease]]d [[creature]]s within its [[Spirit range|range]] suffer -2 [[Health degeneration]]. This spirit dies after {{gr|30|180}} seconds.\n| concise description = Nature Ritual. Creates a level {{gr|1|10}} spirit ({{gr|30|180}} second lifespan.) Poisoned or Diseased creatures within range have -2 Health degeneration. \n| aoe = large spirit\n}}\n\n{{Skill progression\n|attribute = [[Beast Mastery]]\n|var1 name = Level\n|var1 at0 = 1\n|var1 at15 = 10\n|var2 name = [[Duration]]\n|var2 at0 = 30\n|var2 at15 = 180}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Tohn]] ([[Kamadan, Jewel of Istan]])\n\n'''[[Hero skill trainer]]s'''\n*[[Pikin]] (Kamadan, Jewel of Istan)\n\n== Related skills ==\n* {{Skill icon|Lacerate}} ([[elite]])\n* {{skill icon|Ulcerous Lungs}}\n\n== Notes ==\n* This skill creates a [[Spirit of Toxicity]].\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

@@ -8,7 +8,7 @@ import {
   type Profession,
   type SkillAvailabilityEntry,
 } from "@gw1/engine";
-import { index } from "../data";
+import { useData } from "../DataContext";
 import { SkillIcon } from "./SkillIcon";
 import { SkillDetails } from "./SkillDetails";
 import { ProfessionIcon } from "./ProfessionIcon";
@@ -39,6 +39,7 @@ export function BuildBar({
   updateBuilds: (builds: Build[]) => void;
   availability: SkillAvailabilityEntry[];
 }) {
+  const index = useData();
   const [saveName, setSaveName] = useState("");
   const [openSlot, setOpenSlot] = useState<number | null>(null);
   const [showTodo, setShowTodo] = useState(true);

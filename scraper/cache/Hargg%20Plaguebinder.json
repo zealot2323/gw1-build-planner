@@ -1,0 +1,7 @@
+{
+  "title": "Hargg Plaguebinder",
+  "pageid": 41006,
+  "revid": 1930566,
+  "timestamp": "2010-02-28T00:32:57Z",
+  "wikitext": "__NOTOC__\n{{NPC infobox \n| image = [[Image:Dredge caster.jpg|150px]]\n| type = Dredge\n| affiliation = Echovald Forest wildlife\n| profession = Necromancer\n| level = 28 (30)\n| campaign = Factions\n| boss = y\n| map1 = [[Image:Hargg Plaguebinder map.jpg|150px]]\n| map1-text = Location in Ferndale\n}}\n[[Hargg Plaguebinder]] is a [[Dredge]] [[boss]] that can be encountered in the [[Ferndale]] [[explorable area]].\n\n== Locations ==\n* [[Echovald Forest]]\n** {{NPC location|Ferndale}}\n\n== Skills ==\n* {{Skill icon|Animate Bone Fiend}}\n* {{Skill icon|Life Siphon}}\n* {{Skill icon|Plague Signet}} ([[elite]])\n* {{Skill icon|Rotting Flesh}}\n* {{Skill icon|Signet of Agony}}\n\n== Items dropped ==\n* [[Dredge Incisor]]\n* [[Plaguebinder]] ([[unique]])\n\n== Notes ==\n* His Plague Signet sometimes fails in [[Normal mode|Normal Mode]] since his [[Curses]] level is not higher than 4 (Unknown in [[Hard mode|Hard Mode]])."
+}

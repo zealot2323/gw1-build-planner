@@ -35,7 +35,7 @@ import {
 
 const DATA_DIR = fileURLToPath(new URL("../../data/", import.meta.url));
 
-interface Manifest {
+interface CampaignManifest {
   skills: string[];
   locations: { towns: string[]; outposts: string[]; missionOutposts: string[]; explorables: string[] };
   trainers: string[];
@@ -43,8 +43,43 @@ interface Manifest {
   missions: string[];
   monsters: string[];
 }
+interface Manifest {
+  campaigns: string[];
+  byCampaign: Record<string, CampaignManifest>;
+}
 
-const manifest: Manifest = JSON.parse(await readFile(`${DATA_DIR}manifest.json`, "utf8"));
+const manifestFile: Manifest = JSON.parse(await readFile(`${DATA_DIR}manifest.json`, "utf8"));
+const campaignNames = manifestFile.campaigns;
+
+/** Union of a field across every campaign, first campaign wins on ties. */
+function merged<K extends keyof CampaignManifest>(key: K): string[] {
+  const seen = new Set<string>();
+  for (const name of campaignNames) {
+    for (const v of manifestFile.byCampaign[name][key] as string[]) seen.add(v);
+  }
+  return [...seen];
+}
+/** Which campaign first listed this page — used to tag parsed entities. */
+function campaignOf(key: keyof CampaignManifest, page: string): string | undefined {
+  for (const name of campaignNames) {
+    if ((manifestFile.byCampaign[name][key] as string[]).includes(page)) return name;
+  }
+  return undefined;
+}
+
+const manifest: CampaignManifest = {
+  skills: merged("skills"),
+  locations: {
+    towns: campaignNames.flatMap((n) => manifestFile.byCampaign[n].locations.towns),
+    outposts: campaignNames.flatMap((n) => manifestFile.byCampaign[n].locations.outposts),
+    missionOutposts: campaignNames.flatMap((n) => manifestFile.byCampaign[n].locations.missionOutposts),
+    explorables: campaignNames.flatMap((n) => manifestFile.byCampaign[n].locations.explorables),
+  },
+  trainers: merged("trainers"),
+  trainerSkillSubpages: merged("trainerSkillSubpages"),
+  missions: merged("missions"),
+  monsters: merged("monsters"),
+};
 
 /** issues per parser, keyed "Page title" -> [issue, ...] */
 const report = new Map<string, Map<string, string[]>>();
@@ -83,7 +118,11 @@ console.log(`skills: ${skills.length} parsed`);
 // Parse trainers (from /Skills subpage, or inline block on the list page)
 // ---------------------------------------------------------------------------
 
-const trainerListWt = (await cachedWikitext("trainers", "List of Prophecies skill trainers")) ?? "";
+const TRAINER_LIST_PAGES = campaignNames.map((c) => `List of ${c} skill trainers`);
+let trainerListWt = "";
+for (const page of TRAINER_LIST_PAGES) {
+  trainerListWt += ((await getCached(page))?.wikitext ?? "") + "\n";
+}
 const trainerLocations = new Map<string, string>();
 for (const m of trainerListWt.matchAll(/^===\s*\[\[([^\]|]+)[^=]*?\]\]\s+in\s+\[\[([^\]|#]+)/gm)) {
   trainerLocations.set(m[1].trim(), m[2].trim());
@@ -91,8 +130,12 @@ for (const m of trainerListWt.matchAll(/^===\s*\[\[([^\]|]+)[^=]*?\]\]\s+in\s+\[
 
 const trainers: ParsedTrainer[] = [];
 for (const name of manifest.trainers) {
+  // Prophecies trainers keep their stock on a "<Name>/Skills" subpage;
+  // Factions and Nightfall trainers put {{Skill trainer list}} straight on
+  // their own page under "Skills offered".
   const sub = await getCached(`${name}/Skills`);
   let source = sub?.wikitext ?? null;
+  if (source === null) source = (await getCached(name))?.wikitext ?? null;
   if (source === null) {
     // inline {{Skill trainer list}} in this trainer's section of the list page
     const section = sections(trainerListWt).find((s) => s.title.startsWith(name));
@@ -183,6 +226,7 @@ for (const [titles, kind] of locationKinds) {
       if (!entity.neighbors.includes(extra)) entity.neighbors.push(extra);
     }
     if (PRE_SEARING_LOCATIONS.has(title)) entity.preSearing = true;
+    entity.campaign = entity.campaign ?? campaignOf("locations" as never, title) ?? null;
     for (const i of issues) {
       // manual progression edges satisfy the exits expectation
       if (i === "no exits in infobox" && entity.neighbors.length > 0) continue;
@@ -217,6 +261,11 @@ for (const title of manifest.missions) {
       : null;
   if (outpost === null) addIssue("missions", title, "no matching mission outpost in manifest");
   entity.outpost = outpost;
+  // Tag from the manifest rather than inferring from the outpost: a few
+  // missions (Vizunah Square, Unwaking Waters) start from Kurzick/Luxon
+  // outposts whose names don't follow the "<name> (outpost)" pattern, so
+  // outpost resolution can't be the basis for campaign scoping.
+  entity.campaign = campaignOf("missions", title) ?? null;
   missions.push(entity);
 }
 console.log(`missions: ${missions.length} parsed`);

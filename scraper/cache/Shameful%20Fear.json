@@ -1,0 +1,7 @@
+{
+  "title": "Shameful Fear",
+  "pageid": 16317,
+  "revid": 2733051,
+  "timestamp": "2026-07-05T13:16:58Z",
+  "wikitext": "{{Skill infobox\n| id = 927\n| name = Shameful Fear\n| campaign = Factions\n| profession = Assassin\n| attribute = Deadly Arts\n| type = Hex Spell\n| energy = 10\n| activation = 1\n| recharge = 10\n| causes1 = Increased Movement Speed\n| description = [[Hex Spell]].  For 10 seconds, [[target]] [[foe]] [[Speed boost|moves 10% faster]] than normal. For each second, if that foe is [[Movement|moving]], that foe takes {{gr|5|20}} [[damage]].\n| concise description = Hex Spell. (10 seconds.) Target foe takes {{gr|5|20}} damage each second while moving, but moves 10% faster.\n}}\n\n{{Skill progression\n|attribute = [[Deadly Arts]]\n|var1 name = [[Damage]] while moving\n|var1 at0 = 5\n|var1 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Binding Chains}}\n* {{skill icon|Weaken Knees}} ([[elite]])\n* {{skill icon|Winter's Embrace}}\n\n== Notes ==\n* This is the only player [[skill]] that increases the movement speed of a foe."
+}

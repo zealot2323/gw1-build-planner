@@ -1,0 +1,7 @@
+{
+  "title": "Zojun's Shot",
+  "pageid": 6527,
+  "revid": 2733199,
+  "timestamp": "2026-07-05T16:25:54Z",
+  "wikitext": "{{Skill infobox\n| id = 1192\n| name = Zojun's Shot\n| campaign = Factions\n| profession = Ranger\n| attribute = Expertise\n| type = Bow Attack\n| energy = 5\n| recharge = 3\n| range = half\n| special = duplicate\n| description = [[Bow Attack]]. Shoot an arrow that has [[Half ranged|half the normal range]], but strikes for {{gr|10|40|+}} [[damage]].\n| concise description = Half Range Bow Attack. Deals {{gr|10|40|+}} damage.\n}}\n\n{{Skill progression\n|attribute = [[Expertise]]\n|var1 name = + [[Damage]]\n|var1 at0 = 10\n|var1 at15 = 40}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Xu Fengxia]] ([[Ran Musu Gardens]])\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Point Blank Shot}} ([[duplicate skill]])\n\n== Notes ==\n* Like other bow attacks, this skill's [[range]] is affected by height and by the style of [[bow]] wielded.\n\n== Trivia ==\n* This skill is named after the [[Canthan Heroes|Canthan hero]], [[Zojun]].\n* The character in the [[skill icon]] seems to be a female ranger wearing [[Luxon armor]].\n\n[[de:Zojuns Schuss]]\n[[Category:Skills named after eponymous NPCs]]"
+}

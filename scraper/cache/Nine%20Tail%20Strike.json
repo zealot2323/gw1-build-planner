@@ -1,0 +1,7 @@
+{
+  "title": "Nine Tail Strike",
+  "pageid": 14525,
+  "revid": 2733177,
+  "timestamp": "2026-07-05T16:06:02Z",
+  "wikitext": "__NOTOC__\n{{Skill infobox\n| id = 986\n| name = Nine Tail Strike\n| campaign = Factions\n| profession = Assassin\n| attribute = Dagger Mastery\n| type = Dual Attack\n| energy = 5\n| recharge = 8\n| causes1 = Unblockable\n| description = [[Dual Attack]]. Must follow an [[off-hand attack]]. Nine Tail Strike cannot be [[block]]ed and strikes for {{gr|15|40|+}} [[damage]] if it hits.\n| concise description = Dual Attack. Deals {{gr|15|40|+}} damage. Unblockable. {{gray|Must follow an off-hand attack.}}\n| requires = offhand\n| unblockable = y\n}}\n\n{{Skill progression\n|attribute = [[Dagger Mastery]]\n|var1 name = + [[Damage]]\n|var1 at0 = 15\n|var1 at15 = 40}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Xu Fengxia]] ([[Ran Musu Gardens]])\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Fox Fangs}}\n* {{skill icon|Golden Fox Strike}}\n\n== Notes ==\n* This skill is used by [[Ebon Vanguard Assassin]]s summoned via [[Ebon Vanguard Assassin Support]].\n\n== Trivia ==\n* The skill name derives from East Asian mythologies in which the Nine-Tail Fox is a spirit or demon. The Chinese call it [[W:Huli Jing|Huli Jing]], the Japanese call it [[W:Kitsune|Kitsune]], and the Koreans call it [[W:Kumiho|Kumiho]].\n* Taking note to the statement above, the effect of this skill is similar to Assassin skills with the prefix \"Fox\": like other \"Fox\" titled attacks, it cannot be blocked."
+}

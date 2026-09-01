@@ -1,0 +1,7 @@
+{
+  "title": "Soothing",
+  "pageid": 6331,
+  "revid": 2720900,
+  "timestamp": "2026-02-10T01:30:52Z",
+  "wikitext": "{{Skill infobox\n| id = 1266\n| name = Soothing\n| campaign = Factions\n| profession = Ritualist\n| attribute = Communing\n| type = Binding Ritual\n| energy = 15\n| activation = 1\n| recharge = 45\n| causes1 = Spirit\n| description = [[Binding Ritual]]. Create a level {{gr|1|12}} [[spirit]]. All [[foe]]s within its [[Spirit range|range]] take twice as long to build [[adrenaline]]. This spirit dies after {{gr|15|45}} seconds.\n| concise description = Binding Ritual. Creates a level {{gr|1|12}} spirit ({{gr|15|45}} second lifespan). Building adrenaline takes twice as long for foes within range.\n| has-pvp = y\n| aoe = spirit\n}}\n\n{{Skill progression\n| attribute = [[Communing]]\n| var1 name = Level\n| var1 at0 = 1\n| var1 at15 = 12\n| var2 name = [[Duration]]\n| var2 at0 = 15\n| var2 at15 = 45}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Eye of the North]]\n** [[Fozzy Yeoryios]] ([[Sacnoth Valley]])\n\n== Related skills ==\n* {{duplicate skill icon|Ancestor's Visage|Sympathetic Visage}}\n* {{skill icon|Soothing Images}}\n\n== Notes ==\n* This skill creates a [[Spirit of Soothing]].\n\n[[de:Beruhigung]]"
+}

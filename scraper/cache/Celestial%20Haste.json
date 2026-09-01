@@ -1,0 +1,7 @@
+{
+  "title": "Celestial Haste",
+  "pageid": 42423,
+  "revid": 2633872,
+  "timestamp": "2018-09-16T16:50:41Z",
+  "wikitext": "{{skill infobox\n| id = 1060\n| name = Celestial Haste\n| campaign = Factions\n| profession = Mesmer\n| type = Spell\n| activation = 1\n| special = Celestial\n| pve-only = y\n| recharge = morale boost\n| causes1 = Decreased Activation Time\n| causes2 = Decreased Recharge Time\n| description = [[Spell]]. For 15 seconds, your entire [[party]] has 50% faster [[Activation time|casting]] and all [[skill]]s [[recharge]] 25% faster.\n| concise description = Spell. (15 seconds.) Affects all party members. 50% faster casting. 25% faster skill recharge.\n| aoe = party\n}}\n\n== Acquisition ==\nThis skill can be temporarily acquired by [[Primary profession|primary]] [[Mesmer]]s by talking to [[Kuunavang]] in [[Raisu Palace]], [[Imperial Sanctum]] or [[Raisu Palace (explorable area)]].\n\n== Notes ==\n* The skill descriptions omit that this skill can only be recharged when gaining a [[Morale Boost]].\n* Consider using in synergy with [[Echo]] or [[Arcane Echo]].\n* This skill seems to have a similar abilities to [[Mantra of Celerity]], an elite Fast Casting skill removed before Prophecies was released.\n\n[[de:Himmlische Eile]]"
+}

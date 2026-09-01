@@ -1,0 +1,7 @@
+{
+  "title": "Soldier's Stance",
+  "pageid": 1694,
+  "revid": 2722001,
+  "timestamp": "2026-02-26T10:30:52Z",
+  "wikitext": "{{Skill infobox\n| name = Soldier's Stance\n| id = 1698\n| campaign = Nightfall\n| profession = Warrior\n| attribute = Tactics\n| type = Stance\n| elite = y\n| energy = 5\n| recharge = 15\n| causes1 = Block\n| causes2 = Increased Attack Speed\n| description = [[Elite]] [[Stance]]. For {{gr|5|15}} seconds, you have a 75% chance to [[block]]. You [[Attack speed|attack 33% faster]] while under the effects of a [[shout]] or [[chant]].\n| concise description = Elite Stance. ({{gr|5|15}} seconds.) You have a 75% chance to block. You attack 33% faster while under the effects of a chant or shout.\n| has-pvp = y\n}}\n\n{{Skill progression\n| attribute = [[Tactics]]\n| var1 name = [[Duration]]\n| var1 at0 = 5\n| var1 at15 = 15}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Avah the Crafty]] ([[Gate of Desolation]] during Gate of Desolation mission)\n* [[Keht the Fierce]] ([[Joko's Domain]])\n\n== Related skills ==\n* {{skill icon|Lightning Reflexes}}\n* {{skill icon|Soldier's Defense}}\n* {{skill icon|Soldier's Fury}} ([[elite]])\n\n== Hero Usage ==\n* Heroes will activate this skill when attacking and under the effects of a shout or chant. They will not use it to block, and they will not activate it when it would cancel a movement speed stance.\n\n[[Category:Hero-vetted skills]]\n\n[[de:Soldaten-Haltung]]"
+}

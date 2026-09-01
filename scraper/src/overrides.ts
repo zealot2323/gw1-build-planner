@@ -22,6 +22,7 @@ export const EXCLUDED_LOCATIONS = new Set<string>([
   // explorables, trainers, or PvE content behind them.
   "Ascalon Arena (outpost)",
   "Shiverpeak Arena (outpost)",
+  "Rollerbeetle Racing (outpost)", // festival minigame, not a PvE outpost
   // April Fools event zone (2010): a joke re-run of pre-Searing Lakeside
   // County with inflated levels. Not real content.
   "Lakeside County: 1070 AE",
@@ -36,6 +37,14 @@ export const EXCLUDED_LOCATIONS = new Set<string>([
 export const EXTRA_NEIGHBORS: Record<string, string[]> = {
   "Abaddon's Mouth (outpost)": ["Ring of Fire (outpost)"],
   "Hell's Precipice (outpost)": ["Abaddon's Mouth (outpost)"],
+  // The three continents are joined only by the ferries between their
+  // capitals. Without these the campaigns are disconnected islands and
+  // travel distance reports "no route" for anything abroad. They only
+  // matter for characters who own more than one campaign — the dataset is
+  // scoped per character, so a Tyrian never sees the far end anyway.
+  "Lion's Arch": ["Kaineng Center", "Kamadan, Jewel of Istan"],
+  "Kaineng Center": ["Lion's Arch", "Kamadan, Jewel of Istan"],
+  "Kamadan, Jewel of Istan": ["Lion's Arch", "Kaineng Center"],
 };
 
 /**

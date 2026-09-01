@@ -1,0 +1,7 @@
+{
+  "title": "Shadowy Burden",
+  "pageid": 16278,
+  "revid": 2733055,
+  "timestamp": "2026-07-05T13:21:28Z",
+  "wikitext": "{{Skill infobox\n| id = 950\n| name = Shadowy Burden\n| campaign = Factions\n| profession = Assassin\n| attribute = Shadow Arts\n| type = Hex Spell\n| energy = 10\n| activation = {{1/4}}\n| recharge = 15\n| causes1 = Decreased Movement Speed\n| causes2 = Decreased Armor Rating\n| description = [[Hex Spell]].  For {{gr|3|15}} seconds, [[target]] [[foe]] [[Snare (tactic)|moves 25% slower]] and while target foe has no other hexes, that foe has {{gr|20|30}} less [[Armor rating|armor]] against your [[attack]]s.\n| concise description = Hex Spell. ({{gr|3|15}} seconds.) Target foe moves 25% slower and has {{gr|20|30}} less armor against your attacks. {{gray|Armor reduction only affects this foe while it has no other hexes.}}\n}}\n\n{{Skill progression\n|attribute = [[Shadow Arts]]\n|var1 name = [[Duration]]\n|var1 at0 = 3\n|var1 at15 = 15\n|var2 name = [[Armor]] reduction\n|var2 at0 = 20\n|var2 at15 = 30}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Nightfall]]\n** [[Lunto Sharpfoot]] ([[Marga Coast]])\n\n== Related skills ==\n* {{skill icon|Siphon Speed}}\n== Notes ==\n{{Anomaly|The armor penalty from this skill is applied after the [[Effect_stacking#Effect_caps|armor cap]] and the effects of [[Cracked Armor]] and [[Armor Penetration]].}}"
+}

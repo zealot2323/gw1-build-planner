@@ -1,0 +1,7 @@
+{
+  "title": "Short Bow Target",
+  "pageid": 100001,
+  "revid": 2535660,
+  "timestamp": "2013-02-28T09:48:45Z",
+  "wikitext": "{{NPC infobox\n| type = Practice target\n| image = [[Image:Practice target.jpg|150px]]\n| profession = n\n| level = 5 (20), 20\n| campaign = Core\n| campaign2 = Nightfall\n}}__NOTOC__\nPractice target located at the maximum [[range]] for a [[Shortbow]], measured from the marked firing spot.\n\n==Locations==\n*[[The Battle Isles]]\n**{{NPC location|Isle of the Nameless}}\n**{{NPC location|Isle of the Nameless (PvP)}}\n*[[Istan]]\n**{{NPC location|Churrhir Fields}}\n\n==Trivia==\n*As this practice target is named after the [[weapon]] you have to choose when testing its range, the Shortbow, its name is misspelled."
+}

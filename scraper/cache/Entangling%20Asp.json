@@ -1,0 +1,7 @@
+{
+  "title": "Entangling Asp",
+  "pageid": 16302,
+  "revid": 2683975,
+  "timestamp": "2023-02-23T14:30:21Z",
+  "wikitext": "{{Skill infobox\n| id = 784\n| name = Entangling Asp\n| campaign = Factions\n| profession = Assassin\n| attribute = Deadly Arts\n| type = Spell\n| energy = 10\n| activation = 1\n| recharge = 20\n| target = foes\n| causes1 = Knockdown\n| causes2 = Poison\n| description = [[Spell]]. Entangling Asp must follow a [[lead attack]]. [[Target]] [[foe]] is [[knocked down]] and becomes [[Poison]]ed for {{gr|5|20}} seconds.\n| concise description = Spell. Causes knock-down. Inflicts Poisoned condition ({{gr|5|20}} seconds). {{gray|Must follow a lead attack.}}\n| requires = lead\n}}\n\n{{Skill progression\n|attribute = [[Deadly Arts]]\n|var1 name = [[Poison]] [[duration]]\n|var1 at0 = 5\n|var1 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Xu Fengxia]] ([[Ran Musu Gardens]])\n* [[Michiko]] ([[Kaineng Center]])\n\n== Notes ==\n* Even if the target foe cannot be knocked down, it still becomes poisoned.\n* Synergizes with [[Iron Palm]], as it counts as a lead attack and is also a Deadly Arts skill.\n\n== Trivia == \n* \"[[w:Asp (reptile)|Asp]]\" is an archaic term referring to a variety of venomous snakes."
+}

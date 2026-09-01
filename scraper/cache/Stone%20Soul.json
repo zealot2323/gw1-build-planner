@@ -1,0 +1,7 @@
+{
+  "title": "Stone Soul",
+  "pageid": 22573,
+  "revid": 2730407,
+  "timestamp": "2026-06-15T21:42:26Z",
+  "wikitext": "{{Otheruses|the enemy NPC in the [[Echovald Forest]]|the trophy dropped by Shiro'ken see|Soul Stone}}\n__NOTOC__{{NPC infobox\n| type = Elemental\n| affiliation = Echovald Forest wildlife\n| profession = mo\n| level = 24 (26)\n| campaign = Factions\n}}\n[[Stone Soul]]s [[Protection Prayers|protect]] their allies while also contributing damage.\n\n==Locations==\n*[[Echovald Forest]]\n**{{NPC location|Arborstone|explorable area}}\n**{{NPC location|Morostav Trail}}\n\n==Missions==\n*Echovald Forest\n**{{NPC location|Arborstone}}\n\n==Skills==\n*{{skill icon|Reversal of Fortune}}\n*{{skill icon|Shield of Regeneration}} ([[elite]])\n*{{skill icon|Signet of Rage}}\n*{{skill icon|Smite Hex}}\n*{{skill icon|Spirit Bond}}\n*{{skill icon|Stonesoul Strike}}\n*{{monster skill icon|Stun Immunity}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = mo\n| blunt = 72\n| piercing = 112\n| slashing = 112\n| cold = 72\n| earth = 112\n| fire = 112\n| lightning = 112\n}}\n\n==Items dropped==   \n*[[Pile of Glittering Dust]] \n*[[Sapphire]]\n*[[Stone Carving]]\n\n[[Category:Drops dust]]\n[[Category:Drops sapphire]]"
+}

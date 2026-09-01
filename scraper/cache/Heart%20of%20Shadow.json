@@ -1,0 +1,7 @@
+{
+  "title": "Heart of Shadow",
+  "pageid": 14761,
+  "revid": 2683985,
+  "timestamp": "2023-02-23T14:46:59Z",
+  "wikitext": "{{Skill infobox\n| id = 1032\n| name = Heart of Shadow\n| campaign = Factions\n| profession = Assassin\n| attribute = Shadow Arts\n| type = Spell\n| energy = 5\n| activation = {{1/4}}\n| recharge = 15\n| target = allies or foes\n| range = Casting\n| causes1 = Healing\n| causes2 = Shadow Step\n| description = [[Spell]]. You are [[heal]]ed for {{gr|30|150}}. [[Shadow Step]] to a [[nearby]] location directly away from your [[target]].\n| concise description = Spell. You are healed for {{gr|30|150}} and you Shadow Step to a nearby location directly away from your target.\n}}\n\n{{Skill progression\n| attribute = [[Shadow Arts]]\n| var1 name = [[Heal]]ing\n| var1 at0 = 30\n| var1 at15 = 150}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Viper's Defense}}\n\n== Note ==\n* You can target any [[NPC]], including [[ally|allies]], [[foe]]s, or [[interactive object]]s.\n** You will shadow step directly away from your target.\n** When self-targeting, you will step to a random location within [[earshot]] distance.\n{{anomaly|This spell does not have an [[aftercast delay]].}}"
+}

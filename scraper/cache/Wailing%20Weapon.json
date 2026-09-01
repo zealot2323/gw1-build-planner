@@ -1,0 +1,7 @@
+{
+  "title": "Wailing Weapon",
+  "pageid": 4193,
+  "revid": 2720393,
+  "timestamp": "2026-02-06T18:07:00Z",
+  "wikitext": "{{Skill infobox\n| id = 794\n| name = Wailing Weapon\n| campaign = Factions\n| profession = Ritualist\n| attribute = Channeling Magic\n| type = Weapon Spell\n| energy = 5\n| activation = 1\n| recharge = 15\n| causes1 = Interrupt\n| description = [[Weapon Spell]]. For {{gr|3|14}} seconds, [[target]] [[ally]] has a Wailing Weapon. Whenever the Wailing Weapon strikes an [[attacking]] [[foe]], that foe is [[interrupt]]ed.\n| concise description = Weapon Spell. ({{gr|3|14}} seconds.) Attacks interrupt attacking foes.\n| target = allies\n}}\n\n{{Skill progression\n| attribute = [[Channeling Magic]]\n| maximum = 19\n| var1 name = [[Duration]]\n| var1 at0 = 3\n| var1 at15 = 14}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Trivia ==\n{{Skill change}}"
+}

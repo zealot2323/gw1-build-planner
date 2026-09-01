@@ -1,0 +1,7 @@
+{
+  "title": "Spirit Light",
+  "pageid": 5108,
+  "revid": 2692778,
+  "timestamp": "2024-02-08T13:29:43Z",
+  "wikitext": "{{Skill infobox\n| id = 915\n| name = Spirit Light\n| campaign = Factions\n| profession = Ritualist\n| attribute = Restoration Magic\n| type = Spell\n| sacrifice = 17%\n| energy = 5\n| activation = 1\n| recharge = 4\n| target = allies\n| causes1 = Healing\n| description = [[Spell]]. [[Target]] [[ally]] is [[heal]]ed for {{gr|60|180}}. If any [[spirit]]s are within [[earshot]], you don't [[sacrifice]] [[Health]].\n| concise description = Spell. Heals for {{gr|60|180}}. You don't sacrifice Health if you are within earshot of any spirits.\n}}\n\n{{Skill progression\n| attribute = [[Restoration Magic]]\n| var1 name = [[Heal]]ing\n| var1 at0 = 60\n| var1 at15 = 180}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Zhao Di]] ([[Shing Jea Monastery]])\n* [[Michiko]] ([[Kaineng Center]])\n\n== Hero Usage ==\n* If no spirits are within earshot, Heroes will prefer using other healing skills, but will use this spell if none are available. Unlike some other healing skills (such as [[Word of Healing]]), the AI will not use Spirit Light to heal non-[[party]] ally [[Non-player character|NPCs]].\n\n== Notes ==\n* Sacrifice occurs before healing, so this can kill the caster if used as a [[self heal]] without spirits around.\n\n== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details.\n\n[[Category:Hero-vetted skills]]"
+}

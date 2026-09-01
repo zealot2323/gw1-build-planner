@@ -1,0 +1,7 @@
+{
+  "title": "Jaizhenju Strike",
+  "pageid": 16228,
+  "revid": 2733023,
+  "timestamp": "2026-07-05T13:01:36Z",
+  "wikitext": "__NOTOC__\n{{Skill infobox\n| id = 1135\n| name = Jaizhenju Strike\n| campaign = Factions\n| profession = Warrior\n| attribute = Swordsmanship\n| type = Sword Attack\n| energy = 5\n| special = duplicate\n| recharge = 8\n| causes1 = Unblockable\n| description = [[Sword Attack]]. If Jaizhenju Strike hits, you strike for {{gr|1|30|+}} [[damage]]. If you are not using a [[stance]], Jaizhenju Strike cannot be [[block]]ed.\n| concise description = Sword Attack. Deals {{gr|1|30|+}} damage. Unblockable unless you are in a stance.\n}}\n\n{{Skill progression\n|attribute = [[Swordsmanship]]\n|var1 name = + [[Damage]]\n|var1 at0 = 1\n|var1 at15 = 30}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Barbarous Slice}}\n* {{skill icon|Pure Strike}} ([[duplicate skill]])\n\n== Trivia ==\n* This skill is named after the [[Canthan Heroes|Canthan hero]], [[Jaizhanju]].\n* The warrior in the [[skill icon]] appears to be wearing [[Wyvern armor]] and wielding a [[Dadao Sword]].\n\n[[de:Jaizhenjuschlag]]\n[[Category:Skills named after eponymous NPCs]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Unblockable Throw",
+  "pageid": 15259,
+  "revid": 2738954,
+  "timestamp": "2026-08-28T06:43:27Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 1550\n| name = Unblockable Throw\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Spear Mastery\n| type = Spear Attack\n| adrenaline = 6 \n| activation = 1\n| recharge = 1\n| causes1 = Unblockable\n| description = [[Spear Attack]]. If this [[attack]] hits, you deal {{gr|10|40|+}} [[damage]]. This attack cannot be [[block]]ed.\n| concise description = Spear Attack. Deals {{gr|10|40|+}} damage. Unblockable.\n}}\n\n{{Skill progression\n| attribute = [[Spear Mastery]]\n| var1 name = + [[Damage]]\n| var1 at0 = 10\n| var1 at15 = 40}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Nightfall]]\n**[[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n*Nightfall\n**[[Shiloh]] ([[Sunspear Great Hall]])\n'''[[Signet of Capture]]'''\n*[[Eye of the North]]\n**[[Jadam Spearspinner]] ([[Warband of Brothers]])\n**[[Timberland Guardian]] ([[Magus Stones]], only during [[Lab Space]])\n\n==Related skills==\n*{{Skill icon|Mighty Throw}}\n*{{skill icon|Swift Javelin}}\n*{{skill icon|Wild Throw}}\n\n==Notes==\n*Since this is an attack skill, the [[Activation time#Attack skills|activation time]] is actually {{1/2}} seconds.\n\n==Trivia==\n*The figure in the [[skill icon]] appears to be wearing [[Paragon Ancient armor|Ancient Armor]].\n\n[[Category:Skills offered by hero skill trainers]]"
+}

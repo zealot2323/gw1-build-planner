@@ -1,0 +1,7 @@
+{
+  "title": "Crippling Dagger",
+  "pageid": 14609,
+  "revid": 2683961,
+  "timestamp": "2023-02-23T13:12:27Z",
+  "wikitext": "{{Skill infobox\n| id = 1038\n| name = Crippling Dagger\n| campaign = Factions\n| profession = Assassin\n| attribute = Deadly Arts\n| type = Spell\n| energy = 5\n| activation = 1\n| recharge = 5\n| causes1 = Crippled\n| causes2 = Earth Damage\n| description = [[Spell]]. Send out a [[Projectile spell|Crippling Dagger]] at [[target]] [[foe]]. Crippling Dagger strikes for {{gr|15|60}} [[earth damage]] if it hits, and [[Cripple]]s [[Movement|moving]] foes for {{gr|3|15}} seconds. This spell has [[Half ranged|half the normal range]].\n| concise description = Half Range Spell. Projectile: deals {{gr|15|60}} earth damage. Inflicts Crippled condition ({{gr|3|15}} seconds) if target foe is moving.\n| range = half\n| target = foes\n| animation = [[File:Crippling Dagger Animation.gif|Click to view]]\n}}\n\n{{Skill progression\n|attribute = [[Deadly Arts]]\n|var1 name = [[Earth damage]]\n|var1 at0 = 15\n|var1 at15 = 60\n|var2 name = [[Crippled]] [[duration]]\n|var2 at0 = 3\n|var2 at15 = 15}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Masaharu]] ([[Seitung Harbor]])\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Leaping Mantis Sting}}\n* {{skill icon|Melandru's Shot}} ([[elite]])\n\n[[Category:Projectile spells]]"
+}

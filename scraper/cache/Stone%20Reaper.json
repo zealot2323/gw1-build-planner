@@ -1,0 +1,7 @@
+{
+  "title": "Stone Reaper",
+  "pageid": 22574,
+  "revid": 2606143,
+  "timestamp": "2016-05-21T19:44:30Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Stone Reaper.jpg|x200px]]\n| type = Elemental\n| affiliation = Echovald Forest wildlife\n| profession = n\n| level = 24 (26)\n| campaign = Factions\n}}\n[[Stone Reaper]]s are [[Stone guardian]] [[necromancer]]s.\n\n==Locations==\n*[[Echovald Forest]]\n**{{NPC location|Arborstone|explorable area}}\n**{{NPC location|Morostav Trail}}\n\n==Missions==\n*Echovald Forest\n**{{NPC location|Arborstone}}\n\n==Skills==\n15 [[Curses]] (20 Curses in [[hard mode]])\n*{{skill icon|Chilblains}}\n*{{skill icon|Defile Flesh}}\n*{{skill icon|Suffering}}\n*{{skill icon|Weaken Knees}} ([[elite]])\n*{{monster skill icon|Stun on Critical Hit}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = n\n| blunt = 72\n| piercing = 112\n| slashing = 112\n| cold = 72\n| earth = 112\n| fire = 112\n| lightning = 112\n}}\n\n==Items dropped==    \n*[[Sapphire]]\n*[[Stone Carving]]\n*[[Stone Remnants]]\n\n==Notes==    \n*Although they are necromancers, their normal projectile attack has the range of a [[longbow]].\n\n[[Category:Drops sapphire]]"
+}

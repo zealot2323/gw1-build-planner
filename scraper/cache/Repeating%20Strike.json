@@ -1,0 +1,7 @@
+{
+  "title": "Repeating Strike",
+  "pageid": 14539,
+  "revid": 2733175,
+  "timestamp": "2026-07-05T16:05:12Z",
+  "wikitext": "{{Skill infobox\n| id = 976\n| name = Repeating Strike\n| campaign = Factions\n| profession = Assassin\n| attribute = Dagger Mastery\n| type = Off-Hand Attack\n| energy = 5\n| causes1 = Increased Recharge Time\n| description = [[Off-Hand Attack]]. Must follow an off-hand attack. If it hits, this [[attack]] strikes for {{gr|10|30|+}} [[damage]]. If it [[Fail#Skills that trigger an effect on failed attacks|misses]], it takes an additional 15 seconds to [[recharge time|recharge]].\n| concise description = Off-Hand Attack. Deals {{gr|10|30|+}} damage. {{gray|This skill has +15 second recharge time if it misses. Must follow an off-hand attack.}}\n| requires = offhand\n| checks = hit\n| checks-true = damage\n| checks-false = recharge\n}}\n\n{{Skill progression\n|attribute = [[Dagger Mastery]]\n|var1 name = + [[Damage]]\n|var1 at0 = 10\n|var1 at15 = 30}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Notes ==\n* When used with [[Way of the Empty Palm]] and [[Golden Phoenix Strike]], this skill can be used repeatedly and without using any energy (except to cast Way of the Empty Palm).\n* Using this skill without a requisite off-hand attack will cause it to [[fail]], and thus still recharge instantly."
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Sand Shards",
+  "pageid": 1396,
+  "revid": 2739242,
+  "timestamp": "2026-08-31T15:49:24Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 1510\n| name = Sand Shards\n| campaign = Nightfall\n| profession = Dervish\n| attribute = Earth Prayers\n| type = Flash Enchantment Spell\n| energy = 10\n| recharge = 10\n| causes1 = Earth Damage\n| description = [[Flash Enchantment Spell]]. For 30 seconds, the next {{gr|1|5}} time[s] you hit with a [[scythe]], all other [[adjacent]] [[foe]]s take {{gr|10|60}} [[earth damage]].\n| concise description = Flash Enchantment Spell. (30 seconds.) Deal {{gr|10|60}} earth damage to all other adjacent foes whenever you hit with your scythe. {{gray|Ends after {{gr|1|5}} hit[s].}}\n| aoe = adjacent\n| target = untargeted\n| pbaoe = self\n}}\n\n{{Skill progression\n|attribute = [[Earth Prayers]]\n|var1 name = [[Attack]]s affected\n|var1 at0 = 1\n|var1 at15 = 5\n|var2 name = [[Earth damage]]\n|var2 at0 = 10\n|var2 at15 = 60}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Nightfall]]\n**[[Zendeht]] ([[Gate of Torment]])\n'''[[Signet of Capture]]'''\n*[[Factions]]\n**[[Kai Shi Jo]] ([[The Undercity (Winds of Change)]], only during [[When Kappa Attack]])\n**[[Sheng Pai]] ([[What Waits in Shadow]])\n\n== Related skills ==\n* {{skill icon|Hundred Blades}} ([[elite]])\n* {{Skill icon|Splinter Weapon}}\n* {{Skill icon|Vow of Strength}} (elite)\n\n== Trivia ==\n* The [[functionality]] of this skill has changed since its introduction; see its [[Sand Shards/Skill history|skill history]] for details."
+}

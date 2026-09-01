@@ -53,6 +53,8 @@ export interface ParsedSkill {
     questLocations?: Record<string, string | null>;
     /** Where each capture boss spawns (second link on the acquisition line). */
     captureLocations?: Record<string, string | null>;
+    /** Campaign each source was listed under. */
+    sourceCampaigns?: Record<string, string>;
   };
 }
 
@@ -72,18 +74,23 @@ function parseAcquisition(
   // start straight with campaign bullets — capture is the only way to get
   // most elites, so that's the default group for them.
   let group: "trainers" | "quests" | "captureBosses" | null = isElite ? "captureBosses" : null;
-  let inProphecies = false;
+  // Sources from every campaign are kept: which ones a character can
+  // actually use is decided later by whether the location is reachable,
+  // and a Factions trainer simply never appears in a Tyrian's unlocked set.
+  let campaign: string | null = null;
 
   const isCampaignLine = (line: string): boolean =>
     /^\*\s*(\[\[)?\s*(guild wars )?(prophecies|factions|nightfall|eye of the north|core|beyond)\b/i.test(line);
   const conditional: string[] = [];
   const captureLocations: Record<string, string | null> = {};
   const questLocations: Record<string, string | null> = {};
+  const sourceCampaigns: Record<string, string> = {};
   const push = (line: string): void => {
     if (!group || /hard mode/i.test(line)) return; // normal mode only
     const targets = linkTargets(line);
     const target = targets[0];
     if (!target) return;
+    if (campaign) sourceCampaigns[target] = campaign;
     if (group === "quests") questLocations[target] = targets[1] ?? null;
     if (group === "captureBosses") {
       captureLocations[target] = targets[1] ?? null;
@@ -105,12 +112,12 @@ function parseAcquisition(
       else if (label.includes("quest")) group = "quests";
       else if (label.includes("signet of capture")) group = "captureBosses";
       else group = null; // profession changers, unlock-only, ...
-      inProphecies = false;
+      campaign = null;
       continue;
     }
     if (/^\*[^*]/.test(line)) {
       if (isCampaignLine(line)) {
-        inProphecies = /prophecies/i.test(line);
+        campaign = stripMarkup(line).replace(/^\*+\s*/, "").replace(/^guild wars /i, "").trim();
       } else if (/\[\[.*\(/.test(line)) {
         // "* [[Boss]] ([[Location]])" — entry with no campaign bullets at
         // all; such flat lists are Prophecies-only in practice.
@@ -118,11 +125,12 @@ function parseAcquisition(
       }
       continue;
     }
-    if (/^\*\*[^*]/.test(line) && inProphecies) push(line);
+    if (/^\*\*[^*]/.test(line)) push(line);
   }
   if (conditional.length > 0) out.conditionalCaptureBosses = conditional;
   if (Object.keys(questLocations).length > 0) out.questLocations = questLocations;
   if (Object.keys(captureLocations).length > 0) out.captureLocations = captureLocations;
+  if (Object.keys(sourceCampaigns).length > 0) out.sourceCampaigns = sourceCampaigns;
   return { acquisition: out };
 }
 
@@ -211,14 +219,22 @@ export function parseTrainer(
 
   // e.g. Master Scout Kiera: "This trainer only offers skills from the
   // previous trainers [[Captain Greywind]], [[Ephaz]] and [[Sorim]]."
+  // "only offers skills from the previous trainers [[A]], [[B]]" (Prophecies)
+  // and "Offers the same skills as [[Michiko]]" (Factions/Nightfall) are the
+  // same idea: this trainer's stock is another's.
   const inheritsFrom =
-    skills.size === 0 && !offersAll && box?.["note"] && /previous trainers/i.test(box.note)
+    skills.size === 0 && !offersAll && box?.["note"] && /previous trainers|same skills as/i.test(box.note)
       ? linkTargets(box.note)
       : [];
 
   if (skills.size === 0 && !offersAll && inheritsFrom.length === 0) issues.push("no skills parsed");
 
-  const location = locationFromList ?? (box?.["location"] ? stripMarkup(box["location"]) : null);
+  // Prophecies takes the location from the list page heading; other
+  // campaigns' trainers only state it on their own page, either as a
+  // template parameter or an {{NPC location|X}} entry under "Locations".
+  const npcLocation = wikitext.match(/\{\{\s*NPC location\s*\|([^}|]+)/i)?.[1]?.trim() ?? null;
+  const location =
+    locationFromList ?? (box?.["location"] ? stripMarkup(box["location"]) : null) ?? npcLocation;
   if (!location) issues.push("no location");
 
   return {
@@ -358,6 +374,8 @@ export interface ParsedMonsterVariant {
   hardModeEliteSkill?: string;
   /** The whole block is hard-mode content (e.g. "During Hard mode Titan quests"). */
   hardMode?: boolean;
+  /** Campaign/release the block's label names, when it names one. */
+  campaign?: string;
 }
 
 export interface ParsedMonster {
@@ -478,15 +496,30 @@ export function parseMonster(title: string, wikitext: string): Parsed<ParsedMons
   // A block is excluded only when it names another campaign / Beyond
   // content / a cinematic; encounter levels, professions, and Prophecies
   // mission names all stay.
-  const NON_PROPHECIES_CONTEXT =
-    /factions|nightfall|eye of the north|war in kryta|winds of change|hearts of the north|beyond|cinematic|special ops|rise of the white mantle|fronis|halloween|wintersday|festival|mausoleum|annihilat|1070 ae/i;
+  // Blocks that are never real PvE loadouts, whatever the campaign.
+  const EXCLUDED_CONTEXT = /cinematic|halloween|wintersday|festival|mausoleum|annihilat|1070 ae|snowball/i;
+  // Blocks whose label names a campaign or a Beyond release — kept, but
+  // tagged, so the engine can pick the right one per zone.
+  const CAMPAIGN_CONTEXT: Array<[string, RegExp]> = [
+    ["Prophecies", /\bprophecies\b/i],
+    ["Factions", /\bfactions\b|winds of change/i],
+    ["Nightfall", /\bnightfall\b/i],
+    ["Eye of the North", /eye of the north|\beotn\b|special ops|fronis|bonus mission pack/i],
+    ["War in Kryta", /war in kryta|hearts of the north|rise of the white mantle/i],
+  ];
+  const campaignOf = (label: string | null): string | undefined =>
+    label === null ? undefined : CAMPAIGN_CONTEXT.find(([, re]) => re.test(label))?.[0];
 
-  // Blocks are delimited by subsection headings AND by in-body marker lines
-  // (";Prophecies", "'''Level 12'''", or a bare "Level 12" line).
   const variants: ParsedMonsterVariant[] = [];
   let current: ParsedMonsterVariant | null = null;
-  const startBlock = (label: string | null, hardMode = false) => {
-    current = { label, levels: labelLevels(label), skills: [], ...(hardMode ? { hardMode: true } : {}) };
+  const startBlock = (label: string | null, hardMode = false, campaign?: string) => {
+    current = {
+      label,
+      levels: labelLevels(label),
+      skills: [],
+      ...(hardMode ? { hardMode: true } : {}),
+      ...(campaign ? { campaign } : {}),
+    };
     variants.push(current);
   };
 
@@ -496,7 +529,8 @@ export function parseMonster(title: string, wikitext: string): Parsed<ParsedMons
     // the Skills heading itself is neutral; every other heading in the
     // chain (including ancestors of nested subsections) is context
     const contextTitles = [s.title, ...s.ancestors].filter((t) => !/^skills/i.test(t));
-    if (contextTitles.some((t) => NON_PROPHECIES_CONTEXT.test(t))) continue;
+    if (contextTitles.some((t) => EXCLUDED_CONTEXT.test(t))) continue;
+    const headingCampaign = contextTitles.map(campaignOf).find((c) => c !== undefined);
     // Hard-mode blocks are kept and flagged rather than dropped — the zone
     // browser has a hard mode toggle and needs both bars.
     const headingIsHardMode = contextTitles.some((t) => /hard\s*mode/i.test(t));
@@ -504,21 +538,25 @@ export function parseMonster(title: string, wikitext: string): Parsed<ParsedMons
     current = null;
     let suppressed = false; // inside a marker-delimited non-Prophecies block
     let markerIsHardMode = false;
+    let markerCampaign: string | undefined;
     const headingLabel = isSkillsHeading ? null : s.title;
     for (const line of s.body.split("\n")) {
       const marker = line.match(/^;\s*(.+)$|^'''([^']+)'''|^\s*(Level\s+[\d,\s]+)\s*$/i);
       if (marker) {
         const label = stripMarkup((marker[1] ?? marker[2] ?? marker[3]).trim());
         current = null;
-        suppressed = NON_PROPHECIES_CONTEXT.test(label);
+        suppressed = EXCLUDED_CONTEXT.test(label);
         markerIsHardMode = /hard\s*mode/i.test(label);
-        if (!suppressed) startBlock(label, headingIsHardMode || markerIsHardMode);
+        markerCampaign = campaignOf(label);
+        if (!suppressed) startBlock(label, headingIsHardMode || markerIsHardMode, markerCampaign ?? headingCampaign);
         continue;
       }
       if (suppressed || !/^\*/.test(line)) continue;
       const m = line.match(/\{\{\s*skill icon\s*\|([^}|]+)/i);
       if (!m) continue;
-      if (current === null) startBlock(headingLabel, headingIsHardMode || markerIsHardMode);
+      if (current === null) {
+        startBlock(headingLabel, headingIsHardMode || markerIsHardMode, markerCampaign ?? headingCampaign);
+      }
       const skill = m[1].trim();
       const isElite = /\(\s*(\[\[)?elite/i.test(line);
       // {{verify|...}} editor notes discuss hard mode without the skill
@@ -620,6 +658,8 @@ export interface ParsedMission {
   name: string;
   wikiPage: string;
   outpost: string | null;
+  /** Which campaign's mission list this came from (set by the driver). */
+  campaign?: string | null;
   region: string | null;
   foes: string[];
   bosses: string[];

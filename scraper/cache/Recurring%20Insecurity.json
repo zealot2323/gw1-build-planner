@@ -1,0 +1,7 @@
+{
+  "title": "Recurring Insecurity",
+  "pageid": 1608,
+  "revid": 2726529,
+  "timestamp": "2026-04-28T19:18:51Z",
+  "wikitext": "{{Skill infobox\n| id = 1055\n| name = Recurring Insecurity\n| campaign = Factions\n| profession = Mesmer\n| attribute = Illusion Magic\n| type = Hex Spell\n| elite = y\n| energy = 10\n| activation = 1\n| recharge = 3\n| causes1 = Health Degeneration\n| causes2 = Renewal\n| description = [[Elite]] [[Hex Spell]]. For 5 seconds, [[target]] [[foe]] suffers from {{gr|1|6|-}} [[Health degeneration]]. If that foe has another hex when Recurring Insecurity would end, it is [[Renewal|reapplied]].\n| concise description = Elite Hex Spell. (5 seconds.) Causes {{gr|1|6|-}} Health degeneration. Renewal: if target foe has another hex when Recurring Insecurity would end.\n}}\n\n{{Skill progression\n|attribute = [[Illusion Magic]]\n|var1 name = [[Health degeneration]]\n|var1 at0 = 1\n|var1 at15 = 6}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Xisni Dream Haunt]] ([[Mourning Veil Falls]])\n* [[Talous the Mad]] ([[Rhea's Crater]])\n\n== Related skills ==\n* {{skill icon|Conjure Nightmare}}\n* {{skill icon|Conjure Phantasm}}\n* {{skill icon|Enduring Toxin}}\n\n== Notes ==\n* Recurring Insecurity only reapplies itself if it lasts its full [[duration]]. Therefore using a [[List of hex removal skills|hex removal skill]], such as [[Remove Hex]], will safely remove Recurring Insecurity without it being reapplied.\n* Recurring Insecurity triggers [[Soul Barbs]] with each reapplication.\n\n[[de:Wiederkehrende Unsicherheit]]"
+}

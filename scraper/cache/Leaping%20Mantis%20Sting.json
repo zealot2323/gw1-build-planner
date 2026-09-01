@@ -1,0 +1,7 @@
+{
+  "title": "Leaping Mantis Sting",
+  "pageid": 14521,
+  "revid": 2733187,
+  "timestamp": "2026-07-05T16:19:35Z",
+  "wikitext": "{{Skill infobox\n| id = 1023\n| name = Leaping Mantis Sting\n| campaign = Factions\n| profession = Assassin\n| attribute = Dagger Mastery\n| type = Lead Attack\n| energy = 5\n| activation = {{1/2}}\n| recharge = 8\n| causes1 = Crippled\n| description = [[Lead Attack]]. If Mantis Sting hits, [[target]] [[foe]] takes {{gr|5|15|+}} [[damage]]. If this [[attack]] strikes a [[Movement|moving]] foe, that foe is [[Crippled]] for {{gr|3|15}} seconds.\n| concise description = Lead Attack. Deals {{gr|5|15|+}} damage. Inflicts Crippled condition ({{gr|3|15}} seconds) if target foe is moving.\n| checks = movement\n| checks-true = cripples\n}}\n\n{{Skill progression\n|attribute = [[Dagger Mastery]]\n|var1 name = + [[Damage]]\n|var1 at0 = 5\n|var1 at15 = 15\n|var2 name = [[Crippled]] [[duration]]\n|var2 at0 = 3\n|var2 at15 = 15}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Masaharu]] ([[Seitung Harbor]])\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Sarnia the Red-Handed]] ([[North Kryta Province (War in Kryta)]])\n\n== Related skills ==\n* {{skill icon|Crippling Dagger}}"
+}

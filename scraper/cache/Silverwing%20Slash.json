@@ -1,0 +1,7 @@
+{
+  "title": "Silverwing Slash",
+  "pageid": 5275,
+  "revid": 2738484,
+  "timestamp": "2026-08-26T21:19:44Z",
+  "wikitext": "{{Skill infobox\n| id = 1144\n| name = Silverwing Slash\n| campaign = Factions\n| profession = Warrior\n| attribute = Swordsmanship\n| type = Sword Attack\n| adrenaline = 7\n| special = duplicate\n| description = [[Sword Attack]]. This attack strikes for {{gr|1|40|+}} [[damage]] if it hits.\n| concise description = Sword Attack. Deals {{gr|1|40|+}} damage.\n}}\n\n{{Skill progression\n| attribute = Swordsmanship\n| var1 name = + [[Damage]]\n| var1 at0 = 1\n| var1 at15 = 40}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Xu Fengxia]] ([[Ran Musu Gardens]])\n* [[Michiko]] ([[Kaineng Center]])\n\n==Related skills==\n* {{skill icon|Body Blow}}\n* {{skill icon|Cleave}} ([[elite]])\n* {{skill icon|Executioner's Strike}}\n* {{skill icon|Galrath Slash}} ([[duplicate skill]])\n* {{skill icon|Mighty Blow}}\n* {{skill icon|Power Attack}}\n\n== Trivia ==\n* [[Talon Silverwing]] uses Silverwing Slash in Factions.\n* In the [[skill icon]], it appears to be Talon Silverwing wielding a [[Katana]], although the wielder is left-handed while Talon in-game is not.\n\n[[Category:Skills named after eponymous NPCs]]\n[[de:Silberflügel-Hieb]]"
+}

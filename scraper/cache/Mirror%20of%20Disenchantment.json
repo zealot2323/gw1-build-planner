@@ -1,0 +1,7 @@
+{
+  "title": "Mirror of Disenchantment",
+  "pageid": 1487,
+  "revid": 2683814,
+  "timestamp": "2023-02-21T19:00:34Z",
+  "wikitext": "{{Skill infobox\n| name = Mirror of Disenchantment\n| id = 1349\n| campaign = Nightfall\n| profession = Mesmer\n| type = Spell\n| has-pvp = y\n| target = foes\n| energy = 5\n| activation = 1\n| recharge = 15\n| removes1 = Enchantment\n| description = [[Spell]]. Remove one [[enchantment]] from [[target]] [[foe]]. All of that foe's [[party]] members also lose that same enchantment.\n| concise description = Spell. Removes one enchantment from target foe. That foe's party members also lose this enchantment.\n| aoe = party\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Nightfall]]\n** [[Baram]] ([[The Kodash Bazaar]])\n'''[[Hero skill trainer]]s'''\n* Nightfall\n** [[Warden of Whispers (The Kodash Bazaar)|Warden of Whispers]] (The Kodash Bazaar)\n'''[[Signet of Capture]]'''\n* [[Eye of the North]]\n** [[Mind of Destruction]] ([[Glint's Challenge]])\n\n== Notes ==\n* This skill can be used to remove enchantments from all of a [[minion master]]'s minions (e.g. [[Death Nova]] or [[Jagged Bones]]), since the game treats them as a [[party]].\n* This skill can remove a [[Doublecast skill|doublecast enchantment]] from both the caster and its ally if they are members of the same party.\n\n[[Category:Skills offered by hero skill trainers]]\n\n[[de:Spiegel der Entzauberung]]"
+}

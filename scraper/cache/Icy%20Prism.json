@@ -1,0 +1,7 @@
+{
+  "title": "Icy Prism",
+  "pageid": 16261,
+  "revid": 2738707,
+  "timestamp": "2026-08-27T06:16:18Z",
+  "wikitext": "{{Skill infobox\n| id = 903\n| name = Icy Prism\n| campaign = Factions\n| profession = Elementalist\n| attribute = Water Magic\n| type = Spell\n| energy = 5\n| activation = 1\n| recharge = 5\n| overcast = 5\n| causes1 = Cold Damage\n| description = [[Spell]]. [[Target]] [[foe]] is struck for {{gr|15|75}} [[cold damage]]. If that foe has a [[Water Magic]] [[hex]], Icy Prism deals +{{sic|The \"+\" is inconsistent with other skill descriptions. In this case, the additional damage is dealt to nearby foes, and not to the target}}{{gr|15|75}} cold damage to all other [[nearby]] foes.\n| concise description = Spell. Deals {{gr|15|75}} cold damage. Deals +{{sic|The \"+\" is inconsistent with other skill descriptions. In this case, the additional damage is dealt to nearby foes, and not to the target}}{{gr|15|75}} cold damage to other nearby foes if target has a Water Magic hex.\n| aoe = nearby \n| target = foes\n}}\n\n{{Skill progression\n|attribute = [[Water Magic]]\n|var1 name = [[Cold damage]]\n|var2 name = + Cold damage\n|var1 at0 = 15\n|var1 at15 = 75\n|var2 at0 = 15\n|var2 at15 = 75}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Teinai's Crystals}}\n\n== Trivia ==\n* The [[functionality]] of this skill has changed since its introduction; see its [[Icy Prism/Skill history|skill history]] for details."
+}

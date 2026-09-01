@@ -1,0 +1,7 @@
+{
+  "title": "Corsair Seer",
+  "pageid": 19788,
+  "revid": 2606641,
+  "timestamp": "2016-06-01T18:33:03Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Human\n| affiliation = Corsairs\n| profession = me\n| level = 10 (24)\n| campaign = Nightfall\n| image = [[File:Corsair blindfold.jpg|200px]]\n}}\n[[Corsair Seer]]s are the lowest-ranked [[corsair]] [[mesmer]]s. They are essentially weaker versions of [[Corsair Wizard]]s.\n\n==Locations==\n*[[Istan]]\n**{{NPC location|Cliffs of Dohjok}}\n**{{NPC location|Issnur Isles}}\n**{{NPC location|Lahtenda Bog}}\n**{{NPC location|Mehtani Keys}}\n**{{NPC location|Zehlon Reach}}\n\n==Skills==\n===Level 4===\n*{{skill icon|Simple Thievery}} ([[elite]], [[Hard mode]] only)\n*{{skill icon|Wastrel's Demise}}\n\n===Level 10===\n9 [[Domination Magic]]\n*{{skill icon|Energy Tap}}\n*{{skill icon|Simple Thievery}} (elite, Hard mode only)\n*{{skill icon|Wastrel's Demise}}\n\n==Armor ratings==\n{{NPC statistics\n| level = 10\n| prof = me\n| blunt = 32\n| piercing = 32\n| slashing = 32\n| cold = 32\n| earth = 32\n| fire = 32\n| lightning = 32\n}}\n\n==Items dropped==\n*[[Bolt of Cloth]]\n*[[Corsair Pauldron]]\n*[[Silver Bullion Coin]]\n*[[Stolen Shipment]]\n*[[Tanned Hide Square]]\n\n[[Category:Drops cloth]]\n[[Category:Drops hide]]"
+}

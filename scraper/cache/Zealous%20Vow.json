@@ -1,0 +1,7 @@
+{
+  "title": "Zealous Vow",
+  "pageid": 4564,
+  "revid": 2726541,
+  "timestamp": "2026-04-28T19:23:23Z",
+  "wikitext": "{{Skill infobox\n| id = 1761\n| name = Zealous Vow\n| campaign = Nightfall\n| profession = Dervish\n| attribute = Wind Prayers\n| type = Enchantment Spell\n| elite = y\n| energy = 5\n| activation = {{1/4}}\n| recharge = 12\n| fixed eregen = -3\n| causes1 = Energy Gain\n| causes2 = Energy Degeneration\n| description = [[Elite]] [[Enchantment Spell]]. For 20 seconds, you have -2 [[Energy regeneration]], and you gain {{gr|1|6}} [[Energy]] every time you hit with an [[attack]].\n| concise description = Elite Enchantment Spell. (20 seconds.) You gain {{gr|1|6}} Energy each time you hit with an attack. {{gray|You have -2 Energy regeneration.}}\n}}\n\n{{Skill progression\n|attribute = [[Wind Prayers]]\n|var1 name = [[Energy]] gain\n|var1 at0 = 1\n|var1 at15 = 6}}\n\n==Acquisition==\n'''[[Signet of Capture]]'''\n*[[Prophecies]]\n** [[Justiciar Kasandra]] ([[D'Alessio Seaboard (explorable area)]])\n*[[Nightfall]]\n** [[Sehlon, Beautiful Water]] ([[Bahdok Caverns]])\n** [[Hajok Earthguardian (Djinn)]] ([[Dasha Vestibule]])\n** [[Leilon, Tranquil Water]] ([[The Hidden City of Ahdashim]])\n\n== Related skills ==\n*{{skill icon|Marksman's Wager}} ([[elite]])\n*{{skill icon|Warrior's Endurance}} (elite)\n*{{skill icon|Zealous Renewal}}\n\n[[de:Eifriges Gelübde]]"
+}

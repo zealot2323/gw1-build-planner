@@ -1,0 +1,7 @@
+{
+  "title": "Skree Griffon",
+  "pageid": 23170,
+  "revid": 2178370,
+  "timestamp": "2010-11-16T06:17:59Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| species = Harpy\n| image = [[Image:Skree monk.jpg|200px]]\n| profession = mo\n| level = 14 (24)\n| campaign = Nightfall\n}}\n[[Skree Griffon]]s are healers for Skree Harpy groups and are apparently, adult versions of [[Skree Hatchling]]s.\n\n==Locations==\n*[[Istan]]\n**{{NPC location|Fahranur, The First City}}\n**{{NPC location|Lahtenda Bog}}\n\n==Missions==\n*[[Istan]]\n**{{NPC location|Blacktide Den}}\n\n==Skills==\n\n===Normal mode, level 14===\n*{{skill icon|Healing Breeze}}\n*{{skill icon|Orison of Healing}}\n\n===Hard mode, level 24===\n*{{skill icon|Healer's Boon}} ([[elite]])\n*{{skill icon|Healing Touch}}\n*{{skill icon|Orison of Healing}}\n*{{skill icon|Renew Life}}\n*{{skill icon|Words of Comfort}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = mo\n| blunt = 43\n| piercing = 43\n| slashing = 43\n| cold = 43\n| earth = 43\n| fire = 43\n| lightning = 43\n}}\n\n==Items dropped==\n*[[Bolt of Cloth]]\n*[[Fledgling Skree Wing]]\n*[[Skree Mask]]\n\n[[Category:Drops cloth]]"
+}

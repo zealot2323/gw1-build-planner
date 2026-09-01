@@ -1,0 +1,7 @@
+{
+  "title": "Song of Concentration",
+  "pageid": 15220,
+  "revid": 2723140,
+  "timestamp": "2026-03-20T23:16:53Z",
+  "wikitext": "{{Skill infobox\n| id = 1567\n| name = Song of Concentration\n| campaign = Nightfall\n| profession = Paragon\n| type = Chant\n| adrenaline = 8\n| activation = 2\n| recharge = 5\n| description = [[Chant]]. For 10 seconds, the next [[skill]] used by each [[ally]] within [[earshot]] cannot be [[interrupt]]ed.\n| concise description = Chant. (10 seconds.) Allies in earshot are uninterruptible with their next skill.\n}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n* [[Nightfall]]\n** [[Tohn]] ([[Kamadan, Jewel of Istan]])\n\n'''[[Hero skill trainer]]s'''\n* Nightfall\n** [[Pikin]] (Kamadan, Jewel of Istan)\n\n'''[[Signet of Capture]]'''\n* [[Eye of the North]]\n** [[Erasklion the Prolific]] ([[Heart of the Shiverpeaks]])\n\n==Related skills==\n*{{skill icon|Glyph of Concentration}}\n\n[[Category:Skills offered by hero skill trainers]]\n[[Category:Skills that affect allies]]"
+}

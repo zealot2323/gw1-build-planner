@@ -1,0 +1,7 @@
+{
+  "title": "Blinding Powder",
+  "pageid": 14736,
+  "revid": 2683959,
+  "timestamp": "2023-02-23T13:11:03Z",
+  "wikitext": "{{Skill infobox\n| id = 973\n| name = Blinding Powder\n| campaign = Factions\n| profession = Assassin\n| attribute = Shadow Arts\n| type = Spell\n| target = foes\n| energy = 5\n| activation = {{1/4}}\n| recharge = 20\n| aoe = adjacent\n| requires = offhand\n| causes1 = Blind\n| description = [[Spell]]. Must follow an [[off-hand attack]]. [[Target]] [[foe]] and all [[adjacent]] foes become [[Blind]]ed for {{gr|3|15}} seconds.\n| concise description = Spell. Inflicts Blindness condition ({{gr|3|15}} seconds) on target and adjacent foes. {{gray|Must follow an off-hand attack.}}\n}}\n\n{{Skill progression\n| attribute = [[Shadow Arts]]\n| var1 name = [[Blind]] [[duration]]\n| var1 at0 = 3\n| var1 at15 = 15}}\n\n== Acquisition ==\n'''[[Skill quest]]s'''\n* [[Advanced Defense Techniques]] ([[Shing Jea Monastery]])\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Blinding Surge}} ([[elite]])\n* {{skill icon|Throw Dirt}}\n\n[[Category:Assassin skill rewards]]"
+}

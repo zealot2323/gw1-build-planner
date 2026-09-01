@@ -1,0 +1,7 @@
+{
+  "title": "Weaken Knees",
+  "pageid": 4312,
+  "revid": 2726486,
+  "timestamp": "2026-04-28T18:56:49Z",
+  "wikitext": "{{Skill infobox\n| id = 822\n| name = Weaken Knees\n| campaign = Factions\n| profession = Necromancer\n| attribute = Curses\n| type = Hex Spell\n| elite = y\n| energy = 5\n| activation = 1\n| recharge = 5\n| causes1 = Health Degeneration\n| description = [[Elite]] [[Hex Spell]]. For {{gr|1|16}} second[s], [[target]] [[foe]] suffers {{gr|1|4|-}} [[Health degeneration]] and takes {{gr|5|20}} [[damage]] while [[Movement|moving]].\n| concise description = Elite Hex Spell. ({{gr|1|16}} second[s].) Target foe has {{gr|1|4|-}} Health degeneration and takes {{gr|5|20}} damage while moving.\n}}\n\n{{Skill progression\n| attribute = [[Curses]]\n| var1 name = [[Duration]]\n| var1 at0 = 1\n| var1 at15 = 16\n| var2 name = [[Health degeneration]]\n| var2 at0 = 1\n| var2 at15 = 4\n| var3 name = [[Damage]] while moving\n| var3 at0 = 5\n| var3 at15 = 20}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Inquisitor Bauer]] ([[Scoundrel's Rise (War in Kryta)]], during [[Wanted: Inquisitor Bauer]])\n* [[Factions]]\n** [[Froth Stonereap]] ([[Altrumm Ruins]])\n** [[Rot Foulbelly]] ([[Melandru's Hope]])\n\n== Related skills ==\n* {{skill icon|Binding Chains}}\n* {{skill icon|Shameful Fear}}\n* {{skill icon|Winter's Embrace}}\n\n== Notes ==\n* Both descriptions neglect to mention that the damage done while moving occurs each second.\n\n[[de:Weiche Knie]]"
+}

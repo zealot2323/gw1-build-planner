@@ -1,0 +1,7 @@
+{
+  "title": "Rending Sweep",
+  "pageid": 14071,
+  "revid": 2733270,
+  "timestamp": "2026-07-05T17:15:44Z",
+  "wikitext": "{{Skill infobox\n| id = 1753\n| name = Rending Sweep\n| campaign = Nightfall\n| profession = Dervish\n| attribute = Scythe Mastery\n| type = Scythe attack\n| adrenaline = 6\n| removes1 = Enchantment\n| description = [[Scythe Attack]]. You deal {{gr|5|20|+}} and lose 1 Dervish [[enchantment]]. If an enchantment was lost, you remove an enchantment from each [[foe]] you hit.\n| concise description = Scythe Attack. Deals {{gr|5|20|+}} damage. You lose 1 Dervish enchantment. Removal effect: struck foes lose an enchantment.\n}}\n\n{{Skill progression\n|attribute = [[Scythe Mastery]]\n|var1 name = + [[Damage]]\n|var1 at0 = 5\n|var1 at15 = 20\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Nightfall]]\n**[[Tohn]] ([[Kamadan, Jewel of Istan]])\n\n'''[[Hero skill trainer]]s'''\n*Nightfall\n**[[Pikin]] (Kamadan, Jewel of Istan)\n\n'''[[Signet of Capture]]'''\n*[[Eye of the North]]\n**[[Myish, Lady of the Lake]] ([[Drakkar Lake]])\n\n== Related skills ==\n*{{skill icon|Winds of Disenchantment}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

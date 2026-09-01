@@ -1,0 +1,7 @@
+{
+  "title": "Signet of Sorrow",
+  "pageid": 7057,
+  "revid": 2709236,
+  "timestamp": "2025-06-27T17:52:16Z",
+  "wikitext": "{{Skill infobox\n| name = Signet of Sorrow\n| id = 1363\n| campaign = Nightfall\n| profession = Necromancer\n| attribute = Soul Reaping\n| type = Signet\n| activation = 1\n| recharge = 30\n| target = foes\n| causes1 = Recharge\n| description = [[Signet]]. [[Target]] [[foe]] takes {{gr|15|75}} [[damage]]. If target foe is [[near]] a [[corpse]] or has a dead [[pet]], this [[skill]] [[recharge]]s instantly.\n| concise description = Signet. Deals {{gr|15|75}} damage. Recharges instantly if target foe is near a corpse or has a dead pet.\n}}\n\n{{Skill progression\n| attribute = [[Soul Reaping]]\n| var1 name = [[Damage]]\n| var1 at0 = 15\n| var1 at15 = 75}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Medando]] ([[Yohlon Haven]])\n'''[[Hero skill trainer]]s'''\n* [[Warden of Whispers (The Kodash Bazaar)|Warden of Whispers]] ([[The Kodash Bazaar]])\n\n== Related skills ==\n* {{skill icon|Bitter Chill}}\n\n[[Category:Pet skills]]\n[[Category:Skills offered by hero skill trainers]]\n[[Category:Armor-ignoring damage]]\n\n== AI Behaviour == \n\n* Heroes will attempt to avoid using this skill unless either of the two conditions are met {{verify|Is this true? It has strong relevance for discord teams}}"
+}

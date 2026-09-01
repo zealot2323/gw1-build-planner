@@ -1,0 +1,7 @@
+{
+  "title": "Guided Weapon",
+  "pageid": 6341,
+  "revid": 2738368,
+  "timestamp": "2026-08-26T20:24:28Z",
+  "wikitext": "{{Skill infobox\n| id = 1259\n| name = Guided Weapon\n| campaign = Factions\n| profession = Ritualist\n| attribute = Communing\n| type = Weapon Spell\n| energy = 5\n| activation = 2\n| recharge = 5\n| causes1 = Unblockable\n| description = [[Weapon Spell]]. For {{gr|4|10}} seconds, [[target]] [[ally]]'s [[attack]]s cannot be [[block]]ed.\n| concise description = Weapon Spell.  ({{gr|4|10}} seconds.)  Attacks are unblockable.\n| target = allies\n| has-pvp = y\n}}\n\n{{Skill progression\n| attribute = [[Communing]]\n| var1 name = [[Duration]]\n| var1 at0 = 4\n| var1 at15 = 10\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Tombo]] ([[Zin Ku Corridor]])<!--[[File:Tombo can unlock Guided Weapon but not Nightmare Weapon.jpg]]-->\n** [[Yokuni]] ([[Maatu Keep]])<!--[[File:Yokuni can unlock Guided Weapon and Nightmare Weapon.jpg]]-->\n'''[[Signet of Capture]]'''\n* [[Eye of the North]]\n** [[Vyrrgis the Pestilent]] ([[Sacnoth Valley]], only during [[Forbidden Fruit]] and [[Single Ugly Grawl Seeks Same for Mindless Destruction in Ascalon]])\n\n== Related skills ==\n* {{skill icon|Ghostly Weapon}}\n\n== Notes ==\n* [[Hero]]es will cast Guided Weapon on passive targets and targets holding [[bundle]]s."
+}

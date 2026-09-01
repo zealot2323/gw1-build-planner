@@ -1,0 +1,7 @@
+{
+  "title": "Signet of Disruption",
+  "pageid": 1505,
+  "revid": 2683807,
+  "timestamp": "2023-02-21T18:44:09Z",
+  "wikitext": "{{Skill infobox\n| id = 860\n| name = Signet of Disruption\n| campaign = Factions\n| profession = Mesmer\n| attribute = Domination Magic\n| type = Signet\n| target = foes\n| activation = {{1/4}}\n| recharge = 15\n| causes1 = Interrupt\n| description = [[Signet]]. If [[target]] [[foe]] is [[Activation time|casting]] a [[spell]], the spell is [[interrupt]]ed and that foe suffers {{gr|10|51}} [[damage]]. If that foe is [[hex]]ed, Signet of Disruption can interrupt any non-spell [[skill]]s.\n| concise description = Signet. Interrupts a spell. Can interrupt any skill if target foe is hexed. Interruption effect: deals {{gr|10|51}} damage.\n}}\n\n{{Skill progression\n| attribute = [[Domination Magic]]\n| var1 name = [[Damage]]\n| var1 at0 = 10\n| var1 at15 = 51}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Zhao Di]] ([[Shing Jea Monastery]])\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Power Spike}}\n\n== Notes ==\n* Has good synergy when interrupting a foe hexed by [[Frustration]].\n* Damage is done even if interruption is prevented."
+}

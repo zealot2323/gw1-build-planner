@@ -1,0 +1,7 @@
+{
+  "title": "Magehunter Strike",
+  "pageid": 4262,
+  "revid": 2733263,
+  "timestamp": "2026-07-05T17:11:06Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| name = Magehunter Strike\n| id = 1694\n| campaign = Nightfall\n| profession = Warrior\n| attribute = Strength\n| type = Melee Attack\n| elite = y\n| energy = 5\n| recharge = 3\n| activation = {{1/2}}\n| causes1 = Unblockable\n| description = [[Elite]] [[Melee Attack]]. If this attack hits, you strike for {{gr|7|25|+}} [[damage]]. If your [[target]] is under the effects of an [[enchantment]], this attack cannot be [[block]]ed.\n| concise description = Elite Melee Attack. Deals {{gr|7|25|+}} damage. Unblockable if target foe is enchanted.\n}}\n\n{{Skill progression\n|attribute = [[Strength]]\n|var1 name = + [[Damage]]\n|var1 at0 = 7\n|var1 at15 = 25}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n*[[Captain Kavaka]]  ([[Consulate Docks]])\n*[[Colonel Chaklin]] ([[Dejarin Estate]])\n\n== Related skills ==\n*{{skill icon|Magehunter's Smash}} ([[elite]])\n*{{skill icon|Protector's Strike}}\n\n== Notes ==\n{{Bug|Against unenchanted targets this skill causes block bypassing effects such as [[Asuran Scan]] or [[Warrior's Cunning]] to be ignored.}}\n\n== See also ==\n* [[Skill quick reference#Attack skills that cannot be blocked|Attack skills that cannot be blocked]]\n\n[[de:Magierschlag]]"
+}

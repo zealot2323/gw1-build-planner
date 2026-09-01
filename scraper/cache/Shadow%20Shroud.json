@@ -1,0 +1,7 @@
+{
+  "title": "Shadow Shroud",
+  "pageid": 4423,
+  "revid": 2738319,
+  "timestamp": "2026-08-26T20:00:18Z",
+  "wikitext": "{{Skill infobox\n| id = 928\n| name = Shadow Shroud\n| campaign = Factions\n| profession = Assassin\n| attribute = Shadow Arts\n| type = Hex Spell\n| elite = y\n| energy = 5\n| activation = {{1/4}}\n| recharge = 20\n| description = [[Elite]] [[Hex Spell]]. For {{gr|3|9}} seconds, [[target]] [[foe]] cannot be the target of [[enchantment]]s.\n| concise description = Elite Hex Spell. ({{gr|3|9}} seconds.) Target foe cannot be the target of enchantments.\n| animation = [[File:Shadow Shroud animation.gif|Click to view]]\n| has-pvp = y\n}}\n\n{{Skill progression\n|attribute = [[Shadow Arts]]\n|var1 name = [[Duration]]\n|var1 at0 = 3\n|var1 at15 = 9}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Shrouded Oni]] ([[Unwaking Waters (explorable area)]])\n\n== Notes ==\n* [[Creature]]s affected by the shroud can still cast enchantments that do not require targeting (e.g. [[Shadow Form]] or [[Conjure Flame]]).\n* Foes with this hex cannot be targeted by [[Enchantment spell#Characteristics|enchantment spells that target a foe]], like [[Ice Spear]].\n\n[[de:Schattenschleier]]"
+}

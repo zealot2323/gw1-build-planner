@@ -1,0 +1,7 @@
+{
+  "title": "Yuli",
+  "pageid": 16359,
+  "revid": 2694556,
+  "timestamp": "2024-04-17T23:09:50Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| affiliation = Vabbians\n| image = [[File:Vabbian noble f.jpg|150px]]\n| type = Human\n| service = Skill trainer\n| campaign = Nightfall\n| level = 10\n}}\n[[Yuli]] is a [[skill trainer]], a type of [[Non-player character|NPC]] that can teach your character [[skill]]s for a fee and one [[skill point]].\n\n==Location==\n* [[Vabbi]]\n** {{NPC location|Grand Court of Sebelkeh|outpost}}\n\n==Skills offered==\n{{Skill trainer list\n| hide-factions = true\n| w =\n| r =\n| mo =\n| n =\n| me =\n| e =\n| p =\n| d = \n| note = Offers the same skills as [[Baram]].\n}}\n\n[[Category:Nightfall skill trainers by campaign location|10]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Signet of Twilight",
+  "pageid": 16273,
+  "revid": 2739138,
+  "timestamp": "2026-08-30T04:56:21Z",
+  "wikitext": "{{Skill infobox\n| name = Signet of Twilight\n| id = 1648\n| campaign = Nightfall\n| profession = Assassin\n| type = Signet\n| activation = 1\n| recharge = 20\n| removes1 = Enchantment\n| description = [[Signet]]. For each [[hex]] on [[target]] [[foe]], that foe loses one [[enchantment]].\n| concise description = Signet. Removes one enchantment for each hex on target foe.\n| target = foes\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Nightfall]]\n** [[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n* Nightfall\n** [[Pikin]] (Kamadan, Jewel of Istan)\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Lucent the Spectral]] ([[The Battle for Lion's Arch]])\n\n== Notes ==\n* [[Hero]]es will use this skill on any hexed foe regardless if they are enchanted or not.\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

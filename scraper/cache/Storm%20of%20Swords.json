@@ -1,0 +1,7 @@
+{
+  "title": "Storm of Swords",
+  "pageid": 42417,
+  "revid": 2664644,
+  "timestamp": "2020-08-10T16:57:20Z",
+  "wikitext": "__NOTOC__\n{{skill infobox\n| id = 1140\n| name = Storm of Swords\n| campaign = Factions\n| profession = Warrior\n| type = Skill\n| special = Celestial\n| pve-only = y\n| activation = 1\n| recharge = morale boost\n| description = [[Skill (skill type)|Skill]]. For 15 seconds, you and all [[adjacent]] [[Ally|allies]] deal 25 [[damage]] to all adjacent [[foe]]s each second.\n| concise description = Skill. (15 seconds.) Affects you and all adjacent allies. Deals 25 damage to all adjacent foes each second.\n| aoe = adjacent\n| target = untargeted\n}}\n\n== Acquisition ==\nThis skill can be temporarily acquired by [[Primary profession|primary]] [[Warrior]]s by talking to [[Kuunavang]] in [[Raisu Palace]], [[Imperial Sanctum]] or [[Raisu Palace (explorable area)]].\n\n== Related skills ==\n* {{skill icon|Ancestors' Rage (PvP)}}\n* {{skill icon|Balthazar's Aura}}\n* {{skill icon|Double Dragon}} ([[elite]])\n* {{skill icon|Hundred Blades}} (elite)\n\n== Notes ==\n* The skill descriptions omit that this skill can only be recharged when gaining a [[Morale Boost]].\n* Very effective when combined with [[melee]] [[minion]]s and [[Star Strike]].\n\n[[Category:Skills that affect allies]]\n\n[[de:Schwertsturm]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Rip Enchantment",
+  "pageid": 15407,
+  "revid": 2606967,
+  "timestamp": "2016-06-12T02:40:21Z",
+  "wikitext": "{{Skill infobox\n| id = 955\n| name = Rip Enchantment\n| campaign = Nightfall\n| profession = Necromancer\n| attribute = Curses\n| type = Spell\n| energy = 5\n| activation = 1\n| recharge = 15\n| target = foes\n| range = \n| aoe = adjacent\n| causes1 = Bleeding\n| causes2 =\n| removes1 = Enchantment\n| requires1 = Entchantment\n| description = [[Spell]]. Remove 1 [[enchantment]] from [[target]] [[foe]]. If an enchantment was removed, that foe suffers from [[Bleeding]] for {{gr|5|25}} seconds.\n| concise description = Spell. Removes 1 enchantment. Removal effect: inflicts Bleeding ({{gr|5|25}} seconds).\n}}\n\n{{Skill progression\n|attribute = [[Curses]]\n|var1 name = [[Bleeding]] [[duration]]\n|var1 at0 = 5\n|var1 at15 = 25}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Nightfall]]\n** [[Dau]] ([[The Mouth of Torment]])\n'''[[Hero skill trainer]]s'''\n* Nightfall\n** [[Warden of Whispers (Chantry of Secrets)|Warden of Whispers]] ([[Chantry of Secrets]])\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Minea the Obscene]] ([[Watchtower Coast (War in Kryta)]])\n\n== Related skills ==\n* {{skill icon|Corrupt Enchantment}} ([[elite]])\n* {{skill icon|Envenom Enchantments}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

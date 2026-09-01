@@ -1,0 +1,7 @@
+{
+  "title": "Dragon's Stomp",
+  "pageid": 13623,
+  "revid": 2686530,
+  "timestamp": "2023-05-02T16:35:46Z",
+  "wikitext": "{{Skill infobox\n| id = 1086\n| name = Dragon's Stomp\n| campaign = Factions\n| profession = Elementalist\n| attribute = Earth Magic\n| type = Spell\n| energy = 25\n| duplicate = yes\n| recharge = 15\n| activation = 3\n| overcast = 10\n| target = foes\n| range = Casting\n| aoe = nearby\n| special = duplicate\n| causes1 = Earth Damage\n| causes2 = Knockdown\n| description = [[Spell]]. You invoke a Dragon's Stomp at [[target]] [[foe]]'s location. All foes [[near]] this location are [[Knock down|knocked down]] and are struck for {{gr|26|100}} [[earth damage]].\n| concise description = Spell. Deals {{gr|26|100}} earth damage. Causes knock-down. Also hits foes near this foe.\n}}\n\n{{Skill progression\n| attribute = [[Earth Magic]]\n| var1 name = [[Earth damage]]\n| var1 at0 = 26\n| var1 at15 = 100}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Earthquake}} ([[duplicate skill]])\n* {{skill icon|Meteor}}\n\n==Hero Usage==\n* Heroes only use this spell against attacking foes and only if at least three of them are in the spells area of effect range.\n\n== Notes ==\n* This is one of the few spells that makes full use of [[Glyph of Energy]].\n\n[[Category:Hero-vetted skills]]\n\n[[de:Drachenstampfer]]"
+}

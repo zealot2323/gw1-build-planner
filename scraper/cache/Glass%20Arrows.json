@@ -1,0 +1,7 @@
+{
+  "title": "Glass Arrows",
+  "pageid": 4270,
+  "revid": 2738438,
+  "timestamp": "2026-08-26T20:57:56Z",
+  "wikitext": "{{Skill infobox\n| id = 1199\n| name = Glass Arrows\n| campaign = Factions\n| profession = Ranger\n| attribute = Expertise\n| type = Preparation\n| elite = y\n| has-pvp = y\n| energy = 5\n| activation = 2\n| recharge = 12\n| target =\n| range =\n| aoe =\n| causes1 = Block Punishment\n| causes2 = Bleeding\n| description = [[Elite]] [[Preparation]]. For {{gr|10|35}} seconds, your [[bow attack|arrow]]s strike for {{gr|6|20|+}} [[damage]] if they hit and cause [[Bleeding]] for {{gr|10|20}} seconds if they are [[block]]ed.\n| concise description = Elite Preparation. ({{gr|10|35}} seconds.) Your arrows deal {{gr|6|20|+}} damage. Inflicts Bleeding condition if blocked ({{gr|10|20}} seconds).\n}}\n\n{{Skill progression\n|attribute = [[Expertise]]\n|var1 name = [[Duration]]\n|var1 at0 = 10\n|var1 at15 = 35\n|var2 name = + [[Damage]]\n|var2 at0 = 6\n|var2 at15 = 20\n|var3 name = [[Bleeding]] duration\n|var3 at0 = 10\n|var3 at15 = 20}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Factions]]\n** [[Nandet, Glass Weaver]] ([[Morostav Trail]])\n** [[Lorelle Jade Cutter]] ([[Rhea's Crater]])\n** [[Jang Wen]] (Dragon's Throat, only during [[What Waits in Shadow]])\n* [[Eye of the North]]\n** [[Petraj the Evasive]] ([[Verdant Cascades]])\n\n== Related skills ==\n* {{skill icon|Melandru's Arrows}} ([[elite]])\n\n[[de:Glaspfeile]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Dark Prison",
+  "pageid": 14763,
+  "revid": 2683967,
+  "timestamp": "2023-02-23T13:19:53Z",
+  "wikitext": "{{Skill infobox \n| id = 1044\n| name = Dark Prison\n| campaign = Factions\n| profession = Assassin\n| attribute = Deadly Arts\n| type = Hex Spell\n| energy = 10\n| activation = {{1/4}}\n| recharge = 30\n| causes1 = Shadow Step\n| causes2 = Decreased Movement Speed\n| description = [[Hex Spell]]. [[Shadow Step]] to [[target]] [[foe]]. For {{gr|1|6}} seconds, that foe [[Snare (tactic)|moves 33% slower]].\n| concise description = Hex Spell. Shadow Step to target foe. This foe moves 33% slower ({{gr|1|6}} seconds).\n}}\n\n{{Skill progression\n| attribute = [[Deadly Arts]]\n| var1 name = [[Duration]]\n| var1 at0 = 1\n| var1 at15 = 6}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Shadow Prison}} ([[elite]])\n\n== Notes ==\n* The shadow step and the hex are considered separate effects:\n**If the shadow step fails (i.e. if the target is in an inaccessible location), the target will still suffer the movement speed hex.\n**If the hex fails (i.e. the target is under the effects of [[Hex Breaker]]), you will still shadow step to the target."
+}

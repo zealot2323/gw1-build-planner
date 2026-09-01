@@ -1,0 +1,7 @@
+{
+  "title": "Power Leech",
+  "pageid": 1668,
+  "revid": 2731694,
+  "timestamp": "2026-06-27T14:56:25Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 803\n| name = Power Leech\n| campaign = Factions\n| profession = Mesmer\n| attribute = Inspiration Magic\n| type = Hex Spell\n| elite = y\n| energy = 5\n| activation = {{1/4}}\n| recharge = 20\n| causes1 = Interrupt\n| causes2 = Energy Stealing\n| description = [[Elite]] [[Hex Spell]]. If [[target]] [[foe]] is casting a [[spell]] or [[chant]], that [[skill]] is [[interrupt]]ed and for 10 seconds, whenever that foe casts a spell, you steal up to {{gr|5|15}} [[Energy]] from that foe.\n| concise description = Elite Hex Spell. Interrupt a spell or a chant. Interruption effect: steal {{gr|5|15}} Energy whenever target foe casts a spell (10 seconds).\n}}\n\n{{Skill progression\n| attribute = [[Inspiration Magic]]\n| var1 name = [[Energy]] stolen\n| var1 at0 = 5\n| var1 at15 = 15}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Seaguard Hala]] ([[Boreas Seabed]])\n\n== Related skills ==\n* {{skill icon|Depravity}} ([[elite]])\n* {{skill icon|Power Drain}}\n* {{skill icon|Power Flux}} (elite)\n* {{skill icon|Power Leak}}\n* {{skill icon|Power Return}}\n\n== Notes ==\n* The hex effect will be applied even if the interruption is prevented.\n\n== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[{{PAGENAME}}/Skill history|skill history]] for details.\n* The woman in the [[skill icon]] seems to also appear in [[Power Flux]]'s skill icon.\n\n[[de:Kraftfresser]]"
+}

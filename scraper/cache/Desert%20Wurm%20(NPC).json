@@ -1,0 +1,7 @@
+{
+  "title": "Desert Wurm (NPC)",
+  "pageid": 14408,
+  "revid": 2691690,
+  "timestamp": "2023-12-21T14:41:30Z",
+  "wikitext": "{{NPC infobox\n| name = Desert Wurm\n| image = [[File:Desert Wurm (NPC).jpg|150px]]\n| type = Wurm\n| affiliation = The Desolation wildlife\n| profession = w\n| level = 28 (30)\n| health = XXXX (28) 2560 (30)\n| campaign = Nightfall\n}}__NOTOC__\n[[Desert Wurm (NPC)|Desert Wurms]] are hidden under the ground and [[Popup|pop out]] when they feel the presence of living creatures.\n\n==Locations==\n*[[The Desolation]] (only in the [[Sulfurous Haze]] areas)\n**{{NPC location|Crystal Overlook}}\n**{{NPC location|Joko's Domain}}\n**{{NPC location|The Alkali Pan}}\n**{{NPC location|The Ruptured Heart}}\n**{{NPC location|The Shattered Ravines}}\n**{{NPC location|The Sulfurous Wastes}}\n\n==Skills==\n*{{monster skill icon|Stun on Critical Hit}}\n\n==Notes==\n*Like all [[Wurm]]s, they [[knock down]] upon popping out of (and into) the ground.\n*Health: XXXX (level 28, Normal Mode) 2560 (level 30, Hard Mode)"
+}

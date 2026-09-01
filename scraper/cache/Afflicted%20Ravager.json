@@ -1,0 +1,7 @@
+{
+  "title": "Afflicted Ravager",
+  "pageid": 22561,
+  "revid": 2684394,
+  "timestamp": "2023-02-28T00:10:55Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Afflicted Ravager.jpg|250px]]\n| affiliation = Shiro's army\n| type = Afflicted\n| profession = w\n| level = 11 (24)\n| campaign = Factions\n}}\n[[Afflicted Ravager]] is an [[undead]] afflicted creature only seen during the Zen Daijun mission.\n\n==Missions==\n*[[Shing Jea Island]]\n**{{NPC location|Zen Daijun}}\n\n==Skills==\n*{{skill icon|Frenzy}}\n*{{skill icon|Gash}}\n*{{skill icon|Sever Artery}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 53\n| piercing = 53\n| slashing = 53\n| cold = 53\n| earth = 53\n| fire = 53\n| lightning = 53\n}}\n\n==Items dropped==\n*[[Bone]]\n*[[Plagueborn Armor]]\n*[[Augmented Flesh]]\n\n==Notes==\n*[[Charmable animal]]s may become Afflicted Ravagers after dying if they are in an area affected by the plague.\n\n==Trivia==\n*Due to the striped tails and amber eyes, the original ravagers appear to be [[Tiger]]s.\n\n[[Category:Drops bone]]"
+}

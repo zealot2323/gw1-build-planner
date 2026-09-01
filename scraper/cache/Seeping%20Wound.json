@@ -1,0 +1,7 @@
+{
+  "title": "Seeping Wound",
+  "pageid": 4404,
+  "revid": 2739091,
+  "timestamp": "2026-08-29T17:58:23Z",
+  "wikitext": "{{Skill infobox\n| id = 1034\n| name = Seeping Wound\n| campaign = Factions\n| profession = Assassin\n| attribute = Critical Strikes\n| type = Hex Spell\n| elite = y\n| energy = 10\n| recharge = 10\n| activation = {{1/4}}\n| causes1 = Decreased Movement Speed\n| description = [[Elite]] [[Hex Spell]]. For {{gr|1|7}} second[s], [[target]] [[foe]] [[Snare (tactic)|moves 33% slower]]. That foe takes {{gr|5|25}} [[damage]] each second while suffering from a [[condition]].\n| concise description = Elite Hex Spell. ({{gr|1|7}} second[s].) Target foe moves 33% slower. This foe takes {{gr|5|25}} damage each second while suffering from a condition.\n}}\n\n{{Skill progression\n| attribute = [[Critical Strikes]]\n| var1 name = [[Duration]]\n| var1 at0 = 1\n| var1 at15 = 7\n| var2 name = [[Damage]]\n| var2 at0 = 5\n| var2 at15 = 25}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Shreader Sharptongue]] ([[Xaquang Skyway]])\n\n== Related skills ==\n* {{skill icon|Binding Chains}}\n* {{skill icon|Winter's Embrace}}\n\n[[de:Eiternde Wunde]]"
+}

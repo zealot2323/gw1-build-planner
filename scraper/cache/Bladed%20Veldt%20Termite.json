@@ -1,0 +1,7 @@
+{
+  "title": "Bladed Veldt Termite",
+  "pageid": 16208,
+  "revid": 2588408,
+  "timestamp": "2015-05-27T09:04:18Z",
+  "wikitext": "__NOTOC__{{NPC infobox \n| affiliation = Kourna wildlife\n| species = Insect\n| profession = w\n| level = 16 (25)<br>20 (26)\n| campaign = Nightfall\n}}\n[[Bladed Veldt Termite]]s are mature forms of the [[Bladed Termite]]s found in [[Istan]].\n\n==Locations==\n*[[Kourna]]\n** {{NPC location|Arkjok Ward}} (level 16)\n** {{NPC location|Jahai Bluffs}} (level 20)\n** {{NPC location|Marga Coast}} (level 20)\n** {{NPC location|Secure the Refuge}} (levels 16 and 20, only accessible during [[Hunted!]])\n** {{NPC location|Sunward Marches}} (level 20)\n\n==Missions==\n*Kourna\n**{{NPC location|Moddok Crevice}}\n**{{NPC location|Rilohn Refuge}}\n\n==Skills==\n*{{skill icon|Cleave}} ([[elite]], level 20 (26) only)\n*{{skill icon|Frenzy}} (only in [[normal mode]])\n*{{skill icon|Lion's Comfort}} (only in [[hard mode]])\n*{{skill icon|Power Attack}}\n*{{skill icon|Swift Chop}}\n\n==Armor ratings==\n{{NPC statistics\n| level = 20\n| prof = w\n| blunt = 60\n| piercing = 60\n| slashing = 60\n| cold = 60\n| earth = 60\n| fire = 60\n| lightning = 60\n}}\n\n==Items dropped==\n*[[Chitin Fragment]]\n*[[Insect Carapace]]\n*[[Monstrous Claw]]\n\n[[Category:Drops chitin]] \n[[Category:Drops monstrous claw]]"
+}

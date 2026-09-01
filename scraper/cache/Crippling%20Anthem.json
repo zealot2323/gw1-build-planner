@@ -1,0 +1,7 @@
+{
+  "title": "Crippling Anthem",
+  "pageid": 4468,
+  "revid": 2738755,
+  "timestamp": "2026-08-27T07:55:04Z",
+  "wikitext": "{{Skill infobox\n| id = 1554\n| name = Crippling Anthem\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Command\n| type = Chant\n| elite = y\n| adrenaline = 3\n| activation = 1\n| causes1 = Crippled\n| description = [[Elite]] [[Chant]]. For 10 seconds, the next [[attack skill]] used by each [[ally]] within [[earshot]] causes [[Crippled|Crippling]] for {{gr|5|15}} seconds.\n| concise description = Elite Chant. (10 seconds.) Allies in earshot inflict Crippled condition ({{gr|5|15}} seconds) with their next attack skill.\n}}\n\n{{Skill progression\n|attribute = [[Command]]\n|var1 name = [[Cripple]] [[duration]]\n|var1 at0 = 5\n|var1 at15 = 15}}\n\n==Acquisition==\n'''[[Signet of Capture]]'''\n* [[Lieutenant Mahrik]] ([[Cliffs of Dohjok]], only during [[A Land of Heroes]])\n* [[Lieutenant Shagu]] ([[Barbarous Shore]])\n\n==Notes==\n*This chant triggers and ends the next time an attack skill successfully hits.\n\n[[Category:Skills that affect allies]]\n\n[[de:Verkrüppelungs-Hymne]]"
+}

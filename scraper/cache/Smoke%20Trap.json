@@ -1,0 +1,7 @@
+{
+  "title": "Smoke Trap",
+  "pageid": 4284,
+  "revid": 2726460,
+  "timestamp": "2026-04-28T18:43:12Z",
+  "wikitext": "{{Skill infobox\n| name = Smoke Trap\n| id = 1729\n| campaign = Nightfall\n| profession = Ranger\n| attribute = Wilderness Survival\n| type = Trap\n| elite = y\n| energy = 10\n| recharge = 15\n| activation = 2\n| causes1 = Blind\n| causes2 = Dazed\n| description = [[Elite]] [[Trap]]. When Smoke Trap is triggered, [[nearby]] [[foe]]s are [[Blind]]ed and [[Dazed]] for {{gr|5|10}} seconds. Smoke Trap ends after 90 seconds. While activating this [[skill]], you are [[easily interrupted]].\n| concise description = Elite Trap. (90 seconds.) Inflicts Blinded and Dazed conditions ({{gr|5|10}} seconds) to nearby foes. {{gray|Easily interrupted.}}\n| aoe = nearby\n}}\n\n{{Skill progression\n| attribute = [[Wilderness Survival]]\n| var1 name = [[Blind]] and [[Dazed]] [[duration]]\n| var1 at0 = 5\n| var1 at15 = 10}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Veldrunner Centaur (boss)]] ([[Kodonur Crossroads]])\n* [[Uhiwi the Smoky]] ([[The Shattered Ravines]])\n\n==Related skills==\n*{{skill icon|Black Powder Mine}}\n*{{skill icon|Dust Trap}}\n*{{skill icon|Temple Strike}} ([[elite]])\n\n==Notes==\n* Blind [[cover]]s dazed.\n* [[Veldrunner Centaur (boss)]] is an ally, but getting him killed by enemies during the [[Kodonur Crossroads]] mission can allow you to capture the skill very early in the game.\n\n[[Category:Easily interrupted skills]]\n\n[[de:Rauchfalle]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Depravity",
+  "pageid": 4317,
+  "revid": 2726493,
+  "timestamp": "2026-04-28T19:01:53Z",
+  "wikitext": "{{Skill infobox\n| id = 820\n| name = Depravity\n| campaign = Nightfall\n| profession = Necromancer\n| attribute = Curses\n| type = Hex Spell\n| elite = y\n| energy = 10\n| activation = 1\n| recharge = 15\n| causes1 = Energy Loss\n| description = [[Elite]] [[Hex Spell]]. For {{gr|5|20}} seconds, whenever target [[foe]] casts a [[spell]], that foe and one [[nearby]] foe lose {{gr|1|5}} [[Energy]].\n| concise description = Elite Hex Spell. ({{gr|5|20}} seconds.) Causes {{gr|1|5}} Energy loss whenever target foe casts a spell. One foe near your target also loses Energy.\n| aoe = nearby\n}}\n\n{{Skill progression\n|attribute = [[Curses]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 20\n|var2 name = [[Energy]] lost\n|var2 at0 = 1\n|var2 at15 = 5}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Modti Darkflower]] ([[Arkjok Ward]])\n\n== Related skills ==\n* {{skill icon|Power Leech}} ([[elite]])\n* {{skill icon|Spirit Shackles}}\n* {{skill icon|Spiteful Spirit}} (elite)\n\n== Notes ==\n* The energy loss happens after a spell has been cast. \n** This means that interrupted spells do not cause the caster to suffer the energy loss. \n\n[[de:Verderbtheit]]"
+}

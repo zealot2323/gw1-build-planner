@@ -1,0 +1,7 @@
+{
+  "title": "Expel Hexes",
+  "pageid": 1678,
+  "revid": 2628833,
+  "timestamp": "2018-06-18T17:28:57Z",
+  "wikitext": "{{Skill infobox\n| id = 954\n| name = Expel Hexes\n| campaign = Factions\n| profession = Mesmer\n| type = Spell\n| elite = y\n| energy = 5\n| activation = 1\n| recharge = 8\n| description = [[Elite]] [[Spell]]. Remove up to 2 [[Hex]]es from [[target]] [[ally]].\n| concise description = Elite Spell. Removes 2 hexes from target ally.\n| target = allies\n| removes1 = Hex spell\n}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Jin, the Purifier]] ([[Bukdek Byway]])\n\n== Related skills ==\n* {{skill icon|Remove Hex}}\n\n== Notes ==\n* This skill is useful for Mesmer [[Secondary profession|secondaries]] in [[PvP]] because it can remove both a [[cover]] hex and a covered hex without any attribute point investment.\n\n[[de:Verhexungen vertreiben]]"
+}

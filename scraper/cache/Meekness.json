@@ -1,0 +1,7 @@
+{
+  "title": "Meekness",
+  "pageid": 15402,
+  "revid": 2726490,
+  "timestamp": "2026-04-28T19:01:04Z",
+  "wikitext": "{{Skill infobox\n| id = 1260\n| name = Meekness\n| campaign = Nightfall\n| profession = Necromancer\n| attribute = Curses\n| type = Hex Spell\n| energy = 15\n| recharge = 20\n| activation = 1\n| sacrifice = 17%\n| causes1 = Decreased Attack Speed\n| description = [[Hex Spell]]. For {{gr|5|30}} seconds, [[target]] [[foe]] and all foes [[in the area]] [[Attack speed|attack 50% slower]].\n| concise description = Hex Spell. Also hexes foes in the area of target ({{gr|5|30}} seconds). These foes attack 50% slower.\n| aoe = in the area\n}}\n\n{{Skill progression\n|attribute = [[Curses]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 30}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Zendeht]] ([[Gate of Torment]])\n'''[[Hero skill trainer]]s'''\n* [[Hoju ]] (Gate of Torment)\n'''[[Signet of Capture]]'''\n* [[Modti Darkflower]] ([[Arkjok Ward]])\n\n== Related skills ==\n* {{skill icon|Faintheartedness}}\n* {{skill icon|Shadow of Fear}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

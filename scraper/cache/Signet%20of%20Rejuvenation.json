@@ -1,0 +1,7 @@
+{
+  "title": "Signet of Rejuvenation",
+  "pageid": 2960,
+  "revid": 2718461,
+  "timestamp": "2026-01-23T06:33:58Z",
+  "wikitext": "{{Skill infobox\n| id = 887\n| name = Signet of Rejuvenation\n| campaign = Factions\n| profession = Monk\n| attribute = Healing Prayers\n| type = Signet\n| recharge = 8\n| activation = 1\n| causes1 = Healing\n| description = [[Signet]]. [[Heal]] [[target]] [[ally]] for {{gr|15|75}}. If target ally is casting a [[spell]] or [[attacking]], that ally is healed for an additional {{gr|15|75}} [[Health]].\n| concise description = Signet. Heals for {{gr|15|75}}. Heals for {{gr|15|75}} more if target ally is casting a spell or attacking.\n| target = allies\n}}\n\n{{Skill progression\n| attribute = [[Healing Prayers]]\n| var1 name = [[Heal]]ing\n| var1 at0 = 15\n| var1 at15 = 75\n| var2 name = Additional healing\n| var2 at0 = 15\n| var2 at15 = 75\n| var3 name = Total healing\n| var3 at0 = 30\n| var3 at15 = 150\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Eye of the North]]\n** [[Flannuss Broadwing]] ([[Arbor Bay]])\n\n== Related Skills ==\n*{{Skill icon|Boon Signet}}\n*{{Skill icon|Signet of Devotion}}\n\n== Notes ==\n* [[Hero]]es use this skill as a general heal and do not make active attempts to achieve the conditional heal.\n\n== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details."
+}

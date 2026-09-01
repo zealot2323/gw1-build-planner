@@ -1,0 +1,7 @@
+{
+  "title": "Eileen",
+  "pageid": 19947,
+  "revid": 2690916,
+  "timestamp": "2023-10-03T21:30:45Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Kurzick noble f blue.jpg|150px]]\n| affiliation = Kurzicks\n| type = Human\n| service = Skill trainer\n| level = 10\n| campaign = Factions\n}}\n[[Eileen]] is a [[skill trainer]], a type of [[NPC]] that can teach your character [[skill]]s for a fee.\n\n==Locations==\n*[[Echovald Forest]]\n**{{NPC location|Altrumm Ruins|outpost}}\n\n==Dialogue==\n{{Kurzick-only service NPC dialogue}}\n\n== Skills offered ==\n{{Skill trainer list\n| note = Offers the same skills as [[Tombo]] ([[Zin Ku Corridor]]).\n| w =\n| r =\n| mo =\n| n =\n| me =\n| e =\n| a =\n| rt =\n}}\n\n[[Category:Factions skill trainers by campaign location|9]]"
+}

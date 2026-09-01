@@ -1,0 +1,7 @@
+{
+  "title": "Anguish (attack)",
+  "pageid": 75113,
+  "revid": 2609213,
+  "timestamp": "2016-06-27T23:23:53Z",
+  "wikitext": "{{skill infobox\n| name = Anguish\n| id = 1746\n| image = [[Image:Anguish.jpg]]\n| campaign = Nightfall\n| attribute = Communing\n| type = Ranged Attack\n| profession = Monster\n| special = Spirit monster\n| activation = 2\n| description = [[Ranged Attack]]. This attack deals {{gr|5|17}} damage and deals double damage to hexed foes.\n| concise description = Ranged Attack. Deals {{gr|5|17}} damage. Double damage to hexed foes.\n}}\n\n{{skill progression\n| attribute = [[Communing]]\n| var1 name = [[Damage]]\n| var1 at0 = 5\n| var1 at15 = 17}}\n\n== Notes ==\n* This is the skill used by the [[Spirit of Anguish]] that is summoned by the [[ritualist]] skill [[Anguish]], and not the ritualist skill itself.\n\n== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details."
+}

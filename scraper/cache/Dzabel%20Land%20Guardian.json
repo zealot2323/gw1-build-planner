@@ -1,0 +1,7 @@
+{
+  "title": "Dzabel Land Guardian",
+  "pageid": 102870,
+  "revid": 2725831,
+  "timestamp": "2026-04-20T22:04:10Z",
+  "wikitext": "__NOTOC__\n{{NPC infobox \n| campaign = Nightfall\n| affiliation = \n| level = 24 (30)\n| boss = y\n| type = Heket\n| profession = Ranger\n| map1 = [[Image:Dzabel Land Guardian map.jpg|150px]]\n| map1-text = Location in [[The Floodplain of Mahnkelon]]\n}}\n[[Dzabel Land Guardian]] is a [[Heket]] [[boss]] found near [[Kodonur Crossroads (outpost)|Kodonur Crossroads]].\n\n== Locations ==\n* [[Kourna]]\n** {{NPC location|The Floodplain of Mahnkelon}} \n\n== [[Skill]]s ==\n* {{skill icon|Charm Animal}}\n* {{skill icon|Ferocious Strike}} ([[elite]])\n* {{skill icon|Heket's Rampage}}\n* {{skill icon|Maiming Strike}}\n* {{skill icon|Scavenger Strike}}\n* {{skill icon|Troll Unguent}}\n* {{monster skill icon|Charm Animal (Beast Sworn Heket)}}\n\n== Items dropped ==\n* [[Dzabel's Hornbow]] ([[unique]])\n\n== Notes ==\n* He will charm a nearby level 15 [[Elder]] [[Crocodile]].\n* Even though he uses a monster skill form of [[Charm Animal]], you can only capture the regular version from him.\n* The [[Game updates/20080110|January 10th, 2008]] update fixed a [[bug]] that prevented Dzabel Land Guardian from [[spawn]]ing.\n\n[[Category:Heket bosses]]"
+}

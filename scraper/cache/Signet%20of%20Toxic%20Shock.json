@@ -1,0 +1,7 @@
+{
+  "title": "Signet of Toxic Shock",
+  "pageid": 14840,
+  "revid": 2684028,
+  "timestamp": "2023-02-23T15:48:06Z",
+  "wikitext": "{{Skill infobox\n| name = Signet of Toxic Shock\n| id = 1647\n| campaign = Nightfall\n| profession = Assassin\n| attribute = Deadly Arts\n| type = Signet\n| activation = 1\n| recharge = 15\n| description=\n[[Signet]]. If [[target]] [[foe]] is suffering from [[Poison]], that foe takes {{gr|10|100}} [[damage]].\n| concise description = Signet. Deals {{gr|10|100}} damage. {{gray|No effect unless target foe is Poisoned}}\n}}\n\n{{Skill progression\n| attribute = [[Deadly Arts]]\n| var1 name = [[Damage]]\n| var1 at0 = 10\n| var1 at15 = 100}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n* [[Godaj]] ([[Lair of the Forgotten]])\n\n==Related skills ==\n* {{skill icon|Signet of Deadly Corruption}} \n* {{skill icon|Signet of Shadows}}\n\n== Trivia ==\n* Toxic shock is the name of [[w:Toxic shock syndrome|a syndrome]].\n\n[[Category:Skills offered by hero skill trainers]]"
+}

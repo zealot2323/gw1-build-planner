@@ -1,0 +1,7 @@
+{
+  "title": "Balthazar's Pendulum",
+  "pageid": 3962,
+  "revid": 2726521,
+  "timestamp": "2026-04-28T19:15:29Z",
+  "wikitext": "{{Skill infobox\n| name = Balthazar's Pendulum\n| id = 1395\n| campaign = Nightfall\n| profession = Monk\n| attribute = Smiting Prayers\n| type = Enchantment Spell\n| energy = 5\n| activation = {{1/4}}\n| recharge = 5\n| elite = y\n| causes1 = Knockdown\n| causes2 = Knockdown Immunity\n| description = [[Elite]] [[Enchantment Spell]]. For {{gr|5|25}} seconds, the next time [[target]] [[ally]] would be [[knock down|knocked down]] by a [[foe]], that foe is knocked down instead.\n| concise description = Elite Enchantment Spell. ({{gr|5|25}} seconds.) Causes knock-down to the next foe attempting to knock-down target ally.\n| target = allies\n}}\n\n{{Skill progression\n|attribute = [[Smiting Prayers]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 10}}\n\n== Acquisition ==\n;[[Signet of Capture]]\n* [[Riseh the Harmless]] ([[Bahdok Caverns]])\n* [[Captain Shehnahr]] ([[Cliffs of Dohjok]], only during [[A Land of Heroes]])\n\n== Related skills ==\n* {{skill icon|Aura of Stability}} \n* {{skill icon|\"Brace Yourself!\"}}\n\n== Notes ==\n{{bug|Doesn't work against [[Psychic Instability]] or [[Tremor]].}}\n\n[[de:Balthasars Pendel]]\n[[Category:Skills named after eponymous NPCs]]"
+}

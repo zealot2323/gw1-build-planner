@@ -1,0 +1,7 @@
+{
+  "title": "Burning Refrain",
+  "pageid": 15229,
+  "revid": 2691180,
+  "timestamp": "2023-10-29T10:43:32Z",
+  "wikitext": "{{Skill infobox\n| id = 1576\n| name = Burning Refrain\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Leadership\n| type = Echo\n| energy = 10\n| activation = 1\n| recharge = 10\n| causes1 = Renewal\n| causes2 = Burning\n| target = allies\n| aoe = None\n| description= [[Echo (skill type)|Echo]]. For 20 seconds, if [[target]] non-[[spirit]] [[ally]] [[hit]]s a [[foe]] with more [[Health]] than that ally, that foe is set [[Burning|on Fire]] {{sic|\"Fire\" is capitalized, unlike other descriptions which state \"set on fire\"}} for {{gr|1|3}} second[s]. This echo is [[Renewal|reapplied]] every time a [[chant]] or [[shout]] ends on that ally.\n| concise description = Echo. (20 seconds.) Inflicts Burning condition ({{gr|1|3}} second[s]) if target ally hits a foe with more Health. Renewal: Whenever a chant or shout ends on that ally. {{gray|Cannot target spirits.}}\n}}\n\n{{Skill progression\n| attribute = [[Leadership]]\n| var1 name = [[Burning]] [[duration]]\n| var1 at0 = 1\n| var1 at15 = 3}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Dau]] ([[The Mouth of Torment]])\n\n==Hero Usage==\n* Heroes use Burning Refrain on party members who are in combat and are attacking an enemy with higher health than their own. {{verify}}\n\n[[Category:Hero-vetted skills]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Black Lotus Strike",
+  "pageid": 14573,
+  "revid": 2738316,
+  "timestamp": "2026-08-26T19:59:05Z",
+  "wikitext": "{{Skill infobox\n| id = 779\n| name = Black Lotus Strike\n| campaign = Factions\n| profession = Assassin\n| attribute = Critical Strikes\n| type = Lead Attack\n| energy = 5\n| recharge = 6\n| causes1 = Energy Gain\n| description = [[Lead Attack]]. If it hits, Black Lotus Strike strikes for {{gr|10|31|+}} [[damage]]. If [[target]] [[foe]] is suffering from a [[hex|Hex]], you gain {{gr|5|13}} [[Energy]]. \n| concise description = Lead Attack. Deals {{gr|10|31|+}} damage. You gain {{gr|5|13}} Energy if target foe is hexed.\n| checks = hex\n| checks-true = energy\n}}\n\n{{Skill progression\n|attribute = [[Critical Strikes]]\n|var1 name = [[Damage|+ Damage]]\n|var1 at0 = 10\n|var1 at15 = 31\n|var2 name = [[Energy]] gain\n|var2 at0 = 5\n|var2 at15 = 13}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Golden Lotus Strike}}\n* {{skill icon|Falling Lotus Strike}} \n* {{skill icon|Lotus Strike}}\n\n== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill history]] for details.\n* The name of this skill may come from the Magic: The Gathering card \"Black Lotus\", which yields mana, the equivalent of energy."
+}

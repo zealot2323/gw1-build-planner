@@ -1,0 +1,7 @@
+{
+  "title": "Pestilence",
+  "pageid": 6587,
+  "revid": 2731268,
+  "timestamp": "2026-06-25T05:37:39Z",
+  "wikitext": "{{Skill infobox\n| id = 870\n| name = Pestilence\n| campaign = Nightfall\n| profession = Ranger\n| attribute = Wilderness Survival\n| type = Nature Ritual\n| energy = 5\n| recharge = 60\n| activation = 2\n| causes1 = Spirit\n| causes2 = Condition\n| description = [[Nature Ritual]]. Create a level {{gr|1|10}} [[spirit]]. When any [[creature]] within its [[Spirit range|range]] [[Death|dies]], [[conditions]] on that creature spread to any creature [[in the area]] already suffering from a condition. This spirit dies after {{gr|30|180}} seconds.\n| concise description = Nature Ritual. Creates a level {{gr|1|10}} spirit ({{gr|30|180}} second lifespan). When any creature in range dies, conditions on this creature spread to any creature in the area with a condition. Spirits are not affected.\n| aoe = large spirit\n}}\n\n{{Skill progression\n|attribute = [[Wilderness Survival]]\n|var1 name = Level\n|var1 at0 = 1\n|var1 at15 = 10\n|var2 name = [[Duration]]\n|var2 at0 = 30\n|var2 at15 = 180}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Nightfall]]\n** [[Dau]] ([[The Mouth of Torment]])\n\n'''[[Hero skill trainer]]s'''\n* Nightfall\n** [[Godaj]] ([[Lair of the Forgotten]])\n\n'''[[Signet of Capture]]'''\n* [[Eye of the North]]\n** [[Beastmaster Korg]] ([[Rragar's Menagerie]])\n\n== Notes ==\n* This skill creates a [[Spirit of Pestilence]].\n\n[[Category:Skills offered by hero skill trainers]]"
+}

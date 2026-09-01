@@ -1,0 +1,7 @@
+{
+  "title": "Wielder's Zeal",
+  "pageid": 4207,
+  "revid": 2720395,
+  "timestamp": "2026-02-06T18:10:17Z",
+  "wikitext": "{{Skill infobox\n| name = Wielder's Zeal\n| id = 1737\n| campaign = Nightfall\n| profession = Ritualist\n| attribute = Spawning Power\n| type = Enchantment Spell\n| elite =y \n| energy = 5\n| activation = 1\n| recharge = 10\n| causes1 = Energy Gain\n| description = [[Elite]] [[Enchantment Spell]]. For {{gr|10|40}} seconds, whenever you cast a [[Weapon Spell]] on an [[ally]], you gain {{gr|1|5}} [[Energy]].\n| concise description = Elite Enchantment Spell. ({{gr|10|40}} seconds.) You gain {{gr|1|5}} Energy whenever you cast a weapon spell.}}\n\n{{Skill progression\n| attribute = [[Spawning Power]]\n| var1 name = [[Duration]]\n| var1 at0 = 10\n| var1 at15 = 40\n| var2 name = [[Energy]] gain\n| var2 at0 = 1\n| var2 at15 = 5}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Captain Alsin]] ([[Barbarous Shore]])\n\n== Related skills ==\n* {{skill icon|Renewing Memories}}\n* {{skill icon|Wielder's Remedy}}\n\n== Trivia ==\n{{Skill change}}\n\n[[de:Eifer des Ausübers]]"
+}

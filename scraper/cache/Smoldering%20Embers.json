@@ -1,0 +1,7 @@
+{
+  "title": "Smoldering Embers",
+  "pageid": 16250,
+  "revid": 2686608,
+  "timestamp": "2023-05-02T16:36:44Z",
+  "wikitext": "{{Skill infobox\n| id = 1090\n| name = Smoldering Embers\n| campaign = Factions\n| profession = Elementalist\n| attribute = Fire Magic\n| type = Hex Spell\n| energy = 10\n| activation = {{3/2}}\n| recharge = 7\n| causes1 = Fire Damage\n| description = [[Hex Spell]]. [[Target]] [[foe]] is struck for {{gr|10|70}} [[fire damage]]. If you are [[Overcast]], that foe is hexed with Smoldering Embers for 3 seconds and takes {{gr|5|25}} additional fire damage each second.\n| concise description = Hex Spell. Deals {{gr|10|70}} fire damage to target. If you are Overcast, foe is hexed for 3 seconds, taking {{gr|5|25}} fire damage each second.\n}}\n\n{{Skill progression\n|attribute = [[Fire Magic]]\n|maximum = 21\n|var1 name = [[Fire damage]]\n|var1 at0 = 10\n|var1 at15 = 70\n|var2 name = Fire damage each second\n|var2 at0 = 5\n|var2 at15 = 25\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n\n\n== Related skills ==\n* {{skill icon|Glimmering Mark}} ([[elite]])\n* {{skill icon|Illusion of Pain}}\n* {{skill icon|Renewing Surge}}\n\n== Hero Usage ==\n* Heroes use this spell as a generic damage skill; they do not take into account its effects with overcast.\n\n== Trivia ==\n* The [[functionality]] of this skill has changed since its introduction; see its [[Smoldering Embers/Skill history|skill history]] for details.\n\n[[Category:Hero-vetted skills]]"
+}

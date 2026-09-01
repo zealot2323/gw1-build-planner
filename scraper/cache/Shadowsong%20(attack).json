@@ -1,0 +1,7 @@
+{
+  "title": "Shadowsong (attack)",
+  "pageid": 75088,
+  "revid": 2609218,
+  "timestamp": "2016-06-27T23:31:11Z",
+  "wikitext": "{{skill infobox\n| id = 872\n| name = Shadowsong\n| image = [[Image:Shadowsong (attack).jpg]]\n| campaign = Factions\n| attribute = Communing\n| type = Ranged Attack\n| profession = Monster\n| special = Spirit monster\n| activation = 2\n| target = foes\n| description = [[Ranged Attack]]. Target foe takes {{gr|5|20}} damage and suffers from [[Blindness]] for {{gr|1|6}} seconds.\n| concise description = Ranged Attack. Deals {{gr|5|20}} damage. Inflict [[Blindness]] condition ({{gr|1|6}} seconds).\n}}\n\n{{skill progression\n| attribute = [[Communing]]\n| var1 name = [[Damage]]\n| var1 at0 = 5\n| var1 at15 = 20\n| var2 name = [[Blindness]] [[duration]]\n| var2 at0 = 1\n| var2 at15 = 6}}\n\n== Notes ==\n* This is the skill used by the [[Spirit of Shadowsong]] that is summoned by the [[ritualist]] skill [[Shadowsong]], and not the ritualist skill itself\n\n<!--== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details.-->"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Icy Shackles",
+  "pageid": 4343,
+  "revid": 2629333,
+  "timestamp": "2018-06-18T17:33:02Z",
+  "wikitext": "{{Skill infobox\n| id = 939\n| name = Icy Shackles\n| campaign = Nightfall\n| profession = Elementalist\n| attribute = Water Magic\n| type = Hex Spell\n| elite = y\n| energy = 10\n| activation = 1\n| recharge = 12\n| causes1 = Decreased Movement Speed\n| description = [[Elite]] [[Hex Spell]]. For {{gr|1|10}} second[s], [[target]] [[foe]]'s [[snare (tactic)|movement speed is reduced]] by 66%. While under the effects of an [[enchantment]], that foe's movement is reduced by 90%.\n| concise description = Elite Hex Spell. ({{gr|1|10}} second[s].) Target foe moves 66% slower. This foe moves 90% slower if enchanted.\n}}\n\n{{Skill progression\n|attribute = [[Water Magic]]\n|var1 name = [[Duration]]\n|var1 at0 = 1\n|var1 at15 = 10\n}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Lonolun Waterwalker]] ([[Issnur Isles]])\n* [[Buhon Icelord]] ([[The Floodplain of Mahnkelon]])\n\n== Related skills ==\n* {{skill icon|Earthen Shackles}}\n* {{skill icon|Freezing Gust}}\n* {{skill icon|Ice Prison}}\n* {{skill icon|Teinai's Prison}}\n\n== Trivia ==\n* The [[functionality]] of this skill has changed since its introduction; see its [[Icy Shackles/Skill history|skill history]] for details.\n\n[[de:Eisfesseln]]"
+}

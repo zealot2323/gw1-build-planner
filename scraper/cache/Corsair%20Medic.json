@@ -1,0 +1,7 @@
+{
+  "title": "Corsair Medic",
+  "pageid": 19782,
+  "revid": 2449424,
+  "timestamp": "2012-02-12T12:01:12Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Human\n| affiliation = Corsairs\n| profession = mo\n| level = 9 (23)\n| campaign = Nightfall\n| image = [[File:Corsair Hood.jpg|150px]]\n}}\n[[Corsair Medic]]s are the lowest-ranked monks of the [[corsair]]s. They are essentially weaker versions of [[Corsair Bosun]]s.\n\n==Locations==\n*[[Istan]]\n**{{NPC location|Cliffs of Dohjok}}\n**{{NPC location|Issnur Isles}}\n**{{NPC location|Lahtenda Bog}}\n**{{NPC location|Zehlon Reach}}\n\n==Skills==\n9 [[Smiting Prayers]]\n*{{skill icon|Balthazar's Pendulum}} ([[elite]], [[hard mode]] only)\n*{{Skill icon|Banish}}\n*{{Skill icon|Smite Hex}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = mo\n| blunt = 29\n| piercing = 29\n| slashing = 29\n| cold = 29\n| earth = 29\n| fire = 29\n| lightning = 29\n}}\n\n==Items dropped==\n*[[Bolt of Cloth]]\n*[[Copper Shilling]]\n*[[Corsair Raiment]]\n*[[Stolen Shipment]]\n\n[[Category:Drops cloth]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Bestial Mauling",
+  "pageid": 2021,
+  "revid": 2732687,
+  "timestamp": "2026-07-04T16:15:38Z",
+  "wikitext": "{{Skill infobox\n| id = 1203\n| name = Bestial Mauling\n| campaign = Factions\n| profession = Ranger\n| attribute = Beast Mastery\n| type = Pet Attack\n| energy = 5\n| recharge = 10\n| causes1 = Dazed\n| description = [[Pet Attack]]. Your [[animal companion]] attempts a Bestial Mauling that deals  {{gr|5|20|+}} [[damage]]. If the [[attack]] strikes a [[Knock down|knocked-down]] [[foe]], that foe is [[Dazed]] for {{gr|4|10}} seconds.\n| concise description = Pet Attack. Deals {{gr|5|20|+}} damage. Inflicts Dazed condition ({{gr|4|10}} seconds) if target foe is knocked-down.\n}}\n\n{{Skill progression\n|attribute = [[Beast Mastery]]\n|var1 name =  [[Damage]]\n|var1 at0 = 5\n|var1 at15 = 20\n|var2 name = [[Dazed]] [[duration]]\n|var2 at0 = 4\n|var2 at15 = 10}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Awe}}\n* {{skill icon|Overbearing Smash}}\n\n== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details."
+}

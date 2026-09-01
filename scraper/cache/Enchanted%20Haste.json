@@ -1,0 +1,7 @@
+{
+  "title": "Enchanted Haste",
+  "pageid": 14081,
+  "revid": 2684176,
+  "timestamp": "2023-02-24T16:44:07Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 1541\n| name = Enchanted Haste\n| campaign = Nightfall\n| profession = Dervish\n| type = Flash Enchantment Spell\n| energy = 10\n| recharge = 15\n| causes1 = Increased Movement Speed\n| description = [[Flash Enchantment Spell]]. For 7 seconds, you [[Speed boost|move 25% faster]]. If this [[enchantment]] ends prematurely, you lose 1 [[condition]].\n| concise description = Flash Enchantment Spell. (7 seconds). You move 25% faster. Lose 1 condition if this enchantment ends prematurely.\n| removes1 = Condition\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Tohn]] ([[Kamadan, Jewel of Istan]])\n\n'''[[Hero skill trainer]]s'''\n*[[Pikin]] (Kamadan, Jewel of Istan)\n\n== Related skills ==\n* {{skill icon|Conviction}}\n* {{skill icon|Grenth's Fingers}}\n* {{skill icon|Pious Haste}}\n\n==Notes==\n* This skill increases average speed by 11.67% if used every time it recharges. \n* This can be maintained indefinitely with [[Extend Enchantments]] at Mysticism 11 (or 9 when using a 20% [[of Enchanting]] weapon).\n\n== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[{{PAGENAME}}/Skill history|skill revision history]] for details.\n\n[[Category:Skills offered by hero skill trainers]]"
+}

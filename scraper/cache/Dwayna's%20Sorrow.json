@@ -1,0 +1,7 @@
+{
+  "title": "Dwayna's Sorrow",
+  "pageid": 2923,
+  "revid": 2714927,
+  "timestamp": "2025-12-10T17:23:14Z",
+  "wikitext": "__NOTOC__\n{{Skill infobox\n| id = 838\n| name = Dwayna's Sorrow\n| campaign = Factions\n| profession = Monk\n| attribute = Healing Prayers\n| type = Enchantment Spell\n| energy = 5\n| activation = 1\n| recharge = 5\n| causes1 = Healing\n| description = [[Enchantment Spell]]. For 30 seconds, [[target]] [[ally]] and all [[nearby]] allies are enchanted with [[Dwayna]]'s Sorrow. If an ally [[Death|dies]] while under the effects of Dwayna's Sorrow, your [[party]] is [[heal]]ed for {{gr|5|50}}.\n| concise description = Enchantment Spell. Enchants allies near your target (30 seconds). Your party is healed for {{gr|5|50}} whenever one of these allies dies.\n| target = allies\n}}\n\n{{Skill progression\n| attribute = [[Healing Prayers]]\n| var1 name = [[Heal]]ing\n| var1 at0 = 5\n| var1 at15 = 50}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Masaharu]] ([[Seitung Harbor]])\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Blood Bond}}\n\n== Notes ==\n* The caster's party is healed, not the party of the dead ally.\n* This skill can be remarkably effective when used on [[minion]]s.\n* Heroes use this skill on allies under 75% health.\n** Heroes may roam far away from the party to use this skill on an ally even if set on guard.\n\n[[Category:Skills that affect allies]]\n[[Category:Skills with nearby AoE]]\n[[Category:Skills with party AoE]]\n[[Category:Skills named after eponymous NPCs]]"
+}

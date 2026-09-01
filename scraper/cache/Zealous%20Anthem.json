@@ -1,0 +1,7 @@
+{
+  "title": "Zealous Anthem",
+  "pageid": 15248,
+  "revid": 2731345,
+  "timestamp": "2026-06-25T10:58:52Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 1561\n| name = Zealous Anthem\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Motivation\n| type = Chant\n| energy = 10\n| activation = 1\n| recharge = 10\n| causes1 = Energy Gain\n| description = [[Chant]]. For 10 seconds, the next time each [[ally]] within [[earshot]] uses an [[attack skill]], that ally gains {{gr|1|8}} [[Energy]].\n| concise description = Chant. (10 seconds.) Allies in earshot gain {{gr|1|8}} Energy with their next attack skill.\n}}\n\n{{Skill progression\n| attribute = [[Motivation]]\n| var1 name = [[Energy]] gain\n| var1 at0 = 1\n| var1 at15 = 8}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Tohn]] ([[Kamadan, Jewel of Istan]])\n\n'''[[Hero skill trainer]]s'''\n* [[Pikin]] (Kamadan, Jewel of Istan)\n\n== Related skills ==\n*{{skill icon|Aria of Zeal}}\n*{{skill icon|Lyric of Zeal}}\n*{{skill icon|Weapon of Renewal}}\n\n== Notes ==\n*This chant is triggered the next time an attack skill is successfully activated.\n\n== Trivia ==\n*The spear on the [[skill icon]] appears to be a [[Suntouched Spear]].\n\n[[Category:Skills offered by hero skill trainers]]\n[[Category:Skills that affect allies]]"
+}

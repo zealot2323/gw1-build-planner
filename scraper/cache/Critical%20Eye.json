@@ -1,0 +1,7 @@
+{
+  "title": "Critical Eye",
+  "pageid": 14596,
+  "revid": 2732782,
+  "timestamp": "2026-07-04T18:41:54Z",
+  "wikitext": "{{Skill infobox\n| id = 1018\n| name = Critical Eye\n| campaign = Factions\n| profession = Assassin\n| attribute = Critical Strikes\n| type = Skill\n| energy = 5\n| recharge = 30\n| causes1 = Critical Hit\n| causes2 = Energy Gain\n| description = [[Skill (skill type)|Skill]]. For {{gr|10|35}} seconds, you have an additional {{gr|3|15||%}} chance to land a [[critical hit]] when attacking. You gain 1 [[Energy]] whenever you score a critical hit.\n| concise description = Skill. ({{gr|10|35}} seconds.) You have {{gr|3|15|+|%}} chance to land a critical hit.  You gain 1 Energy whenever you land a critical hit.\n}}\n\n{{Skill progression\n|attribute = [[Critical Strikes]]\n|var1 name = [[Duration]]\n|var1 at0 = 10\n|var1 at15 = 35\n|var2 name = % for [[Critical hit]]\n|var2 at0 = 3\n|var2 at15 = 15}}\n\n== Acquisition ==\n'''[[Skill quest]]s'''\n* [[Skill Chaining]] ([[Shing Jea Monastery]])\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Way of the Assassin}} ([[elite]])\n* {{skill icon|Way of the Master}}\n\n== Notes ==\n* The energy you gain from this skill stacks on top of the energy you already gain from your [[Critical Strikes]] rank.\n\n[[Category:Assassin skill rewards]]\n\n[[de:Kritisches Auge]]"
+}

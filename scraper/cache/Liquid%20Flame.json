@@ -1,0 +1,7 @@
+{
+  "title": "Liquid Flame",
+  "pageid": 2603,
+  "revid": 2730076,
+  "timestamp": "2026-06-09T21:40:12Z",
+  "wikitext": "{{Skill infobox\n| id = 845\n| name = Liquid Flame\n| campaign = Nightfall\n| profession = Elementalist\n| attribute = Fire Magic\n| type = Spell\n| target = foes\n| energy = 10\n| activation = 1\n| recharge = 15\n| causes1 = Fire Damage\n| description = [[Spell]]. [[Target]] [[foe]] is struck for {{gr|7|112}} [[fire damage]]. If that foe is [[attack]]ing or casting a [[spell]], [[nearby]] foes are also struck for {{gr|7|112}} fire damage.\n| concise description = Spell. Deals {{gr|7|112}} fire damage. Deals {{gr|7|112}} fire damage to nearby foes if target was attacking or casting.\n| aoe = nearby\n}}\n\n{{Skill progression\n|attribute = [[Fire Magic]]\n|var1 name = [[Fire damage]]\n|var1 at0 = 7\n|var1 at15 = 112}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Nightfall]]\n** [[Medando]] ([[Yohlon Haven]])\n'''[[Signet of Capture]]'''\n* [[Factions]]\n** [[Eri, Heart of Fire]] ([[Bukdek Byway (Winds of Change)]], only during [[There Goes the Neighborhood]])\n* [[Eye of the North]]\n** [[Magmus]] ([[Heart of the Shiverpeaks]], after completion of the quest [[Heart of the Shiverpeaks (quest)|Heart of the Shiverpeaks]])\n\n===[[Unlock]] only===\n;[[Hero]]es\n*Unlocking [[Acolyte Sousuke]]\n\n== Related skills ==\n* {{skill icon|Blinding Surge}} ([[elite]])\n* {{skill icon|Fireball}}"
+}

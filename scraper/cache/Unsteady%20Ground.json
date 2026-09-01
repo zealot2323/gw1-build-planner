@@ -1,0 +1,7 @@
+{
+  "title": "Unsteady Ground",
+  "pageid": 4326,
+  "revid": 2667441,
+  "timestamp": "2020-10-23T21:02:15Z",
+  "wikitext": "{{Skill infobox\n| id = 1083\n| name = Unsteady Ground\n| campaign = Factions\n| profession = Elementalist\n| attribute = Earth Magic\n| type = Spell\n| elite = y\n| energy = 10\n| activation = 2\n| recharge = 15\n| target = foes\n| range = Casting\n| aoe = nearby\n| causes1 = Earth Damage\n| causes2 = Knockdown\n| description = [[Elite]] [[Spell]]. You create Unsteady Ground at [[target]] [[foe]]'s location. For 5 seconds, [[nearby]] foes take {{gr|10|40}} [[earth damage]] each second. [[Attacking]] foes struck by Unsteady Ground are [[knock down|knocked down]].\n| concise description = Elite Spell. Deals {{gr|10|40}} earth damage each second (5 seconds) and causes knock-down to attacking foes. Hits foes near target's initial location.\n}}\n\n{{Skill progression\n| attribute = [[Earth Magic]]\n| var1 name = [[Earth damage]]\n| var1 at0 = 10\n| var1 at15 = 40}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Seacrash, Elder Guardian]] ([[Maishang Hills]])\n\n== Related skills ==\n* {{skill icon|Churning Earth}}\n* {{skill icon|Sandstorm}} ([[elite]])\n* {{skill icon|Shield of Judgment}} (elite)\n\n[[de:Schwankender Boden]]"
+}

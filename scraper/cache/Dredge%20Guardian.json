@@ -1,0 +1,7 @@
+{
+  "title": "Dredge Guardian",
+  "pageid": 41644,
+  "revid": 2598433,
+  "timestamp": "2015-11-08T16:35:22Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Dredge melee.jpg|190px]]\n| type = Dredge\n| affiliation = Echovald Forest wildlife\n| profession = w\n| level = 24 (26)\n| campaign = Factions\n| campaign2 = Eye of the North\n}}\n[[Dredge Guardian]]s are hard to kill, due to their high [[armor rating|armor]] and the presence of [[bonder]]s in their party.\n\n==Locations==\n*[[Factions]]\n**[[Echovald Forest]]\n***{{NPC location|Arborstone|explorable area}}\n***{{NPC location|Ferndale}}\n***{{NPC location|Melandru's Hope}}\n***{{NPC location|Morostav Trail}}\n***{{NPC location|Mourning Veil Falls}}\n*[[Eye of the North]]\n**[[Far Shiverpeaks]]\n***{{NPC location|Kilroy's Punchout Tournament}}\n\n==Missions==\n*Factions\n**Echovald Forest\n***{{NPC location|Altrumm Ruins}}\n***{{NPC location|Arborstone}}\n\n==Skills==\n15 [[Tactics]] (16 Tactics in [[Hard mode]])\n*{{skill icon|Final Thrust}}\n*{{skill icon|Healing Signet}}\n*{{skill icon|Savage Slash}}\n*{{skill icon|Shove}} ([[elite]])\n*{{skill icon|Wild Blow}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 128\n| piercing = 128\n| slashing = 128\n| cold = 108\n| earth = 108\n| fire = 108\n| lightning = 108\n}}\n\n==Items dropped==\n*[[Dredge Incisor]]\n*[[Dredge Plating]]"
+}

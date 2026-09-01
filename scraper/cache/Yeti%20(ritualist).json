@@ -1,0 +1,7 @@
+{
+  "title": "Yeti (ritualist)",
+  "pageid": 135867,
+  "revid": 2579112,
+  "timestamp": "2014-11-24T10:06:51Z",
+  "wikitext": "{{NPC infobox\n| name = Yeti\n| image = [[File:Yeti red.jpg|200px]]\n| type = Ogre\n| affiliation = The Jade Sea wildlife\n| profession = rt\n| level = 24 (26)\n| campaign = Factions\n}}__NOTOC__\n[[Yeti (ritualist)|Yeti]] are creatures that lives on the borders of the [[Jade Sea]]. They have no distinguishing name that separates them from other [[Yeti]], but can be identified by their red fur.\n\n==Locations==\n*[[Kaineng City]]\n**{{NPC location|Pongmei Valley}}\n*[[The Jade Sea]]\n**{{NPC location|Gyala Hatchery|explorable area}}\n**{{NPC location|Mount Qinkai}}\n\n==Skills==\n11 [[Communing]], 15 [[Spawning Power]] (17 Communing, 19 Spawning Power in [[Hard mode]])\n*{{Skill icon|Brutal Weapon}}\n*{{Skill icon|Consume Soul}} ([[elite]])\n*{{Skill icon|Pain}}\n*{{Skill icon|Shadowsong}}\n*{{Skill icon|Vengeful Weapon}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = rt\n| blunt = 72\n| piercing = 72 \n| slashing = 72 \n| cold = 72 \n| earth = 72\n| fire = 72 \n| lightning = 72 \n}}\n\n==Items dropped==\n*[[Stolen Provisions]]\n*[[Sapphire]]\n*[[Tanned Hide Square]]\n\n==See also==\n*[[Yeti (ranger)]]\n*[[Yeti (warrior)]]\n\n[[Category:Yetis]]\n[[Category:Drops hide]]\n[[Category:Drops sapphire]]"
+}

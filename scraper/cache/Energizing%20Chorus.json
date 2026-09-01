@@ -1,0 +1,7 @@
+{
+  "title": "Energizing Chorus",
+  "pageid": 15237,
+  "revid": 2721037,
+  "timestamp": "2026-02-10T20:56:40Z",
+  "wikitext": "{{Skill infobox\n| id = 1569\n| name = Energizing Chorus\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Motivation\n| type = Chant\n| adrenaline = 3\n| activation = 1\n| target = Allies\n| aoe = earshot\n| causes1 = Decreased Energy Cost\n| description = [[Chant]]. For 10 seconds, the next [[Shout]] or Chant used by each [[ally]] within [[earshot]] costs {{gr|3|7}} less [[Energy]].\n| concise description = Chant. (10 seconds.) The next shout or chant costs {{gr|3|7}} less Energy for allies within earshot.\n}}\n\n{{Skill progression\n| attribute = [[Motivation]]\n| var1 name = -[[Energy]] cost\n| var1 at0 = 3\n| var1 at15 = 7}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Medando]] ([[Yohlon Haven]])\n'''[[Hero skill trainer]]s'''\n*[[Libeh]] ([[Command Post]])\n\n== Notes ==\n{{anomaly| Because this chant reduces cost at the beginning of skill activation and doesn't end until activation is completed, using a shout in the middle of a chant's activation will allow both skills to benefit from this chant.}}\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Skills offered by hero skill trainers]]\n[[Category:Skills that affect allies]]"
+}

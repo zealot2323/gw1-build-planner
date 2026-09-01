@@ -1,0 +1,7 @@
+{
+  "title": "Shambling Mesa",
+  "pageid": 22586,
+  "revid": 2708673,
+  "timestamp": "2025-06-05T19:26:33Z",
+  "wikitext": "{{NPC infobox\n| image = [[Image:Cracked Mesa.jpg|150px]]\n| type = Elemental\n| affiliation = The Desolation wildlife\n| profession = w\n| level = 24 (26)\n| campaign = Nightfall\n| map1 = [[File:Nightfall screenshot 19.jpg|200px]]\n| map1-text =\n}}__NOTOC__\n'''Shambling Mesas''' are large creatures made of stone. They are often accompanied by [[Sandstorm Crag]]s.\n\n==Locations==\n*[[The Desolation]]\n**{{NPC location|Crystal Overlook}}\n**{{NPC location|Joko's Domain}}\n**{{NPC location|Poisoned Outcrops}}\n**{{NPC location|The Alkali Pan}}\n**{{NPC location|The Ruptured Heart}}\n**{{NPC location|The Shattered Ravines}}\n**{{NPC location|The Sulfurous Wastes}}\n\n==Missions==\n*The Desolation\n**{{NPC location|Gate of Desolation}}\n\n==Skills==\n15 [[Hammer Mastery]] (20 Hammer Mastery in [[Hard mode]])\n*{{skill icon|Devastating Hammer}} ([[elite]])\n*{{skill icon|Flail}}\n*{{skill icon|Irresistible Blow}}\n*{{skill icon|Mighty Blow}}\n*{{monster skill icon|Stun on Critical Hit}}\n*{{monster skill icon|Stun Immunity}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 101\n| piercing = 101\n| slashing = 101\n| cold = 101\n| earth = 101\n| fire = 101\n| lightning = 101\n}}\n\n==Items dropped==\n*[[Granite Slab]]\n*[[Lump of Charcoal]] (5-6)\n*[[Ruby]]\n*[[Sandblasted Lodestone]]\n*[[Sapphire]]\n\n[[Category:Drops charcoal]]\n[[Category:Drops granite]]\n[[Category:Drops ruby]]\n[[Category:Drops sapphire]]"
+}

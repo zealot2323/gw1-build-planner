@@ -1,0 +1,7 @@
+{
+  "title": "Blazing Finale",
+  "pageid": 15228,
+  "revid": 2704991,
+  "timestamp": "2025-04-22T07:23:15Z",
+  "wikitext": "{{Skill infobox\n| id = 1575\n| name = Blazing Finale\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Leadership\n| type = Echo\n| energy = 5\n| activation = 1\n| recharge = 8\n| target = allies\n| aoe = adjacent\n| causes2 = Burning\n| has-pvp = y\n| description = [[Echo (skill type)|Echo]]. For {{gr|10|35}} seconds, whenever a [[chant]] or [[shout]] ends on [[target]] non-[[spirit]] [[ally]], all [[foe]]s [[adjacent]] to that ally are set [[Burning|on Fire]] for {{gr|1|7}} second[s].\n| concise description = Echo. ({{gr|10|35}} seconds.) Inflicts Burning condition ({{gr|1|7}} second[s]) to adjacent foes whenever a chant or shout ends on target ally. {{gray|Cannot target spirits.}}\n}}\n\n{{Skill progression\n| attribute = [[Leadership]]\n| var1 name = [[Duration]]\n| var1 at0 = 10\n| var1 at15 = 35\n| var2 name = [[Burning]] duration\n| var2 at0 = 1\n| var2 at15 = 7}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Baram]] ([[The Kodash Bazaar]])\n'''[[Hero skill trainer]]s'''\n*[[Warden of Whispers (The Kodash Bazaar)|Warden of Whispers]] (The Kodash Bazaar)\n\n==Notes==\n*Skills such as [[\"Dodge This!\"]], [[\"Go for the Eyes!\"]] and [[\"The Power Is Yours!\"]] can allow to maintain burning on adjacent foes.\n\n*Has synergy with [[\"They're on Fire!\"]].\n\n[[Category:Skills offered by hero skill trainers]]\n\n[[de:Loderndes Finale]]"
+}

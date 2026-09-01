@@ -1,0 +1,7 @@
+{
+  "title": "Discharge Enchantment",
+  "pageid": 1635,
+  "revid": 2732800,
+  "timestamp": "2026-07-04T19:06:18Z",
+  "wikitext": "{{Skill infobox\n| name = Discharge Enchantment\n| id = 1347\n| campaign = Nightfall\n| profession = Mesmer\n| attribute = Inspiration Magic\n| type = Spell\n| energy = 10\n| activation = 1\n| recharge = 15\n| causes1 = Decreased Recharge Time\n| removes1 = Enchantment\n| description = [[Spell]]. Remove one [[enchantment]] from [[target]] [[foe]]. If that foe is [[hex]]ed, this [[skill]] [[recharge]]s {{gr|20|50||%}} faster.\n| concise description = Spell. Removes one enchantment from target foe. {{gr|20|50||%}} faster recharge if that foe was hexed.\n| target = foes\n}}\n\n{{Skill progression\n|attribute = [[Inspiration Magic]]\n|var1 name = % faster recharge\n|var1 at0 = 20\n|var1 at15 = 50}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Nightfall]]\n** [[Baram]] ([[The Kodash Bazaar]])\n'''[[Signet of Capture]]'''\n* [[Eye of the North]]\n** [[Taskmaster Kurg]] ([[Vloxen Excavations]])\n** [[Taskmaster Beld]] ([[Attack on Jalis's Camp]])"
+}

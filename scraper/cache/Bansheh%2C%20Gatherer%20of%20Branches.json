@@ -1,0 +1,7 @@
+{
+  "title": "Bansheh, Gatherer of Branches",
+  "pageid": 18583,
+  "revid": 2648153,
+  "timestamp": "2020-03-22T10:35:12Z",
+  "wikitext": "__NOTOC__\n{{NPC infobox\n| species = Harpy\n| affiliation = Vabbi wildlife\n| profession = r\n| level = 28 (30)\n| boss = y\n| campaign = Nightfall\n| map1 = [[Image:Bansheh, Gatherer of Branches map.jpg|150px]]\n| map1-text = Location in [[Resplendent Makuun]]\n}}\n[[Bansheh, Gatherer of Branches]] is a [[Harpy]] [[boss]] that can be found in [[Resplendent Makuun]].\n\n== Locations ==\n* [[Vabbi]]\n** {{NPC location|Resplendent Makuun}} (see notes)\n\n== Skills ==\n(20 [[Marksmanship]] in [[hard mode]])\n* {{skill icon|Determined Shot}}\n* {{skill icon|Distracting Shot}}\n* {{skill icon|Expert's Dexterity}} ([[elite]])\n* {{skill icon|Favorable Winds}}\n* {{skill icon|Screaming Shot}}\n\n== Items dropped ==\n* [[Bansheh's Longbow]] ([[unique]])\n\n== Notes ==\n* Will not spawn until the quest [[Brains or Brawn]] is completed\n* Bansheh, Gatherer of Branches may not spawn if the quests [[Worst. Performance. Ever.]], or [[Deactivating N.O.X.]] are active.\n* In hard mode, Expert's Dexterity does not increase its Marksmanship rank by two (i.e. 20 to 22), since [[attribute]]s are [[Effect stacking|capped]] at rank 20.\n{{bug| Sometimes Bansheh, Gatherer of Branches will not spawn even if the above quests are not active.}}"
+}

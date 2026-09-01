@@ -1,0 +1,7 @@
+{
+  "title": "Pious Haste",
+  "pageid": 12825,
+  "revid": 2657522,
+  "timestamp": "2020-05-06T06:07:26Z",
+  "wikitext": "{{Skill infobox\n| id = 1543\n| name = Pious Haste\n| campaign = Nightfall\n| profession = Dervish\n| attribute = Mysticism\n| type = Stance\n| energy = 5\n| recharge = 12\n| aoe = none\n| removes1 = Enchantment\n| causes1 = Increased Movement Speed\n| description = [[Stance]]. You remove 1 [[Dervish]] [[enchantment]] and for {{gr|1|7}} second[s] you [[Speed boost|move 25% faster]]. If an enchantment was removed you move 50% faster instead.\n| concise description = Stance. ({{gr|1|7}} second[s].) Lose 1 Dervish enchantment and move 25% faster. Removal Effect: Run 50% faster instead.\n}}\n\n{{Skill progression\n|attribute = [[Mysticism]]\n|var1 name = [[Duration]]\n|var1 at0 = 1\n|var1 at15 = 7}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Zendeht]] ([[Gate of Torment]])\n\n== Related skills ==\n*{{skill icon|Dash}}\n*{{skill icon|Enchanted Haste}}\n\n== Notes ==\n{{bug|If your Mysticism is at 0, the skill will still remove an enchantment but only give 25% move speed instead of 50%.}}\n* Pious Haste's conditional speed boost is enough to allow a [[character]] to pass through and trigger a [[trap]] without being affected.\n* This skill increases average speed by '''<font color=green>4.17...25...29.17%</font>''' if used while enchanted with a Dervish enchantment every time it recharges.\n** This stance can be maintained indefinitely under [[Dwarven Stability]].\n* Consider combining with [[Zealous Renewal]]."
+}

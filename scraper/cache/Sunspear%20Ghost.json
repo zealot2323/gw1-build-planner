@@ -1,0 +1,7 @@
+{
+  "title": "Sunspear Ghost",
+  "pageid": 98600,
+  "revid": 2557462,
+  "timestamp": "2013-10-30T04:16:08Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| affiliation = Order of the Sunspears\n| type = Ghost\n| profession = w\n| level = 10, 12 (20)\n| campaign = Nightfall\n}} \n==Locations==\n*[[Istan]]\n**{{NPC location|Lahtenda Bog}} (only during [[Crypt-ology]], level 10)\n\n==Missions==\n*Istan\n**{{NPC location|Jokanur Diggings}} (level 12)\n\n==Skills==\n*{{Skill icon|Healing Signet}} (in Jokanur Diggings)\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 37\n| piercing = 37\n| slashing = 37\n| cold = 37\n| earth = 37\n| fire = 37\n| lightning = 37\n}}\n\n==Notes==\n*In Jokanur Diggings:\n**Although they appear as hostiles, Sunspear Ghosts will not [[attack]].\n**If you place a [[Stone Tablet]] on the [[Stone Pedestal]] and have yet to set the other one, the Sunspear Ghosts will run to retrieve their Tablet and return it to its original position.\n**Sunspear Ghosts are immune to the traps in the area."
+}

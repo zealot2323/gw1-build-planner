@@ -1,0 +1,7 @@
+{
+  "title": "Scourge Enchantment",
+  "pageid": 13030,
+  "revid": 2726516,
+  "timestamp": "2026-04-28T19:13:25Z",
+  "wikitext": "{{Skill infobox\n| name = Scourge Enchantment\n| id = 1398\n| campaign = Nightfall\n| profession = Monk\n| attribute = Smiting Prayers\n| type = Hex Spell\n| energy = 10\n| activation = 1{{1/2}}\n| recharge = 5\n| description = [[Hex Spell]]. For 30 seconds, each time [[target]] [[foe]] is the target of an [[enchantment]], the caster of that enchantment takes {{gr|15|75}} [[damage]].\n| concise description = Hex Spell. (30 seconds.) Deals {{gr|15|75}} damage to anyone casting an enchantment on target foe.\n}}\n\n{{Skill progression\n| attribute = [[Smiting Prayers]]\n| var1 name = [[Damage]]\n| var1 at0 = 15\n| var1 at15 = 75}}\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Medando]] ([[Yohlon Haven]])\n'''[[Hero skill trainer]]s'''\n* [[Warden of Whispers (The Kodash Bazaar)|Warden of Whispers]] ([[The Kodash Bazaar]])\n\n== Related skills ==\n* {{Skill icon|Scourge Healing}}\n* {{Skill icon|Scourge Sacrifice}}\n* {{Skill icon|Soul Barbs}}\n\n== Notes ==\n* Deals [[holy damage]].\n* This skill will deal damage if an enchantment is [[Renewal|renewed]], whether by being recast or by reapplying itself (in the cases of [[Critical Defenses]], [[Lyssa's Aura]], and [[Kinetic Armor]]).\n* This skill is often very effective against [[Dervish]]es, since they tend to rely on casting [[Flash Enchantment]]s on themselves. \n\n[[Category:Skills offered by hero skill trainers]]"
+}

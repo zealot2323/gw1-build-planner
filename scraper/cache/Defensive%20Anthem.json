@@ -1,0 +1,7 @@
+{
+  "title": "Defensive Anthem",
+  "pageid": 4509,
+  "revid": 2738947,
+  "timestamp": "2026-08-28T06:38:27Z",
+  "wikitext": "{{Skill infobox\n| id = 1555\n| name = Defensive Anthem\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Leadership\n| type = Chant\n| elite = y\n| energy = 10\n| activation = 1\n| recharge = 15\n| causes1 = Block\n| description = [[Elite]] [[Chant]]. For {{gr|4|10}} seconds, each [[party]] member within [[earshot]] has a 50% chance to [[block]] incoming [[attack]]s. This chant ends if that party member hits with an [[attack skill]].\n| concise description = Elite Chant. ({{gr|4|10}} seconds.) Party members in earshot have 50% chance to block. {{gray|Ends when hitting with an attack skill.}}\n| has-pvp = y\n}}\n\n{{Skill progression\n|attribute = [[Leadership]]\n|var1 name = [[Duration]]\n|var1 at0 = 4\n|var1 at15 = 10}}\n\n==Acquisition==\n'''[[Signet of Capture]]'''\n* [[Corporal Argon]] ([[Jahai Bluffs]])\n\n== Related skills ==\n*{{skill icon|Aegis}}\n*{{skill icon|Swirling Aura}}\n\n[[de:Verteidigungshymne]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Return",
+  "pageid": 6706,
+  "revid": 2684004,
+  "timestamp": "2023-02-23T15:18:49Z",
+  "wikitext": "{{Skill infobox\n| id = 770\n| name = Return\n| campaign = Factions\n| profession = Assassin\n| attribute = Shadow Arts\n| type = Spell\n| energy = 5\n| activation = {{1/4}}\n| recharge = 15\n| aoe = adjacent\n| target = other allies\n| causes1 = Crippled\n| causes2 = Shadow Step\n| description = [[Spell]]. All [[adjacent]] [[foe]]s are [[Crippled]] for {{gr|3|8}} seconds. [[Shadow Step]] to [[target]] other [[ally]]'s location.\n| concise description = Spell. Inflicts Crippled condition ({{gr|3|8}} seconds) on all foes adjacent to you. You Shadow Step to target ally's location. {{gray|Cannot self-target.}}\n}}\n\n{{Skill progression\n| attribute = [[Shadow Arts]]\n| var1 name = [[Crippled]] [[duration]]\n| var1 at0 = 3\n| var1 at15 = 8}}\n\n== Acquisition ==\n===[[Unlock]] and learn===\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n\n===Unlock only===\n* Factions and [[Nightfall]]\n** Unlocking [[Zenmai]]\n\n== Related skills ==\n* {{skill icon|Death's Retreat}}\n* {{skill icon|Ebon Escape}}\n\n== Notes ==\n* [[Hero]]es tend to use this for the crippling and not the shadow step.\n{{anomaly|This spell does not have an [[aftercast delay]].}}"
+}

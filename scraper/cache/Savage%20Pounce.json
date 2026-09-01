@@ -1,0 +1,7 @@
+{
+  "title": "Savage Pounce",
+  "pageid": 6507,
+  "revid": 2732686,
+  "timestamp": "2026-07-04T16:14:27Z",
+  "wikitext": "{{Skill infobox\n| id = 1201\n| name = Savage Pounce\n| campaign = Factions\n| profession = Ranger\n| attribute = Beast Mastery\n| type = Pet Attack\n| energy = 5\n| recharge = 10\n| special = duplicate\n| causes1 = Knockdown\n| description = [[Pet Attack]]. Your [[animal companion]] attempts a Savage Pounce that deals {{gr|5|20|+}} [[damage]]. If the attack strikes a [[foe]] who is casting a [[spell]], that foe is [[Knock down|knocked down]].\n| concise description = Pet Attack. Deals {{gr|5|20|+}} damage. Causes knock-down if target foe is casting a spell.\n}}\n\n{{Skill progression\n| attribute = [[Beast Mastery]]\n| var1 name = + [[Damage]]\n| var1 at0 = 5\n| var1 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Bestial Pounce}} ([[duplicate skill]])\n\n== Notes ==\n* Synergizes with [[Bestial Mauling]] to inflict [[Daze]].\n\n[[de:Wilder Sprung]]"
+}

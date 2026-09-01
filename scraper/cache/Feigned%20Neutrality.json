@@ -1,0 +1,7 @@
+{
+  "title": "Feigned Neutrality",
+  "pageid": 12404,
+  "revid": 2609933,
+  "timestamp": "2016-07-10T01:16:31Z",
+  "wikitext": "{{Skill infobox\n| name = Feigned Neutrality\n| id = 1641\n| campaign = Nightfall\n| profession = Assassin\n| attribute = Shadow Arts\n| type = Enchantment Spell\n| energy = 5\n| activation = {{1/4}}\n| recharge = 25\n| causes1 = Health Regeneration\n| causes2 = Increased Armor Rating\n| description = [[Enchantment Spell]]. For {{gr|4|10}} seconds, you have +7 [[Health regeneration]] and +80 [[Armor rating|armor]]. This enchantment ends if you successfully hit with an [[attack]] or use a [[skill]].\n| concise description = Enchantment Spell.  ({{gr|4|10}} seconds.)  You have +7 Health regeneration and +80 armor.  {{gray|Ends if you hit with an attack or use a skill.}}\n}}\n\n{{Skill progression\n|attribute = [[Shadow Arts]]\n|var1 name = [[Duration]]\n|var1 at0 = 4\n|var1 at15 = 10}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n* [[Pikin]] (Kamadan, Jewel of Istan)\n\n== Related skills ==\n* {{skill icon|Restful Breeze}}\n* {{skill icon|Shadow Sanctuary}}\n* {{skill icon|Shield of Regeneration}} ([[elite]])\n\n== Notes ==\n* Attacking while under the effects of [[Illusionary Weaponry]] will not cause this enchantment to end.\n\n[[Category:Skills offered by hero skill trainers]]"
+}

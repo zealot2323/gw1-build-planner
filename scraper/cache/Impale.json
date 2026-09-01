@@ -1,0 +1,7 @@
+{
+  "title": "Impale",
+  "pageid": 16307,
+  "revid": 2733020,
+  "timestamp": "2026-07-05T12:59:18Z",
+  "wikitext": "{{Skill infobox\n| id = 1033\n| name = Impale\n| campaign = Factions\n| profession = Assassin\n| attribute = Deadly Arts\n| type = Skill\n| energy = 5\n| activation = 1\n| recharge = 15\n| target = foes\n| causes1 = Earth Damage\n| causes2 = Deep Wound\n| description = [[Skill (skill type)|Skill]]. Must follow a [[dual attack]]. [[Target]] [[foe]] is struck for {{gr|25|100}} [[earth damage]] and suffers from a [[Deep Wound]] for {{gr|5|20}} seconds.\n| concise description = Skill. Deals {{gr|25|100}} earth damage. Inflicts Deep Wound condition ({{gr|5|20}} seconds). {{gray|Must follow a dual attack.}}\n| requires = dual\n}}\n\n{{Skill progression\n|attribute = [[Deadly Arts]]\n|var1 name = [[Earth damage]]\n|var1 at0 = 25\n|var1 at15 = 100\n|var2 name = [[Deep Wound]] [[duration]]\n|var2 at0 = 5\n|var2 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Notes ==\n* The damage is applied before the [[deep wound]], so this skill will not kill its target unless the damage was sufficient to kill without the deep wound.\n\n== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill history]] for details.\n\n[[de:Aufspießen]]"
+}

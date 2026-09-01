@@ -1,0 +1,7 @@
+{
+  "title": "Withdraw Hexes",
+  "pageid": 2916,
+  "revid": 2727139,
+  "timestamp": "2026-04-30T12:12:00Z",
+  "wikitext": "{{Skill infobox\n| id = 942\n| name = Withdraw Hexes\n| campaign = Factions\n| profession = Monk\n| attribute = Divine Favor\n| type = Spell\n| target = allies\n| elite = y\n| energy = 5\n| activation = 1\n| recharge = 5\n| causes1 = Increased Recharge Time\n| description = [[Elite]] [[Spell]]. Remove all [[hex]]es from [[target]] [[ally]] and all [[adjacent]] allies. This spell takes an additional 2 seconds to [[recharge]] for each hex removed in this way. (50% [[fail]]ure chance with [[Divine Favor]] 4 or less.)\n| concise description = Elite Spell. Removes all hexes. Also affects adjacent allies. {{gray|Removal cost: +2 seconds recharge for each hex removed. 50% failure chance unless Divine Favor 5 or more.}}\n| removes1 = Hex spell\n| aoe = adjacent\n}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Factions]]\n** [[Hukhrah Earthslove]] ([[Mount Qinkai]])\n* [[Eye of the North]]\n** [[Kaykitt Hidemender]] ([[Verdant Cascades]])\n\n== Related skills ==\n* {{skill icon|Convert Hexes}}\n* {{skill icon|Hex Eater Signet}}\n* {{skill icon|Purge Signet}}\n\n== Hero Usage ==\n*Heroes use Withdraw Hexes on an ally as soon as that ally has been hexed with at least one hex spell.\n\n[[Category:Skills that affect allies]]\n\n[[de:Verhexungen zurücknehmen]]\n[[Category:Hero-vetted skills]]"
+}

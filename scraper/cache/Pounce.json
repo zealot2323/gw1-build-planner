@@ -1,0 +1,7 @@
+{
+  "title": "Pounce",
+  "pageid": 3037,
+  "revid": 2733202,
+  "timestamp": "2026-07-05T16:27:02Z",
+  "wikitext": "{{Skill infobox\n| id = 1206\n| name = Pounce\n| campaign = Factions\n| profession = Ranger\n| attribute = Beast Mastery\n| type = Pet Attack\n| energy = 5\n| recharge = 10\n| causes1 = Knockdown\n| description = [[Pet Attack]]. Your [[animal companion]]'s next attack is a Pounce that deals {{gr|5|20|+}} [[damage]]. If the attack strikes a [[Movement|moving]] [[foe]], that foe is [[Knock down|knocked down]].\n| concise description = Pet Attack. Deals +{{Gr|5|20}} damage. Causes knock-down if target foe is moving.\n}}\n\n{{Skill progression\n| attribute = [[Beast Mastery]]\n| var1 name = + [[Damage]]\n| var1 at0 = 5\n| var1 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{Skill icon|Bull's Strike}}\n* {{Skill icon|Maiming Strike}}\n\n== Notes ==\n* Synergy with [[Bestial Mauling]]."
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Deny Hexes",
+  "pageid": 2772,
+  "revid": 2683564,
+  "timestamp": "2023-02-19T16:58:35Z",
+  "wikitext": "{{Skill infobox\n| id = 991\n| name = Deny Hexes\n| campaign = Factions\n| profession = Monk\n| attribute = Divine Favor\n| type = Spell\n| target = allies\n| energy = 5\n| activation = 1\n| recharge = 12\n| description = [[Spell]]. Remove one [[hex]] from [[target]] [[ally]] and one additional hex for each [[Recharge time|recharging]] [[Divine Favor]] [[skill]] you have.\n| concise description = Spell. Removes one hex from target ally and one additional hex for each recharging Divine Favor skill you have.\n| removes1 = Hex spell\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Notes ==\n{{bug|The description is misleading: this skill removes a hex for each recharging Divine Favor skill, including itself. However, if Deny Hexes recharges instantly (e.g. using [[Glyph of Renewal]]), it will not be included as a ''recharging'' skill thus it is possible that no hex will be removed.}}\n\n[[Category:Essentially unlinked skills]]"
+}

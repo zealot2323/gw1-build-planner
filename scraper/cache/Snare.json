@@ -1,0 +1,7 @@
+{
+  "title": "Snare",
+  "pageid": 2518,
+  "revid": 2726592,
+  "timestamp": "2026-04-28T19:47:35Z",
+  "wikitext": "{{Otheruses|the skill|the technique|Snare (tactic)}}\n{{Skill infobox\n| id = 854\n| name = Snare\n| campaign = Factions\n| profession = Ranger\n| attribute = Wilderness Survival\n| type = Trap\n| energy = 5\n| recharge = 15\n| activation = {{3/2}}\n| causes1 = Crippled\n| description = [[Trap]]. When Snare is triggered, all [[nearby]] [[foe]]s become [[Crippled]] for {{gr|3|15}} seconds. Snare ends after 90 seconds. While activating this skill, you are [[easily interrupted]].\n| concise description = Trap. (90 seconds.) Affects nearby foes. Inflicts Crippled condition ({{gr|3|15}} seconds). {{gray|Easily interrupted.}}\n| aoe = nearby\n}}\n\n{{Skill progression\n| attribute = [[Wilderness Survival]]\n| var1 name = [[Crippled]] [[duration]]\n| var1 at0 = 3\n| var1 at15 = 15\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Barbed Trap}}\n* {{skill icon|Spike Trap}} ([[elite]])\n\n[[Category:Easily interrupted skills]]"
+}

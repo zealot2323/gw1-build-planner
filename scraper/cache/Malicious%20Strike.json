@@ -1,0 +1,7 @@
+{
+  "title": "Malicious Strike",
+  "pageid": 14601,
+  "revid": 2733258,
+  "timestamp": "2026-07-05T17:09:26Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| name = Malicious Strike\n| id = 1633\n| campaign = Nightfall\n| profession = Assassin\n| attribute = Critical Strikes\n| type = Melee Attack\n| energy = 5\n| recharge = 6\n| causes1 = Critical Hit\n| description = [[Melee Attack]]. If this [[attack]] hits a [[foe]] suffering from a [[condition]], you deal {{gr|10|30|+}} [[damage]] and this attack results in a [[critical hit]].\n| concise description = Melee Attack. If target foe has a condition, this attack deals {{gr|10|30|+}} damage and is a critical hit.\n| checks = condition\n| checks-true = critical\n}}\n\n{{Skill progression\n|attribute = [[Critical Strikes]]\n|var1 name = + [[Damage]]\n|var1 at0 = 10\n|var1 at15 = 30}}\n\n== Acquisition ==\n===[[Unlock]] and learn===\n'''[[Skill trainer]]s'''\n* [[Nightfall]]\n** [[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n* Nightfall\n** [[Shiloh]] ([[Sunspear Great Hall]])\n\n===Unlock only===\n;[[Hero]]es\n* [[Factions]]\n** Unlocking [[Miku]]\n\n== Related skills ==\n* {{skill icon|Critical Strike}}\n\n== Notes ==\n* Using skills like [[Apply Poison]] and [[Sharpen Daggers]] will still result in a critical hit, because the condition is applied before the attack.\n\n==Trivia==\n* This is the only assassin attack skill that is not a lead, off-hand or dual-attack.\n\n[[Category:Skills offered by hero skill trainers]]"
+}

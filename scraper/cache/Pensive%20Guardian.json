@@ -1,0 +1,7 @@
+{
+  "title": "Pensive Guardian",
+  "pageid": 13053,
+  "revid": 2686582,
+  "timestamp": "2023-05-02T16:36:23Z",
+  "wikitext": "{{Skill infobox\n| name = Pensive Guardian\n| id = 1683\n| campaign = Nightfall\n| profession = Monk\n| attribute = Protection Prayers\n| type = Enchantment Spell\n| energy = 5\n| activation = 1\n| recharge = 5\n| causes1 = Block\n| description = [[Enchantment Spell]]. For {{gr|5|11}} seconds, [[target]] [[ally]] has a 50% chance to [[block]] [[attack]]s from enchanted [[foe]]s.\n| concise description = Enchantment Spell. ({{gr|5|11}} seconds.) 50% chance to block enchanted foes.\n}}\n\n{{Skill progression\n| attribute = [[Protection Prayers]]\n| var1 name = [[Duration]]\n| var1 at0 = 5\n| var1 at15 = 11}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n* [[Shiloh]] ([[Sunspear Great Hall]])\n\n== Related skills ==\n* {{skill icon|Guardian}}\n* {{skill icon|Weapon of Warding}}\n\n==Hero Usage==\n* Heroes do not use this spell appropriately. They will use Pensive Guardian on allies who are being attacked by non-enchanted foes.\n\n== Notes ==\n* Consider using against physicals who are frequently enchanted such as [[Dervish]]es and [[Assassin]]s.\n\n[[Category:Hero-vetted skills]]\n[[Category:Skills offered by hero skill trainers]]"
+}

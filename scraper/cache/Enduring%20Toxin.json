@@ -1,0 +1,7 @@
+{
+  "title": "Enduring Toxin",
+  "pageid": 16295,
+  "revid": 2683974,
+  "timestamp": "2023-02-23T14:29:33Z",
+  "wikitext": "{{Skill infobox\n| id = 800\n| name = Enduring Toxin\n| campaign = Factions\n| profession = Assassin\n| attribute = Deadly Arts\n| type = Hex Spell\n| energy = 5\n| activation = {{1/4}}\n| recharge = 10\n| causes1 = Health Degeneration\n| causes2 = Renewal\n| description = [[Hex Spell]].  For 5 seconds, [[target]] [[foe]] suffers {{gr|1|5|-}} [[Health degeneration]]. If that foe is [[movement|moving]] when Enduring Toxin would end, Enduring Toxin is [[Renewal|renewed]] for another 5 seconds.\n| concise description = Hex Spell. (5 seconds.) Causes {{gr|1|5|-}} Health degeneration. Renewal: if the target foe is moving when this hex ends.\n}}\n\n{{Skill progression\n|attribute = [[Deadly Arts]]\n|var1 name = [[Health degeneration]]\n|var1 at0 = 1\n|var1 at15 = 5}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Recurring Insecurity}} ([[elite]])\n\n== Trivia ==\n* The hand in the [[skill icon]] also appears in the icons of [[Reaper's Mark]] and [[Shadow Form]]."
+}

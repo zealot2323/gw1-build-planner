@@ -1,0 +1,7 @@
+{
+  "title": "Vernados",
+  "pageid": 45692,
+  "revid": 2709830,
+  "timestamp": "2025-07-01T04:56:58Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Kurzick noble m old.jpg|150px]]\n| affiliation = Kurzicks\n| type = Human\n| service = Skill trainer\n| level = 10\n| campaign = Factions\n}}\n[[Vernados]] is a [[skill trainer]], a type of [[Non-player character|NPC]] that can teach your character [[skill]]s for a fee and one [[skill point]].\n\n== Locations ==\n*[[Echovald Forest]]\n**{{NPC location|Vasburg Armory}}\n\n==Dialogue==\n{{Merchant or skill trainer in Luxon-controllable Echovald Forest outpost dialogue}}\n\n== Skills offered ==\n{{Skill trainer list\n}}\n\n== Notes ==\n{{bug|This skill trainer doesn't teach any skills that haven't been [[unlock]]ed, and does not teach [[Signet of Capture]].}}\n\n[[Category:Factions skill trainers by campaign location|19]]"
+}

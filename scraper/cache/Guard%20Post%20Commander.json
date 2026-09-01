@@ -1,0 +1,7 @@
+{
+  "title": "Guard Post Commander",
+  "pageid": 3194,
+  "revid": 2464112,
+  "timestamp": "2012-03-19T00:44:57Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| affiliation = Kournan military\n| type = Human\n| image = [[File:Kournan Phalanx.jpg|150px]]\n| profession = Paragon\n| level = 20 (26)\n| campaign = Nightfall\n}}\n[[Guard Post Commander]]s, as suggested by their name, watch over the troops at the guard posts during the [[Venta Cemetery]] [[mission]].\n\n==Missions==\n*[[Kourna]]\n**{{NPC location|Venta Cemetery}}\n\n==Skills==\n*{{skill icon|\"Never Surrender!\"}}\n*{{skill icon|\"Stand Your Ground!\"}}\n*{{skill icon|Cautery Signet}} ([[elite]])\n*{{skill icon|Mighty Throw}}\n*{{skill icon|Wild Throw}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = p\n| blunt = 95\n| piercing = 95\n| slashing = 95\n| cold = 95\n| earth = 95\n| fire = 95\n| lightning = 95\n}}"
+}

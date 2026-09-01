@@ -1,0 +1,7 @@
+{
+  "title": "Expose Defenses",
+  "pageid": 16304,
+  "revid": 2733048,
+  "timestamp": "2026-07-05T13:15:26Z",
+  "wikitext": "{{Skill infobox\n| id = 802\n| name = Expose Defenses\n| campaign = Factions\n| profession = Assassin\n| attribute = Deadly Arts\n| type = Hex Spell\n| energy = 5\n| activation = 1\n| recharge = 25\n| causes1 = Unblockable\n| description = [[Hex Spell]]. For {{gr|1|11}} second[s], [[target]] [[foe]] cannot [[block]] your [[attack]]s.\n| concise description = Hex Spell. ({{gr|1|11}} second[s].) Target foe cannot block your attacks.\n}}\n\n{{Skill progression\n|attribute = [[Deadly Arts]]\n|var1 name = [[Duration]]\n|var1 at0 = 1\n|var1 at15 = 11}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Asuran Scan}}\n* {{skill icon|Rigor Mortis}}\n\n== Notes ==\n* This hex will end on the target if the caster [[Death|dies]].\n\n== Trivia ==\n{{Skill change}}"
+}

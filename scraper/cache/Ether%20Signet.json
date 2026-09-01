@@ -1,0 +1,7 @@
+{
+  "title": "Ether Signet",
+  "pageid": 1643,
+  "revid": 2683795,
+  "timestamp": "2023-02-21T18:34:51Z",
+  "wikitext": "{{Skill infobox\n| id = 881\n| name = Ether Signet\n| campaign = Factions\n| profession = Mesmer\n| attribute = Inspiration Magic\n| type = Signet\n| activation = 1\n| recharge = 45\n| causes1 = Energy Gain\n| description = [[Signet]]. If you have less than {{gr|5|10}} [[Energy]], gain {{gr|10|20}} Energy.\n| concise description = Signet. You gain {{gr|10|20}} Energy. {{gray|No effect unless you have less than {{gr|5|10}} Energy.}}\n}}\n\n{{Skill progression\n|attribute = [[Inspiration Magic]]\n|var1 name = Max [[energy]] req.\n|var1 at0 = 5\n|var1 at15 = 10\n|var2 name = Energy gain\n|var2 at0 = 10\n|var2 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Notes ==\n* When using this skill, [[Energy hiding|energy can be hidden]] to meet the requirement for the energy gain. \n* [[Hero]]es cannot effectively use this skill as they will begin to use it when they are at the upper cap, thus overpassing it due to natural energy regeneration and receiving no energy.\n* The energy gain from [[Scribe's Insight]] is applied before this skill checks your current energy."
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Bladeturn Refrain",
+  "pageid": 13473,
+  "revid": 2732888,
+  "timestamp": "2026-07-04T21:11:22Z",
+  "wikitext": "{{Skill infobox\n| id = 1580\n| name = Bladeturn Refrain\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Command\n| type = Echo\n| energy = 5\n| recharge = 8\n| activation = 1\n| causes1 = Block\n| causes2 = Renewal\n| description= [[Echo (skill type)|Echo]]. For 20 seconds, [[target]] non-[[spirit]] [[ally]] has a {{gr|5|20||%}} chance to [[block]] incoming [[attack]]s. This echo is [[Renewal|reapplied]] every time a [[chant]] or [[shout]] ends on that ally.\n| concise description = Echo. (20 seconds.) Target ally has {{gr|5|20||%}} chance to block. Renewal: Whenever a chant or shout ends on that ally. {{gray|Cannot target spirits.}}\n| has-pvp = y\n| target = allies\n}}\n\n{{Skill progression\n| attribute = [[Command]]\n| var1 name = [[Block]] %\n| var1 at0 = 5\n| var1 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Baram]] ([[The Kodash Bazaar]])\n\n== Trivia ==\n*The sword in the [[skill icon]] is a [[Gothic Sword]].\n\n[[de:Klingenumkehr-Refrain]]"
+}

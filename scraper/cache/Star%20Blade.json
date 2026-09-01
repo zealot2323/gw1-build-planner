@@ -1,0 +1,7 @@
+{
+  "title": "Star Blade",
+  "pageid": 19334,
+  "revid": 2579136,
+  "timestamp": "2014-11-25T04:28:27Z",
+  "wikitext": "{{NPC infobox\n| type = Tengu\n| affiliation = Kaineng City wildlife\n| affiliation2 = Sensali\n| image = [[Image:Sensali martial.jpg|150px]]\n| profession = w\n| level = 20 (26)\n| campaign = Factions\n| campaign2 = Eye of the North\n}}__NOTOC__\n[[Star Blade]]s are [[Tengu]] that protect the [[Celestial]]s in [[Nahpui Quarter]].\n\n== Missions ==\n*[[Factions]]\n**[[Kaineng City]]\n***{{NPC location|Nahpui Quarter}}\n*[[Eye of the North]]\n**[[Far Shiverpeaks]]\n***{{NPC location|Kilroy's Punchout Tournament}}\n\n==Skills==\n(16 [[Tactics]] in [[hard mode]])\n*{{skill icon|Balanced Stance}}\n*{{skill icon|Dragon Slash}} ([[elite]])\n*{{skill icon|Silverwing Slash}}\n*{{skill icon|Standing Slash}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 115\n| piercing = 115\n| slashing = 115\n| cold = 95\n| earth = 95\n| fire = 95\n| lightning = 95\n}}\n\n==Items dropped==\n*[[Bone]]\n*[[Feather]]\n*[[Monstrous Claw]]\n\n[[Category:Drops bone]]\n[[Category:Drops feather]]\n[[Category:Drops monstrous claw]]"
+}

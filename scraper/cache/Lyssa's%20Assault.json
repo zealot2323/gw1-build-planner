@@ -1,0 +1,7 @@
+{
+  "title": "Lyssa's Assault",
+  "pageid": 13460,
+  "revid": 2684185,
+  "timestamp": "2023-02-24T17:01:24Z",
+  "wikitext": "{{Skill infobox\n| id = 1538\n| name = Lyssa's Assault\n| campaign = Nightfall\n| profession = Dervish\n| attribute = Scythe Mastery\n| type = Scythe Attack\n| energy = 5\n| activation = {{1/2}}\n| recharge = 15\n| causes1 = Interrupt\n| causes2 = Disable\n| description = [[Scythe Attack]]. This [[attack]] [[interrupt]]s an [[action]] if it hits. If you are [[Enchantment spell|enchanted]], any [[skill]] you interrupt is [[disable]]d for additional {{gr|1|10}} second[s]. This attack does 50% normal [[damage]].\n| concise description = Scythe Attack. Interrupts an action. If you are enchanted, the interrupted skill is disabled for an additional {{gr|1|10}} second[s]. This attack does 50% of normal damage.\n}}\n\n{{Skill progression\n|attribute = [[Scythe Mastery]]\n|var1 name = [[Disable]] [[duration]]\n|var1 at0 = 1\n|var1 at15 = 10\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Nightfall]]\n**[[Dau]] ([[The Mouth of Torment]])\n\n'''[[Signet of Capture]]'''\n*[[Prophecies]]\n**[[Justiciar Kasandra]] ([[D'Alessio Seaboard (explorable area)]])\n*Nightfall\n**[[General Kahyet]] ([[Blacktide Den]])\n**[[Haioss, Blessed Wind]] ([[Fahranur, The First City]])\n**[[Water Lord]] ([[The Hidden City of Ahdashim]], only during [[Gift of the Djinn]])\n\n==Related skills==\n*{{skill icon|Disrupting Chop}}\n*{{skill icon|Distracting Shot}}\n*{{skill icon|Distracting Strike}}\n[[Category:Skills named after eponymous NPCs]]"
+}

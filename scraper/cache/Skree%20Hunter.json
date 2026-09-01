@@ -1,0 +1,7 @@
+{
+  "title": "Skree Hunter",
+  "pageid": 23165,
+  "revid": 2301233,
+  "timestamp": "2011-05-19T05:12:53Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| species = Harpy\n| profession = r\n| level = 11 (24)\n| campaign = Nightfall\n| image = [[File:Skree ranger.jpg|150px]]\n}}\n[[Skree Hunter]]s are the adolescent versions of [[Skree Fledgeling]]s, but younger versions of [[Skree Tracker]]s.\n\n==Locations==\n*[[Istan]]\n**{{NPC location|Fahranur, The First City}}\n**{{NPC location|Lahtenda Bog}}\n\n==Missions==\n*Istan\n**{{NPC location|Blacktide Den}}\n\n==Skills==\n*{{skill icon|Expert's Dexterity}} ([[elite]], [[Hard mode]] only)\n*{{skill icon|Keen Arrow}}\n*{{skill icon|Pin Down}}\n*{{skill icon|Read the Wind}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 43\n| piercing = 43\n| slashing = 43\n| cold = 73\n| earth = 73\n| fire = 73\n| lightning = 73\n}}\n\n==Items dropped==\n*[[Feather]]\n*[[Fledgling Skree Wing]]\n*[[Skree Vambrace]]\n\n[[Category:Drops feather]]"
+}

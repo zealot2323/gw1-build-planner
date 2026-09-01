@@ -1,0 +1,7 @@
+{
+  "title": "Words of Comfort",
+  "pageid": 2961,
+  "revid": 2738572,
+  "timestamp": "2026-08-26T22:01:56Z",
+  "wikitext": "{{Skill infobox\n| name = Words of Comfort\n| id = 1396\n| campaign = Nightfall\n| profession = Monk\n| attribute = Healing Prayers\n| type = Spell\n| energy = 5\n| activation = 1\n| recharge = 4\n| causes1 = Healing\n| description = [[Spell]]. [[Target]] [[ally]] is [[heal]]ed for {{gr|20|65}} [[Health]] and an additional {{gr|20|50}} Health if that ally is suffering from a [[condition]].\n| concise description = Spell. Heals for {{gr|20|65}}. Heals for {{gr|20|50}} more if target ally has a condition.\n| target = allies\n}}\n\n{{Skill progression\n| attribute = [[Healing Prayers]]\n| var1 name = [[Heal]]ing\n| var1 at0 = 20\n| var1 at15 = 65\n| var2 name = + Healing\n| var2 at0 = 20\n| var2 at15 = 50\n| var3 name = Total Healing\n| var3 at0 = 40\n| var3 at15 = 115\n}}\n\n== Acquisition ==\n===[[Unlock]] and learn===\n'''[[Skill trainer]]s'''\n* [[Tohn]] ([[Kamadan, Jewel of Istan]])\n\n===Unlock only===\n;[[Hero]]es\n*Unlocking [[Dunkoro]]\n\n== Related skills ==\n* {{skill icon|Dwayna's Kiss}}\n* {{skill icon|Wielder's Boon}}\n\n== Hero Usage ==\n* Heroes cast this spell with a preference for party members suffering from a condition, but will use it as a generic heal if necessary.\n\n== Notes ==\n* The conditional healing is sent in a separate [[packet]], triggering [[hex]]es like [[Scourge Healing]] twice.\n\n[[Category:Hero-vetted skills]]"
+}

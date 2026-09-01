@@ -1,0 +1,7 @@
+{
+  "title": "Consume Soul",
+  "pageid": 4225,
+  "revid": 2732231,
+  "timestamp": "2026-06-30T22:29:04Z",
+  "wikitext": "__NOTOC__\n{{Skill infobox\n| id = 914\n| name = Consume Soul\n| campaign = Factions\n| profession = Ritualist\n| attribute = Spawning Power\n| type = Spell\n| elite = y\n| energy = 5\n| activation = 1\n| recharge = 5\n| causes1 = Life Stealing\n| description = [[Elite]] [[Spell]]. You [[Life stealing|steal]] {{gr|5|70}} [[Health]] from [[target]] [[foe]]. All hostile [[summoned creature]]s in [[earshot]] of that foe take {{gr|25|125}} [[damage]].\n| concise description = Elite Spell. Steals {{gr|5|70}} Health. Deal {{gr|25|125}} damage to hostile summoned creatures within earshot of target foe.\n| aoe = earshot\n| target = foes\n}}\n\n{{Skill progression\n|attribute = [[Spawning Power]]\n|var1 name = [[Life stealing]]\n|var1 at0 = 5\n|var1 at15 = 70\n|var2 name = [[Damage]]\n|var2 at0 = 25\n|var2 at15 = 125\n}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Tomton Spiriteater]] ([[Mount Qinkai]])\n\n== Related skills ==\n{{see|anti-summon skill}}\n* {{skill icon|Banish}}\n* {{skill icon|Banishing Strike}}\n* {{skill icon|Holy Spear}}\n* {{skill icon|Spiritual Pain}}\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Anti-summon skills]]\n\n[[de:Seele verzehren]]"
+}

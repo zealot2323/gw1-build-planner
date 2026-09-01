@@ -1,0 +1,7 @@
+{
+  "title": "Bound Necromancer",
+  "pageid": 42220,
+  "revid": 2603976,
+  "timestamp": "2016-03-31T22:12:25Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Shiro'ken martial.jpg|x350px]]\n| type = Shiro'ken\n| affiliation = Shiro's army\n| profession = n\n| level = 20 (26)\n| campaign = Factions\n}}\n[[Bound Necromancer]]s are constructs that serve [[Shiro Tagachi]]. They replace [[necromancer]] party members during the [[Imperial Sanctum]] mission whenever Shiro uses the skill [[Echoing Banishment]] on them.\n\n==Missions==\n*[[Kaineng City]]\n**{{NPC location|Imperial Sanctum}}\n\n==Skills==\n*{{Skill icon|Faintheartedness}}\n*{{Skill icon|Rotting Flesh}}\n*{{Skill icon|Taste of Pain}}\n*{{Skill icon|Wail of Doom}} ([[Elite]])\n*{{Skill icon|Well of Weariness}}\n\n==Items dropped==\n*[[Soul Stone]]\n\n==Notes==\n*Killing this creature will bring back the player that was banished.\n*Even though they are not marked with a special aura, the death of these creatures will give a [[Morale Boost]] and recharge all skills (including [[Resurrection Signet]]s and [[Celestial skill]]s) like the death of a [[boss]]. In addition, they do double damage.\n*[[Signet of Capture]] cannot be used on them.\n\n[[Category:Boss-like foes]]"
+}

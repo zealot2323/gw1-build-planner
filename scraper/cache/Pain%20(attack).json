@@ -1,0 +1,7 @@
+{
+  "title": "Pain (attack)",
+  "pageid": 75091,
+  "revid": 2609220,
+  "timestamp": "2016-06-27T23:33:56Z",
+  "wikitext": "{{skill infobox\n| id = 1248\n| name = Pain\n| image = [[Image:Pain (attack).jpg]]\n| campaign = Factions\n| profession = Monster\n| special = Spirit monster\n| attribute = Communing\n| type = Ranged Attack\n| activation = 2\n| description = [[Ranged Attack]]. If this attack hits, it deals {{gr|5|30}} [[damage]].\n| concise description = Ranged Attack. Deals {{gr|5|30}} damage.}}\n\n{{skill progression\n| attribute = [[Communing]]\n| var1 name = [[Armor-ignoring damage]]\n| var1 at0 = 5\n| var1 at15 = 30}}\n\n== Notes ==\n* This is the skill used by the [[Spirit of Pain]] that is summoned by the [[ritualist]] skill [[Pain]], and not the ritualist skill itself.\n\n== Related skills ==\n* {{skill icon|Pain (attack) (Signet of Spirits)}}\n\n<!--== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details.-->"
+}

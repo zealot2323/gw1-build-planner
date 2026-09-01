@@ -1,0 +1,7 @@
+{
+  "title": "Unsuspecting Strike",
+  "pageid": 14604,
+  "revid": 2733152,
+  "timestamp": "2026-07-05T15:52:00Z",
+  "wikitext": "{{Skill infobox\n| id = 783\n| name = Unsuspecting Strike\n| campaign = Factions\n| profession = Assassin\n| attribute = Critical Strikes\n| type = Lead Attack\n| energy = 10\n| recharge = 2\n| description = [[Lead Attack]]. If this [[attack]] hits, you strike for {{gr|19|31|+}} [[damage]]. If your [[target]] was above 90% [[Health]] you deal an additional {{gr|15|75}} damage.\n| concise description = Lead Attack. Deals {{gr|19|31|+}} damage. Deals {{gr|15|75}} more damage if target foe's Health is above 90%.\n| checks = health\n| checks-health = >90\n| checks-true = damage\n}}\n\n{{Skill progression\n|attribute = [[Critical Strikes]]\n|var1 name = + [[Damage]]\n|var1 at0 = 19\n|var1 at15 = 31\n|var2 name = + Damage >90% health\n|var2 at0 = 15\n|var2 at15 = 75}}\n\n== Acquisition ==\n===[[Unlock]] and learn===\n'''[[Skill quest]]s'''\n* [[Factions]]\n** [[Mantid Hatchlings]] ([[Monastery Overlook]])\n** [[Locate Jinzo]] ([[Shing Jea Monastery]])\n'''[[Skill trainer]]s'''\n* Factions\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Profession changer]]s'''\n* [[Core]]\n** [[Profession Changer (NPC)|Profession Changer]] ([[Great Temple of Balthazar]])\n* Factions\n** [[Senji]] (Senji's Corner)\n* [[Nightfall]]\n** [[Zuwarah]] ([[Command Post]])\n\n===Unlock only===\n;[[Hero]]es\n* Factions and Nightfall\n** Unlocking [[Zenmai]]\n\n[[Category:Assassin skill rewards]]\n[[Category:Skills without known Factions trainers]]"
+}

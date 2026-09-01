@@ -1,0 +1,7 @@
+{
+  "title": "Enduring Harmony",
+  "pageid": 15230,
+  "revid": 2684136,
+  "timestamp": "2023-02-24T14:41:15Z",
+  "wikitext": "{{Skill infobox\n| id = 1574\n| name = Enduring Harmony\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Leadership\n| type = Echo\n| energy = 5\n| recharge = 10\n| activation = 1\n| description = [[Echo (skill type)|Echo]]. For {{gr|10|35}} seconds, [[chant]]s and [[shout]]s last 50% longer on [[target]] non-[[spirit]] [[ally]].\n| concise description = Echo. ({{gr|10|35}} seconds.) Chants and shouts last 50% longer on target ally. {{gray|Cannot target spirits.}}\n| target = allies\n}}\n{{Skill progression\n| attribute = [[Leadership]]\n| var1 name = [[Duration]]\n| var1 at0 = 10\n| var1 at15 = 35}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Tohn]] ([[Kamadan, Jewel of Istan]])\n\n'''[[Hero skill trainer]]s'''\n*[[Shiloh]] ([[Sunspear Great Hall]])\n\n== Related skills ==\n*{{skill icon|Vocal Was Sogolon}}\n\n== Notes ==\n* Only the shouts/chants you activate after activating Enduring Harmony are affected.\n* Shouts/chants that you activate while under Enduring Harmony continue to have the extended duration if Enduring Harmony ends.\n[[Category:Skills offered by hero skill trainers]]"
+}

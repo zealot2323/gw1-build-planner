@@ -9,7 +9,7 @@ import {
   type SkillAvailabilityEntry,
   type SkillStatus,
 } from "@gw1/engine";
-import { index } from "../data";
+import { useData } from "../DataContext";
 import { SkillIcon } from "../components/SkillIcon";
 import { SkillDetails } from "../components/SkillDetails";
 import { ProfessionIcon } from "../components/ProfessionIcon";
@@ -130,6 +130,7 @@ export function SkillsView({
   view: SkillViewState;
   setView: (patch: Partial<SkillViewState>) => void;
 }) {
+  const index = useData();
   const { profFilter, attrFilter, elitesOnly, search, openSkill, sortBy } = view;
   const [expandedSources, setExpandedSources] = useState<Set<string>>(new Set());
   const setProfFilter = (v: string) => setView({ profFilter: v });

@@ -1,0 +1,7 @@
+{
+  "title": "Signet of Twilight/Skill history",
+  "pageid": 321829,
+  "revid": 2739137,
+  "timestamp": "2026-08-30T04:55:20Z",
+  "wikitext": "{{Skill history}}\n\n== [[Feedback:Game_updates/20260205|Thursday, February 5, 2026 update]] ==\n* reduced activation time to 1 second (from 2).\n\n{{Skill infobox\n| name = Signet of Twilight\n| id = 1648\n| campaign = Nightfall\n| profession = Assassin\n| type = Signet\n| activation = 1\n| recharge = 20\n| removes1 = Enchantment\n| description = [[Signet]]. For each [[hex]] on [[target]] [[foe]], that foe loses one [[enchantment]].\n| concise description = Signet. Removes one enchantment for each hex on target foe.\n| target = foes\n}}\n{{clear}}\n\n== Original ==\n{{Skill infobox\n| name = Signet of Twilight\n| id = 1648\n| campaign = Nightfall\n| profession = Assassin\n| type = Signet\n| activation = 2\n| recharge = 20\n| removes1 = Enchantment\n| description = [[Signet]]. For each [[hex]] on [[target]] [[foe]], that foe loses one [[enchantment]].\n| concise description = Signet. Removes one enchantment for each hex on target foe.\n| target = foes\n}}"
+}

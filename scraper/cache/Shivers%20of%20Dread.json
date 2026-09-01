@@ -1,0 +1,7 @@
+{
+  "title": "Shivers of Dread",
+  "pageid": 15410,
+  "revid": 2720775,
+  "timestamp": "2026-02-08T20:00:56Z",
+  "wikitext": "{{Skill infobox\n| id = 1071\n| name = Shivers of Dread\n| campaign = Factions\n| profession = Necromancer\n| attribute = Curses\n| type = Hex Spell\n| energy = 10\n| activation = 2\n| recharge = 15\n| special = duplicate\n| causes1 = Interrupt\n| causes2 = Energy Loss\n| description = [[Hex Spell]]. For {{gr|10|40}} seconds, whenever [[target]] [[foe]] is struck for [[cold damage]] while using a [[skill]], that foe is [[interrupt]]ed{{sic}} and you lose {{gr|8|3}} [[Energy]] or Shivers of Dread ends.\n| concise description = Hex Spell. ({{gr|10|40}} seconds.) Cold damage interrupts target foe's skills. {{gray|Interruption cost: you lose {{gr|8|3}} Energy or this hex ends.}}\n}}\n\n{{Skill progression\n|attribute = [[Curses]]\n|var1 name = [[Duration]]\n|var1 at0 = 10\n|var1 at15 = 40\n|var2 name = [[Energy]] loss\n|var2 at0 = 8\n|var2 at15 = 3}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Spinal Shivers}} ([[duplicate skill]])\n\n== Notes ==\n* Works well with [[Snow Storm]], and [[Winter]].\n* This hex will end on the target if the caster [[Death|dies]].\n\n{{research needed|Is the concise description incorrect or can this skill interrupt actions?}}\n\n[[de:Angstschauer]]"
+}

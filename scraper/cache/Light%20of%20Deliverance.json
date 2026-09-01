@@ -1,0 +1,7 @@
+{
+  "title": "Light of Deliverance",
+  "pageid": 2947,
+  "revid": 2708605,
+  "timestamp": "2025-06-02T19:33:11Z",
+  "wikitext": "{{Skill infobox\n| name = Light of Deliverance\n| id = 1397\n| campaign = Nightfall\n| profession = Monk\n| attribute = Healing Prayers\n| type = Spell\n| elite = y\n| energy = 5\n| activation = 1\n| recharge = 6\n| target = self\n| causes1 = Healing\n| description = [[Elite]] [[Spell]]. All [[party]] members are [[heal]]ed for {{gr|5|70}} [[Health]].\n| concise description = Elite Spell. Heals entire party for {{gr|5|70}}.\n| has-pvp = y\n| aoe = party\n}}\n\n{{Skill progression\n| attribute = [[Healing Prayers]]\n| var1 name = [[Heal]]ing\n| var1 at0 = 5\n| var1 at15 = 70}}\n\n==Acquisition==\n'''[[Signet of Capture]]'''\n* [[Chidehkir, Light of the Blind]] ([[Marga Coast]])\n* [[Kehmak the Tranquil]] ([[Moddok Crevice]])\n\n== Related skills==\n*{{skill icon|Breath of the Great Dwarf}}\n*{{duplicate skill icon|Divine Healing|Heaven's Delight}}\n*{{skill icon|Heal Party}}\n*{{skill icon|Healing Burst}} ([[elite]])\n*{{skill icon|Protective Was Kaolai}}\n*{{skill icon|Mystic Healing}}\n\n==See also==\n*[[Party healing]]\n\n== Notes ==\n* This spell works within [[party range]].\n\n[[de:Licht der Erlösung]]"
+}

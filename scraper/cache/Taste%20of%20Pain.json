@@ -1,0 +1,7 @@
+{
+  "title": "Taste of Pain",
+  "pageid": 16017,
+  "revid": 2683695,
+  "timestamp": "2023-02-21T02:29:43Z",
+  "wikitext": "{{Skill infobox\n| id = 1069\n| name = Taste of Pain\n| campaign = Factions\n| profession = Necromancer\n| attribute = Death Magic\n| type = Spell\n| energy = 5\n| activation = {{1/4}}\n| recharge = 10\n| causes1 = Health Gain\n| description = [[Spell]]. If [[target]] [[foe]] is below 50% [[Health]], you [[Health gain|gain]] {{gr|30|150}} Health.\n| concise description = Spell. Heals you for {{gr|30|150}}. {{gray|No effect unless target foe is below 50% Health.}}\n| target = foes\n}}\n\n{{Skill progression\n| attribute = [[Death Magic]]\n| var1 name = [[Health gain]]\n| var1 at0 = 30\n| var1 at15 = 150}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Signet of Lost Souls}}\n\n== Notes ==\n{{bug|Contrary to the concise description, this skill causes health gain and not [[healing]].}}"
+}

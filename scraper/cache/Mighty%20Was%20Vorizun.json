@@ -1,0 +1,7 @@
+{
+  "title": "Mighty Was Vorizun",
+  "pageid": 1040,
+  "revid": 2724764,
+  "timestamp": "2026-04-06T04:24:38Z",
+  "wikitext": "{{Skill infobox\n| id = 773\n| name = Mighty Was Vorizun\n| campaign = Factions\n| profession = Ritualist\n| attribute = Communing\n| type = Item Spell\n| energy = 5\n| activation = 2\n| recharge = 30\n| causes1 = Increased Armor Rating\n| description = [[Item Spell]]. [[Hold]] Vorizun's ashes for up to {{gr|15|60}} seconds. While you hold his ashes, you gain +15 [[Armor rating|armor]] and +30 maximum [[Energy]].\n| concise description = Item Spell. ({{gr|15|60}} seconds.) You have +15 armor and +30 maximum Energy.\n}}\n\n{{Skill progression\n| attribute = [[Communing]]\n| maximum = 19\n| var1 name = [[Duration]]\n| var1 at0 = 15\n| var1 at15 = 60}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Zhao Di]] ([[Shing Jea Monastery]])\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Nightfall]]\n** [[Consort of Ruin]] ([[Depths of Madness]])\n\n== Notes ==\n* Useful for [[energy hiding]]: when you drop the ashes, your current and maximum energies both drop by 30; this can result in your current energy falling below zero.\n\n==Trivia==\n* The figure in the [[skill icon]] is wearing [[Assassin Canthan armor]].\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details."
+}

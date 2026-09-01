@@ -1,0 +1,7 @@
+{
+  "title": "\"Retreat!\"",
+  "pageid": 14883,
+  "revid": 2725318,
+  "timestamp": "2026-04-11T19:41:16Z",
+  "wikitext": "{{Skill infobox\n| id = 839\n| name = \"Retreat!\"\n| campaign = Factions\n| profession = Warrior\n| attribute = Tactics\n| type = Shout\n| energy = 5\n| recharge = 20\n| target = untargeted\n| aoe = earshot\n| causes1 = Increased Movement Speed\n| description = [[Shout]]. If there are any dead [[Ally|allies]] within [[earshot]], your [[party]] [[Speed boost|moves 33% faster]] for {{gr|5|11}} seconds.\n| concise description = Shout. ({{gr|5|11}} seconds.) Party members in earshot move 33% faster. {{gray|No effect unless there are dead allies within earshot.}}\n}}\n\n{{Skill progression\n| attribute = [[Tactics]]\n| var1 name = [[Duration]]\n| var1 at0 = 5\n| var1 at15 = 11}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|\"Charge!\"}} ([[elite]])\n* {{skill icon|\"Fall Back!\"}}\n* {{Skill icon|\"Incoming!\"}} (elite)\n* {{Skill icon|Godspeed}}\n\n== Notes ==\n* If this skill is used without any dead allies within earshot, no speech bubble appears.\n* This skill works with the [[corpse]] of a [[Flesh Golem]], as its corpse is exploitable.\n{{anomaly| Only the dead ally needs to be within earshot.  The buff will apply to all party members within [[compass]] range.}}\n\n{{Bug|This skill works with any dead minion, despite not leaving a corpse. This is unlike [[\"I Will Avenge You!\"]].}}\n\n{{DEFAULTSORT:Retreat!}}"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Lacerating Chop",
+  "pageid": 7828,
+  "revid": 2733159,
+  "timestamp": "2026-07-05T15:55:12Z",
+  "wikitext": "{{Skill infobox\n| id = 849\n| name = Lacerating Chop\n| campaign = Factions\n| profession = Warrior\n| attribute = Axe Mastery\n| type = Axe Attack\n| adrenaline = 5\n| target =\n| range = \n| causes1 = Bleeding\n| causes2 =\n| removes1 = \n| requires1 = Knockdowm\n| description = [[Axe Attack]]. If Lacerating Chop hits, you deal  {{gr|5|20|+}} [[damage]]. If it strikes a [[Knock down|knocked down]] [[foe]] your target suffers from [[Bleeding]] for {{gr|5|20}} seconds.\n| concise description = Axe Attack. Deals {{gr|5|20|+}} damage. Inflicts Bleeding condition ({{gr|5|20}} seconds) if target foe is knocked-down.\n}}\n\n{{Skill progression\n|attribute = [[Axe Mastery]]\n|var1 name =  +[[Damage]]\n|var1 at0 = 5\n|var1 at15 = 20\n|var2 name = [[Bleeding]]\n|var2 at0 = 5\n|var2 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s''':\n* [[Zhao Di]] ([[Shing Jea Monastery]])\n* [[Michiko]] ([[Kaineng Center]])\n\n==Hero Usage==\n* Heroes will use this skill on recharge on the target even when the target is not knocked down, often wasting the additional effect.\n\n==Notes==\n* This skill exactly requires 120 units of adrenaline to be fully charged, so 4 strikes and 20 units.\n\n== Trivia ==\n* The axe in this icon is a [[Crude Axe (Canthan)|Crude Axe]]\n\n[[Category:Hero-vetted skills]]"
+}

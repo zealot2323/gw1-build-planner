@@ -1,0 +1,7 @@
+{
+  "title": "Restful Breeze",
+  "pageid": 2954,
+  "revid": 2683587,
+  "timestamp": "2023-02-19T17:37:29Z",
+  "wikitext": "{{Skill infobox\n| id = 886\n| name = Restful Breeze\n| campaign = Nightfall\n| profession = Monk\n| attribute = Healing Prayers\n| type = Enchantment Spell\n| energy = 5\n| activation = 1\n| recharge = 8\n| causes1 = Health Regeneration\n| description = [[Enchantment Spell]]. For {{gr|8|18}} seconds, [[target]] [[ally]] has +10 [[Health regeneration]]. This enchantment ends if that ally [[attack]]s or uses a [[skill]].\n| concise description = Enchantment Spell. ({{gr|8|18}} seconds.) +10 Health regeneration. {{gray|Ends if target ally attacks or uses a skill.}}\n| target = allies\n}}\n\n{{Skill progression\n| attribute = [[Healing Prayers]]\n| var1 name = [[Duration]]\n| var1 at0 = 8\n| var1 at15 = 18}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Medando]] ([[Yohlon Haven]])\n'''[[Hero skill trainer]]s'''\n* [[Warden of Whispers (The Kodash Bazaar)|Warden of Whispers]] ([[The Kodash Bazaar]])\n\n== Related skills ==\n* {{skill icon|Feigned Neutrality}}\n* {{skill icon|Healing Breeze}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

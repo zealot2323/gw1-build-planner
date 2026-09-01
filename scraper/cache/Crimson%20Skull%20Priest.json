@@ -1,0 +1,7 @@
+{
+  "title": "Crimson Skull Priest",
+  "pageid": 43614,
+  "revid": 2593675,
+  "timestamp": "2015-09-01T03:19:30Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Human\n| affiliation = Crimson Skull\n| affiliation2 = Shing Jea Island wildlife\n| profession = mo\n| image = [[File:Crimson Skull monk.jpg|150px]]\n| level = 15 (25)\n| campaign = Factions\n}}\n[[Crimson Skull Priest]]s are the strongest [[monk]]s of the [[Crimson Skull]], above [[Crimson Skull Mender]]s and [[Crimson Skull Healer]]s.\n\nIn normal mode they are not much trouble as Orison of Healing won't heal their allies well. In Hard mode, they have access to [[Healing Burst]], so it's best taking them out before fighting other enemies.\n\n==Locations==\n*[[Shing Jea Island]]\n**{{NPC location|Haiju Lagoon}}\n**{{NPC location|Panjiang Peninsula}}\n\n==Skills==\n13 [[Smiting Prayers]]\n*{{skill icon|Healing Burst}} ([[elite]], [[hard mode]] only)\n*{{skill icon|Orison of Healing}}\n*{{skill icon|Signet of Rage}}\n*{{skill icon|Reverse Hex}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = mo\n| blunt = 60\n| piercing = 60\n| slashing = 60\n| cold = 60\n| earth = 60\n| fire = 60\n| lightning = 60\n}}\n\n==Items dropped==\n*[[Bolt of Cloth]]\n*[[Crimson Skull Cape]]\n*[[Gold Crimson Skull Coin]]\n\n[[Category:Drops cloth]]"
+}

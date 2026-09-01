@@ -1,0 +1,7 @@
+{
+  "title": "Lifebane Strike",
+  "pageid": 1753,
+  "revid": 2683690,
+  "timestamp": "2023-02-21T02:20:57Z",
+  "wikitext": "{{Skill infobox\n| id = 1067\n| name = Lifebane Strike\n| campaign = Factions\n| profession = Necromancer\n| attribute = Blood Magic\n| type = Spell\n| energy = 10\n| activation = 2\n| recharge = 15\n| special = duplicate\n| causes1 = Shadow Damage\n| causes2 = Life Stealing\n| description = [[Spell]]. [[Target]] [[foe]] takes {{gr|12|48}} [[shadow damage]]. If that foe's [[Health]] is above 50%, you [[life stealing|steal]] up to {{gr|12|48}} Health.\n| concise description = Spell. Deals {{gr|12|48}} damage. Steals {{gr|12|48}} Health if target foe's Health is above 50%.\n| target = foes\n}}\n\n{{Skill progression\n|attribute = [[Blood Magic]]\n|var1 name = [[Shadow damage]]\n|var1 at0 = 12\n|var1 at15 = 48\n|var2 name = [[Life stealing]]\n|var2 at0 = 12\n|var2 at15 = 48}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Zhao Di]] ([[Shing Jea Monastery]])\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Eye of the North]]\n** [[Facet of Death]] ([[Sparkfly Swamp]] during [[The Cipher of Grenth]], and [[Varajar Fells]] during [[The Path to Revelations]])\n\n== Related skills ==\n* {{skill icon|Deathly Chill}}\n* {{skill icon|Shadow Strike}} ([[duplicate skill]])\n\n== Trivia ==\n* This skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details.\n\n[[de:Lebensfluchstoß]]"
+}

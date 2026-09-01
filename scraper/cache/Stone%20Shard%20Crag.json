@@ -1,0 +1,7 @@
+{
+  "title": "Stone Shard Crag",
+  "pageid": 19114,
+  "revid": 2636171,
+  "timestamp": "2019-02-02T05:26:38Z",
+  "wikitext": "{{NPC infobox \n| type = Elemental\n| affiliation = Kourna wildlife\n| profession = e\n| level = 24 (26)\n| campaign = Nightfall\n}}__NOTOC__\n[[Stone Shard Crag]]s are large lizard shaped earth elementals. They are often accompanied by [[Cracked Mesa]]s.\n\n==Locations== \n*[[Kourna]]\n**{{NPC location|Arkjok Ward}}\n**{{NPC location|Bahdok Caverns}}\n**{{NPC location|Barbarous Shore}}\n**{{NPC location|Dejarin Estate}}\n**{{NPC location|Turai's Procession}}\n\n==Skills==\n*{{skill icon|Aftershock}}\n*{{skill icon|Armor of Earth}}\n*{{skill icon|Ebon Hawk}}\n*{{skill icon|Sandstorm}} ([[elite]])\n*{{skill icon|Stoning}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = e\n| blunt = 100\n| piercing = 100\n| slashing = 100\n| cold = 112\n| earth = 112\n| fire = 112\n| lightning = 112\n}}\n\n==Items dropped==\n*[[Granite Slab]]\n*[[Ruby]]\n*[[Sentient Lodestone]]\n*[[Lump of Charcoal]]\n\n== Notes ==\n*Stone Shard Crag, unlike [[Sandstorm Crag]]s, do not have [[Stun Immunity]] and can be [[knock down|knocked down]].\n\n[[Category:Drops granite]]\n[[Category:Drops ruby]]"
+}

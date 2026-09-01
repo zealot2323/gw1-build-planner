@@ -1,0 +1,7 @@
+{
+  "title": "Nomad Giant",
+  "pageid": 18782,
+  "revid": 2316348,
+  "timestamp": "2011-06-12T13:24:04Z",
+  "wikitext": "__NOTOC__{{NPC infobox \n| type = Giant\n| affiliation = The Desolation wildlife\n| profession = Ranger\n| level = 24 (26)\n| campaign = Nightfall\n}}\n[[Nomad Giant]]s are huge [[Giant]]s that used [[ranged attack]]s and lay [[trap]]s. These are the Rangers in the Giant [[mob]]s walking around in [[The Desolation]]. They walk in mobs of 2 or more, sometimes together with [[Sadistic Giant]]s.\n\n==Locations==\n*[[The Desolation]]\n**{{NPC location|Crystal Overlook}}\n**{{NPC location|The Ruptured Heart}}\n**{{NPC location|The Shattered Ravines}}\n\n==Skills==\n15 [[Wilderness Survival]]\n*{{skill icon|Barbed Trap}}\n*{{skill icon|Flame Trap}}\n*{{skill icon|Smoke Trap}} ([[elite]])\n*{{skill icon|Trapper's Speed}}\n*{{skill icon|Troll Unguent}}\n*{{skill icon|Whirling Defense}}\n*{{monster skill icon|Giant Stomp}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 82\n| piercing = 82\n| slashing = 82\n| cold = 112\n| earth = 112\n| fire = 112\n| lightning = 112\n}}\n\n== Items dropped ==\n*[[Giant Tusk]]\n*[[Giant's Boots]]\n\n==Notes==\n{{anomaly|Unlike other Giants, Nomad Giants can be knocked down, but they do not have the corresponding animation.}}"
+}

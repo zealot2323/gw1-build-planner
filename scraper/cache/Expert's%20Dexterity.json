@@ -1,0 +1,7 @@
+{
+  "title": "Expert's Dexterity",
+  "pageid": 4275,
+  "revid": 2628838,
+  "timestamp": "2018-06-18T17:28:59Z",
+  "wikitext": "{{Skill infobox\n| name = Expert's Dexterity\n| id = 1724\n| campaign = Nightfall\n| profession = Ranger\n| attribute = Expertise\n| type = Stance\n| elite = y\n| energy = 5\n| recharge = 20\n| causes1 = Increased Attack Speed\n| causes2 = Increased Attribute\n| description = [[Elite]] [[Stance]]. For {{gr|1|20}} second[s], you [[Attack speed|attack 33% faster]] and your [[Marksmanship]] attribute is increased by 2.\n| concise description = Elite Stance. ({{gr|1|20}} second[s].) You attack 33% faster and you gain +2 to your Marksmanship attribute.\n| has-pvp = y\n}}\n\n{{Skill progression\n|attribute = [[Expertise]]\n|var1 name = [[Duration]]\n|var1 at0 = 1\n|var1 at15 = 20}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n*[[Prophecies]]\n** [[Confessor Isaiah]] ([[The Battle for Lion's Arch (explorable area)]], only during [[The Battle for Lion's Arch]])\n*[[Nightfall]]\n** [[Bansheh, Gatherer of Branches]] ([[Resplendent Makuun]]) (may not spawn, see individual page)\n\n== Related skills ==\n*{{skill icon|Lightning Reflexes}}\n*{{skill icon|Rapid Fire}}\n\n[[de:Gewandtheit des Profis]]"
+}

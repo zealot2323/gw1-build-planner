@@ -1,0 +1,7 @@
+{
+  "title": "Stone Crusher",
+  "pageid": 22572,
+  "revid": 2697431,
+  "timestamp": "2024-05-29T14:17:45Z",
+  "wikitext": "{{otheruses|the NPC|the weapon|Stone Crusher (weapon)}}\n__NOTOC__{{NPC infobox\n| type = Elemental\n| affiliation = Echovald Forest wildlife\n| profession = w\n| level = 23 (26)\n| campaign = Factions\n}}\n[[Stone Crusher]]s are [[Stone guardian]] [[warrior]]s.\n\n==Locations==\n*[[Echovald Forest]]\n**{{NPC location|Arborstone|explorable area}}\n\n==Missions==\n*Echovald Forest\n**{{NPC location|Arborstone}}\n\n==Skills==\n*{{skill icon|Endure Pain}}\n*{{skill icon|Forceful Blow}} ([[elite]])\n*{{skill icon|Mighty Blow}}\n*{{monster skill icon|Stun Immunity}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 69\n| piercing = 109\n| slashing = 109\n| cold = 69\n| earth = 109\n| fire = 109\n| lightning = 109\n}}\n\n==Items dropped==\n*[[Granite Slab]]\n*[[Stone Carving]]\n*[[Stone Remnants]]\n\n== Notes ==\n* They wield a hammer that is not available as a regular [[drop]]. However, [[Xun Rao's Absolution]] uses the same skin.\n\n[[Category:Drops granite]]"
+}

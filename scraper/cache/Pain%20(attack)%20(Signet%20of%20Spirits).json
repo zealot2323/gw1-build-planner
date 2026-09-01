@@ -1,0 +1,7 @@
+{
+  "title": "Pain (attack) (Signet of Spirits)",
+  "pageid": 213190,
+  "revid": 2609219,
+  "timestamp": "2016-06-27T23:33:43Z",
+  "wikitext": "{{skill infobox\n| id = 3153\n| name = Pain\n| image = [[Image:Pain (attack) (Signet of Spirits).jpg]]\n| campaign = Factions\n| profession = Monster\n| special = Spirit monster\n| attribute = Channeling Magic\n| type = Ranged Attack\n| activation = 2\n| description = [[Ranged Attack]]. If this attack hits, it deals {{gr|5|20}} damage.\n| concise description = Ranged Attack. Deals {{gr|5|20}} damage.}}\n\n{{skill progression\n| attribute = [[Channeling Magic]]\n| var1 name = [[Damage]]\n| var1 at0 = 5\n| var1 at15 = 20}}\n\n== Related skills ==\n*{{skill icon|Pain (attack)}}\n\n==Notes==\n* This skill is used by the three spirits summoned by [[Signet of Spirits]]. Not to be confused with [[Pain (attack)]] or [[Pain]] itself.\n* The damage is armor-ignoring."
+}

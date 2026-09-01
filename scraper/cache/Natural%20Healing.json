@@ -1,0 +1,7 @@
+{
+  "title": "Natural Healing",
+  "pageid": 14387,
+  "revid": 2720984,
+  "timestamp": "2026-02-10T07:19:03Z",
+  "wikitext": "{{Skill infobox\n| id = 1525\n| name = Natural Healing\n| campaign = Nightfall\n| profession = Dervish\n| attribute = Wind Prayers\n| type = Spell\n| energy = 5\n| activation = 1\n| recharge = 6\n| causes1 = Healing\n| causes2 = Decreased Activation Time\n| description = [[Spell]]. You are [[heal]]ed for {{gr|50|170}} [[Health]]. If you are not [[Enchantment spell|enchanted]], this spell [[Activation time|activates]] 50% faster.\n| concise description = Spell.  Heals you for {{gr|50|170}}. This skill activates 50% faster if you are not enchanted.\n| target = untargeted\n}}\n\n{{Skill progression\n|attribute = [[Wind Prayers]]\n|var1 name = [[Heal]]ing\n|var1 at0 = 50\n|var1 at15 = 170\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Baram]] ([[The Kodash Bazaar]])\n\n==Notes==\n* Consider bringing this skill as a secondary Dervish on a profession that uses few enchantments, such as [[Warrior]]s, [[Ranger]]s and [[Paragon]]s.\n\n== Trivia ==\n{{Skill change}}"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Golden Skull Strike",
+  "pageid": 4433,
+  "revid": 2727430,
+  "timestamp": "2026-05-06T00:36:42Z",
+  "wikitext": "{{Skill infobox\n| name = Golden Skull Strike\n| id = 1635\n| campaign = Nightfall\n| profession = Assassin\n| attribute = Dagger Mastery\n| type = Off-Hand Attack\n| elite = y\n| energy = 10\n| recharge = 15\n| causes1 = Dazed\n| description = [[Elite]] [[Off-Hand Attack]]. If you are under the effects of an [[enchantment]] and this [[attack]] hits, [[target]] [[foe]] is [[Dazed]] {{gr|1|12}} seconds.\n| concise description = Elite Off-Hand Attack.  Inflicts Dazed condition ({{gr|1|12}} seconds).  {{gray|No effect unless you are enchanted.}}\n| checks = enchantment\n| checks-true = dazed\n}}\n\n{{Skill progression\n|attribute = [[Dagger Mastery]]\n|var1 name = [[Dazed]] [[duration]]\n|var1 at0 = 1\n|var1 at15 = 12}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Nightfall]]\n** [[Ravager of Dreams]] ([[Depths of Madness]])\n* [[Eye of the North]]\n** [[Pywatt the Swift]] ([[Alcazia Tangle]])\n** [[Rake Blazeclaw]] ([[Rragar's Menagerie]], only during [[The Hunting of the Charr]])\n\n== Related skills ==\n* {{skill icon|Temple Strike}} ([[elite]])\n\n== Notes ==\n{{anomaly|The concise description fails to mention that only daze will not have effect if not enchanted (the attack will not fail).}}\n\n== Trivia ==\n* The [[skill icon]] features the head of a [[w:Rhinoceros|rhinoceros]].\n\n[[de:Goldener Schädel-Stoß]]"
+}

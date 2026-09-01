@@ -1,0 +1,7 @@
+{
+  "title": "Conjure Nightmare",
+  "pageid": 1557,
+  "revid": 2683794,
+  "timestamp": "2023-02-21T18:33:41Z",
+  "wikitext": "{{Skill infobox\n| id = 859\n| name = Conjure Nightmare\n| campaign = Factions\n| profession = Mesmer\n| attribute = Illusion Magic\n| type = Hex Spell\n| energy = 15\n| recharge = 5\n| activation = 1\n| causes1 = Health Degeneration\n| description = [[Hex Spell]].  For {{gr|2|16}} seconds, [[target]] [[foe]] suffers -8 [[Health degeneration]].\n| concise description = Hex Spell. ({{gr|2|16}} seconds.) Causes -8 Health degeneration. \n}}\n\n{{Skill progression\n|attribute = [[Illusion Magic]]\n|var1 name = [[Duration]]\n|var1 at0 = 2\n|var1 at15 = 16}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Eye of the North]]\n** [[Wilderm Wrathspew]] ([[Verdant Cascades]])\n** [[Alitta Guilebloom]] ([[Arbor Bay]])\n\n== Related skills ==\n* {{skill icon|Conjure Phantasm}}\n* {{skill icon|Recurring Insecurity}} ([[elite]])"
+}

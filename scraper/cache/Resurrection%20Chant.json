@@ -1,0 +1,7 @@
+{
+  "title": "Resurrection Chant",
+  "pageid": 2955,
+  "revid": 2732785,
+  "timestamp": "2026-07-04T18:49:43Z",
+  "wikitext": "{{Skill infobox\n| id = 1128\n| name = Resurrection Chant\n| campaign = Factions\n| profession = Monk\n| attribute = Healing Prayers\n| type = Spell\n| target = dead party members\n| energy = 10\n| activation = 6\n| recharge = 15\n| range = half\n| special = Resurrection\n| description = [[Spell]]. [[Resurrection|Resurrect]] [[target]] [[party]] member with up to your current [[Health]] and {{gr|5|35||%}} [[Energy]]. This spell has [[Half ranged|half the normal range]].\n| concise description = Half Range Spell. Resurrects target party member at your current Health and with {{gr|5|35||%}} Energy.\n}}\n\n{{Skill progression\n| attribute = [[Healing Prayers]]\n| var1 name = % [[Energy]]\n| var1 at0 = 5\n| var1 at15 = 35}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Maximilian the Meticulous]] ([[Nebo Terrace (War in Kryta)]])\n* [[Eye of the North]]\n** [[Anmat the Trickster]] ([[Sacnoth Valley]] and [[Against the Charr]])\n\n== Related skills ==\n* {{skill icon|Death Pact Signet}}\n* {{skill icon|Flesh of My Flesh}}\n\n== Notes ==\n* This is one of the skills capable of resurrecting a character with 1 health, such as a [[55 Monk]] or a [[Blood is Power]] [[Necromancer]] that has too much [[Death Penalty]].\n* This skill makes sounds like light bells or chimes when casting."
+}

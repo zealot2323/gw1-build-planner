@@ -1,0 +1,7 @@
+{
+  "title": "Horns of the Ox",
+  "pageid": 14513,
+  "revid": 2733147,
+  "timestamp": "2026-07-05T15:47:11Z",
+  "wikitext": "{{Skill infobox\n| id = 777\n| name = Horns of the Ox\n| campaign = Factions\n| profession = Assassin\n| attribute = Dagger Mastery\n| type = Dual Attack\n| energy = 5\n| recharge = 12\n| causes1 = Knockdown\n| description = [[Dual Attack]]. Must follow an [[Off-Hand Attack|off-hand attack]]. If it hits, Horns of the Ox strikes for {{gr|1|11|+}} [[damage]]. If struck [[foe]] is not [[adjacent]] to any allies, that foe is [[Knock down|knocked down]].\n| concise description = Dual Attack. Deals {{gr|1|11|+}} damage. Causes knock-down if the target foe is not adjacent to any of its allies. {{gray|Must follow an off-hand attack.}}\n| requires = offhand\n| checks = adjacent ally\n| checks-false = knockdown\n}}\n\n{{Skill progression\n|attribute = [[Dagger Mastery]]\n|var1 name = + [[Damage]]\n|var1 at0 = 1\n|var1 at15 = 11}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Eye of the North]]\n** [[Xien]] ([[Oola's Lab]])\n\n==Related skills==\n*{{skill icon|Trampling Ox}}\n\n==Notes==\n*The full description is not clear about whose allies the foe cannot be adjacent to for the conditional knock down effect.\n\n== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill history]] for details."
+}

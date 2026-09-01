@@ -1,0 +1,7 @@
+{
+  "title": "Critical Defenses",
+  "pageid": 14581,
+  "revid": 2693537,
+  "timestamp": "2024-03-16T16:02:00Z",
+  "wikitext": "{{Skill infobox\n| id = 1027\n| name = Critical Defenses\n| campaign = Factions\n| profession = Assassin\n| attribute = Critical Strikes\n| type = Enchantment Spell\n| energy = 10\n| activation = 1\n| recharge = 30\n| causes1 = Block\n| causes2 = Renewal\n| description = [[Enchantment Spell]]. For {{gr|4|10}} seconds, you have a 75% chance to [[block]]. Critical Defenses [[Renewal|refreshes]] every time you land a [[critical hit]].\n| concise description = Enchantment Spell. ({{gr|4|10}} seconds.) You have a 75% chance to block. Renewal: every time you land a critical hit.\n}}\n\n{{Skill progression\n|attribute = [[Critical Strikes]]\n|var1 name = [[Duration]]\n|var1 at0 = 4\n|var1 at15 = 10}}\n\n== Acquisition ==\n===[[Unlock]] and learn===\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Eye of the North]]\n** [[Rekoff Broodmother]] ([[Riven Earth]])\n** [[Pywatt the Swift]] ([[Alcazia Tangle]])\n** [[Rake Blazeclaw]] ([[Rragar's Menagerie]], only during [[The Hunting of the Charr]])\n\n===Unlock only===\n;[[Hero]]es\n* Eye of the North\n** Unlocking [[Anton]]\n\n== Related skills ==\n* {{skill icon|Critical Agility}}\n\n== Notes ==\n* Every time this enchantment is refreshed, the duration is affected by enchantment extending modifications on your equipment."
+}

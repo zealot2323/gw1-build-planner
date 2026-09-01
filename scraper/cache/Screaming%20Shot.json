@@ -1,0 +1,7 @@
+{
+  "title": "Screaming Shot",
+  "pageid": 1234,
+  "revid": 2733266,
+  "timestamp": "2026-07-05T17:12:15Z",
+  "wikitext": "{{Skill infobox\n| name = Screaming Shot\n| id = 1719\n| campaign = Nightfall\n| profession = Ranger\n| attribute = Marksmanship\n| type = Bow Attack\n| energy = 10\n| recharge = 8\n| target = foes\n| causes1 = Bleeding\n| description = [[Bow Attack]]. If this attack hits, you deal {{gr|10|25|+}} [[damage]]. If your [[target]] is within [[earshot]], that [[foe]] begins [[Bleeding]] for {{gr|5|20}} seconds.\n| concise description = Bow Attack. Deals {{gr|10|25|+}} damage. Inflicts Bleeding condition ({{gr|5|20}} seconds) if target foe is within earshot.\n}}\n\n{{Skill progression\n| attribute = [[Marksmanship]]\n| var1 name = + [[Damage]]\n| var1 at0 = 10\n| var1 at15 = 25\n| var2 name = [[Bleeding]] [[duration]]\n| var2 at0 = 5\n| var2 at15 = 20}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n* [[Nightfall]]\n** [[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n* Nightfall\n** [[Pikin]] (Kamadan, Jewel of Istan)\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Cairn the Cunning]] ([[Riverside Province (explorable area)]])\n\n==Related skills==\n*{{Skill icon|Hunter's Shot}}\n\n==Notes==\n*Particularly effective when used with a [[Shortbow]]; you are guaranteed to be within earshot of a non-retreating foe, unless you have a height advantage.\n\n[[Category:Skills offered by hero skill trainers]]"
+}

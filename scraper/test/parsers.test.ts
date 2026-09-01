@@ -34,10 +34,14 @@ describe("parseSkill", () => {
     expect(entity.recharge).toBe(5);
     expect(entity.description).toContain("adjacent");
     expect(entity.acquisition.trainers).toEqual(["Harnil", "Dakk"]);
-    // Prophecies capture bosses only — Factions/EotN entries excluded;
+    // Every campaign's sources are kept and tagged; whether a character can
+    // use one is decided later by whether the location is reachable.
+    expect(entity.acquisition.captureBosses).toContain("Cairn the Berserker");
+    expect(entity.acquisition.captureBosses).toContain("Tuila the Club"); // Factions
+    expect(entity.acquisition.sourceCampaigns?.["Cairn the Berserker"]).toBe("Prophecies");
+    expect(entity.acquisition.sourceCampaigns?.["Tuila the Club"]).toBe("Factions");
     // Disgruntled Zombie only spawns during Evil Residents → conditional
-    expect(entity.acquisition.captureBosses).toEqual(["Cairn the Berserker"]);
-    expect(entity.acquisition.conditionalCaptureBosses).toEqual(["Disgruntled Zombie"]);
+    expect(entity.acquisition.conditionalCaptureBosses).toContain("Disgruntled Zombie");
   });
 
   it("parses Backbreaker (elite, adrenaline cost, capture-only)", () => {
@@ -46,19 +50,24 @@ describe("parseSkill", () => {
     expect(entity.adrenalineCost).toBe(9);
     expect(entity.energyCost).toBeNull();
     expect(entity.acquisition.trainers).toEqual([]);
-    // Ferk Mallet always spawns; the other two only during a quest/event
-    expect(entity.acquisition.captureBosses).toEqual(["Ferk Mallet"]);
-    expect(entity.acquisition.conditionalCaptureBosses).toEqual([
-      "Cairn the Grave",
-      "Ingenious Ettin",
-    ]);
+    // Ferk Mallet always spawns; two Prophecies bosses are quest-gated
+    expect(entity.acquisition.captureBosses).toContain("Ferk Mallet");
+    expect(entity.acquisition.conditionalCaptureBosses).toEqual(
+      expect.arrayContaining(["Cairn the Grave", "Ingenious Ettin"]),
+    );
+    expect(entity.acquisition.sourceCampaigns?.["Ferk Mallet"]).toBe("Prophecies");
   });
 
   it("parses Healing Breeze (awkward acquisition: quests, piped pre-Searing links, ignored groups)", () => {
     const { entity } = parseSkill("Healing Breeze", cached("Healing Breeze"));
     expect(entity.campaign).toBe("Core");
-    expect(entity.acquisition.quests).toEqual(["Monk Test"]);
-    expect(entity.acquisition.trainers).toEqual(["Halbrik", "Sir Bertran", "Dakk"]);
+    // sources from every campaign, each tagged with where it came from
+    expect(entity.acquisition.quests).toContain("Monk Test");
+    expect(entity.acquisition.sourceCampaigns?.["Monk Test"]).toBe("Prophecies");
+    expect(entity.acquisition.sourceCampaigns?.["Locate Sister Tai"]).toBe("Factions");
+    expect(entity.acquisition.trainers).toEqual(
+      expect.arrayContaining(["Halbrik", "Sir Bertran", "Dakk"]),
+    );
     // profession changers / hero unlocks must not leak into any list
     const all = [...entity.acquisition.trainers, ...entity.acquisition.quests, ...entity.acquisition.captureBosses];
     expect(all).not.toContain("Nausuan");
@@ -70,7 +79,8 @@ describe("parseSkill", () => {
     expect(entity.isElite).toBe(true);
     // no '''Signet of Capture''' header — elites default to capture group;
     // Galrath is hard-mode-only and must be dropped
-    expect(entity.acquisition.captureBosses).toEqual(["Spoiler-related boss"]);
+    expect(entity.acquisition.captureBosses).toContain("Spoiler-related boss");
+    expect(entity.acquisition.captureBosses).not.toContain("Galrath");
   });
 
   it("parses Aura of Faith (awkward: capture entries with no campaign bullets)", () => {
@@ -127,11 +137,16 @@ describe("parseMonster", () => {
     expect(entity.locations).toContain("Ascalon Foothills");
   });
 
-  it("parses Stone Summit Crusher (awkward: campaign sub-blocks in Skills)", () => {
+  it("parses Stone Summit Crusher (campaign sub-blocks become tagged variants)", () => {
     const { entity } = parseMonster("Stone Summit Crusher", cached("Stone Summit Crusher"));
-    // Only the ;Prophecies block counts — EotN and Fronis Irontoe's Lair
-    // blocks dropped, and Dwarven Battle Stance is hard-mode-only.
-    expect(entity.skills.sort()).toEqual(['"For Great Justice!"', "Griffon's Sweep", "Protector's Strike"]);
+    // Each campaign's bar is kept as its own tagged variant, so the engine
+    // can pick the one that applies in a given zone.
+    const proph = entity.variants!.find((v) => v.campaign === "Prophecies")!;
+    expect(proph.skills.sort()).toEqual([
+      '"For Great Justice!"', "Griffon's Sweep", "Protector's Strike",
+    ]);
+    expect(proph.hardModeSkills).toContain("Dwarven Battle Stance");
+    expect(entity.variants!.some((v) => v.campaign === "Eye of the North")).toBe(true);
   });
 
   it("parses Drub Gorefang (boss without an elite — legitimate, not an issue)", () => {

@@ -1,0 +1,7 @@
+{
+  "title": "Release Enchantments",
+  "pageid": 2907,
+  "revid": 2726517,
+  "timestamp": "2026-04-28T19:13:40Z",
+  "wikitext": "{{Skill infobox\n| id = 960\n| name = Release Enchantments\n| campaign = Factions\n| profession = Monk\n| attribute = Divine Favor\n| type = Spell\n| energy = 5\n| activation = {{1/4}}\n| recharge = 5\n| target = self\n| aoe = party\n| causes1 = Healing\n| removes1 = Enchantment\n| description = [[Spell]]. Lose all [[enchantment]]s. Each [[party]] member is [[heal]]ed for {{gr|5|35}} [[Health]] for each [[Monk]] enchantment lost.\n| concise description = Spell. Removes all of your enchantments. Heals all party members for {{gr|5|35}} for each Monk Enchantment removed.\n}}\n\n{{Skill progression\n| attribute = [[Divine Favor]]\n| var1 name = [[Heal]]ing\n| var1 at0 = 5\n| var1 at15 = 35\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Contemplation of Purity}}\n* {{duplicate skill icon|Divine Healing|Heaven's Delight}}\n* {{skill icon|Heal Party}}\n* {{skill icon|Light of Deliverance}} ([[elite]])\n\n== Notes ==\n* This spell affects party members in [[party range]].\n* The enchantments are removed first, voiding any possible healing bonus from [[Unyielding Aura]].\n** However, [[Vigorous Spirit]] will trigger its healing before being removed."
+}

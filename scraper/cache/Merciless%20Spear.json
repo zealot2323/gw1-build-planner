@@ -1,0 +1,7 @@
+{
+  "title": "Merciless Spear",
+  "pageid": 15254,
+  "revid": 2684148,
+  "timestamp": "2023-02-24T15:26:36Z",
+  "wikitext": "{{Skill infobox\n| id = 1603\n| name = Merciless Spear\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Spear Mastery\n| type = Spear Attack\n| adrenaline = 6\n| causes1 = Deep Wound\n| description = [[Spear Attack]]. If this [[attack]] hits a [[foe]] with less than 50% [[Health]], that foe suffers from a [[Deep Wound]] for {{gr|5|20}} seconds.\n| concise description = Spear Attack. Inflicts Deep Wound condition ({{gr|5|20}} seconds). {{gray|No effect unless target has less than 50% Health.}}\n}}\n\n{{Skill progression\n| attribute = [[Spear Mastery]]\n| var1 name = [[Deep Wound]] [[duration]]\n| var1 at0 = 5\n| var1 at15 = 20}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Nightfall]]\n**[[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n*Nightfall\n**[[Libeh]] ([[Command Post]])\n'''[[Signet of Capture]]'''\n*[[Factions]]\n**[[Yayoi of the Orders]] ([[Sunjiang District (Winds of Change)]], only during [[Redemption for the Lost]])\n\n==Related skills==\n*{{skill icon|Slayer's Spear}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

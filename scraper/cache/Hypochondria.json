@@ -1,0 +1,7 @@
+{
+  "title": "Hypochondria",
+  "pageid": 1685,
+  "revid": 2720376,
+  "timestamp": "2026-02-06T17:44:56Z",
+  "wikitext": "{{Skill infobox\n| id = 1334\n| name = Hypochondria\n| campaign = Nightfall\n| profession = Mesmer\n| type = Spell\n| energy = 5\n| activation = {{1/4}}\n| recharge = 7\n| causes1 = Condition\n| description = [[Spell]]. Transfer all [[condition]]s from all [[foe]]s [[in the area]] to target foe.\n| concise description = Spell. Transfer all conditions from foes in the area to target foe.\n| aoe = in the area\n| target = foes\n| removes1 = Condition\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]'''\n* [[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]'''\n* [[Shiloh]] ([[Sunspear Great Hall]])\n\n== Notes ==\n* The conditions are applied to the target before being removed from the foes in the area, so [[Fevered Dreams]] will not re-apply the conditions.\n* Can be used for an AoE [[Fragility]] spike.\n\n== Trivia ==\n* [[w:Hypochondriasis|Hypochondria]] is the excessive preoccupation or worry about having a serious illness.\n{{Skill change}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

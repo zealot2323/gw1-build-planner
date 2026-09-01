@@ -1,0 +1,7 @@
+{
+  "title": "Spirit to Flesh",
+  "pageid": 5070,
+  "revid": 2684083,
+  "timestamp": "2023-02-23T18:48:07Z",
+  "wikitext": "{{Skill infobox\n| id = 918\n| name = Spirit to Flesh\n| campaign = Factions\n| profession = Ritualist\n| attribute = Spawning Power\n| type = Touch spell\n| energy = 10\n| activation = {{3/4}}\n| recharge = 15\n| target = spirits\n| range = touch\n| aoe = nearby\n| causes1 = Healing\n| removes1 = spirit\n| description = [[Spell]]. [[Target]] [[Touch skill|touched]] [[ally|allied]] [[spirit]] is destroyed. All [[nearby]] allies are [[heal]]ed for {{gr|30|240}}.\n| concise description = Touch Spell. Destroys target touched allied spirit. Heals nearby allies for {{gr|30|240}}.\n}}\n\n{{Skill progression\n| attribute = [[Spawning Power]]\n| var1 name = [[Heal]]ing\n| var1 at0 = 30\n| var1 at15 = 240\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Feast of Souls}}\n\n== Notes ==\n* Healing takes place before any effects gained by destroying a spirit. (e.g. used on a [[Restoration]] spirit, living allies are healed, then dead party members are resurrected)\n\n\n\n[[Category:Skills that affect allies]]"
+}

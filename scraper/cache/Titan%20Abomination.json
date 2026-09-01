@@ -1,0 +1,7 @@
+{
+  "title": "Titan Abomination",
+  "pageid": 26334,
+  "revid": 2702809,
+  "timestamp": "2025-02-08T14:42:04Z",
+  "wikitext": "__NOTOC__{{NPC infobox \n| species = Titan \n| profession = W\n| level = 28 (30)\n| campaign = Nightfall\n| map1 = [[File:\"Nightmare Titan\" concept art.jpg|225px]]\n| map1-text = Concept art by [[Kekai Kotaki]].\n}}\n[[Titan Abomination]]s will spawn a [[Pain Titan]] when killed, which spawn two [[Madness Titan]]s upon death.\n\n==Locations==\n*[[Realm of Torment]]\n**{{NPC location|Domain of Fear}}\n**{{NPC location|Domain of Secrets}}\n**{{NPC location|Domain of Pain}}\n**{{NPC location|Depths of Madness}}\n**{{NPC location|Heart of Abaddon}}\n\n==Missions==\n*Realm of Torment\n**{{NPC location|Gate of Madness}}\n\n==Skills==\n*{{skill icon|Battle Rage}} ([[elite]])\n*{{skill icon|Bull's Strike}}\n*{{skill icon|Counter Blow}}\n*{{skill icon|Irresistible Blow}}\n*{{skill icon|Mighty Blow}}\n*{{monster skill icon|Stun Immunity}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 123\n| piercing = 123\n| slashing = 123\n| cold = 103\n| earth = 143\n| fire = 103\n| lightning = 103\n}}\n\n== Notes ==\n*Like most [[Titan]]s, they are not [[fleshy]]."
+}

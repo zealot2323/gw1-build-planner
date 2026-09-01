@@ -1,0 +1,7 @@
+{
+  "title": "Glyph of Essence",
+  "pageid": 16252,
+  "revid": 2732914,
+  "timestamp": "2026-07-04T23:37:51Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 1096\n| name = Glyph of Essence\n| campaign = Factions\n| profession = Elementalist\n| type = Glyph\n| energy = 5\n| activation = 1\n| recharge = 20\n| causes1 = Decreased Activation Time\n| causes2 = Energy Loss\n| description = [[Glyph]]. For 15 seconds, your next [[spell]] [[Activation time|casts]] instantly but causes you to lose all [[Energy]].\n| concise description = Glyph. (15 seconds.) Your next spell casts instantly. {{gray|You lose all Energy.}}\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{Skill icon|Glyph of Sacrifice}}\n\n== Notes ==\n* The amount of energy loss can be lowered by [[energy hiding]].\n* Energy gain skills such as [[Auspicious Incantation]] or [[Attunement]]s will not help to counter the energy loss, as it happens after the gain from these skills, leaving you at 0 energy.\n* Synergizes well with [[Ether Lord]], since the energy loss would happen anyway. Synergizes even better with [[Rebirth]], since it has an especially long cast time.\n\n== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details."
+}

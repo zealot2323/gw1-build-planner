@@ -1,0 +1,7 @@
+{
+  "title": "Rage of the Ntouka",
+  "pageid": 4263,
+  "revid": 2734324,
+  "timestamp": "2026-07-14T09:26:08Z",
+  "wikitext": "{{Skill infobox\n| name = Rage of the Ntouka\n| id = 1408\n| campaign = Nightfall\n| profession = Warrior\n| attribute = Strength\n| type = Skill\n| elite = y\n| energy = 5\n| recharge = 15\n| causes1 = Adrenaline Gain\n| causes2 = Increased Recharge Time\n| description = [[Elite]] [[Skill (skill type)|Skill]]. Gain {{gr|1|7}} strike[s] of [[adrenaline]]. For 8 seconds, whenever you use an [[List of adrenal skills|adrenal skill]], that skill [[Recharge time|recharges]] for 3 seconds.\n| concise description = Elite Skill. You gain {{gr|1|7}} adrenaline. {{gray|For 8 seconds, adrenal skills have a 3 second recharge when used.}}\n}}\n\n{{Skill progression\n| attribute = [[Strength]]\n| var1 name = [[Adrenaline]] gain\n| var1 at0 = 1\n| var1 at15 = 7}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Onwan, Lord of the Ntouka]] ([[Arkjok Ward]])\n\n== Notes ==\n* The 3-second recharge listed is in addition to any recharge the skill affected may already have had.\n* [[Hero]]es won't use this skill on their own.\n\n==Trivia==\n*The warrior in the [[skill icon]] appears to be wearing [[Warrior Sunspear armor|Sunspear Armor]].\n*None of the Ntouka-named creatures ([[Ntouka Bird]]s, [[Crested Ntouka Bird]]s, and [[Rampaging Ntouka]]s) can use Rage of the Ntouka, but they sometimes hang with [[Steelfang Drake]]s, who can.\n{{Skill change}}\n\n[[de:Wut des Ntouka]]"
+}

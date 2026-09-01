@@ -1,0 +1,7 @@
+{
+  "title": "Star Strike",
+  "pageid": 42425,
+  "revid": 2630096,
+  "timestamp": "2018-06-18T17:51:46Z",
+  "wikitext": "{{skill infobox\n| id = 1039\n| name = Star Strike\n| campaign = Factions\n| profession = Assassin\n| type = Skill\n| special = Celestial\n| pve-only = y\n| recharge = morale boost\n| activation = 1\n| causes1 = Summoned Creature\n| description = Skill. For 10 seconds, upon every successful [[Attack|hit]] by you or a [[party]] member a level 20 [[Celestial Assassin|celestial attacker]] is called forth to attack [[foe]]s (maximum of 6).\n| concise description = Skill. (10 seconds.) Party-wide effect. Every successful attack summons a level 20 celestial attacker (maximum of 6).\n| aoe = party\n}}\n\n== Acquisition ==\nThis skill can be temporarily acquired by [[Primary profession|primary]] [[Assassin]]s by talking to [[Kuunavang]] in [[Raisu Palace]], [[Imperial Sanctum]] or [[Raisu Palace (explorable area)]].\n\n== Notes ==\n* The skill descriptions omit that this skill can only be recharged when gaining a [[Morale Boost]].\n* Despite their appearance, Celestial Assassins are not [[minion]]s: they do not have inherent [[health degeneration]], do not turn [[Masterless minion|hostile]] when their master is killed, and [[Health regeneration#Automatic regeneration|regenerate health outside of combat]] like normal [[creature]]s.\n* Although Celestial Assassins do not follow the party, they continue to go attack foes that are [[aggro]]ed by a party member.\n\n[[de:Sternenstoß]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "\"On Your Knees!\"",
+  "pageid": 14643,
+  "revid": 2684551,
+  "timestamp": "2023-03-03T14:18:54Z",
+  "wikitext": "{{Skill infobox\n| id = 906\n| name = \"On Your Knees!\"\n| campaign = Factions\n| profession = Warrior\n| type = Shout\n| adrenaline = 6\n| causes1 = Adrenaline Loss\n| causes2 = Recharge\n| description = [[Shout]]. Lose all [[adrenaline]]. If any [[adjacent]] [[foe]]s are [[knock down|knocked down]], all of your [[stance]]s are [[recharge]]d.\n| concise description = Shout. Recharges all your stances if you are adjacent to a knocked-down foe. {{gray|You lose all adrenaline.}}\n| aoe = none\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Notes ==\n* Some synergy with [[Bull's Charge]].\n* Combines especially well with [[Grapple]], as it provides an easy knock-down, is a non-elite warrior skill with melee range, and \"On Your Knees!\" will also recharge any stance removed by Grapple.\n\n{{DEFAULTSORT:On Your Knees!}}"
+}

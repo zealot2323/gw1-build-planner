@@ -1,0 +1,7 @@
+{
+  "title": "Stalking Nephila",
+  "pageid": 16007,
+  "revid": 2575679,
+  "timestamp": "2014-09-16T07:08:13Z",
+  "wikitext": "__NOTOC__\n{{NPC infobox\n| image = [[Image:Nephila.jpg|150px]]\n| affiliation = Istan wildlife\n| type = Arachnid\n| profession = r\n| level = 2 (22), 15 (25)\n| campaign = Nightfall\n}}\n[[Stalking Nephila]]s often travel in packs with one or two other insect species mixed, often either a [[Preying Lance]] or a [[Bladed Termite]].\n\n==Locations==\n*[[Istan]]\n**{{NPC location|Cliffs of Dohjok}} (level 2)\n**{{NPC location|Fahranur, The First City}} (level 2 and 15)\n**{{NPC location|Issnur Isles}} (level 15)\n**{{NPC location|Lahtenda Bog}} (level 15)\n**{{NPC location|Plains of Jarin}} (level 2)\n\n==Skills==\n\n===Level 2===\n*{{skill icon|Quick Shot}} ([[elite]], [[hard mode]] only)\n\n===Level 15===\n*{{skill icon|Apply Poison}}\n*{{skill icon|Called Shot}}\n*{{skill icon|Natural Stride}}\n*{{skill icon|Quick Shot}} (elite, hard mode only)\n\n==Armor ratings==\n{|\n|-\n|{{NPC statistics\n| level = 15\n| prof = r\n| blunt = 46\n| piercing = 46\n| slashing = 46\n| cold = 46\n| earth = 46\n| fire = 46\n| lightning = 46\n}}\n|{{NPC statistics\n| level = 22\n| prof = r\n| blunt = 100\n| piercing = 100\n| slashing = 100\n| cold = 100\n| earth = 100\n| fire = 100\n| lightning = 100\n}}\n|}\n\n==Items dropped==\n*[[Silken Spider Web]] - level 15 (25)\n*[[Spider Web (Nightfall)|Spider Web]] - level 2 (22)\n\n==Trivia==\n*Golden silk orb-weaver spiders are of the ''[[w:Nephila|Nephila]]'' genus."
+}

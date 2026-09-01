@@ -1,0 +1,7 @@
+{
+  "title": "Tusked Howler",
+  "pageid": 19299,
+  "revid": 2232328,
+  "timestamp": "2011-02-02T22:17:07Z",
+  "wikitext": "{{NPC infobox\n| image = [[File:Tusked ape.jpg|150px]]\n| type = Beast\n| affiliation = Kourna wildlife\n| profession = p\n| level = 22 (26)\n| campaign = Nightfall\n}}__NOTOC__\n[[Tusked Howler]]s are large ape-like beasts found in [[Kourna]].  They are usually encountered in groups with [[Tusked Hunter]]s.\n\n==Locations==\n*[[Kourna]]\n**{{NPC location|Arkjok Ward}}\n**{{NPC location|Bahdok Caverns}}\n**{{NPC location|Jahai Bluffs}}\n**{{NPC location|Sunward Marches}}\n**{{NPC location|Turai's Procession}} (only after completion of [[Battle of Turai's Procession]]) \n\n==Skills==\n*{{skill icon|Barbed Spear}}\n*{{skill icon|Focused Anger}} ([[elite]])\n*{{skill icon|Song of Power}}\n*{{skill icon|Wild Throw}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = p\n| blunt = 86\n| piercing = 86\n| slashing = 86\n| cold = 86\n| earth = 86\n| fire = 86\n| lightning = 86\n}}\n\n==Items dropped==\n*[[Half-Digested Armor]]"
+}

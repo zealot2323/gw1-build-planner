@@ -1,0 +1,7 @@
+{
+  "title": "Seeking Arrows",
+  "pageid": 2420,
+  "revid": 2726461,
+  "timestamp": "2026-04-28T18:43:34Z",
+  "wikitext": "{{Skill infobox\n| id = 893\n| name = Seeking Arrows\n| campaign = Factions\n| profession = Ranger\n| attribute = Marksmanship\n| type = Preparation\n| energy = 10\n| activation = 2\n| recharge = 15\n| causes1 = Unblockable\n| description = [[Preparation]]. For {{gr|3|14}} seconds, your [[bow attack|arrow]]s cannot be [[block]]ed. Seeking Arrows ends if you fail to hit.\n| concise description = Preparation. ({{gr|3|14}} seconds.) Your arrows are unblockable. {{gray|Ends if you fail to hit.}}\n}}\n\n{{Skill progression\n| attribute = [[Marksmanship]]\n| var1 name = [[Duration]]\n| var1 at0 = 3\n| var1 at15 = 14\n}}\n\n== Acquisition ==\n\n'''[[Skill trainer]]s'''\n\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n\n{{see|Fail#Skills that trigger an effect on failed attacks}}\n\n* {{skill icon|Fox's Promise}} ([[elite]])\n* {{skill icon|Otyugh's Cry}}\n* {{skill icon|Warrior's Cunning}}\n\n== Notes ==\n* [[Practiced Stance]] can be used to lengthen the skill's short [[duration]], which is, unlike most preparations, shorter than its  [[recharge time]]."
+}

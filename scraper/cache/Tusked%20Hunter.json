@@ -1,0 +1,7 @@
+{
+  "title": "Tusked Hunter",
+  "pageid": 19058,
+  "revid": 2232329,
+  "timestamp": "2011-02-02T22:17:18Z",
+  "wikitext": "{{NPC infobox\n| image = [[File:Tusked ape.jpg|150px]]\n| type = Beast\n| affiliation = Kourna wildlife\n| profession = p\n| level = 22 (26)\n| campaign = Nightfall\n}}__NOTOC__\n[[Tusked Hunter]]s are large rock-throwing ape-like beasts of Kourna. They often accompany [[Tusked Howler]]s.\n\n==Locations==\n*[[Kourna]]\n**{{NPC location|Arkjok Ward}}\n**{{NPC location|Bahdok Caverns}}\n**{{NPC location|Jahai Bluffs}}\n**{{NPC location|Sunward Marches}}\n**{{NPC location|Turai's Procession}} (only after completion of [[Battle of Turai's Procession]]) \n\n==Skills==\n*{{skill icon|Focused Anger}} ([[elite]])\n*{{skill icon|Merciless Spear}}\n*{{skill icon|Natural Temper}}\n*{{skill icon|Wild Throw}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = p\n| blunt = 86\n| piercing = 86\n| slashing = 86\n| cold = 86\n| earth = 86\n| fire = 86\n| lightning = 86\n}}\n\n==Items dropped==\n*[[Half-Digested Armor]]"
+}

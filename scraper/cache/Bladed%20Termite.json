@@ -1,0 +1,7 @@
+{
+  "title": "Bladed Termite",
+  "pageid": 16161,
+  "revid": 2566817,
+  "timestamp": "2014-03-20T04:55:44Z",
+  "wikitext": "__NOTOC__{{NPC infobox \n| affiliation = Istan wildlife\n| species = Insect\n| profession = w\n| level = 7 (23), 14 (24)\n| campaign = Nightfall\n}}\n[[Bladed Termite]]s can be found in the early areas of [[Istan]]. These are the adult versions of [[Juvenile Bladed Termite]]s.\n\n==Locations==\n*[[Istan]]\n**{{NPC location|Fahranur, The First City}} (level 14)\n**{{NPC location|Issnur Isles}} (level 14)\n**{{NPC location|Lahtenda Bog}} (level 14)\n**{{NPC location|Plains of Jarin}} (level 7)\n**{{NPC location|Zehlon Reach}} (level 7)\n\n==Skills==\n\n===Level 7===\n*{{skill icon|Cleave}} ([[elite]], [[Hard mode]] only)\n*{{skill icon|Power Attack}}\n\n===Level 14===\n*{{skill icon|Cleave}} (elite, Hard mode only)\n*{{skill icon|Frenzy}}\n*{{skill icon|Power Attack}}\n*{{skill icon|Swift Chop}}\n\n==Armor ratings==\n{{NPC statistics\n| level = 7\n| prof = w\n| blunt = 22\n| piercing = 22\n| slashing = 22\n| cold = 22\n| earth = 22\n| fire = 22\n| lightning = 22\n}}\n\n==Items dropped==\n*[[Insect Appendage]]\n*[[Juvenile Termite Leg]]"
+}

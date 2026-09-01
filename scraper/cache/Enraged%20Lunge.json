@@ -1,0 +1,7 @@
+{
+  "title": "Enraged Lunge",
+  "pageid": 2569,
+  "revid": 2733201,
+  "timestamp": "2026-07-05T16:26:41Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 1202\n| name = Enraged Lunge\n| campaign = Factions\n| profession = Ranger\n| attribute = Beast Mastery\n| type = Pet Attack\n| elite = y\n| energy = 5\n| recharge = 5\n| has-pvp=y\n| causes1 = Deep Wound\n| description = [[Elite]] [[Pet Attack]]. Your [[animal companion]] attempts an Enraged Lunge that applies a [[Deep Wound]] to [[target]] [[foe]] for {{gr|5|20}} seconds and deals {{gr|10|50|+}} [[damage]].\n| concise description = Elite Pet Attack. Inflicts Deep Wound condition ({{gr|5|20}} seconds) and deals {{gr|10|50|+}} damage.\n}}\n\n{{Skill progression\n|attribute = [[Beast Mastery]]\n|var1 name = [[Deep Wound]] [[duration]]\n|var1 at0 = 5\n|var1 at15 = 20\n|var2 name = + [[Damage]]\n|var2 at0 = 10\n|var2 at15 = 50}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Guild Wars Factions|Factions]]\n** [[Royen Beastkeeper]] ([[Nahpui Quarter (explorable area)]])\n* [[Guild Wars Eye of the North|Eye of the North]]\n** [[Ashlyn Spiderfriend]] ([[Magus Stones]])\n\n== Related skills ==\n* {{skill icon|Decapitate}} ([[elite]])\n* {{skill icon|Eviscerate}} (elite)\n\n== Trivia ==\n* Enraged Lunge is the only ranger skill to apply Deep Wound.\n* The functionality of this skill has changed since its introduction; see its [[Enraged Lunge/Skill history|PvE]] skill history for details.\n\n[[de:Erzürnter Ausfall]]"
+}

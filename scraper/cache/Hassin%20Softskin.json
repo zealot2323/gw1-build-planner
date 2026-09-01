@@ -1,0 +1,7 @@
+{
+  "title": "Hassin Softskin",
+  "pageid": 11265,
+  "revid": 2719692,
+  "timestamp": "2026-02-01T09:36:58Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| affiliation = Istan wildlife\n| species = Insect\n| profession = p\n| boss = y\n| level = 6 (26)\n| campaign = Nightfall\n| map1 = [[File:Hassin Softskin map.jpg|150px]]\n| map1-text = Location in Plains of Jarin\n}}\n[[Hassin Softskin]] is not visible until you approach the edge of the map. It usually spawns with a group of [[Juvenile Bladed Termite]]s and [[Stalking Nephila]]s.\n\n==Location==\n*[[Istan]]\n**{{NPC location|Plains of Jarin}} (south of the [[Sunspear Great Hall]], west of [[Kamadan]])\n\n==Skills==\n*{{skill icon|Anthem of Envy}}\n*{{skill icon|Vicious Attack}}\n*{{monster skill icon|Natural Resistance}}\n\n==Items dropped==\n*[[Hassin's Shell]] ([[unique]])\n*[[Juvenile Termite Leg]]\n\n==Notes==\n{{bug|Hassin and the group of insects around him don't try to attack you or come towards you if you attack them with a ranged weapon. They will also not attack your pet either if your pet goes and attacks them while you are attacking them with the ranged weapon.}}\n\n{{bug|Hassin and the group will not scatter when you use AoE skills, for example [[Fire Storm]], if you are right on the edge of your range and don't attack them with your weapon.}}"
+}

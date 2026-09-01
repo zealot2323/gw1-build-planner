@@ -1,0 +1,7 @@
+{
+  "title": "Heket's Rampage",
+  "pageid": 2833,
+  "revid": 2664622,
+  "timestamp": "2020-08-09T15:07:37Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| name = Heket's Rampage\n| id = 1728\n| campaign = Nightfall\n| profession = Ranger\n| attribute = Beast Mastery\n| type = Stance\n| energy = 5\n| recharge = 10\n| causes1 = Increased Attack Speed\n| description= [[Stance]]. For {{gr|5|11}} seconds, you [[Attack speed|attack 33% faster]]. This stance ends if you use an [[attack skill]].\n| concise description = Stance. ({{gr|5|11}} seconds). You attack 33% faster. {{gray|Ends if you use an attack skill.}}\n}}\n\n{{Skill progression\n|attribute = [[Beast Mastery]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 11}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Medando]] ([[Yohlon Haven]])\n'''[[Hero skill trainer]]s'''\n*[[Libeh]] ([[Command Post]])\n\n==Related skills==\n*{{skill icon|Berserker Stance}}\n*{{duplicate skill icon|Tiger's Fury|Bestial Fury}}\n\n==Notes==\n*[[Pet attack]]s are considered attack skills.\n\n==Trivia==\n*Even though the skill is known as Heket's Rampage, the [[skill icon]] depicts a cheetah, not a [[Heket]].\n\n[[Category:Skills offered by hero skill trainers]]"
+}

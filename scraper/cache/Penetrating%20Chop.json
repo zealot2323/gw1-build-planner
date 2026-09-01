@@ -1,0 +1,7 @@
+{
+  "title": "Penetrating Chop",
+  "pageid": 7829,
+  "revid": 2738513,
+  "timestamp": "2026-08-26T21:39:09Z",
+  "wikitext": "{{Skill infobox\n| id = 1136\n| name = Penetrating Chop\n| campaign = Factions\n| profession = Warrior\n| attribute = Axe Mastery\n| type = Axe Attack\n| adrenaline = 5\n| special = Duplicate\n| description = [[Axe Attack]]. If this [[attack]] hits, you strike for {{gr|10|25|+}} [[damage]]. This axe attack has 20% [[armor penetration]].\n| concise description = Axe Attack. Deals {{gr|10|25|+}} damage. 20% armor penetration.\n}}\n\n{{Skill progression\n|attribute = [[Axe Mastery]]\n|var1 name = + [[Damage]]\n|var1 at0 = 10\n|var1 at15 = 25}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Masaharu]] ([[Seitung Harbor]])\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{duplicate skill icon|Penetrating Attack|Sundering Attack}}\n* {{skill icon|Penetrating Blow}} ([[duplicate skill]])\n\n==Hero Usage==\n* Heroes will use this skill whenever it is charged, but with lower priority than skills with greater/additional effect(s).\n\n==Notes==\n* This skill exactly requires 120 units of adrenaline to be fully charged, so 4 strikes and 20 units.\n\n== Trivia ==\n* The warrior on the [[skill icon]] wears [[Warrior Canthan armor|Canthan armor]].\n\n[[Category:Hero-vetted skills]]\n[[Category:Skills that cause Armor Penetration]]\n\n[[de:Durchdringender Hieb]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Irresistible Sweep",
+  "pageid": 13500,
+  "revid": 2733229,
+  "timestamp": "2026-07-05T16:54:10Z",
+  "wikitext": "{{Skill infobox\n| id = 1489\n| name = Irresistible Sweep\n| campaign = Nightfall\n| profession = Dervish\n| attribute = Scythe Mastery\n| type = Scythe Attack\n| energy = 5\n| recharge = 6\n| has-pvp = y\n| causes1 = Unblockable\n| removes1 = Enchantment\n| removes2 = Stance\n| description = [[Scythe Attack]]. Deal {{gr|3|15|+}} damage and lose 1 Dervish [[enchantment]]. If you lose an enchantment in this way, Irresistible Sweep cannot be [[block]]ed, removes a [[stance]], and deals {{gr|3|15|+}} additional damage.\n| concise description = Scythe Attack. Deals {{gr|3|15|+}} damage. Remove 1 of your Dervish enchantments. Removal effect: unblockable, removes a stance, deals {{gr|3|15|+}} additional damage.\n}}\n\n{{Skill progression\n| attribute = [[Scythe Mastery]]\n| var1 name = + [[Damage]]\n| var1 at0 = 3\n| var1 at15 = 15}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Baram]] ([[The Kodash Bazaar]])\n\n==Related skills==\n*{{skill icon|Wild Blow}}\n*{{skill icon|Wild Strike}}\n*{{skill icon|Wild Throw}}\n\n==Hero Usage==\n*Heroes will use this as a generic damage skill and won't save it for removing stances.\n\n{{DEFAULTSORT:Irresistible Sweep}}\n[[de:Unwiderstehlicher Schwung]]\n[[Category:Hero-vetted skills]]"
+}

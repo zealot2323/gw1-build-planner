@@ -1,0 +1,7 @@
+{
+  "title": "Well of Silence",
+  "pageid": 15419,
+  "revid": 2726502,
+  "timestamp": "2026-04-28T19:06:30Z",
+  "wikitext": "{{Skill infobox\n| name = Well of Silence\n| id = 1660\n| campaign = Nightfall\n| profession = Necromancer\n| attribute = Curses\n| type = Well Spell\n| energy = 10\n| activation = 1\n| recharge = 20\n| causes1 = Exploits Corpse\n| causes2 = Health Degeneration\n| description = [[Well Spell]]. Exploit [[target]] [[corpse]] or sacrifice 66% health to create a Well of Silence for {{gr|10|30}} seconds. [[Foe]]s within the well cannot use [[shout]]s or [[chant]]s and suffer {{gr|1|4|-}} [[Health degeneration]].\n| concise description = Well Spell. ({{gr|10|30}} seconds.) Foes in this well cannot use shouts and chants and have {{gr|1|4|-}} Health degeneration. {{gray|Exploits a fresh corpse or sacrifices 66% health.}}\n}}\n\n{{Skill progression\n|attribute = [[Curses]]\n|var1 name = [[Duration]]\n|var1 at0 = 10\n|var1 at15 = 30\n|var2 name = [[Health degeneration]]\n|var2 at0 = 1\n|var2 at15 = 4}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Nightfall]]\n** [[Medando]] ([[Yohlon Haven]])\n'''[[Hero skill trainer]]s'''\n* Nightfall\n** [[Warden of Whispers (The Kodash Bazaar)|Warden of Whispers]] ([[The Kodash Bazaar]])\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Inquisitor Bauer]] ([[Scoundrel's Rise (War in Kryta)]], during [[Wanted: Inquisitor Bauer]])\n\n== Related skills ==\n* {{skill icon|Vocal Minority}}\n* {{skill icon|Well of Suffering}}\n\n\n[[Category:Skills offered by hero skill trainers]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Vital Weapon",
+  "pageid": 6328,
+  "revid": 2733206,
+  "timestamp": "2026-07-05T16:29:50Z",
+  "wikitext": "{{Skill infobox\n| id = 1267\n| name = Vital Weapon\n| campaign = Factions\n| profession = Ritualist\n| attribute = Communing\n| type = Weapon Spell\n| energy = 5\n| activation = 1\n| recharge = 2\n| causes1 = Increased Maximum Health\n| description = [[Weapon Spell]]. For {{gr|5|30}} seconds, [[target]] [[ally]] has a Vital Weapon and has {{gr|40|175|+}} maximum [[Health]].\n| concise description = Weapon Spell. ({{gr|5|30}} seconds.) {{gr|40|175|+}} maximum Health.\n| target = allies\n}}\n\n{{Skill progression\n| attribute = [[Communing]]\n| var1 name = [[Duration]]\n| var1 at0 = 5\n| var1 at15 = 30\n| var2 name = +Max [[Health]]\n| var2 at0 = 40\n| var2 at15 = 175}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n{{see|Health#Skills}}\n* {{skill icon|Vital Blessing}}\n\n== Hero Usage ==\n* Heroes will not cast Vital Weapon on non-party member allies unless ordered to.\n\n== Notes ==\n* Useful with skills that benefit from an increased maximum health like [[Flesh of My Flesh]]."
+}

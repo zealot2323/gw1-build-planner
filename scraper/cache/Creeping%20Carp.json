@@ -1,0 +1,7 @@
+{
+  "title": "Creeping Carp",
+  "pageid": 6239,
+  "revid": 2614295,
+  "timestamp": "2017-01-17T13:49:01Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Carp.jpg|250px]]\n| type = Fish\n| affiliation = The Jade Sea wildlife\n| profession = a\n| level = 22 (26)\n| campaign = Factions\n}}\n[[Creeping Carp]] are [[assassin]]s that focus on [[Deadly Arts]], their [[attack skill]]s do poor damage.\n\n==Locations==\n*[[The Jade Sea]]\n**{{NPC location|Archipelagos}} \n**{{NPC location|Gyala Hatchery|explorable area}}\n**{{NPC location|Rhea's Crater}}\n**{{NPC location|Silent Surf}}\n**{{NPC location|Unwaking Waters|explorable area}}\n\n==Missions==\n*The Jade Sea\n**{{NPC location|Boreas Seabed}}\n\n==Skills==\n15 [[Deadly Arts]] (20 Deadly Arts in [[Hard mode]])\n*{{Skill icon|Dash}}\n*{{Skill icon|Expunge Enchantments}}\n*{{Skill icon|Jagged Strike}}\n*{{Skill icon|Siphon Speed}}\n*{{Skill icon|Siphon Strength}} ([[elite]])\n*{{Skill icon|Wild Strike}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = a\n| blunt = 76\n| piercing = 76\n| slashing = 76\n| cold = 76\n| earth = 76\n| fire = 76\n| lightning = 76\n}}\n\n==Items dropped==\n*[[Black Pearl]]\n*[[Decaying Mass]]\n*[[Jellyfish Wand]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Holy Haste",
+  "pageid": 2905,
+  "revid": 2738563,
+  "timestamp": "2026-08-26T21:58:46Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| name = Holy Haste\n| id = 1685\n| campaign = Nightfall\n| profession = Monk\n| attribute = Divine Favor\n| type = Enchantment Spell\n| energy = 5\n| activation = 1\n| recharge = 10\n| causes1 = Decreased Activation Time\n| description = [[Enchantment Spell]]. For {{gr|1|60}} second[s], your [[Healing Prayers]] [[spell]]s [[Activation time|cast]] 50% faster. This enchantment ends if you cast another enchantment.\n| concise description = Enchantment Spell. ({{gr|1|60}} second[s].) Your Healing Prayers spells cast 50% faster. {{gray|Ends if you cast an enchantment.}}\n}}\n\n{{Skill progression\n|attribute = [[Divine Favor]]\n|var1 name = [[Duration]]\n|var1 at0 = 1\n|var1 at15 = 60}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Medando]] ([[Yohlon Haven]])\n\n'''[[Hero skill trainer]]'''\n*[[Warden of Whispers (The Kodash Bazaar)|Warden of Whispers]] ([[The Kodash Bazaar]])\n\n==Related skills==\n*{{skill icon|Healer's Boon}} ([[elite]])\n\n[[Category:Skills offered by hero skill trainers]]"
+}

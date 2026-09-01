@@ -1,0 +1,7 @@
+{
+  "title": "\"Lead the Way!\"",
+  "pageid": 14916,
+  "revid": 2726476,
+  "timestamp": "2026-04-28T18:49:33Z",
+  "wikitext": "{{Skill infobox\n| id = 1590\n| name = \"Lead the Way!\"\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Leadership\n| type = Shout\n| energy = 5\n| recharge = 8\n| target = allies\n| causes1 = Increased Movement Speed\n| description= [[Shout]]. [[Target]] [[ally]] [[Speed boost|moves 25% faster]] for {{gr|1|5}} seconds for each ally within [[earshot]] (maximum of 30 seconds).\n| concise description = Shout. Target ally moves 25% faster for {{gr|1|5}} seconds (maximum of 30 seconds) for each ally in earshot.\n}}\n\n{{Skill progression\n| attribute = [[Leadership]]\n| var1 name = [[Duration]]\n| var1 at0 = 1\n| var1 at15 = 5}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Baram]] ([[The Kodash Bazaar]])\n\n==Related skills==\n* {{Skill icon|\"Make Haste!\"}}\n* {{Skill icon|Gust}} ([[elite]])\n* {{Skill icon|Hasty Refrain}}\n* {{skill icon|Windborne Speed}}\n\n== Notes ==\n* Heroes use this skill on moving party members in combat.\n\n==Trivia==\n*The female [[Paragon]] in the [[skill icon]] is wearing [[Paragon Elite Sunspear armor|Elite Sunspear armor]], and is probably the same person that appears on skill icons of [[Energizing Finale]] and [[Leader's Zeal]].\n\n{{DEFAULTSORT:Lead the Way!}}"
+}

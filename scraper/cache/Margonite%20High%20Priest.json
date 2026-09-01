@@ -1,0 +1,7 @@
+{
+  "title": "Margonite High Priest",
+  "pageid": 48818,
+  "revid": 2599132,
+  "timestamp": "2015-11-17T17:44:50Z",
+  "wikitext": "__NOTOC__{{NPC infobox \n| image = [[File:Margonite healer.png|150px]]\n| affiliation = Margonites\n| type = Demon\n| profession = mo\n| level = 28 (30)\n| campaign = Nightfall\n}}\n[[Margonite High Priest]]s are higher-level [[Margonite Cleric]]s.\n\n==Locations==\n*[[The Desolation]]\n**{{NPC location|Joko's Domain}} (only during [[A Deal's a Deal]]) \n\n==Missions==\n*[[Realm of Torment]]\n**{{NPC location|Gate of Madness}}\n\n==Skills==\n*{{skill icon|Aegis}}\n*{{skill icon|Dismiss Condition}}\n*{{skill icon|Divine Intervention}}\n*{{skill icon|Spell Breaker}} ([[elite]])\n*{{skill icon|Watchful Healing}}\n*{{monster skill icon|Abaddon's Chosen}} \n*{{monster skill icon|Abaddon's Favor}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = mo\n| blunt = 83\n| piercing = 83\n| slashing = 83\n| cold = 83\n| earth = 83\n| fire = 83\n| lightning = 83\n}}\n\n==Items dropped==\n*[[Margonite Mask]]"
+}

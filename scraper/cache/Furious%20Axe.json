@@ -1,0 +1,7 @@
+{
+  "title": "Furious Axe",
+  "pageid": 7826,
+  "revid": 2733166,
+  "timestamp": "2026-07-05T15:59:02Z",
+  "wikitext": "{{Skill infobox\n| id = 904\n| name = Furious Axe\n| campaign = Factions\n| profession = Warrior\n| attribute = Axe Mastery\n| type = Axe Attack\n| energy = 5\n| recharge = 6\n| causes1 = Adrenaline Gain\n| description = [[Axe Attack]]. If Furious Axe hits, you strike for {{gr|5|35|+}} [[damage]]. If it is [[block]]ed you gain 3 strikes worth of [[adrenaline]].\n| concise description = Axe Attack. Deals {{gr|5|35|+}} damage. Gives you 3 strikes of adrenaline if blocked.\n}}\n\n{{Skill progression\n|attribute = [[Axe Mastery]]\n|var1 name = + [[Damage]]\n|var1 at0 = 5\n|var1 at15 = 35}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Xu Fengxia]] ([[Ran Musu Gardens]])\n* [[Michiko]] ([[Kaineng Center]])\n\n==Hero Usage==\n* Heroes will use this skill on recharge on the target, even if another nearby target could block the attack to fuel other adrenaline skills.\n\n== Trivia ==\n* The axe displayed in the [[skill icon]] is a [[Plagueborn Axe]].\n\n[[Category:Hero-vetted skills]]"
+}

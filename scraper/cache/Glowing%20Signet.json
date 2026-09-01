@@ -1,0 +1,7 @@
+{
+  "title": "Glowing Signet",
+  "pageid": 15231,
+  "revid": 2726479,
+  "timestamp": "2026-04-28T18:51:59Z",
+  "wikitext": "{{Skill infobox\n| id = 1581\n| name = Glowing Signet\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Leadership\n| type = Signet\n| activation = {{1/4}}\n| recharge = 15\n| causes1 = Energy Gain\n| description = [[Signet]]. If [[target]] [[foe]] is [[Burning]], you gain {{gr|5|15}} [[Energy]].\n| concise description = Signet. You gain {{gr|5|15}} Energy if target foe is Burning.\n}}\n\n{{Skill progression\n| attribute = [[Leadership]]\n| var1 name = [[Energy]] gain\n| var1 at0 = 5\n| var1 at15 = 15}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Baram]] ([[The Kodash Bazaar]])\n'''[[Hero skill trainer]]s'''\n*[[Warden of Whispers (The Kodash Bazaar)|Warden of Whispers]] (The Kodash Bazaar)\n\n==Related skills==\n*{{skill icon|Glowing Gaze}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

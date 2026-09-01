@@ -1,0 +1,7 @@
+{
+  "title": "Zenaida",
+  "pageid": 49732,
+  "revid": 2738867,
+  "timestamp": "2026-08-27T16:00:57Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Luxon f mask.jpg|150px]]\n| affiliation = Luxons\n| type = Human\n| service = Skill trainer\n| level = 10\n| campaign = Factions\n}}\n[[Zenaida]] is the final [[skill trainer]] in the [[Factions]] campaign and thus will train a [[character]] in every single non-[[Elite skill|elite]] [[List of core skills|core]] and [[List of Factions skills|Factions exclusive skill]] except [[Healing Signet]] and [[Leech Signet]]. She will teach your character a skill in exchange for a fee and one [[skill point]].\n\n==Locations==\n*[[The Jade Sea]]\n**{{NPC location|Harvest Temple}}\n\n==Dialogue==\n{{Merchant or skill trainer in Kurzick-controllable Jade Sea outpost dialogue}}\n\n== Skills offered ==\n{{Skill trainer list\n| w = ''all'' except {{Skill icon|Healing Signet}}\n| r = ''all''\n| mo = ''all''\n| n = ''all''\n| me = ''all'' except {{Skill icon|Leech Signet}}\n| e = ''all''\n| a = ''all''\n| rt = ''all''\n| note = Zenaida offers ''all'' non-elite [[core]] and Factions skills for the core and Factions professions except [[Healing Signet]] and [[Leech Signet]].\n}}\n\n[[Category:Factions skill trainers by campaign location|25]]"
+}

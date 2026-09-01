@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { PROFESSIONS, Profession } from "@gw1/engine";
+import { PROFESSIONS, Profession, type Campaign } from "@gw1/engine";
 import { dataset } from "../data";
 import { Checklist } from "../components/Checklist";
 import { iconForSkillPage } from "../wiki";
@@ -10,6 +10,14 @@ const CORE_PROFESSIONS = [
   Profession.Warrior, Profession.Ranger, Profession.Monk,
   Profession.Necromancer, Profession.Mesmer, Profession.Elementalist,
 ];
+
+/** Campaigns a character can be created in, and the professions each allows. */
+const CAMPAIGN_PROFESSIONS: Record<string, Profession[]> = {
+  Prophecies: CORE_PROFESSIONS,
+  Factions: [...CORE_PROFESSIONS, Profession.Assassin, Profession.Ritualist],
+  Nightfall: [...CORE_PROFESSIONS, Profession.Paragon, Profession.Dervish],
+};
+const CAMPAIGNS = Object.keys(CAMPAIGN_PROFESSIONS) as Campaign[];
 
 // towns/outposts grouped by region, mirroring the zone browser's tree
 const locationGroups = (() => {
@@ -47,6 +55,7 @@ export function CharactersView({
 }) {
   const [newName, setNewName] = useState("");
   const [newPrimary, setNewPrimary] = useState<Profession>(Profession.Warrior);
+  const [newCampaign, setNewCampaign] = useState<Campaign>("Prophecies");
   const [importError, setImportError] = useState<string | null>(null);
 
   const create = () => {
@@ -54,6 +63,8 @@ export function CharactersView({
     if (!name || save.characters.some((c) => c.name === name)) return;
     addCharacter({
       name,
+      campaign: newCampaign,
+      ownedCampaigns: [newCampaign],
       primaryProfession: newPrimary,
       unlockedSecondaries: [],
       knownSkills: [],
@@ -99,8 +110,22 @@ export function CharactersView({
               onChange={(e) => setNewName(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && create()}
             />
+            <select
+              value={newCampaign}
+              onChange={(e) => {
+                const c = e.target.value as Campaign;
+                setNewCampaign(c);
+                if (!CAMPAIGN_PROFESSIONS[c].includes(newPrimary)) {
+                  setNewPrimary(CAMPAIGN_PROFESSIONS[c][0]);
+                }
+              }}
+            >
+              {CAMPAIGNS.map((c) => (
+                <option key={c}>{c}</option>
+              ))}
+            </select>
             <select value={newPrimary} onChange={(e) => setNewPrimary(e.target.value as Profession)}>
-              {CORE_PROFESSIONS.map((p) => (
+              {(CAMPAIGN_PROFESSIONS[newCampaign] ?? CORE_PROFESSIONS).map((p) => (
                 <option key={p}>{p}</option>
               ))}
             </select>
@@ -140,6 +165,27 @@ export function CharactersView({
               <button className="danger" onClick={() => { removeCharacter(c.name); onSelect(null); }}>
                 Delete
               </button>
+            </div>
+            <div className="field">
+              <span className="field-label">
+                Campaigns owned <span className="muted">(from {c.campaign ?? "Prophecies"})</span>
+              </span>
+              {CAMPAIGNS.map((camp) => (
+                <label key={camp} className="inline-check">
+                  <input
+                    type="checkbox"
+                    checked={(c.ownedCampaigns ?? [c.campaign ?? "Prophecies"]).includes(camp)}
+                    disabled={camp === (c.campaign ?? "Prophecies")}
+                    onChange={(e) => {
+                      const owned = new Set(c.ownedCampaigns ?? [c.campaign ?? "Prophecies"]);
+                      if (e.target.checked) owned.add(camp);
+                      else owned.delete(camp);
+                      updateCharacter(c.name, { ownedCampaigns: [...owned] as Campaign[] });
+                    }}
+                  />
+                  {camp}
+                </label>
+              ))}
             </div>
             <div className="field">
               <span className="field-label">Unlocked secondaries</span>

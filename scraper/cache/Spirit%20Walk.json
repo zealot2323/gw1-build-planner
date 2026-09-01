@@ -1,0 +1,7 @@
+{
+  "title": "Spirit Walk",
+  "pageid": 16274,
+  "revid": 2736910,
+  "timestamp": "2026-08-03T10:48:40Z",
+  "wikitext": "{{Skill infobox\n| id = 1040\n| name = Spirit Walk\n| campaign = Factions\n| profession = Assassin\n| type = Spell\n| target = spirits\n| energy = 5\n| activation = {{1/4}}\n| recharge = 8\n| causes1 = Shadow Step\n| description = [[Spell]]. [[Shadow Step]] to [[target]] [[spirit]].\n| concise description = Spell.  Shadow Step to target Spirit. {{sic|\"Spirit\" is capitalized in concise description}}\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Notes ==\n{{anomaly|This spell does not have an [[aftercast delay]].}}"
+}

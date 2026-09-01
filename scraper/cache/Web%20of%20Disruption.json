@@ -1,0 +1,7 @@
+{
+  "title": "Web of Disruption",
+  "pageid": 1686,
+  "revid": 2733389,
+  "timestamp": "2026-07-05T21:55:08Z",
+  "wikitext": "{{Skill infobox\n| id = 1344\n| name = Web of Disruption\n| campaign = Nightfall\n| profession = Mesmer\n| type = Hex Spell\n| energy = 5\n| activation = {{1/4}}\n| recharge = 15\n| has-pvp = y\n| causes1 = Interrupt\n| description = [[Hex Spell]]. [[Interrupt]] [[target]] [[foe]]. For 10 seconds, target foe is hexed with Web of Disruption.  When this hex ends, that foe is interrupted again.\n| concise description = Hex Spell. (10 seconds.) Initial effect: interrupts a skill. End effect: interrupts a skill.\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n* [[Shiloh]] ([[Sunspear Great Hall]])\n\n== Notes ==\n* This spell does not need to interrupt a foe for the hex to be applied.\n* If the hex is ended early by any source, the second interrupt will be triggered. This makes Web of Disruption useful with [[Shatter Delusions]] or [[Drain Delusions]].\n* Be careful giving this skill to [[hero]]es, as they treat it as a regular hex and will use it on foes who aren't using any skills.\n{{anomaly|This skill's standard description does not specify whether it can interrupt only skills or all [[action]]s, including attacks. The effect is clarified in the concise description which states that both the initial and ending interrupts only affect skills.}}\n\n[[Category:Skills offered by hero skill trainers]]\n[[de:Netz der Störung (PvP)]]"
+}

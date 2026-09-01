@@ -1,0 +1,7 @@
+{
+  "title": "Signet of Removal",
+  "pageid": 2782,
+  "revid": 2726515,
+  "timestamp": "2026-04-28T19:13:09Z",
+  "wikitext": "{{Skill infobox\n| name = Signet of Removal\n| id = 1690\n| campaign = Nightfall\n| profession = Monk\n| elite = y\n| type = Signet\n| recharge = 5\n| activation = {{1/4}}\n| target = allies\n| range = casting\n| aoe =\n| removes1 = Condition\n| removes2 = Hex spell\n| description = [[Elite]] [[Signet]]. If [[target]] [[ally]] is under the effects of an [[enchantment]], that ally loses one [[hex]] and one [[condition]].\n| concise description= Elite Signet. Removes one hex and one condition. {{gray|No effect unless target ally is enchanted.}}\n}}\n\n==Acquisition==\n'''[[Signet of Capture]]\n* [[Commander Noss]] ([[The Floodplain of Mahnkelon]])\n\n== Related skills ==\n*{{skill icon|Blessed Light}} ([[elite]])\n*{{skill icon|Divert Hexes}} (elite)\n*{{skill icon|Empathic Removal}} (elite)\n*{{skill icon|Purge Signet}}\n\n== Notes ==\n*This skill removes a hex and then removes a condition.\n*Since it has no energy cost and needs an enchanted target, this skill is useful for [[bonder]]s, as well as any [[Protection Prayers]] monk builds that need passive [[energy management]].\n*Useful for self-removal of hex spells that trigger on casting a [[spell]], such as [[Shame]], [[Mark of Subversion]] or [[Backfire]], since they can be removed without triggering their effect.\n\n[[de:Siegel der Entfernung]]"
+}

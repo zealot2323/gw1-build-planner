@@ -1,0 +1,7 @@
+{
+  "title": "Steelfang Slash",
+  "pageid": 16230,
+  "revid": 2738485,
+  "timestamp": "2026-08-26T21:19:54Z",
+  "wikitext": "{{Skill infobox\n| name = Steelfang Slash\n| id = 1702\n| campaign = Nightfall\n| profession = Warrior\n| attribute = Swordsmanship\n| type = Sword Attack\n| adrenaline = 7\n| recharge = 1\n| causes1 = Adrenaline Gain\n| description = [[Sword Attack]].  If this [[attack]] hits, you deal {{gr|1|31|+}} [[damage]]. If you hit a [[foe]] that is [[Knock down|knocked down]], you gain {{gr|1|5}} [[adrenaline]].\n|concise description = Sword Attack. Deals {{gr|1|31|+}} damage. You gain {{gr|1|5}} adrenaline if target foe is knocked down.\n}}\n\n{{Skill progression\n|attribute = [[Swordsmanship]]\n|var1 name = + [[Damage]]\n|var1 at0 = 1\n|var1 at15 = 31\n|var2 name = [[Adrenaline]] gain\n|var2 at0 = 1\n|var2 at15 = 5}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n*[[Shiloh]] ([[Sunspear Great Hall]])\n\n== Trivia ==\n* [[Steelfang Drake]]s are Warrior [[dragon]]s in Nightfall that use Steelfang Slash.\n\n[[Category:Skills offered by hero skill trainers]]"
+}

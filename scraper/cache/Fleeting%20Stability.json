@@ -1,0 +1,7 @@
+{
+  "title": "Fleeting Stability",
+  "pageid": 1381,
+  "revid": 2738429,
+  "timestamp": "2026-08-26T20:50:55Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 1514\n| name = Fleeting Stability\n| campaign = Nightfall\n| profession = Dervish\n| attribute = Earth Prayers\n| type = Flash Enchantment Spell\n| energy = 5\n| recharge = 10\n| causes1 = Knockdown Immunity\n| causes2 = Increased Movement Speed\n| description = [[Flash Enchantment Spell]]. For {{gr|4|10}} seconds, you cannot be [[knock down|knocked down]] and [[Speed boost|move 25% faster]]. This [[enchantment]] ends prematurely if it prevents a knockdown.\n| concise description = Flash Enchantment Spell. ({{gr|4|10}} seconds.) You cannot be knocked down and move 25% faster. Ends if knockdown prevented.\n| has-pvp = y\n}}\n\n{{Skill progression\n|attribute = [[Earth Prayers]]\n|var1 name = [[Duration]]\n|var1 at0 = 4\n|var1 at15 = 10}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Dau]] ([[The Mouth of Torment]])\n\n'''[[Signet of Capture]]'''\n*[[Acolyte of Melandru]] ([[Marga Coast]])\n\n==Related skills==\n* {{skill icon|Steady Stance}} ([[elite]])\n\n== Notes ==\n{{speed|4|10|25|10}}\n*[[Skill queue|Queue]] this skill while knocked down to avoid being [[quarterknock]]ed.\n\n== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[{{PAGENAME}}/Skill history|skill revision history]] for details."
+}

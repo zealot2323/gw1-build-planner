@@ -1,0 +1,7 @@
+{
+  "title": "Glimmer of Light",
+  "pageid": 2926,
+  "revid": 2657831,
+  "timestamp": "2020-05-08T20:48:54Z",
+  "wikitext": "{{Skill infobox\n| name = Glimmer of Light\n| id = 1686\n| campaign = Nightfall\n| profession = Monk\n| attribute = Healing Prayers\n| type = Spell\n| elite = y\n| energy = 5\n| activation = {{1/4}}\n| recharge = 1\n| causes1 = Healing\n| description = [[Elite]] [[Spell]]. [[Heal]] [[target]] [[ally]] for {{gr|10|115}} [[Health]].\n| concise description = Elite Spell. Heals for {{gr|10|115}}.\n| target = allies\n}}\n\n{{Skill progression\n| attribute = [[Healing Prayers]]\n| var1 name = [[Heal]]ing\n| var1 at0 = 10\n| var1 at15 = 115}}\n\n==Acquisition==\n'''[[Signet of Capture]]'''\n*[[Prophecies]]\n** [[Ambrillus the Guardian]] ([[The Battle for Lion's Arch (explorable area)]], only during [[The Battle for Lion's Arch]])\n*[[Nightfall]]\n** [[Chiossen, Soothing Breeze]] ([[Turai's Procession]])\n\n== Related skills ==\n*{{skill icon|Orison of Healing}}\n\n== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details.\n\n[[de:Lichtschimmer]]"
+}

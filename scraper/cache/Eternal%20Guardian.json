@@ -1,0 +1,7 @@
+{
+  "title": "Eternal Guardian",
+  "pageid": 104419,
+  "revid": 2437012,
+  "timestamp": "2012-01-21T00:51:21Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Divine Guardian.jpg|150px]]\n| type = Elemental\n| level = 24 (26)\n| profession = p\n| campaign = Nightfall\n}}\n\nThere are six Eternal Guardians: \n*two '''Eternal Guardians of Languor''', \n*two '''Eternal Guardians of Lethargy''' and \n*two '''Eternal Guardians of Suffering'''. \nEach generates one of two versions of the effect corresponding to its name; the two versions stack.\n\n==Missions==\n*[[Vabbi]]\n**{{NPC location|Dasha Vestibule}}\n\n==Skills==\n*{{skill icon|Angelic Bond}} ([[elite]])\n*{{skill icon|Anthem of Flame}}\n*{{skill icon|Leader's Comfort}}\n*{{skill icon|Merciless Spear}}\n*{{skill icon|Spear of Lightning}}\n*{{monster skill icon|Natural Resistance}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = p\n| blunt = 111\n| piercing = 111\n| slashing = 111\n| cold = 71\n| earth = 71\n| fire = 71\n| lightning = 71\n}}\n\n==Effects==\n*{{skill icon|Eternal Languor}}\n*{{skill icon|Eternal Lethargy}}\n*{{skill icon|Eternal Suffering}}\n\n==Items dropped==\n*[[Pile of Glittering Dust]]\n\n==Notes==\n{{anomaly|Their [[spear]] attacks have [[longbow]] [[range]].}}\n\n[[Category:Djinn]]\n[[Category:Drops dust]]"
+}

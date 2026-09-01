@@ -1,0 +1,7 @@
+{
+  "title": "Beguiling Haze",
+  "pageid": 4421,
+  "revid": 2731170,
+  "timestamp": "2026-06-25T04:31:52Z",
+  "wikitext": "{{Skill infobox\n| id = 799\n| name = Beguiling Haze\n| campaign = Factions\n| profession = Assassin\n| attribute = Shadow Arts\n| type = Spell\n| elite = y\n| energy = 10\n| activation = {{1/4}}\n| recharge = 20\n| target = foes\n| animation = [[Beguiling Haze animation.gif|click to view]]\n| causes1 = Shadow Step\n| causes2 = Dazed\n| description = [[Elite]] [[Spell]]. [[Shadow Step]] to [[target]] [[foe]]. That foe becomes [[Dazed]] for {{gr|3|9}} seconds.\n| concise description = Elite Spell. You Shadow Step to this foe. Inflicts Dazed condition ({{gr|3|9}} seconds).\n}}\n\n{{Skill progression\n|attribute = [[Shadow Arts]]\n|var1 name = [[Dazed]] [[duration]]\n|var1 at0 = 3\n|var1 at15 = 9}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Warden of Saprophytes]] ([[Ferndale]], only before completion of the [[Temple of the Dredge]] quest)\n* [[Falaharn Mistwarden]] ([[Morostav Trail]])\n* [[Razorfang Hazeclaw]] ([[Gyala Hatchery (explorable area)]])\n\n== Notes ==\n* The [[AI]] will use this skill on targets without any equipped spells. {{verify}}\n* The AI will sometimes use this skill only to interrupt.\n\n==Trivia==\n*The functionality of this skill has changed since its introduction; see its [[Beguiling Haze/Skill history|skill history]] for details.\n\n[[de:Verführerischer Dunst]]"
+}

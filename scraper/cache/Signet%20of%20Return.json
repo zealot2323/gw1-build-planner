@@ -1,0 +1,7 @@
+{
+  "title": "Signet of Return",
+  "pageid": 13944,
+  "revid": 2738922,
+  "timestamp": "2026-08-28T02:59:21Z",
+  "wikitext": "{{Skill infobox\n| id = 1778\n| name = Signet of Return\n| profession = Paragon\n| attribute = Leadership\n| type = Signet\n| campaign = Nightfall\n| has-pvp = y\n| activation = 4\n| recharge = 5\n| target = dead party members\n| description = [[Signet]]. [[resurrection|Resurrect]] [[target]] [[party]] member with {{gr|5|20||%}} [[Health]] and {{gr|1|4||%}} [[Energy]] for each party member within [[earshot]].\n| concise description = Signet. Resurrects target party member ({{gr|5|20||%}} Health and {{gr|1|4||%}} Energy for each party member in earshot).\n}}\n\n{{Skill progression\n| attribute = [[Leadership]]\n| var1 name = % [[Health]]\n| var1 at0 = 5\n| var1 at15 = 20\n| var2 name = % [[Energy]]\n| var2 at0 = 1\n| var2 at15 = 4}}\n\n== Acquisition ==\n===[[Unlock]] and learn===\n'''[[Skill trainer]]s'''\n* [[Nightfall]]\n** [[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n* Nightfall\n** [[Shiloh]] ([[Sunspear Great Hall]])\n'''[[Signet of Capture]]'''\n* [[Eye of the North]]\n** [[Vraxx the Condemned]]\n\n===Unlock only===\n* Eye of the North\n** Unlocking [[Hayda]]\n\n==Related skills==\n*{{Skill icon|Death Pact Signet}}\n\n== Notes ==\n* ''Party members within earshot'' counts any living party members, including the user; it does not include dead ones.\n\n[[Category:Resurrection skills]]\n[[Category:Skills offered by hero skill trainers]]\n\n[[de:Siegel der Wiederkehr]]"
+}

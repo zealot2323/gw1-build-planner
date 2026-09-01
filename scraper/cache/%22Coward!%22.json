@@ -1,0 +1,7 @@
+{
+  "title": "\"Coward!\"",
+  "pageid": 4255,
+  "revid": 2738450,
+  "timestamp": "2026-08-26T21:04:55Z",
+  "wikitext": "{{Skill infobox\n| id = 869\n| name = \"Coward!\"\n| campaign = Factions\n| profession = Warrior\n| type = Shout\n| elite = y\n| adrenaline = 4\n| recharge = 2\n| target = foes\n| aoe = none\n| causes1 = Knockdown\n| description = [[Elite]] [[Shout]]. If [[target]] [[foe]] is [[Movement|moving]], that foe is [[knock down|knocked down]].\n| concise description = Elite Shout. Causes knock-down if target foe is moving.\n| has-pvp = y\n}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Joh the Hostile]] ([[Scoundrel's Rise (War in Kryta)]])\n* [[Factions]]\n** [[Kayali the Brave]] ([[Mount Qinkai]])\n\n== Related skills ==\n* {{skill icon|\"None Shall Pass!\"}}\n* {{skill icon|\"You Move Like a Dwarf!\"}}\n* {{skill icon|Bull's Strike}}\n* {{skill icon|Enraged Smash}} ([[elite]])\n* {{skill icon|Water Trident}} (elite)\n\n{{DEFAULTSORT:Coward!}}\n\n[[de:\"Feigling!\"]]"
+}

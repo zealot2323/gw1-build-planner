@@ -1,0 +1,7 @@
+{
+  "title": "Supportive Spirit",
+  "pageid": 2957,
+  "revid": 2726513,
+  "timestamp": "2026-04-28T19:11:26Z",
+  "wikitext": "{{Skill infobox\n| name = Supportive Spirit\n| id = 1391\n| campaign = Nightfall\n| profession = Monk\n| attribute = Healing Prayers\n| type = Enchantment Spell\n| energy = 10\n| activation = {{3/4}}\n| recharge = 8\n| causes1 = Healing\n| description = [[Enchantment Spell]]. For {{gr|5|23}} seconds, whenever [[target]] [[ally]] takes [[damage]] while [[Knock down|knocked down]], that ally is [[heal]]ed for {{gr|5|50}} [[Health]].\n| concise description = Enchantment Spell. ({{gr|5|23}} seconds.) Heals for {{gr|5|50}} whenever target ally takes damage while knocked-down.\n| target = allies\n}}\n\n{{Skill progression\n| attribute = [[Healing Prayers]]\n| var1 name = [[Duration]]\n| var1 at0 = 5\n| var1 at15 = 23\n| var2 name = [[Heal]]ing\n| var2 at0 = 5\n| var2 at15 = 50}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n* [[Shiloh]] ([[Sunspear Great Hall]])\n\n== Related skills ==\n* {{skill icon|Healing Hands}} ([[elite]])\n* {{skill icon|Healing Seed}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

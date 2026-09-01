@@ -1,0 +1,7 @@
+{
+  "title": "Power Flux",
+  "pageid": 1492,
+  "revid": 2731200,
+  "timestamp": "2026-06-25T05:04:51Z",
+  "wikitext": "__NOTOC__\n{{Skill infobox\n| id = 953\n| name = Power Flux\n| campaign = Nightfall\n| profession = Mesmer\n| attribute = Domination Magic\n| elite = y\n| type = Hex Spell\n| energy = 10\n| activation = {{1/4}}\n| recharge = 15\n| causes1 = Interrupt\n| causes2 = Energy Degeneration\n| description = [[Elite]] [[Hex Spell]]. If [[target]] [[foe]] is casting a [[spell]] or [[chant]], that [[skill]] is [[interrupt]]ed and for {{gr|4|10}} seconds, that foe has -2 [[Energy degeneration]].\n| concise description = Elite Hex Spell. Interrupts a spell or chant. Interruption effect: -2 Energy degeneration ({{gr|4|10}} seconds).\n}}\n\n{{Skill progression\n|attribute = [[Domination Magic]]\n|var1 name = [[Duration]]\n|var1 at0 = 4\n|var1 at15 = 10}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Vision of Despair]] ([[Domain of Pain]])\n* [[Demonic Fortune Teller]] ([[Domain of Fear]], only during [[Bad Fortune]])\n\n== Related skills ==\n* {{skill icon|Power Leak}}\n* {{skill icon|Power Leech}} ([[elite]])\n\n== Notes ==\n* The hex will apply even if the interruption effect is prevented.\n* This skill causes a net energy loss of <font color=green>'''2.67...6...6.67'''</font color> if it lasts its full duration.\n\n== Trivia ==\n* Flux is a term describing the rate of flow of something through a surface.\n* The woman in the [[skill icon]] seems to also appear in [[Power Leech]]'s skill icon.\n\n[[de:Kraftfluss]]"
+}

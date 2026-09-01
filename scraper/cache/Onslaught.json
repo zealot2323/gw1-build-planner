@@ -1,0 +1,7 @@
+{
+  "title": "Onslaught",
+  "pageid": 4559,
+  "revid": 2733587,
+  "timestamp": "2026-07-07T20:04:12Z",
+  "wikitext": "{{Skill infobox\n| id = 1754\n| name = Onslaught\n| campaign = Nightfall\n| profession = Dervish\n| attribute = Wind Prayers\n| type = Flash Enchantment Spell\n| elite = y\n| has-pvp = y\n| energy = 10\n| recharge = 10\n| causes1 = Increased Movement Speed\n| causes2 = Increased Attack Speed\n| causes3 = Increased Adrenaline Build Rate\n| description = [[Elite]] [[Flash Enchantment Spell]]. For {{gr|3|15}} seconds, you [[Attack speed|attack]], [[Speed boost|move]] and gain [[adrenaline]] 25% faster.\n| concise description = Elite Flash Enchantment Spell. ({{gr|3|15}} seconds.) You attack, move and gain adrenaline 25% faster.\n}}\n\n{{Skill progression\n|attribute = [[Wind Prayers]]\n|var1 name = [[Duration]]\n|var1 at0 = 3\n|var1 at15 = 15\n}}\n\n==Acquisition==\n'''[[Signet of Capture]]'''\n*[[Prophecies]]\n**[[Lev the Condemned]] ([[North Kryta Province (War in Kryta)]])\n*[[Nightfall]]\n**[[Onslaught of Terror]] ([[Nightfallen Jahai]])\n**[[Emissary of Dhuum (dervish)]] (Nightfallen Jahai, only during [[They Only Come Out at Night]])\n*[[Eye of the North]]\n**[[Myish, Lady of the Lake]] ([[Drakkar Lake]])\n**[[Avatar of Destruction (dervish)]] ([[Destruction's Depths]])\n\n==Related skills==\n* {{skill icon|Drunken Master}}\n* {{skill icon|Primal Rage}} ([[elite]])\n* {{skill icon|Rampage as One}} (elite)\n* {{skill icon|Soldier's Fury}} (elite)\n\n[[de:Attacke]]\n[[fr:Attaque (Compétence)]]"
+}

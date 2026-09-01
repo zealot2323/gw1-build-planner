@@ -1,0 +1,7 @@
+{
+  "title": "Wearying Strike",
+  "pageid": 14074,
+  "revid": 2684212,
+  "timestamp": "2023-02-24T18:01:35Z",
+  "wikitext": "{{Skill infobox\n| id = 1537\n| name = Wearying Strike\n| campaign = Nightfall\n| profession = Dervish\n| attribute = Scythe Mastery\n| type = Scythe Attack\n| adrenaline = 6\n| causes1 = Deep Wound\n| causes2 = Weakness\n| removes1 = Enchantment\n| description=[[Scythe Attack]]. You remove 1 Dervish [[enchantment]]. If an enchantment was removed, you inflict a [[Deep Wound]] for {{gr|3|10}} seconds. You suffer from [[Weakness]] for 10 seconds if an enchantment is not removed.\n| concise description = Scythe Attack. Remove 1 Dervish Enchantment. Removal Effect: Inflicts Deep Wound condition ({{gr|3|10}} seconds). {{gray|You are Weakened (10 seconds) if an enchantment is not lost.}}\n}}\n\n{{Skill progression\n|attribute = [[Scythe Mastery]]\n|var1 name = [[Deep Wound]] [[duration]]\n|var1 at0 = 3\n|var1 at15 = 10\n}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Medando]] ([[Yohlon Haven]])\n\n'''[[Hero skill trainer]]s'''\n*[[Warden of Whispers (Chantry of Secrets)|Warden of Whispers]] ([[Chantry of Secrets]])\n\n==Related skills==\n*{{skill icon|Dismember}}\n*{{skill icon|Golden Fang Strike}}\n*{{skill icon|Wounding Strike}} ([[elite]])\n*{{skill icon|Wearying Spear}}\n\n==Notes==\n{{Outdated info|}}\n;[[Feedback:Game updates/20190205|February 05, 2019 update]]; please verify changes to [[Hero behavior|AI behavior]].\n[[Category:Skills offered by hero skill trainers]]"
+}

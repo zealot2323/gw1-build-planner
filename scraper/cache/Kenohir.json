@@ -1,0 +1,7 @@
+{
+  "title": "Kenohir",
+  "pageid": 16345,
+  "revid": 2694551,
+  "timestamp": "2024-04-17T23:07:19Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Sunspear m armored.jpg|x350px]]\n| affiliation = Order of the Sunspears\n| type = Human\n| service = Skill trainer\n| level = 10 (20)\n| campaign = Nightfall\n}}\n[[Kenohir]] is a [[skill trainer]] appearing in the [[Command Post]] after completing the quest [[Building the Base: Prisoners of War]].\n\n==Locations==\n*[[Kourna]]\n**{{NPC location|Command Post}} (after completing the following quest)\n**{{NPC location|Sunward Marches}} (only during following quest)\n\n==Quests==\n'''Quests involved in:'''\n*Kourna\n**[[Building the Base: Prisoners of War]]\n\n==Dialogue==\nIn Sunward Marches:\n:''\"I am in your debt, stranger.\"''\n\n== Skills offered ==\n{{Skill trainer list\n| location = Command Post\n| note = Offers the same skills as [[Medando]].\n| w =\n| r =\n| mo =\n| n =\n| me =\n| e =\n| a =\n| rt =\n| p =\n| d =\n}}\n\n[[Category:Nightfall skill trainers by campaign location|6]]"
+}

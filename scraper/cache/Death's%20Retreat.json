@@ -1,0 +1,7 @@
+{
+  "title": "Death's Retreat",
+  "pageid": 14759,
+  "revid": 2697377,
+  "timestamp": "2024-05-27T09:35:09Z",
+  "wikitext": "{{Skill infobox\n| name = Death's Retreat\n| id = 1651\n| campaign = Nightfall\n| profession = Assassin\n| attribute = Shadow Arts\n| type = Spell\n| energy = 5\n| activation = {{1/4}}\n| recharge = 20\n| causes1 = Shadow Step\n| causes2 = Health Gain\n| description = [[Spell]]. [[Shadow Step]] to [[target]] [[ally]]. If you have less [[Health]] than that ally, you [[Health gain|gain]] {{gr|40|130}} Health.\n| concise description = Spell.  Gain {{gr|40|130}} Health if you have less Health than target ally.  Initial effect: Shadow Step to this ally.  {{gray|Cannot self-target.}}\n| target = other allies\n}}\n\n{{Skill progression\n| attribute = [[Shadow Arts]]\n| var1 name = [[Health gain]]\n| var1 at0 = 40\n| var1 at15 = 130}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n* [[Libeh]] ([[Command Post]])\n\n== Related skills ==\n* {{skill icon|Death's Charge}}\n* {{skill icon|Ebon Escape}}\n* {{skill icon|Return}}\n\n== Notes ==\n{{anomaly|Death's Retreat is one of the few [[spell]]s that do not suffer from [[aftercast delay]].}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

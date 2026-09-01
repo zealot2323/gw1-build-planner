@@ -1,0 +1,7 @@
+{
+  "title": "Shadow Meld",
+  "pageid": 4442,
+  "revid": 2738345,
+  "timestamp": "2026-08-26T20:15:27Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| name = Shadow Meld\n| id = 1654\n| campaign = Nightfall\n| profession = Assassin\n| type = Enchantment Spell\n| elite = y\n| energy = 5\n| recharge = 10\n| activation = {{1/4}}\n| upkeep = -1\n| causes1 = Shadow Step\n| description = [[Elite]] [[Enchantment Spell]]. [[Shadow Step]] to [[target]] other [[ally]]. When you stop [[Upkeep|maintain]]ing this [[Enchantment]], you return to your original location.\n| concise description = Elite Enchantment Spell.  Shadow Step to target ally.  End effect: return to your original location.  {{gray|Cannot self-target.}}\n| target = other allies\n}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Lunto Sharpfoot]] ([[Marga Coast]])\n\n== Related skills ==\n* {{skill icon|Aura of Displacement}} ([[elite]])\n* {{skill icon|Recall}}\n* {{skill icon|Shadow of Haste}}\n* {{skill icon|Shadow Walk}}\n\n== Notes ==\n* You cannot maintain multiple copies of Shadow Meld. \n* You shadow step when you return to your initial location.\n{{anomaly|This spell does not have an [[aftercast delay]].}}\n\n== Trivia ==\n* The assassins displayed in the [[skill icon]] appear to be female and wearing [[Assassin Vabbian armor|Vabbian armor]].\n{{Skill change}}\n\n[[Category:Upkeep skills]]\n\n[[de:Schattenverschmelzung]]"
+}

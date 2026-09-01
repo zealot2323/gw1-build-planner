@@ -1,0 +1,7 @@
+{
+  "title": "Signet of Disenchantment",
+  "pageid": 1682,
+  "revid": 2683806,
+  "timestamp": "2023-02-21T18:43:51Z",
+  "wikitext": "{{Skill infobox\n| id = 882\n| name = Signet of Disenchantment\n| campaign = Factions\n| profession = Mesmer\n| type = Signet\n| target = foes\n| recharge = 15\n| activation = 1\n| causes1 = Energy Loss\n| removes1 = Enchantment\n| description = [[Signet]].  Lose all [[Energy]]. [[Target]] [[foe]] loses one [[enchantment]].\n| concise description = Signet. Removes one enchantment. {{gray|You lose all Energy.}}\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Notes ==\n* One of the [[List of enchantment removal skills#Skills that can remove enchantments that prevent spell targeting|few skills]] that can remove [[Spell targeting prevention|enchantments that prevent spell targeting]].\n* To minimize the skill's downside:\n** [[Energy hiding|Hide energy]].\n** Alternatively, cast an energy regeneration skill before using the signet, e.g. [[Ether Lord]]."
+}

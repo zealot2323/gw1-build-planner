@@ -1,0 +1,7 @@
+{
+  "title": "Golden Fox Strike",
+  "pageid": 14504,
+  "revid": 2733261,
+  "timestamp": "2026-07-05T17:10:17Z",
+  "wikitext": "{{redirect|GFS}}\n{{Skill infobox\n| name = Golden Fox Strike\n| id = 1637\n| campaign = Nightfall\n| profession = Assassin\n| attribute = Dagger Mastery\n| type = Lead Attack\n| energy = 5\n| recharge = 4\n| causes1 = Unblockable\n| description = [[Lead Attack]]. If this [[attack]] hits, [[target]] [[foe]] takes {{gr|10|30|+}} [[damage]]. If you are under the effects of an [[Enchantment]], this attack cannot be [[block]]ed.\n| concise description = Lead Attack. Deals {{gr|10|30|+}} damage. Unblockable if you are Enchanted.\n| checks = enchantment\n| checks-true = unblockable\n}}\n\n{{Skill progression\n|attribute = [[Dagger Mastery]]\n|var1 name = [[Damage|+ Damage]]\n|var1 at0 = 10\n|var1 at15 = 30}}\n\n== Acquisition ==\n;[[Skill trainer]]s\n* [[Nightfall]]\n** [[Tohn]] ([[Kamadan, Jewel of Istan]])\n\n;[[Hero skill trainer]]s\n* Nightfall\n** [[Warden of Whispers (Chantry of Secrets)|Warden of Whispers]] ([[Chantry of Secrets]])\n\n;[[Signet of Capture]]\n* [[Factions]]\n** [[Watari the Infinite]] ([[Sunjiang District (Winds of Change)]], only during [[Redemption for the Lost]])\n\n== Related skills ==\n* {{skill icon|Swift Javelin}}\n\n== Notes ==\n* In [[PvP]], consider using [[Sight Beyond Sight]] to meet this skill's enchantment conditional.\n\n[[Category:Skills offered by hero skill trainers]]"
+}

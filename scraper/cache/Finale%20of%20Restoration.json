@@ -1,0 +1,7 @@
+{
+  "title": "Finale of Restoration",
+  "pageid": 15239,
+  "revid": 2724695,
+  "timestamp": "2026-04-05T07:27:32Z",
+  "wikitext": "{{Skill infobox\n| id = 1577\n| name = Finale of Restoration\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Motivation\n| type = Echo\n| has-pvp = y\n| energy = 5\n| activation = 1\n| recharge = 10\n| causes1 = Healing\n| description = [[Echo (skill type)|Echo]]. For {{gr|10|35}} seconds, whenever a [[chant]] or [[shout]] ends on [[target]] non-[[spirit]] [[ally]], that ally is [[heal]]ed for {{gr|15|75}} [[Health]].\n| concise description = Echo. ({{gr|10|35}} seconds.) Target ally gains {{sic}} {{gr|15|75}} Health whenever a shout or chant ends on that ally. {{gray|Cannot target spirits.}}\n}}\n\n{{Skill progression\n| attribute = [[Motivation]]\n| var1 name = [[Duration]]\n| var1 at0 = 10\n| var1 at15 = 35\n| var2 name = [[Heal]]ing\n| var2 at0 = 15\n| var2 at15 = 75}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Medando]] ([[Yohlon Haven]])\n'''[[Hero skill trainer]]s'''\n*[[Warden of Whispers (Chantry of Secrets)|Warden of Whispers]] ([[Chantry of Secrets]])\n\n==Notes==\n*Good synergy with [[\"Dodge This!\"]], [[\"Don't Trip!\"]], [[\"Go for the Eyes!\"]] and [[\"The Power Is Yours!\"]].\n{{bug|Contrary to the concise description, this skill causes healing and not [[health gain]].}}\n\n[[Category:Skills offered by hero skill trainers]]\n\n[[de:Finale der Wiederherstellung]]"
+}

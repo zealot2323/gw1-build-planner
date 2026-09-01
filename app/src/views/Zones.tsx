@@ -7,8 +7,8 @@ import {
   zoneSummary,
   type MonsterDisplay,
 } from "@gw1/engine";
-import type { Skill } from "@gw1/engine";
-import { dataset, index } from "../data";
+import type { Campaign, Skill } from "@gw1/engine";
+import { useData } from "../DataContext";
 import { SkillIcon } from "../components/SkillIcon";
 import { SkillDetails } from "../components/SkillDetails";
 import { ProfessionIcon } from "../components/ProfessionIcon";
@@ -134,6 +134,7 @@ function SkillChips({
   onSelect?: (s: string | null) => void;
   onSkillClick?: (s: string) => void;
 }) {
+  const index = useData();
   return (
     <div className="skillbar">
       {refs.map((ref) => {
@@ -180,7 +181,8 @@ function OutpostSkills({
   selectedSkill: string | null;
   setSelectedSkill: (s: string | null) => void;
 }) {
-  const at = useMemo(() => skillsAtLocation(location, index), [location]);
+  const index = useData();
+  const at = useMemo(() => skillsAtLocation(location, index), [location, index]);
   if (!at.trainer && at.quests.length === 0) {
     return <p className="muted pad">No skills are offered here.</p>;
   }
@@ -251,7 +253,8 @@ function ZoneBriefing({
   hardMode: boolean;
   onSkillClick: (skill: string) => void;
 }) {
-  const s = useMemo(() => zoneSummary(location, index, hardMode), [location, hardMode]);
+  const index = useData();
+  const s = useMemo(() => zoneSummary(location, index, hardMode), [location, hardMode, index]);
   const [openTag, setOpenTag] = useState<string | null>(null);
   if (s.monsterCount === 0) return null;
   const open = [...s.threats, ...s.minorThreats].find((t) => t.tag === openTag);
@@ -362,6 +365,8 @@ export interface ZoneViewState {
   hardMode: boolean;
   outpostSkill: string | null;
   searing: "pre" | "post";
+  /** Which campaign's map to show; null until a character picks one. */
+  campaign: Campaign | null;
 }
 
 export const initialZoneState: ZoneViewState = {
@@ -373,6 +378,7 @@ export const initialZoneState: ZoneViewState = {
   // leads here too.
   searing: "pre",
   outpostSkill: null,
+  campaign: null,
 };
 
 export function ZonesView({
@@ -386,7 +392,16 @@ export function ZonesView({
   state: ZoneViewState;
   setState: (patch: Partial<ZoneViewState>) => void;
 }) {
+  const index = useData();
+  const dataset = index.dataset;
   const { selected, openRegions, expandedSkill, hardMode, outpostSkill, searing } = state;
+  // Campaigns present in this character's scoped dataset.
+  const campaigns = useMemo(() => {
+    const order: Campaign[] = ["Prophecies", "Factions", "Nightfall", "Eye of the North"];
+    const present = new Set(dataset.locations.map((l) => l.campaign).filter(Boolean));
+    return order.filter((c) => present.has(c)) as Campaign[];
+  }, [dataset]);
+  const campaign = state.campaign ?? campaigns[0] ?? null;
   const setSelected = (v: string | null) => setState({ selected: v });
   const setOpenRegions = (v: Set<string> | null) => setState({ openRegions: v });
   const setExpandedSkill = (v: string | null) => setState({ expandedSkill: v });
@@ -414,8 +429,13 @@ export function ZonesView({
       return byRegion.get(key)!;
     };
 
-    const inScope = (l: { preSearing?: boolean }) =>
-      searing === "pre" ? l.preSearing === true : l.preSearing !== true;
+    const inCampaign = (l: { campaign?: string | null }) =>
+      campaign === null || l.campaign === campaign || l.campaign === "Core" || !l.campaign;
+    // only Prophecies has two halves; elsewhere the toggle is meaningless
+    const inHalf = (l: { preSearing?: boolean }) =>
+      campaign !== "Prophecies" || (searing === "pre" ? l.preSearing === true : l.preSearing !== true);
+    const inScope = (l: { preSearing?: boolean; campaign?: string | null }) =>
+      inCampaign(l) && inHalf(l);
 
     // a mission outpost's mission is one of the things you can enter from
     // it, so it belongs in the same child list — labelled as a mission
@@ -434,7 +454,7 @@ export function ZonesView({
         .map((name) => ({ name, kind: "explorable" }));
       for (const z of zones) nested.add(z.name);
       const mission = missionByOutpost.get(l.wikiPage);
-      if (mission && searing === "post") {
+      if (mission && (campaign !== "Prophecies" || searing === "post")) {
         zones.unshift({ name: mission, kind: "mission" });
         nestedMissions.add(mission);
       }
@@ -447,9 +467,11 @@ export function ZonesView({
     }
     // missions are all post-Searing; any not nested under an outpost above
     // still need a home in their region
-    if (searing === "post") {
+    if (campaign !== "Prophecies" || searing === "post") {
       for (const m of dataset.missions ?? []) {
         if (nestedMissions.has(m.wikiPage)) continue;
+        // missions carry their own campaign tag (their outpost may not resolve)
+        if (!inCampaign(m)) continue;
         bucket(m.region ?? "").other.push({ name: m.wikiPage, kind: "mission" });
       }
     }
@@ -460,7 +482,7 @@ export function ZonesView({
     return [...byRegion.entries()]
       .filter(([, v]) => v.outposts.length + v.other.length > 0)
       .sort(([a], [b]) => a.localeCompare(b));
-  }, [searing]);
+  }, [searing, campaign, dataset, index]);
 
   // null means "not touched yet" — open the first region so the tree is
   // never a wall of collapsed headers after switching Searing state
@@ -505,20 +527,37 @@ export function ZonesView({
     <div className="view row align-top">
       <div className="card zone-tree">
         <h3>
-          Prophecies{" "}
+          {campaign ?? "World"}{" "}
           {character && <span className="muted small">— {unlocked.size} unlocked</span>}
         </h3>
-        <div className="searing-toggle">
-          {(["pre", "post"] as const).map((v) => (
-            <button
-              key={v}
-              className={searing === v ? "seg active" : "seg"}
-              onClick={() => setState({ searing: v, openRegions: null })}
-            >
-              {v}-Searing
-            </button>
-          ))}
-        </div>
+        {campaigns.length > 1 && (
+          <div className="searing-toggle">
+            {campaigns.map((c) => (
+              <button
+                key={c}
+                className={campaign === c ? "seg active" : "seg"}
+                onClick={() =>
+                  setState({ campaign: c, openRegions: null, selected: null, outpostSkill: null })
+                }
+              >
+                {c}
+              </button>
+            ))}
+          </div>
+        )}
+        {campaign === "Prophecies" && (
+          <div className="searing-toggle">
+            {(["pre", "post"] as const).map((v) => (
+              <button
+                key={v}
+                className={searing === v ? "seg active" : "seg"}
+                onClick={() => setState({ searing: v, openRegions: null })}
+              >
+                {v}-Searing
+              </button>
+            ))}
+          </div>
+        )}
         {regions.map(([region, { outposts, other }]) => (
           <div key={region}>
             <button

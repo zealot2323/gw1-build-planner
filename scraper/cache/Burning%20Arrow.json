@@ -1,0 +1,7 @@
+{
+  "title": "Burning Arrow",
+  "pageid": 1238,
+  "revid": 2739057,
+  "timestamp": "2026-08-28T23:20:18Z",
+  "wikitext": "{{Skill infobox\n| name = Burning Arrow\n| id = 1466\n| campaign = Nightfall\n| profession = Ranger\n| attribute = Marksmanship\n| type = Bow Attack\n| elite = y\n| energy = 10\n| recharge = 5\n| causes1 = Burning\n| description = [[Elite]] [[Bow Attack]]. If this [[attack]] hits, you strike for {{gr|10|30|+}} [[damage]] and cause [[Burning]] for {{gr|2|8}} seconds.\n| concise description = Elite Bow Attack. Deals {{gr|10|30|+}} damage. Inflicts Burning condition ({{gr|2|8}} seconds).\n}}\n\n{{Skill progression\n|attribute = [[Marksmanship]]\n|var1 name = + [[Damage]]\n|var1 at0 = 10\n|var1 at15 = 30\n|var2 name = [[Burning]] [[duration]]\n|var2 at0 = 2\n|var2 at15 = 8}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Inquisitor Lashona]] ([[North Kryta Province (War in Kryta)]], only during [[Wanted: Inquisitor Lashona]])\n* [[Nightfall]]\n** [[Admiral Chiggen]] ([[Marga Coast]])\n* [[Eye of the North]]\n** [[Charr Warden]] ([[Rragar's Menagerie]])\n\n== Related skills ==\n* {{skill icon|Blazing Spear}}\n* {{skill icon|Incendiary Arrows}} ([[elite]])\n\n[[de:Brennender Pfeil]]"
+}

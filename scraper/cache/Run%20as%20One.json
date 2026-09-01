@@ -1,0 +1,7 @@
+{
+  "title": "Run as One",
+  "pageid": 6505,
+  "revid": 2683481,
+  "timestamp": "2023-02-19T04:43:56Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 811\n| name = Run as One\n| campaign = Factions\n| profession = Ranger\n| attribute = Beast Mastery\n| type = Stance\n| energy = 5\n| recharge = 15\n| causes1 = Increased Movement Speed\n| description = [[Stance]]. For {{gr|5|15}} seconds, you and your [[pet]] run 25% faster.\n| concise description = Stance. ({{gr|5|15}} seconds.) You and your pet move 25% faster.\n}}\n\n{{Skill progression\n| attribute = [[Beast Mastery]]\n| var1 name = [[Duration]]\n| var1 at0 = 5\n| var1 at15 = 15}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Call of Haste}}\n* {{skill icon|Rampage as One}} ([[elite]])\n\n== Notes ==\n* This skill can be used without [[Charm Animal]], [[Comfort Animal]] nor [[Heal as One]] equipped or when your [[animal companion]] is dead.\n{{speed|5|15|25|15}}\n* Animal companions already run faster than normal player speed so this may not be needed for the pet's benefit though it will still allow the pet to better catch a running target.\n* This skill will continue to be active for the pet even if the owner has activated another stance after it.\n* Consider using in combination with [[Feral Aggression]].\n\n== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details.\n\n[[Category:Pet skills]]"
+}

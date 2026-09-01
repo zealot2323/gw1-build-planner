@@ -1,0 +1,7 @@
+{
+  "title": "Signet of Malice",
+  "pageid": 6700,
+  "revid": 2686686,
+  "timestamp": "2023-05-04T16:51:36Z",
+  "wikitext": "{{Skill infobox\n| id = 1036\n| name = Signet of Malice\n| campaign = Factions\n| profession = Assassin\n| type = Signet\n| activation = {{1/4}}\n| recharge = 5\n| description = [[Signet]]. For each [[condition]] suffered by [[target]] [[foe]], you lose one condition.\n| concise description = Signet. You lose one condition for each condition on target foe.\n| removes1 = Condition\n| target = foes\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Valis the Rampant]] ([[Twin Serpent Lakes (War in Kryta)]])\n\n== Related skills ==\n* {{skill icon|Antidote Signet}}\n* {{skill icon|Remedy Signet}}"
+}

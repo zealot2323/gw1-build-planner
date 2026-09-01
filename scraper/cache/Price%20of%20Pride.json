@@ -1,0 +1,7 @@
+{
+  "title": "Price of Pride",
+  "pageid": 1495,
+  "revid": 2726530,
+  "timestamp": "2026-04-28T19:20:09Z",
+  "wikitext": "{{Skill infobox\n| name = Price of Pride\n| id = 1655\n| campaign = Nightfall\n| profession = Mesmer\n| attribute = Domination Magic\n| type = Hex Spell\n| energy = 5\n| activation = 1\n| recharge = 8\n| causes1 = Energy Loss\n| description = [[Hex Spell]]. For 5 seconds, the next time [[target]] [[foe]] uses an [[elite skill]], that foe loses {{gr|3|15}} [[Energy]].\n| concise description = Hex Spell. (5 seconds.) Causes {{gr|3|15}} Energy loss the next time target foe uses an elite skill.\n}}\n\n{{Skill progression\n| attribute = [[Domination Magic]]\n| var1 name = [[Energy]] loss\n| var1 at0 = 3\n| var1 at15 = 15}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Medando]] ([[Yohlon Haven]])\n'''[[Hero skill trainer]]s'''\n* [[Warden of Whispers (The Kodash Bazaar)|Warden of Whispers]] ([[The Kodash Bazaar]])\n\n== Related skills ==\n* {{skill icon|Guilt}}\n* {{skill icon|Shame}}\n\n{{bug|[[Second Wind]] does not trigger this skill.}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Kirin's Wrath",
+  "pageid": 13266,
+  "revid": 2738565,
+  "timestamp": "2026-08-26T21:59:00Z",
+  "wikitext": "{{Skill infobox\n| id = 1113\n| name = Kirin's Wrath\n| campaign = Factions\n| profession = Monk\n| attribute = Smiting Prayers\n| type = Spell\n| energy = 5\n| activation = 1\n| recharge = 10\n| causes1 = Holy Damage\n| description = [[Spell]]. For 5 seconds, [[foe]]s [[adjacent]] to the location in which the spell was cast take {{gr|8|32}} [[holy damage]] each second.\n| concise description = Spell. Deals {{gr|8|32}} holy damage each second (5 seconds). Hits foes adjacent to your initial location.\n| aoe = adjacent\n| target = self\n}}\n\n{{Skill progression\n| attribute = [[Smiting Prayers]]\n| var1 name = [[Holy damage]]\n| var1 at0 = 8\n| var1 at15 = 32}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Zhao Di]] ([[Shing Jea Monastery]])\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Lava Font}}\n* {{skill icon|Ray of Judgment}} ([[elite]])\n\n[[de:Kirins Zorn]]"
+}

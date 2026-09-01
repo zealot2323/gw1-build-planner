@@ -22,9 +22,18 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { fetchWikitext, listCategoryMembers } from "./client.js";
+import { CAMPAIGNS, type CampaignConfig } from "./campaigns.js";
 
 const DATA_DIR = fileURLToPath(new URL("../../data/", import.meta.url));
-const CORE_PROFESSIONS = ["Warrior", "Ranger", "Monk", "Necromancer", "Mesmer", "Elementalist"];
+/**
+ * Every profession, walked for every campaign. A campaign's skill set is not
+ * limited to the professions it introduced — Nightfall adds Assassin and
+ * Ritualist skills, Factions adds skills for all six core professions.
+ */
+const ALL_PROFESSIONS = [
+  "Warrior", "Ranger", "Monk", "Necromancer", "Mesmer", "Elementalist",
+  "Assassin", "Ritualist", "Paragon", "Dervish",
+];
 const CORE_COMMON_SKILLS = ["Resurrection Signet", "Signet of Capture"];
 
 // ---------------------------------------------------------------------------
@@ -44,11 +53,11 @@ function linkTargets(text: string): string[] {
 
 /**
  * Extract bulleted link targets from a campaign block: from the line
- * :'''Prophecies''' up to the next campaign block / table cell / table end.
+ * :'''<Campaign>''' up to the next campaign block / table cell / table end.
  */
-function propheciesBlockLinks(wikitext: string): string[] {
-  const start = wikitext.indexOf(":'''Prophecies'''");
-  if (start === -1) throw new Error("no Prophecies block found");
+function campaignBlockLinks(wikitext: string, campaign: string): string[] {
+  const start = wikitext.indexOf(`:'''${campaign}'''`);
+  if (start === -1) return [];
   const rest = wikitext.slice(start + 1);
   const end = rest.search(/:'''|\|valign|\|\}/);
   const block = rest.slice(0, end === -1 ? undefined : end);
@@ -140,8 +149,8 @@ async function professionSkillTree(profession: string): Promise<Set<string>> {
   return out;
 }
 
-async function discoverSkills(): Promise<string[]> {
-  console.log("== Skills: querying categories ==");
+async function discoverSkills(campaign: CampaignConfig): Promise<string[]> {
+  console.log(`== ${campaign.name} skills ==`);
   const cat = async (name: string) => new Set(await listCategoryMembers(name));
 
   const historical = await cat("Historical content");
@@ -154,38 +163,38 @@ async function discoverSkills(): Promise<string[]> {
   // "Prophecies skills" category alone is NOT usable: it also holds ~76
   // monster/environment/festival/NPC skills (Spectral Agony, Fire Storm
   // (environment), Mad King skills, ...) that no player can learn.
-  const propheciesRaw = await cat("Prophecies skills");
+  const campaignRaw = await cat(`${campaign.name} skills`);
   const coreRaw = await cat("Core skills");
 
-  const prophecies = new Set<string>();
+  const own = new Set<string>();
   const core = new Set<string>();
-  for (const prof of CORE_PROFESSIONS) {
+  for (const prof of ALL_PROFESSIONS) {
     const tree = [...(await professionSkillTree(prof))].filter(usable);
-    const proph = tree.filter((t) => propheciesRaw.has(t));
+    const proph = tree.filter((t) => campaignRaw.has(t));
     const coreProf = tree.filter((t) => coreRaw.has(t));
-    console.log(`  ${prof}: ${proph.length} Prophecies + ${coreProf.length} core = ${proph.length + coreProf.length}`);
+    console.log(`  ${prof}: ${proph.length} ${campaign.name} + ${coreProf.length} core`);
 
     // Cross-check against the game's own numbers: Prophecies shipped with
     // 450 skills — 75 per profession (core + Prophecies) — plus a handful of
     // later core additions per profession (2020 anniversary elites, PvE-only
     // faction skills like "Save Yourselves!").
-    if (proph.length + coreProf.length < 70 || proph.length + coreProf.length > 85) {
-      throw new Error(`${prof}: ${proph.length + coreProf.length} skills, expected ~75±8 — check categories`);
-    }
-    for (const t of proph) prophecies.add(t);
+    for (const t of proph) own.add(t);
     for (const t of coreProf) core.add(t);
   }
   for (const t of CORE_COMMON_SKILLS) core.add(t);
 
-  const skills = new Set([...prophecies, ...core]);
-  console.log(`  totals: ${prophecies.size} Prophecies + ${core.size} core = ${skills.size} unique pages`);
+  const skills = new Set([...own, ...core]);
   console.log(
-    `  (raw "Prophecies skills" category: ${propheciesRaw.size} — extras are list pages, ` +
-      `(PvP) variants, and unlearnable monster/environment skills)`,
+    `  ${own.size} ${campaign.name} + ${core.size} core = ${skills.size} unique pages ` +
+      `(raw category ${campaignRaw.size})`,
   );
-  if (skills.size < 440 || skills.size > 490) {
-    throw new Error(`total skill count ${skills.size} outside expected 440-490 (450 at launch + anniversary elites)`);
+  // The campaign category is the ceiling: everything learnable in it must be
+  // a page we picked up, minus list pages and (PvP) variants.
+  const missed = [...campaignRaw].filter((t) => isSkillPage(t) && !own.has(t)).length;
+  if (own.size < campaignRaw.size * 0.5) {
+    throw new Error(`${campaign.name}: only ${own.size} of ${campaignRaw.size} category members kept — check professions`);
   }
+  console.log(`  (${missed} category members not kept: monster/environment/event skills)`);
   return [...skills].sort();
 }
 
@@ -200,36 +209,44 @@ interface Locations {
   explorables: string[];
 }
 
-async function discoverLocations(): Promise<Locations> {
-  console.log("== Locations ==");
-  const towns = propheciesBlockLinks((await fetchWikitext("Town")).wikitext);
-  const outposts = propheciesBlockLinks(
+async function discoverLocations(campaign: CampaignConfig): Promise<Locations> {
+  console.log(`== ${campaign.name} locations ==`);
+  const block = campaign.templateBlock;
+  const towns = campaignBlockLinks((await fetchWikitext("Town")).wikitext, block);
+  const outposts = campaignBlockLinks(
     (await fetchWikitext("Template:Outposts by continent")).wikitext,
+    block,
   );
-  const missionOutposts = propheciesBlockLinks(
+  const missionOutposts = campaignBlockLinks(
     (await fetchWikitext("Template:Mission outposts by continent")).wikitext,
+    block,
   );
 
   // Pre-Searing explorables: the "Prophecies pre-Searing" section of the
   // Explorable area page. Post-Searing: the transcluded Prophecies subpage,
   // excluding The Mists column (PvP/core areas, not Prophecies content).
-  const explorableArticle = (await fetchWikitext("Explorable area")).wikitext;
-  const preSection = explorableArticle.split(/==\s*Prophecies pre-Searing\s*==/)[1]?.split(/\n==[^=]/)[0] ?? "";
-  const preSearing = preSection
-    .split("\n")
-    .filter((l) => /^\*[^*]/.test(l))
-    .map(firstLinkTarget)
-    .filter((t): t is string => t !== null);
-
-  const subpage = (await fetchWikitext("Guild Wars Prophecies/Explorable areas")).wikitext;
-  const byRegion = tableColumns(subpage);
-  const postSearing: string[] = [];
-  for (const [region, links] of byRegion) {
-    if (region === "The Mists") continue;
-    postSearing.push(...links);
+  // Prophecies alone has a pre-Searing half, listed in its own section of
+  // the Explorable area article rather than on the campaign subpage.
+  let preSearing: string[] = [];
+  if (campaign.name === "Prophecies") {
+    const article = (await fetchWikitext("Explorable area")).wikitext;
+    const preSection = article.split(/==\s*Prophecies pre-Searing\s*==/)[1]?.split(/\n==[^=]/)[0] ?? "";
+    preSearing = preSection
+      .split("\n")
+      .filter((l) => /^\*[^*]/.test(l))
+      .map(firstLinkTarget)
+      .filter((t): t is string => t !== null);
   }
 
-  const explorables = [...new Set([...preSearing, ...postSearing])];
+  const subpage = (await fetchWikitext(campaign.explorablesPage)).wikitext;
+  const byRegion = tableColumns(subpage);
+  const main: string[] = [];
+  for (const [region, links] of byRegion) {
+    if (campaign.excludeRegions.includes(region)) continue;
+    main.push(...links);
+  }
+
+  const explorables = [...new Set([...preSearing, ...main])];
   console.log(
     `  towns: ${towns.length}, outposts: ${outposts.length}, ` +
       `mission outposts: ${missionOutposts.length}, explorables: ${explorables.length} ` +
@@ -242,26 +259,41 @@ async function discoverLocations(): Promise<Locations> {
 // 3. Trainers, 4. Missions
 // ---------------------------------------------------------------------------
 
-async function discoverTrainers(): Promise<{ trainers: string[]; skillSubpages: string[] }> {
-  console.log("== Trainers ==");
-  const wt = (await fetchWikitext("List of Prophecies skill trainers")).wikitext;
-  const trainers = [...wt.matchAll(/^===\s*\[\[([^\]|]+)[^=]*?\]\]\s+in\s+\[\[/gm)].map((m) => m[1].trim());
-  const skillSubpages = [...wt.matchAll(/\{\{:([^}]+\/Skills)\}\}/g)].map((m) => m[1].trim());
-  console.log(`  ${trainers.length} trainers, ${skillSubpages.length} /Skills subpages`);
+async function discoverTrainers(
+  campaign: CampaignConfig,
+): Promise<{ trainers: string[]; skillSubpages: string[] }> {
+  console.log(`== ${campaign.name} trainers ==`);
+  // The category is the reliable source. Prophecies' list page uses
+  // "=== [[Name]] in [[Place]] ===" headings, but every other campaign's
+  // list is generated by a DPL query, so the trainers are not in the
+  // wikitext at all — only the category names them.
+  const members = await listCategoryMembers(`${campaign.name} skill trainers`);
+  const trainers = members.filter(
+    (t) => !t.startsWith("Category:") && !t.startsWith("List of") && !t.includes("/"),
+  );
+
+  // Their skill lists live on "<Name>/Skills" subpages.
+  const skillSubpages = trainers.map((t) => `${t}/Skills`);
+  console.log(`  ${trainers.length} trainers`);
   return { trainers, skillSubpages };
 }
 
-async function discoverMissions(): Promise<string[]> {
-  console.log("== Missions ==");
-  const wt = (await fetchWikitext("List of Prophecies missions and primary quests")).wikitext;
-  // Numbered mission lines look like ":;12. [[Aurora Glade]]"; the three
-  // any-order Ascension missions are indented one level deeper ("::;15. ...").
-  const missions = [...wt.matchAll(/^:{1,2};\s*\d+\.?\s*\[\[([^\]|#]+)/gm)].map((m) => m[1].trim());
+async function discoverMissions(campaign: CampaignConfig): Promise<string[]> {
+  console.log(`== ${campaign.name} missions ==`);
+  if (campaign.missionListPage === null) {
+    console.log("  none (this campaign has dungeons, not numbered missions)");
+    return [];
+  }
+  const wt = (await fetchWikitext(campaign.missionListPage)).wikitext;
+  // ":;12. [[Aurora Glade]]"; Ascension missions are indented one level
+  // deeper ("::;15. ..."), and Factions' Kurzick/Luxon split numbers its
+  // branches "9a." / "9b.".
+  const missions = [...wt.matchAll(/^:{1,2};\s*\d+[a-z]?\.?\s*\[\[([^\]|#]+)/gm)].map((m) => m[1].trim());
   console.log(`  ${missions.length} missions`);
-  if (missions.length !== 25) {
+  if (campaign.name === "Prophecies" && missions.length !== 25) {
     throw new Error(`expected 25 Prophecies missions, parsed ${missions.length}`);
   }
-  return missions;
+  return [...new Set(missions)];
 }
 
 // ---------------------------------------------------------------------------
@@ -290,70 +322,102 @@ async function fetchAll(label: string, titles: string[]): Promise<string[]> {
 // main
 // ---------------------------------------------------------------------------
 
-const skills = await discoverSkills();
-const locations = await discoverLocations();
-const { trainers, skillSubpages } = await discoverTrainers();
-const missions = await discoverMissions();
+// ---------------------------------------------------------------------------
+// main — one pass per campaign, into a single manifest keyed by campaign
+// ---------------------------------------------------------------------------
 
-// Fetch every location + mission page now — the explorable and mission pages
-// are the source of the monster set (our bestiary IS "what spawns in
-// Prophecies areas"; we never crawl a global bestiary).
-const allLocations = [
-  ...locations.towns,
-  ...locations.outposts,
-  ...locations.missionOutposts,
-  ...locations.explorables,
-];
-const failures: string[] = [];
-failures.push(...(await fetchAll("location", allLocations)));
-failures.push(...(await fetchAll("mission", missions)));
-
-console.log("== Monsters: extracting foe/boss links from explorable + mission pages ==");
-const monsterSet = new Set<string>();
-for (const title of [...locations.explorables, ...missions]) {
-  try {
-    for (const foe of extractFoes((await fetchWikitext(title)).wikitext)) monsterSet.add(foe);
-  } catch {
-    // page already reported as failed above
-  }
+/** Campaigns to discover; default is all of them. `npm run discover -- Factions` */
+const requested = process.argv.slice(2);
+const campaigns =
+  requested.length > 0
+    ? CAMPAIGNS.filter((c) => requested.some((r) => c.name.toLowerCase() === r.toLowerCase()))
+    : CAMPAIGNS;
+if (campaigns.length === 0) {
+  throw new Error(`no campaign matched ${requested.join(", ")}; known: ${CAMPAIGNS.map((c) => c.name).join(", ")}`);
 }
-const monsters = [...monsterSet].sort();
-console.log(`  ${monsters.length} unique monster pages`);
+
+const failures: string[] = [];
+const byCampaign: Record<string, unknown> = {};
+const allSkills = new Set<string>();
+const allMonsters = new Set<string>();
+
+for (const campaign of campaigns) {
+  console.log(`\n########## ${campaign.name} ##########`);
+  const skills = await discoverSkills(campaign);
+  const locations = await discoverLocations(campaign);
+  const { trainers, skillSubpages } = await discoverTrainers(campaign);
+  const missions = await discoverMissions(campaign);
+
+  // Fetch the location + mission pages first — they are the source of the
+  // monster set (the bestiary IS "what spawns in this campaign's areas";
+  // we never crawl a global bestiary).
+  const allLocations = [
+    ...locations.towns,
+    ...locations.outposts,
+    ...locations.missionOutposts,
+    ...locations.explorables,
+  ];
+  failures.push(...(await fetchAll(`${campaign.name} location`, allLocations)));
+  failures.push(...(await fetchAll(`${campaign.name} mission`, missions)));
+
+  console.log(`== ${campaign.name} monsters: extracting foe/boss links ==`);
+  const monsterSet = new Set<string>();
+  for (const title of [...locations.explorables, ...missions]) {
+    try {
+      for (const foe of extractFoes((await fetchWikitext(title)).wikitext)) monsterSet.add(foe);
+    } catch {
+      // page already reported as failed above
+    }
+  }
+  const monsters = [...monsterSet].sort();
+  console.log(`  ${monsters.length} unique monster pages`);
+
+  for (const s of skills) allSkills.add(s);
+  for (const m of monsters) allMonsters.add(m);
+
+  byCampaign[campaign.name] = {
+    counts: {
+      skills: skills.length,
+      towns: locations.towns.length,
+      outposts: locations.outposts.length,
+      missionOutposts: locations.missionOutposts.length,
+      explorables: locations.explorables.length,
+      trainers: trainers.length,
+      missions: missions.length,
+      monsters: monsters.length,
+    },
+    skills,
+    locations,
+    trainers,
+    trainerSkillSubpages: skillSubpages,
+    missions,
+    monsters,
+  };
+
+  failures.push(...(await fetchAll(`${campaign.name} skill`, skills)));
+  failures.push(...(await fetchAll(`${campaign.name} trainer`, [...trainers, ...skillSubpages])));
+  failures.push(...(await fetchAll(`${campaign.name} monster`, monsters)));
+}
 
 const manifest = {
   generated: new Date().toISOString(),
-  campaign: "Prophecies",
-  counts: {
-    skills: skills.length,
-    towns: locations.towns.length,
-    outposts: locations.outposts.length,
-    missionOutposts: locations.missionOutposts.length,
-    explorables: locations.explorables.length,
-    trainers: trainers.length,
-    missions: missions.length,
-    monsters: monsters.length,
-  },
-  skills,
-  locations,
-  trainers,
-  trainerSkillSubpages: skillSubpages,
-  missions,
-  monsters,
+  campaigns: campaigns.map((c) => c.name),
+  byCampaign,
 };
 
 await mkdir(DATA_DIR, { recursive: true });
 await writeFile(`${DATA_DIR}manifest.json`, JSON.stringify(manifest, null, 2) + "\n", "utf8");
-console.log(`wrote data/manifest.json`);
-
-failures.push(...(await fetchAll("skill", skills)));
-failures.push(...(await fetchAll("trainer", [...trainers, ...skillSubpages])));
-failures.push(...(await fetchAll("monster", monsters)));
+console.log(`\nwrote data/manifest.json`);
 
 console.log("\n== Discovery complete ==");
-console.log(JSON.stringify(manifest.counts, null, 2));
+for (const [name, data] of Object.entries(byCampaign)) {
+  console.log(`${name}: ${JSON.stringify((data as { counts: unknown }).counts)}`);
+}
+console.log(`unique skills across campaigns: ${allSkills.size}`);
+console.log(`unique monsters across campaigns: ${allMonsters.size}`);
 if (failures.length > 0) {
   console.log(`FAILED pages (${failures.length}):`);
-  for (const f of failures) console.log(`  - ${f}`);
+  for (const f of failures.slice(0, 40)) console.log(`  - ${f}`);
 } else {
   console.log("all pages fetched and cached");
 }

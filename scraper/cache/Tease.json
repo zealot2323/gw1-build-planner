@@ -1,0 +1,7 @@
+{
+  "title": "Tease",
+  "pageid": 1672,
+  "revid": 2738391,
+  "timestamp": "2026-08-26T20:33:48Z",
+  "wikitext": "{{Skill infobox\n| id = 1342\n| name = Tease\n| campaign = Nightfall\n| profession = Mesmer\n| attribute = Inspiration Magic\n| type = Spell\n| elite = y\n| energy = 5\n| activation = {{1/4}}\n| recharge = 15\n| target = foes\n| range = \n| has-pvp = y\n| aoe = in the area\n| causes1 = Interrupt\n| causes2 = Energy Stealing\n| description = [[Elite]] [[Spell]]. If [[target]] [[foe]] is using a [[skill]], that foe and other foes [[in the area]] are [[interrupt]]ed and you steal {{gr|0|5}} [[Energy]] from all foes in the area.\n| concise description = Elite Spell. Interrupts a skill. Interruption effect: also interrupts other foes in the area, and you steal {{gr|0|5}} Energy from all foes in the area.\n}}\n\n{{Skill progression\n|attribute = [[Inspiration Magic]]\n|var1 name = [[Energy]] stolen\n|var1 at0 = 0\n|var1 at15 = 5}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Justiciar Kimii]] ([[Riverside Province (explorable area)]])\n* [[Nightfall]]\n** [[Makdeh the Aggravating]] ([[Yatendi Canyons]])\n\n== Related skills ==\n* {{skill icon|Cry of Frustration}}\n* {{skill icon|Cry of Pain}}\n* {{skill icon|Panic}} ([[elite]])\n\n== Notes ==\n* Steals energy from target and foes in the area even if interruption is prevented.\n\n== Trivia ==\n* The [[functionality]] of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details.\n\n[[de:Reizen]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Skree Talon",
+  "pageid": 19765,
+  "revid": 1983817,
+  "timestamp": "2010-04-15T03:58:14Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Skree_paragon.jpg|192px]]\n| species = Harpy\n| affiliation = Istan wildlife\n| profession = w\n| level = 4 (24), 12 (24)\n| campaign = Nightfall\n}}\n[[Skree Talon]]s are the warriors of the Skree harpies. They are the adolescent versions of [[Skree Raider]]s.\n\n==Locations==\n*[[Istan]]\n**{{NPC location|Cliffs of Dohjok}} (levels 4 and 12)\n**{{NPC location|Fahranur, The First City}} (level 12)\n**{{NPC location|Lahtenda Bog}} (level 12)\n\n==Missions==\n*[[Istan]]\n**{{NPC location|Blacktide Den}} (level 12)\n\n==Skills==\n*{{skill icon|\"Shields Up!\"}}\n*{{skill icon|\"You're All Alone!\"}} ([[elite]], [[Hard Mode]] only)\n*{{skill icon|Hamstring}}\n*{{skill icon|Soldier's Strike}}\n\n==Armor ratings==\n{{NPC statistics\n| level = 12\n| prof = w\n| blunt = 87\n| piercing = 87\n| slashing = 87\n| cold = 67\n| earth = 67\n| fire = 67\n| lightning = 67\n}}\n\n==Items dropped==\n*[[Fledgling Skree Wing]]\n\n[[Category:Harpies]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Soldier's Defense",
+  "pageid": 6703,
+  "revid": 2709804,
+  "timestamp": "2025-07-01T04:56:37Z",
+  "wikitext": "{{Skill infobox\n| name = Soldier's Defense\n| id = 1699\n| campaign = Nightfall\n| profession = Warrior\n| attribute = Tactics\n| type = Stance\n| energy = 5\n| recharge = 15\n| causes1 = Block\n| causes2 = Adrenaline Gain\n| description = [[Stance]]. For {{gr|1|6}} second[s], you have a 75% chance to [[block]] [[attack]]s while under the effects of a [[shout]] or [[chant]]. You gain 1 strike of [[adrenaline]] for each blocked attack. \n| concise description = Stance. ({{gr|1|6}} second[s].) You have 75% chance to block while under the effects of a shout or chant. Block effect: gain 1 adrenaline.\n}}\n\n{{Skill progression\n|attribute = [[Tactics]]\n|var1 name = [[Duration]]\n|var1 at0 = 1\n|var1 at15 = 6}}\n\n== Acquisition ==\n===[[Unlock]] and learn===\n'''[[Skill trainer]]s'''\n* [[Medando]] ([[Yohlon Haven]])\n\n===Unlock only===\n;[[Hero]]es\n* Unlocking [[Goren]]\n\n== Related skills ==\n* {{skill icon|Shield Stance}}\n\n== Notes ==\n{{anomaly|Adrenaline will be gained even for attacks blocked by another blocking source (regardless of whether the user is under the effects of a shout or chant).}}"
+}

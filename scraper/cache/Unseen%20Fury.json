@@ -1,0 +1,7 @@
+{
+  "title": "Unseen Fury",
+  "pageid": 16280,
+  "revid": 2733021,
+  "timestamp": "2026-07-05T12:59:52Z",
+  "wikitext": "{{Skill infobox\n| id = 1041\n| name = Unseen Fury\n| campaign = Factions\n| profession = Assassin\n| attribute = Shadow Arts\n| type = Stance\n| energy = 5\n| recharge = 20\n| has-pvp =y\n| aoe = adjacent\n| target = untargeted\n| pbaoe = self\n| causes1 = Unblockable\n| causes2 = Blind\n| description = [[Stance]]. All [[adjacent]] [[foe]]s are [[Blind]]ed for {{gr|3|10}} seconds. For {{gr|10|30}} seconds, you cannot be [[block]]ed by Blinded foes.\n| concise description = Stance. Inflicts Blindness condition on adjacent foes ({{gr|3|10}}). You cannot be blocked by Blinded foes for {{gr|10|30}} seconds.\n}}\n\n{{Skill progression\n|attribute = [[Shadow Arts]]\n|var1 name = [[Blind]] [[duration]]\n|var2 name = [[Stance]] duration\n|var1 at0 = 3\n|var1 at15 = 10\n|var2 at0 = 10\n|var2 at15 = 30}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== See also ==\n* [[Blind#Skills that cause blindness|List of skills that cause blindness]]\n\n[[de:Unsichtbare Wut]]"
+}

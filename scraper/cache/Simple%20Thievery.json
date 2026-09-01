@@ -1,0 +1,7 @@
+{
+  "title": "Simple Thievery",
+  "pageid": 1507,
+  "revid": 2723308,
+  "timestamp": "2026-03-26T17:24:36Z",
+  "wikitext": "{{Skill infobox\n| name = Simple Thievery\n| id = 1350\n| campaign = Nightfall\n| profession = Mesmer\n| attribute = Domination Magic\n| type = Spell\n| elite = y\n| recharge = 10\n| energy = 10\n| activation = {{1/4}}\n| causes1 = Interrupt\n| causes2 = Disable\n| causes3 = Skill Copying\n| description = [[Elite]] [[Spell]]. [[Interrupt]] [[target]] [[foe]]'s [[action]]. If that action was a [[skill]], that skill is [[disable]]d for {{gr|5|20}} seconds, and Simple Thievery is replaced by that skill.\n| concise description = Elite Spell. Interrupts an action. Interruption effect: If a skill was interrupted, that skill is disabled and Simple Thievery becomes that skill ({{gr|5|20}} seconds).\n| target = foes\n}}\n\n{{Skill progression\n|attribute = [[Domination Magic]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 20}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Midshipman Morolah]] ([[Barbarous Shore]])\n\n== Related skills ==\n* {{duplicate skill icon|Arcane Thievery|Arcane Larceny}}\n* {{skill icon|Smooth Criminal}}\n* {{skill icon|Symbols of Inspiration}} ([[elite]])\n\n== Notes ==\n*Simple Thievery will only recharge normally if no skill was copied. If a skill was copied, Simple Thievery is [[disable]]d for 10 seconds after the copy effect ends.\n*This skill will not disable and become a copied version of a skill if it is prevented from interrupting that skill.\n\n[[de:Simpler Diebstahl]]"
+}

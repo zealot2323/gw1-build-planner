@@ -1,0 +1,7 @@
+{
+  "title": "Stone Rain",
+  "pageid": 22575,
+  "revid": 2604977,
+  "timestamp": "2016-04-28T23:23:01Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Stone Rain.jpg|x230px]]\n| type = Elemental\n| affiliation = Echovald Forest wildlife\n| profession = e\n| level = 23 (26)\n| campaign = Factions\n}}\n[[Stone Rain]]s utilize [[knock down]] and [[point blank area of effect]] damage against their foes.\n\n==Locations==\n*[[Echovald Forest]]\n**{{NPC location|Arborstone|explorable area}}\n**{{NPC location|Morostav Trail}}\n\n==Missions==\n*Echovald Forest\n**{{NPC location|Arborstone}}\n\n==Skills==\n*{{skill icon|Gale}}\n*{{skill icon|Shockwave}} ([[elite]])\n*{{skill icon|Stone Daggers}}\n*{{skill icon|Teinai's Wind}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = e\n| blunt = 69\n| piercing = 109\n| slashing = 109\n| cold = 69\n| earth = 109\n| fire = 109\n| lightning = 109\n}}\n\n==Items dropped==\n*[[Pile of Glittering Dust]]   \n*[[Ruby]] \n*[[Stone Carving]]\n*[[Stone Remnants]]\n\n==Notes==\n*Be cautious when approaching them in [[Hard mode]], as their Shockwave can do massive damage.\n\n[[Category:Drops dust]]\n[[Category:Drops ruby]]"
+}

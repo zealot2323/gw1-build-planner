@@ -1,0 +1,7 @@
+{
+  "title": "\"Make Haste!\"",
+  "pageid": 14929,
+  "revid": 2684116,
+  "timestamp": "2023-02-24T13:12:01Z",
+  "wikitext": "{{Skill infobox\n| id = 1591\n| name = \"Make Haste!\"\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Command\n| type = Shout\n| energy = 5\n| recharge = 10\n| causes1 = Increased Movement Speed\n| description = [[Shout]]. For {{gr|5|20}} seconds, [[target]] other [[ally]] [[Speed boost|moves 33% faster]].  This [[skill]] ends if that ally successfully hits with an [[attack]].\n| concise description = Shout. ({{gr|5|20}} seconds.) Target ally moves 33% faster. {{gray|Ends if target ally hits with an attack. Cannot self-target.}}\n| aoe = None\n| target = other allies\n}}\n\n{{Skill progression\n| attribute = [[Command]]\n| maximum = 19\n| var1 name = [[Duration]]\n| var1 at0 = 5\n| var1 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Medando]] ([[Yohlon Haven]])\n\n== Related skills ==\n* {{skill icon|\"Lead the Way!\"}}\n* {{skill icon|Windborne Speed}}\n\n==Notes==\n*Commonly used in [[Heroes' Ascent]] as an unstrippable speed boost for running relics.\n*Popular in [[the Jade Quarry]] as a way to speed up the [[Carrier Juggernaut]] or [[Hauler Turtle]].\n\n{{DEFAULTSORT:Make Haste!}}"
+}

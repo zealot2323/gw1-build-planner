@@ -1,0 +1,7 @@
+{
+  "title": "Poisoned Heart",
+  "pageid": 14862,
+  "revid": 2683706,
+  "timestamp": "2023-02-21T03:02:05Z",
+  "wikitext": "{{Skill infobox\n| id = 840\n| name = Poisoned Heart\n| campaign = Nightfall\n| profession = Necromancer\n| attribute = Curses\n| type = Spell\n| energy = 5\n| activation = {{1/4}}\n| recharge = 12\n| causes1 = Poison\n| description = [[Spell]]. You and all [[adjacent]] [[foe]]s are [[Poison]]ed for {{gr|5|15}} seconds.\n| concise description = Spell. Inflicts Poisoned condition ({{gr|5|15}} seconds) to adjacent foes. {{gray|You are also Poisoned.}}\n| aoe = adjacent\n| target = untargeted\n| pbaoe = self\n}}\n\n{{Skill progression\n| attribute = [[Curses]]\n| var2 name = [[Poison]] [[duration]]\n| var2 at0 = 5\n| var2 at15 = 15}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Dau]] ([[The Mouth of Torment]])\n'''[[Hero skill trainer]]s'''\n* [[Godaj]] ([[Lair of the Forgotten]])\n;[[Signet of Capture]]\n* [[Kahli, the Stiched]] ([[Cliffs of Dohjok]], only during [[Following the Trail]]) \n* [[Midshipman Beraidun]] ([[Cliffs of Dohjok]], only during [[A Land of Heroes]])\n* [[Commander Werishakul]] ([[Mehtani Keys]])\n* [[Modti Darkflower]] ([[Arkjok Ward]])\n* [[Commander Sehden]] ([[Bahdok Caverns]])\n\n== Related skills ==\n* {{skill icon|Viper's Defense}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

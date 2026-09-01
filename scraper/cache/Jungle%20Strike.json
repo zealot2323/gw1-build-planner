@@ -1,0 +1,7 @@
+{
+  "title": "Jungle Strike",
+  "pageid": 14516,
+  "revid": 2733185,
+  "timestamp": "2026-07-05T16:18:28Z",
+  "wikitext": "{{Skill infobox\n| id = 1021\n| name = Jungle Strike\n| campaign = Factions\n| profession = Assassin\n| attribute = Dagger Mastery\n| type = Off-Hand Attack\n| energy = 5\n| activation = {{1/2}}\n| recharge = 6\n| description = [[Off-Hand Attack]]. Must follow a [[lead attack]]. If it hits, this [[attack]] strikes for {{gr|10|25|+}} [[damage]]. If it hits a [[foe]] that was [[Crippled]], that foe and all adjacent foes take {{gr|1|31}} damage.\n| concise description = Off-Hand Attack. Deals {{gr|10|25|+}} damage. Deals {{gr|1|31}} damage to target and adjacent foes if target foe is Crippled. {{gray|Must follow a lead attack.}}\n| requires = lead\n| checks = crippled\n| checks-true = damage\n| aoe = adjacent\n}}\n\n{{Skill progression\n|attribute = [[Dagger Mastery]]\n|var1 name = + [[Damage]]\n|var1 at0 = 10\n|var1 at15 = 25\n|var2 name = Conditional damage\n|var2 at0 = 1\n|var2 at15 = 31}}\n\n== Acquisition ==\n===[[Unlock]] and learn===\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n\n===Unlock only===\n;[[Hero]]es\n* Factions and [[Nightfall]]\n** Unlocking [[Zenmai]]\n\n== Related skills ==\n* {{skill icon|Death Blossom}}\n* {{skill icon|Golden Phoenix Strike}}"
+}

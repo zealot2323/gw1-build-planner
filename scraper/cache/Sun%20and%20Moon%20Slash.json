@@ -1,0 +1,7 @@
+{
+  "title": "Sun and Moon Slash",
+  "pageid": 14750,
+  "revid": 2683933,
+  "timestamp": "2023-02-23T11:46:15Z",
+  "wikitext": "{{Skill infobox\n| id = 851\n| name = Sun and Moon Slash\n| campaign = Factions\n| profession = Warrior\n| attribute = Swordsmanship\n| type = Sword Attack\n| adrenaline = 8\n| causes1 = Unblockable\n| description = [[Sword Attack]]. [[Attack]] [[target]] [[foe]] twice. These attacks cannot be [[block]]ed.\n| concise description = Sword Attack. You attack target foe twice. Unblockable.\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Nightfall]]\n** [[Bound Tiendi]] ([[Domain of Fear]], only during [[A History of Violence]])\n\n== Related skills ==\n* {{skill icon|Twin Moon Sweep}}\n\n== Notes ==\n* [[Sword]]s with a [[Vampiric]] mod, [[Hundred Blades]], [[Order of the Vampire]], [[Conjure Flame]]/[[Conjure Frost|Frost]]/[[Conjure Lightning|Lightning]], etc. synergize well with Sun and Moon Slash because the effect triggers twice.\n* Unlike [[Dual attack]]s, both attacks from this skill hit simultaneously, meaning both hits will connect even through skills such as [[Shield Bash]] or [[Shield of Judgment]].\n\n[[Category:Essentially unlinked skills]]"
+}

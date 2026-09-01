@@ -1,0 +1,7 @@
+{
+  "title": "Accumulated Pain",
+  "pageid": 1540,
+  "revid": 2733387,
+  "timestamp": "2026-07-05T21:53:22Z",
+  "wikitext": "{{Skill infobox\n| id = 1052\n| name = Accumulated Pain\n| campaign = Factions\n| profession = Mesmer\n| attribute = Illusion Magic\n| type = Spell\n| has-pvp = y\n| energy = 5\n| recharge = 12\n| activation = 2\n| target = foes\n| causes1 = Deep Wound\n| causes2 = Armor-ignoring Damage\n| description = [[Spell]]. [[Target]] [[foe]] takes  {{gr|15|75}} [[damage]]. If target foe is suffering from 2 or more [[hex]]es, that foe suffers a [[Deep Wound]] for {{gr|5|20}} seconds.\n| concise description = Spell. Deals {{gr|15|75}} damage. Inflicts Deep Wound condition ({{gr|5|20}} seconds) if target foe has 2 or more hexes.\n}}\n\n{{Skill progression\n|attribute = [[Illusion Magic]]\n|var1 name = [[Damage]]\n|var1 at0 = 15\n|var1 at15 = 75\n|var2 name = [[Deep Wound]] [[duration]]\n|var2 at0 = 5\n|var2 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Ven the Conservator]] ([[Riverside Province (explorable area)]])\n** [[Lucent the Spectral]] ([[The Battle for Lion's Arch]])\n\n==Hero Usage==\n* There are two independent criteria that determine hero usage for this skill. A target must either be:\n** under the effects of two or more hexes.\n** below 25% health.\n\n[[Category:Hero-vetted skills]]\n[[de:Angehäufter Schmerz]]"
+}

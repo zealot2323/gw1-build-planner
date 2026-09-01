@@ -1,0 +1,7 @@
+{
+  "title": "Golden Lotus Strike",
+  "pageid": 14507,
+  "revid": 2733189,
+  "timestamp": "2026-07-05T16:20:32Z",
+  "wikitext": "{{Skill infobox\n| id = 1026\n| name = Golden Lotus Strike\n| campaign = Factions\n| profession = Assassin\n| attribute = Dagger Mastery\n| type = Lead Attack\n| energy = 5\n| recharge = 5\n| causes1 = Energy Gain\n| description = [[Lead Attack]]. If it hits, this [[attack]] strikes for {{gr|5|20|+}} [[damage]]. If you are under the effects of an [[Enchantment]], you gain {{gr|5|8}} [[Energy]].\n| concise description = Lead Attack. Deals {{gr|5|20|+}} damage. You gain {{gr|5|8}} Energy if you are enchanted.\n| checks = enchantment\n| checks-true = energy\n}}\n\n{{Skill progression\n|attribute = [[Dagger Mastery]]\n|var1 name = [[Damage|+ Damage]]\n|var1 at0 = 5\n|var1 at15 = 20\n|var2 name = [[Energy]] gain\n|var2 at0 = 5\n|var2 at15 = 8}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Xu Fengxia]] ([[Ran Musu Gardens]])\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Eye of the North]]\n** [[Rake Blazeclaw]] ([[Rragar's Menagerie]], only during [[The Hunting of the Charr]])\n\n== Notes ==\n* Despite being separate in the skill descriptions, energy will only be gained if the attack hits.\n\n== Related skills ==\n* {{skill icon|Black Lotus Strike}} \n* {{skill icon|Falling Lotus Strike}} \n* {{skill icon|Lotus Strike}}"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Skree Hatchling",
+  "pageid": 19769,
+  "revid": 2712703,
+  "timestamp": "2025-10-12T21:26:28Z",
+  "wikitext": "{{otheruses|the [[monk]] [[NPC]]|the [[ranger]] NPC with the same name|Skree Hatchling (ranger)}}\n__NOTOC__{{NPC infobox\n| species = Harpy\n| affiliation = Istan wildlife\n| image = [[Image:Skree monk.jpg|200px]]\n| profession = mo\n| level = 8 (23)\n| campaign = Nightfall\n}}\n[[Skree Hatchling]]s are the healers for harpy groups. These are younger versions of [[Skree Griffon]]s.\n\n==Location==\n*[[Istan]]\n**{{NPC location|Cliffs of Dohjok}}\n**{{NPC location|Fahranur, The First City}}\n*[[Vabbi]]\n**{{NPC location|Wilderness of Bahdza}} (only during [[Destroy the Harpies]] quest)\n\n==Skills==\n*{{skill icon|Healer's Boon}} ([[elite]], [[Hard mode]] only)\n*{{skill icon|Orison of Healing}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = mo\n| blunt = 26\n| piercing = 26\n| slashing = 26\n| cold = 26\n| earth = 26\n| fire = 26\n| lightning = 26\n}}\n\n==Items dropped==\n*[[Bolt of Cloth]]\n*[[Fledgling Skree Wing]]\n*[[Skree Mask]]\n*[[Tanned Hide Square]]\n\n==Notes==\n*Although these hatchlings look like [[griffon]]s, killing them still triggers the [[bounty]] of [[Skree Battle]]. Either Skree harpy young resemble griffons, or the skin for griffons was reused for these hatchlings.\n\n[[Category:Drops cloth]]\n[[Category:Drops hide]]"
+}

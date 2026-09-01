@@ -1,0 +1,7 @@
+{
+  "title": "The Blasphemy",
+  "pageid": 22533,
+  "revid": 2299259,
+  "timestamp": "2011-05-15T19:44:55Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| affiliation = Margonites\n| type = Demon\n| level = 27 (32)\n| campaign = Nightfall\n| profession = Me\n}}\n[[The Blasphemy]] is a demonic servant of [[Abaddon]]. \n\n== Missions ==\n*[[Vabbi]]\n**{{NPC location|Grand Court of Sebelkeh}}\n\n==Skills==\n*{{monster skill icon|Summon Torment}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = me\n| blunt = 78\n| piercing = 78\n| slashing = 78\n| cold = 78\n| earth = 78\n| fire = 78\n| lightning = 78\n}}\n\n==Notes==\n*It has no initial attack of its own, other than its [[scythe]]. \n*All foes in the area are [[hex]]ed with [[Last Rites of Torment]] when it dies. Its death also triggers the [[spawn]]ing of 3 [[Unbound Energy|Unbound Energies]].\n*It will respawn itself at any [[Torment Rift]]s, and won't be permanently vanquished until all 3 rifts are controlled. \n*Its [[health]] is very low, 120 in [[Hard mode]].\n*The Blasphemy will occasionally try to reopen rifts closed by players.\n*It is not [[fleshy]].\n\n==Trivia==\n*The shape of this monster resembles a [[warden]]."
+}

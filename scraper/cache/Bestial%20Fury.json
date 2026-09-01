@@ -1,0 +1,7 @@
+{
+  "title": "Bestial Fury",
+  "pageid": 1251,
+  "revid": 2683471,
+  "timestamp": "2023-02-19T04:37:21Z",
+  "wikitext": "{{Skill infobox\n| id = 1209\n| name = Bestial Fury\n| campaign = Factions\n| profession = Ranger\n| attribute = Beast Mastery\n| type = Stance\n| energy = 10\n| recharge = 10\n| special = duplicate\n| causes1 = Disable\n| causes2 = Increased Attack Speed\n| description = [[Stance]].  All your non-[[attack skill]]s are [[disable]]d for 5 seconds. For {{gr|5|11}} seconds, you [[Attack speed|attack 25% faster]].\n| concise description = Stance. ({{gr|5|11}} seconds.) You attack 25% faster. {{gray|Your non-attack skills are disabled (5 seconds).}}\n}}\n\n{{Skill progression\n|attribute = [[Beast Mastery]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 11}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Xu Fengxia]] ([[Ran Musu Gardens]])\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Heket's Rampage}}\n* {{skill icon|Tiger's Fury}} ([[duplicate skill]])\n\n== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details."
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Dulled Weapon",
+  "pageid": 6346,
+  "revid": 2720698,
+  "timestamp": "2026-02-08T00:15:16Z",
+  "wikitext": "__NOTOC__\n{{Skill infobox\n| id = 1235\n| name = Dulled Weapon\n| campaign = Factions\n| profession = Ritualist\n| attribute = Communing\n| type = Hex Spell\n| energy = 15\n| activation = 1\n| recharge = 20\n| range = Casting\n| aoe = adjacent\n| causes1 = Damage Reduction\n| prevents1 = Critical Hit\n| description = [[Hex Spell]]. For {{gr|5|20}} seconds, [[target]] [[foe]] and all [[adjacent]] foes cannot achieve a [[critical hit]] and deal {{gr|3|20}} less [[damage]].\n| concise description = Hex Spell. Also hexes foes adjacent to your target ({{gr|5|20}} seconds). Removes ability to land a critical hit. Reduces damage by {{gr|3|20}}.\n}}\n\n{{Skill progression\n| attribute = [[Communing]]\n| var1 name = [[Duration]]\n| var1 at0 = 5\n| var1 at15 = 20\n| var2 name = [[Damage reduction]]\n| var2 at0 = 3\n| var2 at15 = 20\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Factions]]\n** [[Michiko]] ([[Kaineng Center]])\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Justiciar Marron]] ([[Kessex Peak (War in Kryta)]])\n\n== Related skills ==\n* {{skill icon|Empathy}}\n* {{skill icon|Siphon Strength}} (elite)\n\n== Notes ==\n{{anomaly|This hex only reduces damage from [[attack]]s.}}\n\n== Trivia ==\n* This is the only [[Ritualist]] skill with the word \"weapon\" in its name that is not a [[Weapon Spell]].\n{{Skill change}}"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Anthem of Fury",
+  "pageid": 4508,
+  "revid": 2738945,
+  "timestamp": "2026-08-28T06:36:30Z",
+  "wikitext": "{{Skill infobox\n| id = 1553\n| name = Anthem of Fury\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Leadership\n| type = Chant\n| elite = y\n| energy = 5\n| activation = 1\n| recharge = 10\n| causes1 = Adrenaline Gain\n| description = [[Elite]] [[Chant]]. For 10 seconds, all [[party]] members within [[earshot]] gain {{gr|2|5}} strikes of [[adrenaline]] the next time they use an [[attack skill]].\n| concise description = Elite Chant. (10 seconds.) Party members in earshot gain {{gr|2|5}} adrenaline with their next attack skill.\n}}\n\n{{Skill progression\n|attribute = [[Leadership]]\n|var1 name = [[Adrenaline]] gain\n|var1 at0 = 2\n|var1 at15 = 5}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Factions]]\n** [[Initiate Shen Wojong]] ([[Mourning Veil Falls]], during [[Trading Blows]])\n* [[Nightfall]]\n** [[Oath of Profanity]] ([[Nightfallen Jahai]])\n\n== Notes ==\n{{see|Battery}}\n* This chant is triggered the next time an attack skill is successfully activated.\n* Primary [[PvP-only character|PvP-only]] Paragons will be able to use this skill, even if it is not [[unlock]]ed on their account.\n\n[[de:Hymne der Wut]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Featherfoot Grace",
+  "pageid": 14082,
+  "revid": 2721029,
+  "timestamp": "2026-02-10T20:49:05Z",
+  "wikitext": "{{Skill infobox\n| id = 1766\n| name = Featherfoot Grace\n| campaign = Nightfall\n| profession = Dervish\n| attribute = Wind Prayers\n| type = Enchantment Spell\n| energy = 10\n| activation = {{1/4}}\n| recharge = 15\n| causes1 = Increased Movement Speed\n| description = [[Enchantment Spell]]. For {{gr|5|20}} seconds, you [[Speed boost|move 25% faster]], and [[condition]]s expire 50% faster.\n| concise description = Enchantment Spell.  ({{gr|5|20}} seconds.)  You move 25% faster, and conditions expire 50% faster.\n}}\n\n{{Skill progression\n|attribute = [[Wind Prayers]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Dau]] ([[The Mouth of Torment]])\n\n==Related skills==\n*{{Skill icon|Purifying Veil}}\n\n== Trivia ==\n* The [[skill icon]] resembles the winged sandals of [[w:Hermes|Hermes]]/[[w:Mercury (mythology)|Mercury]] the ancient deity in real-world Greek/Roman mythology.\n{{Skill change}}"
+}

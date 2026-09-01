@@ -1,0 +1,7 @@
+{
+  "title": "Cruel Spear",
+  "pageid": 2626,
+  "revid": 2733244,
+  "timestamp": "2026-07-05T17:00:33Z",
+  "wikitext": "{{Skill infobox\n| id = 1548\n| name = Cruel Spear\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Spear Mastery\n| type = Spear Attack\n| elite = y\n| adrenaline = 6\n| causes1 = Deep Wound\n| description = [[Elite]] [[Spear Attack]]. If this [[attack]] hits, you deal {{gr|10|50|+}} [[damage]]. If it hits a non-[[Movement|moving]] [[target]], you inflict a [[Deep Wound]] for {{gr|5|20}} seconds.\n| concise description = Elite Spear Attack. Deals {{gr|10|50|+}} damage. Inflicts Deep Wound condition ({{gr|5|20}} seconds) if target is not moving.\n}}\n\n{{Skill progression\n|attribute = [[Spear Mastery]]\n|var1 name = + [[Damage]]\n|var1 at0 = 10\n|var1 at15 = 50\n|var2 name = [[Deep Wound]] [[duration]]\n|var2 at0 = 5\n|var2 at15 = 20}}\n\n==Acquisition==\n'''[[Signet of Capture]]'''\n*[[Nightfall]]\n**[[Eshau Longspear]] ([[Arkjok Ward]], [[Secure the Refuge]])\n**[[Yakun Trueshot]] ([[Moddok Crevice]])\n*[[Eye of the North]]\n**[[Elder Nephilim]] ([[Rragar's Menagerie]])\n\n[[de:Grausamer Speer]]"
+}

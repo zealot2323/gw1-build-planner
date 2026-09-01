@@ -1,0 +1,7 @@
+{
+  "title": "Mandragor Sand Devil",
+  "pageid": 43808,
+  "revid": 2143027,
+  "timestamp": "2010-10-02T23:51:28Z",
+  "wikitext": "{{NPC infobox\n| name = Mandragor Sand Devil\n| affiliation = The Desolation wildlife\n| type = Mandragor\n| profession = e\n| level = 22 (26)\n| campaign = Nightfall\n}}__NOTOC__\n[[Mandragor Sand Devil]]s are annoying foes, often [[popup|popping up]] and then immediately casting defensive skills, making them slow to kill.\n\n==Locations==\n*[[The Desolation]]\n**{{NPC location|Crystal Overlook}}\n**{{NPC location|Joko's Domain}}\n**{{NPC location|The Alkali Pan}}\n**{{NPC location|The Sulfurous Wastes}}\n\n==Skills==\n15 [[Earth Magic]] (20 Earth Magic in [[Hard mode]])\n*{{skill icon|Aura of Restoration}}\n*{{skill icon|Obsidian Flame}}\n*{{skill icon|Stone Sheath}} ([[elite]])\n*{{skill icon|Stoneflesh Aura}}\n*{{skill icon|Ward Against Foes}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = e\n| blunt = 66\n| piercing = 66\n| slashing = 66\n| cold = 66\n| earth = 66\n| fire = 66\n| lightning = 66\n}}\n\n==Items dropped==\n*[[Luminous Stone]]\n*[[Mandragor Husk]]"
+}

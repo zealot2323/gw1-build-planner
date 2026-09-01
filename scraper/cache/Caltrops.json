@@ -1,0 +1,7 @@
+{
+  "title": "Caltrops",
+  "pageid": 14741,
+  "revid": 2738320,
+  "timestamp": "2026-08-26T20:00:22Z",
+  "wikitext": "{{Skill infobox \n| id = 985\n| name = Caltrops\n| campaign = Factions\n| profession = Assassin\n| attribute = Shadow Arts\n| type = Spell\n| target = foes\n| energy = 5\n| activation = {{1/4}}\n| recharge = 10\n| range = half\n| causes1 = Crippled\n| description = [[Spell]]. [[Target]] [[foe]] and all foes [[adjacent]] to your target are [[Crippled]] and [[Bleeding]] for {{gr|5|15}} seconds. Caltrops has [[Half ranged|half the normal range]].\n| concise description = Half Range Spell. Inflicts Crippled and Bleeding condition ({{gr|5|15}} seconds) on target and adjacent foes.\n| aoe = adjacent\n}}\n\n{{Skill progression\n| attribute = [[Shadow Arts]]\n| var1 name = [[Crippled]] [[duration]]\n| var1 at0 = 5\n| var1 at15 = 15}}\n\n== Acquisition ==\n===[[Unlock]] and learn===\n'''[[Skill quest]]s'''\n* [[Snaring Course]] ([[Shing Jea Monastery]])\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n===Unlock only===\n;[[Hero]]es\n* Unlocking [[Miku]]\n\n== Related skills ==\n* {{skill icon|Barbed Trap}}\n* {{skill icon|Hidden Caltrops}} ([[elite]])\n* {{skill icon|Snare}}\n\n[[Category:Assassin skill rewards]]"
+}

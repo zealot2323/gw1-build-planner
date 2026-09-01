@@ -1,0 +1,7 @@
+{
+  "title": "Disenchantment (attack)",
+  "pageid": 76067,
+  "revid": 2609223,
+  "timestamp": "2016-06-27T23:35:06Z",
+  "wikitext": "{{skill infobox\n| id = 924\n| name = Disenchantment\n| image = [[Image:Disenchantment (attack).jpg]]\n| campaign = Factions\n| attribute = Communing\n| type = Ranged Attack\n| profession = Monster\n| special = Spirit monster\n| activation = 2\n| description = [[Ranged Attack]]. Target foe takes {{gr|5|20}} damage and loses one [[Enchantment]].\n| concise description = Ranged Attack. Deals {{gr|5|20}} damage. Removes one enchantment.}}\n\n{{skill progression\n| attribute = [[Communing]]\n| var1 name = [[Damage]]\n| var1 at0 = 5\n| var1 at15 = 20}}\n\n== Notes ==\n* This is the skill used by the [[Spirit of Disenchantment]] that is summoned by the [[ritualist]] skill [[Disenchantment]], and not the ritualist skill itself.\n* Does not remove an enchantment if it is blocked.\n\n<!--== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details.-->"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Trapper's Focus",
+  "pageid": 4271,
+  "revid": 2733174,
+  "timestamp": "2026-07-05T16:04:48Z",
+  "wikitext": "{{Skill infobox\n| id = 946\n| name = Trapper's Focus\n| campaign = Factions\n| profession = Ranger\n| attribute = Expertise\n| type = Preparation\n| elite = y\n| energy = 5\n| activation = 2\n| recharge = 12\n| causes1 = Increased Attribute\n| description = [[Elite]] [[Preparation]]. For {{gr|12|36}} seconds, your [[Trap|trap skills]] are not [[easily interruptible]] and your [[Wilderness Survival]] attribute is increased by {{gr|0|4|+}}.\n| concise description = Elite Preparation. ({{gr|12|36}} seconds.) Your trap skills are no longer easy to interrupt. You gain {{gr|0|4|+}} to your Wilderness Survival attribute.\n}}\n\n{{Skill progression\n|attribute = [[Expertise]]\n|var1 name = [[Duration]]\n|var1 at0 = 12\n|var1 at15 = 36\n|var2 name = + [[Wilderness Survival]]\n|var2 at0 = 0\n|var2 at15 = 4\n}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Chehbaba Roottripper]] ([[Mount Qinkai]])\n\n== Notes ==\n*The Wilderness Survival increase affects  preparations before they replace Trapper's Focus. \n\n[[de:Fokus des Fallenstellers]]"
+}

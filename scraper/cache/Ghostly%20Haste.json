@@ -1,0 +1,7 @@
+{
+  "title": "Ghostly Haste",
+  "pageid": 5089,
+  "revid": 2720292,
+  "timestamp": "2026-02-06T03:15:58Z",
+  "wikitext": "{{Skill infobox\n| id = 1244\n| name = Ghostly Haste\n| campaign = Factions\n| profession = Ritualist\n| attribute = Spawning Power\n| type = Enchantment Spell\n| energy = 10\n| activation = 1\n| recharge = 20\n| target = self\n| causes1 = Decreased Recharge Time\n| description = [[Enchantment Spell]]. For {{gr|5|30}} seconds, [[spell]]s you cast while within [[earshot]] of a [[spirit]] [[recharge]] 25% faster.\n| concise description = Enchantment Spell. ({{gr|5|30}} seconds.) Spells you cast recharge 25% faster. {{gray|No effect unless you are within earshot of a spirit.}}\n}}\n\n{{Skill progression\n| attribute = [[Spawning Power]]\n| var1 name = [[Duration]]\n| var1 at0 = 5\n| var1 at15 = 30}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Related skills ==\n* {{skill icon|Glyph of Swiftness}}\n* {{skill icon|Mantra of Recovery}} ([[elite]])\n\n== Notes ==\n* Heroes will only use this spell if they are within earshot of a spirit.\n\n== Trivia ==\n{{Skill change}}\n* This is one of the few skills having the concise description longer than the regular one."
+}

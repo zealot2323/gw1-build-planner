@@ -1,0 +1,7 @@
+{
+  "title": "Focused Shot",
+  "pageid": 2224,
+  "revid": 2738811,
+  "timestamp": "2026-08-27T13:56:45Z",
+  "wikitext": "{{Skill infobox\n| id = 909\n| name = Focused Shot\n| campaign = Factions\n| profession = Ranger\n| attribute = Marksmanship\n| type = Bow Attack\n| energy = 5\n| recharge = 8\n| activation = 4\n| causes1 = Unblockable\n| causes2 = Increased Projectile Speed\n| causes3 = Disable\n| description = [[Bow Attack]]. This shot moves three times faster, cannot be blocked, and strikes for {{gr|10|40|+}} damage but all of your other attack skills are disabled for {{gr|8|4}} seconds.\n| concise description = Bow Attack. Deals {{gr|10|40|+}} damage. Unblockable. This shot moves three times faster. {{gray|Your other attack skills are disabled ({{gr|8|4}} seconds).}}\n}}\n\n{{Skill progression\n|attribute = [[Marksmanship]]\n|var1 name =  + [[Damage]]\n|var1 at0 = 10\n|var1 at15 = 40\n|var2 name = [[Disabled]] [[Duration]]\n|var2 at0 = 8\n|var2 at15 = 4\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Michiko]] ([[Kaineng Center]])\n\n== Note ==\n* The disable effect takes effect on hit."
+}

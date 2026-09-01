@@ -1,0 +1,7 @@
+{
+  "title": "Ravenous Mandragor",
+  "pageid": 43835,
+  "revid": 2589632,
+  "timestamp": "2015-06-16T09:05:49Z",
+  "wikitext": "{{NPC infobox\n| name = Ravenous Mandragor\n| affiliation = The Desolation wildlife\n| type = Mandragor\n| profession = n\n| level = 22 (26)\n| campaign = Nightfall\n}}__NOTOC__\n[[Ravenous Mandragor]] often [[popup]] and utilize [[life stealing]] and [[sacrifice|life sacrificing]] skills to deal damage and inflict [[condition]]s. They attack in [[melee]] to make use of their [[PBAoE]] damage.\n\n==Locations==\n*[[The Desolation]]\n**{{NPC location|Crystal Overlook}}\n**{{NPC location|Joko's Domain}}\n**{{NPC location|The Alkali Pan}}\n**{{NPC location|The Sulfurous Wastes}}\n\n==Skills==\n15 [[Blood Magic]], 0 [[Death Magic]] (20 Blood Magic, 16 Death Magic in [[hard mode]])\n*{{skill icon|Barbed Signet}}\n*{{skill icon|Blood of the Aggressor}}\n*{{skill icon|Dark Aura}}\n*{{skill icon|Ravenous Gaze}} ([[elite]])\n*{{skill icon|Unholy Feast}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = n\n| blunt = 66\n| piercing = 66\n| slashing = 66\n| cold = 66\n| earth = 66\n| fire = 66\n| lightning = 66\n}}\n\n==Items dropped==\n*[[Luminous Stone]]\n*[[Mandragor Husk]]"
+}

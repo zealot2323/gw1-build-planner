@@ -1,0 +1,7 @@
+{
+  "title": "Caretaker's Charge",
+  "pageid": 3056,
+  "revid": 2739060,
+  "timestamp": "2026-08-28T23:27:10Z",
+  "wikitext": "{{Skill infobox\n| name = Caretaker's Charge\n| id = 1744\n| campaign = Nightfall\n| profession = Ritualist\n| attribute = Channeling Magic\n| type = Spell\n| elite = y\n| energy = 5\n| activation = 1\n| recharge = 4\n| causes1 = Lightning Damage\n| causes2 = Energy Gain\n| causes3 = Health Gain\n| description = [[Elite]] [[Spell]]. [[Target]] [[foe]] is struck for {{gr|20|85}} [[lightning damage]]. If you are holding an [[Bundle|item]], you [[Health gain|gain]] 7 [[Energy]] and {{gr|5|50}} [[Health]].\n| concise description = Elite Spell. Deals {{gr|20|85}} lightning damage. You gain 7 Energy and {{gr|5|50}} Health if you are holding an item.\n| target = foes\n}}\n\n{{Skill progression\n|attribute = [[Channeling Magic]]\n|var1 name = [[Lightning damage]]\n|var1 at0 = 20\n|var1 at15 = 85\n|var2 name = [[Health gain]]\n|var2 at0 = 5\n|var2 at15 = 50\n}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Hautoh the Pilferer]] ([[Domain of Secrets]])\n\n== Related skills ==\n* {{skill icon|Clamor of Souls}} ([[elite]])\n\n==Hero Usage==\n* Heroes use this spell as a basic damage skill, ignoring its conditional bonus.\n\n[[Category:Hero-vetted skills]]\n\n[[de:Angriff des Verwalters]]"
+}

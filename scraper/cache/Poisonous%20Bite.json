@@ -1,0 +1,7 @@
+{
+  "title": "Poisonous Bite",
+  "pageid": 3036,
+  "revid": 2683478,
+  "timestamp": "2023-02-19T04:42:44Z",
+  "wikitext": "{{Skill infobox\n| id = 1205\n| name = Poisonous Bite\n| campaign = Factions\n| profession = Ranger\n| attribute = Beast Mastery\n| type = Pet Attack\n| energy = 5\n| recharge = 7\n| causes1 = Poison\n| description = [[Pet Attack]]. Your [[animal companion]] attempts a Poisonous Bite that [[Poison]]s [[target]] [[foe]] for {{gr|5|20}} seconds.\n| concise description = Pet Attack. Inflicts Poisoned condition ({{Gr|5|20}} seconds).\n}}\n{{Skill progression\n| attribute = [[Beast Mastery]]\n| var1 name = [[Poison]] [[duration]]\n| var1 at0 = 5\n| var1 at15 = 20}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Michiko]] ([[Kaineng Center]])\n\n==Trivia==\n*The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details."
+}

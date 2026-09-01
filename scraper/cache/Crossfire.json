@@ -1,0 +1,7 @@
+{
+  "title": "Crossfire",
+  "pageid": 1233,
+  "revid": 2733223,
+  "timestamp": "2026-07-05T16:50:59Z",
+  "wikitext": "{{Skill infobox\n| name = Crossfire\n| id = 1469\n| campaign = Nightfall\n| profession = Ranger\n| attribute = Marksmanship\n| type = Bow Attack\n| energy = 5\n| recharge = 4\n| causes1 = Unblockable\n| description = [[Bow Attack]]. If this [[attack]] hits [[target]] [[foe]], it deals {{gr|5|20|+}} [[damage]]. If that foe is [[near]] any of your [[Ally|allies]], this attack cannot be [[block]]ed.\n| concise description = Bow Attack. Deals {{gr|5|20|+}} damage. Unblockable if target foe is near any of your allies.\n}}\n\n{{Skill progression\n|attribute = [[Marksmanship]]\n|var1 name = + [[Damage]]\n|var1 at0 = 5\n|var1 at15 = 20\n}}\n\n== Acquisition ==\n===[[Unlock]] and learn===\n'''[[Skill trainer]]s'''\n* [[Nightfall]]\n** [[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Cairn the Cunning]] ([[Riverside Province (explorable area)]])\n* [[Eye of the North]]\n** [[Storm of Destruction]] ([[Riven Earth]])\n** [[Ashlyn Spiderfriend]] ([[Magus Stones]])\n\n===Unlock only===\n;[[Hero]]es\n* Unlocking [[Margrid the Sly]]\n\n== Notes ==\n* An [[animal companion]] counts as an ally.\n\n== Trivia ==\n* The figure at the bottom left corner of the [[skill icon]] appears to be the skill icon of [[Prepared Shot]]."
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Vocal Was Sogolon",
+  "pageid": 4091,
+  "revid": 2732881,
+  "timestamp": "2026-07-04T21:02:28Z",
+  "wikitext": "{{Skill infobox\n| name = Vocal Was Sogolon\n| id = 1731\n| campaign = Nightfall\n| profession = Ritualist\n| attribute = Restoration Magic\n| type = Item Spell\n| energy = 10\n| activation = 1\n| recharge = 30\n| description = [[Item Spell]]. For 60 seconds, all [[shout]]s and [[chant]]s you use last {{gr|20|50||%}} longer.\n| concise description = Item Spell. (60 seconds.) Shouts and chants you use last {{gr|20|50||%}} longer.}}\n\n{{Skill progression\n| attribute = [[Restoration Magic]]\n| var1 name = % Longer\n| var1 at0 = 20\n| var1 at15 = 50}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n* [[Libeh]] ([[Command Post]])\n\n== Related skills ==\n* {{skill icon|Enduring Harmony}}\n\n== Trivia ==\n* This skill is named after [[Sogolon the Protector]], a Paragon and [[Sunspear Guard]] of Elona's Primeval Dynasty.\n** The [[henchman]] [[Sogolon]] available early in the Nightfall campaign is also named after him. \n\n[[Category:Skills offered by hero skill trainers]]"
+}

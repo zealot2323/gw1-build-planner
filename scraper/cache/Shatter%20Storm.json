@@ -1,0 +1,7 @@
+{
+  "title": "Shatter Storm",
+  "pageid": 1683,
+  "revid": 2629978,
+  "timestamp": "2018-06-18T17:47:19Z",
+  "wikitext": "{{Skill infobox\n| id = 933\n| name = Shatter Storm\n| campaign = Factions\n| profession = Mesmer\n| type = Spell\n| energy = 10\n| activation = 1\n| elite = y\n| causes1 = Increased Recharge Time\n| removes1 = Enchantment\n| description = [[Elite]] [[Spell]]. [[Target]] [[foe]] loses all [[enchantment]]s. For each enchantment removed this way, Shatter Storm is [[disable]]d for an additional 7 seconds.\n| concise description = Elite Spell. Removes all enchantments. {{gray|Removal cost: Shatter Storm is disabled for +7 seconds for each enchantment removed.}}\n| target = foes\n}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Mina Shatter Storm]] ([[The Undercity]])\n\n== Related skills ==\n* {{skill icon|Gaze of Contempt}}\n* {{skill icon|Rend Enchantments}}\n\n[[de:Sturm zerschlagen]]"
+}

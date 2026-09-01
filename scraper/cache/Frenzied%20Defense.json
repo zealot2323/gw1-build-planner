@@ -1,0 +1,7 @@
+{
+  "title": "Frenzied Defense",
+  "pageid": 13036,
+  "revid": 2622742,
+  "timestamp": "2017-10-11T22:59:15Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| name = Frenzied Defense\n| id = 1700\n| campaign = Nightfall\n| profession = Warrior\n| type = Stance\n| energy = 5\n| recharge = 10\n| causes1 = Block\n| description = [[Stance]]. For 8 seconds, you have a 75% chance to [[block]] incoming [[attack]]s, but take double [[damage]].\n| concise description = Stance. (8 seconds.) You have 75% chance to block. {{gray|You take double damage.}}\n}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Baram]] ([[The Kodash Bazaar]])\n\n'''[[Hero skill trainer]]s'''\n*[[Warden of Whispers (Chantry of Secrets)|Warden of Whispers]] ([[Chantry of Secrets]])\n\n==Related skills==\n*{{skill icon|Frenzy}}\n\n==Notes==\n*Can be effectively used by secondary warriors, since it is the only [[No Attribute skill]] that provides blocking.\n*[[Damage reduction]], such as [[Protective Spirit]], will be taken into account after Frenzied Defense, therefore mitigating the double damage.\n**If not using skills such as Protective Spirit, consider using a [[cancel stance]].\n*Used with [[Spirit Bond]], the attacks that are not blocked are more likely to trigger the healing effect and can effectively negate all incoming damage from attacks.\n\n==Trivia==\n* This skill has changed since its introduction; see its [[/Skill history|skill history]] for details.\n\n== See also ==\n{{see|Order of damage modifiers}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

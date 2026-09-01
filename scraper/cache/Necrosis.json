@@ -1,0 +1,7 @@
+{
+  "title": "Necrosis",
+  "pageid": 41103,
+  "revid": 2640672,
+  "timestamp": "2019-08-27T19:45:05Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| name = Necrosis\n| id = 2103\n| campaign = Nightfall\n| profession = Necromancer\n| attribute = Sunspear rank\n| pve-only = y\n| type = Skill\n| energy = 5\n| activation = 1\n| recharge = 2\n| target = foes\n| range = casting\n| aoe =\n| description = [[Skill (skill type)|Skill]]. If [[target]] [[foe]] is suffering from a [[condition]] or [[hex]], that foe suffers {{gr2|60|90}} [[damage]].\n| concise description = Skill. Deals {{gr2|60|90}} damage if target foe has a condition or hex.\n}}\n\n{{ Skill progression max10\n| title track = [[Sunspear rank]]\n| var1 name = [[Armor-ignoring damage]]\n| var1 at0 = 60\n| var1 at10 = 90\n}}\n\n== Acquisition ==\n'''[[Hero skill trainer]]s'''\n* [[Pikin]] ([[Kamadan, Jewel of Istan]])\n* [[Shiloh]] ([[Sunspear Great Hall]])\n* [[Libeh]] ([[Command Post]])\n\n== Related skills ==\n* {{skill icon|Discord}} ([[elite]])\n\n== Trivia ==\n* [[w:Necrosis|Necrosis]] is the term given to the unnatural death of cells and living tissue.\n* This skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details.\n\n[[Category:Necromancer PvE-only skills]]\n[[Category:Skills offered by hero skill trainers]]\n\n[[de:Nekrose]]"
+}

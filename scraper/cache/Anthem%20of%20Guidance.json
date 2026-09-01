@@ -1,0 +1,7 @@
+{
+  "title": "Anthem of Guidance",
+  "pageid": 4460,
+  "revid": 2720692,
+  "timestamp": "2026-02-08T00:07:54Z",
+  "wikitext": "{{Skill infobox\n| id = 1568\n| name = Anthem of Guidance\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Command\n| type = Chant\n| elite = y\n| adrenaline = 2\n| activation = 1\n| causes1 = Unblockable\n| description= [[Elite]] [[Chant]]. For 10 seconds, the next [[attack skill]] used by each [[party member]] [[within earshot]] cannot be [[block]]ed.\n| concise description = Elite Chant. (10 seconds.) Party members in earshot are unblockable with their next attack skill.\n}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Briahn the Chosen]] ([[The Mirror of Lyss]])\n* [[Overseer Juntahk]] ([[The Mirror of Lyss]], only during the quest [[Warning Kehanni]])\n* [[General Kumtash]] ([[Dzagonur Bastion]])\n* [[Commander Chutal]] ([[Nundu Bay]])\n* [[Battlelord Turgar]] ([[Poisoned Outcrops]], only during the quest [[The Cold Touch of the Past]])\n\n==Notes==\n*This skill does not scale with points in the [[Command]] attribute.\n*This chant ends the next time an attack skill hits or [[miss]]es.\n[[Category:Essentially unlinked skills]]\n\n== Trivia ==\n{{Skill change}}\n\n[[de:Hymne der Führung]]"
+}

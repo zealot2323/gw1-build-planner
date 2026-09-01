@@ -1,0 +1,7 @@
+{
+  "title": "Bloodsong (attack)",
+  "pageid": 75096,
+  "revid": 2609214,
+  "timestamp": "2016-06-27T23:24:37Z",
+  "wikitext": "{{skill infobox\n| id = 1254\n| name = Bloodsong\n| image = [[Image:Bloodsong (attack).jpg]]\n| campaign = Factions\n| attribute = Channeling Magic\n| type = Ranged Attack\n| profession = Monster\n| special = Spirit monster\n| activation = 2\n| description = [[Ranged Attack]]. Steal up to {{gr|5|25}} Health from target foe.\n| concise description = Ranged Attack. Steals {{gr|5|25}} Health.}}\n\n{{skill progression\n| attribute = [[Channeling Magic]]\n| var1 name = [[Health]] [[Life stealing|stolen]]\n| var1 at0 = 5\n| var1 at15 = 25}}\n\n== Notes ==\n* This is the skill used by the [[Spirit of Blood Song]] that is summoned by the [[ritualist]] skill [[Bloodsong]], and not the ritualist skill itself.\n* These attacks steal life for the spirits own benefit, not the ritualist who summoned it.\n* The activation time and corresponding icon are missed in the skill tooltip.\n\n<!--== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details.-->"
+}

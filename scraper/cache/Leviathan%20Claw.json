@@ -1,0 +1,7 @@
+{
+  "title": "Leviathan Claw",
+  "pageid": 40017,
+  "revid": 2621887,
+  "timestamp": "2017-09-16T16:59:08Z",
+  "wikitext": "{{NPC infobox \n| affiliation = The Jade Sea wildlife\n| type = Leviathan\n| image = [[Image:Leviathan warrior.jpg|250px]]\n| profession = w\n| level = 24 (26)\n| campaign = Factions\n}}__NOTOC__\n[[Leviathan Claw]]s are giant enemy crabs in the Jade Sea.\n\n==Locations==\n*[[The Jade Sea]]\n**{{NPC location|Gyala Hatchery|explorable area}}\n**{{NPC location|Rhea's Crater}}\n\n==Missions==\n*The Jade Sea\n**{{NPC location|Boreas Seabed}}\n**{{NPC location|Zos Shivros Channel}}\n\n==Skills==\n15 [[Strength]]\n*{{skill icon|Distracting Blow}}\n*{{skill icon|Irresistible Blow}}\n*{{skill icon|Leviathan's Sweep}}\n*{{skill icon|Primal Rage}} ([[elite]])\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 72\n| piercing = 152 \n| slashing = 112 \n| cold = 92 \n| earth = 92\n| fire = 92 \n| lightning = 92\n}}\n\n==Items dropped==\n*[[Moon Shell]]\n*[[Pungent Mass]]"
+}

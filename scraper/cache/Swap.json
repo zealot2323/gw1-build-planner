@@ -1,0 +1,7 @@
+{
+  "title": "Swap",
+  "pageid": 16275,
+  "revid": 2736909,
+  "timestamp": "2026-08-03T10:48:08Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| name = Swap\n| id = 1653\n| campaign = Nightfall\n| profession = Assassin\n| type = Spell\n| energy = 5\n| activation = {{1/4}}\n| recharge = 10\n| causes1 = Shadow Step\n| description= [[Spell]].  You and [[target]] [[summoned creature]] [[Shadow Step]] to each other's location.\n| concise description = Spell. You and target summoned creature Shadow Step to each other's locations.\n| target = summoned creatures\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Tohn]] ([[Kamadan, Jewel of Istan]])\n'''[[Hero skill trainer]]s'''\n* [[Godaj]] ([[Lair of the Forgotten]])\n\n== Notes ==\n* This skill can be used to move spirits out of the way when confronting [[Duncan the Black]] in [[Slavers' Exile]].\n* It can also be used to move clones and phantom copies of [[Reiko]] during [[The Final Confrontation]].\n{{anomaly|This spell does not have an [[aftercast delay]].}}\n\n== Trivia ==\n*The Assassins in the [[skill icon]] appear to be wearing [[Assassin Vabbian armor|Vabbian armor]].\n\n[[Category:Skills offered by hero skill trainers]]\n[[Category:Skills that target allies or foes]]"
+}

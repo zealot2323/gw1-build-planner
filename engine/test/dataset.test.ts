@@ -89,9 +89,18 @@ describe("full dataset: progressed character", () => {
     expect(reachable.has("Traveler's Vale")).toBe(true);
   });
 
-  it("Dakk at Ember Light Camp makes every non-elite warrior skill purchasable", () => {
-    const c: Character = { ...freshWarrior, unlockedLocations: ["Ember Light Camp"] };
-    const availability = skillAvailability(c, null, index);
+  it("Dakk at Ember Light Camp makes every non-elite warrior skill purchasable", async () => {
+    const { indexDataset: reindex, scopedDataset } = await import("../src/index.js");
+    // Dakk sells "all Prophecies and core", so the claim only holds inside a
+    // Prophecies-scoped dataset — a Factions skill like "None Shall Pass!"
+    // is not his to sell.
+    const c: Character = {
+      ...freshWarrior,
+      campaign: "Prophecies",
+      unlockedLocations: ["Ember Light Camp"],
+    };
+    const scoped = reindex(scopedDataset(index.dataset, c));
+    const availability = skillAvailability(c, null, scoped);
     const nonElites = availability.filter((e) => !e.skill.isElite && e.skill.profession === Profession.Warrior);
     expect(nonElites.length).toBeGreaterThan(50);
     for (const e of nonElites) {
@@ -412,5 +421,54 @@ describe("full dataset: per-zone levels beat the monster page", () => {
     )!;
     expect(inVale.level).toBe(12);
     expect(inVale.skills.map((s) => s.ref)).not.toContain("Offering of Blood");
+  });
+});
+
+describe("campaign scope", () => {
+  it("keeps Core and own-campaign content, drops other campaigns", async () => {
+    const { inScope, ownedCampaigns } = await import("../src/index.js");
+    const tyrian: Character = { ...freshWarrior, campaign: "Prophecies" };
+    const owned = ownedCampaigns(tyrian);
+    expect(owned).toEqual(["Prophecies"]);
+
+    expect(inScope({ campaign: "Prophecies" }, owned)).toBe(true);
+    expect(inScope({ campaign: "Core" }, owned)).toBe(true);
+    expect(inScope({ campaign: null }, owned)).toBe(true); // unknown -> keep
+    expect(inScope({ campaign: "Factions" }, owned)).toBe(false);
+  });
+
+  it("owning a second campaign widens the scope", async () => {
+    const { inScope, ownedCampaigns } = await import("../src/index.js");
+    const both: Character = {
+      ...freshWarrior,
+      campaign: "Prophecies",
+      ownedCampaigns: ["Prophecies", "Factions"],
+    };
+    const owned = ownedCampaigns(both);
+    expect(inScope({ campaign: "Factions" }, owned)).toBe(true);
+    expect(inScope({ campaign: "Nightfall" }, owned)).toBe(false);
+  });
+
+  it("a character with no campaign set sees everything (back-compat)", async () => {
+    const { inScope, ownedCampaigns, scopedDataset } = await import("../src/index.js");
+    const owned = ownedCampaigns(freshWarrior);
+    expect(owned).toEqual([]);
+    expect(inScope({ campaign: "Factions" }, owned)).toBe(true);
+    expect(scopedDataset(index.dataset, freshWarrior).skills.length).toBe(
+      index.dataset.skills.length,
+    );
+  });
+
+  it("scoping drops out-of-campaign locations, trainers and monsters together", async () => {
+    const { scopedDataset } = await import("../src/index.js");
+    const tyrian: Character = { ...freshWarrior, campaign: "Prophecies" };
+    const scoped = scopedDataset(index.dataset, tyrian);
+    const names = new Set(scoped.locations.map((l) => l.wikiPage));
+    // every surviving trainer stands somewhere still in scope
+    for (const t of scoped.trainers) expect(names.has(t.location)).toBe(true);
+    // and every monster spawns somewhere still in scope
+    for (const m of scoped.monsters) {
+      expect(m.locations.some((l) => names.has(l))).toBe(true);
+    }
   });
 });

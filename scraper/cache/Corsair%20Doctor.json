@@ -1,0 +1,7 @@
+{
+  "title": "Corsair Doctor",
+  "pageid": 33675,
+  "revid": 2717154,
+  "timestamp": "2025-12-30T21:45:58Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Human\n| affiliation = Corsairs\n| profession = Mo\n| level = 20, 22 (26)\n| campaign = Nightfall\n| image = [[File:Corsair Hood.jpg|150px]]\n}}\n[[Corsair Doctor]]s are the highest level [[corsair]] monks.\n\n==Locations==\n*[[Kourna]]\n**{{NPC location|Barbarous Shore}}\n**{{NPC location|Marga Coast}}\n\n== Missions ==\n*Kourna\n**{{NPC location|Dajkah Inlet}}\n**{{NPC location|Moddok Crevice}}\n\n==Skills==\n*{{Skill icon|Balthazar's Pendulum}} ([[elite]])\n*{{Skill icon|Banish}}\n*{{Skill icon|Divine Boon}}\n*{{Skill icon|Reversal of Damage}}\n*{{Skill icon|Smite Hex}}\n\nIn [[Dajkah Inlet]]:\n*{{Skill icon|Healer's Boon}} (elite)\n*{{Skill icon|Healing Touch}}\n*{{Skill icon|Words of Comfort}}\n*{{Skill icon|Orison of Healing}}\n\n==Armor ratings==\n{{NPC statistics\n| level = 20\n| prof = mo\n| blunt = 60\n| piercing = 60\n| slashing = 60\n| cold = 60\n| earth = 60\n| fire = 60\n| lightning = 60\n}}\n\n==Items dropped==\n* [[Corsair Raiment]]\n* [[Gold Doubloon]]\n* [[Stolen Goods]]\n\n==Notes==\n*The [[Game updates/20090806|August 6th 2009 update]] changed [[Divine Boon]] so it no longer works with [[Smiting Prayers]] spells, removing the main healing source in their build."
+}

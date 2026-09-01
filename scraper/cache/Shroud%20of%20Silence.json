@@ -1,0 +1,7 @@
+{
+  "title": "Shroud of Silence",
+  "pageid": 4410,
+  "revid": 2720289,
+  "timestamp": "2026-02-06T03:14:35Z",
+  "wikitext": "{{Skill infobox\n| id = 801\n| name = Shroud of Silence\n| campaign = Factions\n| profession = Assassin\n| attribute = Deadly Arts\n| type = Touch Hex Spell\n| elite = y\n| energy = 10\n| activation = {{3/4}}\n| recharge = 30\n| range = touch\n| causes1 = Disable\n| description = [[Elite]] [[Hex Spell]]. All of your [[spell]]s are [[disable]]d for 15 seconds. For {{gr|1|6}} second[s], [[target]] [[Touch skill|touched]] [[foe]] cannot cast spells.\n| concise description = Elite Touch Hex Spell. ({{gr|1|6}} second[s].) Target foe cannot cast spells. {{gray|Your spells are disabled for 15 seconds.}}\n}}\n\n{{Skill progression\n| attribute = [[Deadly Arts]]\n| var1 name = [[Duration]]\n| var1 at0 = 1\n| var1 at15 = 6}}\n\n== Acquisition ==\n'''[[Signet of Capture]]'''\n* [[Factions]]\n** [[Bound Vizu]] ([[Tahnnakai Temple]])\n** [[Silent Ancient Onata]] ([[Raisu Palace|Raisu Palace mission]] and [[Raisu Palace (explorable area)|explorable area]])\n* [[Nightfall]]\n** [[Bound Hao Li]] ([[Domain of Fear]], only during [[A History of Violence]])\n\n== Related skills ==\n* {{skill icon|Blackout}}\n\n== Trivia ==\n{{Skill change}}\n\n\n\n[[de:Schleier des Schweigens]]"
+}

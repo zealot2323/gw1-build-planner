@@ -1,0 +1,7 @@
+{
+  "title": "Mandragor Terror",
+  "pageid": 19489,
+  "revid": 2143039,
+  "timestamp": "2010-10-03T00:03:05Z",
+  "wikitext": "{{NPC infobox\n| name = Mandragor Terror\n| image = [[Image:Mandragor Terror.jpg|200px]]\n| affiliation = The Desolation wildlife\n| type = Mandragor\n| profession = w\n| level = 22 (26)\n| campaign = Nightfall\n}}__NOTOC__\n[[Mandragor Terror]]s often [[popup]] unexpectedly, and always begin a battle with a [[Headbutt]].\n\n==Locations==\n*[[The Desolation]]\n**{{NPC location|Crystal Overlook}}\n**{{NPC location|Joko's Domain}}\n**{{NPC location|The Alkali Pan}}\n**{{NPC location|The Sulfurous Wastes}}\n\n==Skills==\n15 [[Strength]] (20 Strength in [[Hard mode]])\n*{{skill icon|Burst of Aggression}}\n*{{skill icon|Dismember}}\n*{{skill icon|Headbutt}} ([[elite]])\n*{{skill icon|Lion's Comfort}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 86\n| piercing = 86\n| slashing = 86\n| cold = 66\n| earth = 66\n| fire = 66\n| lightning = 66\n}}\n\n==Items dropped==\n*[[Luminous Stone]]\n*[[Mandragor Husk]]"
+}
