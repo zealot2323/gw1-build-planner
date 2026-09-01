@@ -1,0 +1,7 @@
+{
+  "title": "Enchanted Shield",
+  "pageid": 82090,
+  "revid": 2695034,
+  "timestamp": "2024-05-05T08:26:36Z",
+  "wikitext": "{{NPC infobox\n| affiliation = Depths of Tyria wildlife\n| type = Enchanted weapon\n| profession = w\n| level = 20, 24 (26)\n| campaign = Eye of the North\n}}__NOTOC__\n[[Enchanted Shield]]s are [[Warrior]] NPCs, found in [[Bloodstone Caves]], who \"protect\" various [[Ettin]]. They resemble a floating [[shield]] and [[sword]], and immediately disappear upon the death of the enemy they are protecting. \n\nThey use [[Protector's Defense]] to protect their charge, though this can quickly be ended by sidestepping around the to force them to move. \n\n==Locations== \n*[[Depths of Tyria]]\n**{{NPC location|Bloodstone Caves}}, all levels (level 24)\n\n==Missions==\n*Depths of Tyria\n**{{NPC location|Finding the Bloodstone}}, level 3 (level 20) \n\n==Skills==\n*{{skill icon|Defensive Stance}}\n*{{skill icon|Deflect Arrows}}\n*{{skill icon|Protector's Defense}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 136\n| piercing = 136\n| slashing = 136\n| cold = 136\n| earth = 136\n| fire = 136\n| lightning = 136\n}}\n\n==Trivia==\n*Enchanted Shields always wield a [[Plated Shield]], which is also the only visible part of them."
+}

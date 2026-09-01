@@ -1,0 +1,7 @@
+{
+  "title": "Rapid Fire",
+  "pageid": 51914,
+  "revid": 2667637,
+  "timestamp": "2020-10-23T21:42:53Z",
+  "wikitext": "{{Skill infobox\n| name = Rapid Fire\n| id = 2068\n| campaign = Eye of the North\n| profession = Ranger\n| attribute = Marksmanship\n| type = Preparation\n| energy = 5\n| activation = 2\n| recharge = 12\n| causes1 = Increased Attack Speed\n| description = [[Preparation]]. For {{gr|5|25}} seconds, you [[Attack speed|attack 33% faster]] while wielding a [[bow]].\n| concise description = Preparation. ({{gr|5|25}} seconds.) You attack 33% faster while wielding a bow.\n}}\n\n{{Skill progression\n|attribute = [[Marksmanship]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 25}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n*[[Sida]] ([[Gunnar's Hold]])\n*[[Ybbob]] ([[Rata Sum]])\n'''[[Signet of Capture]]'''\n* [[Johon the Oxflinger]] ([[Ice Cliff Chasms]])\n\n== Related skills ==\n*{{skill icon|Expert's Dexterity}} ([[elite]])\n*{{skill icon|Lightning Reflexes}}"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Breath of the Great Dwarf",
+  "pageid": 58700,
+  "revid": 2679970,
+  "timestamp": "2022-08-08T02:12:02Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 2221\n| name = Breath of the Great Dwarf\n| campaign = Eye of the North\n| attribute = Deldrimor rank\n| type = Spell\n| energy = 10\n| recharge = 15\n| activation = {{1/4}}\n| pve-only = y\n| causes1 = Healing\n| description = [[Spell]]. All [[party]] members are relieved of [[Burning]] and are [[heal]]ed for {{gr2|50|60}} [[Health]].\n| concise description = Spell. Removes burning and heals for {{gr2|50|60}} Health. Affects party members.\n| aoe = party\n| removes1 = Condition\n| target = self\n}}\n\n{{Skill progression max10\n|title track = [[Deldrimor rank]]\n|var1 name = [[Heal]]ing\n|var1 at0  = 50\n|var1 at10 = 60\n}}\n\n==Acquisition==\n'''[[Skill quest]]s'''\n*[[Destructive Research]] (from [[High Priest Alkar]] in [[Battledepths]] or [[Central Transfer Chamber]])\n\n== Related skills ==\n* {{duplicate skill icon|Divine Healing|Heaven's Delight}}\n* {{skill icon|Extinguish}}\n* {{skill icon|Heal Party}}\n* {{skill icon|Light of Deliverance}} ([[elite]])\n* {{skill icon|Protective Was Kaolai}}\n\n== Notes ==\n\n* Use it to counter [[burning]] caused by environmental effects, especially in [[A Time for Heroes]], on the [[Ring of Fire Islands]], or during [[Dasha Vestibule]].\n* Party members are healed regardless of whether they are burning or not.\n\n==See also==\n*[[Party healing]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Knee Cutter",
+  "pageid": 51900,
+  "revid": 2610065,
+  "timestamp": "2016-07-10T03:15:41Z",
+  "wikitext": "{{Skill infobox\n| name = Knee Cutter\n| id = 2010\n| campaign = Eye of the North\n| profession = Warrior\n| attribute = Swordsmanship\n| type = Sword Attack\n| recharge = 1\n| adrenaline = 5\n| causes1 = Energy Gain\n| causes2 = Adrenaline Gain\n| description = [[Sword Attack]]. If this [[attack]] hits a [[Crippled]] [[foe]], you gain {{gr|2|7}} [[Energy]] and {{gr|1|3}} strikes {{sic|Plural \"1 strikes\" when it should be \"1 strike\"}} of [[adrenaline]].\n| concise description = Sword Attack. You gain {{gr|2|7}} Energy and {{gr|1|3}} adrenaline if target foe is Crippled.\n}}\n\n{{Skill progression\n|attribute = [[Swordsmanship]]\n|var1 name = [[Energy]] gain\n|var1 at0 = 2\n|var1 at15 = 7\n|var2 name = [[Adrenaline]] gain\n|var2 at0 = 1\n|var2 at15 = 3}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n*[[Sida]] ([[Gunnar's Hold]])\n*[[Ybbob]] ([[Rata Sum]])\n\n== Trivia ==\n*The figure in the [[skill icon]] seems to be a male [[Ranger]] wearing [[Ranger Ascalon armor|Ascalon armor]]."
+}

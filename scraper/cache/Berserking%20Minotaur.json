@@ -1,0 +1,7 @@
+{
+  "title": "Berserking Minotaur",
+  "pageid": 63617,
+  "revid": 2737022,
+  "timestamp": "2026-08-04T09:55:09Z",
+  "wikitext": "__NOTOC__{{NPC infobox \n| type = Minotaur\n| affiliation = Far Shiverpeaks wildlife\n| profession = W\n| level = 22 (26)\n| campaign = Eye of the North\n}} \n[[Berserking Minotaur]] are [[Minotaur]]s that can be found in different locations of the Far Shiverpeaks.\n\n==Locations== \n*[[Far Shiverpeaks]]\n**{{NPC location|Bjora Marches}}\n**{{NPC location|Jaga Moraine}}\n**{{NPC location|Varajar Fells}}\n\n==Skills==\n15 [[Strength]]\n*{{skill icon|Auspicious Blow}}\n*{{skill icon|Bull's Strike}}\n*{{skill icon|Endure Pain}}\n*{{skill icon|Enraged Smash}} ([[elite]])\n*{{skill icon|Fierce Blow}}\n*{{Skill icon|Flail}}\n*{{skill icon|Staggering Blow}}\n*{{monster skill icon|Berserk}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 116\n| piercing = 116\n| slashing = 116\n| cold = 96\n| earth = 96\n| fire = 96\n| lightning = 96\n}}\n\n==Items dropped==\n*[[Berserker Horn]]\n\n==Notes==\n*They deal earth damage with auto attacks."
+}

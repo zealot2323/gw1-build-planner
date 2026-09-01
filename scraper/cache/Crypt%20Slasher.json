@@ -1,0 +1,7 @@
+{
+  "title": "Crypt Slasher",
+  "pageid": 64847,
+  "revid": 2586196,
+  "timestamp": "2015-04-28T00:41:52Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n|image = [[image:Ghoul.jpg|150px]]\n| type = Zombie\n| affiliation = Undead\n| profession = d\n| level = 20 (26)\n| campaign = Eye of the North\n}}\n[[Crypt Slasher]]s are undead [[Dervish]]es that can be found in various locations in the [[Depths of Tyria]]. Above ground, a number of them guard a group of [[skeleton]]s in [[Varajar Fells]].\n\n==Locations==\n*[[Far Shiverpeaks]]\n**{{NPC location|Varajar Fells}}\n*[[Depths of Tyria]]\n**{{NPC location|Cathedral of Flames}}: all levels\n**{{NPC location|Slavers' Exile}}: Selvetarm's level\n\n==Skills==\n15 [[Scythe Mastery]], 15 [[Wind Prayers]]\n*{{skill icon|Banishing Strike}}\n*{{skill icon|Grenth's Fingers}}\n*{{Skill icon|Grenth's Grasp}} ([[elite]])\n*{{skill icon|Mystic Corruption}}\n*{{Skill icon|Reap Impurities}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = d\n| blunt = 70\n| piercing = 70\n| slashing = 70\n| cold = 70\n| earth = 70\n| fire = 70\n| lightning = 70\n}}\n\n==Items dropped==\n*[[Bone]]\n*[[Dead Bow]]\n*[[Sephis Axe]]\n*[[Undead Bone]]\n\n==Notes==\n*Like most [[Zombie]]s, Crypt Slashers take double damage from [[holy damage]] and are not immune to [[bleeding]], [[poison]] or [[disease]]; and whom leave corpses when they die.\n*Striking them in [[melee]] will inflict [[Disease]] on the attacker, much like the effect of [[Tainted Flesh]].\n\n[[Category:Drops bone]]"
+}

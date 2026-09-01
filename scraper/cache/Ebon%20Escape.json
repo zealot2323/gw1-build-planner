@@ -1,0 +1,7 @@
+{
+  "title": "Ebon Escape",
+  "pageid": 63135,
+  "revid": 2645614,
+  "timestamp": "2019-11-09T13:22:55Z",
+  "wikitext": "{{Skill infobox\n| id = 2420\n| name = Ebon Escape\n| campaign = Eye of the North\n| profession = \n| attribute = Ebon Vanguard rank\n| type = Spell\n| energy = 5\n| activation =  {{1/4}}\n| recharge = 10\n| pve-only = y\n| causes1 = Shadow Step\n| causes2 = Healing\n| description = [[Spell]]. [[Shadow Step]] to [[target]] other [[ally]]. You and that other ally are [[heal]]ed for {{gr2|70|110}} [[health]].\n| concise description = Spell. Heals you and target ally for {{gr2|70|110}}. Initial effect: Shadow Step to this ally. {{gray|Cannot self-target.}}\n| target = other allies\n}}\n\n{{Skill progression max10\n|title track = [[Ebon Vanguard rank]]\n|var1 name = [[Heal]]ing\n|var1 at0  = 70\n|var1 at10 = 110\n}}\n\n==Acquisition==\n'''[[Skill quest]]s'''\n*[[Service: In Defense of the Eye]] ([[Eye of the North (outpost)|Eye of the North]])\n\n== Related skills ==\n*{{skill icon|Death's Retreat}}\n*{{skill icon|Return}}\n\n== Notes ==\n* You and your target will both be healed even if the shadow step fails (e.g. if the target cannot be reached).\n* Target [[spirit]]s will not be healed.\n* This skill does not cause an [[aftercast delay]]."
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Energetic Was Lee Sa",
+  "pageid": 51888,
+  "revid": 2733280,
+  "timestamp": "2026-07-05T17:19:59Z",
+  "wikitext": "{{Skill infobox\n| name = Energetic Was Lee Sa\n| id = 2016\n| campaign = Eye of the North\n| profession = Ritualist\n| attribute = Spawning Power\n| type = Item Spell\n| energy = 10\n| activation = 2\n| recharge = 20\n| causes1 = Energy Regeneration\n| causes2 = Energy Gain\n| description = [[Item Spell]]. Hold Lee Sa's ashes for {{gr|5|15}} seconds. While you hold her ashes, you gain +2 [[Energy regeneration]]. When you drop her ashes, you gain {{gr|1|10|+}} [[Energy]].\n| concise description = Item Spell. ({{gr|5|15}} seconds.) You have +2 Energy regeneration. Drop effect: you gain {{gr|1|10|+}} Energy.\n}}\n\n{{Skill progression\n|attribute = [[Spawning Power]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 15\n|var2 name = [[Energy]] gain (when dropped)\n|var2 at0 = 1\n|var2 at15 = 10\n|var3 name = Total energy gain (if held)\n|var3 at0 = 4\n|var3 at15 = 20\n|var4 name = Net energy gain (en-spell cost)\n|var4 at0 = -6\n|var4 at15 = 10\n}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n*[[Sida]] ([[Gunnar's Hold]])\n*[[Ybbob]] ([[Rata Sum]])\n'''[[Hero skill trainer]]s'''\n*[[Gedrel of Ascalon]] (Eye of the North)\n*[[Kodan]] (Gunnar's Hold)\n*[[Tyr the Skaald]] (Gunnar's Hold)\n*[[Lexx]] (Rata Sum)\n\n[[Category:Skills offered by hero skill trainers]]"
+}

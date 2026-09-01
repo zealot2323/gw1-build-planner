@@ -1,0 +1,7 @@
+{
+  "title": "Well of Ruin",
+  "pageid": 51864,
+  "revid": 2726503,
+  "timestamp": "2026-04-28T19:06:56Z",
+  "wikitext": "{{Skill infobox\n| name = Well of Ruin\n| id = 2236\n| campaign = Eye of the North\n| profession = Necromancer\n| attribute = Curses\n| type = Well Spell\n| energy = 10\n| activation = 1\n| recharge = 20\n| range = Casting\n| aoe = in the area\n| causes1 = Exploits Corpse\n| causes2 = Cracked Armor\n| description = [[Well spell|Well Spell]]. Exploit nearest [[corpse]] or sacrifice 66% health to create a Well of Ruin at its location. For {{gr|5|30}} seconds, whenever a [[foe]] in the well takes [[physical damage]], that foe has [[Cracked Armor]] for {{gr|5|20}} seconds.\n| concise description = Well Spell. ({{gr|5|30}} seconds.) Inflicts Cracked Armor condition ({{gr|5|20}} seconds) to any foe in the well that takes physical damage. {{gray|Exploits a fresh corpse or sacrifices 66% health.}}\n}}\n\n{{Skill progression\n|attribute = [[Curses]]\n|var1 name = [[Well spell]] [[duration]]\n|var1 at0 = 5\n|var1 at15 = 30\n|var2 name = [[Cracked Armor]] duration\n|var2 at0 = 5\n|var2 at15 = 20\n}}\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n== Related skill ==\n* {{skill icon|Ward of Weakness}}"
+}

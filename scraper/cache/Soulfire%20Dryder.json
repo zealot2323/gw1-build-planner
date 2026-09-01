@@ -1,0 +1,7 @@
+{
+  "title": "Soulfire Dryder",
+  "pageid": 65431,
+  "revid": 2067254,
+  "timestamp": "2010-06-22T15:23:08Z",
+  "wikitext": "{{NPC infobox\n| image = [[Image:Red Dryder.jpg|200px]]\n| type = Dryder\n| affiliation = Depths of Tyria wildlife\n| profession = n\n| level = 24 (26)\n| campaign = Eye of the North\n}}__NOTOC__\n[[Soulfire Dryder]]s are most common of all the northern [[Dryder|dryders]]. Their skills focus mainly on blood magic.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Darkrime Delves}}: levels 1 and 2\n**{{NPC location|Raven's Point}}: levels 1 and 2\n**{{NPC location|Sepulchre of Dragrimmar}}: levels 1 and 2\n\n==Skills==\n15 [[Blood Magic]], 11..13 [[Death Magic]] (20 Blood Magic in [[Hard mode]])\n*{{skill icon|Blood Renewal}}\n*{{skill icon|Life Siphon}}\n*{{skill icon|Malign Intervention}}\n*{{skill icon|Rising Bile}}\n*{{skill icon|Soul Leech}} ([[elite]])\n*{{skill icon|Well of Blood}}\n*{{monster skill icon|Dryder's Feast}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = n\n| blunt = 71\n| piercing = 71\n| slashing = 71\n| cold = 71\n| earth = 71\n| fire = 71\n| lightning = 71\n}}\n\n==Items dropped==\n*[[Dryder Web]]"
+}

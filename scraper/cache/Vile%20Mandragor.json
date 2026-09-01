@@ -1,0 +1,7 @@
+{
+  "title": "Vile Mandragor",
+  "pageid": 70383,
+  "revid": 2539494,
+  "timestamp": "2013-04-05T05:19:25Z",
+  "wikitext": "{{NPC infobox\n| image = [[Image:Mandragor Imp.jpg|150px]]\n| affiliation = Charr Homelands wildlife\n| type = Mandragor\n| profession = n\n| level = 24 (26)\n| campaign = Eye of the North\n| map1 = [[File:\"Tunneler\" concept art.jpg|180px]]\n| map1-text = Concept art by [[Doug Williams]].\n}}__NOTOC__\n[[Vile Mandragor]] travel in packs with other [[mandragor]].\n\n==Locations==\n*[[Charr Homelands]]\n**{{NPC location|Grothmar Wardowns}}\n\n==Missions==\n*Charr Homelands\n**{{NPC location|Against the Charr}}\n\n==Skills==\n15 [[Curses]], 15 [[Death Magic]] (20 Curses in [[Hard mode]])\n*{{skill icon|Chilblains}}\n*{{skill icon|Consume Corpse}}\n*{{skill icon|Mark of Pain}}\n*{{skill icon|Vile Touch}}\n*{{skill icon|Weaken Knees}} ([[elite]])\n*{{monster skill icon|Ground Cover}}\n*{{monster skill icon|Mandragor's Charge}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = n\n| blunt = 95\n| piercing = 95\n| slashing = 95\n| cold = 71\n| earth = 47\n| fire = 71\n| lightning = 71\n}}\n\n==Items dropped==\n*[[Fibrous Mandragor Root]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Earthbound Ooze",
+  "pageid": 65421,
+  "revid": 2549130,
+  "timestamp": "2013-06-14T08:56:52Z",
+  "wikitext": "{{NPC infobox\n| type = Jelly\n| affiliation = Depths of Tyria wildlife\n| profession = e\n| level = 20 (26)\n| campaign = Eye of the North\n}}__NOTOC__\n[[Earthbound Ooze]] are the standard ooze elementalists. They focus on [[point blank area of effect]] Earth Magic.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Arachni's Haunt}} (level 1)\n**{{NPC location|Heart of the Shiverpeaks}} (levels 1 and 3 not during Heart of the Shiverpeaks (quest))\n**{{NPC location|Ooze Pit}}\n**{{NPC location|Rragar's Menagerie}} (all levels)\n**{{NPC location|Sepulchre of Dragrimmar}} (level 1)\n**{{NPC location|Vloxen Excavations}} (levels 1 and 2)\n\n==Skills==\n15 [[Earth Magic]] (20 Earth Magic in [[Hard mode]])\n*{{skill icon|Aftershock}}\n*{{skill icon|Crystal Wave}}\n*{{skill icon|Earth Attunement}}\n*{{skill icon|Earthquake}}\n*{{skill icon|Grasping Earth}}\n*{{skill icon|Shockwave}} ([[elite]])\n*{{monster skill icon|Ooze Combination}}\n*{{monster skill icon|Ooze Division}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = e\n| blunt = 80\n| piercing = 80\n| slashing = 80\n| cold = 60\n| earth = 60\n| fire = 60\n| lightning = 60\n}}\n\n==Items dropped==\n*[[Blob of Ooze]]"
+}

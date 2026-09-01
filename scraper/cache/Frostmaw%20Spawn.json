@@ -1,0 +1,7 @@
+{
+  "title": "Frostmaw Spawn",
+  "pageid": 77564,
+  "revid": 2572458,
+  "timestamp": "2014-07-23T17:00:31Z",
+  "wikitext": "{{image needed|map}}__NOTOC__{{NPC infobox\n| image = [[Image:Frost Wurm.jpg|150px]]\n| type = Wurm\n| affiliation = Far Shiverpeaks wildlife\n| profession = r\n| level = 28 (30)\n| boss = y\n| campaign = Eye of the North\n}}\n[[Frostmaw Spawn]] is a [[Frost Wurm]] [[boss]] that can be found in the [[dungeon]] [[Frostmaw's Burrows]].\n\n== Locations ==\n* [[Depths of Tyria]]\n** {{NPC location|Frostmaw's Burrows}} (one on level 2, four on level 3, two on level 4, two on level 5)\n\n== Skills ==\n* {{Skill icon|Barrage}} ([[elite]])\n* {{monster skill icon|Wurm Bile}}\n\n==Items dropped==\n*[[Frozen Wurm Husk]]\n\n== Notes ==\n{{bug| Although Barrage can be [[Signet of Capture|captured]] from them, Frostmaw Spawns have not been observed using it.}}"
+}

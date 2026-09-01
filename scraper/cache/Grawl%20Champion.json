@@ -1,0 +1,7 @@
+{
+  "title": "Grawl Champion",
+  "pageid": 68337,
+  "revid": 2454390,
+  "timestamp": "2012-02-20T09:33:54Z",
+  "wikitext": "__NOTOC__  {{NPC infobox\n| affiliation = Charr Homelands wildlife\n| type = Grawl\n| image = [[file:Grawl martial.jpg|200px]]\n| profession = w\n| level = 24 (26)\n| campaign = Eye of the North\n}}\n[[Grawl Champion]]s are found amongst other Grawl in the rugged wilderness of Charr Homelands.\n\n==Locations==\n*[[Charr Homelands]]\n**{{NPC location|Grothmar Wardowns}} (during [[Be Very, Very Quiet...]])\n**{{NPC location|Sacnoth Valley}}\n\n==Skills==\n*{{skill icon|Battle Rage}} ([[elite]])\n*{{skill icon|Counter Blow}}\n*{{skill icon|Mighty Blow}}\n*{{skill icon|Mokele Smash}}\n*{{skill icon|Overbearing Smash}}\n*{{skill icon|Staggering Blow}}\n*{{monster skill icon|Blood Rage}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 81\n| piercing = 111\n| slashing = 111\n| cold = 91\n| earth = 91\n| fire = 91\n| lightning = 91\n}}\n\n==Items dropped==\n*[[Grawl Spaulder]]\n*[[Grawl Trappings]]\n*[[Grawl Vambrace]]\n*[[Stone Grawl Necklace]]\n\n==Notes==\n*Being under the effects of [[Blood Rage]] seems to lower their [[armor rating]] against [[blunt damage]]. When not under its effect it appears to be 111."
+}

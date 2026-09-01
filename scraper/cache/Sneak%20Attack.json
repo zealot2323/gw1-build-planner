@@ -1,0 +1,7 @@
+{
+  "title": "Sneak Attack",
+  "pageid": 66008,
+  "revid": 2667609,
+  "timestamp": "2020-10-23T21:42:20Z",
+  "wikitext": "{{Skill infobox\n| id = 2116\n| name = Sneak Attack\n| campaign = Eye of the North\n| attribute = Ebon Vanguard rank\n| type = Melee Attack\n| recharge = 5\n| energy = 5\n| pve-only = y\n| causes1 = Blind\n| description = [[Melee Attack]]. If this attack hits, [[target]] [[foe]] is [[Blind]]ed for {{gr2|5|8}} seconds. This attack counts as a [[lead attack]].\n| concise description = Melee Attack. Inflicts Blindness ({{gr2|5|8}} seconds). {{gray|Counts as a lead attack.}}\n}}\n\n{{Skill progression max10\n|title track = [[Ebon Vanguard rank]]\n|var1 name = [[Blind]] [[duration]]\n|var1 at0  = 5\n|var1 at10 = 8\n}}\n\n==Acquisition==\n'''[[Skill quest]]s'''\n*[[Plan A]] ([[Grothmar Wardowns]])\n\n== Notes ==\n* When used with a [[scythe]], this skill inflicts blindness to all foes struck by the attack. \n{{Anomaly |When sorting skills by type in the [[Skills and Attributes Panel]], this skill is under its own \"Melee Attack\" category, while all the other melee attacks are in a separate \"Melee Attack\" category.}}\n\n==Trivia==\n* This skill is the only melee attack that qualifies as a lead attack but doesn't require [[daggers]].\n*This skill is a likely reference to the [[Wikipedia:Rogue (Dungeons & Dragons)|Dungeons & Dragons]] signature class feature of the [http://www.dandwiki.com/wiki/Rogue_%28SRD_Class%29 Rogue].\n[[Category:Skills which count as lead attacks]]\n[[Category:References to Dungeons & Dragons]]"
+}

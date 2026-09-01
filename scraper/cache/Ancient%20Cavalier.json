@@ -1,0 +1,7 @@
+{
+  "title": "Ancient Cavalier",
+  "pageid": 74274,
+  "revid": 2451961,
+  "timestamp": "2012-02-15T20:12:35Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Mummy\n| affiliation = Undead\n| profession = P\n|image = [[image:Awakened paragon.jpg|150px]]\n| level = 28 (30)\n| campaign = Eye Of The North\n}}\n[[Ancient Cavalier]]s provide support for their ancient allies.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Vloxen Excavations}}\n\n==Skills==\n*{{Skill icon|\"Go for the Eyes!\"}}\n*{{Skill icon|\"Stand Your Ground!\"}}\n*{{Skill icon|Anthem of Flame}}\n*{{Skill icon|Barbed Spear}}\n*{{Skill icon|Disrupting Throw}}\n*{{Skill icon|Soldier's Fury}} ([[elite]])\n\n==Armor ratings==\n{{NPC statistics\n| prof = p\n| blunt = 119\n| piercing = 119\n| slashing = 119\n| cold = 119\n| earth = 119\n| fire = 119\n| lightning = 119\n}}\n\n==Items dropped==\n*[[Undead Bone]]\n\n==Notes==\n*Ancient Cavaliers automatically [[Resurrection|resurrect]] shortly after being killed."
+}

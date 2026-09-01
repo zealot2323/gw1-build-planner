@@ -1,0 +1,7 @@
+{
+  "title": "Raven Swoop",
+  "pageid": 64044,
+  "revid": 2499349,
+  "timestamp": "2012-06-28T06:46:05Z",
+  "wikitext": "{{Skill infobox\n| name = Raven Swoop\n| campaign = Eye of the North\n| attribute = Norn rank\n| type = Spell\n| special = Norn Blessing\n| activation = {{3/4}}\n| recharge = 4\n| pve-only = y\n| description = [[Spell]]. Strike [[target]] [[foe]] and all [[adjacent]] foes for {{gr2|60|100}} [[damage]].\n| concise description = [[Spell]]. Deals {{gr2|60|100}} damage. Also hits adjacent foes.\n| aoe = adjacent\n}}\n\n{{Skill progression max10\n|title track = [[Norn rank]]\n|var1 name = [[Armor-ignoring damage]]\n|var1 at0  = 60\n|var1 at10 = 100\n}}\n\n==Acquisition==\nTemporarily, as one of the five skills available while under the effect of [[Raven Blessing]].\n\n==Related skills==\n*{{skill icon|Fireball}}\n*{{skill icon|Raven Swoop (A Gate Too Far)}}"
+}

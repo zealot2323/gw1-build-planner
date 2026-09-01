@@ -1,0 +1,7 @@
+{
+  "title": "Angorodon",
+  "pageid": 68754,
+  "revid": 2648747,
+  "timestamp": "2020-03-28T18:28:45Z",
+  "wikitext": "{{NPC infobox\n| type = Dinosaur\n| affiliation = Tarnished Coast wildlife\n| profession = n\n| level = 24 (26)\n| campaign = Eye of the North\n| map1 = [[File:\"Hipposaurus\" concept art.jpg|200px]]\n| map1-text = Concept art by [[Katy Hargrove]].\n}}__NOTOC__\n[[Angorodon]]s are dangerous saurians from the [[Tarnished Coast]] that are usually found in groups. Their use of [[life stealing]] and other [[armor-ignoring]] [[AoE]] damage makes them quite deadly especially if they choose to focus on one party member.\n\nInterrupting their key skills, denying the [[corpse]]s to prevent the use of [[Putrid Explosion]] or using [[\"Can't Touch This!\"]] to prevent touch skills such as [[Twisting Jaws]] is advised.\n\n==Locations==\n*Tarnished Coast\n**{{NPC location|Alcazia Tangle}}\n**{{NPC location|Riven Earth}}\n**{{NPC location|Sparkfly Swamp}}\n\n==Skills==\n15 [[Blood Magic]], 15 [[Death Magic]], 11 [[Soul Reaping]] (15 Soul Reaping in [[Hard Mode]])\n*{{skill icon|Angorodon's Gaze}}\n*{{skill icon|Deathly Swarm}}\n*{{skill icon|Putrid Explosion}}\n*{{skill icon|Ravenous Gaze}} ([[elite]])\n*{{skill icon|Unholy Feast}}\n*{{skill icon|Vampiric Bite}}\n*{{monster skill icon|Twisting Jaws}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = n\n| blunt = 82\n| piercing = 82\n| slashing = 82\n| cold = 82\n| earth = 82\n| fire = 82\n| lightning = 82\n}}\n\n==Items dropped==\n*[[Saurian Bone]]"
+}

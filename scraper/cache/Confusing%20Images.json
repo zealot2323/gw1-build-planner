@@ -1,0 +1,7 @@
+{
+  "title": "Confusing Images",
+  "pageid": 51853,
+  "revid": 2720971,
+  "timestamp": "2026-02-10T06:57:08Z",
+  "wikitext": "{{Skill infobox\n| name = Confusing Images\n| id = 2137\n| campaign = Eye of the North\n| profession = Mesmer\n| attribute = Illusion Magic\n| type = Hex Spell\n| energy = 10\n| activation = 1\n| recharge = 20\n| causes1 = Increased Activation Time\n| description = [[Hex Spell]]. For {{gr|2|10}} seconds, [[target]] [[foe]] takes twice as long to [[Activation time|activate]] non-[[attack skill]]s.\n| concise description = Hex Spell. ({{gr|2|10}} seconds). Target foe takes twice as long to activate non-attack skills. \n}}\n\n{{Skill progression\n|attribute = [[Illusion Magic]]\n|var1 name = [[Duration]]\n|var1 at0 = 2\n|var1 at15 = 10}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n\n== Related skills ==\n* {{skill icon|Arcane Conundrum}}\n* {{skill icon|Migraine}} ([[elite]])\n\n== Trivia ==\n{{Skill change}}"
+}

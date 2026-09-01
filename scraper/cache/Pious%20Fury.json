@@ -1,0 +1,7 @@
+{
+  "title": "Pious Fury",
+  "pageid": 51901,
+  "revid": 2645528,
+  "timestamp": "2019-11-09T13:21:20Z",
+  "wikitext": "{{Skill infobox\n| id = 2146\n| name = Pious Fury\n| campaign = Eye of the North\n| profession = Dervish\n| attribute = Mysticism\n| type = Stance\n| energy = 5\n| recharge = 10\n| has-pvp = y\n| aoe = none\n| removes1 = Enchantment\n| causes1 = Increased Attack Speed\n| description = [[Stance]]. Remove 1 Dervish [[enchantment]]. For {{gr|1|7}} second[s], you [[Attack speed|attack 25% faster]]. If an enchantment was [[Teardown|removed]], this stance lasts twice as long.\n| concise description = Stance. ({{gr|1|7}} second[s].)You {{sic|No space between the closing bracket and 'You'}} attack 25% faster and remove 1 of your Dervish enchantments. Removal effect: this stance lasts twice as long.\n}}\n\n{{Skill progression\n|attribute = [[Mysticism]]\n|var1 name = [[Duration]]\n|var1 at0 = 1\n|var1 at15 = 7\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n*[[Sida]] ([[Gunnar's Hold]])\n*[[Ybbob]] ([[Rata Sum]])\n'''[[Hero skill trainer]]s'''\n*[[Gedrel of Ascalon]] (Eye of the North)\n*[[Kodan]] (Gunnar's Hold)\n*[[Tyr the Skaald]] (Gunnar's Hold)\n*[[Lexx]] (Rata Sum)\n\n== Related skills ==\n* {{skill icon|Heart of Fury}}\n\n== Notes ==\n* [[Hero behavior|Hero AI]] will use this without regard for long-term beneficial enchantments like [[Intimidating Aura]].\n\n[[Category:Skills offered by hero skill trainers]]\n\n[[de:Frommer Zorn]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Frost Larvae",
+  "pageid": 103690,
+  "revid": 2326993,
+  "timestamp": "2011-06-29T16:54:20Z",
+  "wikitext": "{{NPC infobox\n| image = [[File:Drake Hatchling (white).jpg|150px]]\n| type = Wurm\n| affiliation = Far Shiverpeaks wildlife\n| level = 18 (25)\n| campaign = Eye of the North\n}}__NOTOC__\n[[Frost Larvae]] are the young of the large and dangerous [[Frost Wurm]]s. They are almost always guarded by their larger brethren.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Frostmaw's Burrows}} (except level 4)\n\n==Skills==\nNone\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 120\n| piercing = 120\n| slashing = 120\n| cold = 120\n| earth = 120\n| fire = 120\n| lightning = 120\n}}\n\n==Items dropped==\n*[[Frozen Wurm Husk]]"
+}

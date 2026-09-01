@@ -1,0 +1,7 @@
+{
+  "title": "Signet of Infection",
+  "pageid": 65950,
+  "revid": 2645617,
+  "timestamp": "2019-11-09T13:22:59Z",
+  "wikitext": "{{Skill infobox\n| id = 2229\n| name = Signet of Infection\n| campaign = Eye of the North\n| attribute = Ebon Vanguard rank\n| type = Signet\n| activation = 1\n| recharge = 10\n| pve-only = y\n| target =\n| range = casting\n| aoe =\n| causes1 = Disease\n| description = [[Signet]]. If [[target]] [[foe]] is [[Bleeding]], that foe is [[Disease]]d for {{gr2|13|20}} seconds.\n| concise description = Signet. Inflicts Diseased condition {{gr2|13|20}} seconds if target foe is Bleeding.\n}}\n\n{{Skill progression max10\n|title track = [[Ebon Vanguard rank]]\n|var1 name = [[Disease]] [[duration]]\n|var1 at0  = 13\n|var1 at10 = 20\n}}\n\n== Acquisition ==\n'''[[Skill quest]]'''\n*[[The Hunting of the Charr]] ([[Sacnoth Valley]])\n\n== Related skills ==\n* {{skill icon|Virulence}} ([[elite]])"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Ursan Force",
+  "pageid": 63599,
+  "revid": 2691207,
+  "timestamp": "2023-11-04T10:42:56Z",
+  "wikitext": "{{Skill infobox\n| name = Ursan Force\n| campaign = Eye of the North\n| attribute = Norn rank\n| type = Skill\n| special = Norn Blessing\n| recharge = 12\n| pve-only = y\n| causes1 = Increased Movement Speed\n| description = [[Skill (skill type)|Skill]]. For {{gr2|8|14}} seconds, you [[Speed boost|move {{gr2|20|33}}% faster]] and can break wooden barricades.\n| concise description = Skill. ({{gr2|8|14}} seconds.) You move {{gr2|20|33}}% faster and can break wooden barricades.}}\n\n{{Skill progression max10\n|title track = [[Norn rank]]\n|var1 name = [[Duration]]\n|var1 at0  = 8\n|var1 at10 = 14\n|var2 name = [[Speed boost]] %\n|var2 at0  = 20\n|var2 at10 = 33\n}}\n\n==Acquisition==\nTemporarily, as one of the five skills available while under the effect of [[Ursan Blessing]].\n\n==Related skills==\n*{{skill icon|Rampage as One}} ([[Elite skill|elite]])\n*{{skill icon|Ursan Force (Blood Washes Blood)}}\n\n==Notes==\n*Unlike [[Ursan Force (Blood Washes Blood)]] under [[Ursan Aura]], this skill is not a stance.\n\n[[de:Bärengewalt]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Tomb Ettin",
+  "pageid": 77896,
+  "revid": 2597361,
+  "timestamp": "2015-10-23T19:45:41Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Ettin.jpg|200px]]\n| type = Ogre\n| affiliation = Depths of Tyria wildlife\n| level = 20 (26)<br> 28 (30)\n| profession = warrior\n| campaign = Eye of the North\n}}\n[[Tomb Ettin]]s are [[ettin]]s found in the Bloodstone Caves.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Bloodstone Caves}}\n\n==Skills==\n*{{skill icon|Auspicious Blow}}\n*{{skill icon|Defy Pain}} ([[elite]], [[Hard mode]] only)\n*{{skill icon|Endure Pain}}\n*{{skill icon|Forceful Blow}} (elite)\n*{{skill icon|Healing Signet}}\n*{{skill icon|Protector's Strike}}\n\n==Armor ratings==\n{{NPC statistics\n| level = 28\n| prof = w\n| blunt = 123\n| piercing = 123\n| slashing = 123\n| cold = 103\n| earth = 103\n| fire = 103\n| lightning = 103\n}}\n\n==Items dropped==\n* [[Jotun Pelt]]\n\n==Trivia==\n*They are one of the few [[NPC]]s that possess more than one [[elite skill]].\n\n[[Category:NPCs with multiple elite skills]]\n[[Category:Ettins]]"
+}

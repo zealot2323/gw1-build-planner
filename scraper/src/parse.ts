@@ -41,6 +41,7 @@ interface CampaignManifest {
   trainers: string[];
   trainerSkillSubpages: string[];
   missions: string[];
+  dungeons?: string[];
   monsters: string[];
 }
 interface Manifest {
@@ -59,10 +60,29 @@ function merged<K extends keyof CampaignManifest>(key: K): string[] {
   }
   return [...seen];
 }
-/** Which campaign first listed this page — used to tag parsed entities. */
-function campaignOf(key: keyof CampaignManifest, page: string): string | undefined {
+/**
+ * Which campaign listed this page — used to tag parsed entities. `locations`
+ * is an object of four arrays rather than one array, so it needs its own
+ * lookup.
+ */
+function campaignOf(key: "skills" | "trainers" | "missions" | "monsters", page: string): string | undefined {
   for (const name of campaignNames) {
-    if ((manifestFile.byCampaign[name][key] as string[]).includes(page)) return name;
+    if (manifestFile.byCampaign[name][key].includes(page)) return name;
+  }
+  return undefined;
+}
+
+function campaignOfLocation(page: string): string | undefined {
+  for (const name of campaignNames) {
+    const l = manifestFile.byCampaign[name].locations;
+    if (
+      l.towns.includes(page) ||
+      l.outposts.includes(page) ||
+      l.missionOutposts.includes(page) ||
+      l.explorables.includes(page)
+    ) {
+      return name;
+    }
   }
   return undefined;
 }
@@ -78,6 +98,7 @@ const manifest: CampaignManifest = {
   trainers: merged("trainers"),
   trainerSkillSubpages: merged("trainerSkillSubpages"),
   missions: merged("missions"),
+  dungeons: campaignNames.flatMap((n) => manifestFile.byCampaign[n].dungeons ?? []),
   monsters: merged("monsters"),
 };
 
@@ -109,6 +130,13 @@ for (const title of manifest.skills) {
   const wt = await cachedWikitext("skills", title);
   if (wt === null) continue;
   const { entity, issues } = parseSkill(title, wt);
+  // Every real skill has an in-game id. Pages without one are title tracks
+  // ("Norn rank") or effects ("Rebel Yell", which cannot be equipped) that
+  // sit in the skill categories but are not skills.
+  if (entity.gwSkillId === null) {
+    addIssue("skills", title, "no in-game skill id — not a real skill, dropped");
+    continue;
+  }
   for (const i of issues) addIssue("skills", title, i);
   skills.push(entity);
 }
@@ -209,6 +237,9 @@ const locationKinds: Array<[string[], string]> = [
   [manifest.locations.outposts, "outpost"],
   [manifest.locations.missionOutposts, "mission-outpost"],
   [[...manifest.locations.explorables, ...EXTRA_EXPLORABLES], "explorable"],
+  // Dungeons carry a Location infobox (region, exits, foes), so they parse
+  // as locations rather than through the mission parser.
+  [manifest.dungeons ?? [], "dungeon"],
 ];
 const locations: ParsedLocation[] = [];
 for (const [titles, kind] of locationKinds) {
@@ -226,7 +257,7 @@ for (const [titles, kind] of locationKinds) {
       if (!entity.neighbors.includes(extra)) entity.neighbors.push(extra);
     }
     if (PRE_SEARING_LOCATIONS.has(title)) entity.preSearing = true;
-    entity.campaign = entity.campaign ?? campaignOf("locations" as never, title) ?? null;
+    entity.campaign = entity.campaign ?? campaignOfLocation(title) ?? null;
     for (const i of issues) {
       // manual progression edges satisfy the exits expectation
       if (i === "no exits in infobox" && entity.neighbors.length > 0) continue;

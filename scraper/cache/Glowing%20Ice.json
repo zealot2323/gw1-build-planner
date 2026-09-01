@@ -1,0 +1,7 @@
+{
+  "title": "Glowing Ice",
+  "pageid": 51880,
+  "revid": 2683952,
+  "timestamp": "2023-02-23T12:23:22Z",
+  "wikitext": "{{Skill infobox\n| id = 2192\n| name = Glowing Ice\n| campaign = Eye of the North\n| profession = Elementalist\n| attribute = Water Magic\n| type = Spell\n| energy = 5\n| activation = 1\n| recharge = 8\n| causes1 = Cold Damage\n| causes2 = Energy Gain\n| description = [[Spell]]. [[Target]] [[foe]] is struck for {{gr|5|50}} [[cold damage]]. If that foe is under the effects of a Water Magic [[hex]], you gain 5 [[Energy]] plus 1 Energy for every 2 ranks of [[Energy Storage]].\n| concise description = Spell. Deals {{gr|5|50}} cold damage. You gain 5 Energy plus 1 Energy for every 2 ranks of Energy Storage if target foe is hexed with Water Magic.\n| target = foes\n}}\n\n{{Skill progression\n|attribute = [[Water Magic]]\n|var1 name = [[Cold damage]]\n|var1 at0 = 5\n|var1 at15 = 50\n}}\n\n{{Skill progression\n|attribute = [[Energy Storage]]\n|var1 name = [[Energy]] gain\n|var1 at0 = 4.5\n|var1 at15 = 12\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n\n== Related skills ==\n* {{Skill icon|Glowing Gaze}} \n* {{Skill icon|Glowstone}}\n* {{Skill icon|Shock Arrow}}\n\n== Trivia ==\n* The [[functionality]] of this skill has changed since its introduction; see its [[Glowing Ice/Skill history|skill history]] for details."
+}

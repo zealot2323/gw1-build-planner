@@ -1,0 +1,7 @@
+{
+  "title": "A Touch of Guile",
+  "pageid": 58321,
+  "revid": 2674048,
+  "timestamp": "2021-07-23T03:59:00Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 2357\n| name = A Touch of Guile\n| campaign = Eye of the North\n| profession = \n| attribute = Norn rank\n| type = Touch Hex Spell\n| energy = 5\n| activation = {{3/4}}\n| recharge = 15\n| range = touch\n| pve-only = y\n| description = [[Hex Spell]]. [[Target]] [[touch]]ed [[foe]] takes {{gr2|44|80}} [[damage]]. If target foe was [[Knock down|knocked down]], that foe cannot [[attack]] for {{gr2|5|8}} seconds.\n| concise description = Touch Hex Spell. Deals {{gr2|44|80}} damage. Target foe cannot attack ({{gr|5|8}} seconds) if it was knocked-down.\n}}\n\n{{Skill progression max10\n|title track = [[Norn rank]]\n|var1 name = [[Armor-ignoring damage]]\n|var1 at0  = 44\n|var1 at10 = 80\n|var2 name = [[Duration]]\n|var2 at0  = 5\n|var2 at10 = 8\n}}\n\n==Acquisition==\n'''[[Skill quest]]s'''\n*[[Final Round: Fight!]] ([[Gunnar's Hold]])\n\n==Related skills==\n*{{skill icon|Pacifism}}\n\n== Notes ==\n*Synergy with touch or attack skills causing knockdown, such as [[Hammer Bash]], [[Shock]] or [[Brawling Headbutt]].\n\n==Trivia==\n*This skill is probably a reference to the \"handcuffs\" bug in [[W:Street Fighter II|Street Fighter II]], as it can only be performed by Guile and prevents his opponent from moving or attacking.\n*The [[skill icon]] appears to be [[Jora]] in her [[Brotherhood armor]]."
+}

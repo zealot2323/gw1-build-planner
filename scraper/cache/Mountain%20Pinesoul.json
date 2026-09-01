@@ -1,0 +1,7 @@
+{
+  "title": "Mountain Pinesoul",
+  "pageid": 63618,
+  "revid": 2432020,
+  "timestamp": "2012-01-07T17:31:08Z",
+  "wikitext": "__NOTOC__{{NPC infobox \n| image = [[File:Pinesoul.jpg|200px]]\n| affiliation = Far Shiverpeaks wildlife\n| type = Plant\n| profession = r\n| level = 28 (30)\n| campaign = Eye of the North}} \n[[Mountain Pinesoul]]s are large hostile plant creatures found in the [[Far Shiverpeaks]].\n\n==Locations== \n*[[Far Shiverpeaks]]\n**{{NPC location|Ice Cliff Chasms}}\n**{{NPC location|Jaga Moraine}}\n**{{NPC location|Norrhart Domains}}\n\n==Skills==\n16 [[Wilderness Survival]] (20 [[Marksmanship]], 20 Wilderness Survival in [[Hard Mode]])\n*{{skill icon|Barbed Trap}}\n*{{skill icon|Determined Shot}}\n*{{skill icon|Pin Down}}\n*{{skill icon|Power Shot}}\n*{{skill icon|Quicksand}} ([[elite]])\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 94\n| piercing = 94\n| slashing = 94\n| cold = 124\n| earth = 124\n| fire = 124\n| lightning = 124\n}}\n\n==Items dropped==\n*[[Mountain Root]]\n*[[Oaken Recurve Bow]]\n\n==Notes==\n* Attacks by these creatures do not deal physical nor elemental damage."
+}

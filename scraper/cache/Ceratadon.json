@@ -1,0 +1,7 @@
+{
+  "title": "Ceratadon",
+  "pageid": 68748,
+  "revid": 2598909,
+  "timestamp": "2015-11-14T06:25:31Z",
+  "wikitext": "{{NPC infobox\n| affiliation = Tarnished Coast wildlife\n| type = Dinosaur\n| profession = e\n| level = 28 (30)\n| campaign = Eye of the North\n| map1 = [[File:\"C3 Highlands Ridgeback\" concept art.jpg|200px]]\n| map1-text = Concept art by [[Matthew Barrett]].\n}}__NOTOC__\n[[Ceratadon]]s are large [[elementalist]] [[Dinosaurs]] found in [[Tarnished Coast]]. They specialize in [[Earth Magic]] to mitigate and deal close-range damage.\n\n==Locations==\n*[[Tarnished Coast]]\n**{{NPC location|Alcazia Tangle}}\n**{{NPC location|Riven Earth}}\n**{{NPC location|Sparkfly Swamp}}\n\n==Skills==\n16 [[Earth Magic]], 16 [[Energy Storage]]\n*{{skill icon|Armor of Earth}}\n*{{skill icon|Grasping Earth}}\n*{{skill icon|Shockwave}} ([[elite]])\n*{{skill icon|Sliver Armor}}\n*{{skill icon|Stoneflesh Aura}}\n*{{monster skill icon|Chomp}}\n*{{monster skill icon|Stun Immunity}}\n*{{monster skill icon|Twisting Jaws}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = e\n| blunt = 120\n| piercing = 120\n| slashing = 120\n| cold = 80\n| earth = 80\n| fire = 80\n| lightning = 80\n}}\n\n==Items dropped==\n*[[Saurian Bone]]\n\n==Notes==\n*This creature model is available as a [[Miniature Ceratadon|miniature]].\n*The [[Armored Saurus]] and [[Trihorn]] are essentially the same, except the Ceratadon uses [[Chomp]].\n\n==Trivia==\n*Based on ''[[w:Triceratops Serratus|Triceratops Serratus]]'' or other Ceratopsidae."
+}

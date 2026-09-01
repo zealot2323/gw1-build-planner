@@ -1,0 +1,7 @@
+{
+  "title": "Decayed Dragon",
+  "pageid": 73376,
+  "revid": 2171689,
+  "timestamp": "2010-11-07T20:13:44Z",
+  "wikitext": "__NOTOC__{{NPC infobox \n| type = Zombie\n| affiliation = Undead\n| image = [[Image:Bone Dragon.jpg|225px]]\n| profession = N\n| level = 21, 22, 23, 24, 28 (30)\n| campaign = Eye of the North\n}}\n[[Decayed Dragon]]s are [[dungeon]]-dwelling [[necromancer]]s.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Heart of the Shiverpeaks}} (level 28 version)\n**{{NPC location|Shards of Orr}} (level 28 version)\n**{{NPC location|Slavers' Exile}} (Selvetarm's Level) (level 21...24 version)\n\n==Skills==\nLevel 28 version: 16 [[Death Magic]]\n*{{skill icon|Chilblains}}\n*{{skill icon|Deathly Swarm}}\n*{{skill icon|Putrid Explosion}}\n*{{skill icon|Vile Miasma}}\n*{{skill icon|Wail of Doom}} ([[elite]])\n*{{monster skill icon|Deafening Roar}}\n\n==Armor ratings==\nAt all levels:\n{{NPC statistics\n| prof = n\n| blunt = 100\n| piercing = 100\n| slashing = 100\n| cold = 101\n| fire = 101\n| earth = 101\n| lightning = 101\n}}\n\n==Items dropped==\n*[[Undead Bone]]"
+}

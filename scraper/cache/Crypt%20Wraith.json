@@ -1,0 +1,7 @@
+{
+  "title": "Crypt Wraith",
+  "pageid": 67560,
+  "revid": 2719580,
+  "timestamp": "2026-01-31T14:12:03Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| affiliation = Undead\n| profession = me\n| type = Ghost\n| level = 20, 21, 22, 23, 24 (26)\n| campaign = Eye of the North\n| image = [[File:Wraith.jpg|150px]]\n}}\n[[Crypt Wraith]]s are [[undead]] [[mesmer]]s found in some [[Guild Wars Eye of the North|Eye of the North]] [[dungeon]]s. They carry several [[interrupt]] spells that can [[shutdown]] a [[party]]'s [[spellcaster]]s. \n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Cathedral of Flames}}\n**{{NPC location|Shards of Orr}} (level 2)\n**{{NPC location|Slavers' Exile}} ([[Selvetarm]] level)\n\n==Skills==\n15 [[Domination Magic]] (20 Domination Magic in [[Hard mode]])\n*{{skill icon|Cry of Frustration}}\n*{{skill icon|Mind Wrack}}\n*{{skill icon|Power Drain}}\n*{{skill icon|Power Flux}} ([[elite]])\n*{{skill icon|Power Leak}}\n*{{skill icon|Power Spike}}\n*{{skill icon|Wastrel's Worry}}\n\n==Armor ratings==\n{{NPC statistics\n| level = 20\n| prof = me\n| blunt = 100\n| piercing = 100\n| slashing = 100\n| cold = 60\n| earth = 60\n| fire = 60\n| lightning = 60\n}}\n\n==Items dropped==\n*[[Bone]]\n*[[Dead Bow]]\n*[[Pile of Glittering Dust]]\n\n[[Category:Drops bone]]\n[[Category:Drops dust]]"
+}

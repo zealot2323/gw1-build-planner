@@ -1,0 +1,7 @@
+{
+  "title": "Volfen Bloodlust",
+  "pageid": 63546,
+  "revid": 2619654,
+  "timestamp": "2017-06-28T21:47:50Z",
+  "wikitext": "{{Skill infobox\n| name = Volfen Bloodlust\n| campaign = Eye of the North\n| attribute = Norn rank\n| type = Shout\n| special = Norn Blessing\n| recharge = 10\n| pve-only = y\n| causes1 = Increased Attack Speed\n| description = [[Shout]]. For {{gr2|2|7}} seconds, you and all [[nearby]] [[ally|allies]] [[Attack speed|attack 33% faster]].\n| concise description = Shout. ({{gr2|2|7}} seconds.) You and nearby allies attack 33% faster.\n| aoe = nearby\n}}\n\n{{Skill progression max10\n|title track = [[Norn rank]]\n|var1 name = [[Duration]]\n|var1 at0  = 2\n|var1 at10 = 7\n}}\n\n==Acquisition==\nTemporarily, as one of the five skills available while under the effect of [[Volfen Blessing]].\n\n==Related skills==\n*{{skill icon|Never Rampage Alone}}\n*{{skill icon|Rampage as One}} ([[Elite skill|elite]])\n*{{skill icon|Signet of Ghostly Might}} (elite)\n*{{skill icon|Volfen Bloodlust (Curse of the Nornbear)}}\n\n[[Category:Skills that affect allies]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Soldier's Speed",
+  "pageid": 51910,
+  "revid": 2608805,
+  "timestamp": "2016-06-24T06:06:40Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| name = Soldier's Speed\n| id = 2196\n| campaign = Eye of the North\n| profession = Warrior\n| attribute = Tactics\n| type = Stance\n| energy = 5\n| recharge = 12\n| causes1 = Increased Movement Speed\n| description = [[Stance]]. For {{gr|3|18}} seconds, you [[Speed boost|move 15% faster]]. You move an additional 15% faster while under the effects of a [[chant]] or [[shout]].\n| concise description = Stance. ({{gr|3|18}} seconds.) You move 15% faster and an additional 15% while affected by a chant or shout.\n}}\n\n{{Skill progression\n|attribute = [[Tactics]]\n|var1 name = [[Duration]]\n|var1 at0 = 3\n|var1 at15 = 18}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n*[[Sida]] ([[Gunnar's Hold]])\n*[[Ybbob]] ([[Rata Sum]])\n\n== Related skills ==\n* {{skill icon|Soldier's Defense}}\n* {{skill icon|Soldier's Fury}} ([[elite]])\n* {{skill icon|Soldier's Stance}}  (elite)\n\n== Notes ==\n* This skill can provide a long duration speed boost when combined with a shout such as [[\"To the Limit!\"]] or [[\"I Am the Strongest!\"]].\n\n== Trivia ==\n* The female warrior in the [[skill icon]] appears to be wearing [[Warrior Charr Hide armor|Charr Hide armor]]."
+}

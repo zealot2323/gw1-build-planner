@@ -1,0 +1,7 @@
+{
+  "title": "Infernal Wurm",
+  "pageid": 78401,
+  "revid": 2413246,
+  "timestamp": "2011-11-24T06:06:49Z",
+  "wikitext": "{{NPC infobox\n| name = Infernal Wurm\n| image = [[File:Infernal Siege Wurm.jpg|150px]]\n| type = Wurm\n| affiliation = Shadow Army\n| profession = warrior\n| level = 24 (30)<br>28 (30)\n| campaign = Core\n| campaign2 = Eye of the North\n}}__NOTOC__\n[[Infernal Wurm]]s in [[the Fissure of Woe]] remain stationary and fire a ranged attack at foes. They will [[aggro]] from outside of a player's aggro circle and have very high armor. Those found in the [[Depths of Tyria]] are burrowing [[wurm]]s that will attack at melee range.\n\n==Locations==\n;Siege version (level 28)\n*[[Core]]\n**[[The Fissure of Woe]]\n***{{NPC location|Lake of Fire}}\n***[[Tower of Strength (landmark)|Tower of Strength]] <!-- Manual categorisation die to naming. Please do not use the NPC location template. -->\n;Burrowing version (level 24)\n*[[Guild Wars Eye of the North|Eye of the North]]\n**[[Depths of Tyria]]\n***{{NPC location|Catacombs of Kathandrax}} (level 2)\n\n==Skills==\n;Siege version\n*{{monster skill icon|Wurm Siege (Core)}}\n;Burrowing version\n*{{monster skill icon|Stun on Critical Hit}}\n\n==Armor ratings==\n;Both version\n{{NPC statistics\n| prof = w\n| blunt = 160\n| piercing = 160\n| slashing = 160\n| cold = 160\n| earth = 160\n| fire = 160\n| lightning = 160\n}}\n\n==Items dropped==\n;Catacombs of Kathandrax\n*[[Ashen Wurm Husk]]\n;Fissure of Woe\n*[[Obsidian Shard]]\n*[[Umbral Shell]]\n\n[[Category:Drops obsidian shard]]"
+}

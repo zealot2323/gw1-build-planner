@@ -1,0 +1,7 @@
+{
+  "title": "Trampling Ox",
+  "pageid": 51832,
+  "revid": 2733283,
+  "timestamp": "2026-07-05T17:21:13Z",
+  "wikitext": "{{Skill infobox\n| name = Trampling Ox\n| id = 2135\n| campaign = Eye of the North\n| profession = Assassin\n| attribute = Dagger Mastery\n| type = Dual Attack\n| energy = 5\n| recharge = 8\n| requires = offhand\n| causes1 = Knockdown\n| description = [[Dual Attack]]. Must follow an [[off-hand attack]]. If it hits, you deal {{gr|5|20|+}} [[damage]]. If you a {{sic}} hit a [[Crippled]] [[foe]], that foe is [[knocked down]].\n| concise description = Dual Attack. Deals {{gr|5|20|+}} damage; causes knock-down if target foe is Crippled. {{gray|Must follow an off-hand attack.}}\n}}\n\n{{Skill progression\n|attribute = [[Dagger Mastery]]\n|var1 name = + [[Damage]]\n|var1 at0 = 5\n|var1 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n'''[[Hero skill trainer]]s'''\n* [[Gedrel of Ascalon]] (Eye of the North)\n* [[Kodan]] (Gunnar's Hold)\n* [[Tyr the Skaald]] (Gunnar's Hold)\n* [[Lexx]] (Rata Sum)\n\n== Notes ==\n* If cripple is applied with this skill (e.g. through [[Grenth's Grasp]]), the knock down will also trigger.\n* Good synergy with [[Mantis Touch]] and [[Palm Strike]].\n\n== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill history]] for details.\n\n[[Category:Skills offered by hero skill trainers]]"
+}

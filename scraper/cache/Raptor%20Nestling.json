@@ -1,0 +1,7 @@
+{
+  "title": "Raptor Nestling",
+  "pageid": 66845,
+  "revid": 2523006,
+  "timestamp": "2012-11-03T00:48:51Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Dinosaur\n| affiliation = Tarnished Coast wildlife\n| image = [[file:Raptor.jpg|200px]]\n | profession = Assassin\n | level = 15 (25)\n | campaign = Eye of the North\n}}\n[[Raptor Nestling]]s are young [[Raptor]]s, who do not yet have the full skill set to venture outside the nest.\n\n==Locations==\n*[[Tarnished Coast]]\n** {{NPC location|Riven Earth}}\n\n==Skills==\n*{{skill icon|Critical Defenses}}\n*{{skill icon|Disrupting Stab}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = a\n| blunt = 55 (70)\n| piercing = 55 (70)\n| slashing = 55 (70)\n| cold = 55 (70)\n| earth = 55 (70)\n| fire = 55 (70)\n| lightning = 55 (70)\n}}\n\n==Items dropped==\n<!--This section is not for weapons that drop from all over the area, gold, dye, keys, or other \"generic\" drops. This section is almost certainly complete as-is-->\n*[[Elemental Sword]]\n*[[Saurian Bone]]"
+}

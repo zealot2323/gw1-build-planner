@@ -1,0 +1,7 @@
+{
+  "title": "Stone Summit Executioner",
+  "pageid": 74650,
+  "revid": 2414300,
+  "timestamp": "2011-11-26T19:56:30Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Stone Summit warrior.jpg|150px]]\n| type = Dwarf\n| affiliation = Stone Summit\n| profession = w\n| profession2 = mo\n| level = 24 \n| campaign = Eye of the North\n}} \n[[Stone Summit Executioner]]s are [[axe]] [[warrior]]s.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Slavers' Exile}}: Duncan the Black\n\n==Skills==\n*{{skill icon|\"I Will Avenge You!\"}}\n*{{skill icon|Agonizing Chop}}\n*{{skill icon|Cyclone Axe}}\n*{{skill icon|Eviscerate}} ([[elite]])\n*{{skill icon|Executioner's Strike}}\n*{{skill icon|Flail}}\n*{{skill icon|Strength of Honor}}\n*{{skill icon|Resurrection Signet}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 127\n| piercing = 127\n| slashing = 127\n| cold = 107\n| earth = 107\n| fire = 107\n| lightning = 107\n}}"
+}

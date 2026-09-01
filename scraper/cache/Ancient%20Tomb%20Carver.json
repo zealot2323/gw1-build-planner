@@ -1,0 +1,7 @@
+{
+  "title": "Ancient Tomb Carver",
+  "pageid": 90233,
+  "revid": 2451958,
+  "timestamp": "2012-02-15T20:11:39Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Mummy\n| affiliation = Undead\n| profession = d\n|image = [[image:Awakened dervish.jpg|150px]]\n| level = 28 (30)\n| campaign = Eye of the North\n}}\n[[Ancient Tomb Carver]]s are [[dervish]]es found in [[Vloxen Excavations]].\n\n== Locations ==\n*[[Depths of Tyria]]\n**{{NPC location|Vloxen Excavations}}\n\n==Skills==\n*{{Skill icon|Enchanted Haste}}\n*{{Skill icon|Faithful Intervention}}\n*{{Skill icon|Mystic Sweep}}\n*{{Skill icon|Rending Aura}}\n*{{Skill icon|Victorious Sweep}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = d\n| blunt = 94\n| piercing = 94\n| slashing = 94\n| cold = 94\n| earth = 94\n| fire = 94\n| lightning = 94\n}}\n\n==Items dropped==\n*[[Dead Staff]]\n*[[Undead Bone]]\n\n==Notes==\n*Ancient Tomb Carvers automatically [[Resurrection|resurrect]] shortly after being killed."
+}

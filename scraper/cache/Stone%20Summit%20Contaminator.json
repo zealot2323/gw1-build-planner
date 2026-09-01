@@ -1,0 +1,7 @@
+{
+  "title": "Stone Summit Contaminator",
+  "pageid": 70317,
+  "revid": 2370059,
+  "timestamp": "2011-08-28T08:17:22Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Dwarf\n| image = [[Image:Stone Summit caster.jpg|150px]]\n| affiliation = Stone Summit\n| profession = n\n| profession2 = mo\n| level = 24 (26)\n| campaign = Eye of the North\n}}\n[[Stone Summit Contaminator]]s are support [[necromancer]]s that send [[condition]]s back to the caster.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Slavers' Exile}}\n**{{NPC location|Vloxen Excavations}} ([[Hard mode]] only)\n\n==Skills==\n15 [[Curses]] (20 Curses in Hard mode)\n*{{skill icon|Barbs}}\n*{{skill icon|Desecrate Enchantments}}\n*{{skill icon|Insidious Parasite}}\n*{{skill icon|Plague Signet}} ([[elite]]) \n*{{skill icon|Shadow of Fear}}\n*{{skill icon|Resurrection Signet}}\n*{{skill icon|Draw Conditions}}\n*{{skill icon|Pensive Guardian}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = n\n| blunt = 71\n| piercing = 71\n| slashing = 71\n| cold = 71\n| earth = 71\n| fire = 71\n| lightning = 71\n}}"
+}

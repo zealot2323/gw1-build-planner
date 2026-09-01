@@ -1,0 +1,7 @@
+{
+  "title": "Chilling Wisp",
+  "pageid": 63493,
+  "revid": 2581887,
+  "timestamp": "2015-01-27T09:12:52Z",
+  "wikitext": "{{NPC infobox\n| type = Elemental\n| image = [[File:Water Djinn.jpg|180px]]\n| profession = d\n| level = 24 (26)\n| affiliation = Far Shiverpeaks wildlife\n| campaign = Eye of the North\n}}__NOTOC__\n[[Chilling Wisp]]s are [[djinn]] mostly found near frozen lakes and snow, which they embody.\n\n==Locations==\n*[[Far Shiverpeaks]]\n**{{NPC location|Drakkar Lake}}\n**{{NPC location|Ice Cliff Chasms}}\n**{{NPC location|Jaga Moraine}}\n*[[Depths of Tyria]]\n**{{NPC location|Battledepths}}\n\n==Skills==\n*{{skill icon|Chilling Victory}}\n*{{skill icon|Grenth's Fingers}}\n*{{skill icon|Mystic Sweep}}\n*{{skill icon|Mystic Vigor}}\n*{{skill icon|Onslaught}} ([[elite]])\n\n==Armor ratings==\n{{NPC statistics\n| prof = d\n| blunt = 82\n| piercing = 82\n| slashing = 82\n| cold = 122\n| earth = 82\n| fire = 58\n| lightning = 82\n}}\n\n==Items dropped==\n*[[Pile of Elemental Dust]]\n\n==Notes==\n*The scythes they carry share the same skin as the [[Asuran Scythe]], [[dye]]d grey.\n\n[[Category:Djinn]]"
+}

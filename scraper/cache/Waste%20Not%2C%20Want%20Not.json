@@ -1,0 +1,7 @@
+{
+  "title": "Waste Not, Want Not",
+  "pageid": 51850,
+  "revid": 2672183,
+  "timestamp": "2021-04-25T13:34:04Z",
+  "wikitext": "{{Skill infobox\n| name = Waste Not, Want Not\n| id = 1995\n| campaign = Eye of the North\n| profession = Mesmer\n| attribute = Inspiration Magic\n| type = Spell\n| energy = 5\n| activation = {{1/4}}\n| recharge = 15\n| causes1 = Energy Gain\n| description = [[Spell]]. If [[target]] [[foe]] is not casting a [[spell]] or [[attacking]], you gain {{gr|8|13}} [[Energy]].\n| concise description = Spell. You gain {{gr|8|13}} Energy if target foe is not attacking or casting a spell.\n| target = foes\n}}\n\n{{Skill progression\n|attribute = [[Inspiration Magic]]\n|var1 name = [[Energy]] gain\n|var1 at0 = 8\n|var1 at15 = 13}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n\n== Trivia ==\n* The [[Mesmer]] in the [[skill icon]] is wearing [[Mesmer Vabbian armor|Vabbian armor]], and is probably the same person that appears on skill icons of [[Wandering Eye]] and [[Power Lock]].\n*The skill's name is an idiom meaning that if we do not waste what we have, we will still have it in the future and not lack (want) it."
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Inspirational Speech",
+  "pageid": 51837,
+  "revid": 2731340,
+  "timestamp": "2026-06-25T10:56:52Z",
+  "wikitext": "{{Skill infobox\n| id = 2207\n| name=Inspirational Speech\n| campaign=Eye of the North\n| profession=Paragon\n| attribute=Motivation\n| type=Skill\n| energy=5\n| recharge=10\n| target = other allies\n| causes1 = Adrenaline Gain\n| causes2 = Adrenaline Loss\n| description = [[Skill (skill type)|Skill]]. You lose all [[adrenaline]] and [[target]] other [[ally]] gains {{gr|1|8}} strikes of adrenaline.\n| concise description = Skill. Target ally gains {{gr|1|8}} strike[s] of adrenaline. {{gray|Cannot self-target. You lose all adrenaline.}}\n}}\n\n{{Skill progression\n|attribute = [[Motivation]]\n|var1 name = [[Adrenaline]] gain\n|var1 at0 = 1\n|var1 at15 = 8}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n*[[Sida]] ([[Gunnar's Hold]])\n*[[Ybbob]] ([[Rata Sum]])\n'''[[Hero skill trainer]]s'''\n*[[Gedrel of Ascalon]] (Eye of the North)\n*[[Kodan]] (Gunnar's Hold)\n*[[Tyr the Skaald]] (Gunnar's Hold)\n*[[Lexx]] (Rata Sum)\n\n==Notes==\n{{anomaly|Unlike most skills with zero [[activation time]], this skill cannot be activated in the middle of another [[action]] and has a slight [[aftercast delay]].}}\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Skills offered by hero skill trainers]]\n\n[[de:Inspirative Rede]]"
+}

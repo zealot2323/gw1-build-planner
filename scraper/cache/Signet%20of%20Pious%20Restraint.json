@@ -1,0 +1,7 @@
+{
+  "title": "Signet of Pious Restraint",
+  "pageid": 51906,
+  "revid": 2739042,
+  "timestamp": "2026-08-28T22:28:51Z",
+  "wikitext": "{{Skill infobox\n| id = 2014\n| name = Signet of Pious Restraint\n| campaign = Eye of the North\n| profession = Dervish\n| attribute = Wind Prayers\n| type = Signet\n| activation = 1\n| recharge = 10\n| target = foes \n| has-pvp = y\n| range = casting\n| aoe = in the area\n| causes1 = Crippled\n| causes2 = Decreased Recharge Time\n| removes1 = Enchantment\n| description = [[Signet]]. Remove 1 [[Dervish]] [[enchantment]]. [[Target]] [[foe]] is [[Crippled]] for {{gr|5|15}} seconds. If an enchantment was removed, all foes [[in the area]] of your target are also Crippled and this signet recharges 75% faster.\n| concise description = Signet. Inflicts Crippled condition ({{gr|5|15}} seconds). Remove 1 of your Dervish enchantments. Removal effect: also causes Cripple to foes in the area of your target and recharges 75% faster.\n}}\n\n{{Skill progression\n|attribute = [[Wind Prayers]]\n|var1 name = [[Crippled]] [[duration]]\n|var1 at0 = 5\n|var1 at15 = 15}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n*[[Sida]] ([[Gunnar's Hold]])\n*[[Ybbob]] ([[Rata Sum]])\n\n==Related skills==\n* {{Skill icon|Signet of Pious Light}}\n\n==Notes==\n* Can be combined with [[Pious Renewal]] to create a quickly recharging skill chain for [[Area of effect|AoE]] [[Snare (tactic)|snare]]s.\n\n== Trivia ==\n{{Skill change}}\n\n[[de:Siegel der frommen Zurückhaltung]]"
+}

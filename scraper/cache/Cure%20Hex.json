@@ -1,0 +1,7 @@
+{
+  "title": "Cure Hex",
+  "pageid": 51883,
+  "revid": 2731296,
+  "timestamp": "2026-06-25T08:42:42Z",
+  "wikitext": "{{Skill infobox\n| name = Cure Hex\n| id = 2003\n| campaign = Eye of the North\n| profession = Monk\n| attribute = Healing Prayers\n| type = Spell\n| energy = 5\n| activation = 1\n| recharge = 12\n| target = allies\n| causes1 = Healing\n| description = [[Spell]]. Remove one [[Hex]] from [[target]] [[ally]]. If a Hex was removed, that ally is [[heal]]ed for {{gr|30|100}} [[Health]].\n| concise description = Spell. Removes a Hex. Removal effect: Heals for {{gr|30|100}}.\n| removes1 = Hex spell\n}}\n\n{{Skill progression\n|attribute = [[Healing Prayers]]\n|var1 name = [[Heal]]ing\n|var1 at0 = 30\n|var1 at15 = 100}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n\n== Notes ==\n* The healing occurs after hex removal, so the healing amount is not affected when this skill is used to remove a hex that [[Heal#Modifiers that affect the healed|decreases healing]]."
+}

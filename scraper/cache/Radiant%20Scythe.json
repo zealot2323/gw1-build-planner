@@ -1,0 +1,7 @@
+{
+  "title": "Radiant Scythe",
+  "pageid": 51916,
+  "revid": 2645542,
+  "timestamp": "2019-11-09T13:21:34Z",
+  "wikitext": "{{Skill infobox\n| id = 2012\n| name=Radiant Scythe\n| campaign=Eye of the North\n| profession=Dervish\n| attribute=Scythe Mastery\n| type=Scythe Attack\n| adrenaline = 6\n| causes1 = Energy Gain\n| description = [[Scythe Attack]]. This attack strikes for +1 [[damage]] for each point of [[Energy]] you currently have, maximum {{gr|5|30}}. You gain {{gr|1|7}} Energy if this attack hits.\n| concise description = Scythe Attack. Deals +1 damage (maximum {{gr|5|30}}) for each point of Energy you have. Gain {{gr|1|7}} Energy.\n}}\n\n{{Skill progression\n|attribute = [[Scythe Mastery]]\n|var1 name = Maximum +[[damage]]\n|var1 at0 = 5\n|var1 at15 = 30\n|var2 name = [[Energy]] gain\n|var2 at0 = 1\n|var2 at15= 7\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n*[[Sida]] ([[Gunnar's Hold]])\n*[[Ybbob]] ([[Rata Sum]])\n'''[[Hero skill trainer]]s'''\n*[[Gedrel of Ascalon]] (Eye of the North)\n*[[Kodan]] (Gunnar's Hold)\n*[[Tyr the Skaald]] (Gunnar's Hold)\n*[[Lexx]] (Rata Sum)\n\n== Related skills ==\n*{{skill icon|Energy Blast}}\n\n== Notes ==\n\n{{bug|Despite the phrasing of the full description, the energy gain occurs even if the attack fails to hit (as correctly noted in the concise description).}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

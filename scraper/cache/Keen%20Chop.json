@@ -1,0 +1,7 @@
+{
+  "title": "Keen Chop",
+  "pageid": 51898,
+  "revid": 2686563,
+  "timestamp": "2023-05-02T16:36:10Z",
+  "wikitext": "{{Skill infobox\n| name=Keen Chop\n| id = 2009\n| campaign=Eye of the North\n| profession=Warrior\n| attribute=Axe Mastery\n| type=Axe Attack\n| adrenaline = 3\n| causes1 = Critical Hit\n| description = [[Axe Attack]]. If it hits, this attack always results in a [[critical hit]].\n| concise description = Axe Attack. Always a critical hit.\n}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n*[[Sida]] ([[Gunnar's Hold]])\n*[[Ybbob]] ([[Rata Sum]])\n\n==Hero Usage==\n* Heroes will use this skill whenever it is charged, but with lower priority than skills with greater/additional effect(s).\n\n==Notes==\n*This attack exactly requires 60 units of adrenaline to be fully charged, so 2 strikes and 10 units.\n\n==Related skills==\n*{{skill icon|Wild Blow}}\n\n==Trivia==\n*The warrior displayed on the [[skill icon]] is wearing [[warrior Tyrian armor|Tyrian armor]].\n\n[[Category:Hero-vetted skills]]\n[[Category:Essentially unlinked skills]]"
+}

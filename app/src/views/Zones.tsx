@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import {
   armorProfile,
-  explorablesFrom,
+  zonesFrom,
   monstersInLocation,
   skillsAtLocation,
   zoneSummary,
@@ -14,6 +14,10 @@ import { SkillDetails } from "../components/SkillDetails";
 import { ProfessionIcon } from "../components/ProfessionIcon";
 import { wikiHref } from "../wiki";
 import type { CharacterSave } from "../save";
+
+/** Places you can walk into and fight things: instanced areas and missions. */
+const hasBestiary = (kind: string) =>
+  kind === "explorable" || kind === "mission" || kind === "dungeon";
 
 function WikiLink({ page }: { page: string }) {
   return (
@@ -447,11 +451,11 @@ export function ZonesView({
     const nested = new Set<string>();
     const nestedMissions = new Set<string>();
     for (const l of dataset.locations) {
-      if (l.kind === "explorable" || !inScope(l)) continue;
-      const zones: Array<{ name: string; kind: string }> = explorablesFrom(l.wikiPage, index)
+      if (hasBestiary(l.kind) || !inScope(l)) continue;
+      const zones: Array<{ name: string; kind: string }> = zonesFrom(l.wikiPage, index)
         .filter((z) => inScope(index.locationByPage.get(z) ?? {}))
         .sort()
-        .map((name) => ({ name, kind: "explorable" }));
+        .map((name) => ({ name, kind: index.locationByPage.get(name)?.kind ?? "explorable" }));
       for (const z of zones) nested.add(z.name);
       const mission = missionByOutpost.get(l.wikiPage);
       if (mission && (campaign !== "Prophecies" || searing === "post")) {
@@ -462,8 +466,8 @@ export function ZonesView({
     }
     // explorables that hang off no outpost still need a home
     for (const l of dataset.locations) {
-      if (l.kind !== "explorable" || nested.has(l.wikiPage) || !inScope(l)) continue;
-      bucket(l.region ?? "").other.push({ name: l.wikiPage, kind: "explorable" });
+      if (!hasBestiary(l.kind) || nested.has(l.wikiPage) || !inScope(l)) continue;
+      bucket(l.region ?? "").other.push({ name: l.wikiPage, kind: l.kind });
     }
     // missions are all post-Searing; any not nested under an outpost above
     // still need a home in their region
@@ -497,9 +501,8 @@ export function ZonesView({
   const selectedKind = selected
     ? (index.locationByPage.get(selected)?.kind ?? "mission")
     : null;
-  const isOutpost = selectedKind !== null && selectedKind !== "explorable" && selectedKind !== "mission";
+  const isOutpost = selectedKind !== null && !hasBestiary(selectedKind);
   const monsters = selected && !isOutpost ? monstersInLocation(selected, index, hardMode) : [];
-  const hasBestiary = (kind: string) => kind === "explorable" || kind === "mission";
 
   const zoneButton = (name: string, kind: string) => (
     <li key={name} className="zone-row">

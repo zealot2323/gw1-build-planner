@@ -1,0 +1,7 @@
+{
+  "title": "Fleshreaver Harrower",
+  "pageid": 68940,
+  "revid": 2202707,
+  "timestamp": "2010-12-18T16:04:01Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Fleshreaver\n| profession = Rt\n| level = 20 (26)  \n| campaign = Eye of the North\n}}\n[[Fleshreaver Harrower]]s are [[ritualist]]s that serve mostly as light damage and [[healing]] support for Fleshreavers. Beware of their Spirit Rift in [[Hard mode]], as it can do massive damage to clustered parties.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Heart of the Shiverpeaks}}\n**{{NPC location|Rragar's Menagerie}}\n\n==Skills==\n15 [[Channeling Magic]], 14 [[Restoration Magic]] (20 Channeling Magic, 20 Restoration Magic in hard mode)\n*{{skill icon|Destruction}}\n*{{skill icon|Spirit Burn}}\n*{{skill icon|Spirit Rift}}\n*{{skill icon|Sundering Weapon}}\n*{{skill icon|Vengeful Weapon}}\n*{{skill icon|Weapon of Remedy}} ([[elite]])\n*{{monster skill icon|Fleshreaver's Escape}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = rt\n| blunt = 60\n| piercing = 60\n| slashing = 60\n| cold = 60\n| earth = 60\n| fire = 60\n| lightning = 60\n}}\n\n==Items dropped==\n*[[Fleshreaver Morsel]]"
+}

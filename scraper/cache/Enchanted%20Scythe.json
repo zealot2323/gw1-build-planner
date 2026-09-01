@@ -1,0 +1,7 @@
+{
+  "title": "Enchanted Scythe",
+  "pageid": 82088,
+  "revid": 2553325,
+  "timestamp": "2013-08-30T06:48:39Z",
+  "wikitext": "{{NPC infobox\n| affiliation = Depths of Tyria wildlife\n| type = Enchanted weapon\n| profession = d\n| level = 20, 24 (26)\n| campaign = Eye of the North\n}}__NOTOC__\n[[Enchanted Scythe]]s are foes found in dungeons that resemble floating scythes.\n\n==Locations== \n*[[Depths of Tyria]]\n**{{NPC location|Bloodstone Caves}}, all levels (level 24)\n**{{NPC location|Slavers' Exile}}, Forgewight's level (level 24)\n\n==Missions==\n*Depths of Tyria\n**{{NPC location|Finding the Bloodstone}}, level 3 (level 20)\n\n==Skills==\n0 [[Mysticism]]\n*{{skill icon|Banishing Strike}}\n*{{skill icon|Enchanted Haste}}\n*{{skill icon|Wounding Strike}} ([[elite]])\n\n==Armor ratings==\n{{NPC statistics\n| prof = d\n| blunt = 120\n| piercing = 120\n| slashing = 120\n| cold = 120\n| earth = 120\n| fire = 120\n| lightning = 120\n}}\n\n==Trivia==\n*Has the appearance of [[Bonecage Scythe]]s."
+}

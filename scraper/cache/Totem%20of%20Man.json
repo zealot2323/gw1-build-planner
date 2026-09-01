@@ -1,0 +1,7 @@
+{
+  "title": "Totem of Man",
+  "pageid": 63158,
+  "revid": 2684373,
+  "timestamp": "2023-02-27T15:42:51Z",
+  "wikitext": "{{Skill infobox\n| name = Totem of Man\n| campaign = Eye of the North\n| attribute = Norn rank\n| type = Skill\n| special = Norn Blessing\n| recharge = 30\n| pve-only = y\n| description = [[Skill (skill type)|Skill]]. You lose all [[Energy]]. Your aspect returns to normal.\n| concise description = Skill. Returns your aspect and skills to normal. {{gray|You lose all Energy.}}\n}}\n\n==Acquisition==\nTemporarily, as one of the five skills available while under the effect of [[Volfen Blessing]], [[Ursan Blessing]], or [[Raven Blessing]].\n\n==Notes==\n*There is an alternate version of this skill available while using the temporary versions of [[Volfen Blessing (Curse of the Nornbear)|Volfen Blessing]] and [[Raven Blessing (A Gate Too Far)|Raven Blessing]], as well as [[Ursan Aura]]. While functionally identical, the alternate version is not listed as being tied to Norn rank.\n*This skill starts recharging when it appears on your skillbar after activating [[Raven Blessing]], [[Ursan Blessing]] or [[Volfen Blessing]].\n \n{{anomaly|This skill states that you lose all energy when you use it, but in fact you do not lose any energy.}}\n\n[[de:Totem des Menschen]]"
+}

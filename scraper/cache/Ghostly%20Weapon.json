@@ -1,0 +1,7 @@
+{
+  "title": "Ghostly Weapon",
+  "pageid": 51855,
+  "revid": 2726422,
+  "timestamp": "2026-04-28T18:09:06Z",
+  "wikitext": "{{Skill infobox\n| name = Ghostly Weapon\n| id = 2206\n| campaign = Eye of the North\n| profession = Ritualist\n| attribute = Communing\n| type = Weapon Spell\n| energy = 3\n| activation = {{1/4}}\n| recharge = 1\n| causes1 = Unblockable\n| description = [[Weapon Spell]]. For {{gr|5|20}} seconds, [[target]] other [[ally]]'s next [[attack]] cannot be [[block]]ed.\n| concise description = Weapon Spell. ({{gr|5|20}} seconds.) Target ally's next attack is unblockable. {{gray|Cannot self-target.}}\n| target = other allies\n}}\n\n{{Skill progression\n|attribute = [[Communing]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n'''[[Hero skill trainer]]s'''\n* [[Gedrel of Ascalon]] (Eye of the North)\n* [[Kodan]] (Gunnar's Hold)\n* [[Tyr the Skaald]] (Gunnar's Hold)\n* [[Lexx]] (Rata Sum)\n\n== Related skills ==\n* {{skill icon|Guided Weapon}}\n\n== Notes ==\n* Provided that you use this skill on attacking allies, it is unnecessary to put [[attribute point]]s in your Communing rank specifically for this skill, since it will end as soon as the targeted ally has attacked.\n\n[[Category:Skills offered by hero skill trainers]]"
+}

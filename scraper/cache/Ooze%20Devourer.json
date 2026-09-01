@@ -1,0 +1,7 @@
+{
+  "title": "Ooze Devourer",
+  "pageid": 70572,
+  "revid": 2527715,
+  "timestamp": "2012-12-29T08:54:34Z",
+  "wikitext": "{{NPC infobox\n| type = Jelly\n| affiliation = Depths of Tyria wildlife\n| image = [[Image:Earthbound Ooze.jpg|150px]]\n| level = 20 (26)\n| campaign = Eye of the North\n}}__NOTOC__\n[[Ooze Devourer]] are a sort of ooze that exploits corpses to create three [[Volatile Ooze]]s.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Heart of the Shiverpeaks}} (level 1)\n**{{NPC location|Ooze Pit}}\n**{{NPC location|Vloxen Excavations}} (level 1)\n\n==Skills==\n*{{monster skill icon|Gelatinous Corpse Consumption}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = n\n| blunt = 60\n| piercing = 60\n| slashing = 60\n| cold = 60\n| earth = 60\n| fire = 60\n| lightning = 60\n}}"
+}

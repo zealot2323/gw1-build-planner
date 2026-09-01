@@ -49,6 +49,15 @@ export interface ParsedSkill {
     quests: string[];
     captureBosses: string[];
     conditionalCaptureBosses?: string[];
+    /**
+     * NPCs who teach a skill in exchange for standing in a title track
+     * (allegiance, Sunspear, Lightbringer) rather than gold. Kept separate
+     * because the gate is a rank, not a place.
+     */
+    titleNpcs?: string[];
+    titleLocations?: Record<string, string | null>;
+    /** The rank requirement, quoted from the page's Notes. */
+    titleRequirement?: string;
     /** Where each quest is given (second link on the acquisition line). */
     questLocations?: Record<string, string | null>;
     /** Where each capture boss spawns (second link on the acquisition line). */
@@ -73,7 +82,7 @@ function parseAcquisition(
   // Elite pages sometimes skip the '''[[Signet of Capture]]''' header and
   // start straight with campaign bullets — capture is the only way to get
   // most elites, so that's the default group for them.
-  let group: "trainers" | "quests" | "captureBosses" | null = isElite ? "captureBosses" : null;
+  let group: "trainers" | "quests" | "captureBosses" | "titleNpcs" | null = isElite ? "captureBosses" : null;
   // Sources from every campaign are kept: which ones a character can
   // actually use is decided later by whether the location is reachable,
   // and a Factions trainer simply never appears in a Tyrian's unlocked set.
@@ -85,13 +94,25 @@ function parseAcquisition(
   const captureLocations: Record<string, string | null> = {};
   const questLocations: Record<string, string | null> = {};
   const sourceCampaigns: Record<string, string> = {};
+  const titleNpcs: string[] = [];
+  const titleLocations: Record<string, string | null> = {};
   const push = (line: string): void => {
     if (!group || /hard mode/i.test(line)) return; // normal mode only
     const targets = linkTargets(line);
     const target = targets[0];
     if (!target) return;
     if (campaign) sourceCampaigns[target] = campaign;
-    if (group === "quests") questLocations[target] = targets[1] ?? null;
+    if (group === "quests") {
+      // "(from [[NPC]] in [[Location]])" — Eye of the North names the quest
+      // giver first, so the location is the third link, not the second.
+      const inPlace = line.match(/\bin \[\[([^\]|#]+)/);
+      questLocations[target] = inPlace ? inPlace[1].trim() : (targets[1] ?? null);
+    }
+    if (group === "titleNpcs") {
+      if (!titleNpcs.includes(target)) titleNpcs.push(target);
+      titleLocations[target] = targets[1] ?? null;
+      return;
+    }
     if (group === "captureBosses") {
       captureLocations[target] = targets[1] ?? null;
       // Bosses that only spawn during a quest/event don't appear in base
@@ -105,12 +126,16 @@ function parseAcquisition(
   };
 
   for (const line of body.split("\n")) {
-    const bold = line.match(/'''(.*?)'''/);
+    // Group headers come in two flavours: bold ('''[[Skill trainer]]s''')
+    // and the definition-list form (;[[Skill trainer]]s). 22 pages use the
+    // latter and were losing every source before it was recognised.
+    const bold = line.match(/'''(.*?)'''/) ?? line.match(/^;\s*(.+)$/);
     if (bold) {
       const label = stripMarkup(bold[1]).toLowerCase();
       if (label.includes("trainer")) group = "trainers";
       else if (label.includes("quest")) group = "quests";
-      else if (label.includes("signet of capture")) group = "captureBosses";
+      // "Signet of Capture", "Skill Capture", "Capture" all appear
+      else if (label.includes("capture")) group = "captureBosses";
       else group = null; // profession changers, unlock-only, ...
       campaign = null;
       continue;
@@ -119,9 +144,14 @@ function parseAcquisition(
       if (isCampaignLine(line)) {
         campaign = stripMarkup(line).replace(/^\*+\s*/, "").replace(/^guild wars /i, "").trim();
       } else if (/\[\[.*\(/.test(line)) {
-        // "* [[Boss]] ([[Location]])" — entry with no campaign bullets at
-        // all; such flat lists are Prophecies-only in practice.
+        // "* [[X]] ([[Location]])" with no group header at all. For a
+        // non-elite that is a faction/title NPC (Signet of Corruption is
+        // sold by the Kurzick Bureaucrat for allegiance rank, not gold);
+        // for an elite it is a bare capture list.
+        const wasNull = group === null;
+        if (wasNull) group = "titleNpcs";
         push(line);
+        if (wasNull) group = null;
       }
       continue;
     }
@@ -131,6 +161,10 @@ function parseAcquisition(
   if (Object.keys(questLocations).length > 0) out.questLocations = questLocations;
   if (Object.keys(captureLocations).length > 0) out.captureLocations = captureLocations;
   if (Object.keys(sourceCampaigns).length > 0) out.sourceCampaigns = sourceCampaigns;
+  if (titleNpcs.length > 0) {
+    out.titleNpcs = titleNpcs;
+    out.titleLocations = titleLocations;
+  }
   return { acquisition: out };
 }
 
@@ -156,6 +190,17 @@ export function parseSkill(title: string, wikitext: string): Parsed<ParsedSkill>
     ? parseAcquisition(acqBodies.join("\n"), box?.["elite"] === "y")
     : { acquisition: { trainers: [], quests: [], captureBosses: [] } };
   if (acqBodies.length === 0) issues.push("no Acquisition section");
+
+  // The rank gate is stated in prose, not a field: "After reaching the first
+  // allegiance rank, level 20 characters may learn this skill from ...".
+  if (acquisition.titleNpcs) {
+    const note = sections(wikitext)
+      .filter((sec) => /^notes$/i.test(sec.title))
+      .flatMap((sec) => sec.body.split("\n"))
+      .map(stripMarkup)
+      .find((line) => /\brank\b|\btitle\b|allegiance/i.test(line));
+    if (note) acquisition.titleRequirement = note.replace(/^\*+\s*/, "").trim();
+  }
 
   return {
     entity: {

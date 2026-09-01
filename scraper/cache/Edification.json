@@ -1,0 +1,7 @@
+{
+  "title": "Edification",
+  "pageid": 66460,
+  "revid": 2676614,
+  "timestamp": "2022-01-03T17:24:02Z",
+  "wikitext": "{{skill infobox\n| id = 2372\n| name = Edification\n| campaign = Eye of the North\n| attribute = Asura rank\n| type = Title\n| description = [[Title (skill type)|Title]]. You have +{{gr2|5|15}} maximum [[Energy]] in Asura territory.\n| concise description = Title. You have +{{gr2|5|15}} maximum Energy in Asura territory.\n}}\n{{Skill progression max10\n|title track = Asura rank\n|var1 name = + Maximum energy\n|var1 at0  = 5\n|var1 at10 = 15\n}}\n\n==Acquisition==\n*Talk to [[Lexx]] [Asuran Talent Scout] in [[Rata Sum]] after attaining the first rank of the [[Asura rank|Asura title track]].\n\n== Notes ==\n* This cannot be equipped on the [[skill bar]]. While a [[character]] displays the Asura title, this effect is applied to that character and all of their [[hero]]es.\n* ''Asura territory'' includes all towns, outposts, and explorable areas in the [[Tarnished Coast]], as well as [[Gadd's Encampment]] and [[Sparkfly Swamp]].\n** Edification also provides extra energy during all [[Finding the Bloodstone]] and [[The Elusive Golemancer]] instances.\n* Hero energy remains the same in outposts whether the title is switched on or off."
+}

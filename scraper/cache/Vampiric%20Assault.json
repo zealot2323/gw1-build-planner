@@ -1,0 +1,7 @@
+{
+  "title": "Vampiric Assault",
+  "pageid": 51822,
+  "revid": 2646578,
+  "timestamp": "2019-12-23T23:49:10Z",
+  "wikitext": "{{Skill infobox\n| name = Vampiric Assault\n| id = 1986\n| campaign = Eye of the North\n| profession = Assassin\n| attribute = Deadly Arts\n| type = Dual Attack\n| energy = 5\n| recharge = 8\n| causes1 = Life Stealing\n| description = [[Dual Attack]]. Must follow an [[off-hand attack]]. If this attack hits, you [[life stealing|steal]] {{gr|10|40}} [[Health]].\n| concise description = Dual Attack. Steals {{gr|10|40}} Health if this attack hits. {{gray|Must follow an off-hand attack.}}\n| requires = offhand\n| checks = hit\n| checks-true = lifesteal\n}}\n\n{{Skill progression\n|attribute = [[Deadly Arts]]\n|var1 name = [[Life stealing]]\n|var1 at0 = 10\n|var1 at15 = 40}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n\n== Notes ==\n* This is the only Assassin skill that steals health.\n* Can be used with [[Nightmare Weapon]] to cause a large life stealing [[spike]] on your [[target]]."
+}

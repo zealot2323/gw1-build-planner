@@ -1,0 +1,7 @@
+{
+  "title": "Slippery Ground",
+  "pageid": 51878,
+  "revid": 2720215,
+  "timestamp": "2026-02-05T23:33:30Z",
+  "wikitext": "{{Skill infobox\n| name = Slippery Ground\n| id = 2191\n| campaign = Eye of the North\n| profession = Elementalist\n| attribute = Water Magic\n| type = Spell\n| energy = 5\n| activation = 1\n| recharge = 10\n| causes1 = Knockdown\n| description = [[Spell]]. If [[target]] or [[adjacent]] [[foes]] are [[Blind]] or [[Movement|moving]], these foes are [[Knock down|knocked down]]. There is a 50% chance of [[fail]]ure with Water Magic less than 5.\n| concise description = Spell. Causes knock-down if this foe is Blind or moving. Affects foes adjacent to your target. {{gray|50% failure chance unless Water Magic greater than 4.}}\n| aoe = adjacent\n| target = foes\n| has-pvp = y\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n\n== Related skills ==\n* {{skill icon|\"Coward!\"}} ([[elite]])\n* {{skill icon|Bull's Strike}}\n* {{skill icon|Water Trident}} (elite)\n\n== Trivia ==\n* The [[functionality]] of this skill has changed since its introduction; see its [[Slippery Ground/Skill history|skill history]] for details.\n\n[[Category:Skills with a failure rate linked to an attribute]]\n\n[[de:Rutschiger Boden]]"
+}

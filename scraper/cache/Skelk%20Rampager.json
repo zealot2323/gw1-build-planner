@@ -1,0 +1,7 @@
+{
+  "title": "Skelk Rampager",
+  "pageid": 73371,
+  "revid": 2266967,
+  "timestamp": "2011-03-20T03:23:21Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| species = Skelk\n| profession = w\n| level = 24 (26)\n| campaign = Eye of the North\n}}\n[[Skelk Rampager]]s are [[dungeon]]-dwelling [[skelk]].\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Heart of the Shiverpeaks}}\n**{{NPC location|Oola's Lab}}\n**{{NPC location|Vloxen Excavations}}\n\n==Missions==\n*Depths of Tyria\n**{{NPC location|Finding the Bloodstone}}\n\n==Skills==\n15 [[Strength]]\n*{{skill icon|Bull's Charge}} ([[elite]])\n*{{skill icon|Bull's Strike}}\n*{{skill icon|Flail}}\n*{{skill icon|Power Attack}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 131\n| piercing = 131\n| slashing = 131\n| cold = 91\n| earth = 91\n| fire = 91\n| lightning = 91\n}}\n\n==Items dropped==\n*[[Skelk Fang]]"
+}

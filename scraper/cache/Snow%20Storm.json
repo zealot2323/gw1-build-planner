@@ -1,0 +1,7 @@
+{
+  "title": "Snow Storm",
+  "pageid": 65949,
+  "revid": 2733887,
+  "timestamp": "2026-07-12T04:15:12Z",
+  "wikitext": "{{Skill infobox\n| id = 2222\n| name = Snow Storm\n| campaign = Eye of the North\n| attribute = Deldrimor rank\n| type = Spell\n| energy = 10\n| activation = 1\n| recharge = 10\n| pve-only = y\n| range = Casting\n| aoe =  adjacent\n| causes1 = Cold Damage\n| description = [[Spell]]. Create a Snow Storm at [[target]] [[foe]]'s location. For 5 seconds, foes [[adjacent]] to that location are struck for {{gr2|30|40}} [[cold damage]] each second. \n| concise description = Spell. Deals {{gr2|30|40}} cold damage each second (5 seconds). Hits foes adjacent to target foe's initial location.\n}}\n\n{{Skill progression max10\n|title track = [[Deldrimor rank]]\n|var1 name = Cold damage\n|var1 at0  = 30\n|var1 at10 = 40\n}}\n\n==Acquisition==\n'''[[Skill quest]]s'''\n*[[The Big Unfriendly Jotun]] (from [[Undrath Blastrock]] in [[Sifhalla]])\n\n==Related skills==\n* {{skill icon|Bed of Coals}}\n* {{skill icon|Breath of Fire}}\n* {{skill icon|Fire Storm}}\n* {{skill icon|Maelstrom}}\n* {{skill icon|Searing Heat}}"
+}

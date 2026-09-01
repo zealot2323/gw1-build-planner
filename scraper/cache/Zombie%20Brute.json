@@ -1,0 +1,7 @@
+{
+  "title": "Zombie Brute",
+  "pageid": 72691,
+  "revid": 2455313,
+  "timestamp": "2012-02-23T00:30:04Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Zombie warrior.jpg|150px]]\n| type = Zombie\n| affiliation = Undead\n| profession = w\n| level = 24 (26)\n| campaign = Eye of the North\n}}\n'''{{PAGENAME}}'''s are large, [[hammer]]-wielding [[undead]] [[warrior]]s.\n\n==Locations==\n* [[Depths of Tyria]]\n** {{NPC location|Heart of the Shiverpeaks}}\n** {{NPC location|Shards of Orr}}\n** {{NPC location|Slavers' Exile}} ([[Selvetarm]]'s dungeon)\n\n==Skills==\n14..16 [[Strength]]\n*{{Skill icon|Berserker Stance}}\n*{{Skill icon|Forceful Blow}} ([[elite]])\n*{{Skill icon|Heavy Blow}}\n*{{Skill icon|Overbearing Smash}} ([[Hard mode]] only)\n*{{Skill icon|Staggering Blow}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 111\n| piercing = 111\n| slashing = 111\n| cold = 91\n| earth = 91\n| fire = 91\n| lightning = 91\n}}\n\n==Items dropped==\n*[[Executioner's Breastplate]]\n*[[Undead Bone]]\n\n==Notes==\n*Like most undead, they take double damage from [[holy damage]]. \n*Like most zombies, they are fleshy creatures and leave corpses, and thus also vulnerable to [[bleeding]], [[poison]], and [[disease]].\n\n[[Category:Zombies]]"
+}

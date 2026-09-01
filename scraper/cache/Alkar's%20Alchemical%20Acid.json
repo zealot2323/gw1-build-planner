@@ -1,0 +1,7 @@
+{
+  "title": "Alkar's Alchemical Acid",
+  "pageid": 63802,
+  "revid": 2679312,
+  "timestamp": "2022-07-27T00:10:44Z",
+  "wikitext": "{{Skill infobox\n| id = 2211\n| name = Alkar's Alchemical Acid\n| campaign = Eye of the North\n| attribute = Deldrimor rank\n| type = Spell\n| energy = 10\n| recharge = 10\n| activation = 1\n| pve-only = y\n| target = foes\n| range = Casting\n| aoe =  adjacent\n| causes1 = Cracked Armor\n| description = [[Spell]]. Throw [[High Priest Alkar|Alkar]]'s Alchemical Acid at [[target]] [[foe]]. Target and [[adjacent]] foes are struck for {{gr2|40|50}} [[damage]]. [[Destroyer]]s take an additional {{gr2|45|70}} damage and they have [[Cracked Armor]] for {{gr2|14|20}} seconds.\n| concise description = Spell. [[Projectile]]: deals {{gr2|40|50}} damage to target and adjacent foes. Deals {{gr2|45|70}} more [[damage]] and inflicts Cracked Armor condition ({{gr2|14|20}} seconds) to Destroyers.\n}}\n\n{{Skill progression max10\n|title track = [[Deldrimor rank]]\n|var1 name = [[Damage]]\n|var1 at0  = 40\n|var1 at10 = 50\n|var2 name = Additional damage\n|var2 at0  = 45\n|var2 at10 = 70\n|var3 name = [[Cracked Armor]] [[duration]]\n|var3 at0  = 14\n|var3 at10 = 20\n}}\n\n==Acquisition==\n'''[[Skill quest]]s'''\n*[[The Destroyer Challenge]] (from [[High Priest Alkar]] in [[Battledepths]] or [[Central Transfer Chamber]])\n\n==Notes==\n*Useful in [[A Time for Heroes]] and [[Glint's Challenge]], as all foes are Destroyers.\n\n\n\n[[Category:Projectile spells]]"
+}

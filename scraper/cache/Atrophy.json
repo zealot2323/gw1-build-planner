@@ -1,0 +1,7 @@
+{
+  "title": "Atrophy",
+  "pageid": 51866,
+  "revid": 2680282,
+  "timestamp": "2022-08-17T17:51:35Z",
+  "wikitext": "{{Skill infobox\n| name = Atrophy\n| id = 2237\n| campaign = Eye of the North\n| profession = Necromancer\n| attribute = Curses\n| type = Hex Spell\n| energy = 10\n| activation = 1\n| recharge = 20\n| causes1 = Decreased Attribute\n| description = [[Hex Spell]]. For {{gr|3|7}} seconds, [[target]] [[foe]]'s [[primary attribute]] is reduced to 0.\n| concise description = Hex Spell. ({{gr|3|7}} seconds.) Reduces this foe's primary attribute to 0.}}\n\n{{Skill progression\n|attribute = [[Curses]]\n|var1 name = [[Duration]]\n|var1 at0 = 3\n|var1 at15 = 7}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n\n== Related skills ==\n* {{skill icon|Wail of Doom}} ([[elite]])\n\n== Trivia ==\n* [[w:Atrophy|Atrophy]] is the wasting away of a part of a body."
+}

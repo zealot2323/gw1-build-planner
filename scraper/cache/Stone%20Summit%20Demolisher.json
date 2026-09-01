@@ -1,0 +1,7 @@
+{
+  "title": "Stone Summit Demolisher",
+  "pageid": 70326,
+  "revid": 2411135,
+  "timestamp": "2011-11-18T08:07:11Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Stone Summit warrior.jpg|150px]]\n| type = Dwarf\n| affiliation = Stone Summit\n| profession = w\n| profession2 = e\n| level = 24 (26)\n| campaign = Eye of the North\n}} \n[[Stone Summit Demolisher]]s take advantage of [[knock down]] skills against their foes.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Slavers' Exile}}\n**{{NPC location|Vloxen Excavations}} ([[Hard mode]] only)\n\n==Skills==\n*{{Skill icon|Backbreaker}} ([[elite]]) \n*{{Skill icon|Bull's Strike}}\n*{{Skill icon|Counter Blow}}\n*{{Skill icon|Crushing Blow}}\n*{{Skill icon|Irresistible Blow}}\n*{{Skill icon|Tiger Stance}}\n*{{Skill icon|Aftershock}}\n*{{Skill icon|Resurrection Signet}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 111\n| piercing = 111\n| slashing = 111\n| cold = 91\n| earth = 91\n| fire = 91\n| lightning = 91\n}}"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Krait Arcanoss",
+  "pageid": 72316,
+  "revid": 1970028,
+  "timestamp": "2010-04-04T23:24:00Z",
+  "wikitext": "__NOTOC__\n{{NPC infobox\n| type = Krait\n| affiliation =  Tarnished Coast wildlife\n| profession = e\n| level = 20,21,22,23 (26)\n| campaign = Eye of the North\n}}\nThe [[Krait Arcanoss]] is a [[Krait]] [[Elementalist]] specializing in [[Air Magic]], found in the [[Tarnished Coast]].\n\n== Locations ==\n* [[Tarnished Coast]]\n** {{NPC location|Arbor Bay}}\n** {{NPC location|Magus Stones}}\n\n== Skills ==\n20 [[Air Magic]] (20 Air Magic in [[Hard mode|Hard Mode]])\n* {{skill icon|Air Attunement}}\n* {{skill icon|Blinding Surge}} ([[elite]])\n* {{skill icon|Chain Lightning}}\n* {{skill icon|Glyph of Restoration}}\n* {{skill icon|Lightning Orb}}\n* {{skill icon|Shell Shock}}\n\n==Armor ratings==\n{{NPC statistics\n| level = 20\n| prof = e\n| blunt = 60\n| piercing = 60\n| slashing = 60\n| cold = 60\n| earth = 60\n| fire = 60\n| lightning = 60\n}}\n\n==Items dropped==\n*[[Krait Skin]]"
+}

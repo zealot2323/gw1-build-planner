@@ -48,10 +48,12 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
   explorable adjacent to one. ⚠ Same adjacency simplification — flag in code comments.
 
 ### Scope limits
-- **Prophecies, Factions and Nightfall.** Eye of the North is not pulled in
-  yet: it is an expansion rather than a campaign (no numbered missions —
-  dungeons instead, PvE-only skills, no characters of its own), so it needs
-  its own handling.
+- **All four releases**: Prophecies, Factions, Nightfall, Eye of the North.
+  EotN is an **expansion**, not a campaign: nobody starts there, so it never
+  appears as a home campaign — only as one a character owns. Its instanced
+  content is 18 **dungeons** rather than missions, and they carry a Location
+  infobox (region, exits, foes), so they parse as locations with
+  `kind: "dungeon"` rather than through the mission parser.
 - **Campaigns are separate continents.** A character has a home campaign and
   a set of owned campaigns; `scopedDataset` narrows the whole dataset before
   indexing, so availability, travel distance, proximity and zone browsing are
@@ -77,6 +79,20 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
     campaign ships skills for professions it did not introduce (Nightfall
     adds Assassin and Ritualist skills).
   - Factions numbers its Kurzick/Luxon mission branches "9a."/"9b.".
+  - **Acquisition group headers come in two forms**: bold
+    ('''[[Skill trainer]]s''') and definition-list (;[[Skill trainer]]s).
+    22 pages use the latter and lost every source until it was handled. The
+    capture header is variously "Signet of Capture" or "Skill Capture".
+  - EotN's PvE-only skills have **no profession at all**, so the profession
+    walk cannot see them; they come from the four rank categories (Asura,
+    Deldrimor, Ebon Vanguard, Norn) that the wiki's own list page queries.
+  - Quest lines read "(from [[NPC]] in [[Location]])" in EotN — the location
+    is the third link, not the second.
+  - Pages without an in-game skill id are not skills ("Norn rank",
+    "Rebel Yell"); they are dropped.
+  - Skill-count guards are per-campaign totals, not a ratio against the raw
+    category: only ~43% of EotN's category is learnable (the rest is dungeon
+    effects, Norn brawling moves and quest siege skills).
 - Everything comes from https://wiki.guildwars.com via its **MediaWiki API**
   (`https://wiki.guildwars.com/api.php`).
 - **Never scrape rendered HTML.** Always fetch raw wikitext and parse the
@@ -100,6 +116,11 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
 - Bosses legitimately have no elite at any level — never flag that. Capture
   coverage is validated from the skill side instead: each unconditional
   capture boss must exist in the bestiary and list the skill.
+- **Title-gated skills** (10 Kurzick/Luxon allegiance skills) are a fourth
+  acquisition channel: `titleNpcs` with the rank requirement quoted from the
+  page. The gate is a rank, not a place, so they are never "available now" —
+  they report where to go and what rank is needed. Title progression is not
+  tracked per character.
 - **Capture sources are split**: `captureBosses` (always spawn) vs
   `conditionalCaptureBosses` (spawn only during a quest/event, or in a
   location outside our Prophecies set, e.g. War in Kryta variants) — quest

@@ -1,0 +1,7 @@
+{
+  "title": "Mandragor Scavenger",
+  "pageid": 64226,
+  "revid": 2268056,
+  "timestamp": "2011-03-21T23:38:45Z",
+  "wikitext": "{{NPC infobox\n| name = Mandragor Scavenger\n| affiliation = Far Shiverpeaks wildlife\n| type = Mandragor\n| profession = r\n| level = 20 (26)\n| campaign = Eye of the North\n}} __NOTOC__\n[[Mandragor Scavenger]]s are found in the [[Far Shiverpeaks]], patrolling in a group with other Mandragors.\n\n==Locations== \n*[[Depths of Tyria]] \n**{{NPC location|Frostmaw's Burrows}}\n*[[Far Shiverpeaks]]\n**{{NPC location|Bjora Marches}}\n**{{NPC location|Ice Cliff Chasms}}\n**{{NPC location|Jaga Moraine}}\n**{{NPC location|Norrhart Domains}}\n\n==Missions==\n*Far Shiverpeaks\n**{{NPC location|Blood Washes Blood}}\n**{{NPC location|Curse of the Nornbear}}\n\n==Skills==\n15 [[Beast Mastery]], 9 [[Wilderness Survival]] (20 Beast Mastery in [[Hard mode]])\n*{{skill icon|Barbed Trap}}\n*{{skill icon|Healing Spring}}\n*{{skill icon|Scavenger's Focus}} ([[elite]])\n*{{skill icon|Throw Dirt}}\n*{{skill icon|Toxicity}}\n*{{skill icon|Viper's Nest}}\n*{{monster skill icon|Ground Cover}}\n*{{monster skill icon|Mandragor's Charge}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 70\n| piercing = 70\n| slashing = 70\n| cold = 100\n| earth = 100\n| fire = 100\n| lightning = 100\n}}\n\n==Items dropped==\n*[[Frigid Mandragor Husk]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Splinter Shot (monster skill)",
+  "pageid": 64535,
+  "revid": 2609233,
+  "timestamp": "2016-06-28T01:00:47Z",
+  "wikitext": "{{Skill infobox\n| id = 401\n| name = Splinter Shot\n| image = [[Image:Splinter_Shot_(monster_skill).jpg]]\n| campaign = Eye of the North\n| profession = Monster\n| special = Monster\n| attribute = Marksmanship\n| type = Bow Attack\n| energy = 10\n| recharge = 10\n| description = [[Bow Attack]]. If Splinter Shot hits, it ricochets to up to two more [[foe]]s [[nearby|near]] your [[target]]. Splinter Shot strikes for +{{gr2|1|11}} [[damage]].\n| concise description = Bow Attack. Deals +{{gr2|1|11}} damage. Hits two foes near your target.\n| aoe = nearby\n}}\n\n== Related skills ==\n* {{skill icon|Barrage}} ([[elite]])\n* {{skill icon|Incendiary Arrows}} (elite)\n* {{skill icon|Volley}}\n\n== Notes ==\n* This skill is used by [[Arachni]], [[Destroyer of Hordes|Destroyers of Hordes]], [[Storm of Destruction]], and a few [[White Mantle Scout]]s during the [[War in Kryta]].\n\n== Trivia ==\n* This version of the skill is actually the older version of [[Splinter Shot]], originally intended for inclusion as a normal skill in [[Prophecies]]."
+}

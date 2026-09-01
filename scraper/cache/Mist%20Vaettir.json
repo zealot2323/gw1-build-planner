@@ -1,0 +1,7 @@
+{
+  "title": "Mist Vaettir",
+  "pageid": 63328,
+  "revid": 2407168,
+  "timestamp": "2011-11-11T04:45:07Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Mist Vaettir.jpg|200px]]\n| species = Nightmare\n| profession = Me\n| level = 15, 20 (26)\n| campaign = Eye of the North\n| map1 = [[File:\"Nightmare Spirit\" concept art.jpg|200px]]\n| map1-text = Concept art by [[Katy Hargrove]].\n}} \n[[Mist Vaettir]]s are [[Nightmare]]s that can be found in different locations of the Far Shiverpeaks. They deal [[armor-ignoring damage]] while effectively protecting themselves from both physical and elemental damage.\n\n==Locations== \n*[[Depths of Tyria]]\n**{{NPC location|Darkrime Delves}}\n**{{NPC location|Raven's Point}}\n*[[Far Shiverpeaks]]\n**{{NPC location|Drakkar Lake}} (level 15)\n**{{NPC location|Varajar Fells}} (level 20)\n\n==Missions==\n*Depths of Tyria\n**{{NPC location|A Gate Too Far}}\n**{{NPC location|Destruction's Depths}}\n\n==Skills==\n15 [[Illusion Magic]] (20 Illusion Magic in [[hard mode]])\n*{{skill icon|Channeling}} (level 20 only)\n*{{skill icon|Elemental Resistance}}\n*{{skill icon|Ether Feast}}\n*{{skill icon|Illusionary Weaponry}} ([[elite]])\n*{{skill icon|Mantra of Concentration}}\n*{{skill icon|Sympathetic Visage}}\n\n==Armor ratings==\n{{NPC statistics\n| level = 20\n| prof = me\n| blunt = 100\n| piercing = 100\n| slashing = 100\n| cold = 60\n| earth = 60\n| fire = 60\n| lightning = 60\n}}\n\n==Items dropped==\n*[[Vaettir Essence]]\n\n==Notes==\n*They deal [[earth damage]]"
+}

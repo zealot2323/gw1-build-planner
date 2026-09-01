@@ -1,0 +1,7 @@
+{
+  "title": "Heart of the Norn",
+  "pageid": 64095,
+  "revid": 2676615,
+  "timestamp": "2022-01-03T17:24:28Z",
+  "wikitext": "{{skill infobox\n| name = Heart of the Norn\n| campaign = Eye of the North\n| type = Title\n| attribute = Norn rank\n| causes1 = Increased Maximum Health\n| description = [[Title (skill type)|Title]]. You have +{{gr2|50|100}} maximum [[Health]] in [[Far Shiverpeaks|Norn territory]].\n| concise description = Title. You have +{{gr2|50|100}} maximum Health in Norn territory.\n}}\n\n{{Skill progression max10\n|title track = Norn rank\n|var1 name = + Maximum health\n|var1 at0  = 50\n|var1 at10 = 100\n}}\n\n==Acquisition==\n*Talk to [[Tyr the Skaald]] [Norn Storyteller] in [[Gunnar's Hold]] after attaining the first rank of the [[Norn rank|Norn title]].\n\n== Notes ==\n* This cannot be equipped on the [[skill bar]]. While a [[character]] displays the Norn title, this effect is applied to that character and all of their [[hero]]es.\n* ''Norn territory'' is the [[Far Shiverpeaks]] region.\n* Hero health remains the same in outposts whether the title is switched on or off.\n\n==Trivia==\n*The art on this [[skill icon]] appears to be [[Jora]] wearing [[Brotherhood armor]]."
+}

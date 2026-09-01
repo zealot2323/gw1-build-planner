@@ -1,0 +1,7 @@
+{
+  "title": "Cloudtouched Simian",
+  "pageid": 74904,
+  "revid": 2604232,
+  "timestamp": "2016-04-04T12:48:48Z",
+  "wikitext": "{{NPC infobox\n| image = [[File:Cloudtouched Simian.jpg|250px]]\n| type = Beast\n| affiliation = Tarnished Coast wildlife\n| profession = e\n| level = 20-24 (26)\n| campaign = Eye of the North\n}}__NOTOC__\n[[Cloudtouched Simian]]s are [[beast]] [[Elementalist]]s which specialize in both [[Air Magic|air]] and [[Water Magic|water]].\n\n==Locations==\n*[[Tarnished Coast]]\n**{{NPC location|Alcazia Tangle}}\n**{{NPC location|Arbor Bay}}\n**{{NPC location|Riven Earth}}\n**{{NPC location|Sparkfly Swamp}}\n\n==Skills==\n20 [[Air Magic]], 20 [[Water Magic]]\n*{{skill icon|Arc Lightning}}\n*{{skill icon|Chilling Winds}}\n*{{skill icon|Freezing Gust}}\n*{{skill icon|Gust}} ([[elite]])\n*{{skill icon|Ice Prison}}\n*{{skill icon|Lightning Touch}}\n*{{monster skill icon|Monkey See, Monkey Do}}\n\n==Armor ratings==\n{{NPC statistics\n| level = 20\n| prof = e\n| blunt = 60\n| piercing = 60\n| slashing = 60\n| cold = 60\n| earth = 60\n| fire = 60\n| lightning = 60\n}}\n\n==Items dropped==\n*[[Patch of Simian Fur]]\n\n==Notes==\n*This creature has a [[miniature]] [[Miniature Cloudtouched Simian|version]]."
+}

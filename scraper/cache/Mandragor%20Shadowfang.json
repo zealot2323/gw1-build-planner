@@ -1,0 +1,7 @@
+{
+  "title": "Mandragor Shadowfang",
+  "pageid": 70384,
+  "revid": 2539495,
+  "timestamp": "2013-04-05T05:20:00Z",
+  "wikitext": "{{NPC infobox\n| name = Mandragor Shadowfang\n| image = [[File:Stoneflesh Mandragor.jpg|150px]]\n| affiliation = Charr Homelands wildlife\n| type = Mandragor\n| profession = a\n| level = 24 (26)\n| campaign = Eye of the North\n| map1 = [[File:\"Tunneler Beetle Hulk Delta\" concept art.jpg|180px]]\n| map1-text = Concept art by [[Doug Williams]].\n}}__NOTOC__\n[[Mandragor Shadowfang]]s [[interrupt]] and soften up foes.\n\n==Locations==\n*[[Charr Homelands]]\n**{{NPC location|Grothmar Wardowns}}\n\n==Missions==\n*Charr Homelands\n**{{NPC location|Against the Charr}}\n\n==Skills==\n*{{skill icon|Disrupting Stab}}\n*{{skill icon|Falling Spider}}\n*{{skill icon|Heart of Shadow}}\n*{{skill icon|Return}}\n*{{skill icon|Shattering Assault}} ([[elite]])\n*{{skill icon|Wild Strike}}\n*{{monster skill icon|Ground Cover}}\n*{{monster skill icon|Mandragor's Charge}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = a\n| blunt = 82\n| piercing = 82\n| slashing = 82\n| cold = 82\n| earth = 82\n| fire = 82\n| lightning = 82\n}}\n\n==Items dropped==\n*[[Fibrous Mandragor Root]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Healing Ribbon",
+  "pageid": 51887,
+  "revid": 2683598,
+  "timestamp": "2023-02-19T17:56:33Z",
+  "wikitext": "{{Skill infobox\n| name = Healing Ribbon\n| id = 2062\n| campaign = Eye of the North\n| profession = Monk\n| attribute = Healing Prayers\n| type = Spell\n| energy = 10\n| activation = 1\n| recharge = 5\n| causes1 = Healing\n| description = [[Spell]]. [[Target]] other [[ally]] is [[heal]]ed for {{gr|20|110}} [[Health]]. Up to 2 additional allies [[near]] target ally are healed for {{gr|10|100}} Health.\n| concise description = Spell. Heals for {{gr|20|110}}. Heals two additional allies near target ally for {{gr|10|100}}. {{gray|Cannot self-target.}}\n| aoe = nearby\n| target = other allies\n}}\n\n{{Skill progression\n|attribute = [[Healing Prayers]]\n|var1 name = [[Heal]]ing\n|var1 at0 = 20\n|var1 at15 = 110\n|var2 name = Additional healing\n|var2 at0 = 10\n|var2 at15 = 100}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Eye of the North]]\n**[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n**[[Sida]] ([[Gunnar's Hold]])\n**[[Ybbob]] ([[Rata Sum]])\n'''[[Signet of Capture]]'''\n* [[Factions]]\n** [[Copernicus]] ([[The Undercity (Winds of Change)]], during [[When Kappa Attack]])\n\n== Related skills ==\n*{{skill icon|Healing Burst}} ([[elite]])\n\n[[Category:Skills that affect allies]]"
+}

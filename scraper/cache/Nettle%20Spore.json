@@ -1,0 +1,7 @@
+{
+  "title": "Nettle Spore",
+  "pageid": 75882,
+  "revid": 2377125,
+  "timestamp": "2011-09-08T08:37:53Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| affiliation = Depths of Tyria wildlife\n| type = Plant\n| level = 15 (25)\n| campaign = Eye of the North\n}}\nProduced by [[Blooming Nettle]]s, [[Nettle Spore]]s are non-aggressive, but when attacked, they activate [[Spore Explosion]], turning them into a [[Nettle Seedling]].\n\n==Locations==\n*[[Depths of Tyria]]\n** {{NPC location|Bogroot Growths}}\n** {{NPC location|Heart of the Shiverpeaks}} (level 1)\n\n==Skills==\n*{{monster skill icon|Spore Explosion}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = n\n| blunt = 46\n| piercing = 46\n| slashing = 46\n| cold = 46\n| earth = 46\n| fire = 46\n| lightning = 46\n}}\n\n==Notes==\n* These creatures will use [[Spore Explosion]] when attacked, turning themselves into Nettle Seedings. \n** Non-[[attack skill]]s will not trigger the explosion, neither will [[Giriff]] or [[Tekks]] (the [[Asura]] allies who join you in [[Bogroot Growths]]).\n** If killed before becoming seedlings, they leave behind an exploitable (but invisible) [[corpse]].\n** When they turn into seedlings, they trigger on-[[death]] effects that benefit [[Soul Reaping]] and skills such as [[Assassin's Promise]]."
+}

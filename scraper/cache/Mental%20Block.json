@@ -1,0 +1,7 @@
+{
+  "title": "Mental Block",
+  "pageid": 58301,
+  "revid": 2647105,
+  "timestamp": "2020-01-23T19:37:14Z",
+  "wikitext": "{{Skill infobox\n| id = 2417\n| name = Mental Block\n| campaign = Eye of the North\n| profession = \n| attribute = Asura rank\n| pve-only = y\n| type = Enchantment Spell\n| energy = 10\n| recharge = 15\n| activation = 1\n| causes1 = Block\n| causes2 = Renewal\n| description = [[Enchantment Spell]]. For {{gr2|5|11}} seconds you have a 50% chance to [[block]] [[attack]]s. This Enchantment is [[Renewal|reapplied]] every time an enemy strikes you.\n| concise description = Enchantment Spell. ({{gr2|5|11}} seconds.) You have a 50% chance to block. Renewal: every time an enemy hits you.\n| target = self\n}}\n\n{{Skill progression max10\n|title track = [[Asura rank]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at10 = 11}}\n\n==Acquisition==\n'''[[Skill quest]]s'''\n*[[The Cipher of Balthazar]] ([[Tarnished Haven]])\n\n== Notes ==\n{{anomaly|Unlike most enchantments, Mental Block does not show a cloudy white ring around the caster.}}\n\n== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details."
+}

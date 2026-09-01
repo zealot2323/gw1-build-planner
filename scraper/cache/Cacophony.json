@@ -1,0 +1,7 @@
+{
+  "title": "Cacophony",
+  "pageid": 51858,
+  "revid": 2735078,
+  "timestamp": "2026-07-21T18:28:47Z",
+  "wikitext": "{{Skill infobox\n| name = Cacophony\n| id = 1998\n| campaign = Eye of the North\n| profession = Necromancer\n| attribute = Curses\n| type = Hex Spell\n| energy = 10\n| activation = 1\n| recharge = 15\n| description = [[Hex Spell]]. For 15 seconds, whenever [[target]] [[foe]] uses a [[shout]] or [[chant]], that foe takes {{gr|30|105}} [[damage]].\n| concise description = Hex Spell. (15 seconds.) Deals {{gr|30|105}} damage whenever target foe uses a shout or chant. }}\n\n{{Skill progression\n|attribute = [[Curses]]\n|var1 name = [[Damage]]\n|var1 at0 = 30\n|var1 at15 = 105}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n\n== Related skills ==\n* {{skill icon|Backfire}}\n* {{skill icon|Soul Leech}} ([[elite]])\n* {{skill icon|Ulcerous Lungs}}\n* {{skill icon|Visions of Regret}} (elite)"
+}

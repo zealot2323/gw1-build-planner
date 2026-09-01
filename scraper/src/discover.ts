@@ -183,18 +183,28 @@ async function discoverSkills(campaign: CampaignConfig): Promise<string[]> {
   }
   for (const t of CORE_COMMON_SKILLS) core.add(t);
 
+  // Skills with no profession at all (Eye of the North's title-rank PvE
+  // skills) are invisible to the profession walk; take them by category,
+  // exactly as the wiki's own list page does.
+  for (const category of campaign.extraSkillCategories ?? []) {
+    const members = [...(await cat(category))].filter(usable);
+    for (const t of members) own.add(t);
+    console.log(`  ${category}: ${members.length}`);
+  }
+
   const skills = new Set([...own, ...core]);
   console.log(
     `  ${own.size} ${campaign.name} + ${core.size} core = ${skills.size} unique pages ` +
       `(raw category ${campaignRaw.size})`,
   );
-  // The campaign category is the ceiling: everything learnable in it must be
-  // a page we picked up, minus list pages and (PvP) variants.
   const missed = [...campaignRaw].filter((t) => isSkillPage(t) && !own.has(t)).length;
-  if (own.size < campaignRaw.size * 0.5) {
-    throw new Error(`${campaign.name}: only ${own.size} of ${campaignRaw.size} category members kept — check professions`);
-  }
   console.log(`  (${missed} category members not kept: monster/environment/event skills)`);
+  const [lo, hi] = campaign.expectedSkillTotal;
+  if (skills.size < lo || skills.size > hi) {
+    throw new Error(
+      `${campaign.name}: ${skills.size} skill pages, expected ${lo}-${hi} — check professions/categories`,
+    );
+  }
   return [...skills].sort();
 }
 
@@ -278,6 +288,22 @@ async function discoverTrainers(
   return { trainers, skillSubpages };
 }
 
+/**
+ * Dungeons stand in for missions in Eye of the North: instanced, entered
+ * from an outpost, full of the bosses that carry its elites. The list is a
+ * sortable table whose first cell is a number and second a dungeon link.
+ */
+async function discoverDungeons(campaign: CampaignConfig): Promise<string[]> {
+  if (!campaign.dungeonListPage) return [];
+  console.log(`== ${campaign.name} dungeons ==`);
+  const wt = (await fetchWikitext(campaign.dungeonListPage)).wikitext;
+  const dungeons = [
+    ...new Set([...wt.matchAll(/^\|\s*\d+\s*\|\|\s*\[\[([^\]|#]+)/gm)].map((m) => m[1].trim())),
+  ];
+  console.log(`  ${dungeons.length} dungeons`);
+  return dungeons;
+}
+
 async function discoverMissions(campaign: CampaignConfig): Promise<string[]> {
   console.log(`== ${campaign.name} missions ==`);
   if (campaign.missionListPage === null) {
@@ -347,6 +373,7 @@ for (const campaign of campaigns) {
   const locations = await discoverLocations(campaign);
   const { trainers, skillSubpages } = await discoverTrainers(campaign);
   const missions = await discoverMissions(campaign);
+  const dungeons = await discoverDungeons(campaign);
 
   // Fetch the location + mission pages first — they are the source of the
   // monster set (the bestiary IS "what spawns in this campaign's areas";
@@ -356,13 +383,14 @@ for (const campaign of campaigns) {
     ...locations.outposts,
     ...locations.missionOutposts,
     ...locations.explorables,
+    ...dungeons,
   ];
   failures.push(...(await fetchAll(`${campaign.name} location`, allLocations)));
   failures.push(...(await fetchAll(`${campaign.name} mission`, missions)));
 
   console.log(`== ${campaign.name} monsters: extracting foe/boss links ==`);
   const monsterSet = new Set<string>();
-  for (const title of [...locations.explorables, ...missions]) {
+  for (const title of [...locations.explorables, ...dungeons, ...missions]) {
     try {
       for (const foe of extractFoes((await fetchWikitext(title)).wikitext)) monsterSet.add(foe);
     } catch {
@@ -384,6 +412,7 @@ for (const campaign of campaigns) {
       explorables: locations.explorables.length,
       trainers: trainers.length,
       missions: missions.length,
+      dungeons: dungeons.length,
       monsters: monsters.length,
     },
     skills,
@@ -391,6 +420,7 @@ for (const campaign of campaigns) {
     trainers,
     trainerSkillSubpages: skillSubpages,
     missions,
+    dungeons,
     monsters,
   };
 

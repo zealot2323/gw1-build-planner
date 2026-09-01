@@ -53,7 +53,12 @@ const STATUS_LABEL: Record<SkillStatus, string> = {
  * place and the trainer/quest/boss link out to the wiki.
  */
 function SourceLine({ src }: { src: AcquisitionSource }) {
-  const action = { trainer: "buy from", quest: "quest:", capture: "capture" }[src.kind];
+  const action = {
+    trainer: "buy from",
+    quest: "quest:",
+    capture: "capture",
+    title: "earn rank with",
+  }[src.kind];
   const stop = (e: React.MouseEvent) => e.stopPropagation();
   return (
     <>
@@ -69,6 +74,12 @@ function SourceLine({ src }: { src: AcquisitionSource }) {
       <a href={wikiHref(src.via)} target="_blank" rel="noreferrer" onClick={stop}>
         {src.via}
       </a>
+      {src.requirement && (
+        <span className="muted" title={src.requirement}>
+          {" "}
+          — rank required
+        </span>
+      )}
     </>
   );
 }

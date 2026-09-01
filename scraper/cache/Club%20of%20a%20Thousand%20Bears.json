@@ -1,0 +1,7 @@
+{
+  "title": "Club of a Thousand Bears",
+  "pageid": 58322,
+  "revid": 2732703,
+  "timestamp": "2026-07-04T16:55:08Z",
+  "wikitext": "{{Otheruses|a [[PvE]]-only skill|the [[weapon]] of the same name|Club of a Thousand Bears (weapon)}}\n{{Skill infobox\n| id = 2361\n| name = Club of a Thousand Bears\n| campaign = Eye of the North\n| attribute = Norn rank\n| type = Melee Attack\n| energy = 5\n| pve-only = y\n| recharge = 12\n| causes1 = Knockdown\n| description = [[Melee Attack]]. If this attack hits, it deals {{gr2|6|9|+}} [[damage]] for each [[adjacent]] [[foe]] (maximum 60 damage). If [[target]] foe is non-[[human]] it is [[Knock down|knocked down]].\n| concise description = Melee Attack. Deals {{gr2|6|9|+}} damage for each adjacent foe (maximum 60 damage). Causes knock-down if target foe is non-human.\n}}\n\n{{Skill progression max10\n|title track = [[Norn rank]]\n|var1 name = + [[Damage]] per foe\n|var1 at0  = 6\n|var1 at10 = 9\n}}\n\n==Acquisition==\n'''[[Skill quest]]s'''\n*[[Bear Club for Men]] ([[Varajar Fells]])\n*[[Bear Club for Women]] ([[Olafstead]])\n\n==Notes==\n*This attack will knock down a non-human target even if it is [[block]]ed or [[miss]]es.\n*Using this skill with a [[scythe]] does not knock down multiple enemies.\n*Consider using skills that reduce the [[recharge time]] (such as [[Moebius Strike]] or [[Flourish]])."
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Plague Zombie",
+  "pageid": 76933,
+  "revid": 2462521,
+  "timestamp": "2012-03-14T07:16:22Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Zombie\n| image = [[Image:Skeleton warrior.jpg |125px]]\n| affiliation = Undead\n| profession = w\n| level = 20 (26)\n| campaign = Eye of the North }}\n[[Plague Zombie]]s are among the [[undead]] that can be found in the [[Cathedral of Flames]].\n\n==Locations==\n* [[Depths of Tyria]]\n** {{NPC location|Cathedral of Flames}} (levels 2 and 3)\n\n==Skills==\n*{{skill icon|Decapitate}} ([[elite]])\n*{{skill icon|Flail}}\n*{{skill icon|Power Attack}}\n*{{skill icon|Shield Bash}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 115\n| piercing = 115\n| slashing = 115\n| cold = 95\n| earth = 95\n| fire = 95\n| lightning = 95\n}}\n\n==Items dropped==\n*[[Dead Bow]]\n*[[Executioner's Breastplate]]\n*[[Undead Bone]]\n\n==Notes==\n*Has the appearance of a [[skeleton]] despite being a zombie."
+}

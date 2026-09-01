@@ -1,0 +1,7 @@
+{
+  "title": "Symbolic Strike",
+  "pageid": 51908,
+  "revid": 2728021,
+  "timestamp": "2026-05-13T07:00:10Z",
+  "wikitext": "{{Skill infobox\n| name = Symbolic Strike\n| id = 2195\n| campaign = Eye of the North\n| profession = Warrior\n| type = Melee Attack\n| adrenaline = 4\n| description = [[Melee Attack]]. If this [[attack]] hits, you deal +12 [[damage]] for each [[signet]] you have equipped (maximum 70 damage).\n| concise description = Melee Attack. Deals +12 damage (maximum 70) for each signet you have equipped.\n}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n*[[Sida]] ([[Gunnar's Hold]])\n*[[Ybbob]] ([[Rata Sum]])\n\n==Notes==\n* This skill exactly requires 80 units of adrenaline to be fully charged, so 3 strikes and 5 units.\n* This skill has the third highest damage increase of any Warrior [[attack skill]], surpassed only by [[Decapitate]] and by [[Final Thrust]] used against a target below 50% health.\n\n==Trivia==\n*The warrior in the [[skill icon]] is wearing [[Warrior Charr Hide armor|Charr Hide armor]].\n*This skill has changed since its introduction; see its [[{{PAGENAME}}/Skill history|skill history]] for details."
+}

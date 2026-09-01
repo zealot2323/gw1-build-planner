@@ -1,0 +1,7 @@
+{
+  "title": "Disrupting Shot",
+  "pageid": 51922,
+  "revid": 2733286,
+  "timestamp": "2026-07-05T17:22:25Z",
+  "wikitext": "{{Skill infobox\n| name = Disrupting Shot\n| id = 2143\n| campaign = Eye of the North\n| profession = Ranger\n| attribute = Marksmanship\n| type = Bow Attack\n| energy = 10\n| activation = {{1/2}}\n| recharge = 15\n| causes1 = Interrupt\n| description = [[Bow Attack]]. If this [[attack]] hits, [[target]] [[foe]]'s [[action]] is [[interrupt]]ed. If that action was a [[Skill]], you strike for {{gr|10|40|+}} [[damage]].\n| concise description = Bow Attack. Interrupts an action. Interruption effect: {{gr|10|40|+}} damage if you interrupt a skill.\n}}\n\n{{Skill progression\n|attribute = [[Marksmanship]]\n|var1 name = + [[Damage]]\n|var1 at0 = 10\n|var1 at15 = 40}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n*[[Sida]] ([[Gunnar's Hold]])\n*[[Ybbob]] ([[Rata Sum]])\n\n==Related skills==\n* {{Skill icon|Punishing Shot}} ([[elite]])\n* {{Skill icon|Savage Shot}}\n\n==Notes==\n* The arrow leaves the bow {{1/4}} seconds into this skill's activation, as [[attack skill]]s hit halfway through their stated [[activation time]].\n* Deals additional damage even if skill interruption is prevented.\n* If used to interrupt a target under the effect of [[Daze]], the Daze will interrupt the target before the skill does, and no additional damage will be dealt."
+}

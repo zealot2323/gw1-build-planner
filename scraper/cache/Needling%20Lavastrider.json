@@ -1,0 +1,7 @@
+{
+  "title": "Needling Lavastrider",
+  "pageid": 68466,
+  "revid": 2586202,
+  "timestamp": "2015-04-28T00:57:48Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Lava spider.jpg|150px]]\n| affiliation = Depths of Tyria wildlife \n| type = Arachnid\n| profession = r\n| level = 20, 24 (26)\n| campaign = Eye of the North\n}}\n\n[[Needling Lavastrider]]s are insects which can spread [[burning]] over poorly positioned party members.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Arachni's Haunt}} (all levels)\n**{{NPC location|Catacombs of Kathandrax}} (all levels)\n**{{NPC location|Cathedral of Flames}} (level 2)\n**{{NPC location|Oola's Lab}} (level 1)\n*[[Tarnished Coast]]\n**{{NPC location|Sparkfly Swamp}}\n\n==Missions==\n*Depths of Tyria\n**{{NPC location|Warband of Brothers}}\n\n==Skills==\n15 [[Marksmanship]] (20 Marksmanship, 20 [[Wilderness Survival]] in [[Hard mode]])\n*{{skill icon|Forked Arrow}}\n*{{skill icon|Incendiary Arrows}} ([[elite]])\n*{{skill icon|Needling Shot}}\n*{{skill icon|Pin Down}}\n*{{skill icon|Storm Chaser}}\n*{{skill icon|Troll Unguent}}\n\n==Armor ratings==\n{{NPC statistics\n| level = 20\n| prof = r\n| blunt = 70\n| piercing = 70\n| slashing = 70\n| cold = 100\n| earth = 100\n| fire = 100\n| lightning = 100\n}}\n\n==Items dropped==\n*[[Lavastrider Appendage]]"
+}

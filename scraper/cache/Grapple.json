@@ -1,0 +1,7 @@
+{
+  "title": "Grapple",
+  "pageid": 51903,
+  "revid": 2726449,
+  "timestamp": "2026-04-28T18:36:15Z",
+  "wikitext": "{{Skill infobox\n| name = Grapple\n| id = 2011\n| campaign = Eye of the North\n| profession = Warrior\n| type = Touch skill\n| energy = 5\n| activation = {{3/4}}\n| recharge = 8\n| range = touch\n| causes1 = Knockdown\n| removes1 = Stance\n| description = [[Skill]]. You and [[target]] [[touch]]ed [[foe]] are [[knocked down]]. You lose your current [[stance]].\n| concise description = Touch Skill. Causes knockdown. You are also knocked down. {{gray|Your current stance ends.}}\n| target = foes\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n*[[Sida]] ([[Gunnar's Hold]])\n*[[Ybbob]] ([[Rata Sum]])\n\n== Notes ==\n* Can be combined with [[\"I Meant to Do That!\"]].\n* If you are wearing [[Stonefist Insignia]], you will be knocked down an additional second as well. This has been confirmed to be intentional.\n* The self-inflicted knock down occurs before stance removal, thus you can use anti-knockdown stances.\n{{anomaly|This skill has no [[aftercast delay]], though this can only be observed if the self knockdown is prevented.}}\n\n== Trivia ==\n* One of the figures in the [[skill icon]] appears to be a ranger wearing [[Ranger Ascalon armor|Ascalon armor]].\n\n[[de:Raufen]]"
+}

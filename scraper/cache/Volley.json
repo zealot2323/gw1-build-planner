@@ -1,0 +1,7 @@
+{
+  "title": "Volley",
+  "pageid": 51925,
+  "revid": 2734283,
+  "timestamp": "2026-07-13T21:48:05Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| name = Volley\n| id = 2144\n| campaign = Eye of the North\n| profession = Ranger\n| attribute = Marksmanship\n| type = Bow Attack\n| energy = 5\n| recharge = 2\n| description = [[Bow Attack]]. All your [[Preparation]]s are removed. Shoot arrows at [[target]] [[foe]] and up to 3 foes [[adjacent]] to your target. These arrows strike for {{gr|1|10|+}} [[damage]] if they hit. \n| concise description = Bow Attack. Deals {{gr|1|10|+}} damage. Hits up to 3 foes adjacent to your target. {{gray|All your preparations are removed.}}\n|aoe = adjacent\n}}\n\n{{Skill progression \n|attribute = [[Marksmanship]]\n|var1 name = + [[Damage]]\n|var1 at0 = 1\n|var1 at15 = 10}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n*[[Sida]] ([[Gunnar's Hold]])\n*[[Ybbob]] ([[Rata Sum]])\n\n==Related skills==\n*{{Skill icon|Barrage}} ([[elite]])\n*{{Skill icon|Incendiary Arrows}} (elite)\n\n== Notes ==\n* Each of Volley's arrows counts as a separate attack.\n* Effects that trigger on attack/hit usually trigger multiple times, although some take effect only once or not at all.{{verify|Which effects take effect only once (and are not limited to one hit anyway) and which ones do not affect Volley at all?}} \n{{Bug|Volley also removes [[Glyphs]]. [[Hero behavior|Hero AI]] can use Volley right after a glyph, which removes its effect.}}"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Parasitic Growth",
+  "pageid": 66598,
+  "revid": 2413396,
+  "timestamp": "2011-11-24T18:48:31Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Fungal Bloom.jpg|150px]]\n| affiliation = Depths of Tyria wildlife\n| type = Plant\n| profession = e\n| level = 15 (25)\n| campaign = Eye of the North\n| map1 = [[File:\"Stationary Fungus\" concept art.jpg|150px]]\n| map1-text = Concept art by [[Doug Williams]].\n}}\n[[Parasitic Growth]]s are part of the life cycle of [[Fungal Bloom]]s, being the result of a [[Fungal Explosion]].\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Arachni's Haunt}} (level 1)\n**{{NPC location|Bogroot Growths}} (level 2)\n**{{NPC location|Heart of the Shiverpeaks}} (level 1)\n**{{NPC location|Vloxen Excavations}} (level 1)\n\n==Skills==\n13 [[Earth Magic]], 9..11 [[Water Magic]].\n*{{skill icon|Blurred Vision}}\n*{{skill icon|Crystal Wave}}\n*{{skill icon|Magnetic Surge}}\n*{{skill icon|Obsidian Flame}}\n*{{skill icon|Ward Against Harm}} ([[elite]])\n*{{monster skill icon|Dormant Husk}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = e\n| blunt = 66\n| piercing = 66\n| slashing = 66\n| cold = 66\n| earth = 66\n| fire = 66\n| lightning = 66\n}}"
+}

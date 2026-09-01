@@ -1,0 +1,7 @@
+{
+  "title": "Maiming Spear",
+  "pageid": 51842,
+  "revid": 2684166,
+  "timestamp": "2023-02-24T16:25:09Z",
+  "wikitext": "{{Skill infobox\n| id = 2150\n| name=Maiming Spear\n| campaign=Eye of the North\n| profession=Paragon\n| attribute=Spear Mastery\n| type=Spear Attack\n| energy=5\n| recharge=5\n| causes1 = Crippled\n| description = [[Spear Attack]]. If your attack hits a [[Bleeding]] [[foe]], that foe is [[Crippled]] for {{gr|5|20}} seconds.\n| concise description = Spear Attack. Inflicts Crippled condition ({{gr|5|20}} seconds) if target foe is Bleeding.\n}}\n\n{{Skill progression\n|attribute = [[Spear Mastery]]\n|var1 name = [[Crippled]] [[duration]]\n|var1 at0 = 5\n|var1 at15 = 20}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n*[[Sida]] ([[Gunnar's Hold]])\n*[[Ybbob]] ([[Rata Sum]])\n\n==Notes==\n*Synergy with [[Barbed Spear]].\n\n==Trivia==\n*This skill was named \"Nonsensical Spear\" at some point during development."
+}

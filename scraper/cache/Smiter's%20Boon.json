@@ -1,0 +1,7 @@
+{
+  "title": "Smiter's Boon",
+  "pageid": 51892,
+  "revid": 2683600,
+  "timestamp": "2023-02-19T18:01:05Z",
+  "wikitext": "{{Skill infobox\n| name = Smiter's Boon\n| id = 2005\n| campaign = Eye of the North\n| profession = Monk\n| attribute = Divine Favor\n| type = Enchantment Spell\n| energy = 5\n| has-pvp = y\n| activation = {{1/4}}\n| recharge = 10\n| description = [[Enchantment Spell]]. For 30 seconds, your [[Smiting Prayers]] have double the [[Divine Favor]] bonus.\n| concise description = Enchantment Spell. (30 seconds.) Your Smiting Prayers have double Divine Favor healing bonus.\n}}\n\n{{Skill progression\n| attribute = Divine Favor\n| var1 name = [[Heal]]ing bonus\n| var1 at0 = 0\n| var1 at15 = 48\n}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Eye of the North]]\n** [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n** [[Sida]] ([[Gunnar's Hold]])\n** [[Ybbob]] ([[Rata Sum]])\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Amalek the Unmerciful]] ([[Watchtower Coast (War in Kryta)]])\n\n[[de:Segen des Peinigers]]"
+}

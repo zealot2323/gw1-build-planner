@@ -1,0 +1,7 @@
+{
+  "title": "Krait Hypnoss",
+  "pageid": 72351,
+  "revid": 2572518,
+  "timestamp": "2014-07-25T07:09:20Z",
+  "wikitext": "{{NPC infobox\n| type = Krait\n| affiliation =  Tarnished Coast wildlife\n| profession = me\n| level = 20,21,22,23 (26)\n| campaign = Eye of the North\n}}__NOTOC__\n[[Krait Hypnoss]]es are the mesmers of the Krait.\n\n==Locations==\n*[[Tarnished Coast]]\n**{{NPC location|Arbor Bay}}\n**{{NPC location|Magus Stones}}\n\n==Skills==\n20 [[Illusion Magic]] (20 Illusion Magic in [[Hard mode]])\n*{{skill icon|Accumulated Pain}}\n*{{skill icon|Clumsiness}}\n*{{skill icon|Frustration}}\n*{{skill icon|Power Drain}}\n*{{skill icon|Power Leech}} ([[elite]])\n*{{skill icon|Sum of All Fears}}\n\n==Armor ratings==\n{{NPC statistics\n| level = 20\n| prof = me\n| blunt = 60\n| piercing = 60\n| slashing = 60\n| cold = 60\n| earth = 60\n| fire = 60\n| lightning = 60\n}}\n\n==Items dropped==\n*[[Krait Skin]]"
+}

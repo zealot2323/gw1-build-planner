@@ -45,6 +45,11 @@ export const EXTRA_NEIGHBORS: Record<string, string[]> = {
   "Lion's Arch": ["Kaineng Center", "Kamadan, Jewel of Istan"],
   "Kaineng Center": ["Lion's Arch", "Kamadan, Jewel of Istan"],
   "Kamadan, Jewel of Istan": ["Lion's Arch", "Kaineng Center"],
+  // Eye of the North is entered from each campaign through its own portal
+  // and everyone arrives at Boreal Station, so it hangs off all three
+  // capitals. Only reachable for characters who own the expansion — the
+  // dataset is scoped per character, so the edge is inert otherwise.
+  "Boreal Station": ["Lion's Arch", "Kaineng Center", "Kamadan, Jewel of Istan"],
 };
 
 /**
@@ -64,7 +69,9 @@ export const TRAINER_EXTRA_SKILLS: Record<string, string[]> = {
  * (which carry the parent's id and would collide with it).
  */
 export const isExcludedSkillPage = (title: string): boolean =>
-  / \(monster skill\)$/.test(title) || title.includes("/");
+  / \(monster skill\)$/.test(title) ||
+  / \(attack\)$/.test(title) || // spirit attacks, e.g. "Bloodsong (attack)"
+  title.includes("/");
 
 /**
  * Monsters whose infobox level has no hard-mode value in parentheses are

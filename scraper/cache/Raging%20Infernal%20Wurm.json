@@ -1,0 +1,7 @@
+{
+  "title": "Raging Infernal Wurm",
+  "pageid": 89627,
+  "revid": 2658531,
+  "timestamp": "2020-05-14T18:51:08Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Frost Wurm.jpg|150px]]\n| type = Wurm\n| affiliation = Depths of Tyria wildlife\n| level = 24 (26)\n| campaign = Eye of the North\n}}\nQuite similar to [[Siege Wurm]]s, the [[Raging Infernal Wurm]] remains stationary and fires a ranged attack at foes. It has a larger-than-normal [[aggro]] range and has very high [[armor rating|armor]].\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Catacombs of Kathandrax}} (final room of level 2)\n\n==Skills==\n*{{monster skill icon|Wurm Siege (Core)}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 120\n| piercing = 120\n| slashing = 120\n| cold = 120\n| earth = 120\n| fire = 120\n| lightning = 120\n}}\n\n==Items dropped==\n{{section-stub}}\n\n==Notes==\n{{anomaly|The Raging Infernal Wurm uses a [[Frost Wurm]] model instead of an [[Infernal Wurm]] model.}}"
+}

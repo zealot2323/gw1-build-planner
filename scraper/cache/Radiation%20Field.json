@@ -1,0 +1,7 @@
+{
+  "title": "Radiation Field",
+  "pageid": 58306,
+  "revid": 2734338,
+  "timestamp": "2026-07-14T16:43:51Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 2414\n| name = Radiation Field\n| campaign = Eye of the North\n| attribute = Asura rank\n| pve-only = y\n| type = Ward Spell\n| energy = 15\n| activation = 2\n| recharge = 12\n| causes1 = Health Degeneration\n| causes2 = Disease\n| description = [[Ward Spell]]. For 5 seconds, [[foe]]s [[in the area]] have {{gr2|4|6|-}} [[Health degeneration]]. When the portal ends, foes in the area are [[Disease]]d for {{gr2|12|20}} seconds.\n| concise description = Ward Spell. (5 seconds.) Causes {{gr2|4|6|-}} Health degeneration to foes in the area. End effect: inflicts Disease condition ({{gr2|12|20}} seconds) to foes in the area.\n}}\n\n{{Skill progression max10\n|title track = [[Asura rank]]\n|var1 name = [[Health degeneration]]\n|var1 at0 = 4\n|var1 at10 = 6\n|var2 name = [[Disease]] [[duration]]\n|var2 at0 = 12\n|var2 at10 = 20}}\n\n==Acquisition==\n'''[[Skill quest]]s'''\n*[[The Cipher of Dwayna]] ([[Tarnished Haven]])\n\n== Related skills ==\n* {{skill icon|Teinai's Heat}}\n\n== Notes ==\n* This is one of the few skills that can cause maximum health degeneration on its own, by generating a field around foes diseased by a previous field.\n* Does not affect [[spirit]]s.\n\n== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details."
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Stone Summit Cleaver",
+  "pageid": 72831,
+  "revid": 2689861,
+  "timestamp": "2023-08-25T20:33:27Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Stone Summit warrior.jpg|150px]]\n| type = Dwarf\n| affiliation = Stone Summit\n| profession = w\n| profession2 = p\n| level = 24 (26)\n| campaign = Eye of the North\n}}\n[[Stone Summit Cleaver]]s support their allies with [[shout]]s and an [[echo (skill type)|echo]] while doing damage.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Slavers' Exile}}\n\n==Skills==\n*{{skill icon|\"Watch Yourself!\"}}\n*{{skill icon|Cleave}} ([[elite]])\n*{{skill icon|Dismember}}\n*{{skill icon|Furious Axe}}\n*{{skill icon|\"Go for the Eyes!\"}}\n*{{skill icon|Bladeturn Refrain}}\n*{{skill icon|Signet of Return}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 126 to 128 \n| piercing = 126 to 128\n| slashing = 126 to 128\n| cold = 106 to 108\n| earth = 106 to 108\n| fire = 106 to 108\n| lightning = 106 to 108\n}}"
+}

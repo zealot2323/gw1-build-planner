@@ -1,0 +1,7 @@
+{
+  "title": "Weapon of Aggression",
+  "pageid": 51882,
+  "revid": 2684104,
+  "timestamp": "2023-02-23T19:33:22Z",
+  "wikitext": "{{Skill infobox\n| name = Weapon of Aggression\n| id = 2073\n| campaign = Eye of the North\n| profession = Ritualist\n| attribute = Channeling Magic\n| type = Weapon Spell\n| energy = 10\n| activation = {{1/4}}\n| recharge = 10\n| causes1 = Increased Attack Speed\n| description = [[Weapon Spell]]. For {{gr|5|15}} seconds, you [[Attack speed|attack 25% faster]].\n| concise description = Weapon Spell. ({{gr|5|15}} seconds.) You attack 25% faster.\n| target = self\n}}\n\n{{Skill progression\n|attribute = [[Channeling Magic]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 15}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Eye of the North]]\n** [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n** [[Sida]] ([[Gunnar's Hold]])\n** [[Ybbob]] ([[Rata Sum]])\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Destor the Truth Seeker]] ([[Kessex Peak (War in Kryta)]])\n\n== Notes ==\n* Combines well with [[Spirit's Strength]].\n* This is the only weapon spell that cannot [[target]] an [[ally]]."
+}

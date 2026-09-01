@@ -1,0 +1,7 @@
+{
+  "title": "Mandragor Dust Devil",
+  "pageid": 70386,
+  "revid": 2639670,
+  "timestamp": "2019-07-19T12:53:33Z",
+  "wikitext": "{{NPC infobox\n| name = Mandragor Dust Devil\n| image = [[File:Mandragor Smoke Devil.jpg|150px]]\n| affiliation = Charr Homelands wildlife\n| type = Mandragor\n| profession = r\n| level = 24 (26)\n| campaign = Eye of the North\n}}__NOTOC__\n[[Mandragor Dust Devil]]s are [[trapper]]s.\n\n==Locations==\n*[[Charr Homelands]]\n**{{NPC location|Grothmar Wardowns}}\n\n==Missions==\n*Charr Homelands\n**{{NPC location|Against the Charr}}\n\n==Skills==\n11 [[Beast Mastery]], 15 [[Wilderness Survival]] (16 [[Expertise]] in [[hard mode]])\n*{{skill icon|Dust Trap}}\n*{{skill icon|Healing Spring}}\n*{{skill icon|Trapper's Focus}} ([[elite]])\n*{{skill icon|Trapper's Speed}}\n*{{skill icon|Viper's Nest}}\n*{{monster skill icon|Ground Cover}}\n*{{monster skill icon|Mandragor's Charge}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 106\n| piercing = 106\n| slashing = 106\n| cold = 112\n| earth = 88\n| fire = 112\n| lightning = 112\n}}\n\n==Items dropped==\n*[[Fibrous Mandragor Root]]"
+}

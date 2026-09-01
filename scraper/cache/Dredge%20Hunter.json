@@ -1,0 +1,7 @@
+{
+  "title": "Dredge Hunter",
+  "pageid": 65410,
+  "revid": 2325446,
+  "timestamp": "2011-06-26T17:19:44Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Dredge\n| profession = Ranger\n| affiliation = Depths of Tyria wildlife\n| level = 20 (26)\n| campaign = Eye of the North\n}}\n[[Dredge Hunter]]s are [[condition]] spamming [[ranger]]s.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Raven's Point}}: Level 2\n\n==Skills==\n*{{skill icon|Apply Poison}}\n*{{skill icon|Broad Head Arrow}} ([[elite]])\n*{{skill icon|Hunter's Shot}}\n*{{skill icon|Read the Wind}}\n*{{skill icon|Screaming Shot}}\n*{{skill icon|Troll Unguent}}\n*{{monster skill icon|Ceiling Collapse}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 70\n| piercing = 70\n| slashing = 70\n| cold = 100\n| earth = 100\n| fire = 100\n| lightning = 100\n}}\n\n==Items dropped==\n*[[Dredge Charm]]\n*[[Dredge Garment]]"
+}

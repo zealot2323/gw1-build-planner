@@ -1,0 +1,7 @@
+{
+  "title": "Stone Summit Healer",
+  "pageid": 65376,
+  "revid": 2235532,
+  "timestamp": "2011-02-07T16:05:54Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Stone Summit caster.jpg|150px]]\n| name = Stone Summit Healer\n| type = Dwarf\n| affiliation = Stone Summit\n| profession = mo\n| level = 24 (26)\n| campaign = Eye of the North\n}}\n[[Stone Summit Healer]]s are the [[Stone Summit]]'s potent healers in [[Eye of the North]].\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Darkrime Delves}}\n**{{NPC location|Vloxen Excavations}}\n*[[Far Shiverpeaks]]\n**{{NPC location|Attack on Jalis's Camp}}\n**{{NPC location|Bjora Marches}}\n**{{NPC location|Drakkar Lake}}\n**{{NPC location|Norrhart Domains}}\n\n==Skills==\n*{{skill icon|Contemplation of Purity}}\n*{{skill icon|Healer's Boon}} ([[elite]])\n*{{skill icon|Healing Whisper}}\n*{{skill icon|Orison of Healing}}\n*{{skill icon|Restful Breeze}}\n*{{skill icon|Words of Comfort}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = mo\n| blunt = 71\n| piercing = 71\n| slashing = 71\n| cold = 71\n| earth = 71\n| fire = 71\n| lightning = 71\n}}\n\n==Items dropped==\n*[[Dwarven Healer Outfit]]\n*[[Stone Summit Spaulder]]\n\n==Notes==\n*They sometimes wield [[shield]]s.\n*They will spam Orison of Healing on a [[Stone Summit Gnasher]]'s [[minion]]s outside of combat."
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Raven Talons",
+  "pageid": 64042,
+  "revid": 2684372,
+  "timestamp": "2023-02-27T15:05:23Z",
+  "wikitext": "{{Skill infobox\n| name = Raven Talons\n| campaign = Eye of the North\n| attribute = Norn rank\n| type = Touch skill\n| special = Norn Blessing\n| activation = {{3/4}}\n| recharge = 1\n| pve-only = y\n| range = touch\n| causes1 = Crippled\n| causes2 = Bleeding\n| causes3 = Piercing Damage\n| description = [[Skill (skill type)|Skill]]. [[Target]] [[Touch skill|touched]] [[foe]] takes {{gr2|20|35}} [[piercing damage]] and is [[Bleeding]] and [[Crippled]] for {{gr2|4|10}} seconds.\n| concise description = Touch Skill. Deals {{gr2|20|35}} piercing damage. Inflicts Bleeding and Crippled conditions ({{gr2|4|10}} seconds).\n| target = foes\n}}\n\n{{Skill progression max10\n|title track = [[Norn rank]]\n|var1 name = [[Piercing damage]]\n|var1 at0 = 20\n|var1 at10 = 35\n|var2 name = [[Bleeding]] and [[Crippled]] [[duration]]\n|var2 at0  = 4\n|var2 at10 = 10\n}}\n\n==Acquisition==\nTemporarily, as one of the five skills available while under the effect of [[Raven Blessing]].\n\n== Related skills ==\n* {{Skill icon|Crippling Slash}} ([[elite]])\n* {{Skill icon|Raven Talons (A Gate Too Far)}}\n\n== Notes ==\n* Crippled [[cover]]s bleeding.\n\n[[de:Rabenklauen]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Ancient Effigy",
+  "pageid": 74273,
+  "revid": 2370014,
+  "timestamp": "2011-08-28T06:37:47Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Carven_Effigy.jpg|150px]]\n| type = Elemental\n| affiliation = Undead\n| profession = e\n| level = 28 (30)\n| campaign = Eye of the North\n}}\n[[Ancient Effigy|Ancient Effigies]] are [[elemental]] [[construct]]s created to serve as [[elementalist]]s in [[Zoldark the Unholy]]'s personal [[Undead]] army phalanx. Ancient Effigies are very resilient and use high damage [[AoE]] spells.\n\n== Locations ==\n*[[Depths of Tyria]]\n**{{NPC location|Vloxen Excavations}} (levels 2 and 3)\n\n==Skills==\n*{{Skill icon|Churning Earth}}\n*{{Skill icon|Earth Attunement}}\n*{{Skill icon|Eruption}}\n*{{Skill icon|Obsidian Flame}}\n*{{Skill icon|Sandstorm}} ([[elite]])\n*{{Skill icon|Stoning}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = e\n| blunt = 83\n| piercing = 83\n| slashing = 83\n| cold = 83\n| earth = 83\n| fire = 83\n| lightning = 83\n}}\n\n==Items dropped==\n*[[Undead Bone]]\n\n==Notes==\n* Ancient Effigies respawn after they are killed.\n* Similar to most Elementals, Ancient Effigies are not [[fleshy]] and do not suffer extra damage from [[holy damage]] sources.\n*They are vulnerable to [[of Deathbane]] weapon modifiers as they are part of the [[undead]] army, but they only trigger [[Edge of Extinction]] for elemental creatures."
+}

@@ -1,0 +1,7 @@
+{
+  "title": "\"Dodge This!\"",
+  "pageid": 58314,
+  "revid": 2732700,
+  "timestamp": "2026-07-04T16:51:16Z",
+  "wikitext": "{{Skill infobox\n| name = \"Dodge This!\"\n| id = 2354\n| campaign = Eye of the North\n| attribute = Norn rank\n| type = Shout\n| adrenaline = 4\n| pve-only = y\n| causes1 = Unblockable\n| description = [[Shout]]. For {{gr2|16|20}} seconds, your next [[attack]] cannot be [[block]]ed and does {{gr2|14|20|+}} [[damage]].\n| concise description = Shout. ({{gr2|16|20}} seconds.) Your next attack is unblockable and deals {{gr2|14|20|+}} damage.\n| aoe = None\n}}\n\n{{Skill progression max10\n|title track = [[Norn rank]]\n|var1 name = [[Duration]]\n|var1 at0  = 16\n|var1 at10 = 20\n|var2 name = + [[Damage]]\n|var2 at0  = 14\n|var2 at10 = 20\n}}\n\n==Acquisition==\n'''[[Skill quest]]s'''\n*[[Final Round: Fight!]] ([[Gunnar's Hold]])\n\n==Related skills==\n*{{skill icon|\"I Am the Strongest!\"}}\n\n==Trivia==\n*The skill name is a reference to the film [[w:The Matrix|The Matrix]] ([http://wiki.guildwars.com/index.php?title=User_talk:Emily_Diehl/Trivia_archive&oldid=312796#.22Finish_Him.21.22 source]), in which the character Trinity holds up a gun to an agent's head and says, \"dodge this\".\n*The warrior in the [[skill icon]] seems to be wearing [[Warrior Elite Gladiator armor|Elite Gladiator armor]].\n{{DEFAULTSORT:Dodge This!}}\n\n[[Category:References to films & tv series]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Power Lock",
+  "pageid": 51848,
+  "revid": 2733278,
+  "timestamp": "2026-07-05T17:18:57Z",
+  "wikitext": "{{Skill infobox\n| name = Power Lock\n| id = 1994\n| campaign = Eye of the North\n| profession = Mesmer\n| attribute = Domination Magic\n| type = Spell\n| target = foes\n| energy = 5\n| activation = {{1/4}}\n| recharge = 20\n| causes1 = Interrupt\n| causes2 = Disable\n| description = [[Spell]]. If [[target]] [[foe]] is casting a spell or [[chant]], that skill is [[interrupt]]ed and [[disable]]d for an additional {{gr|5|13}} seconds.\n| concise description = Spell. Interrupts a spell or chant. Interruption effect: interrupted spell or chant is disabled for {{gr|5|13|+}} seconds.}}\n\n{{Skill progression\n|attribute = [[Domination Magic]]\n|var1 name = [[Disable]] [[duration]]\n|var1 at0 = 5\n|var1 at15 = 13}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n\n== Related skills ==\n* {{Skill icon|Complicate}}\n* {{Skill icon|Disrupting Chop}}\n* {{Skill icon|Distracting Shot}}\n* {{Skill icon|Power Block}} ([[elite]])\n* {{Skill icon|Psychic Distraction}} (elite)\n\n== Notes ==\n* Disables skills even if interruption is prevented.\n\n== Trivia ==\n* The [[Mesmer]] in the [[skill icon]] is wearing [[Mesmer Vabbian armor|Vabbian armor]], and is probably the same person that appears on skill icons of [[Waste Not, Want Not]] and [[Wandering Eye]]."
+}

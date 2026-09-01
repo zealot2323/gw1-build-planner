@@ -1,0 +1,7 @@
+{
+  "title": "Venomweaver",
+  "pageid": 66591,
+  "revid": 2598538,
+  "timestamp": "2015-11-09T18:58:54Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Arachnid\n| profession = r\n| level = 24 (26)\n| campaign = Eye of the North\n| map1 = [[File:\"Spider Giant\" concept art.jpg|180px]]\n| map1-text = Concept art by [[Katy Hargrove]].\n}}\n[[Venomweaver]]s are [[arachnid]]s that can quickly inflict several [[condition]]s.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Arachni's Haunt}}\n**{{NPC location|Heart of the Shiverpeaks}} (level 1)\n**{{NPC location|Vloxen Excavations}} (level 2)\n*[[Tarnished Coast]]\n**{{NPC location|Arbor Bay}}\n**{{NPC location|Magus Stones}}\n**{{NPC location|Riven Earth}}\n**{{NPC location|Sparkfly Swamp}}\n**{{NPC location|Verdant Cascades}}\n\n==Missions==\n*Depths of Tyria\n**{{NPC location|Finding the Bloodstone}}\n**{{NPC location|Warband of Brothers}}\n\n==Skills==\n*{{skill icon|Apply Poison}}\n*{{skill icon|Crippling Shot}} ([[elite]])\n*{{skill icon|Debilitating Shot}}\n*{{skill icon|Hunter's Shot}}\n*{{skill icon|Natural Stride}}\n*{{skill icon|Rapid Fire}}\n*{{skill icon|Troll Unguent}}\n*{{monster skill icon|Snaring Web}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 82\n| piercing = 82\n| slashing = 82\n| cold = 82\n| earth = 82\n| fire = 82\n| lightning = 82\n}}\n\n==Items dropped==\n*[[Weaver Leg]]"
+}

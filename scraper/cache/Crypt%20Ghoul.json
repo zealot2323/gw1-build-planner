@@ -1,0 +1,7 @@
+{
+  "title": "Crypt Ghoul",
+  "pageid": 95556,
+  "revid": 2586197,
+  "timestamp": "2015-04-28T00:42:59Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n|type = Zombie\n|affiliation = Undead\n|image = [[image:Ghoul.jpg|150px]]\n|profession = w\n|level = 20 (26)\n|campaign = Eye of the North\n}}\n[[Crypt Ghoul]]s appear in groups with other [[zombie]]s.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Cathedral of Flames}} (all levels)\n\n==Skills==\n15 [[Strength]]\n*{{skill icon|Enraging Charge}}\n*{{skill icon|Hamstring}}\n*{{skill icon|Headbutt}} ([[elite]])\n*{{skill icon|Savage Slash}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 100\n| piercing = 100\n| slashing = 100\n| cold = 80\n| earth = 80\n| fire = 80\n| lightning = 80\n}}\n\n==Items dropped==\n*[[Bone]]\n*[[Dead Bow]]\n*[[Sephis Axe]]\n\n[[Category:Drops bone]]"
+}

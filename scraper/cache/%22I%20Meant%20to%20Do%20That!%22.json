@@ -1,0 +1,7 @@
+{
+  "title": "\"I Meant to Do That!\"",
+  "pageid": 51905,
+  "revid": 2720219,
+  "timestamp": "2026-02-05T23:44:06Z",
+  "wikitext": "{{Skill infobox\n| name = \"I Meant to Do That!\"\n| id = 2067\n| campaign = Eye of the North\n| profession = Warrior\n| attribute = Strength\n| type = Shout\n| energy = 5\n| recharge = 8\n| aoe = None\n| causes1 = Adrenaline Gain\n| description = [[Shout]]. If you are [[Knock down|knocked down]], you gain {{gr|1|6}} strikes of [[adrenaline]].\n| concise description = Shout. You gain {{gr|1|6}} strikes of adrenaline if you are knocked-down.\n}}\n\n{{Skill progression\n|attribute = [[Strength]]\n|var1 name = [[Adrenaline]] gain\n|var1 at0 = 1\n|var1 at15 = 6}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n*[[Sida]] ([[Gunnar's Hold]])\n*[[Ybbob]] ([[Rata Sum]])\n\n== Notes ==\n*Can be combined with [[Grapple]], [[Desperation Blow]], and [[Drunken Blow]].\n\n==Trivia==\n* The character in the [[skill icon]] seems to be a female warrior performing the ''/wave'' [[emote]], while wearing [[Warrior Charr Hide armor|Charr Hide armor]].\n{{Skill change}}\n\n{{DEFAULTSORT:I Meant to Do That!}}"
+}

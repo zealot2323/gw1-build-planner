@@ -1,0 +1,7 @@
+{
+  "title": "Frost Siege Wurm",
+  "pageid": 81485,
+  "revid": 2324899,
+  "timestamp": "2011-06-25T16:10:13Z",
+  "wikitext": "{{NPC infobox\n| image = [[Image:Frost Wurm.jpg|150px]]\n| type = Wurm\n| affiliation = Far Shiverpeaks wildlife\n| profession = w\n| level = 28 (30)\n| campaign = Eye of the North\n}}__NOTOC__\n[[Frost Siege Wurm]]s are strong Wurms who can be found in [[Frostmaw's Burrows]]. They are very deadly because of the great damage they deal and their skill [[Wurm Bile]], and should be killed first.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Frostmaw's Burrows}} (all levels except 3)\n\n==Skills==\n*{{monster skill icon|Natural Resistance}}\n*{{monster skill icon|Wurm Bile}}\n*{{monster skill icon|Wurm Siege (Eye of the North)}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 120\n| piercing = 120\n| slashing = 120\n| cold = 120\n| earth = 120\n| fire = 120\n| lightning = 120\n}}\n\n==Items dropped==\n*[[Frozen Wurm Husk]]"
+}

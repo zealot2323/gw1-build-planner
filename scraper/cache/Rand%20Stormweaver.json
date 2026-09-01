@@ -1,0 +1,7 @@
+{
+  "title": "Rand Stormweaver",
+  "pageid": 70301,
+  "revid": 2698729,
+  "timestamp": "2024-08-06T15:13:10Z",
+  "wikitext": "{{NPC infobox\n| image = [[File:Mountain Centaur martial.jpg|200px]]\n| type = Centaur\n| affiliation = Modniir\n| profession = Ranger\n| level = 28 (28)\n| campaign = Eye of the North\n}}__NOTOC__\n[[Rand Stormweaver]] is a bosslike foe found in the northeast corner of [[Justiciar Thommis]]'s room of [[Slavers' Exile]]. He is accompanied by a small group of [[Stone Summit]] dwarves, and a patrol of [[Wretched Wolf|Wretched Wolves]] occasionally passes by his location. When he is defeated, a [[Chest of the Slaver (Rand Stormweaver)]] appears at his spawn location.\n\n==Location==\n*[[Depths of Tyria]]\n**{{NPC location|Slavers' Exile}}\n\n==Quests==\n'''Quests involved in:'''\n* [[The Last Hierophant]]\n* [[Rand Stormweaver (Zaishen quest)]]\n\n==Skills==\n*{{skill icon|Barrage}} ([[elite]])\n*{{skill icon|Concussion Shot}}\n*{{skill icon|Lightning Reflexes}}\n*{{skill icon|Screaming Shot}}\n*{{skill icon|Troll Unguent}}\n*{{skill icon|Whirling Defense}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 94\n| piercing = 94\n| slashing = 94\n| cold = 124\n| earth = 124\n| fire = 124\n| lightning = 124\n}}\n\n==Items dropped==\n*[[Modniir Tunic]]\n\n==Notes==\n*Upon death, Rand [[spawn]]s a [[mob]] of five enemies consisting of two random [[Stone Summit]], one to two [[Stonewolf|Stonewolves]], and one to two [[Modniir Hunter]]s.\n\n[[Category:Boss-like foes]]"
+}

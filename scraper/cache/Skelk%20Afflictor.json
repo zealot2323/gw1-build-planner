@@ -1,0 +1,7 @@
+{
+  "title": "Skelk Afflictor",
+  "pageid": 72085,
+  "revid": 2733579,
+  "timestamp": "2026-07-07T19:12:42Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| species = Skelk\n| affiliation = Tarnished Coast wildlife\n| profession = n\n| level = 28 (30)\n| campaign = Eye of the North\n| map1 = [[File:\"Chupacabra\" concept art.jpg|200px]]\n| map1-text = Concept art by [[Doug Williams]].\n}}\n[[Skelk Afflictor]]s are [[necromancer]]s with [[health degeneration]] skills.\n\n==Locations==\n*[[Tarnished Coast]]\n**{{NPC location|Verdant Cascades}}\n\n==Missions==\n*[[Depths of Tyria]]\n**{{NPC location|Finding the Bloodstone}}\n\n==Skills==\n16 [[Curses]], 14...16 [[Death Magic]] (20 Curses, 20 Death Magic in [[Hard mode]])\n*{{skill icon|Malaise}}\n*{{skill icon|Rising Bile}}\n*{{skill icon|Rotting Flesh}}\n*{{skill icon|Shadow of Fear}}\n*{{skill icon|Soul Feast}}\n*{{skill icon|Wither}} ([[elite]])\n\n==Armor ratings==\n{{NPC statistics\n| prof = n\n| blunt = 103\n| piercing = 103\n| slashing = 103\n| cold = 83\n| earth = 83\n| fire = 83\n| lightning = 83\n}}\n\n==Items dropped==\n*[[Skelk Claw]]"
+}

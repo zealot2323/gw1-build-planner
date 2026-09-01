@@ -1,0 +1,7 @@
+{
+  "title": "Worm (NPC)",
+  "pageid": 118710,
+  "revid": 2272925,
+  "timestamp": "2011-03-29T22:22:36Z",
+  "wikitext": "{{NPC infobox\n | name = Worm\n | type = Worm\n | affiliation = Charr Homelands wildlife\n | level = 20 (30)\n | campaign = Eye of the North\n}}\n[[Worm (NPC)|Worm]]s behave very similarly to other [[Worm]]s in the game. By default they won't attack and are stationary.\n\n==Locations==\n*[[Charr Homelands]]\n**{{NPC location|Sacnoth Valley}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 140\n| piercing = 140\n| slashing = 140\n| cold = 80\n| earth = 80\n| fire = 80\n| lightning = 80\n}}"
+}

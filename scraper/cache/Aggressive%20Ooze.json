@@ -1,0 +1,7 @@
+{
+  "title": "Aggressive Ooze",
+  "pageid": 65420,
+  "revid": 2663278,
+  "timestamp": "2020-07-01T14:05:20Z",
+  "wikitext": "{{NPC infobox\n| image = [[File:Ooze.jpg|150px]]\n| type = Jelly\n| affiliation = Depths of Tyria wildlife\n| profession = w\n| level = 20 (26)\n| campaign = Eye of the North\n}}__NOTOC__\n[[Aggressive Ooze]] is an Ooze warrior found in several dungeons.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Arachni's Haunt}} (level 1)\n**{{NPC location|Heart of the Shiverpeaks}} (levels 1 and 3)\n**{{NPC location|Ooze Pit}}\n**{{NPC location|Rragar's Menagerie}} (all levels)\n**{{NPC location|Sepulchre of Dragrimmar}} (level 1)\n**{{NPC location|Vloxen Excavations}} (levels 1 and 2)\n\n==Skills==\n(15 [[Strength]], 16 [[Tactics]] in [[Hard mode]])\n*{{skill icon|Balanced Stance}}\n*{{skill icon|Bull's Strike}}\n*{{skill icon|Counter Blow}}\n*{{skill icon|Crushing Blow}}\n*{{skill icon|Defensive Stance}}\n*{{skill icon|Headbutt}} ([[elite]])\n*{{monster skill icon|Ooze Combination}}\n*{{monster skill icon|Ooze Division}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 120\n| piercing = 120\n| slashing = 120\n| cold = 80\n| earth = 80\n| fire = 80\n| lightning = 80\n}}\n\n==Items dropped==\n*[[Blob of Ooze]]\n\n==Notes==\n*Consider combating with skills that transfer conditions among foes: [[Fevered Dreams]], [[Extend Conditions]], [[Epidemic]], etc. Aggressive Oozes are usually with several other casters and spreading [[Dazed]] (which they inflict on themselves) will make the group considerably less harmful."
+}

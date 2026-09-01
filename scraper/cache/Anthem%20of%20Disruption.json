@@ -1,0 +1,7 @@
+{
+  "title": "Anthem of Disruption",
+  "pageid": 51847,
+  "revid": 2645419,
+  "timestamp": "2019-11-09T13:17:17Z",
+  "wikitext": "{{Skill infobox\n| id = 2018\n| name=Anthem of Disruption\n| campaign=Eye of the North\n| profession=Paragon\n| attribute=Command\n| type=Chant\n| energy=10\n| activation=1\n| recharge=15\n| causes1 = Interrupt\n| description = [[Chant]]. For {{gr|1|10}} seconds, the next [[attack skill]] used by each [[ally]] within [[earshot]] also [[interrupt]]s an [[action]].\n| concise description = Chant. ({{gr|1|10}} seconds.) Allies in earshot interrupt an action with their next attack skill.\n| has-pvp = y\n}}\n{{Skill progression\n|attribute = [[Command]]\n|var1 name = [[Duration]]\n|var1 at0 = 1\n|var1 at15 = 10}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n*[[Sida]] ([[Gunnar's Hold]])\n*[[Ybbob]] ([[Rata Sum]])\n'''[[Hero skill trainer]]s'''\n*[[Gedrel of Ascalon]] (Eye of the North)\n*[[Kodan]] (Gunnar's Hold)\n*[[Tyr the Skaald]] (Gunnar's Hold)\n*[[Lexx]] (Rata Sum)\n\n== Notes ==\n*This chant is triggered for the first target of the next attack skill, regardless if it hits, [[miss]]es, is [[block]]ed, or [[Line of sight|obstructed]].\n\n[[Category:Skills offered by hero skill trainers]]\n[[Category:Skills that affect allies]]\n\n[[de:Hymne der Störung]]"
+}

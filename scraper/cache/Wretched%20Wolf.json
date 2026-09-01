@@ -1,0 +1,7 @@
+{
+  "title": "Wretched Wolf",
+  "pageid": 99379,
+  "revid": 2672012,
+  "timestamp": "2021-04-15T21:25:25Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Plant Wolf.jpg|250px]]\n| type = Skelk\n| affiliation = Depths of Tyria wildlife\n| profession = a\n| level = 28 (30)\n| campaign = Eye of the North\n}}\nThe Wretched Wolf is a creature that roams back and forth in a small area of the first level of Slaver's Exile.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Slavers' Exile}}\n\n==Skills==\n*{{skill icon|Assault Enchantments}} ([[elite]])\n*{{skill icon|Dark Escape}}\n*{{skill icon|Feigned Neutrality}}\n*{{skill icon|Fox Fangs}}\n*{{skill icon|Jagged Strike}}\n*{{skill icon|Twisting Fangs}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = a\n| blunt = 94\n| piercing = 94\n| slashing = 94\n| cold = 94\n| earth = 94\n| fire = 94\n| lightning = 94\n}}\n\n==Items dropped==\n*[[Skelk Fang]]\n\n==Notes==\nThe Wretched Wolf begins as an ally, but periodically walks up to the norn taunting it, turns into an enemy and attacks the two [[Norn Guard Captain|Norn Guard Captains]] (or the party if in range). When its health goes below 15%, it turns into an ally, and returns to its initial position while healing itself, before restarting the cycle after about half a minute. If it manages to kill both [[Norn Guard Captain|Norn Guard Captains]], it loiters around its initial location as enemy (but not attacking any other NPCs), until the [[Norn Guard Captain|Norn Guard Captains]] revive themselves, at which point it attacks them again."
+}

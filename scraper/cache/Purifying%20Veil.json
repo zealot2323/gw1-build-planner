@@ -1,0 +1,7 @@
+{
+  "title": "Purifying Veil",
+  "pageid": 51895,
+  "revid": 2732873,
+  "timestamp": "2026-07-04T20:56:08Z",
+  "wikitext": "{{Skill infobox\n| name = Purifying Veil\n| id = 2007\n| campaign = Eye of the North\n| profession = Monk\n| attribute = Protection Prayers\n| type = Enchantment Spell\n| energy = 5\n| activation = 1\n| recharge = 6\n| upkeep = -1\n| description = [[Enchantment Spell]]. While you [[upkeep|maintain]] this enchantment, [[conditions]] expire {{gr|5|50||%}} faster on [[target]] [[ally]]. When this enchantment ends, one condition is removed from that ally.\n| concise description = Enchantment Spell. Conditions expire {{gr|5|50||%}} faster on target ally. End effect: removes a condition.\n| removes1 = Condition\n}}\n\n{{Skill progression\n|attribute = [[Protection Prayers]]\n|var1 name = Faster [[condition]] expiration %\n|var1 at0 = 5\n|var1 at15 = 50}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n\n== Related skills ==\n* {{Skill icon|Holy Veil}}\n* {{Skill icon|Pure Was Li Ming}}\n* {{Skill icon|Recovery}}\n\n== Notes ==\n* This skill has a [[Smiting Prayers]] animation and sound while it is in [[Protection Prayers]], because it originally was in the Smiting Prayers line.\n\n[[Category:Upkeep skills]]"
+}

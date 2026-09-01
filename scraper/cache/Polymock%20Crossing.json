@@ -1,0 +1,7 @@
+{
+  "title": "Polymock Crossing",
+  "pageid": 77663,
+  "revid": 2631295,
+  "timestamp": "2018-06-23T17:22:22Z",
+  "wikitext": "{{Location infobox\n| image = [[Image:Polymock Crossing.jpg|196px]]\n| campaign = Eye of the North\n| region = Charr Homelands\n| type = Explorable area\n| partysize = 1\n| exits = None\n| ingame name=Polymock Crossing\n| game link type 0=explorable\n| game link num 0=688\n}}\n[[Polymock Crossing]] is an area where [[Polymock]] matches take place. You are brought here when you challenge certain NPCs to a Polymock match.\n\n==NPCs==\n*[[Wokk]] (Polymock judge)\n*Polymock opponents (one of them, depending on who you challenged):\n**[[Dune Teardrinker]]\n**[[Hoff]]\n*[[Polymock piece]]s (any 6, depending on which was selected for the Polymock match)\n\n==Notes==\n*[[Polymock Glacier]] is where Polymock matches take place in the [[Far Shiverpeaks]].\n*[[Polymock Coliseum]] is where Polymock matches take place in the [[Tarnished Coast]].\n\n{{bug| Often, if you spam or even just hit a skill after the the opponent has just drawn his second piece, but before the countdown has completed, your energy bar will maintain a display of nearly-full, however the game will display the message that you have no energy. This has only been observed when fighting [[Dune Teardrinker]] }}\n\n==Trivia==\n*This area appears to be the real version of the loading screen in the Charr Homelands.\n{{Explorable areas in the Charr Homelands}}\n\n[[de:Polymock-Kreuzung]]"
+}

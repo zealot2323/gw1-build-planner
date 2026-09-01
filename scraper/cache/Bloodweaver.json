@@ -1,0 +1,7 @@
+{
+  "title": "Bloodweaver",
+  "pageid": 67702,
+  "revid": 2709962,
+  "timestamp": "2025-07-01T05:02:55Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Brown spider.jpg|150px]]\n| type = Arachnid\n| profession = p\n| level = 24 (26)\n| campaign = Eye of the North\n}}\n[[Bloodweaver]]s specialize in [[condition]]s and [[interrupt]]s.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Arachni's Haunt}}\n**{{NPC location|Heart of the Shiverpeaks}}\n**{{NPC location|Vloxen Excavations}} (level 2)\n*[[Tarnished Coast]]\n**{{NPC location|Magus Stones}}\n**{{NPC location|Riven Earth}}\n**{{NPC location|Verdant Cascades}}\n\n==Missions==\n*Depths of Tyria\n**{{NPC location|Finding the Bloodstone}}\n**{{NPC location|Warband of Brothers}}\n\n==Skills==\n*{{skill icon|Anthem of Disruption}}\n*{{skill icon|Barbed Spear}}\n*{{skill icon|Leader's Comfort}}\n*{{skill icon|Stunning Strike}} ([[elite]])\n*{{skill icon|Vicious Attack}}\n*{{skill icon|Wild Throw}}\n*{{monster skill icon|Snaring Web}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = p\n| blunt = 91\n| piercing = 91\n| slashing = 91\n| cold = 91\n| earth = 91\n| fire = 91\n| lightning = 91\n}}\n\n==Items dropped==\n*[[Weaver Leg]]"
+}

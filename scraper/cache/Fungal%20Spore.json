@@ -1,0 +1,7 @@
+{
+  "title": "Fungal Spore",
+  "pageid": 72665,
+  "revid": 2413394,
+  "timestamp": "2011-11-24T18:45:55Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Nettle Spore.jpg|150px]]\n| affiliation = Depths of Tyria wildlife\n| type = Plant\n| level = 10 (24)\n| campaign = Eye of the North\n}}\n[[Fungal Spore]]s are the way [[Fungal Bloom]]s spread; the blooms spawn them, they move to another location and there use their one skill, destroying themselves while spawning a [[Parasitic Growth]].\n\n==Locations==\n*[[Depths of Tyria]]\n** {{NPC location|Arachni's Haunt}}\n** {{NPC location|Bogroot Growths}}\n** {{NPC location|Heart of the Shiverpeaks}}\n** {{NPC location|Vloxen Excavations}}\n\n==Skills==\n*{{monster skill icon|Fungal Explosion}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = n\n| blunt = 32\n| piercing = 32\n| slashing = 32\n| cold = 32\n| earth = 32\n| fire = 32\n| lightning = 32\n}}\n\n==Items dropped==\n*[[Fungal Root]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Body Shot",
+  "pageid": 51921,
+  "revid": 2738060,
+  "timestamp": "2026-08-22T02:05:07Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| name = Body Shot\n| id = 2198\n| campaign = Eye of the North\n| profession = Ranger\n| attribute = Marksmanship\n| type = Bow Attack\n| energy = 5\n| recharge = 8\n| causes1 = Energy Gain\n| description = [[Bow Attack]]. If this attack hits, you deal {{gr|5|20|+}} [[damage]]. If it hits a [[foe]] with [[Cracked Armor]], you gain {{gr|5|10}} [[Energy]].\n| concise description = Bow Attack. Deals {{gr|5|20|+}} damage. You gain {{gr|5|10}} Energy if target foe has Cracked Armor.\n}}\n\n{{Skill progression\n|attribute = [[Marksmanship]]\n|var1 name = + [[Damage]]\n|var1 at0 = 5\n|var1 at15 = 20\n|var2 name = [[Energy]] gain\n|var2 at0 = 5\n|var2 at15 = 10}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n*[[Sida]] ([[Gunnar's Hold]])\n*[[Ybbob]] ([[Rata Sum]])\n\n== Related skills ==\n*{{skill icon|Scavenger's Focus}} ([[elite]])\n*{{skill icon|Shock Arrow}}\n\n==Hero Usage==\nHeroes use this as a basic damage skill, ignoring its conditional bonus.\n\n==Notes==\n*There are no Ranger skills which inflict Cracked Armor.\n*Great synergy with [[Sundering Weapon]].\n\n==Trivia==\n*The [[Monk]] in the [[skill icon]] is wearing [[Monk Woven armor|Woven armor]].\n*The skill icon resembles the icon of the Elementalist skill [[Shell Shock]].\n*[[gw2:Body Shot|Body Shot]] is also the name of a skill in ''[[Guild Wars 2]]''."
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Ancient Statue",
+  "pageid": 90232,
+  "revid": 2370013,
+  "timestamp": "2011-08-28T06:37:33Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Carven_Effigy.jpg|150px]]\n| type = Elemental\n| affiliation = Undead\n| profession = a\n| level = 28 (30)\n| campaign = Eye of the North\n}}\n[[Ancient Statue|Ancient Statues]] are [[elemental]] [[construct]]s created to serve as [[assassin]]s in [[Zoldark the Unholy]]'s personal [[Undead]] army phalanx. Ancient Statues are very resilient and inflict [[Dazed]] and [[Blindness]] conditions.\n\n==Location==\n*[[Depths of Tyria]]\n**{{NPC location|Vloxen Excavations}} (level 3)\n\n==Skills==\n*{{skill icon|Critical Eye}}\n*{{skill icon|Death Blossom}}\n*{{skill icon|Disrupting Stab}}\n*{{skill icon|Expunge Enchantments}}\n*{{skill icon|Temple Strike}} ([[elite]])\n\n==Armor ratings==\n{{NPC statistics\n| prof = a\n| blunt = 94\n| piercing = 94\n| slashing = 94\n| cold = 94\n| earth = 94\n| fire = 94\n| lightning = 94\n}}\n\n==Items dropped==\n*[[Undead Bone]]\n\n==Notes==\n*Ancient Statues respawn after they are killed.\n* Similar to most Elementals, Ancient Statues are not [[fleshy]] and do not suffer extra damage from [[holy damage]] sources.\n*They are vulnerable to [[of Deathbane]] weapon modifiers as they are part of the [[undead]] army, but they only trigger [[Edge of Extinction]] for Elemental creatures."
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Energy Blast",
+  "pageid": 51881,
+  "revid": 2720977,
+  "timestamp": "2026-02-10T07:05:29Z",
+  "wikitext": "{{otheruses|the Elementalist skill|the monster skill of the same name|Energy Blast (golem)}}\n__NOTOC__{{Skill infobox\n| name = Energy Blast\n| id = 2193\n| campaign = Eye of the North\n| profession = Elementalist\n| attribute = Energy Storage\n| type = Spell\n| energy = 5\n| activation = {{3/2}}\n| recharge = 20\n| description = [[Spell]]. [[Target]] [[foe]] takes {{gr|1|2}} [[damage]] for each point of [[Energy]] you have (maximum 130 damage).\n| concise description = Spell. Deals {{gr|1|2}} damage (maximum 130) for each point of Energy you have.\n}}\n\n{{Skill progression\n|attribute = [[Energy Storage]]\n|var1 name = [[Armor-ignoring damage]] per [[energy]]\n|var1 at0 = 1\n|var1 at15 = 2}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n\n== Related skills ==\n* {{skill icon|Radiant Scythe}}\n\n== Notes ==\n* The energy you have is calculated when the spell is finished casting, after you've spent the initial 5.\n\n== Trivia ==\n* The [[skill icon]] bears a resemblance to [[Healing Burst]] and the unimplemented skill [[Energy Font]].\n* Energy Blast is the only [[Energy Storage]] skill that can cause direct or indirect damage.\n{{Skill change}}\n\n[[Category:Armor-ignoring damage]]"
+}

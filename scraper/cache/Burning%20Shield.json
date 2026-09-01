@@ -1,0 +1,7 @@
+{
+  "title": "Burning Shield",
+  "pageid": 51835,
+  "revid": 2645437,
+  "timestamp": "2019-11-09T13:17:58Z",
+  "wikitext": "{{Skill infobox\n| id = 2208\n| name=Burning Shield\n| campaign=Eye of the North\n| profession=Paragon\n| attribute=Leadership\n| type=Skill\n| energy=5\n| recharge=20\n| causes1 = Block\n| causes2 = Burning\n| description = [[Skill (skill type)|Skill]]. For {{gr|3|9}} seconds, while wielding a [[shield]], the next [[attack skill]] used against you is [[block]]ed. If it was a [[melee attack]], your attacker is set [[Burning|on fire]] for {{gr|1|6}} seconds.\n| concise description = Skill. ({{gr|3|9}} seconds.) Blocks the next attack skill against you. Inflicts Burning condition ({{gr|1|6}} second[s]) if it was a melee attack. {{gray|No effect unless you are wielding a shield.}}\n}}\n{{Skill progression\n|attribute = [[Leadership]]\n|var1 name = [[Duration]]\n|var1 at0 = 3\n|var1 at15 = 9\n|var2 name = [[Burning]] duration\n|var2 at0 = 1\n|var2 at15 = 6}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n*[[Sida]] ([[Gunnar's Hold]])\n*[[Ybbob]] ([[Rata Sum]])\n\n==Related skills==\n*{{skill icon|Shield Bash}}\n*{{skill icon|Shield of Force}}\n*{{skill icon|Smoke Powder Defense}}\n*{{skill icon|Wary Stance}}\n\n[[Category:Skills requiring an equipped weapon]]\n\n[[de:Brennender Schild]]"
+}

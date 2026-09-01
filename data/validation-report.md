@@ -1,18 +1,30 @@
 # Validation report
 
-Generated 2026-09-01T13:59:43.287Z by `npm run parse` (cache-only).
+Generated 2026-09-01T15:33:05.178Z by `npm run parse` (cache-only).
 
-## skills (9 issues on 9 pages)
+## skills (21 issues on 21 pages)
 
-- **Anguish (attack)**: no Acquisition section
-- **Bloodsong (attack)**: no Acquisition section
-- **Disenchantment (attack)**: no Acquisition section
-- **Dissonance (attack)**: no Acquisition section
-- **Gaze of Fury (attack)**: no Acquisition section
-- **Pain (attack)**: no Acquisition section
+- **Asura rank**: no in-game skill id — not a real skill, dropped
+- **Asura summon**: no in-game skill id — not a real skill, dropped
+- **Deldrimor rank**: no in-game skill id — not a real skill, dropped
+- **Heart of the Norn**: no in-game skill id — not a real skill, dropped
+- **Norn rank**: no in-game skill id — not a real skill, dropped
 - **Pain (attack) (Signet of Spirits)**: no Acquisition section
-- **Shadowsong (attack)**: no Acquisition section
-- **Wanderlust (attack)**: no Acquisition section
+- **Raven Flight**: no in-game skill id — not a real skill, dropped
+- **Raven Shriek**: no in-game skill id — not a real skill, dropped
+- **Raven Swoop**: no in-game skill id — not a real skill, dropped
+- **Raven Talons**: no in-game skill id — not a real skill, dropped
+- **Rebel Yell**: no in-game skill id — not a real skill, dropped
+- **Stout-Hearted**: no in-game skill id — not a real skill, dropped
+- **Totem of Man**: no in-game skill id — not a real skill, dropped
+- **Ursan Force**: no in-game skill id — not a real skill, dropped
+- **Ursan Rage**: no in-game skill id — not a real skill, dropped
+- **Ursan Roar**: no in-game skill id — not a real skill, dropped
+- **Ursan Strike**: no in-game skill id — not a real skill, dropped
+- **Volfen Agility**: no in-game skill id — not a real skill, dropped
+- **Volfen Bloodlust**: no in-game skill id — not a real skill, dropped
+- **Volfen Claw**: no in-game skill id — not a real skill, dropped
+- **Volfen Pounce**: no in-game skill id — not a real skill, dropped
 
 ## trainers (21 issues on 18 pages)
 
@@ -38,7 +50,7 @@ Generated 2026-09-01T13:59:43.287Z by `npm run parse` (cache-only).
 - **Ziinyingmao Kaga**: stands in unknown location "Dragon's Throat"
 - **Zytka**: inherits from unknown trainer "Maatu Keep"
 
-## locations (26 issues on 26 pages)
+## locations (32 issues on 32 pages)
 
 - **Bejunkan Pier**: no foes parsed
 - **Bokka Amphitheatre**: no foes parsed
@@ -51,14 +63,20 @@ Generated 2026-09-01T13:59:43.287Z by `npm run parse` (cache-only).
 - **Etnaran Keys (Luxon)**: no exits in infobox
 - **Grenz Frontier (Kurzick)**: no exits in infobox
 - **Grenz Frontier (Luxon)**: no exits in infobox
+- **Hall of Monuments**: no foes parsed
+- **Hero Tutorial**: no Location infobox
 - **Kaanai Canyon (Kurzick)**: no exits in infobox
 - **Kaanai Canyon (Luxon)**: no exits in infobox
 - **Kaineng Docks**: no foes parsed
 - **Linnok Courtyard**: no foes parsed
+- **Polymock Coliseum**: no foes parsed
+- **Polymock Crossing**: no foes parsed
+- **Polymock Glacier**: no foes parsed
 - **Raisu Pavilion**: no foes parsed
 - **Ring of Fire (outpost)**: no exits in infobox
 - **Saltspray Beach (Kurzick)**: no exits in infobox
 - **Saltspray Beach (Luxon)**: no exits in infobox
+- **Secret Lair of the Snowmen**: no exits in infobox
 - **Shing Jea Arena (outpost)**: no exits in infobox
 - **Sun Docks**: no foes parsed
 - **The Ancestral Lands (Kurzick)**: no exits in infobox
@@ -72,7 +90,7 @@ Generated 2026-09-01T13:59:43.287Z by `npm run parse` (cache-only).
 - **Unwaking Waters**: no matching mission outpost in manifest
 - **Vizunah Square**: no matching mission outpost in manifest
 
-## monsters (16 issues on 14 pages)
+## monsters (19 issues on 16 pages)
 
 - **:Grawl (pre-Searing)**: page missing from cache
 - **:Grawl (pre-Searing)**: page missing from cache
@@ -81,98 +99,126 @@ Generated 2026-09-01T13:59:43.287Z by `npm run parse` (cache-only).
 - **Argo**: boss with multiple elites: Mind Burn, Sandstorm
 - **Aurora**: boss with multiple elites: Heal as One, Barrage
 - **Defiant Ancient Sseer**: boss with multiple elites: Soul Twisting, Defiant Was Xinrae
+- **Heket**: page missing from cache
+- **Heket**: page missing from cache
 - **Insect**: page missing from cache
 - **Kormab, Burning Heart**: boss with multiple elites: Searing Flames, Mind Burn
 - **Mantid_Queen_(Factions)**: page missing from cache
 - **Mirage Iboga**: page missing from cache
 - **Mirage Iboga**: page missing from cache
+- **Nornbear**: page missing from cache
 - **Seaguard Eli**: boss with multiple elites: "Coward!", Dragon Slash
 - **Seaguard Hala**: boss with multiple elites: Shared Burden, Power Leech
 - **Titan**: page missing from cache
 - **Wolf**: page missing from cache
 
-## cross-validation (125 issues on 94 pages)
+## cross-validation (126 issues on 99 pages)
 
 - **"I Will Survive!"**: capture boss "Asad the Ignoble" doesn't list this skill
 - **"Together as One!"**: elite: only quest-conditional capture sources
 - **"You're All Alone!"**: capture boss "Corsair Commander (warrior)" is not in the bestiary
-- **Afflicted Assassin**: uses unresolved skill "Poison Tip Signet" (not in cache — likely non-Prophecies or a monster skill)
-- **Afflicted Assassin**: uses unresolved skill "Signet of Deadly Corruption" (not in cache — likely non-Prophecies or a monster skill)
-- **Afflicted Monk**: uses unresolved skill "Smite Condition" (not in cache — likely non-Prophecies or a monster skill)
-- **Afflicted Necromancer**: uses unresolved skill "Masochism" (not in cache — likely non-Prophecies or a monster skill)
-- **Afflicted Necromancer**: uses unresolved skill "Putrid Bile" (not in cache — likely non-Prophecies or a monster skill)
-- **Afflicted Ritualist**: uses unresolved skill "Agony" (not in cache — likely non-Prophecies or a monster skill)
-- **Am Fah Necromancer**: uses unresolved skill "Foul Feast" (not in cache — likely non-Prophecies or a monster skill)
+- **Angry Snowman**: uses unresolved skill "Ice Fort" (not in cache — likely non-Prophecies or a monster skill)
 - **Anthem of Fury**: capture boss "Oath of Profanity" is not in the bestiary
 - **Arcing Shot**: capture boss "Tenezel the Quick" is not in the bestiary
 - **Armor of Sanctity**: capture boss "Corsair Commander (dervish)" is not in the bestiary
-- **Awakened Acolyte**: uses unresolved skill "Castigation Signet" (not in cache — likely non-Prophecies or a monster skill)
-- **Awakened Cavalier**: uses unresolved skill "Spear of Redemption" (not in cache — likely non-Prophecies or a monster skill)
-- **Awakened Defiler**: uses unresolved skill "Putrid Bile" (not in cache — likely non-Prophecies or a monster skill)
-- **Awakened Defiler**: uses unresolved skill "Withering Aura" (not in cache — likely non-Prophecies or a monster skill)
-- **Awakened Thought Leech**: uses unresolved skill "Shrinking Armor" (not in cache — likely non-Prophecies or a monster skill)
+- **Blessed Snowman**: uses unresolved skill "Avatar of Dwayna (snow fighting skill)" (not in cache — likely non-Prophecies or a monster skill)
+- **Blessed Snowman**: uses unresolved skill "Snowball" (not in cache — likely non-Prophecies or a monster skill)
 - **Broad Head Arrow**: capture boss "The Afflicted Susei" is not in the bestiary
-- **Bukdek Byway**: neighbor "Tunnels Below Cantha" is not a known location
-- **Canthan Peasant**: uses unresolved skill "Disrupting Shot" (not in cache — likely non-Prophecies or a monster skill)
+- **Bustling Snowman**: uses unresolved skill ""Let's Get 'Em!"" (not in cache — likely non-Prophecies or a monster skill)
+- **Bustling Snowman**: uses unresolved skill "Snowball" (not in cache — likely non-Prophecies or a monster skill)
 - **Chantry of Secrets**: neighbor "The Fissure of Woe" is not a known location
 - **Chantry of Secrets**: neighbor "The Underworld" is not a known location
-- **Corsair Admiral**: uses unresolved skill "Spear of Redemption" (not in cache — likely non-Prophecies or a monster skill)
-- **Corsair Blackhand**: uses unresolved skill "Shrinking Armor" (not in cache — likely non-Prophecies or a monster skill)
-- **Corsair Captain**: uses unresolved skill "Knee Cutter" (not in cache — likely non-Prophecies or a monster skill)
+- **Concussion Shot**: capture boss "Facet of Creation" is not in the bestiary
+- **Contemplation of Purity**: capture boss "Facet of Existence" is not in the bestiary
+- **Cordial Snowman**: uses unresolved skill "Ice Breaker" (not in cache — likely non-Prophecies or a monster skill)
+- **Cordial Snowman**: uses unresolved skill "Snowball" (not in cache — likely non-Prophecies or a monster skill)
 - **Corsair Flogger**: uses unresolved skill "Corsair's Net" (not in cache — likely non-Prophecies or a monster skill)
-- **Corsair Lieutenant**: uses unresolved skill "Sloth Hunter's Shot" (not in cache — likely non-Prophecies or a monster skill)
-- **Corsair Lieutenant**: uses unresolved skill "Defile Defenses" (not in cache — likely non-Prophecies or a monster skill)
 - **Counterattack**: capture boss "Corsair Commander (warrior)" is not in the bestiary
-- **Crimson Skull Mender**: uses unresolved skill "Castigation Signet" (not in cache — likely non-Prophecies or a monster skill)
+- **Crushing Blow**: capture boss "Facet of Destruction" is not in the bestiary
 - **Dancing Daggers**: capture boss "Chimor the Lightblooded" is not in the bestiary
 - **Dau**: offers unknown skill ""Help Me!""
+- **Determined Shot**: capture boss "Facet of Creation" is not in the bestiary
 - **Dwarven Battle Stance**: capture boss "Malinon Threshammer" is not in the bestiary
+- **Elder Nephilim**: uses unresolved skill "Fleshreaver's Escape" (not in cache — likely non-Prophecies or a monster skill)
 - **Elemental Attunement**: capture boss "Corsair Commander (elementalist)" is not in the bestiary
 - **Enraged Smash**: capture boss "The Afflicted Tamaya" is not in the bestiary
 - **Forceful Blow**: capture boss "Dorn Stonebreaker" is not in the bestiary
+- **Forked Arrow**: capture boss "Facet of Creation" is not in the bestiary
+- **Freezie**: uses unresolved skill ""Mmmm. Snowcone!"" (not in cache — likely non-Prophecies or a monster skill)
+- **Freezie**: uses unresolved skill "Avalanche (skill)" (not in cache — likely non-Prophecies or a monster skill)
+- **Freezie**: uses unresolved skill "Mega Snowball" (not in cache — likely non-Prophecies or a monster skill)
+- **Freezie**: uses unresolved skill "Snowball" (not in cache — likely non-Prophecies or a monster skill)
 - **Gate of Anguish**: neighbor "City of Torc'qua" is not a known location
 - **Gate of Anguish**: neighbor "Ravenheart Gloom" is not a known location
 - **Gate of Anguish**: neighbor "Stygian Veil" is not a known location
 - **Gate of Anguish**: neighbor "The Foundry of Failed Creations" is not a known location
+- **Gladiator's Defense**: capture boss "Facet of Destruction" is not in the bestiary
+- **Glimmering Snowman**: uses unresolved skill "Blinding Snow" (not in cache — likely non-Prophecies or a monster skill)
+- **Glimmering Snowman**: uses unresolved skill "Snowball" (not in cache — likely non-Prophecies or a monster skill)
+- **Grenth's Balance**: capture boss "Facet of Death" is not in the bestiary
+- **Grumpy Snowman**: uses unresolved skill "Holiday Blues" (not in cache — likely non-Prophecies or a monster skill)
+- **Grumpy Snowman**: uses unresolved skill "Snowball" (not in cache — likely non-Prophecies or a monster skill)
 - **Heroic Refrain**: elite: only quest-conditional capture sources
 - **Hundred Blades**: capture boss "Spoiler-related boss" is not in the bestiary
+- **Hylek Cuicana**: uses unresolved skill "Ehzah from Above" (not in cache — likely non-Prophecies or a monster skill)
 - **Immolate**: capture boss "Corsair Commander (elementalist)" is not in the bestiary
+- **Impeccable Snowman**: uses unresolved skill "Snowball" (not in cache — likely non-Prophecies or a monster skill)
+- **Impeccable Snowman**: uses unresolved skill "Steady Aim" (not in cache — likely non-Prophecies or a monster skill)
+- **Industrious Snowman**: uses unresolved skill "Jack Frost" (not in cache — likely non-Prophecies or a monster skill)
+- **Industrious Snowman**: uses unresolved skill "Snowball" (not in cache — likely non-Prophecies or a monster skill)
 - **Invoke Lightning**: capture boss "Margonite Portal Mage" is not in the bestiary
-- **Jade Armor**: uses unresolved skill "Body Blow" (not in cache — likely non-Prophecies or a monster skill)
-- **Jade Armor**: uses unresolved skill "Pulverizing Smash" (not in cache — likely non-Prophecies or a monster skill)
-- **Jade Bow**: uses unresolved skill "Rapid Fire" (not in cache — likely non-Prophecies or a monster skill)
 - **Judgment Strike**: elite: only quest-conditional capture sources
 - **Lakeside County**: neighbor "Ascalon City (outpost)" is not a known location
+- **Leviathan's Sweep**: capture boss "Facet of Destruction" is not in the bestiary
+- **Lifebane Strike**: capture boss "Facet of Death" is not in the bestiary
 - **Lion's Arch**: neighbor "Lion's Arch Keep" is not a known location
+- **Lion's Comfort**: capture boss "Facet of Destruction" is not in the bestiary
 - **Lornar's Pass**: neighbor "The Underworld" is not a known location
+- **Mantra of Recall**: capture boss "Facet of Illusions" is not in the bestiary
 - **Mark of Insecurity**: capture boss "Chimor the Lightblooded" is not in the bestiary
 - **Melandru's Resilience**: capture boss "Gigas Expii" is not in the bestiary
+- **Melandru's Resilience**: capture boss "Facet of Creation" is not in the bestiary
 - **Midshipman Bennis**: uses unresolved skill "Natural Resistance" (not in cache — likely non-Prophecies or a monster skill)
+- **Mind Blast**: capture boss "Kakei Stormcaller" is not in the bestiary
 - **Mind Burn**: capture boss "The Afflicted Rasa" is not in the bestiary
+- **Mischievous Snowman**: uses unresolved skill "Hidden Rock" (not in cache — likely non-Prophecies or a monster skill)
+- **Mischievous Snowman**: uses unresolved skill "Snowball" (not in cache — likely non-Prophecies or a monster skill)
 - **Natural Stride**: capture boss "Veldrunner Centaur (boss)" is not in the bestiary
 - **Nightmare Weapon**: capture boss "The Afflicted Mei" is not in the bestiary
-- **North Kryta Province**: neighbor "Beneath Lion's Arch" is not a known location
 - **Onslaught**: capture boss "Onslaught of Terror" is not in the bestiary
 - **Order of Apostasy**: capture boss "The Afflicted Xi" is not in the bestiary
 - **Over the Limit**: elite: only quest-conditional capture sources
-- **Plains of Jarin**: neighbor "Caverns Below Kamadan" is not a known location
+- **Paranoia Ettin**: uses unresolved skill "Paranoid Indignation" (not in cache — likely non-Prophecies or a monster skill)
+- **Pious Snowman**: uses unresolved skill ""Mmmm. Snowcone!"" (not in cache — likely non-Prophecies or a monster skill)
+- **Playful Snowman**: uses unresolved skill "Hidden Rock" (not in cache — likely non-Prophecies or a monster skill)
+- **Playful Snowman**: uses unresolved skill "Snowball" (not in cache — likely non-Prophecies or a monster skill)
+- **Price of Failure**: capture boss "Facet of Death" is not in the bestiary
 - **Queen Aijundu**: uses unresolved skill "Choking Breath" (not in cache — likely non-Prophecies or a monster skill)
 - **Queen Aijundu**: uses unresolved skill "Blinding Breath" (not in cache — likely non-Prophecies or a monster skill)
 - **Queen Aijundu**: uses unresolved skill "Burning Breath" (not in cache — likely non-Prophecies or a monster skill)
 - **Ray of Judgment**: capture boss "The Afflicted Cho" is not in the bestiary
 - **Reap Impurities**: capture boss "Corsair Commander (dervish)" is not in the bestiary
 - **Ritualist's Construct**: uses unresolved skill "Song of the Mists" (not in cache — likely non-Prophecies or a monster skill)
+- **Roguish Snowman**: uses unresolved skill "Snowball" (not in cache — likely non-Prophecies or a monster skill)
+- **Roguish Snowman**: uses unresolved skill "Snow Down the Shirt" (not in cache — likely non-Prophecies or a monster skill)
+- **Rotund Snowman**: uses unresolved skill "Mega Snowball" (not in cache — likely non-Prophecies or a monster skill)
+- **Rotund Snowman**: uses unresolved skill "Snowball" (not in cache — likely non-Prophecies or a monster skill)
 - **Rust**: capture boss "Corsair Commander (elementalist)" is not in the bestiary
 - **Seven Weapons Stance**: elite: only quest-conditional capture sources
 - **Shadow Form**: capture boss "The Afflicted Huu" is not in the bestiary
+- **Shadow Strike**: capture boss "Facet of Death" is not in the bestiary
 - **Shadow Theft**: elite: only quest-conditional capture sources
 - **Shield of Regeneration**: capture boss "Ennsa Stoneweaver" is not in the bestiary
+- **Shield of Regeneration**: capture boss "Facet of Existence" is not in the bestiary
 - **Shockwave**: capture boss "Azukhan Stonewrath" is not in the bestiary
 - **Signet of Illusions**: capture boss "Shepherd of Dementia" is not in the bestiary
 - **Smoke Trap**: capture boss "Veldrunner Centaur (boss)" is not in the bestiary
+- **Snowman (NPC)**: uses unresolved skill "Avalanche (skill)" (not in cache — likely non-Prophecies or a monster skill)
+- **Snowman (NPC)**: uses unresolved skill "Snowball" (not in cache — likely non-Prophecies or a monster skill)
 - **Soul Taker**: elite: only quest-conditional capture sources
+- **Spirit Bond**: capture boss "Facet of Existence" is not in the bestiary
+- **Splinter Shot**: capture boss "Facet of Creation" is not in the bestiary
 - **Stolen Speed**: capture boss "The Afflicted Meeka" is not in the bestiary
-- **Stone Summit Heretic**: uses unresolved skill "Shrinking Armor" (not in cache — likely non-Prophecies or a monster skill)
 - **Temple of the Ages**: neighbor "The Fissure of Woe" is not a known location
 - **Temple of the Ages**: neighbor "The Underworld" is not a known location
 - **The Ancient**: uses unresolved skill "Stun on Critical Hit" (not in cache — likely non-Prophecies or a monster skill)
@@ -186,34 +232,10 @@ Generated 2026-09-01T13:59:43.287Z by `npm run parse` (cache-only).
 - **Visions of Regret**: elite: only quest-conditional capture sources
 - **Vow of Revolution**: elite: only quest-conditional capture sources
 - **Vow of Strength**: capture boss "Corsair Commander (dervish)" is not in the bestiary
+- **Watchful Healing**: capture boss "Facet of Existence" is not in the bestiary
 - **Weaken Knees**: capture boss "Froth Stonereap" is not in the bestiary
 - **Weapon of Quickening**: capture boss "The Afflicted Mei" is not in the bestiary
 - **Weapons of Three Forges**: elite: only quest-conditional capture sources
-- **White Mantle Abbot**: uses unresolved skill "Smite Condition" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Abbot**: uses unresolved skill "Smiter's Boon" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Knight**: uses unresolved skill "Knee Cutter" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Knight**: uses unresolved skill "Poison Tip Signet" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Knight**: uses unresolved skill ""I Meant to Do That!"" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Knight**: uses unresolved skill "Grapple" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Knight**: uses unresolved skill "Disarm" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Priest**: uses unresolved skill "Patient Spirit" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Priest**: uses unresolved skill "Spotless Mind" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Priest**: uses unresolved skill "Cure Hex" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Priest**: uses unresolved skill "Castigation Signet" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Ritualist**: uses unresolved skill "Glyph of Swiftness" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Ritualist**: uses unresolved skill "Shell Shock" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Savant**: uses unresolved skill "Agony" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Scout**: uses unresolved skill "Anthem of Weariness" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Scout**: uses unresolved skill "Poison Tip Signet" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Scout**: uses unresolved skill "Smoke Powder Defense" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Seeker**: uses unresolved skill "Piercing Trap" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Seeker**: uses unresolved skill "Sundering Weapon" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Sycophant**: uses unresolved skill "Shrinking Armor" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Sycophant**: uses unresolved skill "Cure Hex" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Sycophant**: uses unresolved skill "Healing Ribbon" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Zealot**: uses unresolved skill "Symbolic Strike" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Zealot**: uses unresolved skill "Castigation Signet" (not in cache — likely non-Prophecies or a monster skill)
-- **White Mantle Zealot**: uses unresolved skill "Keen Chop" (not in cache — likely non-Prophecies or a monster skill)
 - **Wizard's Folly**: neighbor "Regent Valley (Pre-Searing)" is not a known location
 - **Zealous Benediction**: capture boss "Corsair Commander (monk)" is not in the bestiary
 - **Zin Ku Corridor**: neighbor "The Fissure of Woe" is not a known location

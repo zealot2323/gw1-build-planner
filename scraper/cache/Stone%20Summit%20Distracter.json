@@ -1,0 +1,7 @@
+{
+  "title": "Stone Summit Distracter",
+  "pageid": 73006,
+  "revid": 2689884,
+  "timestamp": "2023-08-26T04:12:06Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Stone Summit Ranger.jpg|150px]]\n| type = Dwarf\n| affiliation = Stone Summit\n| profession = r\n| level = 24 (26)\n| campaign = Eye of the North\n}}\n\n[[Stone Summit Distracter]]s specialize in interrupts. Their use of [[Choking Gas]] can create a real hazard.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Slavers' Exile}}\n\n==Skills==\n12 [[Marksmanship]], 9-11 [[Wilderness Survival]]\n*{{skill icon|Choking Gas}}\n*{{skill icon|Concussion Shot}}\n*{{skill icon|Distracting Shot}}\n*{{skill icon|Magebane Shot}} ([[elite]])\n*{{skill icon|Savage Shot}}\n*{{skill icon|Resurrection Signet}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 82\n| piercing = 82\n| slashing = 82\n| cold = 112\n| earth = 112\n| fire = 112\n| lightning = 112\n}}"
+}

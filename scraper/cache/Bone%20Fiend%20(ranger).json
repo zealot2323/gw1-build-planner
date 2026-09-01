@@ -1,0 +1,7 @@
+{
+  "title": "Bone Fiend (ranger)",
+  "pageid": 120025,
+  "revid": 2586200,
+  "timestamp": "2015-04-28T00:56:01Z",
+  "wikitext": "{{Otheruses|the ranger encountered in [[Eye of the North]]|the minion|Bone Fiend}}__NOTOC__{{NPC infobox\n| affiliation = Undead\n| type= Skeleton\n| profession = r\n| level = 18 (25)\n| campaign = Eye of the North\n| image = [[Image:Bone Fiend.jpg|150px]]\n| name = Bone Fiend\n}}\n[[Bone Fiend (ranger)|Bone Fiends]] are simple [[ranger]]s.\n\n==Locations==\n*[[Far Shiverpeaks]]\n**{{NPC location|Jaga Moraine}}\n*[[Depths of Tyria]]\n**{{NPC location|Cathedral of Flames}} (level 3)\n\n==Skills==\n*''none''\n\n==Armor ratings==\n{{NPC statistics\n| level = 18\n| prof = r\n| blunt = 54\n| piercing = 54\n| slashing = 54\n| cold = 54\n| earth = 54\n| fire = 54\n| lightning = 54\n}}\n\n==Items dropped==\n*[[Dead Bow]] \n*[[Sephis Axe]]\n\n==Notes==\n*Although they look and behave like summoned [[Bone Fiend]]s, these are not [[minion]]s, so they...\n**grant [[experience]]\n**[[drop]] loot\n**count for the reputation [[blessing]]s\n**do not suffer from natural [[health degeneration]]\n**cannot be controlled with [[Verata's Gaze]] or [[Verata's Aura]]\n**do not trigger skills that check for [[summoned creature]]s, such as [[Banishing Strike]] and [[Spiritual Pain]]"
+}

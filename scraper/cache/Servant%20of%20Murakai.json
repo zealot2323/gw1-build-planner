@@ -1,0 +1,7 @@
+{
+  "title": "Servant of Murakai",
+  "pageid": 92264,
+  "revid": 2681163,
+  "timestamp": "2022-09-22T07:36:23Z",
+  "wikitext": "{{NPC infobox\n| image = [[File:Wraith.jpg|150px]]\n| campaign = Eye of the North\n| profession = me\n| level = 24 (26)\n| affiliation = Undead\n| type = Ghost\n}}__NOTOC__\nA [[Servant of Murakai]] is summoned by [[Murakai, Lady of the Night]] in the [[Cathedral of Flames]].\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Cathedral of Flames}}: Levels 1 and 3\n\n==Skills==\n(20 [[Illusion Magic]] in [[Hard Mode]])\n*{{skill icon|Conjure Phantasm}}\n*{{skill icon|Epidemic}}\n*{{skill icon|Fragility}}\n*{{skill icon|Images of Remorse}}\n*{{skill icon|Mantra of Recovery}} ([[elite]])\n\n==Armor ratings==\n{{NPC statistics\n| prof = me\n| blunt = 99\n| piercing = 99\n| slashing = 99\n| cold = 59\n| earth = 59\n| fire = 59\n| lightning = 59\n}}\n\n==Notes==\n*Unlike most ghosts, [[holy damage]] is doubled against Servants of Murakai."
+}

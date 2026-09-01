@@ -1,0 +1,7 @@
+{
+  "title": "Mandragor Smoke Devil",
+  "pageid": 69003,
+  "revid": 2267414,
+  "timestamp": "2011-03-20T22:46:06Z",
+  "wikitext": "{{NPC infobox\n| name = Mandragor Smoke Devil\n| affiliation = Charr Homelands wildlife\n| type = Mandragor\n| profession = r\n| level = 24 (26)\n| campaign = Eye of the North\n}}__NOTOC__\n[[Mandragor Smoke Devil]]s are [[trapper]]s.\n\n==Locations==\n*[[Charr Homelands]]\n**{{NPC location|Grothmar Wardowns}}\n\n==Missions==\n*Charr Homelands\n**{{NPC location|Against the Charr}}\n\n==Skills==\n14..16 [[Expertise]], 15 [[Wilderness Survival]] (16 Expertise, 20 Wilderness Survival in [[Hard Mode]])\n*{{skill icon|Flame Trap}}\n*{{skill icon|Healing Spring}}\n*{{skill icon|Smoke Trap}} ([[elite]])\n*{{skill icon|Snare}}\n*{{skill icon|Tripwire}}\n*{{skill icon|Whirling Defense}}\n*{{monster skill icon|Ground Cover}}\n*{{monster skill icon|Mandragor's Charge}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 106\n| piercing = 106\n| slashing = 106\n| cold = 112\n| earth = 88\n| fire = 112\n| lightning = 112\n}}\n\n==Items dropped==\n*[[Fibrous Mandragor Root]]"
+}

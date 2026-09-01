@@ -39,13 +39,15 @@ export type SkillStatus =
   | "FUTURE";
 
 export interface AcquisitionSource {
-  kind: "trainer" | "quest" | "capture";
+  kind: "trainer" | "quest" | "capture" | "title";
   /** Trainer name, quest name, or boss name. */
   via: string;
   /** Where to go: the trainer's outpost, the quest giver's location, or the boss's area. */
   location: LocationRef | null;
   /** True if the character can act on this source right now. */
   availableNow: boolean;
+  /** For title-gated sources: the rank you need before the NPC will teach it. */
+  requirement?: string;
 }
 
 export interface SkillAvailabilityEntry {
@@ -124,6 +126,17 @@ export function skillAvailability(
         via: boss,
         location: nowIn ?? spawns[0] ?? skill.acquisition.captureLocations?.[boss] ?? null,
         availableNow: nowIn !== undefined,
+      });
+    }
+    // Title-gated NPCs: reaching them is not enough, you need the rank, so
+    // these never count as available now — but they still say where to go.
+    for (const npc of skill.acquisition.titleNpcs ?? []) {
+      sources.push({
+        kind: "title",
+        via: npc,
+        location: skill.acquisition.titleLocations?.[npc] ?? null,
+        availableNow: false,
+        requirement: skill.acquisition.titleRequirement,
       });
     }
     for (const boss of skill.acquisition.conditionalCaptureBosses ?? []) {

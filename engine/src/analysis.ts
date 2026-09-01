@@ -57,9 +57,15 @@ export function armorProfile(table: ArmorEntry[]): ArmorProfile {
  * areas have more than one entrance.
  */
 export function explorablesFrom(outpost: LocationRef, index: DataIndex): LocationRef[] {
+  return zonesFrom(outpost, index);
+}
+
+/** Instanced areas reachable from an outpost: explorables and dungeons. */
+export function zonesFrom(outpost: LocationRef, index: DataIndex): LocationRef[] {
   const loc = index.locationByPage.get(outpost);
-  if (!loc || loc.kind === "explorable") return [];
-  return loc.neighbors.filter((n) => index.locationByPage.get(n)?.kind === "explorable");
+  const instanced = (k?: string) => k === "explorable" || k === "dungeon";
+  if (!loc || instanced(loc.kind)) return [];
+  return loc.neighbors.filter((n) => instanced(index.locationByPage.get(n)?.kind));
 }
 
 /**

@@ -1,0 +1,7 @@
+{
+  "title": "Weapon of Renewal",
+  "pageid": 51876,
+  "revid": 2720975,
+  "timestamp": "2026-02-10T07:02:08Z",
+  "wikitext": "{{Skill infobox\n| name = Weapon of Renewal\n| id = 2149\n| campaign = Eye of the North\n| profession = Ritualist\n| attribute = Spawning Power\n| type = Weapon Spell\n| energy = 5\n| activation = 1\n| recharge = 10\n| causes1 = Energy Gain\n| description = [[Weapon Spell]]. For {{gr|5|20}} seconds, the next time [[target]] [[ally]] hits with an [[attack skill]], that ally gains {{gr|1|7}} [[Energy]].\n| concise description = Weapon Spell. ({{gr|5|20}} seconds.) Target ally gains {{gr|1|7}} Energy the next time this ally hits with an attack skill.\n|target = allies\n}}\n\n{{Skill progression\n|attribute = [[Spawning Power]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 20\n|var2 name = [[Energy]] gain\n|var2 at0 = 1\n|var2 at15 = 7}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n'''[[Hero skill trainer]]s'''\n* [[Gedrel of Ascalon]] (Eye of the North)\n* [[Kodan]] (Gunnar's Hold)\n* [[Tyr the Skaald]] (Gunnar's Hold)\n* [[Lexx]] (Rata Sum)\n\n== Related skills ==\n* {{skill icon|Weapon of Fury}} ([[elite]])\n* {{skill icon|Zealous Anthem}}\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Skills offered by hero skill trainers]]"
+}

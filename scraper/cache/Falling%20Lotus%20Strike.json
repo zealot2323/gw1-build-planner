@@ -1,0 +1,7 @@
+{
+  "title": "Falling Lotus Strike",
+  "pageid": 51828,
+  "revid": 2733277,
+  "timestamp": "2026-07-05T17:18:37Z",
+  "wikitext": "{{Skill infobox\n| name = Falling Lotus Strike\n| id = 1990\n| campaign = Eye of the North\n| profession = Assassin\n| attribute = Dagger Mastery\n| type = Off-Hand Attack\n| energy = 5\n| recharge = 8\n| causes1 = Energy Gain\n| description = [[Off-Hand Attack]]. Must strike a [[knock down|knocked-down]] [[foe]]. If it hits, you strike for {{gr|15|35|+}} [[damage]] and gain {{gr|1|12}} [[Energy]].\n| concise description = Off-Hand Attack.  Deals {{gr|15|35|+}} damage; you gain {{gr|1|12}} Energy.  {{gray|No effect unless target foe is knocked-down.}}\n| requires = knockdown\n}}\n\n{{Skill progression\n|attribute = [[Dagger Mastery]]\n|var1 name = + [[Damage]]\n|var1 at0 = 15\n|var1 at15 = 35\n|var2 name = [[Energy]] gain\n|var2 at0 = 1\n|var2 at15 = 12}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n\n== Related skills ==\n* {{skill icon|Falling Spider}}\n* {{skill icon|Lotus Strike}}"
+}

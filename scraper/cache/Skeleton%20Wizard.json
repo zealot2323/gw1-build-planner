@@ -1,0 +1,7 @@
+{
+  "title": "Skeleton Wizard",
+  "pageid": 64006,
+  "revid": 2266965,
+  "timestamp": "2011-03-20T03:22:12Z",
+  "wikitext": "__NOTOC__{{NPC infobox \n| image = [[Image:Skeleton elementalist.jpg|150px]]\n| species = Skeleton\n| affiliation = Undead\n| profession = e\n| level = 20, 21, 22, 23, 24 (26)\n| campaign = Eye of the North}} \n[[Skeleton Wizard]]s are [[undead]] [[elementalist]]s that can be found in the [[Far Shiverpeaks]] and in [[dungeon]]s.\n\n==Locations== \n*[[Far Shiverpeaks]]\n**{{NPC location|Varajar Fells}}\n*[[Depths of Tyria]]\n**{{NPC location|Bloodstone Caves}}\n**{{NPC location|Heart of the Shiverpeaks}}\n**{{NPC location|Shards of Orr}}\n\n==Missions==\n*Depths of Tyria\n**{{NPC location|Finding the Bloodstone}}\n\n==Skills==\n15 [[Air Magic]], 15 [[Earth Magic]]\n*{{skill icon|Aftershock}}\n*{{Skill icon|Air Attunement}}\n*{{Skill icon|Aura of Restoration}}\n*{{skill icon|Blinding Surge}} ([[elite]])\n*{{Skill icon|Enervating Charge}}\n*{{skill icon|Eruption}}\n*{{skill icon|Shock}}\n\n==Armor ratings==\n{{NPC statistics\n| level = 20\n| prof = e\n| blunt = 40\n| piercing = 80\n| slashing = 60\n| cold = 60\n| earth = 60\n| fire = 60\n| lightning = 60\n}}\n\n==Items dropped==\n*[[Bone]]\n*[[Undead Bone]]\n\n==Notes==\n*If you notice one of these running towards one of your allies, they are most likely attempting to use their Shock + Aftershock combo. You can prepare for this by 'pre-protting' their target.\n\n[[Category:Drops bone]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Zealous Sweep",
+  "pageid": 51911,
+  "revid": 2733282,
+  "timestamp": "2026-07-05T17:20:54Z",
+  "wikitext": "{{Skill infobox\n| id = 2071\n| name=Zealous Sweep\n| campaign=Eye of the North\n| profession=Dervish\n| attribute=Scythe Mastery\n| type=Scythe Attack\n| energy=5\n| recharge=10\n| causes1 = Energy Gain\n| causes2 = Adrenaline Gain\n| description = [[Scythe Attack]]. If this attack hits, you deal {{gr|5|20|+}} damage. You gain 3 [[Energy]] and 1 [[adrenaline]] for each [[foe]] you hit.\n| concise description = Scythe Attack. Deals {{gr|5|20|+}} damage. You gain 3 Energy and 1 adrenaline for each foe you hit.\n}}\n\n{{Skill progression\n|attribute = [[Scythe Mastery]]\n|var1 name = [[Damage|+ Damage]]\n|var1 at0 = 5\n|var1 at15 = 20}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Eye of the North]]\n**[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n**[[Sida]] ([[Gunnar's Hold]])\n**[[Ybbob]] ([[Rata Sum]])\n'''[[Signet of Capture]]'''\n*[[Prophecies]]\n**[[Lev the Condemned]] ([[North Kryta Province (War in Kryta)]])\n\n==Related skills==\n*{{skill icon|Counterattack}}\n*{{skill icon|Critical Strike}}\n*{{skill icon|Lotus Strike}}\n\n==Notes==\n*This skill is particularly useful in conjunction with [[Farmer's Scythe]], as it will help with swift energy loss from that skill."
+}

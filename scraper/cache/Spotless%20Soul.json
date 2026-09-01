@@ -1,0 +1,7 @@
+{
+  "title": "Spotless Soul",
+  "pageid": 51891,
+  "revid": 2583142,
+  "timestamp": "2015-02-15T21:18:13Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| name = Spotless Soul\n| id = 2065\n| campaign = Eye of the North\n| profession = Monk\n| attribute = Healing Prayers\n| type = Enchantment Spell\n| energy = 5\n| activation = {{1/4}}\n| recharge = 12\n| description = [[Enchantment Spell]]. For {{gr|1|15}} seconds, [[target]] other [[ally]] loses a [[condition]] every 3 seconds.\n| concise description = Enchantment Spell. ({{gr|1|15}} seconds.) Removes a condition every 3 seconds. {{gray|Cannot self-target.}}\n| target = other allies\n| removes1 = Condition\n}}\n\n{{Skill progression\n|attribute = [[Healing Prayers]]\n|var1 name =[[Duration]]\n|var1 at0 = 1\n|var1 at15 = 15}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n\n== Related skills ==\n* {{Skill icon|Spotless Mind}}\n\n== Notes ==\n* The first condition is removed after 3 seconds.\n* At rank 15, with a 20% [[of Enchanting]] weapon, Spotless Soul lasts 18 seconds, being able to remove a condition 6 times.\n\n== Trivia ==\n* The [[monk]] depicted on the [[skill icon]] wears [[Monk Krytan armor|Krytan armor]]."
+}

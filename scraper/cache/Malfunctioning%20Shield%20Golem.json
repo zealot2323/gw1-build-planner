@@ -1,0 +1,7 @@
+{
+  "title": "Malfunctioning Shield Golem",
+  "pageid": 72154,
+  "revid": 2325171,
+  "timestamp": "2011-06-25T23:52:41Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Golem.jpg|150px]]\n| species = Golem\n| profession = Warrior\n| level = 24 (30)\n| boss = y\n| campaign = Eye of the North\n}}\nWhile [[Oola]] maintained her lab, the Shield Golem blocks incoming Flame Dart traps, when it malfunctions, it generates a [[Reverse Polarity Fire Shield]], a ward causing extra damage from fire damage.\n\n==Locations==\n*[[Tarnished Coast]]\n**{{NPC location|Oola's Lab}}\n\n==Skills==\n(18 [[Strength]], 13-15 [[Tactics]] in [[Hard mode]])\n*{{Skill icon|Desperation Blow}}\n*{{Skill icon|Drunken Blow}}\n*{{Skill icon|Enraging Charge}}\n*{{Skill icon|Flail}}\n*{{Skill icon|Signet of Strength}}\n*{{skill icon|Steady Stance}} ([[elite]])\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 111\n| piercing = 111\n| slashing = 111\n| cold = 91\n| earth = 91\n| fire = 91\n| lightning = 91\n}}\n\n==Items dropped==\n*[[Crystal Core Maul]] ([[unique]])\n*[[Golem Runestone]]\n\n==Notes==\n*Even after it is defeated, its [[Reverse Polarity Fire Shield]] continues to emanate from its location."
+}

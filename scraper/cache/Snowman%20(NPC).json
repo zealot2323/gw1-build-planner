@@ -1,0 +1,7 @@
+{
+  "title": "Snowman (NPC)",
+  "pageid": 83900,
+  "revid": 2552447,
+  "timestamp": "2013-08-18T05:52:49Z",
+  "wikitext": "{{otheruses|the regular [[non-player character|NPC]]|other uses|Snowman (disambiguation)}}\n__NOTOC__{{NPC infobox\n| image = [[Image:Snowman (smiling).jpg|150px]]\n| affiliation = Wintersday\n| type = Snowman\n| profession = mo\n| level = 15 (25)\n| campaign = Core\n| campaign2 = Eye of the North\n}}\n[[Snowman (NPC)|Snowmen]] are the most basic type of the [[snowman|snowmen]]. They can be found in the first two groups in the [[Secret Lair of the Snowmen]].\n\n==Locations==\n*[[Core]]\n**{{NPC location|The Underworld}} (only during [[In Grenth's Defense]])\n*[[Eye of the North]]\n**[[Depths of Tyria]]\n***{{NPC location|Secret Lair of the Snowmen}}\n**[[Far Shiverpeaks]]\n***{{NPC location|Jaga Moraine}}\n***{{NPC location|Kilroy's Punchout Tournament}}\n\n==Skills==\n*{{skill icon|Avalanche (skill)}}\n*{{skill icon|Mega Snowball}} ([[Hard mode]] only)\n*{{skill icon|Snowball}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = mo\n| blunt = 60\n| piercing = 60\n| slashing = 60\n| cold = 60\n| earth = 60\n| fire = 60\n| lightning = 60\n}}\n\n==Notes==\n*Unlike other foes outside [[Ascalon (pre-Searing)|Pre-searing Ascalon]] that can move, Snowmen do not flee recurring [[Area of Effect|AoE]] damage.\n*Snowmen use a modified model of the [[Ice Golem]]s.\n*The [[Frosty Tonic]] will turn you into this.\n\n==See also==\n* [[Snowman Summoner]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Skeletal Hound",
+  "pageid": 72701,
+  "revid": 2488875,
+  "timestamp": "2012-05-19T09:03:45Z",
+  "wikitext": "{{NPC infobox\n| image = [[image:Skeleton hound.jpg|150px]]\n| type = Skeleton\n| affiliation = Undead\n| profession = w\n| level = 20, 21, 22, 23, 24 (26)\n| campaign = Eye of the North\n}}__NOTOC__\n[[Skeletal Hound]]s are dog-like [[undead]], similar to [[Hellhound]]s.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Bloodstone Caves}}\n**{{NPC location|Heart of the Shiverpeaks}}\n**{{NPC location|Shards of Orr}}\n\n==Missions==\n*Depths of Tyria\n**{{NPC location|Finding the Bloodstone}}\n\n==Skills==\n*{{skill icon|Endure Pain}}\n*{{skill icon|Enraging Charge}}\n*{{skill icon|Gash}}\n*{{skill icon|Hamstring}}\n*{{skill icon|Sever Artery}}\n*{{skill icon|Skull Crack}} ([[elite]])\n\n==Armor ratings==\n{{NPC statistics\n| level = 20\n| prof = w\n| blunt = 60\n| piercing = 120\n| slashing = 100\n| cold = 80\n| earth = 80\n| fire = 80\n| lightning = 80\n}}\n\n==Items dropped==\n*[[Pile of Glittering Dust]]\n*[[Sephis Axe]]\n*[[Undead Bone]]\n\n[[Category:Drops dust]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Sum of All Fears",
+  "pageid": 51851,
+  "revid": 2738390,
+  "timestamp": "2026-08-26T20:32:05Z",
+  "wikitext": "{{otheruses|the Eye of the North skill|the temporarily available [[Bonus Mission Pack]] skill|Sum of All Fears (Gwen)}}\n{{Skill infobox\n| name = Sum of All Fears\n| id = 1996\n| campaign = Eye of the North\n| profession = Mesmer\n| attribute = Illusion Magic\n| type = Hex Spell\n| energy = 10\n| activation = {{3/2}}\n| recharge = 10\n| causes1 = Decreased Movement Speed\n| causes2 = Decreased Attack Speed\n| causes3 = Increased Activation Time\n| description = [[Hex Spell]]. For {{gr|4|12}} second[s], [[target]] [[foe]] [[Snare (tactic)|moves]], [[Attack speed|attacks]], and [[Activation time|casts]] [[spell]]s 33% slower.\n| concise description = Hex Spell. ({{gr|4|12}} second[s].) Target foe moves, attacks, and casts spells 33% slower.\n}}\n\n{{Skill progression\n|attribute = [[Illusion Magic]]\n|var1 name = [[Duration]]\n|var1 at0 = 4\n|var1 at15 = 12}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n\n== Related skills ==\n* {{skill icon|Shared Burden}} ([[elite]])\n* {{skill icon|Tryptophan Signet}}\n\n== Trivia ==\n* [[w:The Sum of All Fears|The Sum of All Fears]] is the name of a Tom Clancy novel in his ''Jack Ryan'' series and its loose cinematographic adaptation by Phil Alden Robinson."
+}

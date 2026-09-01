@@ -1,0 +1,7 @@
+{
+  "title": "Crippling Victory",
+  "pageid": 51899,
+  "revid": 2664517,
+  "timestamp": "2020-08-08T20:44:14Z",
+  "wikitext": "{{Skill infobox\n| id = 2147\n| name=Crippling Victory\n| campaign=Eye of the North\n| profession=Dervish\n| attribute=Scythe Mastery\n| type=Scythe Attack\n| adrenaline = 6\n| causes1 = Crippled\n| causes2 = Earth Damage\n| description = [[Scythe Attack]]. If this [[attack]] hits a [[foe]], that foe is [[Crippled]] for {{gr|3|8}} seconds. If you have more [[Health]] than [[target]] foe, all [[adjacent]] foes take {{gr|10|30}} [[earth damage]].\n| concise description = Scythe Attack. ({{gr|3|8}} seconds) Cripples target foe. If your health is greater than target foe's, all adjacent foes take {{gr|10|30}} earth damage.\n| aoe = adjacent\n| target = foes\n| pbaoe = self\n}}\n\n{{Skill progression\n|attribute = [[Scythe Mastery]]\n|var1 name = [[Crippled]] [[duration]]\n|var1 at0 = 3\n|var1 at15 = 8\n|var2 name = [[Earth damage]]\n|var2 at0 = 10\n|var2 at15 = 30}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n*[[Sida]] ([[Gunnar's Hold]])\n*[[Ybbob]] ([[Rata Sum]])\n\n==Related skills==\n*{{skill icon|Chilling Victory}}\n*{{skill icon|Crippling Sweep}}\n*{{skill icon|Reaper's Sweep}} ([[elite]])\n\n==Notes==\n*Crippled is applied to each foe hit, despite what the concise description suggests."
+}

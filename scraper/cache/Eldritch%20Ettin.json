@@ -1,0 +1,7 @@
+{
+  "title": "Eldritch Ettin",
+  "pageid": 71119,
+  "revid": 2725741,
+  "timestamp": "2026-04-20T09:34:11Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Ettin.jpg|200px]]\n| type = Ogre\n| affiliation = Depths of Tyria wildlife\n| profession = w\n| level = 29 (32)\n| campaign = Eye of the North\n| map1 = [[Image:Bloodstone Caves Level 3.jpg|200px]]\n| map1-text = Bloodstone Caves Level 3\n}} \nThe [[Eldritch Ettin]] is the end boss in the [[Bloodstone Caves]]. Defeating it spawns the [[Eldritch Chest]].\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Bloodstone Caves}} (level 3)\n\n==Quests==\n'''Quests involved in:''' \n*[[Crystal Method]]\n*[[Eldritch Ettin (Zaishen quest)]]\n\n==Skills==\n*{{skill icon|Backbreaker}} ([[Elite]])\n*{{skill icon|Crude Swing}}\n*{{skill icon|Pulverizing Smash}}\n*{{monster skill icon|Crystal Shield}}\n*{{monster skill icon|Crystal Snare}}\n*{{monster skill icon|Paranoid Indignation}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 126\n| piercing = 126\n| slashing = 126\n| cold = 106\n| earth = 106\n| fire = 106\n| lightning = 106\n}}\n\n==Items dropped==\n*[[Ettin Club]] ([[unique]])\n*[[Spectral Crystal]] (only during [[Crystal Method]])\n\n[[Category:Boss-like foes]]\n[[Category:Non-boss NPCs with Unique Items]]\n[[Category:Ettins]]"
+}

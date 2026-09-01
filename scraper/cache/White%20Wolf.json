@@ -1,0 +1,7 @@
+{
+  "title": "White Wolf",
+  "pageid": 63709,
+  "revid": 2658863,
+  "timestamp": "2020-05-17T09:33:06Z",
+  "wikitext": "{{NPC infobox\n| affiliation = Far Shiverpeaks wildlife\n| type = Charmable animal\n| level = 5\n| service = Hero Tutorial\n| map1 = [[File:Varajar Falls White Wolf Map.jpg|150px]]\n| map1-text = White Wolf in [[Varajar Fells]]\n| map2 = [[File:Wolf spawn point in Drakkar Lake.jpg|150px]]\n| map2-text = White Wolf in [[Drakkar Lake]]\n| campaign = Eye of the North\n}}__NOTOC__\nThe [[White Wolf]] is a [[charmable animal]] found in the snowy regions of the [[Far Shiverpeaks]].\n\n==Locations==\n*[[Core]]\n**[[The Battle Isles]]\n***{{NPC location|Zaishen Menagerie Grounds}} (levels 5, 12, 15, and 20, depending on unlock progress)\n*[[Eye of the North]]\n**[[Far Shiverpeaks]]\n***{{NPC location|Drakkar Lake}} (a single White ''or'' [[Black Wolf]] [[spawn]]s at the [[Shrine of the Wolf Spirit]])\n***{{NPC location|Hero Tutorial}} (see Notes)\n***{{NPC location|Varajar Fells}} (southeastern corner)\n\n==Notes==\n*White Wolves deal [[slashing damage]].\n*[[Zaishen Menagerie Grounds/Service costs|Unlocking cost]]: 1{{zsilver}} plus 100{{gold}} or 1,000 [[Balthazar Faction]] ''(Common, Tyria)''\n*Charmable during the unrepeatable [[Hero Tutorial]] quest, only if you have [[Charm Animal]] equipped on a [[hero]] in your party or use heroes to pull the wolves.\n\n{{Charmable animal nav}}"
+}

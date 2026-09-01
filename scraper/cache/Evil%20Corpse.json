@@ -1,0 +1,7 @@
+{
+  "title": "Evil Corpse",
+  "pageid": 69488,
+  "revid": 2563278,
+  "timestamp": "2014-01-26T07:15:34Z",
+  "wikitext": "__NOTOC__{{NPC infobox \n| affiliation = Undead\n| type = Skeleton\n| profession = W\n| level = 20 (26)\n| campaign = Eye of the North\n| image = [[Image:Skeleton warrior.jpg|150px]]\n}}\n[[Evil Corpse]]s are [[undead]] [[skeleton]]s roaming on the first floor of the [[Heart of the Shiverpeaks]], along with other undead forces.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Heart of the Shiverpeaks}} (level 1)\n\n==Skills==\n15 [[Strength]]\n*{{skill icon|Flail}}\n*{{skill icon|Power Attack}}\n*{{skill icon|Shield Bash}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 115\n| piercing = 115\n| slashing = 115\n| cold = 95\n| earth = 95\n| fire = 95\n| lightning = 95\n}}\n\n==Items dropped==\n*[[Bone]]\n*[[Dead Bow]]\n*[[Dead Staff]]\n*[[Executioner's Breastplate]]\n*[[Pile of Glittering Dust]]\n\n==Notes==\n{{anomaly|Unlike most skeletons, they are [[fleshy]].}}\n\n[[Category:Drops bone]]\n[[Category:Drops dust]]"
+}

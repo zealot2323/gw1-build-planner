@@ -1,0 +1,7 @@
+{
+  "title": "Infernal Siege Wurm",
+  "pageid": 91361,
+  "revid": 2413247,
+  "timestamp": "2011-11-24T06:07:02Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Infernal Siege Wurm.jpg|150px]]\n| type = Wurm\n| affiliation = Depths of Tyria wildlife\n|level = 24 (26)\n|campaign = Eye of the North\n}}\n[[Infernal Siege Wurm]]s remain stationary and fire a ranged attack at a foes. They will [[aggro]] from outside of a player aggro circle and have very high armor.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Catacombs of Kathandrax}}: Levels 1, 2 and 3\n\n==Skills==\n*{{monster skill icon|Natural Resistance}}\n*{{monster skill icon|Wurm Siege (Core)}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = w\n| blunt = 120\n| piercing = 120\n| slashing = 120\n| cold = 120\n| earth = 120\n| fire = 120\n| lightning = 120\n}}\n\n==Items dropped==\n*[[Ashen Wurm Husk]]\n*[[Dungeon Key]] (only in Catacombs of Kathandrax: Level 1)"
+}

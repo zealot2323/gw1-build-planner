@@ -1,0 +1,7 @@
+{
+  "title": "Tryptophan Signet",
+  "pageid": 65952,
+  "revid": 2645619,
+  "timestamp": "2019-11-09T13:23:01Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 2230\n| name = Tryptophan Signet\n| campaign = Eye of the North\n| attribute = Ebon Vanguard rank\n| type = Signet\n| activation = 1\n| pve-only = y\n| recharge = 15\n| target = foes\n| range = casting\n| aoe = adjacent\n| causes1 = Decreased Movement Speed\n| description = [[Signet]]. For {{gr2|14|20}} seconds, [[target]] [[foe]] and all [[adjacent]] foes [[Movement|move]] and [[Attack speed|attack {{gr2|23|40}}% slower]].\n| concise description = Signet. ({{gr2|14|20}} seconds.) Target and adjacent foes move and attack {{gr2|23|40}}% slower.\n}}\n\n{{Skill progression max10\n|title track = [[Ebon Vanguard rank]]\n|var1 name = [[Duration]]\n|var1 at0  = 14\n|var1 at10 = 20\n|var2 name = Speed reduction %\n|var2 at0  = 23\n|var2 at10 = 40\n}}\n\n==Acquisition==\n'''[[Skill quest]]s'''\n*[[Forbidden Fruit]] ([[Grothmar Wardowns]])\n\n== Related skills ==\n* {{skill icon|Ice Spikes}}\n* {{skill icon|Meekness}}\n* {{skill icon|Shadow of Fear}}\n* {{skill icon|Shared Burden}} ([[elite]])\n* {{skill icon|Sum of All Fears}}\n\n==Notes==\n*This skill is a useful [[Snare (tactic)|snare]] against foes with [[Natural Resistance]] and [[Dhuum]], as he is also immune to conditions.\n\n==Trivia==\n*[[Wikipedia:tryptophan|Tryptophan]] is an amino acid commonly found in meat products. It undergoes conversion into [[Wikipedia:melatonin|melatonin]], a hormone involved with drowsiness/sleep."
+}

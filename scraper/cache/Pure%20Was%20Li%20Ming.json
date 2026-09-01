@@ -1,0 +1,7 @@
+{
+  "title": "Pure Was Li Ming",
+  "pageid": 51885,
+  "revid": 2732872,
+  "timestamp": "2026-07-04T20:55:23Z",
+  "wikitext": "{{Skill infobox\n| name = Pure Was Li Ming\n| id = 2072\n| campaign = Eye of the North\n| profession = Ritualist\n| attribute = Restoration Magic\n| type = Item Spell\n| energy = 5\n| activation = 1\n| recharge = 20\n| description = [[Item Spell]]. [[Hold]] Li Ming's ashes for {{gr|5|20}} seconds. While you hold her ashes, [[condition]]s on you expire {{gr|10|50||%}} faster. When you drop her ashes, all [[ally|allies]] within [[earshot]] lose {{gr|1|4}} condition[s].\n| concise description = Item Spell. ({{gr|5|20}} seconds.) Conditions on you expire {{gr|10|50||%}} faster. Drop effect: removes {{gr|1|4}} condition[s] from allies in earshot.\n| removes1 = Condition\n| aoe = earshot\n| target = untargeted\n| pbaoe = self\n}}\n\n{{Skill progression\n|attribute = [[Restoration Magic]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 20\n|var2 name = [[Condition]] duration reduction %\n|var2 at0 = 10\n|var2 at15 = 50\n|var3 name = Conditions removed\n|var3 at0 = 1\n|var3 at15 = 4}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n\n== Related skills ==\n* {{skill icon|Resilient Was Xiko}}\n* {{skill icon|Song of Purification}} ([[elite]])\n\n== Notes ==\n* Condition length reduction stacks with [[Recovery]].\n\n== Trivia ==\n{{Skill change}}\n\n[[Category:Skills that affect allies]]"
+}

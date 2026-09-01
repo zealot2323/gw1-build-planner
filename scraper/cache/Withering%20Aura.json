@@ -1,0 +1,7 @@
+{
+  "title": "Withering Aura",
+  "pageid": 51854,
+  "revid": 2642393,
+  "timestamp": "2019-10-10T15:02:13Z",
+  "wikitext": "{{Skill infobox\n| name = Withering Aura\n| id = 1997\n| campaign = Eye of the North\n| profession = Necromancer\n| attribute = Death Magic\n| type = Enchantment Spell\n| energy = 5\n| activation = 1\n| recharge = 3\n| causes1 = Weakness\n| description = [[Enchantment Spell]]. For {{gr|5|20}} seconds, [[target]] [[ally]]'s [[melee attack]]s cause [[Weakness]] for {{gr|5|20}} seconds.\n| concise description = Enchantment Spell. ({{gr|5|20}} seconds.) Target ally's melee attacks cause Weakness condition ({{gr|5|20}} seconds.)\n| target = allies\n}}\n\n{{Skill progression\n|attribute = [[Death Magic]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 20\n|var2 name = [[Weakness]] duration\n|var2 at0 = 5\n|var2 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n\n== Related skills ==\n* {{skill icon|Anthem of Weariness}}\n* {{skill icon|Ward of Weakness}}\n\n== Notes ==\n* The weakness applies before the attack hits.\n{{Anomaly|Unlike [[Grenth's Aura]], switching to a melee weapon before a weapon projectile hits does not trigger this skill.}}"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Ursan Strike",
+  "pageid": 63595,
+  "revid": 2630190,
+  "timestamp": "2018-06-18T17:55:09Z",
+  "wikitext": "{{Skill infobox\n| name = Ursan Strike\n| campaign = Eye of the North\n| attribute = Norn rank\n| type = Touch skill\n| special = Norn Blessing\n| activation = 1\n| recharge = 3\n| pve-only = y\n| range = touch\n| target = foes\n| causes1 = Slashing Damage\n| description = [[Skill (skill type)|Skill]]. You deal {{gr2|40|75}} [[damage]], and {{gr2|40|75}} [[slashing damage]] to [[target]] [[Touch skill|touched]] [[foe]].\n| concise description = Touch Skill. Deals {{gr2|40|75}} damage, and {{gr2|40|75}} slashing damage.\n}}\n\n{{Skill progression max10\n|title track = [[Norn rank]]\n|var1 name = Damage and slashing damage\n|var1 at0  = 40\n|var1 at10 = 75\n}}\n\n==Acquisition==\nTemporarily, as one of the five skills available while under the effect of [[Ursan Blessing]].\n\n==Related skills==\n*{{skill icon|Ursan Strike (Blood Washes Blood)}}\n\n==Notes==\n*This skill deals one [[packet]] of slashing damage first and then one packet of [[armor-ignoring damage|armor-ignoring]] typeless damage.\n\n[[de:Bärenstoß]]"
+}

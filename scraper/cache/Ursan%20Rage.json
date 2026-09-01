@@ -1,0 +1,7 @@
+{
+  "title": "Ursan Rage",
+  "pageid": 63596,
+  "revid": 2630189,
+  "timestamp": "2018-06-18T17:55:07Z",
+  "wikitext": "{{Skill infobox\n| name = Ursan Rage\n| campaign = Eye of the North\n| attribute = Norn rank\n| type = Touch skill\n| special = Norn Blessing\n| activation = 1\n| recharge = 10\n| pve-only = y\n| range = touch\n| target = foes\n| causes1 = Physical Damage\n| causes2 = Knockdown\n| description = [[Skill]]. [[Touch skill|Touch]] [[target]] [[foe]] and deal {{gr2|60|135}} [[physical damage]] to all [[adjacent]] enemies. Struck [[foe]]s are also [[Knock down|knocked down]] for 2 seconds.\n| concise description = Touch Skill. Deals {{gr2|60|135}} physical damage. Causes knock-down. Hits foes adjacent to you.\n| aoe = adjacent\n}}\n\n{{Skill progression max10\n| title track = [[Norn rank]]\n| var1 name = [[Physical damage]]\n| var1 at0  = 60\n| var1 at10 = 135\n}}\n\n==Acquisition==\nTemporarily, as one of the five skills available while under the effect of [[Ursan Blessing]].\n\n== Related skills ==\n* {{skill icon|Brawling Headbutt}}\n* {{skill icon|Siege Devourer Swipe}}\n* {{skill icon|Ursan Rage (Blood Washes Blood)}}\n\n[[de:Bärenwut]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Chained Cleric",
+  "pageid": 72708,
+  "revid": 2318139,
+  "timestamp": "2011-06-14T21:20:05Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Zombie\n| affiliation = Undead\n| profession = mo\n| level = 20...24 (26)\n| campaign = Eye of the North\n| image = [[Image:Zombie monk.jpg|150px]]\n}}\n[[Chained Cleric]]s are mostly-stationary [[Undead]] [[Protection Prayers|protection]] casters with some [[Smiting Prayers|smiting]]. They will move out of [[Area of Effect]] damage, and can sometimes be [[pull]]ed short distances.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Heart of the Shiverpeaks}}\n**{{NPC location|Shards of Orr}}\n**{{NPC location|Slavers' Exile}}\n\n==Skills==\n*{{Skill icon|Protective Spirit}}\n*{{Skill icon|Reversal of Damage}}\n*{{Skill icon|Reversal of Fortune}}\n*{{Skill icon|Smite Condition}}\n*{{Skill icon|Smite Hex}}\n*{{Skill icon|Zealous Benediction}} ([[elite]])\n\n==Armor ratings==\n{{NPC statistics\n| level = 20\n| prof = mo\n| blunt = 60\n| piercing = 60\n| slashing = 60\n| cold = 60\n| earth = 60\n| fire = 60\n| lightning = 60\n}}\n\n==Items dropped==\n*[[Bone]]\n\n[[Category:Drops bone]]"
+}

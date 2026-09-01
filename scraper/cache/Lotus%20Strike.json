@@ -1,0 +1,7 @@
+{
+  "title": "Lotus Strike",
+  "pageid": 51825,
+  "revid": 2733276,
+  "timestamp": "2026-07-05T17:18:17Z",
+  "wikitext": "{{Skill infobox\n| name = Lotus Strike\n| id = 1987\n| campaign = Eye of the North\n| profession = Assassin\n| attribute = Dagger Mastery\n| type = Off-Hand Attack\n| energy = 10\n| recharge = 12\n| causes1 = Energy Gain\n| description = [[Off-Hand Attack]]. Must follow a [[lead attack]]. If it hits, this [[attack]] strikes for {{gr|10|25|+}} [[damage]] and you gain {{gr|5|20}} [[Energy]].\n| concise description = Off-Hand Attack. Deals {{gr|10|25|+}} damage; you gain {{gr|5|20}} Energy. {{gray|Must follow a lead attack.}}\n| requires = lead\n| checks = hit\n| checks-true = energy\n}}\n\n{{Skill progression\n|attribute = [[Dagger Mastery]]\n|var1 name = + [[Damage]]\n|var1 at0 = 10\n|var1 at15 = 25\n|var2 name = [[Energy]] gain\n|var2 at0 = 5\n|var2 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n\n== Related skills ==\n* {{skill icon|Black Lotus Strike}}\n* {{skill icon|Falling Lotus Strike}}\n* {{skill icon|Golden Lotus Strike}}\n* {{skill icon|Way of the Lotus}}"
+}

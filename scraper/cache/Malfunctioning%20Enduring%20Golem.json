@@ -1,0 +1,7 @@
+{
+  "title": "Malfunctioning Enduring Golem",
+  "pageid": 72164,
+  "revid": 2709077,
+  "timestamp": "2025-06-14T20:11:51Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Golem\n| profession = w\n| level = 20 (26)\n| campaign = Eye of the North\n| image = [[File:Sinister Golem.png|172px]]\n}}\nLike the [[Indestructible Golem]], the [[Malfunctioning Enduring Golem]] does not take damage from most sources because of [[Temporal Sheen]]. Picking up the [[Flux Matrix]] lying nearby on the ground, charging it at the [[Unstable Magical Energy Storage]], and dropping it nearby the golem deals significant (1337) damage to it.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Oola's Lab}}\n\n==Skills==\n*{{Skill icon|Auspicious Blow}}\n*{{Skill icon|Enraged Smash}} ([[elite]])\n*{{Skill icon|Irresistible Blow}}\n*{{Skill icon|Mighty Blow}}\n*{{Skill icon|Staggering Blow}}\n* {{monster skill icon|Temporal Sheen}}\n\n==Items dropped==\n*[[Golem Runestone]]\n\n==Notes==\n*The golem has an aggro bubble of spirit range, and will pull a full compass range from its spawn point. {{verify}}\n*The golem does not regenerate health.\n*The golem is immune to damage and degeneration, but is vulnerable to life steal and direct health loss, and can have its health lowered by a [[Deep Wound]].\n\n== See also ==\n* [[Indestructible Golem]]"
+}

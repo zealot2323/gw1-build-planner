@@ -1,0 +1,7 @@
+{
+  "title": "Disarm",
+  "pageid": 51902,
+  "revid": 2684567,
+  "timestamp": "2023-03-03T17:09:43Z",
+  "wikitext": "{{Skill infobox\n| name = Disarm\n| id = 2066\n| campaign = Eye of the North\n| profession = Warrior\n| attribute = Strength\n| type = Sword Attack\n| energy = 5\n| activation = {{1/2}}\n| recharge = 20\n| causes1 = Interrupt\n| causes2 = Disable\n| description = [[Sword Attack]]. [[Interrupt]] [[target]] [[foe]]'s [[action]].  If that action was an [[attack]], all of that foe's [[attack skill]]s are [[disable]]d for {{gr|0|3}} second[s].\n| concise description = Sword Attack. Interrupts target foe. Interruption effect: disables this foe's attack skills ({{gr|0|3}} second[s]) if that action was an attack.\n}}\n\n{{Skill progression\n|attribute = [[Strength]]\n|var1 name = [[Disable]]d [[duration]]\n|var1 at0 = 0\n|var1 at15 = 3}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n\n==Trivia==\n* The character displayed in the [[skill icon]] seems to be a Canthan [[ranger]] wearing [[Ranger Ascalon armor|Ascalon armor]].\n* This is the only sword attack not tied to [[Swordsmanship]], though there are sword-only skills in Tactics."
+}

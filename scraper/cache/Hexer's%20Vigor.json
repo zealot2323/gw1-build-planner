@@ -1,0 +1,7 @@
+{
+  "title": "Hexer's Vigor",
+  "pageid": 51859,
+  "revid": 2733284,
+  "timestamp": "2026-07-05T17:21:35Z",
+  "wikitext": "{{Skill infobox\n| name = Hexer's Vigor\n| id = 2138\n| campaign = Eye of the North\n| profession = Necromancer\n| attribute = Soul Reaping\n| type = Enchantment Spell\n| energy = 5\n| activation = {{1/4}}\n| recharge = 10\n| causes1 = Health Regeneration\n| description = [[Enchantment Spell]]. For 10 seconds, you have {{gr|1|8|+}} [[Health regeneration]]. Hexer's Vigor ends if you cast a non-[[hex]] skill.\n| concise description = Enchantment Spell. (10 seconds.) You have {{gr|1|8|+}} Health regeneration. {{gray|Ends if you use a non-hex skill.}}\n}}\n\n{{Skill progression\n|attribute = [[Soul Reaping]]\n|var1 name = [[Health regeneration]]\n|var1 at0 = 1\n|var1 at15 = 8}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n\n== Trivia ==\n* This skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details."
+}

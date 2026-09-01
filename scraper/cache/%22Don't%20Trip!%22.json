@@ -1,0 +1,7 @@
+{
+  "title": "\"Don't Trip!\"",
+  "pageid": 63466,
+  "revid": 2666149,
+  "timestamp": "2020-09-13T19:16:03Z",
+  "wikitext": "{{Skill infobox\n| name = \"Don't Trip!\"\n| id = 2216\n| campaign = Eye of the North\n| attribute = Deldrimor rank\n| type = Shout\n| energy = 5\n| recharge = 20\n| pve-only = y\n| causes1 = Knockdown Immunity\n| description = [[Shout]]. For {{gr2|3|5}} seconds, [[party]] members within [[earshot]] cannot be [[knock down|knocked down]].\n| concise description = Shout. ({{gr2|3|5}} seconds.) Prevents knock-down; affects party members within earshot.\n}}\n\n{{Skill progression max10\n|title track = [[Deldrimor rank]]\n|var1 name = [[Duration]]\n|var1 at0  = 3\n|var1 at10 = 5\n}}\n\n==Acquisition==\n'''[[Skill quest]]s'''\n*[[Krak's Cavalry]] ([[Sifhalla]])\n\n==Related skills==\n*{{skill icon|\"Brace Yourself!\"}}\n*{{skill icon|Ward of Stability}}\n\n==Trivia==\n* Unlike other Eye of the North [[List of PvE-only skills|PvE-only skills]], the maximum effectiveness of \"Don't Trip!\" is reached at rank 4 instead of 5.\n{{DEFAULTSORT:Don't Trip!}}"
+}

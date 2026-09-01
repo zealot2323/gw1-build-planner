@@ -1,0 +1,7 @@
+{
+  "title": "Charr Mender",
+  "pageid": 65394,
+  "revid": 2308006,
+  "timestamp": "2011-05-31T13:19:10Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Charr shaman.jpg|150px]]\n| affiliation = Charr\n| type = Charr\n| profession = Monk\n| profession2 = Paragon\n| level = 20 (26)\n| campaign = Eye of the North}}\n'''Charr Menders''' are [[Monk]] [[Paragon]]s that provide damage mitigation to Charr warbands through [[Protection Prayers]].\n\n==Locations==\n*[[Charr Homelands]]\n**{{NPC location|Dalada Uplands}}\n**{{NPC location|Grothmar Wardowns}}\n**{{NPC location|Sacnoth Valley}}\n*[[Depths of Tyria]]\n**{{NPC location|Cathedral of Flames}}\n**{{NPC location|Rragar's Menagerie}}\n\n==Missions==\n*Depths of Tyria\n**{{NPC location|Warband of Brothers}}\n*[[Far Shiverpeaks]]\n**{{NPC location|Blood Washes Blood}}\n\n==Skills==\n*{{skill icon|Life Sheath}} ([[elite]])\n*{{skill icon|Mend Condition}}\n*{{skill icon|Protective Spirit}}\n*{{skill icon|Reversal of Fortune}}\n*{{skill icon|Chorus of Restoration}}\n*{{skill icon|Leader's Zeal}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = mo\n| blunt = 60\n| piercing = 60\n| slashing = 60\n| cold = 60\n| earth = 60\n| fire = 60\n| lightning = 60\n}}\n\n==Items dropped==\n*[[Charr Armor]]\n*[[Superb Charr Carving]]"
+}

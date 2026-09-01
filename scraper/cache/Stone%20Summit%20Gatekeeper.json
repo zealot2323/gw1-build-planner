@@ -1,0 +1,7 @@
+{
+  "title": "Stone Summit Gatekeeper",
+  "pageid": 90373,
+  "revid": 2694919,
+  "timestamp": "2024-04-28T12:53:31Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Stone Summit Ranger.jpg|150px]]\n| type = Dwarf\n| affiliation = Stone Summit\n| level = 24 (26)\n| profession = r\n| campaign = Eye of the North\n}}\n[[Stone Summit Gatekeeper]]s drop [[Master Gear]]s, which are required to progress in [[Vloxen Excavations]].\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Vloxen Excavations}} (level 2)\n\n==Skills==\n{{section-stub}}\n*{{skill icon|Antidote Signet}}\n*{{skill icon|Hunter's Shot}}\n*{{Skill icon|Melandru's Arrows}} ([[elite]])\n*{{skill icon|Penetrating Attack}}\n*{{skill icon|Troll Unguent}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = r\n| blunt = 82\n| piercing = 82\n| slashing = 82\n| cold = 112\n| earth = 112\n| fire = 112\n| lightning = 112\n}}\n\n==Items dropped==\n*[[Dwarven Scout Armor]]\n*[[Master Gear]] (doesn't drop directly from the enemy, it instead appears at a preset location in the same room)"
+}

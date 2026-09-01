@@ -1,0 +1,7 @@
+{
+  "title": "Aura Slicer",
+  "pageid": 51913,
+  "revid": 2738333,
+  "timestamp": "2026-08-26T20:09:41Z",
+  "wikitext": "{{Skill infobox\n| id = 2070\n| name=Aura Slicer\n| campaign = Eye of the North\n| profession = Dervish\n| attribute = Mysticism\n| type = Melee Attack\n| adrenaline = 4\n| causes1 = Bleeding\n| causes2 = Cracked Armor\n| description = [[Melee Attack]]. If this attack hits, you inflict [[Bleeding]] for {{gr|5|15}} seconds. If you are [[enchant]]ed, you also inflict [[Cracked Armor]] for {{gr|1|10}} second[s].\n| concise description = Melee Attack. ({{gr|5|15}} seconds.)Inflicts {{sic|No space between the bracket and 'Inflicts'}} Bleeding [[condition]]. Also inflicts Cracked Armor ({{gr|1|10}} second[s]) if you are enchanted.\n| has-pvp = y\n}}\n\n{{Skill progression\n|attribute = [[Mysticism]]\n|var1 name = [[Bleeding]] [[duration]]\n|var1 at0 = 5\n|var1 at15 = 15\n|var2 name = [[Cracked Armor]] duration\n|var2 at0 = 1\n|var2 at15 = 10\n}}\n\n==Acquisition==\n'''[[Skill trainer]]s'''\n*[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n*[[Sida]] ([[Gunnar's Hold]])\n*[[Ybbob]] ([[Rata Sum]])\n\n== Related skills ==\n*{{skill icon|Sever Artery}}\n\n==Notes==\n*Cracked armor [[cover]]s bleeding.\n*Cracked armor is applied after the attack's damage."
+}

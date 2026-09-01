@@ -1,0 +1,7 @@
+{
+  "title": "Companionship",
+  "pageid": 51919,
+  "revid": 2699693,
+  "timestamp": "2024-09-21T11:58:46Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| name=Companionship\n| id = 2141\n| campaign=Eye of the North\n| profession=Ranger\n| attribute=Beast Mastery\n| type=Skill\n| energy=5\n| activation=2\n| recharge=10\n| target = self\n| causes1 = Healing\n| description = [[Skill (skill type)|Skill]]. If you have less [[Health]] than your [[pet]], you are [[heal]]ed for {{gr|30|120}} Health. If your pet has less Health than you, it is healed for {{gr|30|120}} Health.\n| concise description = Skill. Heals you for {{gr|30|120}} if you have less Health than your pet. Heals your pet for {{gr|30|120}} if it has less Health than you.\n}}\n\n{{Skill progression\n|attribute = [[Beast Mastery]]\n|var1 name = [[Heal]]ing\n|var1 at0 = 30\n|var1 at15 = 120}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Eye of the North]]\n**[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n**[[Sida]] ([[Gunnar's Hold]])\n**[[Ybbob]] ([[Rata Sum]])\n\n== Related skills ==\n* {{skill icon|Heal as One}} ([[elite]])\n\n== Notes ==\n* If pet and caster have the exact same health, the pet will be healed.\n* This skill has no effect if the pet is dead.\n\n==Trivia==\n*The ranger on the [[skill icon]] wears a [[Ranger Krytan armor|Krytan Mask]].\n\n[[Category:Pet skills]]\n[[de:Kameradschaft]]"
+}

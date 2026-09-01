@@ -18,6 +18,9 @@ const CAMPAIGN_PROFESSIONS: Record<string, Profession[]> = {
   Nightfall: [...CORE_PROFESSIONS, Profession.Paragon, Profession.Dervish],
 };
 const CAMPAIGNS = Object.keys(CAMPAIGN_PROFESSIONS) as Campaign[];
+/** Expansions can be owned but are nobody's home campaign. */
+const EXPANSIONS: Campaign[] = ["Eye of the North"];
+const OWNABLE: Campaign[] = [...CAMPAIGNS, ...EXPANSIONS];
 
 // towns/outposts grouped by region, mirroring the zone browser's tree
 const locationGroups = (() => {
@@ -170,7 +173,7 @@ export function CharactersView({
               <span className="field-label">
                 Campaigns owned <span className="muted">(from {c.campaign ?? "Prophecies"})</span>
               </span>
-              {CAMPAIGNS.map((camp) => (
+              {OWNABLE.map((camp) => (
                 <label key={camp} className="inline-check">
                   <input
                     type="checkbox"

@@ -221,6 +221,7 @@ export function BuildBar({
                       {plan.best.kind === "trainer" && `buy from ${plan.best.via}`}
                       {plan.best.kind === "quest" && `quest ${plan.best.via}`}
                       {plan.best.kind === "capture" && `capture from ${plan.best.via}`}
+                      {plan.best.kind === "title" && `earn rank with ${plan.best.via}`}
                       {plan.best.location && ` in ${plan.best.location}`}
                       {plan.route.length > 0 && (
                         <>

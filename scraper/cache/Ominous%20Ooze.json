@@ -1,0 +1,7 @@
+{
+  "title": "Ominous Ooze",
+  "pageid": 64113,
+  "revid": 2477316,
+  "timestamp": "2012-04-20T05:29:55Z",
+  "wikitext": "{{NPC infobox\n| type = Jelly\n| affiliation = Depths of Tyria wildlife\n| level = 20 (26)\n| profession = n\n| campaign = Eye of the North\n}}__NOTOC__\n[[Ominous Ooze]] are the standard ooze necromancers.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Arachni's Haunt}} (level 1)\n**{{NPC location|Catacombs of Kathandrax}} (level 2)\n**{{NPC location|Heart of the Shiverpeaks}} (levels 1 and 3, not during [[Heart of the Shiverpeaks (quest)]])\n**{{NPC location|Ooze Pit}}\n**{{NPC location|Rragar's Menagerie}} (all levels)\n**{{NPC location|Vloxen Excavations}} (levels 1 and 2)\n\n==Skills==\n15 [[Death Magic]], 15 [[Soul Reaping]] (20 Death Magic, 20 Soul Reaping in [[Hard mode]])\n*{{skill icon|Consume Corpse}}\n*{{skill icon|Putrid Explosion}}\n*{{skill icon|Signet of Sorrow}}\n*{{skill icon|Verata's Aura}}\n*{{skill icon|Vile Touch}}\n*{{skill icon|Wail of Doom}} ([[elite]])\n*{{monster skill icon|Ooze Combination}}\n*{{monster skill icon|Ooze Division}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = n\n| blunt = 80\n| piercing = 80\n| slashing = 80\n| cold = 60\n| earth = 60\n| fire = 60\n| lightning = 60\n}}"
+}

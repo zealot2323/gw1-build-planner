@@ -1,0 +1,7 @@
+{
+  "title": "Raven Shriek",
+  "pageid": 64045,
+  "revid": 2619631,
+  "timestamp": "2017-06-28T21:46:42Z",
+  "wikitext": "{{Skill infobox\n| name = Raven Shriek\n| campaign = Eye of the North\n| attribute = Norn rank\n| type = Shout\n| special = Norn Blessing\n| recharge = 20\n| pve-only = y\n| target = self\n| range =\n| aoe = earshot\n| causes1 = Blind\n| removes1 = Condition\n| description = [[Shout]]. Remove [[Blind]]ness from all [[Ally|allies]] within [[earshot]]. Cause Blindness to [[nearby]] [[foe]]s for {{gr2|4|10}} seconds.\n| concise description = Shout. Removes Blindness from allies in earshot. Inflicts Blindness condition ({{gr2|4|10}} seconds) to nearby enemies.\n}}\n\n{{Skill progression max10\n|title track = [[Norn rank]]\n|var1 name = [[Blind]] [[duration]]\n|var1 at0  = 4\n|var1 at10 = 10\n}}\n\n==Acquisition==\nTemporarily, as one of the five skills available while under the effect of [[Raven Blessing]]. \n\n==Related skills==\n*{{skill icon|Ebon Dust Aura}} ([[elite]])\n*{{skill icon|Raven Shriek (A Gate Too Far)}}\n*{{skill icon|Shockwave}} (elite)\n*{{skill icon|Unseen Fury}}\n\n[[Category:Skills that affect allies]]\n[[Category:Skills with nearby AoE]]"
+}

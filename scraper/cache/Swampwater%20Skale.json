@@ -1,0 +1,7 @@
+{
+  "title": "Swampwater Skale",
+  "pageid": 86887,
+  "revid": 2267431,
+  "timestamp": "2011-03-20T22:55:46Z",
+  "wikitext": "{{NPC infobox\n| image = [[Image:Skale gray.jpg|200px]]\n| type = Skale\n| affiliation = Charr Homelands wildlife\n| profession = E\n| level =  24 (26)\n| campaign = Eye of the North\n}}__NOTOC__\n[[Swampwater Skale]]s are a type of [[Skale]] that can be encountered in the [[Charr Homelands]], usually in groups with other Skale.\n\n==Locations==\n*[[Charr Homelands]]\n**{{NPC location|Dalada Uplands}}\n**{{NPC location|Grothmar Wardowns}}\n\n==Missions==\n*Charr Homelands\n**{{NPC location|Against the Charr}}\n\n==Skills==\n15 [[Water Magic]] (20 Water Magic in [[Hard mode]])\n*{{skill icon|Blurred Vision}}\n*{{skill icon|Freezing Gust}}\n*{{skill icon|Rust}}\n*{{skill icon|Vapor Blade}}\n*{{skill icon|Water Trident}} ([[elite]])\n\n==Armor ratings==\n{{NPC statistics\n| prof = e\n| blunt = 71\n| piercing = 71\n| slashing = 71\n| cold = 71\n| earth = 71\n| fire = 71\n| lightning = 71\n}}\n\n== Items dropped ==\n* [[Skale Fang]]"
+}

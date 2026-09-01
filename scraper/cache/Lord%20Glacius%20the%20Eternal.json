@@ -1,0 +1,7 @@
+{
+  "title": "Lord Glacius the Eternal",
+  "pageid": 76902,
+  "revid": 2611544,
+  "timestamp": "2016-09-09T09:45:17Z",
+  "wikitext": "__NOTOC__\n{{NPC infobox\n| type = Imp\n| affiliation = Stone Summit\n| level = 24 (30)\n| profession = e\n| campaign = Eye of the North\n| boss = y\n| map1 = [[image:Lord Glacius the Eternal map.jpg|150px]]\n| map1-text = Location in [[Bjora Marches]]\n}}\n[[Lord Glacius the Eternal]] is an [[Imp]] lord summoned by the [[Stone Summit]].\n\n== Locations ==\n* [[Far Shiverpeaks]]\n** {{NPC location|Bjora Marches}}\n\n== Skills ==\n* {{skill icon|Aura of Restoration}}\n* {{skill icon|Frigid Armor}}\n* {{skill icon|Ice Spear}}\n* {{skill icon|Maelstrom}}\n* {{skill icon|Mind Freeze}} ([[elite]])\n* {{skill icon|Water Attunement}}\n\n== Items dropped ==\n* [[Lord Glacius' Staff]] ([[unique]])\n\n== Notes ==\n* Upon coming within range of the [[Stone Summit Gnasher]]s, they will begin [[Bjora Marches#Dialogue|a dialogue to \"summon\" Lord Glacius]].\n** If you attack the group before the summoning is complete, they may end their dialogue early. The summoning process will still complete when the dialogue would have finished as long as one of the Gnashers is alive. If you kill all of the Gnashers before they complete the summoning, Lord Glacius the Eternal will not appear.\n\n[[Category:Stone Summit bosses]]"
+}

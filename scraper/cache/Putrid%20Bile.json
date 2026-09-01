@@ -1,0 +1,7 @@
+{
+  "title": "Putrid Bile",
+  "pageid": 51857,
+  "revid": 2738926,
+  "timestamp": "2026-08-28T03:06:14Z",
+  "wikitext": "{{Skill infobox\n| name = Putrid Bile\n| id = 2058\n| campaign = Eye of the North\n| profession = Necromancer\n| attribute = Death Magic\n| type = Hex Spell\n| energy = 10\n| activation = 1\n| recharge = 12\n| causes1 = Health Degeneration\n| description = [[Hex Spell]]. For {{gr|5|25}} seconds, [[target]] [[foe]] suffers {{gr|1|3|-}} [[Health degeneration]]. If that foe [[Death|dies]] while under the effects of this hex, all [[nearby]] foes take {{gr|25|85}} damage.\n| concise description = Hex Spell. ({{gr|5|25}} seconds.) Causes {{gr|1|3|-}} Health degeneration. Deals {{gr|25|85}} damage to all nearby foes if target foe dies.}}\n\n{{Skill progression\n|attribute = [[Death Magic]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 25\n|var2 name = [[Health degeneration]]\n|var2 at0 = 1\n|var2 at15 = 3\n|var3 name = [[Damage]]\n|var3 at0 = 25\n|var3 at15 = 85}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n\n== Related skills ==\n* {{skill icon|Death Nova}}\n* {{skill icon|Icy Veins}} ([[elite]])\n* {{skill icon|Rising Bile}}\n\n== Notes ==\n* Consider combining with [[Icy Veins]] and [[Putrid Explosion]] for a great amount of damage upon death.\n\n[[Category:Skills with nearby AoE]]\n[[Category:Armor-ignoring damage]]"
+}

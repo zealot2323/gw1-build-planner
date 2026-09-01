@@ -1,0 +1,7 @@
+{
+  "title": "Stone Summit Blasphemer",
+  "pageid": 73007,
+  "revid": 2689869,
+  "timestamp": "2023-08-25T21:07:56Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| type = Dwarf\n| image = [[Image:Stone Summit caster.jpg|150px]]\n| affiliation = Stone Summit\n| profession = n\n| profession2 = e\n| level = 24 (26)\n| campaign = Eye of the North\n}}\n[[Stone Summit Blasphemer]]s use [[health degeneration]] and mass [[enchantment]] removal against their foes.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Slavers' Exile}}\n\n==Skills==\n15 [[Death Magic]]\n*{{skill icon|Deathly Swarm}}\n*{{skill icon|Putrid Explosion}}\n*{{skill icon|Rotting Flesh}}\n*{{skill icon|Tainted Flesh}} ([[elite]]) \n*{{skill icon|Vile Miasma}}\n*{{skill icon|Well of the Profane}}\n*{{skill icon|Glyph of Lesser Energy}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = n\n| blunt = 71\n| piercing = 71\n| slashing = 71\n| cold = 71\n| earth = 71\n| fire = 71\n| lightning = 71\n}}"
+}

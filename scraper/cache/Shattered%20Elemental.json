@@ -1,0 +1,7 @@
+{
+  "title": "Shattered Elemental",
+  "pageid": 65412,
+  "revid": 2268085,
+  "timestamp": "2011-03-21T23:56:23Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[Image:Ice Elemental.jpg|150px]]\n| type = Elemental\n| affiliation = Depths of Tyria wildlife\n| profession = e\n| level = 20 (26)\n| campaign = Eye of the North\n}}\n[[Shattered Elemental]]s are ice creatures found underground.\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Battledepths}}\n**{{NPC location|Darkrime Delves}}\n**{{NPC location|Raven's Point}}\n**{{NPC location|Sepulchre of Dragrimmar}}\n\n==Missions==\n*Depths of Tyria\n**{{NPC location|A Gate Too Far}}\n**{{NPC location|Destruction's Depths}} level 1\n\n==Skills==\n15 [[Water Magic]] (20 Water Magic in [[Hard mode]])\n*{{skill icon|Armor of Mist}}\n*{{skill icon|Deep Freeze}}\n*{{skill icon|Glyph of Lesser Energy}}\n*{{skill icon|Ice Spear}}\n*{{skill icon|Shatterstone}} ([[elite]])\n*{{skill icon|Water Attunement}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = e\n| blunt = 60\n| piercing = 60\n| slashing = 60\n| cold = 100\n| earth = 60\n| fire = 60\n| lightning = 60\n}}\n\n==Items dropped==\n*[[Pile of Elemental Dust]]"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Modniir Shaman",
+  "pageid": 63419,
+  "revid": 2621013,
+  "timestamp": "2017-08-05T17:35:42Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| image = [[File:Modniir Priest.jpg|150px]]\n| type = Centaur\n| affiliation = Modniir\n| profession = mo\n| level = 20 (26)\n| campaign = Eye of the North\n}}\n[[Modniir Shaman]]s are [[bonder]]s.\n\n==Locations==\n*[[Far Shiverpeaks]]\n**{{NPC location|Drakkar Lake}}\n**{{NPC location|Ice Cliff Chasms}} (only during [[Service: In Defense of the Eye]])\n**{{NPC location|Norrhart Domains}}\n**{{NPC location|Varajar Fells}}\n\n==Skills==\n*{{skill icon|Blessed Signet}}\n*{{skill icon|Boon Signet}} ([[elite]])\n*{{skill icon|Dismiss Condition}}\n*{{skill icon|Life Attunement}}\n*{{skill icon|Life Bond}}\n*{{skill icon|Signet of Devotion}}\n*{{skill icon|Vital Blessing}}\n*{{monster skill icon|Trample}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = mo\n| blunt = 60\n| piercing = 60\n| slashing = 60\n| cold = 60\n| earth = 60\n| fire = 60\n| lightning = 60\n}}\n\n==Items dropped==\n*[[Modniir Mane]]\n*[[Modniir Robe]]\n*[[Modniir Tunic]]"
+}

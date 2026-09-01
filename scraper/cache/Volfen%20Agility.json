@@ -1,0 +1,7 @@
+{
+  "title": "Volfen Agility",
+  "pageid": 63549,
+  "revid": 2692961,
+  "timestamp": "2024-02-15T17:22:30Z",
+  "wikitext": "{{Skill infobox\n| name = Volfen Agility\n| campaign = Eye of the North\n| attribute = Norn rank\n| type = Enchantment Spell\n| special = Norn Blessing\n| activation = {{1/4}}\n| recharge = 30\n| pve-only = y\n| causes1 = Decreased Recharge Time\n| description = [[Enchantment spell|Enchantment Spell]]. For {{gr2|10|20}} seconds your Volfen Skills [[recharge]] 66% faster.\n| concise description = Enchantment Spell. ({{gr2|10|20}} seconds.) Your Volfen skills recharge 66% faster.\n}}\n\n{{Skill progression max10\n|title track = [[Norn rank]]\n|var1 name = [[Duration]]\n|var1 at0  = 10\n|var1 at10 = 20\n}}\n\n==Acquisition==\nTemporarily, as one of the five skills available while under the effect of [[Volfen Blessing]].\n\n==Related skills==\n*{{skill icon|Volfen Agility (Curse of the Nornbear)}}\n\n==Notes==\n*While affected by a [[Quickening Zephyr]] spirit, you will be able to maintain this skill indefinitely  after the first cast with rank 3 or higher. This will allow you to also indefinitely maintain [[Volfen Bloodlust]] and use the Volfen attack skills more frequently."
+}

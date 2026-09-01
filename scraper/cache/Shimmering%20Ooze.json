@@ -1,0 +1,7 @@
+{
+  "title": "Shimmering Ooze",
+  "pageid": 64640,
+  "revid": 2065043,
+  "timestamp": "2010-06-20T12:57:31Z",
+  "wikitext": "{{NPC infobox\n| type = Jelly\n| affiliation = Depths of Tyria wildlife\n| profession = me\n| level = 20 (26)\n| campaign = Eye of the North\n}}__NOTOC__\n[[Shimmering Ooze]] are the standard [[Jelly|ooze]] [[mesmer]]s who focus on [[energy denial]].\n\n==Locations==\n*[[Depths of Tyria]]\n**{{NPC location|Heart of the Shiverpeaks}} (levels 1 and 3 not during Heart of the Shiverpeaks (quest))\n**{{NPC location|Ooze Pit}}\n**{{NPC location|Rragar's Menagerie}} (all levels)\n**{{NPC location|Sepulchre of Dragrimmar}} (level 1)\n**{{NPC location|Vloxen Excavations}} (levels 1 and 2)\n\n==Skills==\n15 [[Domination Magic]] (20 Domination Magic in [[Hard Mode]])\n*{{skill icon|Auspicious Incantation}}\n*{{skill icon|Channeling}}\n*{{skill icon|Energy Burn}}\n*{{skill icon|Energy Surge}} ([[Elite]])\n*{{skill icon|Power Spike}}\n*{{skill icon|Spiritual Pain}}\n*{{monster skill icon|Ooze Combination}}\n*{{monster skill icon|Ooze Division}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = me\n| blunt = 80\n| piercing = 80\n| slashing = 80\n| cold = 60\n| earth = 60\n| fire = 60\n| lightning = 60\n}}\n\n==Items dropped==\n*[[Blob of Ooze]]"
+}

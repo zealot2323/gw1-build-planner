@@ -1,0 +1,7 @@
+{
+  "title": "\"You Are All Weaklings!\"",
+  "pageid": 58327,
+  "revid": 2719028,
+  "timestamp": "2026-01-26T15:08:06Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| id = 2359\n| name = \"You Are All Weaklings!\"\n| campaign = Eye of the North\n| profession = \n| attribute = Norn rank\n| type = Shout\n| energy = 5\n| recharge = 12\n| target = foes\n| causes1 = Weakness\n| description = [[Shout]]. [[Target]] [[foe]] and foes [[adjacent]] to target are [[Weakness|Weakened]] for {{gr2|8|12}} seconds.\n| concise description= Shout. Inflicts Weakness condition ({{gr2|8|12}} seconds). Also affects adjacent foes.\n| pve-only = y\n| aoe = adjacent\n}}\n\n{{Skill progression max10\n|title track = [[Norn rank]]\n|var1 name = [[Weakness]] [[duration]]\n|var1 at0  = 8\n|var1 at10 = 12\n}}\n\n==Acquisition==\n'''[[Skill quest]]s'''\n*[[Prenuptial Disagreement]] ([[Olaf Olafson]] in [[Olafstead]] or [[Olrun Olafdottir]] in [[Varajar Fells]])\n\n==Related skills==\n*{{skill icon|Enfeebling Blood}}\n*{{skill icon|Ursan Roar}}\n\n==Notes==\n*The duration of the weakness condition will be extended by 33% if using a weapon with a [[Heavy]] upgrade, making it possible to maintain weakness at rank 1.\n\n==Trivia==\n*The [[Norn]] in the [[skill icon]] is [[Jora]] wearing her [[Brotherhood armor]]. \n{{DEFAULTSORT:You are all weaklings!}}"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Shadow Fang",
+  "pageid": 51829,
+  "revid": 2726573,
+  "timestamp": "2026-04-28T19:36:29Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| name = Shadow Fang\n| id = 2052\n| campaign = Eye of the North\n| profession = Assassin\n| attribute = Deadly Arts\n| type = Hex Spell\n| energy = 10\n| activation = {{1/4}}\n| recharge = 20\n| causes1 = Shadow Step\n| causes2 = Deep Wound\n| description = [[Hex Spell]]. [[Shadow Step]] to [[target]] [[foe]]. For 10 seconds, this hex does nothing. When this hex ends, you return to your original location and that foe suffers from a [[Deep Wound]] for {{gr|5|20}} seconds.\n| concise description = Hex Spell.  Shadow Step to target foe.  End effect after 10 seconds: inflicts Deep Wound condition ({{gr|5|20}} seconds); you return to your original location.\n}}\n\n{{Skill progression\n|attribute = [[Deadly Arts]]\n|var1 name = [[Deep Wound]] [[duration]]\n|var1 at0 = 5\n|var1 at15 = 20}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n\n== Related skills ==\n* {{skill icon|Augury of Death}}\n* {{skill icon|Phantom Pain}}\n\n== Notes ==\n* Like all spells, this skill has a {{3/4}} second [[aftercast delay]].\n\n== Trivia ==\n* The figure in the [[skill icon]] appears to be wearing [[Assassin Elite Luxon armor]]."
+}

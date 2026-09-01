@@ -1,0 +1,7 @@
+{
+  "title": "Mindbender",
+  "pageid": 58303,
+  "revid": 2680288,
+  "timestamp": "2022-08-17T18:54:19Z",
+  "wikitext": "{{Skill infobox\n| id = 2411\n| name = Mindbender\n| campaign = Eye of the North\n| profession = \n| attribute = Asura rank\n| pve-only = y\n| type = Enchantment Spell\n| energy = 5\n| activation = 1\n| recharge = 24\n| target = untargeted\n| causes1 = Increased Movement Speed\n| causes2 = Decreased Activation Time\n| description = [[Enchantment Spell]]. For {{gr2|10|16}} seconds, you [[Speed boost|move {{gr2|20|33}}% faster]] and your [[Spell]]s take 20% less time to [[Activation time|cast]].\n| concise description = Enchantment Spell. ({{gr2|10|16}} seconds.) You move {{gr2|20|33}}% faster and cast Spells 20% faster.\n }}\n\n{{Skill progression max10\n|title track = [[Asura rank]]\n|var1 name = [[Duration]]\n|var1 at0 = 10\n|var1 at10 = 16\n|var2 name = [[Speed boost]] %\n|var2 at0 = 20\n|var2 at10 = 33\n}}\n\n==Acquisition==\n'''[[Skill quest]]s'''\n*[[O Brave New World]] ([[Vlox's Falls]])\n\n== Notes ==\n* This casting effect stacks multiplicatively with other modifiers, such as [[Fast Casting]], weapon modifiers, or skills such as [[Holy Haste]].\n\n== Trivia ==\n* The functionality of this skill has changed since its introduction; see its [[/Skill history|skill revision history]] for details."
+}

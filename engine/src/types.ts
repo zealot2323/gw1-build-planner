@@ -57,6 +57,15 @@ export interface SkillAcquisition {
   questLocations?: Record<QuestRef, LocationRef | null>;
   /** Where each capture boss spawns, per the wiki acquisition line. */
   captureLocations?: Record<BossRef, LocationRef | null>;
+  /**
+   * NPCs who teach this in exchange for standing in a title track
+   * (allegiance, Sunspear, Lightbringer) rather than gold — the gate is a
+   * rank, not a place, so these are never "reachable now".
+   */
+  titleNpcs?: string[];
+  titleLocations?: Record<string, LocationRef | null>;
+  /** The rank requirement, quoted from the wiki. */
+  titleRequirement?: string;
 }
 
 export interface Skill {
@@ -90,7 +99,7 @@ export interface Skill {
 // Locations, trainers, monsters, missions
 // ---------------------------------------------------------------------------
 
-export type LocationKind = "town" | "outpost" | "mission-outpost" | "explorable";
+export type LocationKind = "town" | "outpost" | "mission-outpost" | "explorable" | "dungeon";
 
 export interface Location {
   kind: LocationKind;
@@ -290,6 +299,9 @@ export const skillSchema = {
         conditionalCaptureBosses: refArray,
         questLocations: { type: "object", additionalProperties: { type: ["string", "null"] } },
         captureLocations: { type: "object", additionalProperties: { type: ["string", "null"] } },
+        titleNpcs: refArray,
+        titleLocations: { type: "object", additionalProperties: { type: ["string", "null"] } },
+        titleRequirement: { type: "string" },
       },
     },
   },
@@ -301,7 +313,7 @@ export const locationSchema = {
   additionalProperties: false,
   required: ["kind", "name", "wikiPage", "campaign", "region", "neighbors", "foes"],
   properties: {
-    kind: { type: "string", enum: ["town", "outpost", "mission-outpost", "explorable"] },
+    kind: { type: "string", enum: ["town", "outpost", "mission-outpost", "explorable", "dungeon"] },
     name: { type: "string" },
     wikiPage: { type: "string" },
     campaign: { oneOf: [{ $ref: "gw1-campaign" }, { type: "null" }] },

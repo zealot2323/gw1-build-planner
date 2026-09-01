@@ -1,0 +1,7 @@
+{
+  "title": "Grawl Dark Priest",
+  "pageid": 72189,
+  "revid": 2272898,
+  "timestamp": "2011-03-29T22:01:52Z",
+  "wikitext": "__NOTOC__{{NPC infobox\n| affiliation = Charr Homelands wildlife\n| type = Grawl\n| image = [[file:Grawl caster.jpg|200px]]\n| profession = rt\n| level = 24 (26)\n| campaign = Eye of the North\n| Expert Salvage = Steel Ingot \n}}\n[[Grawl Dark Priest]]s are found amongst the [[Grawl]] in the rugged wilderness of Charr Homelands.\n\n==Locations==\n*[[Charr Homelands]]\n**{{NPC location|Sacnoth Valley}}\n**{{NPC location|Grothmar Wardowns}} (during [[Be Very, Very Quiet...]])\n\n==Skills==\n11 [[Restoration Magic]] (20 [[Communing]], 17 Restoration Magic in [[Hard Mode]])\n*{{skill icon|Boon of Creation}}\n*{{skill icon|Mend Body and Soul}}\n*{{skill icon|Preservation}} ([[elite]])\n*{{skill icon|Restoration}}\n*{{skill icon|Rupture Soul}}\n*{{skill icon|Soothing}}\n*{{skill icon|Spirit Transfer}}\n\n==Armor ratings==\n{{NPC statistics\n| prof = rt\n| blunt = 71\n| piercing = 71\n| slashing = 71\n| cold = 71\n| earth = 71\n| fire = 71\n| lightning = 71\n}}\n\n==Items dropped==\n*[[Grawl Trappings]]\n*[[Grawl Vambrace]]\n*[[Stone Grawl Necklace]]"
+}

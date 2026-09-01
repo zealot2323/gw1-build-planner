@@ -1,0 +1,7 @@
+{
+  "title": "Poison Tip Signet",
+  "pageid": 51918,
+  "revid": 2683509,
+  "timestamp": "2023-02-19T05:26:56Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| name = Poison Tip Signet\n| id = 2199\n| campaign = Eye of the North\n| profession = Ranger\n| attribute = Wilderness Survival\n| type = Signet\n| activation = 1\n| recharge = 6\n| causes1 = Poison\n| description = [[Signet]]. For 60 seconds, your next [[attack]] also inflicts [[Poison]] for {{gr|8|15}} seconds.\n| concise description = Signet. (60 seconds.) Inflicts Poisoned condition ({{gr|8|15}} seconds) with your next attack.\n}}\n\n{{Skill progression\n|attribute = [[Wilderness Survival]]\n|var1 name = [[Poison]] [[duration]]\n|var1 at0 = 8\n|var1 at15 = 15}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n*[[Eye of the North]]\n**[[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n**[[Sida]] ([[Gunnar's Hold]])\n**[[Ybbob]] ([[Rata Sum]])\n'''[[Signet of Capture]]'''\n* [[Prophecies]]\n** [[Valis the Rampant]] ([[Twin Serpent Lakes (War in Kryta)]])\n\n==Related skills==\n*{{Skill icon|Apply Poison}}\n*{{Skill icon|Poison Arrow}} ([[elite]])\n\n== Notes ==\n* Only affects the nearest target when an attack hits multiple foes, e.g. using [[Barrage]] or with a [[Scythe]].\n* Unlike [[Nightmare Weapon]], the unsuccessful attack (e.g. [[miss]]ed or [[Line of sight|obstructed]]) is counted and discharges the skill effect.\n\n==Trivia==\n*The tiny frog that appears in the animation is a reference to a poisonous frog that was commonly used to tip arrows with poison."
+}

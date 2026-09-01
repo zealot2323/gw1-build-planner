@@ -1,0 +1,7 @@
+{
+  "title": "Spotless Mind",
+  "pageid": 51890,
+  "revid": 2583141,
+  "timestamp": "2015-02-15T21:18:10Z",
+  "wikitext": "__NOTOC__{{Skill infobox\n| name = Spotless Mind\n| id = 2064\n| campaign = Eye of the North\n| profession = Monk\n| attribute = Healing Prayers\n| type = Enchantment Spell\n| energy = 5\n| activation = {{1/4}}\n| recharge = 12\n| description = [[Enchantment Spell]]. For {{gr|1|15}} seconds, [[target]] other [[ally]] loses a [[hex]] every 5 seconds.\n| concise description = Enchantment Spell. ({{gr|1|15}} seconds.) Removes a hex every 5 seconds. {{gray|Cannot self-target.}}\n| target = other allies\n| removes1 = Hex spell\n}}\n\n{{Skill progression\n|attribute = [[Healing Prayers]]\n|var1 name = [[Duration]]\n|var1 at0 = 1\n|var1 at15 = 15}}\n\n== Acquisition ==\n'''[[Skill trainer]]s'''\n* [[Micah Fergson]] ([[Eye of the North (outpost)|Eye of the North]])\n* [[Sida]] ([[Gunnar's Hold]])\n* [[Ybbob]] ([[Rata Sum]])\n\n== Related skills ==\n* {{Skill icon|Spotless Soul}}\n\n== Notes ==\n* The first hex is removed after 5 seconds.\n\n== Trivia ==\n* A hex used to be removed upon skill ending prior to the [[Game_updates/20080331|March 31, 2008 update]]."
+}
