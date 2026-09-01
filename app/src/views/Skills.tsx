@@ -18,6 +18,25 @@ import { ProximityDot } from "../components/ProximityDot";
 import { wikiHref } from "../wiki";
 import type { CharacterSave } from "../save";
 
+/** Filters and expansion state, held by App so tab switches don't reset it. */
+export interface SkillViewState {
+  profFilter: string;
+  attrFilter: string;
+  elitesOnly: boolean;
+  search: string;
+  openSkill: string | null;
+  sortBy: "name" | "soonest";
+}
+
+export const initialSkillViewState: SkillViewState = {
+  profFilter: "all",
+  attrFilter: "all",
+  elitesOnly: false,
+  search: "",
+  openSkill: null,
+  sortBy: "soonest",
+};
+
 const STATUS_ORDER: SkillStatus[] = [
   "KNOWN", "PURCHASABLE_NOW", "QUESTABLE_NOW", "CAPTURABLE_NOW", "FUTURE",
 ];
@@ -96,6 +115,8 @@ export function SkillsView({
   updateBuilds,
   draft,
   setDraft,
+  view,
+  setView,
 }: {
   character: CharacterSave | null;
   /** Skill to scroll to (set by the zone browser's skill links). */
@@ -106,14 +127,17 @@ export function SkillsView({
   updateBuilds: (builds: Build[]) => void;
   draft: Build;
   setDraft: (b: Build) => void;
+  view: SkillViewState;
+  setView: (patch: Partial<SkillViewState>) => void;
 }) {
-  const [profFilter, setProfFilter] = useState<string>("all");
-  const [attrFilter, setAttrFilter] = useState<string>("all");
-  const [elitesOnly, setElitesOnly] = useState(false);
-  const [search, setSearch] = useState("");
+  const { profFilter, attrFilter, elitesOnly, search, openSkill, sortBy } = view;
   const [expandedSources, setExpandedSources] = useState<Set<string>>(new Set());
-  const [openSkill, setOpenSkill] = useState<string | null>(null);
-  const [sortBy, setSortBy] = useState<"name" | "soonest">("soonest");
+  const setProfFilter = (v: string) => setView({ profFilter: v });
+  const setAttrFilter = (v: string) => setView({ attrFilter: v });
+  const setElitesOnly = (v: boolean) => setView({ elitesOnly: v });
+  const setSearch = (v: string) => setView({ search: v });
+  const setOpenSkill = (v: string | null) => setView({ openSkill: v });
+  const setSortBy = (v: "name" | "soonest") => setView({ sortBy: v });
   const focusRef = useRef<HTMLTableRowElement | null>(null);
 
   // The build's secondary decides which skills are in play — there is one

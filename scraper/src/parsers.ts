@@ -241,6 +241,10 @@ export function parseTrainer(
 export interface FoeLists {
   foes: string[];
   bosses: string[];
+  /** Normal-mode level per foe, from the "8 (23)" prefix on each line. */
+  foeLevels: Record<string, number>;
+  /** Hard-mode level per foe, from the parenthesized value. */
+  foeLevelsHard: Record<string, number>;
 }
 
 /**
@@ -251,6 +255,9 @@ export interface FoeLists {
 export function extractFoes(wikitext: string): FoeLists {
   const foes = new Set<string>();
   const bosses = new Set<string>();
+  const foeLevels: Record<string, number> = {};
+  const foeLevelsHard: Record<string, number> = {};
+
   for (const s of sections(wikitext)) {
     const inHardMode = [s.title, ...s.ancestors].some((t) => /hard mode/i.test(t));
     if (inHardMode) continue;
@@ -260,12 +267,20 @@ export function extractFoes(wikitext: string): FoeLists {
     for (const line of s.body.split("\n")) {
       if (!/^\*[^*]/.test(line)) continue;
       const target = firstLinkTarget(line);
-      if (target && !/^(File|Image|Category|Template):/i.test(target)) {
-        (isBossSection ? bosses : foes).add(target);
-      }
+      if (!target || /^(File|Image|Category|Template):/i.test(target)) continue;
+      (isBossSection ? bosses : foes).add(target);
+
+      // "* {{w}} 8 (23) [[Charr Axe Fiend]]" — the level prefix is the
+      // encounter level FOR THIS ZONE, which is far more reliable than the
+      // monster page's list of every level it appears at anywhere.
+      const prefix = line.slice(0, line.indexOf("[[")).replace(/\{\{[^}]*\}\}/g, "");
+      const hard = prefix.match(/\(\s*(\d+)/);
+      const normals = [...prefix.replace(/\([^)]*\)/g, "").matchAll(/\d+/g)].map((m) => Number(m[0]));
+      if (normals.length > 0) foeLevels[target] = Math.max(...normals);
+      if (hard) foeLevelsHard[target] = Number(hard[1]);
     }
   }
-  return { foes: [...foes], bosses: [...bosses] };
+  return { foes: [...foes], bosses: [...bosses], foeLevels, foeLevelsHard };
 }
 
 // ---------------------------------------------------------------------------
@@ -282,6 +297,9 @@ export interface ParsedLocation {
   trainer?: string;
   foes: string[];
   bosses: string[];
+  /** Encounter level per foe here (see extractFoes). */
+  foeLevels?: Record<string, number>;
+  foeLevelsHard?: Record<string, number>;
   /** Pre-Searing Ascalon (set by the driver from the overrides list). */
   preSearing?: boolean;
 }
@@ -294,7 +312,7 @@ export function parseLocation(title: string, wikitext: string, kind: string): Pa
   const neighbors = box?.["exits"] ? linkTargets(box["exits"]) : [];
   if (kind !== "explorable" && !box?.["exits"]) issues.push("no exits in infobox");
 
-  const { foes, bosses } = extractFoes(wikitext);
+  const { foes, bosses, foeLevels, foeLevelsHard } = extractFoes(wikitext);
   if (kind === "explorable" && foes.length + bosses.length === 0) issues.push("no foes parsed");
 
   // The trainer standing here (if any) is resolved by the driver from the
@@ -309,6 +327,8 @@ export function parseLocation(title: string, wikitext: string, kind: string): Pa
       neighbors,
       foes,
       bosses,
+      ...(Object.keys(foeLevels).length > 0 ? { foeLevels } : {}),
+      ...(Object.keys(foeLevelsHard).length > 0 ? { foeLevelsHard } : {}),
     },
     issues,
   };
@@ -356,6 +376,8 @@ export interface ParsedMonster {
   bossElite?: string;
   locations: string[];
   profession: string | null;
+  /** Infobox "affiliation": faction / creature type ("Undead", "Titans"). */
+  affiliation?: string | null;
   /** Present only when the page splits skills into more than one block. */
   variants?: ParsedMonsterVariant[];
   /**
@@ -601,13 +623,15 @@ export interface ParsedMission {
   region: string | null;
   foes: string[];
   bosses: string[];
+  foeLevels?: Record<string, number>;
+  foeLevelsHard?: Record<string, number>;
 }
 
 export function parseMission(title: string, wikitext: string): Parsed<ParsedMission> {
   const issues: string[] = [];
   const box = parseTemplate(wikitext, "Mission infobox");
   if (!box) issues.push("no Mission infobox");
-  const { foes, bosses } = extractFoes(wikitext);
+  const { foes, bosses, foeLevels, foeLevelsHard } = extractFoes(wikitext);
   if (foes.length + bosses.length === 0) issues.push("no foes parsed");
   return {
     entity: {
@@ -617,6 +641,8 @@ export function parseMission(title: string, wikitext: string): Parsed<ParsedMiss
       region: box?.["region"] ? stripMarkup(box["region"]) : null,
       foes,
       bosses,
+      ...(Object.keys(foeLevels).length > 0 ? { foeLevels } : {}),
+      ...(Object.keys(foeLevelsHard).length > 0 ? { foeLevelsHard } : {}),
     },
     issues,
   };

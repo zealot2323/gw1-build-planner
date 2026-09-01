@@ -384,3 +384,33 @@ describe("full dataset: what an outpost offers", () => {
     expect(at.quests).toEqual([]);
   });
 });
+
+describe("full dataset: per-zone levels beat the monster page", () => {
+  it("uses the location's own foe line for the level", async () => {
+    const { monstersInLocation } = await import("../src/index.js");
+    const at = monstersInLocation("Nolani Academy", index);
+    const axeFiend = at.find((m) => m.monster.name === "Charr Axe Fiend")!;
+    const gargoyle = at.find((m) => m.monster.name === "Flash Gargoyle")!;
+    // the monster pages list every level these appear at anywhere (20 and 3);
+    // Nolani's own foe list says 8 and 7
+    expect(axeFiend.monster.level).toBe(20);
+    expect(axeFiend.level).toBe(8);
+    expect(gargoyle.monster.level).toBe(3);
+    expect(gargoyle.level).toBe(7);
+  });
+
+  it("hard mode uses the parenthesized level from the same line", async () => {
+    const { monstersInLocation } = await import("../src/index.js");
+    const hard = monstersInLocation("Nolani Academy", index, true);
+    expect(hard.find((m) => m.monster.name === "Charr Axe Fiend")!.level).toBe(23);
+  });
+
+  it("still picks the right variant when the zone level disambiguates", async () => {
+    const { monstersInLocation } = await import("../src/index.js");
+    const inVale = monstersInLocation("Traveler's Vale", index).find(
+      (m) => m.monster.name === "Riine Windrot",
+    )!;
+    expect(inVale.level).toBe(12);
+    expect(inVale.skills.map((s) => s.ref)).not.toContain("Offering of Blood");
+  });
+});

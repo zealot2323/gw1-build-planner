@@ -102,6 +102,13 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
   zones where the boss's applicable block actually carries the skill, so a
   boss's high-level elite is not capturable at its low-level spawns (Riine
   Windrot's Offering of Blood is Thunderhead Keep only).
+- **A zone's own foe line is the best source for encounter level.** Location
+  and mission pages list foes as "* {{w}} 8 (23) [[Charr Axe Fiend]]" — that
+  8 is the level HERE, whereas the monster page lists every level the
+  creature appears at anywhere (Charr Axe Fiend's page says 20, Flash
+  Gargoyle's says 3). Parsed into `foeLevels`/`foeLevelsHard` on the
+  location, and preferred by `monstersInLocation` over anything on the
+  monster page — including for picking the right variant.
 - **Infobox level strings are messy.** "<br>" separates individual entries on
   some pages ("1 (22),<br>4 (22),<br>8 (23),<br>15") and whole campaign groups
   on others ("5, 6 (23)<br>10, 12, 14") — a group containing a comma marks the

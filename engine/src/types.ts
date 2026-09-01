@@ -106,6 +106,13 @@ export interface Location {
   foes: MonsterRef[];
   /** Bosses found here (subset context from the wiki's Bosses sections). */
   bosses?: MonsterRef[];
+  /**
+   * Encounter level per foe HERE, from the "8 (23)" prefix on each foe line.
+   * More reliable than the monster page, which lists every level the
+   * creature appears at anywhere in the game.
+   */
+  foeLevels?: Record<MonsterRef, number>;
+  foeLevelsHard?: Record<MonsterRef, number>;
   /** Pre-Searing Ascalon — the region has both halves, so views can split them. */
   preSearing?: boolean;
 }
@@ -183,6 +190,8 @@ export interface Mission {
   region?: string | null;
   foes: MonsterRef[];
   bosses: MonsterRef[];
+  foeLevels?: Record<MonsterRef, number>;
+  foeLevelsHard?: Record<MonsterRef, number>;
 }
 
 // ---------------------------------------------------------------------------
@@ -291,6 +300,8 @@ export const locationSchema = {
     trainer: { type: "string" },
     foes: refArray,
     bosses: refArray,
+    foeLevels: { type: "object", additionalProperties: { type: "integer" } },
+    foeLevelsHard: { type: "object", additionalProperties: { type: "integer" } },
     preSearing: { type: "boolean" },
   },
 } as const;
@@ -375,6 +386,8 @@ export const missionSchema = {
     region: { type: ["string", "null"] },
     foes: refArray,
     bosses: refArray,
+    foeLevels: { type: "object", additionalProperties: { type: "integer" } },
+    foeLevelsHard: { type: "object", additionalProperties: { type: "integer" } },
   },
 } as const;
 

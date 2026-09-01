@@ -45,6 +45,8 @@ export function variantsForLocation(
   monster: Monster,
   location: LocationRef,
   hardMode = false,
+  /** Level for this zone from the location page, which beats the monster page. */
+  levelHere?: number,
 ): MonsterVariant[] {
   const all = monster.variants ?? [];
   // hard-mode-only blocks are additional loadouts, shown only in hard mode
@@ -54,7 +56,7 @@ export function variantsForLocation(
   const named = variants.filter((v) => v.label !== null && v.label.includes(location));
   if (named.length > 0) return named;
 
-  const level = monster.locationLevels?.[location];
+  const level = levelHere ?? monster.locationLevels?.[location];
   if (level !== undefined) {
     const byLevel = variants.filter((v) => v.levels.includes(level));
     if (byLevel.length > 0) return byLevel;
@@ -67,8 +69,9 @@ export function skillsForLocation(
   monster: Monster,
   location: LocationRef,
   hardMode = false,
+  levelHere?: number,
 ): Array<{ ref: SkillRef; hardModeOnly: boolean }> {
-  const applicable = variantsForLocation(monster, location, hardMode);
+  const applicable = variantsForLocation(monster, location, hardMode, levelHere);
   const out: Array<{ ref: SkillRef; hardModeOnly: boolean }> = [];
   const seen = new Set<SkillRef>();
   const add = (ref: SkillRef, hardModeOnly: boolean) => {
@@ -121,16 +124,20 @@ export function monstersInLocation(
     const monster = index.monsterByPage.get(ref);
     if (!monster) continue;
 
-    const applicable = variantsForLocation(monster, location, hardMode);
+    // The location page's own foe line is the best source for the level
+    // here; the monster page lists every level it appears at anywhere.
+    const levelHere = loc.foeLevels?.[ref];
+    const applicable = variantsForLocation(monster, location, hardMode, levelHere);
     const level = hardMode
-      ? (monster.levelHard ?? monster.level)
-      : (monster.locationLevels?.[location] ??
+      ? (loc.foeLevelsHard?.[ref] ?? monster.levelHard ?? monster.level)
+      : (levelHere ??
+        monster.locationLevels?.[location] ??
         (applicable.length === 1 ? (applicable[0].levels[0] ?? monster.level) : monster.level));
 
     out.push({
       monster,
       isBossHere: bossSet.has(ref) || monster.isBoss,
-      skills: skillsForLocation(monster, location, hardMode).map((s) => ({
+      skills: skillsForLocation(monster, location, hardMode, levelHere).map((s) => ({
         ...s,
         skill: index.skillByPage.get(s.ref) ?? null,
       })),

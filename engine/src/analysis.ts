@@ -62,6 +62,20 @@ export function explorablesFrom(outpost: LocationRef, index: DataIndex): Locatio
   return loc.neighbors.filter((n) => index.locationByPage.get(n)?.kind === "explorable");
 }
 
+/**
+ * Reading order for a shop list: all of one profession together, then by
+ * attribute, then alphabetical. Common (no-profession) skills sort last.
+ */
+export function compareByProfessionThenAttribute(a: Skill, b: Skill): number {
+  const prof = (s: Skill) => s.profession ?? "\uffff"; // common skills last
+  const attr = (s: Skill) => s.attribute ?? "\uffff";
+  return (
+    prof(a).localeCompare(prof(b)) ||
+    attr(a).localeCompare(attr(b)) ||
+    a.name.localeCompare(b.name)
+  );
+}
+
 export interface LocationSkills {
   /** Skills the trainer stationed here sells. */
   trainer: { name: TrainerRef; skills: Skill[] } | null;
@@ -86,7 +100,8 @@ export function skillsAtLocation(location: LocationRef, index: DataIndex): Locat
         name: trainer.name,
         skills: trainer.skillsOffered
           .map((s) => index.skillByPage.get(s))
-          .filter((s): s is Skill => s !== undefined),
+          .filter((s): s is Skill => s !== undefined)
+          .sort(compareByProfessionThenAttribute),
       };
     }
   }
@@ -100,7 +115,7 @@ export function skillsAtLocation(location: LocationRef, index: DataIndex): Locat
     }
   }
   out.quests = [...byQuest.entries()]
-    .map(([quest, skills]) => ({ quest, skills: skills.sort((a, b) => a.name.localeCompare(b.name)) }))
+    .map(([quest, skills]) => ({ quest, skills: skills.sort(compareByProfessionThenAttribute) }))
     .sort((a, b) => a.quest.localeCompare(b.quest));
   return out;
 }

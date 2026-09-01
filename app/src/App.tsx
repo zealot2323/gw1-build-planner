@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Profession, type Build } from "@gw1/engine";
 import { useSave } from "./save";
 import { CharactersView } from "./views/Characters";
-import { SkillsView } from "./views/Skills";
-import { ZonesView } from "./views/Zones";
+import { SkillsView, initialSkillViewState, type SkillViewState } from "./views/Skills";
+import { ZonesView, initialZoneState, type ZoneViewState } from "./views/Zones";
 
 type Tab = "characters" | "skills" | "zones";
 
@@ -22,6 +22,14 @@ export function App() {
   const [draft, setDraft] = useState<Build>(() => emptyDraft(Profession.Warrior));
   const [activeBuild, setActiveBuild] = useState<string | null>(null);
   const [focusSkill, setFocusSkill] = useState<string | null>(null);
+  // View state lives here so switching tabs doesn't throw away what you had
+  // open — the zone you were reading, the skill you had expanded.
+  const [zoneState, setZoneState] = useState<ZoneViewState>(initialZoneState);
+  const patchZoneState = (patch: Partial<ZoneViewState>) =>
+    setZoneState((s) => ({ ...s, ...patch }));
+  const [skillView, setSkillView] = useState<SkillViewState>(initialSkillViewState);
+  const patchSkillView = (patch: Partial<SkillViewState>) =>
+    setSkillView((s) => ({ ...s, ...patch }));
 
   const character = save.characters.find((c) => c.name === characterName) ?? null;
 
@@ -56,6 +64,7 @@ export function App() {
 
   const goToSkill = (skill: string) => {
     setFocusSkill(skill);
+    patchSkillView({ openSkill: skill });
     setTab("skills");
   };
 
@@ -105,9 +114,18 @@ export function App() {
           updateBuilds={updateBuilds}
           draft={draft}
           setDraft={setDraft}
+          view={skillView}
+          setView={patchSkillView}
         />
       )}
-      {tab === "zones" && <ZonesView onSkillClick={goToSkill} character={character} />}
+      {tab === "zones" && (
+        <ZonesView
+          onSkillClick={goToSkill}
+          character={character}
+          state={zoneState}
+          setState={patchZoneState}
+        />
+      )}
     </>
   );
 }

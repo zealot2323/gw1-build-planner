@@ -7,6 +7,7 @@ import {
   zoneSummary,
   type MonsterDisplay,
 } from "@gw1/engine";
+import type { Skill } from "@gw1/engine";
 import { dataset, index } from "../data";
 import { SkillIcon } from "../components/SkillIcon";
 import { SkillDetails } from "../components/SkillDetails";
@@ -118,14 +119,31 @@ function MonsterCard({
   );
 }
 
-/** A row of skill icons with names, each opening the skill browser. */
-function SkillChips({ refs, onSkillClick }: { refs: string[]; onSkillClick: (s: string) => void }) {
+/**
+ * A row of skill icons with names. `onSelect` shows the skill inline here;
+ * without it the chips jump to the skill browser instead.
+ */
+function SkillChips({
+  refs,
+  selected,
+  onSelect,
+  onSkillClick,
+}: {
+  refs: string[];
+  selected?: string | null;
+  onSelect?: (s: string | null) => void;
+  onSkillClick?: (s: string) => void;
+}) {
   return (
     <div className="skillbar">
       {refs.map((ref) => {
         const skill = index.skillByPage.get(ref);
         return (
-          <button key={ref} className="skill-card" onClick={() => onSkillClick(ref)}>
+          <button
+            key={ref}
+            className={selected === ref ? "skill-card open" : "skill-card"}
+            onClick={() => (onSelect ? onSelect(selected === ref ? null : ref) : onSkillClick?.(ref))}
+          >
             <SkillIcon page={ref} size={28} />
             <span className="skill-card-name">
               {ref}
@@ -138,24 +156,72 @@ function SkillChips({ refs, onSkillClick }: { refs: string[]; onSkillClick: (s: 
   );
 }
 
+/** Group a sorted skill list into profession blocks, keeping order. */
+function byProfession(skills: Skill[]): Array<[string, Skill[]]> {
+  const groups: Array<[string, Skill[]]> = [];
+  for (const s of skills) {
+    const key = s.profession ?? "Common";
+    const last = groups[groups.length - 1];
+    if (last && last[0] === key) last[1].push(s);
+    else groups.push([key, [s]]);
+  }
+  return groups;
+}
+
 /** What you can pick up at an outpost: trainer stock and quest rewards. */
-function OutpostSkills({ location, onSkillClick }: { location: string; onSkillClick: (s: string) => void }) {
+function OutpostSkills({
+  location,
+  unlocked,
+  selectedSkill,
+  setSelectedSkill,
+}: {
+  location: string;
+  unlocked: boolean;
+  selectedSkill: string | null;
+  setSelectedSkill: (s: string | null) => void;
+}) {
   const at = useMemo(() => skillsAtLocation(location, index), [location]);
   if (!at.trainer && at.quests.length === 0) {
     return <p className="muted pad">No skills are offered here.</p>;
   }
+
+  const open = selectedSkill ? index.skillByPage.get(selectedSkill) : null;
+  const details = open && (
+    <div className="slide-down">
+      <SkillDetails skill={open} />
+    </div>
+  );
+
+  const section = (skills: Skill[]) =>
+    byProfession(skills).map(([prof, list]) => (
+      <div key={prof}>
+        <div className="prof-group">
+          <ProfessionIcon profession={prof === "Common" ? null : (prof as never)} />
+          {prof} <span className="muted">({list.length})</span>
+        </div>
+        <SkillChips
+          refs={list.map((s) => s.wikiPage)}
+          selected={selectedSkill}
+          onSelect={setSelectedSkill}
+        />
+        {open && list.some((s) => s.wikiPage === open.wikiPage) && details}
+      </div>
+    ));
+
   return (
     <>
       {at.trainer && (
         <div className="outpost-section">
           <h4>
-            Trainer:{" "}
             <a href={wikiHref(at.trainer.name)} target="_blank" rel="noreferrer">
               {at.trainer.name}
             </a>{" "}
-            <span className="muted">({at.trainer.skills.length} skills)</span>
+            <span className="muted">— {at.trainer.skills.length} skills</span>{" "}
+            <span className={unlocked ? "ok small" : "muted small"}>
+              {unlocked ? "Available to buy now" : "Unlock this outpost to buy here"}
+            </span>
           </h4>
-          <SkillChips refs={at.trainer.skills.map((s) => s.wikiPage)} onSkillClick={onSkillClick} />
+          {section(at.trainer.skills)}
         </div>
       )}
       {at.quests.map(({ quest, skills }) => (
@@ -164,9 +230,12 @@ function OutpostSkills({ location, onSkillClick }: { location: string; onSkillCl
             Quest:{" "}
             <a href={wikiHref(quest)} target="_blank" rel="noreferrer">
               {quest}
-            </a>
+            </a>{" "}
+            <span className={unlocked ? "ok small" : "muted small"}>
+              {unlocked ? "Available to unlock now" : "Unlock this outpost to start it"}
+            </span>
           </h4>
-          <SkillChips refs={skills.map((s) => s.wikiPage)} onSkillClick={onSkillClick} />
+          {section(skills)}
         </div>
       ))}
     </>
@@ -286,20 +355,45 @@ function ZoneBriefing({
  * each. Unlocked outposts are highlighted; a zone reachable from several
  * outposts appears under each of them, as it does in game.
  */
+/** Everything the zone browser remembers, so a tab switch doesn't reset it. */
+export interface ZoneViewState {
+  selected: string | null;
+  openRegions: Set<string> | null;
+  expandedSkill: string | null;
+  hardMode: boolean;
+  outpostSkill: string | null;
+  searing: "pre" | "post";
+}
+
+export const initialZoneState: ZoneViewState = {
+  selected: null,
+  openRegions: null,
+  expandedSkill: null,
+  hardMode: false,
+  // Ascalon exists twice over; pre-Searing comes first in the story so it
+  // leads here too.
+  searing: "pre",
+  outpostSkill: null,
+};
+
 export function ZonesView({
   onSkillClick,
   character,
+  state,
+  setState,
 }: {
   onSkillClick: (skill: string) => void;
   character: CharacterSave | null;
+  state: ZoneViewState;
+  setState: (patch: Partial<ZoneViewState>) => void;
 }) {
-  const [selected, setSelected] = useState<string | null>(null);
-  const [openRegions, setOpenRegions] = useState<Set<string> | null>(null);
-  const [expandedSkill, setExpandedSkill] = useState<string | null>(null);
-  const [hardMode, setHardMode] = useState(false);
-  // Ascalon exists twice over; pre-Searing comes first in the story so it
-  // leads here too.
-  const [searing, setSearing] = useState<"pre" | "post">("pre");
+  const { selected, openRegions, expandedSkill, hardMode, outpostSkill, searing } = state;
+  const setSelected = (v: string | null) => setState({ selected: v });
+  const setOpenRegions = (v: Set<string> | null) => setState({ openRegions: v });
+  const setExpandedSkill = (v: string | null) => setState({ expandedSkill: v });
+  const setHardMode = (v: boolean) => setState({ hardMode: v });
+  const setOutpostSkill = (v: string | null) => setState({ outpostSkill: v });
+  const setSearing = (v: "pre" | "post") => setState({ searing: v });
 
   const unlocked = useMemo(
     () => new Set(character?.unlockedLocations ?? []),
@@ -372,13 +466,12 @@ export function ZonesView({
   // null means "not touched yet" — open the first region so the tree is
   // never a wall of collapsed headers after switching Searing state
   const openSet = openRegions ?? new Set(regions.length > 0 ? [regions[0][0]] : []);
-  const toggleRegion = (region: string) =>
-    setOpenRegions(() => {
-      const next = new Set(openSet);
-      if (next.has(region)) next.delete(region);
-      else next.add(region);
-      return next;
-    });
+  const toggleRegion = (region: string) => {
+    const next = new Set(openSet);
+    if (next.has(region)) next.delete(region);
+    else next.add(region);
+    setOpenRegions(next);
+  };
 
   const selectedKind = selected
     ? (index.locationByPage.get(selected)?.kind ?? "mission")
@@ -421,10 +514,7 @@ export function ZonesView({
             <button
               key={v}
               className={searing === v ? "seg active" : "seg"}
-              onClick={() => {
-                setSearing(v);
-                setOpenRegions(null); // fall back to "first region open"
-              }}
+              onClick={() => setState({ searing: v, openRegions: null })}
             >
               {v}-Searing
             </button>
@@ -449,10 +539,7 @@ export function ZonesView({
                           (selected === o.name ? " active" : "") +
                           (unlocked.has(o.name) ? " unlocked" : "")
                         }
-                        onClick={() => {
-                          setSelected(o.name);
-                          setExpandedSkill(null);
-                        }}
+                        onClick={() => setState({ selected: o.name, expandedSkill: null, outpostSkill: null })}
                       >
                         {unlocked.has(o.name) && <span className="unlocked-dot">●</span>}
                         {o.name} <span className="muted tag">{o.kind}</span>
@@ -500,7 +587,12 @@ export function ZonesView({
               )}
             </div>
             {isOutpost ? (
-              <OutpostSkills location={selected} onSkillClick={onSkillClick} />
+              <OutpostSkills
+                location={selected}
+                unlocked={unlocked.has(selected)}
+                selectedSkill={outpostSkill}
+                setSelectedSkill={setOutpostSkill}
+              />
             ) : (
               <ZoneBriefing location={selected} hardMode={hardMode} onSkillClick={onSkillClick} />
             )}
