@@ -216,9 +216,8 @@ function OutpostSkills({
             <a href={wikiHref(at.trainer.name)} target="_blank" rel="noreferrer">
               {at.trainer.name}
             </a>{" "}
-            <span className="muted">— {at.trainer.skills.length} skills</span>{" "}
-            <span className={unlocked ? "ok small" : "muted small"}>
-              {unlocked ? "Available to buy now" : "Unlock this outpost to buy here"}
+            <span className={unlocked ? "avail avail-now" : "avail avail-locked"}>
+              {unlocked ? "Available to buy now" : "Unlock this outpost to buy these skills"}
             </span>
           </h4>
           {section(at.trainer.skills)}
@@ -231,8 +230,8 @@ function OutpostSkills({
             <a href={wikiHref(quest)} target="_blank" rel="noreferrer">
               {quest}
             </a>{" "}
-            <span className={unlocked ? "ok small" : "muted small"}>
-              {unlocked ? "Available to unlock now" : "Unlock this outpost to start it"}
+            <span className={unlocked ? "avail avail-now" : "avail avail-locked"}>
+              {unlocked ? "Available to unlock now" : "Unlock this outpost to get these skills"}
             </span>
           </h4>
           {section(skills)}

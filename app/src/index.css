@@ -344,3 +344,13 @@ button.linkish.outpost { font-weight: 600; flex: 1; width: auto; }
   text-transform: uppercase; letter-spacing: 0.03em;
   margin: 0.6rem 0 0.25rem;
 }
+
+/* availability badge on an outpost's skill sections */
+.avail {
+  font-size: 0.85em; font-weight: 600;
+  padding: 0.1rem 0.5rem; border-radius: 10px;
+  text-transform: none; letter-spacing: 0;
+  white-space: nowrap;
+}
+.avail-now { color: var(--ok); border: 1px solid var(--ok); }
+.avail-locked { color: var(--muted); border: 1px solid var(--border); background: var(--panel2); }
