@@ -354,3 +354,7 @@ button.linkish.outpost { font-weight: 600; flex: 1; width: auto; }
 }
 .avail-now { color: var(--ok); border: 1px solid var(--ok); }
 .avail-locked { color: var(--muted); border: 1px solid var(--border); background: var(--panel2); }
+
+/* Allegiance toggle: the ten skills' icons, so the choice is visible. */
+.allegiance-preview { display: inline-flex; flex-wrap: wrap; align-items: center; margin-left: 0.5rem; }
+.allegiance-preview .skill-icon { margin-right: 0.25rem; }

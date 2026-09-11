@@ -42,6 +42,18 @@ export const PROFESSIONS: readonly Profession[] = Object.values(Profession);
 
 export type Campaign = "Prophecies" | "Factions" | "Nightfall" | "Eye of the North" | "Core";
 
+/**
+ * Factions allegiance. The ten allegiance skills exist twice in-game — one
+ * Kurzick and one Luxon version, same effect, different skill id and icon —
+ * so a character has to pick a side to know which one they get.
+ */
+export type Allegiance = "Kurzick" | "Luxon";
+
+export const ALLEGIANCES: readonly Allegiance[] = ["Kurzick", "Luxon"];
+
+/** The side a character defaults to when they haven't chosen one. */
+export const DEFAULT_ALLEGIANCE: Allegiance = "Kurzick";
+
 // ---------------------------------------------------------------------------
 // Skill
 // ---------------------------------------------------------------------------
@@ -73,6 +85,12 @@ export interface Skill {
   wikiPage: string;
   /** Numeric in-game skill id from the wiki infobox — needed for template codes. */
   gwSkillId: number;
+  /**
+   * Allegiance skills only: the per-side skill ids, from the infobox's
+   * `id = 1954<!-- Luxon -->, 2097<!-- Kurzick -->`. Which one a character
+   * gets (and which icon they see) depends on their allegiance.
+   */
+  allegianceSkillIds?: Record<Allegiance, number>;
   /** null = no-profession / common skill. */
   profession: Profession | null;
   /** null = unlinked (no attribute). */
@@ -221,6 +239,8 @@ export interface Character {
   /** Campaigns the account owns; defaults to just the character's own. */
   ownedCampaigns?: Campaign[];
   primaryProfession: Profession;
+  /** Kurzick or Luxon, for the allegiance skills; defaults to Kurzick. */
+  allegiance?: Allegiance;
   /** Must never include primaryProfession (enforced in logic, not schema). */
   unlockedSecondaries: Profession[];
   knownSkills: SkillRef[];
@@ -277,6 +297,15 @@ export const skillSchema = {
     name: { type: "string" },
     wikiPage: { type: "string" },
     gwSkillId: { type: "integer", minimum: 0 },
+    allegianceSkillIds: {
+      type: "object",
+      additionalProperties: false,
+      required: ["Kurzick", "Luxon"],
+      properties: {
+        Kurzick: { type: "integer", minimum: 0 },
+        Luxon: { type: "integer", minimum: 0 },
+      },
+    },
     profession: { oneOf: [{ $ref: "gw1-profession" }, { type: "null" }] },
     attribute: { type: ["string", "null"] },
     isElite: { type: "boolean" },
@@ -427,6 +456,7 @@ export const characterSchema = {
     campaign: { $ref: "gw1-campaign" },
     ownedCampaigns: { type: "array", items: { $ref: "gw1-campaign" } },
     primaryProfession: { $ref: "gw1-profession" },
+    allegiance: { type: "string", enum: ["Kurzick", "Luxon"] },
     unlockedSecondaries: { type: "array", items: { $ref: "gw1-profession" } },
     knownSkills: refArray,
     unlockedLocations: refArray,

@@ -1,8 +1,14 @@
 import { useState } from "react";
-import { PROFESSIONS, Profession, type Campaign } from "@gw1/engine";
+import {
+  ALLEGIANCES,
+  DEFAULT_ALLEGIANCE,
+  PROFESSIONS,
+  Profession,
+  type Campaign,
+} from "@gw1/engine";
 import { dataset } from "../data";
 import { Checklist } from "../components/Checklist";
-import { iconForSkillPage } from "../wiki";
+import { iconForSkillPage, iconUrl } from "../wiki";
 import { ProfessionIcon } from "../components/ProfessionIcon";
 import type { CharacterSave, SaveFile } from "../save";
 
@@ -36,6 +42,10 @@ const locationGroups = (() => {
     .map(([label, options]) => ({ label, options: options.sort() }));
 })();
 const missionNames = (dataset.missions ?? []).map((m) => m.wikiPage);
+/** The ten Kurzick/Luxon skills, previewed so the toggle shows its effect. */
+const ALLEGIANCE_SKILLS = dataset.skills
+  .filter((s) => s.allegianceSkillIds)
+  .sort((a, b) => a.name.localeCompare(b.name));
 
 export function CharactersView({
   save,
@@ -80,6 +90,9 @@ export function CharactersView({
   };
 
   const c = selected;
+  const ownsFactions = c
+    ? (c.ownedCampaigns ?? [c.campaign ?? "Prophecies"]).includes("Factions")
+    : false;
   const professions = c ? [c.primaryProfession, ...c.unlockedSecondaries] : [];
   const knowableSkills = c
     ? dataset.skills
@@ -190,6 +203,33 @@ export function CharactersView({
                 </label>
               ))}
             </div>
+            {ownsFactions && (
+              <div className="field">
+                <span className="field-label">
+                  Allegiance{" "}
+                  <span className="muted">(which side's allegiance skills you get)</span>
+                </span>
+                {ALLEGIANCES.map((side) => (
+                  <label key={side} className="inline-check">
+                    <input
+                      type="radio"
+                      name="allegiance"
+                      checked={(c.allegiance ?? DEFAULT_ALLEGIANCE) === side}
+                      onChange={() => updateCharacter(c.name, { allegiance: side })}
+                    />
+                    {side}
+                  </label>
+                ))}
+                <span className="allegiance-preview">
+                  {ALLEGIANCE_SKILLS.map((s) => {
+                    const src = iconUrl(s, c.allegiance ?? DEFAULT_ALLEGIANCE);
+                    return src ? (
+                      <img key={s.wikiPage} className="skill-icon" src={src} width={24} height={24} alt="" title={s.name} />
+                    ) : null;
+                  })}
+                </span>
+              </div>
+            )}
             <div className="field">
               <span className="field-label">Unlocked secondaries</span>
               {PROFESSIONS.filter((p) => p !== c.primaryProfession).map((p) => (
@@ -228,7 +268,7 @@ export function CharactersView({
                 options={knowableSkills}
                 selected={c.knownSkills}
                 onChange={(v) => updateCharacter(c.name, { knownSkills: v })}
-                icon={iconForSkillPage}
+                icon={(p) => iconForSkillPage(p, c.allegiance)}
               />
             </div>
           </div>

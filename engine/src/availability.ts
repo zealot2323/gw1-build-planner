@@ -4,6 +4,7 @@
  */
 import { locationsWithSkill } from "./bestiary.js";
 import type { DataIndex } from "./data.js";
+import { DEFAULT_ALLEGIANCE } from "./types.js";
 import type { Character, LocationRef, Profession, Skill, SkillRef } from "./types.js";
 
 /**
@@ -74,6 +75,7 @@ export function skillAvailability(
   const unlocked = new Set(character.unlockedLocations);
   const reachable = reachableExplorables(character, index);
   const known = new Set<SkillRef>(character.knownSkills);
+  const allegiance = character.allegiance ?? DEFAULT_ALLEGIANCE;
   const professions = new Set<Profession>([character.primaryProfession]);
   if (secondary !== null) professions.add(secondary);
 
@@ -130,7 +132,12 @@ export function skillAvailability(
     }
     // Title-gated NPCs: reaching them is not enough, you need the rank, so
     // these never count as available now — but they still say where to go.
-    for (const npc of skill.acquisition.titleNpcs ?? []) {
+    // The character's own side goes first: the Kurzick and Luxon versions of
+    // an allegiance skill are bought from different NPCs in different towns.
+    const titleNpcs = [...(skill.acquisition.titleNpcs ?? [])].sort(
+      (a, b) => Number(b.includes(allegiance)) - Number(a.includes(allegiance)),
+    );
+    for (const npc of titleNpcs) {
       sources.push({
         kind: "title",
         via: npc,

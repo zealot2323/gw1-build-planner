@@ -89,6 +89,19 @@ describe("parseSkill", () => {
     expect(entity.acquisition.captureBosses).toContain("Demetrios the Enduring");
     expect(entity.acquisition.captureBosses).toContain("Willa the Unpleasant");
   });
+
+  it('parses "Save Yourselves!" (allegiance skill: one skill id per side)', () => {
+    const { entity } = parseSkill('"Save Yourselves!"', cached('"Save Yourselves!"'));
+    // id = 1954<!-- Luxon -->, 2097<!-- Kurzick --> — the side is only ever
+    // recorded in an HTML comment.
+    expect(entity.allegianceSkillIds).toEqual({ Kurzick: 2097, Luxon: 1954 });
+    expect(entity.acquisition.titleNpcs).toEqual(["Kurzick Bureaucrat", "Luxon Scavenger"]);
+  });
+
+  it("leaves allegianceSkillIds off ordinary skills", () => {
+    const { entity } = parseSkill("Crude Swing", cached("Crude Swing"));
+    expect(entity.allegianceSkillIds).toBeUndefined();
+  });
 });
 
 describe("parseTrainer", () => {

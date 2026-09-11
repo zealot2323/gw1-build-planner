@@ -1,5 +1,5 @@
 import { createContext, useContext, useMemo, type ReactNode } from "react";
-import type { Character, DataIndex } from "@gw1/engine";
+import { DEFAULT_ALLEGIANCE, type Allegiance, type Character, type DataIndex } from "@gw1/engine";
 import { index as fullIndex, indexForCharacter } from "./data";
 
 /**
@@ -8,6 +8,8 @@ import { index as fullIndex, indexForCharacter } from "./data";
  * through — and so nothing can accidentally reach past the scope.
  */
 const DataCtx = createContext<DataIndex>(fullIndex);
+/** Which side of the Kurzick/Luxon split the current character is on. */
+const AllegianceCtx = createContext<Allegiance>(DEFAULT_ALLEGIANCE);
 
 export function DataProvider({
   character,
@@ -19,8 +21,17 @@ export function DataProvider({
   // re-index only when the character's campaign scope actually changes
   const key = character ? (character.ownedCampaigns ?? [character.campaign]).join("|") : "";
   const scoped = useMemo(() => indexForCharacter(character), [key]);
-  return <DataCtx.Provider value={scoped}>{children}</DataCtx.Provider>;
+  return (
+    <DataCtx.Provider value={scoped}>
+      <AllegianceCtx.Provider value={character?.allegiance ?? DEFAULT_ALLEGIANCE}>
+        {children}
+      </AllegianceCtx.Provider>
+    </DataCtx.Provider>
+  );
 }
 
 /** The campaign-scoped data index for the current character. */
 export const useData = (): DataIndex => useContext(DataCtx);
+
+/** The current character's allegiance (Kurzick unless they picked Luxon). */
+export const useAllegiance = (): Allegiance => useContext(AllegianceCtx);

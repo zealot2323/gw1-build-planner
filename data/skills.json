@@ -23414,6 +23414,10 @@
     "name": "\"Save Yourselves!\"",
     "wikiPage": "\"Save Yourselves!\"",
     "gwSkillId": 1954,
+    "allegianceSkillIds": {
+      "Kurzick": 2097,
+      "Luxon": 1954
+    },
     "profession": "Warrior",
     "attribute": "Allegiance rank",
     "isElite": false,
@@ -24004,6 +24008,10 @@
     "name": "Aura of Holy Might",
     "wikiPage": "Aura of Holy Might",
     "gwSkillId": 1955,
+    "allegianceSkillIds": {
+      "Kurzick": 2098,
+      "Luxon": 1955
+    },
     "profession": "Dervish",
     "attribute": "Allegiance rank",
     "isElite": false,
@@ -26407,6 +26415,10 @@
     "name": "Elemental Lord",
     "wikiPage": "Elemental Lord",
     "gwSkillId": 1951,
+    "allegianceSkillIds": {
+      "Kurzick": 2094,
+      "Luxon": 1951
+    },
     "profession": "Elementalist",
     "attribute": "Allegiance rank",
     "isElite": false,
@@ -26731,6 +26743,10 @@
     "name": "Ether Nightmare",
     "wikiPage": "Ether Nightmare",
     "gwSkillId": 1949,
+    "allegianceSkillIds": {
+      "Kurzick": 2092,
+      "Luxon": 1949
+    },
     "profession": "Mesmer",
     "attribute": "Allegiance rank",
     "isElite": false,
@@ -31026,6 +31042,10 @@
     "name": "Selfless Spirit",
     "wikiPage": "Selfless Spirit",
     "gwSkillId": 1952,
+    "allegianceSkillIds": {
+      "Kurzick": 2095,
+      "Luxon": 1952
+    },
     "profession": "Monk",
     "attribute": "Allegiance rank",
     "isElite": false,
@@ -31141,6 +31161,10 @@
     "name": "Shadow Sanctuary",
     "wikiPage": "Shadow Sanctuary",
     "gwSkillId": 1948,
+    "allegianceSkillIds": {
+      "Kurzick": 2091,
+      "Luxon": 1948
+    },
     "profession": "Assassin",
     "attribute": "Allegiance rank",
     "isElite": false,
@@ -31768,6 +31792,10 @@
     "name": "Signet of Corruption",
     "wikiPage": "Signet of Corruption",
     "gwSkillId": 1950,
+    "allegianceSkillIds": {
+      "Kurzick": 2093,
+      "Luxon": 1950
+    },
     "profession": "Necromancer",
     "attribute": "Allegiance rank",
     "isElite": false,
@@ -32418,6 +32446,10 @@
     "name": "Spear of Fury",
     "wikiPage": "Spear of Fury",
     "gwSkillId": 1957,
+    "allegianceSkillIds": {
+      "Kurzick": 2099,
+      "Luxon": 1957
+    },
     "profession": "Paragon",
     "attribute": "Allegiance rank",
     "isElite": false,
@@ -33284,6 +33316,10 @@
     "name": "Summon Spirits",
     "wikiPage": "Summon Spirits",
     "gwSkillId": 2051,
+    "allegianceSkillIds": {
+      "Kurzick": 2100,
+      "Luxon": 2051
+    },
     "profession": "Ritualist",
     "attribute": "Allegiance rank",
     "isElite": false,
@@ -33736,6 +33772,10 @@
     "name": "Triple Shot",
     "wikiPage": "Triple Shot",
     "gwSkillId": 1953,
+    "allegianceSkillIds": {
+      "Kurzick": 2096,
+      "Luxon": 1953
+    },
     "profession": "Ranger",
     "attribute": "Allegiance rank",
     "isElite": false,

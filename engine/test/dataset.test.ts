@@ -2,7 +2,7 @@
  * Engine tests against the FULL scraped dataset in /data — sanity checks
  * that the logic holds on real data, not just fixtures.
  */
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
 import {
@@ -469,6 +469,29 @@ describe("campaign scope", () => {
     // and every monster spawns somewhere still in scope
     for (const m of scoped.monsters) {
       expect(m.locations.some((l) => names.has(l))).toBe(true);
+    }
+  });
+});
+
+describe("full dataset: Kurzick/Luxon allegiance skills", () => {
+  const allegiance = index.dataset.skills.filter((s) => s.allegianceSkillIds);
+
+  it("finds all ten, each with a distinct id per side", () => {
+    expect(allegiance).toHaveLength(10);
+    for (const s of allegiance) {
+      const { Kurzick, Luxon } = s.allegianceSkillIds!;
+      expect(Kurzick).not.toBe(Luxon);
+      // gwSkillId is whichever the infobox lists first, so it must be one of them
+      expect([Kurzick, Luxon]).toContain(s.gwSkillId);
+    }
+  });
+
+  it("has a downloaded icon for both sides", () => {
+    for (const s of allegiance) {
+      for (const id of Object.values(s.allegianceSkillIds!)) {
+        const icon = fileURLToPath(new URL(`../../app/public/icons/${id}.jpg`, import.meta.url));
+        expect(existsSync(icon), `${s.name} icon ${id}.jpg`).toBe(true);
+      }
     }
   });
 });

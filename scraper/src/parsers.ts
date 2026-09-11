@@ -31,6 +31,7 @@ export interface ParsedSkill {
   name: string;
   wikiPage: string;
   gwSkillId: number | null;
+  allegianceSkillIds?: { Kurzick: number; Luxon: number };
   profession: string | null;
   attribute: string | null;
   isElite: boolean;
@@ -168,12 +169,29 @@ function parseAcquisition(
   return { acquisition: out };
 }
 
+/**
+ * The ten Factions allegiance skills carry both versions in one id field:
+ * `id = 1954<!-- Luxon -->, 2097<!-- Kurzick -->`. The side is only ever
+ * recorded in an HTML comment, so that comment is the parse key.
+ */
+function parseAllegianceIds(raw: string | undefined): { Kurzick: number; Luxon: number } | null {
+  if (!raw) return null;
+  const bySide: Record<string, number> = {};
+  for (const [, id, side] of raw.matchAll(/(\d+)\s*<!--\s*(Kurzick|Luxon)\s*-->/gi)) {
+    bySide[side[0].toUpperCase() + side.slice(1).toLowerCase()] = Number(id);
+  }
+  return bySide.Kurzick !== undefined && bySide.Luxon !== undefined
+    ? { Kurzick: bySide.Kurzick, Luxon: bySide.Luxon }
+    : null;
+}
+
 export function parseSkill(title: string, wikitext: string): Parsed<ParsedSkill> {
   const issues: string[] = [];
   const box = parseTemplate(wikitext, "Skill infobox");
   if (!box) issues.push("no Skill infobox");
 
   const gwSkillId = parseWikiNumber(box?.["id"]);
+  const allegianceSkillIds = parseAllegianceIds(box?.["id"]);
   if (gwSkillId === null) issues.push("missing infobox id (needed for template codes)");
   const profession = normalizeProfession(box?.["profession"]);
   const campaign = box?.["campaign"] ? stripMarkup(box["campaign"]) : null;
@@ -207,6 +225,7 @@ export function parseSkill(title: string, wikitext: string): Parsed<ParsedSkill>
       name: box?.["name"] ? stripMarkup(box["name"]) : title,
       wikiPage: title,
       gwSkillId,
+      ...(allegianceSkillIds ? { allegianceSkillIds } : {}),
       profession,
       attribute: box?.["attribute"] ? stripMarkup(box["attribute"]) : null,
       isElite: box?.["elite"] === "y",

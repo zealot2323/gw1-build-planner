@@ -121,6 +121,18 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
   page. The gate is a rank, not a place, so they are never "available now" —
   they report where to go and what rank is needed. Title progression is not
   tracked per character.
+- **Allegiance is a per-character setting** (`Character.allegiance`, default
+  Kurzick). Each of those 10 skills exists twice in-game — same effect,
+  different skill id and different icon — and the infobox packs both into one
+  field, tagging the side only in an HTML comment:
+  `id = 1954<!-- Luxon -->, 2097<!-- Kurzick -->`. That comment is the parse
+  key; both ids land in `allegianceSkillIds`, and `gwSkillId` keeps whichever
+  the wiki lists first. Icons are fetched per side from
+  "File:<name> (Kurzick).jpg" / "File:<name> (Luxon).jpg" and saved under each
+  side's own id, so the normal `<gwSkillId>.jpg` lookup still works — the app
+  just swaps which id it asks for. The character's own side is also sorted
+  first in the skill's sources, since the two versions are sold by different
+  NPCs in different towns (House zu Heltzer vs Cavalon).
 - **Capture sources are split**: `captureBosses` (always spawn) vs
   `conditionalCaptureBosses` (spawn only during a quest/event, or in a
   location outside our Prophecies set, e.g. War in Kryta variants) — quest

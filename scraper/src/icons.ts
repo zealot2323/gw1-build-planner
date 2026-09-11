@@ -5,7 +5,9 @@
  *
  * Resolves each skill's icon (wiki page "File:<Skill name>.jpg") to its
  * image URL via the API (imageinfo, batched 50 titles/request) and
- * downloads them into /app/public/icons/<gwSkillId>.jpg.
+ * downloads them into /app/public/icons/<gwSkillId>.jpg. The ten Factions
+ * allegiance skills have two icons — one per side — saved under each side's
+ * own skill id.
  *
  * Politeness rules apply (1 req/s, cached): already-downloaded icons are
  * never refetched, so re-runs are cheap.
@@ -37,19 +39,43 @@ interface SkillRow {
   name: string;
   wikiPage: string;
   gwSkillId: number | null;
+  /** Allegiance skills have one icon per side. */
+  allegianceSkillIds?: { Kurzick: number; Luxon: number };
+}
+
+/** One icon to fetch: the File: page it lives on, and the id we save it under. */
+interface IconJob {
+  file: string;
+  id: number;
+}
+
+/**
+ * Allegiance skills have a Kurzick and a Luxon icon, uploaded as
+ * "File:<name> (Kurzick).jpg" / "File:<name> (Luxon).jpg"; every other skill
+ * has the single "File:<name>.jpg".
+ */
+function iconJobs(s: SkillRow): IconJob[] {
+  if (s.allegianceSkillIds) {
+    return [
+      { file: `File:${s.name} (Kurzick).jpg`, id: s.allegianceSkillIds.Kurzick },
+      { file: `File:${s.name} (Luxon).jpg`, id: s.allegianceSkillIds.Luxon },
+    ];
+  }
+  return s.gwSkillId === null ? [] : [{ file: `File:${s.name}.jpg`, id: s.gwSkillId }];
 }
 
 const skills: SkillRow[] = JSON.parse(await readFile(`${DATA_DIR}skills.json`, "utf8"));
 await mkdir(ICON_DIR, { recursive: true });
 
 // skip icons we already have (cache — never refetch)
-const pending: SkillRow[] = [];
+const pending: IconJob[] = [];
 for (const s of skills) {
-  if (s.gwSkillId === null) continue;
-  try {
-    await access(join(ICON_DIR, `${s.gwSkillId}.jpg`));
-  } catch {
-    pending.push(s);
+  for (const job of iconJobs(s)) {
+    try {
+      await access(join(ICON_DIR, `${job.id}.jpg`));
+    } catch {
+      pending.push(job);
+    }
   }
 }
 console.log(`${skills.length} skills, ${pending.length} icons to fetch`);
@@ -64,7 +90,7 @@ for (let i = 0; i < pending.length; i += 50) {
   url.searchParams.set("iiprop", "url");
   url.searchParams.set("format", "json");
   url.searchParams.set("formatversion", "2");
-  url.searchParams.set("titles", chunk.map((s) => `File:${s.name}.jpg`).join("|"));
+  url.searchParams.set("titles", chunk.map((j) => j.file).join("|"));
   const body = await throttled(async () => {
     const res = await fetch(url, { headers: { "User-Agent": USER_AGENT } });
     if (!res.ok) throw new Error(`imageinfo HTTP ${res.status}`);
@@ -79,10 +105,10 @@ for (let i = 0; i < pending.length; i += 50) {
 
 const missing: string[] = [];
 let done = 0;
-for (const s of pending) {
-  const imageUrl = urlByTitle.get(`File:${s.name}.jpg`);
+for (const job of pending) {
+  const imageUrl = urlByTitle.get(job.file);
   if (!imageUrl) {
-    missing.push(s.name);
+    missing.push(job.file);
     continue;
   }
   try {
@@ -91,11 +117,11 @@ for (const s of pending) {
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       return Buffer.from(await res.arrayBuffer());
     });
-    await writeFile(join(ICON_DIR, `${s.gwSkillId}.jpg`), buf);
+    await writeFile(join(ICON_DIR, `${job.id}.jpg`), buf);
     done++;
     if (done % 25 === 0) console.log(`downloaded ${done} icons...`);
   } catch (err) {
-    missing.push(`${s.name} (${(err as Error).message})`);
+    missing.push(`${job.file} (${(err as Error).message})`);
   }
 }
 
