@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20260708",
+  "pageid": 321202,
+  "revid": 2737717,
+  "timestamp": "2026-08-15T23:03:34Z",
+  "wikitext": "== Update, July 8, 2026 ==\n\n=== Skill adjustments ===\n*{{P}} Paragon\n** {{skill icon|Mighty Throw}}: Split skill into PvE/PvP versions.\n** {{skill icon|Mighty Throw}} (PvP): Changed recharge time from 0 to 2.\n** {{skill icon|Unblockable Throw}}: Changed recharge time from 0 to 1.\n* Underworld\n** {{skill icon|Dhuum's Rest}}: Reduced recharge time from 5 to 4.\n\n=== Bug fixes ===\n* Fixed issues with audio sometimes not stopping or restarting when switching away and back to the mobile apps.\n* Error codes are now displayed when in-app purchase failures occur.\n* Fixed an issue where some one-time in-app purchases appeared to be repurchasable immediately after purchasing them.\n* Updated {{skill icon|Kinetic Armor}} description to match functionality. Previously the text was hardcoded instead of properly derived from the code.\n** The description should now read: ''“For 12 seconds, you gain +20..80 armor. Whenever you cast a spell, Kinetic Armor is renewed for 12 seconds.”''\n** Concise description: ''“(12 seconds.) You have +20..80 armor. Renewal bonus: cast a spell.”''\n\n=== Guild Wars Wiki notes ===\n* Build: 38,734.\n\n<noinclude>[[Category:2026 updates]]</noinclude>"
+}

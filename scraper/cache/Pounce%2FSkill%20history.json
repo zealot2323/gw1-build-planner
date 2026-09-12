@@ -1,0 +1,7 @@
+{
+  "title": "Pounce/Skill history",
+  "pageid": 279230,
+  "revid": 2425146,
+  "timestamp": "2011-12-20T16:10:18Z",
+  "wikitext": "{{Skill history}}\n\n== March 2, 2006 ==\n* Fixed a [[bug]] that caused [[attack skill]]s with non-[[weapon]] attributes to calculate [[damage]] and [[critical hit]] chance incorrectly.\n{{clear}}\n\n== Original ==\n{{skill infobox\n| categorize = n\n| name = Pounce\n| campaign = Factions\n| profession = Ranger\n| attribute = Beast Mastery\n| type = Pet Attack\n| energy = 5\n| recharge = 20\n| description = [[Pet Attack]]. Your [[Animal companion|animal companion's]] next [[attack]] is a '''Pounce''' that deals +{{gr|5|20}} [[damage]]. If the attack strikes a [[Movement|moving]] [[foe]], that foe is [[Knock down|knocked down]].}}\n{{skill progression\n| attribute = [[Beast Mastery]]\n| var1 name = + [[Damage]]\n| var1 at0 = 5\n| var1 at15 = 20}}\n{{clear}}"
+}

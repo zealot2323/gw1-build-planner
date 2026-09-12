@@ -1,0 +1,7 @@
+{
+  "title": "Axe Rake/Skill history",
+  "pageid": 304938,
+  "revid": 2551916,
+  "timestamp": "2013-08-06T05:50:34Z",
+  "wikitext": "{{Skill history}}\n\n==[[Game updates/20080306|March 6, 2008]]==\n*Decreased adrenaline cost to 5.\n{{Skill infobox\n| categorize = n\n| name = Axe Rake\n| campaign = Core\n| profession = Warrior\n| attribute = Axe Mastery\n| type = Axe Attack\n| adrenaline = 5\n| description = [[Axe Attack]]. If this attack hits a foe suffering from a [[Deep Wound|deep wound]],  you strike for +{{gr|1|10}} damage, and that foe becomes [[Crippled|crippled]] for 15 seconds.}}\n{{Skill progression\n|attribute = [[Axe Mastery]]\n|var1 name = + [[Damage]]\n|var1 at0 = 1\n|var1 at15 = 10}}\n{{clear}}\n\n==Original==\n{{Skill infobox\n| categorize = n\n| name = Axe Rake\n| campaign = Core\n| profession = Warrior\n| attribute = Axe Mastery\n| type = Axe Attack\n| adrenaline = 7\n| description = [[Axe Attack]]. If this attack hits a foe suffering from a [[Deep Wound|deep wound]],  you strike for +{{gr|1|10}} damage, and that foe becomes [[Crippled|crippled]] for 15 seconds.}}\n{{Skill progression\n|attribute = [[Axe Mastery]]\n|var1 name = + [[Damage]]\n|var1 at0 = 1\n|var1 at15 = 10}}"
+}

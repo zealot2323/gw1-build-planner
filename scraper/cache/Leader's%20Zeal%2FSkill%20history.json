@@ -1,0 +1,7 @@
+{
+  "title": "Leader's Zeal/Skill history",
+  "pageid": 319862,
+  "revid": 2721042,
+  "timestamp": "2026-02-10T21:01:58Z",
+  "wikitext": "{{Skill history}}\n\n== February 5, 2026 ==\n* Upper bounds of energy gain increased to 2..4.\n{{Skill infobox\n| categorize = n\n| id = 1583\n| name = Leader's Zeal\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Motivation\n| type = Skill\n| energy = 5\n| recharge = 12\n| target = self\n| causes1 = Energy Gain\n| description = [[Skill (skill type)|Skill]]. For each [[nearby]] [[ally]], you gain {{gr|2|4}} [[Energy]] (maximum {{gr|8|12}} Energy).\n| concise description = Skill. You gain {{gr|2|4}} Energy (maximum {{gr|8|12}} Energy) for each nearby ally.\n}}\n{{Skill progression\n| attribute = [[Motivation]]\n| var1 name = Max [[energy]] per ally\n| var1 at0 = 2\n| var1 at15 = 4\n| var2 name = Max [[energy]] gained\n| var2 at0 = 8\n| var2 at15 = 12}}\n{{clear}}\n\n== Original ==\n{{Skill infobox\n| categorize = n\n| id = 1583\n| name = Leader's Zeal\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Motivation\n| type = Skill\n| energy = 5\n| recharge = 12\n| target = self\n| causes1 = Energy Gain\n| description = [[Skill (skill type)|Skill]]. For each [[nearby]] [[ally]], you gain 2 [[Energy]] (maximum {{gr|8|12}} Energy).\n| concise description = Skill. You gain 2 Energy (maximum {{gr|8|12}} Energy) for each nearby ally.\n}}\n{{Skill progression\n| attribute = [[Motivation]]\n| var1 name = Max [[energy]] gained\n| var1 at0 = 8\n| var1 at15 = 12}}\n{{clear}}"
+}

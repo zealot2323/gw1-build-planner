@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20260813",
+  "pageid": 321631,
+  "revid": 2737897,
+  "timestamp": "2026-08-19T05:33:12Z",
+  "wikitext": "== Update - August 13, 2026 ==\n\n* Fixed an occasional client crash when logging in with an email-based account on PC.\n* Increased the range of the [[Bird's Eye Compass|Birds Eye Compass]]. The extended range will only reveal additional parts of the map that are reachable by the player.\n* Fixed an issue where some previously revealable parts of the map were no longer revealed.\n* Fixed an occasional disconnect related to the Birds Eye Compass.\n\n=== Guild Wars Wiki notes ===\n* Build: 38,833.\n\n<noinclude>[[Category:2026 updates]]</noinclude>"
+}

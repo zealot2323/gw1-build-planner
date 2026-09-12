@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20251204",
+  "pageid": 318117,
+  "revid": 2715107,
+  "timestamp": "2025-12-12T10:28:51Z",
+  "wikitext": "== Update, December 4, 2025 ==\n\n* Reduced client hiccups in [[Town]]s and [[Outpost]]s with many players and high-resolution character textures selected.\n* Fixed rendering issue with SSAO and some map locations ([[The Catacombs]], [[City of Torc'qua]], etc).\n* Fixed [[skill icon]]s getting clipped in [[User interface#Damage monitor|damage monitor]] with HD Skills enabled.\n* Fixed a crash bug in [[observer mode]] when playing with a controller or on Steam Deck.\n\n<noinclude>[[Category:2025 updates]]</noinclude>"
+}

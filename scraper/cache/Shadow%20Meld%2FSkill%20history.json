@@ -1,0 +1,7 @@
+{
+  "title": "Shadow Meld/Skill history",
+  "pageid": 319810,
+  "revid": 2739133,
+  "timestamp": "2026-08-30T04:47:58Z",
+  "wikitext": "{{Skill history}}\n\n== [[Feedback:Game_updates/20260205|Thursday, February 5, 2026]] ==\n* Reduced energy cost to 5.\n{{Skill infobox\n| categorize = n\n| name = Shadow Meld\n| id = 1654\n| campaign = Nightfall\n| profession = Assassin\n| type = Enchantment Spell\n| elite = y\n| energy = 5\n| recharge = 20\n| activation = {{1/4}}\n| upkeep = -1\n| causes1 = Shadow Step\n| description = [[Elite]] [[Enchantment Spell]]. [[Shadow Step]] to [[target]] other [[ally]]. When you stop [[Upkeep|maintain]]ing this [[Enchantment]], you return to your original location.\n| concise description = Elite Enchantment Spell.  Shadow Step to target ally.  End effect: return to your original location.  {{gray|Cannot self-target.}}\n| target = other allies\n}}\n{{clear}}\n\n== Original ==\n{{Skill infobox\n| categorize = n\n| name = Shadow Meld\n| id = 1654\n| campaign = Nightfall\n| profession = Assassin\n| type = Enchantment Spell\n| elite = y\n| energy = 10\n| recharge = 20\n| activation = {{1/4}}\n| upkeep = -1\n| causes1 = Shadow Step\n| description = [[Elite]] [[Enchantment Spell]]. [[Shadow Step]] to [[target]] other [[ally]]. When you stop [[Upkeep|maintain]]ing this [[Enchantment]], you return to your original location.\n| concise description = Elite Enchantment Spell.  Shadow Step to target ally.  End effect: return to your original location.  {{gray|Cannot self-target.}}\n| target = other allies\n}}\n\n{{clear}}"
+}

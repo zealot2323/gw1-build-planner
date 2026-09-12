@@ -1,0 +1,7 @@
+{
+  "title": "Vengeful Was Khanhei/Skill history",
+  "pageid": 313705,
+  "revid": 2659855,
+  "timestamp": "2020-05-26T13:28:04Z",
+  "wikitext": "{{unchanged skill history}}\n== Original Skill ==\n\n{{Skill infobox\n| categorize = n\n| id = 790\n| name = Vengeful Was Khanhei\n| campaign = Factions\n| profession = Ritualist\n| attribute = Restoration Magic\n| type = Item Spell\n| elite = y\n| energy = 5\n| activation = {{3/4}}\n| recharge = 20\n| causes1 = Life Stealing\n| description = [[Elite]] [[Item Spell]]. [[Hold]] Khanhei's ashes for {{gr|5|11}} seconds. Whenever a [[foe]] [[Attack|strikes]] you in combat while you are holding Khanhei's ashes, you [[Life stealing|steal]] {{gr|5|35}} [[Health]] from that foe.\n| concise description = Elite Item Spell. ({{gr|5|11}} seconds.) You steal {{gr|5|35}} Health from every foe that hits you with an attack.}}\n\n{{Skill progression\n|attribute = [[Restoration Magic]]\n|var1 name = [[Duration]]\n|var1 at0 = 5\n|var1 at15 = 11\n|var2 name = [[Life stealing]]\n|var2 at0 = 5\n|var2 at15 = 35}}"
+}

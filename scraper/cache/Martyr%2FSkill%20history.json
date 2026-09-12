@@ -1,0 +1,7 @@
+{
+  "title": "Martyr/Skill history",
+  "pageid": 291982,
+  "revid": 2695899,
+  "timestamp": "2024-05-16T21:59:04Z",
+  "wikitext": "{{Skill history}}\n\n== March 2, 2006 ==\n* Increased cast time to 1 second.\n{{skill infobox\n| categorize = n\n| name = Martyr\n| campaign = Core\n| profession = Monk\n| type = Spell\n| elite = y\n| energy = 5\n| activation = 1\n| recharge = 10\n| description = [[Elite]] [[Spell]]. All [[Condition]]s on [[party]] members are transferred to you.}}\n{{clear}}\n\n== October 27, 2005 ==\n* Fixed [[skill]] '''Martyr''' which had a portion of its functionality broken in last week's update.\n{{clear}}\n\n== Original ==\n{{skill infobox\n| categorize = n\n| name = Martyr\n| campaign = Core\n| profession = Monk\n| type = Spell\n| elite = y\n| energy = 5\n| activation = {{1/4}}\n| recharge = 10\n| description = [[Elite]] [[Spell]]. All [[Condition]]s on [[party]] members are transferred to you.}}"
+}

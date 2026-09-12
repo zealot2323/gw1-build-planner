@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20260107",
+  "pageid": 319329,
+  "revid": 2717607,
+  "timestamp": "2026-01-09T02:20:22Z",
+  "wikitext": "==Update -- January 7, 2026==\n\n* Fixed an issue where the [[title]] badges for [[Dhuum's Covenant]] and [[Reforged Mode]] were sometimes missing (or applied too early, before the first title rank was earned).\n* Fixed a bug where getting [[drunk]] (in game!) caused an internal rendering buffer to clobber the visible graphics rendering buffer.\n* Fixed a long-standing bug where [[Wintersday]]s maps would  s l o w  down the longer they ran (this is why you might have seen a message that a [[district]] was unavailable).\n* Fixed a bug where some players used a different random number generator than others, resulting in desyncs.\n* Fixed a bug where a player's [[territory]] wasn't always reported to the game server correctly.\n* Moved the location of inaccessible [[Charr Champion]]s for the [[Vanguard Annihilation: Charr]] [[quest]] when in Reforged mode.\n* Adjusted the max reverb delay when using OpenAL Soft to reduce the intensity of droning sounds in some areas.\n* Closed some previously open gates along [[Great Northern Wall|The Great Northern Wall]] in [[the Northlands]]; fortunately, [[the Charr]] were not exploiting these.\nHotfix:\n* Fixed a bug where the [[User interface#Effects monitor|skill monitor]] was right-justified instead of left-justified.\n\n<noinclude>[[Category:2026 updates]]</noinclude>"
+}

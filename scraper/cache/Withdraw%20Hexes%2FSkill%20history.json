@@ -1,0 +1,7 @@
+{
+  "title": "Withdraw Hexes/Skill history",
+  "pageid": 313683,
+  "revid": 2659803,
+  "timestamp": "2020-05-26T00:24:50Z",
+  "wikitext": "{{unchanged skill history}}\n== Original Skill ==\n\n{{Skill infobox\n| categorize = n\n| id = 942\n| name = Withdraw Hexes\n| campaign = Factions\n| profession = Monk\n| attribute = Divine Favor\n| type = Spell\n| target = allies\n| elite = y\n| energy = 15\n| activation = 1\n| recharge = 5\n| causes1 = Increased Recharge Time\n| description = [[Elite]] [[Spell]]. Remove all [[hex]]es from [[target]] [[ally]] and all [[adjacent]] allies. This spell takes an additional {{gr|20|5}} seconds to [[recharge]] for each hex removed in this way.\n| concise description = Elite Spell. Removes all hexes. Also affects adjacent allies. {{gray|Removal cost: +{{gr|20|5}} seconds recharge for each hex removed.}}\n| removes1 = Hex spell\n| aoe = adjacent\n}}\n\n{{Skill progression\n| attribute = [[Divine Favor]]\n| var1 name = <span style=font-size:75%;>Additional recharge [[duration]]</span>\n| var1 at0 = 20\n| var1 at15 = 5}}"
+}

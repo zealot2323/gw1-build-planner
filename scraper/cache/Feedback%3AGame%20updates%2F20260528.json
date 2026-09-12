@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20260528",
+  "pageid": 320722,
+  "revid": 2729220,
+  "timestamp": "2026-05-28T21:47:08Z",
+  "wikitext": "== Update May 28, 2026 ==\n\n* Changed the highlight color in the guide book for better contrast.\n* Updated the network code to (hopefully) fix mobile download problems over cellular connections.  This has been updated for both Apple and Android devices.  If you still encounter issues, please comment on this page's Discussion page.\n\n<noinclude>[[Category:2026 updates]]</noinclude>"
+}

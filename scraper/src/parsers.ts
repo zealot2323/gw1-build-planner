@@ -751,3 +751,187 @@ export function parseMission(title: string, wikitext: string): Parsed<ParsedMiss
     issues,
   };
 }
+
+// ---------------------------------------------------------------------------
+// Game updates (Feedback:Game updates/YYYYMMDD) and skill history subpages
+// ---------------------------------------------------------------------------
+
+/** What kind of change an update bullet describes. */
+export type SkillChangeKind = "balance" | "bugfix" | "ai" | "note";
+
+export interface ParsedSkillChange {
+  skill: string;
+  /** ISO date of the update (from the page title). */
+  date: string;
+  /** The bullet's text, minus the skill icon templates. */
+  note: string;
+  kind: SkillChangeKind;
+  /** Heading path the bullet sat under, for context in the UI. */
+  section: string | null;
+}
+
+/** Bug reports, not changes. */
+const EXCLUDED_SECTION = /known\s*issues?/i;
+
+/**
+ * "Guild Wars Wiki notes" is written by wiki editors, and the page intro
+ * says undocumented changes go there — so it cannot be skipped (the only
+ * skill content in the 2026-05-04 update is a real recharge change filed
+ * under it). But it also carries corrections stating a skill did NOT change
+ * ("Symbols of Inspiration did not have its recharge time ... changed") and
+ * clarifications of long-standing behaviour ("the health threshold is
+ * actually 20%"). Recording either as a change would be wrong, so bullets
+ * here must show positive evidence of a change to count as one.
+ */
+const EDITOR_NOTE_SECTION = /wiki\s*notes?/i;
+const NEGATION = /\b(?:unchanged|was not|were not|did not|does not|do not|is not|are not)\b/i;
+// Whole words only: "additional" is not "added" and "reduction" is not
+// "reduced" — loose stems tagged plain clarifications as balance changes.
+const CHANGE_VERB =
+  /\b(?:increased|increases|decreased|decreases|reduced|reduces|lowered|raised|changed|changes|adjusted|added|removed|moved|split|reworked|renamed|replaced|now (?:deals?|costs?|lasts?|applies|grants?|heals?|recharges?))\b/i;
+
+/**
+ * Update notes name skills with {{skill icon|Name}}. A bullet that STARTS
+ * with one or more of those templates is a change to those skills; a
+ * template mid-sentence is prose and is ignored.
+ */
+const CHANGE_BULLET = /^\*+\s*((?:\{\{\s*skill icon\s*\|[^}]+\}\}[\s,]*(?:and\s*)?)+)(.*)$/i;
+const SKILL_ICON = /\{\{\s*skill icon\s*\|([^}|]+?)\s*\}\}/gi;
+/** "(PvE)", "(PvP)", "(BOTH)" scope marker between the icons and the note. */
+const SCOPE_MARKER = /^\s*\(([^)]{1,40})\)/;
+/** The note is separated from the skill by a dash, colon or nothing at all. */
+const NOTE_SEPARATOR = /^\s*(?:-|–|—|&ndash;|&mdash;|:)\s*/;
+
+function changeKind(sectionPath: string, note: string): SkillChangeKind {
+  // AI sections retune when heroes/NPCs choose a skill — the skill itself is
+  // untouched, so these are not balance changes.
+  if (/\bAI\b/.test(sectionPath)) return "ai";
+  if (/bug\s*fix/i.test(sectionPath)) return "bugfix";
+  if (/^(fix|fixed|fixes|correct|corrected)\b/i.test(note.trim())) return "bugfix";
+  return "balance";
+}
+
+/**
+ * Parse one "Feedback:Game updates/YYYYMMDD" page into per-skill changes.
+ *
+ * The wiki's update notes are hand-written and the formatting drifts: the
+ * separator is variously "-", ":", "&ndash;" or nothing, {{skill icon}} is
+ * sometimes capitalised, one bullet can name several skills, and PvP-split
+ * versions are mixed in with PvE ones.
+ */
+export function parseGameUpdate(title: string, wikitext: string): Parsed<ParsedSkillChange[]> {
+  const issues: string[] = [];
+  const m = title.match(/(\d{4})(\d{2})(\d{2})\s*$/);
+  if (!m) {
+    return { entity: [], issues: [`update page title has no date: "${title}"`] };
+  }
+  const date = `${m[1]}-${m[2]}-${m[3]}`;
+
+  const out: ParsedSkillChange[] = [];
+  const seen = new Set<string>();
+  for (const section of sections(wikitext)) {
+    const path = [...section.ancestors, section.title];
+    if (path.some((t) => EXCLUDED_SECTION.test(t))) continue;
+    const editorNotes = path.some((t) => EDITOR_NOTE_SECTION.test(t));
+    // drop the "Update - August 26, 2026" wrapper heading from the label
+    const label = path.filter((t) => !/^update\b/i.test(t)).join(" › ") || null;
+
+    for (const line of section.body.split("\n")) {
+      const bullet = line.match(CHANGE_BULLET);
+      if (!bullet) continue;
+      const names = [...bullet[1].matchAll(SKILL_ICON)].map((s) => s[1].trim());
+      let rest = bullet[2];
+
+      // A "(PvP)" marker means the bullet changes the PvP-split version,
+      // which is a different skill and out of scope for a PvE planner.
+      const scope = rest.match(SCOPE_MARKER);
+      if (scope) {
+        if (/^pvp$/i.test(scope[1].trim())) continue;
+        rest = rest.slice(scope[0].length);
+      }
+      const note = stripMarkup(rest.replace(NOTE_SEPARATOR, "")).replace(/\s+/g, " ").trim();
+      if (note === "") continue;
+
+      let kind = changeKind(label ?? "", note);
+      if (editorNotes) {
+        if (NEGATION.test(note)) continue; // "recharge is unchanged"
+        if (!CHANGE_VERB.test(note)) kind = "note"; // clarification, not a change
+      }
+
+      for (const skill of names) {
+        if (/\(PvP\)\s*$/i.test(skill)) continue;
+        const key = `${skill}|${note}`;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        out.push({ skill, date, note, kind, section: label });
+      }
+    }
+  }
+  if (out.length === 0 && /\{\{\s*skill icon\s*\|/i.test(wikitext)) {
+    issues.push("page names skills but no change bullets parsed");
+  }
+  return { entity: out, issues };
+}
+
+/** One dated snapshot from a skill's /Skill history subpage. */
+export interface ParsedSkillVersion {
+  /** ISO date of the update that produced this version; null for "Original". */
+  date: string | null;
+  /** Heading as written ("December 11, 2008", "Original"). */
+  label: string;
+  energyCost: number | null;
+  adrenalineCost: number | null;
+  sacrificePercent: number | null;
+  upkeep: number | null;
+  activation: number | null;
+  recharge: number | null;
+  attribute: string | null;
+  isElite: boolean;
+  description: string;
+}
+
+const MONTHS = [
+  "january", "february", "march", "april", "may", "june",
+  "july", "august", "september", "october", "november", "december",
+];
+
+/** "December 11, 2008" -> "2008-12-11"; anything else (e.g. "Original") -> null. */
+function headingDate(label: string): string | null {
+  const m = label.match(/^([A-Za-z]+)\s+(\d{1,2}),?\s+(\d{4})$/);
+  if (!m) return null;
+  const month = MONTHS.indexOf(m[1].toLowerCase());
+  if (month === -1) return null;
+  return `${m[3]}-${String(month + 1).padStart(2, "0")}-${m[2].padStart(2, "0")}`;
+}
+
+/**
+ * Parse a "<Skill>/Skill history" subpage into its dated snapshots, newest
+ * first. Each section carries a full {{Skill infobox}} of the skill as it
+ * was; the final "Original" section is the release version.
+ */
+export function parseSkillHistory(title: string, wikitext: string): Parsed<ParsedSkillVersion[]> {
+  const issues: string[] = [];
+  const out: ParsedSkillVersion[] = [];
+  for (const section of sections(wikitext)) {
+    if (section.level !== 2) continue;
+    const box = parseTemplate(section.body, "Skill infobox");
+    if (!box) continue;
+    out.push({
+      date: headingDate(section.title),
+      label: section.title,
+      energyCost: parseWikiNumber(box["energy"]),
+      adrenalineCost: parseWikiNumber(box["adrenaline"]),
+      sacrificePercent: parseWikiNumber(box["sacrifice"]),
+      upkeep: parseWikiNumber(box["upkeep"]),
+      activation: parseWikiNumber(box["activation"]),
+      recharge: parseWikiNumber(box["recharge"]),
+      attribute: box["attribute"] ? stripMarkup(box["attribute"]) : null,
+      isElite: box["elite"] === "y",
+      description: box["description"] ? stripMarkup(box["description"]) : "",
+    });
+  }
+  if (out.length === 0) issues.push("no skill infobox snapshots found");
+  // newest first; undated ("Original") sorts last
+  out.sort((a, b) => (b.date ?? "").localeCompare(a.date ?? ""));
+  return { entity: out, issues };
+}

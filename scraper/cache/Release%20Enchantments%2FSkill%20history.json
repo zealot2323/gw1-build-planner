@@ -1,0 +1,7 @@
+{
+  "title": "Release Enchantments/Skill history",
+  "pageid": 313650,
+  "revid": 2659488,
+  "timestamp": "2020-05-23T15:04:27Z",
+  "wikitext": "{{unchanged skill history}}\n== Original Skill ==\n\n{{Skill infobox\n| categorize = n\n| id = 960\n| name = Release Enchantments\n| campaign = Factions\n| profession = Monk\n| attribute = Divine Favor\n| type = Spell\n| energy = 5\n| activation = 1\n| recharge = 5\n| target = self\n| aoe = party\n| causes1 = Healing\n| removes1 = Enchantment\n| description = [[Spell]]. Lose all [[enchantment]]s. Each [[party]] member is [[heal]]ed for {{gr|5|35}} [[Health]] for each [[Monk]] enchantment lost.\n| concise description = Spell. Removes all of your enchantments. Heals all party members for {{gr|5|35}} for each Monk Enchantment removed.\n}}\n\n{{Skill progression\n| attribute = [[Divine Favor]]\n| var1 name = [[Heal]]ing\n| var1 at0 = 5\n| var1 at15 = 35\n}}"
+}

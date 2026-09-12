@@ -114,6 +114,68 @@ export interface Skill {
 }
 
 // ---------------------------------------------------------------------------
+// Recent game updates
+// ---------------------------------------------------------------------------
+
+/**
+ * What an update bullet did to a skill.
+ * - `balance`: changed how the skill performs — the thing worth highlighting.
+ * - `bugfix`: made it work as already described.
+ * - `ai`: retuned when heroes/NPCs choose it; the skill itself is untouched.
+ * - `note`: a wiki editor clarifying long-standing behaviour, not a change.
+ */
+export type SkillChangeKind = "balance" | "bugfix" | "ai" | "note";
+
+export interface SkillChange {
+  /** ISO date of the update that made the change. */
+  date: string;
+  /** The patch note, as written. */
+  note: string;
+  kind: SkillChangeKind;
+  /** Heading path the note sat under ("June Balance Update › Warrior"). */
+  section: string | null;
+}
+
+/** A past version of a skill, from its /Skill history subpage. */
+export interface SkillVersion {
+  /** ISO date this version took effect; null for the release version. */
+  date: string | null;
+  /** Heading as written on the wiki ("December 11, 2008", "Original"). */
+  label: string;
+  energyCost: number | null;
+  adrenalineCost: number | null;
+  sacrificePercent: number | null;
+  upkeep: number | null;
+  activation: number | null;
+  recharge: number | null;
+  attribute: string | null;
+  isElite: boolean;
+  description: string;
+}
+
+export interface SkillChangeRecord {
+  skill: SkillRef;
+  /** Newest first. */
+  changes: SkillChange[];
+  /** The newest history snapshot predating the latest change, if any. */
+  previous: SkillVersion | null;
+  /**
+   * True when another recorded change falls between `previous` and the
+   * latest one — the wiki's history pages lag behind its patch notes, so
+   * the snapshot can be older than "the version immediately before".
+   */
+  previousIsStale: boolean;
+}
+
+export interface SkillChangeLog {
+  generatedAt: string;
+  /** Oldest update date covered (ISO). */
+  since: string;
+  windowMonths: number;
+  skills: SkillChangeRecord[];
+}
+
+// ---------------------------------------------------------------------------
 // Locations, trainers, monsters, missions
 // ---------------------------------------------------------------------------
 
@@ -443,6 +505,64 @@ export const missionSchema = {
   },
 } as const;
 
+const skillVersionSchema = {
+  type: "object",
+  additionalProperties: false,
+  required: ["date", "label", "description"],
+  properties: {
+    date: { type: ["string", "null"] },
+    label: { type: "string" },
+    energyCost: { type: ["number", "null"] },
+    adrenalineCost: { type: ["number", "null"] },
+    sacrificePercent: { type: ["number", "null"] },
+    upkeep: { type: ["number", "null"] },
+    activation: { type: ["number", "null"] },
+    recharge: { type: ["number", "null"] },
+    attribute: { type: ["string", "null"] },
+    isElite: { type: "boolean" },
+    description: { type: "string" },
+  },
+} as const;
+
+export const skillChangeLogSchema = {
+  $id: "gw1-skill-change-log",
+  type: "object",
+  additionalProperties: false,
+  required: ["generatedAt", "since", "windowMonths", "skills"],
+  properties: {
+    generatedAt: { type: "string" },
+    since: { type: "string" },
+    windowMonths: { type: "integer", minimum: 1 },
+    skills: {
+      type: "array",
+      items: {
+        type: "object",
+        additionalProperties: false,
+        required: ["skill", "changes", "previous", "previousIsStale"],
+        properties: {
+          skill: { type: "string" },
+          changes: {
+            type: "array",
+            items: {
+              type: "object",
+              additionalProperties: false,
+              required: ["date", "note", "kind", "section"],
+              properties: {
+                date: { type: "string" },
+                note: { type: "string" },
+                kind: { type: "string", enum: ["balance", "bugfix", "ai", "note"] },
+                section: { type: ["string", "null"] },
+              },
+            },
+          },
+          previous: { oneOf: [skillVersionSchema, { type: "null" }] },
+          previousIsStale: { type: "boolean" },
+        },
+      },
+    },
+  },
+} as const;
+
 export const characterSchema = {
   $id: "gw1-character",
   type: "object",
@@ -494,4 +614,5 @@ export const schemas = {
   mission: missionSchema,
   character: characterSchema,
   build: buildSchema,
+  skillChangeLog: skillChangeLogSchema,
 } as const;

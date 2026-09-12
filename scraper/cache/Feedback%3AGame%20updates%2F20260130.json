@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20260130",
+  "pageid": 319635,
+  "revid": 2721081,
+  "timestamp": "2026-02-11T03:42:21Z",
+  "wikitext": "== Update, January 30, 2026 ==\n\nFirst hotfix build:\n* [[Melandru's Accord]] characters can no longer pick up items that were originally [[assign]]ed to other players (either because an assignment expired or the other player left the party).\n* Melandru's Accord characters can no longer select account-based [[title]]s to display or receive corresponding buffs.\n* Melandru's Accord characters no longer receive passive bonuses from account-based titles [[Wisdom]], [[Lucky]], and [[Treasure Hunter]].\n* Melandru's Accord character progress towards [[Kind of a Big Deal|GWAMM]] no longer includes any account-based titles.\n\nSecond hotfix build:\n* Fixed a bug introduced by the additional server check on [[Currency|gold]] movement: [[PvP-only character|PvP characters]] were accidentally blocked from accessing gold in [[Xunlai Chest]]s.\n\n<noinclude>[[Category:2026 updates]]</noinclude>"
+}

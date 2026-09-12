@@ -1,0 +1,7 @@
+{
+  "title": "Vow of Revolution/Skill history",
+  "pageid": 313634,
+  "revid": 2659239,
+  "timestamp": "2020-05-20T15:10:38Z",
+  "wikitext": "{{unchanged skill history}}\n== Original Skill ==\n\n{{Skill infobox\n| categorize = n\n| name = Vow of Revolution\n| campaign = Core\n| profession = Dervish\n| attribute = Mysticism\n| pve-only = y\n| type = Enchantment Spell\n| elite = y\n| energy = 10\n| activation = 1\n| recharge = 20\n| target = untargeted\n| causes1 = Renewal\n| causes2 = Energy Regeneration\n| description = [[Elite]] [[Enchantment Spell]]. For {{gr|3|10}} seconds, you have +{{gr|1|5}} [[energy regeneration]]. This skill [[Renewal|reapplies]] itself every time you use a non-Dervish skill. {{gray|PvE Skill}}\n| concise description = Elite Enchantment Spell. ({{gr|3|10}} seconds.) Gain +{{gr|1|5}} energy regeneration. Renewal: whenever you use a non-Dervish skill. {{gray|PvE Skill}}\n| id = 3430\n}}\n{{Skill progression\n| attribute = [[Mysticism]]\n| var1 name = [[Duration]]\n| var1 at0 = 3\n| var1 at15 = 10\n| var2 name = [[Energy regeneration]]\n| var2 at0 = 1\n| var2 at15 = 5\n}}"
+}

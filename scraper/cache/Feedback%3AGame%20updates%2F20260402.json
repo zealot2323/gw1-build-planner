@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20260402",
+  "pageid": 320161,
+  "revid": 2724263,
+  "timestamp": "2026-04-03T00:08:43Z",
+  "wikitext": "== Update April 2, 2026 ==\n\nHotfix:\n* Fixed dungeon scaling to properly align with lowest level party member.\n* If any member of the party is not in Reforged mode, the key to reach the second floor of the dungeon is not available.\n* Dungeon spawns correspond to the earliest quest in the quest chain. Players with quests further in the chain will not be able to complete their quests.\n* Boss key now appears on the ground instead of from a chest, which makes it available to anyone.\n* Legacy \"enter mission\" button now only shows for party leader.\n\n<noinclude>[[Category:2026 updates]]</noinclude>"
+}

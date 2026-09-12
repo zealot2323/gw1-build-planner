@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20260630",
+  "pageid": 321026,
+  "revid": 2732229,
+  "timestamp": "2026-06-30T22:15:46Z",
+  "wikitext": "== Update June 30, 2026 ==\n\n=== Hot fixes ===\n\n* Fixed an issue where players who start on mobile and buy Reforged on PC would still see ads on mobile.\n* Fixed an issue that was causing hitching on mobile, particularly in outposts.\n* Fixed a bug that was making it hard to press the \"continue with ads\" button on some mobile devices\n\n<noinclude>[[Category:2026 updates]]</noinclude>"
+}

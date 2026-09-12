@@ -1,0 +1,7 @@
+{
+  "title": "Time Ward/Skill history",
+  "pageid": 313635,
+  "revid": 2659241,
+  "timestamp": "2020-05-20T15:12:31Z",
+  "wikitext": "{{skill history}}\n== April 22, 2020 ==\n* Fixed a bug that caused the skills 'Time Ward' and 'Over the Limit' to reduce skill recharges by more than intended.\n\n\n== Original Skill ==\n\n{{Skill infobox\n| categorize = n\n| name = Time Ward\n| campaign = Core\n| profession = Mesmer\n| attribute = Fast Casting\n| type = Ward Spell\n| pve-only = y\n| elite = y\n| energy = 10\n| activation = 2\n| recharge = 30\n| causes1 = Decreased Activation Time\n| causes2 = Decreased Recharge Time\n| description = [[Elite]] [[Ward Spell]]. You create a Time Ward at your location. For ({{gr|3|15}}) seconds, non-spirit allies in this area cast [[spell]]s ({{gr|15|20}})% faster and [[recharge]] skills ({{gr|15|20}})% faster. {{gray|PvE Skill}}\n| concise description = Elite Ward Spell. ({{gr|3|15}} seconds.) Allies in this ward cast spells {{gr|15|20}}% faster and recharge skills {{gr|15|20}}% faster. {{gray|Allied spirits are not affected. PvE Skill}}\n| id = 3422\n}}\n{{Skill progression\n|attribute = [[Fast Casting]]\n|var1 name = [[Duration]]\n|var1 at0 = 3\n|var1 at15 = 15\n|var2 name = Faster Cast %\n|var2 at0 = 15\n|var2 at15 = 20\n|var3 name = Faster Recharge %\n|var3 at0 = 15\n|var3 at15 = 20\n}}"
+}

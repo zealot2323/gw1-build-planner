@@ -1,0 +1,7 @@
+{
+  "title": "Scavenger's Focus/Skill history",
+  "pageid": 313492,
+  "revid": 2657539,
+  "timestamp": "2020-05-06T08:42:15Z",
+  "wikitext": "{{Skill history}}\n__NoToC__\n\n== August 7, 2008 ==\n* Changed [[Game updates/20080807|functionality]].\n{{skill infobox\n| categorize = n\n| name = Scavenger's Focus\n| campaign = Nightfall\n| profession = Ranger\n| attribute = Wilderness Survival\n| type = Skill\n| elite = y\n| energy = 5\n| recharge = 20\n| causes1 = Energy Gain\n| description = [[Elite]] [[Skill]]. For 10 seconds if you strike a [[foe]] who is suffering from a [[condition]] you gain {{gr|3|12}} [[Energy]].\n| concise description = Elite Skill. (10 seconds). You gain {{gr|3|12}} Energy if you strike a foe who has a condition.\n}}\n{{clear}}\n\n== Original ==\n{{Skill infobox\n| categorize = n\n| name = Scavenger's Focus\n| campaign = Nightfall\n| profession = Ranger\n| attribute = Wilderness Survival\n| type = Preparation\n| elite = y\n| energy = 10\n| recharge = 12\n| activation = 2\n| description=\n[[Elite]] [[Preparation]]. For 24 seconds, your [[attack]]s deal +{{gr|5|15}} [[damage]] against foes suffering from a [[Condition]].\n| concise description = [[Elite]] [[Preparation]]. (24 seconds). Your [[attack]]s deal +{{gr|5|15}} [[damage]] against [[foe]]s with a [[Condition]].\n\n}}"
+}

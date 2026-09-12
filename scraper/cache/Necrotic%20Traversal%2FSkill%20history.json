@@ -1,0 +1,7 @@
+{
+  "title": "Necrotic Traversal/Skill history",
+  "pageid": 290978,
+  "revid": 2412191,
+  "timestamp": "2011-11-21T03:43:00Z",
+  "wikitext": "{{Skill history}}\n\n== September 29, 2005 ==\n* Removed delay before [[teleport]].\n{{clear}}\n\n== June 29, 2005 ==\n* Fixed '''Necrotic Traversal''' so that it is able to consume [[Character|player]] [[corpse]]s correctly in [[Player versus Player|PvP]].\n{{clear}}\n\n== Original ==\n{{skill infobox\n| categorize = n\n| name = Necrotic Traversal\n| campaign = Prophecies\n| profession = Necromancer\n| attribute = Death Magic\n| type = Spell\n| energy = 5\n| activation = {{3/4}}\n| description = [[Spell]]. Exploit a random [[corpse]]; you [[teleport]] to that corpse's location and all [[nearby]] [[foe]]s become [[poison]]ed for {{gr|5|20}} seconds.}}\n{{skill progression\n| attribute = [[Death Magic]]\n| var1 name = [[Poison]] [[Duration]]\n| var1 at0 = 5\n| var1 at15 = 20}}\n{{clear}}"
+}

@@ -8,6 +8,7 @@ and from where?"
 
 - `/scraper` — Node/TypeScript scripts that fetch and parse wiki data into JSON.
 - `/data` — committed JSON datasets (the scraper's output). Fixtures live in `/data/fixtures`.
+  `skill-changes.json` is the recent-game-updates log (see Data decisions).
 - `/engine` — pure TypeScript library: types, JSON Schemas, availability/build logic. **No UI dependencies.**
 - `/app` — static React app (Vite). No backend — it loads the committed JSON from `/data`.
 - `/export` — Obsidian vault generator.
@@ -99,6 +100,10 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
   infobox/section templates.
 - Be polite: **max 1 request/second**, descriptive User-Agent, **cache everything**
   (scraper caches raw wikitext on disk so re-runs don't re-fetch).
+- **Game updates**: `npm run updates` caches 12 months of patch notes and
+  the `/Skill history` subpages of every skill they touch. The app
+  highlights a narrower 6-month window (`RECENT_MONTHS` in
+  `/engine/src/changes.ts`), so re-windowing is a code change, not a refetch.
 - **Skill icons**: `npm run icons` resolves each skill's `File:<name>.jpg` via the
   API (imageinfo, 50 titles/request) and downloads it to
   `/app/public/icons/<gwSkillId>.jpg` — committed, and already-present icons are
@@ -201,6 +206,36 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
 - **Damage-type notes** come from `affiliation`, not species: `affiliation =
   Undead` (64 monsters) is the reliable marker for the holy-damage weakness,
   since the Zombie/Skeleton species labels are inconsistent.
+- **Recent balance changes** come from "Feedback:Game updates/YYYYMMDD"
+  pages (`npm run updates` -> `/data/skill-changes.json`). Judgement calls:
+  - The "Game updates" index is DPL-generated, so its wikitext lists
+    nothing; the per-year "<year> updates" categories are the entry point.
+  - A bullet counts as a change only when it STARTS with {{skill icon|X}};
+    a template mid-sentence is prose. One bullet can name several skills.
+    Separators drift across "-", ":", "&ndash;" and nothing at all.
+  - **"Guild Wars Wiki notes" sections cannot be skipped OR trusted
+    wholesale.** The wiki puts genuinely undocumented changes there (the
+    only skill content in the 2026-05-04 update is one), alongside
+    corrections saying a skill did NOT change and clarifications of
+    long-standing behaviour. Bullets there are dropped when they read as a
+    negation, and only count as `balance` when a change verb is present as
+    a WHOLE WORD — loose stems tagged "additional foes" as "added" and
+    "damage reduction" as "reduced".
+  - Changes are classified `balance` / `bugfix` / `ai` / `note`; only
+    `balance` marks a skill as recently changed. An AI retune changes when
+    heroes pick a skill, not what it does.
+  - PvP-split versions ("Dash (PvP)", or a "(PvP)" scope marker on the
+    bullet) are different skills and out of scope for a PvE planner.
+- **The wiki's /Skill history pages lag its patch notes.** Frenzy was
+  reworked in August 2026 and its history page still reads "unchanged".
+  So the "before" snapshot is whichever dated section is newest but still
+  earlier than the change, it is labelled with its OWN date rather than
+  presented as the exact pre-patch skill, and `previousIsStale` flags the
+  case where another recorded change falls in between. Roughly 60% of
+  changed skills have a history page at all.
+- **`npm run updates` refetches the skills it finds changes for.** Their
+  cached pages predate the patch, and showing a pre-patch skill as current
+  while announcing that it just changed is worse than not flagging it.
 - Manual corrections (wiki typos, non-locations like Lion's Gate, PvP arenas,
   progression-gated connections such as Ring of Fire -> Abaddon's Mouth ->
   Hell's Precipice, trainer list omissions) live in

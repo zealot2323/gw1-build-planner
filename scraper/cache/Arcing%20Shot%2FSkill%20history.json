@@ -1,0 +1,7 @@
+{
+  "title": "Arcing Shot/Skill history",
+  "pageid": 319705,
+  "revid": 2720362,
+  "timestamp": "2026-02-06T17:25:44Z",
+  "wikitext": "{{Skill history}}\n\n== February 5, 2026 ==\n* Increased upper bounds of damage to 10..35, reduced recharge to 3 seconds.\n{{Skill infobox\n| categorize = n\n| name = Arcing Shot\n| id = 1467\n| campaign = Nightfall\n| profession = Ranger\n| attribute = Marksmanship\n| type = Bow Attack\n| energy = 5\n| recharge = 3\n| causes1 = Unblockable\n| description = [[Bow Attack]]. If this arrow hits, it strikes for +{{gr|10|35}} [[damage]].  This arrow cannot be [[block]]ed, but it moves 50% slower.\n| concise description = Bow Attack. Deals +{{gr|10|35}} damage. Unblockable. {{gray|This arrow moves 50% slower.}}\n}}\n{{Skill progression\n|attribute = [[Marksmanship]]\n|var1 name = + [[Damage]]\n|var1 at0 = 10\n|var1 at15 = 35}}\n{{clear}}\n\n== Original ==\n{{Skill infobox\n| categorize = n\n| name = Arcing Shot\n| id = 1467\n| campaign = Nightfall\n| profession = Ranger\n| attribute = Marksmanship\n| type = Bow Attack\n| energy = 5\n| recharge = 6\n| causes1 = Unblockable\n| description = [[Bow Attack]]. If this arrow hits, it strikes for +{{gr|10|25}} [[damage]].  This arrow cannot be [[block]]ed, but it moves 50% slower.\n| concise description = Bow Attack. Deals +{{gr|10|25}} damage. Unblockable. {{gray|This arrow moves 50% slower.}}\n}}\n{{Skill progression\n|attribute = [[Marksmanship]]\n|var1 name = + [[Damage]]\n|var1 at0 = 10\n|var1 at15 = 25}}\n{{clear}}"
+}

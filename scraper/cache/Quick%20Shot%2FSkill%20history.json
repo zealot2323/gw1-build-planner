@@ -1,0 +1,7 @@
+{
+  "title": "Quick Shot/Skill history",
+  "pageid": 279465,
+  "revid": 2415560,
+  "timestamp": "2011-11-30T01:49:11Z",
+  "wikitext": "{{Skill history}}\n\n== November 17, 2005 ==\n* Fixed an [[exploit]] with '''Quick Shot''' that allowed [[player]]s to re-use the [[skill]] more rapidly than should be possible.\n{{clear}}\n\n== Original ==\n{{skill infobox\n| categorize = n\n| name = Quick Shot\n| campaign = Core\n| profession = Ranger\n| type = Bow Attack\n| elite = y\n| energy = 5\n| activation = 1\n| recharge = 3\n| description = [[Elite]] [[Bow Attack]]. Shoot an arrow 3 times faster than normal. All your [[attack skill]]s are [[disable]]d for 2 seconds.}}\n{{clear}}"
+}

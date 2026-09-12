@@ -1,0 +1,7 @@
+{
+  "title": "Sadist's Signet/Skill history",
+  "pageid": 319841,
+  "revid": 2739132,
+  "timestamp": "2026-08-30T04:47:23Z",
+  "wikitext": "{{Skill history}}\n\n== [[Feedback:Game_updates/20260205|Thursday, February 5, 2026]] ==\n* Health gain upper bounds increased to 10..45.\n{{Skill infobox\n| categorize = n\n| name = Sadist's Signet\n| id = 1991\n| campaign = Eye of the North\n| profession = Assassin\n| attribute = Deadly Arts\n| type = Signet\n| activation = 1\n| recharge = 8\n| causes1 = Health Gain\n| description = [[Signet]]. You [[Health gain|gain]] {{gr|10|45}} [[Health]] for each [[condition]] on [[target]] [[foe]].\n| concise description = Signet.  You gain {{gr|10|45}} Health for each condition on target foe.\n| target = foes\n}}\n{{Skill progression\n|attribute = [[Deadly Arts]]\n|var1 name = [[Health]] gain\n|var1 at0 = 10\n|var1 at15 = 45}}\n{{clear}}\n\n== Original ==\n{{Skill infobox\n| categorize = n\n| name = Sadist's Signet\n| id = 1991\n| campaign = Eye of the North\n| profession = Assassin\n| attribute = Deadly Arts\n| type = Signet\n| activation = 1\n| recharge = 8\n| causes1 = Health Gain\n| description = [[Signet]]. You [[Health gain|gain]] {{gr|10|40}} [[Health]] for each [[condition]] on [[target]] [[foe]].\n| concise description = Signet.  You gain {{gr|10|40}} Health for each condition on target foe.\n| target = foes\n}}\n{{Skill progression\n|attribute = [[Deadly Arts]]\n|var1 name = [[Health]] gain\n|var1 at0 = 10\n|var1 at15 = 40}}\n{{clear}}"
+}

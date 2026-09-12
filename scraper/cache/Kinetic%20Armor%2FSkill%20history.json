@@ -1,0 +1,7 @@
+{
+  "title": "Kinetic Armor/Skill history",
+  "pageid": 291737,
+  "revid": 2412353,
+  "timestamp": "2011-11-21T20:40:03Z",
+  "wikitext": "{{Skill history}}\n\n== September 29, 2005 ==\n* Increased [[Armor rating|armor]] gained to {{gr|20|80}}.\n{{skill infobox\n| categorize = n\n| name = Kinetic Armor\n| campaign = Prophecies\n| profession = Elementalist\n| attribute = Earth Magic\n| type = Enchantment Spell\n| energy = 15\n| activation = 3\n| recharge = 60\n| description = [[Enchantment Spell]]. For 8 seconds, you gain +{{gr|20|80}} [[Armor rating|armor]]. Whenever you cast a [[spell]], '''Kinetic Armor''' is [[Renewal effect|renewed]] for 8 seconds.}}\n{{skill progression\n| attribute = [[Earth Magic]]\n| var1 name = + [[Armor rating|Armor]]\n| var1 at0 = 20\n| var1 at15 = 80}}\n{{clear}}\n\n== Original ==\n{{skill infobox\n| categorize = n\n| name = Kinetic Armor\n| campaign = Prophecies\n| profession = Elementalist\n| attribute = Earth Magic\n| type = Enchantment Spell\n| energy = 15\n| activation = 3\n| recharge = 60\n| description = [[Enchantment Spell]]. For 8 seconds, you gain +{{gr|10|40}} [[Armor rating|armor]]. Whenever you cast a [[spell]], '''Kinetic Armor''' is [[Renewal effect|renewed]] for 8 seconds.}}\n{{skill progression\n| attribute = [[Earth Magic]]\n| var1 name = + [[Armor rating|Armor]]\n| var1 at0 = 10\n| var1 at15 = 40}}\n{{clear}}"
+}

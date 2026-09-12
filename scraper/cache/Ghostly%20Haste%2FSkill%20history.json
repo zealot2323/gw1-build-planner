@@ -1,0 +1,7 @@
+{
+  "title": "Ghostly Haste/Skill history",
+  "pageid": 250516,
+  "revid": 2734460,
+  "timestamp": "2026-07-14T21:05:39Z",
+  "wikitext": "{{Skill history}}\n\n== Nightfall release ==\n*Set conditional recharge time to 25%.\n{{Skill infobox\n| categorize = n\n| name = Ghostly Haste\n| campaign = Faction\n| profession = Ritualist\n| attribute = Spawning Power\n| type = Enchantment Spell\n| energy = 10\n| activation = 1\n| recharge = 20\n| description = [[Enchantment Spell]]. For {{gr|5|20}} seconds, [[spell]]s you cast while within [[earshot]] of a [[spirit]] recharge 25% faster.}}\n{{Skill progression\n| attribute = [[Spawning Power]]\n| var1 name = [[Duration]]\n| var1 at0 = 5\n| var1 at15 = 20}}\n{{clear}}\n\n== Original ==\n{{Skill infobox\n| categorize = n\n| name = Ghostly Haste\n| campaign = Faction\n| profession = Ritualist\n| attribute = Spawning Power\n| type = Enchantment Spell\n| energy = 10\n| activation = 1\n| recharge = 20\n| description = [[Enchantment Spell]]. For {{gr|5|20}} seconds, [[spell]]s you cast while within [[earshot]] of a [[spirit]] recharge {{gr|5|20}}% faster.}}\n{{Skill progression\n| attribute = [[Spawning Power]]\n| var1 name = [[Duration]]\n| var2 name = [[Recharge]] %\n| var1 at0 = 5\n| var1 at15 = 20\n| var2 at0 = 5\n| var2 at15 = 20}}\n{{clear}}"
+}

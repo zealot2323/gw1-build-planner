@@ -1,0 +1,7 @@
+{
+  "title": "Executioner's Strike/Skill history",
+  "pageid": 304940,
+  "revid": 2551918,
+  "timestamp": "2013-08-06T06:01:48Z",
+  "wikitext": "{{unchanged skill history}}\n\n==Original==\n{{Skill infobox\n| categorize = n\n| id = 336\n| name = Executioner's Strike\n| campaign = Core\n| profession = Warrior\n| attribute = Axe Mastery\n| type = Axe Attack\n| adrenaline = 8\n| description = [[Axe Attack]]. If this [[attack]] hits, you strike for +{{gr|10|40}} [[damage]].\n| concise description = Axe Attack. Deals +{{gr|10|40}} damage.\n}}\n{{Skill progression\n|attribute = [[Axe Mastery]]\n|var1 name = + [[Damage]]\n|var1 at0 = 10\n|var1 at15 = 40}}"
+}

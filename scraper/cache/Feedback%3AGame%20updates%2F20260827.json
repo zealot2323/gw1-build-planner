@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20260827",
+  "pageid": 321819,
+  "revid": 2738916,
+  "timestamp": "2026-08-27T22:21:12Z",
+  "wikitext": "== Update - August 27, 2026 ==\n\n* [[The Purveyor]] (Bonus Merchant) can no longer be summoned while enemies are nearby\n* [[Shatterstone]] now ends when the hexed target dies\n* Fixed a server disconnect related to [[pet]] AI\n* Fixed a client crash on mobile caused by having many different types of salvage kits\n=== Guild Wars Wiki notes ===\n* Build: 38,881\n<noinclude>[[Category:2026 updates]]</noinclude>"
+}

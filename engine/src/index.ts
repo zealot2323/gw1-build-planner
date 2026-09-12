@@ -6,3 +6,4 @@ export * from "./bestiary.js";
 export * from "./analysis.js";
 export * from "./travel.js";
 export * from "./scope.js";
+export * from "./changes.js";

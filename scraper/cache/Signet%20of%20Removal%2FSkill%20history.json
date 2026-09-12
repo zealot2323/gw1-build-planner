@@ -1,0 +1,7 @@
+{
+  "title": "Signet of Removal/Skill history",
+  "pageid": 313246,
+  "revid": 2659543,
+  "timestamp": "2020-05-23T20:14:40Z",
+  "wikitext": "{{unchanged skill history}}\n==Original skill==\n{{Skill infobox\n| categorize = n\n| name = Signet of Removal\n| id = 1690\n| campaign = Nightfall\n| profession = Monk\n| elite = y\n| type = Signet\n| recharge = 5\n| activation = 1\n| target = allies\n| range = casting\n| aoe =\n| removes1 = Condition\n| removes2 = Hex spell\n| description = [[Elite]] [[Signet]]. If [[target]] [[ally]] is under the effects of an [[enchantment]], that ally loses one [[hex]] and one [[condition]].\n| concise description= Elite Signet. Removes one hex and one condition. {{gray|No effect unless target ally is enchanted.}}\n}}"
+}

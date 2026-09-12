@@ -1,0 +1,7 @@
+{
+  "title": "Muddy Terrain/Skill history",
+  "pageid": 291072,
+  "revid": 2411474,
+  "timestamp": "2011-11-19T03:31:13Z",
+  "wikitext": "{{Skill history}}\n\n== August 25, 2005 ==\n* The effects of [[Spirit]]s no longer work on other Spirits.\n: ''Example: '''Fertile Season''' no longer adds [[Health]] and [[Armor rating|armor]] to other Spirits.''\n* When a Spirit is cast, it kills all other [[Ally|allied]] Spirits of the same type within its [[Spirit range|range]].\n{{clear}}\n\n== July 13, 2005 ==\n* Fixed [[Ward spell|wards]], [[spirit]]s, and [[Well spell|wells]] so that [[Character|players]] who are [[Resurrection|resurrected]] within the [[area of effect]] receive that [[Spell|spell's]] effect after resurrection.\n{{clear}}\n\n== Original ==\n{{skill infobox\n| categorize = n\n| name = Muddy Terrain\n| campaign = Prophecies\n| profession = Ranger\n| attribute = Wilderness Survival\n| type = Nature Ritual\n| energy = 5\n| activation = 5\n| recharge = 30\n| description = [[Nature ritual|Nature Ritual]]. [[Summon|Create]] a [[level]] {{gr|1|10}} [[Spirit]]. For [[creature]]s within its [[Spirit range|range]], all creatures [[Snare (tactic)|move 10% slower]] than normal and [[speed boost]]s have no effect. This Spirit dies after {{gr|30|90}} seconds.}}\n{{skill progression\n| attribute = [[Wilderness Survival]]\n| var1 name = [[Spirit]] [[Level]]\n| var1 at0 = 1\n| var1 at15 = 10\n| var2 name = Spirit [[Duration]]\n| var2 at0 = 30\n| var2 at15 = 90}}\n{{clear}}"
+}

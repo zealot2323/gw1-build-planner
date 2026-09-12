@@ -1,0 +1,7 @@
+{
+  "title": "Crippling Shot/Skill history",
+  "pageid": 291606,
+  "revid": 2411452,
+  "timestamp": "2011-11-19T02:43:31Z",
+  "wikitext": "{{Skill history}}\n\n== August 25, 2005 ==\n* Decreased [[recharge time]] to 1 second.\n* Decreased [[duration]] of [[Crippled|Cripple]] to 8 seconds.\n{{skill infobox\n| categorize = n\n| name = Crippling Shot\n| campaign = Prophecies\n| profession = Ranger\n| attribute = Marksmanship\n| type = Bow Attack\n| elite = y\n| energy = 10\n| recharge = 1\n| description = [[Elite]] [[Bow attack|Bow Attack]]. If '''Crippling Shot''' hits, your [[target]] becomes [[Crippled]] for 8 seconds. This [[attack]] cannot be [[block]]ed or [[evade]]d.}}\n{{clear}}\n\n== Original ==\n{{skill infobox\n| categorize = n\n| name = Crippling Shot\n| campaign = Prophecies\n| profession = Ranger\n| attribute = Marksmanship\n| type = Bow Attack\n| elite = y\n| energy = 10\n| recharge = 10\n| description = [[Elite]] [[Bow attack|Bow Attack]]. If '''Crippling Shot''' hits, your [[target]] becomes [[Crippled]] for 15 seconds. This [[attack]] cannot be [[block]]ed or [[evade]]d.}}\n{{clear}}"
+}

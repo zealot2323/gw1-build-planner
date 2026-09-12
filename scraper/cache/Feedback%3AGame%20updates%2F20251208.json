@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20251208",
+  "pageid": 318665,
+  "revid": 2726214,
+  "timestamp": "2026-04-27T17:22:15Z",
+  "wikitext": "== Update, December 8, 2025 ==\n\n* Fixed a bug where the [[Bonus Mission Pack]] and [[Eye of the North]] DLC showed as owned in \"Manage Account\" but were not recognized in-game, preventing access to purchased content for Steam players.\n* Fixed a bug preventing task tracker position customization when gamepad hints were disabled.\n* Fixed a crash that could occur when exiting the game while using the virtual cursor.\n* Fixed a rare crash at the end of music tracks when OpenAL environmental effects were enabled.\n* Addressed an issue where every [[trader]] in-game [[Feedback talk:Game updates/20251208|decided to stop trading]] (fixed in the evening of December 7 without a build).\n\n<noinclude>[[Category:2025 updates]]</noinclude>"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20260407",
+  "pageid": 320257,
+  "revid": 2724895,
+  "timestamp": "2026-04-07T17:53:14Z",
+  "wikitext": "== Update April 7, 2026 ==\n\nHotfix:\n* Fixed an issue with the dungeon chest rewards were scaling improperly. The chest rewards now scale progressively better as the dungeon gets more difficult.\n* Fixed an issue where the dungeon chest could incorrectly drop dyes that had different sell prices preventing stacking.\n* Updated the Ascalon Warhorn to spawn guards at summoner’s level -5. Min level 5, max level 15.\n* Closed the gates on Forsaken Tunnels 3 to prevent unintended chest farming.\n* Fixed Devona’s starting hammer to have stats.\n\n<noinclude>[[Category:2026 updates]]</noinclude>"
+}

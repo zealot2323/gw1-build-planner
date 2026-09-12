@@ -1,0 +1,7 @@
+{
+  "title": "Grapple/Skill history",
+  "pageid": 300875,
+  "revid": 2583069,
+  "timestamp": "2015-02-15T21:08:04Z",
+  "wikitext": "{{unchanged skill history}}\n\n== Original == \n\n\n{{Skill infobox\n| name = Grapple\n| id = 2011\n| campaign = Eye of the North\n| profession = Warrior\n| type = Touch skill\n| energy = 5\n| activation = {{3/4}}\n| recharge = 12\n| range = touch\n| description = [[Skill]]. You and [[target]] [[touch]]ed [[foe]] are [[knocked down]]. You lose your current [[stance]].\n| concise description = Touch Skill. Causes knockdown. You are also knocked down. {{gray|Your current stance ends.}}\n| target = foes\n| categorize = n\n}}"
+}

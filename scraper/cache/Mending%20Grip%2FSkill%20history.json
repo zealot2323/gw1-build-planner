@@ -1,0 +1,7 @@
+{
+  "title": "Mending Grip/Skill history",
+  "pageid": 313249,
+  "revid": 2649306,
+  "timestamp": "2020-04-13T13:44:13Z",
+  "wikitext": "{{unchanged skill history}}\n== Original Skill ==\n\n{{Skill infobox\n| categorize = n\n| name = Mending Grip\n| id = 2202\n| campaign = Eye of the North\n| profession = Ritualist\n| attribute = Restoration Magic\n| type = Spell\n| energy = 5\n| activation = 1\n| recharge = 6\n| description = [[Spell]]. [[Target]] [[ally]] is [[heal]]ed for {{gr|15|75}} [[Health]]. If that ally is under the effects of a [[weapon spell]], that ally loses one [[condition]].\n| concise description = Spell. Heals for {{gr|15|75}}. Removes one condition if target ally is under a Weapon {{sic|\"weapon\" is capitalized}} spell.\n| removes1 = Condition\n| target = allies\n}}\n\n{{Skill progression\n|attribute = [[Restoration Magic]]\n|var1 name = [[Heal]]ing\n|var1 at0 = 15\n|var1 at15 = 75}}"
+}

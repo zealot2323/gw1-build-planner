@@ -1,0 +1,7 @@
+{
+  "title": "Hypochondria/Skill history",
+  "pageid": 319711,
+  "revid": 2720377,
+  "timestamp": "2026-02-06T17:47:57Z",
+  "wikitext": "{{Skill history}}\n\n== February 5, 2026 ==\n* Reduced cast time to 0.25 seconds.\n{{Skill infobox\n| categorize = n\n| id = 1334\n| name = Hypochondria\n| campaign = Nightfall\n| profession = Mesmer\n| type = Spell\n| energy = 5\n| activation = {{1/4}}\n| recharge = 7\n| causes1 = Condition\n| description = [[Spell]]. Transfer all [[condition]]s from all [[foe]]s [[in the area]] to target foe.\n| concise description = Spell. Transfer all conditions from foes in the area to target foe.\n| aoe = in the area\n| target = foes\n| removes1 = Condition\n}}\n{{clear}}\n\n== Original ==\n{{Skill infobox\n| categorize = n\n| id = 1334\n| name = Hypochondria\n| campaign = Nightfall\n| profession = Mesmer\n| type = Spell\n| energy = 5\n| activation = 1\n| recharge = 7\n| causes1 = Condition\n| description = [[Spell]]. Transfer all [[condition]]s from all [[foe]]s [[in the area]] to target foe.\n| concise description = Spell. Transfer all conditions from foes in the area to target foe.\n| aoe = in the area\n| target = foes\n| removes1 = Condition\n}}\n{{clear}}"
+}

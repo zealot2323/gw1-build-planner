@@ -1,0 +1,7 @@
+{
+  "title": "\"Make Your Time!\"/Skill history",
+  "pageid": 319858,
+  "revid": 2721034,
+  "timestamp": "2026-02-10T20:54:20Z",
+  "wikitext": "{{Skill history}}\n\n== February 5, 2026 ==\n* Recharge reduced to 10 seconds.\n{{Skill infobox\n| categorize = n\n| id = 1779\n| name = \"Make Your Time!\"\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Leadership\n| type = Shout\n| energy = 10\n| recharge = 10\n| target = self\n| causes1 = Adrenaline Gain\n| description = [[Shout]]. You gain 1 strike of [[adrenaline]] for each [[party]] member within [[earshot]] (maximum {{gr|1|5}} adrenaline).\n| concise description = Shout. You gain one adrenaline (maximum {{gr|1|5}}) for each party member in earshot.\n}}\n{{Skill progression\n| attribute = [[Leadership]]\n| maximum = 18\n| var1 name = [[Adrenaline]]\n| var1 at0 = 1\n| var1 at15 = 5}}\n{{clear}}\n\n== Original ==\n{{Skill infobox\n| categorize = n\n| id = 1779\n| name = \"Make Your Time!\"\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Leadership\n| type = Shout\n| energy = 10\n| recharge = 30\n| target = self\n| causes1 = Adrenaline Gain\n| description = [[Shout]]. You gain 1 strike of [[adrenaline]] for each [[party]] member within [[earshot]] (maximum {{gr|1|5}} adrenaline).\n| concise description = Shout. You gain one adrenaline (maximum {{gr|1|5}}) for each party member in earshot.\n}}\n{{Skill progression\n| attribute = [[Leadership]]\n| maximum = 18\n| var1 name = [[Adrenaline]]\n| var1 at0 = 1\n| var1 at15 = 5}}\n{{clear}}"
+}

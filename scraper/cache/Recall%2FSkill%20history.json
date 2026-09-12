@@ -1,0 +1,7 @@
+{
+  "title": "Recall/Skill history",
+  "pageid": 292007,
+  "revid": 2416258,
+  "timestamp": "2011-11-30T22:02:20Z",
+  "wikitext": "{{Skill history}}\n\n== January 20, 2006 ==\n* Fixed a crash [[bug]] with the [[Assassin]] [[skill]] '''Recall'''.\n{{clear}}\n\n== Original ==\n{{skill infobox\n| categorize = n\n| name = Recall\n| campaign = Factions\n| profession = Assassin\n| type = Enchantment Spell\n| upkeep = -1\n| energy = 15\n| activation = 1\n| recharge = 10\n| description = [[Enchantment Spell]]. While you [[Upkeep|maintain]] '''Recall''' on [[target]] [[ally]], nothing happens. When '''Recall''' ends, you [[Shadow Step]] to that ally’s location.}}\n{{clear}}"
+}

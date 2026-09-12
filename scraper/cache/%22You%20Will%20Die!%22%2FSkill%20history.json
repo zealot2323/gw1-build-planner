@@ -1,0 +1,7 @@
+{
+  "title": "\"You Will Die!\"/Skill history",
+  "pageid": 319701,
+  "revid": 2720225,
+  "timestamp": "2026-02-05T23:56:17Z",
+  "wikitext": "{{Skill history}}\n\n== February 5, 2026 ==\n* Target health threshold increased to 90%.\n{{Skill infobox\n| categorize = n\n| id = 1141\n| name = \"You Will Die!\"\n| campaign = Factions\n| profession = Warrior\n| attribute = Strength\n| type = Shout\n| energy = 5\n| recharge = 15\n| causes1 = Adrenaline Gain\n| description = [[Shout]]. If [[target]] [[foe]] is below 90% [[Health]], you gain {{gr|1|3}} strike[s] of [[adrenaline]].\n| concise description = Shout.  You gain {{gr|1|3}} strike[s] of adrenaline. {{gray|No effect unless target foe is under 90% Health.}}\n| aoe = None\n| target = foes\n}}\n{{Skill progression\n| attribute = [[Strength]]\n| var1 name = [[Adrenaline]] gain\n| var1 at0 = 1\n| var1 at15 = 3}}\n{{clear}}\n\n== Original ==\n{{Skill infobox\n| categorize = n\n| id = 1141\n| name = \"You Will Die!\"\n| campaign = Factions\n| profession = Warrior\n| attribute = Strength\n| type = Shout\n| energy = 5\n| recharge = 15\n| causes1 = Adrenaline Gain\n| description = [[Shout]]. If [[target]] [[foe]] is below 50% [[Health]], you gain {{gr|1|3}} strike[s] of [[adrenaline]].\n| concise description = Shout.  You gain {{gr|1|3}} strike[s] of adrenaline. {{gray|No effect unless target foe is under 50% Health.}}\n| aoe = None\n| target = foes\n}}\n{{Skill progression\n| attribute = [[Strength]]\n| var1 name = [[Adrenaline]] gain\n| var1 at0 = 1\n| var1 at15 = 3}}"
+}

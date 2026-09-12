@@ -1,0 +1,7 @@
+{
+  "title": "Insidious Parasite/Skill history",
+  "pageid": 291727,
+  "revid": 2441998,
+  "timestamp": "2012-02-01T17:50:25Z",
+  "wikitext": "{{Skill history}}\n\n== March 2, 2006 ==\n* Fixed a [[bug]] that prevented the numbers from displaying.\n{{clear}}\n\n== September 29, 2005 ==\n* Decreased [[Activation time|casting time]] to 1 second.\n{{skill infobox\n| categorize = n\n| name = Insidious Parasite\n| campaign = Prophecies\n| profession = Necromancer\n| attribute = Curses\n| type = Hex Spell\n| energy = 15\n| activation = 1\n| recharge = 20\n| description = [[Hex Spell]]. For {{gr|8|20}} seconds, whenever [[target]] [[foe]] hits with an [[attack]], you [[Life stealing|steal]] {{gr|5|20}} [[Health]] from that foe.}}\n{{skill progression\n| attribute = [[Curses]]\n| var1 name = [[Duration]]\n| var1 at0 = 8\n| var1 at15 = 20\n| var2 name = [[Life stealing|Life Stealing]] per [[Attack]]\n| var2 at0 = 5\n| var2 at15 = 20}}\n{{clear}}\n\n== Original ==\n{{skill infobox\n| categorize = n\n| name = Insidious Parasite\n| campaign = Prophecies\n| profession = Necromancer\n| attribute = Curses\n| type = Hex Spell\n| energy = 15\n| activation = 2\n| recharge = 20\n| description = [[Hex Spell]]. For {{gr|8|20}} seconds, whenever [[target]] [[foe]] hits with an [[attack]], you [[Life stealing|steal]] {{gr|5|20}} [[Health]] from that foe.}}\n{{skill progression\n| attribute = [[Curses]]\n| var1 name = [[Duration]]\n| var1 at0 = 8\n| var1 at15 = 20\n| var2 name = [[Life stealing|Life Stealing]] per [[Attack]]\n| var2 at0 = 5\n| var2 at15 = 20}}\n{{clear}}"
+}

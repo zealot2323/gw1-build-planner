@@ -1,0 +1,7 @@
+{
+  "title": "\"I Meant to Do That!\"/Skill history",
+  "pageid": 319700,
+  "revid": 2720222,
+  "timestamp": "2026-02-05T23:51:40Z",
+  "wikitext": "{{Skill history}}\n\n== February 5, 2026 ==\n* Adrenaline gain upper end increased to {{gr|1|6}}.\n{{Skill infobox\n| categorize = n\n| name = \"I Meant to Do That!\"\n| id = 2067\n| campaign = Eye of the North\n| profession = Warrior\n| attribute = Strength\n| type = Shout\n| energy = 5\n| recharge = 8\n| aoe = None\n| causes1 = Adrenaline Gain\n| description = [[Shout]]. If you are [[Knock down|knocked down]], you gain {{gr|1|6}} strikes of [[adrenaline]].\n| concise description = Shout. You gain {{gr|1|6}} strikes of adrenaline if you are knocked-down.\n}}\n{{Skill progression\n|attribute = [[Strength]]\n|var1 name = [[Adrenaline]] gain\n|var1 at0 = 1\n|var1 at15 = 6}}\n{{clear}}\n\n== Original ==\n{{Skill infobox\n| categorize = n\n| name = \"I Meant to Do That!\"\n| id = 2067\n| campaign = Eye of the North\n| profession = Warrior\n| attribute = Strength\n| type = Shout\n| energy = 5\n| recharge = 8\n| aoe = None\n| causes1 = Adrenaline Gain\n| description = [[Shout]]. If you are [[Knock down|knocked down]], you gain {{gr|1|5}} strikes of [[adrenaline]].\n| concise description = Shout. You gain {{gr|1|5}} strikes of adrenaline if you are knocked-down.\n}}\n{{Skill progression\n|attribute = [[Strength]]\n|var1 name = [[Adrenaline]] gain\n|var1 at0 = 1\n|var1 at15 = 5}}\n{{clear}}"
+}

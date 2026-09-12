@@ -1,0 +1,7 @@
+{
+  "title": "Skull Crack/Skill history",
+  "pageid": 291852,
+  "revid": 2425136,
+  "timestamp": "2011-12-20T15:43:32Z",
+  "wikitext": "{{Skill history}}\n\n== March 2, 2006 ==\n* Fixed a [[bug]] that caused [[attack skill]]s with non-[[weapon]] attributes to calculate [[damage]] and [[critical hit]] chance incorrectly.\n{{clear}}\n\n== September 29, 2005 ==\n* Lowered [[adrenaline]] {{sic}} to 9 strikes.\n{{skill infobox\n| categorize = n\n| name = Skull Crack\n| campaign = Prophecies\n| profession = Warrior\n| type = Melee Attack\n| elite = y\n| adrenaline = 9\n| description = [[Elite]] [[Melee Attack]]. If this [[attack]] hits while [[target]] [[foe]] is casting a [[spell]], that foe is [[Dazed]] for 15 seconds.}}\n{{clear}}\n\n== Original ==\n{{skill infobox\n| categorize = n\n| name = Skull Crack\n| campaign = Prophecies\n| profession = Warrior\n| type = Melee Attack\n| elite = y\n| adrenaline = 10\n| description = [[Elite]] [[Melee Attack]]. If this [[attack]] hits while [[target]] [[foe]] is casting a [[spell]], that foe is [[Dazed]] for 15 seconds.}}\n{{clear}}"
+}

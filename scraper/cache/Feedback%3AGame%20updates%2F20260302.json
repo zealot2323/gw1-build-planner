@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20260302",
+  "pageid": 319975,
+  "revid": 2722371,
+  "timestamp": "2026-03-03T18:52:39Z",
+  "wikitext": "== Update March 2, 2026 ==\n\n* [[Guild Wars]] will now always run from the executable directory it was started in rather than trying to run from the \"installed\" directory as specified in the registry.\n** This helps players keep their first-party ArenaNet login install and a Steam install separate.\n* Fixed a bug where you could complete the [[A Bastion In the North]] quest even if [[Devona]] died.\n* Disabled access to the [[Shrine to Godly Accoutrements|Shrine of Godly Accoutrements]] for [[PvP character]]s.\n* Disabled the highlight effect on the new start mission button for certain mission types (such as Guild Battle).\n* New start mission button won't capture mouse clicks when disabled.\n\n<noinclude>[[Category:2026 updates]]</noinclude>"
+}

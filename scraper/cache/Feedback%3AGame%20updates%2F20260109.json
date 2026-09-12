@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20260109",
+  "pageid": 319337,
+  "revid": 2717598,
+  "timestamp": "2026-01-09T01:22:36Z",
+  "wikitext": "==Update -- January 9, 2026==\n\n* Fixed a bug where adding more than 19 purchased [[character slot]]s to an [[account]] returned an error (instead of the published limit of 26).\n* Fixed a bug where the status of \"dialog pinning\" and \"start menu dragging\" options were reset every time a person re-logged.\n\n<noinclude>[[Category:2026 updates]]</noinclude>"
+}

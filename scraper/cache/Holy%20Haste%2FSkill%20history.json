@@ -1,0 +1,7 @@
+{
+  "title": "Holy Haste/Skill history",
+  "pageid": 313681,
+  "revid": 2659795,
+  "timestamp": "2020-05-26T00:11:21Z",
+  "wikitext": "{{unchanged skill history}}\n== Original Skill ==\n\n{{Skill infobox\n| categorize = n\n| name = Holy Haste\n| id = 1685\n| campaign = Nightfall\n| profession = Monk\n| attribute = Divine Favor\n| type = Enchantment Spell\n| energy = 10\n| activation = 1\n| recharge = 10\n| causes1 = Decreased Activation Time\n| description = [[Enchantment Spell]]. For {{gr|1|60}} second[s], your [[Healing Prayers]] [[spell]]s [[Activation time|cast]] 50% faster. This enchantment ends if you cast another enchantment.\n| concise description = Enchantment Spell. ({{gr|1|60}} second[s].) Your Healing Prayers spells cast 50% faster. {{gray|Ends if you cast an enchantment.}}\n}}\n\n{{Skill progression\n|attribute = [[Divine Favor]]\n|var1 name = [[Duration]]\n|var1 at0 = 1\n|var1 at15 = 60}}"
+}

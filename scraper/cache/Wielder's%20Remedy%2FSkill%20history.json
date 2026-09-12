@@ -1,0 +1,7 @@
+{
+  "title": "Wielder's Remedy/Skill history",
+  "pageid": 250827,
+  "revid": 2229364,
+  "timestamp": "2011-01-29T10:10:23Z",
+  "wikitext": "{{unchanged skill history}}\n==Original skill==\n{{Skill infobox\n| categorize = n\n| name = Wielder's Remedy\n| campaign = Nightfall\n| profession = Ritualist\n| attribute = Spawning Power\n| type = Enchantment spell \n| energy = 5\n| activation = 1\n| recharge = 10\n| description = [[Enchantment Spell]]. For {{gr|10|30}} seconds, whenever you cast a [[weapon spell]] on an [[ally]], that ally loses 1 [[Condition]].\n| concise description = [[Enchantment Spell]]. ({{gr|10|30}} seconds.) Whenever you cast a [[weapon spell]], the targeted [[ally]] loses one [[condition]].\n}}\n\n{{Skill progression\n| attribute = [[Spawning Power]]\n| var1 name = [[Duration]]\n| var1 at0 = 10\n| var1 at15 = 30\n}}"
+}

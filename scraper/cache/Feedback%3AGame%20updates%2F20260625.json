@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20260625",
+  "pageid": 320903,
+  "revid": 2731496,
+  "timestamp": "2026-06-26T02:14:04Z",
+  "wikitext": "== Update June 25, 2026 ==\n\n=== Hot fixes ===\n\n* Fixed [[pet]]s attacking neutral mobs unprovoked.\n* Fixed pets failing to attack outside of aggro range.\n* Fixed a crash related to [[Kirin's Wrath]].\n* Fixed an issue where a black bar was overlaid on the screen on Android 12 devices.\n* Fixed layout issues with character creation screens on some devices.\n* Fixed a crash with observer mode when the mobile HUD is enabled.\n \nNote: we have not identified the root cause of the \"bad password\" (error 11) issue some people are seeing on their Guild Wars ArenaNet (email) accounts when logging into their mobile device.  Some people have reported that logging into the web site (https://account.arenanet.com) from their mobile device and then returning to the game solves this for them.\n\n<noinclude>[[Category:2026 updates]]</noinclude>"
+}

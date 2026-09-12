@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20251219",
+  "pageid": 318888,
+  "revid": 2717565,
+  "timestamp": "2026-01-08T19:08:44Z",
+  "wikitext": "==Update -- December 19, 2025==\n\nHotfix #1\n\n* Fixed an issue where a player could move the [[camera]] in some [[Character selection screen|character select]] scenes that would leave the camera in an awkward position when switching back to the [[Prophecies]] pregame scene.\n* Fixed a bug where players would sometimes get flagged with [[Dishonor]] when entering [[Ascalon Academy]].\n* Fixed a [[Reforged mode]] bug where some [[henchmen]] would become stuck in later Prophecies areas.\n* Adjusted [[Item rarity|item spawn rarities]] in Reforged mode.\n* [[Health]] and [[armor]] adjustments are no longer applied to [[pet]]s, [[minion]]s, and [[NPC|NPC's]] in [[pre-Searing]].\n* Adjusted the [[spawn|spawn position]] coming out of [[Ashford Abbey]] to prevent some players in four-player [[party|parties]] from getting instantly teleported back.\n* Fixed an issue where some henchmen would not appear in your party when returning to an [[outpost]] in Reforged mode.\n* Account preferences updated more often on the server.\n\nHotfix #2\n* Fixed a client crash when logging out from certain maps with high graphics settings enabled, such as [[Doomlore Shrine]].\n\n<noinclude>[[Category:2025 updates]]</noinclude>"
+}

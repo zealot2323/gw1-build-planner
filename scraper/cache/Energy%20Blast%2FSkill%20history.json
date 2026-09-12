@@ -1,0 +1,7 @@
+{
+  "title": "Energy Blast/Skill history",
+  "pageid": 319846,
+  "revid": 2720978,
+  "timestamp": "2026-02-10T07:06:45Z",
+  "wikitext": "{{Skill history}}\n\n== February 5, 2026 ==\n* Reduced energy cost to 5.\n{{Skill infobox\n| categorize = n\n| name = Energy Blast\n| id = 2193\n| campaign = Eye of the North\n| profession = Elementalist\n| attribute = Energy Storage\n| type = Spell\n| energy = 5\n| activation = {{3/2}}\n| recharge = 20\n| description = [[Spell]]. [[Target]] [[foe]] takes {{gr|1|2}} [[damage]] for each point of [[Energy]] you have (maximum 130 damage).\n| concise description = Spell. Deals {{gr|1|2}} damage (maximum 130) for each point of Energy you have.\n}}\n{{Skill progression\n|attribute = [[Energy Storage]]\n|var1 name = [[Armor-ignoring damage]] per [[energy]]\n|var1 at0 = 1\n|var1 at15 = 2}}\n{{clear}}\n\n== Original ==\n{{Skill infobox\n| categorize = n\n| name = Energy Blast\n| id = 2193\n| campaign = Eye of the North\n| profession = Elementalist\n| attribute = Energy Storage\n| type = Spell\n| energy = 10\n| activation = {{3/2}}\n| recharge = 20\n| description = [[Spell]]. [[Target]] [[foe]] takes {{gr|1|2}} [[damage]] for each point of [[Energy]] you have (maximum 130 damage).\n| concise description = Spell. Deals {{gr|1|2}} damage (maximum 130) for each point of Energy you have.\n}}\n{{Skill progression\n|attribute = [[Energy Storage]]\n|var1 name = [[Armor-ignoring damage]] per [[energy]]\n|var1 at0 = 1\n|var1 at15 = 2}}\n{{clear}}"
+}

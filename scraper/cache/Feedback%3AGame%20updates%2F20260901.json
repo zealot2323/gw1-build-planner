@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20260901",
+  "pageid": 321844,
+  "revid": 2739300,
+  "timestamp": "2026-09-01T21:00:30Z",
+  "wikitext": "== Update - September 1, 2026 ==\n\n=== Skill updates ===\n\n* {{skill icon|Mirage Cloak}}: Adjust additional block chance to 4..10 (so that Earth investment is required) and fixed a bug where damage from enchantment removal was getting improperly multiplied.\n* {{skill icon|Focused Shot}}: Removed errant cast time.\n* {{skill icon|Soul Twisting (PvP)}}: Fix typos in in-game description.\n* {{skill icon|Animate Flesh Golem}}: Pull the (somehow) living Vabbian peasant from the corpse pool.\n* {{skill icon|Symbols of Inspiration}}: Reduce recharge from 15 to 10 and increase duration from 1..31 to 6..40. (This change was in the original update notes, but the game data wasn't properly updated.)\n* {{skill icon|Mistrust}}: Fix bug where original target was being treated as an AoE target.\n* {{skill icon|Overload}}: Fix bug where original target was being treated as an AoE target.\n\n=== Guild Wars Wiki notes ===\n* Build: 38,888\n\n<noinclude>[[Category:2026 updates]]</noinclude>"
+}

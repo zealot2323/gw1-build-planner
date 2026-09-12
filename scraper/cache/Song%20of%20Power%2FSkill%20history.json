@@ -1,0 +1,7 @@
+{
+  "title": "Song of Power/Skill history",
+  "pageid": 319864,
+  "revid": 2721046,
+  "timestamp": "2026-02-10T21:04:54Z",
+  "wikitext": "{{Skill history}}\n\n== February 5, 2026 ==\n* Reduced energy cost to 15.\n{{Skill infobox\n| categorize = n\n| id = 1560\n| name = Song of Power\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Motivation\n| type = Chant\n| energy = 15\n| activation = 1\n| recharge = 30\n| causes1 = Energy Regeneration\n| description = [[Chant]]. For {{gr|5|20}} seconds, each [[ally]] within [[earshot]] gains 4 [[Energy regeneration]] until that ally uses a [[Skill]].\n| concise description = Chant. ({{gr|5|20}} seconds.) Allies in earshot gain +4 Energy regeneration. {{gray|Ends when using a skill.}}\n}}\n{{Skill progression\n| attribute = [[Motivation]]\n| var1 name = [[Duration]]\n| var1 at0 = 5\n| var1 at15 = 20}}\n{{clear}}\n\n== Original ==\n{{Skill infobox\n| categorize = n\n| id = 1560\n| name = Song of Power\n| campaign = Nightfall\n| profession = Paragon\n| attribute = Motivation\n| type = Chant\n| energy = 25\n| activation = 1\n| recharge = 30\n| causes1 = Energy Regeneration\n| description = [[Chant]]. For {{gr|5|20}} seconds, each [[ally]] within [[earshot]] gains 4 [[Energy regeneration]] until that ally uses a [[Skill]].\n| concise description = Chant. ({{gr|5|20}} seconds.) Allies in earshot gain +4 Energy regeneration. {{gray|Ends when using a skill.}}\n}}\n{{Skill progression\n| attribute = [[Motivation]]\n| var1 name = [[Duration]]\n| var1 at0 = 5\n| var1 at15 = 20}}\n{{clear}}"
+}

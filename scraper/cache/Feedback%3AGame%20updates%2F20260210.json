@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20260210",
+  "pageid": 319853,
+  "revid": 2721075,
+  "timestamp": "2026-02-11T02:14:10Z",
+  "wikitext": "== Update, February 10, 2026 ==\n\n=== 60/60 Exploit ===\nA bug in the [[PvP Equipment]] panel allowed for non-PvP items to be [[customize]]d, and in some cases would apply item [[Upgrade component|upgrades]] that were incompatible with the customized item. This resulted in items being created that couldn't be obtained through natural play (this includes what the community refers to as [[60/60]] items). A previous update fixed the bug, and today's update removes invalid item upgrades from some items previously created via the bug.\n\n<noinclude>[[Category:2026 updates]][[Category:Balance updates]]</noinclude>"
+}

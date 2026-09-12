@@ -1,0 +1,7 @@
+{
+  "title": "Revive Animal/Skill history",
+  "pageid": 279273,
+  "revid": 2411499,
+  "timestamp": "2011-11-19T04:33:58Z",
+  "wikitext": "{{Skill history}}\n\n== September 7, 2005 ==\n* Fixed '''Revive Animal''' so that the [[health]] of the newly [[Resurrection|revived]] [[Animal companion|animal]] depends on the [[attribute]] level of the caster.\n{{clear}}\n\n== Original ==\n{{skill infobox\n| categorize = n\n| name = Revive Animal\n| campaign = Prophecies\n| profession = Ranger\n| attribute = Beast Mastery\n| type = Skill\n| energy = 5\n| activation = 6\n| recharge = 20\n| description = [[Skill]]. [[Resurrection|Resurrect]] all [[nearby]] [[Ally|allied]] [[animal companion]]s. They come back to life with {{gr|50|500}} [[Health]].}}\n{{skill progression\n| attribute = [[Beast Master]]\n| var1 name = [[Animal companion|Animal Companion]] [[Health]]\n| var1 at0 = 50\n| var1 at15 = 500}}\n{{clear}}"
+}

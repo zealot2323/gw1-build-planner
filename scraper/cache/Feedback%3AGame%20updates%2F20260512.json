@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20260512",
+  "pageid": 320542,
+  "revid": 2728304,
+  "timestamp": "2026-05-17T20:59:30Z",
+  "wikitext": "== Update May 12, 2026 ==\n* Skill AI adjustments:\n**\t{{skill icon|Preservation}} - No longer casts outside of combat area to preserve uptime during combat; prioritizes casting if an ally has low health;  targets ally in range w/lowest health percentage.\n**\t{{skill icon|Spirit Siphon}} - Only checks the values of a potential target spirit (the closest) when determining usefulness;  won't cast if you have plenty of energy;  won't cast unless there is going to be meaningful energy gain.\n**\t{{skill icon|Soul Leech}} - Prioritizes targeting casters; prioritizes highest health; skips low health targets.\n* Some tuning of item drop rates and difficulty in Tunnels of the Forsaken\n* Additional client and server updates in advance of soft launch onto mobile\n\n=== Guild Wars Wiki Notes ===\n* {{skill icon|Preservation}} - the spirit actually targets the first wounded ally in reverse party order, including [[minion]]s.\n\n<noinclude>[[Category:2026 updates]]</noinclude>"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Mark of Death/Skill history",
+  "pageid": 319839,
+  "revid": 2739131,
+  "timestamp": "2026-08-30T04:46:28Z",
+  "wikitext": "{{Skill history}}\n\n== [[Feedback:Game_updates/20260205|Thursday, February 5, 2026]] ==\n* Healing benefit reduction increased to 50%.\n{{Skill infobox\n| categorize = n\n| id = 785\n| name = Mark of Death\n| campaign = Factions\n| profession = Assassin\n| attribute = Deadly Arts\n| type = Hex Spell\n| energy = 10\n| activation = {{1/4}}\n| recharge = 20\n| description = [[Hex Spell]].  For {{gr|4|10|}} seconds, [[target]] [[foe]] gains 50% less benefit from [[heal]]ing.\n| concise description = Hex Spell. ({{gr|4|10|}} seconds.) Target foe receives 50% less from healing.\n}}\n{{Skill progression\n|attribute = [[Deadly Arts]]\n|var1 name = [[Duration]]\n|var1 at0 = 4\n|var1 at15 = 10}}\n{{clear}}\n\n== Original ==\n{{Skill infobox\n| categorize = n\n| id = 785\n| name = Mark of Death\n| campaign = Factions\n| profession = Assassin\n| attribute = Deadly Arts\n| type = Hex Spell\n| energy = 10\n| activation = {{1/4}}\n| recharge = 20\n| description = [[Hex Spell]].  For {{gr|4|10|}} seconds, [[target]] [[foe]] gains 33% less benefit from [[heal]]ing.\n| concise description = Hex Spell. ({{gr|4|10|}} seconds.) Target foe receives 33% less from healing.\n}}\n{{Skill progression\n|attribute = [[Deadly Arts]]\n|var1 name = [[Duration]]\n|var1 at0 = 4\n|var1 at15 = 10}}\n{{clear}}"
+}

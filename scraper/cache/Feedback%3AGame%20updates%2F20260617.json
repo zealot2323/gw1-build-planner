@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20260617",
+  "pageid": 320850,
+  "revid": 2730593,
+  "timestamp": "2026-06-17T23:16:40Z",
+  "wikitext": "== Update, June 17, 2026 ==\n\n=== Mobile ===\n* Autorun and target viewing buttons are now available on the mobile HUD\n* Support has been added for gamepads on mobile devices; we're still refining this but it works very similar to Steam Deck controls\n* Fixed a bug for an occasional crash on Android when selecting a character\n* Fixed a bug for an occasional crash on iOS when switching back to the app\n* Mobile privacy and tracking options are now displayed on app start for everyone\n* You can now rotate your character on the character select screen with touch controls\n* Vendor panels have revised mobile layouts to make them easier to use\n* Dye and trade panels are no longer full screen on mobile (custom mobile dye and trade UIs are coming in a future update)\n* We continue to work on \"Login with Steam\" as a mobile feature\n** It's tricky and uses special access APIs issued by Valve (which they have done and which we are integrating with our systems)\n** It requires updating our \"login server\" infrastructure\n** We think we're pretty close but it will definitely not be available June 24\n\n=== Steam Deck and Gamepads ===\n* Pressing the right analog stick (\"R3\") centers the camera on Steam Deck and mobile gamepads\n\n\n<noinclude>[[Category:2026 updates]]</noinclude>"
+}

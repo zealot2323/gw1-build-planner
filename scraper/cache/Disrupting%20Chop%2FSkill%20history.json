@@ -1,0 +1,7 @@
+{
+  "title": "Disrupting Chop/Skill history",
+  "pageid": 321387,
+  "revid": 2736389,
+  "timestamp": "2026-07-31T09:06:41Z",
+  "wikitext": "{{skill history}}\n\n== [[Feedback:Game_updates/20260624|June 24, 2026]] ==\n* Increase recharge from 0 to 1.\n{{Skill infobox\n| categorize = n\n| id = 340\n| name = Disrupting Chop\n| campaign = Core\n| profession = Warrior\n| attribute = Axe Mastery\n| type = Axe Attack\n| adrenaline = 6\n| recharge = 1\n| causes1 = Disable\n| description = [[Axe Attack]]. If it hits, this [[attack]] [[interrupt]]s the target's current [[action]]. If that action was a [[skill]], that skill is [[disable]]d for an additional 20 seconds.\n| concise description = Axe Attack. Interrupts an action. Interruption effect: interrupted skill is disabled for +20 seconds.\n}}\n\n{{clear}}\n\n== Original Skill ==\n\n{{Skill infobox\n| categorize = n\n| id = 340\n| name = Disrupting Chop\n| campaign = Core\n| profession = Warrior\n| attribute = Axe Mastery\n| type = Axe Attack\n| adrenaline = 6\n| causes1 = Disable\n| description = [[Axe Attack]]. If it hits, this [[attack]] [[interrupt]]s the target's current [[action]]. If that action was a [[skill]], that skill is [[disable]]d for an additional 20 seconds.\n| concise description = Axe Attack. Interrupts an action. Interruption effect: interrupted skill is disabled for +20 seconds.\n}}\n\n{{clear}}"
+}

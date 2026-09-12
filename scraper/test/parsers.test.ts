@@ -11,7 +11,15 @@ import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
-import { parseLocation, parseMission, parseMonster, parseSkill, parseTrainer } from "../src/parsers.js";
+import {
+  parseGameUpdate,
+  parseLocation,
+  parseMission,
+  parseMonster,
+  parseSkill,
+  parseSkillHistory,
+  parseTrainer,
+} from "../src/parsers.js";
 
 const CACHE_DIR = join(dirname(fileURLToPath(import.meta.url)), "..", "cache");
 
@@ -200,5 +208,81 @@ describe("parseMission", () => {
     expect(entity.foes).toContain("Carrion Devourer");
     expect(entity.bosses).toContain("Drub Gorefang");
     expect(entity.foes).not.toContain("Drub Gorefang");
+  });
+});
+
+describe("parseGameUpdate", () => {
+  const update = (d: string) => cached(`Feedback:Game updates/${d}`);
+
+  it("parses a plain skill-update page", () => {
+    const { entity } = parseGameUpdate("Feedback:Game updates/20260901", update("20260901"));
+    const byName = new Map(entity.map((c) => [c.skill, c]));
+    expect(entity[0].date).toBe("2026-09-01");
+    expect(byName.get("Symbols of Inspiration")?.note).toContain("Reduce recharge from 15 to 10");
+    expect(byName.get("Symbols of Inspiration")?.kind).toBe("balance");
+    // "Fix bug where..." is a bug fix, not a rebalance
+    expect(byName.get("Mistrust")?.kind).toBe("bugfix");
+  });
+
+  it("handles the August page: ' - ' separators, per-profession sections, PvP splits", () => {
+    const { entity } = parseGameUpdate("Feedback:Game updates/20260826", update("20260826"));
+    const dash = entity.find((c) => c.skill === "Aura of Displacement");
+    expect(dash?.note).toBe("Reduce energy cost from 10 to 5.");
+    expect(dash?.section).toContain("Assassin");
+    // PvP-split versions are separate skills and out of scope for a PvE planner
+    expect(entity.some((c) => c.skill.includes("(PvP)"))).toBe(false);
+    expect(entity.some((c) => /Split for PvP/i.test(c.note))).toBe(false);
+  });
+
+  it("takes real undocumented changes out of the wiki-notes section", () => {
+    // The only skill content on this page is a wiki editor's note recording
+    // a change the official notes omitted.
+    const { entity } = parseGameUpdate("Feedback:Game updates/20260504", update("20260504"));
+    expect(entity).toHaveLength(1);
+    expect(entity[0]).toMatchObject({ skill: "Shadow Prison", kind: "balance" });
+    expect(entity[0].note).toBe("Recharge reduced to 15.");
+  });
+
+  it("never records a wiki note that says a skill did NOT change", () => {
+    const { entity } = parseGameUpdate("Feedback:Game updates/20260826", update("20260826"));
+    // The page's wiki-notes section says "Crippling Dagger and Dancing
+    // Daggers both were not changed" and "Symbols of Inspiration did not
+    // have its recharge time ... changed". All three skills DO appear
+    // elsewhere on the page with real changes, so the thing that must never
+    // survive is the negating note itself.
+    expect(entity.some((c) => /were not changed|did not have|is unchanged/i.test(c.note))).toBe(false);
+    // ...and what is recorded for them comes from the real update sections
+    for (const c of entity.filter((c) => c.skill === "Symbols of Inspiration")) {
+      expect(c.section).not.toMatch(/wiki note/i);
+    }
+  });
+
+  it("classifies AI retuning separately from balance", () => {
+    const { entity } = parseGameUpdate("Feedback:Game updates/20260527", update("20260527"));
+    expect(entity.length).toBeGreaterThan(0);
+    expect(entity.every((c) => c.kind === "ai")).toBe(true);
+  });
+});
+
+describe("parseSkillHistory", () => {
+  it("parses dated snapshots newest first, with Original last", () => {
+    const { entity } = parseSkillHistory(
+      "Symbols of Inspiration/Skill history",
+      cached("Symbols of Inspiration/Skill history"),
+    );
+    expect(entity).toHaveLength(2);
+    expect(entity[0].date).toBe("2008-12-11");
+    expect(entity[0].recharge).toBe(15);
+    expect(entity[0].energyCost).toBe(5);
+    expect(entity[1].date).toBeNull();
+    expect(entity[1].label).toBe("Original");
+    expect(entity[1].recharge).toBe(30);
+  });
+
+  it("handles a history page that only has the release version", () => {
+    const { entity } = parseSkillHistory("Frenzy/Skill history", cached("Frenzy/Skill history"));
+    expect(entity).toHaveLength(1);
+    expect(entity[0].label).toBe("Original");
+    expect(entity[0].description).toContain("take double");
   });
 });

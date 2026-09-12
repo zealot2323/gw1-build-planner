@@ -10,6 +10,9 @@ import {
   type SkillStatus,
 } from "@gw1/engine";
 import { useData } from "../DataContext";
+import { changes } from "../data";
+import { ChangeBadge } from "../components/ChangeBadge";
+import { SkillChanges } from "../components/SkillChanges";
 import { SkillIcon } from "../components/SkillIcon";
 import { SkillDetails } from "../components/SkillDetails";
 import { ProfessionIcon } from "../components/ProfessionIcon";
@@ -26,6 +29,7 @@ export interface SkillViewState {
   search: string;
   openSkill: string | null;
   sortBy: "name" | "soonest";
+  changedOnly: boolean;
 }
 
 export const initialSkillViewState: SkillViewState = {
@@ -35,6 +39,7 @@ export const initialSkillViewState: SkillViewState = {
   search: "",
   openSkill: null,
   sortBy: "soonest",
+  changedOnly: false,
 };
 
 const STATUS_ORDER: SkillStatus[] = [
@@ -142,7 +147,7 @@ export function SkillsView({
   setView: (patch: Partial<SkillViewState>) => void;
 }) {
   const index = useData();
-  const { profFilter, attrFilter, elitesOnly, search, openSkill, sortBy } = view;
+  const { profFilter, attrFilter, elitesOnly, search, openSkill, sortBy, changedOnly } = view;
   const [expandedSources, setExpandedSources] = useState<Set<string>>(new Set());
   const setProfFilter = (v: string) => setView({ profFilter: v });
   const setAttrFilter = (v: string) => setView({ attrFilter: v });
@@ -150,6 +155,7 @@ export function SkillsView({
   const setSearch = (v: string) => setView({ search: v });
   const setOpenSkill = (v: string | null) => setView({ openSkill: v });
   const setSortBy = (v: "name" | "soonest") => setView({ sortBy: v });
+  const setChangedOnly = (v: boolean) => setView({ changedOnly: v });
   const focusRef = useRef<HTMLTableRowElement | null>(null);
 
   // The build's secondary decides which skills are in play — there is one
@@ -181,6 +187,7 @@ export function SkillsView({
       (profFilter === "all" || (e.skill.profession ?? "Common") === profFilter) &&
       (attrFilter === "all" || e.skill.attribute === attrFilter) &&
       (!elitesOnly || e.skill.isElite) &&
+      (!changedOnly || changes.recentlyChanged.has(e.skill.wikiPage)) &&
       e.skill.name.toLowerCase().includes(search.toLowerCase()),
   );
 
@@ -234,6 +241,10 @@ export function SkillsView({
         <label className="inline-check">
           <input type="checkbox" checked={elitesOnly} onChange={(e) => setElitesOnly(e.target.checked)} />
           elites only
+        </label>
+        <label className="inline-check" title={`Balance changes since ${changes.since}`}>
+          <input type="checkbox" checked={changedOnly} onChange={(e) => setChangedOnly(e.target.checked)} />
+          recently changed
         </label>
         <label>
           Sort:{" "}
@@ -296,6 +307,9 @@ export function SkillsView({
                               <SkillIcon page={e.skill.wikiPage} />
                               {e.skill.name}
                               {e.skill.isElite && <span className="elite"> ★</span>}
+                              {changes.recentlyChanged.has(e.skill.wikiPage) && (
+                                <ChangeBadge record={changes.recentlyChanged.get(e.skill.wikiPage)!} />
+                              )}
                             </button>
                           </td>
                           <td className="muted">
@@ -339,6 +353,12 @@ export function SkillsView({
                                   skill={e.skill}
                                   plan={e.status === "KNOWN" ? undefined : plans.get(e.skill.wikiPage)}
                                 />
+                                {changes.recentlyChanged.has(e.skill.wikiPage) && (
+                                  <SkillChanges
+                                    record={changes.recentlyChanged.get(e.skill.wikiPage)!}
+                                    skill={e.skill}
+                                  />
+                                )}
                               </div>
                             </td>
                           </tr>

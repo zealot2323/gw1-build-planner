@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20260819",
+  "pageid": 321661,
+  "revid": 2737956,
+  "timestamp": "2026-08-20T07:20:46Z",
+  "wikitext": "== Update - August 19, 2026 ==\n\n=== Bug fixes ===\n* Fixed a client crash related to playing certain cinematics.\n* Fixed an issue where some parts of the map just past the edge of mission boundaries were not revealable.\n\n=== Guild Wars Wiki notes ===\n* Build: 38,848.\n* Second hotfix build: 38,849.\n\n<noinclude>[[Category:2026 updates]]</noinclude>"
+}

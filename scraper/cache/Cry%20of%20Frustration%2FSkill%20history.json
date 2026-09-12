@@ -1,0 +1,7 @@
+{
+  "title": "Cry of Frustration/Skill history",
+  "pageid": 291149,
+  "revid": 2718838,
+  "timestamp": "2026-01-24T04:43:25Z",
+  "wikitext": "{{Skill history}}\n\n== [[Game_updates/20050825#Mesmer|August 25, 2005]] ==\n* Lowered [[Activation time|casting time]] to .25 second.\n{{skill infobox\n| categorize = n\n| name = Cry of Frustration\n| campaign = Core\n| profession = Mesmer\n| attribute = Domination Magic\n| type = Spell\n| energy = 15\n| activation = {{1/4}}\n| recharge = 20\n| description = [[Spell]]. If [[target]] [[foe]] is using a [[skill]], that foe and [[nearby]] foes are [[interrupt]]ed and suffer {{gr|10|44}} [[damage]].}}\n{{skill progression\n| attribute = [[Domination Magic]]\n| var1 name = [[Damage]]\n| var1 at0 = 10\n| var1 at15 = 44}}\n{{clear}}\n\n== Original Skill ==\n{{skill infobox\n| categorize = n\n| name = Cry of Frustration\n| campaign = Core\n| profession = Mesmer\n| attribute = Domination Magic\n| type = Spell\n| energy = 15\n| activation = {{3/4}}\n| recharge = 20\n| description = [[Spell]]. If [[target]] [[foe]] is using a [[skill]], that foe and [[nearby]] foes are [[interrupt]]ed and suffer {{gr|10|44}} [[damage]].}}\n{{skill progression\n| attribute = [[Domination Magic]]\n| var1 name = [[Damage]]\n| var1 at0 = 10\n| var1 at15 = 44}}"
+}

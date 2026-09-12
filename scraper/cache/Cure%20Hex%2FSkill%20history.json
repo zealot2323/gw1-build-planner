@@ -1,0 +1,7 @@
+{
+  "title": "Cure Hex/Skill history",
+  "pageid": 313524,
+  "revid": 2657833,
+  "timestamp": "2020-05-08T20:53:29Z",
+  "wikitext": "{{unchanged skill history}}\n== Original Skill ==\n\n{{Skill infobox\n| categorize = n\n| name = Cure Hex\n| id = 2003\n| campaign = Eye of the North\n| profession = Monk\n| attribute = Healing Prayers\n| type = Spell\n| energy = 5\n| activation = 1\n| recharge = 12\n| target = allies\n| causes1 = Healing\n| description = [[Spell]]. Remove one [[Hex]] from [[target]] [[ally]]. If a Hex was removed, that ally is [[heal]]ed for {{gr|30|120}} [[Health]].\n| concise description = Spell. Removes a Hex. Removal effect: Heals for {{gr|30|120}}.\n| removes1 = Hex spell\n}}\n\n{{Skill progression\n|attribute = [[Healing Prayers]]\n|var1 name = [[Heal]]ing\n|var1 at0 = 30\n|var1 at15 = 120}}"
+}

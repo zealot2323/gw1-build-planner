@@ -20237,7 +20237,7 @@
     "upkeep": null,
     "activation": 2,
     "recharge": 10,
-    "description": "Elite Hex Spell. For 10...25 seconds, whenever target foe attacks or uses a skill, Spiteful Spirit deals 15...45 shadow damage to that foe and all adjacent foes.",
+    "description": "Elite Hex Spell. For 10...25 seconds, whenever target foe attacks or uses a skill, Spiteful Spirit deals 15...45 shadow damage to that foe and all adjacent allies of that foe.",
     "acquisition": {
       "trainers": [],
       "quests": [],
@@ -27340,7 +27340,7 @@
     "adrenalineCost": null,
     "sacrificePercent": null,
     "upkeep": null,
-    "activation": 4,
+    "activation": null,
     "recharge": 8,
     "description": "Bow Attack. This shot moves three times faster, cannot be blocked, and strikes for 10...40 damage but all of your other attack skills are disabled for 8...4 seconds.",
     "acquisition": {
@@ -31405,7 +31405,7 @@
     "adrenalineCost": null,
     "sacrificePercent": null,
     "upkeep": null,
-    "activation": 1,
+    "activation": null,
     "recharge": 20,
     "description": "Enchantment Spell. For 5...30 seconds, your dagger attacks cause Bleeding for 5...15 seconds.",
     "acquisition": {
@@ -41763,7 +41763,7 @@
     "upkeep": null,
     "activation": null,
     "recharge": 24,
-    "description": "Flash Enchantment Spell. For 20 second[s], you have a 40% chance to block and an extra 10% for each additional enchantment (max 80%). All nearby foes are struck for 10...40 earth damage each time a Dervish enchantment is removed from you.",
+    "description": "Flash Enchantment Spell. For 20 second[s], you have a 40% chance to block and an extra 4...10 for each additional enchantment (max 80%). All nearby foes are struck for 10...40 earth damage each time a Dervish enchantment is removed from you.",
     "acquisition": {
       "trainers": [
         "Baram",
@@ -45492,8 +45492,8 @@
     "sacrificePercent": null,
     "upkeep": null,
     "activation": 1,
-    "recharge": 15,
-    "description": "Elite Skill. For 1...31 seconds, this skill becomes the Elite of target foe. Elite skills you cast use your Fast Casting attribute instead of their normal attributes.",
+    "recharge": 10,
+    "description": "Elite Skill. For 6...40 seconds, this skill becomes the Elite of target foe. Elite skills you cast use your Fast Casting attribute instead of their normal attributes.",
     "acquisition": {
       "trainers": [],
       "quests": [],
