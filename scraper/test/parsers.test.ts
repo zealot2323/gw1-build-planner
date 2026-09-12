@@ -286,3 +286,14 @@ describe("parseSkillHistory", () => {
     expect(entity[0].description).toContain("take double");
   });
 });
+
+describe("isExcludedSkillPage", () => {
+  it("excludes spirit attacks wherever the (attack) disambiguator sits", async () => {
+    const { isExcludedSkillPage } = await import("../src/overrides.js");
+    expect(isExcludedSkillPage("Bloodsong (attack)")).toBe(true);
+    expect(isExcludedSkillPage("Pain (attack) (Signet of Spirits)")).toBe(true);
+    // ...without catching real skills that merely contain the word
+    expect(isExcludedSkillPage("Pain")).toBe(false);
+    expect(isExcludedSkillPage("Attacker's Insight")).toBe(false);
+  });
+});

@@ -1,15 +1,14 @@
 # Validation report
 
-Generated 2026-09-12T16:32:35.996Z by `npm run parse` (cache-only).
+Generated 2026-09-12T18:26:41.206Z by `npm run parse` (cache-only).
 
-## skills (21 issues on 21 pages)
+## skills (20 issues on 20 pages)
 
 - **Asura rank**: no in-game skill id — not a real skill, dropped
 - **Asura summon**: no in-game skill id — not a real skill, dropped
 - **Deldrimor rank**: no in-game skill id — not a real skill, dropped
 - **Heart of the Norn**: no in-game skill id — not a real skill, dropped
 - **Norn rank**: no in-game skill id — not a real skill, dropped
-- **Pain (attack) (Signet of Spirits)**: no Acquisition section
 - **Raven Flight**: no in-game skill id — not a real skill, dropped
 - **Raven Shriek**: no in-game skill id — not a real skill, dropped
 - **Raven Swoop**: no in-game skill id — not a real skill, dropped

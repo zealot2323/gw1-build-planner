@@ -70,7 +70,11 @@ export const TRAINER_EXTRA_SKILLS: Record<string, string[]> = {
  */
 export const isExcludedSkillPage = (title: string): boolean =>
   / \(monster skill\)$/.test(title) ||
-  / \(attack\)$/.test(title) || // spirit attacks, e.g. "Bloodsong (attack)"
+  // Spirit attacks, e.g. "Bloodsong (attack)". Not always the last
+  // disambiguator: "Pain (attack) (Signet of Spirits)" has a second one, and
+  // with no profession it leaked in as a common skill named "Pain" that
+  // every build could slot.
+  / \(attack\)( |$)/.test(title) ||
   title.includes("/");
 
 /**

@@ -29661,27 +29661,6 @@
     }
   },
   {
-    "name": "Pain",
-    "wikiPage": "Pain (attack) (Signet of Spirits)",
-    "gwSkillId": 3153,
-    "profession": null,
-    "attribute": "Channeling Magic",
-    "isElite": false,
-    "campaign": "Factions",
-    "energyCost": null,
-    "adrenalineCost": null,
-    "sacrificePercent": null,
-    "upkeep": null,
-    "activation": 2,
-    "recharge": 0,
-    "description": "Ranged Attack. If this attack hits, it deals 5...20 damage.",
-    "acquisition": {
-      "trainers": [],
-      "quests": [],
-      "captureBosses": []
-    }
-  },
-  {
     "name": "Painful Bond",
     "wikiPage": "Painful Bond",
     "gwSkillId": 1237,

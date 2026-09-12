@@ -495,3 +495,31 @@ describe("full dataset: Kurzick/Luxon allegiance skills", () => {
     }
   });
 });
+
+describe("full dataset: no unlearnable skills leak in as common", () => {
+  it("never gives a profession-less skill a profession's attribute", () => {
+    // A skill with no profession is treated as common and offered to every
+    // build. If it carries an attribute that belongs to a profession, it is
+    // almost certainly a summoned creature's attack or a monster skill that
+    // slipped past the page exclusions — "Pain (attack) (Signet of Spirits)"
+    // did, and showed up for a Necromancer/Elementalist as Ritualist "Pain".
+    const owner = new Map<string, string>();
+    for (const s of index.dataset.skills) {
+      if (s.profession && s.attribute) owner.set(s.attribute, s.profession);
+    }
+    const leaked = index.dataset.skills
+      .filter((s) => !s.profession && s.attribute && owner.has(s.attribute))
+      .map((s) => `${s.wikiPage} (${s.attribute})`);
+    expect(leaked).toEqual([]);
+  });
+
+  it("offers a Necromancer/Elementalist no skill named Pain", () => {
+    const character: Character = {
+      name: "Nec", primaryProfession: Profession.Necromancer,
+      unlockedSecondaries: [Profession.Elementalist], knownSkills: [],
+      unlockedLocations: [], completedMissions: [],
+    };
+    const names = skillAvailability(character, Profession.Elementalist, index).map((e) => e.skill.name);
+    expect(names).not.toContain("Pain");
+  });
+});
