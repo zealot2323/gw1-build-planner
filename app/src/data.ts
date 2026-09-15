@@ -16,6 +16,7 @@ import locations from "@data/locations.json";
 import trainers from "@data/trainers.json";
 import monsters from "@data/monsters.json";
 import missions from "@data/missions.json";
+import quests from "@data/quests.json";
 import skillChanges from "@data/skill-changes.json";
 
 export const index = indexDataset({
@@ -24,6 +25,7 @@ export const index = indexDataset({
   trainers,
   monsters,
   missions,
+  quests,
 } as unknown as Dataset);
 
 export const dataset = index.dataset;

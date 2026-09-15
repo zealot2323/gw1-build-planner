@@ -2,7 +2,7 @@
  * Dataset container + lookup indexes. Pure data structures — the engine does
  * no I/O; callers load the /data JSON however they like and pass it in.
  */
-import type { Location, LocationRef, Mission, Monster, Skill, Trainer } from "./types.js";
+import type { Location, LocationRef, Mission, Monster, Quest, Skill, Trainer } from "./types.js";
 
 export interface Dataset {
   skills: Skill[];
@@ -10,6 +10,7 @@ export interface Dataset {
   trainers: Trainer[];
   monsters: Monster[];
   missions?: Mission[];
+  quests?: Quest[];
 }
 
 export interface DataIndex {
@@ -19,6 +20,7 @@ export interface DataIndex {
   trainerByName: Map<string, Trainer>;
   monsterByPage: Map<string, Monster>;
   missionByName: Map<string, Mission>;
+  questByPage: Map<string, Quest>;
 }
 
 export function indexDataset(dataset: Dataset): DataIndex {
@@ -29,6 +31,7 @@ export function indexDataset(dataset: Dataset): DataIndex {
     trainerByName: new Map(dataset.trainers.map((t) => [t.name, t])),
     monsterByPage: new Map(dataset.monsters.map((m) => [m.wikiPage, m])),
     missionByName: new Map((dataset.missions ?? []).map((m) => [m.wikiPage, m])),
+    questByPage: new Map((dataset.quests ?? []).map((q) => [q.wikiPage, q])),
   };
 }
 

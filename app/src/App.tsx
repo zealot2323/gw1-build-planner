@@ -5,8 +5,9 @@ import { DataProvider } from "./DataContext";
 import { CharactersView } from "./views/Characters";
 import { SkillsView, initialSkillViewState, type SkillViewState } from "./views/Skills";
 import { ZonesView, initialZoneState, type ZoneViewState } from "./views/Zones";
+import { QuestsView, initialQuestViewState, type QuestViewState } from "./views/Quests";
 
-type Tab = "characters" | "skills" | "zones";
+type Tab = "characters" | "skills" | "quests" | "zones";
 
 export function App() {
   const { save, addCharacter, updateCharacter, removeCharacter, importFile, exportFile } = useSave();
@@ -29,6 +30,9 @@ export function App() {
   const patchZoneState = (patch: Partial<ZoneViewState>) =>
     setZoneState((s) => ({ ...s, ...patch }));
   const [skillView, setSkillView] = useState<SkillViewState>(initialSkillViewState);
+  const [questView, setQuestView] = useState<QuestViewState>(initialQuestViewState);
+  const patchQuestView = (patch: Partial<QuestViewState>) =>
+    setQuestView((s) => ({ ...s, ...patch }));
   const patchSkillView = (patch: Partial<SkillViewState>) =>
     setSkillView((s) => ({ ...s, ...patch }));
 
@@ -74,7 +78,7 @@ export function App() {
       <header>
         <h1>GW1 Build Planner</h1>
         <nav>
-          {(["characters", "skills", "zones"] as Tab[]).map((t) => (
+          {(["characters", "skills", "quests", "zones"] as Tab[]).map((t) => (
             <button key={t} className={tab === t ? "tab active" : "tab"} onClick={() => setTab(t)}>
               {t}
             </button>
@@ -118,6 +122,9 @@ export function App() {
           view={skillView}
           setView={patchSkillView}
         />
+      )}
+      {tab === "quests" && (
+        <QuestsView character={character} view={questView} setView={patchQuestView} />
       )}
       {tab === "zones" && (
         <ZonesView

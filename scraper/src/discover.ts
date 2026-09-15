@@ -20,6 +20,7 @@
  *   extracted from the fetched Prophecies explorable and mission pages.
  */
 import { mkdir, writeFile } from "node:fs/promises";
+import { fetchQuests, questTitlesFromSkills, resolveQuestSources } from "./quests.js";
 import { fileURLToPath } from "node:url";
 import { fetchWikitext, listCategoryMembers } from "./client.js";
 import { CAMPAIGNS, type CampaignConfig } from "./campaigns.js";
@@ -429,10 +430,18 @@ for (const campaign of campaigns) {
   failures.push(...(await fetchAll(`${campaign.name} monster`, monsters)));
 }
 
+// Quests are named on the skill pages just fetched — follow those links.
+const quests = await questTitlesFromSkills([...allSkills]);
+console.log(`\n== quests: ${quests.length} named on skill pages ==`);
+failures.push(...(await fetchQuests(quests)));
+const questSources = await resolveQuestSources(quests);
+
 const manifest = {
   generated: new Date().toISOString(),
   campaigns: campaigns.map((c) => c.name),
   byCampaign,
+  quests,
+  questSources,
 };
 
 await mkdir(DATA_DIR, { recursive: true });

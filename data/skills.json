@@ -124,7 +124,7 @@
       "questLocations": {
         "Helping the People of Ascalon": "Old Ascalon",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Helping the People of Ascalon": "Prophecies",
@@ -434,7 +434,7 @@
         "Supplies for the Duke": "Old Ascalon",
         "Talon's Duel": "Sunqua Vale",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Supplies for the Duke": "Prophecies",
@@ -862,7 +862,7 @@
         "The Royal Papers": "Fishermen's Haven",
         "Skill Chaining": "Shing Jea Monastery",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "captureLocations": {
         "Bakkir the Forsaken": "Gates of Kryta",
@@ -1378,7 +1378,8 @@
         "The Elementalist Experiment",
         "Mantid Hatchlings",
         "Locate Ronsu",
-        "Rally the Recruits (Tutorial)"
+        "Rally the Recruits (Tutorial)",
+        "Take the Shortcut"
       ],
       "captureBosses": [],
       "questLocations": {
@@ -1386,7 +1387,8 @@
         "The Elementalist Experiment": "Wizard's Folly",
         "Mantid Hatchlings": "Monastery Overlook",
         "Locate Ronsu": "Shing Jea Monastery",
-        "Rally the Recruits (Tutorial)": "Take the Shortcut (Skip Tutorial)"
+        "Rally the Recruits (Tutorial)": "Island of Shehkah",
+        "Take the Shortcut": "Island of Shehkah"
       },
       "sourceCampaigns": {
         "Elementalist Test": "Prophecies",
@@ -1394,6 +1396,7 @@
         "Mantid Hatchlings": "Factions",
         "Locate Ronsu": "Factions",
         "Rally the Recruits (Tutorial)": "Nightfall",
+        "Take the Shortcut": "Nightfall",
         "Halbrik": "Prophecies",
         "Sir Bertran": "Prophecies",
         "Dakk": "Prophecies",
@@ -1642,7 +1645,7 @@
         "Domination Magic (quest)": "Foible's Fair",
         "Cleansing the Shrine": "Kinya Province",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Domination Magic (quest)": "Prophecies",
@@ -1866,7 +1869,8 @@
         "Sowing Seeds",
         "Mantid Hatchlings",
         "Locate Sister Tai",
-        "Rally the Recruits (Tutorial)"
+        "Rally the Recruits (Tutorial)",
+        "Take the Shortcut"
       ],
       "captureBosses": [],
       "questLocations": {
@@ -1874,7 +1878,8 @@
         "Sowing Seeds": "Old Ascalon",
         "Mantid Hatchlings": "Monastery Overlook",
         "Locate Sister Tai": "Shing Jea Monastery",
-        "Rally the Recruits (Tutorial)": "Take the Shortcut (Skip Tutorial)"
+        "Rally the Recruits (Tutorial)": "Island of Shehkah",
+        "Take the Shortcut": "Island of Shehkah"
       },
       "sourceCampaigns": {
         "A Monk's Mission": "Prophecies",
@@ -1882,6 +1887,7 @@
         "Mantid Hatchlings": "Factions",
         "Locate Sister Tai": "Factions",
         "Rally the Recruits (Tutorial)": "Nightfall",
+        "Take the Shortcut": "Nightfall",
         "Halbrik": "Prophecies",
         "Sir Bertran": "Prophecies",
         "Dakk": "Prophecies",
@@ -1924,7 +1930,7 @@
       "questLocations": {
         "Monk Test": "Lakeside County",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Monk Test": "Prophecies",
@@ -3350,7 +3356,7 @@
         "Endangered Species": "Old Ascalon",
         "Locate Sujun": "Shing Jea Monastery",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "The Ranger's Companion": "Prophecies",
@@ -3712,20 +3718,23 @@
         "The Ranger's Companion",
         "Endangered Species",
         "Free the Fur",
-        "Primary Training"
+        "Primary Training",
+        "Secondary Training"
       ],
       "captureBosses": [],
       "questLocations": {
         "The Ranger's Companion": "Regent Valley (pre-Searing)",
         "Endangered Species": "Old Ascalon",
         "Free the Fur": "Sunqua Vale",
-        "Primary Training": "Secondary Training"
+        "Primary Training": "Churrhir Fields",
+        "Secondary Training": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "The Ranger's Companion": "Prophecies",
         "Endangered Species": "Prophecies",
         "Free the Fur": "Factions",
         "Primary Training": "Nightfall",
+        "Secondary Training": "Nightfall",
         "Halbrik": "Prophecies",
         "Sir Bertran": "Prophecies",
         "Dakk": "Prophecies",
@@ -4037,7 +4046,7 @@
         "Mesmerizing the Enemy": "Sardelac Sanitarium",
         "Locate Mei Ling": "Sunqua Vale",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "A Mesmer's Burden": "Prophecies",
@@ -5083,7 +5092,8 @@
         "The Stolen Artifact",
         "Mantid Hatchlings",
         "Locate Reng Ku",
-        "Rally the Recruits (Tutorial)"
+        "Rally the Recruits (Tutorial)",
+        "Take the Shortcut"
       ],
       "captureBosses": [],
       "questLocations": {
@@ -5092,7 +5102,8 @@
         "The Stolen Artifact": "Sardelac Sanitarium",
         "Mantid Hatchlings": "Monastery Overlook",
         "Locate Reng Ku": "Shing Jea Monastery",
-        "Rally the Recruits (Tutorial)": "Take the Shortcut (Skip Tutorial)"
+        "Rally the Recruits (Tutorial)": "Island of Shehkah",
+        "Take the Shortcut": "Island of Shehkah"
       },
       "sourceCampaigns": {
         "Necromancer Test": "Prophecies",
@@ -5101,6 +5112,7 @@
         "Mantid Hatchlings": "Factions",
         "Locate Reng Ku": "Factions",
         "Rally the Recruits (Tutorial)": "Nightfall",
+        "Take the Shortcut": "Nightfall",
         "Halbrik": "Prophecies",
         "Sir Bertran": "Prophecies",
         "Dakk": "Prophecies",
@@ -6519,7 +6531,7 @@
       "captureBosses": [],
       "questLocations": {
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Primary Training": "Nightfall",
@@ -7227,20 +7239,23 @@
         "Mesmer Test",
         "Mantid Hatchlings",
         "Locate Mei Ling",
-        "Rally the Recruits (Tutorial)"
+        "Rally the Recruits (Tutorial)",
+        "Take the Shortcut"
       ],
       "captureBosses": [],
       "questLocations": {
         "Mesmer Test": "Lakeside County",
         "Mantid Hatchlings": "Monastery Overlook",
         "Locate Mei Ling": "Sunqua Vale",
-        "Rally the Recruits (Tutorial)": "Take the Shortcut (Skip Tutorial)"
+        "Rally the Recruits (Tutorial)": "Island of Shehkah",
+        "Take the Shortcut": "Island of Shehkah"
       },
       "sourceCampaigns": {
         "Mesmer Test": "Prophecies",
         "Mantid Hatchlings": "Factions",
         "Locate Mei Ling": "Factions",
         "Rally the Recruits (Tutorial)": "Nightfall",
+        "Take the Shortcut": "Nightfall",
         "Halbrik": "Prophecies",
         "Sir Bertran": "Prophecies",
         "Dakk": "Prophecies",
@@ -7624,7 +7639,7 @@
         "Helping the People of Ascalon": "Old Ascalon",
         "Lo Sha's Gift": "Kinya Province",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Helping the People of Ascalon": "Prophecies",
@@ -7998,16 +8013,18 @@
         "Mesmerizing the Enemy",
         "Mantid Hatchlings",
         "Locate Mei Ling",
-        "Rally the Recruits (Tutorial)"
+        "Rally the Recruits (Tutorial)",
+        "Take the Shortcut"
       ],
       "captureBosses": [],
       "questLocations": {
         "Mesmer Test": "Lakeside County",
-        "A Mesmer's Burden": null,
+        "A Mesmer's Burden": "Lakeside County",
         "Mesmerizing the Enemy": "Sardelac Sanitarium",
         "Mantid Hatchlings": "Monastery Overlook",
         "Locate Mei Ling": "Sunqua Vale",
-        "Rally the Recruits (Tutorial)": "Take the Shortcut (Skip Tutorial)"
+        "Rally the Recruits (Tutorial)": "Island of Shehkah",
+        "Take the Shortcut": "Island of Shehkah"
       },
       "sourceCampaigns": {
         "Mesmer Test": "Prophecies",
@@ -8016,6 +8033,7 @@
         "Mantid Hatchlings": "Factions",
         "Locate Mei Ling": "Factions",
         "Rally the Recruits (Tutorial)": "Nightfall",
+        "Take the Shortcut": "Nightfall",
         "Halbrik": "Prophecies",
         "Sir Bertran": "Prophecies",
         "Dakk": "Prophecies",
@@ -8272,7 +8290,7 @@
       "questLocations": {
         "The Vineyard Problem": "The Barradin Estate",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "The Vineyard Problem": "Prophecies",
@@ -8333,7 +8351,7 @@
         "The Accursed Path": "The Catacombs",
         "Little Creatures": "Sunqua Vale",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "The Accursed Path": "Prophecies",
@@ -8740,7 +8758,7 @@
         "The Elementalist Experiment": "Wizard's Folly",
         "Sparring Elements": "Panjiang Peninsula",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "The Elementalist Experiment": "Prophecies",
@@ -9001,20 +9019,23 @@
         "Elementalist Test",
         "Mantid Hatchlings",
         "Locate Ronsu",
-        "Rally the Recruits (Tutorial)"
+        "Rally the Recruits (Tutorial)",
+        "Take the Shortcut"
       ],
       "captureBosses": [],
       "questLocations": {
         "Elementalist Test": "Lakeside County",
         "Mantid Hatchlings": "Monastery Overlook",
         "Locate Ronsu": "Shing Jea Monastery",
-        "Rally the Recruits (Tutorial)": "Take the Shortcut (Skip Tutorial)"
+        "Rally the Recruits (Tutorial)": "Island of Shehkah",
+        "Take the Shortcut": "Island of Shehkah"
       },
       "sourceCampaigns": {
         "Elementalist Test": "Prophecies",
         "Mantid Hatchlings": "Factions",
         "Locate Ronsu": "Factions",
         "Rally the Recruits (Tutorial)": "Nightfall",
+        "Take the Shortcut": "Nightfall",
         "Halbrik": "Prophecies",
         "Sir Bertran": "Prophecies",
         "Dakk": "Prophecies",
@@ -9577,7 +9598,7 @@
       ],
       "questLocations": {
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "captureLocations": {
         "Pleoh the Ugly": "Bloodstone Fen",
@@ -10538,7 +10559,8 @@
         "Gargoyle Trouble",
         "Mantid Hatchlings",
         "Locate Talon Silverwing",
-        "Rally the Recruits (Tutorial)"
+        "Rally the Recruits (Tutorial)",
+        "Take the Shortcut"
       ],
       "captureBosses": [],
       "questLocations": {
@@ -10547,7 +10569,8 @@
         "Gargoyle Trouble": "Old Ascalon",
         "Mantid Hatchlings": "Monastery Overlook",
         "Locate Talon Silverwing": "Shing Jea Monastery",
-        "Rally the Recruits (Tutorial)": "Take the Shortcut (Skip Tutorial)"
+        "Rally the Recruits (Tutorial)": "Island of Shehkah",
+        "Take the Shortcut": "Island of Shehkah"
       },
       "sourceCampaigns": {
         "Warrior Test": "Prophecies",
@@ -10556,6 +10579,7 @@
         "Mantid Hatchlings": "Factions",
         "Locate Talon Silverwing": "Factions",
         "Rally the Recruits (Tutorial)": "Nightfall",
+        "Take the Shortcut": "Nightfall",
         "Halbrik": "Prophecies",
         "Sir Bertran": "Prophecies",
         "Dakk": "Prophecies",
@@ -10633,7 +10657,7 @@
         "The Misplaced Sword": "Heroes' Audience",
         "Stale Mate": "Sunqua Vale",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "The Misplaced Sword": "Prophecies",
@@ -11085,7 +11109,7 @@
       "questLocations": {
         "The Deserters": "Beacon's Perch",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "The Deserters": "Prophecies",
@@ -11452,7 +11476,7 @@
         "Mesmerizing the Enemy": "Sardelac Sanitarium",
         "Skill Chaining": "Shing Jea Monastery",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "A Mesmer's Burden": "Prophecies",
@@ -12213,7 +12237,7 @@
       "questLocations": {
         "Skill Chaining": "Shing Jea Monastery",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Skill Chaining": "Factions",
@@ -12526,7 +12550,7 @@
         "The Stolen Artifact": "Sardelac Sanitarium",
         "Locate Reng Ku": "Shing Jea Monastery",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "The Necromancer's Novice": "Prophecies",
@@ -12853,7 +12877,7 @@
       "questLocations": {
         "Hungry Devourer": "Beacon's Perch",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Hungry Devourer": "Prophecies",
@@ -14198,7 +14222,7 @@
         "The Hot Springs Murders": "Nebo Terrace",
         "Condition Removal": "Shing Jea Monastery",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "captureLocations": {
         "Jolo Lighthaunch": "Deldrimor Bowl",
@@ -14511,7 +14535,7 @@
         "Army Life": "Piken Square",
         "The Crop Thieves": "Panjiang Peninsula",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Army Life": "Prophecies",
@@ -15249,20 +15273,23 @@
         "A Monk's Mission",
         "Sowing Seeds",
         "Mantid Hatchlings",
-        "Rally the Recruits (Tutorial)"
+        "Rally the Recruits (Tutorial)",
+        "Take the Shortcut"
       ],
       "captureBosses": [],
       "questLocations": {
         "A Monk's Mission": "Ashford Abbey",
         "Sowing Seeds": "Old Ascalon",
         "Mantid Hatchlings": "Monastery Overlook",
-        "Rally the Recruits (Tutorial)": "Take the Shortcut (Skip Tutorial)"
+        "Rally the Recruits (Tutorial)": "Island of Shehkah",
+        "Take the Shortcut": "Island of Shehkah"
       },
       "sourceCampaigns": {
         "A Monk's Mission": "Prophecies",
         "Sowing Seeds": "Prophecies",
         "Mantid Hatchlings": "Factions",
         "Rally the Recruits (Tutorial)": "Nightfall",
+        "Take the Shortcut": "Nightfall",
         "Halbrik": "Prophecies",
         "Sir Bertran": "Prophecies",
         "Dakk": "Prophecies",
@@ -15763,7 +15790,7 @@
         "Hungry Devourer": "Beacon's Perch",
         "Snaring Course": "Shing Jea Monastery",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Hungry Devourer": "Prophecies",
@@ -15905,7 +15932,7 @@
         "The Undead Hordes": "Beetletun",
         "Condition Removal": "Shing Jea Monastery",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "captureLocations": {
         "Riine Windrot": "Traveler's Vale",
@@ -16060,20 +16087,23 @@
         "Military Matters",
         "Mantid Hatchlings",
         "Locate Talon Silverwing",
-        "Rally the Recruits (Tutorial)"
+        "Rally the Recruits (Tutorial)",
+        "Take the Shortcut"
       ],
       "captureBosses": [],
       "questLocations": {
         "Military Matters": "Old Ascalon",
         "Mantid Hatchlings": "Monastery Overlook",
         "Locate Talon Silverwing": "Shing Jea Monastery",
-        "Rally the Recruits (Tutorial)": "Take the Shortcut (Skip Tutorial)"
+        "Rally the Recruits (Tutorial)": "Island of Shehkah",
+        "Take the Shortcut": "Island of Shehkah"
       },
       "sourceCampaigns": {
         "Military Matters": "Prophecies",
         "Mantid Hatchlings": "Factions",
         "Locate Talon Silverwing": "Factions",
         "Rally the Recruits (Tutorial)": "Nightfall",
+        "Take the Shortcut": "Nightfall",
         "Captain Osric": "Prophecies",
         "Dakk": "Prophecies",
         "Michiko": "Factions",
@@ -16273,6 +16303,7 @@
         "Mantid Hatchlings",
         "Locate Sujun",
         "Rally the Recruits (Tutorial)",
+        "Take the Shortcut",
         "Secondary Training"
       ],
       "captureBosses": [],
@@ -16280,7 +16311,8 @@
         "Ranger Test": "Lakeside County",
         "Mantid Hatchlings": "Monastery Overlook",
         "Locate Sujun": "Shing Jea Monastery",
-        "Rally the Recruits (Tutorial)": "Take the Shortcut (Skip Tutorial)",
+        "Rally the Recruits (Tutorial)": "Island of Shehkah",
+        "Take the Shortcut": "Island of Shehkah",
         "Secondary Training": "Churrhir Fields"
       },
       "sourceCampaigns": {
@@ -16288,6 +16320,7 @@
         "Mantid Hatchlings": "Factions",
         "Locate Sujun": "Factions",
         "Rally the Recruits (Tutorial)": "Nightfall",
+        "Take the Shortcut": "Nightfall",
         "Secondary Training": "Nightfall",
         "Halbrik": "Prophecies",
         "Sir Bertran": "Prophecies",
@@ -17207,7 +17240,7 @@
         "Helping the Dwarves": "Yak's Bend",
         "Defense Against Hexes": "Shing Jea Monastery",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Helping the Dwarves": "Prophecies",
@@ -17421,7 +17454,7 @@
         "In Memory of Paulus": "Old Ascalon",
         "Seeking a Cure": "Kinya Province",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "In Memory of Paulus": "Prophecies",
@@ -17455,18 +17488,21 @@
       "quests": [
         "Adventure with an Ally",
         "Mantid Hatchlings",
-        "Rally the Recruits"
+        "Rally the Recruits (Tutorial)",
+        "Take the Shortcut"
       ],
       "captureBosses": [],
       "questLocations": {
         "Adventure with an Ally": "Lakeside County",
         "Mantid Hatchlings": "Monastery Overlook",
-        "Rally the Recruits": "Take the Shortcut"
+        "Take the Shortcut": "Island of Shehkah",
+        "Rally the Recruits (Tutorial)": "Island of Shehkah"
       },
       "sourceCampaigns": {
         "Adventure with an Ally": "Prophecies",
         "Mantid Hatchlings": "Factions",
         "Rally the Recruits": "Nightfall",
+        "Take the Shortcut": "Nightfall",
         "Sir Bertran": "Prophecies",
         "Dakk": "Prophecies",
         "Zhao Di": "Factions",
@@ -17576,7 +17612,7 @@
         "Protection Prayers (quest)": "Green Hills County",
         "Stale Mate": "Sunqua Vale",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Protection Prayers (quest)": "Prophecies",
@@ -18449,7 +18485,7 @@
         "Mantid Hatchlings": "Monastery Overlook",
         "Locate Talon Silverwing": "Shing Jea Monastery",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Grawl Invasion": "Prophecies",
@@ -18827,7 +18863,7 @@
         "Cleansing the Shrine": "Kinya Province",
         "Defense Against Hexes": "Shing Jea Monastery",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "captureLocations": {
         "Varny the Zealot": "Tunnels of the Forsaken"
@@ -20303,18 +20339,21 @@
       "quests": [
         "Military Matters",
         "Snaring Course",
-        "Primary Training"
+        "Primary Training",
+        "Secondary Training"
       ],
       "captureBosses": [],
       "questLocations": {
         "Military Matters": "Old Ascalon",
         "Snaring Course": "Shing Jea Monastery",
-        "Primary Training": "Secondary Training"
+        "Primary Training": "Churrhir Fields",
+        "Secondary Training": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Military Matters": "Prophecies",
         "Snaring Course": "Factions",
         "Primary Training": "Nightfall",
+        "Secondary Training": "Nightfall",
         "Captain Osric": "Prophecies",
         "Dakk": "Prophecies",
         "Michiko": "Factions",
@@ -20451,7 +20490,7 @@
         "Mysterious Message (Prophecies quest)": "Druid's Overlook",
         "Sparring Elements": "Panjiang Peninsula",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "captureLocations": {
         "Ulrik the Undefeated": "Traveler's Vale",
@@ -20691,7 +20730,7 @@
         "The Deserters": "Beacon's Perch",
         "Disenchantment Course": "Shing Jea Monastery",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "The Deserters": "Prophecies",
@@ -21409,7 +21448,8 @@
         "Endangered Species",
         "Mantid Hatchlings",
         "Locate Sujun",
-        "Rally the Recruits (Tutorial)"
+        "Rally the Recruits (Tutorial)",
+        "Take the Shortcut"
       ],
       "captureBosses": [],
       "questLocations": {
@@ -21418,7 +21458,8 @@
         "Endangered Species": "Old Ascalon",
         "Mantid Hatchlings": "Monastery Overlook",
         "Locate Sujun": "Shing Jea Monastery",
-        "Rally the Recruits (Tutorial)": "Take the Shortcut (Skip Tutorial)"
+        "Rally the Recruits (Tutorial)": "Island of Shehkah",
+        "Take the Shortcut": "Island of Shehkah"
       },
       "sourceCampaigns": {
         "Ranger Test": "Prophecies",
@@ -21427,6 +21468,7 @@
         "Mantid Hatchlings": "Factions",
         "Locate Sujun": "Factions",
         "Rally the Recruits (Tutorial)": "Nightfall",
+        "Take the Shortcut": "Nightfall",
         "Halbrik": "Prophecies",
         "Sir Bertran": "Prophecies",
         "Dakk": "Prophecies",
@@ -21559,20 +21601,23 @@
         "Necromancer Test",
         "Mantid Hatchlings",
         "Locate Reng Ku",
-        "Rally the Recruits (Tutorial)"
+        "Rally the Recruits (Tutorial)",
+        "Take the Shortcut"
       ],
       "captureBosses": [],
       "questLocations": {
         "Necromancer Test": "Lakeside County",
         "Mantid Hatchlings": "Monastery Overlook",
         "Locate Reng Ku": "Shing Jea Monastery",
-        "Rally the Recruits (Tutorial)": "Take the Shortcut (Skip Tutorial)"
+        "Rally the Recruits (Tutorial)": "Island of Shehkah",
+        "Take the Shortcut": "Island of Shehkah"
       },
       "sourceCampaigns": {
         "Necromancer Test": "Prophecies",
         "Mantid Hatchlings": "Factions",
         "Locate Reng Ku": "Factions",
         "Rally the Recruits (Tutorial)": "Nightfall",
+        "Take the Shortcut": "Nightfall",
         "Halbrik": "Prophecies",
         "Sir Bertran": "Prophecies",
         "Dakk": "Prophecies",
@@ -22197,7 +22242,7 @@
       "questLocations": {
         "Advanced Defense Techniques": "Shing Jea Monastery",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Advanced Defense Techniques": "Factions",
@@ -22681,7 +22726,7 @@
       "questLocations": {
         "Renegade Necromancer": "Yak's Bend",
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Renegade Necromancer": "Prophecies",
@@ -36185,7 +36230,7 @@
       "captureBosses": [],
       "questLocations": {
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Primary Training": "Nightfall",
@@ -37006,7 +37051,7 @@
       "captureBosses": [],
       "questLocations": {
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Primary Training": "Nightfall",
@@ -37419,7 +37464,7 @@
       "captureBosses": [],
       "questLocations": {
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Primary Training": "Nightfall",
@@ -37763,7 +37808,7 @@
       "captureBosses": [],
       "questLocations": {
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Primary Training": "Nightfall",
@@ -39950,7 +39995,7 @@
       "captureBosses": [],
       "questLocations": {
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Primary Training": "Nightfall",
@@ -40321,7 +40366,7 @@
       "captureBosses": [],
       "questLocations": {
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Primary Training": "Nightfall",
@@ -40555,7 +40600,7 @@
       "captureBosses": [],
       "questLocations": {
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Tohn": "Nightfall"
@@ -40860,14 +40905,17 @@
         "Tohn"
       ],
       "quests": [
-        "Rally the Recruits (Tutorial)"
+        "Rally the Recruits (Tutorial)",
+        "Take the Shortcut"
       ],
       "captureBosses": [],
       "questLocations": {
-        "Rally the Recruits (Tutorial)": "Take the Shortcut (Skip Tutorial)"
+        "Rally the Recruits (Tutorial)": "Island of Shehkah",
+        "Take the Shortcut": "Island of Shehkah"
       },
       "sourceCampaigns": {
         "Rally the Recruits (Tutorial)": "Nightfall",
+        "Take the Shortcut": "Nightfall",
         "Tohn": "Nightfall"
       }
     }
@@ -41572,7 +41620,7 @@
       "captureBosses": [],
       "questLocations": {
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Primary Training": "Nightfall",
@@ -42571,14 +42619,17 @@
         "Tohn"
       ],
       "quests": [
-        "Rally the Recruits (Tutorial)"
+        "Rally the Recruits (Tutorial)",
+        "Take the Shortcut"
       ],
       "captureBosses": [],
       "questLocations": {
-        "Rally the Recruits (Tutorial)": "Take the Shortcut (Skip Tutorial)"
+        "Rally the Recruits (Tutorial)": "Island of Shehkah",
+        "Take the Shortcut": "Island of Shehkah"
       },
       "sourceCampaigns": {
         "Rally the Recruits (Tutorial)": "Nightfall",
+        "Take the Shortcut": "Nightfall",
         "Tohn": "Nightfall"
       }
     }
@@ -44025,7 +44076,7 @@
       "captureBosses": [],
       "questLocations": {
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       }
     }
   },
@@ -44445,7 +44496,7 @@
       "captureBosses": [],
       "questLocations": {
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "sourceCampaigns": {
         "Primary Training": "Nightfall",
@@ -44864,14 +44915,17 @@
         "Tohn"
       ],
       "quests": [
-        "Rally the Recruits (Tutorial)"
+        "Rally the Recruits (Tutorial)",
+        "Take the Shortcut"
       ],
       "captureBosses": [],
       "questLocations": {
-        "Rally the Recruits (Tutorial)": "Take the Shortcut (Skip Tutorial)"
+        "Rally the Recruits (Tutorial)": "Island of Shehkah",
+        "Take the Shortcut": "Island of Shehkah"
       },
       "sourceCampaigns": {
         "Rally the Recruits (Tutorial)": "Nightfall",
+        "Take the Shortcut": "Nightfall",
         "Tohn": "Nightfall"
       }
     }
@@ -46007,14 +46061,17 @@
         "Tohn"
       ],
       "quests": [
-        "Rally the Recruits (Tutorial)"
+        "Rally the Recruits (Tutorial)",
+        "Take the Shortcut"
       ],
       "captureBosses": [],
       "questLocations": {
-        "Rally the Recruits (Tutorial)": "Take the Shortcut (Skip Tutorial)"
+        "Rally the Recruits (Tutorial)": "Island of Shehkah",
+        "Take the Shortcut": "Island of Shehkah"
       },
       "sourceCampaigns": {
         "Rally the Recruits (Tutorial)": "Nightfall",
+        "Take the Shortcut": "Nightfall",
         "Tohn": "Nightfall"
       }
     }
@@ -46621,7 +46678,7 @@
       "captureBosses": [],
       "questLocations": {
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       }
     }
   },
@@ -46770,7 +46827,7 @@
       ],
       "questLocations": {
         "Primary Training": "Churrhir Fields",
-        "Choose Your Secondary Profession (Nightfall quest)": null
+        "Choose Your Secondary Profession (Nightfall quest)": "Churrhir Fields"
       },
       "captureLocations": {
         "Jadam Spearspinner": "Warband of Brothers",

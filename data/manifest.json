@@ -4907,5 +4907,666 @@
         "Zombie Necromancer"
       ]
     }
+  },
+  "quests": [
+    "A Belated Betrothal",
+    "A Cure for Ralena",
+    "A Heart of Ice",
+    "A Hunter's Pride",
+    "A Mesmer's Burden",
+    "A Monk's Mission",
+    "A Test of Marksmanship",
+    "Advanced Defense Techniques",
+    "Adventure with an Ally",
+    "Army Life",
+    "Attack on Jalis's Camp",
+    "Be Very, Very Quiet...",
+    "Bear Club for Men",
+    "Bear Club for Women",
+    "Blood And Smoke",
+    "Capturing the Signet of Capture",
+    "Caravan in Trouble",
+    "Casualty Report",
+    "Charr Invaders",
+    "Charr Reinforcements",
+    "Choose Your Secondary Profession (Nightfall quest)",
+    "Cleansing the Shrine",
+    "Cold as Ice",
+    "Condition Removal",
+    "Death in the Ruins",
+    "Deeprunner's Map",
+    "Defense Against Hexes",
+    "Destructive Research",
+    "Disenchantment Course",
+    "Disruption",
+    "Domination Magic (quest)",
+    "Dropping Eaves",
+    "Dual Strike",
+    "Elemental Knowledge",
+    "Elementalist Test",
+    "Endangered Species",
+    "Experimental Elixir",
+    "Eye For Profit",
+    "Fallen Soldiers",
+    "Falling Out",
+    "Final Round: Fight!",
+    "Forbidden Fruit",
+    "Forgotten Relics",
+    "Free the Fur",
+    "Gargoyle Trouble",
+    "Ghostly Vengeance",
+    "Graven Images",
+    "Grawl Invasion",
+    "Helping the Dwarves",
+    "Helping the People of Ascalon",
+    "Hungry Devourer",
+    "In Memory of Paulus",
+    "In the Service of Revenge",
+    "Into the Breach",
+    "Into the Unknown",
+    "Krak's Cavalry",
+    "Leader of the Pack",
+    "Little Creatures",
+    "Lo Sha's Gift",
+    "Locate Jinzo",
+    "Locate Mei Ling",
+    "Locate Professor Gai",
+    "Locate Reng Ku",
+    "Locate Ronsu",
+    "Locate Sister Tai",
+    "Locate Sujun",
+    "Locate Talon Silverwing",
+    "Malaquire's Test",
+    "Mano a Norn-o",
+    "Mantid Hatchlings",
+    "Mesmer Test",
+    "Mesmerizing the Enemy",
+    "Military Matters",
+    "Minions Gone Wild",
+    "Minister's Test",
+    "Monk Test",
+    "Mysterious Message (Prophecies quest)",
+    "Necromancer Test",
+    "O Brave New World",
+    "Oberan's Rage",
+    "Opening Strike",
+    "Plan A",
+    "Polymock: Defeat Dune Teardrinker",
+    "Polymock: Defeat Grulhammer Silverfist",
+    "Polymock: Defeat Master Hoff",
+    "Polymock: Defeat Necromancer Volumandus",
+    "Prenuptial Disagreement",
+    "Primary Training",
+    "Protecting Ascalon",
+    "Protection Prayers (quest)",
+    "Punch the Clown",
+    "Rally the Recruits",
+    "Rally the Recruits (Tutorial)",
+    "Ranger Test",
+    "Reaping the Naga",
+    "Renegade Necromancer",
+    "Replacement Healers",
+    "Scorched Earth (Prophecies quest)",
+    "Secondary Training",
+    "Securing the Vale",
+    "Seeking a Cure",
+    "Service: In Defense of the Eye",
+    "Service: Practice, Dummy",
+    "Shackled Spirits",
+    "Shadows in the Night",
+    "Shalev's Task",
+    "Single Ugly Grawl Seeks Same for Mindless Destruction in Ascalon",
+    "Skill Chaining",
+    "Snaring Course",
+    "Sowing Seeds",
+    "Spark of Interest",
+    "Sparring Elements",
+    "Spoiler-related Cipher",
+    "Stale Mate",
+    "Stone Summit Beastmasters",
+    "Supplies for the Duke",
+    "Take the Shortcut",
+    "Talon's Duel",
+    "The Accursed Path",
+    "The Ascalon Settlement",
+    "The Big Unfriendly Jotun",
+    "The Blessings of Balthazar",
+    "The Charr Patrol",
+    "The Charr Staging Area",
+    "The Cipher of Balthazar",
+    "The Cipher of Dwayna",
+    "The Cipher of Grenth",
+    "The Cipher of Lyssa",
+    "The Cipher of Melandru",
+    "The Crop Thieves",
+    "The Deserters",
+    "The Destroyer Challenge",
+    "The Elementalist Experiment",
+    "The False Gods",
+    "The Forgotten Ones",
+    "The Geomancer's Test",
+    "The Great Norn Alemoot",
+    "The Hot Springs Murders",
+    "The Hunting of the Charr",
+    "The Last Hog",
+    "The Lost Princess",
+    "The Misplaced Sword",
+    "The Necromancer's Novice",
+    "The Path to Revelations",
+    "The Power of Blood",
+    "The Price of Steel",
+    "The Ranger's Companion",
+    "The Royal Papers",
+    "The Smell of Titan in the Morning",
+    "The Stolen Artifact",
+    "The Stone Summit Champion",
+    "The Supremacy of Air",
+    "The Throwdown in a Norn Town",
+    "The Undead Hordes",
+    "The Vineyard Problem",
+    "The Wayward Monk",
+    "The Yeti Hunt",
+    "Truthseeker",
+    "Trying Times",
+    "Unnatural Creatures",
+    "Unnatural Growths",
+    "Warrior Test",
+    "Warrior's Challenge",
+    "Worthy Deeds (Done Dirt Cheap)"
+  ],
+  "questSources": {
+    "A Belated Betrothal": [
+      "A Belated Betrothal"
+    ],
+    "A Cure for Ralena": [
+      "A Cure for Ralena"
+    ],
+    "A Heart of Ice": [
+      "A Heart of Ice"
+    ],
+    "A Hunter's Pride": [
+      "A Hunter's Pride"
+    ],
+    "A Mesmer's Burden": [
+      "A Mesmer's Burden"
+    ],
+    "A Monk's Mission": [
+      "A Monk's Mission"
+    ],
+    "A Test of Marksmanship": [
+      "A Test of Marksmanship"
+    ],
+    "Advanced Defense Techniques": [
+      "Advanced Defense Techniques"
+    ],
+    "Adventure with an Ally": [
+      "Adventure with an Ally"
+    ],
+    "Army Life": [
+      "Army Life"
+    ],
+    "Attack on Jalis's Camp": [
+      "Attack on Jalis's Camp"
+    ],
+    "Be Very, Very Quiet...": [
+      "Be Very, Very Quiet..."
+    ],
+    "Bear Club for Men": [
+      "Bear Club for Men"
+    ],
+    "Bear Club for Women": [
+      "Bear Club for Women"
+    ],
+    "Blood And Smoke": [
+      "Blood And Smoke"
+    ],
+    "Capturing the Signet of Capture": [
+      "Capturing the Signet of Capture"
+    ],
+    "Caravan in Trouble": [
+      "Caravan in Trouble"
+    ],
+    "Casualty Report": [
+      "Casualty Report"
+    ],
+    "Charr Invaders": [
+      "Charr Invaders"
+    ],
+    "Charr Reinforcements": [
+      "Charr Reinforcements"
+    ],
+    "Choose Your Secondary Profession (Nightfall quest)": [
+      "Choose Your Secondary Profession (Nightfall quest)"
+    ],
+    "Cleansing the Shrine": [
+      "Cleansing the Shrine"
+    ],
+    "Cold as Ice": [
+      "Cold as Ice"
+    ],
+    "Condition Removal": [
+      "Condition Removal"
+    ],
+    "Death in the Ruins": [
+      "Death in the Ruins"
+    ],
+    "Deeprunner's Map": [
+      "Deeprunner's Map"
+    ],
+    "Defense Against Hexes": [
+      "Defense Against Hexes"
+    ],
+    "Destructive Research": [
+      "Destructive Research"
+    ],
+    "Disenchantment Course": [
+      "Disenchantment Course"
+    ],
+    "Disruption": [
+      "Disruption"
+    ],
+    "Domination Magic (quest)": [
+      "Domination Magic (quest)"
+    ],
+    "Dropping Eaves": [
+      "Dropping Eaves"
+    ],
+    "Dual Strike": [
+      "Dual Strike"
+    ],
+    "Elemental Knowledge": [
+      "Elemental Knowledge"
+    ],
+    "Elementalist Test": [
+      "Elementalist Test"
+    ],
+    "Endangered Species": [
+      "Endangered Species"
+    ],
+    "Experimental Elixir": [
+      "Experimental Elixir"
+    ],
+    "Eye For Profit": [
+      "Eye For Profit"
+    ],
+    "Fallen Soldiers": [
+      "Fallen Soldiers"
+    ],
+    "Falling Out": [
+      "Falling Out"
+    ],
+    "Final Round: Fight!": [
+      "Final Round: Fight!"
+    ],
+    "Forbidden Fruit": [
+      "Forbidden Fruit"
+    ],
+    "Forgotten Relics": [
+      "Forgotten Relics"
+    ],
+    "Free the Fur": [
+      "Free the Fur"
+    ],
+    "Gargoyle Trouble": [
+      "Gargoyle Trouble"
+    ],
+    "Ghostly Vengeance": [
+      "Ghostly Vengeance"
+    ],
+    "Graven Images": [
+      "Graven Images"
+    ],
+    "Grawl Invasion": [
+      "Grawl Invasion"
+    ],
+    "Helping the Dwarves": [
+      "Helping the Dwarves"
+    ],
+    "Helping the People of Ascalon": [
+      "Helping the People of Ascalon"
+    ],
+    "Hungry Devourer": [
+      "Hungry Devourer"
+    ],
+    "In Memory of Paulus": [
+      "In Memory of Paulus"
+    ],
+    "In the Service of Revenge": [
+      "In the Service of Revenge"
+    ],
+    "Into the Breach": [
+      "Into the Breach"
+    ],
+    "Into the Unknown": [
+      "Into the Unknown"
+    ],
+    "Krak's Cavalry": [
+      "Krak's Cavalry"
+    ],
+    "Leader of the Pack": [
+      "Leader of the Pack"
+    ],
+    "Little Creatures": [
+      "Little Creatures"
+    ],
+    "Lo Sha's Gift": [
+      "Lo Sha's Gift"
+    ],
+    "Locate Jinzo": [
+      "Locate Jinzo"
+    ],
+    "Locate Mei Ling": [
+      "Locate Mei Ling"
+    ],
+    "Locate Professor Gai": [
+      "Locate Professor Gai"
+    ],
+    "Locate Reng Ku": [
+      "Locate Reng Ku"
+    ],
+    "Locate Ronsu": [
+      "Locate Ronsu"
+    ],
+    "Locate Sister Tai": [
+      "Locate Sister Tai"
+    ],
+    "Locate Sujun": [
+      "Locate Sujun"
+    ],
+    "Locate Talon Silverwing": [
+      "Locate Talon Silverwing"
+    ],
+    "Malaquire's Test": [
+      "Malaquire's Test"
+    ],
+    "Mano a Norn-o": [
+      "Mano a Norn-o"
+    ],
+    "Mantid Hatchlings": [
+      "Mantid Hatchlings"
+    ],
+    "Mesmer Test": [
+      "Mesmer Test"
+    ],
+    "Mesmerizing the Enemy": [
+      "Mesmerizing the Enemy"
+    ],
+    "Military Matters": [
+      "Military Matters"
+    ],
+    "Minions Gone Wild": [
+      "Minions Gone Wild"
+    ],
+    "Minister's Test": [
+      "Minister's Test"
+    ],
+    "Monk Test": [
+      "Monk Test"
+    ],
+    "Mysterious Message (Prophecies quest)": [
+      "Mysterious Message (Prophecies quest)"
+    ],
+    "Necromancer Test": [
+      "Necromancer Test"
+    ],
+    "O Brave New World": [
+      "O Brave New World"
+    ],
+    "Oberan's Rage": [
+      "Oberan's Rage"
+    ],
+    "Opening Strike": [
+      "Opening Strike"
+    ],
+    "Plan A": [
+      "Plan A"
+    ],
+    "Polymock: Defeat Dune Teardrinker": [
+      "Polymock: Defeat Dune Teardrinker"
+    ],
+    "Polymock: Defeat Grulhammer Silverfist": [
+      "Polymock: Defeat Grulhammer Silverfist"
+    ],
+    "Polymock: Defeat Master Hoff": [
+      "Polymock: Defeat Master Hoff"
+    ],
+    "Polymock: Defeat Necromancer Volumandus": [
+      "Polymock: Defeat Necromancer Volumandus"
+    ],
+    "Prenuptial Disagreement": [
+      "Prenuptial Disagreement (female)",
+      "Prenuptial Disagreement (male)"
+    ],
+    "Primary Training": [
+      "Primary Training"
+    ],
+    "Protecting Ascalon": [
+      "Protecting Ascalon"
+    ],
+    "Protection Prayers (quest)": [
+      "Protection Prayers (quest)"
+    ],
+    "Punch the Clown": [
+      "Punch the Clown"
+    ],
+    "Rally the Recruits": [
+      "Rally the Recruits (Tutorial)"
+    ],
+    "Rally the Recruits (Tutorial)": [
+      "Rally the Recruits (Tutorial)"
+    ],
+    "Ranger Test": [
+      "Ranger Test"
+    ],
+    "Reaping the Naga": [
+      "Reaping the Naga"
+    ],
+    "Renegade Necromancer": [
+      "Renegade Necromancer"
+    ],
+    "Replacement Healers": [
+      "Replacement Healers"
+    ],
+    "Scorched Earth (Prophecies quest)": [
+      "Scorched Earth (Prophecies quest)"
+    ],
+    "Secondary Training": [
+      "Secondary Training"
+    ],
+    "Securing the Vale": [
+      "Securing the Vale"
+    ],
+    "Seeking a Cure": [
+      "Seeking a Cure"
+    ],
+    "Service: In Defense of the Eye": [
+      "Service: In Defense of the Eye"
+    ],
+    "Service: Practice, Dummy": [
+      "Service: Practice, Dummy"
+    ],
+    "Shackled Spirits": [
+      "Shackled Spirits"
+    ],
+    "Shadows in the Night": [
+      "Shadows in the Night"
+    ],
+    "Shalev's Task": [
+      "Shalev's Task"
+    ],
+    "Single Ugly Grawl Seeks Same for Mindless Destruction in Ascalon": [
+      "Single Ugly Grawl Seeks Same for Mindless Destruction in Ascalon"
+    ],
+    "Skill Chaining": [
+      "Skill Chaining"
+    ],
+    "Snaring Course": [
+      "Snaring Course"
+    ],
+    "Sowing Seeds": [
+      "Sowing Seeds"
+    ],
+    "Spark of Interest": [
+      "Spark of Interest"
+    ],
+    "Sparring Elements": [
+      "Sparring Elements"
+    ],
+    "Spoiler-related Cipher": [
+      "The Cipher of Kormir"
+    ],
+    "Stale Mate": [
+      "Stale Mate"
+    ],
+    "Stone Summit Beastmasters": [
+      "Stone Summit Beastmasters"
+    ],
+    "Supplies for the Duke": [
+      "Supplies for the Duke"
+    ],
+    "Take the Shortcut": [
+      "Take the Shortcut (Skip Tutorial)"
+    ],
+    "Talon's Duel": [
+      "Talon's Duel"
+    ],
+    "The Accursed Path": [
+      "The Accursed Path"
+    ],
+    "The Ascalon Settlement": [
+      "The Ascalon Settlement"
+    ],
+    "The Big Unfriendly Jotun": [
+      "The Big Unfriendly Jotun"
+    ],
+    "The Blessings of Balthazar": [
+      "The Blessings of Balthazar"
+    ],
+    "The Charr Patrol": [
+      "The Charr Patrol"
+    ],
+    "The Charr Staging Area": [
+      "The Charr Staging Area"
+    ],
+    "The Cipher of Balthazar": [
+      "The Cipher of Balthazar"
+    ],
+    "The Cipher of Dwayna": [
+      "The Cipher of Dwayna"
+    ],
+    "The Cipher of Grenth": [
+      "The Cipher of Grenth"
+    ],
+    "The Cipher of Lyssa": [
+      "The Cipher of Lyssa"
+    ],
+    "The Cipher of Melandru": [
+      "The Cipher of Melandru"
+    ],
+    "The Crop Thieves": [
+      "The Crop Thieves"
+    ],
+    "The Deserters": [
+      "The Deserters"
+    ],
+    "The Destroyer Challenge": [
+      "The Destroyer Challenge"
+    ],
+    "The Elementalist Experiment": [
+      "The Elementalist Experiment"
+    ],
+    "The False Gods": [
+      "The False Gods"
+    ],
+    "The Forgotten Ones": [
+      "The Forgotten Ones"
+    ],
+    "The Geomancer's Test": [
+      "The Geomancer's Test"
+    ],
+    "The Great Norn Alemoot": [
+      "The Great Norn Alemoot"
+    ],
+    "The Hot Springs Murders": [
+      "The Hot Springs Murders"
+    ],
+    "The Hunting of the Charr": [
+      "The Hunting of the Charr"
+    ],
+    "The Last Hog": [
+      "The Last Hog"
+    ],
+    "The Lost Princess": [
+      "The Lost Princess"
+    ],
+    "The Misplaced Sword": [
+      "The Misplaced Sword"
+    ],
+    "The Necromancer's Novice": [
+      "The Necromancer's Novice"
+    ],
+    "The Path to Revelations": [
+      "The Path to Revelations"
+    ],
+    "The Power of Blood": [
+      "The Power of Blood"
+    ],
+    "The Price of Steel": [
+      "The Price of Steel"
+    ],
+    "The Ranger's Companion": [
+      "The Ranger's Companion"
+    ],
+    "The Royal Papers": [
+      "The Royal Papers"
+    ],
+    "The Smell of Titan in the Morning": [
+      "The Smell of Titan in the Morning"
+    ],
+    "The Stolen Artifact": [
+      "The Stolen Artifact"
+    ],
+    "The Stone Summit Champion": [
+      "The Stone Summit Champion"
+    ],
+    "The Supremacy of Air": [
+      "The Supremacy of Air"
+    ],
+    "The Throwdown in a Norn Town": [
+      "The Throwdown in a Norn Town"
+    ],
+    "The Undead Hordes": [
+      "The Undead Hordes"
+    ],
+    "The Vineyard Problem": [
+      "The Vineyard Problem"
+    ],
+    "The Wayward Monk": [
+      "The Wayward Monk"
+    ],
+    "The Yeti Hunt": [
+      "The Yeti Hunt"
+    ],
+    "Truthseeker": [
+      "Truthseeker"
+    ],
+    "Trying Times": [
+      "Trying Times"
+    ],
+    "Unnatural Creatures": [
+      "Unnatural Creatures"
+    ],
+    "Unnatural Growths": [
+      "Unnatural Growths"
+    ],
+    "Warrior Test": [
+      "Warrior Test"
+    ],
+    "Warrior's Challenge": [
+      "Warrior's Challenge"
+    ],
+    "Worthy Deeds (Done Dirt Cheap)": [
+      "Worthy Deeds (Done Dirt Cheap)"
+    ]
   }
 }

@@ -104,10 +104,31 @@ function parseAcquisition(
     if (!target) return;
     if (campaign) sourceCampaigns[target] = campaign;
     if (group === "quests") {
-      // "(from [[NPC]] in [[Location]])" — Eye of the North names the quest
-      // giver first, so the location is the third link, not the second.
-      const inPlace = line.match(/\bin \[\[([^\]|#]+)/);
-      questLocations[target] = inPlace ? inPlace[1].trim() : (targets[1] ?? null);
+      // Quest lines come in several shapes:
+      //   [[Quest]] ([[Location]])
+      //   [[Quest]] ([[Location]] - [[Ascalon (pre-Searing)|pre-Searing]])
+      //   [[Quest]] (Churrhir Fields)                 — location not linked
+      //   [[Quest A]]/[[Quest B]] ([[Location]])       — two quests, one place
+      //   [[Quest]] (from [[NPC]] in [[Location]])     — EotN names the giver
+      // Everything before the first "(" names quests; the location lives in
+      // the parentheses. Reading "the second link" as the location turned
+      // the second of two slash-joined quests into a place.
+      const paren = line.indexOf("(", line.indexOf("]]"));
+      const head = paren === -1 ? line : line.slice(0, paren);
+      const tail = paren === -1 ? "" : line.slice(paren);
+      const quests = linkTargets(head);
+      const inPlace = tail.match(/\bin \[\[([^\]|#]+)/);
+      const linked = linkTargets(tail)[0];
+      const plain = tail.match(/^\(\s*([^\[\]()]+?)\s*\)/);
+      // plain text can carry the same " - pre-Searing" suffix as the linked form
+      const plainPlace = plain ? plain[1].split(" - ")[0].trim() : null;
+      const location = inPlace ? inPlace[1].trim() : (linked ?? plainPlace);
+      for (const quest of quests.length > 0 ? quests : [target]) {
+        if (campaign) sourceCampaigns[quest] = campaign;
+        questLocations[quest] = location;
+        if (!out.quests.includes(quest)) out.quests.push(quest);
+      }
+      return;
     }
     if (group === "titleNpcs") {
       if (!titleNpcs.includes(target)) titleNpcs.push(target);
@@ -836,9 +857,19 @@ export function parseGameUpdate(title: string, wikitext: string): Parsed<ParsedS
     // drop the "Update - August 26, 2026" wrapper heading from the label
     const label = path.filter((t) => !/^update\b/i.test(t)).join(" › ") || null;
 
+    // A plain top-level bullet can head the sub-bullets beneath it
+    // ("* Sword adrenaline reductions:" / "** {{skill icon|Sever Artery}} from
+    // 4 to 3", or "* Skill AI adjustments:"). Without it the child note is a
+    // meaningless fragment, and an AI tweak gets classified as balance.
+    let parent: string | null = null;
     for (const line of section.body.split("\n")) {
+      if (/^\*[^*]/.test(line) && !CHANGE_BULLET.test(line)) {
+        parent = stripMarkup(line.replace(/^\*+/, "")).replace(/:\s*$/, "").trim() || null;
+        continue;
+      }
       const bullet = line.match(CHANGE_BULLET);
       if (!bullet) continue;
+      const context = /^\*\*/.test(line) ? parent : null;
       const names = [...bullet[1].matchAll(SKILL_ICON)].map((s) => s[1].trim());
       let rest = bullet[2];
 
@@ -849,10 +880,13 @@ export function parseGameUpdate(title: string, wikitext: string): Parsed<ParsedS
         if (/^pvp$/i.test(scope[1].trim())) continue;
         rest = rest.slice(scope[0].length);
       }
-      const note = stripMarkup(rest.replace(NOTE_SEPARATOR, "")).replace(/\s+/g, " ").trim();
+      let note = stripMarkup(rest.replace(NOTE_SEPARATOR, "")).replace(/\s+/g, " ").trim();
+      // "Dust Cloak's range was increased" leaves a dangling "'s"
+      note = note.replace(/^'s\s+/, "");
       if (note === "") continue;
+      if (context && /^(from|to)\b/i.test(note)) note = `${context}: ${note}`;
 
-      let kind = changeKind(label ?? "", note);
+      let kind = changeKind([label ?? "", context ?? ""].join(" › "), note);
       if (editorNotes) {
         if (NEGATION.test(note)) continue; // "recharge is unchanged"
         if (!CHANGE_VERB.test(note)) kind = "note"; // clarification, not a change
@@ -934,4 +968,69 @@ export function parseSkillHistory(title: string, wikitext: string): Parsed<Parse
   // newest first; undated ("Original") sorts last
   out.sort((a, b) => (b.date ?? "").localeCompare(a.date ?? ""));
   return { entity: out, issues };
+}
+
+// ---------------------------------------------------------------------------
+// Quest
+// ---------------------------------------------------------------------------
+
+export interface ParsedQuest {
+  name: string;
+  wikiPage: string;
+  campaign: string | null;
+  region: string | null;
+  /** "Primary", "Secondary", "Mini-mission", ... (template default: Secondary). */
+  type: string;
+  givenBy: string[];
+  /** Where the quest is picked up. Several when the wiki lists alternatives. */
+  givenAt: string[];
+  /** Profession-specific quests only. */
+  profession: string | null;
+  /** `primary = y`: only characters whose PRIMARY is `profession`. */
+  primaryOnly: boolean;
+  /** `secondary = n`: characters with no secondary profession also qualify. */
+  allowsNoSecondary: boolean;
+  /** Quests listed as coming before. Shown for context, not enforced. */
+  precededBy: string[];
+}
+
+/** Links in an infobox value; falls back to the plain text when unlinked. */
+function refsOrText(value: string | undefined): string[] {
+  if (!value) return [];
+  const links = linkTargets(value).map((l) => l.replace(/%28/g, "(").replace(/%29/g, ")"));
+  if (links.length > 0) return [...new Set(links)];
+  const text = stripMarkup(value).trim();
+  return text ? [text] : [];
+}
+
+/**
+ * Parse a quest page's {{Quest infobox}}. Field meanings follow the
+ * template's own documentation (Template:Quest infobox /
+ * Template:Standard prerequisites), since they are easy to misread:
+ * `primary = y` restricts to that PRIMARY profession (default: primary or
+ * secondary), and `secondary = n` additionally admits characters with no
+ * secondary at all.
+ */
+export function parseQuest(title: string, wikitext: string): Parsed<ParsedQuest> {
+  const issues: string[] = [];
+  const box = parseTemplate(wikitext, "Quest infobox");
+  if (!box) issues.push("no Quest infobox");
+  const givenAt = refsOrText(box?.["given at"]);
+  if (box && givenAt.length === 0) issues.push("no 'given at' location");
+  return {
+    entity: {
+      name: box?.["name"] ? stripMarkup(box["name"]) : title,
+      wikiPage: title,
+      campaign: box?.["campaign"] ? stripMarkup(box["campaign"]) : null,
+      region: box?.["region"] ? stripMarkup(box["region"]) : null,
+      type: box?.["type"] ? stripMarkup(box["type"]).replace(/<!--.*$/, "").trim() || "Secondary" : "Secondary",
+      givenBy: refsOrText(box?.["given by"]),
+      givenAt,
+      profession: normalizeProfession(box?.["profession"]),
+      primaryOnly: /^y/i.test(box?.["primary"]?.trim() ?? ""),
+      allowsNoSecondary: /^n/i.test(box?.["secondary"]?.trim() ?? ""),
+      precededBy: refsOrText(box?.["preceded by"]),
+    },
+    issues,
+  };
 }

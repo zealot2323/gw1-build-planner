@@ -16,6 +16,7 @@ import {
   parseLocation,
   parseMission,
   parseMonster,
+  parseQuest,
   parseSkill,
   parseSkillHistory,
   parseTrainer,
@@ -257,6 +258,17 @@ describe("parseGameUpdate", () => {
     }
   });
 
+  it("carries a parent bullet's context down to its sub-bullets", () => {
+    // * Sword [[adrenaline]] reductions:
+    // **{{skill icon|Sever Artery}} from 4 to 3
+    const aug = parseGameUpdate("Feedback:Game updates/20260826", update("20260826"));
+    expect(aug.entity.find((c) => c.skill === "Sever Artery")?.note).toBe("Sword adrenaline reductions: from 4 to 3");
+    // * Skill AI adjustments:  /  ** {{skill icon|Preservation}} - No longer casts ...
+    const may = parseGameUpdate("Feedback:Game updates/20260512", update("20260512"));
+    const pres = may.entity.find((c) => c.skill === "Preservation" && /no longer casts/i.test(c.note));
+    expect(pres?.kind).toBe("ai");
+  });
+
   it("classifies AI retuning separately from balance", () => {
     const { entity } = parseGameUpdate("Feedback:Game updates/20260527", update("20260527"));
     expect(entity.length).toBeGreaterThan(0);
@@ -295,5 +307,47 @@ describe("isExcludedSkillPage", () => {
     // ...without catching real skills that merely contain the word
     expect(isExcludedSkillPage("Pain")).toBe(false);
     expect(isExcludedSkillPage("Attacker's Insight")).toBe(false);
+  });
+});
+
+describe("quest lines on skill pages", () => {
+  it("splits slash-joined quests instead of reading the second as a location", () => {
+    // ** [[Primary Training]]/[[Secondary Training]] ([[Churrhir Fields]])
+    const { entity } = parseSkill("Sprint", cached("Sprint"));
+    expect(entity.acquisition.quests).toEqual(expect.arrayContaining(["Primary Training", "Secondary Training"]));
+    expect(entity.acquisition.questLocations?.["Primary Training"]).toBe("Churrhir Fields");
+    expect(entity.acquisition.questLocations?.["Secondary Training"]).toBe("Churrhir Fields");
+    expect(Object.values(entity.acquisition.questLocations ?? {})).not.toContain("Secondary Training");
+  });
+
+  it("reads an unlinked location in parentheses", () => {
+    // ** [[Choose Your Secondary Profession (Nightfall quest)|...]] (Churrhir Fields)
+    const { entity } = parseSkill("Healing Touch", cached("Healing Touch"));
+    expect(entity.acquisition.questLocations?.["Choose Your Secondary Profession (Nightfall quest)"]).toBe(
+      "Churrhir Fields",
+    );
+  });
+});
+
+describe("parseQuest", () => {
+  it("parses Locate Jinzo (primary-only profession quest)", () => {
+    const { entity, issues } = parseQuest("Locate Jinzo", cached("Locate Jinzo"));
+    expect(issues).toEqual([]);
+    expect(entity).toMatchObject({
+      campaign: "Factions",
+      type: "Primary",
+      givenBy: ["Headmaster Lee"],
+      givenAt: ["Shing Jea Monastery"],
+      profession: "Assassin",
+      primaryOnly: true,
+    });
+    // "%28Assassin%29" in the wikitext link is decoded
+    expect(entity.precededBy).toContain("Speak with Headmaster Lee (Assassin)");
+  });
+
+  it("keeps every alternative pickup location", () => {
+    const { entity } = parseQuest("Prenuptial Disagreement (female)", cached("Prenuptial Disagreement (female)"));
+    expect(entity.givenAt.length).toBeGreaterThan(0);
+    expect(entity.profession).toBeNull();
   });
 });

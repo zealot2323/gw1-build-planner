@@ -4,7 +4,7 @@
  * Reads ONLY from the on-disk cache (no network), parses every page in
  * data/manifest.json, cross-validates references, and writes:
  *   data/skills.json, locations.json, trainers.json, monsters.json,
- *   missions.json, and validation-report.md.
+ *   missions.json, quests.json, and validation-report.md.
  */
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
@@ -13,11 +13,13 @@ import {
   parseLocation,
   parseMission,
   parseMonster,
+  parseQuest,
   parseSkill,
   parseTrainer,
   type ParsedLocation,
   type ParsedMission,
   type ParsedMonster,
+  type ParsedQuest,
   type ParsedSkill,
   type ParsedTrainer,
 } from "./parsers.js";
@@ -46,6 +48,10 @@ interface CampaignManifest {
 }
 interface Manifest {
   campaigns: string[];
+  /** Quests named on skill pages (see quests.ts); absent in old manifests. */
+  quests?: string[];
+  /** Referenced title -> the real quest page(s) behind it. */
+  questSources?: Record<string, string[]>;
   byCampaign: Record<string, CampaignManifest>;
 }
 
@@ -475,6 +481,86 @@ for (const l of locations) {
 }
 
 // ---------------------------------------------------------------------------
+// Quests (keyed by the title skill pages use; merged across redirect and
+// male/female disambiguation sources)
+// ---------------------------------------------------------------------------
+
+type QuestOut = Omit<ParsedQuest, "profession"> & { profession: string | null; rewards: string[] };
+const quests: QuestOut[] = [];
+
+// Several referenced titles can be the same real quest: skill pages link
+// both "Rally the Recruits" (a redirect) and "Rally the Recruits (Tutorial)".
+// Left alone that quest appeared twice with its rewards split 1/16. Fold
+// each alias into one canonical title — preferring a title that IS its own
+// page — and point the skills' references at it.
+const questTitles = manifestFile.quests ?? [];
+const sourcesOf = (t: string) => manifestFile.questSources?.[t] ?? [t];
+const canonicalQuest = new Map<string, string>();
+{
+  const groups = new Map<string, string[]>();
+  for (const t of questTitles) {
+    const key = sourcesOf(t).join("|");
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key)!.push(t);
+  }
+  for (const titles of groups.values()) {
+    const canonical = titles.find((t) => sourcesOf(t).length === 1 && sourcesOf(t)[0] === t) ?? titles[0];
+    for (const t of titles) canonicalQuest.set(t, canonical);
+  }
+}
+for (const s of skills) {
+  const locations = s.acquisition.questLocations;
+  s.acquisition.quests = [...new Set(s.acquisition.quests.map((q) => {
+    const c = canonicalQuest.get(q) ?? q;
+    if (locations && c !== q && !(c in locations)) locations[c] = locations[q] ?? null;
+    if (locations && c !== q) delete locations[q];
+    return c;
+  }))];
+}
+
+const rewardsByQuest = new Map<string, string[]>();
+for (const s of skills) {
+  for (const q of s.acquisition.quests) {
+    if (!rewardsByQuest.has(q)) rewardsByQuest.set(q, []);
+    rewardsByQuest.get(q)!.push(s.wikiPage);
+  }
+}
+for (const title of questTitles) {
+  if (canonicalQuest.get(title) !== title) continue; // folded into its canonical title
+  const sources = sourcesOf(title);
+  const parsed: ParsedQuest[] = [];
+  for (const src of sources) {
+    const wt = (await getCached(src))?.wikitext;
+    if (!wt) {
+      addIssue("quests", title, `source page "${src}" not cached`);
+      continue;
+    }
+    const { entity, issues } = parseQuest(src, wt);
+    for (const i of issues) addIssue("quests", title, i);
+    parsed.push(entity);
+  }
+  if (parsed.length === 0) continue;
+  const [first] = parsed;
+  const union = (pick: (q: ParsedQuest) => string[]) => [...new Set(parsed.flatMap(pick))];
+  const givenAt = union((q) => q.givenAt).map((l) => {
+    const resolved = resolveLocation(l);
+    if (resolved === null) addIssue("quests", title, `given at "${l}" is not a known location`);
+    return resolved ?? l;
+  });
+  quests.push({
+    ...first,
+    // keep the referenced title as the key, so skill acquisition refs resolve
+    wikiPage: title,
+    name: parsed.length > 1 ? title : first.name,
+    givenBy: union((q) => q.givenBy),
+    givenAt,
+    precededBy: union((q) => q.precededBy),
+    rewards: (rewardsByQuest.get(title) ?? []).sort(),
+  });
+}
+console.log(`quests: ${quests.length} parsed`);
+
+// ---------------------------------------------------------------------------
 // Outputs
 // ---------------------------------------------------------------------------
 
@@ -483,6 +569,7 @@ const write = async (file: string, data: unknown) =>
 await write("skills.json", skills);
 await write("locations.json", locations);
 await write("trainers.json", trainers);
+await write("quests.json", quests);
 await write("monsters.json", monsters);
 await write("missions.json", missions);
 
@@ -499,5 +586,5 @@ for (const [parser, pages] of report) {
 if (totalIssues === 0) md += "\nNo issues. Suspicious — check the parsers ran at all.\n";
 await writeFile(`${DATA_DIR}validation-report.md`, md, "utf8");
 
-console.log(`\nwrote data/{skills,locations,trainers,monsters,missions}.json`);
+console.log(`\nwrote data/{skills,locations,trainers,monsters,missions,quests}.json`);
 console.log(`validation report: ${totalIssues} issues — see data/validation-report.md`);

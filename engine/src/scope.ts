@@ -60,6 +60,10 @@ export function scopedDataset(dataset: Dataset, character: Character | null): Da
     trainers,
     monsters: dataset.monsters.filter((m) => m.locations.some((l) => locationNames.has(l))),
     missions,
+    // A quest whose every pickup location is out of scope can't be taken.
+    quests: (dataset.quests ?? []).filter(
+      (q) => inScope(q, owned) && (q.givenAt.length === 0 || q.givenAt.some((l) => locationNames.has(l))),
+    ),
   };
 }
 

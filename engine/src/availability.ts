@@ -5,7 +5,7 @@
 import { locationsWithSkill } from "./bestiary.js";
 import type { DataIndex } from "./data.js";
 import { DEFAULT_ALLEGIANCE } from "./types.js";
-import type { Character, LocationRef, Profession, Skill, SkillRef } from "./types.js";
+import type { Character, LocationRef, Profession, Quest, Skill, SkillRef } from "./types.js";
 
 /**
  * Explorable areas the character can enter: every explorable adjacent (via
@@ -63,6 +63,26 @@ export interface SkillAvailabilityEntry {
 }
 
 /**
+ * Can this character take the quest at all, per its profession restriction?
+ * Follows the wiki template's documented meaning:
+ * - no `profession`: anyone.
+ * - `primaryOnly`: the character's PRIMARY must be that profession.
+ * - otherwise the profession may be primary or an unlocked secondary.
+ * `allowsNoSecondary` is deliberately not consulted: the template docs are
+ * ambiguous about whether it admits ANY secondary-less character, and in
+ * the data it only ever appears alongside `primaryOnly`, which already
+ * decides the outcome.
+ * Prerequisite quests (`precededBy`) are not checked: quest completion is
+ * not tracked per character.
+ */
+export function canTakeQuest(quest: Quest, character: Character): boolean {
+  if (!quest.profession) return true;
+  if (character.primaryProfession === quest.profession) return true;
+  if (quest.primaryOnly) return false;
+  return character.unlockedSecondaries.includes(quest.profession);
+}
+
+/**
  * Classify every skill usable by the character's primary + the selected
  * secondary (plus no-profession/common skills). Precedence:
  * KNOWN > PURCHASABLE_NOW > QUESTABLE_NOW > CAPTURABLE_NOW > FUTURE.
@@ -103,12 +123,21 @@ export function skillAvailability(
     // explorable adjacent to one. ⚠ Same one-hop SIMPLIFICATION as
     // reachableExplorables.
     for (const quest of skill.acquisition.quests) {
-      const location = skill.acquisition.questLocations?.[quest] ?? null;
+      const info = index.questByPage.get(quest);
+      // A quest the character can never take is not a source at all:
+      // "Locate Jinzo" rewards Assassin skills, but only to Assassin primaries.
+      if (info && !canTakeQuest(info, character)) continue;
+      // The quest page's "given at" is authoritative; the skill page's
+      // location is the fallback (skill pages sometimes disagree).
+      const places = info && info.givenAt.length > 0
+        ? info.givenAt
+        : [skill.acquisition.questLocations?.[quest] ?? null].filter((l): l is string => l !== null);
+      const nowAt = places.find((l) => unlocked.has(l) || reachable.has(l));
       sources.push({
         kind: "quest",
         via: quest,
-        location,
-        availableNow: location !== null && (unlocked.has(location) || reachable.has(location)),
+        location: nowAt ?? places[0] ?? null,
+        availableNow: nowAt !== undefined,
       });
     }
 

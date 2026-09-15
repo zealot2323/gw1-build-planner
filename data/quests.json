@@ -1,0 +1,3860 @@
+[
+  {
+    "name": "A Belated Betrothal",
+    "wikiPage": "A Belated Betrothal",
+    "campaign": "Prophecies",
+    "region": "Crystal Desert",
+    "type": "Secondary",
+    "givenBy": [
+      "Tirzah"
+    ],
+    "givenAt": [
+      "Seeker's Passage"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Bull's Strike",
+      "Ether Lord",
+      "Mend Condition",
+      "Signet of Agony",
+      "Tiger's Fury",
+      "Windborne Speed"
+    ]
+  },
+  {
+    "name": "A Cure for Ralena",
+    "wikiPage": "A Cure for Ralena",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Vassar"
+    ],
+    "givenAt": [
+      "Sardelac Sanitarium"
+    ],
+    "profession": "Mesmer",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Trying Times"
+    ],
+    "rewards": [
+      "Energy Burn",
+      "Illusion of Haste"
+    ]
+  },
+  {
+    "name": "A Heart of Ice",
+    "wikiPage": "A Heart of Ice",
+    "campaign": "Prophecies",
+    "region": "Northern Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Howland the Elementalist"
+    ],
+    "givenAt": [
+      "Yak's Bend"
+    ],
+    "profession": "Elementalist",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Ice Prison",
+      "Ward Against Foes",
+      "Whirlwind"
+    ]
+  },
+  {
+    "name": "A Hunter's Pride",
+    "wikiPage": "A Hunter's Pride",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Hogni Truthseeker"
+    ],
+    "givenAt": [
+      "Drakkar Lake"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Blood Washes Blood"
+    ],
+    "rewards": [
+      "Ursan Blessing"
+    ]
+  },
+  {
+    "name": "A Mesmer's Burden",
+    "wikiPage": "A Mesmer's Burden",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "type": "Secondary",
+    "givenBy": [
+      "Lady Althea"
+    ],
+    "givenAt": [
+      "Lakeside County"
+    ],
+    "profession": "Mesmer",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [],
+    "rewards": [
+      "Conjure Phantasm",
+      "Ether Feast",
+      "Imagined Burden"
+    ]
+  },
+  {
+    "name": "A Monk's Mission",
+    "wikiPage": "A Monk's Mission",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "type": "Secondary",
+    "givenBy": [
+      "Mhenlo"
+    ],
+    "givenAt": [
+      "Ashford Abbey"
+    ],
+    "profession": "Monk",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [],
+    "rewards": [
+      "Bane Signet",
+      "Orison of Healing"
+    ]
+  },
+  {
+    "name": "A Test of Marksmanship",
+    "wikiPage": "A Test of Marksmanship",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "type": "Secondary",
+    "givenBy": [
+      "Ivor Trueshot"
+    ],
+    "givenAt": [
+      "Regent Valley (pre-Searing)"
+    ],
+    "profession": "Ranger",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Point Blank Shot",
+      "Read the Wind"
+    ]
+  },
+  {
+    "name": "Advanced Defense Techniques",
+    "wikiPage": "Advanced Defense Techniques",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Secondary",
+    "givenBy": [
+      "Instructor Ng"
+    ],
+    "givenAt": [
+      "Shing Jea Monastery"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Blinding Powder",
+      "Clumsiness",
+      "Defensive Stance",
+      "Enfeebling Blood",
+      "Shadowsong",
+      "Shielding Hands",
+      "Throw Dirt",
+      "Ward Against Melee"
+    ]
+  },
+  {
+    "name": "Adventure with an Ally",
+    "wikiPage": "Adventure with an Ally",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "type": "Secondary",
+    "givenBy": [
+      "Lina the Healer"
+    ],
+    "givenAt": [
+      "Lakeside County"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Warrior Test",
+      "Ranger Test",
+      "Monk Test",
+      "Necromancer Test",
+      "Mesmer Test",
+      "Elementalist Test"
+    ],
+    "rewards": [
+      "Resurrection Signet"
+    ]
+  },
+  {
+    "name": "Army Life",
+    "wikiPage": "Army Life",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Armsman Pitney"
+    ],
+    "givenAt": [
+      "Piken Square"
+    ],
+    "profession": "Warrior",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Dismember",
+      "Mighty Blow"
+    ]
+  },
+  {
+    "name": "Attack on Jalis's Camp",
+    "wikiPage": "Attack on Jalis's Camp",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Orozar Highstone"
+    ],
+    "givenAt": [
+      "Battledepths"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Northern Allies"
+    ],
+    "rewards": [
+      "\"By Ural's Hammer!\"",
+      "Great Dwarf Weapon"
+    ]
+  },
+  {
+    "name": "Be Very, Very Quiet...",
+    "wikiPage": "Be Very, Very Quiet...",
+    "campaign": "Eye of the North",
+    "region": "Charr Homelands",
+    "type": "Secondary",
+    "givenBy": [
+      "Vael"
+    ],
+    "givenAt": [
+      "Grothmar Wardowns"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Assault on the Stronghold"
+    ],
+    "rewards": [
+      "Ebon Battle Standard of Courage"
+    ]
+  },
+  {
+    "name": "Bear Club for Men",
+    "wikiPage": "Bear Club for Men",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Olrun Olafdottir"
+    ],
+    "givenAt": [
+      "Varajar Fells"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "The Great Norn Alemoot"
+    ],
+    "rewards": [
+      "Club of a Thousand Bears"
+    ]
+  },
+  {
+    "name": "Bear Club for Women",
+    "wikiPage": "Bear Club for Women",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Olaf Olafson"
+    ],
+    "givenAt": [
+      "Olafstead"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "The Great Norn Alemoot"
+    ],
+    "rewards": [
+      "Club of a Thousand Bears"
+    ]
+  },
+  {
+    "name": "Blood And Smoke",
+    "wikiPage": "Blood And Smoke",
+    "campaign": "Prophecies",
+    "region": "Maguuma Jungle",
+    "type": "Secondary",
+    "givenBy": [
+      "Deep Root"
+    ],
+    "givenAt": [
+      "Ettin's Back"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Dropping Eaves"
+    ],
+    "rewards": [
+      "\"I Will Survive!\"",
+      "Barbed Signet",
+      "Meteor",
+      "Protective Spirit",
+      "Savage Shot",
+      "Spirit Shackles"
+    ]
+  },
+  {
+    "name": "Capturing the Signet of Capture",
+    "wikiPage": "Capturing the Signet of Capture",
+    "campaign": "Nightfall",
+    "region": "Kourna",
+    "type": "Secondary",
+    "givenBy": [
+      "Elder Jonah"
+    ],
+    "givenAt": [
+      "Marga Coast"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "The Great Escape"
+    ],
+    "rewards": [
+      "Signet of Capture"
+    ]
+  },
+  {
+    "name": "Caravan in Trouble",
+    "wikiPage": "Caravan in Trouble",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Cynn"
+    ],
+    "givenAt": [
+      "Eastern Frontier"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Fireball",
+      "Hamstring",
+      "Lightning Reflexes",
+      "Phantom Pain",
+      "Shadow of Fear",
+      "Smite"
+    ]
+  },
+  {
+    "name": "Casualty Report",
+    "wikiPage": "Casualty Report",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Undertaker Cortis"
+    ],
+    "givenAt": [
+      "Piken Square"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Shadow Strike"
+    ]
+  },
+  {
+    "name": "Charr Invaders",
+    "wikiPage": "Charr Invaders",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Artificer Mullenix"
+    ],
+    "givenAt": [
+      "Eye of the North (outpost)"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Winds"
+    ]
+  },
+  {
+    "name": "Charr Reinforcements",
+    "wikiPage": "Charr Reinforcements",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Ivor Trueshot"
+    ],
+    "givenAt": [
+      "Piken Square"
+    ],
+    "profession": "Ranger",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Call of Haste",
+      "Distracting Shot"
+    ]
+  },
+  {
+    "name": "Choose Your Secondary Profession",
+    "wikiPage": "Choose Your Secondary Profession (Nightfall quest)",
+    "campaign": "Nightfall",
+    "region": "Istan",
+    "type": "Primary",
+    "givenBy": [
+      "First Spear Dehvad"
+    ],
+    "givenAt": [
+      "Churrhir Fields",
+      "Kamadan, Jewel of Istan"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Secondary Training"
+    ],
+    "rewards": [
+      "\"For Great Justice!\"",
+      "\"Watch Yourself!\"",
+      "Animate Bone Minions",
+      "Anthem of Flame",
+      "Backfire",
+      "Banish",
+      "Barbed Spear",
+      "Charm Animal",
+      "Chilling Victory",
+      "Conjure Phantasm",
+      "Crippling Sweep",
+      "Drain Enchantment",
+      "Energy Tap",
+      "Executioner's Strike",
+      "Faintheartedness",
+      "Fire Storm",
+      "Glyph of Elemental Power",
+      "Grenth's Fingers",
+      "Healing Touch",
+      "Heart of Holy Flame",
+      "Ice Spear",
+      "Imagined Burden",
+      "Imbue Health",
+      "Kindle Arrows",
+      "Life Siphon",
+      "Lightning Strike",
+      "Mend Ailment",
+      "Mending Refrain",
+      "Mighty Blow",
+      "Pin Down",
+      "Plague Touch",
+      "Remove Hex",
+      "Resurrect",
+      "Reversal of Fortune",
+      "Sever Artery",
+      "Shatter Hex",
+      "Signet of Aggression",
+      "Signet of Synergy",
+      "Stone Daggers",
+      "Strip Enchantment",
+      "Ward Against Melee",
+      "Well of Blood",
+      "Whirling Charge",
+      "Wild Throw"
+    ]
+  },
+  {
+    "name": "Cleansing the Shrine",
+    "wikiPage": "Cleansing the Shrine",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Mei Ling"
+    ],
+    "givenAt": [
+      "Sunqua Vale"
+    ],
+    "profession": "Mesmer",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Locate Mei Ling"
+    ],
+    "rewards": [
+      "Backfire",
+      "Shatter Hex"
+    ]
+  },
+  {
+    "name": "Cold as Ice",
+    "wikiPage": "Cold as Ice",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Sif Shadowhunter"
+    ],
+    "givenAt": [
+      "Sifhalla"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Anything You Can Do"
+    ],
+    "rewards": [
+      "\"I Am Unstoppable!\""
+    ]
+  },
+  {
+    "name": "Condition Removal",
+    "wikiPage": "Condition Removal",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Secondary",
+    "givenBy": [
+      "Instructor Ng"
+    ],
+    "givenAt": [
+      "Shing Jea Monastery"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Mend Ailment",
+      "Plague Touch",
+      "Resilient Weapon"
+    ]
+  },
+  {
+    "name": "Death in the Ruins",
+    "wikiPage": "Death in the Ruins",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Kasha Blackblood"
+    ],
+    "givenAt": [
+      "Sardelac Sanitarium"
+    ],
+    "profession": "Necromancer",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Dark Pact",
+      "Mark of Pain"
+    ]
+  },
+  {
+    "name": "Deeprunner's Map",
+    "wikiPage": "Deeprunner's Map",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Koris Deeprunner"
+    ],
+    "givenAt": [
+      "Umbral Grotto"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Drunken Master"
+    ]
+  },
+  {
+    "name": "Defense Against Hexes",
+    "wikiPage": "Defense Against Hexes",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Secondary",
+    "givenBy": [
+      "Instructor Ng"
+    ],
+    "givenAt": [
+      "Shing Jea Monastery"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Remove Hex",
+      "Shatter Hex"
+    ]
+  },
+  {
+    "name": "Destructive Research",
+    "wikiPage": "Destructive Research",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "High Priest Alkar"
+    ],
+    "givenAt": [
+      "Battledepths",
+      "Central Transfer Chamber"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Northern Allies"
+    ],
+    "rewards": [
+      "Breath of the Great Dwarf",
+      "Light of Deldrimor"
+    ]
+  },
+  {
+    "name": "Disenchantment Course",
+    "wikiPage": "Disenchantment Course",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Secondary",
+    "givenBy": [
+      "Instructor Ng"
+    ],
+    "givenAt": [
+      "Shing Jea Monastery"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Expunge Enchantments",
+      "Shatter Enchantment",
+      "Strip Enchantment"
+    ]
+  },
+  {
+    "name": "Disruption",
+    "wikiPage": "Disruption",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Secondary",
+    "givenBy": [
+      "Instructor Ng"
+    ],
+    "givenAt": [
+      "Shing Jea Monastery"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Dissonance",
+      "Distracting Blow",
+      "Distracting Shot",
+      "Gale",
+      "Power Spike"
+    ]
+  },
+  {
+    "name": "Domination Magic",
+    "wikiPage": "Domination Magic (quest)",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "type": "Secondary",
+    "givenBy": [
+      "Vassar"
+    ],
+    "givenAt": [
+      "Foible's Fair"
+    ],
+    "profession": "Mesmer",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Backfire",
+      "Shatter Delusions"
+    ]
+  },
+  {
+    "name": "Dropping Eaves",
+    "wikiPage": "Dropping Eaves",
+    "campaign": "Prophecies",
+    "region": "Maguuma Jungle",
+    "type": "Secondary",
+    "givenBy": [
+      "Deep Root"
+    ],
+    "givenAt": [
+      "Ettin's Back"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Death Nova",
+      "Iron Mist",
+      "Predatory Season",
+      "Rebirth",
+      "Shield Stance",
+      "Spirit of Failure"
+    ]
+  },
+  {
+    "name": "Dual Strike",
+    "wikiPage": "Dual Strike",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Panaku"
+    ],
+    "givenAt": [
+      "Kinya Province"
+    ],
+    "profession": "Assassin",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Track Down Panaku"
+    ],
+    "rewards": [
+      "Shroud of Distress",
+      "Twisting Fangs"
+    ]
+  },
+  {
+    "name": "Elemental Knowledge",
+    "wikiPage": "Elemental Knowledge",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Elementalist Aziure"
+    ],
+    "givenAt": [
+      "Old Ascalon"
+    ],
+    "profession": "Elementalist",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Armor of Earth",
+      "Frozen Burst"
+    ]
+  },
+  {
+    "name": "Elementalist Test",
+    "wikiPage": "Elementalist Test",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "type": "Primary",
+    "givenBy": [
+      "Howland the Elementalist"
+    ],
+    "givenAt": [
+      "Lakeside County"
+    ],
+    "profession": "Elementalist",
+    "primaryOnly": true,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "War Preparations"
+    ],
+    "rewards": [
+      "Aura of Restoration",
+      "Flare"
+    ]
+  },
+  {
+    "name": "Endangered Species",
+    "wikiPage": "Endangered Species",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Master Ranger Nente"
+    ],
+    "givenAt": [
+      "Old Ascalon"
+    ],
+    "profession": "Ranger",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Charm Animal",
+      "Comfort Animal",
+      "Hunter's Shot",
+      "Troll Unguent"
+    ]
+  },
+  {
+    "name": "Experimental Elixir",
+    "wikiPage": "Experimental Elixir",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Erudine"
+    ],
+    "givenAt": [
+      "Serenity Temple"
+    ],
+    "profession": "Mesmer",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Unnatural Creatures"
+    ],
+    "rewards": [
+      "Shatter Hex"
+    ]
+  },
+  {
+    "name": "Eye For Profit",
+    "wikiPage": "Eye For Profit",
+    "campaign": "Prophecies",
+    "region": "Maguuma Jungle",
+    "type": "Secondary",
+    "givenBy": [
+      "Trader Versai"
+    ],
+    "givenAt": [
+      "Druid's Overlook"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Air Attunement",
+      "Antidote Signet",
+      "Axe Rake",
+      "Dark Bond",
+      "Hex Breaker",
+      "Smite Hex"
+    ]
+  },
+  {
+    "name": "Fallen Soldiers",
+    "wikiPage": "Fallen Soldiers",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Undertaker Cortis"
+    ],
+    "givenAt": [
+      "Piken Square"
+    ],
+    "profession": "Necromancer",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Soul Feast"
+    ]
+  },
+  {
+    "name": "Falling Out",
+    "wikiPage": "Falling Out",
+    "campaign": "Eye of the North",
+    "region": "Charr Homelands",
+    "type": "Secondary",
+    "givenBy": [
+      "Corpse of Brave Brent Poltroon"
+    ],
+    "givenAt": [
+      "Dalada Uplands"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Assault on the Stronghold"
+    ],
+    "rewards": [
+      "Ebon Vanguard Sniper Support"
+    ]
+  },
+  {
+    "name": "Final Round: Fight!",
+    "wikiPage": "Final Round: Fight!",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Magni the Bison"
+    ],
+    "givenAt": [
+      "Gunnar's Hold"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Round 5: Fight!"
+    ],
+    "rewards": [
+      "\"Dodge This!\"",
+      "\"Finish Him!\"",
+      "A Touch of Guile"
+    ]
+  },
+  {
+    "name": "Forbidden Fruit",
+    "wikiPage": "Forbidden Fruit",
+    "campaign": "Eye of the North",
+    "region": "Charr Homelands",
+    "type": "Secondary",
+    "givenBy": [
+      "Captain Langmar"
+    ],
+    "givenAt": [
+      "Grothmar Wardowns"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Plan A"
+    ],
+    "rewards": [
+      "Tryptophan Signet"
+    ]
+  },
+  {
+    "name": "Forgotten Relics",
+    "wikiPage": "Forgotten Relics",
+    "campaign": "Eye of the North",
+    "region": "Charr Homelands",
+    "type": "Secondary",
+    "givenBy": [
+      "Sergeant Weststar"
+    ],
+    "givenAt": [
+      "Dalada Uplands"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Falling Out"
+    ],
+    "rewards": [
+      "Ebon Battle Standard of Wisdom"
+    ]
+  },
+  {
+    "name": "Free the Fur",
+    "wikiPage": "Free the Fur",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Sujun"
+    ],
+    "givenAt": [
+      "Sunqua Vale"
+    ],
+    "profession": "Ranger",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Locate Sujun"
+    ],
+    "rewards": [
+      "Comfort Animal",
+      "Whirling Defense"
+    ]
+  },
+  {
+    "name": "Gargoyle Trouble",
+    "wikiPage": "Gargoyle Trouble",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Warmaster Grast"
+    ],
+    "givenAt": [
+      "Old Ascalon"
+    ],
+    "profession": "Warrior",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Gash",
+      "Healing Signet",
+      "Sever Artery",
+      "Wild Blow"
+    ]
+  },
+  {
+    "name": "Ghostly Vengeance",
+    "wikiPage": "Ghostly Vengeance",
+    "campaign": "Prophecies",
+    "region": "Crystal Desert",
+    "type": "Secondary",
+    "givenBy": [
+      "Marchena"
+    ],
+    "givenAt": [
+      "Augury Rock (outpost)"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Blessed Aura",
+      "Dust Trap",
+      "Malaise",
+      "Mantra of Persistence",
+      "Obsidian Flame",
+      "Shield Bash"
+    ]
+  },
+  {
+    "name": "Graven Images",
+    "wikiPage": "Graven Images",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "type": "Secondary",
+    "givenBy": [
+      "Archivist Ithimar"
+    ],
+    "givenAt": [
+      "North Kryta Province"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Axe Twist",
+      "Dark Aura",
+      "Determined Shot",
+      "Dwayna's Kiss",
+      "Inferno",
+      "Mantra of Lightning"
+    ]
+  },
+  {
+    "name": "Grawl Invasion",
+    "wikiPage": "Grawl Invasion",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "type": "Secondary",
+    "givenBy": [
+      "Warmaster Grast"
+    ],
+    "givenAt": [
+      "Green Hills County"
+    ],
+    "profession": "Warrior",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [],
+    "rewards": [
+      "Gash",
+      "Healing Signet",
+      "Sever Artery"
+    ]
+  },
+  {
+    "name": "Helping the Dwarves",
+    "wikiPage": "Helping the Dwarves",
+    "campaign": "Prophecies",
+    "region": "Northern Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Grand Mason Stonecleaver"
+    ],
+    "givenAt": [
+      "Yak's Bend"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Debilitating Shot",
+      "Gale",
+      "Mantra of Frost",
+      "Protector's Strike",
+      "Remove Hex",
+      "Suffering"
+    ]
+  },
+  {
+    "name": "Helping The People of Ascalon",
+    "wikiPage": "Helping the People of Ascalon",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Ambassador Zain"
+    ],
+    "givenAt": [
+      "Old Ascalon"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "The King's Message"
+    ],
+    "rewards": [
+      "\"For Great Justice!\"",
+      "Energy Tap",
+      "Lava Font",
+      "Mending",
+      "Penetrating Attack",
+      "Vile Touch"
+    ]
+  },
+  {
+    "name": "Hungry Devourer",
+    "wikiPage": "Hungry Devourer",
+    "campaign": "Prophecies",
+    "region": "Northern Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Master Saberlin"
+    ],
+    "givenAt": [
+      "Beacon's Perch"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Divine Spirit",
+      "Flurry",
+      "Lightning Strike",
+      "Pin Down",
+      "Rotting Flesh",
+      "Shatter Enchantment"
+    ]
+  },
+  {
+    "name": "In Memory of Paulus",
+    "wikiPage": "In Memory of Paulus",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Grazden the Protector"
+    ],
+    "givenAt": [
+      "Old Ascalon"
+    ],
+    "profession": "Monk",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Protecting Ascalon"
+    ],
+    "rewards": [
+      "Live Vicariously",
+      "Resurrect"
+    ]
+  },
+  {
+    "name": "In the Service of Revenge",
+    "wikiPage": "In the Service of Revenge",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Orozar Highstone"
+    ],
+    "givenAt": [
+      "Battledepths"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Attack on Jalis's Camp"
+    ],
+    "rewards": [
+      "Black Powder Mine",
+      "Great Dwarf Armor"
+    ]
+  },
+  {
+    "name": "Into the Breach",
+    "wikiPage": "Into the Breach",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Warmaster Grast"
+    ],
+    "givenAt": [
+      "Old Ascalon"
+    ],
+    "profession": "Warrior",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Military Matters"
+    ],
+    "rewards": [
+      "Endure Pain",
+      "Penetrating Blow"
+    ]
+  },
+  {
+    "name": "Into the Unknown",
+    "wikiPage": "Into the Unknown",
+    "campaign": "Prophecies",
+    "region": "Crystal Desert",
+    "type": "Secondary",
+    "givenBy": [
+      "Jorn Kudebeh"
+    ],
+    "givenAt": [
+      "Augury Rock (outpost)"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "\"Fear Me!\"",
+      "Arcane Conundrum",
+      "Chilblains",
+      "Swirling Aura",
+      "Winnowing",
+      "Zealot's Fire"
+    ]
+  },
+  {
+    "name": "Krak's Cavalry",
+    "wikiPage": "Krak's Cavalry",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Undrath Blastrock"
+    ],
+    "givenAt": [
+      "Sifhalla"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "\"Don't Trip!\""
+    ]
+  },
+  {
+    "name": "Leader of the Pack",
+    "wikiPage": "Leader of the Pack",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Hogni Truthseeker"
+    ],
+    "givenAt": [
+      "Drakkar Lake"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Curse of the Nornbear"
+    ],
+    "rewards": [
+      "Volfen Blessing"
+    ]
+  },
+  {
+    "name": "Little Creatures",
+    "wikiPage": "Little Creatures",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Reng Ku"
+    ],
+    "givenAt": [
+      "Sunqua Vale"
+    ],
+    "profession": "Necromancer",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Locate Reng Ku"
+    ],
+    "rewards": [
+      "Animate Bone Fiend",
+      "Faintheartedness"
+    ]
+  },
+  {
+    "name": "Lo Sha's Gift",
+    "wikiPage": "Lo Sha's Gift",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Lo Sha"
+    ],
+    "givenAt": [
+      "Kinya Province"
+    ],
+    "profession": "Mesmer",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Track Down Lo Sha"
+    ],
+    "rewards": [
+      "Energy Tap",
+      "Shatter Enchantment"
+    ]
+  },
+  {
+    "name": "Locate Jinzo",
+    "wikiPage": "Locate Jinzo",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Headmaster Lee"
+    ],
+    "givenAt": [
+      "Shing Jea Monastery"
+    ],
+    "profession": "Assassin",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Seek Out Headmaster Lee",
+      "Speak with Headmaster Lee (Assassin)"
+    ],
+    "rewards": [
+      "Dancing Daggers",
+      "Shadow Refuge",
+      "Unsuspecting Strike"
+    ]
+  },
+  {
+    "name": "Locate Mei Ling",
+    "wikiPage": "Locate Mei Ling",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Headmaster Kaa"
+    ],
+    "givenAt": [
+      "Shing Jea Monastery"
+    ],
+    "profession": "Mesmer",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Seek Out Headmaster Kaa",
+      "Speak With Headmaster Kaa (Mesmer)"
+    ],
+    "rewards": [
+      "Conjure Phantasm",
+      "Empathy",
+      "Ether Feast"
+    ]
+  },
+  {
+    "name": "Locate Professor Gai",
+    "wikiPage": "Locate Professor Gai",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Headmaster Quin"
+    ],
+    "givenAt": [
+      "Shing Jea Monastery"
+    ],
+    "profession": "Ritualist",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Seek Out Headmaster Quin",
+      "Speak with Headmaster Quin (Ritualist)"
+    ],
+    "rewards": [
+      "Pain",
+      "Painful Bond",
+      "Vengeful Weapon"
+    ]
+  },
+  {
+    "name": "Locate Reng Ku",
+    "wikiPage": "Locate Reng Ku",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Headmaster Kuju"
+    ],
+    "givenAt": [
+      "Shing Jea Monastery"
+    ],
+    "profession": "Necromancer",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Seek Out Headmaster Kuju",
+      "Speak with Headmaster Kuju (Necromancer)"
+    ],
+    "rewards": [
+      "Deathly Swarm",
+      "Life Siphon",
+      "Vampiric Gaze"
+    ]
+  },
+  {
+    "name": "Locate Ronsu",
+    "wikiPage": "Locate Ronsu",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Headmaster Vhang"
+    ],
+    "givenAt": [
+      "Shing Jea Monastery"
+    ],
+    "profession": "Elementalist",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Seek Out Headmaster Vhang",
+      "Speak with Headmaster Vhang (Elementalist)"
+    ],
+    "rewards": [
+      "Aura of Restoration",
+      "Flare",
+      "Lightning Orb"
+    ]
+  },
+  {
+    "name": "Locate Sister Tai",
+    "wikiPage": "Locate Sister Tai",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Headmaster Amara"
+    ],
+    "givenAt": [
+      "Shing Jea Monastery"
+    ],
+    "profession": "Monk",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Seek Out Headmaster Amara",
+      "Speak with Headmaster Amara (Monk)"
+    ],
+    "rewards": [
+      "Bane Signet",
+      "Healing Breeze"
+    ]
+  },
+  {
+    "name": "Locate Sujun",
+    "wikiPage": "Locate Sujun",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Headmaster Greico"
+    ],
+    "givenAt": [
+      "Shing Jea Monastery"
+    ],
+    "profession": "Ranger",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Seek Out Headmaster Greico",
+      "Speak with Headmaster Greico (Ranger)"
+    ],
+    "rewards": [
+      "Charm Animal",
+      "Power Shot",
+      "Troll Unguent"
+    ]
+  },
+  {
+    "name": "Locate Talon Silverwing",
+    "wikiPage": "Locate Talon Silverwing",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Headmaster Zhan"
+    ],
+    "givenAt": [
+      "Shing Jea Monastery"
+    ],
+    "profession": "Warrior",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Seek Out Headmaster Zhan",
+      "Speak with Headmaster Zhan (Warrior)"
+    ],
+    "rewards": [
+      "Healing Signet",
+      "Power Attack",
+      "Sever Artery"
+    ]
+  },
+  {
+    "name": "Malaquire's Test",
+    "wikiPage": "Malaquire's Test",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "type": "Secondary",
+    "givenBy": [
+      "Magi Malaquire"
+    ],
+    "givenAt": [
+      "Lion's Arch"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Orrian Excavation"
+    ],
+    "rewards": [
+      "Signet of Capture"
+    ]
+  },
+  {
+    "name": "Mano a Norn-o",
+    "wikiPage": "Mano a Norn-o",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Artificer Mullenix"
+    ],
+    "givenAt": [
+      "Eye of the North (outpost)"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Deft Strike"
+    ]
+  },
+  {
+    "name": "Mantid Hatchlings",
+    "wikiPage": "Mantid Hatchlings",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Secondary",
+    "givenBy": [
+      "Instructor Ng"
+    ],
+    "givenAt": [
+      "Monastery Overlook"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Aura of Restoration",
+      "Bane Signet",
+      "Deathly Swarm",
+      "Empathy",
+      "Ether Feast",
+      "Flare",
+      "Healing Signet",
+      "Orison of Healing",
+      "Pain",
+      "Power Attack",
+      "Power Shot",
+      "Resurrection Signet",
+      "Sever Artery",
+      "Shadow Refuge",
+      "Troll Unguent",
+      "Unsuspecting Strike",
+      "Vampiric Gaze",
+      "Weapon of Warding"
+    ]
+  },
+  {
+    "name": "Mesmer Test",
+    "wikiPage": "Mesmer Test",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "type": "Primary",
+    "givenBy": [
+      "Sebedoh the Mesmer"
+    ],
+    "givenAt": [
+      "Lakeside County"
+    ],
+    "profession": "Mesmer",
+    "primaryOnly": true,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "War Preparations"
+    ],
+    "rewards": [
+      "Empathy",
+      "Ether Feast"
+    ]
+  },
+  {
+    "name": "Mesmerizing the Enemy",
+    "wikiPage": "Mesmerizing the Enemy",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Vassar"
+    ],
+    "givenAt": [
+      "Sardelac Sanitarium"
+    ],
+    "profession": "Mesmer",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Conjure Phantasm",
+      "Ether Feast",
+      "Imagined Burden",
+      "Power Leak"
+    ]
+  },
+  {
+    "name": "Military Matters",
+    "wikiPage": "Military Matters",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Warmaster Grast"
+    ],
+    "givenAt": [
+      "Old Ascalon"
+    ],
+    "profession": "Warrior",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Power Attack",
+      "Sprint"
+    ]
+  },
+  {
+    "name": "Minions Gone Wild",
+    "wikiPage": "Minions Gone Wild",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Professor Gai"
+    ],
+    "givenAt": [
+      "Sunqua Vale"
+    ],
+    "profession": "Ritualist",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Locate Professor Gai"
+    ],
+    "rewards": [
+      "Brutal Weapon",
+      "Union"
+    ]
+  },
+  {
+    "name": "Minister's Test",
+    "wikiPage": "Minister's Test",
+    "campaign": "Factions",
+    "region": "Kaineng City",
+    "type": "Secondary",
+    "givenBy": [
+      "Minister Jaisan"
+    ],
+    "givenAt": [
+      "Kaineng Center"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Capturing the Orrian Tome"
+    ],
+    "rewards": [
+      "Signet of Capture"
+    ]
+  },
+  {
+    "name": "Monk Test",
+    "wikiPage": "Monk Test",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "type": "Primary",
+    "givenBy": [
+      "Ciglo the Monk"
+    ],
+    "givenAt": [
+      "Lakeside County"
+    ],
+    "profession": "Monk",
+    "primaryOnly": true,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "War Preparations"
+    ],
+    "rewards": [
+      "Banish",
+      "Healing Breeze"
+    ]
+  },
+  {
+    "name": "Mysterious Message",
+    "wikiPage": "Mysterious Message (Prophecies quest)",
+    "campaign": "Prophecies",
+    "region": "Maguuma Jungle",
+    "type": "Secondary",
+    "givenBy": [
+      "Envoy Ero"
+    ],
+    "givenAt": [
+      "Druid's Overlook"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Ethereal Burden",
+      "Healing Seed",
+      "Pure Strike",
+      "Stone Daggers",
+      "Storm Chaser",
+      "Well of Suffering"
+    ]
+  },
+  {
+    "name": "Necromancer Test",
+    "wikiPage": "Necromancer Test",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "type": "Primary",
+    "givenBy": [
+      "Verata the Necromancer"
+    ],
+    "givenAt": [
+      "Lakeside County"
+    ],
+    "profession": "Necromancer",
+    "primaryOnly": true,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "War Preparations"
+    ],
+    "rewards": [
+      "Deathly Swarm",
+      "Vampiric Gaze"
+    ]
+  },
+  {
+    "name": "O Brave New World",
+    "wikiPage": "O Brave New World",
+    "campaign": "Eye of the North",
+    "region": "Tarnished Coast",
+    "type": "Secondary",
+    "givenBy": [
+      "Blorf"
+    ],
+    "givenAt": [
+      "Vlox's Falls"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "The Elusive Golemancer"
+    ],
+    "rewards": [
+      "Mindbender"
+    ]
+  },
+  {
+    "name": "Oberan's Rage",
+    "wikiPage": "Oberan's Rage",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Kasha Blackblood"
+    ],
+    "givenAt": [
+      "Sardelac Sanitarium"
+    ],
+    "profession": "Necromancer",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Death in the Ruins"
+    ],
+    "rewards": [
+      "Parasitic Bond",
+      "Putrid Explosion"
+    ]
+  },
+  {
+    "name": "Opening Strike",
+    "wikiPage": "Opening Strike",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Jinzo"
+    ],
+    "givenAt": [
+      "Sunqua Vale"
+    ],
+    "profession": "Assassin",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Locate Jinzo"
+    ],
+    "rewards": [
+      "Death's Charge",
+      "Fox Fangs"
+    ]
+  },
+  {
+    "name": "Plan A",
+    "wikiPage": "Plan A",
+    "campaign": "Eye of the North",
+    "region": "Charr Homelands",
+    "type": "Secondary",
+    "givenBy": [
+      "Captain Langmar"
+    ],
+    "givenAt": [
+      "Grothmar Wardowns"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Be Very, Very Quiet..."
+    ],
+    "rewards": [
+      "Sneak Attack"
+    ]
+  },
+  {
+    "name": "Polymock: Defeat Dune Teardrinker",
+    "wikiPage": "Polymock: Defeat Dune Teardrinker",
+    "campaign": "Eye of the North",
+    "region": "Tarnished Coast",
+    "type": "Secondary",
+    "givenBy": [
+      "Hoff"
+    ],
+    "givenAt": [
+      "Rata Sum"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Polymock: Defeat Fonk",
+      "The Dawn of Rebellion"
+    ],
+    "rewards": [
+      "Summon Naga Shaman"
+    ]
+  },
+  {
+    "name": "Polymock: Defeat Grulhammer Silverfist",
+    "wikiPage": "Polymock: Defeat Grulhammer Silverfist",
+    "campaign": "Eye of the North",
+    "region": "Tarnished Coast",
+    "type": "Secondary",
+    "givenBy": [
+      "Hoff"
+    ],
+    "givenAt": [
+      "Rata Sum"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Polymock: Defeat Fonk"
+    ],
+    "rewards": [
+      "Summon Ruby Djinn"
+    ]
+  },
+  {
+    "name": "Polymock: Defeat Master Hoff",
+    "wikiPage": "Polymock: Defeat Master Hoff",
+    "campaign": "Eye of the North",
+    "region": "Tarnished Coast",
+    "type": "Secondary",
+    "givenBy": [
+      "Hoff"
+    ],
+    "givenAt": [
+      "Rata Sum"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Polymock: Defeat Dune Teardrinker",
+      "Polymock: Defeat Grulhammer Silverfist",
+      "Polymock: Defeat Necromancer Volumandus"
+    ],
+    "rewards": [
+      "Summon Mursaat"
+    ]
+  },
+  {
+    "name": "Polymock: Defeat Necromancer Volumandus",
+    "wikiPage": "Polymock: Defeat Necromancer Volumandus",
+    "campaign": "Eye of the North",
+    "region": "Tarnished Coast",
+    "type": "Secondary",
+    "givenBy": [
+      "Hoff"
+    ],
+    "givenAt": [
+      "Rata Sum"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Polymock: Defeat Fonk"
+    ],
+    "rewards": [
+      "Summon Ice Imp"
+    ]
+  },
+  {
+    "name": "Prenuptial Disagreement",
+    "wikiPage": "Prenuptial Disagreement",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Olaf Olafson",
+      "Olrun Olafdottir"
+    ],
+    "givenAt": [
+      "Olafstead",
+      "Varajar Fells"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Bear Club for Women",
+      "Bear Club for Men"
+    ],
+    "rewards": [
+      "\"You Are All Weaklings!\""
+    ]
+  },
+  {
+    "name": "Primary Training",
+    "wikiPage": "Primary Training",
+    "campaign": "Nightfall",
+    "region": "Istan",
+    "type": "Primary",
+    "givenBy": [
+      "First Spear Dehvad"
+    ],
+    "givenAt": [
+      "Churrhir Fields",
+      "Kamadan, Jewel of Istan"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Chahbek Village"
+    ],
+    "rewards": [
+      "\"For Great Justice!\"",
+      "\"Watch Yourself!\"",
+      "Animate Bone Minions",
+      "Anthem of Flame",
+      "Backfire",
+      "Banish",
+      "Barbed Spear",
+      "Charm Animal",
+      "Chilling Victory",
+      "Comfort Animal",
+      "Conjure Phantasm",
+      "Crippling Sweep",
+      "Drain Enchantment",
+      "Energy Tap",
+      "Executioner's Strike",
+      "Faintheartedness",
+      "Fire Storm",
+      "Glyph of Elemental Power",
+      "Grenth's Fingers",
+      "Healing Touch",
+      "Heart of Holy Flame",
+      "Ice Spear",
+      "Imagined Burden",
+      "Imbue Health",
+      "Kindle Arrows",
+      "Life Siphon",
+      "Lightning Strike",
+      "Mend Ailment",
+      "Mending Refrain",
+      "Mighty Blow",
+      "Pin Down",
+      "Plague Touch",
+      "Remove Hex",
+      "Resurrect",
+      "Reversal of Fortune",
+      "Sever Artery",
+      "Shatter Hex",
+      "Signet of Aggression",
+      "Signet of Synergy",
+      "Sprint",
+      "Stone Daggers",
+      "Strip Enchantment",
+      "Ward Against Melee",
+      "Well of Blood",
+      "Whirling Charge",
+      "Wild Throw"
+    ]
+  },
+  {
+    "name": "Protecting Ascalon",
+    "wikiPage": "Protecting Ascalon",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Grazden the Protector"
+    ],
+    "givenAt": [
+      "Old Ascalon"
+    ],
+    "profession": "Monk",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Heal Area",
+      "Vital Blessing"
+    ]
+  },
+  {
+    "name": "Protection Prayers",
+    "wikiPage": "Protection Prayers (quest)",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "type": "Secondary",
+    "givenBy": [
+      "Grazden the Protector"
+    ],
+    "givenAt": [
+      "Green Hills County"
+    ],
+    "profession": "Monk",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Reversal of Fortune",
+      "Shielding Hands"
+    ]
+  },
+  {
+    "name": "Punch the Clown",
+    "wikiPage": "Punch the Clown",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Kilroy Stonekin"
+    ],
+    "givenAt": [
+      "Gunnar's Hold"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Brawling Headbutt"
+    ]
+  },
+  {
+    "name": "Rally the Recruits (Tutorial)",
+    "wikiPage": "Rally the Recruits (Tutorial)",
+    "campaign": "Nightfall",
+    "region": "Istan",
+    "type": "Primary",
+    "givenBy": [
+      "Kormir"
+    ],
+    "givenAt": [
+      "Island of Shehkah"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Aura of Restoration",
+      "Bane Signet",
+      "Deathly Swarm",
+      "Empathy",
+      "Ether Feast",
+      "Flare",
+      "Healing Signet",
+      "Leader's Comfort",
+      "Orison of Healing",
+      "Pious Assault",
+      "Power Attack",
+      "Power Shot",
+      "Resurrection Signet",
+      "Spear of Lightning",
+      "Troll Unguent",
+      "Vampiric Gaze",
+      "Vital Boon"
+    ]
+  },
+  {
+    "name": "Ranger Test",
+    "wikiPage": "Ranger Test",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "type": "Primary",
+    "givenBy": [
+      "Artemis the Ranger"
+    ],
+    "givenAt": [
+      "Lakeside County"
+    ],
+    "profession": "Ranger",
+    "primaryOnly": true,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "War Preparations"
+    ],
+    "rewards": [
+      "Power Shot",
+      "Troll Unguent"
+    ]
+  },
+  {
+    "name": "Reaping the Naga",
+    "wikiPage": "Reaping the Naga",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Su"
+    ],
+    "givenAt": [
+      "Panjiang Peninsula"
+    ],
+    "profession": "Necromancer",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Track Down Su"
+    ],
+    "rewards": [
+      "Barbed Signet",
+      "Soul Feast"
+    ]
+  },
+  {
+    "name": "Renegade Necromancer",
+    "wikiPage": "Renegade Necromancer",
+    "campaign": "Prophecies",
+    "region": "Northern Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Necromancer Morgan"
+    ],
+    "givenAt": [
+      "Yak's Bend"
+    ],
+    "profession": "Necromancer",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Defile Flesh",
+      "Necrotic Traversal",
+      "Well of Blood"
+    ]
+  },
+  {
+    "name": "Replacement Healers",
+    "wikiPage": "Replacement Healers",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Priestess Rashenna"
+    ],
+    "givenAt": [
+      "Serenity Temple"
+    ],
+    "profession": "Monk",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Infuse Health",
+      "Strength of Honor"
+    ]
+  },
+  {
+    "name": "Scorched Earth",
+    "wikiPage": "Scorched Earth (Prophecies quest)",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Elementalist Aziure"
+    ],
+    "givenAt": [
+      "Old Ascalon"
+    ],
+    "profession": "Elementalist",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Ward Against Elements"
+    ]
+  },
+  {
+    "name": "Secondary Training",
+    "wikiPage": "Secondary Training",
+    "campaign": "Nightfall",
+    "region": "Istan",
+    "type": "Primary",
+    "givenBy": [
+      "First Spear Dehvad"
+    ],
+    "givenAt": [
+      "Kamadan, Jewel of Istan"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Honing your Skills"
+    ],
+    "rewards": [
+      "Comfort Animal",
+      "Power Shot",
+      "Sprint"
+    ]
+  },
+  {
+    "name": "Securing the Vale",
+    "wikiPage": "Securing the Vale",
+    "campaign": "Prophecies",
+    "region": "Northern Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Van the Warrior"
+    ],
+    "givenAt": [
+      "Yak's Bend"
+    ],
+    "profession": "Warrior",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Irresistible Blow",
+      "Seeking Blade",
+      "Swift Chop"
+    ]
+  },
+  {
+    "name": "Seeking a Cure",
+    "wikiPage": "Seeking a Cure",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Brother Pe Wan"
+    ],
+    "givenAt": [
+      "Kinya Province"
+    ],
+    "profession": "Monk",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Track Down Brother Pe Wan"
+    ],
+    "rewards": [
+      "Resurrect",
+      "Retribution"
+    ]
+  },
+  {
+    "name": "Service: In Defense of the Eye",
+    "wikiPage": "Service: In Defense of the Eye",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Artificer Mullenix"
+    ],
+    "givenAt": [
+      "Eye of the North (outpost)"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Service: Practice, Dummy"
+    ],
+    "rewards": [
+      "Ebon Escape"
+    ]
+  },
+  {
+    "name": "Service: Practice, Dummy",
+    "wikiPage": "Service: Practice, Dummy",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Artificer Mullenix"
+    ],
+    "givenAt": [
+      "Eye of the North (outpost)"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Charr Invaders"
+    ],
+    "rewards": [
+      "Ebon Vanguard Assassin Support"
+    ]
+  },
+  {
+    "name": "Shackled Spirits",
+    "wikiPage": "Shackled Spirits",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Ang the Ephemeral"
+    ],
+    "givenAt": [
+      "Panjiang Peninsula"
+    ],
+    "profession": "Ritualist",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Track Down Ang the Ephemeral"
+    ],
+    "rewards": [
+      "Generous Was Tsungrai",
+      "Spirit Rift"
+    ]
+  },
+  {
+    "name": "Shadows in the Night",
+    "wikiPage": "Shadows in the Night",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Hogni Truthseeker"
+    ],
+    "givenAt": [
+      "Drakkar Lake"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "A Gate Too Far"
+    ],
+    "rewards": [
+      "Raven Blessing"
+    ]
+  },
+  {
+    "name": "Shalev's Task",
+    "wikiPage": "Shalev's Task",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Shalev the Hermit"
+    ],
+    "givenAt": [
+      "Old Ascalon"
+    ],
+    "profession": "Elementalist",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Elemental Knowledge"
+    ],
+    "rewards": [
+      "Eruption",
+      "Shard Storm"
+    ]
+  },
+  {
+    "name": "Single Ugly Grawl Seeks Samefor Mindless Destruction in Ascalon",
+    "wikiPage": "Single Ugly Grawl Seeks Same for Mindless Destruction in Ascalon",
+    "campaign": "Eye of the North",
+    "region": "Charr Homelands",
+    "type": "Secondary",
+    "givenBy": [
+      "Vael"
+    ],
+    "givenAt": [
+      "Sacnoth Valley"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Forbidden Fruit"
+    ],
+    "rewards": [
+      "Weakness Trap"
+    ]
+  },
+  {
+    "name": "Skill Chaining",
+    "wikiPage": "Skill Chaining",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Secondary",
+    "givenBy": [
+      "Instructor Ng"
+    ],
+    "givenAt": [
+      "Shing Jea Monastery"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Animate Bone Minions",
+      "Balanced Stance",
+      "Channeled Strike",
+      "Critical Eye",
+      "Cruel Was Daoshen",
+      "Death Nova",
+      "Draw Conditions",
+      "Drunken Blow",
+      "Dual Shot",
+      "Glyph of Lesser Energy",
+      "Imagined Burden",
+      "Kindle Arrows",
+      "Mantra of Persistence",
+      "Stoning",
+      "Way of Perfection",
+      "Zealot's Fire"
+    ]
+  },
+  {
+    "name": "Snaring Course",
+    "wikiPage": "Snaring Course",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Secondary",
+    "givenBy": [
+      "Instructor Ng"
+    ],
+    "givenAt": [
+      "Shing Jea Monastery"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Caltrops",
+      "Deep Freeze",
+      "Pin Down",
+      "Sprint"
+    ]
+  },
+  {
+    "name": "Sowing Seeds",
+    "wikiPage": "Sowing Seeds",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Grazden the Protector"
+    ],
+    "givenAt": [
+      "Old Ascalon"
+    ],
+    "profession": "Monk",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Bane Signet",
+      "Heal Party",
+      "Orison of Healing"
+    ]
+  },
+  {
+    "name": "Spark of Interest",
+    "wikiPage": "Spark of Interest",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Ronsu"
+    ],
+    "givenAt": [
+      "Sunqua Vale"
+    ],
+    "profession": "Elementalist",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Locate Ronsu"
+    ],
+    "rewards": [
+      "Armor of Earth",
+      "Ice Spikes"
+    ]
+  },
+  {
+    "name": "Sparring Elements",
+    "wikiPage": "Sparring Elements",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Kai Ying"
+    ],
+    "givenAt": [
+      "Panjiang Peninsula"
+    ],
+    "profession": "Elementalist",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Track Down Kai Ying"
+    ],
+    "rewards": [
+      "Fire Storm",
+      "Stone Daggers"
+    ]
+  },
+  {
+    "name": "The Cipher of Kormir",
+    "wikiPage": "Spoiler-related Cipher",
+    "campaign": "Eye of the North",
+    "region": "Tarnished Coast",
+    "type": "Secondary",
+    "givenBy": [
+      "Kerrsh"
+    ],
+    "givenAt": [
+      "Tarnished Haven"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "The Cipher of Balthazar",
+      "The Cipher of Dwayna",
+      "The Cipher of Grenth",
+      "The Cipher of Lyssa"
+    ],
+    "rewards": [
+      "Pain Inverter"
+    ]
+  },
+  {
+    "name": "Stale Mate",
+    "wikiPage": "Stale Mate",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Sister Tai"
+    ],
+    "givenAt": [
+      "Sunqua Vale"
+    ],
+    "profession": "Monk",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Locate Sister Tai"
+    ],
+    "rewards": [
+      "Healing Touch",
+      "Reversal of Fortune"
+    ]
+  },
+  {
+    "name": "Stone Summit Beastmasters",
+    "wikiPage": "Stone Summit Beastmasters",
+    "campaign": "Prophecies",
+    "region": "Northern Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Artemis the Ranger"
+    ],
+    "givenAt": [
+      "Traveler's Vale"
+    ],
+    "profession": "Ranger",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Call of Protection",
+      "Whirling Defense",
+      "Winter"
+    ]
+  },
+  {
+    "name": "Supplies for the Duke",
+    "wikiPage": "Supplies for the Duke",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Gate Guard Hollis"
+    ],
+    "givenAt": [
+      "Old Ascalon"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "\"Watch Yourself!\"",
+      "Called Shot",
+      "Distortion",
+      "Ice Spikes",
+      "Purge Conditions",
+      "Weaken Armor"
+    ]
+  },
+  {
+    "name": "Take the Shortcut (Skip Tutorial)",
+    "wikiPage": "Take the Shortcut",
+    "campaign": "Nightfall",
+    "region": "Istan",
+    "type": "Primary",
+    "givenBy": [
+      "Kormir"
+    ],
+    "givenAt": [
+      "Island of Shehkah"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Aura of Restoration",
+      "Bane Signet",
+      "Deathly Swarm",
+      "Empathy",
+      "Ether Feast",
+      "Flare",
+      "Healing Signet",
+      "Leader's Comfort",
+      "Orison of Healing",
+      "Pious Assault",
+      "Power Attack",
+      "Power Shot",
+      "Resurrection Signet",
+      "Spear of Lightning",
+      "Troll Unguent",
+      "Vampiric Gaze",
+      "Vital Boon"
+    ]
+  },
+  {
+    "name": "Talon's Duel",
+    "wikiPage": "Talon's Duel",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Talon Silverwing"
+    ],
+    "givenAt": [
+      "Sunqua Vale"
+    ],
+    "profession": "Warrior",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Locate Talon Silverwing"
+    ],
+    "rewards": [
+      "\"Watch Yourself!\"",
+      "Cyclone Axe"
+    ]
+  },
+  {
+    "name": "The Accursed Path",
+    "wikiPage": "The Accursed Path",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "type": "Secondary",
+    "givenBy": [
+      "Oberan the Reviled"
+    ],
+    "givenAt": [
+      "The Catacombs"
+    ],
+    "profession": "Necromancer",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Faintheartedness",
+      "Soul Barbs"
+    ]
+  },
+  {
+    "name": "The Ascalon Settlement",
+    "wikiPage": "The Ascalon Settlement",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "type": "Secondary",
+    "givenBy": [
+      "Damaris"
+    ],
+    "givenAt": [
+      "North Kryta Province"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Enfeeble",
+      "Final Thrust",
+      "Heal Other",
+      "Lightning Orb",
+      "Throw Dirt",
+      "Wastrel's Worry"
+    ]
+  },
+  {
+    "name": "The Big Unfriendly Jotun",
+    "wikiPage": "The Big Unfriendly Jotun",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Undrath Blastrock"
+    ],
+    "givenAt": [
+      "Sifhalla"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Dwarven Stability",
+      "Snow Storm"
+    ]
+  },
+  {
+    "name": "The Blessings of Balthazar",
+    "wikiPage": "The Blessings of Balthazar",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "type": "Secondary",
+    "givenBy": [
+      "Brother Mhenlo"
+    ],
+    "givenAt": [
+      "Ashford Abbey"
+    ],
+    "profession": "Monk",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Retribution",
+      "Symbol of Wrath"
+    ]
+  },
+  {
+    "name": "The Charr Patrol",
+    "wikiPage": "The Charr Patrol",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Master Ranger Nente"
+    ],
+    "givenAt": [
+      "Old Ascalon"
+    ],
+    "profession": "Ranger",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Favorable Winds",
+      "Feral Lunge"
+    ]
+  },
+  {
+    "name": "The Charr Staging Area",
+    "wikiPage": "The Charr Staging Area",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Master Ranger Nente"
+    ],
+    "givenAt": [
+      "Old Ascalon"
+    ],
+    "profession": "Ranger",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "The Charr Patrol"
+    ],
+    "rewards": [
+      "Dodge",
+      "Quickening Zephyr"
+    ]
+  },
+  {
+    "name": "The Cipher of Balthazar",
+    "wikiPage": "The Cipher of Balthazar",
+    "campaign": "Eye of the North",
+    "region": "Tarnished Coast",
+    "type": "Secondary",
+    "givenBy": [
+      "Kerrsh"
+    ],
+    "givenAt": [
+      "Tarnished Haven"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "The Cipher of Melandru"
+    ],
+    "rewards": [
+      "Mental Block"
+    ]
+  },
+  {
+    "name": "The Cipher of Dwayna",
+    "wikiPage": "The Cipher of Dwayna",
+    "campaign": "Eye of the North",
+    "region": "Tarnished Coast",
+    "type": "Secondary",
+    "givenBy": [
+      "Kerrsh"
+    ],
+    "givenAt": [
+      "Tarnished Haven"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "The Cipher of Melandru"
+    ],
+    "rewards": [
+      "Radiation Field"
+    ]
+  },
+  {
+    "name": "The Cipher of Grenth",
+    "wikiPage": "The Cipher of Grenth",
+    "campaign": "Eye of the North",
+    "region": "Tarnished Coast",
+    "type": "Secondary",
+    "givenBy": [
+      "Kerrsh"
+    ],
+    "givenAt": [
+      "Tarnished Haven"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "The Cipher of Melandru"
+    ],
+    "rewards": [
+      "Asuran Scan"
+    ]
+  },
+  {
+    "name": "The Cipher of Lyssa",
+    "wikiPage": "The Cipher of Lyssa",
+    "campaign": "Eye of the North",
+    "region": "Tarnished Coast",
+    "type": "Secondary",
+    "givenBy": [
+      "Kerrsh"
+    ],
+    "givenAt": [
+      "Tarnished Haven"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "The Cipher of Melandru"
+    ],
+    "rewards": [
+      "Technobabble"
+    ]
+  },
+  {
+    "name": "The Cipher of Melandru",
+    "wikiPage": "The Cipher of Melandru",
+    "campaign": "Eye of the North",
+    "region": "Tarnished Coast",
+    "type": "Secondary",
+    "givenBy": [
+      "Kerrsh"
+    ],
+    "givenAt": [
+      "Tarnished Haven"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Smooth Criminal"
+    ]
+  },
+  {
+    "name": "The Crop Thieves",
+    "wikiPage": "The Crop Thieves",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Weng Gha"
+    ],
+    "givenAt": [
+      "Panjiang Peninsula"
+    ],
+    "profession": "Warrior",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Track Down Weng Gha"
+    ],
+    "rewards": [
+      "Frenzy",
+      "Mighty Blow"
+    ]
+  },
+  {
+    "name": "The Deserters",
+    "wikiPage": "The Deserters",
+    "campaign": "Prophecies",
+    "region": "Northern Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Master Saberlin"
+    ],
+    "givenAt": [
+      "Beacon's Perch"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Hungry Devourer"
+    ],
+    "rewards": [
+      "Balthazar's Spirit",
+      "Bonetti's Defense",
+      "Ice Spear",
+      "Inspired Hex",
+      "Serpent's Quickness",
+      "Strip Enchantment"
+    ]
+  },
+  {
+    "name": "The Destroyer Challenge",
+    "wikiPage": "The Destroyer Challenge",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "High Priest Alkar"
+    ],
+    "givenAt": [
+      "Battledepths",
+      "Central Transfer Chamber"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Destructive Research"
+    ],
+    "rewards": [
+      "Alkar's Alchemical Acid"
+    ]
+  },
+  {
+    "name": "The Elementalist Experiment",
+    "wikiPage": "The Elementalist Experiment",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "type": "Secondary",
+    "givenBy": [
+      "Elementalist Aziure"
+    ],
+    "givenAt": [
+      "Wizard's Folly"
+    ],
+    "profession": "Elementalist",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [],
+    "rewards": [
+      "Aura of Restoration",
+      "Fire Storm",
+      "Glyph of Lesser Energy"
+    ]
+  },
+  {
+    "name": "The False Gods",
+    "wikiPage": "The False Gods",
+    "campaign": "Prophecies",
+    "region": null,
+    "type": "Secondary",
+    "givenBy": [
+      "Brother Mizar"
+    ],
+    "givenAt": [
+      "Temple of the Ages"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "\"To the Limit!\"",
+      "Blessed Signet",
+      "Choking Gas",
+      "Deep Freeze",
+      "Demonic Flesh",
+      "Mind Wrack"
+    ]
+  },
+  {
+    "name": "The Forgotten Ones",
+    "wikiPage": "The Forgotten Ones",
+    "campaign": "Prophecies",
+    "region": "Crystal Desert",
+    "type": "Secondary",
+    "givenBy": [
+      "Annelle Fipps"
+    ],
+    "givenAt": [
+      "Destiny's Gorge"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Animate Bone Fiend",
+      "Defensive Stance",
+      "Elemental Resistance",
+      "Incendiary Bonds",
+      "Precision Shot",
+      "Vengeance"
+    ]
+  },
+  {
+    "name": "The Geomancer's Test",
+    "wikiPage": "The Geomancer's Test",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Kendrick Redstaff"
+    ],
+    "givenAt": [
+      "Serenity Temple"
+    ],
+    "profession": "Elementalist",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "The Way of the Geomancer"
+    ],
+    "rewards": [
+      "Earth Attunement",
+      "Magnetic Aura"
+    ]
+  },
+  {
+    "name": "The Great Norn Alemoot",
+    "wikiPage": "The Great Norn Alemoot",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Olaf Olafson",
+      "Olrun Olafdottir"
+    ],
+    "givenAt": [
+      "Olafstead",
+      "Varajar Fells"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "A Gate Too Far"
+    ],
+    "rewards": [
+      "Feel No Pain"
+    ]
+  },
+  {
+    "name": "The Hot Springs Murders",
+    "wikiPage": "The Hot Springs Murders",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "type": "Secondary",
+    "givenBy": [
+      "Inspector Caleb"
+    ],
+    "givenAt": [
+      "Nebo Terrace"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Bestial Pounce",
+      "Blood of the Master",
+      "Counter Blow",
+      "Grasping Earth",
+      "Illusion of Weakness",
+      "Mend Ailment"
+    ]
+  },
+  {
+    "name": "The Hunting of the Charr",
+    "wikiPage": "The Hunting of the Charr",
+    "campaign": "Eye of the North",
+    "region": "Charr Homelands",
+    "type": "Secondary",
+    "givenBy": [
+      "Sergeant Weststar"
+    ],
+    "givenAt": [
+      "Sacnoth Valley"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Falling Out"
+    ],
+    "rewards": [
+      "Signet of Infection"
+    ]
+  },
+  {
+    "name": "The Last Hog",
+    "wikiPage": "The Last Hog",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "type": "Secondary",
+    "givenBy": [
+      "Farmer Dirk"
+    ],
+    "givenAt": [
+      "North Kryta Province"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Blood Ritual",
+      "Gale",
+      "Leech Signet",
+      "Life Attunement",
+      "Otyugh's Cry",
+      "Staggering Blow"
+    ]
+  },
+  {
+    "name": "The Lost Princess",
+    "wikiPage": "The Lost Princess",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "type": "Secondary",
+    "givenBy": [
+      "Watchman Arad"
+    ],
+    "givenAt": [
+      "Fishermen's Haven"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Balanced Stance",
+      "Balthazar's Aura",
+      "Blackout",
+      "Earthquake",
+      "Edge of Extinction",
+      "Price of Failure"
+    ]
+  },
+  {
+    "name": "The Misplaced Sword",
+    "wikiPage": "The Misplaced Sword",
+    "campaign": "Prophecies",
+    "region": "Crystal Desert",
+    "type": "Secondary",
+    "givenBy": [
+      "Yort the Bronze"
+    ],
+    "givenAt": [
+      "Heroes' Audience"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Forgotten Wisdom"
+    ],
+    "rewards": [
+      "\"Shields Up!\"",
+      "Flame Burst",
+      "Flame Trap",
+      "Guilt",
+      "Healing Touch",
+      "Well of the Profane"
+    ]
+  },
+  {
+    "name": "The Necromancer's Novice",
+    "wikiPage": "The Necromancer's Novice",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "type": "Secondary",
+    "givenBy": [
+      "Necromancer Munne"
+    ],
+    "givenAt": [
+      "The Catacombs"
+    ],
+    "profession": "Necromancer",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [],
+    "rewards": [
+      "Animate Bone Horror",
+      "Deathly Swarm",
+      "Life Siphon"
+    ]
+  },
+  {
+    "name": "The Path to Revelations",
+    "wikiPage": "The Path to Revelations",
+    "campaign": "Eye of the North",
+    "region": "Tarnished Coast",
+    "type": "Secondary",
+    "givenBy": [
+      "Kerrsh"
+    ],
+    "givenAt": [
+      "Tarnished Haven"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "The Cipher of Kormir"
+    ],
+    "rewards": [
+      "Air of Superiority"
+    ]
+  },
+  {
+    "name": "The Power of Blood",
+    "wikiPage": "The Power of Blood",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "type": "Secondary",
+    "givenBy": [
+      "Kasha Blackblood"
+    ],
+    "givenAt": [
+      "Green Hills County"
+    ],
+    "profession": "Necromancer",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Blood Renewal",
+      "Vampiric Touch"
+    ]
+  },
+  {
+    "name": "The Price of Steel",
+    "wikiPage": "The Price of Steel",
+    "campaign": "Prophecies",
+    "region": "Maguuma Jungle",
+    "type": "Secondary",
+    "givenBy": [
+      "Alari Doubleblade"
+    ],
+    "givenAt": [
+      "Silverwood"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Arcane Thievery",
+      "Barbed Trap",
+      "Conjure Frost",
+      "Contemplation of Purity",
+      "Crushing Blow",
+      "Rend Enchantments"
+    ]
+  },
+  {
+    "name": "The Ranger's Companion",
+    "wikiPage": "The Ranger's Companion",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "type": "Secondary",
+    "givenBy": [
+      "Master Ranger Nente"
+    ],
+    "givenAt": [
+      "Regent Valley (pre-Searing)"
+    ],
+    "profession": "Ranger",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [],
+    "rewards": [
+      "Charm Animal",
+      "Comfort Animal",
+      "Troll Unguent"
+    ]
+  },
+  {
+    "name": "The Royal Papers",
+    "wikiPage": "The Royal Papers",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "type": "Secondary",
+    "givenBy": [
+      "Watchman Arad"
+    ],
+    "givenAt": [
+      "Fishermen's Haven"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Animate Bone Minions",
+      "Concussion Shot",
+      "Fire Attunement",
+      "Mantra of Earth",
+      "Savage Slash",
+      "Scourge Healing"
+    ]
+  },
+  {
+    "name": "The Smell of Titan in the Morning",
+    "wikiPage": "The Smell of Titan in the Morning",
+    "campaign": "Eye of the North",
+    "region": "Charr Homelands",
+    "type": "Secondary",
+    "givenBy": [
+      "Captain Langmar"
+    ],
+    "givenAt": [
+      "Grothmar Wardowns"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "The Missing Vanguard"
+    ],
+    "rewards": [
+      "Ebon Battle Standard of Honor"
+    ]
+  },
+  {
+    "name": "The Stolen Artifact",
+    "wikiPage": "The Stolen Artifact",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Necromancer Munne"
+    ],
+    "givenAt": [
+      "Sardelac Sanitarium"
+    ],
+    "profession": "Necromancer",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Animate Bone Horror",
+      "Deathly Swarm",
+      "Insidious Parasite",
+      "Life Siphon"
+    ]
+  },
+  {
+    "name": "The Stone Summit Champion",
+    "wikiPage": "The Stone Summit Champion",
+    "campaign": "Prophecies",
+    "region": "Northern Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Sebedoh the Mesmer"
+    ],
+    "givenAt": [
+      "Yak's Bend"
+    ],
+    "profession": "Mesmer",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Channeling",
+      "Fragility",
+      "Power Spike"
+    ]
+  },
+  {
+    "name": "The Supremacy of Air",
+    "wikiPage": "The Supremacy of Air",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "type": "Secondary",
+    "givenBy": [
+      "Ralena Stormbringer"
+    ],
+    "givenAt": [
+      "Foible's Fair"
+    ],
+    "profession": "Elementalist",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Blinding Flash",
+      "Lightning Javelin"
+    ]
+  },
+  {
+    "name": "The Throwdown in a Norn Town",
+    "wikiPage": "The Throwdown in a Norn Town",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Kilroy Stonekin"
+    ],
+    "givenAt": [
+      "Gunnar's Hold"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Kilroy Stonekin's Punch-Out Extravaganza!"
+    ],
+    "rewards": [
+      "Ear Bite",
+      "Low Blow"
+    ]
+  },
+  {
+    "name": "The Undead Hordes",
+    "wikiPage": "The Undead Hordes",
+    "campaign": "Prophecies",
+    "region": "Kryta",
+    "type": "Secondary",
+    "givenBy": [
+      "Elder Hezron"
+    ],
+    "givenAt": [
+      "Beetletun"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Griffon's Sweep",
+      "Holy Veil",
+      "Inspired Enchantment",
+      "Plague Touch",
+      "Symbiosis",
+      "Water Attunement"
+    ]
+  },
+  {
+    "name": "The Vineyard Problem",
+    "wikiPage": "The Vineyard Problem",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "type": "Secondary",
+    "givenBy": [
+      "Little Thom"
+    ],
+    "givenAt": [
+      "The Barradin Estate"
+    ],
+    "profession": "Warrior",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Cyclone Axe",
+      "Executioner's Strike"
+    ]
+  },
+  {
+    "name": "The Wayward Monk",
+    "wikiPage": "The Wayward Monk",
+    "campaign": "Prophecies",
+    "region": "Northern Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Van the Warrior"
+    ],
+    "givenAt": [
+      "Yak's Bend"
+    ],
+    "profession": "Monk",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Divine Boon",
+      "Pacifism",
+      "Vigorous Spirit"
+    ]
+  },
+  {
+    "name": "The Yeti Hunt",
+    "wikiPage": "The Yeti Hunt",
+    "campaign": "Factions",
+    "region": "Shing Jea Island",
+    "type": "Primary",
+    "givenBy": [
+      "Zho"
+    ],
+    "givenAt": [
+      "Kinya Province"
+    ],
+    "profession": "Ranger",
+    "primaryOnly": true,
+    "allowsNoSecondary": true,
+    "precededBy": [
+      "Track Down Zho"
+    ],
+    "rewards": [
+      "Flame Trap",
+      "Read the Wind"
+    ]
+  },
+  {
+    "name": "Truthseeker",
+    "wikiPage": "Truthseeker",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Gunnar Poundfist"
+    ],
+    "givenAt": [
+      "Gunnar's Hold"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "Curse of the Nornbear"
+    ],
+    "rewards": [
+      "\"I Am the Strongest!\""
+    ]
+  },
+  {
+    "name": "Trying Times",
+    "wikiPage": "Trying Times",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Vassar"
+    ],
+    "givenAt": [
+      "Sardelac Sanitarium"
+    ],
+    "profession": "Mesmer",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Chaos Storm",
+      "Mantra of Flame"
+    ]
+  },
+  {
+    "name": "Unnatural Creatures",
+    "wikiPage": "Unnatural Creatures",
+    "campaign": "Prophecies",
+    "region": "Ascalon",
+    "type": "Secondary",
+    "givenBy": [
+      "Erudine"
+    ],
+    "givenAt": [
+      "Serenity Temple"
+    ],
+    "profession": "Mesmer",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Diversion"
+    ]
+  },
+  {
+    "name": "Unnatural Growths",
+    "wikiPage": "Unnatural Growths",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "type": "Secondary",
+    "givenBy": [
+      "Aidan"
+    ],
+    "givenAt": [
+      "Wizard's Folly"
+    ],
+    "profession": "Ranger",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Dual Shot",
+      "Ignite Arrows"
+    ]
+  },
+  {
+    "name": "Warrior Test",
+    "wikiPage": "Warrior Test",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "type": "Primary",
+    "givenBy": [
+      "Van the Warrior"
+    ],
+    "givenAt": [
+      "Lakeside County"
+    ],
+    "profession": "Warrior",
+    "primaryOnly": true,
+    "allowsNoSecondary": false,
+    "precededBy": [
+      "War Preparations"
+    ],
+    "rewards": [
+      "Frenzy",
+      "Healing Signet"
+    ]
+  },
+  {
+    "name": "Warrior's Challenge",
+    "wikiPage": "Warrior's Challenge",
+    "campaign": "Prophecies",
+    "region": "Ascalon (pre-Searing)",
+    "type": "Secondary",
+    "givenBy": [
+      "Duke Barradin"
+    ],
+    "givenAt": [
+      "The Barradin Estate"
+    ],
+    "profession": "Warrior",
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "Frenzy",
+      "Hammer Bash"
+    ]
+  },
+  {
+    "name": "Worthy Deeds (Done Dirt Cheap)",
+    "wikiPage": "Worthy Deeds (Done Dirt Cheap)",
+    "campaign": "Eye of the North",
+    "region": "Far Shiverpeaks",
+    "type": "Secondary",
+    "givenBy": [
+      "Sif Shadowhunter"
+    ],
+    "givenAt": [
+      "Sifhalla"
+    ],
+    "profession": null,
+    "primaryOnly": false,
+    "allowsNoSecondary": false,
+    "precededBy": [],
+    "rewards": [
+      "\"You Move Like a Dwarf!\""
+    ]
+  }
+]

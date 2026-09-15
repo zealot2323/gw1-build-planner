@@ -8,7 +8,8 @@ and from where?"
 
 - `/scraper` — Node/TypeScript scripts that fetch and parse wiki data into JSON.
 - `/data` — committed JSON datasets (the scraper's output). Fixtures live in `/data/fixtures`.
-  `skill-changes.json` is the recent-game-updates log (see Data decisions).
+  `skill-changes.json` is the recent-game-updates log; `quests.json` the quests
+  that reward skills (see Data decisions).
 - `/engine` — pure TypeScript library: types, JSON Schemas, availability/build logic. **No UI dependencies.**
 - `/app` — static React app (Vite). No backend — it loads the committed JSON from `/data`.
 - `/export` — Obsidian vault generator.
@@ -236,6 +237,37 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
 - **`npm run updates` refetches the skills it finds changes for.** Their
   cached pages predate the patch, and showing a pre-patch skill as current
   while announcing that it just changed is worse than not flagging it.
+- **Quests** (`npm run quests` -> `data/quests.json`) are found by following
+  the quest links on cached skill pages — never a global crawl — then each
+  quest page's {{Quest infobox}} is fetched, because it is authoritative
+  where skill pages are not:
+  - `given at` wins over the skill page's location (two skill pages put
+    Locate Jinzo in different places).
+  - `profession` + `primary = y` restricts a quest to that PRIMARY
+    profession (template default: primary or secondary). `canTakeQuest`
+    enforces it, so a W/A is never sent to Locate Jinzo for Assassin
+    skills. `secondary = n` is ambiguous in the template docs and only
+    ever appears alongside `primary = y`, so it is not consulted.
+  - Skill pages link some quests via redirects or a male/female
+    disambiguation page; `manifest.questSources` records the real page(s),
+    and aliases of one quest are folded into a single canonical record
+    (Rally the Recruits was otherwise split 1/16 across two entries).
+  - Quest lines on skill pages come in several shapes: slash-joined quests
+    sharing one location, unlinked locations, "(from [[NPC]] in [[Place]])".
+    The location lives in the parentheses — "the second link" once turned
+    the second of two quests into a place.
+  - `precededBy` is shown, not enforced: quest completion isn't tracked.
+  - Pre-Searing quests are only offered to a character with a pre-Searing
+    location unlocked; the transition is one-way.
+- **Travel distance 0 must mean "available now".** The wiki lists many
+  one-way links (tutorial starts, mission maps exiting to their outpost,
+  portals). The route search stays undirected — a directed one risks
+  disconnecting the map — but the distance-0 seed follows the unlocked
+  place's OWN exits, exactly like `reachableExplorables`.
+- **Patch-note sub-bullets inherit their parent bullet** ("* Sword
+  adrenaline reductions:" / "** Sever Artery from 4 to 3"). The parent
+  supplies the missing text AND the classification ("* Skill AI
+  adjustments:" makes its children `ai`, not `balance`).
 - Manual corrections (wiki typos, non-locations like Lion's Gate, PvP arenas,
   progression-gated connections such as Ring of Fire -> Abaddon's Mouth ->
   Hell's Precipice, trainer list omissions) live in

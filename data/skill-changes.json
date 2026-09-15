@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-12T16:33:25.036Z",
-  "since": "2025-09-12",
+  "generatedAt": "2026-09-15T16:22:49.942Z",
+  "since": "2025-09-15",
   "windowMonths": 12,
   "skills": [
     {
@@ -1786,7 +1786,7 @@
       "changes": [
         {
           "date": "2026-08-26",
-          "note": "from 6 to 5",
+          "note": "Sword adrenaline reductions: from 6 to 5",
           "kind": "balance",
           "section": "Skill update details › Warrior"
         }
@@ -2235,7 +2235,7 @@
       "changes": [
         {
           "date": "2026-08-26",
-          "note": "from 8 to 7",
+          "note": "Sword adrenaline reductions: from 8 to 7",
           "kind": "balance",
           "section": "Skill update details › Warrior"
         },
@@ -2279,7 +2279,7 @@
       "changes": [
         {
           "date": "2026-02-25",
-          "note": "'s range was increased to now hit nearby instead of adjacent foes.",
+          "note": "range was increased to now hit nearby instead of adjacent foes.",
           "kind": "balance",
           "section": "Guild Wars Wiki notes"
         }
@@ -3253,7 +3253,7 @@
       "changes": [
         {
           "date": "2026-08-26",
-          "note": "from 8 to 7",
+          "note": "Sword adrenaline reductions: from 8 to 7",
           "kind": "balance",
           "section": "Skill update details › Warrior"
         }
@@ -3266,7 +3266,7 @@
       "changes": [
         {
           "date": "2026-08-26",
-          "note": "from 6 to 5",
+          "note": "Sword adrenaline reductions: from 6 to 5",
           "kind": "balance",
           "section": "Skill update details › Warrior"
         }
@@ -5469,7 +5469,7 @@
         {
           "date": "2026-05-12",
           "note": "No longer casts outside of combat area to preserve uptime during combat; prioritizes casting if an ally has low health; targets ally in range w/lowest health percentage.",
-          "kind": "balance",
+          "kind": "ai",
           "section": null
         },
         {
@@ -5492,7 +5492,7 @@
         "isElite": true,
         "description": "Elite Binding Ritual. Create a level 1...14 spirit. Every 4 seconds, this spirit heals one non-spirit ally in the area for 10...115 Health. This spirit dies after 90 seconds."
       },
-      "previousIsStale": false
+      "previousIsStale": true
     },
     {
       "skill": "Price of Pride",
@@ -5726,7 +5726,7 @@
       "changes": [
         {
           "date": "2026-08-26",
-          "note": "from 5 to 4.",
+          "note": "Sword adrenaline reductions: from 5 to 4.",
           "kind": "balance",
           "section": "Skill update details › Warrior"
         },
@@ -6256,7 +6256,7 @@
       "changes": [
         {
           "date": "2026-08-26",
-          "note": "from 4 to 3",
+          "note": "Sword adrenaline reductions: from 4 to 3",
           "kind": "balance",
           "section": "Skill update details › Warrior"
         }
@@ -6836,7 +6836,7 @@
       "changes": [
         {
           "date": "2026-08-26",
-          "note": "from 8 to 7",
+          "note": "Sword adrenaline reductions: from 8 to 7",
           "kind": "balance",
           "section": "Skill update details › Warrior"
         }
@@ -7040,7 +7040,7 @@
         {
           "date": "2026-05-12",
           "note": "Prioritizes targeting casters; prioritizes highest health; skips low health targets.",
-          "kind": "balance",
+          "kind": "ai",
           "section": null
         },
         {
@@ -7051,14 +7051,14 @@
         }
       ],
       "previous": {
-        "date": "2026-04-28",
-        "label": "April 28, 2026",
-        "energyCost": 15,
+        "date": null,
+        "label": "Original",
+        "energyCost": 10,
         "adrenalineCost": null,
         "sacrificePercent": null,
         "upkeep": null,
-        "activation": 1,
-        "recharge": 7,
+        "activation": 2,
+        "recharge": 15,
         "attribute": "Blood Magic",
         "isElite": true,
         "description": "Elite Hex Spell. For 10 seconds, whenever target foe casts a spell, you steal up to 16...80 Health from that foe."
@@ -7203,7 +7203,7 @@
         {
           "date": "2026-05-12",
           "note": "Only checks the values of a potential target spirit (the closest) when determining usefulness; won't cast if you have plenty of energy; won't cast unless there is going to be meaningful energy gain.",
-          "kind": "balance",
+          "kind": "ai",
           "section": null
         }
       ],
@@ -7377,7 +7377,7 @@
       "changes": [
         {
           "date": "2026-08-26",
-          "note": "from 8 to 7",
+          "note": "Sword adrenaline reductions: from 8 to 7",
           "kind": "balance",
           "section": "Skill update details › Warrior"
         }

@@ -55,9 +55,17 @@ export function travelDistances(character: Character, index: DataIndex): TravelG
     if (!index.locationByPage.has(start)) continue;
     distance.set(start, 0);
     queue.push(start);
-    // explorables adjacent to an unlocked outpost are already walkable
-    for (const n of adjacency.get(start) ?? []) {
-      if (distance.has(n)) continue;
+    // Explorables an unlocked place lists as its own exits are already
+    // walkable. This must follow the SAME directional rule as
+    // reachableExplorables, not the undirected graph: the wiki lists many
+    // one-way links (a tutorial start like Monastery Overlook exits to Shing
+    // Jea Monastery, but not back), and the undirected version put such
+    // places at "0 zones away" while availability said they were not
+    // reachable — both on the same screen.
+    const here = index.locationByPage.get(start)!;
+    const exits = here.kind === "explorable" ? [] : here.neighbors;
+    for (const n of exits) {
+      if (distance.has(n) || index.locationByPage.get(n)?.kind !== "explorable") continue;
       distance.set(n, 0);
       previous.set(n, start);
       queue.push(n);

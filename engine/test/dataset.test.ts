@@ -6,7 +6,10 @@ import { existsSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
 import {
+  canTakeQuest,
   indexDataset,
+  questBoard,
+  travelDistances,
   Profession,
   reachableExplorables,
   skillAvailability,
@@ -27,6 +30,7 @@ const index = indexDataset({
   trainers: data("trainers.json"),
   monsters: data("monsters.json"),
   missions: data("missions.json"),
+  quests: data("quests.json"),
 } as Dataset);
 
 /** A fresh post-Searing Warrior who has only reached Ascalon City. */
@@ -521,5 +525,119 @@ describe("full dataset: no unlearnable skills leak in as common", () => {
     };
     const names = skillAvailability(character, Profession.Elementalist, index).map((e) => e.skill.name);
     expect(names).not.toContain("Pain");
+  });
+});
+
+describe("full dataset: quests", () => {
+  const quests = index.dataset.quests ?? [];
+
+  it("has every skill's quest reference backed by exactly one quest record", () => {
+    const pages = quests.map((q) => q.wikiPage);
+    expect(new Set(pages).size).toBe(pages.length);
+    for (const s of index.dataset.skills) {
+      for (const q of s.acquisition.quests) expect(index.questByPage.has(q), `${s.wikiPage} -> ${q}`).toBe(true);
+    }
+  });
+
+  it("resolves every pickup location and reward", () => {
+    for (const q of quests) {
+      for (const l of q.givenAt) expect(index.locationByPage.has(l), `${q.wikiPage} @ ${l}`).toBe(true);
+      for (const r of q.rewards) expect(index.skillByPage.has(r), `${q.wikiPage} -> ${r}`).toBe(true);
+    }
+  });
+
+  it("folds redirect aliases into one quest instead of splitting its rewards", () => {
+    // skill pages link both "Rally the Recruits" (a redirect) and its target
+    const rally = quests.filter((q) => /^Rally the Recruits/.test(q.wikiPage));
+    expect(rally).toHaveLength(1);
+    expect(rally[0].rewards).toContain("Resurrection Signet");
+  });
+
+  it("gates primary-only quests on the primary profession", () => {
+    const jinzo = index.questByPage.get("Locate Jinzo")!;
+    expect(jinzo).toMatchObject({ profession: "Assassin", primaryOnly: true, givenAt: ["Shing Jea Monastery"] });
+    const assassin: Character = { ...freshWarrior, primaryProfession: Profession.Assassin };
+    const warriorWithAssassin: Character = { ...freshWarrior, unlockedSecondaries: [Profession.Assassin] };
+    expect(canTakeQuest(jinzo, assassin)).toBe(true);
+    expect(canTakeQuest(jinzo, warriorWithAssassin)).toBe(false);
+  });
+
+  it("drops a quest source the character can never take", () => {
+    // Dancing Daggers is a Locate Jinzo reward; a W/A must not be told to go do it
+    const wa: Character = {
+      ...freshWarrior,
+      unlockedSecondaries: [Profession.Assassin],
+      unlockedLocations: ["Shing Jea Monastery"],
+    };
+    const entry = skillAvailability(wa, Profession.Assassin, index).find((e) => e.skill.wikiPage === "Dancing Daggers")!;
+    expect(entry.sources.some((s) => s.kind === "quest" && s.via === "Locate Jinzo")).toBe(false);
+  });
+
+  it("uses the quest page's location over a skill page that disagrees", () => {
+    const a: Character = { ...freshWarrior, primaryProfession: Profession.Assassin, unlockedLocations: ["Shing Jea Monastery"] };
+    const entry = skillAvailability(a, null, index).find((e) => e.skill.wikiPage === "Unsuspecting Strike")!;
+    const src = entry.sources.find((s) => s.via === "Locate Jinzo")!;
+    expect(src).toMatchObject({ location: "Shing Jea Monastery", availableNow: true });
+  });
+});
+
+describe("full dataset: quest board", () => {
+  const board = questBoard(freshWarrior, index, travelDistances(freshWarrior, index));
+
+  it("offers a fresh Ascalon warrior quests next door, nearest first", () => {
+    expect(board.length).toBeGreaterThan(0);
+    const helping = board.find((e) => e.quest.wikiPage === "Helping the People of Ascalon")!;
+    // given in Old Ascalon, which borders Ascalon City
+    expect(helping).toMatchObject({ availableNow: true, distance: 0, location: "Old Ascalon" });
+    const distances = board.map((e) => (e.availableNow ? -1 : (e.distance ?? Infinity)));
+    expect(distances).toEqual([...distances].sort((x, y) => x - y));
+  });
+
+  it("only lists rewards the character could learn", () => {
+    for (const e of board) {
+      for (const s of e.rewards) expect([null, Profession.Warrior]).toContain(s.profession);
+    }
+    const helping = board.find((e) => e.quest.wikiPage === "Helping the People of Ascalon")!;
+    expect(helping.rewards.map((s) => s.name)).toEqual(['"For Great Justice!"']);
+  });
+
+  it("hides quests with nothing for this character", () => {
+    // Mesmer-only primary quest: nothing a Warrior could take or use
+    expect(board.some((e) => e.quest.wikiPage === "A Mesmer's Burden")).toBe(false);
+  });
+
+  it("leaves out pre-Searing quests once the character has left", () => {
+    expect(board.some((e) => e.preSearing)).toBe(false);
+    const stillThere: Character = { ...freshWarrior, unlockedLocations: ["Ascalon City (pre-Searing)"] };
+    const pre = questBoard(stillThere, index, travelDistances(stillThere, index));
+    expect(pre.some((e) => e.quest.wikiPage === "Warrior Test" && e.preSearing)).toBe(true);
+  });
+
+  it("counts rewards already known", () => {
+    const knows: Character = { ...freshWarrior, knownSkills: ['"For Great Justice!"'] };
+    const e = questBoard(knows, index, travelDistances(knows, index)).find(
+      (x) => x.quest.wikiPage === "Helping the People of Ascalon",
+    )!;
+    expect(e.known).toBe(1);
+  });
+});
+
+describe("full dataset: travel distance agrees with availability", () => {
+  it("puts nothing at distance 0 that availability calls unreachable", () => {
+    // Monastery Overlook exits to Shing Jea Monastery but not back; the
+    // undirected graph once rated it "0 zones away" while availability said
+    // it was not reachable.
+    const characters: Character[] = [
+      freshWarrior,
+      { ...freshWarrior, unlockedLocations: ["Shing Jea Monastery", "Kaineng Center"] },
+      { ...freshWarrior, unlockedLocations: ["Kamadan, Jewel of Istan", "Chahbek Village (outpost)", "Boreal Station"] },
+    ];
+    for (const c of characters) {
+      const reachable = reachableExplorables(c, index);
+      const unlocked = new Set(c.unlockedLocations);
+      for (const [place, d] of travelDistances(c, index).distance) {
+        if (d === 0) expect(unlocked.has(place) || reachable.has(place), place).toBe(true);
+      }
+    }
   });
 });

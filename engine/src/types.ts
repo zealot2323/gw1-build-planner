@@ -214,6 +214,34 @@ export interface Trainer {
 }
 
 /**
+ * A quest that rewards skills. Metadata comes from the quest page's
+ * {{Quest infobox}}; `rewards` is derived from the skill pages, which are
+ * where the wiki actually lists what each quest teaches.
+ */
+export interface Quest {
+  name: string;
+  /** The title skill pages use — may be a redirect or disambiguation page. */
+  wikiPage: QuestRef;
+  campaign: Campaign | null;
+  region: string | null;
+  /** "Primary", "Secondary", "Mini-mission", ... */
+  type: string;
+  givenBy: string[];
+  /** Where it's picked up; several when the wiki lists alternatives. */
+  givenAt: LocationRef[];
+  /** Set only for profession-specific quests. */
+  profession: Profession | null;
+  /** Only characters whose PRIMARY is `profession` may take it. */
+  primaryOnly: boolean;
+  /** Characters with no secondary profession also qualify. */
+  allowsNoSecondary: boolean;
+  /** Listed as coming before. Context only — completion isn't tracked. */
+  precededBy: QuestRef[];
+  /** Skills it can reward (usually a choice of one, per profession). */
+  rewards: SkillRef[];
+}
+
+/**
  * One row of a monster's armor table. Some wiki pages break armor out by
  * damage type, so we keep the raw table as structured data.
  */
@@ -563,6 +591,30 @@ export const skillChangeLogSchema = {
   },
 } as const;
 
+export const questSchema = {
+  $id: "gw1-quest",
+  type: "object",
+  additionalProperties: false,
+  required: [
+    "name", "wikiPage", "campaign", "region", "type", "givenBy", "givenAt",
+    "profession", "primaryOnly", "allowsNoSecondary", "precededBy", "rewards",
+  ],
+  properties: {
+    name: { type: "string" },
+    wikiPage: { type: "string" },
+    campaign: { oneOf: [{ $ref: "gw1-campaign" }, { type: "null" }] },
+    region: { type: ["string", "null"] },
+    type: { type: "string" },
+    givenBy: refArray,
+    givenAt: refArray,
+    profession: { oneOf: [{ $ref: "gw1-profession" }, { type: "null" }] },
+    primaryOnly: { type: "boolean" },
+    allowsNoSecondary: { type: "boolean" },
+    precededBy: refArray,
+    rewards: refArray,
+  },
+} as const;
+
 export const characterSchema = {
   $id: "gw1-character",
   type: "object",
@@ -615,4 +667,5 @@ export const schemas = {
   character: characterSchema,
   build: buildSchema,
   skillChangeLog: skillChangeLogSchema,
+  quest: questSchema,
 } as const;

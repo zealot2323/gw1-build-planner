@@ -11,7 +11,8 @@
     "parse": "tsx src/parse.ts",
     "test": "vitest run",
     "icons": "tsx src/icons.ts",
-    "updates": "tsx src/updates.ts"
+    "updates": "tsx src/updates.ts",
+    "quests": "tsx src/quests.ts"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

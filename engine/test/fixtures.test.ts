@@ -73,3 +73,13 @@ describe("fixture cross-references resolve", () => {
     }
   });
 });
+
+describe("scraped quests validate against the quest schema", () => {
+  it("data/quests.json matches gw1-quest", () => {
+    const path = fileURLToPath(new URL("../../data/quests.json", import.meta.url));
+    const quests = JSON.parse(readFileSync(path, "utf8")) as unknown[];
+    const validate = ajv.getSchema("gw1-quest")!;
+    expect(quests.length).toBeGreaterThan(100);
+    for (const q of quests) expect(validate(q), ajv.errorsText(validate.errors)).toBe(true);
+  });
+});

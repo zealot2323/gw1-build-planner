@@ -374,3 +374,17 @@ button.linkish.outpost { font-weight: 600; flex: 1; width: auto; }
 .diff-table td { padding: 0.1rem 0.6rem 0.1rem 0; vertical-align: top; }
 .diff-before { color: #c98b8b; text-decoration: line-through; }
 .diff-after { color: #8bc98f; }
+
+/* Quests tab */
+.quest-card { padding: 0.6rem 0; border-top: 1px solid var(--line, #333); }
+.quest-card:first-of-type { border-top: none; }
+.quest-head { display: flex; flex-wrap: wrap; align-items: center; gap: 0.45rem; }
+.quest-name { font-weight: 600; }
+.quest-tag {
+  font-size: 0.85em; color: var(--muted);
+  border: 1px solid var(--line, #333); border-radius: 3px; padding: 0 0.3rem;
+}
+.quest-tag.warn { color: #d9a441; border-color: #6b5320; }
+.quest-where { margin: 0.2rem 0 0.35rem 1.2rem; }
+.skill-card.known { opacity: 0.55; }
+.quest-search { min-width: 16rem; }
