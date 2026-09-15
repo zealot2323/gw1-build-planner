@@ -394,3 +394,7 @@ button.linkish.outpost { font-weight: 600; flex: 1; width: auto; }
 .account input[type="email"] { min-width: 13rem; }
 .account-status.error, .account .error { color: #d98b8b; }
 .credits { margin: 2rem 0 1rem; text-align: center; }
+.guest-badge {
+  color: #d9a441; border: 1px solid #6b5320; border-radius: 3px; padding: 0 0.35rem; cursor: help;
+}
+.account-notice { flex-basis: 100%; color: var(--ok); }

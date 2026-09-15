@@ -165,7 +165,8 @@ export function CharactersView({
           </div>
           {importError && <div className="error">{importError}</div>}
           <p className="muted small">
-            The exported JSON file is the real save format; localStorage is convenience.
+            No account needed — characters save in this browser, and signing in adds them to your account.
+            Export JSON makes a portable copy either way.
           </p>
         </div>
 

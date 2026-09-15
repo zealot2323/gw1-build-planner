@@ -10,8 +10,13 @@ const STATUS: Record<SyncStatus, string> = {
 };
 
 /**
- * Sign in by emailed magic link (no passwords), and show whether saves are
- * reaching the account. Renders nothing when accounts aren't configured.
+ * Guest play, sign-in by emailed magic link (no passwords), and whether
+ * saves are reaching the account. Renders nothing when accounts aren't
+ * configured.
+ *
+ * Signed out is guest mode: characters work fully but live only in this
+ * browser, so the bar says so and offers to keep them. Signing in merges
+ * them into the account.
  */
 export function AccountBar({
   account,
@@ -21,6 +26,9 @@ export function AccountBar({
     email: string | null;
     status: SyncStatus;
     error: string | null;
+    notice: string | null;
+    dismissNotice: () => void;
+    guestCharacters: number;
     signIn: (email: string) => Promise<string | null>;
     signOut: () => Promise<void>;
   };
@@ -46,6 +54,14 @@ export function AccountBar({
           Sign out
         </button>
         {account.error && <div className="error small">{account.error}</div>}
+        {account.notice && (
+          <div className="account-notice">
+            {account.notice}{" "}
+            <button className="linkish" onClick={account.dismissNotice}>
+              dismiss
+            </button>
+          </div>
+        )}
       </span>
     );
   }
@@ -53,7 +69,8 @@ export function AccountBar({
   if (sent) {
     return (
       <span className="account small muted">
-        Check {email} for a sign-in link.{" "}
+        Check {email} for a sign-in link — open it in this browser
+        {account.guestCharacters > 0 ? " so your characters come with you" : ""}.{" "}
         <button className="linkish" onClick={() => setSent(false)}>
           use a different email
         </button>
@@ -76,11 +93,17 @@ export function AccountBar({
 
   return (
     <form className="account small" onSubmit={submit}>
-      <span className="muted">Saving in this browser.</span>{" "}
+      {account.guestCharacters > 0 ? (
+        <span className="guest-badge" title="Characters are saved in this browser only. Sign in to keep them in an account — they'll be added to it.">
+          Guest · {account.guestCharacters} character{account.guestCharacters === 1 ? "" : "s"} in this browser only
+        </span>
+      ) : (
+        <span className="muted">Playing as guest.</span>
+      )}{" "}
       <input
         type="email"
         required
-        placeholder="email to sync characters"
+        placeholder={account.guestCharacters > 0 ? "email to keep them" : "email to save to an account"}
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />{" "}
