@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Profession, type Build } from "@gw1/engine";
 import { useSave } from "./save";
 import { DataProvider } from "./DataContext";
+import { AccountBar } from "./components/AccountBar";
 import { CharactersView } from "./views/Characters";
 import { SkillsView, initialSkillViewState, type SkillViewState } from "./views/Skills";
 import { ZonesView, initialZoneState, type ZoneViewState } from "./views/Zones";
@@ -10,7 +11,7 @@ import { QuestsView, initialQuestViewState, type QuestViewState } from "./views/
 type Tab = "characters" | "skills" | "quests" | "zones";
 
 export function App() {
-  const { save, addCharacter, updateCharacter, removeCharacter, importFile, exportFile } = useSave();
+  const { save, addCharacter, updateCharacter, removeCharacter, importFile, exportFile, account } = useSave();
   const [tab, setTab] = useState<Tab>("characters");
   const [characterName, setCharacterName] = useState<string | null>(null);
   // The working build is a draft until it's given a name and saved.
@@ -96,6 +97,7 @@ export function App() {
               })`
             : "no character selected"}
         </span>
+        <AccountBar account={account} />
       </header>
       {tab === "characters" && (
         <CharactersView
@@ -134,6 +136,13 @@ export function App() {
           setState={patchZoneState}
         />
       )}
+      <footer className="credits muted small">
+        Fan-made tool, not affiliated with ArenaNet. Skill, location and quest data from the{" "}
+        <a href="https://wiki.guildwars.com/" target="_blank" rel="noreferrer">
+          Guild Wars Wiki
+        </a>{" "}
+        (GNU FDL). Guild Wars artwork and skill icons © ArenaNet, LLC.
+      </footer>
     </DataProvider>
   );
 }
