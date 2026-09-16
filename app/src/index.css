@@ -398,3 +398,44 @@ button.linkish.outpost { font-weight: 600; flex: 1; width: auto; }
   color: #d9a441; border: 1px solid #6b5320; border-radius: 3px; padding: 0 0.35rem; cursor: help;
 }
 .account-notice { flex-basis: 100%; color: var(--ok); }
+
+/* ---------------------------------------------------------------------------
+   Narrow screens: stack the skill table.
+   Its fixed column widths (22rem + 11rem + …) are wider than a phone, which
+   squeezed the source column to zero and wrapped its text into a tower —
+   ~218px-tall rows with big empty gaps. Below 720px each row becomes a
+   block: name on one line, profession and source beneath it.
+--------------------------------------------------------------------------- */
+@media (max-width: 720px) {
+  .skill-table, .skill-table tbody, .skill-table tr, .skill-table td { display: block; }
+  .skill-table { table-layout: auto; width: 100%; }
+  .skill-table colgroup { display: none; }
+  /* two lines per skill: [name ......... + build] / [profession · source].
+     Block rows, not grid: shared grid columns squeezed the source text into
+     a sliver and wrapped it over three lines. */
+  .skill-table tr {
+    display: block; position: relative;
+    padding: 0.4rem 4.6rem 0.4rem 0; border-bottom: 1px solid var(--border);
+  }
+  .skill-table td {
+    width: auto !important; padding: 0.1rem 0 !important;
+    overflow: visible; text-overflow: clip; white-space: normal;
+  }
+  .skill-table .skill-name { display: block; white-space: normal; }
+  /* profession and source read as one line under the name */
+  .skill-table td.muted { display: inline; }
+  .skill-table td.muted:not(.small)::after { content: " · "; }
+  .skill-table td:last-child:has(button) { position: absolute; top: 0.4rem; right: 0; }
+  /* attribute headings and the expanded detail row: full width, no reserved gutter */
+  .skill-table tr:has(.attr-cell), .skill-table tr:has(td[colspan]) { padding-right: 0; }
+  .skill-table .attr-cell { padding: 0 !important; border: none; }
+
+  /* the rest of the app: no sideways scrolling */
+  header { gap: 0.5rem; }
+  .account { margin-left: 0; }
+  .account input[type="email"] { min-width: 10rem; }
+  .row.wrap > * { min-width: 0; }
+  .checklist { width: 100%; }
+  .view, .card { max-width: 100%; }
+  table { max-width: 100%; }
+}

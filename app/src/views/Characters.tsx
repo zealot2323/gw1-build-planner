@@ -1,12 +1,15 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
+import type { ChecklistGroup } from "../components/Checklist";
 import {
   ALLEGIANCES,
   DEFAULT_ALLEGIANCE,
   PROFESSIONS,
   Profession,
   type Campaign,
+  type Location,
+  type Skill,
 } from "@gw1/engine";
-import { dataset } from "../data";
+import { useData } from "../DataContext";
 import { Checklist } from "../components/Checklist";
 import { iconForSkillPage, iconUrl } from "../wiki";
 import { ProfessionIcon } from "../components/ProfessionIcon";
@@ -28,10 +31,15 @@ const CAMPAIGNS = Object.keys(CAMPAIGN_PROFESSIONS) as Campaign[];
 const EXPANSIONS: Campaign[] = ["Eye of the North"];
 const OWNABLE: Campaign[] = [...CAMPAIGNS, ...EXPANSIONS];
 
-// towns/outposts grouped by region, mirroring the zone browser's tree
-const locationGroups = (() => {
+/**
+ * Towns/outposts by region, and skills by profession then attribute —
+ * mirroring how the zone and skill browsers group them. Both come from the
+ * CHARACTER-SCOPED dataset: a Prophecies-only character must not be offered
+ * Canthan outposts or Factions skills to tick off.
+ */
+function locationGroupsOf(locations: Location[]): ChecklistGroup[] {
   const byRegion = new Map<string, string[]>();
-  for (const l of dataset.locations) {
+  for (const l of locations) {
     if (l.kind === "explorable") continue;
     const region = l.region ?? "(unknown region)";
     if (!byRegion.has(region)) byRegion.set(region, []);
@@ -40,12 +48,28 @@ const locationGroups = (() => {
   return [...byRegion.entries()]
     .sort(([a], [b]) => a.localeCompare(b))
     .map(([label, options]) => ({ label, options: options.sort() }));
-})();
-const missionNames = (dataset.missions ?? []).map((m) => m.wikiPage);
-/** The ten Kurzick/Luxon skills, previewed so the toggle shows its effect. */
-const ALLEGIANCE_SKILLS = dataset.skills
-  .filter((s) => s.allegianceSkillIds)
-  .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+function skillGroupsOf(skills: Skill[], professions: Profession[]): ChecklistGroup[] {
+  const order = [...professions.map(String), "Common"];
+  const byKey = new Map<string, string[]>();
+  for (const s of skills) {
+    const prof = s.profession ?? "Common";
+    const key = `${prof}|${s.attribute ?? "No attribute"}`;
+    if (!byKey.has(key)) byKey.set(key, []);
+    byKey.get(key)!.push(s.wikiPage);
+  }
+  return [...byKey.entries()]
+    .sort(([a], [b]) => {
+      const [profA, attrA] = a.split("|");
+      const [profB, attrB] = b.split("|");
+      if (profA !== profB) return order.indexOf(profA) - order.indexOf(profB);
+      if (attrA === "No attribute") return 1;
+      if (attrB === "No attribute") return -1;
+      return attrA.localeCompare(attrB);
+    })
+    .map(([key, options]) => ({ label: key.replace("|", " · "), options: options.sort() }));
+}
 
 export function CharactersView({
   save,
@@ -66,6 +90,7 @@ export function CharactersView({
   importFile: (f: File) => Promise<void>;
   exportFile: () => void;
 }) {
+  const index = useData();
   const [newName, setNewName] = useState("");
   const [newPrimary, setNewPrimary] = useState<Profession>(Profession.Warrior);
   const [newCampaign, setNewCampaign] = useState<Campaign>("Prophecies");
@@ -94,12 +119,20 @@ export function CharactersView({
     ? (c.ownedCampaigns ?? [c.campaign ?? "Prophecies"]).includes("Factions")
     : false;
   const professions = c ? [c.primaryProfession, ...c.unlockedSecondaries] : [];
-  const knowableSkills = c
-    ? dataset.skills
-        .filter((s) => s.profession == null || professions.includes(s.profession))
-        .map((s) => s.wikiPage)
-        .sort()
-    : [];
+  const locationGroups = useMemo(() => locationGroupsOf(index.dataset.locations), [index]);
+  const missionNames = useMemo(() => (index.dataset.missions ?? []).map((m) => m.wikiPage), [index]);
+  const allegianceSkills = useMemo(
+    () => index.dataset.skills.filter((s) => s.allegianceSkillIds).sort((a, b) => a.name.localeCompare(b.name)),
+    [index],
+  );
+  const skillGroups = useMemo(
+    () =>
+      skillGroupsOf(
+        index.dataset.skills.filter((s) => s.profession == null || professions.includes(s.profession)),
+        professions,
+      ),
+    [index, professions.join("|")],
+  );
 
   return (
     <div className="view">
@@ -222,7 +255,7 @@ export function CharactersView({
                   </label>
                 ))}
                 <span className="allegiance-preview">
-                  {ALLEGIANCE_SKILLS.map((s) => {
+                  {allegianceSkills.map((s) => {
                     const src = iconUrl(s, c.allegiance ?? DEFAULT_ALLEGIANCE);
                     return src ? (
                       <img key={s.wikiPage} className="skill-icon" src={src} width={24} height={24} alt="" title={s.name} />
@@ -256,7 +289,7 @@ export function CharactersView({
                 groups={locationGroups}
                 selected={c.unlockedLocations}
                 onChange={(v) => updateCharacter(c.name, { unlockedLocations: v })}
-                detail={(o) => dataset.locations.find((l) => l.wikiPage === o)?.kind ?? null}
+                detail={(o) => index.locationByPage.get(o)?.kind ?? null}
               />
               <Checklist
                 label="Completed missions"
@@ -266,7 +299,7 @@ export function CharactersView({
               />
               <Checklist
                 label={`Known skills (${c.primaryProfession}${c.unlockedSecondaries.length ? "/" + c.unlockedSecondaries.join("/") : ""} + common)`}
-                options={knowableSkills}
+                groups={skillGroups}
                 selected={c.knownSkills}
                 onChange={(v) => updateCharacter(c.name, { knownSkills: v })}
                 icon={(p) => iconForSkillPage(p, c.allegiance)}

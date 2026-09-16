@@ -1,4 +1,5 @@
 import type { Skill, SkillPlan } from "@gw1/engine";
+import { useData } from "../DataContext";
 import { SkillIcon } from "./SkillIcon";
 import { ProfessionIcon } from "./ProfessionIcon";
 import { ProximityDot } from "./ProximityDot";
@@ -31,6 +32,60 @@ function SourceList({ label, items }: { label: string; items: string[] }) {
           <a href={wikiHref(item)} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>
             {item}
           </a>
+        </span>
+      ))}
+    </p>
+  );
+}
+
+/**
+ * Capture sources, zone first: "where do I go" is the question, and the
+ * boss is how you get it once you're there. Several bosses in one zone are
+ * listed under it together. The zone comes from the skill's acquisition
+ * line, falling back to the boss's own page for the handful that omit it.
+ */
+function CaptureList({
+  label,
+  bosses,
+  locations,
+}: {
+  label: string;
+  bosses: string[];
+  locations: Record<string, string | null> | undefined;
+}) {
+  const index = useData();
+  if (bosses.length === 0) return null;
+
+  const byZone = new Map<string, string[]>();
+  for (const boss of bosses) {
+    const zone = locations?.[boss] ?? index.monsterByPage.get(boss)?.locations?.[0] ?? "";
+    if (!byZone.has(zone)) byZone.set(zone, []);
+    byZone.get(zone)!.push(boss);
+  }
+  const zones = [...byZone.entries()].sort(([a], [b]) => (a === "" ? 1 : b === "" ? -1 : a.localeCompare(b)));
+
+  return (
+    <p className="muted small no-margin">
+      {label}:{" "}
+      {zones.map(([zone, list], i) => (
+        <span key={zone || "unknown"}>
+          {i > 0 && "; "}
+          {zone ? (
+            <a href={wikiHref(zone)} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>
+              {zone}
+            </a>
+          ) : (
+            <span className="muted">zone unknown</span>
+          )}
+          {" · "}
+          {list.map((boss, j) => (
+            <span key={boss}>
+              {j > 0 && ", "}
+              <a href={wikiHref(boss)} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>
+                {boss}
+              </a>
+            </span>
+          ))}
         </span>
       ))}
     </p>
@@ -89,8 +144,12 @@ export function SkillDetails({ skill, plan }: { skill: Skill; plan?: SkillPlan }
       )}
       <SourceList label="Trainers" items={acq.trainers} />
       <SourceList label="Quests" items={acq.quests} />
-      <SourceList label="Capture from" items={acq.captureBosses} />
-      <SourceList label="Capture (quest/event only)" items={acq.conditionalCaptureBosses ?? []} />
+      <CaptureList label="Capture from" bosses={acq.captureBosses} locations={acq.captureLocations} />
+      <CaptureList
+        label="Capture (quest/event only)"
+        bosses={acq.conditionalCaptureBosses ?? []}
+        locations={acq.captureLocations}
+      />
     </div>
   );
 }

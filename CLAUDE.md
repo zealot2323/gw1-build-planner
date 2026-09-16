@@ -286,6 +286,10 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
 
 ## Conventions
 
+- **Views read the CHARACTER-SCOPED index** (`useData()`), never the raw
+  module-level `dataset`. The character editor's own checklists got this
+  wrong and offered a Prophecies-only character every campaign's outposts,
+  missions and skills to tick off.
 - **All cross-entity references are by wiki page name** (the stable key), e.g.
   `"Healing Breeze"`, `"Yak's Bend"`. Ref types (`SkillRef`, `LocationRef`, …) are
   string aliases in `/engine/src/types.ts`.
