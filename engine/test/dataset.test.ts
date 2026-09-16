@@ -641,3 +641,22 @@ describe("full dataset: travel distance agrees with availability", () => {
     }
   });
 });
+
+describe("full dataset: elites are never sold by trainers", () => {
+  it("has no elite skill in any trainer's stock", () => {
+    // Trainers sell no elites; "all Prophecies and core" trainers like Dakk
+    // expand to all NON-elite skills. Tainted Flesh ("elite = yes") slipped
+    // through when the elite flag only matched "y".
+    const elites = new Set(index.dataset.skills.filter((s) => s.isElite).map((s) => s.wikiPage));
+    expect(elites.size).toBeGreaterThan(250);
+    for (const t of index.dataset.trainers) {
+      for (const s of t.skillsOffered) expect(elites.has(s), `${t.name} -> ${s}`).toBe(false);
+    }
+  });
+
+  it("gives no elite a trainer as an acquisition source", () => {
+    for (const s of index.dataset.skills) {
+      if (s.isElite) expect(s.acquisition.trainers, s.wikiPage).toEqual([]);
+    }
+  });
+});

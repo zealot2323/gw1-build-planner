@@ -1,6 +1,6 @@
 # Validation report
 
-Generated 2026-09-15T16:17:39.672Z by `npm run parse` (cache-only).
+Generated 2026-09-16T15:01:20.312Z by `npm run parse` (cache-only).
 
 ## skills (20 issues on 20 pages)
 
@@ -111,7 +111,7 @@ Generated 2026-09-15T16:17:39.672Z by `npm run parse` (cache-only).
 - **Titan**: page missing from cache
 - **Wolf**: page missing from cache
 
-## cross-validation (126 issues on 99 pages)
+## cross-validation (127 issues on 100 pages)
 
 - **"I Will Survive!"**: capture boss "Asad the Ignoble" doesn't list this skill
 - **"Together as One!"**: elite: only quest-conditional capture sources
@@ -141,6 +141,7 @@ Generated 2026-09-15T16:17:39.672Z by `npm run parse` (cache-only).
 - **Elder Nephilim**: uses unresolved skill "Fleshreaver's Escape" (not in cache — likely non-Prophecies or a monster skill)
 - **Elemental Attunement**: capture boss "Corsair Commander (elementalist)" is not in the bestiary
 - **Enraged Smash**: capture boss "The Afflicted Tamaya" is not in the bestiary
+- **Escape**: capture boss "Tenezel the Quick" is not in the bestiary
 - **Forceful Blow**: capture boss "Dorn Stonebreaker" is not in the bestiary
 - **Forked Arrow**: capture boss "Facet of Creation" is not in the bestiary
 - **Freezie**: uses unresolved skill ""Mmmm. Snowcone!"" (not in cache — likely non-Prophecies or a monster skill)

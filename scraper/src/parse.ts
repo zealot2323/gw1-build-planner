@@ -461,9 +461,12 @@ for (const s of skills) {
   }
 }
 
-// every elite has capture bosses, or is flagged
+// Every elite has capture bosses, or is flagged — EXCEPT the elites that
+// are simply not captured: the Norn/Ebon blessings are quest rewards, and
+// title-gated elites come from an NPC for rank.
 for (const s of skills) {
   if (!s.isElite || s.acquisition.captureBosses.length > 0) continue;
+  if (s.acquisition.quests.length > 0 || (s.acquisition.titleNpcs?.length ?? 0) > 0) continue;
   if ((s.acquisition.conditionalCaptureBosses?.length ?? 0) > 0) {
     addIssue("cross-validation", s.wikiPage, "elite: only quest-conditional capture sources");
   } else {

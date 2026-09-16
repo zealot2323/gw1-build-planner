@@ -2682,7 +2682,7 @@
     "gwSkillId": 119,
     "profession": "Necromancer",
     "attribute": "Blood Magic",
-    "isElite": false,
+    "isElite": true,
     "campaign": "Core",
     "energyCost": 1,
     "adrenalineCost": null,
@@ -2692,9 +2692,7 @@
     "recharge": 0,
     "description": "Elite Enchantment Spell. For 10 seconds, target other ally gains 3...6 Energy regeneration.",
     "acquisition": {
-      "trainers": [
-        "Dakk"
-      ],
+      "trainers": [],
       "quests": [],
       "captureBosses": [
         "Cry Darkday",
@@ -4305,7 +4303,7 @@
     "gwSkillId": 54,
     "profession": "Mesmer",
     "attribute": "Illusion Magic",
-    "isElite": false,
+    "isElite": true,
     "campaign": "Core",
     "energyCost": 5,
     "adrenalineCost": null,
@@ -4315,9 +4313,7 @@
     "recharge": 12,
     "description": "Elite Hex Spell. For 5...20 seconds, target moves and attacks 50% slower and suffers 1...8 Health degeneration.",
     "acquisition": {
-      "trainers": [
-        "Dakk"
-      ],
+      "trainers": [],
       "quests": [],
       "captureBosses": [
         "Erzek Runebreaker",
@@ -7048,7 +7044,7 @@
     "gwSkillId": 74,
     "profession": "Mesmer",
     "attribute": null,
-    "isElite": false,
+    "isElite": true,
     "campaign": "Core",
     "energyCost": 5,
     "adrenalineCost": null,
@@ -7058,9 +7054,7 @@
     "recharge": 10,
     "description": "Elite Enchantment Spell. For 30 seconds, Echo is replaced with the next skill you use. Echo acts as this skill for 30 seconds.",
     "acquisition": {
-      "trainers": [
-        "Dakk"
-      ],
+      "trainers": [],
       "quests": [],
       "captureBosses": [
         "Rwek Khawl Mawl",
@@ -7480,7 +7474,7 @@
     "gwSkillId": 79,
     "profession": "Mesmer",
     "attribute": "Inspiration Magic",
-    "isElite": false,
+    "isElite": true,
     "campaign": "Core",
     "energyCost": 5,
     "adrenalineCost": null,
@@ -7490,9 +7484,7 @@
     "recharge": 20,
     "description": "Elite Spell. Target foe loses 2...9 Energy. You gain 3 Energy for each point of Energy lost.",
     "acquisition": {
-      "trainers": [
-        "Dakk"
-      ],
+      "trainers": [],
       "quests": [],
       "captureBosses": [
         "Gambol Headrainer",
@@ -7525,7 +7517,7 @@
     "gwSkillId": 39,
     "profession": "Mesmer",
     "attribute": "Domination Magic",
-    "isElite": false,
+    "isElite": true,
     "campaign": "Core",
     "energyCost": 5,
     "adrenalineCost": null,
@@ -7535,9 +7527,7 @@
     "recharge": 15,
     "description": "Elite Spell. Target foe loses 1...10 Energy. For each point of Energy lost, that foe takes 7 damage and all nearby foes take 75% of that damage.",
     "acquisition": {
-      "trainers": [
-        "Dakk"
-      ],
+      "trainers": [],
       "quests": [],
       "captureBosses": [
         "Balasi the Arcane",
@@ -7930,7 +7920,7 @@
     "gwSkillId": 448,
     "profession": "Ranger",
     "attribute": "Expertise",
-    "isElite": false,
+    "isElite": true,
     "campaign": "Core",
     "energyCost": 5,
     "adrenalineCost": null,
@@ -7940,11 +7930,31 @@
     "recharge": 12,
     "description": "Elite Stance. For 1...8 second[s], you move 33% faster and have a 75% chance to block attacks.",
     "acquisition": {
-      "trainers": [
-        "Dakk"
-      ],
+      "trainers": [],
       "quests": [],
-      "captureBosses": []
+      "captureBosses": [
+        "Whuup Buumbuul",
+        "Stsou Swiftscale",
+        "Tenezel the Quick",
+        "Tenshek Roundbody"
+      ],
+      "conditionalCaptureBosses": [
+        "Jiao Kuai the Swift"
+      ],
+      "captureLocations": {
+        "Whuup Buumbuul": "Snake Dance",
+        "Stsou Swiftscale": "Maishang Hills",
+        "Jiao Kuai the Swift": "Jaya Bluffs",
+        "Tenezel the Quick": "Holdings of Chokhin",
+        "Tenshek Roundbody": "The Hidden City of Ahdashim"
+      },
+      "sourceCampaigns": {
+        "Whuup Buumbuul": "Prophecies",
+        "Stsou Swiftscale": "Factions",
+        "Jiao Kuai the Swift": "Factions",
+        "Tenezel the Quick": "Nightfall",
+        "Tenshek Roundbody": "Nightfall"
+      }
     }
   },
   {
@@ -9910,7 +9920,7 @@
     "gwSkillId": 86,
     "profession": "Necromancer",
     "attribute": null,
-    "isElite": false,
+    "isElite": true,
     "campaign": "Core",
     "energyCost": 10,
     "adrenalineCost": null,
@@ -9920,9 +9930,7 @@
     "recharge": 10,
     "description": "Elite Spell. If target foe has more Health than you, you gain half the difference (up to your maximum Health), and that foe loses an equal amount. If this foe has less Health than you, you lose half the difference, and that foe gains an equal amount.",
     "acquisition": {
-      "trainers": [
-        "Dakk"
-      ],
+      "trainers": [],
       "quests": [],
       "captureBosses": [
         "Facet of Darkness",
@@ -13001,7 +13009,7 @@
     "gwSkillId": 142,
     "profession": "Necromancer",
     "attribute": "Curses",
-    "isElite": false,
+    "isElite": true,
     "campaign": "Core",
     "energyCost": 15,
     "adrenalineCost": null,
@@ -13011,9 +13019,7 @@
     "recharge": 10,
     "description": "Elite Hex Spell. For 6...30 seconds, target foe and all nearby foes suffer 1...4 Health degeneration, and gain 25% less benefit from healing.",
     "acquisition": {
-      "trainers": [
-        "Dakk"
-      ],
+      "trainers": [],
       "quests": [],
       "captureBosses": [
         "Grenth's Cursed",
@@ -14017,7 +14023,7 @@
     "gwSkillId": 298,
     "profession": "Monk",
     "attribute": null,
-    "isElite": false,
+    "isElite": true,
     "campaign": "Core",
     "energyCost": 5,
     "adrenalineCost": null,
@@ -14027,9 +14033,7 @@
     "recharge": 10,
     "description": "Elite Spell. Transfer all conditions and their remaining durations from your allies to you.",
     "acquisition": {
-      "trainers": [
-        "Dakk"
-      ],
+      "trainers": [],
       "quests": [],
       "captureBosses": [
         "Dwayna's Cursed",
@@ -19056,7 +19060,7 @@
     "gwSkillId": 261,
     "profession": "Monk",
     "attribute": "Protection Prayers",
-    "isElite": false,
+    "isElite": true,
     "campaign": "Core",
     "energyCost": 10,
     "adrenalineCost": null,
@@ -19066,9 +19070,7 @@
     "recharge": 8,
     "description": "Elite Enchantment Spell. For 5...13 seconds, target ally gains 3...10 Health regeneration and 20...45 armor.",
     "acquisition": {
-      "trainers": [
-        "Dakk"
-      ],
+      "trainers": [],
       "quests": [],
       "captureBosses": [
         "Facet of Light",
@@ -19447,7 +19449,7 @@
     "gwSkillId": 294,
     "profession": "Monk",
     "attribute": "Smiting Prayers",
-    "isElite": false,
+    "isElite": true,
     "campaign": "Core",
     "energyCost": null,
     "adrenalineCost": null,
@@ -19457,9 +19459,7 @@
     "recharge": 20,
     "description": "Elite Signet. Target foe is knocked down. That foe and all adjacent foes take 15...75 holy damage.",
     "acquisition": {
-      "trainers": [
-        "Dakk"
-      ],
+      "trainers": [],
       "quests": [],
       "captureBosses": [
         "Fawl Driftstalker",
@@ -20021,7 +20021,7 @@
     "gwSkillId": 273,
     "profession": "Monk",
     "attribute": "Divine Favor",
-    "isElite": false,
+    "isElite": true,
     "campaign": "Core",
     "energyCost": 15,
     "adrenalineCost": null,
@@ -20031,9 +20031,7 @@
     "recharge": 45,
     "description": "Elite Enchantment Spell. For 5...17 seconds, target ally cannot be the target of enemy spells.",
     "acquisition": {
-      "trainers": [
-        "Dakk"
-      ],
+      "trainers": [],
       "quests": [],
       "captureBosses": [
         "Raptorhawk",
@@ -21070,7 +21068,7 @@
     "gwSkillId": 113,
     "profession": "Necromancer",
     "attribute": "Death Magic",
-    "isElite": false,
+    "isElite": true,
     "campaign": "Core",
     "energyCost": 5,
     "adrenalineCost": null,
@@ -21080,9 +21078,7 @@
     "recharge": 0,
     "description": "Elite Enchantment Spell. For 20...44 seconds, allies in the area are immune to disease, and anyone striking those allies in melee becomes Diseased for 3...15 seconds.",
     "acquisition": {
-      "trainers": [
-        "Dakk"
-      ],
+      "trainers": [],
       "quests": [],
       "captureBosses": [
         "Dosakaru Fevertouch",
@@ -21276,7 +21272,7 @@
     "gwSkillId": 228,
     "profession": "Elementalist",
     "attribute": "Air Magic",
-    "isElite": false,
+    "isElite": true,
     "campaign": "Prophecies",
     "energyCost": 10,
     "adrenalineCost": null,
@@ -21286,9 +21282,7 @@
     "recharge": 8,
     "description": "Elite Spell. Create a massive shockwave at target foe's location. Deals 10...50 lightning damage to target and all nearby foes. Struck foes are interrupted and suffer from Cracked Armor and Weakness for 5...20 seconds. This spell has 25% armor penetration.",
     "acquisition": {
-      "trainers": [
-        "Dakk"
-      ],
+      "trainers": [],
       "quests": [],
       "captureBosses": [
         "Kratos the Foul",
@@ -23206,7 +23200,7 @@
     "gwSkillId": 282,
     "profession": "Monk",
     "attribute": "Healing Prayers",
-    "isElite": false,
+    "isElite": true,
     "campaign": "Core",
     "energyCost": 5,
     "adrenalineCost": null,
@@ -23216,9 +23210,7 @@
     "recharge": 3,
     "description": "Elite Spell. Heal target ally for 5...100 Health. Heal for an additional 30...115 Health if that ally is below 50% Health.",
     "acquisition": {
-      "trainers": [
-        "Dakk"
-      ],
+      "trainers": [],
       "quests": [],
       "captureBosses": [
         "Dassk Arossyss",
@@ -26496,7 +26488,7 @@
     "gwSkillId": 1126,
     "profession": "Monk",
     "attribute": null,
-    "isElite": false,
+    "isElite": true,
     "campaign": "Factions",
     "energyCost": 5,
     "adrenalineCost": null,
@@ -29032,7 +29024,7 @@
     "gwSkillId": 813,
     "profession": "Mesmer",
     "attribute": "Inspiration Magic",
-    "isElite": false,
+    "isElite": true,
     "campaign": "Factions",
     "energyCost": 5,
     "adrenalineCost": null,
@@ -49743,7 +49735,7 @@
     "gwSkillId": 2384,
     "profession": null,
     "attribute": "Norn rank",
-    "isElite": false,
+    "isElite": true,
     "campaign": "Eye of the North",
     "energyCost": 10,
     "adrenalineCost": null,
@@ -50786,7 +50778,7 @@
     "gwSkillId": 2374,
     "profession": null,
     "attribute": "Norn rank",
-    "isElite": false,
+    "isElite": true,
     "campaign": "Eye of the North",
     "energyCost": 10,
     "adrenalineCost": null,
@@ -50837,7 +50829,7 @@
     "gwSkillId": 2379,
     "profession": null,
     "attribute": "Norn rank",
-    "isElite": false,
+    "isElite": true,
     "campaign": "Eye of the North",
     "energyCost": 10,
     "adrenalineCost": null,

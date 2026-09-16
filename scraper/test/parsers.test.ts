@@ -107,6 +107,13 @@ describe("parseSkill", () => {
     expect(entity.acquisition.titleNpcs).toEqual(["Kurzick Bureaucrat", "Luxon Scavenger"]);
   });
 
+  it("treats 'elite = yes' as elite, not just 'y'", () => {
+    // 18 skill pages spell it out; matching "y" exactly made them non-elite,
+    // which let them into the all-non-elite trainer expansion.
+    const { entity } = parseSkill("Tainted Flesh", cached("Tainted Flesh"));
+    expect(entity.isElite).toBe(true);
+  });
+
   it("leaves allegianceSkillIds off ordinary skills", () => {
     const { entity } = parseSkill("Crude Swing", cached("Crude Swing"));
     expect(entity.allegianceSkillIds).toBeUndefined();

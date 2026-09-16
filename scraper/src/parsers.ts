@@ -206,6 +206,14 @@ function parseAllegianceIds(raw: string | undefined): { Kurzick: number; Luxon: 
     : null;
 }
 
+/**
+ * Infobox booleans are hand-written: 236 skill pages say `elite = y` and 18
+ * say `elite = yes`. Matching "y" exactly left those 18 non-elite, which let
+ * them into the "all non-elite skills" trainer expansion — Tainted Flesh
+ * looked purchasable from Dakk — and out of the one-elite-per-build rule.
+ */
+const isEliteFlag = (value: string | undefined): boolean => /^y(es)?$/i.test(value?.trim() ?? "");
+
 export function parseSkill(title: string, wikitext: string): Parsed<ParsedSkill> {
   const issues: string[] = [];
   const box = parseTemplate(wikitext, "Skill infobox");
@@ -226,7 +234,7 @@ export function parseSkill(title: string, wikitext: string): Parsed<ParsedSkill>
     .filter((s) => ![s.title, ...s.ancestors].some((t) => /unlock only/i.test(t)))
     .map((s) => s.body);
   const { acquisition } = acqBodies.length
-    ? parseAcquisition(acqBodies.join("\n"), box?.["elite"] === "y")
+    ? parseAcquisition(acqBodies.join("\n"), isEliteFlag(box?.["elite"]))
     : { acquisition: { trainers: [], quests: [], captureBosses: [] } };
   if (acqBodies.length === 0) issues.push("no Acquisition section");
 
@@ -249,7 +257,7 @@ export function parseSkill(title: string, wikitext: string): Parsed<ParsedSkill>
       ...(allegianceSkillIds ? { allegianceSkillIds } : {}),
       profession,
       attribute: box?.["attribute"] ? stripMarkup(box["attribute"]) : null,
-      isElite: box?.["elite"] === "y",
+      isElite: isEliteFlag(box?.["elite"]),
       campaign,
       energyCost: parseWikiNumber(box?.["energy"]),
       adrenalineCost: parseWikiNumber(box?.["adrenaline"]),
@@ -960,7 +968,7 @@ export function parseSkillHistory(title: string, wikitext: string): Parsed<Parse
       activation: parseWikiNumber(box["activation"]),
       recharge: parseWikiNumber(box["recharge"]),
       attribute: box["attribute"] ? stripMarkup(box["attribute"]) : null,
-      isElite: box["elite"] === "y",
+      isElite: isEliteFlag(box["elite"]),
       description: box["description"] ? stripMarkup(box["description"]) : "",
     });
   }
