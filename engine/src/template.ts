@@ -7,13 +7,12 @@
  * ids to our skills. Approach borrowed from gw1tools/gw1builds (MIT), which
  * wraps the same package.
  *
- * Attributes are out of scope for this planner (see CLAUDE.md), so codes are
- * WRITTEN with every attribute at 0. Codes are READ with their attribute
- * spread preserved as raw ids, so importing and re-exporting a code doesn't
- * silently claim the build has no attribute points — callers can show it.
+ * Attribute spreads travel in both directions: a pasted code keeps its
+ * ranks, and a build exports the ranks it has.
  */
 // @ts-expect-error — the package ships no type definitions
 import { SkillTemplate } from "@buildwars/gw-templates";
+import { ATTRIBUTE_BY_ID, ATTRIBUTE_IDS } from "./attributes.js";
 import type { DataIndex } from "./data.js";
 import { Profession } from "./types.js";
 import type { Build, Skill, SkillRef } from "./types.js";
@@ -43,8 +42,8 @@ export interface DecodedTemplate {
   skills: Array<Skill | null>;
   /** In-game ids the dataset has no skill for (PvP-only splits, new skills). */
   unknownSkillIds: number[];
-  /** Attribute points as the code stores them: attribute id -> points. */
-  attributePoints: Record<number, number>;
+  /** Attribute ranks by name; ids the game no longer uses are dropped. */
+  attributes: Record<string, number>;
 }
 
 export class TemplateError extends Error {}
@@ -88,26 +87,34 @@ export function decodeTemplate(code: string, index: DataIndex): DecodedTemplate 
     }
   }
 
+  const attributes: Record<string, number> = {};
+  for (const [id, rank] of Object.entries(raw.attributes ?? {})) {
+    const name = ATTRIBUTE_BY_ID.get(Number(id));
+    if (name !== undefined && rank > 0) attributes[name] = rank;
+  }
+
   return {
     primary: PROFESSION_BY_ID[raw.prof_pri] ?? null,
     secondary: PROFESSION_BY_ID[raw.prof_sec] ?? null,
     skills,
     unknownSkillIds,
-    attributePoints: raw.attributes ?? {},
+    attributes,
   };
 }
 
-/**
- * Encode a build as a template code, with all attributes at 0 — the code is
- * for moving the skill bar, not an attribute spread we don't model.
- */
+/** Encode a build — skills and attribute ranks — as a template code. */
 export function encodeTemplate(build: Build, index: DataIndex): string {
   const ids = build.skills.map((ref: SkillRef | null) => {
     if (ref === null) return 0;
     return index.skillByPage.get(ref)?.gwSkillId ?? 0;
   });
+  const attributes: Record<number, number> = {};
+  for (const [name, rank] of Object.entries(build.attributes ?? {})) {
+    const id = ATTRIBUTE_IDS[name];
+    if (id !== undefined && rank > 0) attributes[id] = rank;
+  }
   try {
-    return new SkillTemplate().encode(idOf(build.primary), idOf(build.secondary), {}, ids);
+    return new SkillTemplate().encode(idOf(build.primary), idOf(build.secondary), attributes, ids);
   } catch (err) {
     throw new TemplateError(`Couldn't build a template code: ${(err as Error).message}`);
   }

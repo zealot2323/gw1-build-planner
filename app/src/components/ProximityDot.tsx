@@ -1,11 +1,11 @@
 import type { Proximity } from "@gw1/engine";
 
 const LABEL: Record<Proximity, string> = {
-  now: "reachable now",
-  near: "1-2 zones away",
-  mid: "3-5 zones away",
-  far: "6+ zones away",
-  unknown: "no known route",
+  now: "Reachable now",
+  near: "1–2 zones away",
+  mid: "3–5 zones away",
+  far: "6 or more zones away",
+  unknown: "No known route",
 };
 
 /** Green/yellow/red proximity marker: how far off is this skill? */

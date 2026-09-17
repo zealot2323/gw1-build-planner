@@ -32,9 +32,15 @@ describe("build template codes", () => {
     expect(decoded.unknownSkillIds).toEqual([]);
   });
 
-  it("writes attributes as zero, since they are out of scope", () => {
+  it("round-trips an attribute spread", () => {
+    const withAttrs = { ...build(["Sever Artery"]), attributes: { Swordsmanship: 12, Tactics: 9, Strength: 3 } };
+    const decoded = decodeTemplate(encodeTemplate(withAttrs, index), index);
+    expect(decoded.attributes).toEqual({ Swordsmanship: 12, Tactics: 9, Strength: 3 });
+  });
+
+  it("leaves attributes empty when the build has none", () => {
     const decoded = decodeTemplate(encodeTemplate(build(["Sever Artery"]), index), index);
-    expect(Object.values(decoded.attributePoints).every((v) => v === 0)).toBe(true);
+    expect(decoded.attributes).toEqual({});
   });
 
   it("keeps empty slots empty", () => {
@@ -102,5 +108,35 @@ describe("buildReadiness", () => {
     // two elites is illegal
     const r = buildReadiness(build(["Backbreaker", "Dragon Slash"]), character, index);
     expect(r.errors.some((e) => e.code === "TOO_MANY_ELITES")).toBe(true);
+  });
+});
+
+describe("attribute points", () => {
+  it("costs ranks the way the game does", async () => {
+    const { costOfRank, pointsSpent, pointsRemaining, ATTRIBUTE_POINTS_AT_20 } = await import("../src/index.js");
+    expect(costOfRank(12)).toBe(97); // the classic 12 costs 97
+    expect(costOfRank(0)).toBe(0);
+    // a 12/12 spread is affordable at level 20, with points to spare
+    expect(pointsSpent({ Swordsmanship: 12, Tactics: 12 })).toBe(194);
+    expect(pointsRemaining({ Swordsmanship: 12, Tactics: 12 })).toBe(ATTRIBUTE_POINTS_AT_20 - 194);
+  });
+
+  it("offers the primary's attributes plus the secondary's, minus the secondary's primary", async () => {
+    const { attributesForBuild } = await import("../src/index.js");
+    const attrs = attributesForBuild({ primary: Profession.Warrior, secondary: Profession.Monk });
+    expect(attrs).toContain("Strength"); // the Warrior's own primary attribute
+    expect(attrs).toContain("Healing Prayers");
+    expect(attrs).not.toContain("Divine Favor"); // Monk primaries only
+  });
+
+  it("rejects overspending, over-ranking and borrowed primary attributes", async () => {
+    const { validateBuild } = await import("../src/index.js");
+    const codes = (attributes: Record<string, number>) =>
+      validateBuild({ ...build(["Sever Artery"]), attributes }, index).map((e) => e.code);
+    expect(codes({ Swordsmanship: 12 })).not.toContain("ATTRIBUTE_POINTS_OVERSPENT");
+    expect(codes({ Swordsmanship: 12, Tactics: 12, Strength: 12 })).toContain("ATTRIBUTE_POINTS_OVERSPENT");
+    expect(codes({ Swordsmanship: 15 })).toContain("ATTRIBUTE_RANK_TOO_HIGH");
+    expect(codes({ "Divine Favor": 5 })).toContain("ATTRIBUTE_NOT_AVAILABLE");
+    expect(codes({ "Fire Magic": 5 })).toContain("ATTRIBUTE_NOT_AVAILABLE");
   });
 });

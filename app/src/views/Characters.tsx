@@ -154,7 +154,7 @@ export function CharactersView({
           </ul>
           <div className="row">
             <input
-              placeholder="new character name"
+              placeholder="New character name"
               value={newName}
               onChange={(e) => setNewName(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && create()}
@@ -198,8 +198,8 @@ export function CharactersView({
           </div>
           {importError && <div className="error">{importError}</div>}
           <p className="muted small">
-            No account needed — characters save in this browser, and signing in adds them to your account.
-            Export JSON makes a portable copy either way.
+            Characters are saved in this browser. Signing in stores them in an account instead. Export JSON
+            saves a copy of everything to a file.
           </p>
         </div>
 
@@ -209,7 +209,8 @@ export function CharactersView({
               <h3>
                 {c.name}{" "}
                 <span className="muted">
-                  — <ProfessionIcon profession={c.primaryProfession} withLabel /> (primary, fixed)
+                  — <ProfessionIcon profession={c.primaryProfession} withLabel /> (primary profession, set at
+                  creation)
                 </span>
               </h3>
               <button className="danger" onClick={() => { removeCharacter(c.name); onSelect(null); }}>
@@ -218,7 +219,7 @@ export function CharactersView({
             </div>
             <div className="field">
               <span className="field-label">
-                Campaigns owned <span className="muted">(from {c.campaign ?? "Prophecies"})</span>
+                Campaigns owned <span className="muted">(created in {c.campaign ?? "Prophecies"})</span>
               </span>
               {OWNABLE.map((camp) => (
                 <label key={camp} className="inline-check">
@@ -241,7 +242,7 @@ export function CharactersView({
               <div className="field">
                 <span className="field-label">
                   Allegiance{" "}
-                  <span className="muted">(which side's allegiance skills you get)</span>
+                  <span className="muted">(decides which version of the allegiance skills you receive)</span>
                 </span>
                 {ALLEGIANCES.map((side) => (
                   <label key={side} className="inline-check">
@@ -265,7 +266,7 @@ export function CharactersView({
               </div>
             )}
             <div className="field">
-              <span className="field-label">Unlocked secondaries</span>
+              <span className="field-label">Unlocked secondary professions</span>
               {PROFESSIONS.filter((p) => p !== c.primaryProfession).map((p) => (
                 <label key={p} className="inline-check">
                   <input
@@ -285,7 +286,7 @@ export function CharactersView({
             </div>
             <div className="row wrap align-top">
               <Checklist
-                label="Unlocked towns/outposts"
+                label="Unlocked towns and outposts"
                 groups={locationGroups}
                 selected={c.unlockedLocations}
                 onChange={(v) => updateCharacter(c.name, { unlockedLocations: v })}

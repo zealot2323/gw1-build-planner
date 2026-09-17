@@ -48,7 +48,7 @@ function joinLinks(pages: string[], sep = ", ") {
 function restriction(e: QuestBoardEntry): string | null {
   const { profession, primaryOnly } = e.quest;
   if (!profession) return null;
-  return primaryOnly ? `${profession} primaries only` : `${profession} primary or secondary`;
+  return primaryOnly ? `${profession} primary only` : `${profession} primary or secondary`;
 }
 
 function QuestCard({
@@ -76,12 +76,12 @@ function QuestCard({
         </a>
         <span className="quest-tag">{quest.type}</span>
         {entry.preSearing && (
-          <span className="quest-tag warn" title="Given in pre-Searing Ascalon — unavailable once you leave">
+          <span className="quest-tag warn" title="Given in pre-Searing Ascalon. It can no longer be taken once the character leaves.">
             pre-Searing
           </span>
         )}
         {gate && (
-          <span className="quest-tag" title="Profession restriction from the quest's wiki page">
+          <span className="quest-tag" title="Profession requirement, from the quest's wiki page">
             <ProfessionIcon profession={quest.profession} /> {gate}
           </span>
         )}
@@ -106,7 +106,7 @@ function QuestCard({
           {entry.availableNow
             ? "available now"
             : entry.distance === null
-              ? "no known route"
+              ? "no known route there"
               : `${entry.distance} zone${entry.distance === 1 ? "" : "s"} away`}
         </span>
         {entry.route.length > 0 && <span className="muted"> · via {entry.route.join(" → ")}</span>}
@@ -166,7 +166,7 @@ export function QuestsView({
     [character, index],
   );
 
-  if (!character) return <div className="view muted pad">Select a character first.</div>;
+  if (!character) return <div className="view muted pad">Select a character on the Characters tab.</div>;
 
   const term = view.search.trim().toLowerCase();
   const knownSkills = new Set(character.knownSkills);
@@ -207,7 +207,7 @@ export function QuestsView({
         <input
           type="search"
           className="quest-search"
-          placeholder="search quests, skills, places…"
+          placeholder="Search quests, skills or places…"
           value={view.search}
           onChange={(e) => setView({ search: e.target.value })}
         />
@@ -217,18 +217,18 @@ export function QuestsView({
             checked={view.hideKnown}
             onChange={(e) => setView({ hideKnown: e.target.checked })}
           />
-          hide quests whose skills I know{hiddenKnown > 0 && view.hideKnown ? ` (${hiddenKnown} hidden)` : ""}
+          Hide quests whose skills I already know{hiddenKnown > 0 && view.hideKnown ? ` (${hiddenKnown} hidden)` : ""}
         </label>
       </div>
       <p className="muted small">
-        Quests that reward a skill {character.name} could learn ({character.primaryProfession}
-        {character.unlockedSecondaries.length > 0 ? ` + ${character.unlockedSecondaries.join(", ")}` : ""}, or
-        common). Profession restrictions come from each quest's wiki page; prerequisite quests are shown but not
-        checked.
+        Quests that reward a skill {character.name} can learn — {character.primaryProfession}
+        {character.unlockedSecondaries.length > 0 ? `, ${character.unlockedSecondaries.join(", ")}` : ""}, or skills
+        with no profession. Profession requirements come from each quest's wiki page. Prerequisite quests are
+        listed for reference but are not checked, because completed quests are not tracked.
       </p>
-      {visible.length === 0 && <div className="card muted">No quests match.</div>}
-      {section("Available now", now, "Given at an unlocked location, or an explorable area next to one.")}
-      {section("Further afield", later, "Nearest first.")}
+      {visible.length === 0 && <div className="card muted">No quests match these filters.</div>}
+      {section("Available now", now, "Given at an outpost you have unlocked, or an explorable area next to one.")}
+      {section("Not yet reachable", later, "Nearest first.")}
     </div>
   );
 }

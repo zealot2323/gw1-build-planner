@@ -10,3 +10,4 @@ export * from "./changes.js";
 export * from "./quests.js";
 export * from "./saves.js";
 export * from "./template.js";
+export * from "./attributes.js";

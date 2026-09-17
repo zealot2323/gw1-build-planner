@@ -3,10 +3,10 @@ import type { SyncStatus } from "../save";
 
 const STATUS: Record<SyncStatus, string> = {
   local: "",
-  loading: "loading…",
-  saving: "saving…",
-  saved: "saved",
-  error: "not saved",
+  loading: "Loading your characters…",
+  saving: "Saving…",
+  saved: "Saved to your account",
+  error: "Not saved",
 };
 
 /**
@@ -69,10 +69,10 @@ export function AccountBar({
   if (sent) {
     return (
       <span className="account small muted">
-        Check {email} for a sign-in link — open it in this browser
-        {account.guestCharacters > 0 ? " so your characters come with you" : ""}.{" "}
+        A sign-in link has been sent to {email}. Open it in this browser
+        {account.guestCharacters > 0 ? ", so these characters are added to your account" : ""}.{" "}
         <button className="linkish" onClick={() => setSent(false)}>
-          use a different email
+          Use a different address
         </button>
       </span>
     );
@@ -94,21 +94,25 @@ export function AccountBar({
   return (
     <form className="account small" onSubmit={submit}>
       {account.guestCharacters > 0 ? (
-        <span className="guest-badge" title="Characters are saved in this browser only. Sign in to keep them in an account — they'll be added to it.">
-          Guest · {account.guestCharacters} character{account.guestCharacters === 1 ? "" : "s"} in this browser only
+        <span
+          className="guest-badge"
+          title="These characters are saved in this browser only. Sign in to store them in an account; they will be added to it."
+        >
+          Not signed in · {account.guestCharacters} character{account.guestCharacters === 1 ? "" : "s"} saved in
+          this browser
         </span>
       ) : (
-        <span className="muted">Playing as guest.</span>
+        <span className="muted">Not signed in. Characters are saved in this browser.</span>
       )}{" "}
       <input
         type="email"
         required
-        placeholder={account.guestCharacters > 0 ? "email to keep them" : "email to save to an account"}
+        placeholder="Your email address"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />{" "}
       <button type="submit" disabled={busy}>
-        {busy ? "Sending…" : "Email me a sign-in link"}
+        {busy ? "Sending…" : "Send a sign-in link"}
       </button>
       {problem && <div className="error small">{problem}</div>}
     </form>

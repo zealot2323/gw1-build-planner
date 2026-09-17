@@ -86,7 +86,7 @@ function MonsterCard({
           <button
             key={ref}
             className={key(ref) === expandedSkill ? "skill-card open" : "skill-card"}
-            title={skill === null ? "not in the Prophecies skill set" : "show details"}
+            title={skill === null ? "Not in this planner's skill data" : "Show skill details"}
             onClick={() => onToggleSkill(key(ref) === expandedSkill ? null : key(ref))}
           >
             <SkillIcon page={ref} size={34} />
@@ -113,8 +113,8 @@ function MonsterCard({
               <a href={wikiHref(open.ref)} target="_blank" rel="noreferrer">
                 {open.ref}
               </a>{" "}
-              — not in the Prophecies skill set: a monster-only skill, or one from
-              another campaign that this creature only uses in hard mode.
+              — not in this planner's skill data. It is usually a monster-only skill, or one from a campaign
+              this character doesn't own.
             </div>
           )}
         </div>
@@ -237,7 +237,7 @@ function OutpostSkills({
               {quest}
             </a>{" "}
             <span className={unlocked ? "avail avail-now" : "avail avail-locked"}>
-              {unlocked ? "Available to unlock now" : "Unlock this outpost to get these skills"}
+              {unlocked ? "Available from a quest now" : "Unlock this outpost to get these skills from quests"}
             </span>
           </h4>
           {section(skills)}
@@ -247,7 +247,7 @@ function OutpostSkills({
   );
 }
 
-/** "What am I walking into?" — enemy groups and the tactics they bring. */
+/** What to expect in a zone: the enemy groups and the tactics they bring. */
 function ZoneBriefing({
   location,
   hardMode,
@@ -517,7 +517,7 @@ export function ZonesView({
           setSelected(name);
           setExpandedSkill(null);
         }}
-        title={unlocked.has(name) ? "unlocked by this character" : undefined}
+        title={unlocked.has(name) ? "Unlocked by this character" : undefined}
       >
         {unlocked.has(name) && <span className="unlocked-dot">●</span>}
         {name} <span className="muted tag">{kind}</span>

@@ -106,7 +106,7 @@ export function BuildBar({
           <select
             value={build.secondary ?? ""}
             onChange={(e) => patch({ secondary: (e.target.value || null) as Profession | null })}
-            title="skills from this profession become legal in the build"
+            title="Skills from this profession can be used in this build"
           >
             <option value="">none</option>
             {PROFESSIONS.filter((p) => p !== build.primary).map((p) => (
@@ -128,7 +128,7 @@ export function BuildBar({
             <>
               <input
                 className="narrow"
-                placeholder="name to save…"
+                placeholder="Name this build…"
                 value={saveName}
                 onChange={(e) => setSaveName(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && save()}
@@ -162,7 +162,7 @@ export function BuildBar({
               <>
                 <button
                   className="slot-open"
-                  title="show skill details"
+                  title="Show skill details"
                   onClick={() => setOpenSlot(openSlot === i ? null : i)}
                 >
                   <SkillIcon page={skill} size={32} />
@@ -171,7 +171,7 @@ export function BuildBar({
                     {index.skillByPage.get(skill)?.isElite && <span className="elite"> ★</span>}
                   </span>
                 </button>
-                <button className="slot-remove" title="remove from build" onClick={() => clearSlot(i)}>
+                <button className="slot-remove" title="Remove from build" onClick={() => clearSlot(i)}>
                   ×
                 </button>
               </>

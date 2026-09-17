@@ -1,12 +1,22 @@
 /**
  * Build validation. Pure — no I/O.
  */
+import {
+  ATTRIBUTE_POINTS_AT_20,
+  attributesForBuild,
+  MAX_RANK_FROM_POINTS,
+  pointsSpent,
+  primaryAttributeOf,
+} from "./attributes.js";
 import { skillAvailability, type SkillAvailabilityEntry } from "./availability.js";
 import type { DataIndex } from "./data.js";
 import { planForSkill, type SkillPlan, type TravelGraph } from "./travel.js";
 import type { Build, Character, Skill, SkillRef } from "./types.js";
 
 export type BuildErrorCode =
+  | "ATTRIBUTE_NOT_AVAILABLE"
+  | "ATTRIBUTE_RANK_TOO_HIGH"
+  | "ATTRIBUTE_POINTS_OVERSPENT"
   | "WRONG_SLOT_COUNT"
   | "TOO_MANY_ELITES"
   | "DUPLICATE_SKILL"
@@ -36,8 +46,8 @@ export function validateBuild(build: Build, index: DataIndex): BuildError[] {
   if (build.secondary !== null && build.secondary === build.primary) {
     errors.push({
       code: "PRIMARY_EQUALS_SECONDARY",
-      message: `Your secondary can't also be ${build.primary} — that's your primary profession.`,
-      fix: "Pick a different secondary, or set it to none.",
+      message: `${build.primary} is this character's primary profession, so it can't also be the secondary.`,
+      fix: "Choose a different secondary profession, or set it to none.",
     });
   }
 
@@ -60,8 +70,8 @@ export function validateBuild(build: Build, index: DataIndex): BuildError[] {
     if (firstSlot !== undefined) {
       errors.push({
         code: "DUPLICATE_SKILL",
-        message: `${ref} is in slot ${firstSlot + 1} already.`,
-        fix: `Remove one of them — a skill can only be equipped once.`,
+        message: `${ref} is already in slot ${firstSlot + 1}.`,
+        fix: "Remove one copy. A skill can only be equipped once.",
         slot,
         skill: ref,
       });
@@ -73,8 +83,8 @@ export function validateBuild(build: Build, index: DataIndex): BuildError[] {
     if (!skill) {
       errors.push({
         code: "UNKNOWN_SKILL",
-        message: `${ref} isn't in the Prophecies skill list.`,
-        fix: "It may be a Factions/Nightfall skill or a monster-only skill.",
+        message: `${ref} isn't in this planner's skill data.`,
+        fix: "It may be a PvP-only version, a monster skill, or newer than the last data update.",
         slot,
         skill: ref,
       });
@@ -85,8 +95,8 @@ export function validateBuild(build: Build, index: DataIndex): BuildError[] {
       if (elites === 2) {
         errors.push({
           code: "TOO_MANY_ELITES",
-          message: `You can only equip one elite skill, and ${ref} is a second one.`,
-          fix: "Drop one of the elites (marked ★).",
+          message: `A build can include only one elite skill, and ${ref} is a second.`,
+          fix: "Remove one of the elite skills (marked ★).",
           slot,
           skill: ref,
         });
@@ -102,17 +112,52 @@ export function validateBuild(build: Build, index: DataIndex): BuildError[] {
         code: "ILLEGAL_PROFESSION",
         message:
           build.secondary === null
-            ? `${ref} is a ${skill.profession} skill, but this build is ${build.primary} with no secondary.`
-            : `${ref} is a ${skill.profession} skill, which a ${build.primary}/${build.secondary} can't use.`,
+            ? `${ref} is a ${skill.profession} skill, and this build has no secondary profession.`
+            : `${ref} is a ${skill.profession} skill, which a ${build.primary}/${build.secondary} cannot use.`,
         fix:
           build.secondary === null
-            ? `Set your secondary to ${skill.profession} to use it.`
-            : `Either switch your secondary to ${skill.profession}, or remove the skill.`,
+            ? `Set the secondary profession to ${skill.profession}, or remove the skill.`
+            : `Change the secondary profession to ${skill.profession}, or remove the skill.`,
         slot,
         skill: ref,
       });
     }
   });
+
+  // --- attributes ---
+  const attributes = build.attributes ?? {};
+  const allowed = new Set(attributesForBuild(build));
+  for (const [attribute, rank] of Object.entries(attributes)) {
+    if (rank <= 0) continue;
+    if (!allowed.has(attribute)) {
+      // The commonest case is the secondary's own primary attribute, which
+      // belongs to that profession's primaries only.
+      const secondaryPrimary =
+        build.secondary !== null && primaryAttributeOf(build.secondary) === attribute;
+      errors.push({
+        code: "ATTRIBUTE_NOT_AVAILABLE",
+        message: secondaryPrimary
+          ? `${attribute} is ${build.secondary}'s primary attribute, so only a ${build.secondary} primary can use it.`
+          : `${attribute} doesn't belong to ${build.primary}${build.secondary ? `/${build.secondary}` : ""}.`,
+        fix: `Set ${attribute} back to 0.`,
+      });
+    }
+    if (rank > MAX_RANK_FROM_POINTS) {
+      errors.push({
+        code: "ATTRIBUTE_RANK_TOO_HIGH",
+        message: `${attribute} is at ${rank}. Attribute points only reach ${MAX_RANK_FROM_POINTS}.`,
+        fix: `Lower it to ${MAX_RANK_FROM_POINTS}. Higher ranks come from runes and headgear, which this planner doesn't track.`,
+      });
+    }
+  }
+  const spent = pointsSpent(attributes);
+  if (spent > ATTRIBUTE_POINTS_AT_20) {
+    errors.push({
+      code: "ATTRIBUTE_POINTS_OVERSPENT",
+      message: `This spread costs ${spent} attribute points. A level 20 character has ${ATTRIBUTE_POINTS_AT_20}.`,
+      fix: `Reduce a rank to free up ${spent - ATTRIBUTE_POINTS_AT_20} point(s).`,
+    });
+  }
 
   return errors;
 }

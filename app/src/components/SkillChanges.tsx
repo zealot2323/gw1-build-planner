@@ -2,9 +2,9 @@ import { balanceChanges, diffVersion, type Skill, type SkillChangeRecord } from 
 import { agoLabel } from "./ChangeBadge";
 
 const KIND_LABEL: Record<string, string> = {
-  balance: "balance",
+  balance: "balance change",
   bugfix: "bug fix",
-  ai: "AI",
+  ai: "AI behaviour",
   note: "wiki note",
 };
 
@@ -47,9 +47,8 @@ export function SkillChanges({ record, skill }: { record: SkillChangeRecord; ski
           </div>
           {record.previousIsStale && (
             <p className="muted small no-margin">
-              ⚠ This snapshot predates an intervening change — the wiki's skill history has not
-              caught up with every patch note above, so it may be older than the version
-              immediately before the latest change.
+              Note: the wiki's skill history has not been updated for every change listed above, so this
+              snapshot may be older than the version immediately before the most recent change.
             </p>
           )}
           <table className="diff-table">
@@ -67,13 +66,13 @@ export function SkillChanges({ record, skill }: { record: SkillChangeRecord; ski
       )}
       {record.previous && diffs.length === 0 && (
         <p className="muted small no-margin">
-          The wiki's last recorded version ({record.previous.label}) matches the skill's current
-          stats — its history page has not been updated for this change yet.
+          The wiki's last recorded version ({record.previous.label}) matches the skill's current values, so its
+          history page has not been updated for this change yet.
         </p>
       )}
       {!record.previous && (
         <p className="muted small no-margin">
-          No previous version on the wiki — this skill has no /Skill history page.
+          No earlier version is recorded: this skill has no history page on the wiki.
         </p>
       )}
     </div>

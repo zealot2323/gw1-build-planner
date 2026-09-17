@@ -145,20 +145,20 @@ export function SkillDetails({ skill, plan }: { skill: Skill; plan?: SkillPlan }
         <p className="small no-margin">
           <ProximityDot proximity={plan.proximity} distance={plan.distance} />
           {plan.distance === null
-            ? "No route to any known source."
+            ? "No known route to a source."
             : plan.distance === 0
-              ? "Reachable now — you can go get it."
+              ? "Reachable now."
               : `${plan.distance} zone${plan.distance === 1 ? "" : "s"} away`}
           {plan.route.length > 0 && (
             <span className="muted"> · via {plan.route.join(" → ")}</span>
           )}
         </p>
       )}
-      <SourceList label="Trainers" items={acq.trainers} />
-      <SourceList label="Quests" items={acq.quests} />
-      <CaptureList label="Capture from" bosses={acq.captureBosses} locations={acq.captureLocations} />
+      <SourceList label="Sold by" items={acq.trainers} />
+      <SourceList label="Quest rewards" items={acq.quests} />
+      <CaptureList label="Captured from" bosses={acq.captureBosses} locations={acq.captureLocations} />
       <CaptureList
-        label="Capture (quest/event only)"
+        label="Captured from (during a quest or event only)"
         bosses={acq.conditionalCaptureBosses ?? []}
         locations={acq.captureLocations}
       />

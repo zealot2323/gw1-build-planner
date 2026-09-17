@@ -23,7 +23,7 @@ export function ChangeBadge({ record }: { record: SkillChangeRecord }) {
   return (
     <span
       className="change-badge"
-      title={`${n} balance change${n === 1 ? "" : "s"}, most recently ${on} (${agoLabel(on)})`}
+      title={`${n} balance change${n === 1 ? "" : "s"}, most recently on ${on} (${agoLabel(on)})`}
     >
       ↻
     </span>

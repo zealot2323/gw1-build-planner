@@ -14,6 +14,7 @@ import { SkillIcon } from "../components/SkillIcon";
 import { SkillDetails } from "../components/SkillDetails";
 import { ProfessionIcon } from "../components/ProfessionIcon";
 import { ProximityDot } from "../components/ProximityDot";
+import { AttributeEditor } from "../components/AttributeEditor";
 import type { CharacterSave } from "../save";
 
 export interface BuildsViewState {
@@ -26,11 +27,11 @@ export interface BuildsViewState {
 export const initialBuildsViewState: BuildsViewState = { openSlot: null, code: "", newName: "" };
 
 const STATUS_WORD: Record<string, string> = {
-  KNOWN: "known",
-  PURCHASABLE_NOW: "buy now",
-  QUESTABLE_NOW: "quest now",
-  CAPTURABLE_NOW: "capture now",
-  FUTURE: "later",
+  KNOWN: "already known",
+  PURCHASABLE_NOW: "can buy now",
+  QUESTABLE_NOW: "quest reward, available now",
+  CAPTURABLE_NOW: "can capture now",
+  FUTURE: "not available yet",
 };
 
 /** One of the 8 slots: icon, known/missing state, click for details. */
@@ -46,7 +47,7 @@ function Slot({
   if (slot.ref === null) return <span className="build-slot empty">empty</span>;
   const cls = ["build-slot", slot.known ? "known" : "missing", open ? "open" : ""].join(" ");
   return (
-    <button className={cls} onClick={onToggle} title={slot.known ? "you know this" : "you don't have this yet"}>
+    <button className={cls} onClick={onToggle} title={slot.known ? "Already known" : "Not known yet"}>
       <SkillIcon page={slot.ref} size={32} />
       <span className="build-slot-name">
         {slot.skill?.name ?? slot.ref}
@@ -77,7 +78,7 @@ export function BuildsView({
 
   const graph = useMemo(() => (character ? travelDistances(character, index) : null), [character, index]);
 
-  if (!character) return <div className="view muted pad">Select a character first.</div>;
+  if (!character) return <div className="view muted pad">Select a character on the Characters tab.</div>;
   const builds = character.builds;
 
   /** Paste a template code from the game (or gw1builds) to add a build. */
@@ -100,6 +101,7 @@ export function BuildsView({
         character: character.name,
         primary: character.primaryProfession,
         secondary: (decoded.secondary as Profession | null) ?? null,
+        attributes: decoded.attributes,
         skills: decoded.skills.map((s) => s?.wikiPage ?? null) as Build["skills"],
       };
       updateBuilds([...builds, build]);
@@ -130,8 +132,8 @@ export function BuildsView({
       <div className="card">
         <h3>Add a build</h3>
         <p className="muted small no-margin">
-          Paste a template code from the game (Ctrl+Shift+C on a skill bar) or from a build site — the same
-          format gw1builds uses.
+          Paste a build template code, either copied from the game or from a build site. Skills and attribute
+          ranks are both read from the code.
         </p>
         <div className="row wrap" style={{ marginTop: "0.5rem" }}>
           <input
@@ -142,7 +144,7 @@ export function BuildsView({
             onKeyDown={(e) => e.key === "Enter" && addFromCode()}
           />
           <input
-            placeholder="name it (optional)"
+            placeholder="Build name (optional)"
             value={view.newName}
             onChange={(e) => setView({ newName: e.target.value })}
             onKeyDown={(e) => e.key === "Enter" && addFromCode()}
@@ -154,7 +156,8 @@ export function BuildsView({
 
       {builds.length === 0 && (
         <div className="card muted">
-          No builds yet. Paste a code above, or build one on the Skills tab and save it there.
+          No builds saved yet. Paste a template code above, or assemble a build on the Skills tab and save it
+          there.
         </div>
       )}
 
@@ -177,14 +180,14 @@ export function BuildsView({
               <div className="row">
                 <span className={readiness.ready ? "ok small" : "muted small"}>
                   {readiness.ready
-                    ? "✓ you have every skill"
-                    : `${readiness.known}/${readiness.filled} skills known`}
+                    ? "✓ All skills known"
+                    : `${readiness.known} of ${readiness.filled} skills known`}
                 </span>
                 <button className="small" onClick={() => onLoadBuild(build.name)}>
-                  Open in editor
+                  Open on Skills tab
                 </button>
                 <button className="small" onClick={() => copyCode(build)}>
-                  {copied === build.name ? "Copied!" : "Copy code"}
+                  {copied === build.name ? "Copied" : "Copy template code"}
                 </button>
                 <button
                   className="small danger"
@@ -220,6 +223,13 @@ export function BuildsView({
                 ),
             )}
 
+            <AttributeEditor
+              build={build}
+              onChange={(attributes) =>
+                updateBuilds(builds.map((b) => (b.name === build.name ? { ...b, attributes } : b)))
+              }
+            />
+
             {readiness.errors.length > 0 && (
               <ul className="build-errors small">
                 {readiness.errors.map((e, i) => (
@@ -232,7 +242,7 @@ export function BuildsView({
 
             {readiness.missing.length > 0 && (
               <p className="small no-margin">
-                <span className="muted">Still need:</span>{" "}
+                <span className="muted">Skills still needed:</span>{" "}
                 {readiness.missing.map((slot, i) => (
                   <span key={slot.ref}>
                     {i > 0 && ", "}

@@ -101,7 +101,7 @@ export function App() {
                       : draft.secondary)
                   : ""
               })`
-            : "no character selected"}
+            : "No character selected"}
         </span>
         <AccountBar account={account} />
       </header>

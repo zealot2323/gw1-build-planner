@@ -501,3 +501,13 @@ button.linkish.outpost { font-weight: 600; flex: 1; width: auto; }
    outranks a bare class selector, so this must match on the element too —
    otherwise the × swallows the row and the label collapses to zero width */
 button.todo-remove { flex: 0 0 auto; width: auto; text-align: right; }
+
+/* Attribute editor */
+.attributes { margin: 0.6rem 0 0.4rem; }
+.attributes-head { display: flex; justify-content: space-between; gap: 1rem; margin-bottom: 0.25rem; }
+.attribute-rows { display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: 0.15rem 1rem; }
+.attribute-row { display: flex; align-items: center; gap: 0.4rem; }
+.attribute-name { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.attribute-rank { width: 1.4rem; text-align: center; font-variant-numeric: tabular-nums; font-weight: 600; }
+.attribute-cost { width: 4rem; text-align: right; }
+.attribute-row button.small { width: auto; padding: 0 0.45rem; }

@@ -49,11 +49,11 @@ const STATUS_ORDER: SkillStatus[] = [
   "KNOWN", "PURCHASABLE_NOW", "QUESTABLE_NOW", "CAPTURABLE_NOW", "FUTURE",
 ];
 const STATUS_LABEL: Record<SkillStatus, string> = {
-  KNOWN: "Known",
-  PURCHASABLE_NOW: "Purchasable now",
-  QUESTABLE_NOW: "Questable now",
-  CAPTURABLE_NOW: "Capturable now",
-  FUTURE: "Future",
+  KNOWN: "Already known",
+  PURCHASABLE_NOW: "Can buy now",
+  QUESTABLE_NOW: "Can get from a quest now",
+  CAPTURABLE_NOW: "Can capture now",
+  FUTURE: "Not available yet",
 };
 
 /**
@@ -63,8 +63,8 @@ const STATUS_LABEL: Record<SkillStatus, string> = {
 function SourceLine({ src }: { src: AcquisitionSource }) {
   const action = {
     trainer: "buy from",
-    quest: "quest:",
-    capture: "capture",
+    quest: "quest reward from",
+    capture: "capture from",
     title: "earn rank with",
   }[src.kind];
   const stop = (e: React.MouseEvent) => e.stopPropagation();
@@ -85,7 +85,7 @@ function SourceLine({ src }: { src: AcquisitionSource }) {
       {src.requirement && (
         <span className="muted" title={src.requirement}>
           {" "}
-          — rank required
+          — requires a title rank
         </span>
       )}
     </>
@@ -213,7 +213,7 @@ export function SkillsView({
       return next;
     });
 
-  if (!character) return <div className="view muted pad">Select a character first.</div>;
+  if (!character) return <div className="view muted pad">Select a character on the Characters tab.</div>;
 
   const colSpan = onAddToBuild ? 4 : 3;
 
@@ -230,18 +230,18 @@ export function SkillsView({
       />
       <div className="row wrap toolbar">
         <label>
-          Profession:{" "}
+          Profession{" "}
           <select value={profFilter} onChange={(e) => setProfFilter(e.target.value)}>
-            <option value="all">all</option>
+            <option value="all">All</option>
             <option>{character.primaryProfession}</option>
             {secondary && <option>{secondary}</option>}
-            <option value="Common">Common</option>
+            <option value="Common">No profession</option>
           </select>
         </label>
         <label>
-          Attribute:{" "}
+          Attribute{" "}
           <select value={attrFilter} onChange={(e) => setAttrFilter(e.target.value)}>
-            <option value="all">all</option>
+            <option value="all">All</option>
             {attributes.map((a) => (
               <option key={a}>{a}</option>
             ))}
@@ -249,20 +249,20 @@ export function SkillsView({
         </label>
         <label className="inline-check">
           <input type="checkbox" checked={elitesOnly} onChange={(e) => setElitesOnly(e.target.checked)} />
-          elites only
+          Elites only
         </label>
         <label className="inline-check" title={`Balance changes since ${changes.since}`}>
           <input type="checkbox" checked={changedOnly} onChange={(e) => setChangedOnly(e.target.checked)} />
-          recently changed
+          Changed in the last 6 months
         </label>
         <label>
-          Sort:{" "}
+          Sort by{" "}
           <select value={sortBy} onChange={(e) => setSortBy(e.target.value as "name" | "soonest")}>
-            <option value="soonest">soonest reachable</option>
-            <option value="name">alphabetical</option>
+            <option value="soonest">Nearest first</option>
+            <option value="name">Alphabetical</option>
           </select>
         </label>
-        <input type="search" placeholder="search skills…" value={search} onChange={(e) => setSearch(e.target.value)} />
+        <input type="search" placeholder="Search skills…" value={search} onChange={(e) => setSearch(e.target.value)} />
       </div>
 
       {STATUS_ORDER.map((status) => {
@@ -276,7 +276,7 @@ export function SkillsView({
                 className="section-toggle"
                 onClick={() => toggleSection(status)}
                 aria-expanded={!isCollapsed}
-                title={isCollapsed ? "show these skills" : "hide these skills"}
+                title={isCollapsed ? "Show these skills" : "Hide these skills"}
               >
                 <span className="caret">{isCollapsed ? "▸" : "▾"}</span>
                 {STATUS_LABEL[status]} <span className="muted">({group.length})</span>
@@ -315,7 +315,7 @@ export function SkillsView({
                               onClick={() =>
                                 setOpenSkill(openSkill === e.skill.wikiPage ? null : e.skill.wikiPage)
                               }
-                              title="show skill details"
+                              title="Show skill details"
                             >
                               {e.status !== "KNOWN" && (
                                 <ProximityDot
@@ -336,7 +336,7 @@ export function SkillsView({
                           </td>
                           <td className="muted small">
                             {e.sources.length === 0 ? (
-                              "no known Prophecies source"
+                              "No known source"
                             ) : (
                               <>
                                 <SourceLine src={e.sources[0]} />
@@ -348,8 +348,8 @@ export function SkillsView({
                                       onClick={() => toggleSources(e.skill.wikiPage)}
                                     >
                                       {expandedSources.has(e.skill.wikiPage)
-                                        ? "— hide"
-                                        : `— +${e.sources.length - 1} more`}
+                                        ? "— show fewer"
+                                        : `— ${e.sources.length - 1} more source${e.sources.length === 2 ? "" : "s"}`}
                                     </button>
                                   </>
                                 )}

@@ -376,6 +376,11 @@ export interface Build {
   character: string;
   primary: Profession;
   secondary: Profession | null;
+  /**
+   * Attribute ranks, by attribute name. Omitted or 0 = no points spent.
+   * Ranks above 12 come from runes/headgear, which this doesn't model.
+   */
+  attributes?: Record<string, number>;
   /** Exactly 8 entries; null = empty slot. */
   skills: [
     SkillRef | null, SkillRef | null, SkillRef | null, SkillRef | null,
@@ -690,6 +695,7 @@ export const buildSchema = {
     character: { type: "string" },
     primary: { $ref: "gw1-profession" },
     secondary: { oneOf: [{ $ref: "gw1-profession" }, { type: "null" }] },
+    attributes: { type: "object", additionalProperties: { type: "integer", minimum: 0, maximum: 20 } },
     skills: {
       type: "array",
       minItems: 8,

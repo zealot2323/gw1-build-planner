@@ -53,7 +53,7 @@ export function TodoView({
   );
   const graph = useMemo(() => (character ? travelDistances(character, index) : null), [character, index]);
 
-  if (!character) return <div className="view muted pad">Select a character first.</div>;
+  if (!character) return <div className="view muted pad">Select a character on the Characters tab.</div>;
   const todos = character.todos ?? [];
 
   /** Options to autocomplete against, per kind. Notes are free text. */
@@ -80,11 +80,13 @@ export function TodoView({
     // Anything but a note should name something real, or it can't be linked
     // or tracked — but say so rather than silently refusing.
     if (view.kind !== "note" && !optionsFor(view.kind).includes(ref)) {
-      setError(`"${ref}" isn't a ${KIND_LABEL[view.kind].toLowerCase()} we know. Pick one from the list, or add it as a note.`);
+      setError(
+        `"${ref}" is not a ${KIND_LABEL[view.kind].toLowerCase()} in this planner's data. Choose one from the list, or add it as a note instead.`,
+      );
       return;
     }
     if (todos.some((t) => t.kind === view.kind && t.ref === ref && !t.done)) {
-      setError("That's already on the list.");
+      setError("That is already on the list.");
       return;
     }
     setError(null);
@@ -101,10 +103,10 @@ export function TodoView({
     if (item.kind === "skill") {
       const entry = availability.get(item.ref);
       if (character.knownSkills.includes(item.ref)) return <span className="ok">already known</span>;
-      if (!entry) return <span className="muted">not available to this character</span>;
+      if (!entry) return <span className="muted">not usable by this character</span>;
       return (
         <span className="muted">
-          {entry.status === "FUTURE" ? "not yet reachable" : entry.status.replace(/_/g, " ").toLowerCase()}
+          {entry.status === "FUTURE" ? "not available yet" : entry.status.replace(/_NOW$/, "").replace(/_/g, " ").toLowerCase() + " now"}
           {entry.sources[0]?.location ? ` · ${entry.sources[0].location}` : ""}
         </span>
       );
@@ -123,17 +125,17 @@ export function TodoView({
       return character.completedMissions.includes(item.ref) ? (
         <span className="ok">completed</span>
       ) : (
-        <span className="muted">not done</span>
+        <span className="muted">not completed</span>
       );
     }
     if (item.kind === "build") {
       const build = character.builds.find((b) => b.name === item.ref);
-      if (!build) return <span className="muted">build deleted</span>;
+      if (!build) return <span className="muted">this build no longer exists</span>;
       const have = build.skills.filter((s) => s && character.knownSkills.includes(s)).length;
       const filled = build.skills.filter(Boolean).length;
       return (
         <span className={have === filled && filled > 0 ? "ok" : "muted"}>
-          {have}/{filled} skills known
+          {have} of {filled} skills known
         </span>
       );
     }
@@ -161,7 +163,7 @@ export function TodoView({
             className="todo-input"
             list={view.kind === "note" ? undefined : `todo-options-${view.kind}`}
             placeholder={
-              view.kind === "note" ? "anything you want to remember…" : `search ${KIND_LABEL[view.kind].toLowerCase()}s…`
+              view.kind === "note" ? "Anything you want to remember…" : `Search ${KIND_LABEL[view.kind].toLowerCase()}s…`
             }
             value={view.draft}
             onChange={(e) => setView({ draft: e.target.value })}
@@ -177,7 +179,7 @@ export function TodoView({
           <button onClick={add}>Add</button>
           <label className="inline-check">
             <input type="checkbox" checked={view.showDone} onChange={(e) => setView({ showDone: e.target.checked })} />
-            show done
+            Show completed
           </label>
         </div>
         {error && <div className="error small">{error}</div>}
@@ -185,8 +187,8 @@ export function TodoView({
 
       {visible.length === 0 && (
         <div className="card muted">
-          Nothing on the list. Add skills you're hunting, builds you want to finish, outposts or missions to
-          reach — or just a note.
+          Nothing on the list yet. Add skills to acquire, builds to complete, outposts or missions to reach, or a
+          free-text note.
         </div>
       )}
 
@@ -219,7 +221,7 @@ export function TodoView({
                     )}
                     <span className="todo-context small">{context(item)}</span>
                   </label>
-                  <button className="linkish todo-remove" onClick={() => remove(item.id)} title="remove">
+                  <button className="linkish todo-remove" onClick={() => remove(item.id)} title="Remove from list">
                     ×
                   </button>
                 </li>

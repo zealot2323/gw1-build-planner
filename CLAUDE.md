@@ -64,8 +64,16 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
 - **Normal mode is the default everywhere.** Availability logic (what a character
   can get) is normal-mode only. The zone browser additionally offers a hard mode
   toggle for viewing monster levels and bars — see Data decisions below.
-- **Attributes / attribute point spreads: out of scope**, EXCEPT that build template
-  codes encode them — always export template codes with all attributes at 0.
+- **Attributes ARE in scope for builds** (they were not originally): a build
+  carries `attributes` (rank by name), template codes read and write them,
+  and `validateBuild` checks them. Rules modelled: 200 points at level 20,
+  the game's cumulative rank costs (rank 12 = 97 points), rank 12 as the
+  ceiling points can buy, and the secondary profession's PRIMARY attribute
+  being unavailable (no W/Mo has Divine Favor). Runes and headgear, which
+  push a rank past 12, are not modelled. Title-track "attributes" (Sunspear
+  rank, Asura rank, Allegiance rank) scale with a title, not points, and are
+  excluded from the editor. Attribute ids come from gw1tools/gw1builds (MIT)
+  and were cross-checked against our own scraped attribute names.
 
 ## Data source
 
@@ -299,9 +307,8 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
 - **Build template codes** (`/engine/src/template.ts`) are encoded and decoded
   by `@buildwars/gw-templates` (MIT) — the same package gw1tools/gw1builds
   uses; we map profession ids and in-game skill ids onto our own types.
-  Codes are WRITTEN with all attributes at 0 (attributes are out of scope),
-  but READ with their attribute spread preserved, so importing and
-  re-exporting doesn't silently claim a build has no attribute points. A code
+  Attribute spreads travel both ways: a pasted code keeps its ranks and a
+  build exports the ranks it has. A code
   can name skills we don't have (PvP-only splits, skills newer than the last
   scrape): those come back in `unknownSkillIds` and the slot is left empty
   rather than dropped silently. The library packs skill ids in 11 bits, so
@@ -309,6 +316,19 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
 - **Attribution**: the skill card layout and the template-code approach are
   borrowed from gw1tools/gw1builds (MIT); see README Credits. Keep the
   credit line in the app footer if that code is touched.
+
+## Copy
+
+- **Plain, neutral, specific.** Say what something is, not how the reader
+  should feel about it. "Not signed in. Characters are saved in this
+  browser." — not "Playing as guest."
+- **Name the game's things by their in-game names**: outposts, explorable
+  areas, missions, quests, attribute ranks, elite skills.
+- **Never leave campaign-specific wording in shared copy.** "No known
+  Prophecies source" and "not in the Prophecies skill set" survived long
+  after the app covered four campaigns.
+- Status labels read as statements about the skill, not jargon: "Can buy
+  now", "Can get from a quest now", "Not available yet" — not "Questable".
 
 ## Conventions
 
