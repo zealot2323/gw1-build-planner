@@ -41,12 +41,51 @@ export interface MonsterDisplay {
  *
  * `hardMode` selects between normal and hard-mode-only blocks.
  */
+/**
+ * Narrow several candidate loadouts to the ones that fit the zone's
+ * campaign. A creature that appears in both Prophecies and Eye of the North
+ * has a bar for each, and showing the wrong one misreports what you'll meet.
+ *
+ * In order: a loadout tagged with this campaign wins; otherwise loadouts
+ * tagged for a DIFFERENT campaign are dropped; among what's left, one whose
+ * skills are all from this campaign or Core beats one that isn't.
+ */
+function preferCampaign(
+  variants: MonsterVariant[],
+  location: LocationRef,
+  index: DataIndex,
+): MonsterVariant[] {
+  if (variants.length <= 1) return variants;
+  const campaign =
+    index.locationByPage.get(location)?.campaign ?? index.missionByName.get(location)?.campaign ?? null;
+  if (campaign === null || campaign === "Core") return variants;
+
+  const tagged = variants.filter((v) => v.campaign === campaign);
+  if (tagged.length > 0) return tagged;
+
+  const candidates = variants.filter((v) => !v.campaign || v.campaign === campaign);
+  const pool = candidates.length > 0 ? candidates : variants;
+
+  const fits = pool.filter(
+    (v) =>
+      v.skills.length > 0 &&
+      v.skills.every((ref) => {
+        const c = index.skillByPage.get(ref)?.campaign;
+        // unknown skills don't count against a loadout
+        return c === undefined || c === null || c === "Core" || c === campaign;
+      }),
+  );
+  return fits.length > 0 ? fits : pool;
+}
+
 export function variantsForLocation(
   monster: Monster,
   location: LocationRef,
   hardMode = false,
   /** Level for this zone from the location page, which beats the monster page. */
   levelHere?: number,
+  /** Supplied by callers that have it; enables campaign-fit preference. */
+  index?: DataIndex,
 ): MonsterVariant[] {
   const all = monster.variants ?? [];
   // hard-mode-only blocks are additional loadouts, shown only in hard mode
@@ -59,9 +98,9 @@ export function variantsForLocation(
   const level = levelHere ?? monster.locationLevels?.[location];
   if (level !== undefined) {
     const byLevel = variants.filter((v) => v.levels.includes(level));
-    if (byLevel.length > 0) return byLevel;
+    if (byLevel.length > 0) return index ? preferCampaign(byLevel, location, index) : byLevel;
   }
-  return variants;
+  return index ? preferCampaign(variants, location, index) : variants;
 }
 
 /** Every skill this creature can use in a given place, for a given mode. */
@@ -70,8 +109,9 @@ export function skillsForLocation(
   location: LocationRef,
   hardMode = false,
   levelHere?: number,
+  index?: DataIndex,
 ): Array<{ ref: SkillRef; hardModeOnly: boolean }> {
-  const applicable = variantsForLocation(monster, location, hardMode, levelHere);
+  const applicable = variantsForLocation(monster, location, hardMode, levelHere, index);
   const out: Array<{ ref: SkillRef; hardModeOnly: boolean }> = [];
   const seen = new Set<SkillRef>();
   const add = (ref: SkillRef, hardModeOnly: boolean) => {
@@ -127,7 +167,7 @@ export function monstersInLocation(
     // The location page's own foe line is the best source for the level
     // here; the monster page lists every level it appears at anywhere.
     const levelHere = loc.foeLevels?.[ref];
-    const applicable = variantsForLocation(monster, location, hardMode, levelHere);
+    const applicable = variantsForLocation(monster, location, hardMode, levelHere, index);
     const level = hardMode
       ? (loc.foeLevelsHard?.[ref] ?? monster.levelHard ?? monster.level)
       : (levelHere ??

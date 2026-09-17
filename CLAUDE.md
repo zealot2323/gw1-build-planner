@@ -148,8 +148,14 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
   ("Gates of Kryta", "During Iron Mines of Moladune"), or by loadout ("Ranger
   version"). The parser emits `variants[]` plus `locationLevels` (from the
   "(level N)" annotations on Locations/Missions groups); the engine's
-  `variantsForLocation` picks by zone name, then by level, then falls back to
-  showing every loadout. Anything showing a monster must go through it —
+  `variantsForLocation` picks by zone name, then by level, then by campaign
+  fit, then falls back to showing every loadout. **Campaign fit**: a bar
+  tagged with the zone's campaign wins; otherwise bars tagged for a different
+  campaign are dropped; among what remains, one whose skills are all from
+  that campaign or Core beats one that isn't. A monster with no bar for this
+  campaign keeps what it has — a Nightfall Corsair bar in an EotN tunnel
+  beats no bar at all. The zone's own foe LEVEL is more specific and still
+  wins over the campaign tag. Anything showing a monster must go through it —
   a creature's level and skill bar are per-zone facts, not page-level ones.
 - **Hard mode is parsed, not discarded**: hard-mode-only skills land in a
   variant's `hardModeSkills`, whole hard-mode blocks get `hardMode: true`, and
@@ -183,10 +189,16 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
 - Infobox levels read "7 (23) [30]": bare = normal, parens = hard mode,
   brackets = a special (Titan quest) version — only the bare number is the
   normal-mode level.
-- Monster Skills sections are filtered to Prophecies normal-mode blocks:
-  campaign/Beyond/event/cinematic sub-blocks and headings (Eye of the North,
-  War in Kryta, Halloween, The Mausoleum, ...) are excluded; encounter-level
-  and mission-name subsections are included. Wiki redirects among monster
+- Monster Skills sections are filtered to normal-mode PvE blocks:
+  event/cinematic blocks (Halloween, The Mausoleum, April Fools, ...) and the
+  **Beyond releases — War in Kryta and Winds of Change** — are dropped, since
+  they re-arm existing monsters with bars you never meet in the campaign
+  zones. Mind the pages that label the ordinary bar "Non-War in Kryta
+  version": the exclusion must not eat that one (a negative lookbehind
+  guards it). Campaign-labelled blocks are KEPT and tagged instead, so the
+  engine can pick per zone; "Bonus Mission Pack" is its own mini-campaign and
+  is left untagged rather than counted as EotN. Encounter-level and
+  mission-name subsections are included. Wiki redirects among monster
   pages (typos like "Gren Waveslosh") are followed to the canonical page.
 - Monster pages missing an infobox, locations, or skills are usually species
   summary pages — parse what's there, don't flag.

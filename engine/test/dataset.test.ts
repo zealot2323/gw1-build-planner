@@ -8,6 +8,7 @@ import { describe, expect, it } from "vitest";
 import {
   canTakeQuest,
   indexDataset,
+  variantsForLocation,
   questBoard,
   travelDistances,
   Profession,
@@ -657,6 +658,55 @@ describe("full dataset: elites are never sold by trainers", () => {
   it("gives no elite a trainer as an acquisition source", () => {
     for (const s of index.dataset.skills) {
       if (s.isElite) expect(s.acquisition.trainers, s.wikiPage).toEqual([]);
+    }
+  });
+});
+
+describe("full dataset: monster loadouts fit the zone", () => {
+  it("drops War in Kryta / Winds of Change bars", () => {
+    // Beyond releases re-arm existing monsters; those bars are not what you
+    // meet in the campaign zones.
+    for (const m of index.dataset.monsters) {
+      for (const v of m.variants ?? []) {
+        // "Non-War in Kryta version" is the ordinary bar and must survive
+        if (v.label && /^non-/i.test(v.label)) continue;
+        expect(v.label ?? "", m.wikiPage).not.toMatch(/war in kryta|winds of change|hearts of the north/i);
+      }
+    }
+  });
+
+  it("keeps the ordinary bar on a page whose other blocks are all War in Kryta", () => {
+    const m = index.monsterByPage.get("White Mantle Sycophant")!;
+    expect(m.skills).toEqual(["Empathy", "Guilt", "Shame", "Shatter Enchantment"]);
+  });
+
+  it("picks the loadout matching the zone's campaign", () => {
+    // Frost Wurm has a Prophecies bar and an Eye of the North bar
+    const fw = index.monsterByPage.get("Frost Wurm")!;
+    expect(variantsForLocation(fw, "Lornar's Pass", false, undefined, index).map((v) => v.campaign)).toEqual([
+      "Prophecies",
+    ]);
+    expect(variantsForLocation(fw, "Bjora Marches", false, undefined, index).map((v) => v.campaign)).toEqual([
+      "Eye of the North",
+    ]);
+  });
+
+  it("prefers the zone's campaign whenever the monster has a bar for it", async () => {
+    const { monstersInLocation } = await import("../src/index.js");
+    for (const loc of index.dataset.locations) {
+      if (loc.kind !== "explorable" || !loc.campaign || loc.campaign === "Core") continue;
+      for (const shown of monstersInLocation(loc.wikiPage, index)) {
+        const all = shown.monster.variants ?? [];
+        // A monster with no bar for this campaign keeps what it has — a
+        // Nightfall Corsair in an EotN tunnel is better than no bar at all.
+        if (!all.some((v) => v.campaign === loc.campaign)) continue;
+        // A level from the zone's own foe line is the more specific fact and
+        // is allowed to win over the campaign tag.
+        if (loc.foeLevels?.[shown.monster.wikiPage] !== undefined) continue;
+        for (const v of variantsForLocation(shown.monster, loc.wikiPage, false, undefined, index)) {
+          expect(v.campaign, `${shown.monster.wikiPage} @ ${loc.wikiPage}`).toBe(loc.campaign);
+        }
+      }
     }
   });
 });

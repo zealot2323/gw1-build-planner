@@ -3359,9 +3359,7 @@
     ],
     "skills": [
       "Cyclone Axe",
-      "Frenzy",
-      "Sprint",
-      "Triple Chop"
+      "Frenzy"
     ],
     "isBoss": false,
     "locations": [
@@ -3392,18 +3390,6 @@
           "Eviscerate"
         ],
         "hardModeEliteSkill": "Eviscerate"
-      },
-      {
-        "label": "Rise of The White Mantle",
-        "levels": [],
-        "skills": [
-          "Cyclone Axe",
-          "Frenzy",
-          "Sprint",
-          "Triple Chop"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Triple Chop"
       },
       {
         "label": "During Hard mode Titan quests",
@@ -4696,7 +4682,6 @@
           "Orison of Healing",
           "Word of Healing"
         ],
-        "campaign": "Eye of the North",
         "eliteSkill": "Word of Healing"
       }
     ]
@@ -12785,25 +12770,7 @@
       "Crushing Blow",
       "Devastating Hammer",
       "Protector's Strike",
-      "Wild Blow",
-      "Body Blow",
-      "Counter Blow",
-      "Lion's Comfort",
-      "Warrior's Cunning",
-      "\"For Great Justice!\"",
-      "Backbreaker",
-      "Overbearing Smash",
-      "Pulverizing Smash",
-      "Thrill of Victory",
-      "Auspicious Blow",
-      "Crude Swing",
-      "Fierce Blow",
-      "Forceful Blow",
-      "Enraged Smash",
-      "Healing Signet",
-      "Irresistible Blow",
-      "Signet of Strength",
-      "Staggering Blow"
+      "Wild Blow"
     ],
     "isBoss": false,
     "locations": [
@@ -12823,75 +12790,7 @@
       "Ring of Fire"
     ],
     "profession": "Warrior",
-    "affiliation": "Mursaat",
-    "variants": [
-      {
-        "label": null,
-        "levels": [],
-        "skills": [
-          "Crushing Blow",
-          "Devastating Hammer",
-          "Protector's Strike",
-          "Wild Blow"
-        ],
-        "eliteSkill": "Devastating Hammer"
-      },
-      {
-        "label": "War in Kryta Devastating Hammmer",
-        "levels": [],
-        "skills": [
-          "Body Blow",
-          "Counter Blow",
-          "Crushing Blow",
-          "Devastating Hammer",
-          "Lion's Comfort",
-          "Warrior's Cunning"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Devastating Hammer"
-      },
-      {
-        "label": "War in Kryta Backbreaker",
-        "levels": [],
-        "skills": [
-          "\"For Great Justice!\"",
-          "Backbreaker",
-          "Lion's Comfort",
-          "Overbearing Smash",
-          "Pulverizing Smash",
-          "Thrill of Victory"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Backbreaker"
-      },
-      {
-        "label": "War in Kryta Forceful Blow",
-        "levels": [],
-        "skills": [
-          "Auspicious Blow",
-          "Crude Swing",
-          "Fierce Blow",
-          "Forceful Blow",
-          "Lion's Comfort",
-          "Protector's Strike"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Forceful Blow"
-      },
-      {
-        "label": "War in Kryta Enraged Smash",
-        "levels": [],
-        "skills": [
-          "Enraged Smash",
-          "Healing Signet",
-          "Irresistible Blow",
-          "Signet of Strength",
-          "Staggering Blow"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Enraged Smash"
-      }
-    ]
+    "affiliation": "Mursaat"
   },
   {
     "name": "Jade Armor (boss)",
@@ -12956,22 +12855,7 @@
     "skills": [
       "Determined Shot",
       "Oath Shot",
-      "Whirling Defense",
-      "Barrage",
-      "Crossfire",
-      "Healing Spring",
-      "Screaming Shot",
-      "Throw Dirt",
-      "Arcing Shot",
-      "Marauder's Shot",
-      "Precision Shot",
-      "Rapid Fire",
-      "Spike Trap",
-      "Troll Unguent",
-      "Kindle Arrows",
-      "Penetrating Attack",
-      "Prepared Shot",
-      "Splinter Shot"
+      "Whirling Defense"
     ],
     "isBoss": false,
     "locations": [
@@ -13003,47 +12887,6 @@
         "hardModeSkills": [
           "Penetrating Attack"
         ]
-      },
-      {
-        "label": "War in Kryta Barrage",
-        "levels": [],
-        "skills": [
-          "Barrage",
-          "Crossfire",
-          "Healing Spring",
-          "Screaming Shot",
-          "Throw Dirt",
-          "Whirling Defense"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Barrage"
-      },
-      {
-        "label": "War in Kryta Spike Trap",
-        "levels": [],
-        "skills": [
-          "Arcing Shot",
-          "Marauder's Shot",
-          "Precision Shot",
-          "Rapid Fire",
-          "Spike Trap",
-          "Troll Unguent"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Spike Trap"
-      },
-      {
-        "label": "War in Kryta Prepared Shot",
-        "levels": [],
-        "skills": [
-          "Kindle Arrows",
-          "Penetrating Attack",
-          "Prepared Shot",
-          "Splinter Shot",
-          "Troll Unguent"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Prepared Shot"
       }
     ]
   },
@@ -13577,13 +13420,9 @@
       "Cyclone Axe",
       "Dismember",
       "Healing Signet",
-      "Wild Blow",
-      "Cleave",
-      "Executioner's Strike",
-      "Protector's Defense"
+      "Wild Blow"
     ],
     "isBoss": true,
-    "bossElite": "Cleave",
     "locations": [
       "Gates of Kryta",
       "Divinity Coast",
@@ -13611,20 +13450,6 @@
           "Healing Signet",
           "Wild Blow"
         ]
-      },
-      {
-        "label": "The Rise of the White Mantle",
-        "levels": [],
-        "skills": [
-          "Cleave",
-          "Cyclone Axe",
-          "Dismember",
-          "Executioner's Strike",
-          "Healing Signet",
-          "Protector's Defense"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Cleave"
       }
     ]
   },
@@ -23528,11 +23353,7 @@
       "Protector's Strike",
       "Whirling Axe",
       "Counterattack",
-      "Quivering Blade",
-      "Dwarven Battle Stance",
-      "Endure Pain",
-      "Thrill of Victory",
-      "Antidote Signet"
+      "Quivering Blade"
     ],
     "isBoss": false,
     "locations": [
@@ -23602,19 +23423,6 @@
         ],
         "campaign": "Eye of the North",
         "eliteSkill": "Whirling Axe"
-      },
-      {
-        "label": "During Winds of Change",
-        "levels": [],
-        "skills": [
-          "Dwarven Battle Stance",
-          "Endure Pain",
-          "Healing Signet",
-          "Thrill of Victory",
-          "Antidote Signet"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Dwarven Battle Stance"
       }
     ]
   },
@@ -23930,14 +23738,7 @@
       "Conjure Phantasm",
       "Crippling Anguish",
       "Illusion of Haste",
-      "Shatter Enchantment",
-      "Energy Tap",
-      "Fevered Dreams",
-      "Hypochondria",
-      "Leech Signet",
-      "Shrinking Armor",
-      "Blinding Flash",
-      "Enervating Charge"
+      "Shatter Enchantment"
     ],
     "isBoss": false,
     "locations": [
@@ -23972,22 +23773,6 @@
           "Arcane Echo"
         ],
         "eliteSkill": "Crippling Anguish"
-      },
-      {
-        "label": "During Winds of Change",
-        "levels": [],
-        "skills": [
-          "Conjure Phantasm",
-          "Energy Tap",
-          "Fevered Dreams",
-          "Hypochondria",
-          "Leech Signet",
-          "Shrinking Armor",
-          "Blinding Flash",
-          "Enervating Charge"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Fevered Dreams"
       }
     ]
   },
@@ -26829,35 +26614,7 @@
       "Convert Hexes",
       "Divine Intervention",
       "Judge's Insight",
-      "Shielding Hands",
-      "Boon Signet",
-      "Draw Conditions",
-      "Reversal of Fortune",
-      "Spirit Bond",
-      "Ballad of Restoration",
-      "Remedy Signet",
-      "Contemplation of Purity",
-      "Divine Boon",
-      "Guardian",
-      "Heaven's Delight",
-      "Mend Condition",
-      "Signet of Devotion",
-      "Mantra of Recall",
-      "Disciplined Stance",
-      "Aegis",
-      "Deny Hexes",
-      "Healing Breeze",
-      "Protective Spirit",
-      "Restore Condition",
-      "Watchful Healing",
-      "Divine Healing",
-      "Reversal of Damage",
-      "Smite Condition",
-      "Smite Hex",
-      "Smiter's Boon",
-      "Spear of Light",
-      "Zealous Benediction",
-      "Return"
+      "Shielding Hands"
     ],
     "isBoss": false,
     "locations": [
@@ -26905,68 +26662,6 @@
           "Shield of Regeneration"
         ],
         "hardModeEliteSkill": "Shield of Regeneration"
-      },
-      {
-        "label": "Boon Signet {{mo}}/{{p}}",
-        "levels": [],
-        "skills": [
-          "Boon Signet",
-          "Draw Conditions",
-          "Reversal of Fortune",
-          "Shielding Hands",
-          "Spirit Bond",
-          "Ballad of Restoration",
-          "Remedy Signet"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Boon Signet"
-      },
-      {
-        "label": "Mantra of Recall {{mo}}/{{me}}",
-        "levels": [],
-        "skills": [
-          "Contemplation of Purity",
-          "Divine Boon",
-          "Guardian",
-          "Heaven's Delight",
-          "Mend Condition",
-          "Reversal of Fortune",
-          "Signet of Devotion",
-          "Mantra of Recall"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Mantra of Recall"
-      },
-      {
-        "label": "Restore Condition {{mo}}/{{w}}",
-        "levels": [],
-        "skills": [
-          "Disciplined Stance",
-          "Aegis",
-          "Deny Hexes",
-          "Healing Breeze",
-          "Protective Spirit",
-          "Restore Condition",
-          "Watchful Healing"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Restore Condition"
-      },
-      {
-        "label": "Zealous Benediction {{mo}}/{{a}}",
-        "levels": [],
-        "skills": [
-          "Divine Healing",
-          "Reversal of Damage",
-          "Smite Condition",
-          "Smite Hex",
-          "Smiter's Boon",
-          "Spear of Light",
-          "Zealous Benediction",
-          "Return"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Zealous Benediction"
       }
     ]
   },
@@ -27030,12 +26725,7 @@
       "\"I Will Avenge You!\"",
       "\"Watch Yourself!\"",
       "Executioner's Strike",
-      "Galrath Slash",
-      "Crude Swing",
-      "Lion's Comfort",
-      "Mokele Smash",
-      "Overbearing Smash",
-      "Whirlwind"
+      "Galrath Slash"
     ],
     "isBoss": false,
     "locations": [
@@ -27062,18 +26752,6 @@
           "Bull's Charge"
         ],
         "hardModeEliteSkill": "Bull's Charge"
-      },
-      {
-        "label": "During Winds of Change {{w}}{{e}}",
-        "levels": [],
-        "skills": [
-          "Crude Swing",
-          "Lion's Comfort",
-          "Mokele Smash",
-          "Overbearing Smash",
-          "Whirlwind"
-        ],
-        "campaign": "Factions"
       }
     ]
   },
@@ -27118,33 +26796,7 @@
     "skills": [
       "\"I Will Avenge You!\"",
       "\"Watch Yourself!\"",
-      "Galrath Slash",
-      "Crippling Slash",
-      "Endure Pain",
-      "Gash",
-      "Griffon's Sweep",
-      "Knee Cutter",
-      "Poison Tip Signet",
-      "\"I Meant to Do That!\"",
-      "Desperation Blow",
-      "Grapple",
-      "Steady Stance",
-      "Rending Touch",
-      "Rending Aura",
-      "Resurrection Signet",
-      "Disarm",
-      "Flail",
-      "Hundred Blades",
-      "Standing Slash",
-      "Sun and Moon Slash",
-      "Conjure Frost",
-      "Frozen Burst",
-      "\"Coward!\"",
-      "\"You Will Die!\"",
-      "Bull's Strike",
-      "Steelfang Slash",
-      "Holy Strike",
-      "Judge's Insight"
+      "Galrath Slash"
     ],
     "isBoss": false,
     "locations": [
@@ -27191,67 +26843,6 @@
           "Bull's Charge"
         ],
         "hardModeEliteSkill": "Bull's Charge"
-      },
-      {
-        "label": "War in Kryta Cripping Slash {{W}}{{R}}",
-        "levels": [],
-        "skills": [
-          "\"I Will Avenge You!\"",
-          "Crippling Slash",
-          "Endure Pain",
-          "Gash",
-          "Griffon's Sweep",
-          "Knee Cutter",
-          "Poison Tip Signet"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Crippling Slash"
-      },
-      {
-        "label": "War in Kryta Steady Stance {{W}}{{D}}",
-        "levels": [],
-        "skills": [
-          "\"I Meant to Do That!\"",
-          "\"Watch Yourself!\"",
-          "Desperation Blow",
-          "Grapple",
-          "Steady Stance",
-          "Rending Touch",
-          "Rending Aura",
-          "Resurrection Signet"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Steady Stance"
-      },
-      {
-        "label": "War in Kryta Hundred Blades {{W}}{{E}}",
-        "levels": [],
-        "skills": [
-          "Disarm",
-          "Flail",
-          "Hundred Blades",
-          "Standing Slash",
-          "Sun and Moon Slash",
-          "Conjure Frost",
-          "Frozen Burst"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Hundred Blades"
-      },
-      {
-        "label": "War in Kryta Coward {{W}}{{Mo}}",
-        "levels": [],
-        "skills": [
-          "\"Coward!\"",
-          "\"You Will Die!\"",
-          "Bull's Strike",
-          "Galrath Slash",
-          "Steelfang Slash",
-          "Holy Strike",
-          "Judge's Insight"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "\"Coward!\""
       }
     ]
   },
@@ -27297,36 +26888,7 @@
       "Convert Hexes",
       "Divine Intervention",
       "Judge's Insight",
-      "Shielding Hands",
-      "Healing Touch",
-      "Patient Spirit",
-      "Spotless Mind",
-      "Word of Healing",
-      "Recuperation",
-      "Signet of Binding",
-      "Union",
-      "Balanced Stance",
-      "Shield Bash",
-      "Cure Hex",
-      "Healing Burst",
-      "Heal Other",
-      "Holy Haste",
-      "Signet of Rejuvenation",
-      "Words of Comfort",
-      "Ethereal Light",
-      "Heal Party",
-      "Healer's Boon",
-      "Healing Whisper",
-      "Orison of Healing",
-      "Ether Signet",
-      "Hex Eater Signet",
-      "Castigation Signet",
-      "Ray of Judgment",
-      "Scourge Healing",
-      "Signet of Rage",
-      "Smite",
-      "Armor of Frost",
-      "Steam"
+      "Shielding Hands"
     ],
     "isBoss": false,
     "locations": [
@@ -27368,67 +26930,6 @@
           "Shield of Regeneration"
         ],
         "hardModeEliteSkill": "Shield of Regeneration"
-      },
-      {
-        "label": "War in Kryta Word of Healing {{Mo}}{{Rt}}",
-        "levels": [],
-        "skills": [
-          "Healing Touch",
-          "Patient Spirit",
-          "Spotless Mind",
-          "Word of Healing",
-          "Recuperation",
-          "Signet of Binding",
-          "Union"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Word of Healing"
-      },
-      {
-        "label": "War in Kryta Healing Burst {{Mo}}{{W}}",
-        "levels": [],
-        "skills": [
-          "Balanced Stance",
-          "Shield Bash",
-          "Cure Hex",
-          "Healing Burst",
-          "Heal Other",
-          "Holy Haste",
-          "Signet of Rejuvenation",
-          "Words of Comfort"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Healing Burst"
-      },
-      {
-        "label": "War in Kryta Healer's Boon {{Mo}}{{Me}}",
-        "levels": [],
-        "skills": [
-          "Ethereal Light",
-          "Heal Party",
-          "Healer's Boon",
-          "Healing Whisper",
-          "Orison of Healing",
-          "Ether Signet",
-          "Hex Eater Signet"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Healer's Boon"
-      },
-      {
-        "label": "War in Kryta Ray of Judgment {{Mo}}{{E}}",
-        "levels": [],
-        "skills": [
-          "Castigation Signet",
-          "Ray of Judgment",
-          "Scourge Healing",
-          "Signet of Rage",
-          "Smite",
-          "Armor of Frost",
-          "Steam"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Ray of Judgment"
       }
     ]
   },
@@ -27474,33 +26975,7 @@
       "Mark of Subversion",
       "Order of Pain",
       "Vampiric Gaze",
-      "Well of the Profane",
-      "Discord",
-      "Oppressive Gaze",
-      "Rising Bile",
-      "Vile Miasma",
-      "Glyph of Swiftness",
-      "Shell Shock",
-      "Animate Bone Horror",
-      "Animate Flesh Golem",
-      "Bitter Chill",
-      "Infuse Condition",
-      "Taste of Pain",
-      "Verata's Aura",
-      "Splinter Weapon",
-      "Barbed Signet",
-      "Life Siphon",
-      "Shadow Strike",
-      "Spoil Victor",
-      "Strip Enchantment",
-      "Well of Blood",
-      "Death Pact Signet",
-      "Blood of the Aggressor",
-      "Jaundiced Gaze",
-      "Reckless Haste",
-      "Weaken Knees",
-      "Enduring Toxin",
-      "Shameful Fear"
+      "Well of the Profane"
     ],
     "isBoss": false,
     "locations": [
@@ -27526,79 +27001,7 @@
       "Thunderhead Keep"
     ],
     "profession": "Necromancer",
-    "affiliation": "White Mantle",
-    "variants": [
-      {
-        "label": "Normal version {{N}}",
-        "levels": [],
-        "skills": [
-          "Mark of Subversion",
-          "Order of Pain",
-          "Vampiric Gaze",
-          "Well of the Profane"
-        ]
-      },
-      {
-        "label": "War in Kryta Discord {{n}}/{{e}}",
-        "levels": [],
-        "skills": [
-          "Discord",
-          "Oppressive Gaze",
-          "Rising Bile",
-          "Vile Miasma",
-          "Well of the Profane",
-          "Glyph of Swiftness",
-          "Shell Shock"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Discord"
-      },
-      {
-        "label": "War in Kryta Animate Flesh Golem {{n}}/{{rt}}",
-        "levels": [],
-        "skills": [
-          "Animate Bone Horror",
-          "Animate Flesh Golem",
-          "Bitter Chill",
-          "Infuse Condition",
-          "Taste of Pain",
-          "Verata's Aura",
-          "Splinter Weapon"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Animate Flesh Golem"
-      },
-      {
-        "label": "War in Kryta Spoil Victor {{n}}/{{rt}}",
-        "levels": [],
-        "skills": [
-          "Barbed Signet",
-          "Life Siphon",
-          "Shadow Strike",
-          "Spoil Victor",
-          "Strip Enchantment",
-          "Well of Blood",
-          "Death Pact Signet"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Spoil Victor"
-      },
-      {
-        "label": "War in Kryta Weaken Knees {{n}}/{{a}}",
-        "levels": [],
-        "skills": [
-          "Blood of the Aggressor",
-          "Jaundiced Gaze",
-          "Order of Pain",
-          "Reckless Haste",
-          "Weaken Knees",
-          "Enduring Toxin",
-          "Shameful Fear"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Weaken Knees"
-      }
-    ]
+    "affiliation": "White Mantle"
   },
   {
     "name": "White Mantle Savant",
@@ -27643,34 +27046,7 @@
       "Lightning Strike",
       "Glyph of Elemental Power",
       "Searing Heat",
-      "Ward Against Elements",
-      "Aura of Restoration",
-      "Fire Attunement",
-      "Glyph of Renewal",
-      "Incendiary Bonds",
-      "Liquid Flame",
-      "Meteor Shower",
-      "Conviction",
-      "Aftershock",
-      "Air Attunement",
-      "Lightning Touch",
-      "Ride the Lightning",
-      "Shock",
-      "Grenth's Fingers",
-      "Mystic Twister",
-      "Deep Freeze",
-      "Fire Storm",
-      "Glyph of Lesser Energy",
-      "Immolate",
-      "Phoenix",
-      "Savannah Heat",
-      "Agony",
-      "Spirit Boon Strike",
-      "Blinding Flash",
-      "Invoke Lightning",
-      "Lightning Javelin",
-      "Mark of Death",
-      "Signet of Shadows"
+      "Ward Against Elements"
     ],
     "isBoss": false,
     "locations": [
@@ -27722,68 +27098,6 @@
         "hardModeSkills": [
           "Fireball"
         ]
-      },
-      {
-        "label": "War in Kryta Glyph of Renewal {{E}}{{D}}",
-        "levels": [],
-        "skills": [
-          "Aura of Restoration",
-          "Fire Attunement",
-          "Glyph of Renewal",
-          "Incendiary Bonds",
-          "Liquid Flame",
-          "Meteor Shower",
-          "Conviction"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Glyph of Renewal"
-      },
-      {
-        "label": "War in Kryta Ride the Lightning {{E}}{{D}}",
-        "levels": [],
-        "skills": [
-          "Aftershock",
-          "Air Attunement",
-          "Aura of Restoration",
-          "Lightning Touch",
-          "Ride the Lightning",
-          "Shock",
-          "Grenth's Fingers",
-          "Mystic Twister"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Ride the Lightning"
-      },
-      {
-        "label": "War in Kryta Savannah Heat {{E}}{{Rt}}",
-        "levels": [],
-        "skills": [
-          "Deep Freeze",
-          "Fire Storm",
-          "Glyph of Lesser Energy",
-          "Immolate",
-          "Phoenix",
-          "Savannah Heat",
-          "Agony",
-          "Spirit Boon Strike"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Savannah Heat"
-      },
-      {
-        "label": "War in Kryta Invoke Lightning {{E}}{{A}}",
-        "levels": [],
-        "skills": [
-          "Air Attunement",
-          "Blinding Flash",
-          "Invoke Lightning",
-          "Lightning Javelin",
-          "Lightning Orb",
-          "Mark of Death",
-          "Signet of Shadows"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Invoke Lightning"
       }
     ],
     "locationLevels": {
@@ -27835,37 +27149,7 @@
       "Dryder's Defenses",
       "Pin Down",
       "Savage Shot",
-      "Troll Unguent",
-      "Brutal Strike",
-      "Comfort Animal",
-      "Feral Lunge",
-      "Ferocious Strike",
-      "Predatory Season",
-      "Executioner's Strike",
-      "Penetrating Chop",
-      "Disrupting Lunge",
-      "Predatory Bond",
-      "Strike as One",
-      "Eremite's Attack",
-      "Pious Assault",
-      "Choking Gas",
-      "Hunter's Shot",
-      "Natural Stride",
-      "Practiced Stance",
-      "Resurrection Chant",
-      "Apply Poison",
-      "Melandru's Shot",
-      "Precision Shot",
-      "Anthem of Weariness",
-      "Splinter Shot (monster skill)",
-      "Determined Shot",
-      "Melandru's Arrows",
-      "Point Blank Shot",
-      "Poison Tip Signet",
-      "Shadow Refuge",
-      "Smoke Powder Defense",
-      "Viper's Defense",
-      "Zojun's Shot"
+      "Troll Unguent"
     ],
     "isBoss": false,
     "locations": [
@@ -27923,81 +27207,6 @@
           "Pin Down",
           "Troll Unguent"
         ]
-      },
-      {
-        "label": "War in Kryta Ferocious Strike {{R}}{{W}}",
-        "levels": [],
-        "skills": [
-          "Brutal Strike",
-          "Comfort Animal",
-          "Feral Lunge",
-          "Ferocious Strike",
-          "Predatory Season",
-          "Executioner's Strike",
-          "Penetrating Chop"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Ferocious Strike"
-      },
-      {
-        "label": "War in Kryta Strike as One {{R}}{{D}}",
-        "levels": [],
-        "skills": [
-          "Comfort Animal",
-          "Disrupting Lunge",
-          "Predatory Bond",
-          "Strike as One",
-          "Eremite's Attack",
-          "Pious Assault"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Strike as One"
-      },
-      {
-        "label": "War in Kryta Practiced Stance {{R}}{{Mo}}",
-        "levels": [],
-        "skills": [
-          "Antidote Signet",
-          "Choking Gas",
-          "Hunter's Shot",
-          "Natural Stride",
-          "Practiced Stance",
-          "Troll Unguent",
-          "Resurrection Chant"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Practiced Stance"
-      },
-      {
-        "label": "War in Kryta Melandru's Shot {{R}}{{P}}",
-        "levels": [],
-        "skills": [
-          "Apply Poison",
-          "Called Shot",
-          "Melandru's Shot",
-          "Precision Shot",
-          "Troll Unguent",
-          "Anthem of Weariness",
-          "Splinter Shot (monster skill)"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Melandru's Shot"
-      },
-      {
-        "label": "During Winds of Change {{r}}{{a}}",
-        "levels": [],
-        "skills": [
-          "Determined Shot",
-          "Melandru's Arrows",
-          "Point Blank Shot",
-          "Poison Tip Signet",
-          "Shadow Refuge",
-          "Smoke Powder Defense",
-          "Viper's Defense",
-          "Zojun's Shot"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Melandru's Arrows"
       }
     ]
   },
@@ -28045,41 +27254,7 @@
       "Dryder's Defenses",
       "Pin Down",
       "Savage Shot",
-      "Troll Unguent",
-      "\"Shields Up!\"",
-      "Deflect Arrows",
-      "Barbed Arrows",
-      "Crossfire",
-      "Determined Shot",
-      "Incendiary Arrows",
-      "Debilitating Shot",
-      "Oath Shot",
-      "Penetrating Attack",
-      "Read the Wind",
-      "Tranquility",
-      "Chaos Storm",
-      "Signet of Weariness",
-      "Dual Shot",
-      "Glass Arrows",
-      "Needling Shot",
-      "Sundering Attack",
-      "Conjure Flame",
-      "Escape",
-      "Lightning Reflexes",
-      "Black Mantis Thrust",
-      "Blinding Powder",
-      "Death Blossom",
-      "Fox Fangs",
-      "Mark of Instability",
-      "Shadow Refuge",
-      "Barbed Trap",
-      "Flame Trap",
-      "Piercing Trap",
-      "Serpent's Quickness",
-      "Throw Dirt",
-      "Trapper's Focus",
-      "Tripwire",
-      "Sundering Weapon"
+      "Troll Unguent"
     ],
     "isBoss": false,
     "locations": [
@@ -28159,82 +27334,6 @@
           "Pin Down",
           "Troll Unguent"
         ]
-      },
-      {
-        "label": "War in Kryta Incendiary Arrows {{R}}{{W}}",
-        "levels": [],
-        "skills": [
-          "\"Shields Up!\"",
-          "Deflect Arrows",
-          "Barbed Arrows",
-          "Crossfire",
-          "Determined Shot",
-          "Incendiary Arrows",
-          "Troll Unguent"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Incendiary Arrows"
-      },
-      {
-        "label": "War in Kryta Oath Shot {{R}}{{Me}}",
-        "levels": [],
-        "skills": [
-          "Debilitating Shot",
-          "Oath Shot",
-          "Penetrating Attack",
-          "Read the Wind",
-          "Tranquility",
-          "Chaos Storm",
-          "Signet of Weariness"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Oath Shot"
-      },
-      {
-        "label": "War in Kryta Glass Arrows {{R}}{{E}}",
-        "levels": [],
-        "skills": [
-          "Dual Shot",
-          "Glass Arrows",
-          "Needling Shot",
-          "Savage Shot",
-          "Sundering Attack",
-          "Conjure Flame"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Glass Arrows"
-      },
-      {
-        "label": "War in Kryta Escape {{R}}{{A}}",
-        "levels": [],
-        "skills": [
-          "Escape",
-          "Lightning Reflexes",
-          "Black Mantis Thrust",
-          "Blinding Powder",
-          "Death Blossom",
-          "Fox Fangs",
-          "Mark of Instability",
-          "Shadow Refuge"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Escape"
-      },
-      {
-        "label": "War in Kryta Trapper's Focus {{R}}{{Rt}}",
-        "levels": [],
-        "skills": [
-          "Barbed Trap",
-          "Flame Trap",
-          "Piercing Trap",
-          "Serpent's Quickness",
-          "Throw Dirt",
-          "Trapper's Focus",
-          "Tripwire",
-          "Sundering Weapon"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Trapper's Focus"
       }
     ]
   },
@@ -28280,49 +27379,7 @@
       "Empathy",
       "Guilt",
       "Shame",
-      "Shatter Enchantment",
-      "Meekness",
-      "Well of Silence",
-      "Arcane Conundrum",
-      "Conjure Phantasm",
-      "Crippling Anguish",
-      "Drain Enchantment",
-      "Mantra of Persistence",
-      "Malaise",
-      "Well of Weariness",
-      "Energy Burn",
-      "Energy Surge",
-      "Energy Tap",
-      "Ether Feast",
-      "Feedback",
-      "Spirit Shackles",
-      "Extend Conditions",
-      "Fragility",
-      "Phantom Pain",
-      "Shrinking Armor",
-      "Destruction",
-      "Gaze from Beyond",
-      "Spirit Burn",
-      "Cure Hex",
-      "Healing Ribbon",
-      "Resurrection Chant",
-      "Word of Healing",
-      "Illusion of Pain",
-      "Kitah's Burden",
-      "Leech Signet",
-      "Power Drain",
-      "Healing Signet",
-      "Hex Eater Vortex",
-      "Mantra of Signets",
-      "Mistrust",
-      "Signet of Humility",
-      "Unnatural Signet",
-      "Antidote Signet",
-      "Brambles",
-      "Clumsiness",
-      "Images of Remorse",
-      "Psychic Instability",
-      "Sympathetic Visage"
+      "Shatter Enchantment"
     ],
     "isBoss": false,
     "locations": [
@@ -28361,109 +27418,10 @@
           "Shame",
           "Shatter Enchantment"
         ],
-        "campaign": "War in Kryta",
         "hardModeSkills": [
           "Energy Surge"
         ],
         "hardModeEliteSkill": "Energy Surge"
-      },
-      {
-        "label": "War in Kryta Crippling Anguish {{Me}}{{N}}",
-        "levels": [],
-        "skills": [
-          "Meekness",
-          "Well of Silence",
-          "Arcane Conundrum",
-          "Conjure Phantasm",
-          "Crippling Anguish",
-          "Drain Enchantment",
-          "Mantra of Persistence"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Crippling Anguish",
-        "hardModeSkills": [
-          "Energy Surge"
-        ],
-        "hardModeEliteSkill": "Energy Surge"
-      },
-      {
-        "label": "War in Kryta Energy Surge {{Me}}{{N}}",
-        "levels": [],
-        "skills": [
-          "Malaise",
-          "Well of Weariness",
-          "Energy Burn",
-          "Energy Surge",
-          "Energy Tap",
-          "Ether Feast",
-          "Feedback",
-          "Spirit Shackles"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Energy Surge"
-      },
-      {
-        "label": "War in Kryta Extend Conditions {{Me}}{{Rt}}",
-        "levels": [],
-        "skills": [
-          "Ether Feast",
-          "Extend Conditions",
-          "Fragility",
-          "Phantom Pain",
-          "Shrinking Armor",
-          "Destruction",
-          "Gaze from Beyond",
-          "Spirit Burn"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Extend Conditions"
-      },
-      {
-        "label": "War in Kryta Word of Healing {{Me}}{{Mo}}",
-        "levels": [],
-        "skills": [
-          "Cure Hex",
-          "Healing Ribbon",
-          "Resurrection Chant",
-          "Word of Healing",
-          "Illusion of Pain",
-          "Kitah's Burden",
-          "Leech Signet",
-          "Power Drain"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Word of Healing"
-      },
-      {
-        "label": "War in Kryta Hex Eater Vortex {{Me}}{{W}}",
-        "levels": [],
-        "skills": [
-          "Healing Signet",
-          "Empathy",
-          "Hex Eater Vortex",
-          "Leech Signet",
-          "Mantra of Signets",
-          "Mistrust",
-          "Signet of Humility",
-          "Unnatural Signet"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Hex Eater Vortex"
-      },
-      {
-        "label": "War in Kryta Psychic Instability {{Me}}{{R}}",
-        "levels": [],
-        "skills": [
-          "Antidote Signet",
-          "Brambles",
-          "Clumsiness",
-          "Ether Feast",
-          "Images of Remorse",
-          "Psychic Instability",
-          "Sympathetic Visage"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Psychic Instability"
       }
     ]
   },
@@ -28510,30 +27468,7 @@
       "Dismember",
       "Gash",
       "Healing Signet",
-      "Sever Artery",
-      "Eviscerate",
-      "Signet of Strength",
-      "Symbolic Strike",
-      "Bane Signet",
-      "Castigation Signet",
-      "Purge Signet",
-      "Vengeance",
-      "\"None Shall Pass!\"",
-      "\"To the Limit!\"",
-      "\"You're All Alone!\"",
-      "Barbarous Slice",
-      "Soldier's Strike",
-      "Mending Touch",
-      "\"I Will Survive!\"",
-      "Flail",
-      "Keen Chop",
-      "Triple Chop",
-      "Conjure Flame",
-      "Cleave",
-      "Defensive Stance",
-      "Furious Axe",
-      "Signet of Aggression",
-      "Signet of Return"
+      "Sever Artery"
     ],
     "isBoss": false,
     "locations": [
@@ -28578,65 +27513,6 @@
           "Bull's Charge"
         ],
         "hardModeEliteSkill": "Bull's Charge"
-      },
-      {
-        "label": "War in Kryta Eviscerate {{W}}{{Mo}}",
-        "levels": [],
-        "skills": [
-          "Eviscerate",
-          "Healing Signet",
-          "Signet of Strength",
-          "Symbolic Strike",
-          "Bane Signet",
-          "Castigation Signet",
-          "Purge Signet",
-          "Vengeance"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Eviscerate"
-      },
-      {
-        "label": "War in Kryta \"You're All Alone!\" {{W}}{{Mo}}",
-        "levels": [],
-        "skills": [
-          "\"None Shall Pass!\"",
-          "\"To the Limit!\"",
-          "\"You're All Alone!\"",
-          "Barbarous Slice",
-          "Gash",
-          "Soldier's Strike",
-          "Mending Touch"
-        ],
-        "campaign": "War in Kryta"
-      },
-      {
-        "label": "War in Kryta Triple Chop {{W}}{{E}}",
-        "levels": [],
-        "skills": [
-          "\"I Will Survive!\"",
-          "Flail",
-          "Keen Chop",
-          "Triple Chop",
-          "Conjure Flame"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Triple Chop"
-      },
-      {
-        "label": "During Winds of Change {{W}}{{P}}",
-        "levels": [],
-        "skills": [
-          "Cleave",
-          "Defensive Stance",
-          "Dismember",
-          "Furious Axe",
-          "Healing Signet",
-          "Signet of Aggression",
-          "Signet of Return",
-          "\"To the Limit!\""
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Cleave"
       }
     ]
   },
@@ -29427,21 +28303,7 @@
       "Wild Strike",
       "Death Blossom",
       "Shadow Form",
-      "Shadow Refuge",
-      "Poison Tip Signet",
-      "Impale",
-      "Iron Palm",
-      "Signet of Deadly Corruption",
-      "Signet of Toxic Shock",
-      "Temple Strike",
-      "Twisting Fangs",
-      "Blades of Steel",
-      "Death's Charge",
-      "Falling Spider",
-      "Fox Fangs",
-      "Golden Lotus Strike",
-      "Horns of the Ox",
-      "Moebius Strike"
+      "Shadow Refuge"
     ],
     "isBoss": false,
     "locations": [
@@ -29494,36 +28356,6 @@
           "Wild Strike"
         ],
         "eliteSkill": "Shadow Form"
-      },
-      {
-        "label": "Temple Strike",
-        "levels": [],
-        "skills": [
-          "Poison Tip Signet",
-          "Impale",
-          "Iron Palm",
-          "Signet of Deadly Corruption",
-          "Signet of Toxic Shock",
-          "Temple Strike",
-          "Twisting Fangs"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Temple Strike"
-      },
-      {
-        "label": "Moebius Strike",
-        "levels": [],
-        "skills": [
-          "Blades of Steel",
-          "Death's Charge",
-          "Falling Spider",
-          "Fox Fangs",
-          "Golden Lotus Strike",
-          "Horns of the Ox",
-          "Moebius Strike"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Moebius Strike"
       }
     ]
   },
@@ -29626,17 +28458,7 @@
       "Lightning Orb",
       "Air Attunement",
       "Mind Burn",
-      "Aura of Restoration",
-      "Fire Attunement",
-      "Glowing Gaze",
-      "Liquid Flame",
-      "Mark of Rodgort",
-      "Meteor Shower",
-      "Searing Flames",
-      "Chain Lightning",
-      "Invoke Lightning",
-      "Order of Pain",
-      "Strip Enchantment"
+      "Aura of Restoration"
     ],
     "isBoss": false,
     "locations": [
@@ -29703,36 +28525,6 @@
           "Mind Burn"
         ],
         "eliteSkill": "Mind Burn"
-      },
-      {
-        "label": "Searing Flames",
-        "levels": [],
-        "skills": [
-          "Aura of Restoration",
-          "Fire Attunement",
-          "Glowing Gaze",
-          "Liquid Flame",
-          "Mark of Rodgort",
-          "Meteor Shower",
-          "Searing Flames"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Searing Flames"
-      },
-      {
-        "label": "Invoke Lightning",
-        "levels": [],
-        "skills": [
-          "Air Attunement",
-          "Aura of Restoration",
-          "Chain Lightning",
-          "Invoke Lightning",
-          "Lightning Orb",
-          "Order of Pain",
-          "Strip Enchantment"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Invoke Lightning"
       }
     ],
     "locationLevels": {
@@ -29844,19 +28636,7 @@
       "Kitah's Burden",
       "Drain Enchantment",
       "Ether Feast",
-      "Stolen Speed",
-      "Cry of Frustration",
-      "Energy Surge",
-      "Mind Wrack",
-      "Shatter Delusions",
-      "Shatter Enchantment",
-      "Unnatural Signet",
-      "Backfire",
-      "Diversion",
-      "Empathy",
-      "Power Drain",
-      "Signet of Humility",
-      "Visions of Regret"
+      "Stolen Speed"
     ],
     "isBoss": false,
     "locations": [
@@ -29912,36 +28692,6 @@
           "Stolen Speed"
         ],
         "eliteSkill": "Stolen Speed"
-      },
-      {
-        "label": "Energy Surge",
-        "levels": [],
-        "skills": [
-          "Cry of Frustration",
-          "Drain Enchantment",
-          "Energy Surge",
-          "Mind Wrack",
-          "Shatter Delusions",
-          "Shatter Enchantment",
-          "Unnatural Signet"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Energy Surge"
-      },
-      {
-        "label": "Visions of Regret",
-        "levels": [],
-        "skills": [
-          "Backfire",
-          "Diversion",
-          "Drain Enchantment",
-          "Empathy",
-          "Power Drain",
-          "Signet of Humility",
-          "Visions of Regret"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Visions of Regret"
       }
     ]
   },
@@ -29988,16 +28738,7 @@
       "Draw Conditions",
       "Retribution",
       "Reversal of Fortune",
-      "Ray of Judgment",
-      "Shield of Absorption",
-      "Shield of Regeneration",
-      "Smite Condition",
-      "Smite Hex",
-      "Spirit Bond",
-      "Zealot's Fire",
-      "Holy Wrath",
-      "Reversal of Damage",
-      "Arcane Echo"
+      "Ray of Judgment"
     ],
     "isBoss": false,
     "locations": [
@@ -30049,36 +28790,6 @@
           "Reversal of Fortune"
         ],
         "eliteSkill": "Ray of Judgment"
-      },
-      {
-        "label": "Shield of Regeneration",
-        "levels": [],
-        "skills": [
-          "Reversal of Fortune",
-          "Shield of Absorption",
-          "Shield of Regeneration",
-          "Smite Condition",
-          "Smite Hex",
-          "Spirit Bond",
-          "Zealot's Fire"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Shield of Regeneration"
-      },
-      {
-        "label": "Ray of Judgment",
-        "levels": [],
-        "skills": [
-          "Holy Wrath",
-          "Ray of Judgment",
-          "Reversal of Damage",
-          "Smite Condition",
-          "Smite Hex",
-          "Zealot's Fire",
-          "Arcane Echo"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Ray of Judgment"
       }
     ]
   },
@@ -30126,20 +28837,7 @@
       "Vile Miasma",
       "Jaundiced Gaze",
       "Order of Apostasy",
-      "Life Siphon",
-      "Aegis",
-      "Protective Spirit",
-      "Shield of Absorption",
-      "Aura of the Lich",
-      "Death Nova",
-      "Masochism",
-      "Putrid Bile",
-      "Animate Shambling Horror",
-      "Discord",
-      "Soul Barbs",
-      "Verata's Aura",
-      "Weapon of Warding",
-      "Protective Was Kaolai"
+      "Life Siphon"
     ],
     "isBoss": false,
     "locations": [
@@ -30209,36 +28907,6 @@
           "Vile Miasma"
         ],
         "eliteSkill": "Order of Apostasy"
-      },
-      {
-        "label": "Aura of the Lich",
-        "levels": [],
-        "skills": [
-          "Aegis",
-          "Protective Spirit",
-          "Shield of Absorption",
-          "Aura of the Lich",
-          "Death Nova",
-          "Masochism",
-          "Putrid Bile"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Aura of the Lich"
-      },
-      {
-        "label": "Discord",
-        "levels": [],
-        "skills": [
-          "Animate Shambling Horror",
-          "Death Nova",
-          "Discord",
-          "Soul Barbs",
-          "Verata's Aura",
-          "Weapon of Warding",
-          "Protective Was Kaolai"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Discord"
       }
     ]
   },
@@ -30285,20 +28953,7 @@
       "Throw Dirt",
       "Broad Head Arrow",
       "Marauder's Shot",
-      "Troll Unguent",
-      "Burning Arrow",
-      "Dryder's Defenses",
-      "Dual Shot",
-      "Favorable Winds",
-      "Healing Spring",
-      "Ignite Arrows",
-      "Conjure Flame",
-      "Frenzy",
-      "Antidote Signet",
-      "Apply Poison",
-      "Distracting Shot",
-      "Melandru's Shot",
-      "Savage Shot"
+      "Troll Unguent"
     ],
     "isBoss": false,
     "locations": [
@@ -30365,36 +29020,6 @@
           "Troll Unguent"
         ],
         "eliteSkill": "Broad Head Arrow"
-      },
-      {
-        "label": "Burning Arrow",
-        "levels": [],
-        "skills": [
-          "Burning Arrow",
-          "Dryder's Defenses",
-          "Dual Shot",
-          "Favorable Winds",
-          "Healing Spring",
-          "Ignite Arrows",
-          "Conjure Flame"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Burning Arrow"
-      },
-      {
-        "label": "Melandru's Shot",
-        "levels": [],
-        "skills": [
-          "Frenzy",
-          "Antidote Signet",
-          "Apply Poison",
-          "Distracting Shot",
-          "Melandru's Shot",
-          "Savage Shot",
-          "Troll Unguent"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Melandru's Shot"
       }
     ]
   },
@@ -30492,19 +29117,7 @@
       "Flesh of My Flesh",
       "Life",
       "Nightmare Weapon",
-      "Weapon of Quickening",
-      "Armor of Unfeeling",
-      "Agony",
-      "Bloodsong",
-      "Boon of Creation",
-      "Pain",
-      "Signet of Spirits",
-      "Spirit Rift",
-      "Echo",
-      "Ancestors' Rage",
-      "Dulled Weapon",
-      "Renewing Surge",
-      "Splinter Weapon"
+      "Weapon of Quickening"
     ],
     "isBoss": false,
     "locations": [
@@ -30554,36 +29167,6 @@
           "Weapon of Quickening"
         ],
         "eliteSkill": "Weapon of Quickening"
-      },
-      {
-        "label": "Signet of Spirits",
-        "levels": [],
-        "skills": [
-          "Armor of Unfeeling",
-          "Agony",
-          "Bloodsong",
-          "Boon of Creation",
-          "Pain",
-          "Signet of Spirits",
-          "Spirit Rift"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Signet of Spirits"
-      },
-      {
-        "label": "Weapon of Quickening",
-        "levels": [],
-        "skills": [
-          "Echo",
-          "Ancestors' Rage",
-          "Dulled Weapon",
-          "Renewing Surge",
-          "Spirit Rift",
-          "Splinter Weapon",
-          "Weapon of Quickening"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Echo"
       }
     ]
   },
@@ -30652,17 +29235,7 @@
       "Frenzy",
       "\"On Your Knees!\"",
       "Endure Pain",
-      "Enraged Smash",
-      "\"I Will Avenge You!\"",
-      "Backbreaker",
-      "Berserker Stance",
-      "Crushing Blow",
-      "Enraging Charge",
-      "Lion's Comfort",
-      "Crude Swing",
-      "Earth Shaker",
-      "Aftershock",
-      "Grasping Earth"
+      "Enraged Smash"
     ],
     "isBoss": false,
     "locations": [
@@ -30716,36 +29289,6 @@
           "Frenzy"
         ],
         "eliteSkill": "Enraged Smash"
-      },
-      {
-        "label": "Backbreaker",
-        "levels": [],
-        "skills": [
-          "\"I Will Avenge You!\"",
-          "Backbreaker",
-          "Berserker Stance",
-          "Crushing Blow",
-          "Endure Pain",
-          "Enraging Charge",
-          "Lion's Comfort"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Backbreaker"
-      },
-      {
-        "label": "Earth Shaker",
-        "levels": [],
-        "skills": [
-          "\"I Will Avenge You!\"",
-          "Crude Swing",
-          "Earth Shaker",
-          "Endure Pain",
-          "Lion's Comfort",
-          "Aftershock",
-          "Grasping Earth"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Earth Shaker"
       }
     ]
   },
@@ -30835,14 +29378,7 @@
       "Flashing Blades",
       "Fox Fangs",
       "Shadow Refuge",
-      "Unsuspecting Strike",
-      "Epidemic",
-      "Entangling Asp",
-      "Impale",
-      "Jagged Strike",
-      "Malicious Strike",
-      "Swap",
-      "Temple Strike"
+      "Unsuspecting Strike"
     ],
     "isBoss": false,
     "locations": [
@@ -30867,36 +29403,7 @@
       "Vizunah Square"
     ],
     "profession": "Assassin",
-    "affiliation": "Am Fah",
-    "variants": [
-      {
-        "label": null,
-        "levels": [],
-        "skills": [
-          "Blinding Powder",
-          "Flashing Blades",
-          "Fox Fangs",
-          "Shadow Refuge",
-          "Unsuspecting Strike"
-        ],
-        "eliteSkill": "Flashing Blades"
-      },
-      {
-        "label": "During Winds of Change",
-        "levels": [],
-        "skills": [
-          "Epidemic",
-          "Entangling Asp",
-          "Impale",
-          "Jagged Strike",
-          "Malicious Strike",
-          "Swap",
-          "Temple Strike"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Temple Strike"
-      }
-    ]
+    "affiliation": "Am Fah"
   },
   {
     "name": "Am Fah Healer",
@@ -31059,14 +29566,7 @@
       "Blood is Power",
       "Death Nova",
       "Soul Feast",
-      "Vile Miasma",
-      "Draw Conditions",
-      "Shielding Hands",
-      "Foul Feast",
-      "Plague Signet",
-      "Soul Barbs",
-      "Verata's Gaze",
-      "Verata's Sacrifice"
+      "Vile Miasma"
     ],
     "isBoss": false,
     "locations": [
@@ -31092,36 +29592,7 @@
       "Vizunah Square"
     ],
     "profession": "Necromancer",
-    "affiliation": "Am Fah",
-    "variants": [
-      {
-        "label": null,
-        "levels": [],
-        "skills": [
-          "Barbed Signet",
-          "Blood is Power",
-          "Death Nova",
-          "Soul Feast",
-          "Vile Miasma"
-        ],
-        "eliteSkill": "Blood is Power"
-      },
-      {
-        "label": "During Winds of Change",
-        "levels": [],
-        "skills": [
-          "Draw Conditions",
-          "Shielding Hands",
-          "Foul Feast",
-          "Plague Signet",
-          "Soul Barbs",
-          "Verata's Gaze",
-          "Verata's Sacrifice"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Plague Signet"
-      }
-    ]
+    "affiliation": "Am Fah"
   },
   {
     "name": "Amadis, Wind of the Sea",
@@ -32204,21 +30675,7 @@
     "armor": null,
     "armorTable": [],
     "skills": [
-      "Healing Signet",
-      "Healing Breeze",
-      "Healing Hands",
-      "Healing Touch",
-      "Crushing Blow",
-      "Hammer Bash",
-      "Disrupting Shot",
-      "Power Shot",
-      "Troll Unguent",
-      "Healing Seed",
-      "Orison of Healing",
-      "Remove Hex",
-      "Fox Fangs",
-      "Golden Fox Strike",
-      "Shadow Refuge"
+      "Healing Signet"
     ],
     "isBoss": false,
     "locations": [
@@ -32239,67 +30696,7 @@
       "Tsumei Village (explorable area)"
     ],
     "profession": "Warrior",
-    "affiliation": "Canthans",
-    "variants": [
-      {
-        "label": null,
-        "levels": [],
-        "skills": [
-          "Healing Signet"
-        ]
-      },
-      {
-        "label": "During Rescue at Minister Cho's Estate",
-        "levels": [],
-        "skills": [
-          "Healing Breeze",
-          "Healing Hands",
-          "Healing Touch"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Healing Hands"
-      },
-      {
-        "label": "Warrior",
-        "levels": [],
-        "skills": [
-          "Crushing Blow",
-          "Healing Signet",
-          "Hammer Bash"
-        ],
-        "campaign": "Factions"
-      },
-      {
-        "label": "Ranger",
-        "levels": [],
-        "skills": [
-          "Disrupting Shot",
-          "Power Shot",
-          "Troll Unguent"
-        ],
-        "campaign": "Factions"
-      },
-      {
-        "label": "Monk",
-        "levels": [],
-        "skills": [
-          "Healing Seed",
-          "Orison of Healing",
-          "Remove Hex"
-        ],
-        "campaign": "Factions"
-      },
-      {
-        "label": "Assassin",
-        "levels": [],
-        "skills": [
-          "Fox Fangs",
-          "Golden Fox Strike",
-          "Shadow Refuge"
-        ],
-        "campaign": "Factions"
-      }
-    ]
+    "affiliation": "Canthans"
   },
   {
     "name": "Chan the Dragon's Blood",
@@ -32897,14 +31294,7 @@
       }
     ],
     "skills": [
-      "Signet of Rage",
-      "Bane Signet",
-      "Boon Signet",
-      "Castigation Signet",
-      "Judge's Intervention",
-      "Reversal of Damage",
-      "Signet of Devotion",
-      "Mantra of Inscriptions"
+      "Signet of Rage"
     ],
     "isBoss": false,
     "locations": [
@@ -32927,22 +31317,6 @@
           "Healing Burst"
         ],
         "hardModeEliteSkill": "Healing Burst"
-      },
-      {
-        "label": "During Winds of Change",
-        "levels": [],
-        "skills": [
-          "Bane Signet",
-          "Boon Signet",
-          "Castigation Signet",
-          "Judge's Intervention",
-          "Reversal of Damage",
-          "Signet of Devotion",
-          "Signet of Rage",
-          "Mantra of Inscriptions"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Boon Signet"
       }
     ]
   },
@@ -35165,14 +33539,7 @@
       "Expel Hexes",
       "Power Return",
       "Signet of Disruption",
-      "Unnatural Signet",
-      "Dark Pact",
-      "Ravenous Gaze",
-      "Shadow Strike",
-      "Vampiric Gaze",
-      "Vampiric Swarm",
-      "Drain Enchantment",
-      "Energy Tap"
+      "Unnatural Signet"
     ],
     "isBoss": false,
     "locations": [
@@ -35191,37 +33558,7 @@
       "The Final Confrontation (explorable area)"
     ],
     "profession": "Mesmer",
-    "affiliation": "Jade Brotherhood",
-    "variants": [
-      {
-        "label": null,
-        "levels": [],
-        "skills": [
-          "Empathy",
-          "Ether Feast",
-          "Expel Hexes",
-          "Power Return",
-          "Signet of Disruption",
-          "Unnatural Signet"
-        ],
-        "eliteSkill": "Expel Hexes"
-      },
-      {
-        "label": "During Winds of Change",
-        "levels": [],
-        "skills": [
-          "Dark Pact",
-          "Ravenous Gaze",
-          "Shadow Strike",
-          "Vampiric Gaze",
-          "Vampiric Swarm",
-          "Drain Enchantment",
-          "Energy Tap"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Ravenous Gaze"
-      }
-    ]
+    "affiliation": "Jade Brotherhood"
   },
   {
     "name": "Jade Brotherhood Ritualist",
@@ -35266,13 +33603,7 @@
       "Channeled Strike",
       "Soothing Memories",
       "Tranquil Was Tanasen",
-      "Weapon of Warding",
-      "Mend Body and Soul",
-      "Preservation",
-      "Vocal Was Sogolon",
-      "Weapon of Shadow",
-      "\"Never Surrender!\"",
-      "\"Stand Your Ground!\""
+      "Weapon of Warding"
     ],
     "isBoss": false,
     "locations": [
@@ -35291,37 +33622,7 @@
       "Seitung Harbor (explorable area)"
     ],
     "profession": "Ritualist",
-    "affiliation": "Jade Brotherhood",
-    "variants": [
-      {
-        "label": null,
-        "levels": [],
-        "skills": [
-          "Ancestors' Rage",
-          "Channeled Strike",
-          "Soothing Memories",
-          "Tranquil Was Tanasen",
-          "Weapon of Warding"
-        ],
-        "eliteSkill": "Tranquil Was Tanasen"
-      },
-      {
-        "label": "During Winds of Change",
-        "levels": [],
-        "skills": [
-          "Mend Body and Soul",
-          "Preservation",
-          "Soothing Memories",
-          "Vocal Was Sogolon",
-          "Weapon of Shadow",
-          "Weapon of Warding",
-          "\"Never Surrender!\"",
-          "\"Stand Your Ground!\""
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Preservation"
-      }
-    ]
+    "affiliation": "Jade Brotherhood"
   },
   {
     "name": "Jade Torn Kirin (mesmer)",
@@ -40447,22 +38748,7 @@
     ],
     "skills": [
       "Crippling Dagger",
-      "Desperate Strike",
-      "Augury of Death",
-      "Black Spider Strike",
-      "Blades of Steel",
-      "Critical Strike",
-      "Jungle Strike",
-      "Leaping Mantis Sting",
-      "Palm Strike",
-      "Twisting Fangs",
-      "Critical Defenses",
-      "Critical Eye",
-      "Golden Lotus Strike",
-      "Repeating Strike",
-      "Way of Perfection",
-      "Way of the Assassin",
-      "Wild Strike"
+      "Desperate Strike"
     ],
     "isBoss": false,
     "locations": [
@@ -40485,38 +38771,6 @@
           "Locust's Fury"
         ],
         "hardModeEliteSkill": "Locust's Fury"
-      },
-      {
-        "label": "Winds of Change (Palm Strike)",
-        "levels": [],
-        "skills": [
-          "Augury of Death",
-          "Black Spider Strike",
-          "Blades of Steel",
-          "Critical Strike",
-          "Jungle Strike",
-          "Leaping Mantis Sting",
-          "Palm Strike",
-          "Twisting Fangs"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Palm Strike"
-      },
-      {
-        "label": "Winds of Change (Way of the Assassin)",
-        "levels": [],
-        "skills": [
-          "Critical Defenses",
-          "Critical Eye",
-          "Critical Strike",
-          "Golden Lotus Strike",
-          "Repeating Strike",
-          "Way of Perfection",
-          "Way of the Assassin",
-          "Wild Strike"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Way of the Assassin"
       }
     ]
   },
@@ -41348,11 +39602,7 @@
       }
     ],
     "skills": [
-      "Frenzy",
-      "\"I Will Avenge You!\"",
-      "Bull's Strike",
-      "Endure Pain",
-      "Power Attack"
+      "Frenzy"
     ],
     "isBoss": false,
     "locations": [
@@ -41372,17 +39622,6 @@
           "Primal Rage"
         ],
         "hardModeEliteSkill": "Primal Rage"
-      },
-      {
-        "label": "During Winds of Change",
-        "levels": [],
-        "skills": [
-          "\"I Will Avenge You!\"",
-          "Bull's Strike",
-          "Endure Pain",
-          "Power Attack"
-        ],
-        "campaign": "Factions"
       }
     ]
   },
@@ -41550,11 +39789,7 @@
       }
     ],
     "skills": [
-      "Frenzy",
-      "\"I Will Avenge You!\"",
-      "Bull's Strike",
-      "Endure Pain",
-      "Power Attack"
+      "Frenzy"
     ],
     "isBoss": false,
     "locations": [
@@ -41574,17 +39809,6 @@
           "Primal Rage"
         ],
         "hardModeEliteSkill": "Primal Rage"
-      },
-      {
-        "label": "During Winds of Change",
-        "levels": [],
-        "skills": [
-          "\"I Will Avenge You!\"",
-          "Bull's Strike",
-          "Endure Pain",
-          "Power Attack"
-        ],
-        "campaign": "Factions"
       }
     ]
   },
@@ -41627,11 +39851,7 @@
       }
     ],
     "skills": [
-      "Frenzy",
-      "\"I Will Avenge You!\"",
-      "Bull's Strike",
-      "Endure Pain",
-      "Power Attack"
+      "Frenzy"
     ],
     "isBoss": false,
     "locations": [
@@ -41651,17 +39871,6 @@
           "Primal Rage"
         ],
         "hardModeEliteSkill": "Primal Rage"
-      },
-      {
-        "label": "During Winds of Change",
-        "levels": [],
-        "skills": [
-          "\"I Will Avenge You!\"",
-          "Bull's Strike",
-          "Endure Pain",
-          "Power Attack"
-        ],
-        "campaign": "Factions"
       }
     ]
   },
@@ -41810,11 +40019,7 @@
       }
     ],
     "skills": [
-      "Frenzy",
-      "\"I Will Avenge You!\"",
-      "Bull's Strike",
-      "Endure Pain",
-      "Power Attack"
+      "Frenzy"
     ],
     "isBoss": false,
     "locations": [
@@ -41834,17 +40039,6 @@
           "Primal Rage"
         ],
         "hardModeEliteSkill": "Primal Rage"
-      },
-      {
-        "label": "During Winds of Change",
-        "levels": [],
-        "skills": [
-          "\"I Will Avenge You!\"",
-          "Bull's Strike",
-          "Endure Pain",
-          "Power Attack"
-        ],
-        "campaign": "Factions"
       }
     ]
   },
@@ -41887,11 +40081,7 @@
       }
     ],
     "skills": [
-      "Frenzy",
-      "\"I Will Avenge You!\"",
-      "Bull's Strike",
-      "Endure Pain",
-      "Power Attack"
+      "Frenzy"
     ],
     "isBoss": false,
     "locations": [
@@ -41911,17 +40101,6 @@
           "Primal Rage"
         ],
         "hardModeEliteSkill": "Primal Rage"
-      },
-      {
-        "label": "During Winds of Change",
-        "levels": [],
-        "skills": [
-          "\"I Will Avenge You!\"",
-          "Bull's Strike",
-          "Endure Pain",
-          "Power Attack"
-        ],
-        "campaign": "Factions"
       }
     ]
   },
@@ -41964,11 +40143,7 @@
       }
     ],
     "skills": [
-      "Frenzy",
-      "\"I Will Avenge You!\"",
-      "Bull's Strike",
-      "Endure Pain",
-      "Power Attack"
+      "Frenzy"
     ],
     "isBoss": false,
     "locations": [
@@ -41988,17 +40163,6 @@
           "Primal Rage"
         ],
         "hardModeEliteSkill": "Primal Rage"
-      },
-      {
-        "label": "During Winds of Change",
-        "levels": [],
-        "skills": [
-          "\"I Will Avenge You!\"",
-          "Bull's Strike",
-          "Endure Pain",
-          "Power Attack"
-        ],
-        "campaign": "Factions"
       }
     ]
   },
@@ -46062,7 +44226,6 @@
           "Signet of Rage",
           "Signet of Rejuvenation"
         ],
-        "campaign": "Eye of the North",
         "eliteSkill": "Scribe's Insight"
       },
       {
@@ -46172,7 +44335,6 @@
           "Quivering Blade",
           "Signet of Strength"
         ],
-        "campaign": "Eye of the North",
         "eliteSkill": "Quivering Blade"
       },
       {
@@ -46391,7 +44553,6 @@
           "Deathly Swarm",
           "Taste of Death"
         ],
-        "campaign": "Eye of the North",
         "eliteSkill": "Animate Flesh Golem"
       },
       {
@@ -46505,7 +44666,6 @@
           "Staggering Force",
           "Reap Impurities"
         ],
-        "campaign": "Eye of the North",
         "eliteSkill": "Ebon Dust Aura"
       },
       {
@@ -46613,7 +44773,6 @@
           "Roaring Winds",
           "Troll Unguent"
         ],
-        "campaign": "Eye of the North",
         "eliteSkill": "Barrage"
       }
     ],
@@ -46772,8 +44931,7 @@
           "Conjure Phantasm",
           "Images of Remorse",
           "Phantom Pain"
-        ],
-        "campaign": "Eye of the North"
+        ]
       },
       {
         "label": "Mad Little Pony and Scarred Psyche",
@@ -48375,7 +46533,6 @@
           "Stone Sheath",
           "Stoneflesh Aura"
         ],
-        "campaign": "Eye of the North",
         "eliteSkill": "Stone Sheath"
       },
       {
@@ -49234,14 +47391,7 @@
       "Disrupting Throw",
       "Harrier's Toss",
       "Leader's Comfort",
-      "Spear of Lightning",
-      "Purge Signet",
-      "Anthem of Envy",
-      "Barbed Spear",
-      "Blazing Spear",
-      "Focused Anger",
-      "Merciless Spear",
-      "Spear of Redemption"
+      "Spear of Lightning"
     ],
     "isBoss": false,
     "locations": [
@@ -49256,37 +47406,6 @@
     ],
     "profession": "Paragon",
     "affiliation": "Corsairs",
-    "variants": [
-      {
-        "label": null,
-        "levels": [],
-        "skills": [
-          "\"Go for the Eyes!\"",
-          "\"Stand Your Ground!\"",
-          "Crippling Anthem",
-          "Disrupting Throw",
-          "Harrier's Toss",
-          "Leader's Comfort",
-          "Spear of Lightning"
-        ],
-        "eliteSkill": "Crippling Anthem"
-      },
-      {
-        "label": "Winds of Change",
-        "levels": [],
-        "skills": [
-          "Purge Signet",
-          "Anthem of Envy",
-          "Barbed Spear",
-          "Blazing Spear",
-          "Focused Anger",
-          "Merciless Spear",
-          "Spear of Redemption"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Focused Anger"
-      }
-    ],
     "locationLevels": {
       "Barbarous Shore": 23,
       "Marga Coast": 23,
@@ -49394,7 +47513,6 @@
           "Harrier's Haste",
           "Onslaught"
         ],
-        "campaign": "Eye of the North",
         "eliteSkill": "Onslaught"
       }
     ],
@@ -49446,14 +47564,7 @@
     ],
     "skills": [
       "Poisoned Heart",
-      "Envenom Enchantments",
-      "Deathly Chill",
-      "Taste of Pain",
-      "Toxic Chill",
-      "Vile Miasma",
-      "Accumulated Pain",
-      "Images of Remorse",
-      "Shrinking Armor"
+      "Envenom Enchantments"
     ],
     "isBoss": false,
     "locations": [
@@ -49498,21 +47609,6 @@
           "Reaper's Mark"
         ],
         "hardModeEliteSkill": "Reaper's Mark"
-      },
-      {
-        "label": "Winds of Change",
-        "levels": [],
-        "skills": [
-          "Deathly Chill",
-          "Taste of Pain",
-          "Toxic Chill",
-          "Vile Miasma",
-          "Accumulated Pain",
-          "Images of Remorse",
-          "Shrinking Armor"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Toxic Chill"
       }
     ],
     "locationLevels": {
@@ -49716,14 +47812,7 @@
     ],
     "skills": [
       "Disrupting Throw",
-      "Harrier's Toss",
-      "Crippling Slash",
-      "Enraging Charge",
-      "Gash",
-      "Knee Cutter",
-      "Lion's Comfort",
-      "Reap Impurities",
-      "Victorious Sweep"
+      "Harrier's Toss"
     ],
     "isBoss": false,
     "locations": [
@@ -49750,21 +47839,6 @@
           "Crippling Anthem"
         ],
         "hardModeEliteSkill": "Crippling Anthem"
-      },
-      {
-        "label": "Winds of Change",
-        "levels": [],
-        "skills": [
-          "Crippling Slash",
-          "Enraging Charge",
-          "Gash",
-          "Knee Cutter",
-          "Lion's Comfort",
-          "Reap Impurities",
-          "Victorious Sweep"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Crippling Slash"
       }
     ],
     "locationLevels": {
@@ -49864,7 +47938,6 @@
           "Defensive Anthem",
           "Wild Throw"
         ],
-        "campaign": "Eye of the North",
         "eliteSkill": "Defensive Anthem"
       }
     ],
@@ -50036,8 +48109,7 @@
         "skills": [
           "\"Shields Up!\"",
           "\"Watch Yourself!\""
-        ],
-        "campaign": "Eye of the North"
+        ]
       }
     ],
     "locationLevels": {
@@ -50344,12 +48416,7 @@
       "Kindle Arrows",
       "Prepared Shot",
       "Savage Shot",
-      "Toxicity",
-      "Crossfire",
-      "Read the Wind",
-      "Sloth Hunter's Shot",
-      "Barbs",
-      "Defile Defenses"
+      "Toxicity"
     ],
     "isBoss": false,
     "locations": [
@@ -50407,21 +48474,6 @@
           "Troll Unguent"
         ],
         "eliteSkill": "Burning Arrow"
-      },
-      {
-        "label": "Winds of Change",
-        "levels": [],
-        "skills": [
-          "Crossfire",
-          "Prepared Shot",
-          "Read the Wind",
-          "Sloth Hunter's Shot",
-          "Troll Unguent",
-          "Barbs",
-          "Defile Defenses"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Prepared Shot"
       }
     ],
     "locationLevels": {
@@ -50846,8 +48898,7 @@
           "Kindle Arrows",
           "Quickening Zephyr",
           "Savage Shot"
-        ],
-        "campaign": "Eye of the North"
+        ]
       }
     ],
     "locationLevels": {
@@ -51381,7 +49432,6 @@
           "Lightning Strike",
           "Ride the Lightning"
         ],
-        "campaign": "Eye of the North",
         "eliteSkill": "Ride the Lightning"
       }
     ],
@@ -51507,8 +49557,7 @@
           "Energy Burn",
           "Power Block",
           "Power Drain"
-        ],
-        "campaign": "Eye of the North"
+        ]
       }
     ],
     "locationLevels": {
@@ -73493,8 +71542,7 @@
       "Healing Signet",
       "Hundred Blades",
       "Sever Artery",
-      "Sun and Moon Slash",
-      "Protector's Defense"
+      "Sun and Moon Slash"
     ],
     "isBoss": false,
     "locations": [
@@ -73504,36 +71552,6 @@
     ],
     "profession": "Warrior",
     "affiliation": "White Mantle",
-    "variants": [
-      {
-        "label": "Slavers' Exile",
-        "levels": [],
-        "skills": [
-          "Disarm",
-          "Gash",
-          "Final Thrust",
-          "Healing Signet",
-          "Hundred Blades",
-          "Sever Artery",
-          "Sun and Moon Slash"
-        ],
-        "eliteSkill": "Hundred Blades"
-      },
-      {
-        "label": "The Rise of the White Mantle",
-        "levels": [],
-        "skills": [
-          "Gash",
-          "Final Thrust",
-          "Healing Signet",
-          "Hundred Blades",
-          "Protector's Defense",
-          "Sever Artery"
-        ],
-        "campaign": "War in Kryta",
-        "eliteSkill": "Hundred Blades"
-      }
-    ],
     "locationLevels": {
       "Sage Lands": 15,
       "Slavers' Exile": 28
@@ -80334,14 +78352,7 @@
       "Healing Ribbon",
       "Healing Touch",
       "Signet of Rejuvenation",
-      "Glyph of Lesser Energy",
-      "Divine Intervention",
-      "Divine Spirit",
-      "Healing Hands",
-      "Orison of Healing",
-      "Words of Comfort",
-      "Conviction",
-      "Fleeting Stability"
+      "Glyph of Lesser Energy"
     ],
     "isBoss": false,
     "locations": [
@@ -80350,39 +78361,7 @@
       "Bukdek Byway (Winds of Change)"
     ],
     "profession": "Monk",
-    "affiliation": "Stone Summit",
-    "variants": [
-      {
-        "label": null,
-        "levels": [],
-        "skills": [
-          "Dwayna's Kiss",
-          "Heal Party",
-          "Healer's Boon",
-          "Healing Ribbon",
-          "Healing Touch",
-          "Signet of Rejuvenation",
-          "Glyph of Lesser Energy"
-        ],
-        "eliteSkill": "Healer's Boon"
-      },
-      {
-        "label": "During Winds of Change",
-        "levels": [],
-        "skills": [
-          "Divine Intervention",
-          "Divine Spirit",
-          "Healing Hands",
-          "Healing Ribbon",
-          "Orison of Healing",
-          "Words of Comfort",
-          "Conviction",
-          "Fleeting Stability"
-        ],
-        "campaign": "Factions",
-        "eliteSkill": "Healing Hands"
-      }
-    ]
+    "affiliation": "Stone Summit"
   },
   {
     "name": "Stone Summit Summoner",

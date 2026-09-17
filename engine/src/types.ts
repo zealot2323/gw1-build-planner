@@ -269,6 +269,11 @@ export interface MonsterVariant {
   hardModeEliteSkill?: SkillRef;
   /** The whole block is hard-mode content (e.g. "During Hard mode Titan quests"). */
   hardMode?: boolean;
+  /**
+   * Campaign the block is labelled for ("Prophecies", "Eye of the North").
+   * A creature in both has a bar for each; the engine picks by zone.
+   */
+  campaign?: Campaign;
 }
 
 export interface Monster {
@@ -508,6 +513,7 @@ export const monsterSchema = {
           eliteSkill: { type: "string" },
           hardModeEliteSkill: { type: "string" },
           hardMode: { type: "boolean" },
+          campaign: { $ref: "gw1-campaign" },
         },
       },
     },

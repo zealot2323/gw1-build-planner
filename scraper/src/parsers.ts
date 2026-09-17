@@ -590,15 +590,22 @@ export function parseMonster(title: string, wikitext: string): Parsed<ParsedMons
   // content / a cinematic; encounter levels, professions, and Prophecies
   // mission names all stay.
   // Blocks that are never real PvE loadouts, whatever the campaign.
-  const EXCLUDED_CONTEXT = /cinematic|halloween|wintersday|festival|mausoleum|annihilat|1070 ae|snowball/i;
+  // War in Kryta and Winds of Change are Beyond releases that re-arm
+  // existing monsters; their bars are not what you meet in the campaign
+  // zones, so they are dropped rather than tagged. Mind the pages that
+  // label the ordinary bar "Non-War in Kryta version" — that one stays.
+  const EXCLUDED_CONTEXT =
+    /cinematic|halloween|wintersday|festival|mausoleum|annihilat|1070 ae|snowball|(?<!non-)\bwar in kryta\b|hearts of the north|rise of the white mantle|winds of change/i;
   // Blocks whose label names a campaign or a Beyond release — kept, but
   // tagged, so the engine can pick the right one per zone.
   const CAMPAIGN_CONTEXT: Array<[string, RegExp]> = [
     ["Prophecies", /\bprophecies\b/i],
-    ["Factions", /\bfactions\b|winds of change/i],
+    ["Factions", /\bfactions\b/i],
     ["Nightfall", /\bnightfall\b/i],
-    ["Eye of the North", /eye of the north|\beotn\b|special ops|fronis|bonus mission pack/i],
-    ["War in Kryta", /war in kryta|hearts of the north|rise of the white mantle/i],
+    // Bonus Mission Pack is its own mini-campaign, not EotN content; left
+    // untagged so it is never preferred as a campaign match, only used as a
+    // fallback when a monster has nothing better.
+    ["Eye of the North", /eye of the north|\beotn\b|special ops|fronis/i],
   ];
   const campaignOf = (label: string | null): string | undefined =>
     label === null ? undefined : CAMPAIGN_CONTEXT.find(([, re]) => re.test(label))?.[0];

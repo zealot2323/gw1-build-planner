@@ -1,6 +1,6 @@
 # Validation report
 
-Generated 2026-09-16T15:01:20.312Z by `npm run parse` (cache-only).
+Generated 2026-09-17T09:44:16.351Z by `npm run parse` (cache-only).
 
 ## skills (20 issues on 20 pages)
 
