@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import {
   buildReadiness,
   planForSkill,
+  routeStops,
   skillAvailability,
   travelDistances,
   type TodoItem,
@@ -14,6 +15,7 @@ import { wikiHref } from "../wiki";
 import { SkillDetails } from "../components/SkillDetails";
 import { RouteToTodo } from "../components/RouteToTodo";
 import { hasOpenTodo } from "../todos";
+import { SkillTodoPrompt, type PendingSkillTodo } from "../components/SkillTodoPrompt";
 import type { CharacterSave } from "../save";
 
 export interface TodoViewState {
@@ -72,6 +74,7 @@ export function TodoView({
 }) {
   const index = useData();
   const [error, setError] = useState<string | null>(null);
+  const [pendingTodo, setPendingTodo] = useState<PendingSkillTodo | null>(null);
 
   const availability = useMemo(
     () => (character ? new Map(skillAvailability(character, null, index).map((e) => [e.skill.wikiPage, e])) : new Map()),
@@ -116,8 +119,33 @@ export function TodoView({
       return;
     }
     setError(null);
+    if (view.kind === "skill") {
+      // same question the skill browser asks: bring the places along?
+      const entry = availability.get(ref);
+      const route = entry && graph ? planForSkill(entry, graph).route : [];
+      const outstanding = routeStops(route, index, character.unlockedLocations).filter(
+        (s) => !hasOpenTodo(todos, s.kind, s.ref),
+      );
+      if (outstanding.length > 0) {
+        setPendingTodo({ skill: ref, skillName: index.skillByPage.get(ref)?.name ?? ref, route });
+        setView({ draft: "" });
+        return;
+      }
+    }
     setTodos([...todos, { id: newId(), kind: view.kind, ref, done: false, added: new Date().toISOString().slice(0, 10) }]);
     setView({ draft: "" });
+  };
+
+  /** Ask about the route, then add — or just add when there's nothing to ask. */
+  const askThenAddSkill = (ref: string, name: string, route: string[]) => {
+    const outstanding = routeStops(route, index, character.unlockedLocations).filter(
+      (s) => !hasOpenTodo(todos, s.kind, s.ref),
+    );
+    if (outstanding.length === 0) {
+      addToTodo([{ kind: "skill", ref }]);
+      return;
+    }
+    setPendingTodo({ skill: ref, skillName: name, route });
   };
 
   const toggle = (id: string) =>
@@ -173,6 +201,13 @@ export function TodoView({
 
   return (
     <div className="view">
+      <SkillTodoPrompt
+        pending={pendingTodo}
+        character={character}
+        todos={todos}
+        addToTodo={addToTodo}
+        onClose={() => setPendingTodo(null)}
+      />
       <div className="card">
         <h3>
           To-do for {character.name} <span className="muted">({open} open)</span>
@@ -270,6 +305,7 @@ export function TodoView({
                   character={character}
                   todos={todos}
                   addToTodo={addToTodo}
+                  onAddSkill={askThenAddSkill}
                   openSkill={view.openBuildSkill}
                   setOpenSkill={(v) => setView({ openBuildSkill: v })}
                 />
@@ -292,6 +328,7 @@ function BuildTodoDetail({
   character,
   todos,
   addToTodo,
+  onAddSkill,
   openSkill,
   setOpenSkill,
 }: {
@@ -299,6 +336,7 @@ function BuildTodoDetail({
   character: CharacterSave;
   todos: TodoItem[];
   addToTodo: (entries: Array<{ kind: TodoKind; ref: string }>) => { added: number; skipped: number };
+  onAddSkill: (ref: string, name: string, route: string[]) => void;
   openSkill: string | null;
   setOpenSkill: (v: string | null) => void;
 }) {
@@ -346,7 +384,7 @@ function BuildTodoDetail({
                 {!slot.known && !hasOpenTodo(todos, "skill", slot.ref) && (
                   <button
                     className="small"
-                    onClick={() => addToTodo([{ kind: "skill", ref: slot.ref! }])}
+                    onClick={() => onAddSkill(slot.ref!, slot.skill?.name ?? slot.ref!, slot.plan?.route ?? [])}
                     title="Add this skill to the to-do list"
                   >
                     + add this skill to the to-do list

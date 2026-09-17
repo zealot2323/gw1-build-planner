@@ -1,6 +1,7 @@
 import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 import {
   planForSkill,
+  routeStops,
   skillAvailability,
   travelDistances,
   type AcquisitionSource,
@@ -23,6 +24,7 @@ import { ProximityDot } from "../components/ProximityDot";
 import { wikiHref } from "../wiki";
 import { hasOpenTodo } from "../todos";
 import { RouteToTodo } from "../components/RouteToTodo";
+import { SkillTodoPrompt, type PendingSkillTodo } from "../components/SkillTodoPrompt";
 import type { CharacterSave } from "../save";
 
 /** Filters and expansion state, held by App so tab switches don't reset it. */
@@ -160,6 +162,8 @@ export function SkillsView({
   const index = useData();
   const { profFilter, attrFilter, elitesOnly, search, openSkill, sortBy, changedOnly, collapsed } = view;
   const [expandedSources, setExpandedSources] = useState<Set<string>>(new Set());
+  /** Skill waiting on the "add the places too?" prompt. */
+  const [pendingTodo, setPendingTodo] = useState<PendingSkillTodo | null>(null);
   const setProfFilter = (v: string) => setView({ profFilter: v });
   const setAttrFilter = (v: string) => setView({ attrFilter: v });
   const setElitesOnly = (v: boolean) => setView({ elitesOnly: v });
@@ -213,6 +217,22 @@ export function SkillsView({
     focusRef.current?.scrollIntoView({ block: "center" });
   }, [focusSkill]);
 
+  /**
+   * Put a skill on the to-do list — asking first whether the places needed
+   * to reach it should come too, but only when there are any. A skill you
+   * can already buy where you stand shouldn't raise a dialog.
+   */
+  const askThenAddSkill = (entry: SkillAvailabilityEntry) => {
+    const route = plans.get(entry.skill.wikiPage)?.route ?? [];
+    const stops = character ? routeStops(route, index, character.unlockedLocations) : [];
+    const outstanding = stops.filter((s) => !hasOpenTodo(todos, s.kind, s.ref));
+    if (outstanding.length === 0) {
+      addToTodo([{ kind: "skill", ref: entry.skill.wikiPage }]);
+      return;
+    }
+    setPendingTodo({ skill: entry.skill.wikiPage, skillName: entry.skill.name, route });
+  };
+
   const toggleSources = (page: string) =>
     setExpandedSources((s) => {
       const next = new Set(s);
@@ -227,6 +247,13 @@ export function SkillsView({
 
   return (
     <div className="view">
+      <SkillTodoPrompt
+        pending={pendingTodo}
+        character={character}
+        todos={todos}
+        addToTodo={addToTodo}
+        onClose={() => setPendingTodo(null)}
+      />
       <BuildBar
         character={character}
         draft={draft}
@@ -378,7 +405,7 @@ export function SkillsView({
                                   ? "Already on the to-do list"
                                   : "Add this skill to the to-do list"
                               }
-                              onClick={() => addToTodo([{ kind: "skill", ref: e.skill.wikiPage }])}
+                              onClick={() => askThenAddSkill(e)}
                             >
                               {hasOpenTodo(todos, "skill", e.skill.wikiPage) ? "✓ to-do" : "+ to-do"}
                             </button>
