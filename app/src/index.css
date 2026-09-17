@@ -439,3 +439,11 @@ button.linkish.outpost { font-weight: 600; flex: 1; width: auto; }
   .view, .card { max-width: 100%; }
   table { max-width: 100%; }
 }
+
+/* Collapsible status sections on the skill page */
+.section-toggle {
+  all: unset; cursor: pointer; display: flex; align-items: baseline; gap: 0.4rem;
+  width: 100%; font: inherit; color: inherit;
+}
+.section-toggle:hover { color: var(--accent); }
+.section-toggle .caret { color: var(--muted); font-size: 0.85em; }

@@ -30,6 +30,8 @@ export interface SkillViewState {
   openSkill: string | null;
   sortBy: "name" | "soonest";
   changedOnly: boolean;
+  /** Status sections the user has collapsed (an array so it serialises). */
+  collapsed: SkillStatus[];
 }
 
 export const initialSkillViewState: SkillViewState = {
@@ -40,6 +42,7 @@ export const initialSkillViewState: SkillViewState = {
   openSkill: null,
   sortBy: "soonest",
   changedOnly: false,
+  collapsed: [],
 };
 
 const STATUS_ORDER: SkillStatus[] = [
@@ -147,7 +150,7 @@ export function SkillsView({
   setView: (patch: Partial<SkillViewState>) => void;
 }) {
   const index = useData();
-  const { profFilter, attrFilter, elitesOnly, search, openSkill, sortBy, changedOnly } = view;
+  const { profFilter, attrFilter, elitesOnly, search, openSkill, sortBy, changedOnly, collapsed } = view;
   const [expandedSources, setExpandedSources] = useState<Set<string>>(new Set());
   const setProfFilter = (v: string) => setView({ profFilter: v });
   const setAttrFilter = (v: string) => setView({ attrFilter: v });
@@ -156,6 +159,12 @@ export function SkillsView({
   const setOpenSkill = (v: string | null) => setView({ openSkill: v });
   const setSortBy = (v: "name" | "soonest") => setView({ sortBy: v });
   const setChangedOnly = (v: boolean) => setView({ changedOnly: v });
+  const toggleSection = (status: SkillStatus) =>
+    setView({
+      collapsed: collapsed.includes(status)
+        ? collapsed.filter((s) => s !== status)
+        : [...collapsed, status],
+    });
   const focusRef = useRef<HTMLTableRowElement | null>(null);
 
   // The build's secondary decides which skills are in play — there is one
@@ -259,11 +268,21 @@ export function SkillsView({
       {STATUS_ORDER.map((status) => {
         const group = filtered.filter((e) => e.status === status);
         if (group.length === 0) return null;
+        const isCollapsed = collapsed.includes(status);
         return (
           <div className="card" key={status}>
             <h3>
-              {STATUS_LABEL[status]} <span className="muted">({group.length})</span>
+              <button
+                className="section-toggle"
+                onClick={() => toggleSection(status)}
+                aria-expanded={!isCollapsed}
+                title={isCollapsed ? "show these skills" : "hide these skills"}
+              >
+                <span className="caret">{isCollapsed ? "▸" : "▾"}</span>
+                {STATUS_LABEL[status]} <span className="muted">({group.length})</span>
+              </button>
             </h3>
+            {!isCollapsed && (
             <table className="skill-table">
               <colgroup>
                 <col className="col-name" />
@@ -383,6 +402,7 @@ export function SkillsView({
                 ))}
               </tbody>
             </table>
+            )}
           </div>
         );
       })}
