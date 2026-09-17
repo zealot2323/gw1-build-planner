@@ -317,6 +317,15 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
   borrowed from gw1tools/gw1builds (MIT); see README Credits. Keep the
   credit line in the app footer if that code is touched.
 
+- **To-do entries are added from wherever you notice them**: the skill
+  browser, the zone browser, and the to-do tab itself all go through
+  `addTodos` in `/app/src/todos.ts`, which dedupes against entries that are
+  still open (a completed entry can be added again).
+- **"Everything I need to get there" uses `routeStops`**, which keeps the
+  outposts and missions on a route and drops the explorable areas — you
+  walk through those, you don't unlock them — along with anything already
+  unlocked. A 20-hop route to Backbreaker becomes 6 trackable stops.
+
 ## Copy
 
 - **Plain, neutral, specific.** Say what something is, not how the reader

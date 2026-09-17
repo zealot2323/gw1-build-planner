@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { Profession, type Build } from "@gw1/engine";
+import { Profession, type Build, type TodoKind } from "@gw1/engine";
 import { useSave } from "./save";
 import { DataProvider } from "./DataContext";
 import { AccountBar } from "./components/AccountBar";
+import { addTodos } from "./todos";
 import { CharactersView } from "./views/Characters";
 import { SkillsView, initialSkillViewState, type SkillViewState } from "./views/Skills";
 import { ZonesView, initialZoneState, type ZoneViewState } from "./views/Zones";
@@ -54,6 +55,18 @@ export function App() {
 
   const updateBuilds = (builds: Build[]) =>
     character && updateCharacter(character.name, { builds });
+
+  /**
+   * Add entries to the selected character's to-do list from any view.
+   * Returns what happened so the caller can confirm it ("added 3, 2 already
+   * on the list") rather than appearing to do nothing.
+   */
+  const addToTodo = (entries: Array<{ kind: TodoKind; ref: string }>) => {
+    if (!character) return { added: 0, skipped: 0 };
+    const result = addTodos(character.todos ?? [], entries);
+    updateCharacter(character.name, { todos: result.todos });
+    return { added: result.added, skipped: result.skipped };
+  };
 
   /** "+ build" in the skill browser: fill the active build's first empty slot. */
   const addToBuild = character
@@ -129,6 +142,8 @@ export function App() {
           setDraft={setDraft}
           view={skillView}
           setView={patchSkillView}
+          addToTodo={addToTodo}
+          todos={character?.todos ?? []}
         />
       )}
       {tab === "builds" && (
@@ -147,6 +162,7 @@ export function App() {
         <TodoView
           character={character}
           updateCharacter={updateCharacter}
+          addToTodo={addToTodo}
           view={todoView}
           setView={patchTodoView}
         />
@@ -160,6 +176,8 @@ export function App() {
           character={character}
           state={zoneState}
           setState={patchZoneState}
+          addToTodo={addToTodo}
+          todos={character?.todos ?? []}
         />
       )}
       <footer className="credits muted small">

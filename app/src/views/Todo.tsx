@@ -1,5 +1,7 @@
 import { useMemo, useState } from "react";
 import {
+  buildReadiness,
+  planForSkill,
   skillAvailability,
   travelDistances,
   type TodoItem,
@@ -9,15 +11,28 @@ import { useData } from "../DataContext";
 import { SkillIcon } from "../components/SkillIcon";
 import { ProximityDot } from "../components/ProximityDot";
 import { wikiHref } from "../wiki";
+import { SkillDetails } from "../components/SkillDetails";
+import { RouteToTodo } from "../components/RouteToTodo";
+import { hasOpenTodo } from "../todos";
 import type { CharacterSave } from "../save";
 
 export interface TodoViewState {
   kind: TodoKind;
   draft: string;
   showDone: boolean;
+  /** id of the build entry whose skills are expanded. */
+  openBuild: string | null;
+  /** "<build>|<skill>" of the expanded skill inside a build entry. */
+  openBuildSkill: string | null;
 }
 
-export const initialTodoViewState: TodoViewState = { kind: "skill", draft: "", showDone: false };
+export const initialTodoViewState: TodoViewState = {
+  kind: "skill",
+  draft: "",
+  showDone: false,
+  openBuild: null,
+  openBuildSkill: null,
+};
 
 const KIND_LABEL: Record<TodoKind, string> = {
   skill: "Skill",
@@ -28,6 +43,15 @@ const KIND_LABEL: Record<TodoKind, string> = {
 };
 const KIND_ORDER: TodoKind[] = ["skill", "build", "outpost", "mission", "note"];
 
+/** How a build's missing skill reads in the expanded view. */
+const STATUS_WORD: Record<string, string> = {
+  KNOWN: "already known",
+  PURCHASABLE_NOW: "can buy now",
+  QUESTABLE_NOW: "quest reward, available now",
+  CAPTURABLE_NOW: "can capture now",
+  FUTURE: "not available yet",
+};
+
 const newId = () =>
   typeof crypto !== "undefined" && "randomUUID" in crypto
     ? crypto.randomUUID()
@@ -36,11 +60,13 @@ const newId = () =>
 export function TodoView({
   character,
   updateCharacter,
+  addToTodo,
   view,
   setView,
 }: {
   character: CharacterSave | null;
   updateCharacter: (name: string, patch: Partial<CharacterSave>) => void;
+  addToTodo: (entries: Array<{ kind: TodoKind; ref: string }>) => { added: number; skipped: number };
   view: TodoViewState;
   setView: (patch: Partial<TodoViewState>) => void;
 }) {
@@ -221,15 +247,126 @@ export function TodoView({
                     )}
                     <span className="todo-context small">{context(item)}</span>
                   </label>
+                  {item.kind === "build" && character.builds.some((b) => b.name === item.ref) && (
+                    <button
+                      className="small"
+                      onClick={() => setView({ openBuild: view.openBuild === item.id ? null : item.id, openBuildSkill: null })}
+                      title="Show this build's skills and where to get them"
+                    >
+                      {view.openBuild === item.id ? "Hide skills" : "Show skills"}
+                    </button>
+                  )}
                   <button className="linkish todo-remove" onClick={() => remove(item.id)} title="Remove from list">
                     ×
                   </button>
                 </li>
               ))}
             </ul>
+            {group.map((item) =>
+              item.kind === "build" && view.openBuild === item.id ? (
+                <BuildTodoDetail
+                  key={`detail-${item.id}`}
+                  buildName={item.ref}
+                  character={character}
+                  todos={todos}
+                  addToTodo={addToTodo}
+                  openSkill={view.openBuildSkill}
+                  setOpenSkill={(v) => setView({ openBuildSkill: v })}
+                />
+              ) : null,
+            )}
           </div>
         );
       })}
+    </div>
+  );
+}
+
+/**
+ * A build on the to-do list, opened up: every skill with where it comes
+ * from, the same way the skill browser reports it, plus a shortcut to queue
+ * the outposts needed to reach the ones still missing.
+ */
+function BuildTodoDetail({
+  buildName,
+  character,
+  todos,
+  addToTodo,
+  openSkill,
+  setOpenSkill,
+}: {
+  buildName: string;
+  character: CharacterSave;
+  todos: TodoItem[];
+  addToTodo: (entries: Array<{ kind: TodoKind; ref: string }>) => { added: number; skipped: number };
+  openSkill: string | null;
+  setOpenSkill: (v: string | null) => void;
+}) {
+  const index = useData();
+  const graph = useMemo(() => travelDistances(character, index), [character, index]);
+  const build = character.builds.find((b) => b.name === buildName);
+  if (!build) return null;
+  const readiness = buildReadiness(build, character, index, graph);
+
+  // every place still needed for the missing skills, in one go
+  const wholeRoute = readiness.missing.flatMap((slot) => slot.plan?.route ?? []);
+
+  return (
+    <div className="build-todo">
+      {readiness.slots.map((slot, i) =>
+        slot.ref === null ? null : (
+          <div key={`${slot.ref}-${i}`}>
+            <button
+              className={`todo-skill-row${slot.known ? " known" : ""}`}
+              onClick={() => setOpenSkill(openSkill === slot.ref ? null : slot.ref)}
+            >
+              <SkillIcon page={slot.ref} size={22} />
+              <span className="todo-skill-name">
+                {slot.skill?.name ?? slot.ref}
+                {slot.skill?.isElite && <span className="elite"> ★</span>}
+              </span>
+              {slot.known ? (
+                <span className="ok small">already known</span>
+              ) : (
+                <span className="muted small">
+                  {slot.entry ? STATUS_WORD[slot.entry.status] ?? "" : "not usable by this character"}
+                  {slot.entry?.sources[0]?.location ? ` · ${slot.entry.sources[0].location}` : ""}
+                </span>
+              )}
+              {!slot.known && (
+                <ProximityDot
+                  proximity={slot.plan?.proximity ?? "unknown"}
+                  distance={slot.plan?.distance ?? null}
+                />
+              )}
+            </button>
+            {openSkill === slot.ref && slot.skill && (
+              <div className="slide-down">
+                <SkillDetails skill={slot.skill} plan={slot.known ? undefined : slot.plan} />
+                {!slot.known && !hasOpenTodo(todos, "skill", slot.ref) && (
+                  <button
+                    className="small"
+                    onClick={() => addToTodo([{ kind: "skill", ref: slot.ref! }])}
+                    title="Add this skill to the to-do list"
+                  >
+                    + add this skill to the to-do list
+                  </button>
+                )}
+              </div>
+            )}
+          </div>
+        ),
+      )}
+      {wholeRoute.length > 0 && (
+        <RouteToTodo
+          label={buildName}
+          route={wholeRoute}
+          character={character}
+          todos={todos}
+          addToTodo={addToTodo}
+          verb="Add every outpost and mission needed for this build's missing skills"
+        />
+      )}
     </div>
   );
 }

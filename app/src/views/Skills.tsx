@@ -8,6 +8,8 @@ import {
   type Profession,
   type SkillAvailabilityEntry,
   type SkillStatus,
+  type TodoItem,
+  type TodoKind,
 } from "@gw1/engine";
 import { useData } from "../DataContext";
 import { changes } from "../data";
@@ -19,6 +21,8 @@ import { ProfessionIcon } from "../components/ProfessionIcon";
 import { BuildBar } from "../components/BuildBar";
 import { ProximityDot } from "../components/ProximityDot";
 import { wikiHref } from "../wiki";
+import { hasOpenTodo } from "../todos";
+import { RouteToTodo } from "../components/RouteToTodo";
 import type { CharacterSave } from "../save";
 
 /** Filters and expansion state, held by App so tab switches don't reset it. */
@@ -136,6 +140,8 @@ export function SkillsView({
   setDraft,
   view,
   setView,
+  addToTodo,
+  todos,
 }: {
   character: CharacterSave | null;
   /** Skill to scroll to (set by the zone browser's skill links). */
@@ -148,6 +154,8 @@ export function SkillsView({
   setDraft: (b: Build) => void;
   view: SkillViewState;
   setView: (patch: Partial<SkillViewState>) => void;
+  addToTodo: (entries: Array<{ kind: TodoKind; ref: string }>) => { added: number; skipped: number };
+  todos: TodoItem[];
 }) {
   const index = useData();
   const { profFilter, attrFilter, elitesOnly, search, openSkill, sortBy, changedOnly, collapsed } = view;
@@ -215,7 +223,7 @@ export function SkillsView({
 
   if (!character) return <div className="view muted pad">Select a character on the Characters tab.</div>;
 
-  const colSpan = onAddToBuild ? 4 : 3;
+  const colSpan = 4;
 
   return (
     <div className="view">
@@ -288,7 +296,7 @@ export function SkillsView({
                 <col className="col-name" />
                 <col className="col-prof" />
                 <col className="col-source" />
-                {onAddToBuild && <col className="col-add" />}
+                <col className="col-add" />
               </colgroup>
               <tbody>
                 {byAttribute(group, sortBy, (p) => plans.get(p)?.distance ?? null).map(([attr, list]) => (
@@ -356,13 +364,25 @@ export function SkillsView({
                               </>
                             )}
                           </td>
-                          {onAddToBuild && (
-                            <td>
+                          <td className="row-actions">
+                            {onAddToBuild && (
                               <button className="small" onClick={() => onAddToBuild(e.skill.wikiPage)}>
                                 + build
                               </button>
-                            </td>
-                          )}
+                            )}
+                            <button
+                              className="small"
+                              disabled={hasOpenTodo(todos, "skill", e.skill.wikiPage)}
+                              title={
+                                hasOpenTodo(todos, "skill", e.skill.wikiPage)
+                                  ? "Already on the to-do list"
+                                  : "Add this skill to the to-do list"
+                              }
+                              onClick={() => addToTodo([{ kind: "skill", ref: e.skill.wikiPage }])}
+                            >
+                              {hasOpenTodo(todos, "skill", e.skill.wikiPage) ? "✓ to-do" : "+ to-do"}
+                            </button>
+                          </td>
                         </tr>
                         {openSkill === e.skill.wikiPage && (
                           <tr>
@@ -376,6 +396,15 @@ export function SkillsView({
                                   <SkillChanges
                                     record={changes.recentlyChanged.get(e.skill.wikiPage)!}
                                     skill={e.skill}
+                                  />
+                                )}
+                                {e.status !== "KNOWN" && (
+                                  <RouteToTodo
+                                    label={e.skill.name}
+                                    route={plans.get(e.skill.wikiPage)?.route ?? []}
+                                    character={character}
+                                    todos={todos}
+                                    addToTodo={addToTodo}
                                   />
                                 )}
                               </div>

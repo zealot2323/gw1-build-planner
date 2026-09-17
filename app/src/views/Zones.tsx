@@ -7,12 +7,13 @@ import {
   zoneSummary,
   type MonsterDisplay,
 } from "@gw1/engine";
-import type { Campaign, Skill } from "@gw1/engine";
+import type { Campaign, Skill, TodoItem, TodoKind } from "@gw1/engine";
 import { useData } from "../DataContext";
 import { SkillIcon } from "../components/SkillIcon";
 import { SkillDetails } from "../components/SkillDetails";
 import { ProfessionIcon } from "../components/ProfessionIcon";
 import { wikiHref } from "../wiki";
+import { hasOpenTodo } from "../todos";
 import type { CharacterSave } from "../save";
 
 /** Places you can walk into and fight things: instanced areas and missions. */
@@ -390,11 +391,15 @@ export function ZonesView({
   character,
   state,
   setState,
+  addToTodo,
+  todos,
 }: {
   onSkillClick: (skill: string) => void;
   character: CharacterSave | null;
   state: ZoneViewState;
   setState: (patch: Partial<ZoneViewState>) => void;
+  addToTodo: (entries: Array<{ kind: TodoKind; ref: string }>) => { added: number; skipped: number };
+  todos: TodoItem[];
 }) {
   const index = useData();
   const dataset = index.dataset;
@@ -613,6 +618,26 @@ export function ZonesView({
                   {isOutpost ? selectedKind : `${monsters.length} monsters`}
                 </span>
               </h3>
+              <div className="row">
+                {(() => {
+                  // Missions are their own to-do kind; everything that isn't
+                  // an explorable area is somewhere you unlock.
+                  const kind: TodoKind = index.missionByName.has(selected)
+                    ? "mission"
+                    : "outpost";
+                  if (selectedKind === "explorable") return null;
+                  const already = hasOpenTodo(todos, kind, selected);
+                  return (
+                    <button
+                      className="small"
+                      disabled={already}
+                      title={already ? "Already on the to-do list" : `Add ${selected} to the to-do list`}
+                      onClick={() => addToTodo([{ kind, ref: selected }])}
+                    >
+                      {already ? "✓ to-do" : "+ to-do"}
+                    </button>
+                  );
+                })()}
               {!isOutpost && (
                 <label className="inline-check mode-toggle">
                   <input
@@ -626,6 +651,7 @@ export function ZonesView({
                   hard mode
                 </label>
               )}
+              </div>
             </div>
             {isOutpost ? (
               <OutpostSkills

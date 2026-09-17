@@ -166,3 +166,37 @@ export function buildTodo(
   }
   return todo.sort((a, b) => (a.plan.distance ?? 99) - (b.plan.distance ?? 99));
 }
+
+/** A place on a route worth putting on a to-do list. */
+export interface RouteStop {
+  /** Matches the to-do kinds: missions are their own thing, the rest unlock. */
+  kind: "outpost" | "mission";
+  ref: LocationRef;
+}
+
+/**
+ * The stops on a route that are worth tracking: outposts to unlock and
+ * missions to run. Explorable areas are dropped — you walk through them,
+ * you don't unlock them — as are places already unlocked.
+ */
+export function routeStops(
+  route: LocationRef[],
+  index: DataIndex,
+  alreadyUnlocked: Iterable<LocationRef> = [],
+): RouteStop[] {
+  const have = new Set(alreadyUnlocked);
+  const out: RouteStop[] = [];
+  const seen = new Set<LocationRef>();
+  for (const ref of route) {
+    if (have.has(ref) || seen.has(ref)) continue;
+    seen.add(ref);
+    if (index.missionByName.has(ref)) {
+      out.push({ kind: "mission", ref });
+      continue;
+    }
+    const location = index.locationByPage.get(ref);
+    if (!location || location.kind === "explorable") continue;
+    out.push({ kind: "outpost", ref });
+  }
+  return out;
+}

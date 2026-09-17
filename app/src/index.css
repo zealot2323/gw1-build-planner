@@ -511,3 +511,17 @@ button.todo-remove { flex: 0 0 auto; width: auto; text-align: right; }
 .attribute-rank { width: 1.4rem; text-align: center; font-variant-numeric: tabular-nums; font-weight: 600; }
 .attribute-cost { width: 4rem; text-align: right; }
 .attribute-row button.small { width: auto; padding: 0 0.45rem; }
+.row-actions { display: flex; gap: 0.3rem; justify-content: flex-end; }
+.route-todo { margin-top: 0.4rem; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* A build opened up on the to-do list */
+.build-todo { margin: 0.2rem 0 0.4rem 1.6rem; border-left: 2px solid var(--border); padding-left: 0.7rem; }
+.todo-skill-row {
+  display: flex; align-items: center; gap: 0.45rem; width: 100%;
+  background: none; border: none; color: inherit; font: inherit; text-align: left;
+  padding: 0.2rem 0; cursor: pointer;
+}
+.todo-skill-row:hover { color: var(--accent); }
+.todo-skill-row.known { opacity: 0.65; }
+.todo-skill-name { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
