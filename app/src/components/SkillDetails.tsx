@@ -7,15 +7,21 @@ import { wikiHref } from "../wiki";
 
 const has = (n: number | null | undefined): n is number => n !== null && n !== undefined;
 
-/** One cost/timing stat; `tone` colours the value (energy blue, sac red). */
-function Stat({ label, value, unit, tone }: { label: string; value: number; unit?: string; tone?: string }) {
+type CostType = "energy" | "adrenaline" | "activation" | "recharge" | "sacrifice" | "upkeep" | "overcast";
+
+/**
+ * One cost as "value + tango icon", the way the game and the wiki show it —
+ * layout borrowed from gw1tools/gw1builds (MIT). The icon carries the
+ * meaning, so the number leads and the glyph follows.
+ */
+function CostStat({ type, value, unit }: { type: CostType; value: number; unit?: string }) {
   return (
-    <span className="stat">
-      <span className="muted">{label}</span>{" "}
-      <b className={tone}>
+    <span className="cost-stat" title={type}>
+      <span className="cost-value">
         {value}
         {unit}
-      </b>
+      </span>
+      <img src={`${import.meta.env.BASE_URL}icons/cost/${type}.png`} alt={type} width={16} height={16} />
     </span>
   );
 }
@@ -101,30 +107,36 @@ export function SkillDetails({ skill, plan }: { skill: Skill; plan?: SkillPlan }
   const acq = skill.acquisition;
   return (
     <div className="skill-details">
-      <div className="row">
-        <SkillIcon page={skill.wikiPage} size={40} />
+      <div className="skill-card-head">
+        <span className={skill.isElite ? "skill-card-icon elite-icon" : "skill-card-icon"}>
+          <SkillIcon page={skill.wikiPage} size={48} />
+        </span>
         <div className="grow">
-          <div>
+          <div className={skill.isElite ? "skill-card-name elite" : "skill-card-name"}>
             <a href={wikiHref(skill.wikiPage)} target="_blank" rel="noreferrer">
-              <strong>{skill.name}</strong>
+              {skill.name}
             </a>
-            {skill.isElite && <span className="elite"> ★ elite</span>}{" "}
-            <span className="muted small">
-              <ProfessionIcon profession={skill.profession} withLabel />
-              {skill.attribute ? ` · ${skill.attribute}` : ""}
-            </span>
+            {skill.isElite && <span className="elite-tag">[Elite]</span>}
           </div>
-          <div className="skill-stats small">
-            {has(skill.energyCost) && <Stat label="energy" value={skill.energyCost} tone="energy" />}
-            {has(skill.adrenalineCost) && <Stat label="adrenaline" value={skill.adrenalineCost} tone="adrenaline" />}
-            {has(skill.sacrificePercent) && (
-              <Stat label="sacrifice" value={skill.sacrificePercent} unit="%" tone="sacrifice" />
+          <div className="skill-card-type">
+            <ProfessionIcon profession={skill.profession} withLabel />
+            {skill.attribute ? <span> • {skill.attribute}</span> : null}
+          </div>
+          <div className="skill-costs">
+            {has(skill.energyCost) && skill.energyCost > 0 && (
+              <CostStat type="energy" value={skill.energyCost} />
             )}
-            {has(skill.upkeep) && <Stat label="upkeep" value={skill.upkeep} tone="energy" />}
+            {has(skill.adrenalineCost) && skill.adrenalineCost > 0 && (
+              <CostStat type="adrenaline" value={skill.adrenalineCost} />
+            )}
+            {has(skill.sacrificePercent) && skill.sacrificePercent > 0 && (
+              <CostStat type="sacrifice" value={skill.sacrificePercent} unit="%" />
+            )}
+            {has(skill.upkeep) && skill.upkeep !== 0 && <CostStat type="upkeep" value={skill.upkeep} />}
             {has(skill.activation) && skill.activation > 0 && (
-              <Stat label="activation" value={skill.activation} unit="s" />
+              <CostStat type="activation" value={skill.activation} unit="s" />
             )}
-            {skill.recharge > 0 && <Stat label="recharge" value={skill.recharge} unit="s" />}
+            {skill.recharge > 0 && <CostStat type="recharge" value={skill.recharge} unit="s" />}
           </div>
         </div>
       </div>

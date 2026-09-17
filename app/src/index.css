@@ -447,3 +447,57 @@ button.linkish.outpost { font-weight: 600; flex: 1; width: auto; }
 }
 .section-toggle:hover { color: var(--accent); }
 .section-toggle .caret { color: var(--muted); font-size: 0.85em; }
+
+/* ---------------------------------------------------------------------------
+   Skill card — layout after gw1tools/gw1builds (MIT): 48px icon, elite name
+   in gold with an [Elite] tag, an uppercase PROFESSION • ATTRIBUTE line, and
+   costs as "number + tango icon".
+--------------------------------------------------------------------------- */
+.skill-card-head { display: flex; gap: 0.75rem; align-items: flex-start; }
+.skill-card-icon { flex: 0 0 auto; border-radius: 4px; overflow: hidden; line-height: 0; box-shadow: 0 0 0 1px var(--border); }
+.skill-card-icon.elite-icon { box-shadow: 0 0 0 1px var(--accent), 0 0 8px -2px var(--accent); }
+.skill-card-icon .skill-icon { margin: 0; border-radius: 0; }
+.skill-card-name { font-size: 1.05rem; font-weight: 600; line-height: 1.2; }
+.skill-card-name a { color: inherit; text-decoration: none; }
+.skill-card-name a:hover { text-decoration: underline; }
+.skill-card-name.elite a { color: var(--accent); }
+.elite-tag { margin-left: 0.4rem; font-size: 0.75em; font-weight: 500; opacity: 0.8; color: var(--accent); }
+.skill-card-type {
+  display: flex; align-items: center; gap: 0.3rem; margin-top: 0.15rem;
+  color: var(--muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;
+}
+.skill-costs { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.4rem; }
+.cost-stat { display: inline-flex; align-items: center; gap: 0.2rem; }
+.cost-value { font-variant-numeric: tabular-nums; font-weight: 600; }
+.cost-stat img { display: block; }
+
+/* Builds tab */
+.code-input { min-width: 18rem; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+.build-slots { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.6rem 0; }
+.build-slot {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  background: var(--card-alt, #1b1b1b); border: 1px solid var(--border); border-radius: 5px;
+  padding: 0.25rem 0.5rem; color: inherit; font: inherit; cursor: pointer; max-width: 15rem;
+}
+.build-slot.missing { border-color: #6b5320; }
+.build-slot.known { border-color: #2f5d34; }
+.build-slot.open { outline: 1px solid var(--accent); }
+.build-slot.empty { opacity: 0.5; padding: 0.25rem 0.75rem; }
+.build-slot-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.build-errors { margin: 0.4rem 0 0; padding-left: 1.1rem; }
+
+/* To-do tab */
+.todo-input { min-width: 18rem; }
+.todo-list { list-style: none; margin: 0; padding: 0; }
+.todo-list li { display: flex; align-items: center; gap: 0.5rem; padding: 0.25rem 0; border-top: 1px solid var(--border); }
+.todo-list li:first-child { border-top: none; }
+.todo-list li.done .todo-ref { text-decoration: line-through; opacity: 0.6; }
+.todo-main { display: flex; align-items: center; gap: 0.45rem; flex: 1 1 auto; min-width: 0; cursor: pointer; }
+/* the label takes the leftover space: with flex 0 1 auto the context
+   squeezed it to nothing, and wrapping it just made three short lines */
+.todo-ref { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.todo-context { flex: 0 0 auto; margin-left: 0.5rem; white-space: nowrap; }
+/* button.linkish is width:100% (it's used for full-width list buttons) and
+   outranks a bare class selector, so this must match on the element too —
+   otherwise the × swallows the row and the label collapses to zero width */
+button.todo-remove { flex: 0 0 auto; width: auto; text-align: right; }

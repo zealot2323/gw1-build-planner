@@ -1,8 +1,10 @@
 /**
  * Build validation. Pure — no I/O.
  */
+import { skillAvailability, type SkillAvailabilityEntry } from "./availability.js";
 import type { DataIndex } from "./data.js";
-import type { Build, SkillRef } from "./types.js";
+import { planForSkill, type SkillPlan, type TravelGraph } from "./travel.js";
+import type { Build, Character, Skill, SkillRef } from "./types.js";
 
 export type BuildErrorCode =
   | "WRONG_SLOT_COUNT"
@@ -113,4 +115,75 @@ export function validateBuild(build: Build, index: DataIndex): BuildError[] {
   });
 
   return errors;
+}
+
+// ---------------------------------------------------------------------------
+// Readiness: can this character actually run this build yet?
+// ---------------------------------------------------------------------------
+
+/** One slot of a build, as it stands for a particular character. */
+export interface BuildSlot {
+  skill: Skill | null;
+  /** The slot names a skill the dataset doesn't have (or is empty). */
+  ref: SkillRef | null;
+  known: boolean;
+  /** Availability for this character, absent when the skill is unknown to us. */
+  entry?: SkillAvailabilityEntry;
+  plan?: SkillPlan;
+}
+
+export interface BuildReadiness {
+  slots: BuildSlot[];
+  filled: number;
+  known: number;
+  /** Slots the character still has to go and get, nearest first. */
+  missing: BuildSlot[];
+  ready: boolean;
+  errors: BuildError[];
+}
+
+/**
+ * What stands between this character and running this build: which slots
+ * they already know, and for the rest, how they'd get each one.
+ *
+ * The build's own secondary decides which skills are usable, so availability
+ * is computed against it rather than the character's whole unlocked set.
+ */
+export function buildReadiness(
+  build: Build,
+  character: Character,
+  index: DataIndex,
+  graph?: TravelGraph,
+): BuildReadiness {
+  const availability = new Map(
+    skillAvailability(character, build.secondary, index).map((e) => [e.skill.wikiPage, e]),
+  );
+  const known = new Set(character.knownSkills);
+
+  const slots: BuildSlot[] = build.skills.map((ref) => {
+    if (ref === null) return { skill: null, ref: null, known: false };
+    const skill = index.skillByPage.get(ref) ?? null;
+    const entry = availability.get(ref);
+    return {
+      skill,
+      ref,
+      known: known.has(ref),
+      entry,
+      plan: entry && graph ? planForSkill(entry, graph) : undefined,
+    };
+  });
+
+  const filled = slots.filter((s) => s.ref !== null).length;
+  const missing = slots
+    .filter((s) => s.ref !== null && !s.known)
+    .sort((a, b) => (a.plan?.distance ?? Infinity) - (b.plan?.distance ?? Infinity));
+
+  return {
+    slots,
+    filled,
+    known: slots.filter((s) => s.known).length,
+    missing,
+    ready: filled > 0 && missing.length === 0,
+    errors: validateBuild(build, index),
+  };
 }

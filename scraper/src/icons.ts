@@ -1,7 +1,9 @@
 /**
  * Icon fetch job:  npm run icons
  *
- * Downloads skill icons and the 10 profession icons.
+ * Downloads skill icons, the 10 profession icons, and the 7 tango cost
+ * icons (energy, adrenaline, activation, recharge, sacrifice, upkeep,
+ * overcast) used on the skill card.
  *
  * Resolves each skill's icon (wiki page "File:<Skill name>.jpg") to its
  * image URL via the API (imageinfo, batched 50 titles/request) and
@@ -122,6 +124,53 @@ for (const job of pending) {
     if (done % 25 === 0) console.log(`downloaded ${done} icons...`);
   } catch (err) {
     missing.push(`${job.file} (${(err as Error).message})`);
+  }
+}
+
+// Cost icons ("File:Tango-energy.png", ...) — the small energy / activation /
+// recharge glyphs the skill card shows next to each number.
+const COST_ICON_DIR = fileURLToPath(new URL("../../app/public/icons/cost/", import.meta.url));
+const COST_ICONS = ["energy", "adrenaline", "activation", "recharge", "sacrifice", "upkeep", "overcast"];
+await mkdir(COST_ICON_DIR, { recursive: true });
+const costToFetch: string[] = [];
+for (const name of COST_ICONS) {
+  try {
+    await access(join(COST_ICON_DIR, `${name}.png`));
+  } catch {
+    costToFetch.push(name);
+  }
+}
+if (costToFetch.length > 0) {
+  const url = new URL(API);
+  url.searchParams.set("action", "query");
+  url.searchParams.set("prop", "imageinfo");
+  url.searchParams.set("iiprop", "url");
+  url.searchParams.set("format", "json");
+  url.searchParams.set("formatversion", "2");
+  url.searchParams.set("titles", costToFetch.map((n) => `File:Tango-${n}.png`).join("|"));
+  const body = await throttled(async () => {
+    const res = await fetch(url, { headers: { "User-Agent": USER_AGENT } });
+    if (!res.ok) throw new Error(`imageinfo HTTP ${res.status}`);
+    return res.json();
+  });
+  const costUrls = new Map<string, string>();
+  for (const page of body.query?.pages ?? []) {
+    const u = page.imageinfo?.[0]?.url;
+    if (!page.missing && u) costUrls.set(page.title, u);
+  }
+  for (const name of costToFetch) {
+    const u = costUrls.get(`File:Tango-${name}.png`);
+    if (!u) {
+      missing.push(`${name} (cost icon)`);
+      continue;
+    }
+    const buf = await throttled(async () => {
+      const res = await fetch(u, { headers: { "User-Agent": USER_AGENT } });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return Buffer.from(await res.arrayBuffer());
+    });
+    await writeFile(join(COST_ICON_DIR, `${name}.png`), buf);
+    console.log(`cost icon: ${name}`);
   }
 }
 

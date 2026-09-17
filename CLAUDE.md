@@ -296,6 +296,20 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
   that transition is one-way.
 - Proximity buckets: 0-2 hops green, 3-5 yellow, 6+ red.
 
+- **Build template codes** (`/engine/src/template.ts`) are encoded and decoded
+  by `@buildwars/gw-templates` (MIT) — the same package gw1tools/gw1builds
+  uses; we map profession ids and in-game skill ids onto our own types.
+  Codes are WRITTEN with all attributes at 0 (attributes are out of scope),
+  but READ with their attribute spread preserved, so importing and
+  re-exporting doesn't silently claim a build has no attribute points. A code
+  can name skills we don't have (PvP-only splits, skills newer than the last
+  scrape): those come back in `unknownSkillIds` and the slot is left empty
+  rather than dropped silently. The library packs skill ids in 11 bits, so
+  an id above 2047 round-trips wrong — real game codes never have one.
+- **Attribution**: the skill card layout and the template-code approach are
+  borrowed from gw1tools/gw1builds (MIT); see README Credits. Keep the
+  credit line in the app footer if that code is touched.
+
 ## Conventions
 
 - **Views read the CHARACTER-SCOPED index** (`useData()`), never the raw

@@ -7,8 +7,10 @@ import { CharactersView } from "./views/Characters";
 import { SkillsView, initialSkillViewState, type SkillViewState } from "./views/Skills";
 import { ZonesView, initialZoneState, type ZoneViewState } from "./views/Zones";
 import { QuestsView, initialQuestViewState, type QuestViewState } from "./views/Quests";
+import { BuildsView, initialBuildsViewState, type BuildsViewState } from "./views/Builds";
+import { TodoView, initialTodoViewState, type TodoViewState } from "./views/Todo";
 
-type Tab = "characters" | "skills" | "quests" | "zones";
+type Tab = "characters" | "skills" | "builds" | "quests" | "zones" | "to-do";
 
 export function App() {
   const { save, addCharacter, updateCharacter, removeCharacter, importFile, exportFile, account } = useSave();
@@ -32,6 +34,10 @@ export function App() {
     setZoneState((s) => ({ ...s, ...patch }));
   const [skillView, setSkillView] = useState<SkillViewState>(initialSkillViewState);
   const [questView, setQuestView] = useState<QuestViewState>(initialQuestViewState);
+  const [buildsView, setBuildsView] = useState<BuildsViewState>(initialBuildsViewState);
+  const patchBuildsView = (patch: Partial<BuildsViewState>) => setBuildsView((s) => ({ ...s, ...patch }));
+  const [todoView, setTodoView] = useState<TodoViewState>(initialTodoViewState);
+  const patchTodoView = (patch: Partial<TodoViewState>) => setTodoView((s) => ({ ...s, ...patch }));
   const patchQuestView = (patch: Partial<QuestViewState>) =>
     setQuestView((s) => ({ ...s, ...patch }));
   const patchSkillView = (patch: Partial<SkillViewState>) =>
@@ -79,7 +85,7 @@ export function App() {
       <header>
         <h1>GW1 Build Planner</h1>
         <nav>
-          {(["characters", "skills", "quests", "zones"] as Tab[]).map((t) => (
+          {(["characters", "skills", "builds", "quests", "zones", "to-do"] as Tab[]).map((t) => (
             <button key={t} className={tab === t ? "tab active" : "tab"} onClick={() => setTab(t)}>
               {t}
             </button>
@@ -125,6 +131,26 @@ export function App() {
           setView={patchSkillView}
         />
       )}
+      {tab === "builds" && (
+        <BuildsView
+          character={character}
+          updateBuilds={updateBuilds}
+          onLoadBuild={(name) => {
+            setActiveBuild(name);
+            setTab("skills");
+          }}
+          view={buildsView}
+          setView={patchBuildsView}
+        />
+      )}
+      {tab === "to-do" && (
+        <TodoView
+          character={character}
+          updateCharacter={updateCharacter}
+          view={todoView}
+          setView={patchTodoView}
+        />
+      )}
       {tab === "quests" && (
         <QuestsView character={character} view={questView} setView={patchQuestView} />
       )}
@@ -141,7 +167,15 @@ export function App() {
         <a href="https://wiki.guildwars.com/" target="_blank" rel="noreferrer">
           Guild Wars Wiki
         </a>{" "}
-        (GNU FDL). Guild Wars artwork and skill icons © ArenaNet, LLC.
+        (GNU FDL). Guild Wars artwork and skill icons © ArenaNet, LLC. Template codes via{" "}
+        <a href="https://github.com/build-wars/gw-templates" target="_blank" rel="noreferrer">
+          @buildwars/gw-templates
+        </a>
+        ; skill card and code handling after{" "}
+        <a href="https://github.com/gw1tools/gw1builds" target="_blank" rel="noreferrer">
+          gw1builds
+        </a>{" "}
+        (both MIT).
       </footer>
     </DataProvider>
   );

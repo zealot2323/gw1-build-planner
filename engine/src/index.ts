@@ -9,3 +9,4 @@ export * from "./scope.js";
 export * from "./changes.js";
 export * from "./quests.js";
 export * from "./saves.js";
+export * from "./template.js";

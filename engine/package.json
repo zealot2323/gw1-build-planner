@@ -9,6 +9,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@buildwars/gw-templates": "^1.1.1",
     "ajv": "^8.17.1"
   },
   "devDependencies": {

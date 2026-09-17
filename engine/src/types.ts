@@ -323,6 +323,26 @@ export interface Mission {
 // ---------------------------------------------------------------------------
 
 /** Manual-entry save format for a character's progression state. */
+/**
+ * What a to-do entry points at. `note` is free text the player typed; the
+ * rest name something in the dataset (or, for `build`, one of the
+ * character's own builds).
+ */
+export type TodoKind = "skill" | "build" | "outpost" | "mission" | "note";
+
+export interface TodoItem {
+  /** Stable id so entries can be edited/removed without index juggling. */
+  id: string;
+  kind: TodoKind;
+  /** Wiki page / build name; for `note`, the text itself. */
+  ref: string;
+  /** Optional free-text detail on any entry. */
+  note?: string;
+  done: boolean;
+  /** ISO date added. */
+  added: string;
+}
+
 export interface Character {
   name: string;
   /**
@@ -341,6 +361,8 @@ export interface Character {
   knownSkills: SkillRef[];
   unlockedLocations: LocationRef[];
   completedMissions: MissionRef[];
+  /** Things the player wants to get or do with this character. */
+  todos?: TodoItem[];
 }
 
 /**
@@ -639,6 +661,22 @@ export const characterSchema = {
     knownSkills: refArray,
     unlockedLocations: refArray,
     completedMissions: refArray,
+    todos: {
+      type: "array",
+      items: {
+        type: "object",
+        additionalProperties: false,
+        required: ["id", "kind", "ref", "done", "added"],
+        properties: {
+          id: { type: "string" },
+          kind: { type: "string", enum: ["skill", "build", "outpost", "mission", "note"] },
+          ref: { type: "string" },
+          note: { type: "string" },
+          done: { type: "boolean" },
+          added: { type: "string" },
+        },
+      },
+    },
   },
 } as const;
 
