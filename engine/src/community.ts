@@ -48,6 +48,23 @@ export interface CommunityBuild {
   campaigns: Campaign[];
   /** Freeform tags from the import file (role, game mode, …). */
   tags?: string[];
+  /**
+   * Set when this bar is one of several that belong together — a PvX team
+   * build, or a video/post that shared a whole hero setup. Only importers
+   * that actually know this set it: rows of a spreadsheet share a URL
+   * without being a team.
+   */
+  team?: {
+    id: string;
+    name: string;
+    size: number;
+    /**
+     * `team` = bars meant to be run together (a PvX team build, a hero
+     * setup). `set` = several builds that merely shared one source, like a
+     * video comparing ten solo farmers.
+     */
+    kind: "team" | "set";
+  };
   source: BuildSource;
   /** ISO date this entry first appeared in our data. */
   firstSeen: string;
@@ -118,7 +135,7 @@ export function toCommunityBuild(
   decoded: DecodedTemplate,
   source: BuildSource,
   name: string,
-  extras: { tags?: string[]; firstSeen?: string } = {},
+  extras: { tags?: string[]; firstSeen?: string; team?: CommunityBuild["team"] } = {},
 ): CommunityBuild {
   return {
     id: code,
@@ -130,6 +147,7 @@ export function toCommunityBuild(
     attributes: decoded.attributes,
     campaigns: campaignsUsed(decoded),
     ...(extras.tags && extras.tags.length > 0 ? { tags: extras.tags } : {}),
+    ...(extras.team ? { team: extras.team } : {}),
     source,
     firstSeen: extras.firstSeen ?? new Date().toISOString().slice(0, 10),
   };

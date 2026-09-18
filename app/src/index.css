@@ -627,3 +627,16 @@ button.todo-remove { flex: 0 0 auto; width: auto; text-align: right; }
 }
 button.source-chip { width: auto; padding: 0 0.3rem; cursor: pointer; }
 button.source-chip:hover { color: var(--accent); border-color: var(--accent); }
+
+/* Team / set groups on the Community tab */
+.team-card { padding-bottom: 0.6rem; }
+.team-head {
+  all: unset; cursor: pointer; display: flex; flex-wrap: wrap; align-items: center;
+  gap: 0.45rem; width: 100%; font: inherit; color: inherit;
+}
+.team-head:hover { color: var(--accent); }
+.team-name { font-weight: 600; }
+.quest-tag.team-tag { color: var(--accent); border-color: #6b5320; }
+.team-professions { display: inline-flex; gap: 0.1rem; margin-left: auto; }
+.team-members { margin: 0.5rem 0 0 0.8rem; border-left: 2px solid var(--border); padding-left: 0.7rem; }
+.team-members .card { border: none; padding: 0.4rem 0; background: none; }

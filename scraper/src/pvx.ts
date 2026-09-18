@@ -42,6 +42,7 @@ interface PvxBuild {
   url: string;
   /** PvX rating: "great", "good", "meta"... */
   status?: string;
+  /** "single" or "team". */
   type?: string;
   tags?: string[];
   bars?: PvxBar[];
@@ -101,6 +102,16 @@ for (const entry of source) {
     }
 
     const name = bars.length > 1 && bar.name && bar.name !== entry.name ? `${entry.name} — ${bar.name}` : entry.name;
+    // PvX says so itself: every multi-bar entry is type "team"
+    const team =
+      bars.length > 1
+        ? {
+            id: entry.id,
+            name: entry.name,
+            size: Math.min(bars.length, 9),
+            kind: (entry.type === "team" ? "team" : "set") as "team" | "set",
+          }
+        : undefined;
     const tags = [...(entry.tags ?? []), ...(entry.status ? [entry.status] : [])];
     found.push(
       toCommunityBuild(
@@ -115,7 +126,7 @@ for (const entry of source) {
           context: entry.status ? `Rated "${entry.status}" on PvX${entry.type ? ` · ${entry.type} build` : ""}.` : undefined,
         },
         name,
-        { tags, firstSeen: "2026-01-01" },
+        { tags, firstSeen: "2026-01-01", team },
       ),
     );
     if (i > 8) break; // a team build with dozens of bars isn't worth listing whole

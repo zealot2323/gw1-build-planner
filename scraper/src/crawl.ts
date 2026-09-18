@@ -443,7 +443,20 @@ for (const { code, source, name } of [...reddit.found, ...youtube.found]) {
     label = `${label} (${n})`;
   }
   usedLabels.add(label);
-  builds.push(toCommunityBuild(code, decoded, source, label));
+  const size = perSource.get(source.url ?? "") ?? 1;
+  // A post sharing a hero setup is a team; a video comparing ten solo
+  // farmers is just a set from one source. The title is the only signal.
+  const title = source.title || name;
+  const team =
+    size > 1 && source.url
+      ? {
+          id: source.url,
+          name: shorten(title, 90),
+          size,
+          kind: (/\b(team|hero(?:way|s)?|party|squad)\b/i.test(title) ? "team" : "set") as "team" | "set",
+        }
+      : undefined;
+  builds.push(toCommunityBuild(code, decoded, source, label, { team }));
 }
 
 const { builds: merged, added, updated } = mergeCommunityBuilds(await loadCommunityBuilds(), builds);

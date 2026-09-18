@@ -25,6 +25,11 @@ export interface CommunityViewState {
   profession: string;
   /** Channel, subreddit or list the build came from; "all" for everything. */
   source: string;
+  /** all | team (run together) | set (shared a source) | single */
+  type: "all" | "team" | "set" | "single";
+  /** Collapsed section headings, and expanded team groups. */
+  collapsed: string[];
+  openTeams: string[];
   sort: "new" | "popular" | "name";
   /** "<build id>|<skill page>" of the open skill. */
   openSkill: string | null;
@@ -36,6 +41,9 @@ export const initialCommunityViewState: CommunityViewState = {
   search: "",
   profession: "all",
   source: "all",
+  type: "all",
+  collapsed: [],
+  openTeams: [],
   sort: "new",
   openSkill: null,
   limit: PAGE,
@@ -202,6 +210,43 @@ function BuildCard({
   );
 }
 
+/** Several bars that belong together: a PvX team, or one source's set. */
+function TeamCard({
+  team,
+  builds,
+  open,
+  onToggle,
+  children,
+}: {
+  team: NonNullable<CommunityBuild["team"]>;
+  builds: CommunityBuild[];
+  open: boolean;
+  onToggle: () => void;
+  children: React.ReactNode;
+}) {
+  const professions = builds.map((b) => b.primary).filter(Boolean) as string[];
+  return (
+    <div className="card team-card">
+      <button className="team-head" onClick={onToggle} aria-expanded={open}>
+        <span className="caret">{open ? "▾" : "▸"}</span>
+        <span className="team-name">{team.name}</span>
+        <span className={team.kind === "team" ? "quest-tag team-tag" : "quest-tag"}>
+          {team.kind === "team" ? "Team build" : "From one source"}
+        </span>
+        <span className="muted small">
+          {builds.length} bar{builds.length === 1 ? "" : "s"}
+        </span>
+        <span className="team-professions">
+          {professions.map((p, i) => (
+            <ProfessionIcon key={`${p}-${i}`} profession={p as Profession} />
+          ))}
+        </span>
+      </button>
+      {open && <div className="team-members">{children}</div>}
+    </div>
+  );
+}
+
 export function CommunityView({
   character,
   updateBuilds,
@@ -242,11 +287,13 @@ export function CommunityView({
   const sourceOf = (b: CommunityBuild) => b.source.author ?? SOURCE_LABEL[b.source.kind] ?? b.source.kind;
 
   const term = view.search.trim().toLowerCase();
-  const visible = (communityBuilds ?? [])
+  const matching = (communityBuilds ?? [])
     .filter(
       (b) =>
         (view.profession === "all" || b.primary === view.profession) &&
         (view.source === "all" || sourceOf(b) === view.source) &&
+        (view.type === "all" ||
+          (view.type === "single" ? b.team === undefined : b.team?.kind === view.type)) &&
         (term === "" ||
           b.name.toLowerCase().includes(term) ||
           (b.tags ?? []).some((t) => t.toLowerCase().includes(term)) ||
@@ -261,9 +308,32 @@ export function CommunityView({
       return b.firstSeen.localeCompare(a.firstSeen) || a.name.localeCompare(b.name);
     });
 
-  const shown = visible.slice(0, view.limit);
-  const fresh = shown.filter((b) => isNew(b));
-  const rest = shown.filter((b) => !isNew(b));
+  /**
+   * One entry per standalone build, and one per group — so a 10-bar team
+   * takes a single row rather than ten, and the page stays scannable.
+   */
+  type Entry = { key: string; team?: NonNullable<CommunityBuild["team"]>; builds: CommunityBuild[] };
+  const entries: Entry[] = [];
+  const groups = new Map<string, Entry>();
+  for (const build of matching) {
+    if (!build.team) {
+      entries.push({ key: build.id, builds: [build] });
+      continue;
+    }
+    const existing = groups.get(build.team.id);
+    if (existing) {
+      existing.builds.push(build);
+      continue;
+    }
+    const entry: Entry = { key: build.team.id, team: build.team, builds: [build] };
+    groups.set(build.team.id, entry);
+    entries.push(entry);
+  }
+
+  const isEntryNew = (e: Entry) => e.builds.some((b) => isNew(b));
+  const shown = entries.slice(0, view.limit);
+  const fresh = shown.filter(isEntryNew);
+  const rest = shown.filter((e) => !isEntryNew(e));
 
   const save = (build: CommunityBuild) => {
     if (!character) return;
@@ -286,27 +356,58 @@ export function CommunityView({
   const savedAlready = (build: CommunityBuild) =>
     character?.builds.some((b) => b.skills.join("|") === build.skills.join("|")) ?? false;
 
-  const section = (title: string, list: CommunityBuild[], note?: string) =>
-    list.length > 0 && (
+  const card = (b: CommunityBuild) => (
+    <BuildCard
+      key={b.id}
+      build={b}
+      character={character}
+      openSkill={view.openSkill}
+      setOpenSkill={(v) => setView({ openSkill: v })}
+      onSave={save}
+      saved={savedAlready(b)}
+      onFilterSource={(name) => setView({ source: name, limit: PAGE })}
+    />
+  );
+
+  const toggleIn = (list: string[], value: string) =>
+    list.includes(value) ? list.filter((v) => v !== value) : [...list, value];
+
+  const section = (title: string, list: Entry[], note?: string) => {
+    if (list.length === 0) return null;
+    const isCollapsed = view.collapsed.includes(title);
+    return (
       <>
         <h3 className="community-heading">
-          {title} <span className="muted">({list.length})</span>
-          {note && <span className="muted small"> — {note}</span>}
+          <button
+            className="section-toggle"
+            onClick={() => setView({ collapsed: toggleIn(view.collapsed, title) })}
+            aria-expanded={!isCollapsed}
+            title={isCollapsed ? "Show these builds" : "Hide these builds"}
+          >
+            <span className="caret">{isCollapsed ? "▸" : "▾"}</span>
+            {title} <span className="muted">({list.length})</span>
+            {note && <span className="muted small"> — {note}</span>}
+          </button>
         </h3>
-        {list.map((b) => (
-          <BuildCard
-            key={b.id}
-            build={b}
-            character={character}
-            openSkill={view.openSkill}
-            setOpenSkill={(v) => setView({ openSkill: v })}
-            onSave={save}
-            saved={savedAlready(b)}
-            onFilterSource={(name) => setView({ source: name, limit: PAGE })}
-          />
-        ))}
+        {!isCollapsed &&
+          list.map((entry) =>
+            entry.team ? (
+              <TeamCard
+                key={entry.key}
+                team={entry.team}
+                builds={entry.builds}
+                open={view.openTeams.includes(entry.key)}
+                onToggle={() => setView({ openTeams: toggleIn(view.openTeams, entry.key) })}
+              >
+                {entry.builds.map(card)}
+              </TeamCard>
+            ) : (
+              card(entry.builds[0])
+            ),
+          )}
       </>
     );
+  };
 
   return (
     <div className="view">
@@ -349,6 +450,18 @@ export function CommunityView({
             </select>
           </label>
           <label>
+            Type{" "}
+            <select
+              value={view.type}
+              onChange={(e) => setView({ type: e.target.value as CommunityViewState["type"], limit: PAGE })}
+            >
+              <option value="all">All builds</option>
+              <option value="team">Team builds</option>
+              <option value="set">Sets from one source</option>
+              <option value="single">Standalone builds</option>
+            </select>
+          </label>
+          <label>
             Sort by{" "}
             <select
               value={view.sort}
@@ -370,16 +483,16 @@ export function CommunityView({
           No community builds yet. They arrive two ways: an imported list of template codes
           (<code>npm run community -- your-file.csv</code>), and the weekly crawl of Reddit and YouTube.
         </div>
-      ) : visible.length === 0 ? (
+      ) : entries.length === 0 ? (
         <div className="card muted">No builds match these filters.</div>
       ) : (
         <>
           {section("New and hot", fresh, `first seen in the last ${NEW_DAYS} days`)}
           {section(fresh.length > 0 ? "Everything else" : "All builds", rest)}
-          {visible.length > shown.length && (
+          {entries.length > shown.length && (
             <div className="card row space-between wrap">
               <span className="muted small">
-                Showing {shown.length} of {visible.length}
+                Showing {shown.length} of {entries.length}
               </span>
               <button onClick={() => setView({ limit: view.limit + PAGE })}>Show {PAGE} more</button>
             </div>

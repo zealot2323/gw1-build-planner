@@ -373,6 +373,13 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
     handle can resolve to an empty look-alike channel — @SabreWolf has 0
     videos; the real one is @sabrewolf18 — so a zero-video channel is
     reported as a probable wrong handle rather than "nothing new".
+- **Teams are marked at import, never inferred in the UI.** A group of bars
+  gets `team: {id, name, size, kind}` only where the importer actually
+  knows: PvX labels 157 entries `type: "team"`, and a post or video that
+  shared several codes is one group. `kind` separates a real team (bars run
+  together) from a `set` (a video comparing ten solo farmers). Rows of a
+  spreadsheet share a URL without being a team, which is why URL alone
+  can't be the signal.
 - **Reddit needs no credentials: use the RSS feeds.** The JSON API returns
   403 to anonymous reads, and app registration is awkward now (Devvit is a
   different product and gives no client id/secret for external use). The
