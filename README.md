@@ -54,7 +54,7 @@ weekly in GitHub Actions and needs repository secrets:
 
 | Secret | For |
 | --- | --- |
-| `REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET` | a Reddit "script" app — Reddit returns 403 to anonymous reads |
+| `REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET` | *optional* — a Reddit "script" app. Without it the crawl reads Reddit's public RSS feeds, which need no credentials but carry no post score |
 | `YOUTUBE_API_KEY` | YouTube Data API v3 |
 
 Missing credentials don't fail the run; that half is skipped and reported.

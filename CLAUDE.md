@@ -358,6 +358,13 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
   actions), inputs are 16px so iOS doesn't zoom on focus, and `body` carries
   safe-area padding. Long lists paginate — the Community tab mounted 1,192
   cards and 11,666 interactive elements before it did.
+- **Reddit needs no credentials: use the RSS feeds.** The JSON API returns
+  403 to anonymous reads, and app registration is awkward now (Devvit is a
+  different product and gives no client id/secret for external use). The
+  public RSS feeds carry title, link, author, date and the full post body —
+  everything except the score. They rate-limit hard (429), so requests are
+  spaced ~4s and retried. Setting REDDIT_CLIENT_ID/SECRET switches to the
+  API and adds scores; it is an upgrade, not a requirement.
 - **`data/community-builds.json` is loaded on demand**, not bundled: it is
   over a megabyte, and most visits never open that tab.
 

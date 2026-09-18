@@ -6,10 +6,13 @@
  * a link back to the source and the text around it.
  *
  * Credentials:
- *   - Reddit refuses anonymous reads (HTTP 403) from most hosts now, so set
- *     REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET from a Reddit "script" app;
- *     the crawl then uses an app-only OAuth token. Without them it still
- *     tries the public endpoints, which may work from a home IP.
+ *   - Reddit needs NONE. Its JSON API refuses anonymous reads (403), but the
+ *     RSS feeds are public and carry everything we want: title, link,
+ *     author, date and the full post body. RSS is rate-limited hard (429),
+ *     so requests are spaced and retried.
+ *     Setting REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET from a Reddit
+ *     "script" app switches to the API instead, which adds each post's
+ *     score — an upgrade, not a requirement.
  *   - YouTube needs YOUTUBE_API_KEY (YouTube Data API v3). Without it that
  *     half is skipped and says so, rather than failing the run.
  * Either half missing is reported, never silently treated as "found nothing".
@@ -98,34 +101,103 @@ interface Found {
 // Reddit
 // ---------------------------------------------------------------------------
 
-async function crawlReddit(index: DataIndex, since: number): Promise<{ found: Found[]; issues: string[] }> {
+/** Decode the handful of XML/HTML entities Reddit's feeds use. */
+function decodeEntities(text: string): string {
+  return text
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#0?39;|&apos;/g, "'")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&");
+}
+
+const stripTags = (html: string): string => decodeEntities(html.replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim();
+
+/** Fetch with a couple of retries: Reddit's feeds 429 readily. */
+async function fetchWithRetry(url: string, headers: Record<string, string> = {}): Promise<Response | null> {
+  for (let attempt = 0; attempt < 3; attempt++) {
+    const res = await politeFetch(url, headers);
+    if (res.status !== 429) return res;
+    await new Promise((r) => setTimeout(r, 5000 * (attempt + 1)));
+  }
+  return null;
+}
+
+/** Posts from a subreddit's public RSS feed. No credentials needed. */
+async function redditViaRss(index: DataIndex, since: number): Promise<{ found: Found[]; issues: string[] }> {
   const found: Found[] = [];
   const issues: string[] = [];
+  for (const sub of SUBREDDITS) {
+    for (const feed of ["new", "hot"]) {
+      const url = `https://www.reddit.com/r/${sub}/${feed}.rss`;
+      // the feeds 429 readily; give them more room than the global 1/s
+      await new Promise((r) => setTimeout(r, 4000));
+      let xml: string;
+      try {
+        const res = await fetchWithRetry(url);
+        if (!res) {
+          issues.push(`reddit r/${sub}/${feed}.rss: rate limited (429) after retries`);
+          continue;
+        }
+        if (!res.ok) {
+          issues.push(`reddit r/${sub}/${feed}.rss: HTTP ${res.status}`);
+          continue;
+        }
+        xml = await res.text();
+      } catch (err) {
+        issues.push(`reddit r/${sub}/${feed}.rss: ${(err as Error).message}`);
+        continue;
+      }
 
-  let token: string | null = null;
-  try {
-    token = await redditToken();
-  } catch (err) {
-    issues.push((err as Error).message);
+      for (const [, entry] of xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)) {
+        const title = stripTags(entry.match(/<title[^>]*>([\s\S]*?)<\/title>/)?.[1] ?? "");
+        const link = entry.match(/<link href="([^"]+)"/)?.[1] ?? "";
+        const author = entry.match(/<author>[\s\S]*?<name>([\s\S]*?)<\/name>/)?.[1]?.trim();
+        const published = entry.match(/<published>([^<]+)<\/published>/)?.[1];
+        if (published && new Date(published).getTime() < since) continue;
+        const body = decodeEntities(entry.match(/<content[^>]*>([\s\S]*?)<\/content>/)?.[1] ?? "");
+        const text = `${title}\n\n${stripTags(body)}`;
+
+        for (const { code } of extractTemplateCodes(text, index)) {
+          found.push({
+            code,
+            name: title || "Reddit build",
+            source: {
+              kind: "reddit",
+              url: link,
+              title: title.slice(0, 200),
+              author: author ?? undefined,
+              postedAt: published ? published.slice(0, 10) : undefined,
+              context: contextAround(text, code),
+              // RSS carries no score; the API path below has it
+            },
+          });
+        }
+      }
+    }
   }
-  if (!token) {
-    issues.push(
-      "reddit: no REDDIT_CLIENT_ID/REDDIT_CLIENT_SECRET, falling back to public endpoints (usually 403)",
-    );
-  }
-  const host = token ? "https://oauth.reddit.com" : "https://www.reddit.com";
-  const auth: Record<string, string> = token ? { Authorization: `bearer ${token}` } : {};
+  return { found, issues };
+}
+
+/** Posts from the JSON API, which needs an app token but adds scores. */
+async function redditViaApi(
+  index: DataIndex,
+  since: number,
+  token: string,
+): Promise<{ found: Found[]; issues: string[] }> {
+  const found: Found[] = [];
+  const issues: string[] = [];
+  const auth: Record<string, string> = { Authorization: `bearer ${token}` };
 
   for (const sub of SUBREDDITS) {
     for (const listing of ["new", "hot"]) {
-      const url = `${host}/r/${sub}/${listing}${token ? "" : ".json"}?limit=100&raw_json=1`;
+      const url = `https://oauth.reddit.com/r/${sub}/${listing}?limit=100&raw_json=1`;
       let body: any;
       try {
-        const res = await politeFetch(url, auth);
-        if (!res.ok) {
-          // 403/429 here means Reddit is refusing the read, which is worth
-          // reporting rather than silently finding nothing.
-          issues.push(`reddit r/${sub}/${listing}: HTTP ${res.status}`);
+        const res = await fetchWithRetry(url, auth);
+        if (!res || !res.ok) {
+          issues.push(`reddit r/${sub}/${listing}: HTTP ${res?.status ?? "429 after retries"}`);
           continue;
         }
         body = await res.json();
@@ -159,6 +231,21 @@ async function crawlReddit(index: DataIndex, since: number): Promise<{ found: Fo
     }
   }
   return { found, issues };
+}
+
+/** RSS by default; the API when credentials happen to be configured. */
+async function crawlReddit(index: DataIndex, since: number): Promise<{ found: Found[]; issues: string[] }> {
+  let token: string | null = null;
+  try {
+    token = await redditToken();
+  } catch (err) {
+    return {
+      found: [],
+      issues: [`${(err as Error).message} — falling back to RSS`, ...(await redditViaRss(index, since)).issues],
+    };
+  }
+  if (token) return redditViaApi(index, since, token);
+  return redditViaRss(index, since);
 }
 
 // ---------------------------------------------------------------------------
@@ -257,6 +344,7 @@ for (const { source } of [...reddit.found, ...youtube.found]) {
 }
 
 const builds: CommunityBuild[] = [];
+const usedLabels = new Set<string>();
 for (const { code, source, name } of [...reddit.found, ...youtube.found]) {
   const decoded = extractTemplateCodes(code, index)[0]?.decoded;
   if (!decoded) continue;
@@ -264,10 +352,17 @@ for (const { code, source, name } of [...reddit.found, ...youtube.found]) {
   // — "Healer's Boon" vs "Unyielding Aura" — not the professions.
   const elite = decoded.skills.find((s) => s?.isElite)?.name;
   const professions = `${decoded.primary ?? "?"}${decoded.secondary ? `/${decoded.secondary}` : ""}`;
-  const label =
+  let label =
     (perSource.get(source.url ?? "") ?? 0) > 1
       ? `${shorten(name, 70)} — ${elite ?? professions}`
       : shorten(name, 110);
+  // a hero team can run the same elite twice ("Heal as One" on two rangers)
+  if (usedLabels.has(label)) {
+    let n = 2;
+    while (usedLabels.has(`${label} (${n})`)) n++;
+    label = `${label} (${n})`;
+  }
+  usedLabels.add(label);
   builds.push(toCommunityBuild(code, decoded, source, label));
 }
 
