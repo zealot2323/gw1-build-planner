@@ -1,6 +1,999 @@
 {
-  "generatedAt": "2026-09-18T09:54:42.314Z",
+  "generatedAt": "2026-09-18T13:28:18.510Z",
   "builds": [
+    {
+      "id": "OwYT043AZKjguMuaTb6DN6jAZAA",
+      "code": "OwYT043AZKjguMuaTb6DN6jAZAA",
+      "name": "Guild Wars Reforged - Build - Healer's Boon vs Unyielding Aura Monk — Healer's Boon",
+      "primary": "Monk",
+      "secondary": "Elementalist",
+      "skills": [
+        "Orison of Healing",
+        "Ebon Escape",
+        "Healer's Boon",
+        "Dismiss Condition",
+        "Cure Hex",
+        "Resurrection Chant",
+        "Heal Party",
+        "Glyph of Lesser Energy"
+      ],
+      "attributes": {
+        "Healing Prayers": 12,
+        "Protection Prayers": 3,
+        "Divine Favor": 12
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=H3qgr28YTk8",
+        "title": "Guild Wars Reforged - Build - Healer's Boon vs Unyielding Aura Monk",
+        "author": "Sabre Wolf",
+        "postedAt": "2026-09-10",
+        "context": "Monk/Ele Healer's Boon Build Code Monk/Ele Unyielding Aura Build Code",
+        "score": 2564
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OwYT043AZKjgukhoBcTb67jAZAA",
+      "code": "OwYT043AZKjgukhoBcTb67jAZAA",
+      "name": "Guild Wars Reforged - Build - Healer's Boon vs Unyielding Aura Monk — Unyielding Aura",
+      "primary": "Monk",
+      "secondary": "Elementalist",
+      "skills": [
+        "Orison of Healing",
+        "Ebon Escape",
+        "Unyielding Aura",
+        "Patient Spirit",
+        "Dismiss Condition",
+        "Cure Hex",
+        "Heal Party",
+        "Glyph of Lesser Energy"
+      ],
+      "attributes": {
+        "Healing Prayers": 12,
+        "Protection Prayers": 3,
+        "Divine Favor": 12
+      },
+      "campaigns": [
+        "Prophecies",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=H3qgr28YTk8",
+        "title": "Guild Wars Reforged - Build - Healer's Boon vs Unyielding Aura Monk",
+        "author": "Sabre Wolf",
+        "postedAt": "2026-09-10",
+        "context": "Monk/Ele Healer's Boon Build Code Monk/Ele Unyielding Aura Build Code",
+        "score": 2564
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OwYT043AZKjwfwB8jAZIuKCECEA",
+      "code": "OwYT043AZKjwfwB8jAZIuKCECEA",
+      "name": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spitef… — Healer's Boon",
+      "primary": "Monk",
+      "secondary": "Elementalist",
+      "skills": [
+        "Orison of Healing",
+        "Vigorous Spirit",
+        "Healing Ribbon",
+        "Heal Party",
+        "Glyph of Lesser Energy",
+        "Healer's Boon",
+        "Spotless Soul",
+        "Spotless Mind"
+      ],
+      "attributes": {
+        "Healing Prayers": 12,
+        "Protection Prayers": 3,
+        "Divine Favor": 12
+      },
+      "campaigns": [
+        "Prophecies",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=W83DKYXt5AI",
+        "title": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spiteful Spirit & Tahnakkai Temple)",
+        "author": "TheCaffeineSage",
+        "postedAt": "2026-09-16",
+        "context": "Dunkoro (HB Healer)",
+        "score": 1848
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OANDQYxmSlMUBIV4BbhVVKCoRA",
+      "code": "OANDQYxmSlMUBIV4BbhVVKCoRA",
+      "name": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spitef… — Order of Undeath",
+      "primary": "Necromancer",
+      "secondary": "Monk",
+      "skills": [
+        "Animate Vampiric Horror",
+        "Animate Bone Fiend",
+        "Order of Undeath",
+        "Blood of the Master",
+        "Masochism",
+        "Signet of Lost Souls",
+        "Dark Bond",
+        "Resurrection Chant"
+      ],
+      "attributes": {
+        "Blood Magic": 8,
+        "Death Magic": 12,
+        "Soul Reaping": 10
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=W83DKYXt5AI",
+        "title": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spiteful Spirit & Tahnakkai Temple)",
+        "author": "TheCaffeineSage",
+        "postedAt": "2026-09-16",
+        "context": "Olias (Order Of Undeath MM)",
+        "score": 1848
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OQNDAowjOaAOAN4m2EyAoA0I",
+      "code": "OQNDAowjOaAOAN4m2EyAoA0I",
+      "name": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spitef… — Panic",
+      "primary": "Mesmer",
+      "secondary": "Monk",
+      "skills": [
+        "Empathy",
+        "Backfire",
+        "Panic",
+        "Wastrel's Demise",
+        "Chaos Storm",
+        "Power Drain",
+        "Ether Feast",
+        "Resurrection Chant"
+      ],
+      "attributes": {
+        "Fast Casting": 8,
+        "Domination Magic": 12,
+        "Inspiration Magic": 10
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=W83DKYXt5AI",
+        "title": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spiteful Spirit & Tahnakkai Temple)",
+        "author": "TheCaffeineSage",
+        "postedAt": "2026-09-16",
+        "context": "Gwen (Panic Mesmer)",
+        "score": 1848
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OgNCoMzDugWMWpbIDfBwANC",
+      "code": "OgNCoMzDugWMWpbIDfBwANC",
+      "name": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spitef… — Searing Flames",
+      "primary": "Elementalist",
+      "secondary": "Monk",
+      "skills": [
+        "Fire Attunement",
+        "Aura of Restoration",
+        "Glowing Gaze",
+        "Searing Flames",
+        "Glyph of Lesser Energy",
+        "Mark of Rodgort",
+        "Meteor Shower",
+        "Resurrection Chant"
+      ],
+      "attributes": {
+        "Fire Magic": 12,
+        "Energy Storage": 12
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=W83DKYXt5AI",
+        "title": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spiteful Spirit & Tahnakkai Temple)",
+        "author": "TheCaffeineSage",
+        "postedAt": "2026-09-16",
+        "context": "Pyro & Vekk (SF Nukers)",
+        "score": 1848
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OACiAyk8EOtePOsJ00ZicvYA",
+      "code": "OACiAyk8EOtePOsJ00ZicvYA",
+      "name": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spitef… — Soul Twisting",
+      "primary": "Ritualist",
+      "secondary": null,
+      "skills": [
+        "Displacement",
+        "Shelter",
+        "Union",
+        "Soul Twisting",
+        "Armor of Unfeeling",
+        "Boon of Creation",
+        "Spirit's Gift",
+        "Flesh of My Flesh"
+      ],
+      "attributes": {
+        "Communing": 12,
+        "Spawning Power": 12
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=W83DKYXt5AI",
+        "title": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spiteful Spirit & Tahnakkai Temple)",
+        "author": "TheCaffeineSage",
+        "postedAt": "2026-09-16",
+        "context": "Shion (ST Prot)",
+        "score": 1848
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OANCY8x0eglQeQggc5ujWoMB",
+      "code": "OANCY8x0eglQeQggc5ujWoMB",
+      "name": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spitef… — Spiteful Spirit",
+      "primary": "Necromancer",
+      "secondary": "Monk",
+      "skills": [
+        "Insidious Parasite",
+        "Mark of Pain",
+        "Spiteful Spirit",
+        "Defile Flesh",
+        "Pain Inverter",
+        "Rip Enchantment",
+        "Hexer's Vigor",
+        "Rebirth"
+      ],
+      "attributes": {
+        "Soul Reaping": 12,
+        "Curses": 12
+      },
+      "campaigns": [
+        "Prophecies",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=W83DKYXt5AI",
+        "title": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spiteful Spirit & Tahnakkai Temple)",
+        "author": "TheCaffeineSage",
+        "postedAt": "2026-09-16",
+        "context": "Fanta (SS Necro)",
+        "score": 1848
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OgNDsMz9QWDTDHOQivDpDQDoRA",
+      "code": "OgNDsMz9QWDTDHOQivDpDQDoRA",
+      "name": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spitef… — Ward Against Harm",
+      "primary": "Elementalist",
+      "secondary": "Monk",
+      "skills": [
+        "Ice Spear",
+        "Ice Spikes",
+        "Icy Prism",
+        "Glowing Ice",
+        "Ward Against Harm",
+        "Swirling Aura",
+        "Water Attunement",
+        "Resurrection Chant"
+      ],
+      "attributes": {
+        "Water Magic": 12,
+        "Energy Storage": 12,
+        "Healing Prayers": 3
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Eye of the North"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=W83DKYXt5AI",
+        "title": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spiteful Spirit & Tahnakkai Temple)",
+        "author": "TheCaffeineSage",
+        "postedAt": "2026-09-16",
+        "context": "Zhed (Warder Ele)",
+        "score": 1848
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OQZDA8MKLi+yAMAAAAAAAuA",
+      "code": "OQZDA8MKLi+yAMAAAAAAAuA",
+      "name": "Guild Wars Reforged - Me/E - GoRenewal Mesmer",
+      "primary": "Mesmer",
+      "secondary": "Elementalist",
+      "skills": [
+        "Auspicious Incantation",
+        "Glyph of Renewal",
+        "Meteor Shower",
+        null,
+        null,
+        null,
+        null,
+        "Fire Attunement"
+      ],
+      "attributes": {
+        "Fast Casting": 12,
+        "Inspiration Magic": 3,
+        "Fire Magic": 12
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=F5rkPCGlmsk",
+        "title": "Guild Wars Reforged - Me/E - GoRenewal Mesmer",
+        "author": "Kryth Builds",
+        "postedAt": "2026-09-10",
+        "context": "Build Code",
+        "score": 57
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OgoTcVMmZ6uE5Ym01wx4US1wmE",
+      "code": "OgoTcVMmZ6uE5Ym01wx4US1wmE",
+      "name": "Guild Wars Reforged - R/x - Rapid Fire (Bow DPS)",
+      "primary": "Ranger",
+      "secondary": "Dervish",
+      "skills": [
+        "Dwarven Stability",
+        "Serpent's Quickness",
+        "\"I Am the Strongest!\"",
+        "Marksman's Wager",
+        "Penetrating Attack",
+        "Sundering Attack",
+        "Savage Shot",
+        "\"You Move Like a Dwarf!\""
+      ],
+      "attributes": {
+        "Expertise": 10,
+        "Wilderness Survival": 8,
+        "Marksmanship": 12
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Eye of the North"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=Mc5kGdXAoDk",
+        "title": "Guild Wars Reforged - R/x - Rapid Fire (Bow DPS)",
+        "author": "Kryth Builds",
+        "postedAt": "2026-09-13",
+        "context": "Build Code",
+        "score": 35
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OQgiExiMpVUtJ6VH9WCAAAAAA",
+      "code": "OQgiExiMpVUtJ6VH9WCAAAAAA",
+      "name": "Guild Wars Reforged - W/Rt - Imbawar",
+      "primary": "Warrior",
+      "secondary": "Ritualist",
+      "skills": [
+        "Frenzy",
+        "Weapon of Fury",
+        "\"Save Yourselves!\"",
+        "\"You Will Die!\"",
+        "Asuran Scan",
+        null,
+        null,
+        null
+      ],
+      "attributes": {
+        "Strength": 12,
+        "Channeling Magic": 12
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=wQUOgpliMaU",
+        "title": "Guild Wars Reforged - W/Rt - Imbawar",
+        "author": "Kryth Builds",
+        "postedAt": "2026-09-09",
+        "context": "Build Code",
+        "score": 48
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OQCjUqmLqO84d8C+BbhrxoY5NA",
+      "code": "OQCjUqmLqO84d8C+BbhrxoY5NA",
+      "name": "POWERFUL MINION ARMY TEAM BUILD! 💀 [Guild Wars Reforged] — \"Incoming!\"",
+      "primary": "Paragon",
+      "secondary": null,
+      "skills": [
+        "\"Incoming!\"",
+        "\"Fall Back!\"",
+        "Mighty Throw",
+        "Spear of Lightning",
+        "\"Go for the Eyes!\"",
+        "\"Stand Your Ground!\"",
+        "Burning Refrain",
+        "Signet of Return"
+      ],
+      "attributes": {
+        "Spear Mastery": 10,
+        "Command": 11,
+        "Leadership": 10
+      },
+      "campaigns": [
+        "Nightfall"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=qzaBA1Etvt8",
+        "title": "POWERFUL MINION ARMY TEAM BUILD! 💀 [Guild Wars Reforged]",
+        "author": "Lain",
+        "postedAt": "2026-09-15",
+        "context": "Paragon",
+        "score": 7370
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OABEQTtGeLB0QFYHUGYJUVtF2JA",
+      "code": "OABEQTtGeLB0QFYHUGYJUVtF2JA",
+      "name": "POWERFUL MINION ARMY TEAM BUILD! 💀 [Guild Wars Reforged] — Animate Flesh Golem",
+      "primary": "Necromancer",
+      "secondary": null,
+      "skills": [
+        "Animate Flesh Golem",
+        "Animate Bone Fiend",
+        "Enfeebling Blood",
+        "Barbs",
+        "Mark of Pain",
+        "Signet of Lost Souls",
+        "Masochism",
+        "Blood Ritual"
+      ],
+      "attributes": {
+        "Blood Magic": 3,
+        "Death Magic": 11,
+        "Soul Reaping": 8,
+        "Curses": 11
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=qzaBA1Etvt8",
+        "title": "POWERFUL MINION ARMY TEAM BUILD! 💀 [Guild Wars Reforged]",
+        "author": "Lain",
+        "postedAt": "2026-09-15",
+        "context": "MM1",
+        "score": 7370
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OABDUrpnSANUBKVVVfClBJCbhA",
+      "code": "OABDUrpnSANUBKVVVfClBJCbhA",
+      "name": "POWERFUL MINION ARMY TEAM BUILD! 💀 [Guild Wars Reforged] — Animate Flesh Golem",
+      "primary": "Necromancer",
+      "secondary": null,
+      "skills": [
+        "Animate Flesh Golem",
+        "Animate Bone Fiend",
+        "Feast for the Dead",
+        "Signet of Lost Souls",
+        "Weaken Armor",
+        "Barbs",
+        "Rigor Mortis",
+        "Masochism"
+      ],
+      "attributes": {
+        "Death Magic": 11,
+        "Soul Reaping": 10,
+        "Curses": 10
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=qzaBA1Etvt8",
+        "title": "POWERFUL MINION ARMY TEAM BUILD! 💀 [Guild Wars Reforged]",
+        "author": "Lain",
+        "postedAt": "2026-09-15",
+        "context": "MM2",
+        "score": 7370
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OAhjUoGYITANUBVVVPSTTOKVbhA",
+      "code": "OAhjUoGYITANUBVVVPSTTOKVbhA",
+      "name": "POWERFUL MINION ARMY TEAM BUILD! 💀 [Guild Wars Reforged] — Animate Flesh Golem",
+      "primary": "Necromancer",
+      "secondary": "Ritualist",
+      "skills": [
+        "Animate Flesh Golem",
+        "Animate Bone Fiend",
+        "Signet of Lost Souls",
+        "Recuperation",
+        "Mend Body and Soul",
+        "Spirit Light",
+        "Feast for the Dead",
+        "Masochism"
+      ],
+      "attributes": {
+        "Death Magic": 10,
+        "Soul Reaping": 8,
+        "Restoration Magic": 12
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=qzaBA1Etvt8",
+        "title": "POWERFUL MINION ARMY TEAM BUILD! 💀 [Guild Wars Reforged]",
+        "author": "Lain",
+        "postedAt": "2026-09-15",
+        "context": "MM3",
+        "score": 7370
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OAhjUsGqoSANUBVVKgKVYMbhXMA",
+      "code": "OAhjUsGqoSANUBVVKgKVYMbhXMA",
+      "name": "POWERFUL MINION ARMY TEAM BUILD! 💀 [Guild Wars Reforged] — Animate Flesh Golem",
+      "primary": "Necromancer",
+      "secondary": "Ritualist",
+      "skills": [
+        "Animate Flesh Golem",
+        "Animate Bone Fiend",
+        "Signet of Lost Souls",
+        "Putrid Bile",
+        "Feast for the Dead",
+        "Splinter Weapon",
+        "Masochism",
+        "Flesh of My Flesh"
+      ],
+      "attributes": {
+        "Death Magic": 11,
+        "Soul Reaping": 10,
+        "Channeling Magic": 10
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=qzaBA1Etvt8",
+        "title": "POWERFUL MINION ARMY TEAM BUILD! 💀 [Guild Wars Reforged]",
+        "author": "Lain",
+        "postedAt": "2026-09-15",
+        "context": "MM4",
+        "score": 7370
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OgSiUwsM9eNfhgpehuRuNFoACA",
+      "code": "OgSiUwsM9eNfhgpehuRuNFoACA",
+      "name": "POWERFUL MINION ARMY TEAM BUILD! 💀 [Guild Wars Reforged] — Avatar of Dwayna",
+      "primary": "Dervish",
+      "secondary": "Necromancer",
+      "skills": [
+        "Avatar of Dwayna",
+        "Meditation",
+        "Whirling Charge",
+        "Fleeting Stability",
+        "Harrier's Haste",
+        "Attacker's Insight",
+        "Animate Bone Horror",
+        "Putrid Bile"
+      ],
+      "attributes": {
+        "Death Magic": 12,
+        "Mysticism": 12
+      },
+      "campaigns": [
+        "Prophecies",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=qzaBA1Etvt8",
+        "title": "POWERFUL MINION ARMY TEAM BUILD! 💀 [Guild Wars Reforged]",
+        "author": "Lain",
+        "postedAt": "2026-09-15",
+        "context": "Dervish Healer 1",
+        "score": 7370
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OAhjQoGYIP3hqq0cyNMfEjzhGA",
+      "code": "OAhjQoGYIP3hqq0cyNMfEjzhGA",
+      "name": "The Deep HM 7 heroes W/A (34min, no Cons/Pcons) [Guild Wars] — Blood is Power",
+      "primary": "Necromancer",
+      "secondary": "Ritualist",
+      "skills": [
+        "Blood is Power",
+        "Signet of Lost Souls",
+        "Mend Body and Soul",
+        "Spirit Light",
+        "Protective Was Kaolai",
+        "Strip Enchantment",
+        "Life",
+        "Blood Bond"
+      ],
+      "attributes": {
+        "Blood Magic": 10,
+        "Soul Reaping": 8,
+        "Restoration Magic": 12
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=5SgL5e4g5zY",
+        "title": "The Deep HM 7 heroes W/A (34min, no Cons/Pcons) [Guild Wars]",
+        "author": "sd_korsakoff",
+        "postedAt": "2026-09-11",
+        "context": "Templates Warrior player Heroes ST/IMS +1+3 communing +3 sp LoD/Smite +1+2 heal, +2df, +2 smiting (+5SR) Bip +1+2 blood +2 sr Blood/Command +1+3 Blood +3 sr (+5leadership) RituNeptitude +1+3 Chan +2 sp (+5fast cast) Panic 1+3 dom +3 fc E-Surger +1+3 dom +3 fc",
+        "score": 447
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OQhkAoC8AGKzJY6lDMdZghAO9iB",
+      "code": "OQhkAoC8AGKzJY6lDMdZghAO9iB",
+      "name": "The Deep HM 7 heroes W/A (34min, no Cons/Pcons) [Guild Wars] — Energy Surge",
+      "primary": "Mesmer",
+      "secondary": "Ritualist",
+      "skills": [
+        "Energy Surge",
+        "Mistrust",
+        "Cry of Frustration",
+        "Unnatural Signet",
+        "Power Drain",
+        "Shatter Hex",
+        "Spiritual Pain",
+        "Flesh of My Flesh"
+      ],
+      "attributes": {
+        "Fast Casting": 10,
+        "Domination Magic": 12,
+        "Inspiration Magic": 8,
+        "Restoration Magic": 2
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=5SgL5e4g5zY",
+        "title": "The Deep HM 7 heroes W/A (34min, no Cons/Pcons) [Guild Wars]",
+        "author": "sd_korsakoff",
+        "postedAt": "2026-09-11",
+        "context": "Templates Warrior player Heroes ST/IMS +1+3 communing +3 sp LoD/Smite +1+2 heal, +2df, +2 smiting (+5SR) Bip +1+2 blood +2 sr Blood/Command +1+3 Blood +3 sr (+5leadership) RituNeptitude +1+3 Chan +2 sp (+5fast cast) Panic 1+3 dom +3 fc E-Surger +1+3 dom +3 fc",
+        "score": 447
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OAWjEwiM5QvAdiIg5ZeTFVMTYMA",
+      "code": "OAWjEwiM5QvAdiIg5ZeTFVMTYMA",
+      "name": "The Deep HM 7 heroes W/A (34min, no Cons/Pcons) [Guild Wars] — Ineptitude",
+      "primary": "Ritualist",
+      "secondary": "Mesmer",
+      "skills": [
+        "Ineptitude",
+        "Agony",
+        "Wandering Eye",
+        "Signet of Clumsiness",
+        "Ancestors' Rage",
+        "Mirror of Disenchantment",
+        "Spirit Siphon",
+        "Splinter Weapon"
+      ],
+      "attributes": {
+        "Illusion Magic": 12,
+        "Channeling Magic": 12,
+        "Spawning Power": 3
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=5SgL5e4g5zY",
+        "title": "The Deep HM 7 heroes W/A (34min, no Cons/Pcons) [Guild Wars]",
+        "author": "sd_korsakoff",
+        "postedAt": "2026-09-11",
+        "context": "Templates Warrior player Heroes ST/IMS +1+3 communing +3 sp LoD/Smite +1+2 heal, +2df, +2 smiting (+5SR) Bip +1+2 blood +2 sr Blood/Command +1+3 Blood +3 sr (+5leadership) RituNeptitude +1+3 Chan +2 sp (+5fast cast) Panic 1+3 dom +3 fc E-Surger +1+3 dom +3 fc",
+        "score": 447
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OwAT0YnCRqu6upBcjg6zlw6beAA",
+      "code": "OwAT0YnCRqu6upBcjg6zlw6beAA",
+      "name": "The Deep HM 7 heroes W/A (34min, no Cons/Pcons) [Guild Wars] — Light of Deliverance",
+      "primary": "Monk",
+      "secondary": null,
+      "skills": [
+        "Light of Deliverance",
+        "Signet of Rejuvenation",
+        "Patient Spirit",
+        "Dwayna's Kiss",
+        "Smite Condition",
+        "Smite Hex",
+        "Castigation Signet",
+        "Strength of Honor"
+      ],
+      "attributes": {
+        "Healing Prayers": 12,
+        "Smiting Prayers": 10,
+        "Divine Favor": 8
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=5SgL5e4g5zY",
+        "title": "The Deep HM 7 heroes W/A (34min, no Cons/Pcons) [Guild Wars]",
+        "author": "sd_korsakoff",
+        "postedAt": "2026-09-11",
+        "context": "Templates Warrior player Heroes ST/IMS +1+3 communing +3 sp LoD/Smite +1+2 heal, +2df, +2 smiting (+5SR) Bip +1+2 blood +2 sr Blood/Command +1+3 Blood +3 sr (+5leadership) RituNeptitude +1+3 Chan +2 sp (+5fast cast) Panic 1+3 dom +3 fc E-Surger +1+3 dom +3 fc",
+        "score": 447
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OQhkAoC8AGKDNY6lDMdZghAO9iB",
+      "code": "OQhkAoC8AGKDNY6lDMdZghAO9iB",
+      "name": "The Deep HM 7 heroes W/A (34min, no Cons/Pcons) [Guild Wars] — Panic",
+      "primary": "Mesmer",
+      "secondary": "Ritualist",
+      "skills": [
+        "Panic",
+        "Mistrust",
+        "Cry of Frustration",
+        "Unnatural Signet",
+        "Power Drain",
+        "Shatter Hex",
+        "Spiritual Pain",
+        "Flesh of My Flesh"
+      ],
+      "attributes": {
+        "Fast Casting": 10,
+        "Domination Magic": 12,
+        "Inspiration Magic": 8,
+        "Restoration Magic": 2
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=5SgL5e4g5zY",
+        "title": "The Deep HM 7 heroes W/A (34min, no Cons/Pcons) [Guild Wars]",
+        "author": "sd_korsakoff",
+        "postedAt": "2026-09-11",
+        "context": "Templates Warrior player Heroes ST/IMS +1+3 communing +3 sp LoD/Smite +1+2 heal, +2df, +2 smiting (+5SR) Bip +1+2 blood +2 sr Blood/Command +1+3 Blood +3 sr (+5leadership) RituNeptitude +1+3 Chan +2 sp (+5fast cast) Panic 1+3 dom +3 fc E-Surger +1+3 dom +3 fc",
+        "score": 447
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OAlkQsFohZqjXrQA2eD17vQNeHD",
+      "code": "OAlkQsFohZqjXrQA2eD17vQNeHD",
+      "name": "The Deep HM 7 heroes W/A (34min, no Cons/Pcons) [Guild Wars] — Ravenous Gaze",
+      "primary": "Necromancer",
+      "secondary": "Paragon",
+      "skills": [
+        "Ravenous Gaze",
+        "Dark Pact",
+        "Oppressive Gaze",
+        "Awaken the Blood",
+        "\"Find Their Weakness!\"",
+        "Putrid Explosion",
+        "\"Stand Your Ground!\"",
+        "\"Fall Back!\""
+      ],
+      "attributes": {
+        "Blood Magic": 11,
+        "Death Magic": 8,
+        "Soul Reaping": 6,
+        "Command": 10
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=5SgL5e4g5zY",
+        "title": "The Deep HM 7 heroes W/A (34min, no Cons/Pcons) [Guild Wars]",
+        "author": "sd_korsakoff",
+        "postedAt": "2026-09-11",
+        "context": "Templates Warrior player Heroes ST/IMS +1+3 communing +3 sp LoD/Smite +1+2 heal, +2df, +2 smiting (+5SR) Bip +1+2 blood +2 sr Blood/Command +1+3 Blood +3 sr (+5leadership) RituNeptitude +1+3 Chan +2 sp (+5fast cast) Panic 1+3 dom +3 fc E-Surger +1+3 dom +3 fc",
+        "score": 447
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OAmjAykpZOYTnp17xFOhm34dMA",
+      "code": "OAmjAykpZOYTnp17xFOhm34dMA",
+      "name": "The Deep HM 7 heroes W/A (34min, no Cons/Pcons) [Guild Wars] — Soul Twisting",
+      "primary": "Ritualist",
+      "secondary": "Paragon",
+      "skills": [
+        "Soul Twisting",
+        "Boon of Creation",
+        "Shelter",
+        "Union",
+        "Displacement",
+        "Armor of Unfeeling",
+        "\"Make Haste!\"",
+        "\"Fall Back!\""
+      ],
+      "attributes": {
+        "Communing": 12,
+        "Spawning Power": 9,
+        "Command": 9
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=5SgL5e4g5zY",
+        "title": "The Deep HM 7 heroes W/A (34min, no Cons/Pcons) [Guild Wars]",
+        "author": "sd_korsakoff",
+        "postedAt": "2026-09-11",
+        "context": "Templates Warrior player Heroes ST/IMS +1+3 communing +3 sp LoD/Smite +1+2 heal, +2df, +2 smiting (+5SR) Bip +1+2 blood +2 sr Blood/Command +1+3 Blood +3 sr (+5leadership) RituNeptitude +1+3 Chan +2 sp (+5fast cast) Panic 1+3 dom +3 fc E-Surger +1+3 dom +3 fc",
+        "score": 447
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OQcSEZJT2FFWCFKF5k2k0kdO",
+      "code": "OQcSEZJT2FFWCFKF5k2k0kdO",
+      "name": "The Deep HM 7 heroes W/A (34min, no Cons/Pcons) [Guild Wars] — Warrior's Endurance",
+      "primary": "Warrior",
+      "secondary": "Assassin",
+      "skills": [
+        "Warrior's Endurance",
+        "Burst of Aggression",
+        "Power Attack",
+        "Cyclone Axe",
+        "Club of a Thousand Bears",
+        "\"You Move Like a Dwarf!\"",
+        "\"I Am Unstoppable!\"",
+        "Recall"
+      ],
+      "attributes": {
+        "Strength": 12,
+        "Axe Mastery": 12
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=5SgL5e4g5zY",
+        "title": "The Deep HM 7 heroes W/A (34min, no Cons/Pcons) [Guild Wars]",
+        "author": "sd_korsakoff",
+        "postedAt": "2026-09-11",
+        "context": "Templates Warrior player Heroes ST/IMS +1+3 communing +3 sp LoD/Smite +1+2 heal, +2df, +2 smiting (+5SR) Bip +1+2 blood +2 sr Blood/Command +1+3 Blood +3 sr (+5leadership) RituNeptitude +1+3 Chan +2 sp (+5fast cast) Panic 1+3 dom +3 fc E-Surger +1+3 dom +3 fc",
+        "score": 447
+      },
+      "firstSeen": "2026-09-18"
+    },
+    {
+      "id": "OgCjkOrMLTkXcXfXsX5imXfbqiA",
+      "code": "OgCjkOrMLTkXcXfXsX5imXfbqiA",
+      "name": "Water Djinn Solo Farm for Gold Scythes & Dust [Guild Wars]",
+      "primary": "Dervish",
+      "secondary": null,
+      "skills": [
+        "Extend Enchantments",
+        "Mirage Cloak",
+        "Mystic Vigor",
+        "Mystic Regeneration",
+        "Ebon Battle Standard of Honor",
+        "Sand Shards",
+        "Vow of Strength",
+        "Drunken Master"
+      ],
+      "attributes": {
+        "Scythe Mastery": 3,
+        "Earth Prayers": 12,
+        "Mysticism": 12
+      },
+      "campaigns": [
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=0WSznfMEXLE",
+        "title": "Water Djinn Solo Farm for Gold Scythes & Dust [Guild Wars]",
+        "author": "Péter Kádár",
+        "postedAt": "2026-09-15",
+        "context": "-build",
+        "score": 9030
+      },
+      "firstSeen": "2026-09-18"
+    },
     {
       "id": "OwBi0xj84wYYHMAAAAAo/izA",
       "code": "OwBi0xj84wYYHMAAAAAo/izA",

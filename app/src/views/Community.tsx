@@ -170,7 +170,11 @@ function BuildCard({
         {build.source.author && <span className="muted"> · {build.source.author}</span>}
         {build.source.postedAt && <span className="muted"> · {build.source.postedAt}</span>}
         {build.source.score !== undefined && (
-          <span className="muted"> · {build.source.score.toLocaleString()} points</span>
+          <span className="muted">
+            {" · "}
+            {build.source.score.toLocaleString()}{" "}
+            {build.source.kind === "youtube" ? "views" : "points"}
+          </span>
         )}
         {build.campaigns.length > 0 && <span className="muted"> · needs {build.campaigns.join(", ")}</span>}
         {build.tags?.map((t) => (

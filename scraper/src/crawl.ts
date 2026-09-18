@@ -68,15 +68,25 @@ async function redditToken(): Promise<string | null> {
   return body.access_token ?? null;
 }
 
-/** The sentence(s) around a code — what the poster said about the build. */
+/**
+ * The sentence(s) around a code — what the poster said about the build.
+ * Every template code is stripped, not just this one: a video description
+ * listing four bars would otherwise quote the other three codes back.
+ */
 function contextAround(text: string, code: string, limit = 400): string {
-  const at = text.indexOf(code);
-  if (at === -1) return text.slice(0, limit).trim();
   const paragraphs = text.split(/\n{2,}/);
   const para = paragraphs.find((p) => p.includes(code)) ?? text;
-  const cleaned = para.replace(code, "").replace(/\s+/g, " ").trim();
+  const cleaned = para
+    .replace(/\bO[A-Za-z0-9+/]{9,}={0,2}/g, "")
+    .replace(/\s+/g, " ")
+    .replace(/\s*:\s*(?=$|\s)/g, "")
+    .trim();
   return cleaned.length > limit ? `${cleaned.slice(0, limit).trim()}…` : cleaned;
 }
+
+/** Keep a title readable, leaving room for a suffix. */
+const shorten = (text: string, max: number): string =>
+  text.length <= max ? text : `${text.slice(0, max).trim()}…`;
 
 interface Found {
   code: string;
@@ -131,7 +141,7 @@ async function crawlReddit(index: DataIndex, since: number): Promise<{ found: Fo
         for (const { code } of extractTemplateCodes(text, index)) {
           found.push({
             code,
-            name: String(post.title ?? "Reddit build").slice(0, 120),
+            name: String(post.title ?? "Reddit build"),
             source: {
               kind: "reddit",
               url: `https://www.reddit.com${post.permalink ?? ""}`,
@@ -200,7 +210,7 @@ async function crawlYouTube(
         for (const { code } of extractTemplateCodes(text, index)) {
           found.push({
             code,
-            name: String(snippet.title ?? "YouTube build").slice(0, 120),
+            name: String(snippet.title ?? "YouTube build"),
             source: {
               kind: "youtube",
               url: `https://www.youtube.com/watch?v=${video.id}`,
@@ -237,11 +247,28 @@ const youtube = key
   : { found: [], issues: ["youtube: skipped, YOUTUBE_API_KEY is not set"] };
 console.log(`youtube: ${youtube.found.length} code(s)`);
 
+// One video or post often shares several bars — a hero team, or two takes on
+// the same role. They'd all inherit the same title, so add the professions
+// when a single source yields more than one build.
+const perSource = new Map<string, number>();
+for (const { source } of [...reddit.found, ...youtube.found]) {
+  const key = source.url ?? "";
+  perSource.set(key, (perSource.get(key) ?? 0) + 1);
+}
+
 const builds: CommunityBuild[] = [];
 for (const { code, source, name } of [...reddit.found, ...youtube.found]) {
   const decoded = extractTemplateCodes(code, index)[0]?.decoded;
   if (!decoded) continue;
-  builds.push(toCommunityBuild(code, decoded, source, name));
+  // What tells two bars from the same video apart is usually the elite skill
+  // — "Healer's Boon" vs "Unyielding Aura" — not the professions.
+  const elite = decoded.skills.find((s) => s?.isElite)?.name;
+  const professions = `${decoded.primary ?? "?"}${decoded.secondary ? `/${decoded.secondary}` : ""}`;
+  const label =
+    (perSource.get(source.url ?? "") ?? 0) > 1
+      ? `${shorten(name, 70)} — ${elite ?? professions}`
+      : shorten(name, 110);
+  builds.push(toCommunityBuild(code, decoded, source, label));
 }
 
 const { builds: merged, added, updated } = mergeCommunityBuilds(await loadCommunityBuilds(), builds);
