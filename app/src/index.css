@@ -625,3 +625,5 @@ button.todo-remove { flex: 0 0 auto; width: auto; text-align: right; }
     min-width: 36px; min-height: 36px;
   }
 }
+button.source-chip { width: auto; padding: 0 0.3rem; cursor: pointer; }
+button.source-chip:hover { color: var(--accent); border-color: var(--accent); }

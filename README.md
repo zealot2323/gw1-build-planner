@@ -36,6 +36,7 @@ npm run updates    # recent game updates + /Skill history
 npm run icons      # skill, profession and cost icons
 
 npm run pvx                       # import PvX wiki builds
+npm run sources                   # import fixed sources (spreadsheets, wiki pages)
 npm run community -- builds.csv   # import community builds from a file
 npm run crawl                     # weekly sweep of Reddit + YouTube for codes
 ```
@@ -48,8 +49,15 @@ text. A template code is the only required field; `name`, `author`, `url`,
 Every code is verified by decoding it against the skill data, and rows
 whose code doesn't decode are reported rather than imported.
 
+`npm run sources` pulls from specific curated pages listed in
+`scraper/src/sources.ts` — Google Sheets (every tab, exported as CSV) and wiki
+pages via the MediaWiki API. Wiki pages often write a bar out as skill names in
+`{{mini skill bar|...}}` rather than a code, so those are resolved against the
+skill data and encoded into a code.
+
 `npm run crawl` looks through recent Reddit posts and YouTube videos for
-codes and records each with its source link and the text around it. It runs
+codes and records each with its source link and the text around it. It reads
+whole channels (listed in `scraper/src/crawl.ts`) as well as search results. It runs
 weekly in GitHub Actions and needs repository secrets:
 
 | Secret | For |

@@ -23,6 +23,8 @@ const PAGE = 30;
 export interface CommunityViewState {
   search: string;
   profession: string;
+  /** Channel, subreddit or list the build came from; "all" for everything. */
+  source: string;
   sort: "new" | "popular" | "name";
   /** "<build id>|<skill page>" of the open skill. */
   openSkill: string | null;
@@ -33,6 +35,7 @@ export interface CommunityViewState {
 export const initialCommunityViewState: CommunityViewState = {
   search: "",
   profession: "all",
+  source: "all",
   sort: "new",
   openSkill: null,
   limit: PAGE,
@@ -59,6 +62,7 @@ function BuildCard({
   setOpenSkill,
   onSave,
   saved,
+  onFilterSource,
 }: {
   build: CommunityBuild;
   character: CharacterSave | null;
@@ -66,6 +70,7 @@ function BuildCard({
   setOpenSkill: (v: string | null) => void;
   onSave: (build: CommunityBuild) => void;
   saved: boolean;
+  onFilterSource: (name: string) => void;
 }) {
   const index = useData();
   const [copied, setCopied] = useState(false);
@@ -159,7 +164,14 @@ function BuildCard({
       )}
 
       <div className="small community-meta">
-        <span className="quest-tag">{SOURCE_LABEL[build.source.kind] ?? build.source.kind}</span>{" "}
+        <button
+          className="quest-tag linkish source-chip"
+          onClick={() => onFilterSource(build.source.author ?? SOURCE_LABEL[build.source.kind] ?? build.source.kind)}
+          title="Show only builds from this source"
+        >
+          {SOURCE_LABEL[build.source.kind] ?? build.source.kind}
+          {build.source.author ? ` · ${build.source.author}` : ""}
+        </button>{" "}
         {build.source.url ? (
           <a href={build.source.url} target="_blank" rel="noreferrer noopener">
             {build.source.title ?? build.source.url}
@@ -167,7 +179,6 @@ function BuildCard({
         ) : (
           <span className="muted">{build.source.title ?? "no link"}</span>
         )}
-        {build.source.author && <span className="muted"> · {build.source.author}</span>}
         {build.source.postedAt && <span className="muted"> · {build.source.postedAt}</span>}
         {build.source.score !== undefined && (
           <span className="muted">
@@ -218,15 +229,30 @@ export function CommunityView({
     [communityBuilds],
   );
 
+  /** Channels, subreddits and lists, busiest first — that's the useful order. */
+  const sources = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const b of communityBuilds ?? []) {
+      const name = b.source.author ?? SOURCE_LABEL[b.source.kind] ?? b.source.kind;
+      counts.set(name, (counts.get(name) ?? 0) + 1);
+    }
+    return [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+  }, [communityBuilds]);
+
+  const sourceOf = (b: CommunityBuild) => b.source.author ?? SOURCE_LABEL[b.source.kind] ?? b.source.kind;
+
   const term = view.search.trim().toLowerCase();
   const visible = (communityBuilds ?? [])
     .filter(
       (b) =>
         (view.profession === "all" || b.primary === view.profession) &&
+        (view.source === "all" || sourceOf(b) === view.source) &&
         (term === "" ||
           b.name.toLowerCase().includes(term) ||
           (b.tags ?? []).some((t) => t.toLowerCase().includes(term)) ||
           (b.source.context ?? "").toLowerCase().includes(term) ||
+          sourceOf(b).toLowerCase().includes(term) ||
+          (b.source.title ?? "").toLowerCase().includes(term) ||
           b.skills.some((s) => s?.toLowerCase().includes(term))),
     )
     .sort((a, b) => {
@@ -276,6 +302,7 @@ export function CommunityView({
             setOpenSkill={(v) => setView({ openSkill: v })}
             onSave={save}
             saved={savedAlready(b)}
+            onFilterSource={(name) => setView({ source: name, limit: PAGE })}
           />
         ))}
       </>
@@ -307,6 +334,17 @@ export function CommunityView({
               <option value="all">All</option>
               {professions.map((p) => (
                 <option key={p}>{p}</option>
+              ))}
+            </select>
+          </label>
+          <label>
+            Source{" "}
+            <select value={view.source} onChange={(e) => setView({ source: e.target.value, limit: PAGE })}>
+              <option value="all">All sources</option>
+              {sources.map(([name, count]) => (
+                <option key={name} value={name}>
+                  {name} ({count})
+                </option>
               ))}
             </select>
           </label>

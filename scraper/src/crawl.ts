@@ -37,6 +37,21 @@ const MIN_INTERVAL_MS = 1000;
 const SUBREDDITS = ["GuildWars"];
 /** What to ask YouTube for. */
 const YOUTUBE_QUERIES = ["guild wars 1 build", "gw1 build template", "guild wars prophecies build"];
+/**
+ * Channels worth reading in full. Their recent uploads are scanned whatever
+ * the date — these are known GW1 build channels, so a first run should pick
+ * up their back catalogue rather than only the last week.
+ */
+const YOUTUBE_CHANNELS = [
+  "@TheCaffeineSage",
+  // not @SabreWolf — that handle belongs to a different, empty channel
+  "@sabrewolf18",
+  "@GW1videos",
+  "@GuildWarsMaude",
+  "@olgaknowsbestofficial",
+];
+/** Recent uploads to read per channel. */
+const CHANNEL_UPLOADS = 50;
 /** How far back a weekly job should look (a little over a week, for overlap). */
 const LOOKBACK_DAYS = 10;
 
@@ -84,6 +99,9 @@ function contextAround(text: string, code: string, limit = 400): string {
     .replace(/\s+/g, " ")
     .replace(/\s*:\s*(?=$|\s)/g, "")
     .trim();
+  // What's left is sometimes just the label that introduced the code
+  // ("Template Code:"), which is no use as context.
+  if (cleaned.length < 25 || /^(template|build|skill)\s*(code|bar)s?$/i.test(cleaned)) return "";
   return cleaned.length > limit ? `${cleaned.slice(0, limit).trim()}…` : cleaned;
 }
 
@@ -169,7 +187,7 @@ async function redditViaRss(index: DataIndex, since: number): Promise<{ found: F
               title: title.slice(0, 200),
               author: author ?? undefined,
               postedAt: published ? published.slice(0, 10) : undefined,
-              context: contextAround(text, code),
+              context: contextAround(text, code) || undefined,
               // RSS carries no score; the API path below has it
             },
           });
@@ -222,7 +240,7 @@ async function redditViaApi(
               postedAt: post.created_utc
                 ? new Date(post.created_utc * 1000).toISOString().slice(0, 10)
                 : undefined,
-              context: contextAround(text, code),
+              context: contextAround(text, code) || undefined,
               score: typeof post.score === "number" ? post.score : undefined,
             },
           });
@@ -252,6 +270,63 @@ async function crawlReddit(index: DataIndex, since: number): Promise<{ found: Fo
 // YouTube
 // ---------------------------------------------------------------------------
 
+/** Resolve @handles to their uploads playlist. */
+async function youtubeUploadPlaylists(
+  key: string,
+  issues: string[],
+): Promise<Array<{ title: string; playlist: string }>> {
+  const out: Array<{ title: string; playlist: string }> = [];
+  for (const handle of YOUTUBE_CHANNELS) {
+    const url =
+      `https://www.googleapis.com/youtube/v3/channels?part=snippet,contentDetails,statistics` +
+      `&forHandle=${encodeURIComponent(handle)}&key=${key}`;
+    try {
+      const res = await politeFetch(url);
+      if (!res.ok) {
+        issues.push(`youtube channel ${handle}: HTTP ${res.status}`);
+        continue;
+      }
+      const body: any = await res.json();
+      const item = body.items?.[0];
+      const playlist = item?.contentDetails?.relatedPlaylists?.uploads;
+      if (!playlist) {
+        issues.push(`youtube channel ${handle}: not found`);
+        continue;
+      }
+      // A handle can resolve to an empty channel that merely shares a name
+      // (@SabreWolf has 0 videos; the real one is @sabrewolf18), which would
+      // otherwise look like "nothing new this week".
+      if (item.statistics?.videoCount === "0") {
+        issues.push(`youtube channel ${handle}: resolves to a channel with no videos — wrong handle?`);
+        continue;
+      }
+      out.push({ title: item.snippet?.title ?? handle, playlist });
+    } catch (err) {
+      issues.push(`youtube channel ${handle}: ${(err as Error).message}`);
+    }
+  }
+  return out;
+}
+
+/** Video ids from a channel's uploads playlist. */
+async function playlistVideoIds(key: string, playlist: string, issues: string[]): Promise<string[]> {
+  const url =
+    `https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails` +
+    `&playlistId=${playlist}&maxResults=${CHANNEL_UPLOADS}&key=${key}`;
+  try {
+    const res = await politeFetch(url);
+    if (!res.ok) {
+      issues.push(`youtube playlist ${playlist}: HTTP ${res.status}`);
+      return [];
+    }
+    const body: any = await res.json();
+    return (body.items ?? []).map((i: any) => i.contentDetails?.videoId).filter(Boolean);
+  } catch (err) {
+    issues.push(`youtube playlist ${playlist}: ${(err as Error).message}`);
+    return [];
+  }
+}
+
 async function crawlYouTube(
   index: DataIndex,
   since: Date,
@@ -260,6 +335,11 @@ async function crawlYouTube(
   const found: Found[] = [];
   const issues: string[] = [];
   const ids: string[] = [];
+
+  // whole-channel sweeps first: these are the curated sources
+  for (const { playlist } of await youtubeUploadPlaylists(key, issues)) {
+    ids.push(...(await playlistVideoIds(key, playlist, issues)));
+  }
 
   for (const query of YOUTUBE_QUERIES) {
     const url =
@@ -304,7 +384,7 @@ async function crawlYouTube(
               title: String(snippet.title ?? "").slice(0, 200),
               author: snippet.channelTitle,
               postedAt: snippet.publishedAt ? String(snippet.publishedAt).slice(0, 10) : undefined,
-              context: contextAround(text, code),
+              context: contextAround(text, code) || undefined,
               score: video.statistics?.viewCount ? Number(video.statistics.viewCount) : undefined,
             },
           });

@@ -358,6 +358,21 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
   actions), inputs are 16px so iOS doesn't zoom on focus, and `body` carries
   safe-area padding. Long lists paginate — the Community tab mounted 1,192
   cards and 11,666 interactive elements before it did.
+- **Build sources come in three flavours**, each with its own job:
+  `npm run pvx` (the PvX archive), `npm run sources` (fixed pages and
+  spreadsheets someone curates), `npm run crawl` (the weekly Reddit/YouTube
+  sweep). All merge into `data/community-builds.json` keyed by code.
+  - Google Sheets: tab ids come from the sheet's `htmlview` page, then each
+    tab is exported as CSV. A published sheet needs no credentials.
+  - Fandom blocks `?action=raw` with a Cloudflare challenge; the MediaWiki
+    API (`/api.php?action=parse&prop=wikitext`) works fine.
+  - Wiki pages often write a bar as `{{mini skill bar|Skill|Skill|...}}` with
+    professions as `{{E}}/{{R}}` shorthand, and NO code. Those are resolved
+    against our skill data and encoded into a code here.
+  - YouTube channels are read whole (uploads playlist), not just search. A
+    handle can resolve to an empty look-alike channel — @SabreWolf has 0
+    videos; the real one is @sabrewolf18 — so a zero-video channel is
+    reported as a probable wrong handle rather than "nothing new".
 - **Reddit needs no credentials: use the RSS feeds.** The JSON API returns
   403 to anonymous reads, and app registration is awkward now (Devvit is a
   different product and gives no client id/secret for external use). The

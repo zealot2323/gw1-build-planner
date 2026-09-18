@@ -8,7 +8,8 @@
  */
 import { decodeTemplate, TemplateError, type DecodedTemplate } from "./template.js";
 import type { DataIndex } from "./data.js";
-import type { Campaign, Profession } from "./types.js";
+import { Profession } from "./types.js";
+import type { Campaign, Skill } from "./types.js";
 
 /** Where a community build came from. */
 export type BuildSourceKind = "file" | "pvx" | "reddit" | "youtube" | "other";
@@ -165,4 +166,80 @@ export function mergeCommunityBuilds(
     updated++;
   }
   return { builds: [...byId.values()], added, updated };
+}
+
+/**
+ * Wiki pages often list a bar as skill NAMES rather than a template code:
+ *
+ *   {{mini skill bar|Ebon Escape|Double Dragon|...}}
+ *   {{E}}/{{R}}[[User:Yung Rocks/Sandbox/Ebon Dragon|Ebon Dragon]]
+ *
+ * The professions come from shorthand markers and the name from the link
+ * that follows. Everything is resolved against our own skill data, so a bar
+ * only counts when most of its skills are ones we know.
+ */
+const PROFESSION_SHORTHAND: Record<string, Profession> = {
+  W: Profession.Warrior,
+  R: Profession.Ranger,
+  Mo: Profession.Monk,
+  N: Profession.Necromancer,
+  Me: Profession.Mesmer,
+  E: Profession.Elementalist,
+  A: Profession.Assassin,
+  Rt: Profession.Ritualist,
+  P: Profession.Paragon,
+  D: Profession.Dervish,
+};
+
+export interface ParsedSkillBar {
+  name: string | null;
+  primary: Profession | null;
+  secondary: Profession | null;
+  /** Resolved skills, 8 entries; null = empty or unknown. */
+  skills: Array<Skill | null>;
+  /** Skill names the dataset has no match for. */
+  unknownSkills: string[];
+}
+
+export function extractMiniSkillBars(wikitext: string, index: DataIndex): ParsedSkillBar[] {
+  const byName = new Map<string, Skill>();
+  for (const skill of index.dataset.skills) {
+    byName.set(skill.name.toLowerCase(), skill);
+    byName.set(skill.wikiPage.toLowerCase(), skill);
+  }
+
+  const out: ParsedSkillBar[] = [];
+  for (const match of wikitext.matchAll(/\{\{\s*mini skill bar\s*\|([^}]*)\}\}/gi)) {
+    const names = match[1]
+      .split("|")
+      .map((s) => s.trim())
+      .filter((s) => s !== "");
+    const skills: Array<Skill | null> = [];
+    const unknownSkills: string[] = [];
+    for (const raw of names.slice(0, 8)) {
+      const skill = byName.get(raw.toLowerCase());
+      if (skill) skills.push(skill);
+      else {
+        skills.push(null);
+        if (!/^(optional|empty|-)$/i.test(raw)) unknownSkills.push(raw);
+      }
+    }
+    while (skills.length < 8) skills.push(null);
+
+    // the professions and name usually follow on the next line
+    const after = wikitext.slice(match.index! + match[0].length, match.index! + match[0].length + 300);
+    const professions = [...after.matchAll(/\{\{([A-Za-z]{1,2})\}\}/g)]
+      .map((m) => PROFESSION_SHORTHAND[m[1]] ?? PROFESSION_SHORTHAND[`${m[1][0].toUpperCase()}${m[1].slice(1)}`])
+      .filter((p): p is Profession => p !== undefined);
+    const linkName = after.match(/\[\[[^\]|]+\|([^\]]+)\]\]/)?.[1] ?? after.match(/\[\[([^\]|#]+)\]\]/)?.[1] ?? null;
+
+    out.push({
+      name: linkName?.trim() ?? null,
+      primary: professions[0] ?? null,
+      secondary: professions[1] ?? null,
+      skills,
+      unknownSkills,
+    });
+  }
+  return out;
 }
