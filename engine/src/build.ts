@@ -5,6 +5,7 @@ import {
   ATTRIBUTE_POINTS_AT_20,
   attributesForBuild,
   MAX_RANK_FROM_POINTS,
+  MAX_RANK_WITH_GEAR,
   pointsSpent,
   primaryAttributeOf,
 } from "./attributes.js";
@@ -142,11 +143,13 @@ export function validateBuild(build: Build, index: DataIndex): BuildError[] {
         fix: `Set ${attribute} back to 0.`,
       });
     }
-    if (rank > MAX_RANK_FROM_POINTS) {
+    // 13-16 is a normal gear-boosted rank, which build sites quote; only
+    // above 16 is unreachable.
+    if (rank > MAX_RANK_WITH_GEAR) {
       errors.push({
         code: "ATTRIBUTE_RANK_TOO_HIGH",
-        message: `${attribute} is at ${rank}. Attribute points only reach ${MAX_RANK_FROM_POINTS}.`,
-        fix: `Lower it to ${MAX_RANK_FROM_POINTS}. Higher ranks come from runes and headgear, which this planner doesn't track.`,
+        message: `${attribute} is at ${rank}. The highest reachable rank is ${MAX_RANK_WITH_GEAR} — ${MAX_RANK_FROM_POINTS} from attribute points, plus headgear and a superior rune.`,
+        fix: `Lower it to ${MAX_RANK_WITH_GEAR} or less.`,
       });
     }
   }

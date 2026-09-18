@@ -92,8 +92,15 @@ export function attributesForBuild(build: Pick<Build, "primary" | "secondary">):
   return [...own, ...second];
 }
 
-/** Highest rank attribute points alone can reach (runes and headgear go beyond). */
+/** Highest rank attribute points alone can reach. */
 export const MAX_RANK_FROM_POINTS = 12;
+
+/**
+ * Highest rank reachable in game: 12 from points, +1 from headgear, +3 from
+ * a superior rune. Build sites quote these gear-inclusive numbers ("Dagger
+ * Mastery 16"), so anything up to 16 is a real build, not a mistake.
+ */
+export const MAX_RANK_WITH_GEAR = 16;
 
 /** Attribute points available at level 20 — the only level this plans for. */
 export const ATTRIBUTE_POINTS_AT_20 = 200;

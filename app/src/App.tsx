@@ -205,7 +205,11 @@ export function App() {
         <a href="https://github.com/gw1tools/gw1builds" target="_blank" rel="noreferrer">
           gw1builds
         </a>{" "}
-        (both MIT).
+        (both MIT). Community builds from{" "}
+        <a href="https://gwpvx.fandom.com/" target="_blank" rel="noreferrer">
+          PvX wiki
+        </a>{" "}
+        (CC BY-NC-SA) and from posts linked on each build.
       </footer>
     </DataProvider>
   );

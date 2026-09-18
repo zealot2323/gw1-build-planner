@@ -135,7 +135,9 @@ describe("attribute points", () => {
       validateBuild({ ...build(["Sever Artery"]), attributes }, index).map((e) => e.code);
     expect(codes({ Swordsmanship: 12 })).not.toContain("ATTRIBUTE_POINTS_OVERSPENT");
     expect(codes({ Swordsmanship: 12, Tactics: 12, Strength: 12 })).toContain("ATTRIBUTE_POINTS_OVERSPENT");
-    expect(codes({ Swordsmanship: 15 })).toContain("ATTRIBUTE_RANK_TOO_HIGH");
+    // 13-16 is gear-boosted and legitimate; only above 16 is impossible
+    expect(codes({ Swordsmanship: 16 })).not.toContain("ATTRIBUTE_RANK_TOO_HIGH");
+    expect(codes({ Swordsmanship: 17 })).toContain("ATTRIBUTE_RANK_TOO_HIGH");
     expect(codes({ "Divine Favor": 5 })).toContain("ATTRIBUTE_NOT_AVAILABLE");
     expect(codes({ "Fire Magic": 5 })).toContain("ATTRIBUTE_NOT_AVAILABLE");
   });

@@ -35,6 +35,7 @@ npm run quests     # quest pages named by skill pages
 npm run updates    # recent game updates + /Skill history
 npm run icons      # skill, profession and cost icons
 
+npm run pvx                       # import PvX wiki builds
 npm run community -- builds.csv   # import community builds from a file
 npm run crawl                     # weekly sweep of Reddit + YouTube for codes
 ```
@@ -67,6 +68,10 @@ Fan-made, not affiliated with ArenaNet.
 - Skill, location, quest and monster data from the
   [Guild Wars Wiki](https://wiki.guildwars.com/) (GNU FDL).
 - Guild Wars artwork, skill icons and cost icons © ArenaNet, LLC.
+- Community build data from [PvX wiki](https://gwpvx.fandom.com/) (CC BY-NC-SA 2.5),
+  read via the dataset in [gw1tools/gw1builds](https://github.com/gw1tools/gw1builds) (MIT).
+  Only build facts are used — names, professions, skill bars, attributes, ratings —
+  and every entry links back to its PvX page.
 - Build template codes are encoded/decoded with
   [@buildwars/gw-templates](https://github.com/build-wars/gw-templates) (MIT).
 - The template-code handling and the skill-card layout (48px icon, gold elite

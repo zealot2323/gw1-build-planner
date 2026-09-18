@@ -343,6 +343,24 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
     client id/secret. YouTube needs an API key. A missing credential is
     reported, never silently treated as "found nothing".
 
+- **PvX builds** (`npm run pvx`) come from the dataset gw1tools/gw1builds
+  maintains (MIT), not a page-by-page crawl. Only facts are taken — name,
+  professions, skill ids, attributes, rating, tags — each entry links to its
+  PvX page, and PvX is credited; their prose stays theirs (CC BY-NC-SA).
+  Codes are re-encoded from the skill ids with our own encoder, so every
+  code decodes. Note PvX quotes GEAR-INCLUSIVE ranks ("Dagger Mastery 16");
+  the template format stores base ranks only, so those clamp to 12 on
+  encode, which is correct.
+- **Mobile is a supported size** (iPhone 13 mini, 375x812). What broke it:
+  the 7-tab nav at 504px, fixed `min-width` on the two-column layouts
+  (`.grow` is 24rem), and fixed-width inputs. Rules: no page may scroll
+  sideways at 375px, controls are >=44px tall (36px for dense inline
+  actions), inputs are 16px so iOS doesn't zoom on focus, and `body` carries
+  safe-area padding. Long lists paginate — the Community tab mounted 1,192
+  cards and 11,666 interactive elements before it did.
+- **`data/community-builds.json` is loaded on demand**, not bundled: it is
+  over a megabyte, and most visits never open that tab.
+
 ## Copy
 
 - **Plain, neutral, specific.** Say what something is, not how the reader

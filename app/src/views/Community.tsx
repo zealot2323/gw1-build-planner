@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   buildReadiness,
   travelDistances,
@@ -7,11 +7,18 @@ import {
   type Profession,
 } from "@gw1/engine";
 import { useData } from "../DataContext";
-import { communityBuilds } from "../data";
+import { loadCommunityBuilds } from "../data";
 import { SkillIcon } from "../components/SkillIcon";
 import { SkillDetails } from "../components/SkillDetails";
 import { ProfessionIcon } from "../components/ProfessionIcon";
 import type { CharacterSave } from "../save";
+
+/**
+ * Cards rendered before "Show more". With every PvX build in the file this
+ * page would otherwise mount over a thousand cards at once, which a phone
+ * feels immediately.
+ */
+const PAGE = 30;
 
 export interface CommunityViewState {
   search: string;
@@ -19,6 +26,8 @@ export interface CommunityViewState {
   sort: "new" | "popular" | "name";
   /** "<build id>|<skill page>" of the open skill. */
   openSkill: string | null;
+  /** How many cards to render; grows with "Show more". */
+  limit: number;
 }
 
 export const initialCommunityViewState: CommunityViewState = {
@@ -26,6 +35,7 @@ export const initialCommunityViewState: CommunityViewState = {
   profession: "all",
   sort: "new",
   openSkill: null,
+  limit: PAGE,
 };
 
 const SOURCE_LABEL: Record<string, string> = {
@@ -189,14 +199,23 @@ export function CommunityView({
   setView: (patch: Partial<CommunityViewState>) => void;
 }) {
   const [note, setNote] = useState<string | null>(null);
+  const [communityBuilds, setCommunityBuilds] = useState<CommunityBuild[] | null>(null);
+
+  useEffect(() => {
+    let live = true;
+    loadCommunityBuilds().then((builds) => live && setCommunityBuilds(builds));
+    return () => {
+      live = false;
+    };
+  }, []);
 
   const professions = useMemo(
-    () => [...new Set(communityBuilds.map((b) => b.primary).filter(Boolean))].sort() as string[],
-    [],
+    () => [...new Set((communityBuilds ?? []).map((b) => b.primary).filter(Boolean))].sort() as string[],
+    [communityBuilds],
   );
 
   const term = view.search.trim().toLowerCase();
-  const visible = communityBuilds
+  const visible = (communityBuilds ?? [])
     .filter(
       (b) =>
         (view.profession === "all" || b.primary === view.profession) &&
@@ -212,8 +231,9 @@ export function CommunityView({
       return b.firstSeen.localeCompare(a.firstSeen) || a.name.localeCompare(b.name);
     });
 
-  const fresh = visible.filter((b) => isNew(b));
-  const rest = visible.filter((b) => !isNew(b));
+  const shown = visible.slice(0, view.limit);
+  const fresh = shown.filter((b) => isNew(b));
+  const rest = shown.filter((b) => !isNew(b));
 
   const save = (build: CommunityBuild) => {
     if (!character) return;
@@ -272,11 +292,14 @@ export function CommunityView({
             className="quest-search"
             placeholder="Search builds, skills or tags…"
             value={view.search}
-            onChange={(e) => setView({ search: e.target.value })}
+            onChange={(e) => setView({ search: e.target.value, limit: PAGE })}
           />
           <label>
             Profession{" "}
-            <select value={view.profession} onChange={(e) => setView({ profession: e.target.value })}>
+            <select
+              value={view.profession}
+              onChange={(e) => setView({ profession: e.target.value, limit: PAGE })}
+            >
               <option value="all">All</option>
               {professions.map((p) => (
                 <option key={p}>{p}</option>
@@ -285,7 +308,10 @@ export function CommunityView({
           </label>
           <label>
             Sort by{" "}
-            <select value={view.sort} onChange={(e) => setView({ sort: e.target.value as CommunityViewState["sort"] })}>
+            <select
+              value={view.sort}
+              onChange={(e) => setView({ sort: e.target.value as CommunityViewState["sort"], limit: PAGE })}
+            >
               <option value="new">Newest</option>
               <option value="popular">Most popular</option>
               <option value="name">Name</option>
@@ -295,7 +321,9 @@ export function CommunityView({
         {note && <div className="ok small">{note}</div>}
       </div>
 
-      {communityBuilds.length === 0 ? (
+      {communityBuilds === null ? (
+        <div className="card muted">Loading community builds…</div>
+      ) : communityBuilds.length === 0 ? (
         <div className="card muted">
           No community builds yet. They arrive two ways: an imported list of template codes
           (<code>npm run community -- your-file.csv</code>), and the weekly crawl of Reddit and YouTube.
@@ -306,6 +334,14 @@ export function CommunityView({
         <>
           {section("New and hot", fresh, `first seen in the last ${NEW_DAYS} days`)}
           {section(fresh.length > 0 ? "Everything else" : "All builds", rest)}
+          {visible.length > shown.length && (
+            <div className="card row space-between wrap">
+              <span className="muted small">
+                Showing {shown.length} of {visible.length}
+              </span>
+              <button onClick={() => setView({ limit: view.limit + PAGE })}>Show {PAGE} more</button>
+            </div>
+          )}
         </>
       )}
     </div>

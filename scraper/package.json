@@ -14,7 +14,8 @@
     "updates": "tsx src/updates.ts",
     "quests": "tsx src/quests.ts",
     "community": "tsx src/community.ts",
-    "crawl": "tsx src/crawl.ts"
+    "crawl": "tsx src/crawl.ts",
+    "pvx": "tsx src/pvx.ts"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

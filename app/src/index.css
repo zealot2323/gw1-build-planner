@@ -433,7 +433,7 @@ button.linkish.outpost { font-weight: 600; flex: 1; width: auto; }
   /* the rest of the app: no sideways scrolling */
   header { gap: 0.5rem; }
   .account { margin-left: 0; }
-  .account input[type="email"] { min-width: 10rem; }
+  .account input[type="email"] { min-width: 0; }
   .row.wrap > * { min-width: 0; }
   .checklist { width: 100%; }
   .view, .card { max-width: 100%; }
@@ -547,4 +547,81 @@ button.todo-remove { flex: 0 0 auto; width: auto; text-align: right; }
 .community-context {
   margin: 0.4rem 0 0; padding: 0.35rem 0 0.35rem 0.7rem;
   border-left: 2px solid var(--border); font-style: italic;
+}
+
+/* ===========================================================================
+   Phones (iPhone 13 mini is 375 x 812 CSS px).
+   Three things made pages run off to the right: the 7-tab nav (504px), the
+   character-creation row, and the zone browser's two columns side by side.
+   Alongside those: 44px touch targets, 16px inputs so iOS doesn't zoom on
+   focus, and safe-area padding for the notch.
+   ========================================================================= */
+@media (max-width: 720px) {
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    padding-left: max(0.75rem, env(safe-area-inset-left));
+    padding-right: max(0.75rem, env(safe-area-inset-right));
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  /* the tab bar wraps instead of running off the screen */
+  header { padding-top: max(0.5rem, env(safe-area-inset-top)); align-items: center; }
+  header h1 { flex: 1 1 100%; }
+  nav { display: flex; flex-wrap: wrap; gap: 0.15rem; width: 100%; }
+  button.tab { min-height: 44px; padding: 0.4rem 0.7rem; }
+
+  /* 16px stops iOS zooming the page when a field is focused */
+  input, select, textarea { font-size: 16px; }
+  input, select, textarea, button, .button-like { min-height: 44px; }
+  /* dense inline actions stay tappable without becoming huge */
+  button.small { min-height: 36px; padding: 0.3rem 0.6rem; font-size: 0.95em; }
+  button.linkish, .skill-open, .section-toggle, .todo-skill-row { min-height: 36px; }
+  .inline-check { min-height: 44px; display: inline-flex; align-items: center; gap: 0.35rem; }
+  .inline-check input[type="checkbox"], .checklist input[type="checkbox"] {
+    width: 20px; height: 20px; /* 14px default is under the tappable minimum */
+  }
+
+  /* rows stack rather than overflow */
+  .row { flex-wrap: wrap; }
+  .row > input, .row > select { flex: 1 1 11rem; min-width: 0; }
+  .code-input, .todo-input, .quest-search { flex: 1 1 100%; min-width: 0; }
+  /* the sign-in field and its button share a row rather than taking two */
+  .account { width: 100%; }
+  .account input[type="email"] { flex: 1 1 8rem; min-width: 0; }
+  .account form, .account.small { flex-wrap: wrap; }
+  input[type="search"], input[type="email"], .code-input, .todo-input { max-width: 100%; }
+
+  /* the zone browser: tree above, detail below */
+  .view.row.align-top { flex-direction: column; }
+  .view.row.align-top > .card { width: 100%; max-width: 100%; }
+  .card.grow { width: 100%; }
+  .zone-tree { max-height: 45vh; overflow-y: auto; }
+
+  /* .grow carries min-width: 24rem for the desktop two-column layout, which
+     is wider than the phone itself */
+  .grow, .card.grow { min-width: 0; }
+
+  /* anything still too wide scrolls inside itself, not the page */
+  .checklist { width: 100%; }
+  .checklist-body { max-height: 40vh; }
+  .attribute-rows { grid-template-columns: 1fr; }
+  .build-slot { max-width: 100%; }
+  .modal { max-height: 85vh; }
+  .modal-actions button { flex: 1 1 100%; }
+  pre, code { overflow-x: auto; max-width: 100%; }
+}
+
+/* Very narrow: keep two-up controls from squeezing to nothing. */
+@media (max-width: 400px) {
+  .toolbar label { flex: 1 1 100%; }
+  .community-meta, .quest-where { line-height: 1.5; }
+}
+
+@media (max-width: 720px) {
+  /* standalone icon links need a real tap target; inline links in prose
+     stay at text size, which is the usual convention */
+  .wiki-link, .todo-remove, .change-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-width: 36px; min-height: 36px;
+  }
 }

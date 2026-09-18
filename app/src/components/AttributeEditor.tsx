@@ -3,6 +3,7 @@ import {
   attributesForBuild,
   costOfNextRank,
   MAX_RANK_FROM_POINTS,
+  MAX_RANK_WITH_GEAR,
   pointsRemaining,
   pointsSpent,
   primaryAttributeOf,
@@ -62,14 +63,24 @@ export function AttributeEditor({
               <button className="small" onClick={() => set(attribute, rank - 1)} disabled={rank === 0} aria-label={`Lower ${attribute}`}>
                 −
               </button>
-              <span className={rank > 0 ? "attribute-rank" : "attribute-rank muted"}>{rank}</span>
+              <span
+                className={rank > 0 ? "attribute-rank" : "attribute-rank muted"}
+                title={
+                  rank > MAX_RANK_FROM_POINTS
+                    ? `${rank} includes runes and headgear; points alone reach ${MAX_RANK_FROM_POINTS}`
+                    : undefined
+                }
+              >
+                {rank}
+                {rank > MAX_RANK_FROM_POINTS && <span className="muted">*</span>}
+              </span>
               <button
                 className="small"
                 onClick={() => set(attribute, rank + 1)}
                 disabled={!affordable}
                 title={
                   next === null
-                    ? `${MAX_RANK_FROM_POINTS} is the highest rank attribute points can buy`
+                    ? `${MAX_RANK_FROM_POINTS} is the highest rank attribute points can buy (gear reaches ${MAX_RANK_WITH_GEAR})`
                     : affordable
                       ? `Costs ${next} point${next === 1 ? "" : "s"}`
                       : `Needs ${next} points, ${remaining} left`

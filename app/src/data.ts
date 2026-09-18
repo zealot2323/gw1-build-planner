@@ -9,6 +9,7 @@ import {
   type Character,
   type DataIndex,
   type Dataset,
+  type CommunityBuild,
   type CommunityBuildsFile,
   type SkillChangeLog,
 } from "@gw1/engine";
@@ -19,7 +20,6 @@ import monsters from "@data/monsters.json";
 import missions from "@data/missions.json";
 import quests from "@data/quests.json";
 import skillChanges from "@data/skill-changes.json";
-import communityBuildsFile from "@data/community-builds.json";
 
 export const index = indexDataset({
   skills,
@@ -38,8 +38,15 @@ export const dataset = index.dataset;
  */
 export const changes = indexChanges(skillChanges as unknown as SkillChangeLog);
 
-/** Builds collected from elsewhere; not character-scoped. */
-export const communityBuilds = (communityBuildsFile as unknown as CommunityBuildsFile).builds ?? [];
+/**
+ * Builds collected from elsewhere. Loaded on demand rather than bundled:
+ * it's over a megabyte of other people's builds, and most visits never
+ * open that tab — which matters most on a phone.
+ */
+export async function loadCommunityBuilds(): Promise<CommunityBuild[]> {
+  const module = await import("@data/community-builds.json");
+  return ((module.default ?? module) as unknown as CommunityBuildsFile).builds ?? [];
+}
 
 /**
  * The dataset narrowed to a character's owned campaigns, indexed. Every
