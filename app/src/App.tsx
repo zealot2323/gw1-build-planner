@@ -10,8 +10,9 @@ import { ZonesView, initialZoneState, type ZoneViewState } from "./views/Zones";
 import { QuestsView, initialQuestViewState, type QuestViewState } from "./views/Quests";
 import { BuildsView, initialBuildsViewState, type BuildsViewState } from "./views/Builds";
 import { TodoView, initialTodoViewState, type TodoViewState } from "./views/Todo";
+import { CommunityView, initialCommunityViewState, type CommunityViewState } from "./views/Community";
 
-type Tab = "characters" | "skills" | "builds" | "quests" | "zones" | "to-do";
+type Tab = "characters" | "skills" | "builds" | "community" | "quests" | "zones" | "to-do";
 
 export function App() {
   const { save, addCharacter, updateCharacter, removeCharacter, importFile, exportFile, account } = useSave();
@@ -37,6 +38,9 @@ export function App() {
   const [questView, setQuestView] = useState<QuestViewState>(initialQuestViewState);
   const [buildsView, setBuildsView] = useState<BuildsViewState>(initialBuildsViewState);
   const patchBuildsView = (patch: Partial<BuildsViewState>) => setBuildsView((s) => ({ ...s, ...patch }));
+  const [communityView, setCommunityView] = useState<CommunityViewState>(initialCommunityViewState);
+  const patchCommunityView = (patch: Partial<CommunityViewState>) =>
+    setCommunityView((s) => ({ ...s, ...patch }));
   const [todoView, setTodoView] = useState<TodoViewState>(initialTodoViewState);
   const patchTodoView = (patch: Partial<TodoViewState>) => setTodoView((s) => ({ ...s, ...patch }));
   const patchQuestView = (patch: Partial<QuestViewState>) =>
@@ -98,7 +102,7 @@ export function App() {
       <header>
         <h1>GW1 Build Planner</h1>
         <nav>
-          {(["characters", "skills", "builds", "quests", "zones", "to-do"] as Tab[]).map((t) => (
+          {(["characters", "skills", "builds", "community", "quests", "zones", "to-do"] as Tab[]).map((t) => (
             <button key={t} className={tab === t ? "tab active" : "tab"} onClick={() => setTab(t)}>
               {t}
             </button>
@@ -156,6 +160,14 @@ export function App() {
           }}
           view={buildsView}
           setView={patchBuildsView}
+        />
+      )}
+      {tab === "community" && (
+        <CommunityView
+          character={character}
+          updateBuilds={updateBuilds}
+          view={communityView}
+          setView={patchCommunityView}
         />
       )}
       {tab === "to-do" && (

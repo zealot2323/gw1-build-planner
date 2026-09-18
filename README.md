@@ -13,6 +13,7 @@ Live at **https://zealot2323.github.io/gw1-build-planner/**
 - **Zones** — what spawns where, with per-zone levels, skill bars and a threat
   briefing; normal and hard mode.
 - **To-do** — skills, builds, outposts, missions or free-text notes per character.
+- **Community** — builds collected from elsewhere, each linking back to its source.
 
 Characters save in the browser; signing in (emailed link, no password) keeps
 them in an account and syncs across devices.
@@ -33,7 +34,29 @@ npm run parse      # cache -> data/*.json (no network)
 npm run quests     # quest pages named by skill pages
 npm run updates    # recent game updates + /Skill history
 npm run icons      # skill, profession and cost icons
+
+npm run community -- builds.csv   # import community builds from a file
+npm run crawl                     # weekly sweep of Reddit + YouTube for codes
 ```
+
+### Community builds
+
+`npm run community -- <file>` imports builds from JSON, CSV/TSV or plain
+text. A template code is the only required field; `name`, `author`, `url`,
+`tags` and `notes` are used when present, under any reasonable column name.
+Every code is verified by decoding it against the skill data, and rows
+whose code doesn't decode are reported rather than imported.
+
+`npm run crawl` looks through recent Reddit posts and YouTube videos for
+codes and records each with its source link and the text around it. It runs
+weekly in GitHub Actions and needs repository secrets:
+
+| Secret | For |
+| --- | --- |
+| `REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET` | a Reddit "script" app — Reddit returns 403 to anonymous reads |
+| `YOUTUBE_API_KEY` | YouTube Data API v3 |
+
+Missing credentials don't fail the run; that half is skipped and reported.
 
 `CLAUDE.md` documents the domain rules and every parsing judgement call.
 

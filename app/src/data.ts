@@ -9,6 +9,7 @@ import {
   type Character,
   type DataIndex,
   type Dataset,
+  type CommunityBuildsFile,
   type SkillChangeLog,
 } from "@gw1/engine";
 import skills from "@data/skills.json";
@@ -18,6 +19,7 @@ import monsters from "@data/monsters.json";
 import missions from "@data/missions.json";
 import quests from "@data/quests.json";
 import skillChanges from "@data/skill-changes.json";
+import communityBuildsFile from "@data/community-builds.json";
 
 export const index = indexDataset({
   skills,
@@ -35,6 +37,9 @@ export const dataset = index.dataset;
  * to everyone — so this is indexed once at module load.
  */
 export const changes = indexChanges(skillChanges as unknown as SkillChangeLog);
+
+/** Builds collected from elsewhere; not character-scoped. */
+export const communityBuilds = (communityBuildsFile as unknown as CommunityBuildsFile).builds ?? [];
 
 /**
  * The dataset narrowed to a character's owned campaigns, indexed. Every

@@ -1,0 +1,51 @@
+# Weekly hunt for new build codes on Reddit and YouTube.
+#
+# Needs repository SECRETS (unlike the Supabase values, these are private):
+#   REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET  — from a Reddit "script" app
+#   YOUTUBE_API_KEY                          — YouTube Data API v3
+# Missing credentials don't fail the run; the job reports what it skipped.
+#
+# A commit here lands on main, which triggers the Pages deploy, so new
+# builds appear on the site without anyone doing anything.
+name: Crawl community builds
+
+on:
+  schedule:
+    - cron: "17 6 * * 1" # Mondays, 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: community-crawl
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Crawl
+        env:
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: npm run crawl --workspace=scraper | tee crawl.log
+      - name: Commit anything new
+        run: |
+          if git diff --quiet -- data/community-builds.json; then
+            echo "No new builds this week."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/community-builds.json
+          git commit -m "Community builds: weekly crawl
+
+          $(grep -E '^[0-9]+ new build' crawl.log || true)"
+          git push

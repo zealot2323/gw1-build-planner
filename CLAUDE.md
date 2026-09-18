@@ -326,6 +326,23 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
   walk through those, you don't unlock them — along with anything already
   unlocked. A 20-hop route to Backbreaker becomes 6 trackable stops.
 
+- **Community builds are other people's content.** `data/community-builds.json`
+  holds builds imported from a file or found by the weekly crawl. Rules:
+  - A build is identified by its TEMPLATE CODE, which is also its id, so the
+    same build found twice merges instead of duplicating.
+  - Nothing is imported unless the code DECODES against our skill data into
+    a real primary profession and at least three skills we know. Base64-ish
+    shape alone matches image ids and tracking parameters.
+  - Curated entries (`source.kind` file/pvx) outrank crawled ones: a later
+    crawl refreshes the score but never overwrites a curated name, and
+    `firstSeen` is never moved forward.
+  - The source link, author and the poster's own words are kept together and
+    shown as a quote. Never present crawled text as the app's own writing,
+    and never claim a build is endorsed or tested.
+  - Reddit refuses anonymous reads (403); the crawl needs a script app's
+    client id/secret. YouTube needs an API key. A missing credential is
+    reported, never silently treated as "found nothing".
+
 ## Copy
 
 - **Plain, neutral, specific.** Say what something is, not how the reader

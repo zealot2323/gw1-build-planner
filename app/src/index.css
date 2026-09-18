@@ -539,3 +539,12 @@ button.todo-remove { flex: 0 0 auto; width: auto; text-align: right; }
 .modal-list { margin: 0.3rem 0 0.8rem; padding-left: 1.1rem; }
 .modal-actions { flex-wrap: wrap; }
 .modal-actions button.linkish { width: auto; }
+
+/* Community builds */
+.community-heading { margin: 1rem 0 0.4rem; }
+.community-build .build-slots { margin: 0.5rem 0 0.4rem; }
+.community-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem; }
+.community-context {
+  margin: 0.4rem 0 0; padding: 0.35rem 0 0.35rem 0.7rem;
+  border-left: 2px solid var(--border); font-style: italic;
+}
