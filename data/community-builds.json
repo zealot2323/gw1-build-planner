@@ -1,6 +1,264 @@
 {
-  "generatedAt": "2026-09-18T14:17:28.677Z",
+  "generatedAt": "2026-09-21T12:51:22.556Z",
   "builds": [
+    {
+      "id": "OQSjQomK6O3B69O2HXj7xn4SMA",
+      "code": "OQSjQomK6O3B69O2HXj7xn4SMA",
+      "name": "Defend Denravi (HM) - Guild Wars Prophecies — Blood is Power",
+      "primary": "Paragon",
+      "secondary": "Necromancer",
+      "skills": [
+        "Blood is Power",
+        "\"Can't Touch This!\"",
+        "\"Fall Back!\"",
+        "\"Never Surrender!\"",
+        "\"Stand Your Ground!\"",
+        "\"They're on Fire!\"",
+        "Blazing Finale",
+        "Awe"
+      ],
+      "attributes": {
+        "Blood Magic": 10,
+        "Command": 10,
+        "Leadership": 11
+      },
+      "campaigns": [
+        "Nightfall"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=EWCWEI4p9ZQ",
+        "name": "Defend Denravi (HM) - Guild Wars Prophecies",
+        "size": 6,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=EWCWEI4p9ZQ",
+        "title": "Defend Denravi (HM) - Guild Wars Prophecies",
+        "author": "Heroes of Ascalon",
+        "postedAt": "2026-09-20",
+        "context": "Hero 5 Hayda – Bip (P/N) Build code Attributes Leadership 10+3+1 | Command 10+2 | Blood 10",
+        "score": 38
+      },
+      "firstSeen": "2026-09-21"
+    },
+    {
+      "id": "OQBDAasjS3AIgrATA5ZZA9AIBA",
+      "code": "OQBDAasjS3AIgrATA5ZZA9AIBA",
+      "name": "Defend Denravi (HM) - Guild Wars Prophecies — Fevered Dreams",
+      "primary": "Mesmer",
+      "secondary": null,
+      "skills": [
+        "Fevered Dreams",
+        "Wandering Eye",
+        "Clumsiness",
+        "Fragility",
+        "Signet of Clumsiness",
+        "Power Drain",
+        "Leech Signet",
+        "Elemental Resistance"
+      ],
+      "attributes": {
+        "Fast Casting": 10,
+        "Illusion Magic": 11,
+        "Inspiration Magic": 10
+      },
+      "campaigns": [
+        "Prophecies",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=EWCWEI4p9ZQ",
+        "name": "Defend Denravi (HM) - Guild Wars Prophecies",
+        "size": 6,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=EWCWEI4p9ZQ",
+        "title": "Defend Denravi (HM) - Guild Wars Prophecies",
+        "author": "Heroes of Ascalon",
+        "postedAt": "2026-09-20",
+        "context": "Hero 1 Razah – Fevered Dreams (Me) Build code Attributes Illusion Magic 11+3+1 | Fast Casting 10+1 | Inspiration Magic 10+1",
+        "score": 38
+      },
+      "firstSeen": "2026-09-21"
+    },
+    {
+      "id": "OQBDAqsjOhwpHpLHMEyA9AkA",
+      "code": "OQBDAqsjOhwpHpLHMEyA9AkA",
+      "name": "Defend Denravi (HM) - Guild Wars Prophecies — Psychic Instability",
+      "primary": "Mesmer",
+      "secondary": null,
+      "skills": [
+        "Psychic Instability",
+        "Mistrust",
+        "Complicate",
+        "Cry of Frustration",
+        "Shatter Hex",
+        "Power Drain",
+        "Leech Signet",
+        "Elemental Resistance"
+      ],
+      "attributes": {
+        "Fast Casting": 10,
+        "Domination Magic": 11,
+        "Inspiration Magic": 10
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=EWCWEI4p9ZQ",
+        "name": "Defend Denravi (HM) - Guild Wars Prophecies",
+        "size": 6,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=EWCWEI4p9ZQ",
+        "title": "Defend Denravi (HM) - Guild Wars Prophecies",
+        "author": "Heroes of Ascalon",
+        "postedAt": "2026-09-20",
+        "context": "Hero 2 Gwen – Psychic Instability (Me) Build code Attributes Domination Magic 11+3+1 | Fast Casting 10+1 | Inspiration Magic 10",
+        "score": 38
+      },
+      "firstSeen": "2026-09-21"
+    },
+    {
+      "id": "OAWjMMhsIPXzy54s6JNncXMkAA",
+      "code": "OAWjMMhsIPXzy54s6JNncXMkAA",
+      "name": "Defend Denravi (HM) - Guild Wars Prophecies — Signet of Spirits",
+      "primary": "Ritualist",
+      "secondary": "Mesmer",
+      "skills": [
+        "Signet of Spirits",
+        "Bloodsong",
+        "Life",
+        "Recuperation",
+        "Mend Body and Soul",
+        "Spirit Light",
+        "Flesh of My Flesh",
+        "Elemental Resistance"
+      ],
+      "attributes": {
+        "Inspiration Magic": 3,
+        "Restoration Magic": 12,
+        "Channeling Magic": 12
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=EWCWEI4p9ZQ",
+        "name": "Defend Denravi (HM) - Guild Wars Prophecies",
+        "size": 6,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=EWCWEI4p9ZQ",
+        "title": "Defend Denravi (HM) - Guild Wars Prophecies",
+        "author": "Heroes of Ascalon",
+        "postedAt": "2026-09-20",
+        "context": "Hero 4 Zei Ri – Signet of Spirits (Rt/Me) Build code Attributes Restoration 12+3+1 | Channeling 12+2 | Inspiration 3",
+        "score": 38
+      },
+      "firstSeen": "2026-09-21"
+    },
+    {
+      "id": "OAWkMYgboQyD206FOfcQTk7FDJA",
+      "code": "OAWkMYgboQyD206FOfcQTk7FDJA",
+      "name": "Defend Denravi (HM) - Guild Wars Prophecies — Soul Twisting",
+      "primary": "Ritualist",
+      "secondary": "Mesmer",
+      "skills": [
+        "Soul Twisting",
+        "Shelter",
+        "Displacement",
+        "Union",
+        "Armor of Unfeeling",
+        "Spirit's Gift",
+        "Flesh of My Flesh",
+        "Elemental Resistance"
+      ],
+      "attributes": {
+        "Inspiration Magic": 6,
+        "Communing": 11,
+        "Restoration Magic": 2,
+        "Spawning Power": 12
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=EWCWEI4p9ZQ",
+        "name": "Defend Denravi (HM) - Guild Wars Prophecies",
+        "size": 6,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=EWCWEI4p9ZQ",
+        "title": "Defend Denravi (HM) - Guild Wars Prophecies",
+        "author": "Heroes of Ascalon",
+        "postedAt": "2026-09-20",
+        "context": "Hero 3 Xandra – Soul Twisting Protection (Rt/Me) Build code Attributes Spawning 11+3+1 | Communing 9+1 | Channeling 10 | Inspiration 4",
+        "score": 38
+      },
+      "firstSeen": "2026-09-21"
+    },
+    {
+      "id": "OgREUEq6yJxKGGQTiDiOcElDNKA",
+      "code": "OgREUEq6yJxKGGQTiDiOcElDNKA",
+      "name": "Defend Denravi (HM) - Guild Wars Prophecies — Star Burst",
+      "primary": "Elementalist",
+      "secondary": "Necromancer",
+      "skills": [
+        "Great Dwarf Armor",
+        "Necrotic Traversal",
+        "\"I Am Unstoppable!\"",
+        "Intensity",
+        "Lightning Touch",
+        "Star Burst",
+        "Teinai's Wind",
+        "Whirlwind"
+      ],
+      "attributes": {
+        "Death Magic": 4,
+        "Air Magic": 10,
+        "Fire Magic": 11,
+        "Energy Storage": 9
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=EWCWEI4p9ZQ",
+        "name": "Defend Denravi (HM) - Guild Wars Prophecies",
+        "size": 6,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=EWCWEI4p9ZQ",
+        "title": "Defend Denravi (HM) - Guild Wars Prophecies",
+        "author": "Heroes of Ascalon",
+        "postedAt": "2026-09-20",
+        "context": "Player Starburst (E/N) Build code Attributes Fire 11+3+1 | Energy Storage 9+1 | Air 10 | Death 4",
+        "score": 38
+      },
+      "firstSeen": "2026-09-21"
+    },
     {
       "id": "OQoQQCFcfdaRXVX+V0kqiAAA",
       "code": "OQoQQCFcfdaRXVX+V0kqiAAA",
@@ -68,7 +326,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-13",
         "context": "-Builds necro warrior monk hero1 monk hero2 paragon hero",
-        "score": 7150
+        "score": 7308
       },
       "firstSeen": "2026-09-18"
     },
@@ -110,7 +368,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-13",
         "context": "-Builds necro warrior monk hero1 monk hero2 paragon hero",
-        "score": 7150
+        "score": 7308
       },
       "firstSeen": "2026-09-18"
     },
@@ -151,7 +409,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-13",
         "context": "-Builds necro warrior monk hero1 monk hero2 paragon hero",
-        "score": 7150
+        "score": 7308
       },
       "firstSeen": "2026-09-18"
     },
@@ -195,7 +453,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-13",
         "context": "-Builds necro warrior monk hero1 monk hero2 paragon hero",
-        "score": 7150
+        "score": 7308
       },
       "firstSeen": "2026-09-18"
     },
@@ -240,7 +498,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-13",
         "context": "-Builds necro warrior monk hero1 monk hero2 paragon hero",
-        "score": 7150
+        "score": 7308
       },
       "firstSeen": "2026-09-18"
     },
@@ -638,7 +896,7 @@
         "title": "A Chance Encounter Farm",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-05-10",
-        "score": 2594
+        "score": 2596
       },
       "firstSeen": "2026-09-18"
     },
@@ -1084,7 +1342,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-20",
         "context": "ranger hero paragon hero warrior hero",
-        "score": 9435
+        "score": 9615
       },
       "firstSeen": "2026-09-18"
     },
@@ -1125,7 +1383,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-20",
         "context": "ranger hero paragon hero warrior hero",
-        "score": 9435
+        "score": 9615
       },
       "firstSeen": "2026-09-18"
     },
@@ -1167,7 +1425,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 7596
+        "score": 7763
       },
       "firstSeen": "2026-09-18"
     },
@@ -1209,7 +1467,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 7596
+        "score": 7763
       },
       "firstSeen": "2026-09-18"
     },
@@ -1251,7 +1509,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 7596
+        "score": 7763
       },
       "firstSeen": "2026-09-18"
     },
@@ -1294,7 +1552,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 7596
+        "score": 7763
       },
       "firstSeen": "2026-09-18"
     },
@@ -1337,7 +1595,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 7596
+        "score": 7763
       },
       "firstSeen": "2026-09-18"
     },
@@ -1379,7 +1637,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 7596
+        "score": 7763
       },
       "firstSeen": "2026-09-18"
     },
@@ -1421,7 +1679,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 7596
+        "score": 7763
       },
       "firstSeen": "2026-09-18"
     },
@@ -1463,7 +1721,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 7596
+        "score": 7763
       },
       "firstSeen": "2026-09-18"
     },
@@ -1505,7 +1763,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 7596
+        "score": 7763
       },
       "firstSeen": "2026-09-18"
     },
@@ -1547,7 +1805,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 7596
+        "score": 7763
       },
       "firstSeen": "2026-09-18"
     },
@@ -1589,7 +1847,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 7596
+        "score": 7763
       },
       "firstSeen": "2026-09-18"
     },
@@ -1823,7 +2081,7 @@
         "title": "Backbreaker Warrior Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-05-31",
-        "score": 976
+        "score": 977
       },
       "firstSeen": "2026-09-18"
     },
@@ -1864,7 +2122,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-03-04",
         "context": "-Build player ranger hero1 ranger hero2 ranger hero3 necro hero1 necro hero2 ritu hero paragon hero",
-        "score": 5870
+        "score": 5903
       },
       "firstSeen": "2026-09-18"
     },
@@ -1905,7 +2163,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 11698
+        "score": 11799
       },
       "firstSeen": "2026-09-18"
     },
@@ -1946,7 +2204,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 11698
+        "score": 11799
       },
       "firstSeen": "2026-09-18"
     },
@@ -1987,7 +2245,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 11698
+        "score": 11799
       },
       "firstSeen": "2026-09-18"
     },
@@ -2028,7 +2286,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 11698
+        "score": 11799
       },
       "firstSeen": "2026-09-18"
     },
@@ -2069,7 +2327,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 11698
+        "score": 11799
       },
       "firstSeen": "2026-09-18"
     },
@@ -2110,7 +2368,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 11698
+        "score": 11799
       },
       "firstSeen": "2026-09-18"
     },
@@ -2151,7 +2409,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 11698
+        "score": 11799
       },
       "firstSeen": "2026-09-18"
     },
@@ -2192,7 +2450,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 11698
+        "score": 11799
       },
       "firstSeen": "2026-09-18"
     },
@@ -2233,7 +2491,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 11698
+        "score": 11799
       },
       "firstSeen": "2026-09-18"
     },
@@ -2274,7 +2532,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 11698
+        "score": 11799
       },
       "firstSeen": "2026-09-18"
     },
@@ -2352,7 +2610,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-07",
         "context": "-Builds brawling headbutt yeti smash",
-        "score": 5727
+        "score": 5760
       },
       "firstSeen": "2026-09-18"
     },
@@ -2396,7 +2654,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-07",
         "context": "-Builds brawling headbutt yeti smash",
-        "score": 5727
+        "score": 5760
       },
       "firstSeen": "2026-09-18"
     },
@@ -2432,7 +2690,7 @@
         "title": "Builds Explained - Dervish/Assassin Ebon Dust Aura [Guild Wars]",
         "author": "Péter Kádár",
         "postedAt": "2026-07-03",
-        "score": 8584
+        "score": 8755
       },
       "firstSeen": "2026-09-18"
     },
@@ -2467,7 +2725,7 @@
         "title": "Builds Explained - Necro/Any Order Of Undeath [Guild Wars]",
         "author": "Péter Kádár",
         "postedAt": "2026-06-28",
-        "score": 14308
+        "score": 14447
       },
       "firstSeen": "2026-09-18"
     },
@@ -2511,7 +2769,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-25",
         "context": "-Builds paragon mesmer hero ritualist hero (for brutal weapon)",
-        "score": 13627
+        "score": 13720
       },
       "firstSeen": "2026-09-18"
     },
@@ -2553,7 +2811,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-25",
         "context": "-Builds paragon mesmer hero ritualist hero (for brutal weapon)",
-        "score": 13627
+        "score": 13720
       },
       "firstSeen": "2026-09-18"
     },
@@ -2593,7 +2851,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-25",
         "context": "-Builds paragon mesmer hero ritualist hero (for brutal weapon)",
-        "score": 13627
+        "score": 13720
       },
       "firstSeen": "2026-09-18"
     },
@@ -2635,7 +2893,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-11",
         "context": "-Builds base save yourselves ST hero",
-        "score": 14220
+        "score": 14317
       },
       "firstSeen": "2026-09-18"
     },
@@ -2677,7 +2935,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-11",
         "context": "-Builds base save yourselves ST hero",
-        "score": 14220
+        "score": 14317
       },
       "firstSeen": "2026-09-18"
     },
@@ -2719,7 +2977,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-11",
         "context": "-Builds base save yourselves ST hero",
-        "score": 14220
+        "score": 14317
       },
       "firstSeen": "2026-09-18"
     },
@@ -2763,7 +3021,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-27",
         "context": "-Builds default build fun build",
-        "score": 13583
+        "score": 13686
       },
       "firstSeen": "2026-09-18"
     },
@@ -2806,7 +3064,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-27",
         "context": "-Builds default build fun build",
-        "score": 13583
+        "score": 13686
       },
       "firstSeen": "2026-09-18"
     },
@@ -2842,7 +3100,7 @@
         "title": "Crippling Slash Warrior Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-03-29",
-        "score": 929
+        "score": 930
       },
       "firstSeen": "2026-09-18"
     },
@@ -3176,7 +3434,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-16",
         "context": "-Builds dervish feather dervish jade brotherhood dervish nolani",
-        "score": 11005
+        "score": 11060
       },
       "firstSeen": "2026-09-18"
     },
@@ -3218,7 +3476,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-16",
         "context": "-Builds dervish feather dervish jade brotherhood dervish nolani",
-        "score": 11005
+        "score": 11060
       },
       "firstSeen": "2026-09-18"
     },
@@ -3260,7 +3518,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-16",
         "context": "-Builds dervish feather dervish jade brotherhood dervish nolani",
-        "score": 11005
+        "score": 11060
       },
       "firstSeen": "2026-09-18"
     },
@@ -3302,7 +3560,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-16",
         "context": "warrior feather warrior jade brotherhood warrior nolani",
-        "score": 11005
+        "score": 11060
       },
       "firstSeen": "2026-09-18"
     },
@@ -3343,7 +3601,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-16",
         "context": "warrior feather warrior jade brotherhood warrior nolani",
-        "score": 11005
+        "score": 11060
       },
       "firstSeen": "2026-09-18"
     },
@@ -3385,7 +3643,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-16",
         "context": "warrior feather warrior jade brotherhood warrior nolani",
-        "score": 11005
+        "score": 11060
       },
       "firstSeen": "2026-09-18"
     },
@@ -3485,7 +3743,7 @@
         "title": "Don't Sleep on Paragons in PvP",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-08-23",
-        "score": 5287
+        "score": 5337
       },
       "firstSeen": "2026-09-18"
     },
@@ -3586,7 +3844,7 @@
         "title": "Dying and Winning: The Life and Times of a Squishy Assassin",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-09-06",
-        "score": 1970
+        "score": 1980
       },
       "firstSeen": "2026-09-18"
     },
@@ -4449,7 +4707,7 @@
         "title": "Enchanter's Conundrum Mesmer Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-04-05",
-        "score": 871
+        "score": 873
       },
       "firstSeen": "2026-09-18"
     },
@@ -4654,7 +4912,7 @@
         "title": "Farming Chitin Fragments Guild Wars Reforged",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-07-26",
-        "score": 513
+        "score": 515
       },
       "firstSeen": "2026-09-18"
     },
@@ -4689,7 +4947,7 @@
         "title": "Farming Glittering Dust",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-07-12",
-        "score": 1507
+        "score": 1514
       },
       "firstSeen": "2026-09-18"
     },
@@ -4819,7 +5077,7 @@
         "author": "Olga Knows Best 🎮",
         "postedAt": "2026-01-24",
         "context": "Original Build Template—[] Video Build Template - []",
-        "score": 998
+        "score": 1008
       },
       "firstSeen": "2026-09-18"
     },
@@ -4861,7 +5119,7 @@
         "author": "Olga Knows Best 🎮",
         "postedAt": "2026-01-24",
         "context": "Original Build Template—[] Video Build Template - []",
-        "score": 998
+        "score": 1008
       },
       "firstSeen": "2026-09-18"
     },
@@ -4895,7 +5153,7 @@
         "title": "Guild Wars Reforged - Are Wind Prayers Underrated? (Onslaught + Nundu Bay HM)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-08-19",
-        "score": 418
+        "score": 425
       },
       "firstSeen": "2026-09-18"
     },
@@ -4931,7 +5189,7 @@
         "title": "Guild Wars Reforged - Build - Assassin Mesmer Lysaa's Paradox",
         "author": "Sabre Wolf",
         "postedAt": "2026-08-16",
-        "score": 394
+        "score": 399
       },
       "firstSeen": "2026-09-18"
     },
@@ -4968,7 +5226,7 @@
         "author": "Sabre Wolf",
         "postedAt": "2026-09-14",
         "context": "Build Code (Me/Mo version shown)",
-        "score": 481
+        "score": 494
       },
       "firstSeen": "2026-09-18"
     },
@@ -5001,7 +5259,7 @@
       "team": {
         "id": "https://www.youtube.com/watch?v=H3qgr28YTk8",
         "name": "Guild Wars Reforged - Build - Healer's Boon vs Unyielding Aura Monk",
-        "size": 4,
+        "size": 2,
         "kind": "set"
       },
       "source": {
@@ -5011,7 +5269,7 @@
         "author": "Sabre Wolf",
         "postedAt": "2026-09-10",
         "context": "Monk/Ele Healer's Boon Build Code Monk/Ele Unyielding Aura Build Code",
-        "score": 2564
+        "score": 2633
       },
       "firstSeen": "2026-09-18"
     },
@@ -5044,7 +5302,7 @@
       "team": {
         "id": "https://www.youtube.com/watch?v=H3qgr28YTk8",
         "name": "Guild Wars Reforged - Build - Healer's Boon vs Unyielding Aura Monk",
-        "size": 4,
+        "size": 2,
         "kind": "set"
       },
       "source": {
@@ -5054,7 +5312,7 @@
         "author": "Sabre Wolf",
         "postedAt": "2026-09-10",
         "context": "Monk/Ele Healer's Boon Build Code Monk/Ele Unyielding Aura Build Code",
-        "score": 2564
+        "score": 2633
       },
       "firstSeen": "2026-09-18"
     },
@@ -5091,7 +5349,7 @@
         "title": "Guild Wars Reforged - Build - Monk Glimmer of Light",
         "author": "Sabre Wolf",
         "postedAt": "2026-08-13",
-        "score": 702
+        "score": 716
       },
       "firstSeen": "2026-09-18"
     },
@@ -5126,7 +5384,7 @@
         "title": "Guild Wars Reforged - Build - Ranger Paragon Enraged Pack Hunter",
         "author": "Sabre Wolf",
         "postedAt": "2026-08-23",
-        "score": 1471
+        "score": 1494
       },
       "firstSeen": "2026-09-18"
     },
@@ -5169,7 +5427,7 @@
         "author": "Sabre Wolf",
         "postedAt": "2026-08-09",
         "context": "Ranger Primary Code Ritualist Primary Code",
-        "score": 941
+        "score": 969
       },
       "firstSeen": "2026-09-18"
     },
@@ -5211,7 +5469,7 @@
         "author": "Sabre Wolf",
         "postedAt": "2026-08-09",
         "context": "Ranger Primary Code Ritualist Primary Code",
-        "score": 941
+        "score": 969
       },
       "firstSeen": "2026-09-18"
     },
@@ -5253,7 +5511,7 @@
         "author": "Sabre Wolf",
         "postedAt": "2026-08-27",
         "context": "Warrior/Assassin Build Code Warrior/Monk Build Code Warrior/Ritualist Build Code",
-        "score": 356
+        "score": 370
       },
       "firstSeen": "2026-09-18"
     },
@@ -5296,7 +5554,7 @@
         "author": "Sabre Wolf",
         "postedAt": "2026-08-27",
         "context": "Warrior/Assassin Build Code Warrior/Monk Build Code Warrior/Ritualist Build Code",
-        "score": 356
+        "score": 370
       },
       "firstSeen": "2026-09-18"
     },
@@ -5339,7 +5597,7 @@
         "author": "Sabre Wolf",
         "postedAt": "2026-08-27",
         "context": "Warrior/Assassin Build Code Warrior/Monk Build Code Warrior/Ritualist Build Code",
-        "score": 356
+        "score": 370
       },
       "firstSeen": "2026-09-18"
     },
@@ -5374,7 +5632,7 @@
         "title": "Guild Wars Reforged - Builds - Necro Ritualist Healer",
         "author": "Sabre Wolf",
         "postedAt": "2026-09-03",
-        "score": 1119
+        "score": 1132
       },
       "firstSeen": "2026-09-18"
     },
@@ -5416,7 +5674,7 @@
         "title": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spiteful Spirit & Tahnakkai Temple)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-16",
-        "score": 1848
+        "score": 2158
       },
       "firstSeen": "2026-09-18"
     },
@@ -5459,7 +5717,7 @@
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-16",
         "context": "Olias (Order Of Undeath MM)",
-        "score": 1848
+        "score": 2158
       },
       "firstSeen": "2026-09-18"
     },
@@ -5501,7 +5759,7 @@
         "title": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spiteful Spirit & Tahnakkai Temple)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-16",
-        "score": 1848
+        "score": 2158
       },
       "firstSeen": "2026-09-18"
     },
@@ -5542,7 +5800,7 @@
         "title": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spiteful Spirit & Tahnakkai Temple)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-16",
-        "score": 1848
+        "score": 2158
       },
       "firstSeen": "2026-09-18"
     },
@@ -5582,7 +5840,7 @@
         "title": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spiteful Spirit & Tahnakkai Temple)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-16",
-        "score": 1848
+        "score": 2158
       },
       "firstSeen": "2026-09-18"
     },
@@ -5623,7 +5881,7 @@
         "title": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spiteful Spirit & Tahnakkai Temple)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-16",
-        "score": 1848
+        "score": 2158
       },
       "firstSeen": "2026-09-18"
     },
@@ -5665,7 +5923,7 @@
         "title": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spiteful Spirit & Tahnakkai Temple)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-16",
-        "score": 1848
+        "score": 2158
       },
       "firstSeen": "2026-09-18"
     },
@@ -5706,7 +5964,7 @@
         "title": "Guild Wars Reforged - Fire Magic For Hard Mode (Searing Flames + Jennurs Horde)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-08-22",
-        "score": 2499
+        "score": 2514
       },
       "firstSeen": "2026-09-18"
     },
@@ -5736,18 +5994,18 @@
         "Eye of the North"
       ],
       "team": {
-        "id": "https://www.youtube.com/watch?v=JD7lpWWggpw",
-        "name": "Guild Wars Reforged - Vanquish Tyria: Griffons Mouth (Sandstorm)",
-        "size": 5,
+        "id": "https://www.youtube.com/watch?v=sbiJq-2guZs",
+        "name": "Guild Wars Reforged - Fire Magic For Hard Mode (Searing Flames + Jennurs Horde)",
+        "size": 7,
         "kind": "set"
       },
       "source": {
         "kind": "youtube",
-        "url": "https://www.youtube.com/watch?v=JD7lpWWggpw",
-        "title": "Guild Wars Reforged - Vanquish Tyria: Griffons Mouth (Sandstorm)",
+        "url": "https://www.youtube.com/watch?v=sbiJq-2guZs",
+        "title": "Guild Wars Reforged - Fire Magic For Hard Mode (Searing Flames + Jennurs Horde)",
         "author": "TheCaffeineSage",
-        "postedAt": "2026-07-24",
-        "score": 292
+        "postedAt": "2026-08-22",
+        "score": 2514
       },
       "firstSeen": "2026-09-18"
     },
@@ -5790,7 +6048,7 @@
         "author": "TheCaffeineSage",
         "postedAt": "2026-08-22",
         "context": "Master Of Whispers Order Of Undeath MM",
-        "score": 2499
+        "score": 2514
       },
       "firstSeen": "2026-09-18"
     },
@@ -5820,18 +6078,18 @@
         "Factions"
       ],
       "team": {
-        "id": "https://www.youtube.com/watch?v=JD7lpWWggpw",
-        "name": "Guild Wars Reforged - Vanquish Tyria: Griffons Mouth (Sandstorm)",
-        "size": 5,
+        "id": "https://www.youtube.com/watch?v=sbiJq-2guZs",
+        "name": "Guild Wars Reforged - Fire Magic For Hard Mode (Searing Flames + Jennurs Horde)",
+        "size": 7,
         "kind": "set"
       },
       "source": {
         "kind": "youtube",
-        "url": "https://www.youtube.com/watch?v=JD7lpWWggpw",
-        "title": "Guild Wars Reforged - Vanquish Tyria: Griffons Mouth (Sandstorm)",
+        "url": "https://www.youtube.com/watch?v=sbiJq-2guZs",
+        "title": "Guild Wars Reforged - Fire Magic For Hard Mode (Searing Flames + Jennurs Horde)",
         "author": "TheCaffeineSage",
-        "postedAt": "2026-07-24",
-        "score": 292
+        "postedAt": "2026-08-22",
+        "score": 2514
       },
       "firstSeen": "2026-09-18"
     },
@@ -5872,7 +6130,7 @@
         "title": "Guild Wars Reforged - Fire Magic For Hard Mode (Searing Flames + Jennurs Horde)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-08-22",
-        "score": 2499
+        "score": 2514
       },
       "firstSeen": "2026-09-18"
     },
@@ -5913,7 +6171,7 @@
         "title": "Guild Wars Reforged - Fire Magic For Hard Mode (Searing Flames + Jennurs Horde)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-08-22",
-        "score": 2499
+        "score": 2514
       },
       "firstSeen": "2026-09-18"
     },
@@ -5955,7 +6213,7 @@
         "title": "Guild Wars Reforged - Fire Magic For Hard Mode (Searing Flames + Jennurs Horde)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-08-22",
-        "score": 2499
+        "score": 2514
       },
       "firstSeen": "2026-09-18"
     },
@@ -5991,7 +6249,7 @@
         "title": "Guild Wars Reforged - Hero Guide: Margrid The Sly (Broad Head Arrow)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-08-24",
-        "score": 175
+        "score": 176
       },
       "firstSeen": "2026-09-18"
     },
@@ -6026,7 +6284,7 @@
         "title": "Guild Wars Reforged - Hero Guide: Norgu (Shared Burden)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-08-26",
-        "score": 242
+        "score": 247
       },
       "firstSeen": "2026-09-18"
     },
@@ -6097,7 +6355,7 @@
         "title": "Guild Wars Reforged - R/x - Rapid Fire (Bow DPS)",
         "author": "Kryth Builds",
         "postedAt": "2026-09-13",
-        "score": 35
+        "score": 314
       },
       "firstSeen": "2026-09-18"
     },
@@ -6302,7 +6560,7 @@
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-04",
         "context": "Build Templates Zai Cruel Spear",
-        "score": 325
+        "score": 329
       },
       "firstSeen": "2026-09-18"
     },
@@ -6344,7 +6602,7 @@
         "title": "Guild Wars Reforged - Vanquish Tyria: Silverwood (Cruel Spear)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-04",
-        "score": 325
+        "score": 329
       },
       "firstSeen": "2026-09-18"
     },
@@ -6387,7 +6645,7 @@
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-04",
         "context": "Koss, Jora (Hundred Blades)",
-        "score": 325
+        "score": 329
       },
       "firstSeen": "2026-09-18"
     },
@@ -6430,7 +6688,7 @@
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-04",
         "context": "Master Of Whispers (Jagged Bones)",
-        "score": 325
+        "score": 329
       },
       "firstSeen": "2026-09-18"
     },
@@ -6471,7 +6729,7 @@
         "title": "Guild Wars Reforged - Vanquish Tyria: Silverwood (Cruel Spear)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-04",
-        "score": 325
+        "score": 329
       },
       "firstSeen": "2026-09-18"
     },
@@ -6928,7 +7186,7 @@
         "title": "Mark of Protection Monk Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-03-15",
-        "score": 883
+        "score": 882
       },
       "firstSeen": "2026-09-18"
     },
@@ -7821,7 +8079,7 @@
         "title": "Mesmer commits skill appropriation in Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-09-13",
-        "score": 830
+        "score": 862
       },
       "firstSeen": "2026-09-18"
     },
@@ -7887,7 +8145,7 @@
         "title": "Mind Freeze Elementalist Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-03-22",
-        "score": 1017
+        "score": 1018
       },
       "firstSeen": "2026-09-18"
     },
@@ -9555,7 +9813,7 @@
         "title": "Moebius Strike Assassin Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-08-16",
-        "score": 774
+        "score": 783
       },
       "firstSeen": "2026-09-18"
     },
@@ -10615,7 +10873,7 @@
         "title": "Monk Doa Torment Gemstone Farm [Guild Wars]",
         "author": "Péter Kádár",
         "postedAt": "2026-07-11",
-        "score": 6593
+        "score": 6625
       },
       "firstSeen": "2026-09-18"
     },
@@ -10861,7 +11119,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 9808
+        "score": 9867
       },
       "firstSeen": "2026-09-18"
     },
@@ -10904,7 +11162,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 9808
+        "score": 9867
       },
       "firstSeen": "2026-09-18"
     },
@@ -10946,7 +11204,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 9808
+        "score": 9867
       },
       "firstSeen": "2026-09-18"
     },
@@ -10990,7 +11248,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 9808
+        "score": 9867
       },
       "firstSeen": "2026-09-18"
     },
@@ -11033,7 +11291,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 9808
+        "score": 9867
       },
       "firstSeen": "2026-09-18"
     },
@@ -11075,7 +11333,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 9808
+        "score": 9867
       },
       "firstSeen": "2026-09-18"
     },
@@ -11119,7 +11377,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 9808
+        "score": 9867
       },
       "firstSeen": "2026-09-18"
     },
@@ -11162,7 +11420,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 9808
+        "score": 9867
       },
       "firstSeen": "2026-09-18"
     },
@@ -11207,7 +11465,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 9808
+        "score": 9867
       },
       "firstSeen": "2026-09-18"
     },
@@ -11248,7 +11506,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 9808
+        "score": 9867
       },
       "firstSeen": "2026-09-18"
     },
@@ -13413,7 +13671,7 @@
         "title": "POWERFUL MINION ARMY TEAM BUILD! 💀 [Guild Wars Reforged]",
         "author": "Lain",
         "postedAt": "2026-09-15",
-        "score": 7422
+        "score": 7098
       },
       "firstSeen": "2026-09-18"
     },
@@ -13457,7 +13715,7 @@
         "title": "POWERFUL MINION ARMY TEAM BUILD! 💀 [Guild Wars Reforged]",
         "author": "Lain",
         "postedAt": "2026-09-15",
-        "score": 7422
+        "score": 7098
       },
       "firstSeen": "2026-09-18"
     },
@@ -13499,7 +13757,7 @@
         "title": "POWERFUL MINION ARMY TEAM BUILD! 💀 [Guild Wars Reforged]",
         "author": "Lain",
         "postedAt": "2026-09-15",
-        "score": 7422
+        "score": 7098
       },
       "firstSeen": "2026-09-18"
     },
@@ -13541,7 +13799,7 @@
         "title": "POWERFUL MINION ARMY TEAM BUILD! 💀 [Guild Wars Reforged]",
         "author": "Lain",
         "postedAt": "2026-09-15",
-        "score": 7422
+        "score": 7098
       },
       "firstSeen": "2026-09-18"
     },
@@ -13583,7 +13841,7 @@
         "title": "POWERFUL MINION ARMY TEAM BUILD! 💀 [Guild Wars Reforged]",
         "author": "Lain",
         "postedAt": "2026-09-15",
-        "score": 7422
+        "score": 7098
       },
       "firstSeen": "2026-09-18"
     },
@@ -13624,7 +13882,7 @@
         "title": "POWERFUL MINION ARMY TEAM BUILD! 💀 [Guild Wars Reforged]",
         "author": "Lain",
         "postedAt": "2026-09-15",
-        "score": 7422
+        "score": 7098
       },
       "firstSeen": "2026-09-18"
     },
@@ -16641,7 +16899,7 @@
         "title": "Shield of Deflection Monk Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-07-05",
-        "score": 904
+        "score": 917
       },
       "firstSeen": "2026-09-18"
     },
@@ -16706,7 +16964,7 @@
         "title": "Signet of Suffering Necromancer Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-05-17",
-        "score": 1781
+        "score": 1784
       },
       "firstSeen": "2026-09-18"
     },
@@ -16782,7 +17040,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-03-04",
         "context": "-Build player ranger hero1 ranger hero2 ranger hero3 necro hero1 necro hero2 ritu hero paragon hero",
-        "score": 5870
+        "score": 5903
       },
       "firstSeen": "2026-09-18"
     },
@@ -16824,7 +17082,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 15145
+        "score": 15224
       },
       "firstSeen": "2026-09-18"
     },
@@ -16866,7 +17124,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 15145
+        "score": 15224
       },
       "firstSeen": "2026-09-18"
     },
@@ -16909,7 +17167,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 15145
+        "score": 15224
       },
       "firstSeen": "2026-09-18"
     },
@@ -16953,7 +17211,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 15145
+        "score": 15224
       },
       "firstSeen": "2026-09-18"
     },
@@ -16996,7 +17254,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 15145
+        "score": 15224
       },
       "firstSeen": "2026-09-18"
     },
@@ -17037,7 +17295,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 15145
+        "score": 15224
       },
       "firstSeen": "2026-09-18"
     },
@@ -17079,7 +17337,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 15145
+        "score": 15224
       },
       "firstSeen": "2026-09-18"
     },
@@ -17121,7 +17379,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 15145
+        "score": 15224
       },
       "firstSeen": "2026-09-18"
     },
@@ -17836,7 +18094,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-03-02",
         "context": "ranger hero1 ranger hero2 monk hero",
-        "score": 5641
+        "score": 5654
       },
       "firstSeen": "2026-09-18"
     },
@@ -17879,7 +18137,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-03-02",
         "context": "-Builds - ritu(vwk) - ritu(spiker) - ranger(whirling def)",
-        "score": 5641
+        "score": 5654
       },
       "firstSeen": "2026-09-18"
     },
@@ -17920,7 +18178,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-03-02",
         "context": "These are the any/monk builds - ritu -ranger -necro -monk -mesmer -ele -para -dervish -warrior -assa",
-        "score": 5641
+        "score": 5654
       },
       "firstSeen": "2026-09-18"
     },
@@ -17961,7 +18219,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-03-02",
         "context": "These are the any/monk builds - ritu -ranger -necro -monk -mesmer -ele -para -dervish -warrior -assa",
-        "score": 5641
+        "score": 5654
       },
       "firstSeen": "2026-09-18"
     },
@@ -18002,7 +18260,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-03-02",
         "context": "These are the any/monk builds - ritu -ranger -necro -monk -mesmer -ele -para -dervish -warrior -assa",
-        "score": 5641
+        "score": 5654
       },
       "firstSeen": "2026-09-18"
     },
@@ -18043,7 +18301,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-03-02",
         "context": "These are the any/monk builds - ritu -ranger -necro -monk -mesmer -ele -para -dervish -warrior -assa",
-        "score": 5641
+        "score": 5654
       },
       "firstSeen": "2026-09-18"
     },
@@ -18085,7 +18343,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-03-02",
         "context": "These are the any/monk builds - ritu -ranger -necro -monk -mesmer -ele -para -dervish -warrior -assa",
-        "score": 5641
+        "score": 5654
       },
       "firstSeen": "2026-09-18"
     },
@@ -18126,7 +18384,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-03-02",
         "context": "These are the any/monk builds - ritu -ranger -necro -monk -mesmer -ele -para -dervish -warrior -assa",
-        "score": 5641
+        "score": 5654
       },
       "firstSeen": "2026-09-18"
     },
@@ -18167,7 +18425,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-03-02",
         "context": "These are the any/monk builds - ritu -ranger -necro -monk -mesmer -ele -para -dervish -warrior -assa",
-        "score": 5641
+        "score": 5654
       },
       "firstSeen": "2026-09-18"
     },
@@ -18208,7 +18466,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-03-02",
         "context": "These are the any/monk builds - ritu -ranger -necro -monk -mesmer -ele -para -dervish -warrior -assa",
-        "score": 5641
+        "score": 5654
       },
       "firstSeen": "2026-09-18"
     },
@@ -18249,7 +18507,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-03-02",
         "context": "These are the any/monk builds - ritu -ranger -necro -monk -mesmer -ele -para -dervish -warrior -assa",
-        "score": 5641
+        "score": 5654
       },
       "firstSeen": "2026-09-18"
     },
@@ -18290,7 +18548,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-03-02",
         "context": "These are the any/monk builds - ritu -ranger -necro -monk -mesmer -ele -para -dervish -warrior -assa",
-        "score": 5641
+        "score": 5654
       },
       "firstSeen": "2026-09-18"
     },
@@ -18332,7 +18590,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-03-02",
         "context": "ranger hero1 ranger hero2 monk hero",
-        "score": 5641
+        "score": 5654
       },
       "firstSeen": "2026-09-18"
     },
@@ -18373,7 +18631,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-03-02",
         "context": "-Builds - ritu(vwk) - ritu(spiker) - ranger(whirling def)",
-        "score": 5641
+        "score": 5654
       },
       "firstSeen": "2026-09-18"
     },
@@ -18415,7 +18673,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-03-02",
         "context": "ranger hero1 ranger hero2 monk hero",
-        "score": 5641
+        "score": 5654
       },
       "firstSeen": "2026-09-18"
     },
@@ -18458,7 +18716,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-03-02",
         "context": "-Builds - ritu(vwk) - ritu(spiker) - ranger(whirling def)",
-        "score": 5641
+        "score": 5654
       },
       "firstSeen": "2026-09-18"
     },
@@ -18493,7 +18751,7 @@
         "title": "Unsteady Ground Elementalist Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-07-19",
-        "score": 467
+        "score": 470
       },
       "firstSeen": "2026-09-18"
     },
@@ -18528,7 +18786,7 @@
         "title": "Vermin Farm (Scales + Shreader's Talons)",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-06-07",
-        "score": 2484
+        "score": 2492
       },
       "firstSeen": "2026-09-18"
     },
@@ -18566,7 +18824,7 @@
         "title": "Virulence Necromancer Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-04-12",
-        "score": 1817
+        "score": 1820
       },
       "firstSeen": "2026-09-18"
     },
@@ -18879,7 +19137,7 @@
         "title": "War/Monk & Monk/War Solo Farm for Glacial Blades [Guild Wars]",
         "author": "Péter Kádár",
         "postedAt": "2026-08-20",
-        "score": 9435
+        "score": 9615
       },
       "firstSeen": "2026-09-18"
     },
@@ -18921,7 +19179,7 @@
         "title": "War/Monk & Monk/War Solo Farm for Glacial Blades [Guild Wars]",
         "author": "Péter Kádár",
         "postedAt": "2026-08-20",
-        "score": 9435
+        "score": 9615
       },
       "firstSeen": "2026-09-18"
     },
@@ -18962,7 +19220,7 @@
         "title": "Water Djinn Solo Farm for Gold Scythes & Dust [Guild Wars]",
         "author": "Péter Kádár",
         "postedAt": "2026-09-15",
-        "score": 9030
+        "score": 8808
       },
       "firstSeen": "2026-09-18"
     },
