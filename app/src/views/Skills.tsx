@@ -144,6 +144,7 @@ export function SkillsView({
   setView,
   addToTodo,
   todos,
+  onFindCommunityBuilds,
 }: {
   character: CharacterSave | null;
   /** Skill to scroll to (set by the zone browser's skill links). */
@@ -158,6 +159,7 @@ export function SkillsView({
   setView: (patch: Partial<SkillViewState>) => void;
   addToTodo: (entries: Array<{ kind: TodoKind; ref: string }>) => { added: number; skipped: number };
   todos: TodoItem[];
+  onFindCommunityBuilds: (skill: string) => void;
 }) {
   const index = useData();
   const { profFilter, attrFilter, elitesOnly, search, openSkill, sortBy, changedOnly, collapsed } = view;
@@ -425,6 +427,15 @@ export function SkillsView({
                                     skill={e.skill}
                                   />
                                 )}
+                                <p className="small no-margin">
+                                  <button
+                                    className="small"
+                                    onClick={() => onFindCommunityBuilds(e.skill.wikiPage)}
+                                    title={`Show community builds that use ${e.skill.name}`}
+                                  >
+                                    Find community builds using this
+                                  </button>
+                                </p>
                                 {e.status !== "KNOWN" && (
                                   <RouteToTodo
                                     label={e.skill.name}

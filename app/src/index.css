@@ -640,3 +640,4 @@ button.source-chip:hover { color: var(--accent); border-color: var(--accent); }
 .team-professions { display: inline-flex; gap: 0.1rem; margin-left: auto; }
 .team-members { margin: 0.5rem 0 0 0.8rem; border-left: 2px solid var(--border); padding-left: 0.7rem; }
 .team-members .card { border: none; padding: 0.4rem 0; background: none; }
+.filter-banner { align-items: center; }

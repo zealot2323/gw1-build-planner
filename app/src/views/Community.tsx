@@ -33,6 +33,8 @@ export interface CommunityViewState {
   sort: "new" | "popular" | "name";
   /** "<build id>|<skill page>" of the open skill. */
   openSkill: string | null;
+  /** Show only builds containing this skill (set from the skill browser). */
+  usesSkill: string | null;
   /** How many cards to render; grows with "Show more". */
   limit: number;
 }
@@ -46,6 +48,7 @@ export const initialCommunityViewState: CommunityViewState = {
   openTeams: [],
   sort: "new",
   openSkill: null,
+  usesSkill: null,
   limit: PAGE,
 };
 
@@ -234,7 +237,11 @@ function TeamCard({
           {team.kind === "team" ? "Team build" : "From one source"}
         </span>
         <span className="muted small">
-          {builds.length} bar{builds.length === 1 ? "" : "s"}
+          {/* under a skill filter only the matching bars are listed, so say
+              so rather than making a 7-hero team look like a 1-bar build */}
+          {builds.length === team.size
+            ? `${builds.length} bar${builds.length === 1 ? "" : "s"}`
+            : `${builds.length} of ${team.size} bars`}
         </span>
         <span className="team-professions">
           {professions.map((p, i) => (
@@ -258,6 +265,7 @@ export function CommunityView({
   view: CommunityViewState;
   setView: (patch: Partial<CommunityViewState>) => void;
 }) {
+  const index = useData();
   const [note, setNote] = useState<string | null>(null);
   const [communityBuilds, setCommunityBuilds] = useState<CommunityBuild[] | null>(null);
 
@@ -292,6 +300,7 @@ export function CommunityView({
       (b) =>
         (view.profession === "all" || b.primary === view.profession) &&
         (view.source === "all" || sourceOf(b) === view.source) &&
+        (view.usesSkill === null || b.skills.includes(view.usesSkill)) &&
         (view.type === "all" ||
           (view.type === "single" ? b.team === undefined : b.team?.kind === view.type)) &&
         (term === "" ||
@@ -476,6 +485,20 @@ export function CommunityView({
         {note && <div className="ok small">{note}</div>}
       </div>
 
+      {view.usesSkill !== null && (
+        <div className="card row space-between wrap filter-banner">
+          <span>
+            Builds using <strong>{index.skillByPage.get(view.usesSkill)?.name ?? view.usesSkill}</strong>{" "}
+            <span className="muted">
+              ({entries.length} {entries.length === 1 ? "result" : "results"}
+              {communityBuilds === null ? ", still loading" : ""})
+            </span>
+          </span>
+          <button className="small" onClick={() => setView({ usesSkill: null, limit: PAGE })}>
+            Show all builds
+          </button>
+        </div>
+      )}
       {communityBuilds === null ? (
         <div className="card muted">Loading community builds…</div>
       ) : communityBuilds.length === 0 ? (
@@ -484,7 +507,11 @@ export function CommunityView({
           (<code>npm run community -- your-file.csv</code>), and the weekly crawl of Reddit and YouTube.
         </div>
       ) : entries.length === 0 ? (
-        <div className="card muted">No builds match these filters.</div>
+        <div className="card muted">
+          {view.usesSkill
+            ? `No community build uses ${index.skillByPage.get(view.usesSkill)?.name ?? view.usesSkill}.`
+            : "No builds match these filters."}
+        </div>
       ) : (
         <>
           {section("New and hot", fresh, `first seen in the last ${NEW_DAYS} days`)}

@@ -91,6 +91,12 @@ export function App() {
       }
     : null;
 
+  /** "Which community builds use this?" — filter that tab and switch to it. */
+  const goToCommunityForSkill = (skill: string) => {
+    setCommunityView({ ...initialCommunityViewState, usesSkill: skill });
+    setTab("community");
+  };
+
   const goToSkill = (skill: string) => {
     setFocusSkill(skill);
     patchSkillView({ openSkill: skill });
@@ -148,6 +154,7 @@ export function App() {
           setView={patchSkillView}
           addToTodo={addToTodo}
           todos={character?.todos ?? []}
+          onFindCommunityBuilds={goToCommunityForSkill}
         />
       )}
       {tab === "builds" && (
