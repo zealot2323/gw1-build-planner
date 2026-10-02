@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20250611",
+  "pageid": 317878,
+  "revid": 2715719,
+  "timestamp": "2025-12-18T20:46:16Z",
+  "wikitext": "== Update, June 11, 2025 ==\n\n* Added new [[Command line arguments|command line parameter]] \"-nopatchui\".\n** Your client will patch invisibly in the background, until it has enough content to show the [[login screen]], at which time the login window will appear on-screen.\n** If combined with \"-image\", your client will fully patch, and then proceed to the login screen.\n** This is similar to the option available in [[Guild Wars 2]].\n* Fixed a bug that would prevent the game from running on certain Microsoft Surface Tablet computers.\n** Occasional graphic glitches are visible, usually as large black extended triangles, when using the new graphics chip in these tablets, the Qualcomm® Adreno™ GPU.\n\n<noinclude>[[Category:2025 updates]]</noinclude>"
+}

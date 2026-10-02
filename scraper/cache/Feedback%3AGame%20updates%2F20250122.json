@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20250122",
+  "pageid": 317327,
+  "revid": 2702339,
+  "timestamp": "2025-01-22T20:27:09Z",
+  "wikitext": "==Update -- January 22, 2025==\n\n* Download and initialize steam_api.dll. This is a preliminary step to better integration with Steam.\n\nNOTE: Guild Wars on Steam is a legacy version. As far as I can determine, Guild Wars was first launched on Steam on April 22, 2009. We only sell game keys through the Steam Store and do not utilize any other Steam features. Consequently, significant effort is required to reconcile Steam purchases with our internal sales system. Due to the lack of previous integration between Guild Wars and Steam, certain development tasks will be more efficiently performed on the live servers. That is why this update is being implemented today, even though it does not include any user-facing features.\n\n<noinclude>[[Category:2025 updates]]</noinclude>"
+}

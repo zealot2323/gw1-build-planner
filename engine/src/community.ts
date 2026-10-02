@@ -9,7 +9,7 @@
 import { decodeTemplate, TemplateError, type DecodedTemplate } from "./template.js";
 import type { DataIndex } from "./data.js";
 import { Profession } from "./types.js";
-import type { Campaign, Skill } from "./types.js";
+import type { Campaign, Skill, SkillChangeLog, SkillRef } from "./types.js";
 
 /** Where a community build came from. */
 export type BuildSourceKind = "file" | "pvx" | "reddit" | "youtube" | "other";
@@ -24,6 +24,11 @@ export interface BuildSource {
   author?: string;
   /** ISO date the source was published. */
   postedAt?: string;
+  /**
+   * The date is the importer's estimate, not something the source stated —
+   * a spreadsheet of codes with no dates, for instance. Shown as a year.
+   */
+  dateIsApproximate?: boolean;
   /**
    * The text around the code: what the poster said about the build. Kept
    * verbatim and shown as a quote — it's someone else's writing, not ours.
@@ -260,4 +265,53 @@ export function extractMiniSkillBars(wikitext: string, index: DataIndex): Parsed
     });
   }
   return out;
+}
+
+/**
+ * The date a build should be judged by: when its source published it, if
+ * known, otherwise when we first saw it. An imported spreadsheet row has
+ * no per-row date, so the importer may supply an approximate one.
+ */
+export function effectiveDate(build: CommunityBuild): string {
+  return build.source.postedAt ?? build.firstSeen;
+}
+
+export interface StaleSkill {
+  skill: SkillRef;
+  /** Date of the most recent balance change after the build's own date. */
+  date: string;
+  note: string;
+}
+
+/**
+ * Skills in this build that were rebalanced AFTER the build was published —
+ * the build may no longer play the way its author intended.
+ *
+ * Only judged when the build has a publication date (`source.postedAt`),
+ * real or an importer's stated estimate. The date we first imported a build
+ * says nothing about when it was written, and flagging on it would dress a
+ * guess up as evidence — PvX entries are left unjudged for exactly that
+ * reason. Pass `asOf` to judge against a date of your own.
+ *
+ * Only `balance` changes count, as on the skill browser: a bug fix or an AI
+ * retune doesn't date a build. Changes are only visible as far back as the
+ * log reaches (`log.since`), so callers should state that coverage rather
+ * than imply completeness.
+ */
+export function staleSkills(
+  build: CommunityBuild,
+  log: SkillChangeLog | null | undefined,
+  asOf: string | undefined = build.source.postedAt,
+): StaleSkill[] {
+  if (!log || !asOf) return [];
+  const used = new Set(build.skills.filter((s): s is string => s !== null));
+  const out: StaleSkill[] = [];
+  for (const record of log.skills) {
+    if (!used.has(record.skill)) continue;
+    const since = record.changes
+      .filter((c) => c.kind === "balance" && c.date > asOf)
+      .sort((a, b) => b.date.localeCompare(a.date));
+    if (since.length > 0) out.push({ skill: record.skill, date: since[0].date, note: since[0].note });
+  }
+  return out.sort((a, b) => b.date.localeCompare(a.date) || a.skill.localeCompare(b.skill));
 }

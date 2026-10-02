@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20250207",
+  "pageid": 317360,
+  "revid": 2702798,
+  "timestamp": "2025-02-08T01:56:18Z",
+  "wikitext": "==Update -- February 7, 2025==\n\n* Fixed a bug that was causing some maps to use excessive CPU causing 'lag'.\n** The bug fix did not require a new build.\n** The bug would manifest more often during Festivals and/or when more than one build of Guild Wars was active.\n** This bug was fixed just before the recent Lunar New Year festival but not publicly announced as it wasn't clear how impactful the change would be.\n** The build on February 4th was to test how the fix performed with multiple builds during a festival.\n** The results so far are promising so as an experiment the maximum capacity of all Outposts has been increased.\n\n<noinclude>[[Category:2025 updates]]</noinclude>"
+}

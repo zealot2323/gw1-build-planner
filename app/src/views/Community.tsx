@@ -1,13 +1,16 @@
 import { useEffect, useMemo, useState } from "react";
 import {
   buildReadiness,
+  effectiveDate,
+  staleSkills,
   travelDistances,
   type Build,
   type CommunityBuild,
   type Profession,
+  type StaleSkill,
 } from "@gw1/engine";
 import { useData } from "../DataContext";
-import { loadCommunityBuilds } from "../data";
+import { changeLog, loadCommunityBuilds } from "../data";
 import { SkillIcon } from "../components/SkillIcon";
 import { SkillDetails } from "../components/SkillDetails";
 import { ProfessionIcon } from "../components/ProfessionIcon";
@@ -35,6 +38,8 @@ export interface CommunityViewState {
   openSkill: string | null;
   /** Show only builds containing this skill (set from the skill browser). */
   usesSkill: string | null;
+  /** Leave out builds whose skills were rebalanced after they were posted. */
+  hideStale: boolean;
   /** How many cards to render; grows with "Show more". */
   limit: number;
 }
@@ -49,6 +54,7 @@ export const initialCommunityViewState: CommunityViewState = {
   sort: "new",
   openSkill: null,
   usesSkill: null,
+  hideStale: false,
   limit: PAGE,
 };
 
@@ -64,7 +70,7 @@ const SOURCE_LABEL: Record<string, string> = {
 const NEW_DAYS = 30;
 
 const isNew = (build: CommunityBuild, now = Date.now()): boolean =>
-  now - new Date(`${build.firstSeen}T00:00:00Z`).getTime() < NEW_DAYS * 86_400_000;
+  now - new Date(`${effectiveDate(build)}T00:00:00Z`).getTime() < NEW_DAYS * 86_400_000;
 
 function BuildCard({
   build,
@@ -109,6 +115,10 @@ function BuildCard({
   const wrongPrimary =
     character && build.primary && build.primary !== character.primaryProfession ? build.primary : null;
 
+  const stale: StaleSkill[] = staleSkills(build, changeLog);
+  const date = effectiveDate(build);
+  const shownDate = build.source.dateIsApproximate ? date.slice(0, 4) : date;
+
   return (
     <div className="card community-build">
       <div className="row space-between wrap">
@@ -132,6 +142,18 @@ function BuildCard({
           {wrongPrimary && (
             <span className="muted small">
               For {/^[AEIOU]/i.test(wrongPrimary) ? "an" : "a"} {wrongPrimary} primary
+            </span>
+          )}
+          {stale.length > 0 && (
+            <span
+              className="quest-tag warn stale-tag"
+              title={
+                `Rebalanced since this build was posted (${shownDate}):\n` +
+                stale.map((s) => `• ${s.skill} — ${s.date}: ${s.note}`).join("\n") +
+                `\n\nChanges recorded from ${changeLog.since} onwards.`
+              }
+            >
+              Possibly stale · {stale.length} skill{stale.length === 1 ? "" : "s"} changed
             </span>
           )}
           <button className="small" onClick={copy}>
@@ -185,12 +207,28 @@ function BuildCard({
         </button>{" "}
         {build.source.url ? (
           <a href={build.source.url} target="_blank" rel="noreferrer noopener">
-            {build.source.title ?? build.source.url}
+            {/* the chip already names the source; don't print it twice */}
+            {build.source.title && build.source.title !== build.source.author
+              ? build.source.title
+              : "open source"}
           </a>
         ) : (
           <span className="muted">{build.source.title ?? "no link"}</span>
         )}
-        {build.source.postedAt && <span className="muted"> · {build.source.postedAt}</span>}
+        <span
+          className="muted"
+          title={
+            build.source.dateIsApproximate
+              ? "Approximate: this source carries no dates, so the owner's estimate is used"
+              : build.source.postedAt
+                ? "Published on this date"
+                : "When this build was first imported; the source gives no date"
+          }
+        >
+          {" · "}
+          {shownDate}
+          {build.source.dateIsApproximate ? " (approx.)" : ""}
+        </span>
         {build.source.score !== undefined && (
           <span className="muted">
             {" · "}
@@ -301,6 +339,7 @@ export function CommunityView({
         (view.profession === "all" || b.primary === view.profession) &&
         (view.source === "all" || sourceOf(b) === view.source) &&
         (view.usesSkill === null || b.skills.includes(view.usesSkill)) &&
+        (!view.hideStale || staleSkills(b, changeLog).length === 0) &&
         (view.type === "all" ||
           (view.type === "single" ? b.team === undefined : b.team?.kind === view.type)) &&
         (term === "" ||
@@ -314,7 +353,7 @@ export function CommunityView({
     .sort((a, b) => {
       if (view.sort === "name") return a.name.localeCompare(b.name);
       if (view.sort === "popular") return (b.source.score ?? 0) - (a.source.score ?? 0);
-      return b.firstSeen.localeCompare(a.firstSeen) || a.name.localeCompare(b.name);
+      return effectiveDate(b).localeCompare(effectiveDate(a)) || a.name.localeCompare(b.name);
     });
 
   /**
@@ -469,6 +508,14 @@ export function CommunityView({
               <option value="set">Sets from one source</option>
               <option value="single">Standalone builds</option>
             </select>
+          </label>
+          <label className="inline-check">
+            <input
+              type="checkbox"
+              checked={view.hideStale}
+              onChange={(e) => setView({ hideStale: e.target.checked, limit: PAGE })}
+            />
+            Hide possibly stale
           </label>
           <label>
             Sort by{" "}

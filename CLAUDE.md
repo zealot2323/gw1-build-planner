@@ -380,6 +380,23 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
   together) from a `set` (a video comparing ten solo farmers). Rows of a
   spreadsheet share a URL without being a team, which is why URL alone
   can't be the signal.
+- **A build is dated by when it was PUBLISHED, not when we imported it.**
+  `source.postedAt` carries that date; `firstSeen` only records when the
+  entry reached our data. A source with no per-row dates may declare an
+  approximate vintage (the community spreadsheet is dated 2024-01-01 on the
+  owner's estimate), flagged `dateIsApproximate` and shown as a year.
+  "New and hot" and the Newest sort use the published date, so an old
+  import stops masquerading as new.
+- **"Possibly stale" is only claimed where the publication date is known.**
+  `staleSkills` lists a build's skills given a BALANCE change after the
+  build was published — bug fixes and AI retunes don't date a build. Builds
+  with no `postedAt` (the 1,219 PvX entries, whose 2026-01-01 is an import
+  placeholder) are left unjudged rather than flagged on invented evidence.
+  The tooltip states the log's coverage, because a change older than
+  `log.since` cannot be seen. Note the update window is now 24 months:
+  judging a 2024 build against a 12-month log would have found nothing.
+  There were NO skill balance changes recorded in 2025 — every change in
+  the wiki's update pages from 2024-10 onwards is dated 2026.
 - **Reddit needs no credentials: use the RSS feeds.** The JSON API returns
   403 to anonymous reads, and app registration is awkward now (Devvit is a
   different product and gives no client id/secret for external use). The

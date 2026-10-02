@@ -7,8 +7,10 @@ import {
   extractTemplateCodes,
   encodeTemplate,
   indexDataset,
+  effectiveDate,
   mergeCommunityBuilds,
   Profession,
+  staleSkills,
   toCommunityBuild,
   type Build,
   type CommunityBuild,
@@ -97,5 +99,62 @@ describe("merging community builds", () => {
     expect(r.builds).toHaveLength(1);
     expect(r.builds[0].source.score).toBe(400);
     expect(r.builds[0].firstSeen).toBe("2026-01-01");
+  });
+});
+
+describe("dating a build and spotting stale ones", () => {
+  const log = {
+    generatedAt: "2026-10-02",
+    since: "2024-10-02",
+    windowMonths: 24,
+    skills: [
+      {
+        skill: "Sever Artery",
+        changes: [
+          { date: "2026-08-26", note: "adrenaline 4 to 3", kind: "balance" as const, section: null },
+        ],
+        previous: null,
+        previousIsStale: false,
+      },
+      {
+        skill: "Gash",
+        changes: [{ date: "2026-05-01", note: "fixed a typo", kind: "bugfix" as const, section: null }],
+        previous: null,
+        previousIsStale: false,
+      },
+    ],
+  };
+  const base = toCommunityBuild(CODE, decodeBuildCode(CODE, index)!, { kind: "other" }, "Sword bar", {
+    firstSeen: "2026-09-18",
+  });
+
+  it("prefers the source's publication date over when we imported it", () => {
+    expect(effectiveDate(base)).toBe("2026-09-18");
+    const dated = { ...base, source: { ...base.source, postedAt: "2024-01-01" } };
+    expect(effectiveDate(dated)).toBe("2024-01-01");
+  });
+
+  it("flags skills rebalanced after the build was published", () => {
+    const dated = { ...base, source: { ...base.source, postedAt: "2024-01-01" } };
+    const stale = staleSkills(dated, log);
+    expect(stale.map((s) => s.skill)).toEqual(["Sever Artery"]);
+    expect(stale[0].date).toBe("2026-08-26");
+  });
+
+  it("ignores changes the build already includes", () => {
+    const recent = { ...base, source: { ...base.source, postedAt: "2026-09-01" } };
+    expect(staleSkills(recent, log)).toEqual([]);
+  });
+
+  it("counts only balance changes, not bug fixes or AI retunes", () => {
+    const dated = { ...base, source: { ...base.source, postedAt: "2024-01-01" } };
+    // Gash's only change is a bugfix, so it must not appear
+    expect(staleSkills(dated, log).map((s) => s.skill)).not.toContain("Gash");
+  });
+
+  it("judges nothing when the publication date is unknown", () => {
+    // firstSeen alone is when WE imported it — not evidence about the build
+    expect(base.source.postedAt).toBeUndefined();
+    expect(staleSkills(base, log)).toEqual([]);
   });
 });

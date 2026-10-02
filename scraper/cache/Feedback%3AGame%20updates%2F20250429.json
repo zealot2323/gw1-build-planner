@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20250429",
+  "pageid": 317639,
+  "revid": 2705686,
+  "timestamp": "2025-04-29T22:45:51Z",
+  "wikitext": "== Update, April 29, 2025 ==\n\n* Client framerate changes:\n** Previously in [[Feedback:Game_updates/20250415]], we announced the maximum frame rate was reduced to 180 fps, however this limit was insufficient to stop the \"[[Rubber-banding|rubberbanding]]\" issue.\n** The specific issue is that a client running at a high speed simulates the game much faster than the game server.  Game servers run at 20-40 fps.  Small errors in interpolation would cause divergent results on clients running at a high frame rate.\n** The new frame rate cap is '''90 fps'''.\n*** Previously the [[Command_line_arguments#-fps_<number>|-fps command line argument]] was also limited by the internal cap; now a player, assumed to be sophisticated enough to add the -fps command line, can set it to whatever they want.\n* A small internal change was made to the interpolation code to use double precision math on some calculations on both the client and server.\n\nWhile 90 fps is less than some players would like to see on their modern monitors, we've seen with the anniversary event that many players returning are experiencing \"rubberbanding\", which is due to the client speed, and not the network code.  Sadly we can't depend on players doing a web search for solutions, so by default, the refresh rate is lower.  \n\n<noinclude>[[Category:2025 updates]]</noinclude>"
+}

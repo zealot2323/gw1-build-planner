@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20250507",
+  "pageid": 317689,
+  "revid": 2706189,
+  "timestamp": "2025-05-07T21:50:26Z",
+  "wikitext": "== Update, May 7, 2025 ==\n\n* Fixed a bug where some [[miniature]]s would appear twice in the [[Hall of Monuments]] display area.\n* Fixed references to DirectX 8 to refer to DirectX 9 in error messages.\n* Updated some URLs in diagnostic messages to point to current help pages.\n\n<noinclude>[[Category:2025 updates]]</noinclude>"
+}

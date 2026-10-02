@@ -36,6 +36,13 @@ interface SheetSource {
   label: string;
   kind: BuildSourceKind;
   url: string;
+  /**
+   * The sheet has no per-row dates, so every row would otherwise carry its
+   * import date and read as brand new. An approximate vintage supplied by
+   * the owner dates them honestly — flagged as an estimate and shown as a
+   * year, never as a precise day.
+   */
+  assumedDate?: string;
 }
 interface WikiSource {
   type: "wiki-page";
@@ -54,6 +61,8 @@ const SOURCES: Source[] = [
     label: "Community build spreadsheet",
     kind: "other",
     url: "https://docs.google.com/spreadsheets/d/1ocHlVsoILObUlsN6DfkCnqhsy5G2YtJj0988DTik3os/edit",
+    // owner's estimate: the sheet predates the 2026 rebalances
+    assumedDate: "2024-01-01",
   },
   {
     type: "wiki-page",
@@ -139,6 +148,7 @@ async function fromSheet(source: SheetSource, index: DataIndex): Promise<{ build
               url: `${source.url}#gid=${gid}`,
               title: source.label,
               author: source.label,
+              ...(source.assumedDate ? { postedAt: source.assumedDate, dateIsApproximate: true } : {}),
               ...(guide ? { context: guide } : {}),
             },
             name || `${decoded.primary}${decoded.secondary ? `/${decoded.secondary}` : ""} build`,

@@ -37,8 +37,15 @@ import {
 } from "./parsers.js";
 
 const DATA_DIR = fileURLToPath(new URL("../../data/", import.meta.url));
-/** How much update history to cache. The app's highlight window is narrower. */
-const WINDOW_MONTHS = 12;
+/**
+ * How much update history to cache. The app's highlight window is narrower
+ * (`RECENT_MONTHS`), and staleness checks against older builds need more:
+ * a build from 2024 can only be judged against changes since 2024.
+ * Override for a one-off backfill with `npm run updates -- --months 36`.
+ */
+const WINDOW_MONTHS = Number(
+  process.argv.includes("--months") ? process.argv[process.argv.indexOf("--months") + 1] : 24,
+);
 
 const now = new Date();
 const since = new Date(now);

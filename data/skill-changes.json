@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-15T16:22:49.942Z",
-  "since": "2025-09-15",
-  "windowMonths": 12,
+  "generatedAt": "2026-10-02T08:33:30.406Z",
+  "since": "2024-10-02",
+  "windowMonths": 24,
   "skills": [
     {
       "skill": "\"Brace Yourself!\"",
@@ -2632,7 +2632,7 @@
         "activation": 2,
         "recharge": 20,
         "attribute": "Domination Magic",
-        "isElite": false,
+        "isElite": true,
         "description": "Elite Spell. Target foe loses 1...10 Energy. For each point of Energy lost, that foe and all nearby foes take 9 damage."
       },
       "previousIsStale": false
@@ -4394,7 +4394,7 @@
         "activation": 1,
         "recharge": 10,
         "attribute": "Curses",
-        "isElite": false,
+        "isElite": true,
         "description": "Elite Hex Spell. For 6...30 seconds, target foe and all nearby foes suffer 0...3 Health degeneration, and gain 20% less benefit from healing."
       },
       "previousIsStale": false
@@ -6543,7 +6543,7 @@
         "activation": null,
         "recharge": 8,
         "attribute": "Protection Prayers",
-        "isElite": false,
+        "isElite": true,
         "description": "Elite Enchantment Spell. For 5...13 seconds, target ally gains +3...10 Health regeneration and 40 armor."
       },
       "previousIsStale": false

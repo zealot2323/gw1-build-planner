@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20250123",
+  "pageid": 317332,
+  "revid": 2702372,
+  "timestamp": "2025-01-23T20:56:54Z",
+  "wikitext": "==Update -- January 23, 2025==\n\n* Added new command line parameter \"-log\" (or \"/log\")\n** Off by default\n** Writes \"Gw.log\" to the Guild Wars install directory\n*** Clobbers existing \"Gw.log\" file (i.e., does not append to an existing file)\n** Steam integration logging is highly preliminary\n** \"Normal\" errors, which have existed for years and can be ignored:\n*** Error: Client pathing data out of sync with server.  You may observe your character 'warping' during movement.\n*** Various texture errors\n* Server maintenance build\n\n<noinclude>[[Category:2025 updates]]</noinclude>"
+}

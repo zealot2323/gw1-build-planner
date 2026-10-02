@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20241112",
+  "pageid": 317189,
+  "revid": 2700707,
+  "timestamp": "2024-11-13T03:10:18Z",
+  "wikitext": "==Update -- November 12, 2024==\n\n* Updated GPU memory calculation to be compatible with modern GPUs.\n* Preparing for a compiler upgrade to Visual Studio 2022.\n** See [[Feedback:Developer_updates/20241112]].\n\n* Second build today fixed a typo (no user visible changes)\n\n\n<noinclude>[[Category:2024 updates]]</noinclude>"
+}

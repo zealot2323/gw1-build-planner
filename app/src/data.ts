@@ -39,6 +39,12 @@ export const dataset = index.dataset;
 export const changes = indexChanges(skillChanges as unknown as SkillChangeLog);
 
 /**
+ * The whole change log, not just the highlight window: judging whether an
+ * older build has been overtaken by a rebalance needs every change we have.
+ */
+export const changeLog = skillChanges as unknown as SkillChangeLog;
+
+/**
  * Builds collected from elsewhere. Loaded on demand rather than bundled:
  * it's over a megabyte of other people's builds, and most visits never
  * open that tab — which matters most on a phone.

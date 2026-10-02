@@ -1,0 +1,7 @@
+{
+  "title": "Feedback:Game updates/20241114",
+  "pageid": 317196,
+  "revid": 2700842,
+  "timestamp": "2024-11-15T00:29:29Z",
+  "wikitext": "==Update -- November 14, 2024==\n\n* Fixed a bug where the incorrect amount of texture memory was computed on some systems with integrated graphics that share RAM and VRAM.\n\n<noinclude>[[Category:2024 updates]]</noinclude>"
+}
