@@ -3,6 +3,8 @@ import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
 import {
   bountyStatus,
+  nextChange,
+  nicholasStatus,
   indexDataset,
   missionStatus,
   nextReset,
@@ -123,5 +125,66 @@ describe("whether a character can do today's activity", () => {
     const pair = zaishen.missions.items.find((m) => m.outposts.length > 1)!;
     const half = character({ unlockedLocations: [pair.outposts[0]], ownedCampaigns: ["Factions"] });
     expect(missionStatus(pair, half, index).ready).toBe(true);
+  });
+});
+
+describe("Nicholas the Traveler", () => {
+  const cycle = zaishen.nicholas;
+
+  it("runs weekly, not daily", () => {
+    expect(cycle.periodSeconds).toBe(604_800);
+    expect(cycle.mod).toBe(137);
+    expect(cycle.items).toHaveLength(137);
+  });
+
+  it("matches the wiki's own answer for a known week", () => {
+    // verified against the wiki's template expansion while building this
+    const at = new Date("2026-10-03T12:00:00Z");
+    expect(zaishenAt(cycle, at)).toMatchObject({
+      location: "Jahai Bluffs",
+      item: "Elonian Leather Squares",
+      quantity: 5,
+    });
+    expect(zaishenIndexAt(cycle, at)).toBe(88);
+  });
+
+  it("moves on Monday at 15:00 UTC, an hour before the dailies", () => {
+    const before = new Date("2026-10-05T14:59:00Z");
+    const after = new Date("2026-10-05T15:01:00Z");
+    expect(zaishenAt(cycle, before).location).toBe("Jahai Bluffs");
+    expect(zaishenAt(cycle, after).location).toBe("Vehjin Mines");
+    expect(nextChange(cycle, before).toISOString()).toBe("2026-10-05T15:00:00.000Z");
+    // the Zaishen dailies turn over at a different time on the same day
+    expect(nextChange(zaishen.missions, before).toISOString()).toBe("2026-10-05T16:00:00.000Z");
+  });
+
+  it("steps a week at a time, from the Monday each week begins", () => {
+    // asked on a Saturday
+    const weeks = zaishenUpcoming(cycle, 3, new Date("2026-10-03T12:00:00Z"));
+    expect(weeks.map((w) => w.entry.location)).toEqual([
+      "Jahai Bluffs",
+      "Vehjin Mines",
+      "Reed Bog",
+    ]);
+    expect(weeks.map((w) => w.on.toISOString())).toEqual([
+      "2026-09-28T15:00:00.000Z",
+      "2026-10-05T15:00:00.000Z",
+      "2026-10-12T15:00:00.000Z",
+    ]);
+    for (const w of weeks) expect(w.on.getUTCDay(), w.on.toISOString()).toBe(1); // Monday
+  });
+
+  it("resolves every week to an outpost we know", () => {
+    for (const week of cycle.items) {
+      expect(week.outposts.length, week.location).toBeGreaterThan(0);
+      for (const o of week.outposts) expect(index.locationByPage.has(o), `${week.location} -> ${o}`).toBe(true);
+    }
+  });
+
+  it("tells a character whether they can reach the collection zone", () => {
+    const week = cycle.items.find((w) => w.location === "North Kryta Province")!;
+    const ready = character({ unlockedLocations: week.outposts });
+    expect(nicholasStatus(week, ready, index).ready).toBe(true);
+    expect(nicholasStatus(week, character(), index).ready).toBe(false);
   });
 });

@@ -14,6 +14,11 @@
  *   - a bounty → the area named on its Zaishen quest page, then the nearest
  *     town or outpost by walking our location graph. Dungeons resolve to the
  *     outpost nearest their entrance, which is what the owner asked for.
+ *
+ * Nicholas the Traveler rides along: same template family, same kind of
+ * arithmetic, but weekly — `(t - epoch) / 604800 mod 137`, from a Monday at
+ * 15:00 UTC. His collection zone is resolved to outposts the same way a
+ * bounty's area is.
  */
 import { writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
@@ -48,6 +53,67 @@ async function rotation(page: string): Promise<Rotation> {
   return { epoch, mod, raw };
 }
 
+interface NicholasWeek {
+  location: string;
+  region: string;
+  campaign: string;
+  item: string;
+  quantity: number;
+}
+
+interface NicholasRotation {
+  epoch: number;
+  /** A week, where the Zaishen cycles step a day. */
+  periodSeconds: number;
+  mod: number;
+  weeks: NicholasWeek[];
+}
+
+/**
+ * Read Template:Cycle/Nicholas, which packs five parallel `#switch` lists
+ * into one template — location, region, campaign, quantity and item — all
+ * indexed by the same week number.
+ */
+async function nicholasRotation(page: string): Promise<NicholasRotation> {
+  const wikitext = (await fetchWikitext(page)).wikitext;
+  const epoch = Number(/-\s*(\d{9,})/.exec(wikitext)?.[1]);
+  const periodSeconds = Number(/\/\s*(\d+)\s*<!--\s*number of seconds/.exec(wikitext)?.[1]);
+  const mod = Number(/mod\s+(\d+)/.exec(wikitext)?.[1]);
+  if (!epoch || !periodSeconds || !mod) throw new Error(`${page}: could not read the cycle`);
+
+  /** The `| N = value` lines of one #vardefine block. */
+  const list = (variable: string): Map<number, string> => {
+    const start = wikitext.indexOf(`#vardefine:Nicholas${variable}|`);
+    if (start === -1) throw new Error(`${page}: no ${variable} list`);
+    const next = wikitext.indexOf("#vardefine:", start + 12);
+    const body = wikitext.slice(start, next === -1 ? undefined : next);
+    const out = new Map<number, string>();
+    for (const m of body.matchAll(/^\s*\|\s*(\d+)\s*=\s*(.*?)\s*$/gm)) out.set(Number(m[1]), m[2].trim());
+    return out;
+  };
+  const locations = list("Location");
+  const regions = list("Region");
+  const campaigns = list("Campaign");
+  const quantities = list("Quantity");
+  // ItemRaw is the same name without the wikilink markup.
+  const items = list("ItemRaw");
+
+  const weeks: NicholasWeek[] = [];
+  for (let i = 0; i < mod; i++) {
+    const location = locations.get(i);
+    const item = items.get(i);
+    if (!location || !item) throw new Error(`${page}: week ${i} is missing a location or item`);
+    weeks.push({
+      location,
+      region: regions.get(i) ?? "",
+      campaign: campaigns.get(i) ?? "",
+      item,
+      quantity: Number(quantities.get(i) ?? 0),
+    });
+  }
+  return { epoch, periodSeconds, mod, weeks };
+}
+
 const index = await loadIndex();
 const issues: string[] = [];
 
@@ -78,22 +144,31 @@ const isOutpost = (name: string): boolean => {
   return kind === "town" || kind === "outpost" || kind === "mission-outpost";
 };
 
-/** Nearest town/outpost to an area, by hops over the location graph. */
-function nearestOutpost(from: string): { outpost: string; hops: number } | null {
+/**
+ * Nearest towns/outposts to an area, by hops over the location graph.
+ *
+ * Every outpost at the closest hop count is returned, not just the first
+ * one found: a zone often touches several, and having unlocked any one of
+ * them is enough to get in. Taking the first would mark a character short
+ * of the activity because they came at it from the other side.
+ */
+function nearestOutposts(from: string): { outposts: string[]; hops: number } | null {
   if (!index.locationByPage.has(from) && !index.missionByName.has(from)) return null;
-  if (isOutpost(from)) return { outpost: from, hops: 0 };
+  if (isOutpost(from)) return { outposts: [from], hops: 0 };
   const seen = new Set([from]);
   let frontier = [from];
   for (let hops = 1; hops <= 6 && frontier.length > 0; hops++) {
     const next: string[] = [];
+    const found: string[] = [];
     for (const here of frontier) {
       for (const neighbour of adjacency.get(here) ?? []) {
         if (seen.has(neighbour)) continue;
         seen.add(neighbour);
-        if (isOutpost(neighbour)) return { outpost: neighbour, hops };
-        next.push(neighbour);
+        if (isOutpost(neighbour)) found.push(neighbour);
+        else next.push(neighbour);
       }
     }
+    if (found.length > 0) return { outposts: found.sort(), hops };
     frontier = next;
   }
   return null;
@@ -167,12 +242,12 @@ async function outpostsFor(
 
   const entrance = entrances.get(area);
   if (entrance) {
-    const near = nearestOutpost(entrance);
-    if (near) return { outposts: [near.outpost], hops: near.hops, via: `dungeon entrance in ${entrance}` };
+    const near = nearestOutposts(entrance);
+    if (near) return { outposts: near.outposts, hops: near.hops, via: `dungeon entrance in ${entrance}` };
   }
 
-  const direct = nearestOutpost(area);
-  if (direct) return { outposts: [direct.outpost], hops: direct.hops, via: "nearest on the map" };
+  const direct = nearestOutposts(area);
+  if (direct) return { outposts: direct.outposts, hops: direct.hops, via: "nearest on the map" };
 
   const canonical = await resolveRedirect(area);
   if (canonical !== area) {
@@ -279,6 +354,15 @@ for (const boss of zBounty.raw) {
   bounties.push({ boss, area, outposts, hops, via });
 }
 
+// --- Nicholas the Traveler --------------------------------------------------
+const nicholasCycle = await nicholasRotation("Template:Cycle/Nicholas");
+const nicholasWeeks = [];
+for (const week of nicholasCycle.weeks) {
+  const resolved = await outpostsFor(week.location);
+  if (resolved.outposts.length === 0) issues.push(`Nicholas in ${week.location}: no outpost found`);
+  nicholasWeeks.push({ ...week, outposts: resolved.outposts, hops: resolved.hops, via: resolved.via });
+}
+
 await writeFile(
   `${DATA_DIR}zaishen.json`,
   JSON.stringify(
@@ -286,6 +370,12 @@ await writeFile(
       generatedAt: new Date().toISOString(),
       missions: { epoch: zMission.epoch, mod: zMission.mod, items: missions },
       bounties: { epoch: zBounty.epoch, mod: zBounty.mod, items: bounties },
+      nicholas: {
+        epoch: nicholasCycle.epoch,
+        periodSeconds: nicholasCycle.periodSeconds,
+        mod: nicholasCycle.mod,
+        items: nicholasWeeks,
+      },
     },
     null,
     2,
@@ -295,6 +385,9 @@ await writeFile(
 
 console.log(`missions: ${missions.length} (${missions.filter((m) => m.outposts.length > 0).length} with an outpost)`);
 console.log(`bounties: ${bounties.length} (${bounties.filter((b) => b.outposts.length > 0).length} with an outpost)`);
+console.log(
+  `Nicholas: ${nicholasWeeks.length} weeks (${nicholasWeeks.filter((w) => w.outposts.length > 0).length} with an outpost)`,
+);
 console.log(`wrote data/zaishen.json`);
 if (issues.length) {
   console.log(`\n${issues.length} unresolved:`);

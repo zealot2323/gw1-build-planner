@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T08:08:53.489Z",
+  "generatedAt": "2026-10-03T09:23:22.719Z",
   "missions": {
     "epoch": 1299168000,
     "mod": 69,
@@ -642,6 +642,7 @@
         "boss": "Mohby Windbeak",
         "area": "Gyala Hatchery (explorable area)",
         "outposts": [
+          "Gyala Hatchery (outpost)",
           "Leviathan Pits"
         ],
         "hops": 1,
@@ -662,7 +663,8 @@
         "boss": "Rotscale",
         "area": "Majesty's Rest",
         "outposts": [
-          "Druid's Overlook"
+          "Druid's Overlook",
+          "The Wilds (outpost)"
         ],
         "hops": 2,
         "via": "nearest on the map"
@@ -680,7 +682,9 @@
         "boss": "Korshek the Immolated",
         "area": "Forum Highlands",
         "outposts": [
-          "The Kodash Bazaar"
+          "Jennur's Horde (outpost)",
+          "The Kodash Bazaar",
+          "Tihark Orchard (outpost)"
         ],
         "hops": 1,
         "via": "nearest on the map"
@@ -707,7 +711,9 @@
         "boss": "Kunvie Firewing",
         "area": "Unwaking Waters (explorable area)",
         "outposts": [
-          "Harvest Temple"
+          "Harvest Temple",
+          "Unwaking Waters (Kurzick)",
+          "Unwaking Waters (Luxon)"
         ],
         "hops": 1,
         "via": "nearest on the map"
@@ -770,7 +776,8 @@
         "boss": "Borrguus Blisterbark",
         "area": "Sacnoth Valley",
         "outposts": [
-          "Doomlore Shrine"
+          "Doomlore Shrine",
+          "Longeye's Ledge"
         ],
         "hops": 2,
         "via": "nearest on the map"
@@ -806,7 +813,8 @@
         "boss": "Rragar Maneater",
         "area": "Rragar's Menagerie",
         "outposts": [
-          "Doomlore Shrine"
+          "Doomlore Shrine",
+          "Longeye's Ledge"
         ],
         "hops": 2,
         "via": "dungeon entrance in Sacnoth Valley"
@@ -869,7 +877,8 @@
         "boss": "Jarimiya the Unmerciful",
         "area": "Vehtendi Valley",
         "outposts": [
-          "The Kodash Bazaar"
+          "The Kodash Bazaar",
+          "Yahnur Market"
         ],
         "hops": 1,
         "via": "nearest on the map"
@@ -887,6 +896,7 @@
         "boss": "Quansong Spiritspeak",
         "area": "Tahnnakai Temple (explorable area)",
         "outposts": [
+          "Tahnnakai Temple (outpost)",
           "Zin Ku Corridor"
         ],
         "hops": 1,
@@ -905,7 +915,8 @@
         "boss": "Fozzy Yeoryios",
         "area": "Sacnoth Valley",
         "outposts": [
-          "Doomlore Shrine"
+          "Doomlore Shrine",
+          "Longeye's Ledge"
         ],
         "hops": 2,
         "via": "nearest on the map"
@@ -952,7 +963,9 @@
         "boss": "Arbor Earthcall",
         "area": "Morostav Trail",
         "outposts": [
-          "Durheim Archives"
+          "Durheim Archives",
+          "Unwaking Waters (Kurzick)",
+          "Vasburg Armory"
         ],
         "hops": 1,
         "via": "nearest on the map"
@@ -981,7 +994,9 @@
         "boss": "Jedeh the Mighty",
         "area": "Crystal Overlook",
         "outposts": [
-          "Bone Palace"
+          "Bone Palace",
+          "Ruins of Morah (outpost)",
+          "The Mouth of Torment"
         ],
         "hops": 2,
         "via": "nearest on the map"
@@ -990,7 +1005,9 @@
         "boss": "Ssuns, Blessed of Dwayna",
         "area": "Archipelagos",
         "outposts": [
-          "Cavalon"
+          "Breaker Hollow",
+          "Cavalon",
+          "Jade Flats (Luxon)"
         ],
         "hops": 1,
         "via": "nearest on the map"
@@ -1008,7 +1025,8 @@
         "boss": "Harn and Maxine Coldstone",
         "area": "Harn Coldstone",
         "outposts": [
-          "Ember Light Camp"
+          "Ember Light Camp",
+          "Ring of Fire (outpost)"
         ],
         "hops": 1,
         "via": "nearest on the map (Perdition Rock)"
@@ -1035,7 +1053,10 @@
         "boss": "Mungri Magicbox",
         "area": "Ferndale",
         "outposts": [
-          "House zu Heltzer"
+          "Aspenwood Gate (Kurzick)",
+          "House zu Heltzer",
+          "Lutgardis Conservatory",
+          "Saint Anjeka's Shrine"
         ],
         "hops": 1,
         "via": "nearest on the map"
@@ -1055,7 +1076,8 @@
         "boss": "Ilsundur, Lord of Fire",
         "area": "Catacombs of Kathandrax",
         "outposts": [
-          "Doomlore Shrine"
+          "Doomlore Shrine",
+          "Longeye's Ledge"
         ],
         "hops": 2,
         "via": "dungeon entrance in Sacnoth Valley"
@@ -1064,6 +1086,8 @@
         "boss": "Kepkhet Marrowfeast",
         "area": "Prophet's Path",
         "outposts": [
+          "Augury Rock (outpost)",
+          "Heroes' Audience",
           "The Amnoon Oasis"
         ],
         "hops": 1,
@@ -1169,6 +1193,1791 @@
         ],
         "hops": 2,
         "via": "nearest on the map (Kessex Peak)"
+      }
+    ]
+  },
+  "nicholas": {
+    "epoch": 1323097200,
+    "periodSeconds": 604800,
+    "mod": 137,
+    "items": [
+      {
+        "location": "Regent Valley",
+        "region": "Ascalon",
+        "campaign": "Prophecies",
+        "item": "Red Iris Flowers",
+        "quantity": 3,
+        "outposts": [
+          "Fort Ranik (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Mineral Springs",
+        "region": "Southern Shiverpeaks",
+        "campaign": "Prophecies",
+        "item": "Feathered Avicara Scalps",
+        "quantity": 3,
+        "outposts": [
+          "The Granite Citadel"
+        ],
+        "hops": 2,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Poisoned Outcrops",
+        "region": "The Desolation",
+        "campaign": "Nightfall",
+        "item": "Margonite Masks",
+        "quantity": 2,
+        "outposts": [
+          "Lair of the Forgotten"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Alcazia Tangle",
+        "region": "Tarnished Coast",
+        "campaign": "Eye of the North",
+        "item": "Quetzal Crests",
+        "quantity": 2,
+        "outposts": [
+          "Tarnished Haven"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Wajjun Bazaar",
+        "region": "Kaineng City",
+        "campaign": "Factions",
+        "item": "Plague Idols",
+        "quantity": 3,
+        "outposts": [
+          "Nahpui Quarter (outpost)",
+          "The Marketplace"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Dreadnought's Drift",
+        "region": "Southern Shiverpeaks",
+        "campaign": "Prophecies",
+        "item": "Azure Remains",
+        "quantity": 2,
+        "outposts": [
+          "Beacon's Perch",
+          "Camp Rankor"
+        ],
+        "hops": 2,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Arkjok Ward",
+        "region": "Kourna",
+        "campaign": "Nightfall",
+        "item": "Mandragor Root Cake",
+        "quantity": 1,
+        "outposts": [
+          "Pogahn Passage (outpost)",
+          "Yohlon Haven"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Perdition Rock",
+        "region": "Ring of Fire Islands",
+        "campaign": "Prophecies",
+        "item": "Mahgo Claw",
+        "quantity": 1,
+        "outposts": [
+          "Ember Light Camp",
+          "Ring of Fire (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Saoshang Trail",
+        "region": "Shing Jea Island",
+        "campaign": "Factions",
+        "item": "Mantid Pincers",
+        "quantity": 5,
+        "outposts": [
+          "Seitung Harbor"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Fahranur, The First City",
+        "region": "Istan",
+        "campaign": "Nightfall",
+        "item": "Sentient Seeds",
+        "quantity": 3,
+        "outposts": [
+          "Blacktide Den (outpost)",
+          "Jokanur Diggings (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Sacnoth Valley",
+        "region": "Charr Homelands",
+        "campaign": "Eye of the North",
+        "item": "Stone Grawl Necklaces",
+        "quantity": 2,
+        "outposts": [
+          "Doomlore Shrine",
+          "Longeye's Ledge"
+        ],
+        "hops": 2,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Twin Serpent Lakes",
+        "region": "Kryta",
+        "campaign": "Prophecies",
+        "item": "Herring",
+        "quantity": 1,
+        "outposts": [
+          "Riverside Province (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Mount Qinkai",
+        "region": "The Jade Sea",
+        "campaign": "Factions",
+        "item": "Naga Skins",
+        "quantity": 3,
+        "outposts": [
+          "Aspenwood Gate (Luxon)",
+          "Breaker Hollow"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "The Falls",
+        "region": "Maguuma Jungle",
+        "campaign": "Prophecies",
+        "item": "Gloom Seed",
+        "quantity": 1,
+        "outposts": [
+          "Aurora Glade (outpost)",
+          "Ventari's Refuge"
+        ],
+        "hops": 3,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "The Breach",
+        "region": "Ascalon",
+        "campaign": "Prophecies",
+        "item": "Charr Hide",
+        "quantity": 1,
+        "outposts": [
+          "Piken Square"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "The Alkali Pan",
+        "region": "The Desolation",
+        "campaign": "Nightfall",
+        "item": "Ruby Djinn Essence",
+        "quantity": 1,
+        "outposts": [
+          "Bone Palace",
+          "Ruins of Morah (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Majesty's Rest",
+        "region": "Kryta",
+        "campaign": "Prophecies",
+        "item": "Thorny Carapaces",
+        "quantity": 2,
+        "outposts": [
+          "Druid's Overlook",
+          "The Wilds (outpost)"
+        ],
+        "hops": 2,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Rhea's Crater",
+        "region": "The Jade Sea",
+        "campaign": "Factions",
+        "item": "Bone Charms",
+        "quantity": 3,
+        "outposts": [
+          "Seafarer's Rest",
+          "The Aurios Mines (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Varajar Fells",
+        "region": "Far Shiverpeaks",
+        "campaign": "Eye of the North",
+        "item": "Modniir Manes",
+        "quantity": 3,
+        "outposts": [
+          "Olafstead"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Dalada Uplands",
+        "region": "Charr Homelands",
+        "campaign": "Eye of the North",
+        "item": "Superb Charr Carvings",
+        "quantity": 3,
+        "outposts": [
+          "Doomlore Shrine"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Zen Daijun (explorable area)",
+        "region": "Shing Jea Island",
+        "campaign": "Factions",
+        "item": "Rolls of Parchment",
+        "quantity": 5,
+        "outposts": [
+          "Seitung Harbor"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Garden of Seborhin",
+        "region": "Vabbi",
+        "campaign": "Nightfall",
+        "item": "Roaring Ether Claws",
+        "quantity": 2,
+        "outposts": [
+          "Jennur's Horde (outpost)",
+          "The Kodash Bazaar",
+          "Tihark Orchard (outpost)"
+        ],
+        "hops": 2,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Bukdek Byway",
+        "region": "Kaineng City",
+        "campaign": "Factions",
+        "item": "Branches of Juni Berries",
+        "quantity": 3,
+        "outposts": [
+          "Kaineng Center",
+          "The Marketplace",
+          "Vizunah Square (Foreign Quarter)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Deldrimor Bowl",
+        "region": "Northern Shiverpeaks",
+        "campaign": "Prophecies",
+        "item": "Shiverpeak Manes",
+        "quantity": 3,
+        "outposts": [
+          "Beacon's Perch"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Eastern Frontier",
+        "region": "Ascalon",
+        "campaign": "Prophecies",
+        "item": "Fetid Carapaces",
+        "quantity": 3,
+        "outposts": [
+          "Frontier Gate",
+          "Ruins of Surmia (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Gyala Hatchery (explorable area)",
+        "region": "The Jade Sea",
+        "campaign": "Factions",
+        "item": "Moon Shells",
+        "quantity": 2,
+        "outposts": [
+          "Gyala Hatchery (outpost)",
+          "Leviathan Pits"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "The Arid Sea",
+        "region": "Crystal Desert",
+        "campaign": "Prophecies",
+        "item": "Massive Jawbone",
+        "quantity": 1,
+        "outposts": [
+          "Augury Rock (outpost)",
+          "Destiny's Gorge",
+          "Dunes of Despair (outpost)"
+        ],
+        "hops": 2,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Ice Cliff Chasms",
+        "region": "Far Shiverpeaks",
+        "campaign": "Eye of the North",
+        "item": "Chromatic Scale",
+        "quantity": 1,
+        "outposts": [
+          "Boreal Station",
+          "Eye of the North (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Ice Floe",
+        "region": "Southern Shiverpeaks",
+        "campaign": "Prophecies",
+        "item": "Mursaat Tokens",
+        "quantity": 3,
+        "outposts": [
+          "Marhan's Grotto",
+          "Thunderhead Keep (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Bahdok Caverns",
+        "region": "Kourna",
+        "campaign": "Nightfall",
+        "item": "Sentient Lodestone",
+        "quantity": 1,
+        "outposts": [
+          "Moddok Crevice (outpost)",
+          "Wehhan Terraces"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Tangle Root",
+        "region": "Maguuma Jungle",
+        "campaign": "Prophecies",
+        "item": "Jungle Troll Tusks",
+        "quantity": 3,
+        "outposts": [
+          "Henge of Denravi",
+          "Maguuma Stade",
+          "Riverside Province (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Resplendent Makuun",
+        "region": "Vabbi",
+        "campaign": "Nightfall",
+        "item": "Sapphire Djinn Essence",
+        "quantity": 1,
+        "outposts": [
+          "Honur Hill",
+          "Yahnur Market"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Arborstone (explorable area)",
+        "region": "Echovald Forest",
+        "campaign": "Factions",
+        "item": "Stone Carving",
+        "quantity": 1,
+        "outposts": [
+          "Altrumm Ruins (outpost)",
+          "Arborstone (outpost)",
+          "Tanglewood Copse"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "North Kryta Province",
+        "region": "Kryta",
+        "campaign": "Prophecies",
+        "item": "Feathered Caromi Scalps",
+        "quantity": 3,
+        "outposts": [
+          "D'Alessio Seaboard (outpost)",
+          "Lion's Arch"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Holdings of Chokhin",
+        "region": "Vabbi",
+        "campaign": "Nightfall",
+        "item": "Pillaged Goods",
+        "quantity": 1,
+        "outposts": [
+          "Mihanu Township"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Haiju Lagoon",
+        "region": "Shing Jea Island",
+        "campaign": "Factions",
+        "item": "Gold Crimson Skull Coin",
+        "quantity": 1,
+        "outposts": [
+          "Zen Daijun (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Tahnnakai Temple (explorable area)",
+        "region": "Kaineng City",
+        "campaign": "Factions",
+        "item": "Jade Bracelets",
+        "quantity": 3,
+        "outposts": [
+          "Tahnnakai Temple (outpost)",
+          "Zin Ku Corridor"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Prophet's Path",
+        "region": "Crystal Desert",
+        "campaign": "Prophecies",
+        "item": "Minotaur Horns",
+        "quantity": 2,
+        "outposts": [
+          "Augury Rock (outpost)",
+          "Heroes' Audience",
+          "The Amnoon Oasis"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Snake Dance",
+        "region": "Southern Shiverpeaks",
+        "campaign": "Prophecies",
+        "item": "Frosted Griffon Wings",
+        "quantity": 2,
+        "outposts": [
+          "Camp Rankor"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Mehtani Keys",
+        "region": "Istan",
+        "campaign": "Nightfall",
+        "item": "Silver Bullion Coins",
+        "quantity": 2,
+        "outposts": [
+          "Kodlonu Hamlet"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Morostav Trail",
+        "region": "Echovald Forest",
+        "campaign": "Factions",
+        "item": "Truffle",
+        "quantity": 1,
+        "outposts": [
+          "Durheim Archives",
+          "Unwaking Waters (Kurzick)",
+          "Vasburg Armory"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Verdant Cascades",
+        "region": "Tarnished Coast",
+        "campaign": "Eye of the North",
+        "item": "Skelk Claws",
+        "quantity": 3,
+        "outposts": [
+          "Umbral Grotto"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "The Scar",
+        "region": "Crystal Desert",
+        "campaign": "Prophecies",
+        "item": "Dessicated Hydra Claws",
+        "quantity": 2,
+        "outposts": [
+          "Destiny's Gorge",
+          "Thirsty River (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Spearhead Peak",
+        "region": "Southern Shiverpeaks",
+        "campaign": "Prophecies",
+        "item": "Frigid Hearts",
+        "quantity": 3,
+        "outposts": [
+          "Copperhammer Mines",
+          "The Granite Citadel"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Nahpui Quarter (explorable area)",
+        "region": "Kaineng City",
+        "campaign": "Factions",
+        "item": "Celestial Essences",
+        "quantity": 3,
+        "outposts": [
+          "Senji's Corner"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Lornar's Pass",
+        "region": "Southern Shiverpeaks",
+        "campaign": "Prophecies",
+        "item": "Phantom Residue",
+        "quantity": 1,
+        "outposts": [
+          "Beacon's Perch"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Issnur Isles",
+        "region": "Istan",
+        "campaign": "Nightfall",
+        "item": "Drake Kabob",
+        "quantity": 1,
+        "outposts": [
+          "Beknur Harbor",
+          "Kodlonu Hamlet"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Ferndale",
+        "region": "Echovald Forest",
+        "campaign": "Factions",
+        "item": "Amber Chunks",
+        "quantity": 3,
+        "outposts": [
+          "Aspenwood Gate (Kurzick)",
+          "House zu Heltzer",
+          "Lutgardis Conservatory",
+          "Saint Anjeka's Shrine"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Stingray Strand",
+        "region": "Kryta",
+        "campaign": "Prophecies",
+        "item": "Glowing Hearts",
+        "quantity": 2,
+        "outposts": [
+          "Fishermen's Haven",
+          "Sanctum Cay (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Riven Earth",
+        "region": "Tarnished Coast",
+        "campaign": "Eye of the North",
+        "item": "Saurian Bones",
+        "quantity": 5,
+        "outposts": [
+          "Rata Sum"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Wilderness of Bahdza",
+        "region": "Vabbi",
+        "campaign": "Nightfall",
+        "item": "Behemoth Hides",
+        "quantity": 2,
+        "outposts": [
+          "Dzagonur Bastion (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Crystal Overlook",
+        "region": "The Desolation",
+        "campaign": "Nightfall",
+        "item": "Luminous Stone",
+        "quantity": 1,
+        "outposts": [
+          "Bone Palace",
+          "Ruins of Morah (outpost)",
+          "The Mouth of Torment"
+        ],
+        "hops": 2,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Witman's Folly",
+        "region": "Southern Shiverpeaks",
+        "campaign": "Prophecies",
+        "item": "Intricate Grawl Necklaces",
+        "quantity": 3,
+        "outposts": [
+          "Droknar's Forge",
+          "Port Sledge"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Shadow's Passage",
+        "region": "Kaineng City",
+        "campaign": "Factions",
+        "item": "Jadeite Shards",
+        "quantity": 3,
+        "outposts": [
+          "Dragon's Throat (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Barbarous Shore",
+        "region": "Kourna",
+        "campaign": "Nightfall",
+        "item": "Gold Doubloon",
+        "quantity": 1,
+        "outposts": [
+          "Camp Hojanu"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Skyward Reach",
+        "region": "Crystal Desert",
+        "campaign": "Prophecies",
+        "item": "Shriveled Eyes",
+        "quantity": 2,
+        "outposts": [
+          "Augury Rock (outpost)",
+          "Destiny's Gorge"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Icedome",
+        "region": "Southern Shiverpeaks",
+        "campaign": "Prophecies",
+        "item": "Icy Lodestones",
+        "quantity": 2,
+        "outposts": [
+          "Camp Rankor",
+          "Copperhammer Mines",
+          "Droknar's Forge",
+          "Ice Caves of Sorrow (outpost)",
+          "Iron Mines of Moladune (outpost)"
+        ],
+        "hops": 2,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Silent Surf",
+        "region": "The Jade Sea",
+        "campaign": "Factions",
+        "item": "Keen Oni Talon",
+        "quantity": 1,
+        "outposts": [
+          "Leviathan Pits",
+          "Seafarer's Rest",
+          "Unwaking Waters (Luxon)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Nebo Terrace",
+        "region": "Kryta",
+        "campaign": "Prophecies",
+        "item": "Hardened Humps",
+        "quantity": 2,
+        "outposts": [
+          "Beetletun",
+          "Bergen Hot Springs"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Drakkar Lake",
+        "region": "Far Shiverpeaks",
+        "campaign": "Eye of the North",
+        "item": "Piles of Elemental Dust",
+        "quantity": 2,
+        "outposts": [
+          "Sifhalla"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Panjiang Peninsula",
+        "region": "Shing Jea Island",
+        "campaign": "Factions",
+        "item": "Naga Hides",
+        "quantity": 3,
+        "outposts": [
+          "Tsumei Village"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Griffon's Mouth",
+        "region": "Northern Shiverpeaks",
+        "campaign": "Prophecies",
+        "item": "Spiritwood Planks",
+        "quantity": 3,
+        "outposts": [
+          "Beacon's Perch",
+          "Gates of Kryta (outpost)"
+        ],
+        "hops": 2,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Pockmark Flats",
+        "region": "Ascalon",
+        "campaign": "Prophecies",
+        "item": "Stormy Eye",
+        "quantity": 1,
+        "outposts": [
+          "Serenity Temple"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Forum Highlands",
+        "region": "Vabbi",
+        "campaign": "Nightfall",
+        "item": "Skree Wings",
+        "quantity": 3,
+        "outposts": [
+          "Jennur's Horde (outpost)",
+          "The Kodash Bazaar",
+          "Tihark Orchard (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Raisu Palace (explorable area)",
+        "region": "Kaineng City",
+        "campaign": "Factions",
+        "item": "Soul Stones",
+        "quantity": 3,
+        "outposts": [
+          "Imperial Sanctum (outpost)",
+          "Raisu Palace (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Tears of the Fallen",
+        "region": "Kryta",
+        "campaign": "Prophecies",
+        "item": "Spiked Crest",
+        "quantity": 1,
+        "outposts": [
+          "Fishermen's Haven",
+          "Riverside Province (outpost)",
+          "Sanctum Cay (outpost)"
+        ],
+        "hops": 2,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Drazach Thicket",
+        "region": "Echovald Forest",
+        "campaign": "Factions",
+        "item": "Dragon Root",
+        "quantity": 1,
+        "outposts": [
+          "Brauer Academy",
+          "Saint Anjeka's Shrine",
+          "The Eternal Grove (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Jaga Moraine",
+        "region": "Far Shiverpeaks",
+        "campaign": "Eye of the North",
+        "item": "Berserker Horns",
+        "quantity": 3,
+        "outposts": [
+          "Sifhalla"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Mamnoon Lagoon",
+        "region": "Maguuma Jungle",
+        "campaign": "Prophecies",
+        "item": "Behemoth Jaw",
+        "quantity": 1,
+        "outposts": [
+          "Bloodstone Fen (outpost)",
+          "Druid's Overlook",
+          "Quarrel Falls",
+          "The Wilds (outpost)"
+        ],
+        "hops": 2,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Zehlon Reach",
+        "region": "Istan",
+        "campaign": "Nightfall",
+        "item": "Bowl of Skalefin Soup",
+        "quantity": 1,
+        "outposts": [
+          "Jokanur Diggings (outpost)",
+          "The Astralarium"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Kessex Peak",
+        "region": "Kryta",
+        "campaign": "Prophecies",
+        "item": "Forest Minotaur Horns",
+        "quantity": 2,
+        "outposts": [
+          "Temple of the Ages"
+        ],
+        "hops": 2,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Sunjiang District (explorable area)",
+        "region": "Kaineng City",
+        "campaign": "Factions",
+        "item": "Putrid Cysts",
+        "quantity": 3,
+        "outposts": [
+          "Zin Ku Corridor"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Salt Flats",
+        "region": "Crystal Desert",
+        "campaign": "Prophecies",
+        "item": "Jade Mandibles",
+        "quantity": 2,
+        "outposts": [
+          "Seeker's Passage"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Silverwood",
+        "region": "Maguuma Jungle",
+        "campaign": "Prophecies",
+        "item": "Maguuma Manes",
+        "quantity": 2,
+        "outposts": [
+          "Bloodstone Fen (outpost)",
+          "Quarrel Falls"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "The Eternal Grove (explorable area)",
+        "region": "Echovald Forest",
+        "campaign": "Factions",
+        "item": "Skull Juju",
+        "quantity": 1,
+        "outposts": [
+          "The Eternal Grove (outpost)",
+          "Vasburg Armory"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Lahtenda Bog",
+        "region": "Istan",
+        "campaign": "Nightfall",
+        "item": "Mandragor Swamproots",
+        "quantity": 3,
+        "outposts": [
+          "Blacktide Den (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Vehtendi Valley",
+        "region": "Vabbi",
+        "campaign": "Nightfall",
+        "item": "Bottle of Vabbian Wine",
+        "quantity": 1,
+        "outposts": [
+          "The Kodash Bazaar",
+          "Yahnur Market"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Magus Stones",
+        "region": "Tarnished Coast",
+        "campaign": "Eye of the North",
+        "item": "Weaver Legs",
+        "quantity": 2,
+        "outposts": [
+          "Rata Sum"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Diviner's Ascent",
+        "region": "Crystal Desert",
+        "campaign": "Prophecies",
+        "item": "Topaz Crest",
+        "quantity": 1,
+        "outposts": [
+          "Elona Reach (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Pongmei Valley",
+        "region": "Kaineng City",
+        "campaign": "Factions",
+        "item": "Rot Wallow Tusks",
+        "quantity": 2,
+        "outposts": [
+          "Boreas Seabed (outpost)",
+          "Maatu Keep",
+          "Tanglewood Copse"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Anvil Rock",
+        "region": "Northern Shiverpeaks",
+        "campaign": "Prophecies",
+        "item": "Frostfire Fangs",
+        "quantity": 2,
+        "outposts": [
+          "Ice Tooth Cave",
+          "The Frost Gate (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "The Ruptured Heart",
+        "region": "The Desolation",
+        "campaign": "Nightfall",
+        "item": "Demonic Relic",
+        "quantity": 1,
+        "outposts": [
+          "Ruins of Morah (outpost)",
+          "The Mouth of Torment"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Talmark Wilderness",
+        "region": "Kryta",
+        "campaign": "Prophecies",
+        "item": "Abnormal Seeds",
+        "quantity": 2,
+        "outposts": [
+          "Temple of the Ages"
+        ],
+        "hops": 2,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "The Hidden City of Ahdashim",
+        "region": "Vabbi",
+        "campaign": "Nightfall",
+        "item": "Diamond Djinn Essence",
+        "quantity": 1,
+        "outposts": [
+          "Dasha Vestibule (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Vulture Drifts",
+        "region": "Crystal Desert",
+        "campaign": "Prophecies",
+        "item": "Forgotten Seals",
+        "quantity": 2,
+        "outposts": [
+          "Dunes of Despair (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Kinya Province",
+        "region": "Shing Jea Island",
+        "campaign": "Factions",
+        "item": "Copper Crimson Skull Coins",
+        "quantity": 5,
+        "outposts": [
+          "Ran Musu Gardens"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Ettin's Back",
+        "region": "Maguuma Jungle",
+        "campaign": "Prophecies",
+        "item": "Mossy Mandibles",
+        "quantity": 3,
+        "outposts": [
+          "Aurora Glade (outpost)",
+          "Ventari's Refuge"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Grenth's Footprint",
+        "region": "Southern Shiverpeaks",
+        "campaign": "Prophecies",
+        "item": "Enslavement Stones",
+        "quantity": 2,
+        "outposts": [
+          "Deldrimor War Camp"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Jahai Bluffs",
+        "region": "Kourna",
+        "campaign": "Nightfall",
+        "item": "Elonian Leather Squares",
+        "quantity": 5,
+        "outposts": [
+          "Kodonur Crossroads (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Vehjin Mines",
+        "region": "Vabbi",
+        "campaign": "Nightfall",
+        "item": "Cobalt Talons",
+        "quantity": 2,
+        "outposts": [
+          "Basalt Grotto",
+          "Jennur's Horde (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Reed Bog",
+        "region": "Maguuma Jungle",
+        "campaign": "Prophecies",
+        "item": "Maguuma Spider Web",
+        "quantity": 1,
+        "outposts": [
+          "Aurora Glade (outpost)",
+          "Ventari's Refuge"
+        ],
+        "hops": 2,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Minister Cho's Estate (explorable area)",
+        "region": "Shing Jea Island",
+        "campaign": "Factions",
+        "item": "Forgotten Trinket Boxes",
+        "quantity": 5,
+        "outposts": [
+          "Minister Cho's Estate (outpost)",
+          "Ran Musu Gardens"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Iron Horse Mine",
+        "region": "Northern Shiverpeaks",
+        "campaign": "Prophecies",
+        "item": "Icy Humps",
+        "quantity": 3,
+        "outposts": [
+          "Borlis Pass (outpost)",
+          "Ice Tooth Cave",
+          "The Frost Gate (outpost)",
+          "Yak's Bend"
+        ],
+        "hops": 2,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "The Shattered Ravines",
+        "region": "The Desolation",
+        "campaign": "Nightfall",
+        "item": "Sandblasted Lodestone",
+        "quantity": 1,
+        "outposts": [
+          "Lair of the Forgotten"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Archipelagos",
+        "region": "The Jade Sea",
+        "campaign": "Factions",
+        "item": "Black Pearls",
+        "quantity": 3,
+        "outposts": [
+          "Breaker Hollow",
+          "Cavalon",
+          "Jade Flats (Luxon)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Marga Coast",
+        "region": "Kourna",
+        "campaign": "Nightfall",
+        "item": "Insect Carapaces",
+        "quantity": 3,
+        "outposts": [
+          "Dajkah Inlet (outpost)",
+          "Nundu Bay (outpost)",
+          "Sunspear Sanctuary",
+          "Yohlon Haven"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Watchtower Coast",
+        "region": "Kryta",
+        "campaign": "Prophecies",
+        "item": "Mergoyle Skulls",
+        "quantity": 3,
+        "outposts": [
+          "Beetletun",
+          "Divinity Coast (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Cursed Lands",
+        "region": "Kryta",
+        "campaign": "Prophecies",
+        "item": "Decayed Orr Emblems",
+        "quantity": 3,
+        "outposts": [
+          "Beetletun",
+          "Bergen Hot Springs",
+          "Temple of the Ages"
+        ],
+        "hops": 2,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Mourning Veil Falls",
+        "region": "Echovald Forest",
+        "campaign": "Factions",
+        "item": "Tempered Glass Vials",
+        "quantity": 5,
+        "outposts": [
+          "Amatz Basin (outpost)",
+          "Durheim Archives"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Old Ascalon",
+        "region": "Ascalon",
+        "campaign": "Prophecies",
+        "item": "Scorched Lodestones",
+        "quantity": 3,
+        "outposts": [
+          "Ascalon City",
+          "Sardelac Sanitarium"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Turai's Procession",
+        "region": "The Desolation",
+        "campaign": "Nightfall",
+        "item": "Water Djinn Essence",
+        "quantity": 1,
+        "outposts": [
+          "Gate of Desolation (outpost)",
+          "Venta Cemetery (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Maishang Hills",
+        "region": "The Jade Sea",
+        "campaign": "Factions",
+        "item": "Guardian Moss",
+        "quantity": 1,
+        "outposts": [
+          "Bai Paasu Reach",
+          "Eredon Terrace",
+          "Gyala Hatchery (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "The Floodplain of Mahnkelon",
+        "region": "Kourna",
+        "campaign": "Nightfall",
+        "item": "Dwarven Ales",
+        "quantity": 6,
+        "outposts": [
+          "Kodonur Crossroads (outpost)",
+          "Moddok Crevice (outpost)",
+          "Rilohn Refuge (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Sparkfly Swamp",
+        "region": "Tarnished Coast",
+        "campaign": "Eye of the North",
+        "item": "Amphibian Tongues",
+        "quantity": 2,
+        "outposts": [
+          "Gadd's Encampment"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Frozen Forest",
+        "region": "Southern Shiverpeaks",
+        "campaign": "Prophecies",
+        "item": "Alpine Seeds",
+        "quantity": 2,
+        "outposts": [
+          "Copperhammer Mines",
+          "Iron Mines of Moladune (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Dry Top",
+        "region": "Maguuma Jungle",
+        "campaign": "Prophecies",
+        "item": "Tangled Seeds",
+        "quantity": 2,
+        "outposts": [
+          "Aurora Glade (outpost)",
+          "Henge of Denravi",
+          "Maguuma Stade",
+          "Riverside Province (outpost)",
+          "Ventari's Refuge"
+        ],
+        "hops": 2,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Jaya Bluffs",
+        "region": "Shing Jea Island",
+        "campaign": "Factions",
+        "item": "Stolen Supplies",
+        "quantity": 3,
+        "outposts": [
+          "Seitung Harbor"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Plains of Jarin",
+        "region": "Istan",
+        "campaign": "Nightfall",
+        "item": "Pahnai Salad",
+        "quantity": 1,
+        "outposts": [
+          "Champion's Dawn",
+          "Kamadan, Jewel of Istan",
+          "Sunspear Great Hall",
+          "The Astralarium"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Xaquang Skyway",
+        "region": "Kaineng City",
+        "campaign": "Factions",
+        "item": "Vermin Hides",
+        "quantity": 3,
+        "outposts": [
+          "Senji's Corner"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "The Mirror of Lyss",
+        "region": "Vabbi",
+        "campaign": "Nightfall",
+        "item": "Roaring Ether Heart",
+        "quantity": 1,
+        "outposts": [
+          "Dasha Vestibule (outpost)",
+          "Dzagonur Bastion (outpost)",
+          "Grand Court of Sebelkeh (outpost)",
+          "Honur Hill",
+          "Mihanu Township",
+          "The Kodash Bazaar"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Ascalon Foothills",
+        "region": "Ascalon",
+        "campaign": "Prophecies",
+        "item": "Leathery Claws",
+        "quantity": 3,
+        "outposts": [
+          "Borlis Pass (outpost)",
+          "Grendich Courthouse",
+          "Nolani Academy (outpost)",
+          "Yak's Bend"
+        ],
+        "hops": 2,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Unwaking Waters (explorable area)",
+        "region": "The Jade Sea",
+        "campaign": "Factions",
+        "item": "Azure Crest",
+        "quantity": 1,
+        "outposts": [
+          "Harvest Temple",
+          "Unwaking Waters (Kurzick)",
+          "Unwaking Waters (Luxon)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Bjora Marches",
+        "region": "Far Shiverpeaks",
+        "campaign": "Eye of the North",
+        "item": "Jotun Pelt",
+        "quantity": 1,
+        "outposts": [
+          "Longeye's Ledge"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Dejarin Estate",
+        "region": "Kourna",
+        "campaign": "Nightfall",
+        "item": "Heket Tongues",
+        "quantity": 2,
+        "outposts": [
+          "Camp Hojanu",
+          "Kodonur Crossroads (outpost)",
+          "Pogahn Passage (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Talus Chute",
+        "region": "Southern Shiverpeaks",
+        "campaign": "Prophecies",
+        "item": "Mountain Troll Tusks",
+        "quantity": 5,
+        "outposts": [
+          "Camp Rankor",
+          "Droknar's Forge",
+          "Ice Caves of Sorrow (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Shenzun Tunnels",
+        "region": "Kaineng City",
+        "campaign": "Factions",
+        "item": "Vials of Ink",
+        "quantity": 3,
+        "outposts": [
+          "Maatu Keep",
+          "Sunjiang District (outpost)",
+          "Tahnnakai Temple (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Gandara, the Moon Fortress",
+        "region": "Kourna",
+        "campaign": "Nightfall",
+        "item": "Kournan Pendants",
+        "quantity": 3,
+        "outposts": [
+          "Pogahn Passage (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Diessa Lowlands",
+        "region": "Ascalon",
+        "campaign": "Prophecies",
+        "item": "Singed Gargoyle Skulls",
+        "quantity": 3,
+        "outposts": [
+          "Grendich Courthouse",
+          "Nolani Academy (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Melandru's Hope",
+        "region": "Echovald Forest",
+        "campaign": "Factions",
+        "item": "Dredge Incisors",
+        "quantity": 3,
+        "outposts": [
+          "Brauer Academy",
+          "Jade Flats (Kurzick)",
+          "Lutgardis Conservatory"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Tasca's Demise",
+        "region": "Southern Shiverpeaks",
+        "campaign": "Prophecies",
+        "item": "Stone Summit Badges",
+        "quantity": 3,
+        "outposts": [
+          "The Granite Citadel"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Arbor Bay",
+        "region": "Tarnished Coast",
+        "campaign": "Eye of the North",
+        "item": "Krait Skins",
+        "quantity": 3,
+        "outposts": [
+          "Vlox's Falls"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Joko's Domain",
+        "region": "The Desolation",
+        "campaign": "Nightfall",
+        "item": "Inscribed Shards",
+        "quantity": 2,
+        "outposts": [
+          "Basalt Grotto",
+          "Bone Palace",
+          "Remains of Sahlahja (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Sunqua Vale",
+        "region": "Shing Jea Island",
+        "campaign": "Factions",
+        "item": "Feathered Scalps",
+        "quantity": 3,
+        "outposts": [
+          "Minister Cho's Estate (outpost)",
+          "Shing Jea Monastery",
+          "Tsumei Village"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "The Sulfurous Wastes",
+        "region": "The Desolation",
+        "campaign": "Nightfall",
+        "item": "Mummy Wrappings",
+        "quantity": 3,
+        "outposts": [
+          "Gate of Desolation (outpost)",
+          "Remains of Sahlahja (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "The Black Curtain",
+        "region": "Kryta",
+        "campaign": "Prophecies",
+        "item": "Shadowy Remnants",
+        "quantity": 2,
+        "outposts": [
+          "Temple of the Ages"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "The Undercity",
+        "region": "Kaineng City",
+        "campaign": "Factions",
+        "item": "Ancient Kappa Shells",
+        "quantity": 3,
+        "outposts": [
+          "Vizunah Square (Local Quarter)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Yatendi Canyons",
+        "region": "Vabbi",
+        "campaign": "Nightfall",
+        "item": "Geode",
+        "quantity": 1,
+        "outposts": [
+          "Chantry of Secrets",
+          "Wehhan Terraces"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Grothmar Wardowns",
+        "region": "Charr Homelands",
+        "campaign": "Eye of the North",
+        "item": "Fibrous Mandragor Roots",
+        "quantity": 2,
+        "outposts": [
+          "Longeye's Ledge"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Dragon's Gullet",
+        "region": "Ascalon",
+        "campaign": "Prophecies",
+        "item": "Gruesome Ribcages",
+        "quantity": 3,
+        "outposts": [
+          "Grendich Courthouse",
+          "Nolani Academy (outpost)"
+        ],
+        "hops": 3,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Boreas Seabed (explorable area)",
+        "region": "The Jade Sea",
+        "campaign": "Factions",
+        "item": "Kraken Eyes",
+        "quantity": 2,
+        "outposts": [
+          "Boreas Seabed (outpost)",
+          "Zos Shivros Channel (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Scoundrel's Rise",
+        "region": "Kryta",
+        "campaign": "Prophecies",
+        "item": "Bog Skale Fins",
+        "quantity": 3,
+        "outposts": [
+          "Gates of Kryta (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Sunward Marches",
+        "region": "Kourna",
+        "campaign": "Nightfall",
+        "item": "Sentient Spores",
+        "quantity": 2,
+        "outposts": [
+          "Dajkah Inlet (outpost)",
+          "Venta Cemetery (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Sage Lands",
+        "region": "Maguuma Jungle",
+        "campaign": "Prophecies",
+        "item": "Ancient Eyes",
+        "quantity": 2,
+        "outposts": [
+          "Druid's Overlook",
+          "The Wilds (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Cliffs of Dohjok",
+        "region": "Istan",
+        "campaign": "Nightfall",
+        "item": "Copper Shillings",
+        "quantity": 3,
+        "outposts": [
+          "Beknur Harbor",
+          "Blacktide Den (outpost)",
+          "Champion's Dawn",
+          "Jokanur Diggings (outpost)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Norrhart Domains",
+        "region": "Far Shiverpeaks",
+        "campaign": "Eye of the North",
+        "item": "Frigid Mandragor Husks",
+        "quantity": 3,
+        "outposts": [
+          "Gunnar's Hold"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Traveler's Vale",
+        "region": "Northern Shiverpeaks",
+        "campaign": "Prophecies",
+        "item": "Bolts of Linen",
+        "quantity": 3,
+        "outposts": [
+          "Borlis Pass (outpost)",
+          "Yak's Bend"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "location": "Flame Temple Corridor",
+        "region": "Ascalon",
+        "campaign": "Prophecies",
+        "item": "Charr Carvings",
+        "quantity": 3,
+        "outposts": [
+          "Grendich Courthouse",
+          "Nolani Academy (outpost)"
+        ],
+        "hops": 2,
+        "via": "nearest on the map"
       }
     ]
   }

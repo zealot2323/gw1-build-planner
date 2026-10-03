@@ -13,10 +13,15 @@ import type { DataIndex } from "./data.js";
 export interface ZaishenCycle<T> {
   /** Unix seconds of cycle position 0. */
   epoch: number;
-  /** Cycle length in days. */
+  /** How long one position lasts. A day unless the cycle says otherwise. */
+  periodSeconds?: number;
+  /** Cycle length, in positions. */
   mod: number;
   items: T[];
 }
+
+const DAY = 86_400;
+const periodOf = (cycle: ZaishenCycle<unknown>): number => cycle.periodSeconds ?? DAY;
 
 export interface ZaishenMissionEntry {
   name: string;
@@ -37,23 +42,40 @@ export interface ZaishenBountyEntry {
   via: string;
 }
 
+/**
+ * Nicholas the Traveler's week: he stands in one explorable area and takes
+ * a fixed item in exchange for gifts, moving every Monday at 15:00 UTC.
+ */
+export interface NicholasEntry {
+  /** The explorable area he is standing in, and where the item drops. */
+  location: string;
+  region: string;
+  campaign: string;
+  item: string;
+  quantity: number;
+  outposts: LocationRef[];
+  hops: number | null;
+  via: string;
+}
+
 export interface ZaishenData {
   generatedAt: string;
   missions: ZaishenCycle<ZaishenMissionEntry>;
   bounties: ZaishenCycle<ZaishenBountyEntry>;
+  nicholas: ZaishenCycle<NicholasEntry>;
 }
 
 /** Position in the cycle for a moment in time. */
 export function zaishenIndexAt<T>(cycle: ZaishenCycle<T>, at: Date = new Date()): number {
-  const days = Math.floor((Math.floor(at.getTime() / 1000) - cycle.epoch) / 86_400);
-  return ((days % cycle.mod) + cycle.mod) % cycle.mod;
+  const steps = Math.floor((Math.floor(at.getTime() / 1000) - cycle.epoch) / periodOf(cycle));
+  return ((steps % cycle.mod) + cycle.mod) % cycle.mod;
 }
 
 export function zaishenAt<T>(cycle: ZaishenCycle<T>, at: Date = new Date()): T {
   return cycle.items[zaishenIndexAt(cycle, at)];
 }
 
-/** The daily reset: 16:00 UTC, which is where the cycle epochs sit. */
+/** The daily reset: 16:00 UTC, which is where the Zaishen epochs sit. */
 export function nextReset(at: Date = new Date()): Date {
   const reset = new Date(at);
   reset.setUTCHours(16, 0, 0, 0);
@@ -61,15 +83,35 @@ export function nextReset(at: Date = new Date()): Date {
   return reset;
 }
 
-/** `count` days of the rotation from `at`, for planning ahead. */
+/**
+ * When this cycle next moves on. Derived from the cycle's own epoch and
+ * period rather than a clock rule, because they do not agree: the Zaishen
+ * dailies turn over at 16:00 UTC and Nicholas moves on Mondays at 15:00.
+ */
+export function nextChange<T>(cycle: ZaishenCycle<T>, at: Date = new Date()): Date {
+  const period = periodOf(cycle);
+  const elapsed = Math.floor(at.getTime() / 1000) - cycle.epoch;
+  return new Date((cycle.epoch + (Math.floor(elapsed / period) + 1) * period) * 1000);
+}
+
+/**
+ * The next `count` turns of the rotation from `at`, for planning ahead.
+ *
+ * `on` is when each turn BEGINS, not `at` plus a multiple of the period:
+ * asking on a Saturday which area Nicholas visits in three weeks should
+ * answer with the Monday he arrives, not with a Saturday.
+ */
 export function zaishenUpcoming<T>(
   cycle: ZaishenCycle<T>,
   count: number,
   at: Date = new Date(),
 ): Array<{ on: Date; entry: T }> {
+  const period = periodOf(cycle);
+  const elapsed = Math.floor(at.getTime() / 1000) - cycle.epoch;
+  const start = cycle.epoch + Math.floor(elapsed / period) * period;
   const out: Array<{ on: Date; entry: T }> = [];
-  for (let day = 0; day < count; day++) {
-    const on = new Date(at.getTime() + day * 86_400_000);
+  for (let i = 0; i < count; i++) {
+    const on = new Date((start + i * period) * 1000);
     out.push({ on, entry: zaishenAt(cycle, on) });
   }
   return out;
@@ -129,6 +171,14 @@ export function missionStatus(
 
 export function bountyStatus(
   entry: ZaishenBountyEntry,
+  character: Character,
+  index: DataIndex,
+): DailyStatus {
+  return statusFor(entry.outposts, character, index);
+}
+
+export function nicholasStatus(
+  entry: NicholasEntry,
   character: Character,
   index: DataIndex,
 ): DailyStatus {

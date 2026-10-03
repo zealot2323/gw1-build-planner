@@ -9,7 +9,8 @@ and from where?"
 - `/scraper` — Node/TypeScript scripts that fetch and parse wiki data into JSON.
 - `/data` — committed JSON datasets (the scraper's output). Fixtures live in `/data/fixtures`.
   `skill-changes.json` is the recent-game-updates log; `quests.json` the quests
-  that reward skills; `zaishen.json` the daily rotations (see Data decisions).
+  that reward skills; `zaishen.json` the Zaishen dailies AND Nicholas the
+  Traveler's weekly cycle (see Data decisions).
 - `/engine` — pure TypeScript library: types, JSON Schemas, availability/build logic. **No UI dependencies.**
 - `/app` — static React app (Vite). No backend — it loads the committed JSON from `/data`.
 - `/export` — Obsidian vault generator.
@@ -435,6 +436,22 @@ There are two, and the split matters:
   MediaWiki titles are case-insensitive in the first letter only ("the Deep"
   → "The Deep (outpost)"), and Eye of the North has no missions — its
   rotation days are quests, which need the `(quest)` suffix.
+- **Nicholas the Traveler is the same arithmetic, a week at a time.**
+  `(t - 1323097200) / 604800 mod 137`, from Monday 5 December 2011 at 15:00
+  UTC. Note the hour: he moves an hour BEFORE the Zaishen dailies turn over,
+  so the two cycles do not share a reset — `nextChange` derives each one from
+  its own epoch and period rather than from a clock rule. Verified against
+  the wiki's template expansion at six timestamps, including both sides of a
+  Monday 15:00. Template:Cycle/Nicholas packs five parallel `#switch` lists
+  (location, region, campaign, quantity, item) behind one index.
+- **"Coming up" rows are dated from when a turn BEGINS**, not from now plus a
+  multiple of the period: asked on a Saturday, Nicholas's third week should
+  be dated the Monday he arrives.
+- **Every outpost at the closest hop count counts, not the first one found.**
+  A zone usually touches several, and having unlocked any one of them gets
+  you in; taking only the first marked characters short of an activity
+  because they had come at it from the other side. This widened 22 bounties
+  and 86 of Nicholas's 137 weeks to more than one entrance.
 - **A campaign is only "not owned" when no entrance is reachable.** The
   Fissure of Woe has one entrance per campaign, so naming the campaigns a
   character lacks would be wrong whenever another entrance is in one they

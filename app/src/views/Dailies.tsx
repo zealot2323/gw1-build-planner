@@ -2,12 +2,14 @@ import { useMemo, useState } from "react";
 import {
   bountyStatus,
   missionStatus,
-  nextReset,
+  nextChange,
+  nicholasStatus,
   zaishenAt,
   zaishenUpcoming,
   type DailyStatus,
   type LocationRef,
   type TodoKind,
+  type NicholasEntry,
   type ZaishenBountyEntry,
   type ZaishenMissionEntry,
 } from "@gw1/engine";
@@ -21,30 +23,35 @@ import type { CharacterSave, SaveFile } from "../save";
 export interface DailiesViewState {
   showUpcomingMissions: boolean;
   showUpcomingBounties: boolean;
+  showUpcomingNicholas: boolean;
 }
 
 export const initialDailiesViewState: DailiesViewState = {
   showUpcomingMissions: false,
   showUpcomingBounties: false,
+  showUpcomingNicholas: false,
 };
 
 const UPCOMING_DAYS = 7;
+const UPCOMING_WEEKS = 6;
 
 const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? "" : "s"}`;
 
-/** "in 7h 12m" — the dailies change at 16:00 UTC. */
-function untilReset(now: Date): string {
-  const minutes = Math.max(0, Math.round((nextReset(now).getTime() - now.getTime()) / 60_000));
-  const hours = Math.floor(minutes / 60);
+/** "6d 7h" or "7h 12m" until this rotation turns over. */
+function until(next: Date, now: Date): string {
+  const minutes = Math.max(0, Math.round((next.getTime() - now.getTime()) / 60_000));
+  const days = Math.floor(minutes / 1440);
+  const hours = Math.floor((minutes % 1440) / 60);
+  if (days > 0) return `${days}d ${hours}h`;
   return hours > 0 ? `${hours}h ${minutes % 60}m` : `${minutes}m`;
 }
 
-const dayLabel = (on: Date, i: number) =>
-  i === 0
-    ? "Today"
-    : i === 1
-      ? "Tomorrow"
-      : on.toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" });
+const date = (on: Date) => on.toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" });
+
+const dayLabel = (on: Date, i: number) => (i === 0 ? "Today" : i === 1 ? "Tomorrow" : date(on));
+
+const weekLabel = (on: Date, i: number) =>
+  i === 0 ? "This week" : i === 1 ? "Next week" : `From ${date(on)}`;
 
 function WikiLink({ page, children }: { page: string; children?: React.ReactNode }) {
   return (
@@ -71,14 +78,14 @@ function Entrances({ outposts }: { outposts: LocationRef[] }) {
 function CharacterRow({
   character,
   status,
-  kind,
+  showCompleted,
   todoRefs,
   addTodoFor,
 }: {
   character: CharacterSave;
   status: DailyStatus;
-  /** A mission can be both reachable and already done; a bounty can only be reached. */
-  kind: "mission" | "bounty";
+  /** A mission can be both reachable and already done; nothing else can. */
+  showCompleted: boolean;
   todoRefs: Array<{ kind: TodoKind; ref: string }>;
   addTodoFor: (name: string, entries: Array<{ kind: TodoKind; ref: string }>) => { added: number; skipped: number };
 }) {
@@ -108,7 +115,7 @@ function CharacterRow({
       ) : (
         <span className="warn daily-state">Outpost not unlocked</span>
       )}
-      {kind === "mission" && status.completed && (
+      {showCompleted && status.completed && (
         <span className="tag ok" title="This mission is already completed on this character.">
           completed
         </span>
@@ -133,11 +140,12 @@ function Rotation<T>({
   where,
   characters,
   statusFor,
-  kind,
+  showCompleted = false,
   todoRefs,
   addTodoFor,
   upcoming,
   labelOf,
+  slotLabel,
   open,
   toggle,
 }: {
@@ -148,11 +156,13 @@ function Rotation<T>({
   where: React.ReactNode;
   characters: CharacterSave[];
   statusFor: (entry: T, character: CharacterSave) => DailyStatus;
-  kind: "mission" | "bounty";
+  showCompleted?: boolean;
   todoRefs: (entry: T, character: CharacterSave) => Array<{ kind: TodoKind; ref: string }>;
   addTodoFor: (name: string, entries: Array<{ kind: TodoKind; ref: string }>) => { added: number; skipped: number };
   upcoming: Array<{ on: Date; entry: T }>;
   labelOf: (entry: T) => string;
+  /** How a row in "Coming up" names its slot: a day, or a week. */
+  slotLabel: (on: Date, i: number) => string;
   open: boolean;
   toggle: () => void;
 }) {
@@ -179,7 +189,7 @@ function Rotation<T>({
             key={c.name}
             character={c}
             status={statusFor(entry, c)}
-            kind={kind}
+            showCompleted={showCompleted}
             todoRefs={todoRefs(entry, c)}
             addTodoFor={addTodoFor}
           />
@@ -194,7 +204,7 @@ function Rotation<T>({
           <ul className="daily-upcoming small">
             {upcoming.map(({ on, entry: e }, i) => (
               <li key={i}>
-                <span className="muted daily-day">{dayLabel(on, i)}</span> {labelOf(e)}
+                <span className="muted daily-day">{slotLabel(on, i)}</span> {labelOf(e)}
               </li>
             ))}
           </ul>
@@ -220,6 +230,7 @@ export function DailiesView({
   const now = useMemo(() => new Date(), []);
   const mission = zaishenAt(zaishen.missions, now);
   const bounty = zaishenAt(zaishen.bounties, now);
+  const nicholas = zaishenAt(zaishen.nicholas, now);
   /**
    * What to put on a character's to-do list: the entrances they could still
    * unlock. An entrance in a campaign they don't own isn't a to-do, and the
@@ -239,10 +250,12 @@ export function DailiesView({
   return (
     <div className="view">
       <p className="muted small">
-        The Zaishen mission and bounty rotate daily at 16:00 UTC — next change in {untilReset(now)}. Both
-        rotations are fixed sequences, so these are calculated, not fetched. "Can travel there" means the
-        character has unlocked an outpost the activity can be started from; for a bounty in a dungeon, that is the
-        nearest outpost to the dungeon entrance. Campaign ownership is taken from each character's own settings.
+        The Zaishen mission and bounty rotate daily at 16:00 UTC (next change in{" "}
+        {until(nextChange(zaishen.missions, now), now)}); Nicholas the Traveler moves every Monday at 15:00 UTC
+        (next change in {until(nextChange(zaishen.nicholas, now), now)}). All three are fixed sequences, so these
+        are calculated, not fetched. "Can travel there" means the character has unlocked an outpost the activity
+        can be started from; for a bounty in a dungeon, that is the nearest outpost to the dungeon entrance.
+        Campaign ownership is taken from each character's own settings.
       </p>
 
       <Rotation<ZaishenMissionEntry>
@@ -267,11 +280,12 @@ export function DailiesView({
         }
         characters={save.characters}
         statusFor={(e, c) => missionStatus(e, c, index)}
-        kind="mission"
+        showCompleted
         todoRefs={(e, c) => outpostTodos(e.outposts, c)}
         addTodoFor={addTodoFor}
         upcoming={zaishenUpcoming(zaishen.missions, UPCOMING_DAYS, now)}
         labelOf={(e) => e.name}
+        slotLabel={dayLabel}
         open={view.showUpcomingMissions}
         toggle={() => setView({ showUpcomingMissions: !view.showUpcomingMissions })}
       />
@@ -301,13 +315,47 @@ export function DailiesView({
         }
         characters={save.characters}
         statusFor={(e, c) => bountyStatus(e, c, index)}
-        kind="bounty"
         todoRefs={(e, c) => outpostTodos(e.outposts, c)}
         addTodoFor={addTodoFor}
         upcoming={zaishenUpcoming(zaishen.bounties, UPCOMING_DAYS, now)}
         labelOf={(e) => e.boss}
+        slotLabel={dayLabel}
         open={view.showUpcomingBounties}
         toggle={() => setView({ showUpcomingBounties: !view.showUpcomingBounties })}
+      />
+
+      <Rotation<NicholasEntry>
+        title="Nicholas the Traveler"
+        note="He takes one item per week, anywhere from 1 to 5 of it, in exchange for a gift bag. The item drops in the area he is standing in."
+        entry={nicholas}
+        heading={
+          <>
+            {nicholas.quantity} × <WikiLink page={nicholas.item} />
+          </>
+        }
+        where={
+          <>
+            <span className="muted">Collect in: </span>
+            <WikiLink page={nicholas.location} />
+            <span className="muted">
+              {" "}
+              ({nicholas.region}, {nicholas.campaign})
+            </span>
+            <span className="muted"> · Nearest outpost: </span>
+            <span title={`How this was determined: ${nicholas.via}`}>
+              <Entrances outposts={nicholas.outposts} />
+            </span>
+          </>
+        }
+        characters={save.characters}
+        statusFor={(e, c) => nicholasStatus(e, c, index)}
+        todoRefs={(e, c) => outpostTodos(e.outposts, c)}
+        addTodoFor={addTodoFor}
+        upcoming={zaishenUpcoming(zaishen.nicholas, UPCOMING_WEEKS, now)}
+        labelOf={(e) => `${e.quantity} × ${e.item} — ${e.location}`}
+        slotLabel={weekLabel}
+        open={view.showUpcomingNicholas}
+        toggle={() => setView({ showUpcomingNicholas: !view.showUpcomingNicholas })}
       />
     </div>
   );

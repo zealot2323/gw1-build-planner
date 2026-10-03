@@ -1,0 +1,7 @@
+{
+  "title": "Template:Nicholas the Traveler/Cycle",
+  "pageid": 306129,
+  "revid": 2573221,
+  "timestamp": "2014-08-04T18:48:48Z",
+  "wikitext": "<includeonly>|- style=\"{{{style|}}}\" class=\"{{{class|}}}\"\n| style=\"text-align: right;\" | {{#time: j F Y | {{#var:thisweek}} {{{1|}}}}}{{Cycle|nicholasv|{{{1|}}}}}\n| {{#var:NicholasQuantity}} {{#var:NicholasItem}}\n| [[{{#var:NicholasLocation}}]]\n| [[{{#var:NicholasRegion}}]]\n| [[Guild Wars {{#var:NicholasCampaign}}|{{#var:NicholasCampaign}}]]\n| [[:File:Nicholas the Traveler {{#var:NicholasLocation}} map.jpg|Map]]</includeonly><noinclude>\n== Description ==\nThis is a row template for [[Nicholas the Traveler/Cycle]].\n\n== Usage ==\n<pre>{{Nicholas the Traveler/Cycle|-4 weeks}}</pre>\n=== Parameters ===\n;1 (unnamed parameter)\n:Time offset to predict cycle for\n;class\n;style\n:Optional. Additional styling to apply to the row.\n\n[[Category:Formatting templates]]\n</noinclude>"
+}
