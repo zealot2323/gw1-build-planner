@@ -4,6 +4,7 @@ import { describe, expect, it } from "vitest";
 import {
   bountyStatus,
   nextChange,
+  travelDistances,
   nicholasStatus,
   indexDataset,
   missionStatus,
@@ -186,5 +187,38 @@ describe("Nicholas the Traveler", () => {
     const ready = character({ unlockedLocations: week.outposts });
     expect(nicholasStatus(week, ready, index).ready).toBe(true);
     expect(nicholasStatus(week, character(), index).ready).toBe(false);
+  });
+});
+
+describe("how far away today's activity is", () => {
+  const mission = zaishen.missions.items.find((m) => m.name === "The Great Northern Wall")!;
+
+  const withGraph = (c: Character) => {
+    const graph = travelDistances(c, index);
+    return missionStatus(mission, c, index, graph);
+  };
+
+  it("is zero zones away once an entrance is unlocked", () => {
+    const status = withGraph(character({ unlockedLocations: mission.outposts }));
+    expect(status).toMatchObject({ ready: true, distance: 0, proximity: "now" });
+  });
+
+  it("counts the zones to the nearest entrance", () => {
+    // Ascalon City is a couple of zones from the mission outpost
+    const status = withGraph(character({ unlockedLocations: ["Ascalon City"] }));
+    expect(status.ready).toBe(false);
+    expect(status.distance).toBeGreaterThan(0);
+    expect(status.distance).toBeLessThan(6);
+    expect(status.proximity).not.toBe("unknown");
+  });
+
+  it("says nothing rather than zero when there is no route", () => {
+    const stranded = withGraph(character({ unlockedLocations: [] }));
+    expect(stranded.distance).toBeNull();
+    expect(stranded.proximity).toBe("unknown");
+  });
+
+  it("leaves the distance unknown when no travel graph is given", () => {
+    expect(missionStatus(mission, character({ unlockedLocations: ["Ascalon City"] }), index).distance).toBeNull();
   });
 });

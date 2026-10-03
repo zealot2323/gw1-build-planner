@@ -414,6 +414,9 @@ button.linkish.outpost { font-weight: 600; flex: 1; width: auto; }
 .daily-who { min-width: 11rem; display: inline-flex; align-items: center; gap: 0.35rem; }
 .daily-upcoming { list-style: none; margin: 0.3rem 0 0; padding: 0; }
 .daily-upcoming li { padding: 0.15rem 0; }
+/* a day or week at least one character can already reach */
+.daily-upcoming li.ok { color: var(--ok); }
+.daily-upcoming li.ok .daily-day { color: inherit; opacity: 0.75; }
 .daily-day { display: inline-block; min-width: 7.5rem; }
 
 @media (max-width: 720px) {

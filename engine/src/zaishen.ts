@@ -9,6 +9,7 @@
  */
 import type { Campaign, Character, LocationRef } from "./types.js";
 import type { DataIndex } from "./data.js";
+import { proximityOf, type Proximity, type TravelGraph } from "./travel.js";
 
 export interface ZaishenCycle<T> {
   /** Unix seconds of cycle position 0. */
@@ -125,6 +126,13 @@ export interface DailyStatus {
   ready: boolean;
   /** Campaigns among the outposts that this character doesn't own. */
   missingCampaigns: Campaign[];
+  /**
+   * Zone transitions to the nearest entrance: 0 when one is already
+   * unlocked, null when there is no known route or no travel graph was
+   * supplied. "Not unlocked" and "nine zones away" are different problems.
+   */
+  distance: number | null;
+  proximity: Proximity;
   /** Missions only: already completed. */
   completed?: boolean;
 }
@@ -142,7 +150,12 @@ const ownedCampaignsOf = (character: Character): Campaign[] =>
  * planner can check. A character who doesn't own the campaign is reported
  * separately, since that is a different problem from not having been there.
  */
-function statusFor(outposts: LocationRef[], character: Character, index: DataIndex): DailyStatus {
+function statusFor(
+  outposts: LocationRef[],
+  character: Character,
+  index: DataIndex,
+  graph?: TravelGraph,
+): DailyStatus {
   const unlocked = outposts.filter((o) => character.unlockedLocations.includes(o));
   const owned = ownedCampaignsOf(character);
   const campaigns = outposts.map((o) => index.locationByPage.get(o)?.campaign);
@@ -155,16 +168,30 @@ function statusFor(outposts: LocationRef[], character: Character, index: DataInd
   const missingCampaigns = reachable
     ? []
     : [...new Set(campaigns.filter((c): c is Campaign => !!c))];
-  return { outposts, unlocked, ready: unlocked.length > 0, missingCampaigns };
+  // Nearest entrance wins: any one of them gets the character in.
+  const distances = graph
+    ? outposts.map((o) => graph.distance.get(o)).filter((d): d is number => d !== undefined)
+    : [];
+  const distance = unlocked.length > 0 ? 0 : distances.length > 0 ? Math.min(...distances) : null;
+
+  return {
+    outposts,
+    unlocked,
+    ready: unlocked.length > 0,
+    missingCampaigns,
+    distance,
+    proximity: proximityOf(distance),
+  };
 }
 
 export function missionStatus(
   entry: ZaishenMissionEntry,
   character: Character,
   index: DataIndex,
+  graph?: TravelGraph,
 ): DailyStatus {
   return {
-    ...statusFor(entry.outposts, character, index),
+    ...statusFor(entry.outposts, character, index, graph),
     completed: character.completedMissions.includes(entry.name),
   };
 }
@@ -173,14 +200,16 @@ export function bountyStatus(
   entry: ZaishenBountyEntry,
   character: Character,
   index: DataIndex,
+  graph?: TravelGraph,
 ): DailyStatus {
-  return statusFor(entry.outposts, character, index);
+  return statusFor(entry.outposts, character, index, graph);
 }
 
 export function nicholasStatus(
   entry: NicholasEntry,
   character: Character,
   index: DataIndex,
+  graph?: TravelGraph,
 ): DailyStatus {
-  return statusFor(entry.outposts, character, index);
+  return statusFor(entry.outposts, character, index, graph);
 }

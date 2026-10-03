@@ -4,19 +4,22 @@ import {
   missionStatus,
   nextChange,
   nicholasStatus,
+  travelDistances,
   zaishenAt,
   zaishenUpcoming,
   type DailyStatus,
   type LocationRef,
   type TodoKind,
   type NicholasEntry,
+  type TravelGraph,
   type ZaishenBountyEntry,
   type ZaishenMissionEntry,
 } from "@gw1/engine";
-import { index, zaishen } from "../data";
+import { index, indexForCharacter, zaishen } from "../data";
 import { hasOpenTodo } from "../todos";
 import { wikiHref } from "../wiki";
 import { ProfessionIcon } from "../components/ProfessionIcon";
+import { ProximityDot } from "../components/ProximityDot";
 import type { CharacterSave, SaveFile } from "../save";
 
 /** Which rotations are expanded, held by App so tab switches keep them. */
@@ -31,6 +34,12 @@ export const initialDailiesViewState: DailiesViewState = {
   showUpcomingBounties: false,
   showUpcomingNicholas: false,
 };
+
+/** A character and the travel graph for their own campaigns. */
+interface Traveller {
+  character: CharacterSave;
+  graph: TravelGraph;
+}
 
 const UPCOMING_DAYS = 7;
 const UPCOMING_WEEKS = 6;
@@ -106,15 +115,18 @@ function CharacterRow({
       <span className="daily-who">
         <ProfessionIcon profession={character.primaryProfession} /> {character.name}
       </span>
-      {status.ready ? (
-        <span className="ok daily-state">Can travel there</span>
-      ) : status.missingCampaigns.length > 0 ? (
-        <span className="muted daily-state">
-          Does not own {status.missingCampaigns.join(" or ")}
-        </span>
-      ) : (
-        <span className="warn daily-state">Outpost not unlocked</span>
-      )}
+      <span className="daily-state">
+        <ProximityDot proximity={status.proximity} distance={status.distance} />{" "}
+        {status.ready ? (
+          <span className="ok">Can travel there</span>
+        ) : status.missingCampaigns.length > 0 ? (
+          <span className="muted">Does not own {status.missingCampaigns.join(" or ")}</span>
+        ) : status.distance === null ? (
+          <span className="warn">No route there yet</span>
+        ) : (
+          <span className="warn">{plural(status.distance, "zone")} away</span>
+        )}
+      </span>
       {showCompleted && status.completed && (
         <span className="tag ok" title="This mission is already completed on this character.">
           completed
@@ -138,7 +150,7 @@ function Rotation<T>({
   entry,
   heading,
   where,
-  characters,
+  travellers,
   statusFor,
   showCompleted = false,
   todoRefs,
@@ -154,8 +166,8 @@ function Rotation<T>({
   entry: T;
   heading: React.ReactNode;
   where: React.ReactNode;
-  characters: CharacterSave[];
-  statusFor: (entry: T, character: CharacterSave) => DailyStatus;
+  travellers: Traveller[];
+  statusFor: (entry: T, character: CharacterSave, graph: TravelGraph) => DailyStatus;
   showCompleted?: boolean;
   todoRefs: (entry: T, character: CharacterSave) => Array<{ kind: TodoKind; ref: string }>;
   addTodoFor: (name: string, entries: Array<{ kind: TodoKind; ref: string }>) => { added: number; skipped: number };
@@ -166,7 +178,11 @@ function Rotation<T>({
   open: boolean;
   toggle: () => void;
 }) {
-  const ready = characters.filter((c) => statusFor(entry, c).ready);
+  const ready = travellers.filter((t) => statusFor(entry, t.character, t.graph).ready);
+  // "Someone could go" is the useful signal when looking ahead: it says the
+  // week or the day is worth planning around without reading every row.
+  const reachable = (candidate: T) =>
+    travellers.some((t) => statusFor(candidate, t.character, t.graph).ready);
 
   return (
     <div className="card">
@@ -178,19 +194,19 @@ function Rotation<T>({
       <h4 className="daily-subhead">
         Your characters{" "}
         <span className="muted">
-          ({ready.length} of {characters.length} can get there)
+          ({ready.length} of {travellers.length} can get there)
         </span>
       </h4>
-      {characters.length === 0 ? (
+      {travellers.length === 0 ? (
         <p className="muted small">No characters saved yet.</p>
       ) : (
-        characters.map((c) => (
+        travellers.map(({ character, graph }) => (
           <CharacterRow
-            key={c.name}
-            character={c}
-            status={statusFor(entry, c)}
+            key={character.name}
+            character={character}
+            status={statusFor(entry, character, graph)}
             showCompleted={showCompleted}
-            todoRefs={todoRefs(entry, c)}
+            todoRefs={todoRefs(entry, character)}
             addTodoFor={addTodoFor}
           />
         ))
@@ -202,11 +218,17 @@ function Rotation<T>({
       {open && (
         <div className="slide-down">
           <ul className="daily-upcoming small">
-            {upcoming.map(({ on, entry: e }, i) => (
-              <li key={i}>
-                <span className="muted daily-day">{slotLabel(on, i)}</span> {labelOf(e)}
-              </li>
-            ))}
+            {upcoming.map(({ on, entry: e }, i) => {
+              const anyone = reachable(e);
+              return (
+                <li key={i} className={anyone ? "ok" : undefined}>
+                  <span className="muted daily-day">{slotLabel(on, i)}</span> {labelOf(e)}
+                  {anyone && (
+                    <span className="visually-hidden"> — someone can already get there</span>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </div>
       )}
@@ -228,6 +250,16 @@ export function DailiesView({
   // One timestamp per render, so the mission, the bounty and the countdown
   // can't disagree about which day it is.
   const now = useMemo(() => new Date(), []);
+  // One travel graph per character, over their own campaigns: a Tyrian must
+  // not be told a Canthan outpost is two zones away.
+  const travellers: Traveller[] = useMemo(
+    () =>
+      save.characters.map((character) => ({
+        character,
+        graph: travelDistances(character, indexForCharacter(character)),
+      })),
+    [save.characters],
+  );
   const mission = zaishenAt(zaishen.missions, now);
   const bounty = zaishenAt(zaishen.bounties, now);
   const nicholas = zaishenAt(zaishen.nicholas, now);
@@ -278,8 +310,8 @@ export function DailiesView({
             <Entrances outposts={mission.outposts} />
           </>
         }
-        characters={save.characters}
-        statusFor={(e, c) => missionStatus(e, c, index)}
+        travellers={travellers}
+        statusFor={(e, c, g) => missionStatus(e, c, index, g)}
         showCompleted
         todoRefs={(e, c) => outpostTodos(e.outposts, c)}
         addTodoFor={addTodoFor}
@@ -313,8 +345,8 @@ export function DailiesView({
             )}
           </>
         }
-        characters={save.characters}
-        statusFor={(e, c) => bountyStatus(e, c, index)}
+        travellers={travellers}
+        statusFor={(e, c, g) => bountyStatus(e, c, index, g)}
         todoRefs={(e, c) => outpostTodos(e.outposts, c)}
         addTodoFor={addTodoFor}
         upcoming={zaishenUpcoming(zaishen.bounties, UPCOMING_DAYS, now)}
@@ -347,8 +379,8 @@ export function DailiesView({
             </span>
           </>
         }
-        characters={save.characters}
-        statusFor={(e, c) => nicholasStatus(e, c, index)}
+        travellers={travellers}
+        statusFor={(e, c, g) => nicholasStatus(e, c, index, g)}
         todoRefs={(e, c) => outpostTodos(e.outposts, c)}
         addTodoFor={addTodoFor}
         upcoming={zaishenUpcoming(zaishen.nicholas, UPCOMING_WEEKS, now)}

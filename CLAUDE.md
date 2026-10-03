@@ -443,6 +443,13 @@ There are two, and the split matters:
   MediaWiki titles are case-insensitive in the first letter only ("the Deep"
   → "The Deep (outpost)"), and Eye of the North has no missions — its
   rotation days are quests, which need the `(quest)` suffix.
+- **"Not unlocked" and "nine zones away" are different answers.** A daily's
+  status carries the hops to its nearest entrance, from the same travel
+  graph the quest and skill views use, scoped to that character's own
+  campaigns — a Tyrian must not be told a Canthan outpost is two zones off.
+  In the lookahead a day or week is marked reachable when ANY character has
+  an entrance unlocked, which is the question worth asking of a list you are
+  planning around.
 - **Nicholas the Traveler is the same arithmetic, a week at a time.**
   `(t - 1323097200) / 604800 mod 137`, from Monday 5 December 2011 at 15:00
   UTC. Note the hour: he moves an hour BEFORE the Zaishen dailies turn over,
