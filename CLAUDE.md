@@ -9,7 +9,7 @@ and from where?"
 - `/scraper` — Node/TypeScript scripts that fetch and parse wiki data into JSON.
 - `/data` — committed JSON datasets (the scraper's output). Fixtures live in `/data/fixtures`.
   `skill-changes.json` is the recent-game-updates log; `quests.json` the quests
-  that reward skills (see Data decisions).
+  that reward skills; `zaishen.json` the daily rotations (see Data decisions).
 - `/engine` — pure TypeScript library: types, JSON Schemas, availability/build logic. **No UI dependencies.**
 - `/app` — static React app (Vite). No backend — it loads the committed JSON from `/data`.
 - `/export` — Obsidian vault generator.
@@ -404,6 +404,30 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
   everything except the score. They rate-limit hard (429), so requests are
   spaced ~4s and retried. Setting REDDIT_CLIENT_ID/SECRET switches to the
   API and adds scores; it is an upgrade, not a requirement.
+- **The Zaishen dailies are arithmetic, not a feed.** Each rotation is a
+  fixed list indexed by `(unixTime - epoch) / 86400 mod N`: the mission
+  cycle is 69 days from epoch 1299168000, the bounty cycle 66 days from
+  1244736000. Both epochs sit at 16:00 UTC, which is the daily reset, so a
+  floored division lands on the right day with no special-casing and any
+  date — past or future — can be answered offline. The arithmetic was
+  checked against the wiki's own template expansion (`action=expandtemplates`)
+  at five timestamps per cycle before anything was built on it.
+- **A daily is "reachable" if ANY of its entrance outposts is unlocked.**
+  `scraper/src/zaishen.ts` resolves every rotation entry to the outposts a
+  character would travel to, in order: the outpost itself; an outpost of the
+  same name; the dungeon entrance from the Dungeon page's Entrance column;
+  the nearest outpost on the map (BFS over the location graph, ≤6 hops);
+  a redirect; the links under a "Getting there"/"Access" section; and for
+  sub-areas, the parent realm. 69/69 missions and 66/66 bounties resolve.
+  Each entry records `via`, so a questionable answer can be traced. Note
+  MediaWiki titles are case-insensitive in the first letter only ("the Deep"
+  → "The Deep (outpost)"), and Eye of the North has no missions — its
+  rotation days are quests, which need the `(quest)` suffix.
+- **A campaign is only "not owned" when no entrance is reachable.** The
+  Fissure of Woe has one entrance per campaign, so naming the campaigns a
+  character lacks would be wrong whenever another entrance is in one they
+  own. The same rule decides what the dailies tab puts on a to-do list: only
+  entrances the character could actually unlock.
 - **`data/community-builds.json` is loaded on demand**, not bundled: it is
   over a megabyte, and most visits never open that tab.
 

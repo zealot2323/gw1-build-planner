@@ -1,0 +1,7 @@
+{
+  "title": "Rotscale (Zaishen quest)",
+  "pageid": 201058,
+  "revid": 2548951,
+  "timestamp": "2013-06-13T07:32:02Z",
+  "wikitext": "{{Quest infobox\n| id = 1017\n| name = Rotscale\n| section = Zaishen Bounty\n| image = [[Image:Bone Dragon.jpg|200px]]\n| campaign = Core\n| given by =[[Zaishen Bounty]]\n| given at =[[Great Temple of Balthazar]]\n| map = [[Image:Rotscale_map.jpg|250px]]\n}}__NOTOC__\nKill [[Rotscale]].\n\n==Quest information==\n===Objectives===\n* Kill Rotscale in [[Majesty's Rest]].\n* *BONUS* Kill Rotscale in [[Hard Mode]].\n* See [[Zehnchu]] <nowiki>[</nowiki>[[Zaishen]] Challenge] for your reward.\n\n===Reward===\n* 5,000 [[Experience]]\n* 1,000 [[Gold]]\n* Complete the Base Objective for 30 [[Copper Zaishen Coin|Zaishen Copper Coins]].\n* Complete the *BONUS* Objective for an additional 75 Zaishen Copper Coins.\n\n==Walkthrough==\nSee [[Rotscale]].\n\n==Dialogues==\n===Initial dialogue===\n;Zaishen Bounty\n:''\"Kill Rotscale in Majesty's Rest.\"''\n{{offer dialogue\n|accept = I can do that!\n|decline = No, I'm way too busy today.\n|ask = This despicable villain still stalks the land, preying on the innocent. Heroes who are up to the challenge should seek this fiend out, taking blood as payment for a life of atrocious deeds.}}\n\n===Reward dialogue===\n;Zehnchu\n:''\"Excellent work! The Zaishen admire your dedication.\"''\n[[Category:Rewards Platinum]]\n\n==Notes==\n*Killing Rotscale during [[A Vengeance of Blades]] does not complete this quest."
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Dragon Lich (Zaishen quest)",
+  "pageid": 215682,
+  "revid": 2072742,
+  "timestamp": "2010-06-28T17:03:11Z",
+  "wikitext": "{{Quest infobox\n| id = 1084\n| name = Dragon Lich\n| section = Zaishen Bounty\n| image = [[File:Bone Dragon.jpg|200px]]\n| campaign = Core\n| given by =[[Zaishen Bounty]]\n| given at =[[Great Temple of Balthazar]]\n| map = [[Image:Dragon Lich map.jpg|200px]]\n| experience reward = 5000\n}}__NOTOC__\nKill a [[Dragon Lich]].\n\n==Quest information==\n===Objectives===\n* Kill a Dragon Lich in the [[Great Battle Field]].\n* *BONUS* Kill a Dragon Lich in [[Hard Mode]].\n* See [[Zehnchu]] [Zaishen Challenge] for your reward.\n\n===Reward===\n* 5,000 [[Experience]]\n* 1,000 [[Gold]]\n* Complete the Base Objective for 30 [[Copper Zaishen Coin|Zaishen Copper Coins]].\n* Complete the *BONUS* Objective for an additional 75 Zaishen Copper Coins.\n\n==Walkthrough==\nA Dragon Lich is found in the [[Fissure of Woe]] guarding the entrances of the Shadow Army encampment at the Great Battle Field.\n\n==Dialogue==\n===Initial dialogue===\n;Zaishen Bounty\n:''\"Kill a Dragon Lich in the Great Battle Field.\"''\n{{offer dialogue\n|accept = I can do that!\n|decline = No, I'm way too busy today.\n|ask = This despicable villain still stalks the land, preying on the innocent. Heroes who are up to the challenge should seek this fiend out, taking blood as payment for a life of atrocious deeds.}}\n\n===Reward dialogue===\n;Zehnchu\n:''\"Excellent work! The Zaishen admire your dedication.\"''\n[[Category:Rewards Platinum]]"
+}

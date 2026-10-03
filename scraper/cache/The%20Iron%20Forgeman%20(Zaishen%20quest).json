@@ -1,0 +1,7 @@
+{
+  "title": "The Iron Forgeman (Zaishen quest)",
+  "pageid": 204375,
+  "revid": 2580902,
+  "timestamp": "2015-01-11T09:58:52Z",
+  "wikitext": "{{Quest infobox\n| id = 1019\n| name = The Iron Forgeman\n| section = Zaishen Bounty\n| image = [[File:The Iron Forgeman.jpg|280px]]\n| map =\n| given by =[[Zaishen Bounty]]\n| given at =[[Great Temple of Balthazar]]\n}}__NOTOC__\nKill the [[Iron Forgeman]].\n\n==Quest information==\n===Objectives===\n* Kill the Iron Forgeman in [[the Forge Heart]].\n* *BONUS* Kill The {{sic|Unlike the previous objective, 'The' is capitalized here}} Iron Forgeman in [[Hard Mode]].\n* See [[Zehnchu]] <nowiki>[</nowiki>[[Zaishen]] Challenge] for your reward.\n\n===Reward===\n* 5,000 [[Experience]]\n* 1,000 [[Gold]]\n* Complete the Base Objective for 30 [[Copper Zaishen Coin|Zaishen Copper Coins]].\n* Complete the *BONUS* Objective for an additional 75 Zaishen Copper Coins.\n\n==Walkthrough==\nAs per [[The Forge Heart#Walkthrough|The Forge Heart]].\n\n==Dialogues==\n===Initial dialogue===\n;[[Zaishen Bounty]]\n:''\"Kill the Iron Forgeman in the Forge Heart.\"''\n{{offer dialogue\n|accept = I can do that!\n|decline = No, I'm way too busy today.\n|ask = This despicable villain still stalks the land, preying on the innocent. Heroes who are up to the challenge should seek this fiend out, taking blood as payment for a life of atrocious deeds.}}\n\n===Reward dialogue===\n;Zehnchu\n:''\"Excellent work! The Zaishen admire your dedication.\"''\n[[Category:Rewards Platinum]]"
+}

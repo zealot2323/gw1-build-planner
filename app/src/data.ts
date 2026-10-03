@@ -12,6 +12,7 @@ import {
   type CommunityBuild,
   type CommunityBuildsFile,
   type SkillChangeLog,
+  type ZaishenData,
 } from "@gw1/engine";
 import skills from "@data/skills.json";
 import locations from "@data/locations.json";
@@ -20,6 +21,7 @@ import monsters from "@data/monsters.json";
 import missions from "@data/missions.json";
 import quests from "@data/quests.json";
 import skillChanges from "@data/skill-changes.json";
+import zaishenData from "@data/zaishen.json";
 
 export const index = indexDataset({
   skills,
@@ -64,3 +66,9 @@ export function indexForCharacter(character: Character | null): DataIndex {
   const scoped = scopedDataset(index.dataset, character);
   return indexDataset(scoped);
 }
+
+/**
+ * The Zaishen rotations. Small enough to bundle, and the whole point is to
+ * answer "what's today?" offline — the cycles are arithmetic, not a feed.
+ */
+export const zaishen = zaishenData as unknown as ZaishenData;

@@ -12,3 +12,4 @@ export * from "./saves.js";
 export * from "./template.js";
 export * from "./attributes.js";
 export * from "./community.js";
+export * from "./zaishen.js";

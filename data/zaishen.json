@@ -1,0 +1,1175 @@
+{
+  "generatedAt": "2026-10-03T08:08:53.489Z",
+  "missions": {
+    "epoch": 1299168000,
+    "mod": 69,
+    "items": [
+      {
+        "name": "Augury Rock",
+        "kind": "mission",
+        "area": "Augury Rock",
+        "outposts": [
+          "Augury Rock (outpost)"
+        ]
+      },
+      {
+        "name": "Grand Court of Sebelkeh",
+        "kind": "mission",
+        "area": "Grand Court of Sebelkeh",
+        "outposts": [
+          "Grand Court of Sebelkeh (outpost)"
+        ]
+      },
+      {
+        "name": "Ice Caves of Sorrow",
+        "kind": "mission",
+        "area": "Ice Caves of Sorrow",
+        "outposts": [
+          "Ice Caves of Sorrow (outpost)"
+        ]
+      },
+      {
+        "name": "Raisu Palace",
+        "kind": "mission",
+        "area": "Raisu Palace",
+        "outposts": [
+          "Raisu Palace (outpost)"
+        ]
+      },
+      {
+        "name": "Gate of Desolation",
+        "kind": "mission",
+        "area": "Gate of Desolation",
+        "outposts": [
+          "Gate of Desolation (outpost)"
+        ]
+      },
+      {
+        "name": "Thirsty River",
+        "kind": "mission",
+        "area": "Thirsty River",
+        "outposts": [
+          "Thirsty River (outpost)"
+        ]
+      },
+      {
+        "name": "Blacktide Den",
+        "kind": "mission",
+        "area": "Blacktide Den",
+        "outposts": [
+          "Blacktide Den (outpost)"
+        ]
+      },
+      {
+        "name": "Against the Charr",
+        "kind": "quest",
+        "area": "Grothmar Wardowns",
+        "outposts": [
+          "Longeye's Ledge"
+        ]
+      },
+      {
+        "name": "Abaddon's Mouth",
+        "kind": "mission",
+        "area": "Abaddon's Mouth",
+        "outposts": [
+          "Abaddon's Mouth (outpost)"
+        ]
+      },
+      {
+        "name": "Nundu Bay",
+        "kind": "mission",
+        "area": "Nundu Bay",
+        "outposts": [
+          "Nundu Bay (outpost)"
+        ]
+      },
+      {
+        "name": "Divinity Coast",
+        "kind": "mission",
+        "area": "Divinity Coast",
+        "outposts": [
+          "Divinity Coast (outpost)"
+        ]
+      },
+      {
+        "name": "Zen Daijun",
+        "kind": "mission",
+        "area": "Zen Daijun",
+        "outposts": [
+          "Zen Daijun (outpost)"
+        ]
+      },
+      {
+        "name": "Pogahn Passage",
+        "kind": "mission",
+        "area": "Pogahn Passage",
+        "outposts": [
+          "Pogahn Passage (outpost)"
+        ]
+      },
+      {
+        "name": "Tahnnakai Temple",
+        "kind": "mission",
+        "area": "Tahnnakai Temple",
+        "outposts": [
+          "Tahnnakai Temple (outpost)"
+        ]
+      },
+      {
+        "name": "The Great Northern Wall",
+        "kind": "mission",
+        "area": "The Great Northern Wall",
+        "outposts": [
+          "The Great Northern Wall (outpost)"
+        ]
+      },
+      {
+        "name": "Dasha Vestibule",
+        "kind": "mission",
+        "area": "Dasha Vestibule",
+        "outposts": [
+          "Dasha Vestibule (outpost)"
+        ]
+      },
+      {
+        "name": "The Wilds",
+        "kind": "mission",
+        "area": "The Wilds",
+        "outposts": [
+          "The Wilds (outpost)"
+        ]
+      },
+      {
+        "name": "Unwaking Waters",
+        "kind": "mission",
+        "area": "Unwaking Waters",
+        "outposts": [
+          "Unwaking Waters (Kurzick)",
+          "Unwaking Waters (Luxon)"
+        ]
+      },
+      {
+        "name": "Chahbek Village",
+        "kind": "mission",
+        "area": "Chahbek Village",
+        "outposts": [
+          "Chahbek Village (outpost)"
+        ]
+      },
+      {
+        "name": "Aurora Glade",
+        "kind": "mission",
+        "area": "Aurora Glade",
+        "outposts": [
+          "Aurora Glade (outpost)"
+        ]
+      },
+      {
+        "name": "A Time for Heroes",
+        "kind": "quest",
+        "area": "Central Transfer Chamber",
+        "outposts": [
+          "Central Transfer Chamber"
+        ]
+      },
+      {
+        "name": "Consulate Docks",
+        "kind": "mission",
+        "area": "Consulate Docks",
+        "outposts": [
+          "Consulate Docks (outpost)"
+        ]
+      },
+      {
+        "name": "Ring of Fire",
+        "kind": "mission",
+        "area": "Ring of Fire",
+        "outposts": [
+          "Ring of Fire (outpost)"
+        ]
+      },
+      {
+        "name": "Nahpui Quarter",
+        "kind": "mission",
+        "area": "Nahpui Quarter",
+        "outposts": [
+          "Nahpui Quarter (outpost)"
+        ]
+      },
+      {
+        "name": "The Dragon's Lair",
+        "kind": "mission",
+        "area": "The Dragon's Lair",
+        "outposts": [
+          "The Dragon's Lair (outpost)"
+        ]
+      },
+      {
+        "name": "Dzagonur Bastion",
+        "kind": "mission",
+        "area": "Dzagonur Bastion",
+        "outposts": [
+          "Dzagonur Bastion (outpost)"
+        ]
+      },
+      {
+        "name": "D'Alessio Seaboard",
+        "kind": "mission",
+        "area": "D'Alessio Seaboard",
+        "outposts": [
+          "D'Alessio Seaboard (outpost)"
+        ]
+      },
+      {
+        "name": "Assault on the Stronghold",
+        "kind": "quest",
+        "area": "Dalada Uplands",
+        "outposts": [
+          "Doomlore Shrine"
+        ]
+      },
+      {
+        "name": "The Eternal Grove",
+        "kind": "mission",
+        "area": "The Eternal Grove",
+        "outposts": [
+          "The Eternal Grove (outpost)"
+        ]
+      },
+      {
+        "name": "Sanctum Cay",
+        "kind": "mission",
+        "area": "Sanctum Cay",
+        "outposts": [
+          "Sanctum Cay (outpost)"
+        ]
+      },
+      {
+        "name": "Rilohn Refuge",
+        "kind": "mission",
+        "area": "Rilohn Refuge",
+        "outposts": [
+          "Rilohn Refuge (outpost)"
+        ]
+      },
+      {
+        "name": "Warband of Brothers",
+        "kind": "quest",
+        "area": "Doomlore Shrine",
+        "outposts": [
+          "Doomlore Shrine"
+        ]
+      },
+      {
+        "name": "Borlis Pass",
+        "kind": "mission",
+        "area": "Borlis Pass",
+        "outposts": [
+          "Borlis Pass (outpost)"
+        ]
+      },
+      {
+        "name": "Imperial Sanctum",
+        "kind": "mission",
+        "area": "Imperial Sanctum",
+        "outposts": [
+          "Imperial Sanctum (outpost)"
+        ]
+      },
+      {
+        "name": "Moddok Crevice",
+        "kind": "mission",
+        "area": "Moddok Crevice",
+        "outposts": [
+          "Moddok Crevice (outpost)"
+        ]
+      },
+      {
+        "name": "Nolani Academy",
+        "kind": "mission",
+        "area": "Nolani Academy",
+        "outposts": [
+          "Nolani Academy (outpost)"
+        ]
+      },
+      {
+        "name": "Destruction's Depths",
+        "kind": "quest",
+        "area": "Battledepths",
+        "outposts": [
+          "Central Transfer Chamber"
+        ]
+      },
+      {
+        "name": "Venta Cemetery",
+        "kind": "mission",
+        "area": "Venta Cemetery",
+        "outposts": [
+          "Venta Cemetery (outpost)"
+        ]
+      },
+      {
+        "name": "Fort Ranik",
+        "kind": "mission",
+        "area": "Fort Ranik",
+        "outposts": [
+          "Fort Ranik (outpost)"
+        ]
+      },
+      {
+        "name": "A Gate Too Far",
+        "kind": "quest",
+        "area": "Olafstead",
+        "outposts": [
+          "Olafstead"
+        ]
+      },
+      {
+        "name": "Minister Cho's Estate",
+        "kind": "mission",
+        "area": "Minister Cho's Estate",
+        "outposts": [
+          "Minister Cho's Estate (outpost)"
+        ]
+      },
+      {
+        "name": "Thunderhead Keep",
+        "kind": "mission",
+        "area": "Thunderhead Keep",
+        "outposts": [
+          "Thunderhead Keep (outpost)"
+        ]
+      },
+      {
+        "name": "Tihark Orchard",
+        "kind": "mission",
+        "area": "Tihark Orchard",
+        "outposts": [
+          "Tihark Orchard (outpost)"
+        ]
+      },
+      {
+        "name": "Finding the Bloodstone",
+        "kind": "quest",
+        "area": "Sparkfly Swamp",
+        "outposts": [
+          "Gadd's Encampment"
+        ]
+      },
+      {
+        "name": "Dunes of Despair",
+        "kind": "mission",
+        "area": "Dunes of Despair",
+        "outposts": [
+          "Dunes of Despair (outpost)"
+        ]
+      },
+      {
+        "name": "Vizunah Square",
+        "kind": "mission",
+        "area": "Vizunah Square",
+        "outposts": [
+          "Vizunah Square (Foreign Quarter)",
+          "Vizunah Square (Local Quarter)"
+        ]
+      },
+      {
+        "name": "Jokanur Diggings",
+        "kind": "mission",
+        "area": "Jokanur Diggings",
+        "outposts": [
+          "Jokanur Diggings (outpost)"
+        ]
+      },
+      {
+        "name": "Iron Mines of Moladune",
+        "kind": "mission",
+        "area": "Iron Mines of Moladune",
+        "outposts": [
+          "Iron Mines of Moladune (outpost)"
+        ]
+      },
+      {
+        "name": "Kodonur Crossroads",
+        "kind": "mission",
+        "area": "Kodonur Crossroads",
+        "outposts": [
+          "Kodonur Crossroads (outpost)"
+        ]
+      },
+      {
+        "name": "G.O.L.E.M.",
+        "kind": "quest",
+        "area": "Rata Sum",
+        "outposts": [
+          "Rata Sum"
+        ]
+      },
+      {
+        "name": "Arborstone",
+        "kind": "mission",
+        "area": "Arborstone",
+        "outposts": [
+          "Arborstone (outpost)"
+        ]
+      },
+      {
+        "name": "Gates of Kryta",
+        "kind": "mission",
+        "area": "Gates of Kryta",
+        "outposts": [
+          "Gates of Kryta (outpost)"
+        ]
+      },
+      {
+        "name": "Gate of Madness",
+        "kind": "mission",
+        "area": "Gate of Madness",
+        "outposts": [
+          "Gate of Madness (outpost)"
+        ]
+      },
+      {
+        "name": "The Elusive Golemancer",
+        "kind": "quest",
+        "area": "Magus Stones",
+        "outposts": [
+          "Rata Sum"
+        ]
+      },
+      {
+        "name": "Riverside Province",
+        "kind": "mission",
+        "area": "Riverside Province",
+        "outposts": [
+          "Riverside Province (outpost)"
+        ]
+      },
+      {
+        "name": "Boreas Seabed",
+        "kind": "mission",
+        "area": "Boreas Seabed",
+        "outposts": [
+          "Boreas Seabed (outpost)"
+        ]
+      },
+      {
+        "name": "Ruins of Morah",
+        "kind": "mission",
+        "area": "Ruins of Morah",
+        "outposts": [
+          "Ruins of Morah (outpost)"
+        ]
+      },
+      {
+        "name": "Hell's Precipice",
+        "kind": "mission",
+        "area": "Hell's Precipice",
+        "outposts": [
+          "Hell's Precipice (outpost)"
+        ]
+      },
+      {
+        "name": "Ruins of Surmia",
+        "kind": "mission",
+        "area": "Ruins of Surmia",
+        "outposts": [
+          "Ruins of Surmia (outpost)"
+        ]
+      },
+      {
+        "name": "Curse of the Nornbear",
+        "kind": "quest",
+        "area": "Sifhalla",
+        "outposts": [
+          "Sifhalla"
+        ]
+      },
+      {
+        "name": "Sunjiang District",
+        "kind": "mission",
+        "area": "Sunjiang District",
+        "outposts": [
+          "Sunjiang District (outpost)"
+        ]
+      },
+      {
+        "name": "Elona Reach",
+        "kind": "mission",
+        "area": "Elona Reach",
+        "outposts": [
+          "Elona Reach (outpost)"
+        ]
+      },
+      {
+        "name": "Gate of Pain",
+        "kind": "mission",
+        "area": "Gate of Pain",
+        "outposts": [
+          "Gate of Pain (outpost)"
+        ]
+      },
+      {
+        "name": "Blood Washes Blood",
+        "kind": "quest",
+        "area": "Jaga Moraine",
+        "outposts": [
+          "Sifhalla"
+        ]
+      },
+      {
+        "name": "Bloodstone Fen",
+        "kind": "mission",
+        "area": "Bloodstone Fen",
+        "outposts": [
+          "Bloodstone Fen (outpost)"
+        ]
+      },
+      {
+        "name": "Jennur's Horde",
+        "kind": "mission",
+        "area": "Jennur's Horde",
+        "outposts": [
+          "Jennur's Horde (outpost)"
+        ]
+      },
+      {
+        "name": "Gyala Hatchery",
+        "kind": "mission",
+        "area": "Gyala Hatchery",
+        "outposts": [
+          "Gyala Hatchery (outpost)"
+        ]
+      },
+      {
+        "name": "Abaddon's Gate",
+        "kind": "mission",
+        "area": "Abaddon's Gate",
+        "outposts": [
+          "Abaddon's Gate (outpost)"
+        ]
+      },
+      {
+        "name": "The Frost Gate",
+        "kind": "mission",
+        "area": "The Frost Gate",
+        "outposts": [
+          "The Frost Gate (outpost)"
+        ]
+      }
+    ]
+  },
+  "bounties": {
+    "epoch": 1244736000,
+    "mod": 66,
+    "items": [
+      {
+        "boss": "Droajam, Mage of the Sands",
+        "area": "Poisoned Outcrops",
+        "outposts": [
+          "Lair of the Forgotten"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "Royen Beastkeeper",
+        "area": "Nahpui Quarter (explorable area)",
+        "outposts": [
+          "Senji's Corner"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "Eldritch Ettin",
+        "area": "Bloodstone Caves",
+        "outposts": [
+          "Gadd's Encampment"
+        ],
+        "hops": 1,
+        "via": "dungeon entrance in Sparkfly Swamp"
+      },
+      {
+        "boss": "Vengeful Aatxe",
+        "area": "the Underworld",
+        "outposts": [
+          "Chantry of Secrets",
+          "Temple of the Ages",
+          "Zin Ku Corridor"
+        ],
+        "hops": null,
+        "via": "listed under Getting there"
+      },
+      {
+        "boss": "Fronis Irontoe",
+        "area": "Fronis Irontoe's Lair",
+        "outposts": [
+          "Gunnar's Hold"
+        ],
+        "hops": 0,
+        "via": "dungeon entrance in Gunnar's Hold"
+      },
+      {
+        "boss": "Urgoz",
+        "area": "Urgoz's Warren",
+        "outposts": [
+          "Urgoz's Warren (outpost)"
+        ],
+        "hops": 0,
+        "via": "outpost of the same name"
+      },
+      {
+        "boss": "Fenrir",
+        "area": "Norrhart Domains",
+        "outposts": [
+          "Gunnar's Hold"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "Selvetarm",
+        "area": "Slavers' Exile",
+        "outposts": [
+          "Umbral Grotto"
+        ],
+        "hops": 1,
+        "via": "dungeon entrance in Verdant Cascades"
+      },
+      {
+        "boss": "Mohby Windbeak",
+        "area": "Gyala Hatchery (explorable area)",
+        "outposts": [
+          "Leviathan Pits"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "Charged Blackness",
+        "area": "the Underworld",
+        "outposts": [
+          "Chantry of Secrets",
+          "Temple of the Ages",
+          "Zin Ku Corridor"
+        ],
+        "hops": null,
+        "via": "listed under Getting there"
+      },
+      {
+        "boss": "Rotscale",
+        "area": "Majesty's Rest",
+        "outposts": [
+          "Druid's Overlook"
+        ],
+        "hops": 2,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "Zoldark the Unholy",
+        "area": "Vloxen Excavations",
+        "outposts": [
+          "Vlox's Falls"
+        ],
+        "hops": 0,
+        "via": "dungeon entrance in Vlox's Falls"
+      },
+      {
+        "boss": "Korshek the Immolated",
+        "area": "Forum Highlands",
+        "outposts": [
+          "The Kodash Bazaar"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "Myish, Lady of the Lake",
+        "area": "Drakkar Lake",
+        "outposts": [
+          "Sifhalla"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "Frostmaw the Kinslayer",
+        "area": "Frostmaw's Burrows",
+        "outposts": [
+          "Sifhalla"
+        ],
+        "hops": 1,
+        "via": "dungeon entrance in Jaga Moraine"
+      },
+      {
+        "boss": "Kunvie Firewing",
+        "area": "Unwaking Waters (explorable area)",
+        "outposts": [
+          "Harvest Temple"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "Z'him Monns",
+        "area": "Bogroot Growths",
+        "outposts": [
+          "Gadd's Encampment"
+        ],
+        "hops": 1,
+        "via": "dungeon entrance in Sparkfly Swamp"
+      },
+      {
+        "boss": "The Greater Darkness",
+        "area": "Ravenheart Gloom",
+        "outposts": [
+          "Gate of Anguish"
+        ],
+        "hops": 1,
+        "via": "nearest on the map (Domain of Anguish)"
+      },
+      {
+        "boss": "TPS Regulator Golem",
+        "area": "Oola's Lab",
+        "outposts": [
+          "Rata Sum"
+        ],
+        "hops": 1,
+        "via": "dungeon entrance in Magus Stones"
+      },
+      {
+        "boss": "Plague of Destruction",
+        "area": "Raven's Point",
+        "outposts": [
+          "Olafstead"
+        ],
+        "hops": 1,
+        "via": "dungeon entrance in Varajar Fells"
+      },
+      {
+        "boss": "The Darknesses",
+        "area": "The Darkness (boss)",
+        "outposts": [
+          "The Dragon's Lair (outpost)"
+        ],
+        "hops": null,
+        "via": "listed under Getting there (Ruins of the Tomb of the Primeval Kings)"
+      },
+      {
+        "boss": "Admiral Kantoh",
+        "area": "Fortress of Jahai",
+        "outposts": [
+          "Sunspear Sanctuary"
+        ],
+        "hops": 0,
+        "via": "the outpost itself (Sunspear Sanctuary)"
+      },
+      {
+        "boss": "Borrguus Blisterbark",
+        "area": "Sacnoth Valley",
+        "outposts": [
+          "Doomlore Shrine"
+        ],
+        "hops": 2,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "Forgewight",
+        "area": "Slavers' Exile",
+        "outposts": [
+          "Umbral Grotto"
+        ],
+        "hops": 1,
+        "via": "dungeon entrance in Verdant Cascades"
+      },
+      {
+        "boss": "Baubao Wavewrath",
+        "area": "the Undercity",
+        "outposts": [
+          "Vizunah Square (Local Quarter)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "Joffs the Mitigator",
+        "area": "Riven Earth",
+        "outposts": [
+          "Rata Sum"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "Rragar Maneater",
+        "area": "Rragar's Menagerie",
+        "outposts": [
+          "Doomlore Shrine"
+        ],
+        "hops": 2,
+        "via": "dungeon entrance in Sacnoth Valley"
+      },
+      {
+        "boss": "Chung, the Attuned",
+        "area": "the Undercity",
+        "outposts": [
+          "Vizunah Square (Local Quarter)"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "Lord Jadoth",
+        "area": "City of Torc'qua",
+        "outposts": [
+          "Gate of Anguish"
+        ],
+        "hops": 1,
+        "via": "nearest on the map (Domain of Anguish)"
+      },
+      {
+        "boss": "Nulfastu, Earthbound",
+        "area": "Drakkar Lake",
+        "outposts": [
+          "Sifhalla"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "The Iron Forgeman",
+        "area": "Iron Forgeman",
+        "outposts": [
+          "Deldrimor War Camp"
+        ],
+        "hops": 2,
+        "via": "nearest on the map (Sorrow's Furnace)"
+      },
+      {
+        "boss": "Magmus",
+        "area": "Heart of the Shiverpeaks",
+        "outposts": [
+          "Gadd's Encampment"
+        ],
+        "hops": 2,
+        "via": "dungeon entrance in Bogroot Growths"
+      },
+      {
+        "boss": "Mobrin, Lord of the Marsh",
+        "area": "Sparkfly Swamp",
+        "outposts": [
+          "Gadd's Encampment"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "Jarimiya the Unmerciful",
+        "area": "Vehtendi Valley",
+        "outposts": [
+          "The Kodash Bazaar"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "Duncan the Black",
+        "area": "Slavers' Exile",
+        "outposts": [
+          "Umbral Grotto"
+        ],
+        "hops": 1,
+        "via": "dungeon entrance in Verdant Cascades"
+      },
+      {
+        "boss": "Quansong Spiritspeak",
+        "area": "Tahnnakai Temple (explorable area)",
+        "outposts": [
+          "Zin Ku Corridor"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "The Stygian Underlords",
+        "area": "Stygian Veil",
+        "outposts": [
+          "Gate of Anguish"
+        ],
+        "hops": 1,
+        "via": "nearest on the map (Domain of Anguish)"
+      },
+      {
+        "boss": "Fozzy Yeoryios",
+        "area": "Sacnoth Valley",
+        "outposts": [
+          "Doomlore Shrine"
+        ],
+        "hops": 2,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "The Black Beast of Arrgh",
+        "area": "the Foundry of Failed Creations",
+        "outposts": [
+          "Gate of Anguish"
+        ],
+        "hops": 1,
+        "via": "nearest on the map (Domain of Anguish)"
+      },
+      {
+        "boss": "Arachni",
+        "area": "Arachni's Haunt",
+        "outposts": [
+          "Rata Sum"
+        ],
+        "hops": 1,
+        "via": "dungeon entrance in Magus Stones"
+      },
+      {
+        "boss": "The Four Horsemen",
+        "area": "the Underworld",
+        "outposts": [
+          "Chantry of Secrets",
+          "Temple of the Ages",
+          "Zin Ku Corridor"
+        ],
+        "hops": null,
+        "via": "listed under Getting there"
+      },
+      {
+        "boss": "Remnant of Antiquities",
+        "area": "Sepulchre of Dragrimmar",
+        "outposts": [
+          "Sifhalla"
+        ],
+        "hops": 1,
+        "via": "dungeon entrance in Drakkar Lake"
+      },
+      {
+        "boss": "Arbor Earthcall",
+        "area": "Morostav Trail",
+        "outposts": [
+          "Durheim Archives"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "Prismatic Ooze",
+        "area": "Ooze Pit",
+        "outposts": [
+          "Longeye's Ledge"
+        ],
+        "hops": 1,
+        "via": "dungeon entrance in Grothmar Wardowns"
+      },
+      {
+        "boss": "Lord Khobay",
+        "area": "Lake of Fire",
+        "outposts": [
+          "Chantry of Secrets",
+          "Temple of the Ages",
+          "Zin Ku Corridor"
+        ],
+        "hops": null,
+        "via": "listed under Getting there (the Fissure of Woe)"
+      },
+      {
+        "boss": "Jedeh the Mighty",
+        "area": "Crystal Overlook",
+        "outposts": [
+          "Bone Palace"
+        ],
+        "hops": 2,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "Ssuns, Blessed of Dwayna",
+        "area": "Archipelagos",
+        "outposts": [
+          "Cavalon"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "Justiciar Thommis",
+        "area": "Slavers' Exile",
+        "outposts": [
+          "Umbral Grotto"
+        ],
+        "hops": 1,
+        "via": "dungeon entrance in Verdant Cascades"
+      },
+      {
+        "boss": "Harn and Maxine Coldstone",
+        "area": "Harn Coldstone",
+        "outposts": [
+          "Ember Light Camp"
+        ],
+        "hops": 1,
+        "via": "nearest on the map (Perdition Rock)"
+      },
+      {
+        "boss": "Pywatt the Swift",
+        "area": "Alcazia Tangle",
+        "outposts": [
+          "Tarnished Haven"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "Fendi Nin",
+        "area": "Shards of Orr",
+        "outposts": [
+          "Vlox's Falls"
+        ],
+        "hops": 1,
+        "via": "dungeon entrance in Arbor Bay"
+      },
+      {
+        "boss": "Mungri Magicbox",
+        "area": "Ferndale",
+        "outposts": [
+          "House zu Heltzer"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "Priest of Menzies",
+        "area": "Menzies",
+        "outposts": [
+          "Chantry of Secrets",
+          "Temple of the Ages",
+          "Zin Ku Corridor"
+        ],
+        "hops": null,
+        "via": "listed under Getting there (via The Fissure of Woe) (Fissure of Woe)"
+      },
+      {
+        "boss": "Ilsundur, Lord of Fire",
+        "area": "Catacombs of Kathandrax",
+        "outposts": [
+          "Doomlore Shrine"
+        ],
+        "hops": 2,
+        "via": "dungeon entrance in Sacnoth Valley"
+      },
+      {
+        "boss": "Kepkhet Marrowfeast",
+        "area": "Prophet's Path",
+        "outposts": [
+          "The Amnoon Oasis"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "Commander Wahli",
+        "area": "Barbarous Shore",
+        "outposts": [
+          "Camp Hojanu"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "Kanaxai",
+        "area": "the Deep",
+        "outposts": [
+          "The Deep (outpost)"
+        ],
+        "hops": 0,
+        "via": "outpost of the same name"
+      },
+      {
+        "boss": "Khabuus",
+        "area": "Bogroot Growths",
+        "outposts": [
+          "Gadd's Encampment"
+        ],
+        "hops": 1,
+        "via": "dungeon entrance in Sparkfly Swamp"
+      },
+      {
+        "boss": "Molotov Rocktail",
+        "area": "Dalada Uplands",
+        "outposts": [
+          "Doomlore Shrine"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "The Stygian Lords",
+        "area": "Stygian Veil",
+        "outposts": [
+          "Gate of Anguish"
+        ],
+        "hops": 1,
+        "via": "nearest on the map (Domain of Anguish)"
+      },
+      {
+        "boss": "Dragon Lich",
+        "area": "Great Battle Field",
+        "outposts": [
+          "Chantry of Secrets",
+          "Temple of the Ages",
+          "Zin Ku Corridor"
+        ],
+        "hops": null,
+        "via": "listed under Getting there (the Fissure of Woe)"
+      },
+      {
+        "boss": "Havok Soulwail",
+        "area": "Darkrime Delves",
+        "outposts": [
+          "Longeye's Ledge"
+        ],
+        "hops": 1,
+        "via": "dungeon entrance in Bjora Marches"
+      },
+      {
+        "boss": "Ghial the Bone Dancer",
+        "area": "Xaquang Skyway",
+        "outposts": [
+          "Senji's Corner"
+        ],
+        "hops": 1,
+        "via": "nearest on the map"
+      },
+      {
+        "boss": "Murakai, Lady of the Night",
+        "area": "Cathedral of Flames",
+        "outposts": [
+          "Doomlore Shrine"
+        ],
+        "hops": 0,
+        "via": "dungeon entrance in Doomlore Shrine"
+      },
+      {
+        "boss": "Rand Stormweaver",
+        "area": "Slavers' Exile",
+        "outposts": [
+          "Umbral Grotto"
+        ],
+        "hops": 1,
+        "via": "dungeon entrance in Verdant Cascades"
+      },
+      {
+        "boss": "Verata",
+        "area": "Verata the Necromancer",
+        "outposts": [
+          "Temple of the Ages"
+        ],
+        "hops": 2,
+        "via": "nearest on the map (Kessex Peak)"
+      }
+    ]
+  }
+}

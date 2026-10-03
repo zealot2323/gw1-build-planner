@@ -11,8 +11,9 @@ import { QuestsView, initialQuestViewState, type QuestViewState } from "./views/
 import { BuildsView, initialBuildsViewState, type BuildsViewState } from "./views/Builds";
 import { TodoView, initialTodoViewState, type TodoViewState } from "./views/Todo";
 import { CommunityView, initialCommunityViewState, type CommunityViewState } from "./views/Community";
+import { DailiesView, initialDailiesViewState, type DailiesViewState } from "./views/Dailies";
 
-type Tab = "characters" | "skills" | "builds" | "community" | "quests" | "zones" | "to-do";
+type Tab = "characters" | "skills" | "builds" | "community" | "quests" | "zones" | "dailies" | "to-do";
 
 export function App() {
   const { save, addCharacter, updateCharacter, removeCharacter, importFile, exportFile, account } = useSave();
@@ -41,6 +42,8 @@ export function App() {
   const [communityView, setCommunityView] = useState<CommunityViewState>(initialCommunityViewState);
   const patchCommunityView = (patch: Partial<CommunityViewState>) =>
     setCommunityView((s) => ({ ...s, ...patch }));
+  const [dailiesView, setDailiesView] = useState<DailiesViewState>(initialDailiesViewState);
+  const patchDailiesView = (patch: Partial<DailiesViewState>) => setDailiesView((s) => ({ ...s, ...patch }));
   const [todoView, setTodoView] = useState<TodoViewState>(initialTodoViewState);
   const patchTodoView = (patch: Partial<TodoViewState>) => setTodoView((s) => ({ ...s, ...patch }));
   const patchQuestView = (patch: Partial<QuestViewState>) =>
@@ -65,12 +68,17 @@ export function App() {
    * Returns what happened so the caller can confirm it ("added 3, 2 already
    * on the list") rather than appearing to do nothing.
    */
-  const addToTodo = (entries: Array<{ kind: TodoKind; ref: string }>) => {
-    if (!character) return { added: 0, skipped: 0 };
-    const result = addTodos(character.todos ?? [], entries);
-    updateCharacter(character.name, { todos: result.todos });
+  const addTodoFor = (name: string, entries: Array<{ kind: TodoKind; ref: string }>) => {
+    const target = save.characters.find((c) => c.name === name);
+    if (!target) return { added: 0, skipped: 0 };
+    const result = addTodos(target.todos ?? [], entries);
+    updateCharacter(target.name, { todos: result.todos });
     return { added: result.added, skipped: result.skipped };
   };
+
+  /** The same, for the character currently selected in the header. */
+  const addToTodo = (entries: Array<{ kind: TodoKind; ref: string }>) =>
+    character ? addTodoFor(character.name, entries) : { added: 0, skipped: 0 };
 
   /** "+ build" in the skill browser: fill the active build's first empty slot. */
   const addToBuild = character
@@ -108,7 +116,7 @@ export function App() {
       <header>
         <h1>GW1 Build Planner</h1>
         <nav>
-          {(["characters", "skills", "builds", "community", "quests", "zones", "to-do"] as Tab[]).map((t) => (
+          {(["characters", "skills", "builds", "community", "quests", "zones", "dailies", "to-do"] as Tab[]).map((t) => (
             <button key={t} className={tab === t ? "tab active" : "tab"} onClick={() => setTab(t)}>
               {t}
             </button>
@@ -176,6 +184,9 @@ export function App() {
           view={communityView}
           setView={patchCommunityView}
         />
+      )}
+      {tab === "dailies" && (
+        <DailiesView save={save} addTodoFor={addTodoFor} view={dailiesView} setView={patchDailiesView} />
       )}
       {tab === "to-do" && (
         <TodoView
