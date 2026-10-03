@@ -13,3 +13,4 @@ export * from "./template.js";
 export * from "./attributes.js";
 export * from "./community.js";
 export * from "./zaishen.js";
+export * from "./completion.js";

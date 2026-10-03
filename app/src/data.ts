@@ -12,6 +12,7 @@ import {
   type CommunityBuild,
   type CommunityBuildsFile,
   type SkillChangeLog,
+  type MapIdTable,
   type ZaishenData,
 } from "@gw1/engine";
 import skills from "@data/skills.json";
@@ -22,6 +23,7 @@ import missions from "@data/missions.json";
 import quests from "@data/quests.json";
 import skillChanges from "@data/skill-changes.json";
 import zaishenData from "@data/zaishen.json";
+import mapIdData from "@data/map-ids.json";
 
 export const index = indexDataset({
   skills,
@@ -72,3 +74,10 @@ export function indexForCharacter(character: Character | null): DataIndex {
  * answer "what's today?" offline — the cycles are arithmetic, not a feed.
  */
 export const zaishen = zaishenData as unknown as ZaishenData;
+
+/**
+ * The game's own MapIDs for each of our pages. Only used when reading a
+ * GWToolbox completion file, which records progress as bitfields indexed by
+ * them. Small (one list of numbers per location), so it rides along.
+ */
+export const mapIds = mapIdData as unknown as MapIdTable;

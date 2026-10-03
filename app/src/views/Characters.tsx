@@ -10,6 +10,7 @@ import {
   type Skill,
 } from "@gw1/engine";
 import { useData } from "../DataContext";
+import { ToolboxSync } from "../components/ToolboxSync";
 import { Checklist } from "../components/Checklist";
 import { iconForSkillPage, iconUrl } from "../wiki";
 import { ProfessionIcon } from "../components/ProfessionIcon";
@@ -71,8 +72,31 @@ function skillGroupsOf(skills: Skill[], professions: Profession[]): ChecklistGro
     .map(([key, options]) => ({ label: key.replace("|", " · "), options: options.sort() }));
 }
 
+/**
+ * Progress that only a GWToolbox import can know: hard mode, mission
+ * bonuses and vanquishes. Read-only — there is no checklist for these
+ * because nobody wants to tick 176 areas by hand.
+ */
+function ImportedProgress({ character }: { character: CharacterSave }) {
+  const counts = (
+    [
+      ["missions in hard mode", character.completedMissionsHard?.length ?? 0],
+      ["mission bonuses", character.missionBonuses?.length ?? 0],
+      ["bonuses in hard mode", character.missionBonusesHard?.length ?? 0],
+      ["areas vanquished", character.vanquishedAreas?.length ?? 0],
+    ] as Array<[string, number]>
+  ).filter(([, n]) => n > 0);
+  if (counts.length === 0) return null;
+  return (
+    <p className="muted small">
+      From GWToolbox: {counts.map(([label, n]) => `${n} ${label}`).join(" · ")}
+    </p>
+  );
+}
+
 export function CharactersView({
   save,
+  account,
   selected,
   onSelect,
   addCharacter,
@@ -82,6 +106,7 @@ export function CharactersView({
   exportFile,
 }: {
   save: SaveFile;
+  account: { email: string | null; syncCompletion: () => Promise<string>; syncing: boolean };
   selected: CharacterSave | null;
   onSelect: (name: string | null) => void;
   addCharacter: (c: CharacterSave) => void;
@@ -298,6 +323,7 @@ export function CharactersView({
                 selected={c.completedMissions}
                 onChange={(v) => updateCharacter(c.name, { completedMissions: v })}
               />
+              <ImportedProgress character={c} />
               <Checklist
                 label={`Known skills (${c.primaryProfession}${c.unlockedSecondaries.length ? "/" + c.unlockedSecondaries.join("/") : ""} + common)`}
                 groups={skillGroups}
@@ -309,6 +335,11 @@ export function CharactersView({
           </div>
         )}
       </div>
+      <ToolboxSync
+        signedIn={account.email !== null}
+        onSync={account.syncCompletion}
+        syncing={account.syncing}
+      />
     </div>
   );
 }

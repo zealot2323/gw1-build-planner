@@ -1,0 +1,1534 @@
+{
+  "generatedAt": "2026-10-03T09:50:26.585Z",
+  "source": "https://api.gwtoolbox.com/v1/en/maps.json",
+  "locations": {
+    "Ascalon City": [
+      81,
+      811
+    ],
+    "Lion's Arch": [
+      55,
+      385,
+      808,
+      809,
+      810,
+      844
+    ],
+    "Henge of Denravi": [
+      49
+    ],
+    "The Amnoon Oasis": [
+      109
+    ],
+    "Droknar's Forge": [
+      20,
+      783,
+      812,
+      813
+    ],
+    "Shing Jea Monastery": [
+      242,
+      505,
+      815,
+      816,
+      871
+    ],
+    "Kaineng Center": [
+      194,
+      400,
+      817,
+      861,
+      872
+    ],
+    "House zu Heltzer": [
+      77
+    ],
+    "Cavalon": [
+      193
+    ],
+    "Kamadan, Jewel of Istan": [
+      370,
+      422,
+      449,
+      818,
+      819,
+      820
+    ],
+    "Sunspear Sanctuary": [
+      387
+    ],
+    "The Kodash Bazaar": [
+      414
+    ],
+    "Gate of Torment": [
+      450,
+      561
+    ],
+    "Rata Sum": [
+      640
+    ],
+    "Gunnar's Hold": [
+      644
+    ],
+    "Doomlore Shrine": [
+      648
+    ],
+    "Ascalon City (pre-Searing)": [
+      148
+    ],
+    "Ashford Abbey": [
+      164
+    ],
+    "Foible's Fair": [
+      165
+    ],
+    "Fort Ranik (pre-Searing)": [
+      166
+    ],
+    "The Barradin Estate": [
+      163
+    ],
+    "Piken Square (pre-Searing)": [
+      779
+    ],
+    "Beacon's Perch": [
+      133
+    ],
+    "Beetletun": [
+      136,
+      846,
+      850
+    ],
+    "Bergen Hot Springs": [
+      57
+    ],
+    "Camp Rankor": [
+      155
+    ],
+    "Copperhammer Mines": [
+      159
+    ],
+    "Deldrimor War Camp": [
+      206
+    ],
+    "Destiny's Gorge": [
+      154
+    ],
+    "Druid's Overlook": [
+      140
+    ],
+    "Ember Light Camp": [
+      35
+    ],
+    "Fishermen's Haven": [
+      137
+    ],
+    "Frontier Gate": [
+      135
+    ],
+    "Grendich Courthouse": [
+      36
+    ],
+    "Heroes' Audience": [
+      152
+    ],
+    "Ice Tooth Cave": [
+      132
+    ],
+    "Maguuma Stade": [
+      141
+    ],
+    "Marhan's Grotto": [
+      157
+    ],
+    "Piken Square": [
+      40
+    ],
+    "Port Sledge": [
+      158
+    ],
+    "Quarrel Falls": [
+      142
+    ],
+    "Sardelac Sanitarium": [
+      39
+    ],
+    "Seeker's Passage": [
+      153
+    ],
+    "Serenity Temple": [
+      131
+    ],
+    "Temple of the Ages": [
+      138,
+      788
+    ],
+    "The Granite Citadel": [
+      156
+    ],
+    "Tomb of the Primeval Kings": [
+      82,
+      814
+    ],
+    "Ventari's Refuge": [
+      139
+    ],
+    "Yak's Bend": [
+      134
+    ],
+    "Aspenwood Gate (Kurzick)": [
+      388
+    ],
+    "Aspenwood Gate (Luxon)": [
+      389
+    ],
+    "Bai Paasu Reach": [
+      288
+    ],
+    "Brauer Academy": [
+      286
+    ],
+    "Breaker Hollow": [
+      278
+    ],
+    "Durheim Archives": [
+      287
+    ],
+    "Eredon Terrace": [
+      350
+    ],
+    "Harvest Temple": [
+      277
+    ],
+    "Jade Flats (Kurzick)": [
+      390
+    ],
+    "Jade Flats (Luxon)": [
+      391
+    ],
+    "Leviathan Pits": [
+      279
+    ],
+    "Lutgardis Conservatory": [
+      129
+    ],
+    "Maatu Keep": [
+      283
+    ],
+    "Ran Musu Gardens": [
+      251
+    ],
+    "Saint Anjeka's Shrine": [
+      349
+    ],
+    "Seafarer's Rest": [
+      289
+    ],
+    "Seitung Harbor": [
+      250,
+      508,
+      510,
+      865
+    ],
+    "Senji's Corner": [
+      51
+    ],
+    "Shing Jea Arena (outpost)": [
+      243,
+      366,
+      834
+    ],
+    "Tanglewood Copse": [
+      348
+    ],
+    "The Marketplace": [
+      303,
+      862
+    ],
+    "Tsumei Village": [
+      249,
+      509,
+      511,
+      864
+    ],
+    "Vasburg Armory": [
+      130
+    ],
+    "Zin Ku Corridor": [
+      284
+    ],
+    "Dragon Arena (outpost)": [
+      368,
+      786
+    ],
+    "Etnaran Keys (Kurzick)": [
+      336
+    ],
+    "Etnaran Keys (Luxon)": [
+      335
+    ],
+    "Grenz Frontier (Kurzick)": [
+      332
+    ],
+    "Grenz Frontier (Luxon)": [
+      331
+    ],
+    "Kaanai Canyon (Kurzick)": [
+      338
+    ],
+    "Kaanai Canyon (Luxon)": [
+      337
+    ],
+    "Saltspray Beach (Kurzick)": [
+      329
+    ],
+    "Saltspray Beach (Luxon)": [
+      328
+    ],
+    "The Ancestral Lands (Kurzick)": [
+      334
+    ],
+    "The Ancestral Lands (Luxon)": [
+      333
+    ],
+    "Basalt Grotto": [
+      398
+    ],
+    "Beknur Harbor": [
+      457,
+      487
+    ],
+    "Bone Palace": [
+      438
+    ],
+    "Camp Hojanu": [
+      376
+    ],
+    "Champion's Dawn": [
+      479
+    ],
+    "Chantry of Secrets": [
+      393
+    ],
+    "Gate of Fear": [
+      469
+    ],
+    "Gate of Secrets": [
+      473
+    ],
+    "Gate of the Nightfallen Lands": [
+      559
+    ],
+    "Honur Hill": [
+      403
+    ],
+    "Kodlonu Hamlet": [
+      489
+    ],
+    "Lair of the Forgotten": [
+      442
+    ],
+    "Mihanu Township": [
+      396
+    ],
+    "Sunspear Arena (outpost)": [
+      497,
+      536,
+      833
+    ],
+    "Sunspear Great Hall": [
+      431
+    ],
+    "The Astralarium": [
+      502
+    ],
+    "The Mouth of Torment": [
+      440
+    ],
+    "Wehhan Terraces": [
+      378
+    ],
+    "Yahnur Market": [
+      407
+    ],
+    "Yohlon Haven": [
+      381
+    ],
+    "Boreal Station": [
+      675
+    ],
+    "Central Transfer Chamber": [
+      652
+    ],
+    "Eye of the North (outpost)": [
+      642,
+      821
+    ],
+    "Gadd's Encampment": [
+      638
+    ],
+    "Longeye's Ledge": [
+      650
+    ],
+    "Olafstead": [
+      645,
+      854
+    ],
+    "Sifhalla": [
+      643
+    ],
+    "Tarnished Haven": [
+      641
+    ],
+    "Umbral Grotto": [
+      639
+    ],
+    "Vlox's Falls": [
+      624
+    ],
+    "Abaddon's Mouth (outpost)": [
+      123
+    ],
+    "Augury Rock (outpost)": [
+      38,
+      119
+    ],
+    "Aurora Glade (outpost)": [
+      12,
+      847,
+      851
+    ],
+    "Bloodstone Fen (outpost)": [
+      10,
+      471
+    ],
+    "Borlis Pass (outpost)": [
+      25
+    ],
+    "D'Alessio Seaboard (outpost)": [
+      15,
+      841
+    ],
+    "Divinity Coast (outpost)": [
+      16,
+      839
+    ],
+    "Dunes of Despair (outpost)": [
+      116
+    ],
+    "Elona Reach (outpost)": [
+      118
+    ],
+    "Fort Ranik (outpost)": [
+      29
+    ],
+    "Gates of Kryta (outpost)": [
+      14
+    ],
+    "Hell's Precipice (outpost)": [
+      124
+    ],
+    "Ice Caves of Sorrow (outpost)": [
+      22
+    ],
+    "Iron Mines of Moladune (outpost)": [
+      24
+    ],
+    "Nolani Academy (outpost)": [
+      32
+    ],
+    "Ring of Fire (outpost)": [
+      122
+    ],
+    "Riverside Province (outpost)": [
+      73,
+      843
+    ],
+    "Ruins of Surmia (outpost)": [
+      30
+    ],
+    "Sanctum Cay (outpost)": [
+      19
+    ],
+    "The Dragon's Lair (outpost)": [
+      120
+    ],
+    "The Frost Gate (outpost)": [
+      21
+    ],
+    "The Great Northern Wall (outpost)": [
+      28
+    ],
+    "The Wilds (outpost)": [
+      11
+    ],
+    "Thirsty River (outpost)": [
+      117
+    ],
+    "Thunderhead Keep (outpost)": [
+      23
+    ],
+    "Altrumm Ruins (outpost)": [
+      272,
+      870
+    ],
+    "Amatz Basin (outpost)": [
+      230
+    ],
+    "Arborstone (outpost)": [
+      218,
+      244,
+      262
+    ],
+    "Boreas Seabed (outpost)": [
+      219,
+      247,
+      263
+    ],
+    "Dragon's Throat (outpost)": [
+      274,
+      860
+    ],
+    "Fort Aspenwood (Kurzick)": [
+      294,
+      323
+    ],
+    "Fort Aspenwood (Luxon)": [
+      293,
+      324
+    ],
+    "Gyala Hatchery (outpost)": [
+      144,
+      224,
+      268
+    ],
+    "Imperial Sanctum (outpost)": [
+      226,
+      271,
+      327
+    ],
+    "Minister Cho's Estate (outpost)": [
+      214,
+      245,
+      257,
+      512
+    ],
+    "Nahpui Quarter (outpost)": [
+      216,
+      260,
+      265
+    ],
+    "Raisu Palace (outpost)": [
+      225,
+      233,
+      270
+    ],
+    "Sunjiang District (outpost)": [
+      220,
+      256,
+      264
+    ],
+    "Tahnnakai Temple (outpost)": [
+      217,
+      261,
+      269,
+      866
+    ],
+    "The Aurios Mines (outpost)": [
+      234
+    ],
+    "The Deep (outpost)": [
+      307
+    ],
+    "The Eternal Grove (outpost)": [
+      128,
+      222,
+      267
+    ],
+    "The Jade Quarry (Kurzick)": [
+      259,
+      296
+    ],
+    "The Jade Quarry (Luxon)": [
+      295,
+      306
+    ],
+    "Unwaking Waters (Kurzick)": [
+      298
+    ],
+    "Unwaking Waters (Luxon)": [
+      297
+    ],
+    "Urgoz's Warren (outpost)": [
+      266
+    ],
+    "Vizunah Square (Foreign Quarter)": [
+      292,
+      305
+    ],
+    "Vizunah Square (Local Quarter)": [
+      291,
+      304
+    ],
+    "Zen Daijun (outpost)": [
+      213,
+      246,
+      258
+    ],
+    "Zos Shivros Channel (outpost)": [
+      273
+    ],
+    "Abaddon's Gate (outpost)": [
+      496,
+      528
+    ],
+    "Blacktide Den (outpost)": [
+      492,
+      516
+    ],
+    "Chahbek Village (outpost)": [
+      544,
+      556
+    ],
+    "Consulate Docks (outpost)": [
+      493,
+      517
+    ],
+    "Dajkah Inlet (outpost)": [
+      554
+    ],
+    "Dasha Vestibule (outpost)": [
+      434
+    ],
+    "Dzagonur Bastion (outpost)": [
+      433,
+      519
+    ],
+    "Gate of Anguish": [
+      451,
+      474
+    ],
+    "Gate of Desolation (outpost)": [
+      478
+    ],
+    "Gate of Madness (outpost)": [
+      495,
+      527
+    ],
+    "Gate of Pain (outpost)": [
+      494
+    ],
+    "Grand Court of Sebelkeh (outpost)": [
+      435,
+      521
+    ],
+    "Jennur's Horde (outpost)": [
+      476,
+      522
+    ],
+    "Jokanur Diggings (outpost)": [
+      491,
+      515
+    ],
+    "Kodonur Crossroads (outpost)": [
+      424,
+      458
+    ],
+    "Moddok Crevice (outpost)": [
+      427
+    ],
+    "Nundu Bay (outpost)": [
+      477,
+      523
+    ],
+    "Pogahn Passage (outpost)": [
+      426,
+      460
+    ],
+    "Remains of Sahlahja (outpost)": [
+      545
+    ],
+    "Rilohn Refuge (outpost)": [
+      425,
+      459
+    ],
+    "Ruins of Morah (outpost)": [
+      480,
+      525
+    ],
+    "The Shadow Nexus (outpost)": [
+      555
+    ],
+    "Tihark Orchard (outpost)": [
+      428,
+      518
+    ],
+    "Venta Cemetery (outpost)": [
+      421
+    ],
+    "Green Hills County": [
+      160
+    ],
+    "Lakeside County": [
+      146
+    ],
+    "Regent Valley (pre-Searing)": [
+      162
+    ],
+    "The Catacombs": [
+      145
+    ],
+    "The Northlands": [
+      147
+    ],
+    "Wizard's Folly": [
+      161
+    ],
+    "Ascalon Foothills": [
+      103
+    ],
+    "Diessa Lowlands": [
+      13
+    ],
+    "Dragon's Gullet": [
+      105
+    ],
+    "Eastern Frontier": [
+      107
+    ],
+    "Flame Temple Corridor": [
+      106
+    ],
+    "Old Ascalon": [
+      33
+    ],
+    "Pockmark Flats": [
+      104
+    ],
+    "Regent Valley": [
+      101
+    ],
+    "The Breach": [
+      102
+    ],
+    "Anvil Rock": [
+      89
+    ],
+    "Deldrimor Bowl": [
+      100
+    ],
+    "Griffon's Mouth": [
+      27
+    ],
+    "Iron Horse Mine": [
+      88
+    ],
+    "Traveler's Vale": [
+      99
+    ],
+    "Cursed Lands": [
+      56
+    ],
+    "Kessex Peak": [
+      64
+    ],
+    "Nebo Terrace": [
+      59
+    ],
+    "North Kryta Province": [
+      58
+    ],
+    "Scoundrel's Rise": [
+      54
+    ],
+    "Stingray Strand": [
+      63
+    ],
+    "Talmark Wilderness": [
+      17,
+      837
+    ],
+    "Tears of the Fallen": [
+      53
+    ],
+    "The Black Curtain": [
+      18
+    ],
+    "Twin Serpent Lakes": [
+      61
+    ],
+    "Watchtower Coast": [
+      62,
+      849,
+      853
+    ],
+    "Dry Top": [
+      47
+    ],
+    "Ettin's Back": [
+      44
+    ],
+    "Majesty's Rest": [
+      60,
+      848,
+      852
+    ],
+    "Mamnoon Lagoon": [
+      42
+    ],
+    "Reed Bog": [
+      45
+    ],
+    "Sage Lands": [
+      41
+    ],
+    "Silverwood": [
+      43
+    ],
+    "Tangle Root": [
+      48
+    ],
+    "The Falls": [
+      46
+    ],
+    "Diviner's Ascent": [
+      110
+    ],
+    "Prophet's Path": [
+      113
+    ],
+    "Salt Flats": [
+      114
+    ],
+    "Skyward Reach": [
+      115
+    ],
+    "The Arid Sea": [
+      112
+    ],
+    "The Scar": [
+      108
+    ],
+    "Vulture Drifts": [
+      111
+    ],
+    "Dreadnought's Drift": [
+      97
+    ],
+    "Frozen Forest": [
+      98
+    ],
+    "Grenth's Footprint": [
+      191
+    ],
+    "Ice Floe": [
+      94
+    ],
+    "Icedome": [
+      87
+    ],
+    "Lornar's Pass": [
+      90
+    ],
+    "Mineral Springs": [
+      96
+    ],
+    "Snake Dance": [
+      91
+    ],
+    "Sorrow's Furnace": [
+      190
+    ],
+    "Spearhead Peak": [
+      93
+    ],
+    "Talus Chute": [
+      26
+    ],
+    "Tasca's Demise": [
+      92
+    ],
+    "Witman's Folly": [
+      95
+    ],
+    "Perdition Rock": [
+      121
+    ],
+    "Haiju Lagoon": [
+      237,
+      506
+    ],
+    "Jaya Bluffs": [
+      196,
+      507
+    ],
+    "Kinya Province": [
+      236
+    ],
+    "Linnok Courtyard": [
+      252
+    ],
+    "Minister Cho's Estate (explorable area)": [
+      214,
+      245,
+      257,
+      512
+    ],
+    "Monastery Overlook": [
+      212,
+      285,
+      416
+    ],
+    "Panjiang Peninsula": [
+      235
+    ],
+    "Saoshang Trail": [
+      313
+    ],
+    "Sunqua Vale": [
+      238
+    ],
+    "Zen Daijun (explorable area)": [
+      213,
+      246,
+      258
+    ],
+    "Bejunkan Pier": [
+      290,
+      417
+    ],
+    "Bukdek Byway": [
+      240,
+      863
+    ],
+    "Divine Path": [
+      351
+    ],
+    "Kaineng Docks": [
+      302
+    ],
+    "Nahpui Quarter (explorable area)": [
+      216,
+      260,
+      265
+    ],
+    "Pongmei Valley": [
+      211
+    ],
+    "Raisu Palace (explorable area)": [
+      225,
+      233,
+      270
+    ],
+    "Raisu Pavilion": [
+      301
+    ],
+    "Shadow's Passage": [
+      232,
+      869
+    ],
+    "Shenzun Tunnels": [
+      197
+    ],
+    "Sunjiang District (explorable area)": [
+      220,
+      256,
+      264
+    ],
+    "Tahnnakai Temple (explorable area)": [
+      217,
+      261,
+      269,
+      866
+    ],
+    "The Undercity": [
+      241
+    ],
+    "Wajjun Bazaar": [
+      239,
+      867,
+      873
+    ],
+    "Xaquang Skyway": [
+      31
+    ],
+    "Arborstone (explorable area)": [
+      218,
+      244,
+      262
+    ],
+    "Drazach Thicket": [
+      195
+    ],
+    "Ferndale": [
+      210
+    ],
+    "Melandru's Hope": [
+      201
+    ],
+    "Morostav Trail": [
+      205
+    ],
+    "Mourning Veil Falls": [
+      209
+    ],
+    "The Eternal Grove (explorable area)": [
+      128,
+      222,
+      267
+    ],
+    "Archipelagos": [
+      198
+    ],
+    "Boreas Seabed (explorable area)": [
+      219,
+      247,
+      263
+    ],
+    "Maishang Hills": [
+      199
+    ],
+    "Mount Qinkai": [
+      200
+    ],
+    "Gyala Hatchery (explorable area)": [
+      144,
+      224,
+      268
+    ],
+    "Rhea's Crater": [
+      202
+    ],
+    "Silent Surf": [
+      203
+    ],
+    "Unwaking Waters (explorable area)": [
+      204,
+      227
+    ],
+    "Churrhir Fields": [
+      456
+    ],
+    "Cliffs of Dohjok": [
+      432,
+      447
+    ],
+    "Consulate": [
+      429
+    ],
+    "Fahranur, The First City": [
+      372,
+      481
+    ],
+    "Island of Shehkah": [
+      490,
+      514
+    ],
+    "Issnur Isles": [
+      486
+    ],
+    "Lahtenda Bog": [
+      484
+    ],
+    "Mehtani Keys": [
+      488
+    ],
+    "Plains of Jarin": [
+      430
+    ],
+    "Sun Docks": [
+      405,
+      543
+    ],
+    "Zehlon Reach": [
+      483
+    ],
+    "Arkjok Ward": [
+      380
+    ],
+    "Bahdok Caverns": [
+      377
+    ],
+    "Barbarous Shore": [
+      375
+    ],
+    "Command Post": [
+      436
+    ],
+    "Dejarin Estate": [
+      379
+    ],
+    "Gandara, the Moon Fortress": [
+      382
+    ],
+    "Jahai Bluffs": [
+      369
+    ],
+    "Marga Coast": [
+      371
+    ],
+    "Sunward Marches": [
+      373
+    ],
+    "The Floodplain of Mahnkelon": [
+      384
+    ],
+    "Turai's Procession": [
+      386
+    ],
+    "Bokka Amphitheatre": [
+      500,
+      790
+    ],
+    "Forum Highlands": [
+      399
+    ],
+    "Garden of Seborhin": [
+      394
+    ],
+    "Holdings of Chokhin": [
+      395
+    ],
+    "Nightfallen Garden": [
+      455
+    ],
+    "Resplendent Makuun": [
+      402
+    ],
+    "The Hidden City of Ahdashim": [
+      413
+    ],
+    "The Mirror of Lyss": [
+      419
+    ],
+    "Vehjin Mines": [
+      397
+    ],
+    "Vehtendi Valley": [
+      406
+    ],
+    "Wilderness of Bahdza": [
+      404
+    ],
+    "Yatendi Canyons": [
+      392
+    ],
+    "Crystal Overlook": [
+      448
+    ],
+    "Joko's Domain": [
+      437
+    ],
+    "Poisoned Outcrops": [
+      443
+    ],
+    "The Alkali Pan": [
+      446
+    ],
+    "The Ruptured Heart": [
+      439
+    ],
+    "The Shattered Ravines": [
+      441
+    ],
+    "The Sulfurous Wastes": [
+      444
+    ],
+    "Depths of Madness": [
+      466
+    ],
+    "Domain of Fear": [
+      468
+    ],
+    "Domain of Pain": [
+      470,
+      526
+    ],
+    "Domain of Secrets": [
+      472
+    ],
+    "Heart of Abaddon": [
+      462
+    ],
+    "Nightfallen Jahai": [
+      465
+    ],
+    "Throne of Secrets": [
+      503,
+      557
+    ],
+    "Dalada Uplands": [
+      647
+    ],
+    "Grothmar Wardowns": [
+      649
+    ],
+    "Polymock Crossing": [
+      688
+    ],
+    "Sacnoth Valley": [
+      651
+    ],
+    "Battledepths": [
+      625
+    ],
+    "Beneath Lion's Arch": [
+      691
+    ],
+    "Caverns Below Kamadan": [
+      693
+    ],
+    "Tunnels Below Cantha": [
+      692
+    ],
+    "Attack of the Nornbear": [
+      678
+    ],
+    "Bjora Marches": [
+      482
+    ],
+    "Drakkar Lake": [
+      513
+    ],
+    "Hall of Monuments": [
+      646
+    ],
+    "Hero Tutorial": [
+      698
+    ],
+    "Ice Cliff Chasms": [
+      499,
+      793
+    ],
+    "Jaga Moraine": [
+      546
+    ],
+    "Norrhart Domains": [
+      548
+    ],
+    "Polymock Glacier": [
+      687
+    ],
+    "Varajar Fells": [
+      553,
+      708
+    ],
+    "Alcazia Tangle": [
+      572
+    ],
+    "Arbor Bay": [
+      485
+    ],
+    "Magus Stones": [
+      569
+    ],
+    "Polymock Coliseum": [
+      686
+    ],
+    "Riven Earth": [
+      501
+    ],
+    "Sparkfly Swamp": [
+      558
+    ],
+    "Verdant Cascades": [
+      566
+    ],
+    "The Underworld (explorable area)": [
+      72,
+      84,
+      185,
+      186,
+      187,
+      347,
+      461,
+      463,
+      806,
+      807
+    ],
+    "Catacombs of Kathandrax": [
+      570
+    ],
+    "Rragar's Menagerie": [
+      573
+    ],
+    "Cathedral of Flames": [
+      560
+    ],
+    "Ooze Pit": [
+      475,
+      576
+    ],
+    "Darkrime Delves": [
+      635
+    ],
+    "Frostmaw's Burrows": [
+      630
+    ],
+    "Sepulchre of Dragrimmar": [
+      628
+    ],
+    "Raven's Point": [
+      617
+    ],
+    "Vloxen Excavations": [
+      604
+    ],
+    "Bogroot Growths": [
+      615
+    ],
+    "Bloodstone Caves": [
+      612
+    ],
+    "Shards of Orr": [
+      581
+    ],
+    "Oola's Lab": [
+      578
+    ],
+    "Arachni's Haunt": [
+      584
+    ],
+    "Slavers' Exile": [
+      577,
+      620,
+      621,
+      622,
+      623
+    ],
+    "Fronis Irontoe's Lair": [
+      704
+    ],
+    "Secret Lair of the Snowmen": [
+      701,
+      781,
+      782
+    ],
+    "Heart of the Shiverpeaks": [
+      607
+    ]
+  },
+  "missions": {
+    "The Great Northern Wall": [
+      28
+    ],
+    "Fort Ranik": [
+      29
+    ],
+    "Ruins of Surmia": [
+      30
+    ],
+    "Nolani Academy": [
+      32
+    ],
+    "Borlis Pass": [
+      25
+    ],
+    "The Frost Gate": [
+      21
+    ],
+    "Gates of Kryta": [
+      14
+    ],
+    "D'Alessio Seaboard": [
+      15,
+      841
+    ],
+    "Divinity Coast": [
+      16,
+      839
+    ],
+    "The Wilds": [
+      11
+    ],
+    "Bloodstone Fen": [
+      10,
+      471
+    ],
+    "Aurora Glade": [
+      12,
+      847,
+      851
+    ],
+    "Riverside Province": [
+      73,
+      843
+    ],
+    "Sanctum Cay": [
+      19
+    ],
+    "Dunes of Despair": [
+      116
+    ],
+    "Thirsty River": [
+      117
+    ],
+    "Elona Reach": [
+      118
+    ],
+    "Augury Rock": [
+      38,
+      119
+    ],
+    "The Dragon's Lair": [
+      120
+    ],
+    "Ice Caves of Sorrow": [
+      22
+    ],
+    "Iron Mines of Moladune": [
+      24
+    ],
+    "Thunderhead Keep": [
+      23
+    ],
+    "Ring of Fire": [
+      122
+    ],
+    "Abaddon's Mouth": [
+      123
+    ],
+    "Hell's Precipice": [
+      124
+    ],
+    "Minister Cho's Estate": [
+      214,
+      245,
+      257,
+      512
+    ],
+    "Zen Daijun": [
+      213,
+      246,
+      258
+    ],
+    "Vizunah Square": [
+      215
+    ],
+    "Nahpui Quarter": [
+      216,
+      260,
+      265
+    ],
+    "Tahnnakai Temple": [
+      217,
+      261,
+      269,
+      866
+    ],
+    "Arborstone": [
+      218,
+      244,
+      262
+    ],
+    "Boreas Seabed": [
+      219,
+      247,
+      263
+    ],
+    "Sunjiang District": [
+      220,
+      256,
+      264
+    ],
+    "The Eternal Grove": [
+      128,
+      222,
+      267
+    ],
+    "Unwaking Waters": [
+      204,
+      227
+    ],
+    "Gyala Hatchery": [
+      144,
+      224,
+      268
+    ],
+    "Raisu Palace": [
+      225,
+      233,
+      270
+    ],
+    "Imperial Sanctum": [
+      226,
+      271,
+      327
+    ],
+    "Chahbek Village": [
+      544,
+      556
+    ],
+    "Jokanur Diggings": [
+      491,
+      515
+    ],
+    "Blacktide Den": [
+      492,
+      516
+    ],
+    "Consulate Docks": [
+      493,
+      517
+    ],
+    "Venta Cemetery": [
+      421
+    ],
+    "Kodonur Crossroads": [
+      424,
+      458
+    ],
+    "Pogahn Passage": [
+      426,
+      460
+    ],
+    "Rilohn Refuge": [
+      425,
+      459
+    ],
+    "Moddok Crevice": [
+      427
+    ],
+    "Tihark Orchard": [
+      428,
+      518
+    ],
+    "Dasha Vestibule": [
+      434
+    ],
+    "Dzagonur Bastion": [
+      433,
+      519
+    ],
+    "Grand Court of Sebelkeh": [
+      435,
+      521
+    ],
+    "Jennur's Horde": [
+      476,
+      522
+    ],
+    "Nundu Bay": [
+      477,
+      523
+    ],
+    "Gate of Desolation": [
+      478
+    ],
+    "Ruins of Morah": [
+      480,
+      525
+    ],
+    "Gate of Pain": [
+      494
+    ],
+    "Gate of Madness": [
+      495,
+      527
+    ],
+    "Abaddon's Gate": [
+      496,
+      528
+    ]
+  }
+}

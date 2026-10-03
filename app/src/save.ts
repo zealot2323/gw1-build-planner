@@ -23,6 +23,7 @@ import { useEffect, useRef, useState } from "react";
 import type { Session } from "@supabase/supabase-js";
 import { mergeGuestCharacters, type Build, type Character } from "@gw1/engine";
 import { supabase } from "./supabase";
+import { applyCompletion, describeImport, fetchCompletionUpload } from "./completion";
 
 export interface CharacterSave extends Character {
   builds: Build[];
@@ -63,6 +64,9 @@ export function useSave() {
   const [error, setError] = useState<string | null>(null);
   /** One-off message after guest characters join the account. */
   const [notice, setNotice] = useState<string | null>(null);
+  /** What the last GWToolbox import brought in, if anything. */
+  const [completionNotice, setCompletionNotice] = useState<string | null>(null);
+  const [syncing, setSyncing] = useState(false);
 
   const userId = session?.user.id ?? null;
   /** The user whose cloud save has been loaded; writes wait for this. */
@@ -111,10 +115,22 @@ export function useSave() {
       const cloud: SaveFile = data && isSaveFile(data.data) ? data.data : EMPTY;
       const guest = loadLocal();
       const merge = mergeGuestCharacters(cloud.characters, guest.characters);
-      const merged: SaveFile = { version: 1, characters: merge.characters };
+      let characters = merge.characters;
       const joined = merge.added.length + merge.renamed.length;
 
-      if (!data || joined > 0) {
+      // Anything the uploader has sent since the last visit folds in here,
+      // so there is one write rather than one per source.
+      const upload = await fetchCompletionUpload(userId);
+      let imported: string | null = null;
+      if (upload) {
+        const applied = applyCompletion(characters, upload.data);
+        imported = describeImport(applied.changes);
+        if (imported) characters = applied.characters;
+      }
+
+      const merged: SaveFile = { version: 1, characters };
+
+      if (!data || joined > 0 || imported) {
         const { error: writeError } = await supabase!
           .from("saves")
           .upsert({ user_id: userId, data: merged, updated_at: new Date().toISOString() });
@@ -134,6 +150,7 @@ export function useSave() {
           // storage unavailable — nothing to clear
         }
       }
+      if (imported) setCompletionNotice(imported);
       if (joined > 0) {
         const parts = [`Added ${joined} character${joined === 1 ? "" : "s"} from this browser to your account`];
         if (merge.renamed.length > 0) {
@@ -183,6 +200,27 @@ export function useSave() {
     }, CLOUD_DEBOUNCE_MS);
     return () => clearTimeout(timer);
   }, [save, userId]);
+
+  /**
+   * Pull the uploader's latest file now. The sign-in path already does this;
+   * this is for when a character finishes playing while the page is open.
+   */
+  const syncCompletion = async (): Promise<string> => {
+    if (!supabase || !userId) return "Sign in to sync with GWToolbox.";
+    setSyncing(true);
+    try {
+      const upload = await fetchCompletionUpload(userId);
+      if (!upload) return "No upload yet — pair a machine and run the uploader there.";
+      const applied = applyCompletion(save.characters, upload.data);
+      const described = describeImport(applied.changes);
+      setCompletionNotice(null);
+      if (!described) return "Up to date; nothing new in the last upload.";
+      setSave((s) => ({ ...s, characters: applied.characters }));
+      return described;
+    } finally {
+      setSyncing(false);
+    }
+  };
 
   // --- account actions ---------------------------------------------------------
   const signIn = async (email: string): Promise<string | null> => {
@@ -243,6 +281,10 @@ export function useSave() {
       status,
       error,
       notice,
+      completionNotice,
+      dismissCompletionNotice: () => setCompletionNotice(null),
+      syncCompletion,
+      syncing,
       dismissNotice: () => setNotice(null),
       /** Characters that exist only in this browser (guest mode). */
       guestCharacters: userId === null ? save.characters.length : 0,

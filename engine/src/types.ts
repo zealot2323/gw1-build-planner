@@ -368,6 +368,13 @@ export interface Character {
   knownSkills: SkillRef[];
   unlockedLocations: LocationRef[];
   completedMissions: MissionRef[];
+  /** Missions completed in hard mode. Imported from GWToolbox. */
+  completedMissionsHard?: MissionRef[];
+  /** Missions whose bonus objective is done, normal and hard mode. */
+  missionBonuses?: MissionRef[];
+  missionBonusesHard?: MissionRef[];
+  /** Explorable areas vanquished. Imported from GWToolbox. */
+  vanquishedAreas?: LocationRef[];
   /** Things the player wants to get or do with this character. */
   todos?: TodoItem[];
 }

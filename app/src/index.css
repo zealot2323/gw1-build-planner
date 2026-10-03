@@ -421,6 +421,16 @@ button.linkish.outpost { font-weight: 600; flex: 1; width: auto; }
   .daily-day { min-width: 6rem; }
 }
 
+
+/* GWToolbox sync: the pairing command and the linked machines. */
+.pairing { margin-top: 0.6rem; }
+.pairing-code {
+  background: #1a1a1a; border: 1px solid var(--line, #333); border-radius: 4px;
+  padding: 0.6rem; margin: 0.3rem 0; font-size: 0.85em;
+  white-space: pre-wrap; word-break: break-all; overflow-x: auto;
+}
+.device-table td { padding: 0.25rem 0.6rem 0.25rem 0; border-top: 1px solid var(--line, #333); }
+
 /* ---------------------------------------------------------------------------
    Narrow screens: stack the skill table.
    Its fixed column widths (22rem + 11rem + …) are wider than a phone, which

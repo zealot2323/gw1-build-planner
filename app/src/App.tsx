@@ -139,6 +139,7 @@ export function App() {
       {tab === "characters" && (
         <CharactersView
           save={save}
+          account={account}
           selected={character}
           onSelect={selectCharacter}
           addCharacter={addCharacter}

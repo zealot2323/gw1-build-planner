@@ -15,6 +15,10 @@
  * Join key: the in-game skill id, which we already read from the wiki
  * infobox (`gwSkillId`). It matches on all 1,327 of our skills.
  *
+ * maps.json is cached for a second job: it is the only list of the game's
+ * MapIDs, which is how GWToolbox records where a character has been (see
+ * src/maps.ts).
+ *
  * Cached on disk like the wiki pages, and the cache is committed: `parse`
  * runs offline from it.
  */
@@ -23,7 +27,7 @@ import { fileURLToPath } from "node:url";
 
 const BASE = "https://api.gwtoolbox.com/v1/en";
 const CACHE_DIR = fileURLToPath(new URL("../cache/gwtoolbox/", import.meta.url));
-const FILES = ["skills", "attributes", "professions", "campaigns"] as const;
+const FILES = ["skills", "attributes", "professions", "campaigns", "maps"] as const;
 type File = (typeof FILES)[number];
 
 /**

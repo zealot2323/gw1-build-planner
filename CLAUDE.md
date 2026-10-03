@@ -14,6 +14,10 @@ and from where?"
 - `/engine` — pure TypeScript library: types, JSON Schemas, availability/build logic. **No UI dependencies.**
 - `/app` — static React app (Vite). No backend — it loads the committed JSON from `/data`.
 - `/export` — Obsidian vault generator.
+- `/uploader` — the GWToolbox uploader that runs on the player's machine
+  (Python 3, standard library only, so it runs on a Steam Deck as it ships).
+- `/supabase` — SQL to paste into the Supabase SQL editor: `schema.sql` for
+  cloud saves, `completion.sql` for the uploader's pairing and uploads.
 
 npm workspaces from the root; run engine tests with `npm test -w engine`.
 
@@ -490,6 +494,43 @@ There are two, and the split matters:
   punctuate the same sentence differently. `diffVersion` strips `+`, `%` and
   the client's `second[s]` plural marker before comparing, which keeps nine
   skills out of the change list without hiding any real rewording.
+- **GWToolbox records progress as BITFIELDS, not lists.** Every `uint32[]`
+  in `character_completion.json` is a run of 32-bit words where bit i means
+  "item i", and the index is the game's own id: a SkillID for `skills`, a
+  MapID for `maps_unlocked`, `mission`, `mission_hm`, `mission_bonus`,
+  `mission_bonus_hm` and `vanquishes`. `data/map-ids.json` (`npm run maps`)
+  carries MapID -> our pages; the SkillID side needs nothing, because we
+  already store `gwSkillId` on every skill.
+- **A mission's completion bit is indexed by its OUTPOST's map id**, not by
+  the mission instance — that is what CompletionWindow asks IsAreaComplete()
+  with. All 58 missions resolve; so do 382 of 383 locations (Domain of
+  Anguish has no map of that name; the client enters it through Gate of
+  Anguish).
+- **One page maps to SEVERAL map ids, deliberately.** 156 map names belong
+  to more than one id — instanced copies, Winds of Change versions, the
+  party-size variants of a town. Unlocking any of them means the player has
+  been there, so the reader ORs over the whole group. Names are matched
+  case-insensitively: the client writes "Throne Of Secrets".
+- **Pre-Searing is the one place a name means two places.** Ascalon City,
+  Fort Ranik, Piken Square and Regent Valley exist in both eras, split by
+  region (7 is pre-Searing). Areas that exist ONLY pre-Searing (Ashford
+  Abbey, Lakeside County, The Catacombs…) carry no suffix, so the mapper
+  falls back to the region-7 ids when there is no post-Searing candidate.
+- **An import only ever adds.** The file may come from a machine that has
+  seen fewer characters, so nothing is ever removed, and builds, to-dos,
+  owned campaigns and allegiance are never touched. PvP-only characters are
+  skipped. Re-importing the same file is a no-op, which is what lets the
+  app merge on every sign-in without churning the save.
+- **The uploader holds a device token, not a session.** Our auth is
+  magic-link and RLS keys off `auth.uid()`, which a headless uploader cannot
+  have. The site mints a single-use pairing code (CSPRNG, 8 characters from
+  a 32-character alphabet, 15 minutes); the uploader trades it once for a
+  token whose SHA-256 is all the database keeps. The token can do exactly
+  one thing — replace that account's pending upload — and cannot read the
+  saves table at all.
+- **The uploader sends the file unchanged.** Decoding belongs in the engine
+  where the id tables and the tests are, not in SQL. The server stores one
+  row per account and the app folds it in on sign-in.
 - **`data/community-builds.json` is loaded on demand**, not bundled: it is
   over a megabyte, and most visits never open that tab.
 
