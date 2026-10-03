@@ -17,7 +17,8 @@
     "crawl": "tsx src/crawl.ts",
     "pvx": "tsx src/pvx.ts",
     "sources": "tsx src/sources.ts",
-    "zaishen": "tsx src/zaishen.ts"
+    "zaishen": "tsx src/zaishen.ts",
+    "gwtoolbox": "tsx src/gwtoolbox.ts"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

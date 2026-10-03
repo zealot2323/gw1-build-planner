@@ -133,6 +133,9 @@ export function SkillDetails({ skill, plan }: { skill: Skill; plan?: SkillPlan }
               <CostStat type="sacrifice" value={skill.sacrificePercent} unit="%" />
             )}
             {has(skill.upkeep) && skill.upkeep !== 0 && <CostStat type="upkeep" value={skill.upkeep} />}
+            {has(skill.exhaustion) && skill.exhaustion > 0 && (
+              <CostStat type="overcast" value={skill.exhaustion} />
+            )}
             {has(skill.activation) && skill.activation > 0 && (
               <CostStat type="activation" value={skill.activation} unit="s" />
             )}

@@ -138,3 +138,47 @@ describe("the real change log", () => {
     }
   });
 });
+
+describe("descriptions from two sources", () => {
+  const base = {
+    date: "2026-01-01",
+    label: "before",
+    energyCost: 5,
+    adrenalineCost: null,
+    sacrificePercent: null,
+    upkeep: null,
+    activation: 1,
+    recharge: 5,
+    attribute: "Fire Magic",
+    isElite: false,
+  };
+
+  const skill = (description: string): Skill =>
+    ({
+      name: "Test",
+      wikiPage: "Test",
+      gwSkillId: 1,
+      profession: "Elementalist",
+      attribute: "Fire Magic",
+      isElite: false,
+      campaign: "Core",
+      energyCost: 5,
+      adrenalineCost: null,
+      activation: 1,
+      recharge: 5,
+      description,
+      acquisition: { trainers: [], quests: [], captureBosses: [] },
+    }) as Skill;
+
+  it("ignores the punctuation the two sources disagree about", () => {
+    const previous = { ...base, description: "For 1...15 second[s], you gain 5...30 armor." };
+    const current = skill("For 1...15 second[s], you gain +5...30% armor.");
+    expect(diffVersion(previous, current)).toEqual([]);
+  });
+
+  it("still reports a real wording change", () => {
+    const previous = { ...base, description: "You gain 1...5 strikes of adrenaline." };
+    const current = skill("You gain 1...6 strikes of adrenaline.");
+    expect(diffVersion(previous, current).map((d) => d.field)).toEqual(["Description"]);
+  });
+});

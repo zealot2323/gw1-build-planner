@@ -1,0 +1,291 @@
+[
+ {
+  "id": 0,
+  "name": "Fast Casting",
+  "description": "Fast Casting decreases the activation time of your Spells and Signets. (No effect for non-Mesmer skills with an activation time less than 2 seconds.) In PvE, each rank of Fast Casting decreases the recharge time for your Mesmer Spells by 3%%.",
+  "profession": 5,
+  "pve_only": 1
+ },
+ {
+  "id": 1,
+  "name": "Illusion Magic",
+  "description": "No inherent effect. Many Mesmer skills, especially spells that deceive your foes and hinder their movement and attacks, become more effective with higher Illusion Magic.",
+  "profession": 5
+ },
+ {
+  "id": 2,
+  "name": "Domination Magic",
+  "description": "No inherent effect. Many Mesmers skills, especially spells that disrupt spell-casting and deal direct damage, become more effective with higher Domination Magic.",
+  "profession": 5
+ },
+ {
+  "id": 3,
+  "name": "Inspiration Magic",
+  "description": "No inherent effect. Many Mesmer skills, especially spells that generate Energy and reduce damage, become more effective with higher Inspiration Magic.",
+  "profession": 5
+ },
+ {
+  "id": 4,
+  "name": "Blood Magic",
+  "description": "No inherent effect. Many Necromancer skills, especially spells that damage and steal Health from your foes, become more effective with higher Blood Magic.",
+  "profession": 4
+ },
+ {
+  "id": 5,
+  "name": "Death Magic",
+  "description": "Without Death Magic, you can control no more than two undead servants. For every two ranks of Death Magic, you can control one additional undead servant. Many Necromancer skills, especially those that animate undead servants, manipulate corpses, and deal cold damage, become more effective with higher Death Magic.",
+  "profession": 4
+ },
+ {
+  "id": 6,
+  "name": "Soul Reaping",
+  "description": "For each point of Soul Reaping, you gain 1 Energy whenever a non-Spirit creature near you dies. You may only gain Energy in this way 3 times every 15 seconds.",
+  "profession": 4,
+  "pve_only": 1
+ },
+ {
+  "id": 7,
+  "name": "Curses",
+  "description": "No inherent effect. Many Necromancer skills, especially Hex spells that reduce your foes' effectiveness in battle, become more effective with higher Curses.",
+  "profession": 4
+ },
+ {
+  "id": 8,
+  "name": "Air Magic",
+  "description": "No inherent effect. Many Elementalist skills, especially spells that deal lightning damage to or debilitate a single enemy, become more effective with higher Air Magic",
+  "profession": 6
+ },
+ {
+  "id": 9,
+  "name": "Earth Magic",
+  "description": "No inherent effect. Many Elementalist skills, especially spells that protect you and your allies or deal earth damage, become more effective with higher Earth Magic.",
+  "profession": 6
+ },
+ {
+  "id": 10,
+  "name": "Fire Magic",
+  "description": "No inherent effect. Many Elementalist skills, especially spells that burn your foes or deal fire damage in large areas, become more effective with higher Fire Magic.",
+  "profession": 6
+ },
+ {
+  "id": 11,
+  "name": "Water Magic",
+  "description": "No inherent effect. Many Elementalist skills, especially spells that deal cold damage or slow and hinder your foes, become more effective with higher Water Magic.",
+  "profession": 6
+ },
+ {
+  "id": 12,
+  "name": "Energy Storage",
+  "description": "For each rank of Energy Storage, your maximum Energy raises by 3. Several skills related to gaining Health or Energy become more effective with higher Energy Storage.",
+  "profession": 6,
+  "pve_only": 1
+ },
+ {
+  "id": 13,
+  "name": "Healing Prayers",
+  "description": "No inherent effect. Many Monk skills, especially spells related to healing, become more effective with higher Healing Prayers.",
+  "profession": 3
+ },
+ {
+  "id": 14,
+  "name": "Smiting Prayers",
+  "description": "No inherent effect. Many Monk skills, especially those related to dealing holy damage, become more effective with higher Smiting Prayers. Holy damage is especially powerful against the undead.",
+  "profession": 3
+ },
+ {
+  "id": 15,
+  "name": "Protection Prayers",
+  "description": "No inherent effect. Many Monk skills, especially Enchantments that prevent damage or provide healing, become more effective with higher Protection Prayers.",
+  "profession": 3
+ },
+ {
+  "id": 16,
+  "name": "Divine Favor",
+  "description": "For each rank of Divine Favor, allies are healed for 3.2 whenever you cast Monk spells on them. Several Monk skills, especially spells related to Energy gain and healing, become more effective with higher Divine Favor.",
+  "profession": 3,
+  "pve_only": 1
+ },
+ {
+  "id": 17,
+  "name": "Strength",
+  "description": "When you use attack skills, each point of Strength gives you 1%% armor penetration. Many skills, especially those related to surviving and inflicting damage, become more effective with higher Strength.",
+  "profession": 1,
+  "pve_only": 1
+ },
+ {
+  "id": 18,
+  "name": "Axe Mastery",
+  "description": "Axe Mastery increases the damage you do with axes and your chance to inflict a critical hit when using an axe. Many skills, especially axe attack skills, become more effective with higher Axe Mastery.",
+  "profession": 1
+ },
+ {
+  "id": 19,
+  "name": "Hammer Mastery",
+  "description": "Hammer Mastery increases the damage you do with hammers and your chance to inflict a critical hit when using a hammer. Many skills, especially hammer attack skills, become more effective with higher Hammer Mastery.",
+  "profession": 1
+ },
+ {
+  "id": 20,
+  "name": "Swordsmanship",
+  "description": "Swordsmanship increases the damage you do with swords and your chance to inflict a critical hit when using a sword. Many skills, especially sword attack skills, become more effective with higher Swordsmanship.",
+  "profession": 1
+ },
+ {
+  "id": 21,
+  "name": "Tactics",
+  "description": "No inherent effect. Many skills, especially defensive skills and skills that aid your allies, become more effective with higher Tactics.",
+  "profession": 1
+ },
+ {
+  "id": 22,
+  "name": "Beast Mastery",
+  "description": "Beast Mastery increases the damage dealt by your animal companion and its chance to inflict a critical hit. Many Ranger skills, especially those related to making your animal companion stronger, become more effective with higher Beast Mastery.",
+  "profession": 2
+ },
+ {
+  "id": 23,
+  "name": "Expertise",
+  "description": "For each rank of Expertise, the Energy costs of all of your attacks, Rituals, touch skills, and Rangers skills are decreased by 4%%. Several skills, especially those related to Energy costs and skill recharge times, become more effective with higher Expertise.",
+  "profession": 2,
+  "pve_only": 1
+ },
+ {
+  "id": 24,
+  "name": "Wilderness Survival",
+  "description": "No inherent effect. Many Ranger skills, especially Rituals, Preparations, and Traps, become more effective with higher Wilderness Survival.",
+  "profession": 2
+ },
+ {
+  "id": 25,
+  "name": "Marksmanship",
+  "description": "Marksmanship increases the damage you do with bows and your chance to inflict a critical hit when using a bow. Many Ranger skills, especially bow attack skills, become more effective with higher Marksmanship.",
+  "profession": 2
+ },
+ {
+  "id": 26
+ },
+ {
+  "id": 27
+ },
+ {
+  "id": 28
+ },
+ {
+  "id": 29,
+  "name": "Dagger Mastery",
+  "description": "Dagger Mastery increases the damage you do with daggers and your chance to inflict a critical hit when using a dagger. There is a 2%% chance per rank of Dagger Mastery that attacks from your daggers will double strike. Many skills, especially dagger attack skills, become more effective with higher Dagger Mastery.",
+  "profession": 7
+ },
+ {
+  "id": 30,
+  "name": "Deadly Arts",
+  "description": "No inherent effect. Many Assassin skills, especially those related to harming enemies, become more effective with higher Deadly Arts.",
+  "profession": 7
+ },
+ {
+  "id": 31,
+  "name": "Shadow Arts",
+  "description": "No inherent effect. Many Assassin skills, especially those related to defense and moving as a shadow, become more effective with higher Shadow Arts.",
+  "profession": 7
+ },
+ {
+  "id": 32,
+  "name": "Communing",
+  "description": "No inherent effect. Many Ritualist skills, especially those related to summoning Spirits, become more effective with higher Communing.",
+  "profession": 8
+ },
+ {
+  "id": 33,
+  "name": "Restoration Magic",
+  "description": "No inherent effect. Many Ritualist skills, especially those related to healing, life-stealing, and defense, become more effective with higher Restoration Magic.",
+  "profession": 8
+ },
+ {
+  "id": 34,
+  "name": "Channeling Magic",
+  "description": "No inherent effect. Many Ritualist skills, especially those related to lightning damage and Energy, become more effective with higher Channeling Magic.",
+  "profession": 8
+ },
+ {
+  "id": 35,
+  "name": "Critical Strikes",
+  "description": "For each rank of Critical Strikes you have, you gain an additional 1%% chance to make a critical hit. Whenever you make a critical hit, you gain 1 Energy at 3 ranks and above, 2 Energy at 8 ranks and above, and 3 Energy at 13 ranks above.",
+  "profession": 7,
+  "pve_only": 1
+ },
+ {
+  "id": 36,
+  "name": "Spawning Power",
+  "description": "For each rank of Spawning Power you have, creatures you create (or animate) have 4%% more Health, and weapon Spells you cast last 4%% longer. Some Ritualist skills, especially those related to Spirit creatures, become more effective with higher Spawning Power.",
+  "profession": 8,
+  "pve_only": 1
+ },
+ {
+  "id": 37,
+  "name": "Spear Mastery",
+  "description": "Spear Mastery increases the damage you do with spears and your chance to inflict a critical hit when using a spear. Many skills, especially spear attack skills, become more effective with higher Spear Mastery.",
+  "profession": 9
+ },
+ {
+  "id": 38,
+  "name": "Command",
+  "description": "No inherent effect. Many Paragon skills, especially those that protect your allies or increase your tactical position on the battlefield, become more effective with higher Command.",
+  "profession": 9
+ },
+ {
+  "id": 39,
+  "name": "Motivation",
+  "description": "No inherent effect. Many Paragon skills, especially those related to Energy management or that inspire your allies, become more effective with higher Motivation.",
+  "profession": 9
+ },
+ {
+  "id": 40,
+  "name": "Leadership",
+  "description": "You gain 2 Energy for each ally affected by one of your Shouts or Chants (maximum 1 Energy for every 2 ranks).",
+  "profession": 9,
+  "pve_only": 1
+ },
+ {
+  "id": 41,
+  "name": "Scythe Mastery",
+  "description": "Scythe Mastery increases the damage you do with scythes and your chance to inflict a critical hit when using a scythe. Many skills, especially scythe attack skills, become more effective with higher Scythe Mastery.",
+  "profession": 10
+ },
+ {
+  "id": 42,
+  "name": "Wind Prayers",
+  "description": "No inherent effect. Many Dervish Spells, especially those dealing with movement or cold damage, become more effective with higher Wind Prayers.",
+  "profession": 10
+ },
+ {
+  "id": 43,
+  "name": "Earth Prayers",
+  "description": "No inherent effect. Many Dervish Spells, especially those dealing with defense or Earth damage, become more effective with higher Earth Prayers.",
+  "profession": 10
+ },
+ {
+  "id": 44,
+  "name": "Mysticism",
+  "description": "Each rank in Mysticism reduces the cost of your Dervish enchantments by 4%%. In PvE, you have +1 armor per rank of Mysticism while you are enchanted.",
+  "profession": 10,
+  "pve_only": 1
+ },
+ {
+  "id": 45
+ },
+ {
+  "id": 46
+ },
+ {
+  "id": 47
+ },
+ {
+  "id": 48
+ },
+ {
+  "id": 49
+ },
+ {
+  "id": 50
+ }
+]

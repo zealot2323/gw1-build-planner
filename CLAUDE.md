@@ -77,6 +77,18 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
 
 ## Data source
 
+There are two, and the split matters:
+
+- **What a skill DOES** — its description, costs, timings, exhaustion and
+  elite flag — comes from **https://api.gwtoolbox.com** (`npm run gwtoolbox`),
+  which generates them from ArenaNet's own client, MIT-licensed and
+  regenerated daily.
+- **Where a skill COMES FROM** — trainers, quest rewards, capture bosses —
+  comes from the wiki, along with everything about locations, missions,
+  monsters, quests and balance history. The client has no concept of any of
+  it.
+
+
 - Campaign entry points live in `/scraper/src/campaigns.ts`. The wiki's page
   layouts differ per campaign in ways that bite:
   - **Trainer lists**: Prophecies uses "=== [[Name]] in [[Place]] ===" headings;
@@ -103,7 +115,7 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
   - Skill-count guards are per-campaign totals, not a ratio against the raw
     category: only ~43% of EotN's category is learnable (the rest is dungeon
     effects, Norn brawling moves and quest siege skills).
-- Everything comes from https://wiki.guildwars.com via its **MediaWiki API**
+- Wiki data comes from https://wiki.guildwars.com via its **MediaWiki API**
   (`https://wiki.guildwars.com/api.php`).
 - **Never scrape rendered HTML.** Always fetch raw wikitext and parse the
   infobox/section templates.
@@ -428,6 +440,39 @@ npm workspaces from the root; run engine tests with `npm test -w engine`.
   character lacks would be wrong whenever another entrance is in one they
   own. The same rule decides what the dailies tab puts on a to-do list: only
   entrances the character could actually unlock.
+- **The game client is the authority on what a skill does.**
+  `npm run gwtoolbox` caches api.gwtoolbox.com's files under
+  `/scraper/cache/gwtoolbox` (committed, so `parse` stays offline) and
+  `parse` overlays them onto the wiki-parsed skills. The join key is the
+  in-game skill id we already read from the infobox, and it matches all
+  1,327 skills exactly — names and elite flags agree on every one, which is
+  also a check on our ids. The overlay replaced 545 descriptions and 306
+  activation times: the wiki writes ¾ and ¼, which the infobox parser read
+  as null, and its markup stripping was dropping the `+` and `%` signs out
+  of descriptions ("gain 5...30 armor" for "+5...30% armor").
+- **The wiki's skill LIST stays the spine.** The API carries 3,495 entries —
+  monster skills, conditions, PvP twins and unreleased beta skills — with no
+  field that separates skills a player can own from the rest. `playable` is
+  set on 3,491 of them.
+- **Four fields stay wiki-sourced where the two disagree**: `profession`,
+  `attribute`, `campaign` and `upkeep`. The client calls Elemental Lord,
+  Spear of Fury, "There's Nothing to Fear!" and Intensity *Core*, but they
+  come from Factions and Nightfall content, and campaign is what
+  availability turns on. Title-scaled skills carry their track as
+  `attribute` ("Allegiance rank") for display, where the API models it as a
+  separate `title` field. Energy degeneration (`upkeep`) has no API field at
+  all.
+- **Adrenaline is stored raw, 25 per strike, and rounds UP.** A skill
+  costing 80 needs four strikes, not 3.2. `Math.ceil(raw / 25)` reproduces
+  all 100 of the wiki's adrenaline figures exactly.
+- **`health_cost` is the sacrifice percent** (10 means 10%), and `overcast`
+  is exhaustion — 20 skills have it, and the wiki parse never produced it at
+  all.
+- **Descriptions are compared normalised, not literally.** A past version is
+  the wiki's wording of the day and the current one is the client's; they
+  punctuate the same sentence differently. `diffVersion` strips `+`, `%` and
+  the client's `second[s]` plural marker before comparing, which keeps nine
+  skills out of the change list without hiding any real rewording.
 - **`data/community-builds.json` is loaded on demand**, not bundled: it is
   over a megabyte, and most visits never open that tab.
 

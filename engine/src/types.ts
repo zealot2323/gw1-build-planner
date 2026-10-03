@@ -105,11 +105,18 @@ export interface Skill {
   sacrificePercent?: number | null;
   /** Energy degeneration while maintained ("upkeep"), in pips. */
   upkeep?: number | null;
-  /** Activation time in seconds (0 = instant, null = weapon-speed attack). */
+  /** Activation time in seconds (0 = instant). */
   activation: number | null;
+  /** Fixed delay after the skill finishes, before anything else can start. */
+  aftercast?: number | null;
+  /** Exhaustion taken on use. */
+  exhaustion?: number | null;
   /** Recharge time in seconds. */
   recharge: number;
+  /** The game's full description, as the client stores it. */
   description: string;
+  /** The game's short-form description, shown in the skill tooltip. */
+  concise?: string;
   acquisition: SkillAcquisition;
 }
 
@@ -437,8 +444,11 @@ export const skillSchema = {
     sacrificePercent: { type: ["number", "null"], minimum: 0 },
     upkeep: { type: ["number", "null"] },
     activation: { type: ["number", "null"], minimum: 0 },
+    aftercast: { type: ["number", "null"], minimum: 0 },
+    exhaustion: { type: ["number", "null"], minimum: 0 },
     recharge: { type: "number", minimum: 0 },
     description: { type: "string" },
+    concise: { type: "string" },
     acquisition: {
       type: "object",
       additionalProperties: false,

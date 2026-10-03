@@ -710,3 +710,62 @@ describe("full dataset: monster loadouts fit the zone", () => {
     }
   });
 });
+
+/**
+ * Skill facts come from the game client via api.gwtoolbox.com, overlaid on
+ * the wiki's skill list by in-game id. These guard that the overlay ran and
+ * that nothing fell back to the wiki's weaker parse of the same numbers.
+ */
+describe("full dataset: skill facts from the game client", () => {
+  const skills = index.dataset.skills;
+
+  it("gives every skill a description and a concise description", () => {
+    const missing = skills.filter((s) => !s.description || !s.concise);
+    expect(missing.map((s) => s.name)).toEqual([]);
+  });
+
+  it("knows every skill's activation time", () => {
+    // The wiki writes these as ¾ and ¼, which the infobox parser read as
+    // null on 306 skills. The client stores them as numbers.
+    const unknown = skills.filter((s) => s.activation === null || s.activation === undefined);
+    expect(unknown.map((s) => s.name)).toEqual([]);
+    expect(skills.find((s) => s.name === "Aftershock")!.activation).toBe(0.75);
+  });
+
+  it("keeps the signs and units the wiki's markup stripping dropped", () => {
+    expect(skills.find((s) => s.name === "Healing Breeze")!.description).toContain(
+      "+4...9 Health regeneration",
+    );
+  });
+
+  it("counts adrenaline in strikes, not the client's raw units", () => {
+    for (const s of skills) {
+      if (s.adrenalineCost === null) continue;
+      expect(Number.isInteger(s.adrenalineCost), s.name).toBe(true);
+      expect(s.adrenalineCost, s.name).toBeLessThanOrEqual(10);
+    }
+    expect(skills.find((s) => s.name === "Executioner's Strike")!.adrenalineCost).toBe(7);
+    // 220 raw / 25 per strike rounds up: nine strikes, not 8.8
+    expect(skills.find((s) => s.name === "Backbreaker")!.adrenalineCost).toBe(9);
+  });
+
+  it("records exhaustion, which the wiki parse never produced", () => {
+    expect(skills.find((s) => s.name === "Mind Burn")!.exhaustion).toBe(5);
+    expect(skills.filter((s) => (s.exhaustion ?? 0) > 0).length).toBeGreaterThan(15);
+  });
+
+  it("keeps the wiki's answer for where a skill sits in the game", () => {
+    // The client calls these Core; they come from Factions and Nightfall
+    // content, which is what "can this character get it" turns on.
+    expect(skills.find((s) => s.name === "Elemental Lord")!.campaign).toBe("Factions");
+    expect(skills.find((s) => s.name === '"There\'s Nothing to Fear!"')!.campaign).toBe("Nightfall");
+    // Title-scaled skills keep the track as their "attribute" for display.
+    expect(skills.find((s) => s.name === '"Save Yourselves!"')!.attribute).toBe("Allegiance rank");
+  });
+
+  it("keeps acquisition, which the client knows nothing about", () => {
+    const breeze = skills.find((s) => s.name === "Healing Breeze")!;
+    expect(breeze.acquisition.trainers).toContain("Dakk");
+    expect(breeze.acquisition.quests).toContain("Monk Test");
+  });
+});

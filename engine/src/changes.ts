@@ -77,6 +77,23 @@ function show(value: number | null | undefined, suffix = ""): string | null {
 }
 
 /**
+ * Descriptions now come from two different places: a past version is the
+ * wiki's own wording at the time, while the current one is the game's. They
+ * punctuate the same sentence differently — the wiki's markup stripping
+ * drops "+" and "%" signs and the client writes "second[s]" for a plural
+ * that depends on the number. Comparing them normalised keeps those nine
+ * skills out of the change list; the text shown is still what each source
+ * actually says.
+ */
+const comparableText = (text: string): string =>
+  text
+    .replace(/\[s\]/g, "s")
+    .replace(/[+%]/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .replace(/\.$/, "");
+
+/**
  * Compare a past version against the skill as it stands now.
  *
  * Only fields the wiki records in both places are compared, and a field
@@ -99,7 +116,9 @@ export function diffVersion(previous: SkillVersion, current: Skill): FieldDiff[]
   const out: FieldDiff[] = [];
   for (const [field, before, after] of pairs) {
     if (before === null || after === null) continue;
-    if (before !== after) out.push({ field, before, after });
+    const same =
+      field === "Description" ? comparableText(before) === comparableText(after) : before === after;
+    if (!same) out.push({ field, before, after });
   }
   return out;
 }

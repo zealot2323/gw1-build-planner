@@ -1,0 +1,66 @@
+[
+ {
+  "id": 0,
+  "campaign": 0
+ },
+ {
+  "id": 1,
+  "name": "Warrior",
+  "abbreviation": "W",
+  "campaign": 0
+ },
+ {
+  "id": 2,
+  "name": "Ranger",
+  "abbreviation": "R",
+  "campaign": 0
+ },
+ {
+  "id": 3,
+  "name": "Monk",
+  "abbreviation": "Mo",
+  "campaign": 0
+ },
+ {
+  "id": 4,
+  "name": "Necromancer",
+  "abbreviation": "N",
+  "campaign": 0
+ },
+ {
+  "id": 5,
+  "name": "Mesmer",
+  "abbreviation": "Me",
+  "campaign": 0
+ },
+ {
+  "id": 6,
+  "name": "Elementalist",
+  "abbreviation": "E",
+  "campaign": 0
+ },
+ {
+  "id": 7,
+  "name": "Assassin",
+  "abbreviation": "A",
+  "campaign": 2
+ },
+ {
+  "id": 8,
+  "name": "Ritualist",
+  "abbreviation": "Rt",
+  "campaign": 2
+ },
+ {
+  "id": 9,
+  "name": "Paragon",
+  "abbreviation": "P",
+  "campaign": 3
+ },
+ {
+  "id": 10,
+  "name": "Dervish",
+  "abbreviation": "D",
+  "campaign": 3
+ }
+]

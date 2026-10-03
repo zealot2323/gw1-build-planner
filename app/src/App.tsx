@@ -211,7 +211,12 @@ export function App() {
         />
       )}
       <footer className="credits muted small">
-        Fan-made tool, not affiliated with ArenaNet. Skill, location and quest data from the{" "}
+        Fan-made tool, not affiliated with ArenaNet. Skill descriptions, costs and timings from{" "}
+        <a href="https://api.gwtoolbox.com/" target="_blank" rel="noreferrer">
+          gwtoolbox-api
+        </a>{" "}
+        (MIT), which generates them from the game client. Where skills come from, plus location, quest and
+        monster data, from the{" "}
         <a href="https://wiki.guildwars.com/" target="_blank" rel="noreferrer">
           Guild Wars Wiki
         </a>{" "}

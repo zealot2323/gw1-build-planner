@@ -43,7 +43,13 @@ export interface ParsedSkill {
   /** Energy degeneration while maintained ("upkeep"), in pips. */
   upkeep: number | null;
   activation: number | null;
+  /** Fixed delay after casting, before anything else can be done. From gwtoolbox. */
+  aftercast?: number | null;
+  /** Exhaustion. From gwtoolbox. */
+  exhaustion?: number | null;
   recharge: number | null;
+  /** The game's short-form description. From gwtoolbox. */
+  concise?: string;
   description: string;
   acquisition: {
     trainers: string[];

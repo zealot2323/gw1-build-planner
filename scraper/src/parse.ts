@@ -23,6 +23,7 @@ import {
   type ParsedSkill,
   type ParsedTrainer,
 } from "./parsers.js";
+import { adrenalineStrikes, loadGwToolbox } from "./gwtoolbox.js";
 import { sections } from "./wikitext.js";
 import {
   EXCLUDED_LOCATIONS,
@@ -147,6 +148,56 @@ for (const title of manifest.skills) {
   skills.push(entity);
 }
 console.log(`skills: ${skills.length} parsed`);
+
+// ---------------------------------------------------------------------------
+// What a skill does: api.gwtoolbox.com, joined on the in-game skill id
+//
+// The client's own numbers replace the wiki's retelling of them. The wiki
+// keeps everything the client has no concept of — where a skill is sold,
+// which quest grants it, which boss carries it — plus the four fields where
+// its answer is the more useful one (see CLAUDE.md).
+// ---------------------------------------------------------------------------
+
+const toolbox = await loadGwToolbox();
+const overlaid = { description: 0, activation: 0, cost: 0, recharge: 0 };
+
+for (const s of skills) {
+  const g = toolbox.skills.get(s.gwSkillId!);
+  if (!g) {
+    addIssue("skills", s.wikiPage, `in-game id ${s.gwSkillId} is not in gwtoolbox-api — check the infobox id`);
+    continue;
+  }
+  if (g.name && g.name !== s.name) {
+    addIssue("skills", s.wikiPage, `name differs from the client: "${g.name}"`);
+  }
+  // Counted before assignment so the report says what actually moved.
+  if (g.description && g.description !== s.description) overlaid.description++;
+  if ((g.activation ?? 0) !== (s.activation ?? 0)) overlaid.activation++;
+  if ((g.recharge ?? 0) !== (s.recharge ?? 0)) overlaid.recharge++;
+  if (
+    (g.energy_cost ?? null) !== s.energyCost ||
+    (adrenalineStrikes(g.adrenaline) ?? null) !== s.adrenalineCost ||
+    (g.health_cost ?? null) !== (s.sacrificePercent ?? null)
+  ) {
+    overlaid.cost++;
+  }
+
+  if (g.description) s.description = g.description;
+  s.concise = g.concise ?? "";
+  s.energyCost = g.energy_cost ?? null;
+  s.adrenalineCost = adrenalineStrikes(g.adrenaline);
+  s.sacrificePercent = g.health_cost ?? null;
+  s.exhaustion = g.overcast ?? null;
+  s.activation = g.activation ?? 0;
+  s.aftercast = g.aftercast ?? 0;
+  s.recharge = g.recharge ?? 0;
+  s.isElite = !!g.elite;
+}
+
+console.log(
+  `gwtoolbox overlay: ${overlaid.description} descriptions, ${overlaid.activation} activation times, ` +
+    `${overlaid.cost} costs, ${overlaid.recharge} recharges replaced`,
+);
 
 // ---------------------------------------------------------------------------
 // Parse trainers (from /Skills subpage, or inline block on the list page)
