@@ -7,7 +7,8 @@ packages, nothing to install into SteamOS's read-only filesystem.
 
     ./gw1-upload.py --pair ABCD2345     # once, with the code from the site
     ./gw1-upload.py --once              # send the file if it has changed
-    ./gw1-upload.py --watch             # keep sending when it changes
+    ./gw1-upload.py --install-service   # let systemd do it when the file changes
+    ./gw1-upload.py --watch             # or poll for changes in the foreground
 
 The file is sent exactly as GWToolbox wrote it. Decoding it into
 characters, skills and maps happens in the app.
@@ -21,6 +22,8 @@ import argparse
 import hashlib
 import json
 import os
+import shutil
+import subprocess
 import sys
 import time
 import urllib.error
@@ -67,13 +70,13 @@ def candidate_files():
         for documents in sorted(home.glob(prefix_glob)):
             for file_glob in SEARCH_GLOBS:
                 found.extend(documents.glob(file_glob))
-    unique = {path.resolve(): path for path in found if path.is_file()}
+    unique = {path.resolve(): path.resolve() for path in found if path.is_file()}
     return sorted(unique.values(), key=lambda p: p.stat().st_mtime, reverse=True)
 
 
 def resolve_path(configured):
     if configured:
-        path = Path(configured).expanduser()
+        path = Path(configured).expanduser().resolve()
         if not path.is_file():
             die(f"no file at {path}")
         return path
@@ -200,6 +203,80 @@ def upload(config, path, force=False, quiet=False):
     return True
 
 
+SERVICE_UNIT = """\
+# Upload GWToolbox's completion file to the GW1 Build Planner.
+# Started by gw1-upload.path when the file changes. Written by
+# `gw1-upload.py --install-service` — edit that, not this.
+
+[Unit]
+Description=Upload GWToolbox completion to the GW1 Build Planner
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+# The file appears the moment Guild Wars closes; give the network a chance.
+ExecStartPre=/usr/bin/sleep 5
+ExecStart={script} --once
+NoNewPrivileges=true
+"""
+
+PATH_UNIT = """\
+# Watch GWToolbox's completion file and upload when it changes.
+# GWToolbox writes it on shutdown, so this fires when you quit the game.
+# Written by `gw1-upload.py --install-service`.
+
+[Unit]
+Description=Watch for GWToolbox completion changes
+
+[Path]
+PathChanged={file}
+Unit=gw1-upload.service
+
+[Install]
+WantedBy=default.target
+"""
+
+
+def install_service(config, path):
+    """
+    Write a .path unit that runs one upload when the file changes.
+
+    systemd does the watching, so nothing of ours stays resident and the
+    upload happens seconds after Guild Wars closes rather than at the next
+    poll. The file's own path is baked in because it cannot be guessed:
+    Guild Wars is not a Steam title, so under Proton it sits behind the
+    app id Steam generated when you added it.
+    """
+    script = Path(sys.argv[0]).resolve()
+    path = path.resolve()
+    # systemd wants absolute paths, and splits ExecStart on whitespace
+    # unless the executable is quoted.
+    quoted = f'"{script}"' if " " in str(script) else str(script)
+    units = Path(os.environ.get("XDG_CONFIG_HOME", Path.home() / ".config")) / "systemd" / "user"
+    units.mkdir(parents=True, exist_ok=True)
+    (units / "gw1-upload.service").write_text(SERVICE_UNIT.format(script=quoted), "utf-8")
+    (units / "gw1-upload.path").write_text(PATH_UNIT.format(file=path), "utf-8")
+    print(f"wrote {units}/gw1-upload.{{service,path}}")
+    print(f"  watching {path}")
+    print(f"  running  {script} --once")
+
+    if shutil.which("systemctl") is None:
+        print("\nsystemctl not found here; on the Deck, finish with:")
+        print("  systemctl --user daemon-reload")
+        print("  systemctl --user enable --now gw1-upload.path")
+        return
+    for command in (
+        ["systemctl", "--user", "daemon-reload"],
+        ["systemctl", "--user", "enable", "--now", "gw1-upload.path"],
+    ):
+        if subprocess.run(command).returncode != 0:
+            die(f"{' '.join(command)} failed")
+    print("\nenabled. It will upload a few seconds after Guild Wars closes.")
+    print("To keep it running while you are in Game Mode:  sudo loginctl enable-linger $USER")
+    print("To see what it did:  journalctl --user -u gw1-upload -n 20")
+
+
 def watch(config, path, interval):
     print(f"watching {path}\n(GWToolbox writes it when it closes, so expect an upload when you quit the game)")
     last_mtime = None
@@ -226,7 +303,9 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--pair", metavar="CODE", help="link this machine using a code from the site")
     parser.add_argument("--once", action="store_true", help="upload now if the file has changed")
-    parser.add_argument("--watch", action="store_true", help="upload whenever the file changes")
+    parser.add_argument("--watch", action="store_true", help="upload whenever the file changes (polling)")
+    parser.add_argument("--install-service", dest="install_service", action="store_true",
+                        help="have systemd upload when the file changes, and stop running otherwise")
     parser.add_argument("--force", action="store_true", help="upload even if nothing has changed")
     parser.add_argument("--status", action="store_true", help="show what is configured")
     parser.add_argument("--search", action="store_true", help="list every completion file found")
@@ -267,7 +346,9 @@ def main():
     if str(path) != config.get("path"):
         config["path"] = str(path)
         save_config(config)
-    if args.watch:
+    if args.install_service:
+        install_service(config, path)
+    elif args.watch:
         watch(config, path, max(10, args.interval))
     else:
         upload(config, path, force=args.force)

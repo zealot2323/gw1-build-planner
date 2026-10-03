@@ -36,25 +36,47 @@ from the same panel on the site at any time.
 ```
 
 **GWToolbox writes that file when it shuts down**, which in practice means
-when you quit Guild Wars. So `--watch` is an end-of-session sync, not a live
-one; `--once` after playing does the same job.
+when you quit Guild Wars. There is nothing to sync mid-session, so the
+useful moment is right after you stop playing — which is what
+`--install-service` below automates.
 
 The file is found automatically under Proton — including a second library on
 the SD card — and under Wine. If yours is somewhere unusual, pass
 `--path /full/path/to/character_completion.json` once and it is remembered.
 
-## Running it in the background
+## Uploading on its own, when you quit the game
 
 ```bash
-mkdir -p ~/.config/systemd/user
-cp gw1-upload.service ~/.config/systemd/user/
-systemctl --user enable --now gw1-upload
-journalctl --user -u gw1-upload -f
+~/.local/bin/gw1-upload.py --install-service
 ```
 
-Copy `gw1-upload.py` somewhere stable first (`~/.local/bin/` is fine) and
-point the unit at it. On a Steam Deck, `sudo loginctl enable-linger $USER`
-keeps it running when you are not logged into the desktop.
+That writes two systemd user units and enables them: a `.path` unit that
+watches the completion file, and a one-shot that uploads when it changes.
+GWToolbox writes the file as it shuts down, so the upload lands a few
+seconds after you quit Guild Wars. Nothing of ours stays running in
+between.
+
+It runs in Game Mode as well as Desktop Mode — they are both sessions for
+the same user. One command makes that airtight across the switch between
+them:
+
+```bash
+sudo loginctl enable-linger $USER
+```
+
+To see what it has been doing:
+
+```bash
+journalctl --user -u gw1-upload -n 20
+```
+
+The units bake in the path to your completion file, because it cannot be
+guessed: Guild Wars is not a Steam title, so under Proton it lives behind
+the app id Steam made up when you added it. Re-run `--install-service` if
+that ever moves.
+
+`--watch` does the same job by polling in the foreground, if you would
+rather watch it work than hand it to systemd.
 
 ## What gets sent
 

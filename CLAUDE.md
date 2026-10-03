@@ -16,6 +16,9 @@ and from where?"
 - `/export` — Obsidian vault generator.
 - `/uploader` — the GWToolbox uploader that runs on the player's machine
   (Python 3, standard library only, so it runs on a Steam Deck as it ships).
+  `--install-service` generates its own systemd units: the completion file's
+  path has to be baked in, because Guild Wars is not a Steam title and under
+  Proton it sits behind the app id Steam generated when the user added it.
 - `/supabase` — SQL to paste into the Supabase SQL editor: `schema.sql` for
   cloud saves, `completion.sql` for the uploader's pairing and uploads.
 
