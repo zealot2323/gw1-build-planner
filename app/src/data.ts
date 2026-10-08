@@ -3,6 +3,7 @@
  * indexed once. All logic lives in @gw1/engine — this file only wires data.
  */
 import {
+  attachPvpVersions,
   indexChanges,
   indexDataset,
   scopedDataset,
@@ -13,6 +14,8 @@ import {
   type CommunityBuildsFile,
   type SkillChangeLog,
   type MapIdTable,
+  type PvpSkillsFile,
+  type Skill,
   type ZaishenData,
 } from "@gw1/engine";
 import skills from "@data/skills.json";
@@ -24,9 +27,11 @@ import quests from "@data/quests.json";
 import skillChanges from "@data/skill-changes.json";
 import zaishenData from "@data/zaishen.json";
 import mapIdData from "@data/map-ids.json";
+import pvpSkills from "@data/pvp-skills.json";
 
 export const index = indexDataset({
-  skills,
+  // each skill carries its PvP split, when it has one, as `skill.pvp`
+  skills: attachPvpVersions(skills as unknown as Skill[], pvpSkills as unknown as PvpSkillsFile),
   locations,
   trainers,
   monsters,

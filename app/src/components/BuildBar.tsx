@@ -116,6 +116,14 @@ export function BuildBar({
           <ProfessionIcon profession={build.primary} />
           <span className="muted">/</span>
           {build.secondary ? <ProfessionIcon profession={build.secondary} /> : <span className="muted">—</span>}
+          <label
+            className="row"
+            style={{ gap: "0.3rem" }}
+            title="PvP builds show PvP skill versions and copy out with PvP skill ids"
+          >
+            <input type="checkbox" checked={!!build.pvp} onChange={(e) => patch({ pvp: e.target.checked || undefined })} />
+            <span className="small">PvP build</span>
+          </label>
         </div>
 
         <div className="row">
@@ -170,6 +178,11 @@ export function BuildBar({
                     {skill}
                     {index.skillByPage.get(skill)?.isElite && <span className="elite"> ★</span>}
                   </span>
+                  {build.pvp && index.skillByPage.get(skill)?.pvp && (
+                    <span className="pvp-mark" title="Plays differently in PvP">
+                      PvP
+                    </span>
+                  )}
                 </button>
                 <button className="slot-remove" title="Remove from build" onClick={() => clearSlot(i)}>
                   ×
@@ -184,7 +197,7 @@ export function BuildBar({
 
       {openSkill && (
         <div className="slide-down">
-          <SkillDetails skill={openSkill} />
+          <SkillDetails skill={openSkill} pvp={!!build.pvp} />
         </div>
       )}
 

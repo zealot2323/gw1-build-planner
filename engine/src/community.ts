@@ -315,3 +315,18 @@ export function staleSkills(
   }
   return out.sort((a, b) => b.date.localeCompare(a.date) || a.skill.localeCompare(b.skill));
 }
+
+/** Tags naming a PvP format: Guild vs Guild, Heroes' Ascent, Random/Alliance/Fort Aspenwood/Jade Quarry battles. */
+const PVP_TAGS = new Set(["pvp", "gvg", "ha", "ra", "ab", "fa", "jq"]);
+/** Tags naming PvE play. */
+const PVE_TAGS = new Set(["pve", "hero", "farming", "dungeon", "quest", "running"]);
+
+/**
+ * Should this build be saved as a PvP build? Only where its tags say so and
+ * nothing says PvE: a bar tagged for both is used in both, and PvE is the
+ * default. Untagged builds are PvE.
+ */
+export function isPvpCommunityBuild(build: Pick<CommunityBuild, "tags">): boolean {
+  const tags = (build.tags ?? []).map((t) => t.toLowerCase());
+  return tags.some((t) => PVP_TAGS.has(t)) && !tags.some((t) => PVE_TAGS.has(t));
+}

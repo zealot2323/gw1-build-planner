@@ -1,4 +1,4 @@
-import type { Skill, SkillPlan } from "@gw1/engine";
+import { skillInMode, type Skill, type SkillPlan } from "@gw1/engine";
 import { useData } from "../DataContext";
 import { SkillIcon } from "./SkillIcon";
 import { ProfessionIcon } from "./ProfessionIcon";
@@ -101,9 +101,12 @@ function CaptureList({
 /**
  * Inline skill card: costs, description, and where it comes from.
  * `plan` adds the "how far away is this" line; omit it for known skills,
- * which have nothing left to travel for.
+ * which have nothing left to travel for. `pvp` shows the skill's PvP split
+ * in place of the PvE version, for the skills that have one.
  */
-export function SkillDetails({ skill, plan }: { skill: Skill; plan?: SkillPlan }) {
+export function SkillDetails({ skill: pve, plan, pvp = false }: { skill: Skill; plan?: SkillPlan; pvp?: boolean }) {
+  const skill = skillInMode(pve, pvp);
+  const showingPvp = pvp && pve.pvp !== undefined;
   const acq = skill.acquisition;
   return (
     <div className="skill-details">
@@ -113,10 +116,11 @@ export function SkillDetails({ skill, plan }: { skill: Skill; plan?: SkillPlan }
         </span>
         <div className="grow">
           <div className={skill.isElite ? "skill-card-name elite" : "skill-card-name"}>
-            <a href={wikiHref(skill.wikiPage)} target="_blank" rel="noreferrer">
+            <a href={wikiHref(showingPvp ? pve.pvp!.wikiPage : skill.wikiPage)} target="_blank" rel="noreferrer">
               {skill.name}
             </a>
             {skill.isElite && <span className="elite-tag">[Elite]</span>}
+            {showingPvp && <span className="pvp-tag">PvP version</span>}
           </div>
           <div className="skill-card-type">
             <ProfessionIcon profession={skill.profession} withLabel />
@@ -144,6 +148,7 @@ export function SkillDetails({ skill, plan }: { skill: Skill; plan?: SkillPlan }
         </div>
       </div>
       {skill.description && <p className="skill-desc">{skill.description}</p>}
+      {pve.pvp && !pvp && <p className="muted small no-margin">Has a separate PvP version.</p>}
       {plan && (
         <p className="small no-margin">
           <ProximityDot proximity={plan.proximity} distance={plan.distance} />

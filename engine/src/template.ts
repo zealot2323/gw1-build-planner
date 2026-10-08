@@ -40,13 +40,33 @@ export interface DecodedTemplate {
   secondary: Profession | null;
   /** Exactly 8 entries; null = empty slot or a skill we don't have. */
   skills: Array<Skill | null>;
-  /** In-game ids the dataset has no skill for (PvP-only splits, new skills). */
+  /** In-game ids the dataset has no skill for (skills newer than the last scrape). */
   unknownSkillIds: number[];
+  /**
+   * How many slots held a PvP split's id. Those resolve to the PvE skill
+   * (the planner keeps one skill per pair), and a code carrying any is a
+   * PvP build.
+   */
+  pvpSkillCount: number;
   /** Attribute ranks by name; ids the game no longer uses are dropped. */
   attributes: Record<string, number>;
 }
 
 export class TemplateError extends Error {}
+
+/**
+ * The library's encoder, with its field-width rule fixed. Upstream adds ONE
+ * bit per id that overflows the running width, so a 12-bit id (PvP splits
+ * run 2800-3300) next to small ones is written 11 bits wide and the code
+ * decodes to the wrong skills. The width a field needs is the bit length of
+ * its largest value.
+ */
+function encoder() {
+  const template = new SkillTemplate();
+  template._getPadSize = (nums: number[], minPad: number): number =>
+    Math.max(minPad, ...nums.map((n) => Math.floor(Number(n) || 0).toString(2).length));
+  return template;
+}
 
 /**
  * Decode a template code. Throws TemplateError on anything unusable — the
@@ -70,9 +90,12 @@ export function decodeTemplate(code: string, index: DataIndex): DecodedTemplate 
     // an allegiance skill's two sides share a name; either id resolves to it
     for (const id of Object.values(s.allegianceSkillIds ?? {})) byId.set(id, s);
   }
+  const byPvpId = new Map<number, Skill>();
+  for (const s of index.dataset.skills) if (s.pvp) byPvpId.set(s.pvp.gwSkillId, s);
 
   const skills: Array<Skill | null> = [];
   const unknownSkillIds: number[] = [];
+  let pvpSkillCount = 0;
   for (let i = 0; i < 8; i++) {
     const id = raw.skills[i] ?? 0;
     if (id === 0) {
@@ -80,8 +103,12 @@ export function decodeTemplate(code: string, index: DataIndex): DecodedTemplate 
       continue;
     }
     const skill = byId.get(id);
+    const pvpOf = skill ? undefined : byPvpId.get(id);
     if (skill) skills.push(skill);
-    else {
+    else if (pvpOf) {
+      skills.push(pvpOf);
+      pvpSkillCount++;
+    } else {
       skills.push(null);
       unknownSkillIds.push(id);
     }
@@ -98,15 +125,21 @@ export function decodeTemplate(code: string, index: DataIndex): DecodedTemplate 
     secondary: PROFESSION_BY_ID[raw.prof_sec] ?? null,
     skills,
     unknownSkillIds,
+    pvpSkillCount,
     attributes,
   };
 }
 
-/** Encode a build — skills and attribute ranks — as a template code. */
+/**
+ * Encode a build — skills and attribute ranks — as a template code. A PvP
+ * build carries the PvP splits' ids, as a template saved in a PvP area does.
+ */
 export function encodeTemplate(build: Build, index: DataIndex): string {
   const ids = build.skills.map((ref: SkillRef | null) => {
     if (ref === null) return 0;
-    return index.skillByPage.get(ref)?.gwSkillId ?? 0;
+    const skill = index.skillByPage.get(ref);
+    if (!skill) return 0;
+    return build.pvp && skill.pvp ? skill.pvp.gwSkillId : skill.gwSkillId;
   });
   const attributes: Record<number, number> = {};
   for (const [name, rank] of Object.entries(build.attributes ?? {})) {
@@ -114,7 +147,7 @@ export function encodeTemplate(build: Build, index: DataIndex): string {
     if (id !== undefined && rank > 0) attributes[id] = rank;
   }
   try {
-    return new SkillTemplate().encode(idOf(build.primary), idOf(build.secondary), attributes, ids);
+    return encoder().encode(idOf(build.primary), idOf(build.secondary), attributes, ids);
   } catch (err) {
     throw new TemplateError(`Couldn't build a template code: ${(err as Error).message}`);
   }
