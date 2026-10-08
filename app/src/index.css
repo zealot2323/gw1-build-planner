@@ -182,7 +182,7 @@ button.linkish.inline.more { color: var(--muted); }
 .skill-table .col-name { width: 22rem; }
 .skill-table .col-prof { width: 11rem; }
 .skill-table .col-source { width: auto; }
-.skill-table .col-add { width: 5.5rem; }
+.skill-table .col-add { width: 5.25rem; }
 .skill-table td { overflow: hidden; text-overflow: ellipsis; }
 .attr-cell { padding: 0 !important; }
 
@@ -252,7 +252,9 @@ tr.open-row td { background: var(--panel2); }
 
 /* build bar pinned above the skill browser */
 .build-bar { position: sticky; top: 0; z-index: 5; }
-.build-bar .slots { grid-template-columns: repeat(4, 1fr); }
+/* minmax(0, …): a plain 1fr won't shrink below a skill's name, so one filled
+   slot pushed the bar off the side of a phone. */
+.build-bar .slots { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .build-bar input.narrow { width: 9rem; }
 .field-label.no-margin { margin: 0; }
 .slot {
@@ -260,7 +262,7 @@ tr.open-row td { background: var(--panel2); }
   display: flex; align-items: center;
   min-height: 3rem; padding: 0;
   border: 1px solid var(--border); border-radius: 6px;
-  background: var(--panel2);
+  background: var(--panel2); min-width: 0;
 }
 .slot.filled { border-color: var(--accent); }
 .slot-open {
@@ -450,7 +452,7 @@ button.linkish.outpost { font-weight: 600; flex: 1; width: auto; }
      a sliver and wrapped it over three lines. */
   .skill-table tr {
     display: block; position: relative;
-    padding: 0.4rem 4.6rem 0.4rem 0; border-bottom: 1px solid var(--border);
+    padding: 0.4rem 5.4rem 0.4rem 0; border-bottom: 1px solid var(--border);
   }
   .skill-table td {
     width: auto !important; padding: 0.1rem 0 !important;
@@ -559,6 +561,18 @@ button.todo-remove { flex: 0 0 auto; width: auto; text-align: right; }
 .attribute-cost { width: 4rem; text-align: right; }
 .attribute-row button.small { width: auto; padding: 0 0.45rem; }
 .row-actions { display: flex; gap: 0.3rem; justify-content: flex-end; }
+/* Square icon buttons for per-row actions; the label lives in aria-label and title. */
+button.icon-button {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 2rem; height: 2rem; padding: 0; flex: none; color: var(--muted);
+}
+button.icon-button:hover:not(:disabled) { color: var(--accent); }
+button.icon-button.on { color: var(--ok); border-color: color-mix(in srgb, var(--ok) 45%, var(--border)); }
+button.icon-button:disabled:not(.on) { opacity: 0.4; }
+button.icon-button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+@media (max-width: 720px) {
+  button.icon-button { width: 2.5rem; height: 2.5rem; min-height: 0; }
+}
 .route-todo { margin-top: 0.4rem; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 

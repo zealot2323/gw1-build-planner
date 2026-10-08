@@ -81,16 +81,21 @@ export function App() {
     character ? addTodoFor(character.name, entries) : { added: 0, skipped: 0 };
 
   /** "+ build" in the skill browser: fill the active build's first empty slot. */
-  const addToBuild = character
+  /** Put a skill in the first empty slot, or take it out if it's already in. */
+  const toggleInBuild = character
     ? (skill: string) => {
         const target = activeBuild
           ? (character.builds.find((b) => b.name === activeBuild) ?? draft)
           : draft;
-        if (target.skills.includes(skill)) return;
-        const i = target.skills.indexOf(null);
-        if (i === -1) return;
         const skills = [...target.skills] as Build["skills"];
-        skills[i] = skill;
+        const at = skills.indexOf(skill);
+        if (at !== -1) {
+          skills[at] = null;
+        } else {
+          const i = skills.indexOf(null);
+          if (i === -1) return;
+          skills[i] = skill;
+        }
         if (activeBuild) {
           updateBuilds(character.builds.map((b) => (b.name === target.name ? { ...b, skills } : b)));
         } else {
@@ -153,7 +158,7 @@ export function App() {
         <SkillsView
           character={character}
           focusSkill={focusSkill}
-          onAddToBuild={addToBuild}
+          onToggleInBuild={toggleInBuild}
           activeBuild={activeBuild}
           setActiveBuild={setActiveBuild}
           updateBuilds={updateBuilds}

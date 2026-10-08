@@ -10,6 +10,7 @@ import {
   type AcquisitionSource,
   type Build,
   type Profession,
+  type Skill,
   type SkillAvailabilityEntry,
   type SkillStatus,
   type TodoItem,
@@ -28,6 +29,7 @@ import { wikiHref } from "../wiki";
 import { hasOpenTodo } from "../todos";
 import { RouteToTodo } from "../components/RouteToTodo";
 import { SkillTodoPrompt, type PendingSkillTodo } from "../components/SkillTodoPrompt";
+import { ActionIcon } from "../components/ActionIcon";
 import { SkillTagFilter, matchesTags, tagLabel } from "../components/SkillTagFilter";
 import type { CharacterSave } from "../save";
 
@@ -113,6 +115,59 @@ function SourceLine({ src }: { src: AcquisitionSource }) {
 }
 
 /**
+ * Add to (or take out of) the build shown in the bar above. It says why when
+ * it can't add: a full bar, or a second elite. Without that the click used
+ * to do nothing at all.
+ */
+function BuildButton({ skill, build, onToggle }: { skill: Skill; build: Build; onToggle: () => void }) {
+  const index = useData();
+  const inBuild = build.skills.includes(skill.wikiPage);
+  const full = !build.skills.includes(null);
+  const otherElite = build.skills.some(
+    (s) => s !== null && s !== skill.wikiPage && index.skillByPage.get(s)?.isElite,
+  );
+  const blocked = inBuild
+    ? null
+    : full
+      ? "The build has no empty slot"
+      : skill.isElite && otherElite
+        ? "The build already has an elite skill"
+        : null;
+  const label = inBuild
+    ? `Remove ${skill.name} from the build`
+    : blocked
+      ? `Can't add ${skill.name}: ${blocked.charAt(0).toLowerCase()}${blocked.slice(1)}`
+      : `Add ${skill.name} to the build`;
+  return (
+    <button
+      className={"icon-button" + (inBuild ? " on" : "")}
+      onClick={onToggle}
+      disabled={blocked !== null}
+      aria-pressed={inBuild}
+      aria-label={label}
+      title={inBuild ? "In the build. Click to remove it" : (blocked ?? "Add to the build")}
+    >
+      <ActionIcon name={inBuild ? "build-in" : "build-add"} />
+    </button>
+  );
+}
+
+/** Put a skill on the to-do list; once it's there, removing it is the To-Do tab's job. */
+function TodoButton({ skillName, onList, onAdd }: { skillName: string; onList: boolean; onAdd: () => void }) {
+  return (
+    <button
+      className={"icon-button" + (onList ? " on" : "")}
+      onClick={onAdd}
+      disabled={onList}
+      aria-label={onList ? `${skillName} is on the to-do list` : `Add ${skillName} to the to-do list`}
+      title={onList ? "On the to-do list" : "Add to the to-do list"}
+    >
+      <ActionIcon name={onList ? "todo-in" : "todo-add"} />
+    </button>
+  );
+}
+
+/**
  * Group entries by attribute. Within a group, either alphabetical or by how
  * soon the skill can be had (nearest source first, ties alphabetical).
  */
@@ -148,7 +203,7 @@ function byAttribute(
 export function SkillsView({
   character,
   focusSkill,
-  onAddToBuild,
+  onToggleInBuild,
   activeBuild,
   setActiveBuild,
   updateBuilds,
@@ -163,7 +218,7 @@ export function SkillsView({
   character: CharacterSave | null;
   /** Skill to scroll to (set by the zone browser's skill links). */
   focusSkill: string | null;
-  onAddToBuild: ((skill: string) => void) | null;
+  onToggleInBuild: ((skill: string) => void) | null;
   activeBuild: string | null;
   setActiveBuild: (name: string | null) => void;
   updateBuilds: (builds: Build[]) => void;
@@ -468,23 +523,18 @@ export function SkillsView({
                             )}
                           </td>
                           <td className="row-actions">
-                            {onAddToBuild && (
-                              <button className="small" onClick={() => onAddToBuild(e.skill.wikiPage)}>
-                                + build
-                              </button>
+                            {onToggleInBuild && (
+                              <BuildButton
+                                skill={e.skill}
+                                build={currentBuild}
+                                onToggle={() => onToggleInBuild(e.skill.wikiPage)}
+                              />
                             )}
-                            <button
-                              className="small"
-                              disabled={hasOpenTodo(todos, "skill", e.skill.wikiPage)}
-                              title={
-                                hasOpenTodo(todos, "skill", e.skill.wikiPage)
-                                  ? "Already on the to-do list"
-                                  : "Add this skill to the to-do list"
-                              }
-                              onClick={() => askThenAddSkill(e)}
-                            >
-                              {hasOpenTodo(todos, "skill", e.skill.wikiPage) ? "✓ to-do" : "+ to-do"}
-                            </button>
+                            <TodoButton
+                              skillName={e.skill.name}
+                              onList={hasOpenTodo(todos, "skill", e.skill.wikiPage)}
+                              onAdd={() => askThenAddSkill(e)}
+                            />
                           </td>
                         </tr>
                         {openSkill === e.skill.wikiPage && (
