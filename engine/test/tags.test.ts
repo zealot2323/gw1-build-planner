@@ -103,6 +103,13 @@ describe("skillTags", () => {
       .not.toContain("Skill disabling");
   });
 
+  it("does not read protections or costs as offensive effects", () => {
+    const t = skillTags(skill("Mantra of Resolve", "Stance. For 30...90 seconds, you cannot be interrupted. Whenever you are the target of an interrupt, you lose 2 Energy or Mantra of Resolve ends."));
+    expect(t.effects).not.toContain("Interrupt");
+    expect(t.effects).not.toContain("Energy denial");
+    expect(skillTags(skill("Energy Burn", "Spell. Target foe loses 1...10 Energy."), { target: 5 }).effects).toContain("Energy denial");
+  });
+
   it("carries costs from the skill's own fields", () => {
     const t = skillTags(skill("Blood Is Power", "Elite Enchantment Spell. For 10 seconds, target other ally gains +3...6 Energy regeneration."), { target: 4 });
     expect(t.effects).toContain("Energy gain");

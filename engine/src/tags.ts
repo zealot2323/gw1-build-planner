@@ -225,9 +225,11 @@ const EFFECT_PATTERNS: Array<[EffectTag, RegExp]> = [
   ["Health regeneration", /\+\d[\d_-]* health regeneration|gains? [^.]*health regeneration/],
   ["Life stealing", /\bsteals?\b[^.]*\bhealth\b|\blife steal/],
   ["Energy gain", /\b(gain|gains|regain)[^.]*\benergy\b|\+\d[^.]*energy regeneration|\benergy\b[^.]*\bis restored/],
-  ["Energy denial", /\b(lose|loses)\b[^.]*\benergy\b(?! regeneration)|\bsteals?\b[^.]*\benergy\b|\bdrain/],
+  // "You lose 2 Energy" is a cost, not denial.
+  ["Energy denial", /(?<!\byou )\b(lose|loses)\b[^.]*\benergy\b(?! regeneration)|\bsteals?\b[^.]*\benergy\b|\bdrain/],
   ["Adrenaline gain", /\b(gain|gains)\b[^.]*\badrenaline\b|strikes? of adrenaline/],
-  ["Interrupt", /\binterrupt(s|ed|ing)?\b(?<!easily interrupted)/],
+  // "cannot be interrupted" protects; "easily interrupted" is a drawback.
+  ["Interrupt", /(?<!cannot be |easily |target of an )\binterrupt(s|ed|ing)?\b/],
   ["Condition removal", /\b(remove[sd]?|lose[s]?|cure[sd]?|cleanse|relieved of)\b[^.]*\bconditions?\b/],
   ["Hex removal", /\b(remove[sd]?|lose[s]?)\b[^.]*\bhex(es)?\b|\bhex(es)? (is |are )?removed|\bconvert hexes/],
   ["Condition transfer", /\btransfer[^.]*\bconditions?\b|\bconditions?\b[^.]*\btransferred/],

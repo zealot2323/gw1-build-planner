@@ -521,6 +521,18 @@ button.linkish.outpost { font-weight: 600; flex: 1; width: auto; }
 .build-slot-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .build-errors { margin: 0.4rem 0 0; padding-left: 1.1rem; }
 
+/* PvP builds and PvP skill versions */
+.mode-badge {
+  display: inline-block; margin-left: 0.4rem; padding: 0 0.35rem; border: 1px solid var(--border);
+  border-radius: 4px; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.04em; vertical-align: middle;
+  color: var(--muted);
+}
+.mode-badge.pvp { color: var(--danger); border-color: var(--danger); }
+.pvp-tag { margin-left: 0.4rem; font-size: 0.75em; font-weight: 600; color: var(--danger); }
+.pvp-mark { font-size: 0.65rem; font-weight: 700; color: var(--danger); }
+.mode-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; margin: 0.4rem 0; }
+.mode-controls label { display: inline-flex; align-items: center; gap: 0.35rem; min-height: 36px; cursor: pointer; }
+
 /* To-do tab */
 .todo-input { min-width: 18rem; }
 .todo-list { list-style: none; margin: 0; padding: 0; }

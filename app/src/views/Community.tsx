@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import {
   buildReadiness,
   effectiveDate,
+  isPvpCommunityBuild,
   staleSkills,
   travelDistances,
   type Build,
@@ -395,6 +396,8 @@ export function CommunityView({
         primary: character.primaryProfession,
         secondary: (build.secondary as Profession | null) ?? null,
         attributes: build.attributes,
+        // PvX and the crawl tag game mode; anything tagged PvP and not PvE is a PvP build
+        ...(isPvpCommunityBuild(build) ? { pvp: true } : {}),
         skills: build.skills as Build["skills"],
       },
     ]);

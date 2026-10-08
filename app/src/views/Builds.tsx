@@ -22,9 +22,15 @@ export interface BuildsViewState {
   openSlot: string | null;
   code: string;
   newName: string;
+  /**
+   * Builds whose PvP view was flipped away from their own mode, by name. A
+   * PvP build shows PvP skill versions by default and a PvE build doesn't;
+   * listing a build here shows it the other way.
+   */
+  flippedMode: string[];
 }
 
-export const initialBuildsViewState: BuildsViewState = { openSlot: null, code: "", newName: "" };
+export const initialBuildsViewState: BuildsViewState = { openSlot: null, code: "", newName: "", flippedMode: [] };
 
 const STATUS_WORD: Record<string, string> = {
   KNOWN: "already known",
@@ -38,10 +44,13 @@ const STATUS_WORD: Record<string, string> = {
 function Slot({
   slot,
   open,
+  pvp,
   onToggle,
 }: {
   slot: BuildSlot;
   open: boolean;
+  /** Showing PvP versions: mark the slots whose skill has one. */
+  pvp: boolean;
   onToggle: () => void;
 }) {
   if (slot.ref === null) return <span className="build-slot empty">empty</span>;
@@ -53,6 +62,11 @@ function Slot({
         {slot.skill?.name ?? slot.ref}
         {slot.skill?.isElite && <span className="elite"> ★</span>}
       </span>
+      {pvp && slot.skill?.pvp && (
+        <span className="pvp-mark" title="Plays differently in PvP">
+          PvP
+        </span>
+      )}
       {slot.known ? <span className="ok">✓</span> : <ProximityDot proximity={slot.plan?.proximity ?? "unknown"} distance={slot.plan?.distance ?? null} />}
     </button>
   );
@@ -102,14 +116,18 @@ export function BuildsView({
         primary: character.primaryProfession,
         secondary: (decoded.secondary as Profession | null) ?? null,
         attributes: decoded.attributes,
+        // a code carrying PvP skill ids was saved in a PvP area
+        ...(decoded.pvpSkillCount > 0 ? { pvp: true } : {}),
         skills: decoded.skills.map((s) => s?.wikiPage ?? null) as Build["skills"],
       };
       updateBuilds([...builds, build]);
       setView({ code: "", newName: "" });
       if (decoded.unknownSkillIds.length > 0) {
         setError(
-          `Imported, but ${decoded.unknownSkillIds.length} skill(s) in that code aren't in our data (PvP-only versions, or newer than our last scrape) and came in as empty slots.`,
+          `Imported, but ${decoded.unknownSkillIds.length} skill(s) in that code aren't in our data (probably newer than our last data update) and came in as empty slots.`,
         );
+      } else if (decoded.pvpSkillCount > 0) {
+        setError(`That code uses PvP skill versions, so "${name}" was saved as a PvP build.`);
       }
     } catch (err) {
       setError(err instanceof TemplateError ? err.message : String(err));
@@ -163,6 +181,14 @@ export function BuildsView({
 
       {builds.map((build) => {
         const readiness = buildReadiness(build, character, index, graph ?? undefined);
+        const flipped = view.flippedMode.includes(build.name);
+        const showPvp = !!build.pvp !== flipped;
+        const splitCount = readiness.slots.filter((s) => s.skill?.pvp).length;
+        const setPvp = (pvp: boolean) => {
+          updateBuilds(builds.map((b) => (b.name === build.name ? { ...b, pvp: pvp || undefined } : b)));
+          // the view follows the build's new mode
+          setView({ flippedMode: view.flippedMode.filter((n) => n !== build.name) });
+        };
         return (
           <div className="card" key={build.name}>
             <div className="row space-between wrap">
@@ -176,6 +202,7 @@ export function BuildsView({
                     </>
                   )}
                 </span>
+                <span className={build.pvp ? "mode-badge pvp" : "mode-badge"}>{build.pvp ? "PvP" : "PvE"}</span>
               </h3>
               <div className="row">
                 <span className={readiness.ready ? "ok small" : "muted small"}>
@@ -198,11 +225,40 @@ export function BuildsView({
               </div>
             </div>
 
+            <div className="mode-controls small">
+              <label title="PvP builds show PvP skill versions and copy out with PvP skill ids">
+                <input type="checkbox" checked={!!build.pvp} onChange={(e) => setPvp(e.target.checked)} />
+                PvP build
+              </label>
+              {splitCount > 0 ? (
+                <label>
+                  <input
+                    type="checkbox"
+                    checked={showPvp}
+                    onChange={() =>
+                      setView({
+                        flippedMode: flipped
+                          ? view.flippedMode.filter((n) => n !== build.name)
+                          : [...view.flippedMode, build.name],
+                      })
+                    }
+                  />
+                  Show PvP versions
+                  <span className="muted">
+                    ({splitCount} skill{splitCount === 1 ? "" : "s"} play{splitCount === 1 ? "s" : ""} differently in PvP)
+                  </span>
+                </label>
+              ) : (
+                <span className="muted">No skill in this build has a separate PvP version.</span>
+              )}
+            </div>
+
             <div className="build-slots">
               {readiness.slots.map((slot, i) => (
                 <Slot
                   key={i}
                   slot={slot}
+                  pvp={showPvp}
                   open={view.openSlot === `${build.name}|${slot.ref}`}
                   onToggle={() =>
                     setView({
@@ -218,7 +274,7 @@ export function BuildsView({
                 slot.skill &&
                 view.openSlot === `${build.name}|${slot.ref}` && (
                   <div className="slide-down" key={slot.ref}>
-                    <SkillDetails skill={slot.skill} plan={slot.known ? undefined : slot.plan} />
+                    <SkillDetails skill={slot.skill} plan={slot.known ? undefined : slot.plan} pvp={showPvp} />
                   </div>
                 ),
             )}

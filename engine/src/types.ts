@@ -135,6 +135,35 @@ export interface Skill {
    */
   tags?: SkillTags;
   acquisition: SkillAcquisition;
+  /**
+   * The PvP-split version, for the ~200 skills balanced separately for PvP
+   * ("Mantra of Resolve (PvP)"). Learning a skill grants both; the game
+   * swaps in this one in PvP areas. Attached at load time from
+   * data/pvp-skills.json, never stored in skills.json.
+   */
+  pvp?: SkillPvpVersion;
+}
+
+/**
+ * What changes in a skill's PvP split: its id, text and numbers. Name,
+ * profession, attribute, elite flag and every source stay the PvE skill's.
+ */
+export interface SkillPvpVersion {
+  /** The PvP twin's own in-game id — what a PvP template code carries. */
+  gwSkillId: number;
+  /** Its wiki page, e.g. "Mantra of Resolve (PvP)". */
+  wikiPage: string;
+  description: string;
+  concise?: string;
+  energyCost: number | null;
+  adrenalineCost: number | null;
+  sacrificePercent?: number | null;
+  activation: number | null;
+  aftercast?: number | null;
+  exhaustion?: number | null;
+  recharge: number;
+  /** Tags read from the PvP text, which can differ from the PvE skill's. */
+  tags?: SkillTags;
 }
 
 // ---------------------------------------------------------------------------
@@ -412,6 +441,11 @@ export interface Build {
    * Ranks above 12 come from runes/headgear, which this doesn't model.
    */
   attributes?: Record<string, number>;
+  /**
+   * Marked as a PvP build: shown with PvP skill versions by default, and its
+   * template code carries the PvP skill ids. Absent = PvE, the default.
+   */
+  pvp?: boolean;
   /** Exactly 8 entries; null = empty slot. */
   skills: [
     SkillRef | null, SkillRef | null, SkillRef | null, SkillRef | null,
@@ -435,6 +469,22 @@ export const campaignSchema = {
   $id: "gw1-campaign",
   type: "string",
   enum: ["Prophecies", "Factions", "Nightfall", "Eye of the North", "Core"],
+} as const;
+
+/** Skill.tags, shared by the PvE skill and its PvP split. */
+const skillTagsSchema = {
+  type: "object",
+  additionalProperties: false,
+  required: ["types", "weapon", "target", "inflicts", "damage", "effects", "worksWith"],
+  properties: {
+    types: { type: "array", items: { enum: SKILL_TYPE_TAGS } },
+    weapon: { type: "array", items: { enum: WEAPON_TAGS } },
+    target: { type: "array", items: { enum: TARGET_TAGS } },
+    inflicts: { type: "array", items: { enum: CONDITION_TAGS } },
+    damage: { type: "array", items: { enum: DAMAGE_TAGS } },
+    effects: { type: "array", items: { enum: EFFECT_TAGS } },
+    worksWith: { type: "array", items: { enum: WORKS_WITH_TAGS } },
+  },
 } as const;
 
 export const skillSchema = {
@@ -473,20 +523,7 @@ export const skillSchema = {
     recharge: { type: "number", minimum: 0 },
     description: { type: "string" },
     concise: { type: "string" },
-    tags: {
-      type: "object",
-      additionalProperties: false,
-      required: ["types", "weapon", "target", "inflicts", "damage", "effects", "worksWith"],
-      properties: {
-        types: { type: "array", items: { enum: SKILL_TYPE_TAGS } },
-        weapon: { type: "array", items: { enum: WEAPON_TAGS } },
-        target: { type: "array", items: { enum: TARGET_TAGS } },
-        inflicts: { type: "array", items: { enum: CONDITION_TAGS } },
-        damage: { type: "array", items: { enum: DAMAGE_TAGS } },
-        effects: { type: "array", items: { enum: EFFECT_TAGS } },
-        worksWith: { type: "array", items: { enum: WORKS_WITH_TAGS } },
-      },
-    },
+    tags: skillTagsSchema,
     acquisition: {
       type: "object",
       additionalProperties: false,
@@ -501,6 +538,25 @@ export const skillSchema = {
         titleNpcs: refArray,
         titleLocations: { type: "object", additionalProperties: { type: ["string", "null"] } },
         titleRequirement: { type: "string" },
+      },
+    },
+    pvp: {
+      type: "object",
+      additionalProperties: false,
+      required: ["gwSkillId", "wikiPage", "description", "energyCost", "adrenalineCost", "activation", "recharge"],
+      properties: {
+        gwSkillId: { type: "integer", minimum: 0 },
+        wikiPage: { type: "string" },
+        description: { type: "string" },
+        concise: { type: "string" },
+        energyCost: { type: ["number", "null"], minimum: 0 },
+        adrenalineCost: { type: ["number", "null"], minimum: 0 },
+        sacrificePercent: { type: ["number", "null"], minimum: 0 },
+        activation: { type: ["number", "null"], minimum: 0 },
+        aftercast: { type: ["number", "null"], minimum: 0 },
+        exhaustion: { type: ["number", "null"], minimum: 0 },
+        recharge: { type: "number", minimum: 0 },
+        tags: skillTagsSchema,
       },
     },
   },
@@ -744,6 +800,7 @@ export const buildSchema = {
     primary: { $ref: "gw1-profession" },
     secondary: { oneOf: [{ $ref: "gw1-profession" }, { type: "null" }] },
     attributes: { type: "object", additionalProperties: { type: "integer", minimum: 0, maximum: 20 } },
+    pvp: { type: "boolean" },
     skills: {
       type: "array",
       minItems: 8,

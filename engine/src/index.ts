@@ -15,3 +15,4 @@ export * from "./community.js";
 export * from "./zaishen.js";
 export * from "./completion.js";
 export * from "./tags.js";
+export * from "./pvp.js";
