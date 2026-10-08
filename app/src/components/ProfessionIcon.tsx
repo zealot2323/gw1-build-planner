@@ -5,10 +5,13 @@ export function ProfessionIcon({
   profession,
   size = 18,
   withLabel = false,
+  title,
 }: {
   profession: Profession | null | undefined;
   size?: number;
   withLabel?: boolean;
+  /** Hover text; defaults to the profession's name. */
+  title?: string;
 }) {
   if (!profession) return withLabel ? <span className="muted">Common</span> : null;
   return (
@@ -19,7 +22,7 @@ export function ProfessionIcon({
         width={size}
         height={size}
         alt={profession}
-        title={profession}
+        title={title ?? profession}
         loading="lazy"
         onError={(e) => ((e.target as HTMLImageElement).style.display = "none")}
       />
