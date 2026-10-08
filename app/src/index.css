@@ -689,6 +689,7 @@ button.source-chip:hover { color: var(--accent); border-color: var(--accent); }
 .team-members .card { border: none; padding: 0.4rem 0; background: none; }
 .filter-banner { align-items: center; }
 .stale-tag { cursor: help; }
+.other-chars { display: inline-flex; gap: 2px; margin: 0 0.3rem; align-self: center; flex-shrink: 0; }
 
 /* Skill tag filter */
 .tag-filter { padding: 0.6rem 0.9rem; }

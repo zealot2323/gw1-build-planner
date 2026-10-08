@@ -372,6 +372,8 @@ export interface ZoneViewState {
   searing: "pre" | "post";
   /** Which campaign's map to show; null until a character picks one. */
   campaign: Campaign | null;
+  /** Mark outposts and missions with the other characters that have them. */
+  showOthers: boolean;
 }
 
 export const initialZoneState: ZoneViewState = {
@@ -384,11 +386,34 @@ export const initialZoneState: ZoneViewState = {
   searing: "pre",
   outpostSkill: null,
   campaign: null,
+  showOthers: false,
 };
+
+/**
+ * Profession icons for the other characters that have a place: an outpost
+ * they have unlocked, or a mission whose outpost they have unlocked (or
+ * that they have completed). Hover shows the character's name.
+ */
+function OtherCharacters({ who }: { who: Array<{ character: CharacterSave; note?: string }> }) {
+  if (who.length === 0) return null;
+  return (
+    <span className="other-chars">
+      {who.map(({ character: c, note }) => (
+        <ProfessionIcon
+          key={c.name}
+          profession={c.primaryProfession}
+          size={16}
+          title={note ? `${c.name} (${note})` : c.name}
+        />
+      ))}
+    </span>
+  );
+}
 
 export function ZonesView({
   onSkillClick,
   character,
+  others,
   state,
   setState,
   addToTodo,
@@ -396,6 +421,8 @@ export function ZonesView({
 }: {
   onSkillClick: (skill: string) => void;
   character: CharacterSave | null;
+  /** Every saved character except the current one. */
+  others: CharacterSave[];
   state: ZoneViewState;
   setState: (patch: Partial<ZoneViewState>) => void;
   addToTodo: (entries: Array<{ kind: TodoKind; ref: string }>) => { added: number; skipped: number };
@@ -403,7 +430,7 @@ export function ZonesView({
 }) {
   const index = useData();
   const dataset = index.dataset;
-  const { selected, openRegions, expandedSkill, hardMode, outpostSkill, searing } = state;
+  const { selected, openRegions, expandedSkill, hardMode, outpostSkill, searing, showOthers } = state;
   // Campaigns present in this character's scoped dataset.
   const campaigns = useMemo(() => {
     const order: Campaign[] = ["Prophecies", "Factions", "Nightfall", "Eye of the North"];
@@ -422,6 +449,32 @@ export function ZonesView({
     () => new Set(character?.unlockedLocations ?? []),
     [character],
   );
+
+  /** Which other characters have each outpost or mission, by page name. */
+  const othersByPlace = useMemo(() => {
+    const map = new Map<string, Array<{ character: CharacterSave; note?: string }>>();
+    if (!showOthers) return map;
+    const add = (place: string, c: CharacterSave, note?: string) => {
+      const list = map.get(place) ?? [];
+      if (!list.some((x) => x.character === c)) list.push({ character: c, note });
+      map.set(place, list);
+    };
+    for (const c of others) {
+      const has = new Set(c.unlockedLocations);
+      const done = new Set(c.completedMissions);
+      for (const loc of c.unlockedLocations) add(loc, c);
+      // a mission is open to anyone standing in its outpost
+      for (const m of dataset.missions ?? []) {
+        if (done.has(m.wikiPage)) add(m.wikiPage, c, "completed");
+        else if (has.has(m.outpost)) add(m.wikiPage, c);
+      }
+    }
+    return map;
+  }, [showOthers, others, dataset]);
+  const othersAt = (name: string, kind: string) =>
+    showOthers && (!hasBestiary(kind) || kind === "mission") ? (
+      <OtherCharacters who={othersByPlace.get(name) ?? []} />
+    ) : null;
 
   /** region -> outposts (with their explorables) + missions + orphan zones */
   const regions = useMemo(() => {
@@ -527,6 +580,7 @@ export function ZonesView({
         {unlocked.has(name) && <span className="unlocked-dot">●</span>}
         {name} <span className="muted tag">{kind}</span>
       </button>
+      {othersAt(name, kind)}
       <WikiLink page={name} />
     </li>
   );
@@ -538,6 +592,16 @@ export function ZonesView({
           {campaign ?? "World"}{" "}
           {character && <span className="muted small">— {unlocked.size} unlocked</span>}
         </h3>
+        {others.length > 0 && (
+          <label className="inline-check">
+            <input
+              type="checkbox"
+              checked={showOthers}
+              onChange={(e) => setState({ showOthers: e.target.checked })}
+            />
+            show other characters' unlocks
+          </label>
+        )}
         {campaigns.length > 1 && (
           <div className="searing-toggle">
             {campaigns.map((c) => (
@@ -590,6 +654,7 @@ export function ZonesView({
                         {unlocked.has(o.name) && <span className="unlocked-dot">●</span>}
                         {o.name} <span className="muted tag">{o.kind}</span>
                       </button>
+                      {othersAt(o.name, o.kind)}
                       <WikiLink page={o.name} />
                     </div>
                     {o.zones.length > 0 && (
