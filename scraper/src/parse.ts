@@ -24,6 +24,7 @@ import {
   type ParsedTrainer,
 } from "./parsers.js";
 import { adrenalineStrikes, loadGwToolbox } from "./gwtoolbox.js";
+import { skillTags } from "@gw1/engine";
 import { sections } from "./wikitext.js";
 import {
   EXCLUDED_LOCATIONS,
@@ -192,6 +193,9 @@ for (const s of skills) {
   s.aftercast = g.aftercast ?? 0;
   s.recharge = g.recharge ?? 0;
   s.isElite = !!g.elite;
+  // Tags read the client's target and combo fields alongside the text, so
+  // they are derived here, after the client's description is in place.
+  s.tags = skillTags(s, { target: g.target, combo: g.combo, comboReq: g.combo_req });
 }
 
 console.log(

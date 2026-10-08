@@ -690,3 +690,21 @@ button.source-chip:hover { color: var(--accent); border-color: var(--accent); }
 .filter-banner { align-items: center; }
 .stale-tag { cursor: help; }
 .other-chars { display: inline-flex; gap: 2px; margin: 0 0.3rem; align-self: center; flex-shrink: 0; }
+
+/* Skill tag filter */
+.tag-filter { padding: 0.6rem 0.9rem; }
+.tag-filter-head { margin-bottom: 0.4rem; gap: 0.5rem; }
+.tag-facet { display: flex; gap: 0.6rem; align-items: baseline; margin-bottom: 0.35rem; }
+.tag-facet-label { flex: 0 0 6.5rem; }
+.tag-chips, .tag-list { display: flex; flex-wrap: wrap; gap: 0.3rem; align-items: center; }
+.tag-list { margin: 0.4rem 0; }
+button.tag-chip { padding: 0.1rem 0.5rem; font-size: 0.88em; border-radius: 999px; }
+button.tag-chip.on { border-color: var(--accent); color: var(--accent); background: #2e2817; }
+button.tag-chip.small-chip { font-size: 0.82em; }
+button.active-filter { border-color: var(--accent); color: var(--accent); }
+
+@media (max-width: 720px) {
+  .tag-facet { flex-direction: column; gap: 0.2rem; }
+  .tag-facet-label { flex: none; }
+  button.tag-chip { min-height: 36px; }
+}

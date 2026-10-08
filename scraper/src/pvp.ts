@@ -18,6 +18,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import type { PvpSkillsFile, Skill, SkillPvpVersion } from "@gw1/engine";
+import { skillTags } from "@gw1/engine";
 import { adrenalineStrikes, loadGwToolbox } from "./gwtoolbox.js";
 
 const DATA_DIR = fileURLToPath(new URL("../../data/", import.meta.url));
@@ -56,6 +57,12 @@ for (const skill of skills) {
     exhaustion: twin.overcast ?? null,
     recharge: twin.recharge ?? 0,
   };
+  // Tagged from the PvP text: a split can change what a skill does, not
+  // just its numbers. The name stays the PvE one so self-references mask.
+  version.tags = skillTags(
+    { name: skill.name, description: version.description, sacrificePercent: version.sacrificePercent, exhaustion: version.exhaustion },
+    { target: twin.target, combo: twin.combo, comboReq: twin.combo_req },
+  );
   if (version.wikiPage !== `${skill.name} (PvP)`) {
     problems.push(`${skill.name}: twin is named "${version.wikiPage}"`);
   }

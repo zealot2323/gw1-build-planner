@@ -44,6 +44,12 @@ export interface ToolboxSkill {
   attribute?: number;
   title?: number;
   type?: number;
+  /** Who the skill is cast on: 3 ally, 4 other ally, 5 foe, 6 dead ally, ... */
+  target?: number;
+  /** Dagger chain position this skill counts as: 1 lead, 2 off-hand, 3 dual. */
+  combo?: number;
+  /** Chain position it must follow (bitmask): 1 dual, 2 lead, 4 off-hand. */
+  combo_req?: number;
   energy_cost?: number;
   /** Internal units: 25 per strike of adrenaline. */
   adrenaline?: number;

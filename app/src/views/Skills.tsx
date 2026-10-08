@@ -1,5 +1,8 @@
 import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 import {
+  COST_BUCKETS,
+  COST_BUCKET_LABEL,
+  costBucket,
   planForSkill,
   routeStops,
   skillAvailability,
@@ -25,6 +28,7 @@ import { wikiHref } from "../wiki";
 import { hasOpenTodo } from "../todos";
 import { RouteToTodo } from "../components/RouteToTodo";
 import { SkillTodoPrompt, type PendingSkillTodo } from "../components/SkillTodoPrompt";
+import { SkillTagFilter, matchesTags, tagLabel } from "../components/SkillTagFilter";
 import type { CharacterSave } from "../save";
 
 /** Filters and expansion state, held by App so tab switches don't reset it. */
@@ -38,6 +42,12 @@ export interface SkillViewState {
   changedOnly: boolean;
   /** Status sections the user has collapsed (an array so it serialises). */
   collapsed: SkillStatus[];
+  /** Picked tags, as "facet:value" keys (see engine/src/tags.ts). */
+  tagFilters: string[];
+  tagMode: "all" | "any";
+  showTags: boolean;
+  /** A cost bucket from the engine's COST_BUCKETS, or "all". */
+  costFilter: string;
 }
 
 export const initialSkillViewState: SkillViewState = {
@@ -49,6 +59,10 @@ export const initialSkillViewState: SkillViewState = {
   sortBy: "soonest",
   changedOnly: false,
   collapsed: [],
+  tagFilters: [],
+  tagMode: "all",
+  showTags: false,
+  costFilter: "all",
 };
 
 const STATUS_ORDER: SkillStatus[] = [
@@ -162,7 +176,10 @@ export function SkillsView({
   onFindCommunityBuilds: (skill: string) => void;
 }) {
   const index = useData();
-  const { profFilter, attrFilter, elitesOnly, search, openSkill, sortBy, changedOnly, collapsed } = view;
+  const {
+    profFilter, attrFilter, elitesOnly, search, openSkill, sortBy, changedOnly, collapsed,
+    tagFilters, tagMode, showTags, costFilter,
+  } = view;
   const [expandedSources, setExpandedSources] = useState<Set<string>>(new Set());
   /** Skill waiting on the "add the places too?" prompt. */
   const [pendingTodo, setPendingTodo] = useState<PendingSkillTodo | null>(null);
@@ -173,6 +190,11 @@ export function SkillsView({
   const setOpenSkill = (v: string | null) => setView({ openSkill: v });
   const setSortBy = (v: "name" | "soonest") => setView({ sortBy: v });
   const setChangedOnly = (v: boolean) => setView({ changedOnly: v });
+  const toggleTag = (key: string) =>
+    setView({ tagFilters: tagFilters.includes(key) ? tagFilters.filter((k) => k !== key) : [...tagFilters, key] });
+  /** From a skill's own chips: add the tag, never remove it, and show the panel. */
+  const pickTag = (key: string) =>
+    setView({ tagFilters: tagFilters.includes(key) ? tagFilters : [...tagFilters, key], showTags: true });
   const toggleSection = (status: SkillStatus) =>
     setView({
       collapsed: collapsed.includes(status)
@@ -205,14 +227,23 @@ export function SkillsView({
     [entries],
   );
 
-  const filtered = entries.filter(
-    (e) =>
-      (profFilter === "all" || (e.skill.profession ?? "Common") === profFilter) &&
-      (attrFilter === "all" || e.skill.attribute === attrFilter) &&
-      (!elitesOnly || e.skill.isElite) &&
-      (!changedOnly || changes.recentlyChanged.has(e.skill.wikiPage)) &&
-      e.skill.name.toLowerCase().includes(search.toLowerCase()),
+  // Every filter except tags. The tag panel counts against this list, so a
+  // chip's number is how many skills picking it would leave.
+  const untagged = useMemo(
+    () =>
+      entries.filter(
+        (e) =>
+          (profFilter === "all" || (e.skill.profession ?? "Common") === profFilter) &&
+          (attrFilter === "all" || e.skill.attribute === attrFilter) &&
+          (!elitesOnly || e.skill.isElite) &&
+          (!changedOnly || changes.recentlyChanged.has(e.skill.wikiPage)) &&
+          (costFilter === "all" || costBucket(e.skill) === costFilter) &&
+          e.skill.name.toLowerCase().includes(search.toLowerCase()),
+      ),
+    [entries, profFilter, attrFilter, elitesOnly, changedOnly, costFilter, search],
   );
+  const untaggedSkills = useMemo(() => untagged.map((e) => e.skill), [untagged]);
+  const filtered = untagged.filter((e) => matchesTags(e.skill, tagFilters, tagMode));
 
   useEffect(() => {
     if (focusSkill) setOpenSkill(focusSkill);
@@ -293,6 +324,25 @@ export function SkillsView({
           Changed in the last 6 months
         </label>
         <label>
+          Cost{" "}
+          <select value={costFilter} onChange={(e) => setView({ costFilter: e.target.value })}>
+            <option value="all">Any</option>
+            {COST_BUCKETS.map((b) => (
+              <option key={b} value={b}>
+                {COST_BUCKET_LABEL[b]}
+              </option>
+            ))}
+          </select>
+        </label>
+        <button
+          onClick={() => setView({ showTags: !showTags })}
+          aria-expanded={showTags}
+          className={tagFilters.length > 0 ? "active-filter" : undefined}
+        >
+          {showTags ? "Hide tags" : "Filter by tags"}
+          {tagFilters.length > 0 && ` (${tagFilters.length})`}
+        </button>
+        <label>
           Sort by{" "}
           <select value={sortBy} onChange={(e) => setSortBy(e.target.value as "name" | "soonest")}>
             <option value="soonest">Nearest first</option>
@@ -301,6 +351,30 @@ export function SkillsView({
         </label>
         <input type="search" placeholder="Search skills…" value={search} onChange={(e) => setSearch(e.target.value)} />
       </div>
+
+      {showTags && (
+        <SkillTagFilter
+          skills={untaggedSkills}
+          picked={tagFilters}
+          mode={tagMode}
+          onToggle={toggleTag}
+          onMode={(m) => setView({ tagMode: m })}
+          onClear={() => setView({ tagFilters: [] })}
+        />
+      )}
+      {!showTags && tagFilters.length > 0 && (
+        <p className="tag-list small">
+          <span className="muted">{tagMode === "all" ? "Matching every tag:" : "Matching any tag:"}</span>
+          {tagFilters.map((k) => (
+            <button key={k} className="tag-chip on small-chip" onClick={() => toggleTag(k)} title="Remove this tag">
+              {tagLabel(k)} ✕
+            </button>
+          ))}
+        </p>
+      )}
+      {filtered.length === 0 && (
+        <p className="muted pad">No skills match these filters.</p>
+      )}
 
       {STATUS_ORDER.map((status) => {
         const group = filtered.filter((e) => e.status === status);
@@ -419,6 +493,7 @@ export function SkillsView({
                               <div className="slide-down">
                                 <SkillDetails
                                   skill={e.skill}
+                                  onTagPick={pickTag}
                                   plan={e.status === "KNOWN" ? undefined : plans.get(e.skill.wikiPage)}
                                 />
                                 {changes.recentlyChanged.has(e.skill.wikiPage) && (

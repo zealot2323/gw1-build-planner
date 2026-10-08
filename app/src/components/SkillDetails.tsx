@@ -4,6 +4,7 @@ import { SkillIcon } from "./SkillIcon";
 import { ProfessionIcon } from "./ProfessionIcon";
 import { ProximityDot } from "./ProximityDot";
 import { wikiHref } from "../wiki";
+import { SkillTagList } from "./SkillTagFilter";
 
 const has = (n: number | null | undefined): n is number => n !== null && n !== undefined;
 
@@ -104,7 +105,18 @@ function CaptureList({
  * which have nothing left to travel for. `pvp` shows the skill's PvP split
  * in place of the PvE version, for the skills that have one.
  */
-export function SkillDetails({ skill: pve, plan, pvp = false }: { skill: Skill; plan?: SkillPlan; pvp?: boolean }) {
+export function SkillDetails({
+  skill: pve,
+  plan,
+  pvp = false,
+  onTagPick,
+}: {
+  skill: Skill;
+  plan?: SkillPlan;
+  pvp?: boolean;
+  /** Makes the tag chips filter the skill list. */
+  onTagPick?: (key: string) => void;
+}) {
   const skill = skillInMode(pve, pvp);
   const showingPvp = pvp && pve.pvp !== undefined;
   const acq = skill.acquisition;
@@ -148,6 +160,7 @@ export function SkillDetails({ skill: pve, plan, pvp = false }: { skill: Skill; 
         </div>
       </div>
       {skill.description && <p className="skill-desc">{skill.description}</p>}
+      <SkillTagList tags={skill.tags} onPick={onTagPick} />
       {pve.pvp && !pvp && <p className="muted small no-margin">Has a separate PvP version.</p>}
       {plan && (
         <p className="small no-margin">

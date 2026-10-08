@@ -17,6 +17,7 @@ import {
   stripMarkup,
   stripMarkupKeepBreaks,
 } from "./wikitext.js";
+import type { SkillTags } from "@gw1/engine";
 
 export interface Parsed<T> {
   entity: T;
@@ -51,6 +52,8 @@ export interface ParsedSkill {
   /** The game's short-form description. From gwtoolbox. */
   concise?: string;
   description: string;
+  /** Filter facets, derived after the gwtoolbox overlay. See engine/src/tags.ts. */
+  tags?: SkillTags;
   acquisition: {
     trainers: string[];
     quests: string[];

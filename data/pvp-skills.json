@@ -12,7 +12,22 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 45
+   "recharge": 45,
+   "tags": {
+    "types": [
+     "Shout"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Adrenaline gain"
+    ],
+    "worksWith": []
+   }
   },
   "\"Watch Yourself!\"": {
    "gwSkillId": 2858,
@@ -25,7 +40,24 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 4
+   "recharge": 4,
+   "tags": {
+    "types": [
+     "Shout"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Armor bonus",
+     "Area effect",
+     "Party-wide"
+    ],
+    "worksWith": []
+   }
   },
   "Aegis": {
    "gwSkillId": 2857,
@@ -38,7 +70,21 @@
    "activation": 0.25,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 30
+   "recharge": 30,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Other ally"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [],
+    "worksWith": []
+   }
   },
   "Aura of Restoration": {
    "gwSkillId": 3375,
@@ -51,7 +97,24 @@
    "activation": 0.25,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Healing",
+     "Energy gain"
+    ],
+    "worksWith": []
+   }
   },
   "Call of Haste": {
    "gwSkillId": 2657,
@@ -64,7 +127,23 @@
    "activation": 0,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 25
+   "recharge": 25,
+   "tags": {
+    "types": [
+     "Shout"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Speed boost",
+     "Faster attacks"
+    ],
+    "worksWith": []
+   }
   },
   "Comfort Animal": {
    "gwSkillId": 3045,
@@ -77,7 +156,23 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 1
+   "recharge": 1,
+   "tags": {
+    "types": [
+     "Skill"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Healing",
+     "Resurrection"
+    ],
+    "worksWith": []
+   }
   },
   "Crippling Anguish": {
    "gwSkillId": 3152,
@@ -90,7 +185,24 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Hex",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Health degeneration",
+     "Slows movement"
+    ],
+    "worksWith": []
+   }
   },
   "Crippling Shot": {
    "gwSkillId": 3450,
@@ -103,7 +215,28 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 2
+   "recharge": 2,
+   "tags": {
+    "types": [
+     "Attack"
+    ],
+    "weapon": [
+     "Bow",
+     "Ranged"
+    ],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [
+     "Crippled"
+    ],
+    "damage": [],
+    "effects": [
+     "Slows movement",
+     "Unblockable"
+    ],
+    "worksWith": []
+   }
   },
   "Defy Pain": {
    "gwSkillId": 3204,
@@ -116,7 +249,20 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 0
+   "recharge": 0,
+   "tags": {
+    "types": [
+     "Stance"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [],
+    "worksWith": []
+   }
   },
   "Empathy": {
    "gwSkillId": 3151,
@@ -129,7 +275,25 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 10
+   "recharge": 10,
+   "tags": {
+    "types": [
+     "Hex",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Armor-ignoring damage"
+    ],
+    "worksWith": []
+   }
   },
   "Enfeeble": {
    "gwSkillId": 2859,
@@ -142,7 +306,22 @@
    "activation": 0.25,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 10
+   "recharge": 10,
+   "tags": {
+    "types": [
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [
+     "Weakness"
+    ],
+    "damage": [],
+    "effects": [],
+    "worksWith": []
+   }
   },
   "Enfeebling Blood": {
    "gwSkillId": 2885,
@@ -155,7 +334,25 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 8
+   "recharge": 8,
+   "tags": {
+    "types": [
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [
+     "Weakness"
+    ],
+    "damage": [],
+    "effects": [
+     "Health sacrifice",
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Escape": {
    "gwSkillId": 3060,
@@ -168,7 +365,23 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 12
+   "recharge": 12,
+   "tags": {
+    "types": [
+     "Stance"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Block",
+     "Speed boost"
+    ],
+    "worksWith": []
+   }
   },
   "Ether Renewal": {
    "gwSkillId": 2860,
@@ -181,7 +394,23 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 30
+   "recharge": 30,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Energy gain"
+    ],
+    "worksWith": []
+   }
   },
   "Fevered Dreams": {
    "gwSkillId": 3289,
@@ -194,7 +423,23 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 15
+   "recharge": 15,
+   "tags": {
+    "types": [
+     "Hex",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Fragility": {
    "gwSkillId": 2998,
@@ -207,7 +452,26 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 8
+   "recharge": 8,
+   "tags": {
+    "types": [
+     "Hex",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Armor-ignoring damage",
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Frenzy": {
    "gwSkillId": 3443,
@@ -220,7 +484,22 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 4
+   "recharge": 4,
+   "tags": {
+    "types": [
+     "Stance"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Faster attacks"
+    ],
+    "worksWith": []
+   }
   },
   "Heal Party": {
    "gwSkillId": 3232,
@@ -233,7 +512,22 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 10
+   "recharge": 10,
+   "tags": {
+    "types": [
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Healing"
+    ],
+    "worksWith": []
+   }
   },
   "Hundred Blades": {
    "gwSkillId": 3444,
@@ -246,7 +540,24 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Skill"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Slashing"
+    ],
+    "effects": [
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Illusion of Haste": {
    "gwSkillId": 3373,
@@ -259,7 +570,25 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 8
+   "recharge": 8,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Speed boost",
+     "Slows movement",
+     "Self condition"
+    ],
+    "worksWith": []
+   }
   },
   "Illusionary Weaponry": {
    "gwSkillId": 3181,
@@ -272,7 +601,25 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 10
+   "recharge": 10,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Armor-ignoring damage"
+    ],
+    "worksWith": []
+   }
   },
   "Lightning Reflexes": {
    "gwSkillId": 3141,
@@ -285,7 +632,23 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 45
+   "recharge": 45,
+   "tags": {
+    "types": [
+     "Stance"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Block",
+     "Faster attacks"
+    ],
+    "worksWith": []
+   }
   },
   "Mantra of Resolve": {
    "gwSkillId": 3063,
@@ -298,7 +661,22 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Stance"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Interrupt"
+    ],
+    "worksWith": []
+   }
   },
   "Mantra of Signets": {
    "gwSkillId": 3179,
@@ -311,7 +689,23 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Stance"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Healing",
+     "Armor bonus"
+    ],
+    "worksWith": []
+   }
   },
   "Melandru's Assault": {
    "gwSkillId": 3047,
@@ -324,7 +718,22 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 5
+   "recharge": 5,
+   "tags": {
+    "types": [
+     "Pet attack"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Migraine": {
    "gwSkillId": 3183,
@@ -337,7 +746,23 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 12
+   "recharge": 12,
+   "tags": {
+    "types": [
+     "Hex",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Health degeneration"
+    ],
+    "worksWith": []
+   }
   },
   "Mind Freeze": {
    "gwSkillId": 2803,
@@ -350,7 +775,26 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": 5,
-   "recharge": 5
+   "recharge": 5,
+   "tags": {
+    "types": [
+     "Hex",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Cold"
+    ],
+    "effects": [
+     "Slows movement",
+     "Exhaustion"
+    ],
+    "worksWith": []
+   }
   },
   "Mind Shock": {
    "gwSkillId": 2804,
@@ -363,7 +807,25 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": 10,
-   "recharge": 8
+   "recharge": 8,
+   "tags": {
+    "types": [
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Lightning"
+    ],
+    "effects": [
+     "Knockdown",
+     "Exhaustion"
+    ],
+    "worksWith": []
+   }
   },
   "Mind Wrack": {
    "gwSkillId": 2734,
@@ -376,7 +838,26 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 7
+   "recharge": 7,
+   "tags": {
+    "types": [
+     "Hex",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Energy denial",
+     "Armor-ignoring damage"
+    ],
+    "worksWith": []
+   }
   },
   "Mist Form": {
    "gwSkillId": 2805,
@@ -389,7 +870,26 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Healing",
+     "Damage reduction",
+     "Area effect",
+     "Party-wide"
+    ],
+    "worksWith": []
+   }
   },
   "Nature's Renewal": {
    "gwSkillId": 3445,
@@ -402,7 +902,22 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 60
+   "recharge": 60,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Obsidian Flame": {
    "gwSkillId": 2809,
@@ -415,7 +930,25 @@
    "activation": 1.5,
    "aftercast": 0.75,
    "exhaustion": 5,
-   "recharge": 5
+   "recharge": 5,
+   "tags": {
+    "types": [
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Armor-ignoring damage",
+     "Exhaustion"
+    ],
+    "worksWith": []
+   }
   },
   "Otyugh's Cry": {
    "gwSkillId": 3451,
@@ -428,7 +961,23 @@
    "activation": 0,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 30
+   "recharge": 30,
+   "tags": {
+    "types": [
+     "Shout"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Armor bonus",
+     "Unblockable"
+    ],
+    "worksWith": []
+   }
   },
   "Peace and Harmony": {
    "gwSkillId": 3448,
@@ -441,7 +990,24 @@
    "activation": 0.25,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 15
+   "recharge": 15,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Ally"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Condition removal",
+     "Hex removal"
+    ],
+    "worksWith": []
+   }
   },
   "Penetrating Attack": {
    "gwSkillId": 2861,
@@ -454,7 +1020,23 @@
    "activation": 1,
    "aftercast": 1,
    "exhaustion": null,
-   "recharge": 4
+   "recharge": 4,
+   "tags": {
+    "types": [
+     "Attack"
+    ],
+    "weapon": [
+     "Bow",
+     "Ranged"
+    ],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [],
+    "worksWith": []
+   }
   },
   "Protector's Strike": {
    "gwSkillId": 3449,
@@ -467,7 +1049,24 @@
    "activation": 0.5,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 6
+   "recharge": 6,
+   "tags": {
+    "types": [
+     "Attack"
+    ],
+    "weapon": [
+     "Melee"
+    ],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [],
+    "worksWith": [
+     "Moving foe"
+    ]
+   }
   },
   "Read the Wind": {
    "gwSkillId": 2969,
@@ -480,7 +1079,20 @@
    "activation": 2,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 12
+   "recharge": 12,
+   "tags": {
+    "types": [
+     "Preparation"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [],
+    "worksWith": []
+   }
   },
   "Shatter Delusions": {
    "gwSkillId": 3180,
@@ -493,7 +1105,26 @@
    "activation": 0.25,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 10
+   "recharge": 10,
+   "tags": {
+    "types": [
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Hex removal",
+     "Armor-ignoring damage",
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Signet of Agony": {
    "gwSkillId": 3059,
@@ -506,7 +1137,27 @@
    "activation": 0.75,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Signet"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Health sacrifice",
+     "Armor-ignoring damage",
+     "Area effect",
+     "Self condition"
+    ],
+    "worksWith": []
+   }
   },
   "Signet of Judgment": {
    "gwSkillId": 2887,
@@ -519,7 +1170,26 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Signet"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Holy"
+    ],
+    "effects": [
+     "Knockdown",
+     "Armor-ignoring damage",
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Strength of Honor": {
    "gwSkillId": 2999,
@@ -532,7 +1202,23 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 15
+   "recharge": 15,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Ally"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Maintained"
+    ],
+    "worksWith": []
+   }
   },
   "Unholy Feast": {
    "gwSkillId": 3058,
@@ -545,7 +1231,24 @@
    "activation": 0.75,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Life stealing",
+     "Armor-ignoring damage",
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Unyielding Aura": {
    "gwSkillId": 2891,
@@ -558,7 +1261,24 @@
    "activation": 3,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 15
+   "recharge": 15,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Dead ally"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Resurrection",
+     "Uses a corpse"
+    ],
+    "worksWith": []
+   }
   },
   "Ward Against Harm": {
    "gwSkillId": 2806,
@@ -571,7 +1291,26 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Ward",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Health regeneration",
+     "Skill disabling",
+     "Armor bonus",
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Warrior's Endurance": {
    "gwSkillId": 3002,
@@ -584,7 +1323,22 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 30
+   "recharge": 30,
+   "tags": {
+    "types": [
+     "Stance"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Energy gain"
+    ],
+    "worksWith": []
+   }
   },
   "Wastrel's Worry": {
    "gwSkillId": 3447,
@@ -597,7 +1351,26 @@
    "activation": 0.25,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 4
+   "recharge": 4,
+   "tags": {
+    "types": [
+     "Hex",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Armor-ignoring damage",
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "\"Coward!\"": {
    "gwSkillId": 3456,
@@ -610,7 +1383,24 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 4
+   "recharge": 4,
+   "tags": {
+    "types": [
+     "Shout"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Knockdown"
+    ],
+    "worksWith": [
+     "Moving foe"
+    ]
+   }
   },
   "Accumulated Pain": {
    "gwSkillId": 3184,
@@ -623,7 +1413,28 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 15
+   "recharge": 15,
+   "tags": {
+    "types": [
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [
+     "Deep Wound"
+    ],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Armor-ignoring damage"
+    ],
+    "worksWith": [
+     "Hexed foe"
+    ]
+   }
   },
   "Ancestors' Rage": {
    "gwSkillId": 2867,
@@ -636,7 +1447,24 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 8
+   "recharge": 8,
+   "tags": {
+    "types": [
+     "Skill"
+    ],
+    "weapon": [],
+    "target": [
+     "Ally"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Lightning"
+    ],
+    "effects": [
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Armor of Unfeeling": {
    "gwSkillId": 3003,
@@ -649,7 +1477,21 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [],
+    "worksWith": []
+   }
   },
   "Auspicious Blow": {
    "gwSkillId": 3455,
@@ -662,7 +1504,28 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 0
+   "recharge": 0,
+   "tags": {
+    "types": [
+     "Attack"
+    ],
+    "weapon": [
+     "Hammer",
+     "Melee"
+    ],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Energy gain",
+     "Unblockable"
+    ],
+    "worksWith": [
+     "Weakness"
+    ]
+   }
   },
   "Bloodsong": {
    "gwSkillId": 3019,
@@ -675,7 +1538,24 @@
    "activation": 1.5,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 30
+   "recharge": 30,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Life stealing",
+     "Armor-ignoring damage",
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Dash": {
    "gwSkillId": 3453,
@@ -688,7 +1568,20 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 12
+   "recharge": 12,
+   "tags": {
+    "types": [
+     "Stance"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [],
+    "worksWith": []
+   }
   },
   "Death Blossom": {
    "gwSkillId": 3061,
@@ -701,7 +1594,30 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 6
+   "recharge": 6,
+   "tags": {
+    "types": [
+     "Attack"
+    ],
+    "weapon": [
+     "Dagger",
+     "Melee"
+    ],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Armor-ignoring damage",
+     "Area effect"
+    ],
+    "worksWith": [
+     "Off-hand attack"
+    ]
+   }
   },
   "Destruction": {
    "gwSkillId": 3008,
@@ -714,7 +1630,26 @@
    "activation": 3,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Armor-ignoring damage",
+     "Area effect",
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Discord": {
    "gwSkillId": 2863,
@@ -727,7 +1662,28 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 2
+   "recharge": 2,
+   "tags": {
+    "types": [
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Armor-ignoring damage"
+    ],
+    "worksWith": [
+     "Hexed foe",
+     "Enchanted foe",
+     "Target with a condition"
+    ]
+   }
   },
   "Disenchantment": {
    "gwSkillId": 3017,
@@ -740,7 +1696,25 @@
    "activation": 3,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 30
+   "recharge": 30,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Armor-ignoring damage",
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Displacement": {
    "gwSkillId": 3010,
@@ -753,7 +1727,27 @@
    "activation": 3,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 45
+   "recharge": 45,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Block",
+     "Armor-ignoring damage",
+     "Area effect",
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Dissonance": {
    "gwSkillId": 3014,
@@ -766,7 +1760,26 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 30
+   "recharge": 30,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Interrupt",
+     "Armor-ignoring damage",
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Earthbind": {
    "gwSkillId": 3015,
@@ -779,7 +1792,25 @@
    "activation": 3,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 45
+   "recharge": 45,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Knockdown",
+     "Armor-ignoring damage",
+     "Area effect",
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Enraged Lunge": {
    "gwSkillId": 3051,
@@ -792,7 +1823,20 @@
    "activation": 0,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 5
+   "recharge": 5,
+   "tags": {
+    "types": [
+     "Pet attack"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [],
+    "worksWith": []
+   }
   },
   "Enraged Smash": {
    "gwSkillId": 2808,
@@ -805,7 +1849,28 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 10
+   "recharge": 10,
+   "tags": {
+    "types": [
+     "Attack"
+    ],
+    "weapon": [
+     "Hammer",
+     "Melee"
+    ],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Adrenaline gain",
+     "Knockdown"
+    ],
+    "worksWith": [
+     "Moving foe"
+    ]
+   }
   },
   "Flesh of My Flesh": {
    "gwSkillId": 2866,
@@ -818,7 +1883,22 @@
    "activation": 4,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 6
+   "recharge": 6,
+   "tags": {
+    "types": [
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Dead ally"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Resurrection"
+    ],
+    "worksWith": []
+   }
   },
   "Fox Fangs": {
    "gwSkillId": 3251,
@@ -831,7 +1911,27 @@
    "activation": 0.5,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 6
+   "recharge": 6,
+   "tags": {
+    "types": [
+     "Attack"
+    ],
+    "weapon": [
+     "Dagger",
+     "Melee"
+    ],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Unblockable"
+    ],
+    "worksWith": [
+     "Lead attack"
+    ]
+   }
   },
   "Glass Arrows": {
    "gwSkillId": 3145,
@@ -844,7 +1944,22 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 12
+   "recharge": 12,
+   "tags": {
+    "types": [
+     "Preparation"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [
+     "Bleeding"
+    ],
+    "damage": [],
+    "effects": [],
+    "worksWith": []
+   }
   },
   "Guided Weapon": {
    "gwSkillId": 3462,
@@ -857,7 +1972,23 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 12
+   "recharge": 12,
+   "tags": {
+    "types": [
+     "Weapon spell",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Ally"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Unblockable"
+    ],
+    "worksWith": []
+   }
   },
   "Heal as One": {
    "gwSkillId": 3144,
@@ -870,7 +2001,25 @@
    "activation": 1,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 8
+   "recharge": 8,
+   "tags": {
+    "types": [
+     "Skill"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Healing",
+     "Resurrection"
+    ],
+    "worksWith": [
+     "Low Health"
+    ]
+   }
   },
   "Illusion of Pain": {
    "gwSkillId": 3374,
@@ -883,7 +2032,27 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 5
+   "recharge": 5,
+   "tags": {
+    "types": [
+     "Hex",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Healing",
+     "Health degeneration",
+     "Armor-ignoring damage"
+    ],
+    "worksWith": []
+   }
   },
   "Life": {
    "gwSkillId": 3012,
@@ -896,7 +2065,24 @@
    "activation": 3,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Healing",
+     "Area effect",
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Lightning Hammer": {
    "gwSkillId": 3396,
@@ -909,7 +2095,22 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 4
+   "recharge": 4,
+   "tags": {
+    "types": [
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Lightning"
+    ],
+    "effects": [],
+    "worksWith": []
+   }
   },
   "Melandru's Shot": {
    "gwSkillId": 3459,
@@ -922,7 +2123,31 @@
    "activation": 1,
    "aftercast": 1,
    "exhaustion": null,
-   "recharge": 12
+   "recharge": 12,
+   "tags": {
+    "types": [
+     "Attack"
+    ],
+    "weapon": [
+     "Bow",
+     "Ranged"
+    ],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [
+     "Bleeding",
+     "Crippled"
+    ],
+    "damage": [],
+    "effects": [
+     "Slows movement"
+    ],
+    "worksWith": [
+     "Knocked-down foe",
+     "Moving foe"
+    ]
+   }
   },
   "Pain": {
    "gwSkillId": 3007,
@@ -935,7 +2160,25 @@
    "activation": 1.5,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 30
+   "recharge": 30,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Armor-ignoring damage",
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Predatory Bond": {
    "gwSkillId": 3050,
@@ -948,7 +2191,22 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 30
+   "recharge": 30,
+   "tags": {
+    "types": [
+     "Shout"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Healing"
+    ],
+    "worksWith": []
+   }
   },
   "Preservation": {
    "gwSkillId": 3011,
@@ -961,7 +2219,24 @@
    "activation": 3,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Healing",
+     "Area effect",
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Primal Rage": {
    "gwSkillId": 3458,
@@ -974,7 +2249,23 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 4
+   "recharge": 4,
+   "tags": {
+    "types": [
+     "Stance"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Speed boost",
+     "Faster attacks"
+    ],
+    "worksWith": []
+   }
   },
   "Protector's Defense": {
    "gwSkillId": 3457,
@@ -987,7 +2278,23 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 30
+   "recharge": 30,
+   "tags": {
+    "types": [
+     "Skill"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Block",
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Psychic Instability": {
    "gwSkillId": 3185,
@@ -1000,7 +2307,24 @@
    "activation": 0.25,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Interrupt",
+     "Knockdown",
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Recuperation": {
    "gwSkillId": 3013,
@@ -1013,7 +2337,24 @@
    "activation": 3,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 45
+   "recharge": 45,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Health regeneration",
+     "Area effect",
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Renewing Smash": {
    "gwSkillId": 3143,
@@ -1026,7 +2367,28 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 30
+   "recharge": 30,
+   "tags": {
+    "types": [
+     "Attack"
+    ],
+    "weapon": [
+     "Hammer",
+     "Melee"
+    ],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Energy gain",
+     "Faster recharge"
+    ],
+    "worksWith": [
+     "Knocked-down foe"
+    ]
+   }
   },
   "Restoration": {
    "gwSkillId": 3018,
@@ -1039,7 +2401,25 @@
    "activation": 3,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 45
+   "recharge": 45,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Resurrection",
+     "Area effect",
+     "Party-wide",
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Ride the Lightning": {
    "gwSkillId": 2807,
@@ -1052,7 +2432,27 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": 5,
-   "recharge": 10
+   "recharge": 10,
+   "tags": {
+    "types": [
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [
+     "Blind"
+    ],
+    "damage": [
+     "Lightning"
+    ],
+    "effects": [
+     "Area effect",
+     "Exhaustion"
+    ],
+    "worksWith": []
+   }
   },
   "Shadow Form": {
    "gwSkillId": 2862,
@@ -1065,7 +2465,21 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 60
+   "recharge": 60,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [],
+    "worksWith": []
+   }
   },
   "Shadow Shroud": {
    "gwSkillId": 3452,
@@ -1078,7 +2492,21 @@
    "activation": 0.25,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Hex",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [],
+    "worksWith": []
+   }
   },
   "Shadowsong": {
    "gwSkillId": 3006,
@@ -1091,7 +2519,27 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 30
+   "recharge": 30,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [
+     "Blind"
+    ],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Armor-ignoring damage",
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Shared Burden": {
    "gwSkillId": 3186,
@@ -1104,7 +2552,24 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Hex",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Slows movement",
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Shelter": {
    "gwSkillId": 3016,
@@ -1117,7 +2582,24 @@
    "activation": 5,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 45
+   "recharge": 45,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Armor-ignoring damage",
+     "Area effect",
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Shield Guardian": {
    "gwSkillId": 3454,
@@ -1130,7 +2612,26 @@
    "activation": 1.5,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 25
+   "recharge": 25,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Healing",
+     "Block",
+     "Area effect",
+     "Party-wide"
+    ],
+    "worksWith": []
+   }
   },
   "Shroud of Distress": {
    "gwSkillId": 3048,
@@ -1143,7 +2644,25 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 45
+   "recharge": 45,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Block"
+    ],
+    "worksWith": [
+     "Low Health"
+    ]
+   }
   },
   "Signet of Spirits": {
    "gwSkillId": 2965,
@@ -1156,7 +2675,25 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Signet"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Energy gain",
+     "Area effect"
+    ],
+    "worksWith": [
+     "Nearby spirits"
+    ]
+   }
   },
   "Soothing": {
    "gwSkillId": 3009,
@@ -1169,7 +2706,23 @@
    "activation": 5,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 60
+   "recharge": 60,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Area effect",
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Soul Twisting": {
    "gwSkillId": 3461,
@@ -1182,7 +2735,22 @@
    "activation": 0,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 15
+   "recharge": 15,
+   "tags": {
+    "types": [
+     "Skill"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Faster recharge"
+    ],
+    "worksWith": []
+   }
   },
   "Spirit Bond": {
    "gwSkillId": 2892,
@@ -1195,7 +2763,23 @@
    "activation": 0.25,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 5
+   "recharge": 5,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Ally"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Healing"
+    ],
+    "worksWith": []
+   }
   },
   "Splinter Weapon": {
    "gwSkillId": 2868,
@@ -1208,7 +2792,26 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 8
+   "recharge": 8,
+   "tags": {
+    "types": [
+     "Weapon spell",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Ally"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Armor-ignoring damage",
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Spoil Victor": {
    "gwSkillId": 3233,
@@ -1221,7 +2824,23 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 10
+   "recharge": 10,
+   "tags": {
+    "types": [
+     "Hex",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Armor-ignoring damage"
+    ],
+    "worksWith": []
+   }
   },
   "Stolen Speed": {
    "gwSkillId": 3187,
@@ -1234,7 +2853,23 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 12
+   "recharge": 12,
+   "tags": {
+    "types": [
+     "Hex",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Sundering Attack": {
    "gwSkillId": 2864,
@@ -1247,7 +2882,23 @@
    "activation": 1,
    "aftercast": 1,
    "exhaustion": null,
-   "recharge": 4
+   "recharge": 4,
+   "tags": {
+    "types": [
+     "Attack"
+    ],
+    "weapon": [
+     "Bow",
+     "Ranged"
+    ],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [],
+    "worksWith": []
+   }
   },
   "Tranquility": {
    "gwSkillId": 3460,
@@ -1260,7 +2911,23 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 60
+   "recharge": 60,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Area effect",
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Union": {
    "gwSkillId": 3005,
@@ -1273,7 +2940,28 @@
    "activation": 3,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 45
+   "recharge": 45,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Life stealing",
+     "Damage reduction",
+     "Armor-ignoring damage",
+     "Area effect",
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Unnatural Signet": {
    "gwSkillId": 3188,
@@ -1286,7 +2974,28 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Signet"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Armor-ignoring damage",
+     "Area effect"
+    ],
+    "worksWith": [
+     "Hexed foe",
+     "Enchanted foe"
+    ]
+   }
   },
   "Unseen Fury": {
    "gwSkillId": 3049,
@@ -1299,7 +3008,24 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 45
+   "recharge": 45,
+   "tags": {
+    "types": [
+     "Stance"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Unblockable"
+    ],
+    "worksWith": [
+     "Blind"
+    ]
+   }
   },
   "Wanderlust": {
    "gwSkillId": 3020,
@@ -1312,7 +3038,24 @@
    "activation": 3,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 45
+   "recharge": 45,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Knockdown",
+     "Armor-ignoring damage",
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Weapon of Warding": {
    "gwSkillId": 2893,
@@ -1325,7 +3068,24 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 8
+   "recharge": 8,
+   "tags": {
+    "types": [
+     "Weapon spell",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Ally"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Health regeneration",
+     "Block"
+    ],
+    "worksWith": []
+   }
   },
   "Wild Strike": {
    "gwSkillId": 3252,
@@ -1338,7 +3098,27 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 6
+   "recharge": 6,
+   "tags": {
+    "types": [
+     "Attack"
+    ],
+    "weapon": [
+     "Dagger",
+     "Melee"
+    ],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Unblockable"
+    ],
+    "worksWith": [
+     "Lead attack"
+    ]
+   }
   },
   "\"Brace Yourself!\"": {
    "gwSkillId": 3027,
@@ -1351,7 +3131,24 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 8
+   "recharge": 8,
+   "tags": {
+    "types": [
+     "Shout"
+    ],
+    "weapon": [],
+    "target": [
+     "Other ally"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Armor-ignoring damage"
+    ],
+    "worksWith": []
+   }
   },
   "\"Can't Touch This!\"": {
    "gwSkillId": 3031,
@@ -1364,7 +3161,20 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 10
+   "recharge": 10,
+   "tags": {
+    "types": [
+     "Shout"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [],
+    "worksWith": []
+   }
   },
   "\"Fall Back!\"": {
    "gwSkillId": 3037,
@@ -1377,7 +3187,25 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 25
+   "recharge": 25,
+   "tags": {
+    "types": [
+     "Shout"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Healing",
+     "Speed boost",
+     "Area effect",
+     "Party-wide"
+    ],
+    "worksWith": []
+   }
   },
   "\"Find Their Weakness!\"": {
    "gwSkillId": 3034,
@@ -1390,7 +3218,22 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 15
+   "recharge": 15,
+   "tags": {
+    "types": [
+     "Shout"
+    ],
+    "weapon": [],
+    "target": [
+     "Ally"
+    ],
+    "inflicts": [
+     "Deep Wound"
+    ],
+    "damage": [],
+    "effects": [],
+    "worksWith": []
+   }
   },
   "\"Go for the Eyes!\"": {
    "gwSkillId": 3026,
@@ -1403,7 +3246,24 @@
    "activation": 0,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 4
+   "recharge": 4,
+   "tags": {
+    "types": [
+     "Shout"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Critical hits",
+     "Area effect",
+     "Party-wide"
+    ],
+    "worksWith": []
+   }
   },
   "\"Help!\"": {
    "gwSkillId": 3036,
@@ -1416,7 +3276,23 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 15
+   "recharge": 15,
+   "tags": {
+    "types": [
+     "Shout"
+    ],
+    "weapon": [],
+    "target": [
+     "Ally"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Healing",
+     "Faster casting"
+    ],
+    "worksWith": []
+   }
   },
   "\"Incoming!\"": {
    "gwSkillId": 2879,
@@ -1429,7 +3305,25 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 25
+   "recharge": 25,
+   "tags": {
+    "types": [
+     "Shout"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Healing",
+     "Speed boost",
+     "Area effect",
+     "Party-wide"
+    ],
+    "worksWith": []
+   }
   },
   "\"Never Give Up!\"": {
    "gwSkillId": 3035,
@@ -1442,7 +3336,26 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Shout"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Energy gain",
+     "Area effect",
+     "Party-wide"
+    ],
+    "worksWith": [
+     "Low Health"
+    ]
+   }
   },
   "\"Never Surrender!\"": {
    "gwSkillId": 2880,
@@ -1455,7 +3368,26 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Shout"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Health regeneration",
+     "Area effect",
+     "Party-wide"
+    ],
+    "worksWith": [
+     "Low Health"
+    ]
+   }
   },
   "\"Stand Your Ground!\"": {
    "gwSkillId": 3032,
@@ -1468,7 +3400,24 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 30
+   "recharge": 30,
+   "tags": {
+    "types": [
+     "Shout"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Armor bonus",
+     "Area effect",
+     "Party-wide"
+    ],
+    "worksWith": []
+   }
   },
   "\"We Shall Return!\"": {
    "gwSkillId": 3033,
@@ -1481,7 +3430,24 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 15
+   "recharge": 15,
+   "tags": {
+    "types": [
+     "Shout"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Resurrection",
+     "Area effect",
+     "Party-wide"
+    ],
+    "worksWith": []
+   }
   },
   "Anguish": {
    "gwSkillId": 3023,
@@ -1494,7 +3460,27 @@
    "activation": 1.5,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 30
+   "recharge": 30,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Armor-ignoring damage",
+     "Creates a spirit"
+    ],
+    "worksWith": [
+     "Hexed foe"
+    ]
+   }
   },
   "Anthem of Envy": {
    "gwSkillId": 3148,
@@ -1507,7 +3493,23 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 6
+   "recharge": 6,
+   "tags": {
+    "types": [
+     "Chant"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Area effect",
+     "Party-wide"
+    ],
+    "worksWith": []
+   }
   },
   "Assassin's Remedy": {
    "gwSkillId": 2869,
@@ -1520,7 +3522,23 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Condition removal"
+    ],
+    "worksWith": []
+   }
   },
   "Aura of Thorns": {
    "gwSkillId": 3346,
@@ -1533,7 +3551,28 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 10
+   "recharge": 10,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Flash enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [
+     "Bleeding",
+     "Crippled"
+    ],
+    "damage": [],
+    "effects": [
+     "Slows movement",
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Avatar of Dwayna": {
    "gwSkillId": 3270,
@@ -1546,7 +3585,26 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Form"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Holy"
+    ],
+    "effects": [
+     "Healing",
+     "Hex removal",
+     "Armor-ignoring damage"
+    ],
+    "worksWith": []
+   }
   },
   "Avatar of Melandru": {
    "gwSkillId": 3271,
@@ -1559,7 +3617,25 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Form"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Earth"
+    ],
+    "effects": [
+     "Condition removal",
+     "Armor bonus"
+    ],
+    "worksWith": []
+   }
   },
   "Ballad of Restoration": {
    "gwSkillId": 2877,
@@ -1572,7 +3648,24 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Chant"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Healing",
+     "Area effect",
+     "Party-wide"
+    ],
+    "worksWith": []
+   }
   },
   "Banishing Strike": {
    "gwSkillId": 3263,
@@ -1585,7 +3678,27 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 3
+   "recharge": 3,
+   "tags": {
+    "types": [
+     "Attack"
+    ],
+    "weapon": [
+     "Melee"
+    ],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Holy"
+    ],
+    "effects": [
+     "Armor-ignoring damage",
+     "Summon"
+    ],
+    "worksWith": []
+   }
   },
   "Bladeturn Refrain": {
    "gwSkillId": 3029,
@@ -1598,7 +3711,22 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 8
+   "recharge": 8,
+   "tags": {
+    "types": [
+     "Echo"
+    ],
+    "weapon": [],
+    "target": [
+     "Ally"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Armor bonus"
+    ],
+    "worksWith": []
+   }
   },
   "Blazing Finale": {
    "gwSkillId": 3028,
@@ -1611,7 +3739,24 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 8
+   "recharge": 8,
+   "tags": {
+    "types": [
+     "Echo"
+    ],
+    "weapon": [],
+    "target": [
+     "Ally"
+    ],
+    "inflicts": [
+     "Burning"
+    ],
+    "damage": [],
+    "effects": [
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Charging Strike": {
    "gwSkillId": 3465,
@@ -1624,7 +3769,20 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 5
+   "recharge": 5,
+   "tags": {
+    "types": [
+     "Stance"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [],
+    "worksWith": []
+   }
   },
   "Death Pact Signet": {
    "gwSkillId": 2872,
@@ -1637,7 +3795,22 @@
    "activation": 4,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 12
+   "recharge": 12,
+   "tags": {
+    "types": [
+     "Signet"
+    ],
+    "weapon": [],
+    "target": [
+     "Dead ally"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Resurrection"
+    ],
+    "worksWith": []
+   }
   },
   "Defensive Anthem": {
    "gwSkillId": 2876,
@@ -1650,7 +3823,24 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 15
+   "recharge": 15,
+   "tags": {
+    "types": [
+     "Chant"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Block",
+     "Area effect",
+     "Party-wide"
+    ],
+    "worksWith": []
+   }
   },
   "Destructive Was Glaive": {
    "gwSkillId": 3157,
@@ -1663,7 +3853,25 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 10
+   "recharge": 10,
+   "tags": {
+    "types": [
+     "Item spell",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Lightning"
+    ],
+    "effects": [
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Dust Cloak": {
    "gwSkillId": 3347,
@@ -1676,7 +3884,28 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 10
+   "recharge": 10,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Flash enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [
+     "Blind"
+    ],
+    "damage": [
+     "Earth"
+    ],
+    "effects": [
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Elemental Flame": {
    "gwSkillId": 3397,
@@ -1689,7 +3918,23 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 30
+   "recharge": 30,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [
+     "Burning"
+    ],
+    "damage": [],
+    "effects": [],
+    "worksWith": []
+   }
   },
   "Empowerment": {
    "gwSkillId": 3024,
@@ -1702,7 +3947,25 @@
    "activation": 3,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 30
+   "recharge": 30,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Energy gain",
+     "Area effect",
+     "Party-wide",
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Enchanter's Conundrum": {
    "gwSkillId": 3192,
@@ -1715,7 +3978,29 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Hex",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Armor-ignoring damage",
+     "Area effect"
+    ],
+    "worksWith": [
+     "Hexed foe",
+     "Enchanted foe"
+    ]
+   }
   },
   "Expert's Dexterity": {
    "gwSkillId": 2959,
@@ -1728,7 +4013,22 @@
    "activation": 0,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Stance"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Faster attacks"
+    ],
+    "worksWith": []
+   }
   },
   "Finale of Restoration": {
    "gwSkillId": 3062,
@@ -1741,7 +4041,22 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 10
+   "recharge": 10,
+   "tags": {
+    "types": [
+     "Echo"
+    ],
+    "weapon": [],
+    "target": [
+     "Ally"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Healing"
+    ],
+    "worksWith": []
+   }
   },
   "Flail": {
    "gwSkillId": 3464,
@@ -1754,7 +4069,23 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 0
+   "recharge": 0,
+   "tags": {
+    "types": [
+     "Stance"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Slows movement",
+     "Faster attacks"
+    ],
+    "worksWith": []
+   }
   },
   "Fleeting Stability": {
    "gwSkillId": 3470,
@@ -1767,7 +4098,25 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 10
+   "recharge": 10,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Flash enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Knockdown",
+     "Speed boost"
+    ],
+    "worksWith": []
+   }
   },
   "Frustration": {
    "gwSkillId": 3190,
@@ -1780,7 +4129,26 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 15
+   "recharge": 15,
+   "tags": {
+    "types": [
+     "Hex",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Interrupt",
+     "Armor-ignoring damage"
+    ],
+    "worksWith": []
+   }
   },
   "Gaze of Fury": {
    "gwSkillId": 3022,
@@ -1793,7 +4161,25 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "Spirit"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Armor-ignoring damage",
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Guiding Hands": {
    "gwSkillId": 3269,
@@ -1806,7 +4192,24 @@
    "activation": 0.25,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 15
+   "recharge": 15,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Condition removal",
+     "Unblockable"
+    ],
+    "worksWith": []
+   }
   },
   "Harrier's Grasp": {
    "gwSkillId": 3468,
@@ -1819,7 +4222,29 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 15
+   "recharge": 15,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Flash enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [
+     "Crippled"
+    ],
+    "damage": [],
+    "effects": [
+     "Condition removal",
+     "Slows movement"
+    ],
+    "worksWith": [
+     "Moving foe"
+    ]
+   }
   },
   "Harrier's Toss": {
    "gwSkillId": 2875,
@@ -1832,7 +4257,29 @@
    "activation": 1,
    "aftercast": 1,
    "exhaustion": null,
-   "recharge": 10
+   "recharge": 10,
+   "tags": {
+    "types": [
+     "Attack"
+    ],
+    "weapon": [
+     "Spear",
+     "Ranged"
+    ],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Armor-ignoring damage"
+    ],
+    "worksWith": [
+     "Moving foe"
+    ]
+   }
   },
   "Heart of Fury": {
    "gwSkillId": 3366,
@@ -1845,7 +4292,22 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 6
+   "recharge": 6,
+   "tags": {
+    "types": [
+     "Stance"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Faster attacks"
+    ],
+    "worksWith": []
+   }
   },
   "Infuriating Heat": {
    "gwSkillId": 3466,
@@ -1858,7 +4320,24 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 30
+   "recharge": 30,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Adrenaline gain",
+     "Area effect",
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Irresistible Sweep": {
    "gwSkillId": 3265,
@@ -1871,7 +4350,25 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 0
+   "recharge": 0,
+   "tags": {
+    "types": [
+     "Attack"
+    ],
+    "weapon": [
+     "Scythe",
+     "Melee"
+    ],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Unblockable"
+    ],
+    "worksWith": []
+   }
   },
   "Keen Arrow": {
    "gwSkillId": 3147,
@@ -1884,7 +4381,25 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 12
+   "recharge": 12,
+   "tags": {
+    "types": [
+     "Attack"
+    ],
+    "weapon": [
+     "Bow",
+     "Ranged"
+    ],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Critical hits"
+    ],
+    "worksWith": []
+   }
   },
   "Light of Deliverance": {
    "gwSkillId": 2871,
@@ -1897,7 +4412,24 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 8
+   "recharge": 8,
+   "tags": {
+    "types": [
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Healing",
+     "Area effect",
+     "Party-wide"
+    ],
+    "worksWith": []
+   }
   },
   "Lyssa's Haste": {
    "gwSkillId": 3348,
@@ -1910,7 +4442,26 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 25
+   "recharge": 25,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Flash enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Interrupt",
+     "Faster recharge",
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Mending Refrain": {
    "gwSkillId": 3149,
@@ -1923,7 +4474,22 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 8
+   "recharge": 8,
+   "tags": {
+    "types": [
+     "Echo"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Health regeneration"
+    ],
+    "worksWith": []
+   }
   },
   "Mighty Throw": {
    "gwSkillId": 3442,
@@ -1936,7 +4502,23 @@
    "activation": 1,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 1
+   "recharge": 1,
+   "tags": {
+    "types": [
+     "Attack"
+    ],
+    "weapon": [
+     "Spear",
+     "Ranged"
+    ],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [],
+    "worksWith": []
+   }
   },
   "Mirage Cloak": {
    "gwSkillId": 3469,
@@ -1949,7 +4531,27 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 15
+   "recharge": 15,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Flash enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Earth"
+    ],
+    "effects": [
+     "Block",
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Mirror of Disenchantment": {
    "gwSkillId": 3194,
@@ -1962,7 +4564,24 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Enchantment removal",
+     "Area effect",
+     "Party-wide"
+    ],
+    "worksWith": []
+   }
   },
   "Mistrust": {
    "gwSkillId": 3191,
@@ -1975,7 +4594,26 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 12
+   "recharge": 12,
+   "tags": {
+    "types": [
+     "Hex",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Armor-ignoring damage",
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Mystic Corruption": {
    "gwSkillId": 3467,
@@ -1988,7 +4626,30 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 10
+   "recharge": 10,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Flash enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [
+     "Disease"
+    ],
+    "damage": [],
+    "effects": [
+     "Condition removal",
+     "Area effect",
+     "Party-wide"
+    ],
+    "worksWith": [
+     "Your enchantments"
+    ]
+   }
   },
   "Mystic Healing": {
    "gwSkillId": 3272,
@@ -2001,7 +4662,24 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 10
+   "recharge": 10,
+   "tags": {
+    "types": [
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Healing",
+     "Area effect",
+     "Party-wide"
+    ],
+    "worksWith": []
+   }
   },
   "Mystic Regeneration": {
    "gwSkillId": 2884,
@@ -2014,7 +4692,23 @@
    "activation": 0.25,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 15
+   "recharge": 15,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Health regeneration"
+    ],
+    "worksWith": []
+   }
   },
   "Onslaught": {
    "gwSkillId": 3365,
@@ -2027,7 +4721,24 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 10
+   "recharge": 10,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Flash enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Adrenaline gain"
+    ],
+    "worksWith": []
+   }
   },
   "Pious Assault": {
    "gwSkillId": 3266,
@@ -2040,7 +4751,28 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 12
+   "recharge": 12,
+   "tags": {
+    "types": [
+     "Attack"
+    ],
+    "weapon": [
+     "Melee"
+    ],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Faster recharge",
+     "Armor-ignoring damage",
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Pious Restoration": {
    "gwSkillId": 3471,
@@ -2053,7 +4785,23 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 15
+   "recharge": 15,
+   "tags": {
+    "types": [
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Healing",
+     "Hex removal"
+    ],
+    "worksWith": []
+   }
   },
   "Recovery": {
    "gwSkillId": 3025,
@@ -2066,7 +4814,22 @@
    "activation": 3,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 30
+   "recharge": 30,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Savannah Heat": {
    "gwSkillId": 3021,
@@ -2079,7 +4842,24 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 25
+   "recharge": 25,
+   "tags": {
+    "types": [
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Fire"
+    ],
+    "effects": [
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Signet of Clumsiness": {
    "gwSkillId": 3193,
@@ -2092,7 +4872,29 @@
    "activation": 0.25,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 12
+   "recharge": 12,
+   "tags": {
+    "types": [
+     "Signet"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Interrupt",
+     "Knockdown",
+     "Armor-ignoring damage",
+     "Area effect"
+    ],
+    "worksWith": [
+     "Attacking foe"
+    ]
+   }
   },
   "Signet of Ghostly Might": {
    "gwSkillId": 2966,
@@ -2105,7 +4907,22 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 5
+   "recharge": 5,
+   "tags": {
+    "types": [
+     "Signet"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Summon"
+    ],
+    "worksWith": []
+   }
   },
   "Signet of Return": {
    "gwSkillId": 3030,
@@ -2118,7 +4935,24 @@
    "activation": 4,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Signet"
+    ],
+    "weapon": [],
+    "target": [
+     "Dead ally"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Resurrection",
+     "Area effect",
+     "Party-wide"
+    ],
+    "worksWith": []
+   }
   },
   "Soldier's Stance": {
    "gwSkillId": 3156,
@@ -2131,7 +4965,22 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 8
+   "recharge": 8,
+   "tags": {
+    "types": [
+     "Stance"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Faster attacks"
+    ],
+    "worksWith": []
+   }
   },
   "Song of Restoration": {
    "gwSkillId": 2878,
@@ -2144,7 +4993,24 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Chant"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Healing",
+     "Area effect",
+     "Party-wide"
+    ],
+    "worksWith": []
+   }
   },
   "Spiritual Pain": {
    "gwSkillId": 3189,
@@ -2157,7 +5023,26 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 12
+   "recharge": 12,
+   "tags": {
+    "types": [
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Armor-ignoring damage",
+     "Area effect",
+     "Summon"
+    ],
+    "worksWith": []
+   }
   },
   "Tease": {
    "gwSkillId": 3463,
@@ -2170,7 +5055,24 @@
    "activation": 0.25,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Energy denial",
+     "Interrupt",
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Twin Moon Sweep": {
    "gwSkillId": 3264,
@@ -2183,7 +5085,25 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 0
+   "recharge": 0,
+   "tags": {
+    "types": [
+     "Attack"
+    ],
+    "weapon": [
+     "Melee"
+    ],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Healing",
+     "Unblockable"
+    ],
+    "worksWith": []
+   }
   },
   "Visions of Regret": {
    "gwSkillId": 3234,
@@ -2196,7 +5116,28 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 30
+   "recharge": 30,
+   "tags": {
+    "types": [
+     "Hex",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Armor-ignoring damage",
+     "Area effect"
+    ],
+    "worksWith": [
+     "Hexed foe"
+    ]
+   }
   },
   "Web of Disruption": {
    "gwSkillId": 3386,
@@ -2209,7 +5150,23 @@
    "activation": 0.25,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 15
+   "recharge": 15,
+   "tags": {
+    "types": [
+     "Hex",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Interrupt"
+    ],
+    "worksWith": []
+   }
   },
   "Whirling Charge": {
    "gwSkillId": 3472,
@@ -2222,7 +5179,27 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 10
+   "recharge": 10,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Flash enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Cold"
+    ],
+    "effects": [
+     "Speed boost",
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   },
   "Wounding Strike": {
    "gwSkillId": 3367,
@@ -2235,7 +5212,26 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 3
+   "recharge": 3,
+   "tags": {
+    "types": [
+     "Attack"
+    ],
+    "weapon": [
+     "Scythe",
+     "Melee"
+    ],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [
+     "Bleeding",
+     "Deep Wound"
+    ],
+    "damage": [],
+    "effects": [],
+    "worksWith": []
+   }
   },
   "Agony": {
    "gwSkillId": 3038,
@@ -2248,7 +5244,24 @@
    "activation": 3,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 30
+   "recharge": 30,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Armor-ignoring damage",
+     "Area effect",
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Anthem of Disruption": {
    "gwSkillId": 3040,
@@ -2261,7 +5274,24 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 15
+   "recharge": 15,
+   "tags": {
+    "types": [
+     "Chant"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Interrupt",
+     "Area effect",
+     "Party-wide"
+    ],
+    "worksWith": []
+   }
   },
   "Aura Slicer": {
    "gwSkillId": 3473,
@@ -2274,7 +5304,27 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 0
+   "recharge": 0,
+   "tags": {
+    "types": [
+     "Attack"
+    ],
+    "weapon": [
+     "Melee"
+    ],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [
+     "Bleeding",
+     "Cracked Armor"
+    ],
+    "damage": [],
+    "effects": [],
+    "worksWith": [
+     "Your enchantments"
+    ]
+   }
   },
   "Calculated Risk": {
    "gwSkillId": 3196,
@@ -2287,7 +5337,21 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 12
+   "recharge": 12,
+   "tags": {
+    "types": [
+     "Hex",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [],
+    "worksWith": []
+   }
   },
   "Farmer's Scythe": {
    "gwSkillId": 3437,
@@ -2300,7 +5364,25 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Attack"
+    ],
+    "weapon": [
+     "Scythe",
+     "Melee"
+    ],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Faster recharge"
+    ],
+    "worksWith": []
+   }
   },
   "Masochism": {
    "gwSkillId": 3054,
@@ -2313,7 +5395,24 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 20
+   "recharge": 20,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Health sacrifice",
+     "Energy gain"
+    ],
+    "worksWith": []
+   }
   },
   "Pious Fury": {
    "gwSkillId": 3368,
@@ -2326,7 +5425,22 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 15
+   "recharge": 15,
+   "tags": {
+    "types": [
+     "Stance"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Faster attacks"
+    ],
+    "worksWith": []
+   }
   },
   "Rejuvenation": {
    "gwSkillId": 3039,
@@ -2339,7 +5453,26 @@
    "activation": 3,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 30
+   "recharge": 30,
+   "tags": {
+    "types": [
+     "Ritual"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Healing",
+     "Armor-ignoring damage",
+     "Area effect",
+     "Party-wide",
+     "Creates a spirit"
+    ],
+    "worksWith": []
+   }
   },
   "Signet of Deadly Corruption": {
    "gwSkillId": 3053,
@@ -2352,7 +5485,26 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 12
+   "recharge": 12,
+   "tags": {
+    "types": [
+     "Signet"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Armor-ignoring damage"
+    ],
+    "worksWith": [
+     "Dual attack"
+    ]
+   }
   },
   "Signet of Pious Restraint": {
    "gwSkillId": 3273,
@@ -2365,7 +5517,25 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 16
+   "recharge": 16,
+   "tags": {
+    "types": [
+     "Signet"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Slows movement",
+     "Faster recharge"
+    ],
+    "worksWith": [
+     "Crippled"
+    ]
+   }
   },
   "Slippery Ground": {
    "gwSkillId": 3398,
@@ -2378,7 +5548,24 @@
    "activation": 1,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 15
+   "recharge": 15,
+   "tags": {
+    "types": [
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [
+     "Knockdown"
+    ],
+    "worksWith": [
+     "Blind"
+    ]
+   }
   },
   "Sloth Hunter's Shot": {
    "gwSkillId": 2925,
@@ -2391,7 +5578,23 @@
    "activation": 0,
    "aftercast": 0,
    "exhaustion": null,
-   "recharge": 15
+   "recharge": 15,
+   "tags": {
+    "types": [
+     "Attack"
+    ],
+    "weapon": [
+     "Bow",
+     "Ranged"
+    ],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [],
+    "worksWith": []
+   }
   },
   "Smiter's Boon": {
    "gwSkillId": 2895,
@@ -2404,7 +5607,21 @@
    "activation": 0.25,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 90
+   "recharge": 90,
+   "tags": {
+    "types": [
+     "Enchantment",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "No target"
+    ],
+    "inflicts": [],
+    "damage": [],
+    "effects": [],
+    "worksWith": []
+   }
   },
   "Wandering Eye": {
    "gwSkillId": 3195,
@@ -2417,7 +5634,27 @@
    "activation": 2,
    "aftercast": 0.75,
    "exhaustion": null,
-   "recharge": 12
+   "recharge": 12,
+   "tags": {
+    "types": [
+     "Hex",
+     "Spell"
+    ],
+    "weapon": [],
+    "target": [
+     "Foe"
+    ],
+    "inflicts": [],
+    "damage": [
+     "Untyped"
+    ],
+    "effects": [
+     "Interrupt",
+     "Armor-ignoring damage",
+     "Area effect"
+    ],
+    "worksWith": []
+   }
   }
  }
 }

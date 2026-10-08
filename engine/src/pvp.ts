@@ -53,5 +53,6 @@ export function skillInMode(skill: Skill, pvp: boolean): Skill {
     aftercast: v.aftercast ?? null,
     exhaustion: v.exhaustion ?? null,
     recharge: v.recharge,
+    tags: v.tags ?? skill.tags,
   };
 }
