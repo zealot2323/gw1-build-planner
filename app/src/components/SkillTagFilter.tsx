@@ -6,6 +6,7 @@ export function tagLabel(key: string): string {
   const [facet, value] = key.split(/:(.*)/s);
   if (facet === "inflicts") return `Inflicts ${value}`;
   if (facet === "worksWith") return `Works with: ${value}`;
+  if (facet === "triggers") return `Triggers when: ${value}`;
   if (facet === "damage") return value === "Untyped" ? "Untyped damage" : `${value} damage`;
   if (facet === "weapon") return `${value} attack`;
   if (facet === "target") return value === "No target" ? value : `Targets: ${value}`;
