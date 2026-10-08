@@ -9,7 +9,8 @@ and from where?"
 - `/scraper` — Node/TypeScript scripts that fetch and parse wiki data into JSON.
 - `/data` — committed JSON datasets (the scraper's output). Fixtures live in `/data/fixtures`.
   `skill-changes.json` is the recent-game-updates log; `quests.json` the quests
-  that reward skills; `zaishen.json` the Zaishen dailies AND Nicholas the
+  that reward skills; `pvp-skills.json` the PvP split of each skill
+  that has one; `zaishen.json` the Zaishen dailies AND Nicholas the
   Traveler's weekly cycle (see Data decisions).
 - `/engine` — pure TypeScript library: types, JSON Schemas, availability/build logic. **No UI dependencies.**
 - `/app` — static React app (Vite). No backend — it loads the committed JSON from `/data`.
@@ -266,7 +267,7 @@ There are two, and the split matters:
     `balance` marks a skill as recently changed. An AI retune changes when
     heroes pick a skill, not what it does.
   - PvP-split versions ("Dash (PvP)", or a "(PvP)" scope marker on the
-    bullet) are different skills and out of scope for a PvE planner.
+    bullet) are left out of the change log; it tracks the PvE skill.
 - **The wiki's /Skill history pages lag its patch notes.** Frenzy was
   reworked in August 2026 and its history page still reads "unchanged".
   So the "before" snapshot is whichever dated section is newest but still
@@ -331,8 +332,10 @@ There are two, and the split matters:
   build exports the ranks it has. A code
   can name skills we don't have (PvP-only splits, skills newer than the last
   scrape): those come back in `unknownSkillIds` and the slot is left empty
-  rather than dropped silently. The library packs skill ids in 11 bits, so
-  an id above 2047 round-trips wrong — real game codes never have one.
+  rather than dropped silently. The library's encoder sizes the skill-id
+  field wrongly (one extra bit per overflowing id), so a 12-bit PvP id came
+  out 11 bits wide; `encoder()` in template.ts overrides `_getPadSize` with
+  the bit length of the largest id.
 - **Attribution**: the skill card layout and the template-code approach are
   borrowed from gw1tools/gw1builds (MIT); see README Credits. Keep the
   credit line in the app footer if that code is touched.
@@ -541,6 +544,23 @@ There are two, and the split matters:
 - **The uploader sends the file unchanged.** Decoding belongs in the engine
   where the id tables and the tests are, not in SQL. The server stores one
   row per account and the app folds it in on sign-in.
+- **PvP splits are a version of a skill, not a skill.** ~186 skills are
+  balanced separately for PvP ("Mantra of Resolve (PvP)" lasts 5 seconds,
+  not 30...90). Learning one grants both and the game swaps them by area,
+  so discovery still skips "(PvP)" pages and sources, availability and
+  build rules stay the PvE skill's. `npm run pvp` writes
+  `data/pvp-skills.json` from the gwtoolbox cache (`pvp_skill_id`, both
+  sides pointing at each other); the app attaches it as `skill.pvp` with
+  `attachPvpVersions`, and `skillInMode` swaps in the split's id, text and
+  numbers. Its own file so it regenerates without the wiki parse. 21 PvP
+  ids whose PvE side no longer names them (Energy Drain, Panic, ...) are
+  skipped: the PvE side is the authority.
+- **A build is PvE unless marked PvP** (`Build.pvp`). A PvP build shows the
+  PvP versions by default (the Builds tab can flip the view either way
+  without changing the mark) and its template code carries PvP ids. A
+  pasted code containing any PvP id is saved as a PvP build; a community
+  build is saved as PvP only when its tags name a PvP format and none
+  names PvE (`isPvpCommunityBuild`).
 - **`data/community-builds.json` is loaded on demand**, not bundled: it is
   over a megabyte, and most visits never open that tab.
 

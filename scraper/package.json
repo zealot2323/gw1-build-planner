@@ -19,7 +19,8 @@
     "sources": "tsx src/sources.ts",
     "zaishen": "tsx src/zaishen.ts",
     "gwtoolbox": "tsx src/gwtoolbox.ts",
-    "maps": "tsx src/maps.ts"
+    "maps": "tsx src/maps.ts",
+    "pvp": "tsx src/pvp.ts"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
