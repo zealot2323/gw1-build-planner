@@ -205,6 +205,7 @@ export function App() {
         <ZonesView
           onSkillClick={goToSkill}
           character={character}
+          others={save.characters.filter((c) => c !== character)}
           state={zoneState}
           setState={patchZoneState}
           addToTodo={addToTodo}
