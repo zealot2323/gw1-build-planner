@@ -12,6 +12,17 @@
 // Refs — all by wiki page name
 // ---------------------------------------------------------------------------
 
+import type { SkillTags } from "./tags.js";
+import {
+  CONDITION_TAGS,
+  DAMAGE_TAGS,
+  EFFECT_TAGS,
+  SKILL_TYPE_TAGS,
+  TARGET_TAGS,
+  WEAPON_TAGS,
+  WORKS_WITH_TAGS,
+} from "./tags.js";
+
 export type SkillRef = string;
 export type LocationRef = string;
 export type TrainerRef = string;
@@ -117,6 +128,12 @@ export interface Skill {
   description: string;
   /** The game's short-form description, shown in the skill tooltip. */
   concise?: string;
+  /**
+   * Filterable facets — type, target, conditions, damage types, effects and
+   * what the skill works with. Derived by `skillTags` at parse time from the
+   * client's target field and the description text.
+   */
+  tags?: SkillTags;
   acquisition: SkillAcquisition;
 }
 
@@ -456,6 +473,20 @@ export const skillSchema = {
     recharge: { type: "number", minimum: 0 },
     description: { type: "string" },
     concise: { type: "string" },
+    tags: {
+      type: "object",
+      additionalProperties: false,
+      required: ["types", "weapon", "target", "inflicts", "damage", "effects", "worksWith"],
+      properties: {
+        types: { type: "array", items: { enum: SKILL_TYPE_TAGS } },
+        weapon: { type: "array", items: { enum: WEAPON_TAGS } },
+        target: { type: "array", items: { enum: TARGET_TAGS } },
+        inflicts: { type: "array", items: { enum: CONDITION_TAGS } },
+        damage: { type: "array", items: { enum: DAMAGE_TAGS } },
+        effects: { type: "array", items: { enum: EFFECT_TAGS } },
+        worksWith: { type: "array", items: { enum: WORKS_WITH_TAGS } },
+      },
+    },
     acquisition: {
       type: "object",
       additionalProperties: false,

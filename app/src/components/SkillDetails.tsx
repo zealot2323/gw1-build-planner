@@ -4,6 +4,7 @@ import { SkillIcon } from "./SkillIcon";
 import { ProfessionIcon } from "./ProfessionIcon";
 import { ProximityDot } from "./ProximityDot";
 import { wikiHref } from "../wiki";
+import { SkillTagList } from "./SkillTagFilter";
 
 const has = (n: number | null | undefined): n is number => n !== null && n !== undefined;
 
@@ -103,7 +104,16 @@ function CaptureList({
  * `plan` adds the "how far away is this" line; omit it for known skills,
  * which have nothing left to travel for.
  */
-export function SkillDetails({ skill, plan }: { skill: Skill; plan?: SkillPlan }) {
+export function SkillDetails({
+  skill,
+  plan,
+  onTagPick,
+}: {
+  skill: Skill;
+  plan?: SkillPlan;
+  /** Makes the tag chips filter the skill list. */
+  onTagPick?: (key: string) => void;
+}) {
   const acq = skill.acquisition;
   return (
     <div className="skill-details">
@@ -144,6 +154,7 @@ export function SkillDetails({ skill, plan }: { skill: Skill; plan?: SkillPlan }
         </div>
       </div>
       {skill.description && <p className="skill-desc">{skill.description}</p>}
+      <SkillTagList tags={skill.tags} onPick={onTagPick} />
       {plan && (
         <p className="small no-margin">
           <ProximityDot proximity={plan.proximity} distance={plan.distance} />

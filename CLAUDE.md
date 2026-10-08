@@ -541,6 +541,31 @@ There are two, and the split matters:
 - **The uploader sends the file unchanged.** Decoding belongs in the engine
   where the id tables and the tests are, not in SQL. The server stores one
   row per account and the app folds it in on sign-in.
+- **Skill tags are stored, not computed in the app.** `skillTags`
+  (`/engine/src/tags.ts`) runs in `parse` after the gwtoolbox overlay and
+  writes `tags` onto every skill: type, weapon, target, conditions
+  inflicted, damage types, effects, and what the skill works with. Judgement
+  calls baked in:
+  - **Target comes from the client**, not the text: gwtoolbox's `target`
+    field (3 ally, 4 other ally, 5 foe, 6 dead ally, 16 foe's location).
+    Its catch-all code 1 is resolved from the description (corpse, spirit,
+    animal). Dagger chain requirements come from `combo_req`.
+  - **A condition is judged by the clause it sits in.** "If this attack
+    hits a foe suffering from Weakness" is something the skill WORKS WITH;
+    "that foe suffers from Weakness" is something it INFLICTS; "You are
+    Dazed" is a self condition; "Remove one condition (Poison, Disease, ...)"
+    inflicts nothing. The skill's own name is masked first, or Poison Arrow
+    and Weakness Trap read as conditions.
+  - "5...20" is rewritten to "5-20" before parsing: every `[^.]` pattern
+    stopped at the first dot of a range and missed half the text.
+  - Damage types are what a skill DEALS: "+20 armor against physical
+    damage" is not physical damage. Unnamed damage ("takes 15 damage") is
+    `Untyped`, which in GW1 ignores armor.
+  - Self-inflicted costs are not offensive tags: a Dervish removing its own
+    enchantment is not enchantment removal, and "this skill is disabled" is
+    not skill disabling.
+  - It is text parsing, and the UI says so. Re-run `npm run parse` after
+    changing the patterns.
 - **`data/community-builds.json` is loaded on demand**, not bundled: it is
   over a megabyte, and most visits never open that tab.
 
