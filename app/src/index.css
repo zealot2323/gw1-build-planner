@@ -350,6 +350,8 @@ button.threat.minor { opacity: 0.7; font-style: italic; }
   /* expanded, it still shouldn't swallow the list underneath */
   .build-bar:not(.collapsed) .build-bar-body { max-height: 65vh; overflow-y: auto; }
   .pvp-check { margin-right: 0; }
+  /* the "still need N skills" list made the open bar too tall on a phone */
+  .build-bar .todo { display: none; }
 }
 
 /* validation: offending slots stand out */
