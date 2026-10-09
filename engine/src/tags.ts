@@ -90,7 +90,7 @@ export type WorksWithTag = (typeof WORKS_WITH_TAGS)[number];
  * These are the skills whose value depends on someone else acting.
  */
 export const TRIGGER_TAGS = [
-  "Foe attacks", "Attacked or struck", "Foe casts a spell", "Foe uses a skill",
+  "Attacked or struck", "Foe casts a spell", "Foe uses a skill",
   "Targeted by a skill", "You or ally attacks", "You or ally casts a spell",
   "You or ally uses a skill", "Takes damage", "Is healed", "Critical hit",
   "Attack blocked", "Someone dies", "Health drops low", "Interrupted",
@@ -332,7 +332,7 @@ const NEUTRAL_SUBJECT = /^ ?(a non-spirit creature|non-spirit creatures?|any non
 
 /** What happens in a trigger clause, and whether its side matters. */
 const CLAUSE_VERBS: Array<[RegExp, { foe?: TriggerTag; own?: TriggerTag; any?: TriggerTag }]> = [
-  [/(?<!\b(by|from|against|blocks?) (an? |the )?(next \d+ )?(melee |physical |projectile )?)\b(attacks?(?! damage)|hits? with an? (\w+ )?attack|uses? an attack|makes? an attack|lands? an attack|attack skill|fails? to hit|misses|(?<!\b(is|are) )hits?(?! by)|strikes?(?! for)|hit in melee)\b/, { foe: "Foe attacks", own: "You or ally attacks" }],
+  [/(?<!\b(by|from|against|blocks?) (an? |the )?(next \d+ )?(melee |physical |projectile )?)\b(attacks?(?! damage)|hits? with an? (\w+ )?attack|uses? an attack|makes? an attack|lands? an attack|attack skill|fails? to hit|misses|(?<!\b(is|are) )hits?(?! by)|strikes?(?! for)|hit in melee)\b/, { foe: "Attacked or struck", own: "You or ally attacks" }],
   [/\b(casts?|uses?) (a |an |any )?(spell|enchantment|hex)\b/, { foe: "Foe casts a spell", own: "You or ally casts a spell" }],
   [/\b(uses? (a |an |any )?(\w+ )?((?<!attack )skill|signet|shout|chant|shout or chant|elite skill)s?|enters? a stance|uses? \w+ magic)\b/, { foe: "Foe uses a skill", own: "You or ally uses a skill" }],
   [/\b(is|are) the target of\b/, { any: "Targeted by a skill" }],
@@ -357,14 +357,14 @@ const CLAUSE_VERBS: Array<[RegExp, { foe?: TriggerTag; own?: TriggerTag; any?: T
  */
 const TRIGGER_PATTERNS: Array<[TriggerTag, RegExp]> = [
   ["Attacked or struck", /\b(struck|hit) by an? (melee |spirit's )?attack\b|\banyone (striking|attacking|who hits)\b|\b(foe|enemy) strikes (you|that ally|target ally)\b|\b(next time|whenever|when) you are (struck|hit)\b|\b(that|target) ally is (struck|hit)\b|\battacks? (skill )?(used )?against (you|that ally|target ally)\b|\byour attacker\b|\bthat ally's attacker\b|\bagainst you is blocked\b|\btarget of a hostile spell or attack\b|\beach time that ally is hit\b/],
-  ["Foe attacks", /\bfoes using attack skills\b|\bwhenever a foe strikes\b/],
+  ["Attacked or struck", /\bfoes using attack skills\b|\bwhenever a foe strikes\b/],
   ["You or ally attacks", /\byour next (\d+ |\d+-\d+ )?attacks?\b|\bnext attack skill used\b|\bwhenever your arrows\b/],
   ["You or ally casts a spell", /\byour next (\d+ )?(\w+ )?spells?\b|\bthe next spell you cast\b/],
   ["Effect ends", /\bwhen (this|that) (enchantment|hex|stance|shout|effect|skill|spell|preparation|form|portal) ends\b|\bwhen this skill (would )?ends?\b|\bwhen this ends\b|\bthis (enchantment|hex|stance|effect) ends the next time\b|\bwhen you (drop|stop maintaining)\b|\bwhen this (enchantment|hex) is first\b/],
   ["Effect removed", /\b(if|when) (this|that) (hex|enchantment) (is|was) removed\b|\b(removed|ends) prematurely\b/],
   ["Effect ends", /\b(chant or shout|shout or chant) ends\b/],
   ["Enchantment ends or is lost", /\bevery time an enchantment on you ends\b|\bwhenever an enchantment on you ends\b/],
-  ["Foe attacks", /\bwhen they attack\b(?=[^.]*\bnon-spirit creatures\b)|\bnon-spirit creatures[^.]*each time they attack\b/],
+  ["Attacked or struck", /\bwhen they attack\b(?=[^.]*\bnon-spirit creatures\b)|\bnon-spirit creatures[^.]*each time they attack\b/],
 ];
 
 /** A clause's subject: a foe, you or an ally, or anyone at all. */
@@ -399,14 +399,12 @@ function triggerTags(body: string, types: SkillTypeTag[]): Set<TriggerTag> {
         // After "if", a knockdown, movement or hex is a state the skill checks.
         if (lead === "if" && (tag === "Knocked down" || tag === "Moves" || tag === "Gains a condition or hex")) continue;
         // An attack skill's own hit is the skill working: "If Mantis Sting hits".
-        if (isAttack && (tag === "Foe attacks" || tag === "You or ally attacks") && side !== "foe") continue;
+        if (isAttack && (tag === "Attacked or struck" || tag === "You or ally attacks") && side !== "foe") continue;
         out.add(tag);
       }
     }
   }
   for (const [tag, re] of TRIGGER_PATTERNS) if (re.test(body)) out.add(tag);
-  // Being attacked is a foe attacking; filtering on the wider tag finds both.
-  if (out.has("Attacked or struck")) out.add("Foe attacks");
   return out;
 }
 

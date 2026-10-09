@@ -121,15 +121,14 @@ describe("skillTags", () => {
 describe("skillTags triggers", () => {
   const t = (name: string, text: string, target = 5) => skillTags(skill(name, text), { target });
 
-  it("tells a foe attacking from an ally being attacked", () => {
-    expect(t("Empathy", "Hex Spell. For 5...15 seconds, whenever target foe attacks, that foe takes 10...55 damage.").triggers).toEqual(["Foe attacks"]);
-    // Being struck is also a foe attacking, so the wider tag finds both.
+  it("files a foe attacking and an ally being struck under one tag", () => {
+    expect(t("Empathy", "Hex Spell. For 5...15 seconds, whenever target foe attacks, that foe takes 10...55 damage.").triggers).toEqual(["Attacked or struck"]);
     expect(t("Shield of Judgment", "Elite Enchantment Spell. For 8...20 seconds, anyone striking target ally with an attack is knocked down and suffers 5...50 holy damage.", 3).triggers)
-      .toEqual(["Foe attacks", "Attacked or struck"]);
+      .toEqual(["Attacked or struck"]);
   });
 
   it("reads they as the hexed foe only on a hex", () => {
-    expect(t("Ineptitude", "Elite Hex Spell. For 4 seconds, the next time the target foe or any adjacent foe attacks, they take 30...135 damage.").triggers).toEqual(["Foe attacks"]);
+    expect(t("Ineptitude", "Elite Hex Spell. For 4 seconds, the next time the target foe or any adjacent foe attacks, they take 30...135 damage.").triggers).toEqual(["Attacked or struck"]);
     expect(t("Anthem of Fury", "Elite Chant. For 10 seconds, all party members within earshot gain 2...5 strikes of adrenaline the next time they use an attack skill.", 0).triggers)
       .toEqual(["You or ally attacks"]);
   });

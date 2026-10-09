@@ -575,8 +575,8 @@ There are two, and the split matters:
     triggers: an attack skill's own hit ("If Mantis Sting hits"), how an
     effect ends ("Tiger Stance ends if any of your attacks fail to hit"),
     and a state checked with "if" (knocked down, moving, hexed), which is
-    `worksWith`. "Attacked or struck" always also carries "Foe attacks",
-    so filtering on the wider tag finds Shield of Judgment with Empathy.
+    `worksWith`. A foe attacking and you or an ally being struck are one
+    tag, "Attacked or struck", so it finds Shield of Judgment with Empathy.
   - Resurrections target the dead; they do not get "Dead allies", which
     is for skills that count or need fallen allies ("I Will Avenge You!").
   - It is text parsing, and the UI says so. Re-run `npm run parse` after

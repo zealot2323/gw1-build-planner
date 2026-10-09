@@ -5226,7 +5226,7 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks"
+        "Attacked or struck"
       ]
     }
   },
@@ -6960,7 +6960,6 @@
         "Weapon equipped"
       ],
       "triggers": [
-        "Foe attacks",
         "Attacked or struck"
       ]
     }
@@ -10246,7 +10245,7 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks"
+        "Attacked or struck"
       ]
     }
   },
@@ -13493,7 +13492,7 @@
         "Attacking foe"
       ],
       "triggers": [
-        "Foe attacks"
+        "Attacked or struck"
       ]
     }
   },
@@ -16580,7 +16579,7 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks"
+        "Attacked or struck"
       ]
     }
   },
@@ -16875,7 +16874,7 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks"
+        "Attacked or struck"
       ]
     }
   },
@@ -18771,7 +18770,6 @@
         "Overcast"
       ],
       "triggers": [
-        "Foe attacks",
         "Attacked or struck"
       ]
     }
@@ -23769,7 +23767,7 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks"
+        "Attacked or struck"
       ]
     }
   },
@@ -25419,7 +25417,6 @@
         "Weapon equipped"
       ],
       "triggers": [
-        "Foe attacks",
         "Attacked or struck"
       ]
     }
@@ -27139,7 +27136,6 @@
         "Weapon equipped"
       ],
       "triggers": [
-        "Foe attacks",
         "Attacked or struck"
       ]
     }
@@ -27317,7 +27313,6 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks",
         "Attacked or struck"
       ]
     }
@@ -28967,7 +28962,7 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks"
+        "Attacked or struck"
       ]
     }
   },
@@ -29044,7 +29039,7 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks"
+        "Attacked or struck"
       ]
     }
   },
@@ -29112,7 +29107,7 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks",
+        "Attacked or struck",
         "Foe uses a skill"
       ]
     }
@@ -30207,7 +30202,6 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks",
         "Attacked or struck"
       ]
     }
@@ -30270,7 +30264,6 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks",
         "Attacked or struck"
       ]
     }
@@ -34028,7 +34021,6 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks",
         "Attacked or struck"
       ]
     }
@@ -34976,7 +34968,6 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks",
         "Attacked or struck",
         "Effect ends"
       ]
@@ -40170,7 +40161,6 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks",
         "Attacked or struck",
         "Attack blocked"
       ]
@@ -44217,7 +44207,6 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks",
         "Attacked or struck"
       ]
     }
@@ -48368,7 +48357,6 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks",
         "Attacked or struck",
         "Targeted by a skill",
         "You or ally attacks"
@@ -49706,7 +49694,7 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks",
+        "Attacked or struck",
         "Foe casts a spell"
       ]
     }
@@ -51620,7 +51608,6 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks",
         "Attacked or struck"
       ]
     }
@@ -52051,7 +52038,7 @@
         "Attacking foe"
       ],
       "triggers": [
-        "Foe attacks"
+        "Attacked or struck"
       ]
     }
   },
@@ -52615,7 +52602,6 @@
       "effects": [],
       "worksWith": [],
       "triggers": [
-        "Foe attacks",
         "Attacked or struck"
       ]
     }
@@ -58094,7 +58080,7 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks"
+        "Attacked or struck"
       ]
     }
   },
@@ -66135,7 +66121,7 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks",
+        "Attacked or struck",
         "You or ally attacks",
         "You or ally uses a skill"
       ]
@@ -67919,7 +67905,6 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks",
         "Attacked or struck"
       ]
     }
@@ -68154,7 +68139,7 @@
         "Attacking foe"
       ],
       "triggers": [
-        "Foe attacks"
+        "Attacked or struck"
       ]
     }
   },
@@ -74438,7 +74423,6 @@
         "Weapon equipped"
       ],
       "triggers": [
-        "Foe attacks",
         "Attacked or struck",
         "You or ally attacks"
       ]
@@ -77233,7 +77217,6 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks",
         "Attacked or struck"
       ]
     }
@@ -78251,7 +78234,6 @@
         "Attacking foe"
       ],
       "triggers": [
-        "Foe attacks",
         "Attacked or struck",
         "Attack blocked"
       ]
@@ -78874,7 +78856,6 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks",
         "Attacked or struck"
       ]
     }
@@ -80020,7 +80001,7 @@
       ],
       "worksWith": [],
       "triggers": [
-        "Foe attacks"
+        "Attacked or struck"
       ]
     }
   },

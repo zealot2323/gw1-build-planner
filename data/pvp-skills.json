@@ -311,7 +311,7 @@
     ],
     "worksWith": [],
     "triggers": [
-     "Foe attacks"
+     "Attacked or struck"
     ]
    }
   },
@@ -2619,7 +2619,6 @@
     "effects": [],
     "worksWith": [],
     "triggers": [
-     "Foe attacks",
      "Attacked or struck",
      "Effect ends"
     ]
@@ -3000,7 +2999,7 @@
     ],
     "worksWith": [],
     "triggers": [
-     "Foe attacks",
+     "Attacked or struck",
      "Foe casts a spell"
     ]
    }
@@ -5181,7 +5180,7 @@
      "Attacking foe"
     ],
     "triggers": [
-     "Foe attacks"
+     "Attacked or struck"
     ]
    }
   },
@@ -5986,7 +5985,7 @@
     ],
     "worksWith": [],
     "triggers": [
-     "Foe attacks"
+     "Attacked or struck"
     ]
    }
   }
