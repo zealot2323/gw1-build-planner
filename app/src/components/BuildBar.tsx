@@ -21,6 +21,10 @@ export const DRAFT = "__draft__";
  * The 8-slot build bar, pinned above the skill browser. Starts as an unsaved
  * draft so you can throw skills at it immediately and name it later.
  * Clicking a slot opens that skill's details; the × removes it.
+ *
+ * On a phone the whole bar is sticky and was taller than half the screen, so
+ * there it starts collapsed to one line (name, eight mini icons, a caret).
+ * The collapse is CSS-only below 720px; desktop always shows the full bar.
  */
 export function BuildBar({
   character,
@@ -44,6 +48,7 @@ export function BuildBar({
   const [openSlot, setOpenSlot] = useState<number | null>(null);
   const [showTodo, setShowTodo] = useState(true);
   const [openRoute, setOpenRoute] = useState<string | null>(null);
+  const [collapsed, setCollapsed] = useState(true);
 
   const builds = character.builds;
   const isDraft = activeBuild === null;
@@ -85,187 +90,206 @@ export function BuildBar({
       : null;
 
   return (
-    <div className="card build-bar">
-      <div className="row wrap space-between">
-        <div className="row wrap">
-          <span className="field-label no-margin">Build</span>
-          <select
-            value={activeBuild ?? DRAFT}
-            onChange={(e) => {
-              setActiveBuild(e.target.value === DRAFT ? null : e.target.value);
-              setOpenSlot(null);
-            }}
-          >
-            <option value={DRAFT}>Unsaved draft</option>
-            {builds.map((b) => (
-              <option key={b.name}>{b.name}</option>
-            ))}
-          </select>
-
-          <span className="field-label no-margin">Secondary</span>
-          <select
-            value={build.secondary ?? ""}
-            onChange={(e) => patch({ secondary: (e.target.value || null) as Profession | null })}
-            title="Skills from this profession can be used in this build"
-          >
-            <option value="">none</option>
-            {PROFESSIONS.filter((p) => p !== build.primary).map((p) => (
-              <option key={p}>{p}</option>
-            ))}
-          </select>
-          <ProfessionIcon profession={build.primary} />
-          <span className="muted">/</span>
-          {build.secondary ? <ProfessionIcon profession={build.secondary} /> : <span className="muted">—</span>}
-          <label
-            className="row"
-            style={{ gap: "0.3rem" }}
-            title="PvP builds show PvP skill versions and copy out with PvP skill ids"
-          >
-            <input type="checkbox" checked={!!build.pvp} onChange={(e) => patch({ pvp: e.target.checked || undefined })} />
-            <span className="small">PvP build</span>
-          </label>
-        </div>
-
-        <div className="row">
-          {errors.length > 0 && (
-            <span className="error small">
-              {errors.length} thing{errors.length > 1 ? "s" : ""} to fix
+    <div className={`card build-bar${collapsed ? " collapsed" : ""}`}>
+      <button
+        className="build-bar-toggle"
+        aria-expanded={!collapsed}
+        onClick={() => setCollapsed(!collapsed)}
+        title={collapsed ? "Show the build" : "Hide the build"}
+      >
+        <span className="build-bar-caret">{collapsed ? "▸" : "▾"}</span>
+        <span className="build-bar-name">{isDraft ? "Unsaved draft" : build.name}</span>
+        <span className="build-bar-mini">
+          {build.skills.map((skill, i) => (
+            <span key={i} className={`mini-slot${badSlots.has(i) ? " invalid" : ""}`}>
+              {skill && <SkillIcon page={skill} size={22} />}
             </span>
-          )}
-          {isDraft ? (
-            <>
-              <input
-                className="narrow"
-                placeholder="Name this build…"
-                value={saveName}
-                onChange={(e) => setSaveName(e.target.value)}
-                onKeyDown={(e) => e.key === "Enter" && save()}
-              />
-              <button onClick={save} disabled={saveName.trim() === ""}>
-                Save
-              </button>
-            </>
-          ) : (
-            <button
-              className="danger small"
-              onClick={() => {
-                updateBuilds(builds.filter((b) => b.name !== build.name));
-                setActiveBuild(null);
+          ))}
+        </span>
+        {errors.length > 0 && <span className="error small">{errors.length} to fix</span>}
+      </button>
+
+      <div className="build-bar-body">
+        <div className="row wrap space-between">
+          <div className="row wrap">
+            <span className="field-label no-margin">Build</span>
+            <select
+              value={activeBuild ?? DRAFT}
+              onChange={(e) => {
+                setActiveBuild(e.target.value === DRAFT ? null : e.target.value);
+                setOpenSlot(null);
               }}
             >
-              delete
-            </button>
-          )}
-        </div>
-      </div>
+              <option value={DRAFT}>Unsaved draft</option>
+              {builds.map((b) => (
+                <option key={b.name}>{b.name}</option>
+              ))}
+            </select>
 
-      <div className="slots">
-        {build.skills.map((skill, i) => (
-          <div
-            key={i}
-            className={`slot${skill ? " filled" : ""}${badSlots.has(i) ? " invalid" : ""}`}
-            title={badSlots.has(i) ? errors.find((e) => e.slot === i)?.message : undefined}
-          >
-            {skill ? (
+            <span className="field-label no-margin">Secondary</span>
+            <select
+              value={build.secondary ?? ""}
+              onChange={(e) => patch({ secondary: (e.target.value || null) as Profession | null })}
+              title="Skills from this profession can be used in this build"
+            >
+              <option value="">none</option>
+              {PROFESSIONS.filter((p) => p !== build.primary).map((p) => (
+                <option key={p}>{p}</option>
+              ))}
+            </select>
+            <ProfessionIcon profession={build.primary} />
+            <span className="muted">/</span>
+            {build.secondary ? <ProfessionIcon profession={build.secondary} /> : <span className="muted">—</span>}
+            <label
+              className="inline-check pvp-check"
+              title="PvP builds show PvP skill versions and copy out with PvP skill ids"
+            >
+              <input type="checkbox" checked={!!build.pvp} onChange={(e) => patch({ pvp: e.target.checked || undefined })} />
+              <span className="small">PvP build</span>
+            </label>
+          </div>
+
+          <div className="row">
+            {errors.length > 0 && (
+              <span className="error small">
+                {errors.length} thing{errors.length > 1 ? "s" : ""} to fix
+              </span>
+            )}
+            {isDraft ? (
               <>
-                <button
-                  className="slot-open"
-                  title="Show skill details"
-                  onClick={() => setOpenSlot(openSlot === i ? null : i)}
-                >
-                  <SkillIcon page={skill} size={32} />
-                  <span className="slot-name">
-                    {skill}
-                    {index.skillByPage.get(skill)?.isElite && <span className="elite"> ★</span>}
-                  </span>
-                  {build.pvp && index.skillByPage.get(skill)?.pvp && (
-                    <span className="pvp-mark" title="Plays differently in PvP">
-                      PvP
-                    </span>
-                  )}
-                </button>
-                <button className="slot-remove" title="Remove from build" onClick={() => clearSlot(i)}>
-                  ×
+                <input
+                  className="narrow"
+                  placeholder="Name this build…"
+                  value={saveName}
+                  onChange={(e) => setSaveName(e.target.value)}
+                  onKeyDown={(e) => e.key === "Enter" && save()}
+                />
+                <button onClick={save} disabled={saveName.trim() === ""}>
+                  Save
                 </button>
               </>
             ) : (
-              <span className="muted slot-empty">empty</span>
+              <button
+                className="danger small"
+                onClick={() => {
+                  updateBuilds(builds.filter((b) => b.name !== build.name));
+                  setActiveBuild(null);
+                }}
+              >
+                delete
+              </button>
             )}
           </div>
-        ))}
-      </div>
-
-      {openSkill && (
-        <div className="slide-down">
-          <SkillDetails skill={openSkill} pvp={!!build.pvp} />
         </div>
-      )}
 
-      {errors.length > 0 && (
-        <ul className="problems">
-          {errors.map((e, i) => (
-            <li key={i}>
-              <span className="problem-mark">!</span>
-              <span>
-                {e.message}
-                {e.fix && <span className="muted"> {e.fix}</span>}
-              </span>
-            </li>
-          ))}
-        </ul>
-      )}
-
-      {todo.length > 0 && (
-        <div className="todo">
-          <button className="linkish todo-head" onClick={() => setShowTodo(!showTodo)}>
-            {showTodo ? "▾" : "▸"} To field this build you still need {todo.length} skill
-            {todo.length > 1 ? "s" : ""}
-          </button>
-          {showTodo && (
-            <ol className="todo-list">
-              {todo.map(({ skill, plan }) => (
-                <li key={skill}>
-                  <ProximityDot proximity={plan.proximity} distance={plan.distance} />
-                  <SkillIcon page={skill} size={20} />
-                  <strong>{skill}</strong>
-                  {plan.best ? (
-                    <span className="muted">
-                      {" — "}
-                      {plan.best.kind === "trainer" && `buy from ${plan.best.via}`}
-                      {plan.best.kind === "quest" && `quest ${plan.best.via}`}
-                      {plan.best.kind === "capture" && `capture from ${plan.best.via}`}
-                      {plan.best.kind === "title" && `earn rank with ${plan.best.via}`}
-                      {plan.best.location && ` in ${plan.best.location}`}
-                      {plan.route.length > 0 && (
-                        <>
-                          {" · "}
-                          <button
-                            className="linkish inline"
-                            onClick={() => setOpenRoute(openRoute === skill ? null : skill)}
-                          >
-                            {plan.distance} zone{plan.distance === 1 ? "" : "s"} away
-                            {openRoute === skill ? " ▾" : " ▸"}
-                          </button>
-                        </>
-                      )}
-                      {plan.distance === 0 && " · you can go now"}
+        <div className="slots">
+          {build.skills.map((skill, i) => (
+            <div
+              key={i}
+              className={`slot${skill ? " filled" : ""}${badSlots.has(i) ? " invalid" : ""}`}
+              title={badSlots.has(i) ? errors.find((e) => e.slot === i)?.message : undefined}
+            >
+              {skill ? (
+                <>
+                  <button
+                    className="slot-open"
+                    title="Show skill details"
+                    onClick={() => setOpenSlot(openSlot === i ? null : i)}
+                  >
+                    <SkillIcon page={skill} size={32} />
+                    <span className="slot-name">
+                      {skill}
+                      {index.skillByPage.get(skill)?.isElite && <span className="elite"> ★</span>}
                     </span>
-                  ) : (
-                    <span className="muted"> — no reachable source</span>
-                  )}
-                  {openRoute === skill && plan.route.length > 0 && (
-                    <ol className="route">
-                      {plan.route.map((step) => (
-                        <li key={step}>{step}</li>
-                      ))}
-                    </ol>
-                  )}
-                </li>
-              ))}
-            </ol>
-          )}
+                    {build.pvp && index.skillByPage.get(skill)?.pvp && (
+                      <span className="pvp-mark" title="Plays differently in PvP">
+                        PvP
+                      </span>
+                    )}
+                  </button>
+                  <button className="slot-remove" title="Remove from build" onClick={() => clearSlot(i)}>
+                    ×
+                  </button>
+                </>
+              ) : (
+                <span className="muted slot-empty">empty</span>
+              )}
+            </div>
+          ))}
         </div>
-      )}
+
+        {openSkill && (
+          <div className="slide-down">
+            <SkillDetails skill={openSkill} pvp={!!build.pvp} />
+          </div>
+        )}
+
+        {errors.length > 0 && (
+          <ul className="problems">
+            {errors.map((e, i) => (
+              <li key={i}>
+                <span className="problem-mark">!</span>
+                <span>
+                  {e.message}
+                  {e.fix && <span className="muted"> {e.fix}</span>}
+                </span>
+              </li>
+            ))}
+          </ul>
+        )}
+
+        {todo.length > 0 && (
+          <div className="todo">
+            <button className="linkish todo-head" onClick={() => setShowTodo(!showTodo)}>
+              {showTodo ? "▾" : "▸"} To field this build you still need {todo.length} skill
+              {todo.length > 1 ? "s" : ""}
+            </button>
+            {showTodo && (
+              <ol className="todo-list">
+                {todo.map(({ skill, plan }) => (
+                  <li key={skill}>
+                    <ProximityDot proximity={plan.proximity} distance={plan.distance} />
+                    <SkillIcon page={skill} size={20} />
+                    <strong>{skill}</strong>
+                    {plan.best ? (
+                      <span className="muted">
+                        {" — "}
+                        {plan.best.kind === "trainer" && `buy from ${plan.best.via}`}
+                        {plan.best.kind === "quest" && `quest ${plan.best.via}`}
+                        {plan.best.kind === "capture" && `capture from ${plan.best.via}`}
+                        {plan.best.kind === "title" && `earn rank with ${plan.best.via}`}
+                        {plan.best.location && ` in ${plan.best.location}`}
+                        {plan.route.length > 0 && (
+                          <>
+                            {" · "}
+                            <button
+                              className="linkish inline"
+                              onClick={() => setOpenRoute(openRoute === skill ? null : skill)}
+                            >
+                              {plan.distance} zone{plan.distance === 1 ? "" : "s"} away
+                              {openRoute === skill ? " ▾" : " ▸"}
+                            </button>
+                          </>
+                        )}
+                        {plan.distance === 0 && " · you can go now"}
+                      </span>
+                    ) : (
+                      <span className="muted"> — no reachable source</span>
+                    )}
+                    {openRoute === skill && plan.route.length > 0 && (
+                      <ol className="route">
+                        {plan.route.map((step) => (
+                          <li key={step}>{step}</li>
+                        ))}
+                      </ol>
+                    )}
+                  </li>
+                ))}
+              </ol>
+            )}
+          </div>
+        )}
+      </div>
     </div>
   );
 }
