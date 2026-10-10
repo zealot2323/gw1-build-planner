@@ -21,7 +21,7 @@
  */
 import { useEffect, useRef, useState } from "react";
 import type { Session } from "@supabase/supabase-js";
-import { mergeGuestCharacters, type Build, type Character } from "@gw1/engine";
+import { isCompletionFile, mergeGuestCharacters, type Build, type Character } from "@gw1/engine";
 import { supabase } from "./supabase";
 import { applyCompletion, describeImport, fetchCompletionUpload } from "./completion";
 
@@ -250,12 +250,27 @@ export function useSave() {
   const removeCharacter = (name: string) =>
     setSave((s) => ({ ...s, characters: s.characters.filter((c) => c.name !== name) }));
 
-  const importFile = async (file: File) => {
+  /**
+   * Either a planner save (replaces this save) or GWToolbox's
+   * character_completion.json (folded in, additive — the same merge the
+   * uploader's file goes through). Returns a line saying what happened.
+   */
+  const importFile = async (file: File): Promise<string> => {
     const parsed = JSON.parse(await file.text());
-    if (!isSaveFile(parsed)) {
-      throw new Error("not a gw1-build-planner save file (expected {version: 1, characters: []})");
+    if (isSaveFile(parsed)) {
+      setSave(parsed);
+      return `Loaded ${parsed.characters.length} character${parsed.characters.length === 1 ? "" : "s"} from ${file.name}.`;
     }
-    setSave(parsed);
+    if (isCompletionFile(parsed)) {
+      const applied = applyCompletion(save.characters, parsed);
+      const described = describeImport(applied.changes);
+      if (!described) return "Up to date; nothing new in that completion file.";
+      setSave((s) => ({ ...s, characters: applied.characters }));
+      return described;
+    }
+    throw new Error(
+      "not a planner save file ({version: 1, characters: []}) or a GWToolbox character_completion.json",
+    );
   };
 
   const exportFile = () => {
