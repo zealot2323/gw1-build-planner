@@ -11,6 +11,7 @@ import {
   changedAnything,
   decodeCharacter,
   indexDataset,
+  isCompletionFile,
   mergeCompletion,
   Profession,
   type Character,
@@ -165,5 +166,19 @@ describe("merging an import into the save", () => {
     const again = mergeCompletion(merged.characters, file, index, mapIds, (c) => ({ ...c, builds: [] }));
     expect(changedAnything(again.changes)).toBe(false);
     expect(again.characters).toHaveLength(merged.characters.length);
+  });
+});
+
+describe("recognising a completion file", () => {
+  it("accepts GWToolbox's shape", () => {
+    expect(isCompletionFile({ Thel: { profession: 8, skills: [0, 4], maps_unlocked: [] } })).toBe(true);
+  });
+
+  it("refuses a planner save, an empty object and records without bitfields", () => {
+    expect(isCompletionFile({ version: 1, characters: [] })).toBe(false);
+    expect(isCompletionFile({})).toBe(false);
+    expect(isCompletionFile([])).toBe(false);
+    expect(isCompletionFile({ Thel: { profession: 8 } })).toBe(false);
+    expect(isCompletionFile({ Thel: { skills: ["a"] } })).toBe(false);
   });
 });
