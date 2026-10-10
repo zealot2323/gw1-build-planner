@@ -26,7 +26,10 @@
     "effects": [
      "Adrenaline gain"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "You or ally attacks"
+    ]
    }
   },
   "\"Watch Yourself!\"": {
@@ -56,7 +59,8 @@
      "Area effect",
      "Party-wide"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Aegis": {
@@ -83,7 +87,8 @@
     "inflicts": [],
     "damage": [],
     "effects": [],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Aura of Restoration": {
@@ -113,7 +118,10 @@
      "Healing",
      "Energy gain"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "You or ally casts a spell"
+    ]
    }
   },
   "Call of Haste": {
@@ -142,7 +150,10 @@
      "Speed boost",
      "Faster attacks"
     ],
-    "worksWith": []
+    "worksWith": [
+     "Your pet"
+    ],
+    "triggers": []
    }
   },
   "Comfort Animal": {
@@ -171,7 +182,10 @@
      "Healing",
      "Resurrection"
     ],
-    "worksWith": []
+    "worksWith": [
+     "Your pet"
+    ],
+    "triggers": []
    }
   },
   "Crippling Anguish": {
@@ -201,7 +215,8 @@
      "Health degeneration",
      "Slows movement"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Crippling Shot": {
@@ -235,7 +250,8 @@
      "Slows movement",
      "Unblockable"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Defy Pain": {
@@ -261,7 +277,8 @@
     "inflicts": [],
     "damage": [],
     "effects": [],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Empathy": {
@@ -292,7 +309,10 @@
     "effects": [
      "Armor-ignoring damage"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Attacked or struck"
+    ]
    }
   },
   "Enfeeble": {
@@ -320,7 +340,8 @@
     ],
     "damage": [],
     "effects": [],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Enfeebling Blood": {
@@ -351,7 +372,8 @@
      "Health sacrifice",
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Escape": {
@@ -380,7 +402,8 @@
      "Block",
      "Speed boost"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Ether Renewal": {
@@ -409,7 +432,10 @@
     "effects": [
      "Energy gain"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "You or ally casts a spell"
+    ]
    }
   },
   "Fevered Dreams": {
@@ -438,7 +464,10 @@
     "effects": [
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Gains a condition or hex"
+    ]
    }
   },
   "Fragility": {
@@ -470,7 +499,8 @@
      "Armor-ignoring damage",
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Frenzy": {
@@ -498,7 +528,8 @@
     "effects": [
      "Faster attacks"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Heal Party": {
@@ -526,7 +557,8 @@
     "effects": [
      "Healing"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Hundred Blades": {
@@ -556,7 +588,10 @@
     "effects": [
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "You or ally attacks"
+    ]
    }
   },
   "Illusion of Haste": {
@@ -587,7 +622,10 @@
      "Slows movement",
      "Self condition"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Effect ends"
+    ]
    }
   },
   "Illusionary Weaponry": {
@@ -618,7 +656,8 @@
     "effects": [
      "Armor-ignoring damage"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Lightning Reflexes": {
@@ -647,7 +686,8 @@
      "Block",
      "Faster attacks"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Mantra of Resolve": {
@@ -675,7 +715,10 @@
     "effects": [
      "Interrupt"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Interrupted"
+    ]
    }
   },
   "Mantra of Signets": {
@@ -704,7 +747,12 @@
      "Healing",
      "Armor bonus"
     ],
-    "worksWith": []
+    "worksWith": [
+     "Your signets"
+    ],
+    "triggers": [
+     "You or ally uses a skill"
+    ]
    }
   },
   "Melandru's Assault": {
@@ -732,7 +780,10 @@
     "effects": [
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [
+     "Your pet"
+    ],
+    "triggers": []
    }
   },
   "Migraine": {
@@ -761,7 +812,8 @@
     "effects": [
      "Health degeneration"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Mind Freeze": {
@@ -793,7 +845,10 @@
      "Slows movement",
      "Exhaustion"
     ],
-    "worksWith": []
+    "worksWith": [
+     "Health or Energy compared"
+    ],
+    "triggers": []
    }
   },
   "Mind Shock": {
@@ -824,7 +879,10 @@
      "Knockdown",
      "Exhaustion"
     ],
-    "worksWith": []
+    "worksWith": [
+     "Health or Energy compared"
+    ],
+    "triggers": []
    }
   },
   "Mind Wrack": {
@@ -856,7 +914,10 @@
      "Energy denial",
      "Armor-ignoring damage"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Targeted by a skill"
+    ]
    }
   },
   "Mist Form": {
@@ -888,7 +949,8 @@
      "Area effect",
      "Party-wide"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Nature's Renewal": {
@@ -916,7 +978,8 @@
     "effects": [
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Obsidian Flame": {
@@ -947,7 +1010,8 @@
      "Armor-ignoring damage",
      "Exhaustion"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Otyugh's Cry": {
@@ -976,7 +1040,10 @@
      "Armor bonus",
      "Unblockable"
     ],
-    "worksWith": []
+    "worksWith": [
+     "Your pet"
+    ],
+    "triggers": []
    }
   },
   "Peace and Harmony": {
@@ -1006,7 +1073,8 @@
      "Condition removal",
      "Hex removal"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Penetrating Attack": {
@@ -1035,7 +1103,8 @@
     "inflicts": [],
     "damage": [],
     "effects": [],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Protector's Strike": {
@@ -1065,7 +1134,8 @@
     "effects": [],
     "worksWith": [
      "Moving foe"
-    ]
+    ],
+    "triggers": []
    }
   },
   "Read the Wind": {
@@ -1091,7 +1161,8 @@
     "inflicts": [],
     "damage": [],
     "effects": [],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Shatter Delusions": {
@@ -1123,7 +1194,8 @@
      "Armor-ignoring damage",
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Signet of Agony": {
@@ -1156,7 +1228,8 @@
      "Area effect",
      "Self condition"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Signet of Judgment": {
@@ -1188,7 +1261,8 @@
      "Armor-ignoring damage",
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Strength of Honor": {
@@ -1217,7 +1291,8 @@
     "effects": [
      "Maintained"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Unholy Feast": {
@@ -1247,7 +1322,8 @@
      "Armor-ignoring damage",
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Unyielding Aura": {
@@ -1277,7 +1353,10 @@
      "Resurrection",
      "Uses a corpse"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Effect removed"
+    ]
    }
   },
   "Ward Against Harm": {
@@ -1309,7 +1388,8 @@
      "Armor bonus",
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Warrior's Endurance": {
@@ -1337,7 +1417,10 @@
     "effects": [
      "Energy gain"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "You or ally attacks"
+    ]
    }
   },
   "Wastrel's Worry": {
@@ -1369,7 +1452,11 @@
      "Armor-ignoring damage",
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Foe uses a skill",
+     "Effect removed"
+    ]
    }
   },
   "\"Coward!\"": {
@@ -1399,7 +1486,8 @@
     ],
     "worksWith": [
      "Moving foe"
-    ]
+    ],
+    "triggers": []
    }
   },
   "Accumulated Pain": {
@@ -1433,7 +1521,8 @@
     ],
     "worksWith": [
      "Hexed foe"
-    ]
+    ],
+    "triggers": []
    }
   },
   "Ancestors' Rage": {
@@ -1463,7 +1552,8 @@
     "effects": [
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Armor of Unfeeling": {
@@ -1490,7 +1580,8 @@
     "inflicts": [],
     "damage": [],
     "effects": [],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Auspicious Blow": {
@@ -1524,7 +1615,8 @@
     ],
     "worksWith": [
      "Weakness"
-    ]
+    ],
+    "triggers": []
    }
   },
   "Bloodsong": {
@@ -1554,7 +1646,8 @@
      "Armor-ignoring damage",
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Dash": {
@@ -1580,7 +1673,8 @@
     "inflicts": [],
     "damage": [],
     "effects": [],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Death Blossom": {
@@ -1616,7 +1710,8 @@
     ],
     "worksWith": [
      "Off-hand attack"
-    ]
+    ],
+    "triggers": []
    }
   },
   "Destruction": {
@@ -1648,7 +1743,10 @@
      "Area effect",
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Someone dies"
+    ]
    }
   },
   "Discord": {
@@ -1682,7 +1780,8 @@
      "Hexed foe",
      "Enchanted foe",
      "Target with a condition"
-    ]
+    ],
+    "triggers": []
    }
   },
   "Disenchantment": {
@@ -1713,7 +1812,8 @@
      "Armor-ignoring damage",
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Displacement": {
@@ -1746,7 +1846,10 @@
      "Area effect",
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Attack blocked"
+    ]
    }
   },
   "Dissonance": {
@@ -1778,7 +1881,8 @@
      "Armor-ignoring damage",
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Earthbind": {
@@ -1809,7 +1913,8 @@
      "Area effect",
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Enraged Lunge": {
@@ -1835,7 +1940,10 @@
     "inflicts": [],
     "damage": [],
     "effects": [],
-    "worksWith": []
+    "worksWith": [
+     "Your pet"
+    ],
+    "triggers": []
    }
   },
   "Enraged Smash": {
@@ -1869,7 +1977,8 @@
     ],
     "worksWith": [
      "Moving foe"
-    ]
+    ],
+    "triggers": []
    }
   },
   "Flesh of My Flesh": {
@@ -1897,7 +2006,8 @@
     "effects": [
      "Resurrection"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Fox Fangs": {
@@ -1930,7 +2040,8 @@
     ],
     "worksWith": [
      "Lead attack"
-    ]
+    ],
+    "triggers": []
    }
   },
   "Glass Arrows": {
@@ -1958,7 +2069,10 @@
     ],
     "damage": [],
     "effects": [],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Attack blocked"
+    ]
    }
   },
   "Guided Weapon": {
@@ -1987,7 +2101,8 @@
     "effects": [
      "Unblockable"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Heal as One": {
@@ -2017,8 +2132,10 @@
      "Resurrection"
     ],
     "worksWith": [
-     "Low Health"
-    ]
+     "Low Health",
+     "Your pet"
+    ],
+    "triggers": []
    }
   },
   "Illusion of Pain": {
@@ -2051,7 +2168,10 @@
      "Health degeneration",
      "Armor-ignoring damage"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Effect ends"
+    ]
    }
   },
   "Life": {
@@ -2081,7 +2201,10 @@
      "Area effect",
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Someone dies"
+    ]
    }
   },
   "Lightning Hammer": {
@@ -2109,7 +2232,8 @@
      "Lightning"
     ],
     "effects": [],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Melandru's Shot": {
@@ -2146,7 +2270,8 @@
     "worksWith": [
      "Knocked-down foe",
      "Moving foe"
-    ]
+    ],
+    "triggers": []
    }
   },
   "Pain": {
@@ -2177,7 +2302,8 @@
      "Armor-ignoring damage",
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Predatory Bond": {
@@ -2205,7 +2331,10 @@
     "effects": [
      "Healing"
     ],
-    "worksWith": []
+    "worksWith": [
+     "Your pet"
+    ],
+    "triggers": []
    }
   },
   "Preservation": {
@@ -2235,7 +2364,8 @@
      "Area effect",
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Primal Rage": {
@@ -2264,7 +2394,8 @@
      "Speed boost",
      "Faster attacks"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Protector's Defense": {
@@ -2293,7 +2424,8 @@
      "Block",
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Psychic Instability": {
@@ -2323,7 +2455,8 @@
      "Knockdown",
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Recuperation": {
@@ -2353,7 +2486,8 @@
      "Area effect",
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Renewing Smash": {
@@ -2387,7 +2521,8 @@
     ],
     "worksWith": [
      "Knocked-down foe"
-    ]
+    ],
+    "triggers": []
    }
   },
   "Restoration": {
@@ -2418,7 +2553,10 @@
      "Party-wide",
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Someone dies"
+    ]
    }
   },
   "Ride the Lightning": {
@@ -2451,7 +2589,8 @@
      "Area effect",
      "Exhaustion"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Shadow Form": {
@@ -2478,7 +2617,11 @@
     "inflicts": [],
     "damage": [],
     "effects": [],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Attacked or struck",
+     "Effect ends"
+    ]
    }
   },
   "Shadow Shroud": {
@@ -2505,7 +2648,8 @@
     "inflicts": [],
     "damage": [],
     "effects": [],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Shadowsong": {
@@ -2538,7 +2682,8 @@
      "Armor-ignoring damage",
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Shared Burden": {
@@ -2568,7 +2713,8 @@
      "Slows movement",
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Shelter": {
@@ -2598,7 +2744,8 @@
      "Area effect",
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Shield Guardian": {
@@ -2630,7 +2777,10 @@
      "Area effect",
      "Party-wide"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Attack blocked"
+    ]
    }
   },
   "Shroud of Distress": {
@@ -2661,7 +2811,8 @@
     ],
     "worksWith": [
      "Low Health"
-    ]
+    ],
+    "triggers": []
    }
   },
   "Signet of Spirits": {
@@ -2692,7 +2843,8 @@
     ],
     "worksWith": [
      "Nearby spirits"
-    ]
+    ],
+    "triggers": []
    }
   },
   "Soothing": {
@@ -2721,7 +2873,8 @@
      "Area effect",
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Soul Twisting": {
@@ -2749,7 +2902,8 @@
     "effects": [
      "Faster recharge"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Spirit Bond": {
@@ -2778,7 +2932,10 @@
     "effects": [
      "Healing"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Takes damage"
+    ]
    }
   },
   "Splinter Weapon": {
@@ -2810,7 +2967,8 @@
      "Armor-ignoring damage",
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Spoil Victor": {
@@ -2839,7 +2997,11 @@
     "effects": [
      "Armor-ignoring damage"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Attacked or struck",
+     "Foe casts a spell"
+    ]
    }
   },
   "Stolen Speed": {
@@ -2868,7 +3030,8 @@
     "effects": [
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Sundering Attack": {
@@ -2897,7 +3060,8 @@
     "inflicts": [],
     "damage": [],
     "effects": [],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Tranquility": {
@@ -2926,7 +3090,8 @@
      "Area effect",
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Union": {
@@ -2960,7 +3125,10 @@
      "Area effect",
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Takes damage"
+    ]
    }
   },
   "Unnatural Signet": {
@@ -2994,7 +3162,8 @@
     "worksWith": [
      "Hexed foe",
      "Enchanted foe"
-    ]
+    ],
+    "triggers": []
    }
   },
   "Unseen Fury": {
@@ -3024,7 +3193,8 @@
     ],
     "worksWith": [
      "Blind"
-    ]
+    ],
+    "triggers": []
    }
   },
   "Wanderlust": {
@@ -3054,7 +3224,12 @@
      "Armor-ignoring damage",
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [
+     "Stationary foe"
+    ],
+    "triggers": [
+     "You or ally attacks"
+    ]
    }
   },
   "Weapon of Warding": {
@@ -3084,7 +3259,8 @@
      "Health regeneration",
      "Block"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Wild Strike": {
@@ -3117,7 +3293,8 @@
     ],
     "worksWith": [
      "Lead attack"
-    ]
+    ],
+    "triggers": []
    }
   },
   "\"Brace Yourself!\"": {
@@ -3147,7 +3324,10 @@
     "effects": [
      "Armor-ignoring damage"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Knocked down"
+    ]
    }
   },
   "\"Can't Touch This!\"": {
@@ -3173,7 +3353,8 @@
     "inflicts": [],
     "damage": [],
     "effects": [],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "\"Fall Back!\"": {
@@ -3204,7 +3385,10 @@
      "Area effect",
      "Party-wide"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "You or ally attacks"
+    ]
    }
   },
   "\"Find Their Weakness!\"": {
@@ -3232,7 +3416,8 @@
     ],
     "damage": [],
     "effects": [],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "\"Go for the Eyes!\"": {
@@ -3262,7 +3447,10 @@
      "Area effect",
      "Party-wide"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "You or ally attacks"
+    ]
    }
   },
   "\"Help!\"": {
@@ -3291,7 +3479,8 @@
      "Healing",
      "Faster casting"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "\"Incoming!\"": {
@@ -3322,7 +3511,8 @@
      "Area effect",
      "Party-wide"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "\"Never Give Up!\"": {
@@ -3354,7 +3544,8 @@
     ],
     "worksWith": [
      "Low Health"
-    ]
+    ],
+    "triggers": []
    }
   },
   "\"Never Surrender!\"": {
@@ -3386,7 +3577,8 @@
     ],
     "worksWith": [
      "Low Health"
-    ]
+    ],
+    "triggers": []
    }
   },
   "\"Stand Your Ground!\"": {
@@ -3416,7 +3608,10 @@
      "Area effect",
      "Party-wide"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "You or ally attacks"
+    ]
    }
   },
   "\"We Shall Return!\"": {
@@ -3446,7 +3641,10 @@
      "Area effect",
      "Party-wide"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "You or ally uses a skill"
+    ]
    }
   },
   "Anguish": {
@@ -3479,7 +3677,8 @@
     ],
     "worksWith": [
      "Hexed foe"
-    ]
+    ],
+    "triggers": []
    }
   },
   "Anthem of Envy": {
@@ -3508,7 +3707,10 @@
      "Area effect",
      "Party-wide"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "You or ally attacks"
+    ]
    }
   },
   "Assassin's Remedy": {
@@ -3537,7 +3739,8 @@
     "effects": [
      "Condition removal"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Aura of Thorns": {
@@ -3571,7 +3774,10 @@
      "Slows movement",
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Effect ends"
+    ]
    }
   },
   "Avatar of Dwayna": {
@@ -3603,7 +3809,11 @@
      "Hex removal",
      "Armor-ignoring damage"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "You or ally attacks",
+     "Enchantment ends or is lost"
+    ]
    }
   },
   "Avatar of Melandru": {
@@ -3634,7 +3844,10 @@
      "Condition removal",
      "Armor bonus"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Enchantment ends or is lost"
+    ]
    }
   },
   "Ballad of Restoration": {
@@ -3664,7 +3877,10 @@
      "Area effect",
      "Party-wide"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Takes damage"
+    ]
    }
   },
   "Banishing Strike": {
@@ -3697,7 +3913,8 @@
      "Armor-ignoring damage",
      "Summon"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Bladeturn Refrain": {
@@ -3725,7 +3942,10 @@
     "effects": [
      "Armor bonus"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Effect ends"
+    ]
    }
   },
   "Blazing Finale": {
@@ -3755,7 +3975,10 @@
     "effects": [
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Effect ends"
+    ]
    }
   },
   "Charging Strike": {
@@ -3781,7 +4004,8 @@
     "inflicts": [],
     "damage": [],
     "effects": [],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Death Pact Signet": {
@@ -3809,7 +4033,10 @@
     "effects": [
      "Resurrection"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Someone dies"
+    ]
    }
   },
   "Defensive Anthem": {
@@ -3839,7 +4066,8 @@
      "Area effect",
      "Party-wide"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Destructive Was Glaive": {
@@ -3870,7 +4098,10 @@
     "effects": [
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Effect ends"
+    ]
    }
   },
   "Dust Cloak": {
@@ -3904,7 +4135,10 @@
     "effects": [
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Effect ends"
+    ]
    }
   },
   "Elemental Flame": {
@@ -3933,7 +4167,10 @@
     ],
     "damage": [],
     "effects": [],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Gains a condition or hex"
+    ]
    }
   },
   "Empowerment": {
@@ -3964,7 +4201,8 @@
      "Party-wide",
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Enchanter's Conundrum": {
@@ -3999,7 +4237,8 @@
     "worksWith": [
      "Hexed foe",
      "Enchanted foe"
-    ]
+    ],
+    "triggers": []
    }
   },
   "Expert's Dexterity": {
@@ -4027,7 +4266,8 @@
     "effects": [
      "Faster attacks"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Finale of Restoration": {
@@ -4055,7 +4295,10 @@
     "effects": [
      "Healing"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Effect ends"
+    ]
    }
   },
   "Flail": {
@@ -4084,7 +4327,8 @@
      "Slows movement",
      "Faster attacks"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Fleeting Stability": {
@@ -4115,7 +4359,10 @@
      "Knockdown",
      "Speed boost"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Effect removed"
+    ]
    }
   },
   "Frustration": {
@@ -4147,7 +4394,10 @@
      "Interrupt",
      "Armor-ignoring damage"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Interrupted"
+    ]
    }
   },
   "Gaze of Fury": {
@@ -4178,7 +4428,8 @@
      "Armor-ignoring damage",
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Guiding Hands": {
@@ -4208,7 +4459,10 @@
      "Condition removal",
      "Unblockable"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "You or ally attacks"
+    ]
    }
   },
   "Harrier's Grasp": {
@@ -4243,7 +4497,8 @@
     ],
     "worksWith": [
      "Moving foe"
-    ]
+    ],
+    "triggers": []
    }
   },
   "Harrier's Toss": {
@@ -4278,7 +4533,8 @@
     ],
     "worksWith": [
      "Moving foe"
-    ]
+    ],
+    "triggers": []
    }
   },
   "Heart of Fury": {
@@ -4306,7 +4562,8 @@
     "effects": [
      "Faster attacks"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Infuriating Heat": {
@@ -4336,7 +4593,8 @@
      "Area effect",
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Irresistible Sweep": {
@@ -4367,7 +4625,10 @@
     "effects": [
      "Unblockable"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Enchantment ends or is lost"
+    ]
    }
   },
   "Keen Arrow": {
@@ -4398,7 +4659,10 @@
     "effects": [
      "Critical hits"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Critical hit"
+    ]
    }
   },
   "Light of Deliverance": {
@@ -4428,7 +4692,8 @@
      "Area effect",
      "Party-wide"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Lyssa's Haste": {
@@ -4460,7 +4725,10 @@
      "Faster recharge",
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Effect ends"
+    ]
    }
   },
   "Mending Refrain": {
@@ -4488,7 +4756,10 @@
     "effects": [
      "Health regeneration"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Effect ends"
+    ]
    }
   },
   "Mighty Throw": {
@@ -4517,7 +4788,8 @@
     "inflicts": [],
     "damage": [],
     "effects": [],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Mirage Cloak": {
@@ -4550,7 +4822,8 @@
      "Block",
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Mirror of Disenchantment": {
@@ -4580,7 +4853,8 @@
      "Area effect",
      "Party-wide"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Mistrust": {
@@ -4612,7 +4886,8 @@
      "Armor-ignoring damage",
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Mystic Corruption": {
@@ -4648,6 +4923,9 @@
     ],
     "worksWith": [
      "Your enchantments"
+    ],
+    "triggers": [
+     "Effect ends"
     ]
    }
   },
@@ -4678,7 +4956,8 @@
      "Area effect",
      "Party-wide"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Mystic Regeneration": {
@@ -4707,7 +4986,8 @@
     "effects": [
      "Health regeneration"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Onslaught": {
@@ -4737,7 +5017,8 @@
     "effects": [
      "Adrenaline gain"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Pious Assault": {
@@ -4771,7 +5052,8 @@
      "Armor-ignoring damage",
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Pious Restoration": {
@@ -4800,7 +5082,8 @@
      "Healing",
      "Hex removal"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Recovery": {
@@ -4828,7 +5111,8 @@
     "effects": [
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Savannah Heat": {
@@ -4858,7 +5142,8 @@
     "effects": [
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Signet of Clumsiness": {
@@ -4893,6 +5178,9 @@
     ],
     "worksWith": [
      "Attacking foe"
+    ],
+    "triggers": [
+     "Attacked or struck"
     ]
    }
   },
@@ -4921,7 +5209,8 @@
     "effects": [
      "Summon"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Signet of Return": {
@@ -4951,7 +5240,10 @@
      "Area effect",
      "Party-wide"
     ],
-    "worksWith": []
+    "worksWith": [
+     "Number of nearby allies"
+    ],
+    "triggers": []
    }
   },
   "Soldier's Stance": {
@@ -4979,7 +5271,8 @@
     "effects": [
      "Faster attacks"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Song of Restoration": {
@@ -5009,7 +5302,10 @@
      "Area effect",
      "Party-wide"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "You or ally uses a skill"
+    ]
    }
   },
   "Spiritual Pain": {
@@ -5041,7 +5337,8 @@
      "Area effect",
      "Summon"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Tease": {
@@ -5071,7 +5368,8 @@
      "Interrupt",
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Twin Moon Sweep": {
@@ -5102,7 +5400,8 @@
      "Healing",
      "Unblockable"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Visions of Regret": {
@@ -5136,6 +5435,9 @@
     ],
     "worksWith": [
      "Hexed foe"
+    ],
+    "triggers": [
+     "Foe uses a skill"
     ]
    }
   },
@@ -5165,7 +5467,10 @@
     "effects": [
      "Interrupt"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Effect ends"
+    ]
    }
   },
   "Whirling Charge": {
@@ -5198,7 +5503,10 @@
      "Speed boost",
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "You or ally attacks"
+    ]
    }
   },
   "Wounding Strike": {
@@ -5230,7 +5538,8 @@
     ],
     "damage": [],
     "effects": [],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Agony": {
@@ -5260,7 +5569,10 @@
      "Area effect",
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [
+     "Number of nearby foes"
+    ],
+    "triggers": []
    }
   },
   "Anthem of Disruption": {
@@ -5290,7 +5602,10 @@
      "Area effect",
      "Party-wide"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "You or ally attacks"
+    ]
    }
   },
   "Aura Slicer": {
@@ -5323,7 +5638,8 @@
     "effects": [],
     "worksWith": [
      "Your enchantments"
-    ]
+    ],
+    "triggers": []
    }
   },
   "Calculated Risk": {
@@ -5350,7 +5666,8 @@
     "inflicts": [],
     "damage": [],
     "effects": [],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Farmer's Scythe": {
@@ -5381,7 +5698,8 @@
     "effects": [
      "Faster recharge"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Masochism": {
@@ -5411,7 +5729,10 @@
      "Health sacrifice",
      "Energy gain"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Health sacrificed"
+    ]
    }
   },
   "Pious Fury": {
@@ -5439,7 +5760,8 @@
     "effects": [
      "Faster attacks"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Rejuvenation": {
@@ -5471,7 +5793,10 @@
      "Party-wide",
      "Creates a spirit"
     ],
-    "worksWith": []
+    "worksWith": [
+     "Number of nearby allies"
+    ],
+    "triggers": []
    }
   },
   "Signet of Deadly Corruption": {
@@ -5503,7 +5828,8 @@
     ],
     "worksWith": [
      "Dual attack"
-    ]
+    ],
+    "triggers": []
    }
   },
   "Signet of Pious Restraint": {
@@ -5534,7 +5860,8 @@
     ],
     "worksWith": [
      "Crippled"
-    ]
+    ],
+    "triggers": []
    }
   },
   "Slippery Ground": {
@@ -5564,7 +5891,8 @@
     ],
     "worksWith": [
      "Blind"
-    ]
+    ],
+    "triggers": []
    }
   },
   "Sloth Hunter's Shot": {
@@ -5593,7 +5921,8 @@
     "inflicts": [],
     "damage": [],
     "effects": [],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Smiter's Boon": {
@@ -5620,7 +5949,8 @@
     "inflicts": [],
     "damage": [],
     "effects": [],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": []
    }
   },
   "Wandering Eye": {
@@ -5653,7 +5983,10 @@
      "Armor-ignoring damage",
      "Area effect"
     ],
-    "worksWith": []
+    "worksWith": [],
+    "triggers": [
+     "Attacked or struck"
+    ]
    }
   }
  }

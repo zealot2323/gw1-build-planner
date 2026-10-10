@@ -19,6 +19,7 @@ import {
   EFFECT_TAGS,
   SKILL_TYPE_TAGS,
   TARGET_TAGS,
+  TRIGGER_TAGS,
   WEAPON_TAGS,
   WORKS_WITH_TAGS,
 } from "./tags.js";
@@ -475,7 +476,7 @@ export const campaignSchema = {
 const skillTagsSchema = {
   type: "object",
   additionalProperties: false,
-  required: ["types", "weapon", "target", "inflicts", "damage", "effects", "worksWith"],
+  required: ["types", "weapon", "target", "inflicts", "damage", "effects", "worksWith", "triggers"],
   properties: {
     types: { type: "array", items: { enum: SKILL_TYPE_TAGS } },
     weapon: { type: "array", items: { enum: WEAPON_TAGS } },
@@ -484,6 +485,7 @@ const skillTagsSchema = {
     damage: { type: "array", items: { enum: DAMAGE_TAGS } },
     effects: { type: "array", items: { enum: EFFECT_TAGS } },
     worksWith: { type: "array", items: { enum: WORKS_WITH_TAGS } },
+    triggers: { type: "array", items: { enum: TRIGGER_TAGS } },
   },
 } as const;
 

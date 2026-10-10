@@ -77,9 +77,27 @@ export const WORKS_WITH_TAGS = [
   "Moving foe", "Low Health", "Your enchantments", "Your hexes",
   "Your stance", "Your shouts and chants", "Your preparations",
   "Your weapon spells", "Nearby spirits", "Lead attack", "Off-hand attack",
-  "Dual attack",
+  "Dual attack", "Dead allies", "Number of nearby foes", "Number of nearby allies",
+  "Your conditions", "Your signets", "Your minions", "Your pet", "Overcast",
+  "Health or Energy compared", "Stationary foe", "Isolated foe", "Weapon equipped",
+  "Drunk",
 ] as const;
 export type WorksWithTag = (typeof WORKS_WITH_TAGS)[number];
+
+/**
+ * What sets a skill off after it is cast: "whenever target foe attacks",
+ * "the next time target ally takes damage", "when this enchantment ends".
+ * These are the skills whose value depends on someone else acting.
+ */
+export const TRIGGER_TAGS = [
+  "Attacked or struck", "Foe casts a spell", "Foe uses a skill",
+  "Targeted by a skill", "You or ally attacks", "You or ally casts a spell",
+  "You or ally uses a skill", "Takes damage", "Is healed", "Critical hit",
+  "Attack blocked", "Someone dies", "Health drops low", "Interrupted",
+  "Knocked down", "Gains a condition or hex", "Enchantment ends or is lost",
+  "Effect ends", "Effect removed", "Health sacrificed", "Creature created", "Moves",
+] as const;
+export type TriggerTag = (typeof TRIGGER_TAGS)[number];
 
 export interface SkillTags {
   types: SkillTypeTag[];
@@ -90,6 +108,8 @@ export interface SkillTags {
   damage: DamageTag[];
   effects: EffectTag[];
   worksWith: WorksWithTag[];
+  /** What sets the skill off after it is cast. */
+  triggers: TriggerTag[];
 }
 
 /** One facet of the tag filter, in display order. */
@@ -103,6 +123,7 @@ export const SKILL_TAG_FACETS: Array<{ key: SkillTagFacet; label: string; values
   { key: "damage", label: "Damage type", values: DAMAGE_TAGS },
   { key: "effects", label: "Effect", values: EFFECT_TAGS },
   { key: "worksWith", label: "Works with", values: WORKS_WITH_TAGS },
+  { key: "triggers", label: "Triggers when", values: TRIGGER_TAGS },
 ];
 
 /** The client's structured fields that tagging reads. All optional. */
@@ -270,6 +291,122 @@ const WORKS_WITH_PATTERNS: Array<[WorksWithTag, RegExp]> = [
   ["Your weapon spells", /\byou are under the effects? of a weapon spell|\bwhile you have a weapon spell/],
   ["Nearby spirits", /\b(within|in) earshot of a spirit|\bspirits? (are |is )?within earshot|\bnear a spirit/],
 ];
+
+/**
+ * Counts and states a skill scales with or needs, wherever the text puts
+ * them: "for each fallen ally", "for each adjacent foe", "if you are
+ * Overcast". These are read from the whole description.
+ */
+const SCALES_WITH_PATTERNS: Array<[WorksWithTag, RegExp]> = [
+  ["Dead allies", /\b(fallen|dead) (all(y|ies)|party members?)\b|\bfor each (fallen|dead)\b|\bif (an ally|a party member|any party member) (has )?died\b|\bnearby (allied )?corpses?\b/],
+  ["Number of nearby foes", /\bfor each (adjacent|nearby|other)? ?foe\b|\bfor each foe (adjacent|nearby|in)\b|\b(more|fewer) foes\b|\bnumber of foes\b/],
+  ["Number of nearby allies", /\bfor each (other )?(ally|party member)\b(?! (dead|fallen))|\bfor each (other )?(nearby|adjacent) ally\b|\bnumber of allies\b/],
+  ["Your conditions", /\b(if|while) you are (not )?suffering from (a|any) condition|\bfor each condition (you are suffering from|on you)|\bif you have (a|any) conditions?\b/],
+  ["Your signets", /\bfor each (of your )?signets?\b|\byour (next )?signets?\b|\bsignet[^.]*\brecharged?\b|\bwhenever you use a signet\b/],
+  ["Your minions", /\byour (undead )?minions?\b|\b(your|target) (undead servant|animated undead)|\bminion you control\b|\bhorror you control\b/],
+  ["Your pet", /\banimal companion\b|\byour pet\b/],
+  ["Overcast", /\bif you are overcast\b|\bwhile you are overcast\b/],
+  ["Health or Energy compared", /\b(more|less) (energy|health) than (you|target foe|that foe|your target)\b|\bif (you|target foe|that foe) (has|have) (more|less) (energy|health)\b|\bhealth is (above|higher)\b|\bif (your|target foe's|that foe's) health is above\b/],
+  ["Stationary foe", /\bstationary (foes?|targets?)\b|\bnon-moving (foes?|targets?)\b|\b(foe|target) (is|was) not moving\b/],
+  ["Isolated foe", /\bnot (adjacent|near) (to )?(any )?(of (its|their) )?allies\b|\bisn't near an ally\b|\bno other foes\b/],
+  ["Weapon equipped", /\b(while|if) (you are )?(wielding|you have) an? (shield|sword|axe|hammer|dagger|scythe|spear|bow|melee weapon|lightning weapon|fire weapon|cold weapon|earth weapon)\b|\bwhile wielding\b|\b(sword|axe|hammer|dagger|scythe|spear|bow) equipped\b/],
+  ["Drunk", /\bdrunk\b/],
+];
+
+// ---------------------------------------------------------------------------
+// Triggers
+// ---------------------------------------------------------------------------
+
+/**
+ * Words that open a trigger clause: "whenever target foe attacks", "the next
+ * time you are struck", "if that foe dies". The clause runs to the next comma.
+ */
+const TRIGGER_LEAD = /\b(whenever|the next time|next time|each time|every time|when|if|once)\b([^,;]*)/g;
+
+/** A clause about the skill's own hit: "if this attack hits", "if it hits". */
+const SELF_SUBJECT = /^ ?(this skill|this attack|this blow|this hammer blow|this arrow|these arrows|this spell|the attack|that attack|an attack|that action|it)\b/;
+
+const FOE_SUBJECT = /^ ?(target foe|that foe|this foe|the target foe|the foe|each foe|any foe|a foe|one of these foes|foes?|enemies|an enemy|hexed foes?|any of these foes)\b/;
+const OWN_SUBJECT = /^ ?(you|your|one of your|any of your|any party member|target (other )?ally|that ally|this ally|each ally|an ally|allies|each party member|that party member|target party member|a party member|party members?|a spell you|this spirit|the \w+ horror|a \w+ horror|target undead servant)\b/;
+const NEUTRAL_SUBJECT = /^ ?(a non-spirit creature|non-spirit creatures?|any non-spirit creature|any creature|anyone|creatures?)\b/;
+
+/** What happens in a trigger clause, and whether its side matters. */
+const CLAUSE_VERBS: Array<[RegExp, { foe?: TriggerTag; own?: TriggerTag; any?: TriggerTag }]> = [
+  [/(?<!\b(by|from|against|blocks?) (an? |the )?(next \d+ )?(melee |physical |projectile )?)\b(attacks?(?! damage)|hits? with an? (\w+ )?attack|uses? an attack|makes? an attack|lands? an attack|attack skill|fails? to hit|misses|(?<!\b(is|are) )hits?(?! by)|strikes?(?! for)|hit in melee)\b/, { foe: "Attacked or struck", own: "You or ally attacks" }],
+  [/\b(casts?|uses?) (a |an |any )?(spell|enchantment|hex)\b/, { foe: "Foe casts a spell", own: "You or ally casts a spell" }],
+  [/\b(uses? (a |an |any )?(\w+ )?((?<!attack )skill|signet|shout|chant|shout or chant|elite skill)s?|enters? a stance|uses? \w+ magic)\b/, { foe: "Foe uses a skill", own: "You or ally uses a skill" }],
+  [/\b(is|are) the target of\b/, { any: "Targeted by a skill" }],
+  [/\b(takes?|receives?|suffers?|would take|would receive) (more than \d+ |\w+ |\w+ or \w+ ){0,2}damage\b|\b(is|are) struck for (\w+ )?damage\b|\bhit by (\w+ )?damage\b|\bfatal damage\b|\bwould be fatal\b|\btakes? damage or life steal\b/, { any: "Takes damage" }],
+  [/\b(is|are) healed\b|\bgains? health\b/, { any: "Is healed" }],
+  [/\bcritical\b/, { any: "Critical hit" }],
+  [/\bblock(s|ed)?\b/, { any: "Attack blocked" }],
+  [/\b(dies|die|is killed|are killed|killing)\b/, { any: "Someone dies" }],
+  [/\bhealth (drops?|falls?|would drop) below\b|\bdrops? (your|target \w+'s|that \w+'s) health below\b|\bwould (drop|bring|reduce)[^,]*\bhealth below\b/, { any: "Health drops low" }],
+  [/\binterrupted\b|\btarget of an interrupt\b/, { any: "Interrupted" }],
+  [/\bwould be knocked down\b|\b(is|are) knocked down\b/, { any: "Knocked down" }],
+  [/\breceives? a condition\b|\bsuffers? from a new\b|\b(becomes?|is) (hexed|enchanted)\b|\ba (hex|condition|enchantment) is (cast|applied) on\b|\bapply an? \w+ hex\b/, { any: "Gains a condition or hex" }],
+  [/\bspend an own enchantment\b|\ban enchantment on you ends\b|\blose an enchantment\b/, { any: "Enchantment ends or is lost" }],
+  [/\bsacrifices? (health|life)\b/, { any: "Health sacrificed" }],
+  [/\bcreate a creature\b/, { any: "Creature created" }],
+  [/\b(is|are) moving\b|\bmove\b|\bmore than \d+' apart\b/, { any: "Moves" }],
+];
+
+/**
+ * Triggers stated without a lead word: "anyone striking target ally", "your
+ * attacker", "foes using attack skills".
+ */
+const TRIGGER_PATTERNS: Array<[TriggerTag, RegExp]> = [
+  ["Attacked or struck", /\b(struck|hit) by an? (melee |spirit's )?attack\b|\banyone (striking|attacking|who hits)\b|\b(foe|enemy) strikes (you|that ally|target ally)\b|\b(next time|whenever|when) you are (struck|hit)\b|\b(that|target) ally is (struck|hit)\b|\battacks? (skill )?(used )?against (you|that ally|target ally)\b|\byour attacker\b|\bthat ally's attacker\b|\bagainst you is blocked\b|\btarget of a hostile spell or attack\b|\beach time that ally is hit\b/],
+  ["Attacked or struck", /\bfoes using attack skills\b|\bwhenever a foe strikes\b/],
+  ["You or ally attacks", /\byour next (\d+ |\d+-\d+ )?attacks?\b|\bnext attack skill used\b|\bwhenever your arrows\b/],
+  ["You or ally casts a spell", /\byour next (\d+ )?(\w+ )?spells?\b|\bthe next spell you cast\b/],
+  ["Effect ends", /\bwhen (this|that) (enchantment|hex|stance|shout|effect|skill|spell|preparation|form|portal) ends\b|\bwhen this skill (would )?ends?\b|\bwhen this ends\b|\bthis (enchantment|hex|stance|effect) ends the next time\b|\bwhen you (drop|stop maintaining)\b|\bwhen this (enchantment|hex) is first\b/],
+  ["Effect removed", /\b(if|when) (this|that) (hex|enchantment) (is|was) removed\b|\b(removed|ends) prematurely\b/],
+  ["Effect ends", /\b(chant or shout|shout or chant) ends\b/],
+  ["Enchantment ends or is lost", /\bevery time an enchantment on you ends\b|\bwhenever an enchantment on you ends\b/],
+  ["Attacked or struck", /\bwhen they attack\b(?=[^.]*\bnon-spirit creatures\b)|\bnon-spirit creatures[^.]*each time they attack\b/],
+];
+
+/** A clause's subject: a foe, you or an ally, or anyone at all. */
+function clauseSide(clause: string, isHex: boolean): "foe" | "own" | "any" {
+  if (FOE_SUBJECT.test(clause)) return "foe";
+  if (NEUTRAL_SUBJECT.test(clause)) return "any";
+  if (OWN_SUBJECT.test(clause)) return "own";
+  // "they" and "it" are whoever the skill is on: a hex is on a foe.
+  if (/^ ?(they|it|each|that target|target)\b/.test(clause)) return isHex ? "foe" : "own";
+  return "any";
+}
+
+function triggerTags(body: string, types: SkillTypeTag[]): Set<TriggerTag> {
+  const out = new Set<TriggerTag>();
+  const isHex = types.includes("Hex");
+  const isAttack = types.includes("Attack");
+  for (const sentence of body.split(".")) {
+    // Traps go off when stepped on; every trap would carry that.
+    if (/\bis triggered\b|\bwhen it is triggered\b/.test(sentence)) continue;
+    for (const m of sentence.matchAll(TRIGGER_LEAD)) {
+      const [, lead, clause] = m;
+      // "Tiger Stance ends if any of your attacks fail": how it ends, not what it does.
+      if (/\bends?\s*$/.test(sentence.slice(0, m.index))) continue;
+      // "If this attack hits" is the skill working, not something setting it off.
+      const self = SELF_SUBJECT.test(clause) || (!isHex && /^ ?they (hit|are blocked)\b/.test(clause));
+      const side = clauseSide(clause, isHex);
+      for (const [re, tags] of CLAUSE_VERBS) {
+        if (!re.test(clause)) continue;
+        const tag = tags.any ?? (side === "own" ? tags.own : tags.foe);
+        if (!tag) continue;
+        if (self && tag !== "Attack blocked") continue;
+        // After "if", a knockdown, movement or hex is a state the skill checks.
+        if (lead === "if" && (tag === "Knocked down" || tag === "Moves" || tag === "Gains a condition or hex")) continue;
+        // An attack skill's own hit is the skill working: "If Mantis Sting hits".
+        if (isAttack && (tag === "Attacked or struck" || tag === "You or ally attacks") && side !== "foe") continue;
+        out.add(tag);
+      }
+    }
+  }
+  for (const [tag, re] of TRIGGER_PATTERNS) if (re.test(body)) out.add(tag);
+  return out;
+}
 
 /**
  * The same states named outside an "if" clause: "Knocked down foes are
@@ -499,6 +636,11 @@ export function skillTags(
     effects.add("Armor-ignoring damage");
   }
 
+  for (const [tag, re] of SCALES_WITH_PATTERNS) if (re.test(body)) worksWith.add(tag);
+  // A resurrection targets the dead; that is what it does, not what it needs.
+  if (effects.has("Resurrection")) worksWith.delete("Dead allies");
+  const triggers = triggerTags(body, types);
+
   // Dagger chains: what this skill must follow comes from the client.
   const req = client.comboReq ?? 0;
   if (req & 2 || /\bmust follow a lead attack\b/.test(body)) worksWith.add("Lead attack");
@@ -514,6 +656,7 @@ export function skillTags(
     damage,
     effects: ordered(EFFECT_TAGS, effects),
     worksWith: ordered(WORKS_WITH_TAGS, worksWith),
+    triggers: ordered(TRIGGER_TAGS, triggers),
   };
 }
 

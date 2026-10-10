@@ -567,6 +567,18 @@ There are two, and the split matters:
   - Self-inflicted costs are not offensive tags: a Dervish removing its own
     enchantment is not enchantment removal, and "this skill is disabled" is
     not skill disabling.
+  - **Triggers** ("Triggers when") are read clause by clause: a lead word
+    (whenever, the next time, each time, when, if) opens a clause that runs
+    to the next comma, its subject says whose side acts, and its verb says
+    what. "They" and "it" mean the foe only on a hex ("the next time they
+    use an attack skill" on a chant is your party). Three things are not
+    triggers: an attack skill's own hit ("If Mantis Sting hits"), how an
+    effect ends ("Tiger Stance ends if any of your attacks fail to hit"),
+    and a state checked with "if" (knocked down, moving, hexed), which is
+    `worksWith`. A foe attacking and you or an ally being struck are one
+    tag, "Attacked or struck", so it finds Shield of Judgment with Empathy.
+  - Resurrections target the dead; they do not get "Dead allies", which
+    is for skills that count or need fallen allies ("I Will Avenge You!").
   - It is text parsing, and the UI says so. Re-run `npm run parse` after
     changing the patterns.
   - PvP splits get their own tags from the PvP text (`npm run pvp`), and
