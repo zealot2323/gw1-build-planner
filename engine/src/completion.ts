@@ -48,6 +48,38 @@ export interface ToolboxCharacter {
 /** The whole file: character name -> record. */
 export type ToolboxCompletionFile = Record<string, ToolboxCharacter>;
 
+const BITFIELDS = [
+  "skills",
+  "mission",
+  "mission_bonus",
+  "mission_hm",
+  "mission_bonus_hm",
+  "vanquishes",
+  "maps_unlocked",
+] as const;
+
+/**
+ * Does this parsed JSON look like character_completion.json? Every value
+ * must be a character record, and at least one must carry a bitfield, so a
+ * planner save ({version, characters}) or an unrelated object is refused.
+ */
+export function isCompletionFile(value: unknown): value is ToolboxCompletionFile {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return false;
+  const records = Object.values(value as Record<string, unknown>);
+  if (records.length === 0) return false;
+  let sawBitfield = false;
+  for (const record of records) {
+    if (!record || typeof record !== "object" || Array.isArray(record)) return false;
+    for (const field of BITFIELDS) {
+      const words = (record as Record<string, unknown>)[field];
+      if (words === undefined) continue;
+      if (!Array.isArray(words) || !words.every((w) => typeof w === "number")) return false;
+      sawBitfield = true;
+    }
+  }
+  return sawBitfield;
+}
+
 /** data/map-ids.json: our pages -> every game MapID that is that place. */
 export interface MapIdTable {
   locations: Record<LocationRef, number[]>;

@@ -112,7 +112,7 @@ export function CharactersView({
   addCharacter: (c: CharacterSave) => void;
   updateCharacter: (name: string, patch: Partial<CharacterSave>) => void;
   removeCharacter: (name: string) => void;
-  importFile: (f: File) => Promise<void>;
+  importFile: (f: File) => Promise<string>;
   exportFile: () => void;
 }) {
   const index = useData();
@@ -120,6 +120,7 @@ export function CharactersView({
   const [newPrimary, setNewPrimary] = useState<Profession>(Profession.Warrior);
   const [newCampaign, setNewCampaign] = useState<Campaign>("Prophecies");
   const [importError, setImportError] = useState<string | null>(null);
+  const [importResult, setImportResult] = useState<string | null>(null);
 
   const create = () => {
     const name = newName.trim();
@@ -211,20 +212,36 @@ export function CharactersView({
               Import JSON
               <input
                 type="file"
-                accept="application/json"
+                accept="application/json,.json"
                 hidden
                 onChange={(e) => {
                   const f = e.target.files?.[0];
-                  if (f) importFile(f).then(() => setImportError(null), (err) => setImportError(String(err)));
+                  if (f) {
+                    importFile(f).then(
+                      (result) => {
+                        setImportError(null);
+                        setImportResult(result);
+                      },
+                      (err) => {
+                        setImportResult(null);
+                        setImportError(String(err));
+                      },
+                    );
+                  }
                   e.target.value = "";
                 }}
               />
             </label>
           </div>
           {importError && <div className="error">{importError}</div>}
+          {importResult && <p className="small ok">{importResult}</p>}
           <p className="muted small">
             Characters are saved in this browser. Signing in stores them in an account instead. Export JSON
             saves a copy of everything to a file.
+          </p>
+          <p className="muted small">
+            Import JSON also reads GWToolbox's <code>character_completion.json</code>: it adds the skills,
+            unlocked places, missions and vanquishes it records, and never removes anything.
           </p>
         </div>
 
