@@ -490,7 +490,10 @@ button.linkish.outpost { font-weight: 600; flex: 1; width: auto; }
   /* profession and source read as one line under the name */
   .skill-table td.muted { display: inline; }
   .skill-table td.muted:not(.small)::after { content: " · "; }
-  .skill-table td:last-child:has(button) { position: absolute; top: 0.4rem; right: 0; }
+  /* by class, not td:last-child:has(button): the expanded detail and sources
+     rows are a single cell holding buttons too, and pinning them took them
+     out of flow, so the open description sat on top of the rows below */
+  .skill-table td.row-actions { position: absolute; top: 0.4rem; right: 0; }
   /* attribute headings and the expanded detail row: full width, no reserved gutter */
   .skill-table tr:has(.attr-cell), .skill-table tr:has(td[colspan]) { padding-right: 0; }
   .skill-table .attr-cell { padding: 0 !important; border: none; }
