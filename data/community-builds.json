@@ -1,6 +1,994 @@
 {
-  "generatedAt": "2026-10-05T14:42:58.093Z",
+  "generatedAt": "2026-10-12T15:28:24.925Z",
   "builds": [
+    {
+      "id": "Owpj8hp6KT4O0kcXHQfbrX5iNXA",
+      "code": "Owpj8hp6KT4O0kcXHQfbrX5iNXA",
+      "name": "FoW ToC farm A/D [Guild Wars] — Vow of Strength",
+      "primary": "Assassin",
+      "secondary": "Dervish",
+      "skills": [
+        "Death's Charge",
+        "\"I Am Unstoppable!\"",
+        "Mirage Cloak",
+        "Shroud of Distress",
+        "Vow of Strength",
+        "Armor of Sanctity",
+        "Ebon Battle Standard of Honor",
+        "Eremite's Attack"
+      ],
+      "attributes": {
+        "Shadow Arts": 8,
+        "Scythe Mastery": 10,
+        "Earth Prayers": 12
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=1ZRTkz6rofU",
+        "name": "FoW ToC farm A/D [Guild Wars]",
+        "size": 2,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=1ZRTkz6rofU",
+        "title": "FoW ToC farm A/D [Guild Wars]",
+        "author": "sd_korsakoff",
+        "postedAt": "2026-10-09",
+        "context": "Template A/D P/Rt Equipment D/A set 1 :a Q9 Zealous Scythe, +5 energy set 2 a martial weapon of enchanting and a +30hp shield +1+3 Shadow Arts, vigor, Attunement; Vanguard, Infiltrator, Stalwart or Blessed insignias P/Rt:+1+3 Command, +3 Leadership",
+        "score": 362
+      },
+      "firstSeen": "2026-10-12"
+    },
+    {
+      "id": "OAdTYmD/ZC35AKukVkmMPQoJ7BA",
+      "code": "OAdTYmD/ZC35AKukVkmMPQoJ7BA",
+      "name": "FoW ToC farm N/A [Guild Wars] — Spiteful Spirit",
+      "primary": "Necromancer",
+      "secondary": "Assassin",
+      "skills": [
+        "Death's Charge",
+        "Shroud of Distress",
+        "Mental Block",
+        "Great Dwarf Armor",
+        "\"I Am Unstoppable!\"",
+        "Spiteful Spirit",
+        "Reckless Haste",
+        "Caltrops"
+      ],
+      "attributes": {
+        "Soul Reaping": 3,
+        "Curses": 12,
+        "Shadow Arts": 12
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Eye of the North"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=mtfb8oxiQac",
+        "name": "FoW ToC farm N/A [Guild Wars]",
+        "size": 2,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=mtfb8oxiQac",
+        "title": "FoW ToC farm N/A [Guild Wars]",
+        "author": "sd_korsakoff",
+        "postedAt": "2026-10-07",
+        "context": "Template N/A P/Rt Equipment a martial weapon of Enchanting and a shield of Fortitude (if possible +10AR vs blunt or -2/ench) N/A +1+3 Curses, vigor, +1 SR, attunement, Blessed, Stalwart or Tormentor insignias P/Rt +1+3 Command, +3 Leadership (14 Command, 15 Leadership)",
+        "score": 307
+      },
+      "firstSeen": "2026-10-12"
+    },
+    {
+      "id": "OQdTASB7TaBaJoJw0xmcXMmEnCA",
+      "code": "OQdTASB7TaBaJoJw0xmcXMmEnCA",
+      "name": "Guild Wars MQSC WoC Heroway 8min HM — Assassin's Promise",
+      "primary": "Mesmer",
+      "secondary": "Assassin",
+      "skills": [
+        "Assassin's Promise",
+        "Arcane Echo",
+        "Chaos Storm",
+        "Unnatural Signet",
+        "\"You Move Like a Dwarf!\"",
+        "Ebon Vanguard Assassin Support",
+        "\"Finish Him!\"",
+        "Spiritual Pain"
+      ],
+      "attributes": {
+        "Fast Casting": 9,
+        "Domination Magic": 12,
+        "Deadly Arts": 9
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=RpyS__CfgVM",
+        "name": "Guild Wars MQSC WoC Heroway 8min HM",
+        "size": 8,
+        "kind": "team"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=RpyS__CfgVM",
+        "title": "Guild Wars MQSC WoC Heroway 8min HM",
+        "author": "Moral Sin",
+        "postedAt": "2026-10-12",
+        "context": "Team build -Player 1+3 domi 2+ FC -RoJ 1+3 SS 2+ DR -BiP 1+1 SR 1+ BC -Inep 1+3 Ilu 2+ FC -Es1 1+3 domi 2+ FC -Es2 1+3 domi 2+ FC -Es3 1+3 domi 2+ FC -Es4 1+3 domi 2+ FC Misc runes Survivor/ Anchorite (monk) / Survivor/Prodigy (Mesmer) Weapons 20/20/20 +5 SR (Profession attribute)",
+        "score": 2
+      },
+      "firstSeen": "2026-10-12"
+    },
+    {
+      "id": "OAhjQgGaIP3BiXVV4JNncDzxJAA",
+      "code": "OAhjQgGaIP3BiXVV4JNncDzxJAA",
+      "name": "Guild Wars MQSC WoC Heroway 8min HM — Blood is Power",
+      "primary": "Necromancer",
+      "secondary": "Ritualist",
+      "skills": [
+        "Blood is Power",
+        "Vengeful Weapon",
+        "Signet of Lost Souls",
+        "Spirit Transfer",
+        "Mend Body and Soul",
+        "Spirit Light",
+        "Protective Was Kaolai",
+        "Life"
+      ],
+      "attributes": {
+        "Blood Magic": 8,
+        "Soul Reaping": 10,
+        "Restoration Magic": 12
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=RpyS__CfgVM",
+        "name": "Guild Wars MQSC WoC Heroway 8min HM",
+        "size": 8,
+        "kind": "team"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=RpyS__CfgVM",
+        "title": "Guild Wars MQSC WoC Heroway 8min HM",
+        "author": "Moral Sin",
+        "postedAt": "2026-10-12",
+        "context": "Team build -Player 1+3 domi 2+ FC -RoJ 1+3 SS 2+ DR -BiP 1+1 SR 1+ BC -Inep 1+3 Ilu 2+ FC -Es1 1+3 domi 2+ FC -Es2 1+3 domi 2+ FC -Es3 1+3 domi 2+ FC -Es4 1+3 domi 2+ FC Misc runes Survivor/ Anchorite (monk) / Survivor/Prodigy (Mesmer) Weapons 20/20/20 +5 SR (Profession attribute)",
+        "score": 2
+      },
+      "firstSeen": "2026-10-12"
+    },
+    {
+      "id": "OQljAoCsJOngdcOY6Z6uA4UNAAA",
+      "code": "OQljAoCsJOngdcOY6Z6uA4UNAAA",
+      "name": "Guild Wars MQSC WoC Heroway 8min HM — Energy Surge",
+      "primary": "Mesmer",
+      "secondary": "Paragon",
+      "skills": [
+        "Energy Surge",
+        "\"Fall Back!\"",
+        "Cry of Frustration",
+        "Mistrust",
+        "Unnatural Signet",
+        "Power Spike",
+        "Spiritual Pain",
+        "Empathy"
+      ],
+      "attributes": {
+        "Fast Casting": 10,
+        "Domination Magic": 12,
+        "Command": 8
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=RpyS__CfgVM",
+        "name": "Guild Wars MQSC WoC Heroway 8min HM",
+        "size": 8,
+        "kind": "team"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=RpyS__CfgVM",
+        "title": "Guild Wars MQSC WoC Heroway 8min HM",
+        "author": "Moral Sin",
+        "postedAt": "2026-10-12",
+        "context": "Team build -Player 1+3 domi 2+ FC -RoJ 1+3 SS 2+ DR -BiP 1+1 SR 1+ BC -Inep 1+3 Ilu 2+ FC -Es1 1+3 domi 2+ FC -Es2 1+3 domi 2+ FC -Es3 1+3 domi 2+ FC -Es4 1+3 domi 2+ FC Misc runes Survivor/ Anchorite (monk) / Survivor/Prodigy (Mesmer) Weapons 20/20/20 +5 SR (Profession attribute)",
+        "score": 2
+      },
+      "firstSeen": "2026-10-12"
+    },
+    {
+      "id": "OQhjAwCc4QnA5AXAmOTPHg4UXMA",
+      "code": "OQhjAwCc4QnA5AXAmOTPHg4UXMA",
+      "name": "Guild Wars MQSC WoC Heroway 8min HM — Energy Surge (2)",
+      "primary": "Mesmer",
+      "secondary": "Ritualist",
+      "skills": [
+        "Energy Surge",
+        "Cry of Frustration",
+        "Power Spike",
+        "Unnatural Signet",
+        "Mistrust",
+        "Aneurysm",
+        "Spiritual Pain",
+        "Flesh of My Flesh"
+      ],
+      "attributes": {
+        "Fast Casting": 12,
+        "Domination Magic": 12,
+        "Restoration Magic": 3
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=RpyS__CfgVM",
+        "name": "Guild Wars MQSC WoC Heroway 8min HM",
+        "size": 8,
+        "kind": "team"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=RpyS__CfgVM",
+        "title": "Guild Wars MQSC WoC Heroway 8min HM",
+        "author": "Moral Sin",
+        "postedAt": "2026-10-12",
+        "context": "Team build -Player 1+3 domi 2+ FC -RoJ 1+3 SS 2+ DR -BiP 1+1 SR 1+ BC -Inep 1+3 Ilu 2+ FC -Es1 1+3 domi 2+ FC -Es2 1+3 domi 2+ FC -Es3 1+3 domi 2+ FC -Es4 1+3 domi 2+ FC Misc runes Survivor/ Anchorite (monk) / Survivor/Prodigy (Mesmer) Weapons 20/20/20 +5 SR (Profession attribute)",
+        "score": 2
+      },
+      "firstSeen": "2026-10-12"
+    },
+    {
+      "id": "OQhjAwCc4Mngcw0z0dBwpagLGAA",
+      "code": "OQhjAwCc4Mngcw0z0dBwpagLGAA",
+      "name": "Guild Wars MQSC WoC Heroway 8min HM — Energy Surge (3)",
+      "primary": "Mesmer",
+      "secondary": "Ritualist",
+      "skills": [
+        "Energy Surge",
+        "Cry of Frustration",
+        "Mistrust",
+        "Unnatural Signet",
+        "Power Spike",
+        "Spiritual Pain",
+        "Empathy",
+        "Flesh of My Flesh"
+      ],
+      "attributes": {
+        "Fast Casting": 12,
+        "Domination Magic": 12,
+        "Restoration Magic": 3
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=RpyS__CfgVM",
+        "name": "Guild Wars MQSC WoC Heroway 8min HM",
+        "size": 8,
+        "kind": "team"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=RpyS__CfgVM",
+        "title": "Guild Wars MQSC WoC Heroway 8min HM",
+        "author": "Moral Sin",
+        "postedAt": "2026-10-12",
+        "context": "Team build -Player 1+3 domi 2+ FC -RoJ 1+3 SS 2+ DR -BiP 1+1 SR 1+ BC -Inep 1+3 Ilu 2+ FC -Es1 1+3 domi 2+ FC -Es2 1+3 domi 2+ FC -Es3 1+3 domi 2+ FC -Es4 1+3 domi 2+ FC Misc runes Survivor/ Anchorite (monk) / Survivor/Prodigy (Mesmer) Weapons 20/20/20 +5 SR (Profession attribute)",
+        "score": 2
+      },
+      "firstSeen": "2026-10-12"
+    },
+    {
+      "id": "OQhjAwCc4Mngcw0z0dBwpDhLGAA",
+      "code": "OQhjAwCc4Mngcw0z0dBwpDhLGAA",
+      "name": "Guild Wars MQSC WoC Heroway 8min HM — Energy Surge (4)",
+      "primary": "Mesmer",
+      "secondary": "Ritualist",
+      "skills": [
+        "Energy Surge",
+        "Cry of Frustration",
+        "Mistrust",
+        "Unnatural Signet",
+        "Power Spike",
+        "Spiritual Pain",
+        "Shatter Hex",
+        "Flesh of My Flesh"
+      ],
+      "attributes": {
+        "Fast Casting": 12,
+        "Domination Magic": 12,
+        "Restoration Magic": 3
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=RpyS__CfgVM",
+        "name": "Guild Wars MQSC WoC Heroway 8min HM",
+        "size": 8,
+        "kind": "team"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=RpyS__CfgVM",
+        "title": "Guild Wars MQSC WoC Heroway 8min HM",
+        "author": "Moral Sin",
+        "postedAt": "2026-10-12",
+        "context": "Team build -Player 1+3 domi 2+ FC -RoJ 1+3 SS 2+ DR -BiP 1+1 SR 1+ BC -Inep 1+3 Ilu 2+ FC -Es1 1+3 domi 2+ FC -Es2 1+3 domi 2+ FC -Es3 1+3 domi 2+ FC -Es4 1+3 domi 2+ FC Misc runes Survivor/ Anchorite (monk) / Survivor/Prodigy (Mesmer) Weapons 20/20/20 +5 SR (Profession attribute)",
+        "score": 2
+      },
+      "firstSeen": "2026-10-12"
+    },
+    {
+      "id": "OQlkAoB8gYi0LwOGzXe2KAHUPFCI",
+      "code": "OQlkAoB8gYi0LwOGzXe2KAHUPFCI",
+      "name": "Guild Wars MQSC WoC Heroway 8min HM — Ineptitude",
+      "primary": "Mesmer",
+      "secondary": "Paragon",
+      "skills": [
+        "Ineptitude",
+        "\"Fall Back!\"",
+        "Sum of All Fears",
+        "Signet of Clumsiness",
+        "Clumsiness",
+        "Accumulated Pain",
+        "Frustration",
+        "Wandering Eye"
+      ],
+      "attributes": {
+        "Fast Casting": 10,
+        "Illusion Magic": 12,
+        "Inspiration Magic": 2,
+        "Command": 8
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=RpyS__CfgVM",
+        "name": "Guild Wars MQSC WoC Heroway 8min HM",
+        "size": 8,
+        "kind": "team"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=RpyS__CfgVM",
+        "title": "Guild Wars MQSC WoC Heroway 8min HM",
+        "author": "Moral Sin",
+        "postedAt": "2026-10-12",
+        "context": "Team build -Player 1+3 domi 2+ FC -RoJ 1+3 SS 2+ DR -BiP 1+1 SR 1+ BC -Inep 1+3 Ilu 2+ FC -Es1 1+3 domi 2+ FC -Es2 1+3 domi 2+ FC -Es3 1+3 domi 2+ FC -Es4 1+3 domi 2+ FC Misc runes Survivor/ Anchorite (monk) / Survivor/Prodigy (Mesmer) Weapons 20/20/20 +5 SR (Profession attribute)",
+        "score": 2
+      },
+      "firstSeen": "2026-10-12"
+    },
+    {
+      "id": "OwYTgGHD5xndPo+uE8aX8iU9BAA",
+      "code": "OwYTgGHD5xndPo+uE8aX8iU9BAA",
+      "name": "Guild Wars MQSC WoC Heroway 8min HM — Ray of Judgment",
+      "primary": "Monk",
+      "secondary": "Elementalist",
+      "skills": [
+        "Ray of Judgment",
+        "Symbol of Wrath",
+        "Smite Condition",
+        "Smite Hex",
+        "Reversal of Damage",
+        "Heaven's Delight",
+        "Divine Healing",
+        "Smiter's Boon"
+      ],
+      "attributes": {
+        "Air Magic": 3,
+        "Smiting Prayers": 12,
+        "Divine Favor": 12
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=RpyS__CfgVM",
+        "name": "Guild Wars MQSC WoC Heroway 8min HM",
+        "size": 8,
+        "kind": "team"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=RpyS__CfgVM",
+        "title": "Guild Wars MQSC WoC Heroway 8min HM",
+        "author": "Moral Sin",
+        "postedAt": "2026-10-12",
+        "context": "Team build -Player 1+3 domi 2+ FC -RoJ 1+3 SS 2+ DR -BiP 1+1 SR 1+ BC -Inep 1+3 Ilu 2+ FC -Es1 1+3 domi 2+ FC -Es2 1+3 domi 2+ FC -Es3 1+3 domi 2+ FC -Es4 1+3 domi 2+ FC Misc runes Survivor/ Anchorite (monk) / Survivor/Prodigy (Mesmer) Weapons 20/20/20 +5 SR (Profession attribute)",
+        "score": 2
+      },
+      "firstSeen": "2026-10-12"
+    },
+    {
+      "id": "OACkAqhiITi0A4103U1U5kPI00FD",
+      "code": "OACkAqhiITi0A4103U1U5kPI00FD",
+      "name": "Guild Wars Reforged - Build - SoS Ritualist — Signet of Spirits",
+      "primary": "Ritualist",
+      "secondary": null,
+      "skills": [
+        "Summon Spirits",
+        "Signet of Spirits",
+        "Pain",
+        "Painful Bond",
+        "Bloodsong",
+        "Vampirism",
+        "Armor of Unfeeling",
+        "Flesh of My Flesh"
+      ],
+      "attributes": {
+        "Communing": 10,
+        "Restoration Magic": 2,
+        "Channeling Magic": 12,
+        "Spawning Power": 8
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=Vy_UeIR8mh0",
+        "name": "Guild Wars Reforged - Build - SoS Ritualist",
+        "size": 2,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=Vy_UeIR8mh0",
+        "title": "Guild Wars Reforged - Build - SoS Ritualist",
+        "author": "Sabre Wolf",
+        "postedAt": "2026-10-08",
+        "score": 418
+      },
+      "firstSeen": "2026-10-12"
+    },
+    {
+      "id": "OAhjQoGa4O3hBRVdcOMjmTuLGA",
+      "code": "OAhjQoGa4O3hBRVdcOMjmTuLGA",
+      "name": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in… — Blood is Power",
+      "primary": "Necromancer",
+      "secondary": "Ritualist",
+      "skills": [
+        "Blood is Power",
+        "Barbed Signet",
+        "Signet of Lost Souls",
+        "Life",
+        "Protective Was Kaolai",
+        "Soothing Memories",
+        "Spirit Light",
+        "Flesh of My Flesh"
+      ],
+      "attributes": {
+        "Blood Magic": 10,
+        "Soul Reaping": 10,
+        "Restoration Magic": 11
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=ODzKSE7dzOo",
+        "name": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in depth Guide",
+        "size": 8,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=ODzKSE7dzOo",
+        "title": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in depth Guide",
+        "author": "Lain",
+        "postedAt": "2026-10-11",
+        "context": "Player Ranger Discord 1 Discord 2 Discord 3 Mesmer Bip ST",
+        "score": 3975
+      },
+      "firstSeen": "2026-10-12"
+    },
+    {
+      "id": "OAVEE4kla5UVjZZg4GRgD2TzzA",
+      "code": "OAVEE4kla5UVjZZg4GRgD2TzzA",
+      "name": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in… — Discord",
+      "primary": "Necromancer",
+      "secondary": "Mesmer",
+      "skills": [
+        "Signet of Lost Souls",
+        "Discord",
+        "Power Drain",
+        "Ether Signet",
+        "Drain Enchantment",
+        "Accumulated Pain",
+        "Frustration",
+        "Signet of Clumsiness"
+      ],
+      "attributes": {
+        "Illusion Magic": 8,
+        "Inspiration Magic": 9,
+        "Death Magic": 10,
+        "Soul Reaping": 9
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=ODzKSE7dzOo",
+        "name": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in depth Guide",
+        "size": 8,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=ODzKSE7dzOo",
+        "title": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in depth Guide",
+        "author": "Lain",
+        "postedAt": "2026-10-11",
+        "context": "Player Ranger Discord 1 Discord 2 Discord 3 Mesmer Bip ST",
+        "score": 3975
+      },
+      "firstSeen": "2026-10-12"
+    },
+    {
+      "id": "OAVEMapWe3Ezqqfi6wYIDE3ICA",
+      "code": "OAVEMapWe3Ezqqfi6wYIDE3ICA",
+      "name": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in… — Discord (2)",
+      "primary": "Necromancer",
+      "secondary": "Mesmer",
+      "skills": [
+        "Discord",
+        "Signet of Lost Souls",
+        "Weaken Armor",
+        "Enfeeble",
+        "Parasitic Bond",
+        "Power Drain",
+        "Ether Signet",
+        "Drain Enchantment"
+      ],
+      "attributes": {
+        "Inspiration Magic": 10,
+        "Death Magic": 10,
+        "Soul Reaping": 9,
+        "Curses": 7
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=ODzKSE7dzOo",
+        "name": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in depth Guide",
+        "size": 8,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=ODzKSE7dzOo",
+        "title": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in depth Guide",
+        "author": "Lain",
+        "postedAt": "2026-10-11",
+        "context": "Player Ranger Discord 1 Discord 2 Discord 3 Mesmer Bip ST",
+        "score": 3975
+      },
+      "firstSeen": "2026-10-12"
+    },
+    {
+      "id": "OABEQSx2eGFzoAWV1IGJ0GUHYHA",
+      "code": "OABEQSx2eGFzoAWV1IGJ0GUHYHA",
+      "name": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in… — Discord (3)",
+      "primary": "Necromancer",
+      "secondary": null,
+      "skills": [
+        "Discord",
+        "Putrid Bile",
+        "Signet of Lost Souls",
+        "Angorodon's Gaze",
+        "Signet of Agony",
+        "Life Siphon",
+        "Enfeeble",
+        "Enfeebling Blood"
+      ],
+      "attributes": {
+        "Blood Magic": 2,
+        "Death Magic": 12,
+        "Soul Reaping": 11,
+        "Curses": 6
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=ODzKSE7dzOo",
+        "name": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in depth Guide",
+        "size": 8,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=ODzKSE7dzOo",
+        "title": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in depth Guide",
+        "author": "Lain",
+        "postedAt": "2026-10-11",
+        "context": "Player Ranger Discord 1 Discord 2 Discord 3 Mesmer Bip ST",
+        "score": 3975
+      },
+      "firstSeen": "2026-10-12"
+    },
+    {
+      "id": "OwcT8Y/8ZiHpeQn5ACmJCimUeAA",
+      "code": "OwcT8Y/8ZiHpeQn5ACmJCimUeAA",
+      "name": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in… — Shadow Form",
+      "primary": "Monk",
+      "secondary": "Assassin",
+      "skills": [
+        "Deadly Paradox",
+        "Protective Spirit",
+        "Shadow Form",
+        "Shroud of Distress",
+        "Mirrored Stance",
+        "Unseen Fury",
+        "\"I Am Unstoppable!\"",
+        "Balthazar's Spirit"
+      ],
+      "attributes": {
+        "Protection Prayers": 12,
+        "Deadly Arts": 3,
+        "Shadow Arts": 12
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=ODzKSE7dzOo",
+        "name": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in depth Guide",
+        "size": 8,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=ODzKSE7dzOo",
+        "title": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in depth Guide",
+        "author": "Lain",
+        "postedAt": "2026-10-11",
+        "context": "Player Ranger Discord 1 Discord 2 Discord 3 Mesmer Bip ST",
+        "score": 3975
+      },
+      "firstSeen": "2026-10-12"
+    },
+    {
+      "id": "OAmkAyhCpaiD206FOhm34dsz8iB",
+      "code": "OAmkAyhCpaiD206FOhm34dsz8iB",
+      "name": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in… — Soul Twisting",
+      "primary": "Ritualist",
+      "secondary": "Paragon",
+      "skills": [
+        "Soul Twisting",
+        "Shelter",
+        "Displacement",
+        "Armor of Unfeeling",
+        "\"Make Haste!\"",
+        "\"Fall Back!\"",
+        "Boon of Creation",
+        "Flesh of My Flesh"
+      ],
+      "attributes": {
+        "Communing": 12,
+        "Restoration Magic": 2,
+        "Spawning Power": 10,
+        "Command": 8
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=ODzKSE7dzOo",
+        "name": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in depth Guide",
+        "size": 8,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=ODzKSE7dzOo",
+        "title": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in depth Guide",
+        "author": "Lain",
+        "postedAt": "2026-10-11",
+        "context": "Player Ranger Discord 1 Discord 2 Discord 3 Mesmer Bip ST",
+        "score": 3975
+      },
+      "firstSeen": "2026-10-12"
+    },
+    {
+      "id": "OQhkAwC6AGKDc7mKDmezANQc7iB",
+      "code": "OQhkAwC6AGKDc7mKDmezANQc7iB",
+      "name": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in… — Stolen Speed",
+      "primary": "Mesmer",
+      "secondary": "Ritualist",
+      "skills": [
+        "Stolen Speed",
+        "Wastrel's Demise",
+        "Wastrel's Worry",
+        "Mistrust",
+        "Shame",
+        "Empathy",
+        "Ether Signet",
+        "Flesh of My Flesh"
+      ],
+      "attributes": {
+        "Fast Casting": 12,
+        "Domination Magic": 10,
+        "Inspiration Magic": 8,
+        "Restoration Magic": 2
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=ODzKSE7dzOo",
+        "name": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in depth Guide",
+        "size": 8,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=ODzKSE7dzOo",
+        "title": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in depth Guide",
+        "author": "Lain",
+        "postedAt": "2026-10-11",
+        "context": "Player Ranger Discord 1 Discord 2 Discord 3 Mesmer Bip ST",
+        "score": 3975
+      },
+      "firstSeen": "2026-10-12"
+    },
+    {
+      "id": "OgMTY3rh5B6sdQOPnfNrkhITAA",
+      "code": "OgMTY3rh5B6sdQOPnfNrkhITAA",
+      "name": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in… — Unyielding Aura",
+      "primary": "Ranger",
+      "secondary": "Monk",
+      "skills": [
+        "Edge of Extinction",
+        "Quickening Zephyr",
+        "Serpent's Quickness",
+        "Winnowing",
+        "Natural Stride",
+        "Zojun's Haste",
+        "Unyielding Aura",
+        "Rebirth"
+      ],
+      "attributes": {
+        "Beast Mastery": 11,
+        "Expertise": 6,
+        "Wilderness Survival": 12
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=ODzKSE7dzOo",
+        "name": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in depth Guide",
+        "size": 8,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=ODzKSE7dzOo",
+        "title": "How to Use a 3rd Class in Guild Wars?! | 105hp DoA City of Torc’qua in depth Guide",
+        "author": "Lain",
+        "postedAt": "2026-10-11",
+        "context": "Player Ranger Discord 1 Discord 2 Discord 3 Mesmer Bip ST",
+        "score": 3975
+      },
+      "firstSeen": "2026-10-12"
+    },
+    {
+      "id": "OwAS4YIP4VbSas6DRs+3jYC",
+      "code": "OwAS4YIP4VbSas6DRs+3jYC",
+      "name": "Smiting Prayers is very good. Word of Censure DPS build. — Word of Censure",
+      "primary": "Monk",
+      "secondary": null,
+      "skills": [
+        "Reversal of Damage",
+        "Divine Spirit",
+        "Word of Censure",
+        "Smiter's Boon",
+        "Balthazar's Aura",
+        "Castigation Signet",
+        "Symbol of Wrath",
+        "Resurrect"
+      ],
+      "attributes": {
+        "Smiting Prayers": 12,
+        "Divine Favor": 12
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "team": {
+        "id": "https://www.reddit.com/r/GuildWars/comments/1x2xk96/smiting_prayers_is_very_good_word_of_censure_dps/",
+        "name": "Smiting Prayers is very good. Word of Censure DPS build.",
+        "size": 2,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "reddit",
+        "url": "https://www.reddit.com/r/GuildWars/comments/1x2xk96/smiting_prayers_is_very_good_word_of_censure_dps/",
+        "title": "Smiting Prayers is very good. Word of Censure DPS build.",
+        "author": "/u/DixFerLunch",
+        "postedAt": "2026-10-11",
+        "context": "Just learned that Toolbox can track healing as well as DPS, so I tested out this Smite build on THK HM yesterday. Top DPS and only surpassed on healing by the full Healing Prayers Monk. No battery required. It is competitive against every top DPS build I've played with (TaO/Domination/Soul Taker/VoS) and can still be a top support, including Resurrect! SR5 weapon very much recommended. With Cons o…"
+      },
+      "firstSeen": "2026-10-12"
+    },
+    {
+      "id": "OQZDAcw5QCVfVeQIg3U2gmAqiA",
+      "code": "OQZDAcw5QCVfVeQIg3U2gmAqiA",
+      "name": "UW Smite farm Me/E [Guild Wars]",
+      "primary": "Mesmer",
+      "secondary": "Elementalist",
+      "skills": [
+        "Signet of Illusions",
+        "Stoneflesh Aura",
+        "Ancestor's Visage",
+        "Wandering Eye",
+        "Wastrel's Demise",
+        "Cry of Pain",
+        "Channeling",
+        "Drunken Master"
+      ],
+      "attributes": {
+        "Fast Casting": 12,
+        "Illusion Magic": 12,
+        "Earth Magic": 3
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=D7xPJXCXRfM",
+        "title": "UW Smite farm Me/E [Guild Wars]",
+        "author": "sd_korsakoff",
+        "postedAt": "2026-10-06",
+        "context": "Template Equipment a martial weapon of enchanting and a shield +30hp +1+3 Illusion Magic, +1 fast cast, vigor, attunement, ideally Stalwart or Blessed insignias",
+        "score": 1088
+      },
+      "firstSeen": "2026-10-12"
+    },
+    {
+      "id": "OQMT4wITVimMXsvY8ZH8vqrQeAA",
+      "code": "OQMT4wITVimMXsvY8ZH8vqrQeAA",
+      "name": "UW Smite farm W/Mo [Guild Wars] — Hundred Blades",
+      "primary": "Warrior",
+      "secondary": "Monk",
+      "skills": [
+        "\"I Am Unstoppable!\"",
+        "Ebon Battle Standard of Honor",
+        "Hundred Blades",
+        "Tiger Stance",
+        "Whirlwind Attack",
+        "Lion's Comfort",
+        "Sprint",
+        "Balthazar's Spirit"
+      ],
+      "attributes": {
+        "Smiting Prayers": 8,
+        "Strength": 12,
+        "Swordsmanship": 10
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=sdoS1OKIwQw",
+        "name": "UW Smite farm W/Mo [Guild Wars]",
+        "size": 2,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=sdoS1OKIwQw",
+        "title": "UW Smite farm W/Mo [Guild Wars]",
+        "author": "sd_korsakoff",
+        "postedAt": "2026-10-08",
+        "context": "Template Sun and Moon Slash variant Equipment:a Furious Sword of Fortitude with +5energy and a Q9 Strength Shield +30hp -2/ench or +10AR vs Piercing +1+3 Swordmanship (+1 or +2 can be used for more hp) vigor, +3 Strength, Sup Absorption, vitae, Knight's insignias",
+        "score": 701
+      },
+      "firstSeen": "2026-10-12"
+    },
+    {
+      "id": "OQMT4wITVimMXsvYH8vaqprQeAA",
+      "code": "OQMT4wITVimMXsvYH8vaqprQeAA",
+      "name": "UW Smite farm W/Mo [Guild Wars] — Hundred Blades (2)",
+      "primary": "Warrior",
+      "secondary": "Monk",
+      "skills": [
+        "\"I Am Unstoppable!\"",
+        "Ebon Battle Standard of Honor",
+        "Hundred Blades",
+        "Whirlwind Attack",
+        "Lion's Comfort",
+        "Sun and Moon Slash",
+        "Sprint",
+        "Balthazar's Spirit"
+      ],
+      "attributes": {
+        "Smiting Prayers": 8,
+        "Strength": 12,
+        "Swordsmanship": 10
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=sdoS1OKIwQw",
+        "name": "UW Smite farm W/Mo [Guild Wars]",
+        "size": 2,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=sdoS1OKIwQw",
+        "title": "UW Smite farm W/Mo [Guild Wars]",
+        "author": "sd_korsakoff",
+        "postedAt": "2026-10-08",
+        "context": "Template Sun and Moon Slash variant Equipment:a Furious Sword of Fortitude with +5energy and a Q9 Strength Shield +30hp -2/ench or +10AR vs Piercing +1+3 Swordmanship (+1 or +2 can be used for more hp) vigor, +3 Strength, Sup Absorption, vitae, Knight's insignias",
+        "score": 701
+      },
+      "firstSeen": "2026-10-12"
+    },
     {
       "id": "OQiiYyo8MsNx7YeMAAAAAAAA",
       "code": "OQiiYyo8MsNx7YeMAAAAAAAA",
@@ -25,19 +1013,19 @@
         "Nightfall"
       ],
       "team": {
-        "id": "https://www.youtube.com/watch?v=wFVRMUdyMNM",
-        "name": "FoW ToC farm D/A [Guild Wars]",
+        "id": "https://www.youtube.com/watch?v=1ZRTkz6rofU",
+        "name": "FoW ToC farm A/D [Guild Wars]",
         "size": 2,
         "kind": "set"
       },
       "source": {
         "kind": "youtube",
-        "url": "https://www.youtube.com/watch?v=wFVRMUdyMNM",
-        "title": "FoW ToC farm D/A [Guild Wars]",
+        "url": "https://www.youtube.com/watch?v=1ZRTkz6rofU",
+        "title": "FoW ToC farm A/D [Guild Wars]",
         "author": "sd_korsakoff",
-        "postedAt": "2026-10-01",
-        "context": "Template D/A P/Rt Equipment D/A set 1 :a Q9 Zealous Scythe, +5 energy set 2 a martial weapon of enchanting and a +30hp shield +1+3 Earth Prayers, vigor, +1 Mysticism, +1 Scythe, Attunement; Windwalker, Stalwart or Blessed insignias P/Rt:+1+3 Command, +3 Leadership",
-        "score": 344
+        "postedAt": "2026-10-09",
+        "context": "Template A/D P/Rt Equipment D/A set 1 :a Q9 Zealous Scythe, +5 energy set 2 a martial weapon of enchanting and a +30hp shield +1+3 Shadow Arts, vigor, Attunement; Vanguard, Infiltrator, Stalwart or Blessed insignias P/Rt:+1+3 Command, +3 Leadership",
+        "score": 362
       },
       "firstSeen": "2026-10-05"
     },
@@ -125,7 +1113,7 @@
         "author": "sd_korsakoff",
         "postedAt": "2026-10-04",
         "context": "Template E/A P/Rt Equipment a martial weapon of Enchanting and a shield of Fortitude (if possible +10AR vs blunt or -2/ench) E/A +1+3 Air Magic, vigor, +1 ES, attunement, Blessed orStalwart insignias P/Rt +1+3 Command, +3 Leadership (14 Command, 15 Leadership)",
-        "score": 190
+        "score": 486
       },
       "firstSeen": "2026-10-05"
     },
@@ -166,7 +1154,7 @@
         "author": "sd_korsakoff",
         "postedAt": "2026-10-04",
         "context": "Template E/A P/Rt Equipment a martial weapon of Enchanting and a shield of Fortitude (if possible +10AR vs blunt or -2/ench) E/A +1+3 Air Magic, vigor, +1 ES, attunement, Blessed orStalwart insignias P/Rt +1+3 Command, +3 Leadership (14 Command, 15 Leadership)",
-        "score": 190
+        "score": 486
       },
       "firstSeen": "2026-10-05"
     },
@@ -250,7 +1238,7 @@
         "author": "sd_korsakoff",
         "postedAt": "2026-10-05",
         "context": "Template Mo/A P/Rt Equipment a martial weapon of Enchanting and a shield of Fortitude (if possible +10AR vs blunt or -2/ench) Mo/A +1+3 Smiting, vigor, vitae; Blessed, Stalwart or Anchorite insignias P/Rt +1+3 Command, +3 Leadership (14 Command, 15 Leadership)",
-        "score": 3
+        "score": 334
       },
       "firstSeen": "2026-10-05"
     },
@@ -287,7 +1275,7 @@
         "author": "sd_korsakoff",
         "postedAt": "2026-10-03",
         "context": "Template Equipment:+1+3 Restoration magic (minimum 1+1) vigor, vitae or attunement, any insignias (to be extra safe Stalwart, Blessed, Sentry's or Herald insignias)",
-        "score": 266
+        "score": 391
       },
       "firstSeen": "2026-10-05"
     },
@@ -447,19 +1435,13 @@
         "Nightfall",
         "Eye of the North"
       ],
-      "team": {
-        "id": "https://www.youtube.com/watch?v=YdiWVkJm0w0",
-        "name": "Guild Wars Reforged - Build - Wounding Strike Dervish",
-        "size": 2,
-        "kind": "set"
-      },
       "source": {
         "kind": "youtube",
         "url": "https://www.youtube.com/watch?v=YdiWVkJm0w0",
         "title": "Guild Wars Reforged - Build - Wounding Strike Dervish",
         "author": "Sabre Wolf",
         "postedAt": "2026-10-01",
-        "score": 696
+        "score": 801
       },
       "firstSeen": "2026-10-05"
     },
@@ -871,7 +1853,7 @@
         "title": "Builds Explained - Ele/Mes Over The Limit EVAS Spammer [Guild Wars]",
         "author": "Péter Kádár",
         "postedAt": "2026-09-21",
-        "score": 13255
+        "score": 14141
       },
       "firstSeen": "2026-09-28"
     },
@@ -901,19 +1883,13 @@
         "Nightfall",
         "Eye of the North"
       ],
-      "team": {
-        "id": "https://www.youtube.com/watch?v=AR9fa-XmF2k",
-        "name": "Builds Explained - Ritualist/Assassin Spirit's Strength Dagger Spammer [Guild Wars]",
-        "size": 2,
-        "kind": "set"
-      },
       "source": {
         "kind": "youtube",
         "url": "https://www.youtube.com/watch?v=AR9fa-XmF2k",
         "title": "Builds Explained - Ritualist/Assassin Spirit's Strength Dagger Spammer [Guild Wars]",
         "author": "Péter Kádár",
         "postedAt": "2026-09-27",
-        "score": 10696
+        "score": 11435
       },
       "firstSeen": "2026-09-28"
     },
@@ -984,7 +1960,7 @@
         "title": "Guild Wars Reforged - Hero Guide: Zenmai (Shattering Assault)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-21",
-        "score": 1298
+        "score": 1337
       },
       "firstSeen": "2026-09-28"
     },
@@ -1313,7 +2289,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-13",
         "context": "-Builds necro warrior monk hero1 monk hero2 paragon hero",
-        "score": 7961
+        "score": 8150
       },
       "firstSeen": "2026-09-18"
     },
@@ -1355,7 +2331,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-13",
         "context": "-Builds necro warrior monk hero1 monk hero2 paragon hero",
-        "score": 7961
+        "score": 8150
       },
       "firstSeen": "2026-09-18"
     },
@@ -1396,7 +2372,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-13",
         "context": "-Builds necro warrior monk hero1 monk hero2 paragon hero",
-        "score": 7961
+        "score": 8150
       },
       "firstSeen": "2026-09-18"
     },
@@ -1440,7 +2416,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-13",
         "context": "-Builds necro warrior monk hero1 monk hero2 paragon hero",
-        "score": 7961
+        "score": 8150
       },
       "firstSeen": "2026-09-18"
     },
@@ -1485,7 +2461,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-13",
         "context": "-Builds necro warrior monk hero1 monk hero2 paragon hero",
-        "score": 7961
+        "score": 8150
       },
       "firstSeen": "2026-09-18"
     },
@@ -1905,7 +2881,7 @@
         "title": "A Chance Encounter Farm",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-05-10",
-        "score": 2640
+        "score": 2654
       },
       "firstSeen": "2026-09-18"
     },
@@ -2375,7 +3351,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-20",
         "context": "ranger hero paragon hero warrior hero",
-        "score": 10708
+        "score": 11215
       },
       "firstSeen": "2026-09-18"
     },
@@ -2416,7 +3392,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-20",
         "context": "ranger hero paragon hero warrior hero",
-        "score": 10708
+        "score": 11215
       },
       "firstSeen": "2026-09-18"
     },
@@ -2458,7 +3434,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 8531
+        "score": 8975
       },
       "firstSeen": "2026-09-18"
     },
@@ -2500,7 +3476,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 8531
+        "score": 8975
       },
       "firstSeen": "2026-09-18"
     },
@@ -2542,7 +3518,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 8531
+        "score": 8975
       },
       "firstSeen": "2026-09-18"
     },
@@ -2585,7 +3561,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 8531
+        "score": 8975
       },
       "firstSeen": "2026-09-18"
     },
@@ -2628,7 +3604,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 8531
+        "score": 8975
       },
       "firstSeen": "2026-09-18"
     },
@@ -2670,7 +3646,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 8531
+        "score": 8975
       },
       "firstSeen": "2026-09-18"
     },
@@ -2712,7 +3688,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 8531
+        "score": 8975
       },
       "firstSeen": "2026-09-18"
     },
@@ -2754,7 +3730,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 8531
+        "score": 8975
       },
       "firstSeen": "2026-09-18"
     },
@@ -2796,7 +3772,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 8531
+        "score": 8975
       },
       "firstSeen": "2026-09-18"
     },
@@ -2838,7 +3814,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 8531
+        "score": 8975
       },
       "firstSeen": "2026-09-18"
     },
@@ -2880,7 +3856,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 8531
+        "score": 8975
       },
       "firstSeen": "2026-09-18"
     },
@@ -3124,7 +4100,7 @@
         "title": "Backbreaker Warrior Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-05-31",
-        "score": 982
+        "score": 983
       },
       "firstSeen": "2026-09-18"
     },
@@ -3165,7 +4141,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-11",
         "context": "Hold shift + click on the hero skills you want to disable. ranger hero1 ranger hero2 ranger hero3 necro hero paragon hero",
-        "score": 6793
+        "score": 6871
       },
       "firstSeen": "2026-09-18"
     },
@@ -3206,7 +4182,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 12168
+        "score": 12296
       },
       "firstSeen": "2026-09-18"
     },
@@ -3247,7 +4223,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 12168
+        "score": 12296
       },
       "firstSeen": "2026-09-18"
     },
@@ -3288,7 +4264,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 12168
+        "score": 12296
       },
       "firstSeen": "2026-09-18"
     },
@@ -3329,7 +4305,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 12168
+        "score": 12296
       },
       "firstSeen": "2026-09-18"
     },
@@ -3370,7 +4346,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 12168
+        "score": 12296
       },
       "firstSeen": "2026-09-18"
     },
@@ -3411,7 +4387,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 12168
+        "score": 12296
       },
       "firstSeen": "2026-09-18"
     },
@@ -3452,7 +4428,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 12168
+        "score": 12296
       },
       "firstSeen": "2026-09-18"
     },
@@ -3493,7 +4469,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 12168
+        "score": 12296
       },
       "firstSeen": "2026-09-18"
     },
@@ -3534,7 +4510,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 12168
+        "score": 12296
       },
       "firstSeen": "2026-09-18"
     },
@@ -3575,7 +4551,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 12168
+        "score": 12296
       },
       "firstSeen": "2026-09-18"
     },
@@ -3655,7 +4631,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-07",
         "context": "-Builds brawling headbutt yeti smash",
-        "score": 5931
+        "score": 5997
       },
       "firstSeen": "2026-09-18"
     },
@@ -3699,7 +4675,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-07",
         "context": "-Builds brawling headbutt yeti smash",
-        "score": 5931
+        "score": 5997
       },
       "firstSeen": "2026-09-18"
     },
@@ -3735,7 +4711,7 @@
         "title": "Builds Explained - Dervish/Assassin Ebon Dust Aura [Guild Wars]",
         "author": "Péter Kádár",
         "postedAt": "2026-07-03",
-        "score": 9538
+        "score": 9790
       },
       "firstSeen": "2026-09-18"
     },
@@ -3770,7 +4746,7 @@
         "title": "Builds Explained - Necro/Any Order Of Undeath [Guild Wars]",
         "author": "Péter Kádár",
         "postedAt": "2026-06-28",
-        "score": 15209
+        "score": 15539
       },
       "firstSeen": "2026-09-18"
     },
@@ -3814,7 +4790,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-25",
         "context": "-Builds paragon mesmer hero ritualist hero (for brutal weapon)",
-        "score": 14275
+        "score": 14464
       },
       "firstSeen": "2026-09-18"
     },
@@ -3856,7 +4832,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-25",
         "context": "-Builds paragon mesmer hero ritualist hero (for brutal weapon)",
-        "score": 14275
+        "score": 14464
       },
       "firstSeen": "2026-09-18"
     },
@@ -3896,7 +4872,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-25",
         "context": "-Builds paragon mesmer hero ritualist hero (for brutal weapon)",
-        "score": 14275
+        "score": 14464
       },
       "firstSeen": "2026-09-18"
     },
@@ -3938,7 +4914,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-11",
         "context": "-Builds base save yourselves ST hero",
-        "score": 15273
+        "score": 15635
       },
       "firstSeen": "2026-09-18"
     },
@@ -3980,7 +4956,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-11",
         "context": "-Builds base save yourselves ST hero",
-        "score": 15273
+        "score": 15635
       },
       "firstSeen": "2026-09-18"
     },
@@ -4022,7 +4998,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-11",
         "context": "-Builds base save yourselves ST hero",
-        "score": 15273
+        "score": 15635
       },
       "firstSeen": "2026-09-18"
     },
@@ -4066,7 +5042,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-27",
         "context": "-Builds default build fun build",
-        "score": 14497
+        "score": 14844
       },
       "firstSeen": "2026-09-18"
     },
@@ -4109,7 +5085,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-27",
         "context": "-Builds default build fun build",
-        "score": 14497
+        "score": 14844
       },
       "firstSeen": "2026-09-18"
     },
@@ -4497,7 +5473,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-16",
         "context": "-Builds dervish feather dervish jade brotherhood dervish nolani",
-        "score": 11312
+        "score": 11448
       },
       "firstSeen": "2026-09-18"
     },
@@ -4539,7 +5515,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-16",
         "context": "-Builds dervish feather dervish jade brotherhood dervish nolani",
-        "score": 11312
+        "score": 11448
       },
       "firstSeen": "2026-09-18"
     },
@@ -4581,7 +5557,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-16",
         "context": "-Builds dervish feather dervish jade brotherhood dervish nolani",
-        "score": 11312
+        "score": 11448
       },
       "firstSeen": "2026-09-18"
     },
@@ -4623,7 +5599,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-16",
         "context": "warrior feather warrior jade brotherhood warrior nolani",
-        "score": 11312
+        "score": 11448
       },
       "firstSeen": "2026-09-18"
     },
@@ -4664,7 +5640,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-16",
         "context": "warrior feather warrior jade brotherhood warrior nolani",
-        "score": 11312
+        "score": 11448
       },
       "firstSeen": "2026-09-18"
     },
@@ -4706,7 +5682,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-16",
         "context": "warrior feather warrior jade brotherhood warrior nolani",
-        "score": 11312
+        "score": 11448
       },
       "firstSeen": "2026-09-18"
     },
@@ -4810,7 +5786,7 @@
         "title": "Don't Sleep on Paragons in PvP",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-08-23",
-        "score": 5483
+        "score": 5519
       },
       "firstSeen": "2026-09-18"
     },
@@ -4915,7 +5891,7 @@
         "title": "Dying and Winning: The Life and Times of a Squishy Assassin",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-09-06",
-        "score": 2004
+        "score": 2011
       },
       "firstSeen": "2026-09-18"
     },
@@ -5822,7 +6798,7 @@
         "title": "Enchanter's Conundrum Mesmer Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-04-05",
-        "score": 879
+        "score": 882
       },
       "firstSeen": "2026-09-18"
     },
@@ -6037,7 +7013,7 @@
         "title": "Farming Chitin Fragments Guild Wars Reforged",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-07-26",
-        "score": 525
+        "score": 531
       },
       "firstSeen": "2026-09-18"
     },
@@ -6072,7 +7048,7 @@
         "title": "Farming Glittering Dust",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-07-12",
-        "score": 1550
+        "score": 1569
       },
       "firstSeen": "2026-09-18"
     },
@@ -6202,7 +7178,7 @@
         "author": "Olga Knows Best 🎮",
         "postedAt": "2026-01-24",
         "context": "Original Build Template—[] Video Build Template - []",
-        "score": 1037
+        "score": 1047
       },
       "firstSeen": "2026-09-18"
     },
@@ -6244,7 +7220,7 @@
         "author": "Olga Knows Best 🎮",
         "postedAt": "2026-01-24",
         "context": "Original Build Template—[] Video Build Template - []",
-        "score": 1037
+        "score": 1047
       },
       "firstSeen": "2026-09-18"
     },
@@ -6351,7 +7327,7 @@
         "author": "Sabre Wolf",
         "postedAt": "2026-09-14",
         "context": "Build Code (Me/Mo version shown)",
-        "score": 589
+        "score": 640
       },
       "firstSeen": "2026-09-18"
     },
@@ -6394,7 +7370,7 @@
         "author": "Sabre Wolf",
         "postedAt": "2026-09-10",
         "context": "Monk/Ele Healer's Boon Build Code Monk/Ele Unyielding Aura Build Code",
-        "score": 2858
+        "score": 2968
       },
       "firstSeen": "2026-09-18"
     },
@@ -6437,7 +7413,7 @@
         "author": "Sabre Wolf",
         "postedAt": "2026-09-10",
         "context": "Monk/Ele Healer's Boon Build Code Monk/Ele Unyielding Aura Build Code",
-        "score": 2858
+        "score": 2968
       },
       "firstSeen": "2026-09-18"
     },
@@ -6757,7 +7733,7 @@
         "title": "Guild Wars Reforged - Builds - Necro Ritualist Healer",
         "author": "Sabre Wolf",
         "postedAt": "2026-09-03",
-        "score": 1187
+        "score": 1213
       },
       "firstSeen": "2026-09-18"
     },
@@ -6799,7 +7775,7 @@
         "title": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spiteful Spirit & Tahnakkai Temple)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-16",
-        "score": 3364
+        "score": 3914
       },
       "firstSeen": "2026-09-18"
     },
@@ -6842,7 +7818,7 @@
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-16",
         "context": "Olias (Order Of Undeath MM)",
-        "score": 3364
+        "score": 3914
       },
       "firstSeen": "2026-09-18"
     },
@@ -6884,7 +7860,7 @@
         "title": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spiteful Spirit & Tahnakkai Temple)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-16",
-        "score": 3364
+        "score": 3914
       },
       "firstSeen": "2026-09-18"
     },
@@ -6925,7 +7901,7 @@
         "title": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spiteful Spirit & Tahnakkai Temple)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-16",
-        "score": 3364
+        "score": 3914
       },
       "firstSeen": "2026-09-18"
     },
@@ -6965,7 +7941,7 @@
         "title": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spiteful Spirit & Tahnakkai Temple)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-16",
-        "score": 3364
+        "score": 3914
       },
       "firstSeen": "2026-09-18"
     },
@@ -7006,7 +7982,7 @@
         "title": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spiteful Spirit & Tahnakkai Temple)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-16",
-        "score": 3364
+        "score": 3914
       },
       "firstSeen": "2026-09-18"
     },
@@ -7048,7 +8024,7 @@
         "title": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spiteful Spirit & Tahnakkai Temple)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-16",
-        "score": 3364
+        "score": 3914
       },
       "firstSeen": "2026-09-18"
     },
@@ -7089,7 +8065,7 @@
         "title": "Guild Wars Reforged - Fire Magic For Hard Mode (Searing Flames + Jennurs Horde)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-08-22",
-        "score": 2596
+        "score": 2605
       },
       "firstSeen": "2026-09-18"
     },
@@ -7130,7 +8106,7 @@
         "title": "Guild Wars Reforged - Fire Magic For Hard Mode (Searing Flames + Jennurs Horde)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-08-22",
-        "score": 2596
+        "score": 2605
       },
       "firstSeen": "2026-09-18"
     },
@@ -7173,7 +8149,7 @@
         "author": "TheCaffeineSage",
         "postedAt": "2026-08-22",
         "context": "Master Of Whispers Order Of Undeath MM",
-        "score": 2596
+        "score": 2605
       },
       "firstSeen": "2026-09-18"
     },
@@ -7214,7 +8190,7 @@
         "title": "Guild Wars Reforged - Fire Magic For Hard Mode (Searing Flames + Jennurs Horde)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-08-22",
-        "score": 2596
+        "score": 2605
       },
       "firstSeen": "2026-09-18"
     },
@@ -7255,7 +8231,7 @@
         "title": "Guild Wars Reforged - Fire Magic For Hard Mode (Searing Flames + Jennurs Horde)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-08-22",
-        "score": 2596
+        "score": 2605
       },
       "firstSeen": "2026-09-18"
     },
@@ -7296,7 +8272,7 @@
         "title": "Guild Wars Reforged - Fire Magic For Hard Mode (Searing Flames + Jennurs Horde)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-08-22",
-        "score": 2596
+        "score": 2605
       },
       "firstSeen": "2026-09-18"
     },
@@ -7338,7 +8314,7 @@
         "title": "Guild Wars Reforged - Fire Magic For Hard Mode (Searing Flames + Jennurs Horde)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-08-22",
-        "score": 2596
+        "score": 2605
       },
       "firstSeen": "2026-09-18"
     },
@@ -7409,7 +8385,7 @@
         "title": "Guild Wars Reforged - Hero Guide: Norgu (Shared Burden)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-08-26",
-        "score": 261
+        "score": 269
       },
       "firstSeen": "2026-09-18"
     },
@@ -7685,7 +8661,7 @@
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-04",
         "context": "Build Templates Zai Cruel Spear",
-        "score": 379
+        "score": 398
       },
       "firstSeen": "2026-09-18"
     },
@@ -7727,7 +8703,7 @@
         "title": "Guild Wars Reforged - Vanquish Tyria: Silverwood (Cruel Spear)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-04",
-        "score": 379
+        "score": 398
       },
       "firstSeen": "2026-09-18"
     },
@@ -7770,7 +8746,7 @@
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-04",
         "context": "Koss, Jora (Hundred Blades)",
-        "score": 379
+        "score": 398
       },
       "firstSeen": "2026-09-18"
     },
@@ -7813,7 +8789,7 @@
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-04",
         "context": "Master Of Whispers (Jagged Bones)",
-        "score": 379
+        "score": 398
       },
       "firstSeen": "2026-09-18"
     },
@@ -7854,7 +8830,7 @@
         "title": "Guild Wars Reforged - Vanquish Tyria: Silverwood (Cruel Spear)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-09-04",
-        "score": 379
+        "score": 398
       },
       "firstSeen": "2026-09-18"
     },
@@ -9256,7 +10232,7 @@
         "title": "Mesmer commits skill appropriation in Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-09-13",
-        "score": 925
+        "score": 966
       },
       "firstSeen": "2026-09-18"
     },
@@ -11086,7 +12062,7 @@
         "title": "Moebius Strike Assassin Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-08-16",
-        "score": 793
+        "score": 800
       },
       "firstSeen": "2026-09-18"
     },
@@ -12206,7 +13182,7 @@
         "title": "Monk Doa Torment Gemstone Farm [Guild Wars]",
         "author": "Péter Kádár",
         "postedAt": "2026-07-11",
-        "score": 6793
+        "score": 6871
       },
       "firstSeen": "2026-09-18"
     },
@@ -12464,7 +13440,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 10481
+        "score": 10672
       },
       "firstSeen": "2026-09-18"
     },
@@ -12507,7 +13483,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 10481
+        "score": 10672
       },
       "firstSeen": "2026-09-18"
     },
@@ -12549,7 +13525,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 10481
+        "score": 10672
       },
       "firstSeen": "2026-09-18"
     },
@@ -12593,7 +13569,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 10481
+        "score": 10672
       },
       "firstSeen": "2026-09-18"
     },
@@ -12636,7 +13612,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 10481
+        "score": 10672
       },
       "firstSeen": "2026-09-18"
     },
@@ -12678,7 +13654,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 10481
+        "score": 10672
       },
       "firstSeen": "2026-09-18"
     },
@@ -12722,7 +13698,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 10481
+        "score": 10672
       },
       "firstSeen": "2026-09-18"
     },
@@ -12765,7 +13741,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 10481
+        "score": 10672
       },
       "firstSeen": "2026-09-18"
     },
@@ -12810,7 +13786,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 10481
+        "score": 10672
       },
       "firstSeen": "2026-09-18"
     },
@@ -12851,7 +13827,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 10481
+        "score": 10672
       },
       "firstSeen": "2026-09-18"
     },
@@ -18528,7 +19504,7 @@
         "title": "Shield of Deflection Monk Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-07-05",
-        "score": 937
+        "score": 955
       },
       "firstSeen": "2026-09-18"
     },
@@ -18593,7 +19569,7 @@
         "title": "Signet of Suffering Necromancer Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-05-17",
-        "score": 1791
+        "score": 1803
       },
       "firstSeen": "2026-09-18"
     },
@@ -18628,7 +19604,7 @@
         "title": "Siphon Strength Assassin Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-04-26",
-        "score": 1297
+        "score": 1304
       },
       "firstSeen": "2026-09-18"
     },
@@ -18711,7 +19687,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 15613
+        "score": 15842
       },
       "firstSeen": "2026-09-18"
     },
@@ -18753,7 +19729,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 15613
+        "score": 15842
       },
       "firstSeen": "2026-09-18"
     },
@@ -18796,7 +19772,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 15613
+        "score": 15842
       },
       "firstSeen": "2026-09-18"
     },
@@ -18840,7 +19816,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 15613
+        "score": 15842
       },
       "firstSeen": "2026-09-18"
     },
@@ -18883,7 +19859,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 15613
+        "score": 15842
       },
       "firstSeen": "2026-09-18"
     },
@@ -18924,7 +19900,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 15613
+        "score": 15842
       },
       "firstSeen": "2026-09-18"
     },
@@ -18966,7 +19942,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 15613
+        "score": 15842
       },
       "firstSeen": "2026-09-18"
     },
@@ -19008,7 +19984,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 15613
+        "score": 15842
       },
       "firstSeen": "2026-09-18"
     },
@@ -20392,7 +21368,7 @@
         "title": "Unsteady Ground Elementalist Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-07-19",
-        "score": 479
+        "score": 481
       },
       "firstSeen": "2026-09-18"
     },
@@ -20427,7 +21403,7 @@
         "title": "Vermin Farm (Scales + Shreader's Talons)",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-06-07",
-        "score": 2521
+        "score": 2529
       },
       "firstSeen": "2026-09-18"
     },
@@ -20465,7 +21441,7 @@
         "title": "Virulence Necromancer Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-04-12",
-        "score": 1834
+        "score": 1846
       },
       "firstSeen": "2026-09-18"
     },
@@ -20794,7 +21770,7 @@
         "title": "War/Monk & Monk/War Solo Farm for Glacial Blades [Guild Wars]",
         "author": "Péter Kádár",
         "postedAt": "2026-08-20",
-        "score": 10708
+        "score": 11215
       },
       "firstSeen": "2026-09-18"
     },
@@ -20836,7 +21812,7 @@
         "title": "War/Monk & Monk/War Solo Farm for Glacial Blades [Guild Wars]",
         "author": "Péter Kádár",
         "postedAt": "2026-08-20",
-        "score": 10708
+        "score": 11215
       },
       "firstSeen": "2026-09-18"
     },
@@ -20871,7 +21847,7 @@
         "title": "Water Djinn Solo Farm for Gold Scythes & Dust [Guild Wars]",
         "author": "Péter Kádár",
         "postedAt": "2026-09-15",
-        "score": 10314
+        "score": 10791
       },
       "firstSeen": "2026-09-18"
     },
