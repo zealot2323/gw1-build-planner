@@ -5,19 +5,51 @@
 import { locationsWithSkill } from "./bestiary.js";
 import type { DataIndex } from "./data.js";
 import { DEFAULT_ALLEGIANCE } from "./types.js";
-import type { Character, LocationRef, Profession, Quest, Skill, SkillRef } from "./types.js";
+import type { Character, Location, LocationRef, MissionRef, Profession, Quest, Skill, SkillRef } from "./types.js";
 
 /**
- * Explorable areas the character can enter: every explorable adjacent (via
- * location neighbors) to any unlocked location, plus any explorables the
- * character has unlocked directly.
+ * Missions the character can enter: every mission whose outpost is
+ * unlocked (standing in a mission outpost is what lets you start it), plus
+ * any mission already completed.
+ */
+export function openMissions(character: Character, index: DataIndex): Set<MissionRef> {
+  const unlocked = new Set(character.unlockedLocations);
+  const out = new Set<MissionRef>(character.completedMissions);
+  for (const m of index.dataset.missions ?? []) {
+    if (m.outpost && unlocked.has(m.outpost)) out.add(m.wikiPage);
+  }
+  return out;
+}
+
+/**
+ * Is a gated area open to this character? Having been in it settles it:
+ * GWToolbox records every explorable area a character has entered, which
+ * is the only evidence we have for quest gates. A mission gate is also
+ * open once any of its missions is completed.
+ */
+export function gateOpen(location: Location, character: Character): boolean {
+  const gate = location.gate;
+  if (!gate) return true;
+  if (character.unlockedLocations.includes(location.wikiPage)) return true;
+  return (gate.missions ?? []).some((m) => character.completedMissions.includes(m));
+}
+
+/**
+ * Places the character can enter: every explorable adjacent (via location
+ * neighbors) to any unlocked location, any explorables the character has
+ * unlocked directly, and every mission they can start (`openMissions`) —
+ * mission maps have bosses and quest givers too.
+ *
+ * An explorable behind a progression gate (`Location.gate`) only counts
+ * once that gate is open: Seitung Harbor borders the Zen Daijun explorable
+ * area, but you cannot walk in before finishing the mission.
  *
  * ⚠ SIMPLIFICATION: one hop only. Real reachability can chain through
  * multiple explorables (you can walk Traveler's Vale -> Iron Horse Mine
  * without an outpost in between); we deliberately ignore that for the PoC.
  */
 export function reachableExplorables(character: Character, index: DataIndex): Set<LocationRef> {
-  const out = new Set<LocationRef>();
+  const out = new Set<LocationRef>(openMissions(character, index));
   for (const name of character.unlockedLocations) {
     const loc = index.locationByPage.get(name);
     if (!loc) continue;
@@ -26,7 +58,8 @@ export function reachableExplorables(character: Character, index: DataIndex): Se
       continue;
     }
     for (const n of loc.neighbors) {
-      if (index.locationByPage.get(n)?.kind === "explorable") out.add(n);
+      const next = index.locationByPage.get(n);
+      if (next?.kind === "explorable" && gateOpen(next, character)) out.add(n);
     }
   }
   return out;
@@ -142,7 +175,7 @@ export function skillAvailability(
     }
 
     // Capture: capturable now iff a boss using the skill spawns in a
-    // reachable explorable. ⚠ Same one-hop SIMPLIFICATION. Conditional
+    // reachable explorable or an enterable mission. ⚠ Same one-hop SIMPLIFICATION. Conditional
     // (quest/event-gated) capture bosses are excluded from "now" but shown
     // as future sources.
     for (const boss of skill.acquisition.captureBosses) {

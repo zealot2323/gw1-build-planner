@@ -7345,6 +7345,12 @@
       "Afflicted Assassin": 24,
       "Afflicted Ritualist": 24,
       "Jade Torn Kirin (monk)": 25
+    },
+    "gate": {
+      "missions": [
+        "Zen Daijun"
+      ],
+      "note": "Opens after the Zen Daijun mission"
     }
   },
   {
@@ -7681,6 +7687,12 @@
       "Silent Ancient Onata": 30,
       "Defiant Ancient Sseer": 30,
       "Blade Ancient Syu-Shai": 30
+    },
+    "gate": {
+      "missions": [
+        "Raisu Palace"
+      ],
+      "note": "Opens after the Raisu Palace mission"
     }
   },
   {
@@ -10727,6 +10739,10 @@
     ],
     "foes": [],
     "bosses": [],
+    "gate": {
+      "quest": "Hunted!",
+      "note": "Opens after the quest Hunted!"
+    },
     "trainer": "Kenohir"
   },
   {
@@ -11809,6 +11825,12 @@
     "foeLevelsHard": {
       "Graven Monolith": 26,
       "Madness Titan": 30
+    },
+    "gate": {
+      "missions": [
+        "Grand Court of Sebelkeh"
+      ],
+      "note": "Opens after the Grand Court of Sebelkeh mission"
     }
   },
   {
@@ -11962,6 +11984,13 @@
       "Shakor Firespear": 30,
       "Leilon, Tranquil Water": 30,
       "Tenshek Roundbody": 30
+    },
+    "gate": {
+      "missions": [
+        "Dasha Vestibule",
+        "Dzagonur Bastion"
+      ],
+      "note": "Opens after the Dasha Vestibule or Dzagonur Bastion mission"
     }
   },
   {

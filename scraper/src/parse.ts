@@ -28,6 +28,7 @@ import { skillTags } from "@gw1/engine";
 import { sections } from "./wikitext.js";
 import {
   EXCLUDED_LOCATIONS,
+  AREA_GATES,
   EXTRA_NEIGHBORS,
   LOCATION_ALIASES,
   TRAINER_EXTRA_SKILLS,
@@ -318,6 +319,7 @@ for (const [titles, kind] of locationKinds) {
       if (!entity.neighbors.includes(extra)) entity.neighbors.push(extra);
     }
     if (PRE_SEARING_LOCATIONS.has(title)) entity.preSearing = true;
+    if (AREA_GATES[title]) entity.gate = AREA_GATES[title];
     entity.campaign = entity.campaign ?? campaignOfLocation(title) ?? null;
     for (const i of issues) {
       // manual progression edges satisfy the exits expectation

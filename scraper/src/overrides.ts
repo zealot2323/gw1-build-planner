@@ -2,6 +2,7 @@
  * Manual data corrections, applied by parse.ts on top of what the wiki
  * parsers produce. Each entry documents WHY it exists — keep it that way.
  */
+import type { LocationGate } from "@gw1/engine";
 
 /** Wiki typos/variants -> canonical location page name. */
 export const LOCATION_ALIASES: Record<string, string> = {
@@ -50,6 +51,51 @@ export const EXTRA_NEIGHBORS: Record<string, string[]> = {
   // capitals. Only reachable for characters who own the expansion — the
   // dataset is scoped per character, so the edge is inert otherwise.
   "Boreal Station": ["Lion's Arch", "Kaineng Center", "Kamadan, Jewel of Istan"],
+};
+
+/**
+ * Explorable areas next to an outpost that the outpost does NOT open by
+ * itself. Without these, standing in the outpost counted the area as
+ * "reachable now", so its bosses read as capturable and its quests as
+ * available. Only explorables are listed: outposts and missions are
+ * settled by the character's own unlocks. Each note follows the wiki.
+ *
+ * Mission gates are checked against completed missions. Quest completion
+ * is not tracked (GWToolbox does not record it), so a quest-gated area
+ * counts as open once the character has been in it — the completion file
+ * does record every explorable area entered.
+ */
+export const AREA_GATES: Record<string, LocationGate> = {
+  // "The only way to reach this explorable area is to speak to Guard Lae
+  // Fao in Seitung Harbor, after completing the Zen Daijun mission."
+  "Zen Daijun (explorable area)": {
+    missions: ["Zen Daijun"],
+    note: "Opens after the Zen Daijun mission",
+  },
+  // "only accessible after completion of the Raisu Palace mission"
+  "Raisu Palace (explorable area)": {
+    missions: ["Raisu Palace"],
+    note: "Opens after the Raisu Palace mission",
+  },
+  // "The character must have completed either the Dasha Vestibule mission
+  // or the Dzagonur Bastion mission."
+  "The Hidden City of Ahdashim": {
+    missions: ["Dasha Vestibule", "Dzagonur Bastion"],
+    note: "Opens after the Dasha Vestibule or Dzagonur Bastion mission",
+  },
+  // "Completion of Grand Court of Sebelkeh opens access to this area, but
+  // only until the completion of Abaddon's Gate." The closing half is not
+  // modelled.
+  "Nightfallen Garden": {
+    missions: ["Grand Court of Sebelkeh"],
+    note: "Opens after the Grand Court of Sebelkeh mission",
+  },
+  // "only accessible after completing the primary quest Hunted!" — and it
+  // borders five areas, so without this it looked open from all of them.
+  "Command Post": {
+    quest: "Hunted!",
+    note: "Opens after the quest Hunted!",
+  },
 };
 
 /**
