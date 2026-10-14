@@ -720,6 +720,31 @@ button.icon-button:focus-visible { outline: 2px solid var(--accent); outline-off
     min-width: 36px; min-height: 36px;
   }
 }
+/* To-do tab on phones. The name and its status share one nowrap line on
+   desktop; at 375px a status like "not available yet · Sorrow's Furnace"
+   took the whole row, squeezed the name to zero width and ran under the
+   remove button. Here the name wraps on its own line and the status sits
+   beneath it, indented to line up with the name. */
+@media (max-width: 720px) {
+  .todo-main { flex-wrap: wrap; row-gap: 0.1rem; }
+  .todo-ref { flex: 1 1 0; min-width: 0; white-space: normal; overflow-wrap: anywhere; }
+  .todo-context {
+    flex: 1 1 100%; margin-left: 0; padding-left: calc(20px + 0.45rem);
+    white-space: normal; overflow-wrap: anywhere;
+  }
+  .todo-skill-row { flex-wrap: wrap; row-gap: 0.1rem; }
+  .todo-skill-name { flex: 1 1 0; white-space: normal; overflow-wrap: anywhere; }
+  .todo-skill-row > .small { order: 1; flex: 1 1 100%; padding-left: calc(22px + 0.45rem); }
+
+  /* a flex toggle makes every word group its own column, so a heading with
+     a note ("New and hot (30) — first seen in the last 30 days") stacked
+     into three narrow ones; as a block it wraps like a sentence */
+  .section-toggle { display: block; }
+  .section-toggle .caret { margin-right: 0.4rem; }
+  /* a select sizes to its longest option (a source's full name), which ran
+     past the edge of the Community filter card */
+  .toolbar select { max-width: 100%; }
+}
 button.source-chip { width: auto; padding: 0 0.3rem; cursor: pointer; }
 button.source-chip:hover { color: var(--accent); border-color: var(--accent); }
 
