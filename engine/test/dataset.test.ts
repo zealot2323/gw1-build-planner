@@ -429,6 +429,68 @@ describe("full dataset: per-zone levels beat the monster page", () => {
   });
 });
 
+describe("full dataset: routes follow the story", () => {
+  /** A Factions character still on Shing Jea Island. */
+  const onShingJea: Character = {
+    ...freshWarrior,
+    campaign: "Factions",
+    ownedCampaigns: ["Factions"],
+    unlockedLocations: ["Shing Jea Monastery"],
+  };
+
+  it("routes to Gyala Hatchery through every Factions mission before it", async () => {
+    const { routeStops, routeTo, scopedDataset } = await import("../src/index.js");
+    const scoped = indexDataset(scopedDataset(index.dataset, onShingJea));
+    const route = routeTo(travelDistances(onShingJea, scoped), "Gyala Hatchery (outpost)");
+    const missions = routeStops(route, scoped, onShingJea.unlockedLocations)
+      .filter((s) => s.kind === "mission")
+      .map((s) => s.ref);
+    // Gyala Hatchery is the Luxon 9b mission, so the Kurzick 9a branch
+    // (The Eternal Grove) is not on the way.
+    expect(missions).toEqual([
+      "Minister Cho's Estate",
+      "Zen Daijun",
+      "Vizunah Square",
+      "Nahpui Quarter",
+      "Tahnnakai Temple",
+      "Arborstone",
+      "Boreas Seabed",
+      "Sunjiang District",
+    ]);
+    expect(route.at(-1)).toBe("Gyala Hatchery (outpost)");
+  });
+
+  it("never walks back from a later outpost into an earlier mission", async () => {
+    const { routeTo, scopedDataset } = await import("../src/index.js");
+    // Raisu Palace's outpost is unlocked, which used to make the Gyala
+    // Hatchery mission one step away from it.
+    const late: Character = { ...onShingJea, unlockedLocations: ["Raisu Palace (outpost)"] };
+    const scoped = indexDataset(scopedDataset(index.dataset, late));
+    const route = routeTo(travelDistances(late, scoped), "Gyala Hatchery (outpost)");
+    expect(route).not.toContain("Gyala Hatchery");
+  });
+
+  it("does not walk into a gated outpost from the area next to it", async () => {
+    const { scopedDataset } = await import("../src/index.js");
+    // Raisu Pavilion borders Raisu Palace, but its gate stays shut until the
+    // story gets there.
+    const atKaineng: Character = { ...onShingJea, unlockedLocations: ["Kaineng Center"] };
+    const scoped = indexDataset(scopedDataset(index.dataset, atKaineng));
+    const g = travelDistances(atKaineng, scoped);
+    expect(g.previous.get("Raisu Palace (outpost)")).toBe("Unwaking Waters");
+  });
+
+  it("reads the story's branches from the mission lists", () => {
+    const follows = (m: string) => index.missionByName.get(m)?.follows;
+    expect(follows("Gyala Hatchery")).toEqual(["Sunjiang District"]);
+    expect(follows("Unwaking Waters")).toEqual(["The Eternal Grove", "Gyala Hatchery"]);
+    expect(follows("Moddok Crevice")).toEqual(["Pogahn Passage", "Rilohn Refuge"]);
+    expect(follows("Minister Cho's Estate")).toBeUndefined();
+    // Campaigns don't chain into each other.
+    expect(follows("Chahbek Village")).toBeUndefined();
+  });
+});
+
 describe("campaign scope", () => {
   it("keeps Core and own-campaign content, drops other campaigns", async () => {
     const { inScope, ownedCampaigns } = await import("../src/index.js");

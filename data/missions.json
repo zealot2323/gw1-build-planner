@@ -168,7 +168,10 @@
       "Craze the Unforgiving": 26,
       "Torch Spitfur": 26
     },
-    "campaign": "Prophecies"
+    "campaign": "Prophecies",
+    "follows": [
+      "The Great Northern Wall"
+    ]
   },
   {
     "name": "Ruins of Surmia",
@@ -264,7 +267,10 @@
       "Hurl Foulspine": 27,
       "Fester Fang": 27
     },
-    "campaign": "Prophecies"
+    "campaign": "Prophecies",
+    "follows": [
+      "Fort Ranik"
+    ]
   },
   {
     "name": "Nolani Academy",
@@ -354,7 +360,10 @@
       "Crush Kill": 27,
       "Rock Fist": 27
     },
-    "campaign": "Prophecies"
+    "campaign": "Prophecies",
+    "follows": [
+      "Ruins of Surmia"
+    ]
   },
   {
     "name": "Borlis Pass",
@@ -444,7 +453,10 @@
       "Saris Headstaver": 27,
       "Priest of Dagnar": 27
     },
-    "campaign": "Prophecies"
+    "campaign": "Prophecies",
+    "follows": [
+      "Nolani Academy"
+    ]
   },
   {
     "name": "The Frost Gate",
@@ -513,7 +525,10 @@
       "Bucknar Runeguard": 27,
       "Minotaur (boss)": 27
     },
-    "campaign": "Prophecies"
+    "campaign": "Prophecies",
+    "follows": [
+      "Borlis Pass"
+    ]
   },
   {
     "name": "Gates of Kryta",
@@ -579,7 +594,10 @@
       "Haja Bloodwail": 28,
       "Bakkir the Forsaken": 28
     },
-    "campaign": "Prophecies"
+    "campaign": "Prophecies",
+    "follows": [
+      "The Frost Gate"
+    ]
   },
   {
     "name": "D'Alessio Seaboard",
@@ -660,7 +678,10 @@
       "Nizza the Sickle": 28,
       "Bane Darkfist": 28
     },
-    "campaign": "Prophecies"
+    "campaign": "Prophecies",
+    "follows": [
+      "Gates of Kryta"
+    ]
   },
   {
     "name": "Divinity Coast",
@@ -759,7 +780,10 @@
       "Zameel Dirge": 28,
       "Zukra Cadava": 28
     },
-    "campaign": "Prophecies"
+    "campaign": "Prophecies",
+    "follows": [
+      "D'Alessio Seaboard"
+    ]
   },
   {
     "name": "The Wilds",
@@ -864,7 +888,10 @@
       "Grech Trundle": 28,
       "Grook Plugalug": 28
     },
-    "campaign": "Prophecies"
+    "campaign": "Prophecies",
+    "follows": [
+      "Divinity Coast"
+    ]
   },
   {
     "name": "Bloodstone Fen",
@@ -954,7 +981,10 @@
       "Pleoh the Ugly": 29,
       "Hepp Bilespitter": 29
     },
-    "campaign": "Prophecies"
+    "campaign": "Prophecies",
+    "follows": [
+      "The Wilds"
+    ]
   },
   {
     "name": "Aurora Glade",
@@ -1047,7 +1077,10 @@
       "Grook Plugalug": 28,
       "Demagogue": 25
     },
-    "campaign": "Prophecies"
+    "campaign": "Prophecies",
+    "follows": [
+      "Bloodstone Fen"
+    ]
   },
   {
     "name": "Riverside Province",
@@ -1164,7 +1197,10 @@
       "Dracul Cadava": 29,
       "Damis the Malignant": 29
     },
-    "campaign": "Prophecies"
+    "campaign": "Prophecies",
+    "follows": [
+      "Aurora Glade"
+    ]
   },
   {
     "name": "Sanctum Cay",
@@ -1257,7 +1293,10 @@
       "Fariq Earthturner": 29,
       "Ghazal the Corrupter": 29
     },
-    "campaign": "Prophecies"
+    "campaign": "Prophecies",
+    "follows": [
+      "Riverside Province"
+    ]
   },
   {
     "name": "Dunes of Despair",
@@ -1331,7 +1370,10 @@
       "Ayassah Hess": 30,
       "Cyss Gresshla": 30
     },
-    "campaign": "Prophecies"
+    "campaign": "Prophecies",
+    "follows": [
+      "Sanctum Cay"
+    ]
   },
   {
     "name": "Thirsty River",
@@ -1394,7 +1436,10 @@
       "Goss Aleessh": 30,
       "Issah Sshay": 30
     },
-    "campaign": "Prophecies"
+    "campaign": "Prophecies",
+    "follows": [
+      "Dunes of Despair"
+    ]
   },
   {
     "name": "Elona Reach",
@@ -1451,7 +1496,10 @@
       "Tiss Danssir": 30,
       "Vassa Ssiss": 30
     },
-    "campaign": "Prophecies"
+    "campaign": "Prophecies",
+    "follows": [
+      "Thirsty River"
+    ]
   },
   {
     "name": "Augury Rock",
@@ -1468,7 +1516,10 @@
     "foeLevelsHard": {
       "Doppelganger": 30
     },
-    "campaign": "Prophecies"
+    "campaign": "Prophecies",
+    "follows": [
+      "Elona Reach"
+    ]
   },
   {
     "name": "The Dragon's Lair",
@@ -1534,7 +1585,10 @@
       "Facet of Chaos": 30,
       "Facet of Elements": 30
     },
-    "campaign": "Prophecies"
+    "campaign": "Prophecies",
+    "follows": [
+      "Augury Rock"
+    ]
   },
   {
     "name": "Ice Caves of Sorrow",
@@ -1630,7 +1684,10 @@
       "Jonar Stonebender": 30,
       "Berg Frozenfist": 30
     },
-    "campaign": "Prophecies"
+    "campaign": "Prophecies",
+    "follows": [
+      "The Dragon's Lair"
+    ]
   },
   {
     "name": "Iron Mines of Moladune",
@@ -1759,7 +1816,10 @@
       "Ceru Gloomrunner": 30,
       "Digo Murkstalker": 30
     },
-    "campaign": "Prophecies"
+    "campaign": "Prophecies",
+    "follows": [
+      "Ice Caves of Sorrow"
+    ]
   },
   {
     "name": "Thunderhead Keep",
@@ -1894,7 +1954,10 @@
       "Pantheras The Deceiver": 30,
       "Chrysos the Magnetic": 30
     },
-    "campaign": "Prophecies"
+    "campaign": "Prophecies",
+    "follows": [
+      "Iron Mines of Moladune"
+    ]
   },
   {
     "name": "Ring of Fire",
@@ -1990,7 +2053,11 @@
       "Pytt Spitespew": 30,
       "Jyth Sprayburst": 30
     },
-    "campaign": "Prophecies"
+    "entryGated": true,
+    "campaign": "Prophecies",
+    "follows": [
+      "Thunderhead Keep"
+    ]
   },
   {
     "name": "Abaddon's Mouth",
@@ -2083,7 +2150,11 @@
       "Mercia the Smug": 30,
       "Optimus Caliph": 30
     },
-    "campaign": "Prophecies"
+    "entryGated": true,
+    "campaign": "Prophecies",
+    "follows": [
+      "Ring of Fire"
+    ]
   },
   {
     "name": "Hell's Precipice",
@@ -2131,7 +2202,11 @@
       "Scelus Prosum": 30,
       "Undead Prince Rurik": 30
     },
-    "campaign": "Prophecies"
+    "entryGated": true,
+    "campaign": "Prophecies",
+    "follows": [
+      "Abaddon's Mouth"
+    ]
   },
   {
     "name": "Minister Cho's Estate",
@@ -2182,6 +2257,7 @@
       "Afflicted Horror": 27,
       "Diseased Minister": 27
     },
+    "entryGated": true,
     "campaign": "Factions"
   },
   {
@@ -2245,7 +2321,11 @@
       "The Afflicted Kana": 28,
       "Afflicted Yijo": 28
     },
-    "campaign": "Factions"
+    "entryGated": true,
+    "campaign": "Factions",
+    "follows": [
+      "Minister Cho's Estate"
+    ]
   },
   {
     "name": "Vizunah Square",
@@ -2341,7 +2421,11 @@
       "The Afflicted Soon Kim": 30,
       "The Afflicted Hakaru": 30
     },
-    "campaign": "Factions"
+    "entryGated": true,
+    "campaign": "Factions",
+    "follows": [
+      "Zen Daijun"
+    ]
   },
   {
     "name": "Nahpui Quarter",
@@ -2389,7 +2473,11 @@
       "Hai Jii": 29,
       "Tahmu": 29
     },
-    "campaign": "Factions"
+    "entryGated": true,
+    "campaign": "Factions",
+    "follows": [
+      "Vizunah Square"
+    ]
   },
   {
     "name": "Tahnnakai Temple",
@@ -2452,7 +2540,11 @@
       "Bound Vizu": 28,
       "Bound Kaolai": 28
     },
-    "campaign": "Factions"
+    "entryGated": true,
+    "campaign": "Factions",
+    "follows": [
+      "Nahpui Quarter"
+    ]
   },
   {
     "name": "Arborstone",
@@ -2549,7 +2641,11 @@
       "Ryver Mossplanter": 30,
       "Milefaun Mindflayer": 30
     },
-    "campaign": "Factions"
+    "entryGated": true,
+    "campaign": "Factions",
+    "follows": [
+      "Tahnnakai Temple"
+    ]
   },
   {
     "name": "Boreas Seabed",
@@ -2633,7 +2729,11 @@
       "Argo": 30,
       "Zhu Hanuku": 32
     },
-    "campaign": "Factions"
+    "entryGated": true,
+    "campaign": "Factions",
+    "follows": [
+      "Arborstone"
+    ]
   },
   {
     "name": "Sunjiang District",
@@ -2711,7 +2811,11 @@
       "Assassin's Construct": 30,
       "Ritualist's Construct": 30
     },
-    "campaign": "Factions"
+    "entryGated": true,
+    "campaign": "Factions",
+    "follows": [
+      "Boreas Seabed"
+    ]
   },
   {
     "name": "The Eternal Grove",
@@ -2765,7 +2869,11 @@
       "Luxon Elementalist": 26,
       "Siege Turtle": 26
     },
-    "campaign": "Factions"
+    "entryGated": true,
+    "campaign": "Factions",
+    "follows": [
+      "Sunjiang District"
+    ]
   },
   {
     "name": "Unwaking Waters",
@@ -2834,7 +2942,12 @@
       "The Afflicted Senku": 30,
       "The Afflicted Xenxo": 30
     },
-    "campaign": "Factions"
+    "entryGated": true,
+    "campaign": "Factions",
+    "follows": [
+      "The Eternal Grove",
+      "Gyala Hatchery"
+    ]
   },
   {
     "name": "Gyala Hatchery",
@@ -2896,7 +3009,11 @@
       "Kurzick Ritualist": 26,
       "Kurzick Juggernaut": 30
     },
-    "campaign": "Factions"
+    "entryGated": true,
+    "campaign": "Factions",
+    "follows": [
+      "Sunjiang District"
+    ]
   },
   {
     "name": "Raisu Palace",
@@ -2965,7 +3082,11 @@
       "Defiant Ancient Sseer": 30,
       "Shiro Tagachi": 33
     },
-    "campaign": "Factions"
+    "entryGated": true,
+    "campaign": "Factions",
+    "follows": [
+      "Unwaking Waters"
+    ]
   },
   {
     "name": "Imperial Sanctum",
@@ -3008,7 +3129,11 @@
       "Bound Assassin": 26,
       "Bound Ritualist": 26
     },
-    "campaign": "Factions"
+    "entryGated": true,
+    "campaign": "Factions",
+    "follows": [
+      "Raisu Palace"
+    ]
   },
   {
     "name": "Chahbek Village",
@@ -3083,7 +3208,10 @@
       "Restless Dead (Nightfall)": 24,
       "Apocrypha": 24
     },
-    "campaign": "Nightfall"
+    "campaign": "Nightfall",
+    "follows": [
+      "Chahbek Village"
+    ]
   },
   {
     "name": "Blacktide Den",
@@ -3155,7 +3283,10 @@
       "Boklon Blackwater": 28,
       "Glug Klugg": 28
     },
-    "campaign": "Nightfall"
+    "campaign": "Nightfall",
+    "follows": [
+      "Jokanur Diggings"
+    ]
   },
   {
     "name": "Consulate Docks",
@@ -3224,7 +3355,10 @@
       "Captain Lumanda": 30,
       "Captain Denduru": 30
     },
-    "campaign": "Nightfall"
+    "campaign": "Nightfall",
+    "follows": [
+      "Blacktide Den"
+    ]
   },
   {
     "name": "Venta Cemetery",
@@ -3268,7 +3402,10 @@
       "Kournan Phalanx": 26,
       "Kournan Zealot": 26
     },
-    "campaign": "Nightfall"
+    "campaign": "Nightfall",
+    "follows": [
+      "Consulate Docks"
+    ]
   },
   {
     "name": "Kodonur Crossroads",
@@ -3340,7 +3477,10 @@
       "Overseer Boktek": 30,
       "Taskmaster Suli": 30
     },
-    "campaign": "Nightfall"
+    "campaign": "Nightfall",
+    "follows": [
+      "Venta Cemetery"
+    ]
   },
   {
     "name": "Pogahn Passage",
@@ -3409,7 +3549,10 @@
       "Captain Nebo": 30,
       "Colonel Kajo": 30
     },
-    "campaign": "Nightfall"
+    "campaign": "Nightfall",
+    "follows": [
+      "Kodonur Crossroads"
+    ]
   },
   {
     "name": "Rilohn Refuge",
@@ -3466,7 +3609,10 @@
       "Veldt Beetle Lance": 26,
       "The Drought": 30
     },
-    "campaign": "Nightfall"
+    "campaign": "Nightfall",
+    "follows": [
+      "Kodonur Crossroads"
+    ]
   },
   {
     "name": "Moddok Crevice",
@@ -3544,7 +3690,11 @@
       "The Hunger": 30,
       "General Bayel": 30
     },
-    "campaign": "Nightfall"
+    "campaign": "Nightfall",
+    "follows": [
+      "Pogahn Passage",
+      "Rilohn Refuge"
+    ]
   },
   {
     "name": "Tihark Orchard",
@@ -3573,7 +3723,10 @@
       "Royal Guard Captain": 20,
       "\"Palawa Joko\"": 20
     },
-    "campaign": "Nightfall"
+    "campaign": "Nightfall",
+    "follows": [
+      "Moddok Crevice"
+    ]
   },
   {
     "name": "Dasha Vestibule",
@@ -3621,7 +3774,10 @@
       "Shakor Firespear": 30,
       "Hajok Earthguardian (Djinn)": 30
     },
-    "campaign": "Nightfall"
+    "campaign": "Nightfall",
+    "follows": [
+      "Tihark Orchard"
+    ]
   },
   {
     "name": "Dzagonur Bastion",
@@ -3687,7 +3843,10 @@
       "General Tirraj": 30,
       "General Kumtash": 30
     },
-    "campaign": "Nightfall"
+    "campaign": "Nightfall",
+    "follows": [
+      "Tihark Orchard"
+    ]
   },
   {
     "name": "Grand Court of Sebelkeh",
@@ -3734,7 +3893,11 @@
       "Margonite Reaper": 26,
       "Torment Claw": 26
     },
-    "campaign": "Nightfall"
+    "campaign": "Nightfall",
+    "follows": [
+      "Dasha Vestibule",
+      "Dzagonur Bastion"
+    ]
   },
   {
     "name": "Jennur's Horde",
@@ -3778,7 +3941,10 @@
       "Harbinger": 30,
       "Harbinger of Nightfall": 30
     },
-    "campaign": "Nightfall"
+    "campaign": "Nightfall",
+    "follows": [
+      "Grand Court of Sebelkeh"
+    ]
   },
   {
     "name": "Nundu Bay",
@@ -3835,7 +4001,10 @@
       "Commander Chutal": 30,
       "Zealot Sheoli": 30
     },
-    "campaign": "Nightfall"
+    "campaign": "Nightfall",
+    "follows": [
+      "Grand Court of Sebelkeh"
+    ]
   },
   {
     "name": "Gate of Desolation",
@@ -3925,7 +4094,11 @@
       "Chundu the Meek": 30,
       "Queen Aijundu": 28
     },
-    "campaign": "Nightfall"
+    "campaign": "Nightfall",
+    "follows": [
+      "Jennur's Horde",
+      "Nundu Bay"
+    ]
   },
   {
     "name": "Ruins of Morah",
@@ -3960,7 +4133,10 @@
       "Spear of Torment": 30,
       "Rain of Terror": 30
     },
-    "campaign": "Nightfall"
+    "campaign": "Nightfall",
+    "follows": [
+      "Gate of Desolation"
+    ]
   },
   {
     "name": "Gate of Pain",
@@ -4007,7 +4183,10 @@
       "Scythe of Chaos (dervish)": 30,
       "Tortureweb Dryder (boss)": 30
     },
-    "campaign": "Nightfall"
+    "campaign": "Nightfall",
+    "follows": [
+      "Ruins of Morah"
+    ]
   },
   {
     "name": "Gate of Madness",
@@ -4124,7 +4303,10 @@
       "Shiro Tagachi": 33,
       "Undead Lich": 32
     },
-    "campaign": "Nightfall"
+    "campaign": "Nightfall",
+    "follows": [
+      "Gate of Pain"
+    ]
   },
   {
     "name": "Abaddon's Gate",
@@ -4147,6 +4329,9 @@
       "Abaddon": 32,
       "Graven Monolith": 26
     },
-    "campaign": "Nightfall"
+    "campaign": "Nightfall",
+    "follows": [
+      "Gate of Madness"
+    ]
   }
 ]
