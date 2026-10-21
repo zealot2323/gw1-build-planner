@@ -258,6 +258,26 @@ export interface Location {
   foeLevelsHard?: Record<MonsterRef, number>;
   /** Pre-Searing Ascalon — the region has both halves, so views can split them. */
   preSearing?: boolean;
+  /**
+   * Progression gate: an explorable area its neighbouring outposts do NOT
+   * open by themselves. Curated in the scraper's overrides from the wiki's
+   * own notes ("only accessible after completing...").
+   */
+  gate?: LocationGate;
+}
+
+/**
+ * What stands between an outpost and an area next to it. Missions are
+ * checked against the character's completed missions; quest completion is
+ * not tracked (GWToolbox does not record it), so a quest gate is only
+ * known to be passed once the character has been in the area.
+ */
+export interface LocationGate {
+  /** Completing ANY of these opens the area. */
+  missions?: MissionRef[];
+  quest?: QuestRef;
+  /** The wiki's condition, quoted or paraphrased, for display. */
+  note: string;
 }
 
 export interface Trainer {
@@ -602,6 +622,16 @@ export const locationSchema = {
     foeLevels: { type: "object", additionalProperties: { type: "integer" } },
     foeLevelsHard: { type: "object", additionalProperties: { type: "integer" } },
     preSearing: { type: "boolean" },
+    gate: {
+      type: "object",
+      additionalProperties: false,
+      required: ["note"],
+      properties: {
+        missions: refArray,
+        quest: { type: "string" },
+        note: { type: "string" },
+      },
+    },
   },
 } as const;
 

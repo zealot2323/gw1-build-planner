@@ -2,6 +2,7 @@
  * How far away is something? Breadth-first search over the location graph
  * from everywhere the character has already been. Pure — no I/O.
  */
+import { gateOpen, openMissions } from "./availability.js";
 import type { DataIndex } from "./data.js";
 import type { AcquisitionSource, SkillAvailabilityEntry } from "./availability.js";
 import type { Character, LocationRef } from "./types.js";
@@ -79,6 +80,20 @@ export function travelDistances(character: Character, index: DataIndex): TravelG
     for (const f of before) link(f, entry);
     if (m.entryGated && before.length > 0 && !unlocked.has(entry)) storyOnly.set(entry, new Set(before));
   }
+  // A mission-gated area is entered from the end of its mission (Zen Daijun
+  // explorable area opens after the Zen Daijun mission), not by walking in
+  // from the outpost next door. Link the mission to it, and below refuse
+  // every other way in while the gate is closed.
+  const closedBehind = new Map<LocationRef, Set<LocationRef>>();
+  for (const loc of index.dataset.locations) {
+    const gate = loc.gate;
+    if (!gate?.missions?.length || gateOpen(loc, character)) continue;
+    closedBehind.set(loc.wikiPage, new Set(gate.missions));
+    for (const m of gate.missions) {
+      link(m, loc.wikiPage);
+      link(loc.wikiPage, m);
+    }
+  }
 
   const distance = new Map<LocationRef, number>();
   const previous = new Map<LocationRef, LocationRef>();
@@ -94,14 +109,26 @@ export function travelDistances(character: Character, index: DataIndex): TravelG
     // Jea Monastery, but not back), and the undirected version put such
     // places at "0 zones away" while availability said they were not
     // reachable — both on the same screen.
+    // A closed gate keeps its area out of that set.
     const here = index.locationByPage.get(start)!;
     const exits = here.kind === "explorable" ? [] : here.neighbors;
     for (const n of exits) {
-      if (distance.has(n) || index.locationByPage.get(n)?.kind !== "explorable") continue;
+      const next = index.locationByPage.get(n);
+      if (distance.has(n) || next?.kind !== "explorable" || !gateOpen(next, character)) continue;
       distance.set(n, 0);
       previous.set(n, start);
       queue.push(n);
     }
+  }
+  // So are the missions the character can start: an unlocked mission
+  // outpost means its mission is available now, the same rule
+  // reachableExplorables follows.
+  const open = openMissions(character, index);
+  for (const m of index.dataset.missions ?? []) {
+    if (!open.has(m.wikiPage) || distance.has(m.wikiPage)) continue;
+    distance.set(m.wikiPage, 0);
+    if (m.outpost && distance.get(m.outpost) === 0) previous.set(m.wikiPage, m.outpost);
+    queue.push(m.wikiPage);
   }
 
   for (let head = 0; head < queue.length; head++) {
@@ -110,6 +137,7 @@ export function travelDistances(character: Character, index: DataIndex): TravelG
     for (const next of adjacency.get(here) ?? []) {
       if (distance.has(next)) continue;
       if (storyOnly.get(next)?.has(here) === false) continue;
+      if (closedBehind.get(next)?.has(here) === false) continue;
       distance.set(next, d + 1);
       previous.set(next, here);
       queue.push(next);

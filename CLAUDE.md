@@ -345,6 +345,21 @@ There are two, and the split matters:
   home campaign is treated as a native.
 - Proximity buckets: 0-2 hops green, 3-5 yellow, 6+ red.
 
+- **An unlocked mission outpost means its mission is open.** `openMissions`
+  (outpost unlocked, or mission completed) feeds `reachableExplorables` and
+  seeds travel distance 0, and the zone browser marks those missions. Before
+  this, mission maps were never "entered": 472 capture-boss entries spawn
+  only inside missions, and none of them could ever read as capturable now.
+- **Progression gates** (`Location.gate`, curated as `AREA_GATES` in
+  overrides.ts) mark explorables a neighbouring outpost does NOT open by
+  itself (Zen Daijun explorable area, Command Post, ...). Mission gates are
+  checked against completed missions; travel routes into them through the
+  mission. Quest completion is not tracked and GWToolbox does not record
+  it, but the completion file DOES record every explorable a character has
+  entered, so a quest-gated area counts as open once it is in
+  `unlockedLocations`. Outposts are never gated here: their unlock is
+  already ground truth from the import.
+
 - **Build template codes** (`/engine/src/template.ts`) are encoded and decoded
   by `@buildwars/gw-templates` (MIT) — the same package gw1tools/gw1builds
   uses; we map profession ids and in-game skill ids onto our own types.

@@ -1,6 +1,8 @@
 import { useMemo, useState } from "react";
 import {
   armorProfile,
+  gateOpen,
+  openMissions,
   zonesFrom,
   monstersInLocation,
   skillsAtLocation,
@@ -449,6 +451,16 @@ export function ZonesView({
     () => new Set(character?.unlockedLocations ?? []),
     [character],
   );
+  // A mission counts as unlocked once its outpost is: that is where you
+  // start it. Completed ones say so.
+  const missionsOpen = useMemo(
+    () => (character ? openMissions(character, index) : new Set<string>()),
+    [character, index],
+  );
+  const completedMissions = useMemo(
+    () => new Set(character?.completedMissions ?? []),
+    [character],
+  );
 
   /** Which other characters have each outpost or mission, by page name. */
   const othersByPlace = useMemo(() => {
@@ -562,28 +574,39 @@ export function ZonesView({
   const isOutpost = selectedKind !== null && !hasBestiary(selectedKind);
   const monsters = selected && !isOutpost ? monstersInLocation(selected, index, hardMode) : [];
 
-  const zoneButton = (name: string, kind: string) => (
-    <li key={name} className="zone-row">
-      <button
-        className={
-          (selected === name ? "linkish active" : "linkish") +
-          (hasBestiary(kind) ? "" : " dim") +
-          (unlocked.has(name) ? " unlocked" : "")
-        }
-        disabled={!hasBestiary(kind)}
-        onClick={() => {
-          setSelected(name);
-          setExpandedSkill(null);
-        }}
-        title={unlocked.has(name) ? "Unlocked by this character" : undefined}
-      >
-        {unlocked.has(name) && <span className="unlocked-dot">●</span>}
-        {name} <span className="muted tag">{kind}</span>
-      </button>
-      {othersAt(name, kind)}
-      <WikiLink page={name} />
-    </li>
-  );
+  const zoneButton = (name: string, kind: string) => {
+    const has = unlocked.has(name) || missionsOpen.has(name);
+    const title = completedMissions.has(name)
+      ? "Completed by this character"
+      : missionsOpen.has(name)
+        ? "Its outpost is unlocked, so this character can start it"
+        : unlocked.has(name)
+          ? "Unlocked by this character"
+          : undefined;
+    return (
+      <li key={name} className="zone-row">
+        <button
+          className={
+            (selected === name ? "linkish active" : "linkish") +
+            (hasBestiary(kind) ? "" : " dim") +
+            (has ? " unlocked" : "")
+          }
+          disabled={!hasBestiary(kind)}
+          onClick={() => {
+            setSelected(name);
+            setExpandedSkill(null);
+          }}
+          title={title}
+        >
+          {has && <span className="unlocked-dot">●</span>}
+          {name} <span className="muted tag">{kind}</span>
+        </button>
+        {othersAt(name, kind)}
+        <WikiLink page={name} />
+      </li>
+    );
+  };
+  const selectedGate = selected ? index.locationByPage.get(selected) : undefined;
 
   return (
     <div className="view row align-top">
@@ -718,6 +741,17 @@ export function ZonesView({
               )}
               </div>
             </div>
+            {selectedGate?.gate && (
+              <p className="muted small">
+                {selectedGate.gate.note}.
+                {character &&
+                  (gateOpen(selectedGate, character)
+                    ? " Open for this character."
+                    : selectedGate.gate.missions
+                      ? " Not open for this character yet."
+                      : " Not entered by this character yet; quest completion is not tracked.")}
+              </p>
+            )}
             {isOutpost ? (
               <OutpostSkills
                 location={selected}

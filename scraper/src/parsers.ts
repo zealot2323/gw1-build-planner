@@ -420,6 +420,8 @@ export interface ParsedLocation {
   foeLevelsHard?: Record<string, number>;
   /** Pre-Searing Ascalon (set by the driver from the overrides list). */
   preSearing?: boolean;
+  /** Progression gate (set by the driver from the overrides list). */
+  gate?: { missions?: string[]; quest?: string; note: string };
 }
 
 export function parseLocation(title: string, wikitext: string, kind: string): Parsed<ParsedLocation> {

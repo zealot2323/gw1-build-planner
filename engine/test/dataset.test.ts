@@ -326,6 +326,50 @@ describe("full dataset: zone analysis", () => {
   });
 });
 
+describe("full dataset: missions and gated areas", () => {
+  const atRingOfFire: Character = { ...freshWarrior, unlockedLocations: ["Ring of Fire (outpost)"] };
+
+  it("an unlocked mission outpost opens its mission", async () => {
+    const { openMissions } = await import("../src/index.js");
+    expect(openMissions(atRingOfFire, index).has("Ring of Fire")).toBe(true);
+    expect(openMissions(freshWarrior, index).has("Ring of Fire")).toBe(false);
+  });
+
+  it("bosses inside a mission are capturable from its outpost", () => {
+    // Ferk Mallet only spawns in the Ring of Fire mission
+    const backbreaker = skillAvailability(atRingOfFire, null, index).find(
+      (e) => e.skill.wikiPage === "Backbreaker",
+    )!;
+    expect(backbreaker.status).toBe("CAPTURABLE_NOW");
+  });
+
+  it("an open mission is 0 hops away", async () => {
+    const { travelDistances } = await import("../src/index.js");
+    expect(travelDistances(atRingOfFire, index).distance.get("Ring of Fire")).toBe(0);
+  });
+
+  it("a mission-gated area stays shut until the mission is done", async () => {
+    const { travelDistances, routeTo } = await import("../src/index.js");
+    const atSeitung: Character = { ...freshWarrior, unlockedLocations: ["Seitung Harbor"] };
+    expect(reachableExplorables(atSeitung, index).has("Zen Daijun (explorable area)")).toBe(false);
+    // the way in is the mission, not the outpost next door
+    const g = travelDistances(atSeitung, index);
+    expect(g.distance.get("Zen Daijun (explorable area)")).toBeGreaterThan(0);
+    expect(routeTo(g, "Zen Daijun (explorable area)")).toContain("Zen Daijun");
+
+    const done: Character = { ...atSeitung, completedMissions: ["Zen Daijun"] };
+    expect(reachableExplorables(done, index).has("Zen Daijun (explorable area)")).toBe(true);
+    expect(travelDistances(done, index).distance.get("Zen Daijun (explorable area)")).toBe(0);
+  });
+
+  it("a quest-gated area counts once the character has been in it", () => {
+    const atSanctuary: Character = { ...freshWarrior, unlockedLocations: ["Sunspear Sanctuary"] };
+    expect(reachableExplorables(atSanctuary, index).has("Command Post")).toBe(false);
+    const been: Character = { ...atSanctuary, unlockedLocations: ["Sunspear Sanctuary", "Command Post"] };
+    expect(reachableExplorables(been, index).has("Command Post")).toBe(true);
+  });
+});
+
 describe("full dataset: travel distance", () => {
   const atGrendich: Character = {
     ...freshWarrior,
