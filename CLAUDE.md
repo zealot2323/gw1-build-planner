@@ -323,6 +323,18 @@ There are two, and the split matters:
   exit exists for the infobox to record). Without those edges 43 locations are
   unreachable; with them only the 12 pre-Searing ones are, which is correct —
   that transition is one-way.
+- **Story links run forward only, and follow the wiki's own story order.**
+  `Mission.follows` comes from the "List of <campaign> missions and primary
+  quests" pages, which number the branches ("9a. The Eternal Grove",
+  "9b. Gyala Hatchery", Unwaking Waters on both): array order flattened
+  those, and chained Eternal Grove -> Unwaking Waters -> Gyala Hatchery.
+  As undirected edges, the links let a route step from a later outpost
+  BACK into an earlier mission, so a to-do for Gyala Hatchery skipped the
+  whole Factions story before it. `Mission.entryGated` marks outposts whose
+  page says the gate stays closed until the story gets there (every
+  Factions mission page, plus Prophecies' last three); route search only
+  enters those through the mission they follow. Quests aren't tracked, so
+  the gate is approximated by the mission before the gating quest.
 - Proximity buckets: 0-2 hops green, 3-5 yellow, 6+ red.
 
 - **An unlocked mission outpost means its mission is open.** `openMissions`

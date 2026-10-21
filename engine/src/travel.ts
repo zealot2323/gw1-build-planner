@@ -33,21 +33,39 @@ export function travelDistances(character: Character, index: DataIndex): TravelG
     }
   }
   // A mission is entered from its outpost, so it sits one hop away.
-  // Consecutive story missions are also linked: parts of Prophecies are
-  // only reachable by finishing the campaign to that point (you sail to the
-  // Crystal Desert after Sanctum Cay — there is no walkable exit for the
-  // infobox to record), which otherwise leaves the map disconnected.
+  // Story missions are also linked to the ones that follow them: parts of
+  // the map are only reachable by finishing the campaign to that point
+  // (you sail to the Crystal Desert after Sanctum Cay — there is no
+  // walkable exit for the infobox to record), which otherwise leaves the
+  // map disconnected.
+  //
+  // The story link runs FORWARD only. Finishing a mission takes you on to
+  // the next one; standing in a later outpost does not put you back in an
+  // earlier mission. As an undirected edge it did exactly that: a route to
+  // Gyala Hatchery went Kaineng Center -> Raisu Palace -> back into the
+  // Gyala Hatchery mission, skipping the Factions story before it. A
+  // mission whose outpost didn't resolve (Vizunah Square and Unwaking
+  // Waters start from Kurzick/Luxon outposts) is linked mission to
+  // mission, so the chain doesn't break there.
+  //
+  // An `entryGated` outpost (most of Factions) can't be walked into before
+  // the story gets you there, so the only way into it is that story link.
+  // Its other edges stay in the graph — walking OUT of it is fine — but the
+  // search below won't enter it through them.
   const missions = index.dataset.missions ?? [];
-  missions.forEach((m, i) => {
-    if (!m.outpost) return;
-    link(m.outpost, m.wikiPage);
-    link(m.wikiPage, m.outpost);
-    const next = missions[i + 1];
-    if (next?.outpost) {
-      link(m.wikiPage, next.outpost);
-      link(next.outpost, m.wikiPage);
+  const missionByPage = new Map(missions.map((m) => [m.wikiPage, m]));
+  const storyOnly = new Map<LocationRef, Set<LocationRef>>();
+  const unlocked = new Set(character.unlockedLocations);
+  for (const m of missions) {
+    if (m.outpost) {
+      link(m.outpost, m.wikiPage);
+      link(m.wikiPage, m.outpost);
     }
-  });
+    const entry = m.outpost ?? m.wikiPage;
+    const before = (m.follows ?? []).filter((f) => missionByPage.has(f));
+    for (const f of before) link(f, entry);
+    if (m.entryGated && before.length > 0 && !unlocked.has(entry)) storyOnly.set(entry, new Set(before));
+  }
   // A mission-gated area is entered from the end of its mission (Zen Daijun
   // explorable area opens after the Zen Daijun mission), not by walking in
   // from the outpost next door. Link the mission to it, and below refuse
@@ -104,6 +122,7 @@ export function travelDistances(character: Character, index: DataIndex): TravelG
     const d = distance.get(here)!;
     for (const next of adjacency.get(here) ?? []) {
       if (distance.has(next)) continue;
+      if (storyOnly.get(next)?.has(here) === false) continue;
       if (closedBehind.get(next)?.has(here) === false) continue;
       distance.set(next, d + 1);
       previous.set(next, here);

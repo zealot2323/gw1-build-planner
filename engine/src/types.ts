@@ -390,6 +390,20 @@ export interface Mission {
   bosses: MonsterRef[];
   foeLevels?: Record<MonsterRef, number>;
   foeLevelsHard?: Record<MonsterRef, number>;
+  /**
+   * The missions straight before this one in the story; finishing any of
+   * them leads here. Absent for a campaign's first mission. A branch
+   * point gives several: Unwaking Waters follows The Eternal Grove
+   * (Kurzick) or Gyala Hatchery (Luxon).
+   */
+  follows?: MissionRef[];
+  /**
+   * The outpost can't be walked into before the story reaches it: the
+   * wiki's Requirements note says the gate stays closed until the
+   * preceding quest is done. Route search then only enters it from the
+   * mission it `follows`.
+   */
+  entryGated?: boolean;
 }
 
 // ---------------------------------------------------------------------------
@@ -699,6 +713,8 @@ export const missionSchema = {
     bosses: refArray,
     foeLevels: { type: "object", additionalProperties: { type: "integer" } },
     foeLevelsHard: { type: "object", additionalProperties: { type: "integer" } },
+    follows: refArray,
+    entryGated: { type: "boolean" },
   },
 } as const;
 

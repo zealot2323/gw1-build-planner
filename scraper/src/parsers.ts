@@ -776,6 +776,9 @@ export interface ParsedMission {
   bosses: string[];
   foeLevels?: Record<string, number>;
   foeLevelsHard?: Record<string, number>;
+  /** Missions straight before this one in the story (set by the driver). */
+  follows?: string[];
+  entryGated?: boolean;
 }
 
 export function parseMission(title: string, wikitext: string): Parsed<ParsedMission> {
@@ -794,9 +797,49 @@ export function parseMission(title: string, wikitext: string): Parsed<ParsedMiss
       bosses,
       ...(Object.keys(foeLevels).length > 0 ? { foeLevels } : {}),
       ...(Object.keys(foeLevelsHard).length > 0 ? { foeLevelsHard } : {}),
+      ...(missionEntryGated(wikitext) ? { entryGated: true } : {}),
     },
     issues,
   };
+}
+
+/**
+ * Is the mission outpost closed to anyone who walks up before the story
+ * gets them there? Factions mission pages say so in a Requirements
+ * section: "the gate from [[Shenzun Tunnels]] will be closed" unless the
+ * preceding primary quest is done, or "the only way to access the outpost
+ * is by completing [[Raisu Palace]]". Prophecies and Nightfall pages carry
+ * no such line, and their outposts can be walked to.
+ */
+export function missionEntryGated(wikitext: string): boolean {
+  const requirements = wikitext.match(/==\s*Requirements\s*==([\s\S]*?)(?:\n==[^=]|$)/)?.[1] ?? "";
+  return /gate from \[\[|only way to access the outpost/i.test(requirements);
+}
+
+/**
+ * Story order from a "List of <campaign> missions and primary quests"
+ * page: for each mission, the missions that come straight before it.
+ * Lines read ":;8. [[Sunjiang District]]"; branches are numbered "9a." /
+ * "9b." and a mission can sit on both (Unwaking Waters is 10a and 10b), so
+ * a step follows every mission one number lower on its own branch, or on
+ * any branch when either side has none. Sunjiang District (8) leads to
+ * both The Eternal Grove (9a) and Gyala Hatchery (9b); Unwaking Waters
+ * follows either of them.
+ */
+export function parseStoryOrder(wikitext: string): Map<string, string[]> {
+  const steps = [...wikitext.matchAll(/^:{1,2};\s*(\d+)([a-z]?)\.?\s*\[\[([^\]|#]+)/gm)].map((m) => ({
+    step: Number(m[1]),
+    branch: m[2],
+    mission: m[3].trim(),
+  }));
+  const follows = new Map<string, string[]>();
+  for (const s of steps) {
+    const before = steps
+      .filter((p) => p.step === s.step - 1 && (!p.branch || !s.branch || p.branch === s.branch))
+      .map((p) => p.mission);
+    follows.set(s.mission, [...new Set([...(follows.get(s.mission) ?? []), ...before])]);
+  }
+  return follows;
 }
 
 // ---------------------------------------------------------------------------
