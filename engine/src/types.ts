@@ -384,6 +384,12 @@ export interface Mission {
    * mission it `follows`.
    */
   entryGated?: boolean;
+  /**
+   * Where characters from another campaign start this mission, and with it
+   * the campaign's story: Vizunah Square (Foreign Quarter) for anyone who
+   * took the ferry to Cantha. For them the mission follows nothing.
+   */
+  foreignOutpost?: LocationRef;
 }
 
 // ---------------------------------------------------------------------------
@@ -685,6 +691,7 @@ export const missionSchema = {
     foeLevelsHard: { type: "object", additionalProperties: { type: "integer" } },
     follows: refArray,
     entryGated: { type: "boolean" },
+    foreignOutpost: { type: "string" },
   },
 } as const;
 
