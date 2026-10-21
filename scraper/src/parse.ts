@@ -15,6 +15,7 @@ import {
   parseMonster,
   parseQuest,
   parseSkill,
+  parseStoryOrder,
   parseTrainer,
   type ParsedLocation,
   type ParsedMission,
@@ -26,6 +27,7 @@ import {
 import { adrenalineStrikes, loadGwToolbox } from "./gwtoolbox.js";
 import { skillTags } from "@gw1/engine";
 import { sections } from "./wikitext.js";
+import { CAMPAIGNS } from "./campaigns.js";
 import {
   EXCLUDED_LOCATIONS,
   EXTRA_NEIGHBORS,
@@ -340,6 +342,15 @@ console.log(`locations: ${locations.length} parsed`);
 // ---------------------------------------------------------------------------
 
 const missionOutposts = new Set(manifest.locations.missionOutposts);
+// Story order comes from the same list pages discovery read the missions
+// from; the manifest keeps only the names, which loses the 9a/9b branches.
+const storyOrder = new Map<string, string[]>();
+for (const campaign of CAMPAIGNS) {
+  if (!campaign.missionListPage) continue;
+  const wt = await cachedWikitext("missions", campaign.missionListPage);
+  if (wt === null) continue;
+  for (const [mission, before] of parseStoryOrder(wt)) storyOrder.set(mission, before);
+}
 const missions: ParsedMission[] = [];
 for (const title of manifest.missions) {
   const wt = await cachedWikitext("missions", title);
@@ -358,6 +369,9 @@ for (const title of manifest.missions) {
   // outposts whose names don't follow the "<name> (outpost)" pattern, so
   // outpost resolution can't be the basis for campaign scoping.
   entity.campaign = campaignOf("missions", title) ?? null;
+  const follows = storyOrder.get(title);
+  if (follows === undefined) addIssue("missions", title, "not in its campaign's story order");
+  else if (follows.length > 0) entity.follows = follows;
   missions.push(entity);
 }
 console.log(`missions: ${missions.length} parsed`);
