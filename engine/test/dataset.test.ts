@@ -480,6 +480,37 @@ describe("full dataset: routes follow the story", () => {
     expect(g.previous.get("Raisu Palace (outpost)")).toBe("Unwaking Waters");
   });
 
+  it("starts a ferry arrival's Factions story at Vizunah Square, not Shing Jea", async () => {
+    const { routeStops, routeTo, scopedDataset } = await import("../src/index.js");
+    // A Tyrian who owns Factions and has taken the ferry from Lion's Arch.
+    const tyrian: Character = {
+      ...freshWarrior,
+      campaign: "Prophecies",
+      ownedCampaigns: ["Prophecies", "Factions"],
+      unlockedLocations: ["Lion's Arch", "Kaineng Center"],
+    };
+    const scoped = indexDataset(scopedDataset(index.dataset, tyrian));
+    const route = routeTo(travelDistances(tyrian, scoped), "Gyala Hatchery (outpost)");
+    const stops = routeStops(route, scoped, tyrian.unlockedLocations).map((s) => s.ref);
+    expect(stops.slice(0, 3)).toEqual([
+      "Vizunah Square (Foreign Quarter)",
+      "Vizunah Square",
+      "Nahpui Quarter (outpost)",
+    ]);
+    for (const shingJea of ["Shing Jea Monastery", "Minister Cho's Estate", "Zen Daijun"]) {
+      expect(stops).not.toContain(shingJea);
+    }
+  });
+
+  it("keeps a Canthan out of the Foreign Quarter's way into Vizunah Square", async () => {
+    const { routeTo, scopedDataset } = await import("../src/index.js");
+    const atMarket: Character = { ...onShingJea, unlockedLocations: ["The Marketplace"] };
+    const scoped = indexDataset(scopedDataset(index.dataset, atMarket));
+    const route = routeTo(travelDistances(atMarket, scoped), "Vizunah Square");
+    expect(route).not.toContain("Vizunah Square (Foreign Quarter)");
+    expect(route).toContain("Zen Daijun");
+  });
+
   it("reads the story's branches from the mission lists", () => {
     const follows = (m: string) => index.missionByName.get(m)?.follows;
     expect(follows("Gyala Hatchery")).toEqual(["Sunjiang District"]);

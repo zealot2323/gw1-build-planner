@@ -335,6 +335,14 @@ There are two, and the split matters:
   Factions mission page, plus Prophecies' last three); route search only
   enters those through the mission they follow. Quests aren't tracked, so
   the gate is approximated by the mission before the gating quest.
+- **A character from another campaign joins a story partway in.** The
+  ferry to Kaineng Center leads to Vizunah Square (Foreign Quarter) via
+  "Welcome to Cantha", never to Shing Jea Island. `Mission.foreignOutpost`
+  (curated in overrides as `FOREIGN_MISSION_OUTPOSTS`) is linked to its
+  mission only when the character's home campaign differs, and for them
+  that mission follows nothing. Canthans get no such link: the Foreign
+  Quarter is shut to them until after Nahpui Quarter. A character with no
+  home campaign is treated as a native.
 - Proximity buckets: 0-2 hops green, 3-5 yellow, 6+ red.
 
 - **Build template codes** (`/engine/src/template.ts`) are encoded and decoded

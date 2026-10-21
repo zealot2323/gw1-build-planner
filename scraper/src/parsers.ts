@@ -777,6 +777,7 @@ export interface ParsedMission {
   /** Missions straight before this one in the story (set by the driver). */
   follows?: string[];
   entryGated?: boolean;
+  foreignOutpost?: string;
 }
 
 export function parseMission(title: string, wikitext: string): Parsed<ParsedMission> {

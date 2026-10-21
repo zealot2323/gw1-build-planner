@@ -2425,7 +2425,8 @@
     "campaign": "Factions",
     "follows": [
       "Zen Daijun"
-    ]
+    ],
+    "foreignOutpost": "Vizunah Square (Foreign Quarter)"
   },
   {
     "name": "Nahpui Quarter",
