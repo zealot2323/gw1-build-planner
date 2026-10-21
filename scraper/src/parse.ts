@@ -32,6 +32,7 @@ import {
   EXCLUDED_LOCATIONS,
   AREA_GATES,
   EXTRA_NEIGHBORS,
+  FOREIGN_MISSION_OUTPOSTS,
   LOCATION_ALIASES,
   TRAINER_EXTRA_SKILLS,
   EXTRA_EXPLORABLES,
@@ -374,6 +375,10 @@ for (const title of manifest.missions) {
   const follows = storyOrder.get(title);
   if (follows === undefined) addIssue("missions", title, "not in its campaign's story order");
   else if (follows.length > 0) entity.follows = follows;
+  const foreignOutpost = FOREIGN_MISSION_OUTPOSTS[title];
+  if (foreignOutpost && !missionOutposts.has(foreignOutpost)) {
+    addIssue("missions", title, `foreign outpost ${foreignOutpost} not in manifest`);
+  } else if (foreignOutpost) entity.foreignOutpost = foreignOutpost;
   missions.push(entity);
 }
 console.log(`missions: ${missions.length} parsed`);

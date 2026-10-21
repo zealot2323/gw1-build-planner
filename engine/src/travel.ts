@@ -52,7 +52,16 @@ export function travelDistances(character: Character, index: DataIndex): TravelG
   // the story gets you there, so the only way into it is that story link.
   // Its other edges stay in the graph — walking OUT of it is fine — but the
   // search below won't enter it through them.
+  //
+  // A character from another campaign joins a story partway in: the ferry
+  // to Kaineng Center leads to Vizunah Square (Foreign Quarter), not to
+  // Shing Jea Island. For them a mission with a `foreignOutpost` is entered
+  // from there and follows nothing, so their route skips the missions they
+  // will never play. A character with no home campaign is treated as a
+  // native, which keeps older saves as they were.
   const missions = index.dataset.missions ?? [];
+  const isForeign = (m: (typeof missions)[number]) =>
+    character.campaign !== undefined && m.campaign != null && m.campaign !== character.campaign;
   const missionByPage = new Map(missions.map((m) => [m.wikiPage, m]));
   const storyOnly = new Map<LocationRef, Set<LocationRef>>();
   const unlocked = new Set(character.unlockedLocations);
@@ -61,8 +70,13 @@ export function travelDistances(character: Character, index: DataIndex): TravelG
       link(m.outpost, m.wikiPage);
       link(m.wikiPage, m.outpost);
     }
+    const foreignStart = m.foreignOutpost && isForeign(m) ? m.foreignOutpost : null;
+    if (foreignStart) {
+      link(foreignStart, m.wikiPage);
+      link(m.wikiPage, foreignStart);
+    }
     const entry = m.outpost ?? m.wikiPage;
-    const before = (m.follows ?? []).filter((f) => missionByPage.has(f));
+    const before = foreignStart ? [] : (m.follows ?? []).filter((f) => missionByPage.has(f));
     for (const f of before) link(f, entry);
     if (m.entryGated && before.length > 0 && !unlocked.has(entry)) storyOnly.set(entry, new Set(before));
   }

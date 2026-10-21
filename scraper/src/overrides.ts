@@ -99,6 +99,19 @@ export const AREA_GATES: Record<string, LocationGate> = {
 };
 
 /**
+ * Where a character from ANOTHER campaign starts a campaign's story. A
+ * Tyrian or Elonian who takes the ferry to Kaineng Center never sees Shing
+ * Jea Island: "Welcome to Cantha" sends them through Bukdek Byway into
+ * Vizunah Square (Foreign Quarter), and the story runs on from there. The
+ * Foreign Quarter is closed to Canthan characters until after Nahpui
+ * Quarter, so it is only linked to the mission for foreign characters.
+ * Prophecies and Nightfall outposts can be walked to, so they need none.
+ */
+export const FOREIGN_MISSION_OUTPOSTS: Record<string, string> = {
+  "Vizunah Square": "Vizunah Square (Foreign Quarter)",
+};
+
+/**
  * Skills a trainer verifiably sells that are missing from their wiki
  * /Skills subpage. Trainer lists are the source of truth for skill
  * acquisition, so corrections belong here, on the trainer.
