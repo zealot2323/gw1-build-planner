@@ -1,6 +1,880 @@
 {
-  "generatedAt": "2026-11-09T16:22:24.678Z",
+  "generatedAt": "2026-11-16T15:49:23.311Z",
   "builds": [
+    {
+      "id": "OgSjkurGLTbXihSXNXPXbhcXygA",
+      "code": "OgSjkurGLTbXihSXNXPXbhcXygA",
+      "name": "Builds Explained - Dervish/Necro Pious Renewal [Guild Wars] — Pious Renewal",
+      "primary": "Dervish",
+      "secondary": "Necromancer",
+      "skills": [
+        "Pious Renewal",
+        "Pious Fury",
+        "Pious Assault",
+        "Eremite's Attack",
+        "Twin Moon Sweep",
+        "Masochism",
+        "Mirage Cloak",
+        "Aura of Holy Might"
+      ],
+      "attributes": {
+        "Scythe Mastery": 11,
+        "Earth Prayers": 6,
+        "Mysticism": 12
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=WAVwOfLS6z8",
+        "name": "Builds Explained - Dervish/Necro Pious Renewal [Guild Wars]",
+        "size": 2,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=WAVwOfLS6z8",
+        "title": "Builds Explained - Dervish/Necro Pious Renewal [Guild Wars]",
+        "author": "Péter Kádár",
+        "postedAt": "2026-11-15",
+        "score": 5047
+      },
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "id": "OQZEAosjp6cTHiFDgROoDwBICA",
+      "code": "OQZEAosjp6cTHiFDgROoDwBICA",
+      "name": "Double Dragon Mesmer the Tengar Nightbringer Special — Double Dragon",
+      "primary": "Mesmer",
+      "secondary": "Elementalist",
+      "skills": [
+        "Wastrel's Demise",
+        "Double Dragon",
+        "Fire Storm",
+        "Meteor Shower",
+        "Cry of Frustration",
+        "Blackout",
+        "Backfire",
+        "Drain Enchantment"
+      ],
+      "attributes": {
+        "Fast Casting": 8,
+        "Domination Magic": 11,
+        "Inspiration Magic": 6,
+        "Fire Magic": 10
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=nb7vrt80UAg",
+        "name": "Double Dragon Mesmer the Tengar Nightbringer Special",
+        "size": 2,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=nb7vrt80UAg",
+        "title": "Double Dragon Mesmer the Tengar Nightbringer Special",
+        "author": "Guild Wars 1 in 2026",
+        "postedAt": "2026-11-15",
+        "score": 1359
+      },
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "id": "OwNj0xfzITlZ+PiZDQ1g4OTQyEA",
+      "code": "OwNj0xfzITlZ+PiZDQ1g4OTQyEA",
+      "name": "Guild Wars Reforged - Melee Enchantment Removal? (Shattering Assault &… — Shattering Assault",
+      "primary": "Assassin",
+      "secondary": "Monk",
+      "skills": [
+        "Golden Fox Strike",
+        "Wild Strike",
+        "Shattering Assault",
+        "Critical Defenses",
+        "Critical Agility",
+        "Death's Charge",
+        "Dash",
+        "Rebirth"
+      ],
+      "attributes": {
+        "Dagger Mastery": 12,
+        "Shadow Arts": 3,
+        "Critical Strikes": 12
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=ycO7uHqwT_E",
+        "name": "Guild Wars Reforged - Melee Enchantment Removal? (Shattering Assault & Gate Of Desolation)",
+        "size": 2,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=ycO7uHqwT_E",
+        "title": "Guild Wars Reforged - Melee Enchantment Removal? (Shattering Assault & Gate Of Desolation)",
+        "author": "TheCaffeineSage",
+        "postedAt": "2026-11-16",
+        "context": "Build Template - Shattering Assault",
+        "score": 8
+      },
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "id": "OgkTcZ8kZq3qC0VC2A1o4Q4QeDA",
+      "code": "OgkTcZ8kZq3qC0VC2A1o4Q4QeDA",
+      "name": "Guild Wars Reforged - The Ultimate Minion Master For Hard Mode? (Order… — Broad Head Arrow",
+      "primary": "Ranger",
+      "secondary": "Paragon",
+      "skills": [
+        "Crossfire",
+        "Sloth Hunter's Shot",
+        "Broad Head Arrow",
+        "Read the Wind",
+        "Throw Dirt",
+        "Lightning Reflexes",
+        "Whirling Defense",
+        "Signet of Return"
+      ],
+      "attributes": {
+        "Expertise": 12,
+        "Wilderness Survival": 3,
+        "Marksmanship": 12
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=F_FyYmeaodg",
+        "name": "Guild Wars Reforged - The Ultimate Minion Master For Hard Mode? (Order Of Undeath/Raisu Pa…",
+        "size": 7,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=F_FyYmeaodg",
+        "title": "Guild Wars Reforged - The Ultimate Minion Master For Hard Mode? (Order Of Undeath/Raisu Palace)",
+        "author": "TheCaffeineSage",
+        "postedAt": "2026-11-11",
+        "context": "Broadhead Caster Shutdown",
+        "score": 2251
+      },
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "id": "OQNDAawDSDOvAIgkArAcQoAoRA",
+      "code": "OQNDAawDSDOvAIgkArAcQoAoRA",
+      "name": "Guild Wars Reforged - The Ultimate Minion Master For Hard Mode? (Order… — Ineptitude",
+      "primary": "Mesmer",
+      "secondary": "Monk",
+      "skills": [
+        "Images of Remorse",
+        "Ineptitude",
+        "Wandering Eye",
+        "Arcane Conundrum",
+        "Clumsiness",
+        "Accumulated Pain",
+        "Ether Feast",
+        "Resurrection Chant"
+      ],
+      "attributes": {
+        "Fast Casting": 10,
+        "Illusion Magic": 12,
+        "Inspiration Magic": 8
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Eye of the North"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=F_FyYmeaodg",
+        "name": "Guild Wars Reforged - The Ultimate Minion Master For Hard Mode? (Order Of Undeath/Raisu Pa…",
+        "size": 7,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=F_FyYmeaodg",
+        "title": "Guild Wars Reforged - The Ultimate Minion Master For Hard Mode? (Order Of Undeath/Raisu Palace)",
+        "author": "TheCaffeineSage",
+        "postedAt": "2026-11-11",
+        "score": 2251
+      },
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "id": "OwYT04nBXKjoupuyBMgAZYTrlAA",
+      "code": "OwYT04nBXKjoupuyBMgAZYTrlAA",
+      "name": "Guild Wars Reforged - The Ultimate Minion Master For Hard Mode? (Order… — Light of Deliverance",
+      "primary": "Monk",
+      "secondary": "Elementalist",
+      "skills": [
+        "Orison of Healing",
+        "Shield Guardian",
+        "Light of Deliverance",
+        "Healing Ribbon",
+        "Aegis",
+        "Glyph of Lesser Energy",
+        "Dismiss Condition",
+        "Remove Hex"
+      ],
+      "attributes": {
+        "Healing Prayers": 12,
+        "Protection Prayers": 6,
+        "Divine Favor": 11
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=F_FyYmeaodg",
+        "name": "Guild Wars Reforged - The Ultimate Minion Master For Hard Mode? (Order Of Undeath/Raisu Pa…",
+        "size": 7,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=F_FyYmeaodg",
+        "title": "Guild Wars Reforged - The Ultimate Minion Master For Hard Mode? (Order Of Undeath/Raisu Palace)",
+        "author": "TheCaffeineSage",
+        "postedAt": "2026-11-11",
+        "context": "Light Of Deliverance Healer/Prot (I am not sure why Dunkoro was set up this way)",
+        "score": 2251
+      },
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "id": "OANDUsx9QlMUBIV4BYCbhylyEA",
+      "code": "OANDUsx9QlMUBIV4BYCbhylyEA",
+      "name": "Guild Wars Reforged - The Ultimate Minion Master For Hard Mode? (Order… — Order of Undeath",
+      "primary": "Necromancer",
+      "secondary": "Monk",
+      "skills": [
+        "Animate Vampiric Horror",
+        "Animate Bone Fiend",
+        "Order of Undeath",
+        "Blood of the Master",
+        "Taste of Death",
+        "Masochism",
+        "Pain Inverter",
+        "Rebirth"
+      ],
+      "attributes": {
+        "Death Magic": 12,
+        "Soul Reaping": 12,
+        "Healing Prayers": 3
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=F_FyYmeaodg",
+        "name": "Guild Wars Reforged - The Ultimate Minion Master For Hard Mode? (Order Of Undeath/Raisu Pa…",
+        "size": 7,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=F_FyYmeaodg",
+        "title": "Guild Wars Reforged - The Ultimate Minion Master For Hard Mode? (Order Of Undeath/Raisu Palace)",
+        "author": "TheCaffeineSage",
+        "postedAt": "2026-11-11",
+        "context": "Build Templates Order Of Undearth MM",
+        "score": 2251
+      },
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "id": "OgNDkpycO4CaxYluhMeFwC0I",
+      "code": "OgNDkpycO4CaxYluhMeFwC0I",
+      "name": "Guild Wars Reforged - The Ultimate Minion Master For Hard Mode? (Order… — Searing Flames",
+      "primary": "Elementalist",
+      "secondary": "Monk",
+      "skills": [
+        "Fire Attunement",
+        "Aura of Restoration",
+        "Glowing Gaze",
+        "Searing Flames",
+        "Glyph of Lesser Energy",
+        "Ward Against Elements",
+        "Ward Against Melee",
+        "Resurrection Chant"
+      ],
+      "attributes": {
+        "Earth Magic": 9,
+        "Fire Magic": 12,
+        "Energy Storage": 9
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Nightfall"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=F_FyYmeaodg",
+        "name": "Guild Wars Reforged - The Ultimate Minion Master For Hard Mode? (Order Of Undeath/Raisu Pa…",
+        "size": 7,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=F_FyYmeaodg",
+        "title": "Guild Wars Reforged - The Ultimate Minion Master For Hard Mode? (Order Of Undeath/Raisu Palace)",
+        "author": "TheCaffeineSage",
+        "postedAt": "2026-11-11",
+        "score": 2251
+      },
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "id": "OgcUcZs4lPT8I6MHQ3lbHCHHH4OA",
+      "code": "OgcUcZs4lPT8I6MHQ3lbHCHHH4OA",
+      "name": "Hunting for Some of the Rarest Shields in Guild Wars — Shadow Form",
+      "primary": "Ranger",
+      "secondary": "Assassin",
+      "skills": [
+        "Deadly Paradox",
+        "Shadow Form",
+        "Shroud of Distress",
+        "Dwarven Stability",
+        "Quickening Zephyr",
+        "Whirling Defense",
+        "Storm Chaser",
+        "Death's Charge"
+      ],
+      "attributes": {
+        "Expertise": 12,
+        "Wilderness Survival": 2,
+        "Deadly Arts": 2,
+        "Shadow Arts": 12
+      },
+      "campaigns": [
+        "Factions",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "team": {
+        "id": "https://www.reddit.com/r/GuildWars/comments/1xxmwf4/hunting_for_some_of_the_rarest_shields_in_guild/",
+        "name": "Hunting for Some of the Rarest Shields in Guild Wars",
+        "size": 8,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "reddit",
+        "url": "https://www.reddit.com/r/GuildWars/comments/1xxmwf4/hunting_for_some_of_the_rarest_shields_in_guild/",
+        "title": "Hunting for Some of the Rarest Shields in Guild Wars",
+        "author": "/u/lain01",
+        "postedAt": "2026-11-16",
+        "context": "In this video, we're going after Old-School Stone Summit and Summit Warlord Shields. KEEP IN MIND Getting perfect or near-perfect OS shields is extremely difficult. There's a reason these things are so expensive! If you don't feel like gambling too much, you can always sell them as an unidentified bundle instead. I'll upload separate videos covering each farming method in more detail. I just could…"
+      },
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "id": "OwUUMKn+UoS1D3VGELBRA0kAEyDA",
+      "code": "OwUUMKn+UoS1D3VGELBRA0kAEyDA",
+      "name": "Hunting for Some of the Rarest Shields in Guild Wars — Shield of Judgment",
+      "primary": "Monk",
+      "secondary": "Mesmer",
+      "skills": [
+        "Protective Spirit",
+        "Shield of Absorption",
+        "Shield of Judgment",
+        "Arcane Echo",
+        "Mantra of Resolve",
+        "\"I Am Unstoppable!\"",
+        "Blessed Aura",
+        "Balthazar's Spirit"
+      ],
+      "attributes": {
+        "Inspiration Magic": 5,
+        "Smiting Prayers": 10,
+        "Protection Prayers": 10,
+        "Divine Favor": 10
+      },
+      "campaigns": [
+        "Prophecies",
+        "Nightfall",
+        "Eye of the North"
+      ],
+      "team": {
+        "id": "https://www.reddit.com/r/GuildWars/comments/1xxmwf4/hunting_for_some_of_the_rarest_shields_in_guild/",
+        "name": "Hunting for Some of the Rarest Shields in Guild Wars",
+        "size": 8,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "reddit",
+        "url": "https://www.reddit.com/r/GuildWars/comments/1xxmwf4/hunting_for_some_of_the_rarest_shields_in_guild/",
+        "title": "Hunting for Some of the Rarest Shields in Guild Wars",
+        "author": "/u/lain01",
+        "postedAt": "2026-11-16",
+        "context": "In this video, we're going after Old-School Stone Summit and Summit Warlord Shields. KEEP IN MIND Getting perfect or near-perfect OS shields is extremely difficult. There's a reason these things are so expensive! If you don't feel like gambling too much, you can always sell them as an unidentified bundle instead. I'll upload separate videos covering each farming method in more detail. I just could…"
+      },
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "id": "OAWjIgDb4SWMRAEPIATMeAkO0kA",
+      "code": "OAWjIgDb4SWMRAEPIATMeAkO0kA",
+      "name": "Hunting for Some of the Rarest Shields in Guild Wars — Vengeful Was Khanhei",
+      "primary": "Ritualist",
+      "secondary": "Mesmer",
+      "skills": [
+        "Vengeful Was Khanhei",
+        "Mantra of Resolve",
+        "Vengeful Weapon",
+        "Mantra of Frost",
+        "Resilient Weapon",
+        "Diversion",
+        "Complicate",
+        "\"I Am Unstoppable!\""
+      ],
+      "attributes": {
+        "Domination Magic": 8,
+        "Inspiration Magic": 11,
+        "Restoration Magic": 11
+      },
+      "campaigns": [
+        "Factions",
+        "Eye of the North"
+      ],
+      "team": {
+        "id": "https://www.reddit.com/r/GuildWars/comments/1xxmwf4/hunting_for_some_of_the_rarest_shields_in_guild/",
+        "name": "Hunting for Some of the Rarest Shields in Guild Wars",
+        "size": 8,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "reddit",
+        "url": "https://www.reddit.com/r/GuildWars/comments/1xxmwf4/hunting_for_some_of_the_rarest_shields_in_guild/",
+        "title": "Hunting for Some of the Rarest Shields in Guild Wars",
+        "author": "/u/lain01",
+        "postedAt": "2026-11-16",
+        "context": "In this video, we're going after Old-School Stone Summit and Summit Warlord Shields. KEEP IN MIND Getting perfect or near-perfect OS shields is extremely difficult. There's a reason these things are so expensive! If you don't feel like gambling too much, you can always sell them as an unidentified bundle instead. I'll upload separate videos covering each farming method in more detail. I just could…"
+      },
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "id": "OAajgMJcITWMSfEPmCbD7ixk0kA",
+      "code": "OAajgMJcITWMSfEPmCbD7ixk0kA",
+      "name": "Hunting for Some of the Rarest Shields in Guild Wars — Vengeful Was Khanhei (2)",
+      "primary": "Ritualist",
+      "secondary": "Elementalist",
+      "skills": [
+        "Vengeful Was Khanhei",
+        "Glyph of Swiftness",
+        "Vengeful Weapon",
+        "Kinetic Armor",
+        "Obsidian Flame",
+        "Ebon Vanguard Assassin Support",
+        "\"Finish Him!\"",
+        "\"I Am Unstoppable!\""
+      ],
+      "attributes": {
+        "Air Magic": 3,
+        "Earth Magic": 12,
+        "Restoration Magic": 12
+      },
+      "campaigns": [
+        "Prophecies",
+        "Factions",
+        "Eye of the North"
+      ],
+      "team": {
+        "id": "https://www.reddit.com/r/GuildWars/comments/1xxmwf4/hunting_for_some_of_the_rarest_shields_in_guild/",
+        "name": "Hunting for Some of the Rarest Shields in Guild Wars",
+        "size": 8,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "reddit",
+        "url": "https://www.reddit.com/r/GuildWars/comments/1xxmwf4/hunting_for_some_of_the_rarest_shields_in_guild/",
+        "title": "Hunting for Some of the Rarest Shields in Guild Wars",
+        "author": "/u/lain01",
+        "postedAt": "2026-11-16",
+        "context": "In this video, we're going after Old-School Stone Summit and Summit Warlord Shields. KEEP IN MIND Getting perfect or near-perfect OS shields is extremely difficult. There's a reason these things are so expensive! If you don't feel like gambling too much, you can always sell them as an unidentified bundle instead. I'll upload separate videos covering each farming method in more detail. I just could…"
+      },
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "id": "OgBCoLzgw6+7uFXLt4C",
+      "code": "OgBCoLzgw6+7uFXLt4C",
+      "name": "Prophecies Beginner Builds - Guild Wars Reforged — Ether Renewal",
+      "primary": "Elementalist",
+      "secondary": null,
+      "skills": [
+        "Flare",
+        "Fireball",
+        "Immolate",
+        "Meteor",
+        "Fire Storm",
+        "Ether Renewal",
+        "Aura of Restoration",
+        "Fire Attunement"
+      ],
+      "attributes": {
+        "Fire Magic": 11,
+        "Energy Storage": 12
+      },
+      "campaigns": [
+        "Prophecies"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=7VNsw94TuRA",
+        "name": "Prophecies Beginner Builds - Guild Wars Reforged",
+        "size": 9,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=7VNsw94TuRA",
+        "title": "Prophecies Beginner Builds - Guild Wars Reforged",
+        "author": "MagicalMike",
+        "postedAt": "2026-11-15",
+        "context": "Builds Warrior Axe Warrior Sword Ranger Monk Necromancer Minions Necromancer Curses Mesmer Elementalist Fire Elementalist Air",
+        "score": 383
+      },
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "id": "OgBCgMvQzf7N4cjMthD",
+      "code": "OgBCgMvQzf7N4cjMthD",
+      "name": "Prophecies Beginner Builds - Guild Wars Reforged — Lightning Surge",
+      "primary": "Elementalist",
+      "secondary": null,
+      "skills": [
+        "Lightning Surge",
+        "Chain Lightning",
+        "Lightning Strike",
+        "Enervating Charge",
+        "Blinding Flash",
+        "Glyph of Lesser Energy",
+        "Aura of Restoration",
+        "Air Attunement"
+      ],
+      "attributes": {
+        "Air Magic": 12,
+        "Energy Storage": 11
+      },
+      "campaigns": [
+        "Prophecies"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=7VNsw94TuRA",
+        "name": "Prophecies Beginner Builds - Guild Wars Reforged",
+        "size": 9,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=7VNsw94TuRA",
+        "title": "Prophecies Beginner Builds - Guild Wars Reforged",
+        "author": "MagicalMike",
+        "postedAt": "2026-11-15",
+        "context": "Builds Warrior Axe Warrior Sword Ranger Monk Necromancer Minions Necromancer Curses Mesmer Elementalist Fire Elementalist Air",
+        "score": 383
+      },
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "id": "OQBDAqojCNoBHXkzQElB",
+      "code": "OQBDAqojCNoBHXkzQElB",
+      "name": "Prophecies Beginner Builds - Guild Wars Reforged — Mantra of Recovery",
+      "primary": "Mesmer",
+      "secondary": null,
+      "skills": [
+        "Mantra of Recovery",
+        "Empathy",
+        "Backfire",
+        "Power Spike",
+        "Cry of Frustration",
+        "Shatter Hex",
+        "Drain Enchantment",
+        "Power Drain"
+      ],
+      "attributes": {
+        "Fast Casting": 10,
+        "Domination Magic": 10,
+        "Inspiration Magic": 10
+      },
+      "campaigns": [],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=7VNsw94TuRA",
+        "name": "Prophecies Beginner Builds - Guild Wars Reforged",
+        "size": 9,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=7VNsw94TuRA",
+        "title": "Prophecies Beginner Builds - Guild Wars Reforged",
+        "author": "MagicalMike",
+        "postedAt": "2026-11-15",
+        "context": "Builds Warrior Axe Warrior Sword Ranger Monk Necromancer Minions Necromancer Curses Mesmer Elementalist Fire Elementalist Air",
+        "score": 383
+      },
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "id": "OgATYv7m34xqGzKu4/210GA",
+      "code": "OgATYv7m34xqGzKu4/210GA",
+      "name": "Prophecies Beginner Builds - Guild Wars Reforged — Marksman's Wager",
+      "primary": "Ranger",
+      "secondary": null,
+      "skills": [
+        "Distracting Shot",
+        "Savage Shot",
+        "Concussion Shot",
+        "Power Shot",
+        "Lightning Reflexes",
+        "Otyugh's Cry",
+        "Marksman's Wager",
+        "Comfort Animal"
+      ],
+      "attributes": {
+        "Beast Mastery": 7,
+        "Expertise": 11,
+        "Marksmanship": 11
+      },
+      "campaigns": [
+        "Prophecies"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=7VNsw94TuRA",
+        "name": "Prophecies Beginner Builds - Guild Wars Reforged",
+        "size": 9,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=7VNsw94TuRA",
+        "title": "Prophecies Beginner Builds - Guild Wars Reforged",
+        "author": "MagicalMike",
+        "postedAt": "2026-11-15",
+        "context": "Builds Warrior Axe Warrior Sword Ranger Monk Necromancer Minions Necromancer Curses Mesmer Elementalist Fire Elementalist Air",
+        "score": 383
+      },
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "id": "OABDQYxWCUmVaTRFePOH",
+      "code": "OABDQYxWCUmVaTRFePOH",
+      "name": "Prophecies Beginner Builds - Guild Wars Reforged — Order of the Vampire",
+      "primary": "Necromancer",
+      "secondary": null,
+      "skills": [
+        "Order of the Vampire",
+        "Deathly Chill",
+        "Deathly Swarm",
+        "Animate Bone Horror",
+        "Animate Bone Fiend",
+        "Blood of the Master",
+        "Strip Enchantment",
+        "Blood Renewal"
+      ],
+      "attributes": {
+        "Blood Magic": 8,
+        "Death Magic": 12,
+        "Soul Reaping": 9
+      },
+      "campaigns": [
+        "Prophecies"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=7VNsw94TuRA",
+        "name": "Prophecies Beginner Builds - Guild Wars Reforged",
+        "size": 9,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=7VNsw94TuRA",
+        "title": "Prophecies Beginner Builds - Guild Wars Reforged",
+        "author": "MagicalMike",
+        "postedAt": "2026-11-15",
+        "context": "Builds Warrior Axe Warrior Sword Ranger Monk Necromancer Minions Necromancer Curses Mesmer Elementalist Fire Elementalist Air",
+        "score": 383
+      },
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "id": "OABDQolHDU+pdIaZiQOH",
+      "code": "OABDQolHDU+pdIaZiQOH",
+      "name": "Prophecies Beginner Builds - Guild Wars Reforged — Order of the Vampire (2)",
+      "primary": "Necromancer",
+      "secondary": null,
+      "skills": [
+        "Order of the Vampire",
+        "Weaken Armor",
+        "Enfeebling Blood",
+        "Shadow of Fear",
+        "Mark of Pain",
+        "Rigor Mortis",
+        "Chilblains",
+        "Blood Renewal"
+      ],
+      "attributes": {
+        "Blood Magic": 8,
+        "Soul Reaping": 9,
+        "Curses": 12
+      },
+      "campaigns": [
+        "Prophecies"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=7VNsw94TuRA",
+        "name": "Prophecies Beginner Builds - Guild Wars Reforged",
+        "size": 9,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=7VNsw94TuRA",
+        "title": "Prophecies Beginner Builds - Guild Wars Reforged",
+        "author": "MagicalMike",
+        "postedAt": "2026-11-15",
+        "context": "Builds Warrior Axe Warrior Sword Ranger Monk Necromancer Minions Necromancer Curses Mesmer Elementalist Fire Elementalist Air",
+        "score": 383
+      },
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "id": "OQATEXJXpwuKVoVNoalrCAA",
+      "code": "OQATEXJXpwuKVoVNoalrCAA",
+      "name": "Prophecies Beginner Builds - Guild Wars Reforged — Warrior's Endurance",
+      "primary": "Warrior",
+      "secondary": null,
+      "skills": [
+        "Warrior's Endurance",
+        "Cyclone Axe",
+        "Power Attack",
+        "Swift Chop",
+        "Wild Blow",
+        "Frenzy",
+        "\"Watch Yourself!\"",
+        "Resurrection Signet"
+      ],
+      "attributes": {
+        "Strength": 11,
+        "Axe Mastery": 12,
+        "Tactics": 4
+      },
+      "campaigns": [
+        "Prophecies"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=7VNsw94TuRA",
+        "name": "Prophecies Beginner Builds - Guild Wars Reforged",
+        "size": 9,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=7VNsw94TuRA",
+        "title": "Prophecies Beginner Builds - Guild Wars Reforged",
+        "author": "MagicalMike",
+        "postedAt": "2026-11-15",
+        "context": "Builds Warrior Axe Warrior Sword Ranger Monk Necromancer Minions Necromancer Curses Mesmer Elementalist Fire Elementalist Air",
+        "score": 383
+      },
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "id": "OQATEXKXpwuGVoGOoalrCAA",
+      "code": "OQATEXKXpwuGVoGOoalrCAA",
+      "name": "Prophecies Beginner Builds - Guild Wars Reforged — Warrior's Endurance (2)",
+      "primary": "Warrior",
+      "secondary": null,
+      "skills": [
+        "Warrior's Endurance",
+        "Protector's Strike",
+        "Power Attack",
+        "Savage Slash",
+        "Wild Blow",
+        "Frenzy",
+        "\"Watch Yourself!\"",
+        "Resurrection Signet"
+      ],
+      "attributes": {
+        "Strength": 11,
+        "Swordsmanship": 12,
+        "Tactics": 4
+      },
+      "campaigns": [
+        "Prophecies"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=7VNsw94TuRA",
+        "name": "Prophecies Beginner Builds - Guild Wars Reforged",
+        "size": 9,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=7VNsw94TuRA",
+        "title": "Prophecies Beginner Builds - Guild Wars Reforged",
+        "author": "MagicalMike",
+        "postedAt": "2026-11-15",
+        "context": "Builds Warrior Axe Warrior Sword Ranger Monk Necromancer Minions Necromancer Curses Mesmer Elementalist Fire Elementalist Air",
+        "score": 383
+      },
+      "firstSeen": "2026-11-16"
+    },
+    {
+      "id": "OwAT04XCxQjb0frMgTsl6EA",
+      "code": "OwAT04XCxQjb0frMgTsl6EA",
+      "name": "Prophecies Beginner Builds - Guild Wars Reforged — Word of Healing",
+      "primary": "Monk",
+      "secondary": null,
+      "skills": [
+        "Word of Healing",
+        "Dwayna's Kiss",
+        "Vigorous Spirit",
+        "Shielding Hands",
+        "Aegis",
+        "Mend Condition",
+        "Remove Hex",
+        "Restore Life"
+      ],
+      "attributes": {
+        "Healing Prayers": 12,
+        "Protection Prayers": 9,
+        "Divine Favor": 8
+      },
+      "campaigns": [
+        "Prophecies"
+      ],
+      "team": {
+        "id": "https://www.youtube.com/watch?v=7VNsw94TuRA",
+        "name": "Prophecies Beginner Builds - Guild Wars Reforged",
+        "size": 9,
+        "kind": "set"
+      },
+      "source": {
+        "kind": "youtube",
+        "url": "https://www.youtube.com/watch?v=7VNsw94TuRA",
+        "title": "Prophecies Beginner Builds - Guild Wars Reforged",
+        "author": "MagicalMike",
+        "postedAt": "2026-11-15",
+        "context": "Builds Warrior Axe Warrior Sword Ranger Monk Necromancer Minions Necromancer Curses Mesmer Elementalist Fire Elementalist Air",
+        "score": 383
+      },
+      "firstSeen": "2026-11-16"
+    },
     {
       "id": "Ogek8Jp4Kzqk5F313mMYb5Fn2VzF",
       "code": "Ogek8Jp4Kzqk5F313mMYb5Fn2VzF",
@@ -396,19 +1270,13 @@
         "Nightfall",
         "Eye of the North"
       ],
-      "team": {
-        "id": "https://www.youtube.com/watch?v=q56s8XX1rIs",
-        "name": "Builds Explained - Monk/Paragon Zealot's Fire Shout Spammer [Guild Wars]",
-        "size": 2,
-        "kind": "set"
-      },
       "source": {
         "kind": "youtube",
         "url": "https://www.youtube.com/watch?v=q56s8XX1rIs",
         "title": "Builds Explained - Monk/Paragon Zealot's Fire Shout Spammer [Guild Wars]",
         "author": "Péter Kádár",
         "postedAt": "2026-11-01",
-        "score": 12105
+        "score": 13016
       },
       "firstSeen": "2026-11-02"
     },
@@ -691,7 +1559,7 @@
         "title": "Guild Wars Reforged - Hero Guide: Olias (Spoil Victor)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-10-27",
-        "score": 1181
+        "score": 1290
       },
       "firstSeen": "2026-11-02"
     },
@@ -733,7 +1601,7 @@
         "author": "TheCaffeineSage",
         "postedAt": "2026-10-29",
         "context": "************************************************************************************************ Template Codes Double Dragon Nuker",
-        "score": 398
+        "score": 413
       },
       "firstSeen": "2026-11-02"
     },
@@ -774,7 +1642,7 @@
         "author": "TheCaffeineSage",
         "postedAt": "2026-10-29",
         "context": "Healers Boon Monk *************************************************************************************************",
-        "score": 398
+        "score": 413
       },
       "firstSeen": "2026-11-02"
     },
@@ -814,7 +1682,7 @@
         "title": "Guild Wars Reforged - Pogahn Passage Puts The Hard in Hard Mode! (Double Dragon)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-10-29",
-        "score": 398
+        "score": 413
       },
       "firstSeen": "2026-11-02"
     },
@@ -855,7 +1723,7 @@
         "title": "Guild Wars Reforged - Pogahn Passage Puts The Hard in Hard Mode! (Double Dragon)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-10-29",
-        "score": 398
+        "score": 413
       },
       "firstSeen": "2026-11-02"
     },
@@ -962,7 +1830,7 @@
         "author": "TheCaffeineSage",
         "postedAt": "2026-10-21",
         "context": "Heres a video featuring Dajkah Inlet on my Rit (this is where you get the armour from) https://www.youtube.com/watch?v=igokDfshqxw Build Template Code",
-        "score": 939
+        "score": 953
       },
       "firstSeen": "2026-10-26"
     },
@@ -997,7 +1865,7 @@
         "title": "Guild Wars Reforged - Hero Guide: Devona (Dwarven Battle Stance)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-10-22",
-        "score": 859
+        "score": 898
       },
       "firstSeen": "2026-10-26"
     },
@@ -1062,19 +1930,19 @@
         "Nightfall"
       ],
       "team": {
-        "id": "https://www.youtube.com/watch?v=a4lbRlPr8Ps",
-        "name": "Most Useful Warrior Green Weapons for Casual Gameplay [Guild Wars]",
-        "size": 10,
+        "id": "https://www.youtube.com/watch?v=LVEuNQuXp8Q",
+        "name": "Most Useful Ranger Green Weapons for Casual Gameplay [Guild Wars]",
+        "size": 20,
         "kind": "set"
       },
       "source": {
         "kind": "youtube",
-        "url": "https://www.youtube.com/watch?v=a4lbRlPr8Ps",
-        "title": "Most Useful Warrior Green Weapons for Casual Gameplay [Guild Wars]",
+        "url": "https://www.youtube.com/watch?v=LVEuNQuXp8Q",
+        "title": "Most Useful Ranger Green Weapons for Casual Gameplay [Guild Wars]",
         "author": "Péter Kádár",
-        "postedAt": "2026-10-24",
+        "postedAt": "2026-11-11",
         "context": "warrior monk ranger necromancer mesmer elementalist assassin ritualist paragon dervish",
-        "score": 11070
+        "score": 6870
       },
       "firstSeen": "2026-10-26"
     },
@@ -1103,19 +1971,19 @@
         "Nightfall"
       ],
       "team": {
-        "id": "https://www.youtube.com/watch?v=a4lbRlPr8Ps",
-        "name": "Most Useful Warrior Green Weapons for Casual Gameplay [Guild Wars]",
-        "size": 10,
+        "id": "https://www.youtube.com/watch?v=LVEuNQuXp8Q",
+        "name": "Most Useful Ranger Green Weapons for Casual Gameplay [Guild Wars]",
+        "size": 20,
         "kind": "set"
       },
       "source": {
         "kind": "youtube",
-        "url": "https://www.youtube.com/watch?v=a4lbRlPr8Ps",
-        "title": "Most Useful Warrior Green Weapons for Casual Gameplay [Guild Wars]",
+        "url": "https://www.youtube.com/watch?v=LVEuNQuXp8Q",
+        "title": "Most Useful Ranger Green Weapons for Casual Gameplay [Guild Wars]",
         "author": "Péter Kádár",
-        "postedAt": "2026-10-24",
+        "postedAt": "2026-11-11",
         "context": "warrior monk ranger necromancer mesmer elementalist assassin ritualist paragon dervish",
-        "score": 11070
+        "score": 6870
       },
       "firstSeen": "2026-10-26"
     },
@@ -1144,19 +2012,19 @@
         "Nightfall"
       ],
       "team": {
-        "id": "https://www.youtube.com/watch?v=a4lbRlPr8Ps",
-        "name": "Most Useful Warrior Green Weapons for Casual Gameplay [Guild Wars]",
-        "size": 10,
+        "id": "https://www.youtube.com/watch?v=LVEuNQuXp8Q",
+        "name": "Most Useful Ranger Green Weapons for Casual Gameplay [Guild Wars]",
+        "size": 20,
         "kind": "set"
       },
       "source": {
         "kind": "youtube",
-        "url": "https://www.youtube.com/watch?v=a4lbRlPr8Ps",
-        "title": "Most Useful Warrior Green Weapons for Casual Gameplay [Guild Wars]",
+        "url": "https://www.youtube.com/watch?v=LVEuNQuXp8Q",
+        "title": "Most Useful Ranger Green Weapons for Casual Gameplay [Guild Wars]",
         "author": "Péter Kádár",
-        "postedAt": "2026-10-24",
+        "postedAt": "2026-11-11",
         "context": "warrior monk ranger necromancer mesmer elementalist assassin ritualist paragon dervish",
-        "score": 11070
+        "score": 6870
       },
       "firstSeen": "2026-10-26"
     },
@@ -1186,19 +2054,19 @@
         "Nightfall"
       ],
       "team": {
-        "id": "https://www.youtube.com/watch?v=a4lbRlPr8Ps",
-        "name": "Most Useful Warrior Green Weapons for Casual Gameplay [Guild Wars]",
-        "size": 10,
+        "id": "https://www.youtube.com/watch?v=LVEuNQuXp8Q",
+        "name": "Most Useful Ranger Green Weapons for Casual Gameplay [Guild Wars]",
+        "size": 20,
         "kind": "set"
       },
       "source": {
         "kind": "youtube",
-        "url": "https://www.youtube.com/watch?v=a4lbRlPr8Ps",
-        "title": "Most Useful Warrior Green Weapons for Casual Gameplay [Guild Wars]",
+        "url": "https://www.youtube.com/watch?v=LVEuNQuXp8Q",
+        "title": "Most Useful Ranger Green Weapons for Casual Gameplay [Guild Wars]",
         "author": "Péter Kádár",
-        "postedAt": "2026-10-24",
+        "postedAt": "2026-11-11",
         "context": "warrior monk ranger necromancer mesmer elementalist assassin ritualist paragon dervish",
-        "score": 11070
+        "score": 6870
       },
       "firstSeen": "2026-10-26"
     },
@@ -1228,19 +2096,19 @@
         "Nightfall"
       ],
       "team": {
-        "id": "https://www.youtube.com/watch?v=a4lbRlPr8Ps",
-        "name": "Most Useful Warrior Green Weapons for Casual Gameplay [Guild Wars]",
-        "size": 10,
+        "id": "https://www.youtube.com/watch?v=LVEuNQuXp8Q",
+        "name": "Most Useful Ranger Green Weapons for Casual Gameplay [Guild Wars]",
+        "size": 20,
         "kind": "set"
       },
       "source": {
         "kind": "youtube",
-        "url": "https://www.youtube.com/watch?v=a4lbRlPr8Ps",
-        "title": "Most Useful Warrior Green Weapons for Casual Gameplay [Guild Wars]",
+        "url": "https://www.youtube.com/watch?v=LVEuNQuXp8Q",
+        "title": "Most Useful Ranger Green Weapons for Casual Gameplay [Guild Wars]",
         "author": "Péter Kádár",
-        "postedAt": "2026-10-24",
+        "postedAt": "2026-11-11",
         "context": "warrior monk ranger necromancer mesmer elementalist assassin ritualist paragon dervish",
-        "score": 11070
+        "score": 6870
       },
       "firstSeen": "2026-10-26"
     },
@@ -1269,19 +2137,19 @@
         "Nightfall"
       ],
       "team": {
-        "id": "https://www.youtube.com/watch?v=a4lbRlPr8Ps",
-        "name": "Most Useful Warrior Green Weapons for Casual Gameplay [Guild Wars]",
-        "size": 10,
+        "id": "https://www.youtube.com/watch?v=LVEuNQuXp8Q",
+        "name": "Most Useful Ranger Green Weapons for Casual Gameplay [Guild Wars]",
+        "size": 20,
         "kind": "set"
       },
       "source": {
         "kind": "youtube",
-        "url": "https://www.youtube.com/watch?v=a4lbRlPr8Ps",
-        "title": "Most Useful Warrior Green Weapons for Casual Gameplay [Guild Wars]",
+        "url": "https://www.youtube.com/watch?v=LVEuNQuXp8Q",
+        "title": "Most Useful Ranger Green Weapons for Casual Gameplay [Guild Wars]",
         "author": "Péter Kádár",
-        "postedAt": "2026-10-24",
+        "postedAt": "2026-11-11",
         "context": "warrior monk ranger necromancer mesmer elementalist assassin ritualist paragon dervish",
-        "score": 11070
+        "score": 6870
       },
       "firstSeen": "2026-10-26"
     },
@@ -1311,19 +2179,19 @@
         "Nightfall"
       ],
       "team": {
-        "id": "https://www.youtube.com/watch?v=a4lbRlPr8Ps",
-        "name": "Most Useful Warrior Green Weapons for Casual Gameplay [Guild Wars]",
-        "size": 10,
+        "id": "https://www.youtube.com/watch?v=LVEuNQuXp8Q",
+        "name": "Most Useful Ranger Green Weapons for Casual Gameplay [Guild Wars]",
+        "size": 20,
         "kind": "set"
       },
       "source": {
         "kind": "youtube",
-        "url": "https://www.youtube.com/watch?v=a4lbRlPr8Ps",
-        "title": "Most Useful Warrior Green Weapons for Casual Gameplay [Guild Wars]",
+        "url": "https://www.youtube.com/watch?v=LVEuNQuXp8Q",
+        "title": "Most Useful Ranger Green Weapons for Casual Gameplay [Guild Wars]",
         "author": "Péter Kádár",
-        "postedAt": "2026-10-24",
+        "postedAt": "2026-11-11",
         "context": "warrior monk ranger necromancer mesmer elementalist assassin ritualist paragon dervish",
-        "score": 11070
+        "score": 6870
       },
       "firstSeen": "2026-10-26"
     },
@@ -1352,19 +2220,19 @@
         "Nightfall"
       ],
       "team": {
-        "id": "https://www.youtube.com/watch?v=a4lbRlPr8Ps",
-        "name": "Most Useful Warrior Green Weapons for Casual Gameplay [Guild Wars]",
-        "size": 10,
+        "id": "https://www.youtube.com/watch?v=LVEuNQuXp8Q",
+        "name": "Most Useful Ranger Green Weapons for Casual Gameplay [Guild Wars]",
+        "size": 20,
         "kind": "set"
       },
       "source": {
         "kind": "youtube",
-        "url": "https://www.youtube.com/watch?v=a4lbRlPr8Ps",
-        "title": "Most Useful Warrior Green Weapons for Casual Gameplay [Guild Wars]",
+        "url": "https://www.youtube.com/watch?v=LVEuNQuXp8Q",
+        "title": "Most Useful Ranger Green Weapons for Casual Gameplay [Guild Wars]",
         "author": "Péter Kádár",
-        "postedAt": "2026-10-24",
+        "postedAt": "2026-11-11",
         "context": "warrior monk ranger necromancer mesmer elementalist assassin ritualist paragon dervish",
-        "score": 11070
+        "score": 6870
       },
       "firstSeen": "2026-10-26"
     },
@@ -1394,19 +2262,19 @@
         "Nightfall"
       ],
       "team": {
-        "id": "https://www.youtube.com/watch?v=a4lbRlPr8Ps",
-        "name": "Most Useful Warrior Green Weapons for Casual Gameplay [Guild Wars]",
-        "size": 10,
+        "id": "https://www.youtube.com/watch?v=LVEuNQuXp8Q",
+        "name": "Most Useful Ranger Green Weapons for Casual Gameplay [Guild Wars]",
+        "size": 20,
         "kind": "set"
       },
       "source": {
         "kind": "youtube",
-        "url": "https://www.youtube.com/watch?v=a4lbRlPr8Ps",
-        "title": "Most Useful Warrior Green Weapons for Casual Gameplay [Guild Wars]",
+        "url": "https://www.youtube.com/watch?v=LVEuNQuXp8Q",
+        "title": "Most Useful Ranger Green Weapons for Casual Gameplay [Guild Wars]",
         "author": "Péter Kádár",
-        "postedAt": "2026-10-24",
+        "postedAt": "2026-11-11",
         "context": "warrior monk ranger necromancer mesmer elementalist assassin ritualist paragon dervish",
-        "score": 11070
+        "score": 6870
       },
       "firstSeen": "2026-10-26"
     },
@@ -1435,19 +2303,19 @@
         "Nightfall"
       ],
       "team": {
-        "id": "https://www.youtube.com/watch?v=a4lbRlPr8Ps",
-        "name": "Most Useful Warrior Green Weapons for Casual Gameplay [Guild Wars]",
-        "size": 10,
+        "id": "https://www.youtube.com/watch?v=LVEuNQuXp8Q",
+        "name": "Most Useful Ranger Green Weapons for Casual Gameplay [Guild Wars]",
+        "size": 20,
         "kind": "set"
       },
       "source": {
         "kind": "youtube",
-        "url": "https://www.youtube.com/watch?v=a4lbRlPr8Ps",
-        "title": "Most Useful Warrior Green Weapons for Casual Gameplay [Guild Wars]",
+        "url": "https://www.youtube.com/watch?v=LVEuNQuXp8Q",
+        "title": "Most Useful Ranger Green Weapons for Casual Gameplay [Guild Wars]",
         "author": "Péter Kádár",
-        "postedAt": "2026-10-24",
+        "postedAt": "2026-11-11",
         "context": "warrior monk ranger necromancer mesmer elementalist assassin ritualist paragon dervish",
-        "score": 11070
+        "score": 6870
       },
       "firstSeen": "2026-10-26"
     },
@@ -1645,7 +2513,7 @@
         "title": "Shove Assassin Dominates PvP",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-10-18",
-        "score": 4584
+        "score": 4723
       },
       "firstSeen": "2026-10-19"
     },
@@ -1718,7 +2586,7 @@
         "title": "Vanquish Tyria: Reed Bog (Hundred Blades)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-10-16",
-        "score": 315
+        "score": 339
       },
       "firstSeen": "2026-10-19"
     },
@@ -2184,7 +3052,7 @@
         "title": "Guild Wars Reforged - Build - SoS Ritualist",
         "author": "Sabre Wolf",
         "postedAt": "2026-10-08",
-        "score": 1024
+        "score": 1140
       },
       "firstSeen": "2026-10-12"
     },
@@ -3156,7 +4024,7 @@
         "title": "Guild Wars Reforged - Build - Wounding Strike Dervish",
         "author": "Sabre Wolf",
         "postedAt": "2026-10-01",
-        "score": 966
+        "score": 993
       },
       "firstSeen": "2026-10-05"
     },
@@ -3568,7 +4436,7 @@
         "title": "Builds Explained - Ele/Mes Over The Limit EVAS Spammer [Guild Wars]",
         "author": "Péter Kádár",
         "postedAt": "2026-09-21",
-        "score": 16355
+        "score": 16959
       },
       "firstSeen": "2026-09-28"
     },
@@ -3604,7 +4472,7 @@
         "title": "Builds Explained - Ritualist/Assassin Spirit's Strength Dagger Spammer [Guild Wars]",
         "author": "Péter Kádár",
         "postedAt": "2026-09-27",
-        "score": 14302
+        "score": 15197
       },
       "firstSeen": "2026-09-28"
     },
@@ -4004,7 +4872,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-13",
         "context": "-Builds necro warrior monk hero1 monk hero2 paragon hero",
-        "score": 8856
+        "score": 9018
       },
       "firstSeen": "2026-09-18"
     },
@@ -4046,7 +4914,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-13",
         "context": "-Builds necro warrior monk hero1 monk hero2 paragon hero",
-        "score": 8856
+        "score": 9018
       },
       "firstSeen": "2026-09-18"
     },
@@ -4087,7 +4955,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-13",
         "context": "-Builds necro warrior monk hero1 monk hero2 paragon hero",
-        "score": 8856
+        "score": 9018
       },
       "firstSeen": "2026-09-18"
     },
@@ -4131,7 +4999,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-13",
         "context": "-Builds necro warrior monk hero1 monk hero2 paragon hero",
-        "score": 8856
+        "score": 9018
       },
       "firstSeen": "2026-09-18"
     },
@@ -4176,7 +5044,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-13",
         "context": "-Builds necro warrior monk hero1 monk hero2 paragon hero",
-        "score": 8856
+        "score": 9018
       },
       "firstSeen": "2026-09-18"
     },
@@ -4596,7 +5464,7 @@
         "title": "A Chance Encounter Farm",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-05-10",
-        "score": 2760
+        "score": 2802
       },
       "firstSeen": "2026-09-18"
     },
@@ -5066,7 +5934,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-20",
         "context": "ranger hero paragon hero warrior hero",
-        "score": 12355
+        "score": 12690
       },
       "firstSeen": "2026-09-18"
     },
@@ -5107,7 +5975,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-20",
         "context": "ranger hero paragon hero warrior hero",
-        "score": 12355
+        "score": 12690
       },
       "firstSeen": "2026-09-18"
     },
@@ -5149,7 +6017,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 10420
+        "score": 10733
       },
       "firstSeen": "2026-09-18"
     },
@@ -5191,7 +6059,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 10420
+        "score": 10733
       },
       "firstSeen": "2026-09-18"
     },
@@ -5233,7 +6101,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 10420
+        "score": 10733
       },
       "firstSeen": "2026-09-18"
     },
@@ -5276,7 +6144,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 10420
+        "score": 10733
       },
       "firstSeen": "2026-09-18"
     },
@@ -5319,7 +6187,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 10420
+        "score": 10733
       },
       "firstSeen": "2026-09-18"
     },
@@ -5361,7 +6229,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 10420
+        "score": 10733
       },
       "firstSeen": "2026-09-18"
     },
@@ -5403,7 +6271,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 10420
+        "score": 10733
       },
       "firstSeen": "2026-09-18"
     },
@@ -5445,7 +6313,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 10420
+        "score": 10733
       },
       "firstSeen": "2026-09-18"
     },
@@ -5487,7 +6355,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 10420
+        "score": 10733
       },
       "firstSeen": "2026-09-18"
     },
@@ -5529,7 +6397,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 10420
+        "score": 10733
       },
       "firstSeen": "2026-09-18"
     },
@@ -5571,7 +6439,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-08-21",
         "context": "-Builds ritualist paragon monk warrior ranger necro mesmer ele dervish or assasson",
-        "score": 10420
+        "score": 10733
       },
       "firstSeen": "2026-09-18"
     },
@@ -5815,7 +6683,7 @@
         "title": "Backbreaker Warrior Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-05-31",
-        "score": 995
+        "score": 999
       },
       "firstSeen": "2026-09-18"
     },
@@ -5856,7 +6724,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-11",
         "context": "Hold shift + click on the hero skills you want to disable. ranger hero1 ranger hero2 ranger hero3 necro hero paragon hero",
-        "score": 7159
+        "score": 7258
       },
       "firstSeen": "2026-09-18"
     },
@@ -5897,7 +6765,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 12876
+        "score": 13064
       },
       "firstSeen": "2026-09-18"
     },
@@ -5938,7 +6806,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 12876
+        "score": 13064
       },
       "firstSeen": "2026-09-18"
     },
@@ -5979,7 +6847,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 12876
+        "score": 13064
       },
       "firstSeen": "2026-09-18"
     },
@@ -6020,7 +6888,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 12876
+        "score": 13064
       },
       "firstSeen": "2026-09-18"
     },
@@ -6061,7 +6929,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 12876
+        "score": 13064
       },
       "firstSeen": "2026-09-18"
     },
@@ -6102,7 +6970,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 12876
+        "score": 13064
       },
       "firstSeen": "2026-09-18"
     },
@@ -6143,7 +7011,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 12876
+        "score": 13064
       },
       "firstSeen": "2026-09-18"
     },
@@ -6184,7 +7052,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 12876
+        "score": 13064
       },
       "firstSeen": "2026-09-18"
     },
@@ -6225,7 +7093,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 12876
+        "score": 13064
       },
       "firstSeen": "2026-09-18"
     },
@@ -6266,7 +7134,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-07-26",
         "context": "Here you can the player builds. monk ranger necromancer mesmer elementalist paragon ritualist dervish warrior assassin",
-        "score": 12876
+        "score": 13064
       },
       "firstSeen": "2026-09-18"
     },
@@ -6346,7 +7214,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-07",
         "context": "-Builds brawling headbutt yeti smash",
-        "score": 6312
+        "score": 6430
       },
       "firstSeen": "2026-09-18"
     },
@@ -6390,7 +7258,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-07",
         "context": "-Builds brawling headbutt yeti smash",
-        "score": 6312
+        "score": 6430
       },
       "firstSeen": "2026-09-18"
     },
@@ -6426,7 +7294,7 @@
         "title": "Builds Explained - Dervish/Assassin Ebon Dust Aura [Guild Wars]",
         "author": "Péter Kádár",
         "postedAt": "2026-07-03",
-        "score": 10627
+        "score": 10927
       },
       "firstSeen": "2026-09-18"
     },
@@ -6461,7 +7329,7 @@
         "title": "Builds Explained - Necro/Any Order Of Undeath [Guild Wars]",
         "author": "Péter Kádár",
         "postedAt": "2026-06-28",
-        "score": 16944
+        "score": 17373
       },
       "firstSeen": "2026-09-18"
     },
@@ -6505,7 +7373,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-25",
         "context": "-Builds paragon mesmer hero ritualist hero (for brutal weapon)",
-        "score": 15312
+        "score": 15565
       },
       "firstSeen": "2026-09-18"
     },
@@ -6547,7 +7415,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-25",
         "context": "-Builds paragon mesmer hero ritualist hero (for brutal weapon)",
-        "score": 15312
+        "score": 15565
       },
       "firstSeen": "2026-09-18"
     },
@@ -6587,7 +7455,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-25",
         "context": "-Builds paragon mesmer hero ritualist hero (for brutal weapon)",
-        "score": 15312
+        "score": 15565
       },
       "firstSeen": "2026-09-18"
     },
@@ -6629,7 +7497,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-11",
         "context": "-Builds base save yourselves ST hero",
-        "score": 17125
+        "score": 17712
       },
       "firstSeen": "2026-09-18"
     },
@@ -6671,7 +7539,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-11",
         "context": "-Builds base save yourselves ST hero",
-        "score": 17125
+        "score": 17712
       },
       "firstSeen": "2026-09-18"
     },
@@ -6713,7 +7581,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-11",
         "context": "-Builds base save yourselves ST hero",
-        "score": 17125
+        "score": 17712
       },
       "firstSeen": "2026-09-18"
     },
@@ -6757,7 +7625,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-27",
         "context": "-Builds default build fun build",
-        "score": 16102
+        "score": 16539
       },
       "firstSeen": "2026-09-18"
     },
@@ -6800,7 +7668,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-27",
         "context": "-Builds default build fun build",
-        "score": 16102
+        "score": 16539
       },
       "firstSeen": "2026-09-18"
     },
@@ -7188,7 +8056,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-16",
         "context": "-Builds dervish feather dervish jade brotherhood dervish nolani",
-        "score": 11862
+        "score": 11961
       },
       "firstSeen": "2026-09-18"
     },
@@ -7230,7 +8098,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-16",
         "context": "-Builds dervish feather dervish jade brotherhood dervish nolani",
-        "score": 11862
+        "score": 11961
       },
       "firstSeen": "2026-09-18"
     },
@@ -7272,7 +8140,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-16",
         "context": "-Builds dervish feather dervish jade brotherhood dervish nolani",
-        "score": 11862
+        "score": 11961
       },
       "firstSeen": "2026-09-18"
     },
@@ -7314,7 +8182,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-16",
         "context": "warrior feather warrior jade brotherhood warrior nolani",
-        "score": 11862
+        "score": 11961
       },
       "firstSeen": "2026-09-18"
     },
@@ -7355,7 +8223,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-16",
         "context": "warrior feather warrior jade brotherhood warrior nolani",
-        "score": 11862
+        "score": 11961
       },
       "firstSeen": "2026-09-18"
     },
@@ -7397,7 +8265,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-16",
         "context": "warrior feather warrior jade brotherhood warrior nolani",
-        "score": 11862
+        "score": 11961
       },
       "firstSeen": "2026-09-18"
     },
@@ -7501,7 +8369,7 @@
         "title": "Don't Sleep on Paragons in PvP",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-08-23",
-        "score": 5637
+        "score": 5664
       },
       "firstSeen": "2026-09-18"
     },
@@ -7606,7 +8474,7 @@
         "title": "Dying and Winning: The Life and Times of a Squishy Assassin",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-09-06",
-        "score": 2037
+        "score": 2040
       },
       "firstSeen": "2026-09-18"
     },
@@ -8728,7 +9596,7 @@
         "title": "Farming Chitin Fragments Guild Wars Reforged",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-07-26",
-        "score": 543
+        "score": 544
       },
       "firstSeen": "2026-09-18"
     },
@@ -8763,7 +9631,7 @@
         "title": "Farming Glittering Dust",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-07-12",
-        "score": 1593
+        "score": 1614
       },
       "firstSeen": "2026-09-18"
     },
@@ -8893,7 +9761,7 @@
         "author": "Olga Knows Best 🎮",
         "postedAt": "2026-01-24",
         "context": "Original Build Template—[] Video Build Template - []",
-        "score": 1090
+        "score": 1102
       },
       "firstSeen": "2026-09-18"
     },
@@ -8935,7 +9803,7 @@
         "author": "Olga Knows Best 🎮",
         "postedAt": "2026-01-24",
         "context": "Original Build Template—[] Video Build Template - []",
-        "score": 1090
+        "score": 1102
       },
       "firstSeen": "2026-09-18"
     },
@@ -9042,7 +9910,7 @@
         "author": "Sabre Wolf",
         "postedAt": "2026-09-14",
         "context": "Build Code (Me/Mo version shown)",
-        "score": 717
+        "score": 731
       },
       "firstSeen": "2026-09-18"
     },
@@ -9085,7 +9953,7 @@
         "author": "Sabre Wolf",
         "postedAt": "2026-09-10",
         "context": "Monk/Ele Healer's Boon Build Code Monk/Ele Unyielding Aura Build Code",
-        "score": 3150
+        "score": 3193
       },
       "firstSeen": "2026-09-18"
     },
@@ -9128,7 +9996,7 @@
         "author": "Sabre Wolf",
         "postedAt": "2026-09-10",
         "context": "Monk/Ele Healer's Boon Build Code Monk/Ele Unyielding Aura Build Code",
-        "score": 3150
+        "score": 3193
       },
       "firstSeen": "2026-09-18"
     },
@@ -9656,7 +10524,7 @@
         "title": "Guild Wars Reforged - Pogahn Passage Puts The Hard in Hard Mode! (Double Dragon)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-10-29",
-        "score": 398
+        "score": 413
       },
       "firstSeen": "2026-09-18"
     },
@@ -9728,18 +10596,18 @@
         "Eye of the North"
       ],
       "team": {
-        "id": "https://www.youtube.com/watch?v=W83DKYXt5AI",
-        "name": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spiteful Spirit & Tahnakka…",
+        "id": "https://www.youtube.com/watch?v=F_FyYmeaodg",
+        "name": "Guild Wars Reforged - The Ultimate Minion Master For Hard Mode? (Order Of Undeath/Raisu Pa…",
         "size": 7,
         "kind": "set"
       },
       "source": {
         "kind": "youtube",
-        "url": "https://www.youtube.com/watch?v=W83DKYXt5AI",
-        "title": "Guild Wars Reforged - Curses Necros Make Hard Mode Much Easier (Spiteful Spirit & Tahnakkai Temple)",
+        "url": "https://www.youtube.com/watch?v=F_FyYmeaodg",
+        "title": "Guild Wars Reforged - The Ultimate Minion Master For Hard Mode? (Order Of Undeath/Raisu Palace)",
         "author": "TheCaffeineSage",
-        "postedAt": "2026-09-16",
-        "score": 4696
+        "postedAt": "2026-11-11",
+        "score": 2251
       },
       "firstSeen": "2026-09-18"
     },
@@ -9863,7 +10731,7 @@
         "title": "Guild Wars Reforged - Pogahn Passage Puts The Hard in Hard Mode! (Double Dragon)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-10-29",
-        "score": 398
+        "score": 413
       },
       "firstSeen": "2026-09-18"
     },
@@ -9904,7 +10772,7 @@
         "title": "Guild Wars Reforged - Pogahn Passage Puts The Hard in Hard Mode! (Double Dragon)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-10-29",
-        "score": 398
+        "score": 413
       },
       "firstSeen": "2026-09-18"
     },
@@ -10070,7 +10938,7 @@
         "title": "Guild Wars Reforged - Pogahn Passage Puts The Hard in Hard Mode! (Double Dragon)",
         "author": "TheCaffeineSage",
         "postedAt": "2026-10-29",
-        "score": 398
+        "score": 413
       },
       "firstSeen": "2026-09-18"
     },
@@ -11952,7 +12820,7 @@
         "title": "Mesmer commits skill appropriation in Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-09-13",
-        "score": 1018
+        "score": 1033
       },
       "firstSeen": "2026-09-18"
     },
@@ -13782,7 +14650,7 @@
         "title": "Moebius Strike Assassin Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-08-16",
-        "score": 822
+        "score": 826
       },
       "firstSeen": "2026-09-18"
     },
@@ -14902,7 +15770,7 @@
         "title": "Monk Doa Torment Gemstone Farm [Guild Wars]",
         "author": "Péter Kádár",
         "postedAt": "2026-07-11",
-        "score": 7159
+        "score": 7258
       },
       "firstSeen": "2026-09-18"
     },
@@ -15160,7 +16028,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 11454
+        "score": 11740
       },
       "firstSeen": "2026-09-18"
     },
@@ -15203,7 +16071,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 11454
+        "score": 11740
       },
       "firstSeen": "2026-09-18"
     },
@@ -15245,7 +16113,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 11454
+        "score": 11740
       },
       "firstSeen": "2026-09-18"
     },
@@ -15289,7 +16157,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 11454
+        "score": 11740
       },
       "firstSeen": "2026-09-18"
     },
@@ -15332,7 +16200,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 11454
+        "score": 11740
       },
       "firstSeen": "2026-09-18"
     },
@@ -15374,7 +16242,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 11454
+        "score": 11740
       },
       "firstSeen": "2026-09-18"
     },
@@ -15418,7 +16286,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 11454
+        "score": 11740
       },
       "firstSeen": "2026-09-18"
     },
@@ -15461,7 +16329,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 11454
+        "score": 11740
       },
       "firstSeen": "2026-09-18"
     },
@@ -15506,7 +16374,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 11454
+        "score": 11740
       },
       "firstSeen": "2026-09-18"
     },
@@ -15547,7 +16415,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-06-21",
         "context": "-Builds warrior ranger monk necromancer mesmer elementalist ritualist assassin paragon dervish",
-        "score": 11454
+        "score": 11740
       },
       "firstSeen": "2026-09-18"
     },
@@ -21224,7 +22092,7 @@
         "title": "Shield of Deflection Monk Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-07-05",
-        "score": 992
+        "score": 1015
       },
       "firstSeen": "2026-09-18"
     },
@@ -21289,7 +22157,7 @@
         "title": "Signet of Suffering Necromancer Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-05-17",
-        "score": 1889
+        "score": 1910
       },
       "firstSeen": "2026-09-18"
     },
@@ -21324,7 +22192,7 @@
         "title": "Siphon Strength Assassin Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-04-26",
-        "score": 1331
+        "score": 1342
       },
       "firstSeen": "2026-09-18"
     },
@@ -21407,7 +22275,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 16579
+        "score": 16793
       },
       "firstSeen": "2026-09-18"
     },
@@ -21449,7 +22317,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 16579
+        "score": 16793
       },
       "firstSeen": "2026-09-18"
     },
@@ -21492,7 +22360,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 16579
+        "score": 16793
       },
       "firstSeen": "2026-09-18"
     },
@@ -21536,7 +22404,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 16579
+        "score": 16793
       },
       "firstSeen": "2026-09-18"
     },
@@ -21579,7 +22447,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 16579
+        "score": 16793
       },
       "firstSeen": "2026-09-18"
     },
@@ -21620,7 +22488,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 16579
+        "score": 16793
       },
       "firstSeen": "2026-09-18"
     },
@@ -21662,7 +22530,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 16579
+        "score": 16793
       },
       "firstSeen": "2026-09-18"
     },
@@ -21704,7 +22572,7 @@
         "author": "Péter Kádár",
         "postedAt": "2026-05-15",
         "context": "-Builds player mes1 mes2 mes3 nec ritu ele monk",
-        "score": 16579
+        "score": 16793
       },
       "firstSeen": "2026-09-18"
     },
@@ -23088,7 +23956,7 @@
         "title": "Unsteady Ground Elementalist Fort Aspenwood",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-07-19",
-        "score": 487
+        "score": 490
       },
       "firstSeen": "2026-09-18"
     },
@@ -23123,7 +23991,7 @@
         "title": "Vermin Farm (Scales + Shreader's Talons)",
         "author": "Guild Wars 1 in 2026",
         "postedAt": "2026-06-07",
-        "score": 2603
+        "score": 2612
       },
       "firstSeen": "2026-09-18"
     },
@@ -23490,7 +24358,7 @@
         "title": "War/Monk & Monk/War Solo Farm for Glacial Blades [Guild Wars]",
         "author": "Péter Kádár",
         "postedAt": "2026-08-20",
-        "score": 12355
+        "score": 12690
       },
       "firstSeen": "2026-09-18"
     },
@@ -23532,7 +24400,7 @@
         "title": "War/Monk & Monk/War Solo Farm for Glacial Blades [Guild Wars]",
         "author": "Péter Kádár",
         "postedAt": "2026-08-20",
-        "score": 12355
+        "score": 12690
       },
       "firstSeen": "2026-09-18"
     },
@@ -23567,7 +24435,7 @@
         "title": "Water Djinn Solo Farm for Gold Scythes & Dust [Guild Wars]",
         "author": "Péter Kádár",
         "postedAt": "2026-09-15",
-        "score": 12930
+        "score": 13533
       },
       "firstSeen": "2026-09-18"
     },
